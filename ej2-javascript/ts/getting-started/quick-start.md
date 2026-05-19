@@ -25,28 +25,25 @@ Ensure the following tools are installed on your machine:
 
 ## Set up the development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
+Clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from GitHub:
 
 ```
-    git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 ```
 
-After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
+Navigate to the project folder:
 
 ```
-    cd ej2-quickstart
+cd ej2-quickstart
 ```
 
 ## Install Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
-
-The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+Install the required npm packages:
 
 ```
-    npm install
+npm install
 ```
-![ej2 typescript seed local setup](images/local-setup.png)
 
 > For more information about individual packages and alternative installation methods, see the [installation guide](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation).
 
@@ -57,7 +54,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [
 The quickstart application is preconfigured to use the `Fluent2` theme in the `~/src/styles/styles.css` file, as shown below: 
 
 ```
-  @import "../../node_modules/@syncfusion/ej2/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2/fluent2.css";
 ```
 
 > Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
@@ -69,65 +66,71 @@ Open the application in Visual Studio Code and add the Syncfusion<sup style="fon
 In this article, the Grid control is used as an example. Add the following Grid element to the `~/src/index.html` file.
 
 ```html
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <title>Essential JS 2</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-        ....
-        ....
-    </head>
+<head>
+    <title>Essential JS 2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    ....
+    ....
+</head>
 
-    <body>
-        <div>
-            <!--HTML grid element, which is going to render as Essential JS 2 Grid-->
-            <div id="Grid"></div>
-        </div>
-    </body>
+<body>
+    <div>
+        <!--HTML grid element, which is going to render as Essential JS 2 Grid-->
+        <div id="Grid"></div>
+    </div>
+</body>
 
-    </html>
+</html>
  ```
 
 To render the Grid control, add the following JavaScript code to the `~/src/app/app.ts` file
 
 ```ts
-    import { Grid } from '@syncfusion/ej2-grids';
-    
-    // Grid data
-    const data: Object[] = [
-        {
-            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5, OrderDate: new Date(8364186e5),
-            ShipName: 'Vins et alcools Chevalier', ShipCity: 'Reims', ShipAddress: '59 rue de l Abbaye',
-            ShipRegion: 'CJ', ShipPostalCode: '51100', ShipCountry: 'France', Freight: 32.38, Verified: !0
-        },
-        {
-            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6, OrderDate: new Date(836505e6),
-            ShipName: 'Toms Spezialitäten', ShipCity: 'Münster', ShipAddress: 'Luisenstr. 48',
-            ShipRegion: 'CJ', ShipPostalCode: '44087', ShipCountry: 'Germany', Freight: 11.61, Verified: !1
-        },
-        {
-            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4, OrderDate: new Date(8367642e5),
-            ShipName: 'Hanari Carnes', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua do Paço, 67',
-            ShipRegion: 'RJ', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 65.83, Verified: !0
-        }
-    ];
+import { Grid } from '@syncfusion/ej2-grids';
 
-    // initialize grid control
-    let grid: Grid = new Grid({
-        dataSource: data,
-        columns: [
-                { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number' },
-                { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-                { field: 'EmployeeID', width: 140, headerText: 'Employee ID', textAlign: 'Right', type: 'string' },
-                { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C' },
-                { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'yMd' }
-        ]
-    });
+// Grid data
+const data: Object[] = [
+    {
+        OrderID: 10248,
+        CustomerID: 'VINET',
+        EmployeeID: 5,
+        ShipCountry: 'France',
+        Freight: 32.38
+    },
+    {
+        OrderID: 10249,
+        CustomerID: 'TOMSP',
+        EmployeeID: 6,
+        ShipCountry: 'Germany',
+        Freight: 11.61
+    },
+    {
+        OrderID: 10250,
+        CustomerID: 'HANAR',
+        EmployeeID: 4,
+        ShipCountry: 'Brazil',
+        Freight: 65.83
+    }
+];
 
-    // render initialized grid
-    grid.appendTo('#Grid');
+// initialize grid control
+let grid: Grid = new Grid({
+    dataSource: data,
+    columns: [
+            { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number' },
+            { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
+            { field: 'EmployeeID', width: 140, headerText: 'Employee ID', textAlign: 'Right', type: 'string' },
+            { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C' },
+            { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'yMd' }
+    ]
+});
+
+// render initialized grid
+grid.appendTo('#Grid');
 ```
 
 ## Run the application
@@ -135,17 +138,8 @@ To render the Grid control, add the following JavaScript code to the `~/src/app/
 Now, run the application in the browser using the following command.
 
 ```
-    npm start
+npm start
 ```
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/common/getting-started-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/common/getting-started-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/common/getting-started-cs1" %}
 

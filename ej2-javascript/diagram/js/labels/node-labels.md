@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Node Labels in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Labels in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+description: Learn here all about node Labels in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Node Labels 
 publishingplatform: ##Platform_Name##
@@ -20,9 +20,9 @@ Diagram allows you to customize the position and appearance of the annotation ef
 
 ## Set annotation offset and size
 
-The [`offset`](../../api/diagram/pointModel/) property of an annotation is used to align annotations based on fractional values. The offset can be customized by modifying the x and y values of the offset property. By default, the annotation offset is set to 0.5 on both the x and y axes.
+The [`offset`](../../api/diagram/pointModel) property of an annotation is used to align annotations based on fractional values. The offset can be customized by modifying the x and y values of the offset property. By default, the annotation offset is set to 0.5 on both the x and y axes.
 
-By default, the size of the annotation is calculated based on its content. If you want to set the size externally, you can do so using the [`width`](../../api/diagram/annotationModel/#width) and [`height`](../../api/diagram/annotationModel/#height) properties of annotation.
+By default, the size of the annotation is calculated based on its content. If you want to set the size externally, you can do so using the [`width`](../../api/diagram/annotationModel#width) and [`height`](../../api/diagram/annotationModel#height) properties of annotation.
 
 The following code shows how to set offset, height and width for the annotation.
 
@@ -53,25 +53,25 @@ The annotation offset can be updated dynamically at runtime. To update the annot
         
 {% previewsample "page.domainurl/code-snippet/diagram/annotations-offsetUpdate" %}
 
-N> Call [`dataBind()`](../../api/diagram/#databind) after property change to reflect the changes instantly.
+N> Call [`dataBind()`](../../api/diagram#databind) after property change to reflect the changes instantly.
 
 The following table shows the position of annotation with different offsets.
 
-offset|image|
-|-----|-----|
-|Top Left {x:0,y:0} |![TopLeft](../images/diagram-annotation-in-lefttop-position.png)|
-|Middle left {x:0,y:0.5}|![MiddelLeft](../images/diagram-annotation-in-leftcenter-position.png)|
-|Bootom left {x:0,y:1}|![BottomLeft](../images/diagram-annotation-in-leftbottom-position.png)|
-|Middle Top {x:0.5,y:0}|![MiddleTop](../images/diagram-annotation-in-centertop-position.png)|
-|Center {x:0.5,y:0.5}|![Center](../images/diagram-annotation-in-center-position.png)|
-|Middle Bottom {x:0.5,y:1}|![MiddleBottom](../images/diagram-annotation-in-centerbottom-position.png)|
-|Top right {x:1,y:0}|![TopRight](../images/diagram-annotation-in-topright-position.png)|
-|Middle right {x:1,y:0.5}|![MiddleRight](../images/diagram-annotation-in-rightcenter-position.png)|
-|Bottom right {x:1,y:1}|![BottomRight](../images/diagram-annotation-in-rightbottom-position.png)|
+| Offset | Image |
+| ------ | ----- |
+| Top Left {x:0,y:0} | ![Top Left](../images/diagram-annotation-in-lefttop-position.png) |
+| Middle Left {x:0,y:0.5} | ![Middle Left](../images/diagram-annotation-in-leftcenter-position.png) |
+| Bottom Left {x:0,y:1} | ![Bottom Left](../images/diagram-annotation-in-leftbottom-position.png) |
+| Middle Top {x:0.5,y:0} | ![Middle Top](../images/diagram-annotation-in-centertop-position.png) |
+| Center {x:0.5,y:0.5} | ![Center](../images/diagram-annotation-in-center-position.png) |
+| Middle Bottom {x:0.5,y:1} | ![Middle Bottom](../images/diagram-annotation-in-centerbottom-position.png) |
+| Top Right {x:1,y:0} | ![Top Right](../images/diagram-annotation-in-topright-position.png) |
+| Middle Right {x:1,y:0.5} | ![Middle Right](../images/diagram-annotation-in-rightcenter-position.png) |
+| Bottom Right {x:1,y:1} | ![Bottom Right](../images/diagram-annotation-in-rightbottom-position.png) |
 
 ## Annotation alignment
 
-The [`horizontalAlignment`](../../api/diagram/annotationModel/#horizontalalignment) property of annotation is used to set how the annotation is horizontally aligned at the annotation position determined from the fraction values. The [`verticalAlignment`](../../api/diagram/annotationModel/#verticalalignment) property is used to set how annotation is vertically aligned at the annotation position.
+The [`horizontalAlignment`](../../api/diagram/annotationModel#horizontalalignment) property of annotation is used to set how the annotation is horizontally aligned at the annotation position determined from the fraction values. The [`verticalAlignment`](../../api/diagram/annotationModel#verticalalignment) property is used to set how annotation is vertically aligned at the annotation position.
 
 
 The following codes illustrates how to align annotations.

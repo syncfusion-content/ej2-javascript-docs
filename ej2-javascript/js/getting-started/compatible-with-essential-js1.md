@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Compatible with essential js1 with ##Platform_Name## Getting started control | Syncfusion
+title: Compatible with Essential JS1 and EJ2 | Syncfusion
 description:  Checkout and learn about Compatible with essential js1 with ##Platform_Name## Getting started control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Compatible with essential js1 
@@ -9,118 +9,93 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Compatibility with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 1)
+# Compatibility between Essential® JS 1 and Essential® JS2
 
-This article provides a step-by-step introduction to configure the Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls in the same web page.
+Use Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls together on the same web page. This guide shows how to set them up without style or functionality conflicts.
 
 ## Prerequisites
 
-To work with the Essential<sup style="font-size:70%">&reg;</sup> JS 1 and the Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls compatibility in JavaScript (ES5), the below mentioned System requirements are necessary,
+* [Visual Studio Code](https://code.visualstudio.com/) (or any text editor)
+* Basic understanding of HTML and JavaScript
 
-* [Essential<sup style="font-size:70%">&reg;</sup> JS 1 Dependencies](https://help.syncfusion.com/js/dependencies)
-* [Visual Studio Code](https://code.visualstudio.com/)
+## Quick Setup
 
-## Creating JavaScript application with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) control
+### Step 1: Start with Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2
 
-1. Create a JavaScript (ES5) application with the help of the given Essential<sup style="font-size:70%">&reg;</sup> JS 2 [Getting Started Documentation](./quick-start).
+Follow the [Quick Start](./quick-start) guide to create an Essential JS 2 application with a basic Button control.
 
-2. Now, the Syncfusion<sup style="font-size:70%">&reg;</sup> (Essential<sup style="font-size:70%">&reg;</sup> JS 2) JavaScript Button control rendered successfully in the web page.
+### Step 2: Use Compatibility Styles
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 1) control in the application
+Replace your default style with the compatibility style to prevent UI conflicts.
 
-1. Before adding the Essential<sup style="font-size:70%">&reg;</sup> JS 1 control in the application, you should change the Essential<sup style="font-size:70%">&reg;</sup> JS 2 compatibility styles in the application.
-
-    > The compatibility styles of Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 must be added in the application to prevent the UI conflicts between the Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls.
-
-    Replace the style file in the `resources` folder from the below location.
-
-    **Syntax:**
-    > Styles: `**(installed location)**\Syncfusion\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\styles\compatibility\bootstrap5.3.css`
-
-    **Example:**
-    > Styles: `C:\Program Files (x86)\Syncfusion\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2\styles\compatibility\bootstrap5.3.css`
-
-    If the CDN link is used in the application, then replace it with below link.
-
-    > Styles: `https://cdn.syncfusion.com/ej2/styles/compatibility/bootstrap5.3.css`
-
-2. Now, add the Essential<sup style="font-size:70%">&reg;</sup> JS 1 script and compatibility styles with its dependencies in the `resources/ej1` location. You can get the Essential<sup style="font-size:70%">&reg;</sup> JS 1 scripts and styles from the below installed location.
-
-    **Syntax:**
-    > Script:
-    > `**(installed location)**\Syncfusion\{RELEASE_VERSION}\Web (Essential JS 1)\JavaScript\assets\scripts\web\ej.web.all.min.js`
-    >
-    > Styles:
-    >`**(installed location)**\Syncfusion\{RELEASE_VERSION}\Web (Essential JS 1)\JavaScript\assets\css\web\default-theme\ej.web.all.compatibility.min.css`
-
-    **Example:**
-
-    > Script:
-    > `C:\Program Files (x86)\Syncfusion\16.3.0.17\Web (Essential JS 1)\JavaScript\assets\scripts\web\ej.web.all.min.js`
-    >
-    > Styles:
-    > `C:\Program Files (x86)\Syncfusion\16.3.0.17\Web (Essential JS 1)\JavaScript\assets\css\web\default-theme\ej.web.all.compatibility.min.css`
-
-3. Add the Essential<sup style="font-size:70%">&reg;</sup> JS 1 file references in the `index.html` with the HTML Button element for rendering Essential<sup style="font-size:70%">&reg;</sup> JS 1 Button control.
-
-    > The Essential<sup style="font-size:70%">&reg;</sup> JS 1 scripts must be added before the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script reference.
-
-```html
-    <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml">
-
-        <head>
-            <title>Essential JS 2 - Essential JS 1</title>
-
-            <!-- Essential JS 1 default theme -->
-            <link href="resources/ej1/default-theme/ej.web.all.compatibility.min.css" rel="stylesheet" type="text/css" />
-            <!-- Essential JS 2 bootstrap5.3 theme -->
-            <link href="resources/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-
-            <!-- Essential JS 1 scripts -->
-            <script src="https://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
-            <script src="resources/ej1/ej.web.all.min.js" type="text/javascript"></script>
-
-            <!-- Essential JS 2 script -->
-            <script src="resources/ej2.min.js" type="text/javascript"></script>
-        </head>
-
-        <body>
-            <div style="margin: 50px;">
-                <!-- Add HTML Button element for Essential JS 2 -->
-                <button id="btn2">Essential JS 2</button>
-            </div>
-
-            <div style="margin: 50px;">
-                <!-- Add HTML Button element for Essential JS 1 -->
-                <button id="btn1">Essential JS 1</button>
-            </div>
-        </body>
-
-    </html>
+**Using CDN:**
+```
+https://cdn.syncfusion.com/ej2/styles/compatibility/material.css
 ```
 
-4. Initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button control inside the `<script>` element in `~/quickstart/index.html` file.
+### Step 3: Add Syncfusion<sup style="font-size:70%">&reg;</sup> control to the application
+
+Create a folder named quickstart and add an index.html file inside it.
+Below is a ready-to-use HTML file that includes both EJ1 and EJ2 controls:
+
+
 
 ```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Essential Js1 + Essential Js2 Compatibility</title>
+    
+    <!-- Compatibility Styles -->
+    <link href="https://cdn.syncfusion.com/ej2/styles/compatibility/material.css" rel="stylesheet" />
+    
+    <!-- jQuery (required by EJ1) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!-- EJ1 Script -->
+    <script src="https://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js"></script>
+    
+    <!-- EJ2 Scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/dist/global/ej2-base.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-grids/dist/global/ej2-grids.min.js"></script>
+  </head>
+  
+  <body>
+    
+    <!-- EJ1 Button -->
+    <button id="ej1Button">ESSENTIAL JS 1</button>
+    
+    <!-- EJ2 Button -->
+    <button id="ej2Button">ESSENTIAL JS 2 </button>
+    
     <script>
-        // Extend the ej namespace with Syncfusion
-        $.extend(ej, Syncfusion);
-
-        // Initialize Essential JS 2 JavaScript Button control
-        var button = new ej.buttons.Button({
-            isPrimary: true
-        });
-        button.appendTo('#btn2');
-
-        // Initialize Essential JS 1 JavaScript Button control
-        $("#btn1").ejButton();
+      // Extend ej namespace with Syncfusion
+      $.extend(ej, Syncfusion);
+      
+      // Initialize EJ1 Button
+      $("#ej1Button").ejButton();
+      
+      // Initialize EJ2 Button
+      var button2 = new ej.buttons.Button({ isPrimary: true });
+      button2.appendTo('#ej2Button');
     </script>
+  </body>
+</html>
 ```
 
-    > The `ej` namespace should be extended with `Syncfusion` before initializing the Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls.
+### Step 4: Run the application
 
-5. Run `~/quickstart/index.html` in the web browser and the Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button controls will be rendered in the same web page.
+Open the HTML file in your browser. Both EJ1 and EJ2 controls should render without conflicts.
 
-    ![ej1-ej2-button](./images/ej1-ej2-es5.png)
+![EJ1 and EJ2 Compatibility](./images/ej1-ej2-es5.png)
+
+## Important Notes
+
+- **Load order:** EJ1 resources (jQuery + EJ1 script) must come before EJ2 resources.
+- **Compatibility styles:** Always use the compatibility theme to prevent visual conflicts.
+- **Namespace:** Extend the `ej` namespace with `Syncfusion` before initializing controls.
+
+## See Also
+
+* [Essential JS 2 Quick Start](./quick-start): A step-by-step quickstart that walks you through creating a minimal Syncfusion EJ2 application (CDN and local examples).
+* [GitHub Samples - EJ2 Quickstart](https://github.com/SyncfusionExamples/ej2-quickstart): Ready-to-run sample projects demonstrating CDN and local setups for common EJ2 scenarios.

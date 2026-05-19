@@ -2,7 +2,7 @@
 
 
 import { StockChart } from '@syncfusion/ej2-charts';
-import { chartData } from './datasource.ts';
+import { chartData } from './stockdata';
 import { DateTime,AreaSeries, CandleSeries, HiloOpenCloseSeries, HiloSeries, LineSeries ,Logarithmic } from '@syncfusion/ej2-charts';
 import { SplineAreaSeries, SplineSeries  } from '@syncfusion/ej2-charts';
 import { AccumulationDistributionIndicator, AtrIndicator, BollingerBands, EmaIndicator, MomentumIndicator } from '@syncfusion/ej2-charts';

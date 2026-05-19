@@ -133,33 +133,6 @@ npm start
 
 Since no shape data is specified, the Maps displays as an empty SVG element. The next sections demonstrate how to add geographic data and customize the map.
 
-## Module Injection
-
-The Maps component is segregated into individual feature-wise modules. To use a particular feature, inject its feature module using the `Maps.Inject()` method. The following modules are available in Maps along with their descriptions.
-
-* Annotations - Inject this provider to use annotations feature.
-* Bubble - Inject this provider to use bubble feature.
-* DataLabel - Inject this provider to use data label feature.
-* Highlight - Inject this provider to use highlight feature.
-* Legend - Inject this provider to use legend feature.
-* Marker - Inject this provider to use marker feature.
-* MapsTooltip - Inject this provider to use tooltip series.
-* NavigationLine - Inject this provider to use navigation lines feature.
-* Selection - Inject this provider to use selection feature.
-* Zoom - Inject this provider to use zooming and panning feature.
-* Polygon - Inject this provider to use polygon feature.
-
-Now import the MapsTooltip, DataLabel and Legend modules from maps package and inject it into the Maps component using `Maps.Inject` method.
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
-import { Maps, Legend, DataLabel, MapsTooltip } from '@syncfusion/ej2-maps';
-Maps.Inject(Legend, DataLabel, MapsTooltip);
-
-{% endhighlight %}
-{% endtabs %}
-
 ## Render shapes from GeoJSON data
 
 This section explains how to bind GeoJSON data to the map.
@@ -193,11 +166,14 @@ export let world_map: object =
 Elements in the maps will get rendered in the layers. So add a layer collection to the maps by using [`layers`](../api/maps/layers) property. Now bind the GeoJSON data to the [`shapeData`](../api/maps/layerSettingsModel/shapedata) property.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/maps/default-map-cs170/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maps/default-map-cs170/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="world-map.ts" %}
+{% include code-snippet/maps/default-map-cs170/world-map.ts %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -220,91 +196,15 @@ The [`shapeDataPath`](../api/maps/layerSettingsModel/shapedatapath) property is 
 The JSON object "electionData" is used as data source below.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/maps/default-map-cs171/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maps/default-map-cs171/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="world-map.ts" %}
+{% include code-snippet/maps/default-map-cs171/world-map.ts %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs171" %}
-
-> Note: Refer the data values for [`world_map`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map-710289613) here.
-
-## Apply Color Mapping
-
-Color mapping customizes shape colors based on data values. Specify the data field to evaluate using the [`colorValuePath`](../api/maps/shapeSettingsModel/colorvaluepath) property in [`shapeSettings`](../api/maps/shapeSettingsModel). Then define color assignments in the [`colorMapping`](../api/maps/shapeSettingsModel/colormapping) property.
-
-Specify color and value in [`colorMapping`](../api/maps/shapeSettingsModel/colormapping) property. Here '#D84444' is specified for 'Trump' and '#316DB5' is specified for 'Clinton'.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/maps/default-map-cs172/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs172/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/maps/default-map-cs172" %}
-
-## Add Title for Maps
-
-Titles provide context about the map content. Use the [`titleSettings`](../api/maps/titleSettingsModel) property to add a descriptive title:
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/maps/default-map-cs173/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs173/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/maps/default-map-cs173" %}
-
-## Enable Legend
-
-Legends identify shape categories and colors. Enable the legend by setting the [`visible`](../api/maps/legendSettingsModel/visible) property to `true` in the [`legendSettings`](../api/maps/legendSettingsModel) object, and inject the `Legend` module:
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/maps/default-map-cs174/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs174/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/maps/default-map-cs174" %}
-
-## Add Data Label
-
-Data labels display additional information directly on shapes. Enable data labels by setting the [`visible`](../api/maps/dataLabelSettingsModel/visible) property to `true` in the [`dataLabelSettings`](../api/maps/dataLabelSettingsModel) object, and inject the `DataLabel` module:
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/maps/default-map-cs175/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs175/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/maps/default-map-cs175" %}
-
-## Enable Tooltip
-
-Tooltips display information on hover, useful when space constraints prevent using data labels. Enable tooltips by setting the [`visible`](../api/maps/tooltipSettingsModel/visible) property to `true` in the [`tooltipSettings`](../api/maps/tooltipSettingsModel) object, and inject the `MapsTooltip` module:
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/maps/default-map-cs176/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs176/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/maps/default-map-cs176" %}

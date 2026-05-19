@@ -9,279 +9,106 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control in a quickstart application
+# Getting Started with Syncfusion® JavaScript (ES5) UI Controls
 
-This section provides a step-by-step guide to configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control (Essential<sup style="font-size:70%">&reg;</sup> JS 2) and building a simple HTML web application.
+Build your first Syncfusion JavaScript (ES5) application with a simple Grid control in just a few minutes. This quickstart guides you through creating a minimal, runnable HTML page that loads the Syncfusion EJ2 (ES5) Grid from the CDN, initializes it with sample data, and renders a responsive data table.
+
 
 ## Prerequisites
 
-To get started, ensure the following software is installed on the machine.
+* [Visual Studio Code](https://code.visualstudio.com) (or any text editor)
+* A web browser to view the result
 
-* [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2)
+## Quick Setup
 
-* [Visual Studio Code](https://code.visualstudio.com)
-> Check out the [download and installation](https://ej2.syncfusion.com/javascript/documentation/installation-and-upgrade/download) section of **Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript**. If you are using Syncfusion<sup style="font-size:70%">&reg;</sup> CDN resources to build your web application, you can skip the Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript prerequisite.
+### Step 1: Create Folder and HTML file
 
-## Set up development environment
+* Create a folder named `quickstart` in your desired directory
+* Inside the `quickstart` folder, create a new file named `index.html`
 
-* Create a folder named `~/quickstart` from the required directory and open it in Visual Studio Code.
+### Step 2: Add Syncfusion<sup style="font-size:70%">&reg;</sup> CDN Resources
 
-* Create an HTML file `~/quickstart/index.html` to add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) control's resources.
+Include the following CSS and JavaScript links in the `<head>` section.
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> resources
-
-You can access Syncfusion<sup style="font-size:70%">&reg;</sup> control resources using either of the following methods:
-
-* [Using local scripts and styles](#using-local-scripts-and-styles)
-
-* [Using CDN link for scripts and styles](#using-cdn-link-for-scripts-and-styles)
-
-> Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls have dependencies on other Syncfusion<sup style="font-size:70%">&reg;</sup> controls, so you must add these dependent control resources to use all their functionality. These dependencies are listed in the corresponding control's getting started documentation. For example, you can find the dependencies for the Grid control [here](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started/#dependencies).
-
-### Using local scripts and styles
-
-* After installing the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build, it contains the scripts and styles reference for each individual package and all control resources in a single script and style file. In this getting started, simple Grid control is used as an example.
-
-* Create a folder named `~/quickstart/resources`. Inside that folder, create the `base/styles/`, `popups/styles/`, `grids/styles/` and `scripts` folders. Then, copy/paste the individual scripts and styles from the below installed location to the corresponding `~/quickstart/resources/` location.
-
-    **Individual control resources:**
-    >Dependency script:
-    >
-    >`**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\dist\global\{DEPENDENCY_PACKAGE_NAME}.min.js`
-    >
-    >Control script:
-    >
-    >`**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
-    >
-    >**Example:**
-    >
-    >Grid's control script:
-    >
-    >`C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.4.0.38\Web (Essential JS 2)\JavaScript\ej2-grids\dist\global\ej2-grids.min.js`
-    >
-    >Grid's dependency scripts:
-    >
-    >`C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.4.0.38\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
-    >
-    >`C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.4.0.38\Web (Essential JS 2)\JavaScript\ej2-data\dist\global\ej2-data.min.js`
-    >
-    >`C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.4.0.38\Web (Essential JS 2)\JavaScript\ej2-popups\dist\global\ej2-popups.min.js`
-
-    >Dependency style:
-    >
-    >`**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\bootstrap5.3.css`
-    >
-    >Control style:
-    >
-    >`**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\bootstrap5.3.css`
-    >
-    >**Example:**
-    >
-    >Grid's control Style:
-    >
-    >`C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.4.0.38\Web (Essential JS 2)\JavaScript\ej2-grids\styles\bootstrap5.3.css`
-    >
-    >Grid's dependency styles:
-    >
-    >`C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.4.0.38\Web (Essential JS 2)\JavaScript\ej2-base\styles\bootstrap5.3.css`
-    >
-    >`C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.4.0.38\Web (Essential JS 2)\JavaScript\ej2-popups\styles\bootstrap5.3.css`
-
-    You can also refer to a single script and style file that contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control resources from the following location.
-
-    **Single script and style reference for all controls:**
-
-    > Script reference for all controls: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
-    >
-    > Style reference for all controls: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\bootstrap5.3.css`
-
-    > Since this file includes all Syncfusion<sup style="font-size:70%">&reg;</sup> controls, it may impact the website's loading time. To reduce the size of the single file, you can generate custom scripts and styles for a set of specific Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls using the [Custom Resource Generator (CRG)](https://crg.syncfusion.com) tool. This tool is useful for combining the required control scripts and styles into a single file. To know more about the CRG, refer to this [documentation](https://ej2.syncfusion.com/javascript/documentation/common/custom-resource-generator).
-
-* After copying the individual scripts and styles to the `~/quickstart/resources/` location, add the required Grid control resources to the `~/quickstart/index.html` file in the following order.
-
- ```html
-    <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml">
-        <head>
-            <title>Syncfusion JavaScript (ES5) UI Control</title>
-            <!-- Essential JS 2 Grid's dependent bootstrap5.3 themes -->
-            <link href="resources/base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/popups/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 Grid's bootstrap5.3 theme -->
-            <link href="resources/grids/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 Grid's dependent scripts -->
-            <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
-            <script src="resources/scripts/ej2-data.min.js" type="text/javascript"></script>
-            <script src="resources/scripts/ej2-popups.min.js" type="text/javascript"></script>
-            <!-- Essential JS 2 Grid's global script -->
-            <script src="resources/scripts/ej2-grids.min.js" type="text/javascript"></script>
-        </head>
-        <body>
-            ...
-        </body>
-      </html>
+**Styles (CSS):**
+```
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/styles/bootstrap5.3.css
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-grids/styles/bootstrap5.3.css
 ```
 
-### Using CDN link for scripts and styles
+**Scripts (JavaScript):**
+```
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-data/dist/global/ej2-data.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-popups/dist/global/ej2-popups.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-grids/dist/global/ej2-grids.min.js
+```
 
-* Syncfusion<sup style="font-size:70%">&reg;</sup> hosts every Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) control as a separate package on CDN. This allows you to load the scripts and styles for each individual package. Syncfusion<sup style="font-size:70%">&reg;</sup> also provides a single package that includes all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) controls, allowing you to load the scripts and styles for all controls as a single script and style file. In this getting started, simple Grid control is used as an example. Refer to the following CDN scripts and styles link.
+### Step 3: Add Syncfusion<sup style="font-size:70%">&reg;</sup>control to the application
 
-    **Individual control CDN reference**
-    > Dependency script:
-    >
-    >`https://cdn.syncfusion.com/ej2/32.1.19/{DEPENDENCY_PACKAGE_NAME}/dist/global/{DEPENDENCY_PACKAGE_NAME}.min.js`
-    >
-    > Control script:
-    >
-    >`https://cdn.syncfusion.com/ej2/32.1.19/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
-    >
-    >**Example:**
-    >
-    >Grid's control script:
-    >
-    >[https://cdn.syncfusion.com/ej2/32.1.19/ej2-grids/dist/global/ej2-grids.min.js](https://cdn.syncfusion.com/ej2/32.1.19/ej2-grids/dist/global/ej2-grids.min.js)
-    >
-    >Grid's dependency scripts:
-    >
-    >[https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/dist/global/ej2-base.min.js](https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/dist/global/ej2-base.min.js)
-    > 
-    >[https://cdn.syncfusion.com/ej2/32.1.19/ej2-data/dist/global/ej2-data.min.js](https://cdn.syncfusion.com/ej2/32.1.19/ej2-data/dist/global/ej2-data.min.js)
-    >
-    >[https://cdn.syncfusion.com/ej2/32.1.19/ej2-popups/dist/global/ej2-popups.min.js](https://cdn.syncfusion.com/ej2/32.1.19/ej2-popups/dist/global/ej2-popups.min.js)
-
-    > Dependency styles:
-    >
-    >`https://cdn.syncfusion.com/ej2/32.1.19/{DEPENDENCY_PACKAGE_NAME}/styles/bootstrap5.3.css`
-    >
-    > Control styles:
-    >
-    >`https://cdn.syncfusion.com/ej2/32.1.19/{PACKAGE_NAME}/styles/bootstrap5.3.css`
-    >
-    >**Example:**
-    >
-    >Grid's control style:
-    >
-    >[https://cdn.syncfusion.com/ej2/32.1.19/ej2-grids/styles/bootstrap5.3.css](https://cdn.syncfusion.com/ej2/32.1.19/ej2-grids/styles/bootstrap5.3.css)
-    >
-    >Grid's dependency styles:
-    >
-    >[https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/styles/bootstrap5.3.css](https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/styles/bootstrap5.3.css)
-    > 
-    >[https://cdn.syncfusion.com/ej2/32.1.19/ej2-popups/styles/bootstrap5.3.css](https://cdn.syncfusion.com/ej2/32.1.19/ej2-popups/styles/bootstrap5.3.css)
-
-    You can also refer to a single script and style CDN link that contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control resources as follows:
-
-    **Single script and style CDN reference for all controls:**
-
-    > Script reference for all controls: [https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js](https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js)
-    >
-    > Style reference for all controls: [https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.3.css](https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.3.css)
-
-    Note: The un-versioned CDN links that always reference the latest scripts were deprecated starting with 2022 Vol1 (20.1). These un-versioned links remain available with 19.4 to avoid breaking existing sites and apps that depend on them.
-
-* Add the following Grid control CDN link references in the given order to the `~/quickstart/index.html` file.
+Copy and paste the following complete code into your `index.html` file:
 
 ```html
-    <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml">
-        <head>
-            <title>Syncfusion JavaScript (ES5) UI Control</title>
-            <!-- Essential JS 2 Grid's dependent bootstrap5.3 theme -->
-            <link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-popups/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 Grid's bootstrap5.3 theme -->
-            <link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-grids/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 Grid's dependent script -->
-            <script src="https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/32.1.19/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/32.1.19/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
-            <!-- Essential JS 2 Grid's global script -->
-            <script src="https://cdn.syncfusion.com/ej2/32.1.19/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
-        </head>
-        <body>
-            ...
-        </body>
-      </html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Syncfusion Grid - Quick Start</title>
+    <!-- Styles -->
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-grids/styles/bootstrap5.3.css" rel="stylesheet" />
+    
+    <!-- Scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/dist/global/ej2-base.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-data/dist/global/ej2-data.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-popups/dist/global/ej2-popups.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-grids/dist/global/ej2-grids.min.js"></script>
+  </head>
+  
+  <body>
+    <h1>Syncfusion Grid</h1>
+    <div id="Grid"></div>
+    
+    <script>
+      // Sample data
+      var data = [
+        { OrderID: 10248, CustomerID: 'VINET', Freight: 32.38, OrderDate: new Date(1996, 6, 4) },
+        { OrderID: 10249, CustomerID: 'TOMSP', Freight: 11.61, OrderDate: new Date(1996, 6, 5) },
+        { OrderID: 10250, CustomerID: 'HANAR', Freight: 65.83, OrderDate: new Date(1996, 6, 8) },
+        { OrderID: 10251, CustomerID: 'VICTE', Freight: 41.34, OrderDate: new Date(1996, 6, 8) }
+      ];
+      
+      // Create Grid
+      var grid = new ej.grids.Grid({
+        dataSource: data,
+        columns: [
+          { field: 'OrderID', headerText: 'Order ID', width: 120 },
+          { field: 'CustomerID', headerText: 'Customer ID', width: 140 },
+          { field: 'Freight', headerText: 'Freight', width: 120, format: 'C2' },
+          { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'yMd' }
+        ]
+      });
+      
+      // Render Grid
+      grid.appendTo('#Grid');
+    </script>
+  </body>
+</html>
 ```
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> control to the application
+### Step 4: Open in Browser
 
-Now, add the Grid element and Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Grid control in the `~/quickstart/index.html` file as follows.
+Open the `quickstart/index.html` file in your web browser. You should see the Syncfusion Grid control displaying the sample data.
 
-```html
-    <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml">
-        <head>
-            ...
-        </head>
-        <body>
-        <h2>Syncfusion JavaScript (ES5) Grid Control</h2>
-        <!-- Add the HTML <div> element for grid  -->
-        <div id="Grid"></div>
+## Output
 
-        <script>
-            //Grid data
-            var data = [
-                {
-                    OrderID: 10248, CustomerID: 'VINET', Role: 'Admin', EmployeeID: 5, OrderDate: new Date(8364186e5),
-                    ShipName: 'Vins et alcools Chevalier', ShipCity: 'Reims', ShipAddress: '59 rue de l Abbaye',
-                    ShipRegion: 'CJ', Mask: '1111', ShipPostalCode: '51100', ShipCountry: 'France', Freight: 32.38, Verified: !0
-                },
-                {
-                    OrderID: 10249, CustomerID: 'TOMSP', Role: 'Employee', EmployeeID: 6, OrderDate: new Date(836505e6),
-                    ShipName: 'Toms Spezialitäten', ShipCity: 'Münster', ShipAddress: 'Luisenstr. 48',
-                    ShipRegion: 'CJ', Mask: '2222', ShipPostalCode: '44087', ShipCountry: 'Germany', Freight: 11.61, Verified: !1
-                },
-                {
-                    OrderID: 10250, CustomerID: 'HANAR', Role: 'Admin', EmployeeID: 4, OrderDate: new Date(8367642e5),
-                    ShipName: 'Hanari Carnes', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua do Paço, 67',
-                    ShipRegion: 'RJ', Mask: '3333', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 65.83, Verified: !0
-                },
-                {
-                    OrderID: 10251, CustomerID: 'VICTE', Role: 'Manager', EmployeeID: 3, OrderDate: new Date(8367642e5),
-                    ShipName: 'Victuailles en stock', ShipCity: 'Lyon', ShipAddress: '2, rue du Commerce',
-                    ShipRegion: 'CJ', Mask: '4444', ShipPostalCode: '69004', ShipCountry: 'France', Freight: 41.34, Verified: !0
-                }
-            ];
+The following screenshot shows the output of the Syncfusion Grid quick start application:
 
-            // Initialize Essential JS 2 JavaScript Grid control
-            var grid = new ej.grids.Grid({
-                dataSource: data,
-                columns: [
-                    { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number' },
-                    { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-                    { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C' },
-                    { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'yMd' }
-                ]
-            });
+![Syncfusion Grid Quick Start Output](images/quickstart.png)
 
-            // Render initialized Grid control
-            grid.appendTo('#Grid');
-        </script>
-        </body>
-    </html>
-```
+## See Also
 
-## Run the application
+* **[Grid Component Documentation](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started)** - Comprehensive guide to all Grid control features and functionality.
 
-Open the `~/quickstart/index.html` file in the web browser and it will render the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Grid control.
+* **[GitHub Samples](https://github.com/SyncfusionExamples/ej2-quickstart)** - View complete working examples for CDN and local resource implementations.
 
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/common/getting-started-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/common/getting-started-cs2" %}
-
-To learn more about the functionality of the Grid control, refer to the [Grid control](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started) section.
-
-> [View CDN link reference sample in github](https://github.com/SyncfusionExamples/ej2-quickstart/tree/master/CDN/quickstart)
-
-> [View local script and style sample in github](https://github.com/SyncfusionExamples/ej2-quickstart/tree/master/local-resources/quickstart)
-
-## See also
-
-* [How to register Syncfusion<sup style="font-size:70%">&reg;</sup> license key in JavaScript(ES5) application](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration)
+* **[Register License Key](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration)** - Learn how to register your Syncfusion license key in your JavaScript application.

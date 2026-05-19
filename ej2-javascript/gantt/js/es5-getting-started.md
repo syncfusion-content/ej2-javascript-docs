@@ -22,32 +22,6 @@ To get started, ensure the following software is installed on the machine.
 * [Visual Studio Code](https://code.visualstudio.com)
 > Check out the [download and installation](https://ej2.syncfusion.com/javascript/documentation/installation-and-upgrade/download) section of **Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript**. If you are using Syncfusion<sup style="font-size:70%">&reg;</sup> CDN resources to build your web application, you can skip the Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript prerequisite.
 
-## Dependencies
-
-A list of dependencies to use the Gantt Chart with all features.
-
-```javascript
-|-- @syncfusion/ej2-gantt
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-data
-    |-- @syncfusion/ej2-buttons
-    |-- @syncfusion/ej2-popups
-    |-- @syncfusion/ej2-navigations
-    |-- @syncfusion/ej2-lists
-    |-- @syncfusion/ej2-dropdowns
-    |-- @syncfusion/ej2-inputs
-    |-- @syncfusion/ej2-calendars
-    |-- @syncfusion/ej2-layouts
-    |-- @syncfusion/ej2-richtexteditor
-    |-- @syncfusion/ej2-grids
-    |-- @syncfusion/ej2-treegrid
-    |-- @syncfusion/ej2-excel-export
-    |-- @syncfusion/ej2-file-utils
-    |-- @syncfusion/ej2-compression
-    |-- @syncfusion/ej2-pdf-export
-    |-- @syncfusion/ej2-splitbuttons
-```
-
 ## Setup for local environment
 
 Refer to the following steps to set up your local environment.
@@ -86,8 +60,8 @@ To use local scripts and styles for Syncfusion<sup style="font-size:70%">&reg;</
 
 **Example:**
 
-> * Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-gantt/dist/global/ej2-gantt.min.js`
-> * Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-gantt/styles/tailwind3.css`
+> * Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/33.1.44/Essential JS 2/ej2-gantt/dist/global/ej2-gantt.min.js`
+> * Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/33.1.44/Essential JS 2/ej2-gantt/styles/tailwind3.css`
 
 **4. Referencing in HTML File:** Once the files are copied, reference the Gantt's scripts and styles into the **index.html** file.
 
@@ -170,44 +144,44 @@ Here's an example of referencing the Gantt Chart's scripts and styles in an HTML
        <head>
             <title>Essential JS 2 Gantt</title>
             <!-- Essential JS 2 gantt's dependent tailwind3 theme -->
-            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-notifications/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-lists/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-dropdowns/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-calendars/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-layouts/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-richtexteditor/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-grids/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-treegrid/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/33.1.44/ej2-base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/33.1.44/ej2-buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/33.1.44/ej2-popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/33.1.44/ej2-navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/33.1.44/ej2-notifications/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/33.1.44/ej2-lists/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/33.1.44/ej2-dropdowns/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/33.1.44/ej2-inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/33.1.44/ej2-calendars/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/33.1.44/ej2-layouts/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/33.1.44/ej2-richtexteditor/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/33.1.44/ej2-grids/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/33.1.44/ej2-treegrid/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
             <!-- Essential JS 2 tailwind3 theme -->
-            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-gantt/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/33.1.44/ej2-gantt/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 Gantt's dependent scripts -->
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-notifications/dist/global/ej2-notifications.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-dropdowns/dist/global/ej2-dropdowns.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-layouts/dist/global/ej2-layouts.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-treegrid/dist/global/ej2-treegrid.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/32.1.19/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-excel-export/dist/global/ej2-excel-export.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-file-utils/dist/global/ej2-file-utils.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-compression/dist/global/ej2-compression.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-pdf-export/dist/global/ej2-pdf-export.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-notifications/dist/global/ej2-notifications.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-dropdowns/dist/global/ej2-dropdowns.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-layouts/dist/global/ej2-layouts.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-treegrid/dist/global/ej2-treegrid.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-excel-export/dist/global/ej2-excel-export.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-file-utils/dist/global/ej2-file-utils.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-compression/dist/global/ej2-compression.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-pdf-export/dist/global/ej2-pdf-export.min.js" type="text/javascript"></script>
             <!-- Essential JS 2 Gantt's global script -->
-            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-gantt/dist/global/ej2-gantt.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/33.1.44/ej2-gantt/dist/global/ej2-gantt.min.js" type="text/javascript"></script>
        </head>
        <body>
            <!-- Add the HTML <div> element for Gantt  -->
@@ -221,14 +195,60 @@ Here's an example of referencing the Gantt Chart's scripts and styles in an HTML
 
 You can also refer to a single script and style CDN link that contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control resources as follows:
 
-> * Script reference for all controls: [https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js](https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js)
-> * Style reference for all controls: [https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css](https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css)
+> * Script reference for all controls: [https://cdn.syncfusion.com/ej2/33.1.44/dist/ej2.min.js](https://cdn.syncfusion.com/ej2/33.1.44/dist/ej2.min.js)
+> * Style reference for all controls: [https://cdn.syncfusion.com/ej2/33.1.44/tailwind3.css](https://cdn.syncfusion.com/ej2/33.1.44/tailwind3.css)
 
-## Adding Gantt Chart control
+## Create sample data
 
-Now, you can add the Gantt control to the application. For getting started, add a `div` element to the Gantt control in `index.html`. Then, refer to the `index.js` file in the `index.html` file.
+Define a simple task list with hierarchical relationships. Each task must have a `StartDate` and either a `Duration` or `EndDate` to render properly.
 
-In this document context, `ej2.min.js` and `tailwind3.css` which includes all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components and its dependent scripts and theme files are used.
+```javascript
+data = [
+    {TaskID: 1, TaskName: 'Project initiation', StartDate: new Date('2024-04-01'), EndDate: new Date('2024-04-15')},
+    {TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('2024-04-01'), Duration: 4, ParentID: 1},
+    {TaskID: 3, TaskName: 'Perform site survey', StartDate: new Date('2024-04-01'), Duration: 4, ParentID: 1},
+    {TaskID: 4, TaskName: 'Soil testing', StartDate: new Date('2024-04-01'), Duration: 3, ParentID: 1},
+    {TaskID: 5, TaskName: 'Project estimation', StartDate: new Date('2024-04-15'), EndDate: new Date('2024-04-25')},
+    {TaskID: 6, TaskName: 'Develop floor plan', StartDate: new Date('2024-04-15'), Duration: 5, ParentID: 5},
+    {TaskID: 7, TaskName: 'Estimate project cost', StartDate: new Date('2024-04-15'), Duration: 5, ParentID: 5}
+];
+```
+
+## Configure task fields
+
+Map your data fields to Gantt Chart properties using [taskFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#taskfields):
+
+```javascript
+taskSettings = {
+    id: 'TaskID',
+    name: 'TaskName',
+    startDate: 'StartDate',
+    duration: 'Duration',
+    parentID: 'ParentID'
+};
+```
+
+### Field mapping reference
+
+| Property | Description | Required |
+|----------|-------------|----------|
+| `id` | Unique task identifier | Yes |
+| `name` | Task display name | Yes |
+| `startDate` | Task start date | Yes |
+| `duration` | Task duration in days | Yes* |
+| `parentID` | Parent task ID for hierarchy | No |
+
+*Either `duration` or `endDate` is required for a task to render properly.
+
+## Render the Gantt component
+
+Add a container element in the **index.html** file to render the Gantt component. Then, reference the **index.js** file in the **index.html** file.
+
+In this documentation, the **ej2.min.js** script and **tailwind3.css** theme file are used, which include all Essential<sup style="font-size:70%">&reg;</sup> JS 2 components and their dependent scripts and styles.
+
+### index.html
+
+Add the following HTML element to the `index.html` file. This element acts as the container for rendering the Gantt Chart component.
 
 ```html
 <!DOCTYPE html>
@@ -236,7 +256,7 @@ In this document context, `ej2.min.js` and `tailwind3.css` which includes all th
        <head>
             <title>Essential JS 2 Gantt</title>
             <!-- Essential JS 2 all tailwind3 theme -->
-            <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/33.1.44/tailwind3.css" rel="stylesheet" type="text/css"/>
              <!-- Essential JS 2 all script -->
             <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
        </head>
@@ -248,312 +268,39 @@ In this document context, `ej2.min.js` and `tailwind3.css` which includes all th
   </html>
 ```
 
-Place the following code in the `index.js`.
+### app.ts
+
+Place the following code in the `index.js` file to create and configure the Gantt Chart component.
 
 ```javascript
 
 var ganttChart = new ej.gantt.Gantt({
-        dataSource: [
-            {
-                TaskID: 1,
-                TaskName: 'Project Initiation',
-                StartDate: new Date('04/02/2019'),
-                EndDate: new Date('04/21/2019'),
-                subtasks: [
-                    { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
-                    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50  },
-                    { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
-                ]
-            },
-            {
-                TaskID: 5,
-                TaskName: 'Project Estimation',
-                StartDate: new Date('04/02/2019'),
-                EndDate: new Date('04/21/2019'),
-                subtasks: [
-                    { TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2019'), Duration: 3, Progress: 50 },
-                    { TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 3, Progress: 50 },
-                    { TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: 3, Progress: 50 }
-                ]
-            },
-        ],
-        height: '450px',
-        taskFields: {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            dependency: 'Predecessor',
-            child: 'subtasks',
-      }
+    dataSource: [
+        {TaskID: 1, TaskName: 'Project initiation', StartDate: new Date('2024-04-01'), EndDate: new Date('2024-04-15')},
+        {TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('2024-04-01'), Duration: 4, ParentID: 1},
+        {TaskID: 3, TaskName: 'Perform site survey', StartDate: new Date('2024-04-01'), Duration: 4, ParentID: 1},
+        {TaskID: 4, TaskName: 'Soil testing', StartDate: new Date('2024-04-01'), Duration: 3, ParentID: 1},
+        {TaskID: 5, TaskName: 'Project estimation', StartDate: new Date('2024-04-15'), EndDate: new Date('2024-04-25')},
+        {TaskID: 6, TaskName: 'Develop floor plan', StartDate: new Date('2024-04-15'), Duration: 5, ParentID: 5},
+        {TaskID: 7, TaskName: 'Estimate project cost', StartDate: new Date('2024-04-15'), Duration: 5, ParentID: 5} 
+    ],
+    taskFields: {
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        duration: 'Duration',
+        parentID: 'ParentID'
+    }
 });
 ganttChart.appendTo('#Gantt');
 
 ```
-
-## Binding Gantt Chart with data
-
-Bind data with the Gantt Chart control by using the [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/gantt#datasource) property. It accepts an array of JavaScript object or the DataManager instance.
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2 Gantt</title>
-            <!-- Essential JS 2 all tailwind3 theme -->
-            <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 all script -->
-            <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-           <!-- Add the HTML <div> element for gantt  -->
-             <div id="Gantt"></div>
-             <script src="index.js" type="text/javascript"></script>
-       </body>
-  </html>
-
-```
-
-Place the following code in the `index.js`.
-
-```javascript
-
-var ganttData = [
-        {
-            TaskID: 1,
-            TaskName: 'Project Initiation',
-            StartDate: new Date('04/02/2019'),
-            EndDate: new Date('04/21/2019'),
-            subtasks: [
-                { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
-                { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50  },
-                { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
-            ]
-        },
-        {
-            TaskID: 5,
-            TaskName: 'Project Estimation',
-            StartDate: new Date('04/02/2019'),
-            EndDate: new Date('04/21/2019'),
-            subtasks: [
-                { TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2019'), Duration: 3, Progress: 50 },
-                { TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 3, Progress: 50 },
-                { TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: 3, Progress: 50 }
-            ]
-        },
-    ];
-var ganttChart = new ej.gantt.Gantt({dataSource: ganttData});
-ganttChart.appendTo('#Gantt');
-
-```
-
-## Mapping task fields
-
-The data source fields that are required to render the tasks are mapped to the Gantt control using the [taskFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#taskfields) property.
-
-```javascript
-var ganttChart = new ej.gantt.Gantt({
-        dataSource: ganttData,
-        height: '450px',
-        taskFields: {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            dependency: 'Predecessor',
-            child: 'subtasks',
-      }
-});
-ganttChart.appendTo('#GanttChart');
-
-```
-
-## Defining columns
-
-The Gantt Chart has an option to define columns as array. Each column in this array supports various properties that allow customization. Let’s check the properties used here:
-
-* The [field](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#field) property is used to map the column to a corresponding property name in the array of JavaScript objects.
-* The [headerText](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#headertext) property is used to specify a custom title for the column.
-* The [textAlign](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#textalign) property controls the horizontal alignment of content in the column. By default, columns are left-aligned. To align content to the right, set [textAlign](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#textalign) to **Right**.
-* The [format](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#format) property is applied to format numeric and date values. In this case, it is used to convert numeric values into a standard currency format.
-
-```javascript
-var ganttChart = new ej.gantt.Gantt({
-    dataSource: ganttData,
-    columns: [
-            { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: '250' },
-            { field: 'TaskName', headerText: 'Task Name', width: '250' },
-            { field: 'StartDate', headerText: 'Start Date', width: '250' },
-            { field: 'Duration', headerText: 'Duration', width: '250' },
-            { field: 'Progress', headerText: 'Progress', width: '250', format: 'C' },
-        ],
-});
-ganttChart.appendTo('#Gantt');
-
-```
-
-## Module injection
-
-To create a Gantt with additional features, inject the required modules. The following modules are used to extend the Gantt's basic functionality:
-
-* [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule): Inject this module to use the editing feature.
-* [Filter](https://ej2.syncfusion.com/javascript/documentation/api/gantt#filtermodule): Inject this module to use the filtering feature.
-* [Sort](https://ej2.syncfusion.com/javascript/documentation/api/gantt#sortmodule): Inject this module to use the sorting feature.
-
-These modules should be injected into the Gantt using the `ej.gantt.Gantt.Inject` method.
-
-> Additional feature modules are available [here](https://ej2.syncfusion.com/javascript/documentation/api/gantt/overview).
-
-## Enable editing
-
-The editing feature enables you to edit the tasks in the Gantt control. It can be enabled by using the [editSettings.allowEditing](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#allowediting) and [editSettings.allowTaskbarEditing](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#allowtaskbarediting) properties.
-
-The following editing options are available to update the tasks in Gantt:
-
-* Cell
-* Dialog
-* Taskbar
-* Connector line
-
-### Cell editing
-
-Modify the task details through cell editing by setting the edit [mode](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#mode) to `Auto`. Inject the [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule) module as follows. If the [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule) module is not injected, you cannot edit the cell when a treegrid cell is clicked.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/getting-started-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/getting-started-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs1" %}
-
-`Note:` When the edit mode is set to `Auto`, you can change the cells to editable mode by double-clicking anywhere at the TreeGrid and edit the task details in the edit dialog by double-clicking anywhere at the chart.
-
-### Dialog editing
-
-Modify the task details through dialog by setting the edit [mode](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#mode) to `Dialog`. Inject the [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule) module as follows. If the [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule) module is not injected, you cannot edit the task details through the edit dialog.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/getting-started-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/getting-started-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs2" %}
-
-`Note:` In dialog editing mode, the edit dialog will appear while performing double-click action in both TreeGrid and chart sides.
-
-### Taskbar editing
-
-Modify the task details through user interaction such as resizing and dragging the taskbar by enabling the [allowTaskbarEditing](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#allowtaskbarediting) property. Inject the [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule) module as follows. If the [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule) module is not injected, you cannot edit the task details while dragging the taskbar.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/getting-started-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/getting-started-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs3" %}
-
-### Dependency editing
-
-Modify the task dependencies using mouse interactions by enabling the [allowTaskbarEditing](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#allowtaskbarediting)  property along with mapping the task dependency data source field to the [dependency](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#dependency) property.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/getting-started-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/getting-started-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs4" %}
-
-## Enable filtering
-
-The filtering feature enables you to view the reduced amount of records based on filter criteria. Gantt provides the menu filtering support for each column. It can be enabled by setting the [allowFiltering](https://ej2.syncfusion.com/javascript/documentation/api/gantt#allowfiltering) property to true along with injecting the [Filter](https://ej2.syncfusion.com/javascript/documentation/api/gantt#filtermodule) module as shown in the following code example. Filtering feature can also be customized using the [filterSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt/filterSettings) property.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/getting-started-cs5/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/getting-started-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs5" %}
-
-## Enable sorting
-
-The sorting feature enables you to order the records. It can be enabled by setting the [allowSorting](https://ej2.syncfusion.com/javascript/documentation/api/gantt#allowsorting) property to `true`. Inject the [Sort](https://ej2.syncfusion.com/javascript/documentation/api/gantt#sortmodule) module as follows. If the [Sort](https://ej2.syncfusion.com/javascript/documentation/api/gantt#sortmodule) module is not injected, you cannot sort the records when a header is clicked. The sorting feature can be customized using the [sortSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt/sortSettings) property.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/getting-started-cs6/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/getting-started-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs6" %}
-
-## Enabling predecessors or task relationships
-
-Predecessor or task dependency in the Gantt control is used to depict the relationship between the tasks.
-
-- **Finish-to-Start (FS)**: The successor task starts after the predecessor finishes.
-- **Start-to-Start (SS)**: The successor task starts when the predecessor starts.
-- **Finish-to-Finish (FF)**: The successor task finishes when the predecessor finishes.
-- **Start-to-Finish (SF)**: The successor task finishes when the predecessor starts.
-
-You can show the relationship in tasks by using the [dependency](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#dependency) property as shown in the following code example.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/getting-started-cs7/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/getting-started-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs7" %}
-
-## Assigning resources
-
-You can display and assign the resource for each task in the Gantt control. Create a collection of JSON object, which contains id, name, unit and group of the resources and assign it to the [resources](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resources) property. Map these fields to the Gantt control using the [resourceFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resourceFields) property.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/getting-started-cs8/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/getting-started-cs8/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs8" %}
 
 ## Run the application
 
-Now, run the `index.html` in the web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt control
+Run the **index.html** file in a web browser to view the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt component.
 
-Output will be displayed as follows.
+## Output
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

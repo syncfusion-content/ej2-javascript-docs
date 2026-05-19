@@ -130,7 +130,7 @@ npm run start
 The following example shows a basic Chart.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/chart/getting-started-cs9/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
@@ -142,12 +142,9 @@ The following example shows a basic Chart.
 
 ## Module injection
 
-The Chart component is segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature module using the `Chart.Inject()` method. In this application, we modify the basic chart to visualize sales data for a particular year. For this, we use the line series, tooltip, data labels, category axis, and legend features of the chart. The relevant feature modules are:
+The Chart component is segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature module using the `Chart.Inject()` method. In this application, we modify the basic chart to visualize sales data for a particular year. For this, we use the line series, and category axis of the chart. The relevant feature modules are:
 
 * LineSeries - Inject this module to use the line series.
-* Legend - Inject this module to use the legend.
-* Tooltip - Inject this module to use the tooltip.
-* DataLabel - Inject this module to use data labels.
 * Category - Inject this module to use the category axis.
 
 Now import the above-mentioned modules from the chart package and inject them into the Chart component using the `Chart.Inject` method.
@@ -155,8 +152,8 @@ Now import the above-mentioned modules from the chart package and inject them in
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
-import { Chart, LineSeries, Legend, DataLabel, Category, Tooltip } from '@syncfusion/ej2-charts';
-Chart.Inject(LineSeries, Legend, DataLabel, Category, Tooltip);
+import { Chart, LineSeries, Category } from '@syncfusion/ej2-charts';
+Chart.Inject(LineSeries, Category);
 
 {% endhighlight %}
 {% endtabs %}
@@ -185,7 +182,7 @@ Add a series object to the chart by using the [`series`](../api/chart/series) pr
 Since the JSON contains category data, set the [`valueType`](../api/chart/axisModel#valuetype) for the horizontal axis (primaryXAxis) to `Category`. By default, the axis valueType is `Numeric`.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/chart/getting-started-cs10/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
@@ -194,78 +191,3 @@ Since the JSON contains category data, set the [`valueType`](../api/chart/axisMo
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs10" %}
-
-The sales values are in thousands, so format the vertical axis label by adding `$` as a prefix and `K` as a suffix to each label. This can be achieved by setting `${value}K` to the [`labelFormat`](../api/chart/axisModel#labelformat) property of the axis. Here, `{value}` acts as a placeholder for each axis label.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/getting-started-cs11/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/getting-started-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/chart/getting-started-cs11" %}
-
-## Add chart title
-
-You can add a title using the [`title`](../api/chart/chartModel#title) property to the chart to provide quick information to the user about the data plotted in the chart.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/getting-started-cs12/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/getting-started-cs12/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/chart/getting-started-cs12" %}
-
-## Enable legend
-
-You can enable the legend for the chart by setting the [`visible`](../api/chart/legendSettingsModel#visible) property to `true` in the [`legendSettings`](../api/chart/chartModel#legendsettings) object and by injecting the `Legend` module using the `Chart.Inject(Legend)` method.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/getting-started-cs13/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/getting-started-cs13/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/chart/getting-started-cs13" %}
-
-## Add data label
-
-You can add data labels to improve the readability of the chart. This can be achieved by setting the [`visible`](../api/chart/datalabelsettingsmodel#visible) property to `true` in the [`dataLabel`](../api/chart/markersettingsmodel#datalabel) object and by injecting the `DataLabel` module using the `Chart.Inject(DataLabel)` method. Now, the data labels are arranged smartly based on the series.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/getting-started-cs14/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/getting-started-cs14/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/chart/getting-started-cs14" %}
-
-## Enable tooltip
-
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable the tooltip by setting the [`enable`](../api/chart/tooltipSettingsModel#enable) property to `true` in the [`tooltip`](../api/chart/chartModel#tooltip) object and by injecting the `Tooltip` module using the `Chart.Inject(Tooltip)` method.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/getting-started-cs15/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/getting-started-cs15/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/chart/getting-started-cs15" %}
-
-> You can refer to our [JavaScript Charts](https://www.syncfusion.com/javascript-ui-controls/js-charts) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Charts example](https://ej2.syncfusion.com/demos/#/material/chart/line.html) that shows various chart types and how to represent time-dependent data, showing trends in data at equal intervals.

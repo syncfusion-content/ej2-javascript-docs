@@ -11,26 +11,42 @@ domainurl: ##DomainURL##
 
 # Module in ##Platform_Name## Treegrid control
 
-The following feature modules should be injected to extend the TreeGrid's functionality.
+Syncfusion TypeScript TreeGrid modules help optimize your application’s bundle size by including only the features you need. To enable a specific TreeGrid feature, import and inject the corresponding Feature Module into your TreeGrid configuration.
 
-| Module | Description |
-|------|-------------|
-| [`PageService`](../treegrid/paging)| Inject this module to use paging feature.|
-| [`SortService`](../treegrid/sorting)| Inject this module to use sorting feature.|
-| [`FilterService`](../treegrid/filtering)| Inject this module to use filtering feature.|
-| [`EditService`](../treegrid/editing)| Inject this module to use editing feature.|
-| [`AggregateService`](../treegrid/aggregates)| Inject this module to use aggregate feature.|
-| [`ColumnChooserService`](../treegrid/columns#column-chooser)| Inject this module to use column chooser feature.|
-| [`ColumnMenuService`](../treegrid/columns#column-menu)| Inject this module to use column menu feature.|
-| [`CommandColumnService`](../treegrid/edit#command-column)| Inject this module to use command column feature.|
-| [`ContextMenuService`](../treegrid/context-menu)| Inject this module to use context menu feature.
-| [`ResizeService`](../treegrid/columns#column-resizing)| Inject this module to use resize feature.|
-| [`ReorderService`](../treegrid/columns#reorder)| Inject this module to use reorder feature.|
-| [`PrintService`](../treegrid/print)| Inject this module to use to use print feature and this is a default injected module.|
-| [`ToolbarService`](../treegrid/tool-bar)| Inject this module to use toolbar feature.|
-| [`ExcelExportService`](../treegrid/excel-export)| Inject this module to use Excel export feature.|
-| [`PdfExportService`](../treegrid/pdf-export)| Inject this module to use PDF export feature.|
+The available TreeGrid modules are:
 
-These modules should be injected into the TreeGrid using the `ej.treegrid..TreeGrid.Inject` method.
+| Feature | Module | Description |
+|---------|--------|-------------|
+| [`Page`](../treegrid/paging) | `Page` | Inject this module to use paging feature.|
+| [`Sort`](../treegrid/sorting) | `Sort` | Inject this module to use sorting feature.|
+| [`Filter`](../treegrid/filtering) | `Filter` | Inject this module to use filtering feature.|
+| [`Edit`](../treegrid/editing) | `Edit` | Inject this module to use editing feature.|
+| [`Aggregate`](../treegrid/aggregates) | `Aggregate` | Inject this module to use aggregate feature.|
+| [`ColumnChooser`](../treegrid/columns/column-chooser) | `ColumnChooser` | Inject this module to use column chooser feature.|
+| [`ColumnMenu`](../treegrid/columns/column-menu) | `ColumnMenu` | Inject this module to use column menu feature.|
+| [`CommandColumn`](../treegrid/editing/command-column-editing) | `CommandColumn` | Inject this module to use command column feature.|
+| [`ContextMenu`](../treegrid/context-menu) | `ContextMenu` | Inject this module to use context menu feature.|
+| [`Resize`](../treegrid/columns/column-resizing) | `Resize` | Inject this module to use resize feature.|
+| [`Reorder`](../treegrid/columns/column-reorder) | `Reorder` | Inject this module to use reorder feature.|
+| [`Print`](../treegrid/print) | `Print` | Inject this module to use to use print feature and this is a default injected module.|
+| [`Toolbar`](../treegrid/tool-bar) | `Toolbar` | Inject this module to use toolbar feature.|
+| [`ExcelExport`](../treegrid/excel-export) | `ExcelExport` | Inject this module to use Excel export feature.|
+| [`PdfExport`](../treegrid/pdf-export) | `PdfExport` | Inject this module to use PDF export feature.|
 
-> You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/tree-grid/treegrid.overview.html) to knows how to present and manipulate data.
+## Enabling basic features
+
+The following example demonstrates how to enable basic features such as Paging, Sorting, Filtering, Toolbar and Editing by importing required modules from `@syncfusion/ej2-treegrid` and injecting them into the grid component.
+
+{% tabs %}
+{% highlight ts tabtitle="index.js" %}
+{% include code-snippet/treegrid/module-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/treegrid/module-cs1/js/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/treegrid/module-cs1/es5-datasource.js %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/treegrid/module-cs1" %}

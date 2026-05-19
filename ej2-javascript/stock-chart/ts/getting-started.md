@@ -133,20 +133,18 @@ npm run start
 
 ## Module Injection
 
-The Stock Chart component is segregated into individual feature-wise modules. To use a particular feature, inject its feature module using the `StockChart.Inject()` method. In this application, we modify the basic Stock Chart to visualize the stock value of a company. For this, we use the candle series, tooltip, data label, and DateTime axis features of the Stock Chart. The relevant feature modules are:
+The Stock Chart component is segregated into individual feature-wise modules. To use a particular feature, inject its feature module using the `StockChart.Inject()` method. In this application, we modify the basic Stock Chart to visualize the stock value of a company. For this, we use the candle series, and DateTime axis features of the Stock Chart. The relevant feature modules are:
 
 * CandleSeries - Inject this module to use the candle series.
-* Tooltip - Inject this module to use the tooltip feature.
-* DataLabel - Inject this module to use the data label feature.
 * DateTime - Inject this module to use the DateTime feature.
 
 Now import the above-mentioned modules from the charts package and inject them into the Stock Chart component using the `StockChart.Inject` method.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 
-import { StockChart, CandleSeries, DataLabel, DateTime, Tooltip } from '@syncfusion/ej2-charts';
-StockChart.Inject(CandleSeries, DataLabel, Tooltip, DateTime);
+import { StockChart, CandleSeries, DateTime } from '@syncfusion/ej2-charts';
+StockChart.Inject(CandleSeries, DateTime);
 
 {% endhighlight %}
 {% endtabs %}
@@ -208,63 +206,15 @@ Add a series object to the chart by using [`series`](../api/stock-chart/stockSer
 Since the JSON contains DateTime data, set the [`valueType`](../api/stock-chart/stockChartAxisModel/#valuetype) for the horizontal axis to DateTime. By default, the axis `valueType` is `Numeric`.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stock-chart/getting-started-cs33/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/stock-chart/getting-started-cs33/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="stockData.ts" %}
+{% include code-snippet/stock-chart/getting-started-cs33/stockData.ts %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs33" %}
-
-## Add Stock Chart Title
-
-You can add a title using the [`title`](../api/stock-chart/stockChartModel/#title) property to the Stock Chart to provide quick information to the user about the data plotted in the Chart.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/stock-chart/getting-started-cs34/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/stock-chart/getting-started-cs34/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs34" %}
-
-## Add Crosshair
-
-Crosshair has a vertical and horizontal line to view the value of the axis at the mouse or touch position.
-
-Crosshair lines can be enabled by using the [`enable`](../api/chart/crosshairSettingsModel/#enable) property in `crosshair`. Likewise, the tooltip label for an axis can be enabled by using the [`enable`](../api/chart/crosshairTooltipModel/#enable) property of `crosshairTooltip` on the corresponding axis.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/stock-chart/getting-started-cs35/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/stock-chart/getting-started-cs35/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs35" %}
-
-## Add Trackball
-
-Trackball is used to track a data point closest to the mouse or touch position. The trackball marker indicates the closest point and the trackball tooltip displays information about the point. To use the trackball feature, inject the `Crosshair` and `Tooltip` modules using `StockChart.Inject(Crosshair, Tooltip)`.
-
-Trackball can be enabled by setting the [`enable`](../api/chart/crosshairSettingsModel/#enable) property of the crosshair to `true` and the [`shared`](../api/chart/tooltipSettings/#shared) property in `tooltip` to `true` in the chart.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/stock-chart/getting-started-cs36/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/stock-chart/getting-started-cs36/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs36" %}
-
-> You can refer to our [JavaScript Stock Chart](https://www.syncfusion.com/javascript-ui-controls/js-stock-chart) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Stock Chart example](https://ej2.syncfusion.com/demos/#/material/stock-chart) that shows you how to present and manipulate data.

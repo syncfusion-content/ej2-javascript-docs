@@ -11,96 +11,47 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Schedule control
 
-This section explains how to create the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) component and configure its available functionalities in TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart.git) seed repository.
-
-## Dependencies
-
-The following dependencies are required to use the Scheduler component in your application:
-
-```javascript
-|-- @syncfusion/ej2-schedule
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-buttons
-    |-- @syncfusion/ej2-calendars
-    |-- @syncfusion/ej2-data
-    |-- @syncfusion/ej2-dropdowns
-    |-- @syncfusion/ej2-excel-export
-    |-- @syncfusion/ej2-inputs
-    |-- @syncfusion/ej2-lists
-    |-- @syncfusion/ej2-popups
-    |-- @syncfusion/ej2-navigations
-```
+This section explains how to create the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) component and configure its available functionalities in a TypeScript environment.
 
 ## Installation and configuration
 
-Clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart.git) and install the necessary npm packages using the following commands:
+To build a high-performance TypeScript application with a smooth development workflow, Vite is the recommended tool. Unlike traditional setups, Vite is designed for speed and simplicity, providing near-instant startup and fast updates during development. For detailed steps, refer to the Vite [installation instructions](https://vite.dev/guide/)
 
-```
-git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
-cd quickstart
-npm install
-```
+Run the following command to set up a TypeScript application.
 
-> By default, the project is pre-configured with all EJ2 dependencies. For better understanding, you can remove all dependencies from `src/system.config.js` to get started with the Scheduler component from scratch.
-
-Map the Scheduler component's dependency packages in the `system.config.js` configuration file:
-
-`[src/system.config.js]`
-
-```javascript
-System.config({
-    paths: {
-        'syncfusion:': './node_modules/@syncfusion/',
-    },
-    map: {
-        app: 'app',
-
-        //Syncfusion packages mapping
-        "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
-        "@syncfusion/ej2-data": "syncfusion:ej2-data/dist/ej2-data.umd.min.js",
-        "@syncfusion/ej2-inputs": "syncfusion:ej2-inputs/dist/ej2-inputs.umd.min.js",
-        "@syncfusion/ej2-buttons": "syncfusion:ej2-buttons/dist/ej2-buttons.umd.min.js",
-        "@syncfusion/ej2-dropdowns": "syncfusion:ej2-dropdowns/dist/ej2-dropdowns.umd.min.js",
-        "@syncfusion/ej2-compression": "syncfusion:ej2-compression/dist/ej2-compression.umd.min.js",
-        "@syncfusion/ej2-file-utils": "syncfusion:ej2-file-utils/dist/ej2-file-utils.umd.min.js",
-        "@syncfusion/ej2-splitbuttons": "syncfusion:ej2-splitbuttons/dist/ej2-splitbuttons.umd.min.js",
-        "@syncfusion/ej2-lists": "syncfusion:ej2-lists/dist/ej2-lists.umd.min.js",
-        "@syncfusion/ej2-navigations": "syncfusion:ej2-navigations/dist/ej2-navigations.umd.min.js",
-        "@syncfusion/ej2-popups": "syncfusion:ej2-popups/dist/ej2-popups.umd.min.js",
-        "@syncfusion/ej2-calendars": "syncfusion:ej2-calendars/dist/ej2-calendars.umd.min.js",
-        "@syncfusion/ej2-excel-export": "syncfusion:ej2-excel-export/dist/ej2-excel-export.umd.min.js",
-        "@syncfusion/ej2-schedule": "syncfusion:ej2-schedule/dist/ej2-schedule.umd.min.js"
-    },
-    packages: {
-        'app': { main: 'app', defaultExtension: 'js' }
-    }
-});
-
-System.import('app');
+```bash
+npm create vite@latest my-app -- --template vanilla-ts
 ```
 
-Scheduler CSS files are available in the ej2-schedule package folder and its sub-component packages. Reference them in your application using the following code:
+After running the above commands, the project will be created and all required dependencies will be installed automatically.
 
-`[src/styles/styles.css]`
+## Adding Syncfusion<sup style="font-size:70%">®</sup> Schedule package
+
+All the available Essential<sup style="font-size:70%">®</sup> JS 2 packages are published in the [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) public registry.  
+To install the JavaScript Scheduler component in your TypeScript application, use the following command:
+
+```bash
+cd my-app
+npm install @syncfusion/ej2-schedule --save
+```
+
+## Adding CSS reference
+
+Add the Scheduler component styles as shown below in the `src/style.css` file:
 
 ```css
-@import '../../node_modules/@syncfusion/ej2-base/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-calendars/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-lists/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-popups/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-schedule/styles/fluent2.css';
+@import "../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-schedule/styles/tailwind3.css";
 ```
-
-Alternatively, if you want to use the combined CSS file for all components, reference it from the root folder of the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package:
-
-```css
-@import '../../node_modules/@syncfusion/ej2/fluent2.css';
-```
+>To refer `style.css` in the application then import it in the `src/main.ts` file.
 
 ## Module injection
 
@@ -112,13 +63,18 @@ Each view type available in the Scheduler is maintained as an individual module.
 * **Month** - Inject this module to work with the Month view.
 * **Agenda** - Inject this module to work with the Agenda view.
 
-Inject all required modules into the Scheduler using the `Schedule.Inject` method within the `app.ts` file:
+Inject all required modules into the Scheduler using the `Schedule.Inject` method within the `main.ts` file:
 
-```typescript
+{% tabs %}
+{% highlight ts tabtitle="main.ts" %}
+
+import './style.css';
 import { Schedule, Day, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-schedule';
 
 Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Initialize the Schedule
 
@@ -126,127 +82,99 @@ Add an HTML `div` element with an `id` attribute in your `index.html` file, wher
 
 `[src/index.html]`
 
-```html
-<!DOCTYPE html>
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
+<!doctype html>
 <html lang="en">
-<head>
-    <title>Schedule TypeScript Component</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Essential JS 2" />
-    <meta name="author" content="Syncfusion" />
-    <link rel="shortcut icon" href="resources/favicon.ico" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!--Style reference from node_modules/@syncfusion/ej2/-->
-    <link href="/styles/styles.css" rel="stylesheet" />
-
-    <!--System JS reference and configuration-->
-    <script src="node_modules/systemjs/dist/system.src.js" type="text/javascript"></script>
-    <script src="system.config.js" type="text/javascript"></script>
-</head>
-<body>
-    <!--Element where the Schedule will be rendered-->
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syncfusion Typescript Schedule</title>
+  </head>
+  <body>
     <div id="Schedule"></div>
-</body>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
-```
 
-Import the Scheduler component in your `app.ts` file and initialize it to the element with id `Schedule` defined in the `index.html` file:
+{% endhighlight %}
+{% endtabs %}
 
-`[src/app/app.ts]`
+Import the Scheduler component in your `main.ts` file and initialize it to the element with id `Schedule` defined in the `index.html` file:
 
-```typescript
+{% tabs %}
+{% highlight ts tabtitle="main.ts" %}
+import './style.css';
 import { Schedule, Day, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-schedule';
 
 Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
 
 let scheduleObj: Schedule = new Schedule();
 scheduleObj.appendTo('#Schedule');
-```
+{% endhighlight %}
+{% endtabs %}
 
-Now, run the application in the browser using the following command:
+Run the following command in the terminal to start the development server. This compiles the project, launches a local server, and allowing you to view changes in real time during development.
 
+```bash
+npm run dev
 ```
-npm start
-```
-
-The output will display an empty Scheduler.
+> Above demo will display the empty scheduler.
 
 ## Populating appointments
 
-To populate the empty Scheduler with appointments, define local JSON data or remote data through the `dataSource` property within the `eventSettings` option. Start and end time fields are mandatory for appointments. The following example shows an appointment defined with default fields: Id, Subject, StartTime, and EndTime.
+To populate the Scheduler with appointments, you can use either a local JSON array or a remote data service. Assign the data to the `dataSource` property, which is part of the `eventSettings` configuration.
 
-```typescript
+The `StartTime` and `EndTime` fields are mandatory for each appointment. The following example uses default fields like `Id`, `Subject`, `StartTime`, and `EndTime`.
+
+{% tabs %}
+{% highlight ts tabtitle="main.ts" %}
 import { Schedule, Day, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-schedule';
+import './style.css'
 
 Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
-let scheduleObj: Schedule = new Schedule({
-    height: '550px',
-    selectedDate: new Date(2018, 1, 15),
-    eventSettings: {
-        dataSource: [{
-            Id: 1,
-            Subject: 'Meeting',
-            StartTime: new Date(2018, 1, 15, 10, 0),
-            EndTime: new Date(2018, 1, 15, 12, 30)
-        }]
+
+let data: Object[] = [
+    {
+        Id: 1,
+        Subject: 'Meeting - 1',
+        StartTime: new Date(new Date().setHours(9,0,0)),
+        EndTime: new Date(new Date().setHours(10,0,0)),
     }
-});
-scheduleObj.appendTo('#Schedule');
-```
+];
 
-You can also use custom field names by mapping them appropriately within the `fields` property:
-
-```typescript
-import { Schedule, Day, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-schedule';
-
-let data: object[] = [{
-    Id: 2,
-    EventName: 'Meeting',
-    StartTime: new Date(2018, 1, 15, 10, 0),
-    EndTime: new Date(2018, 1, 15, 12, 30),
-    IsAllDay: false
-}];
-
-Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
 let scheduleObj: Schedule = new Schedule({
-    height: '550px',
-    selectedDate: new Date(2018, 1, 15),
-    eventSettings: {
-        dataSource: data,
-        fields: {
-            id: 'Id',
-            subject: { name: 'EventName' },
-            isAllDay: { name: 'IsAllDay' },
-            startTime: { name: 'StartTime' },
-            endTime: { name: 'EndTime' }
-        }
-    }
+    eventSettings: { dataSource: data }
 });
-scheduleObj.appendTo('#Schedule');
-```
 
-The other fields available in Scheduler can be referred from [here](./appointments#event-fields).
+scheduleObj.appendTo('#Schedule');
+{% endhighlight %}
+{% endtabs %}
 
 ## Setting date
 
-By default, the Scheduler displays the current system date. To change the Scheduler's current date, set the `selectedDate` property to a specific date:
+Scheduler usually displays the system date as its current date. To change the current date of the Scheduler to a specific date, define the `selectedDate` property.
 
-```typescript
+{% tabs %}
+{% highlight ts tabtitle="main.ts" %}
 import { Schedule, Day, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-schedule';
+import './style.css'
 
 Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
+
 let scheduleObj: Schedule = new Schedule({
-    height: '550px',
-    selectedDate: new Date(2018, 1, 15)
+    selectedDate: new Date(2026, 4, 18)
 });
+
 scheduleObj.appendTo('#Schedule');
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Setting view
 
-The Scheduler displays the `Week` view by default. To change the current view, set the `currentView` property to one of the following view names:
+Scheduler displays the `Week` view by default. To change the current view, define the applicable view name to the `currentView` property. The default applicable view names are:
 
 * Day
 * Week
@@ -261,36 +189,25 @@ The Scheduler displays the `Week` view by default. To change the current view, s
 * TimelineMonth
 * TimelineYear
 
-```typescript
-import { Schedule, Day, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-schedule';
-
-Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
-let scheduleObj: Schedule = new Schedule({
-    height: '550px',
-    selectedDate: new Date(2018, 1, 15),
-    currentView: 'Month'
-});
-scheduleObj.appendTo('#Schedule');
-```
-
-## Individual view customization
-
-Each Scheduler view can be customized individually with its own options, such as setting different start and end hours for Week and Work Week views or hiding weekend days in the Month view only. This is achieved by defining the `views` property as an array of objects, where each object represents individual view customization.
-
-The output will display the Scheduler with the specified view configuration:
+You can configure only the required views as needed, and include additional views based on your application requirements.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/schedule/views-model-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-model-cs2/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="datasource.ts" %}
-{% include code-snippet/schedule/views-model-cs2/datasource.ts %}
+{% highlight ts tabtitle="main.ts" %}
+import { Schedule, Day, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-schedule';
+import './style.css'
+
+Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
+
+let scheduleObj: Schedule = new Schedule({
+    currentView: 'Month'
+});
+
+scheduleObj.appendTo('#Schedule');
 {% endhighlight %}
 {% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/schedule/views-model-cs2" %}
 
-> You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to see how toolbar buttons interact with Scheduler functionalities.
+## See also
+ 
+* [Explore available views and their customization options](../views.md)
+* [Explore appointments and event data handling](../appointments.md)
+ 

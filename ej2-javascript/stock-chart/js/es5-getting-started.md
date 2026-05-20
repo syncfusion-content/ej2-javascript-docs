@@ -9,292 +9,125 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with ##Platform_Name## Stock Chart control
+# Getting Started with Syncfusion® JavaScript (ES5) Stock Chart Control
 
-This section explains the steps required to create a simple Stock Chart and demonstrates the basic usage of the Stock Chart control.
+Build your first Syncfusion JavaScript (ES5) application with a simple Stock Chart control in just a few minutes. This quickstart guides you through creating a minimal, runnable HTML page that loads the Syncfusion EJ2 (ES5) Stock Chart from the CDN, initializes it with sample data, and renders an interactive chart.
 
-## Dependencies
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/javascript/documentation/ai-coding-assistant/overview)
 
-Below is the list of minimum dependencies required to use the Stock Chart.
+## Prerequisites
 
-```
-|-- @syncfusion/ej2-charts
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-data
-    |-- @syncfusion/ej2-pdf-export
-    |-- @syncfusion/ej2-file-utils
-    |-- @syncfusion/ej2-compression
-    |-- @syncfusion/ej2-svg-base
-    |-- @syncfusion/ej2-navigations
-    |-- @syncfusion/ej2-calendars
-    |-- @syncfusion/ej2-popups
-    |-- @syncfusion/ej2-lists
-    |-- @syncfusion/ej2-inputs
-    |-- @syncfusion/ej2-buttons
-    |-- @syncfusion/ej2-splitbuttons
+* [Visual Studio Code](https://code.visualstudio.com) (or any text editor)
+* A web browser to view the result
 
-```
+## Quick Setup
 
-## Setup for local environment
+### Step 1: Create Folder and HTML file
 
-Follow these steps to set up your local environment.
+* Create a folder named `quickstart` in your desired directory
+* Inside the `quickstart` folder, create a new file named `index.html`
 
-**Step 1:** Create a root folder **myapp** for your application.
+### Step 2: Add Syncfusion<sup style="font-size:70%">&reg;</sup> CDN Resources
 
-**Step 2:** Create **myapp/resources** folder to store local scripts and styles files.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on [npmjs.com](https://www.npmjs.com/~syncfusionorg). You can include all Syncfusion<sup style="font-size:70%">&reg;</sup> controls in a single bundled CDN package or use individual package CDN links.
 
-**Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing the Syncfusion Essential JS 2 Stock Chart control.
+**Option 1: Using Common CDN Bundle (Recommended)**
 
-## Adding Syncfusion resources
-
-The Essential JS 2 Stock Chart control can be initialized by using either of the following ways.
-
-* Using local script.
-* Using CDN link for script.
-
-### Using local script
-
-You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
-
-After installing the Essential JS 2 product build, you can copy the chart and its dependencies scripts and style file into the **resources/scripts** and **resources/styles** folder.
-
-The following shows the path to the stock chart's script and style files.
-
-**Syntax:**
-
-> Dependency script: `**(installed location)**/Syncfusion/Essential Studio/JavaScript - EJ2/{RELEASE_VERSION}/Web (Essential JS 2)/JavaScript/{DEPENDENCY_PACKAGE_NAME}/dist/global/{DEPENDENCY_PACKAGE_NAME}.min.js`
->
-> Script: `**(installed location)**/Syncfusion/Essential Studio/JavaScript - EJ2/{RELEASE_VERSION}/Web (Essential JS 2)/JavaScript/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/material.css`
-
-**Example:**
-
-> > Dependency script: `C:/Program Files (x86)/Syncfusion/Essential Studio/JavaScript - EJ2/32.1.19/Web (Essential JS 2)/JavaScript/ej2-base/dist/global/ej2-base.min.js`
->
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/JavaScript - EJ2/32.1.19/Web (Essential JS 2)/JavaScript/ej2-charts/dist/global/ej2-charts.min.js`
->
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-charts/styles/material.css`
-
-After copying the files, reference the chart scripts from `index.html`. The following HTML shows the minimal chart dependencies.
+Include a single CDN link that contains all Syncfusion JavaScript controls:
 
 ```
-
-<!DOCTYPE html>
-  <html xmlns="https://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2 Stock Chart</title>
-
-            <!-- Essential JS 2 Stock Chart's dependent material themes -->  
-            <link href="resources/base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/buttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/calendars/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/navigations/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/splitbuttons/styles/material.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 Stock Chart's dependent scripts -->
-            <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
-            <script src="resources/scripts/ej2-buttons.min.js" type="text/javascript"></script>
-            <script src="resources/scripts/ej2-data.min.js" type="text/javascript"></script>
-            <script src="resources/scripts/ej2-pdf-export.min.js" type="text/javascript"></script>
-            <script src="resources/scripts/ej2-file-utils.min.js" type="text/javascript"></script>
-            <script src="resources/scripts/ej2-compression.min.js" type="text/javascript"></script>
-            <script src="resources/scripts/ej2-navigations.min.js" type="text/javascript"></script>
-            <script src="resources/scripts/ej2-popups.min.js" type="text/javascript"></script>
-            <script src="resources/scripts/ej2-splitbuttons.min.js" type="text/javascript"></script>
-             <script src="resources/scripts/ej2-inputs.min.js" type="text/javascript"></script>
-            <script src="resources/scripts/ej2-calendars.min.js" type="text/javascript"></script>
-            <script src="resources/scripts/ej2-svg-base.min.js" type="text/javascript"></script>
-
-            <!-- Essential JS 2 Stock Chart's global script -->
-            <script src="resources/scripts/ej2-charts.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
-
+https://cdn.syncfusion.com/ej2/33.2.3/dist/ej2.min.js
 ```
 
-### Using CDN link for script
+**Option 2: Using Individual CDN Packages**
 
-Using CDN link, you can directly refer the stock chart control's script and style into the `index.html`.
+Include the following CSS and JavaScript links in the `<head>` section:
 
-Refer the chart's CDN links as below.
+**Styles (CSS):**
+```
+https://cdn.syncfusion.com/ej2/33.2.3/tailwind3.css
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+```
 
-**Syntax:**
+**Scripts (JavaScript):**
+```
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-data/dist/global/ej2-data.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-pdf-export/dist/global/ej2-pdf-export.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-file-utils/dist/global/ej2-file-utils.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-compression/dist/global/ej2-compression.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-svg-base/dist/global/ej2-svg-base.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-navigations/dist/global/ej2-navigations.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-calendars/dist/global/ej2-calendars.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-popups/dist/global/ej2-popups.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-lists/dist/global/ej2-lists.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-inputs/dist/global/ej2-inputs.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-buttons/dist/global/ej2-buttons.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-charts/dist/global/ej2-charts.min.js
+```
 
-> Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `https://cdn.syncfusion.com/ej2/material.css`
+### Step 3: Add Syncfusion<sup style="font-size:70%">&reg;</sup> Stock Chart control to the application
 
-**Example:**
-
-> Script: [`https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js`](https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js)
->
-> Styles: [`https://cdn.syncfusion.com/ej2/material.css`](https://cdn.syncfusion.com/ej2/material.css)
-
-The below html code example shows the minimal dependency of chart.
+Copy and paste the following complete code into your `index.html` file:
 
 ```html
 <!DOCTYPE html>
-  <html xmlns="https://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2 Stock Chart</title>
-            <!-- Essential JS 2 Stock Chart's global script -->
-            <script src="https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js" type="text/javascript"></script>
-            <!-- Essential JS 2 material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" type="text/css"/>
-       </head>
-       <body>
-       </body>
-  </html>
+<html>
+<head>
+    <title>Syncfusion Stock Chart - Quick Start</title>
 
+    <!-- Styles -->
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/tailwind3.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/dist/ej2.min.js" type="text/javascript"></script>
+</head>
+  
+  <body>
+    <h1>Syncfusion Stock Chart</h1>
+    <div id="element"></div>
+    
+    <script>
+      // Sample data
+      var chartData = [
+        { date: new Date('2012-04-02'), open: 85.9757, high: 90.6657, low: 85.7685, close: 90.5257, volume: 660187068 },
+        { date: new Date('2012-04-09'), open: 89.4471, high: 92, low: 86.2157, close: 86.4614, volume: 912634864 },
+        { date: new Date('2012-04-16'), open: 87.1514, high: 88.6071, low: 81.4885, close: 81.8543, volume: 1221746066 },
+        { date: new Date('2012-04-23'), open: 81.5157, high: 88.2857, low: 79.2857, close: 86.1428, volume: 965935749 },
+        { date: new Date('2012-04-30'), open: 85.4, high: 85.4857, low: 80.7385, close: 80.75, volume: 615249365 }
+      ];
+      
+      // Create Stock Chart
+      var chart = new ej.charts.StockChart({
+        series: [
+          {
+            dataSource: chartData,
+            xName: 'date',
+            yName: 'close',
+            type: 'Candle'
+          }
+        ],
+        title: 'Stock Price',
+        primaryXAxis: {
+          valueType: 'DateTime'
+        }
+      });
+      
+      // Render Chart
+      chart.appendTo('#element');
+    </script>
+  </body>
+</html>
 ```
 
-## Adding Stock Chart control
+### Step 4: Open in Browser
 
-Now, you can start adding stock chart control in the application. For getting started, add a **div** element for Chart control in **index.html**. Then refer the **index.js** file into the **index.html** file.
+Open the `quickstart/index.html` file in your web browser. You should see the Syncfusion Stock Chart control displaying the sample data.
 
-This document uses `ej2.min.js`, which includes all Essential JS 2 components and dependencies.
+## Output
 
-```html
-<!DOCTYPE html>
-  <html xmlns="https://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2 Stock Chart</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 all script -->
-            <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-           <!-- Add the HTML <div> element for stock chart  -->
-             <div id="element"></div>
-             <script src="index.js" type="text/javascript"></script>
-       </body>
-  </html>
+The following screenshot shows the output of the Syncfusion Stock Chart quick start application:
 
-```
-
-Place the following stock chart initialization code in `index.js`.
-
-```javascript
-
-var stockChart = new ej.charts.StockChart();
-stockChart.appendTo('#element');
-
-```
-
-## Populate Stock Chart With Data
-
-This section explains how to plot the following JSON data to the  Stock Chart.
-
-```javascript
-
-var chartData = [{
-    date : new Date('2012-04-02'),
-    open : 85.9757,
-    high : 90.6657,
-    low : 85.7685,
-    close : 90.5257,
-    volume : 660187068
-  },
-  {
-    date : new Date('2012-04-09'),
-    open : 89.4471,
-    high : 92,
-    low : 86.2157,
-    close : 86.4614,
-    volume : 912634864
-  },
-  {
-    date : new Date('2012-04-16'),
-    open : 87.1514,
-    high : 88.6071,
-    low : 81.4885,
-    close : 81.8543,
-    volume : 1221746066
-  },
-  {
-    date : new Date('2012-04-23'),
-    open : 81.5157,
-    high : 88.2857,
-    low : 79.2857,
-    close : 86.1428,
-    volume : 965935749
-  },
-  {
-    date : new Date('2012-04-30'),
-    open : 85.4,
-    high : 85.4857,
-    low : 80.7385,
-    close : 80.75,
-    volume : 615249365
-  }];
-
-```
-
-Add a series object to the chart by using [`series`](../api/stock-chart/stockSeries/) property and then set the JSON data to [`dataSource`](../api/stock-chart/stockSeries/#datasource) property.
-
-Since the JSON contains DateTime data, set the [`valueType`](../api/stock-chart/stockChartAxisModel/#valuetype) for horizontal axis to DateTime. By default, the axis valueType is Numeric.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/stock-chart/getting-started-cs17/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/stock-chart/getting-started-cs17/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs17" %}
-
-## Add Stock Chart Title
-
-You can add a title using the [`title`](../api/stock-chart/stockChartModel/#title) property to the Stock Chart to provide quick information to the user about the data plotted in the Chart.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/stock-chart/getting-started-cs18/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/stock-chart/getting-started-cs18/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs18" %}
-
-## Add Crosshair
-
-Crosshair has a vertical and horizontal line to view the value of the axis at mouse or touch position.
-
-Crosshair lines can be enabled by using [`enable`](../api/chart/crosshairSettingsModel/#enable) property in the `crosshair`. Likewise tooltip label for an axis can be enabled by using [`enable`](../api/chart/crosshairTooltipModel/#enable) property of `crosshairTooltip` in the corresponding axis.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/stock-chart/getting-started-cs19/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/stock-chart/getting-started-cs19/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs19" %}
-
-## Add Trackball
-
-Trackball is used to track a data point closest to the mouse or touch position. Trackball marker indicates the closest point and trackball tooltip displays the information about the point.
-
-Trackball can be enabled by setting the [`enable`](../api/chart/crosshairSettings/#enable-boolean) property of the crosshair to `true` and
-[`shared`](../api/chart/tooltipSettings/#shared) property in `tooltip` to `true` in chart.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/stock-chart/getting-started-cs20/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/stock-chart/getting-started-cs20/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs20" %}
+![Syncfusion Stock Chart Quick Start Output](../../images/stockchart.png)

@@ -8,171 +8,103 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-<!-- markdownlint-disable MD036 -->
 
-# ES5 getting started with ##Platform_Name## Accumulation Chart control
+# Getting Started with Syncfusion® JavaScript (ES5) Accumulation Chart Control
 
-The Essential JS 2 accumulation chart is provided as a separate control to simplify rendering by excluding axis-related logic. The accumulation chart uses the same core dependencies as the chart control; additional packages are required only for specific features (for example, export and compression features).
+Build your first Syncfusion JavaScript (ES5) application with a simple Accumulation Chart control in just a few minutes. This quickstart guides you through creating a minimal, runnable HTML page that loads the Syncfusion EJ2 (ES5) Accumulation Chart from the CDN, initializes it with sample data, and renders an interactive chart.
 
-## Dependencies
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/javascript/documentation/ai-coding-assistant/overview)
 
-Below is the list of minimum dependencies required to use the accumulation chart.
+## Prerequisites
 
+* [Visual Studio Code](https://code.visualstudio.com) (or any text editor)
+* A web browser to view the result
+
+## Quick Setup
+
+### Step 1: Create Folder and HTML file
+
+* Create a folder named `quickstart` in your desired directory
+* Inside the `quickstart` folder, create a new file named `index.html`
+
+### Step 2: Add Syncfusion<sup style="font-size:70%">&reg;</sup> CDN Resources
+
+Include the following JavaScript links in the `<head>` section.
+
+**Scripts (JavaScript):**
 ```
-|-- @syncfusion/ej2-charts
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-data
-    |-- @syncfusion/ej2-pdf-export
-    |-- @syncfusion/ej2-file-utils
-    |-- @syncfusion/ej2-compression
-    |-- @syncfusion/ej2-svg-base
-```
-
-## Setup for local environment
-
-Follow these steps to set up your local environment.
-
-**Step 1:** Create a root folder **myapp** for your application.
-
-**Step 2:** Create **myapp/resources** folder to store local scripts and styles.
-
-**Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing the Syncfusion Essential JS 2 Accumulation Chart control.
-
-## Adding Syncfusion resources
-
-The Syncfusion Essential JS 2 Accumulation Chart control can be initialized in either of the following ways:
-
-* Using local script.
-* Using CDN link for script.
-
-### Using local script
-
-You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
-
-After installing the Essential JS 2 product build, you can copy the chart and its dependencies scripts and style file into the **resources/scripts** and **resources/styles** folder.
-
-The following shows the path to the accumulation chart's script and style files.
-
-**Syntax:**
-
-> Dependency script: `**(installed location)**/Syncfusion/Essential Studio/JavaScript - EJ2/{RELEASE_VERSION}/Web (Essential JS 2)/JavaScript/{DEPENDENCY_PACKAGE_NAME}/dist/global/{DEPENDENCY_PACKAGE_NAME}.min.js`
->
-> Script: `**(installed location)**/Syncfusion/Essential Studio/JavaScript - EJ2/{RELEASE_VERSION}/Web (Essential JS 2)/JavaScript/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-
-**Example:**
-
-> Dependency script: `C:/Program Files (x86)/Syncfusion/Essential Studio/JavaScript - EJ2/32.1.19/Web (Essential JS 2)/JavaScript/ej2-base/dist/global/ej2-base.min.js`
->
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/JavaScript - EJ2/32.1.19/Web (Essential JS 2)/JavaScript/ej2-charts/dist/global/ej2-charts.min.js`
->
-
-After copying the files, reference the chart scripts from `index.html`. The following HTML shows the minimal chart dependencies.
-
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-data/dist/global/ej2-data.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-pdf-export/dist/global/ej2-pdf-export.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-svg-base/dist/global/ej2-svg-base.min.js
+https://cdn.syncfusion.com/ej2/33.2.3/ej2-charts/dist/global/ej2-charts.min.js
 ```
 
-<!DOCTYPE html>
-  <html xmlns="https://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2 Accumulation Chart</title>
+### Step 3: Add Syncfusion<sup style="font-size:70%">&reg;</sup> Accumulation Chart control to the application
 
-            <!-- Essential JS 2 Accumulation Chart's dependent scripts -->
-            <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
-            <script src="resources/scripts/ej2-data.min.js" type="text/javascript"></script>
-            <script src="resources/scripts/ej2-svg-base.min.js" type="text/javascript"></script>
-
-            <!-- Essential JS 2 Accumulation Chart's global script -->
-            <script src="resources/scripts/ej2-charts.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
-
-```
-
-### Using CDN links for scripts
-
-Using CDN links, you can reference the chart control's script in the `index.html`.
-
-Refer the chart's CDN links as follows.
-
-**Syntax:**
-
-> Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
-
-**Example:**
-
-> Script: [`https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js`](https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js)
-
-The following HTML shows the minimal chart dependencies using CDN scripts.
+Copy and paste the following complete code into your `index.html` file:
 
 ```html
 <!DOCTYPE html>
-  <html xmlns="https://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2 Accumulation Chart</title>
-            <!-- Essential JS 2 Chart's global script -->
-            <script src="https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
-
+<html>
+  <head>
+    <title>Syncfusion Accumulation Chart - Quick Start</title>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/dist/global/ej2-base.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-data/dist/global/ej2-data.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-charts/dist/global/ej2-charts.min.js"></script>
+  </head>
+  
+  <body>
+    <h1>Syncfusion Accumulation Chart</h1>
+    <div id="element"></div>
+    
+    <script>
+      // Sample data
+      var chartData = [
+        { month: 'Jan', sales: 35 },
+        { month: 'Feb', sales: 28 },
+        { month: 'Mar', sales: 34 },
+        { month: 'Apr', sales: 32 },
+        { month: 'May', sales: 40 },
+        { month: 'Jun', sales: 32 },
+        { month: 'Jul', sales: 35 },
+        { month: 'Aug', sales: 55 },
+        { month: 'Sep', sales: 38 },
+        { month: 'Oct', sales: 30 },
+        { month: 'Nov', sales: 25 },
+        { month: 'Dec', sales: 32 }
+      ];
+      
+      // Create Accumulation Chart
+      var chart = new ej.charts.AccumulationChart({
+        series: [
+          {
+            dataSource: chartData,
+            xName: 'month',
+            yName: 'sales',
+            type: 'Pie'
+          }
+        ],
+        title: 'Sales Data'
+      });
+      
+      // Render Chart
+      chart.appendTo('#element');
+    </script>
+  </body>
+</html>
 ```
 
-## Adding Accumulation Chart control
+### Step 4: Open in Browser
 
-Now you can add the Accumulation Chart control to the application. To get started, add a **div** element for the Accumulation Chart in **index.html**. Then reference the **index.js** file in **index.html**.
+Open the `quickstart/index.html` file in your web browser. You should see the Syncfusion Accumulation Chart control displaying the sample data.
 
-This document uses `ej2.min.js`, which includes all Essential JS 2 components and dependencies.
+## Output
 
-```html
-<!DOCTYPE html>
-  <html xmlns="https://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2 Chart</title>
-            <!-- Essential JS 2 all script -->
-            <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-           <!-- Add the HTML <div> element for chart  -->
-             <div id="element"></div>
-             <script src="index.js" type="text/javascript"></script>
-       </body>
-  </html>
+The following screenshot shows the output of the Syncfusion Accumulation Chart quick start application:
 
-```
-
-Place the following accumulation chart initialization code in `index.js`.
-
-```javascript
-
-var piechart = new ej.charts.AccumulationChart({
-    series: [
-        {
-            dataSource: [{ x: 'Jan', y: 3 }, { x: 'Feb', y: 3.5 }, { x: 'Mar', y: 7 }, { x: 'Apr', y: 13.5 },
-            { x: 'May', y: 19 }, { x: 'Jun', y: 23.5 }, { x: 'Jul', y: 26 }, { x: 'Aug', y: 25 },
-            { x: 'Sep', y: 21 }, { x: 'Oct', y: 15 }],
-            xName: 'x',
-            yName: 'y'
-        }
-    ]
-});
-piechart.appendTo('#element');
-
-```
-
-**Pie series**
-
-By default, a pie series is rendered when JSON data is assigned to the series [`dataSource`](../api/accumulation-chart/accumulationseries#datasource) property. Map JSON fields to the series [`xName`](../api/accumulation-chart/accumulationseries#xname) and [`yName`](../api/accumulation-chart/accumulationseries#yname) properties to bind data correctly.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/chart-types-cs29/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-types-cs29/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs29" %}
+![Syncfusion Accumulation Chart Quick Start Output](../../images/accumulation.png)

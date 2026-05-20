@@ -29,6 +29,37 @@ The basic File Manager is a lightweight control with all the basic functions. Th
 
 ![Basic File Manager](./images/default-ui.png)
 
+## Injecting Services for Overview
+
+The File Manager includes a context menu for file operations, a large-icons view for displaying files and folders, and a breadcrumb for navigation. These functionalities can be extended using additional feature modules such as Toolbar, NavigationPane, and DetailsView to simplify navigation and file operations. Inject these modules using the `ej.filemanager.FileManager.Inject()` method.
+
+The following example shows the File Manager with all feature modules.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/file-manager/overview-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/overview-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/file-manager/overview-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/es5-getting-started-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/file-manager/es5-getting-started-cs3" %}
+
+{% endif %}
+
 ## Toolbar
 
 The `Toolbar` (at the top) provides buttons for common file operations. When toolbar items exceed available space they move into an overflow popup accessible via a dropdown at the end of the toolbar.

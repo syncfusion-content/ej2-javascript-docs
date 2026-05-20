@@ -1,6 +1,3 @@
-import {
-  SymbolPalette, NodeModel
-} from '@syncfusion/ej2-diagrams';
 
 function getBasicShapes() {
   var basicShapes = [

@@ -67,9 +67,9 @@ let grid: Grid = new Grid({
     columns: [
         { field: 'OrderID', headerText: 'Order ID', width: 120, textAlign: 'Right', type: 'number', isPrimaryKey: true },
         { field: 'CustomerName', headerText: 'Customer Name', width: 140, type: 'string' },
-        { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'yMd' },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 140, type: 'string' },
+        { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'yMd', textAlign: 'Right' },
         { field: 'Freight', headerText: 'Freight', width: 120, textAlign: 'Right', format: 'C' },
+        { field: 'ShipCountry', headerText: 'Ship Country', width: 140, type: 'string' },
     ]
 });
 
@@ -105,6 +105,8 @@ grid.appendTo('#Grid');
 
 {% endtabs %}
 
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs132" %}
+
 ## Run the application
 
 The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
@@ -112,8 +114,6 @@ The quickstart project is configured to compile and run the application in the b
 ```
 npm start
 ```
-
-Output will be displayed as follows.
 
 
 ## See also

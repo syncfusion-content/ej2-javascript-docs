@@ -42,7 +42,7 @@ The following example demonstrates how to enable basic features such as Paging, 
 {% include code-snippet/treegrid/module-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/module-cs1/js/index.html %}
+{% include code-snippet/treegrid/module-cs1/index.html %}
 {% endhighlight %}
 {% highlight html tabtitle="es5-datasource.js" %}
 {% include code-snippet/treegrid/module-cs1/es5-datasource.js %}

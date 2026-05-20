@@ -360,3 +360,92 @@ Tooltip values can be customized by adding extra content to the title attributes
 
 {% previewsample "page.domainurl/code-snippet/file-manager/tooltip-cs1" %}
 {% endif %}
+
+## Maintaining control state on page reload
+
+The File Manager can maintain its state on page reload. Enable the [`enablePersistence`](../api/file-manager#enablepersistence) property to preserve the following:
+* Previous view of the File Manager - [`view`](../api/file-manager#view)
+* Previous path of the File Manager - [`path`](../api/file-manager#path)
+* Previous selected items of the File Manager - [`selectedItems`](../api/file-manager#selecteditems)
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/file-manager/persistence-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/persistence-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/file-manager/persistence-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/es5-getting-started-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/file-manager/es5-getting-started-cs5" %}
+
+{% endif %}
+
+>**Note:** Refresh the files of the current folder programmatically by calling the [`refreshFiles`](../api/file-manager#refreshfiles) method.
+
+## Specifying the current path of the File Manager
+
+The current path of the File Manager can be specified initially or dynamically using the [`path`](../api/file-manager#path) property.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+
+import { FileManager, Toolbar, NavigationPane, DetailsView } from '@syncfusion/ej2-filemanager';
+
+FileManager.Inject(Toolbar, NavigationPane, DetailsView)
+
+let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+// initialize File Manager Control
+let filemanagerInstance: FileManager = new FileManager({
+    ajaxSettings: {
+        url: hostUrl + 'api/FileManager/FileOperations',
+        getImageUrl: hostUrl + 'api/FileManager/GetImage',
+        uploadUrl: hostUrl + 'api/FileManager/Upload',
+        downloadUrl: hostUrl + 'api/FileManager/Download'
+    },
+    // Specify the required current path
+    path: '/Pictures'
+});
+
+// render initialized File Manager
+filemanagerInstance.appendTo('#filemanager');
+
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+```javascript
+var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
+// inject feature modules of the File Manager
+ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView,ej.filemanager.Toolbar,ej.filemanager.NavigationPane);
+// initialize File Manager Control
+var filemanagerInstance = new ej.filemanager.FileManager({
+    ajaxSettings: {
+        url: hostUrl + 'api/FileManager/FileOperations',
+        getImageUrl: hostUrl + 'api/FileManager/GetImage',
+        uploadUrl: hostUrl + 'api/FileManager/Upload',
+        downloadUrl: hostUrl + 'api/FileManager/Download'
+    },
+    // Specify the required current path
+    path: '/Pictures'
+});
+// render initialized File Manager
+filemanagerInstance.appendTo('#filemanager');
+```
+
+{% endif %}

@@ -333,9 +333,9 @@ var grid = new ej.grids.Grid({
     columns: [
         { field: 'OrderID', headerText: 'Order ID', width: 120, textAlign: 'Right', type: 'number' },
         { field: 'CustomerName', headerText: 'Customer Name', width: 140, type: 'string' },
-        { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'yMd' },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 140, type: 'string' },
+        { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'yMd', textAlign: 'Right' },
         { field: 'Freight', headerText: 'Freight', width: 120, textAlign: 'Right', format: 'C' },
+        { field: 'ShipCountry', headerText: 'Ship Country', width: 140, type: 'string' },
     ]
 });
 grid.appendTo('#Grid');
@@ -369,12 +369,11 @@ grid.appendTo('#Grid');
 
 {% endtabs %}
 
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs132" %}
+
 ## Run the application
 
 Now, run the **index.html** in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid control.
-
-Output will be displayed as follows.
-
 
 ## See also
 

@@ -62,7 +62,7 @@ let palette: SymbolPalette = new SymbolPalette({
     },
   ],
   width: '100%',
-  height: '471px',
+  height: '150px',
 });
 palette.appendTo('#palette');
 

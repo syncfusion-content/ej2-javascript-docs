@@ -86,9 +86,4 @@ var diagram = new ej.diagrams.Diagram(
   },
   '#element'
 );
-diagram.zoomTo({
-  type: 'ZoomIn',
-  zoomFactor: 2,
-  focusPoint: { x: 0, y: 0.5 },
-});
-diagram.fitToPage();
+

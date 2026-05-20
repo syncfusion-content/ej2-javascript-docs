@@ -6,7 +6,7 @@
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js"></script>
             <title>Essential JS 2</title>
             <!-- Essential JS 2 material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-diagrams/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-diagrams/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 Diagram's global script -->
             <script src="http://cdn.syncfusion.com/ej2/ej2-diagrams/dist/global/ej2-diagrams.min.js" type="text/javascript"></script>

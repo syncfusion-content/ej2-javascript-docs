@@ -28,9 +28,9 @@ To explore the properties of expand and collapse icon, refer to [`expandIcon`](.
 
 ### Size and shape
 
-Set a size for an icon by using [`width`](../../api/diagram/iconShapeModel/#width) and [`height`](../../api/diagram/iconShapeModel/#height) properties.
+Set a size for an icon by using [`width`](../../api/diagram/iconShapeModel#width) and [`height`](../../api/diagram/iconShapeModel#height) properties.
 
-The expandIcon’s and collapseIcon’s [`shape`](../../api/diagram/iconShapeModel/#shape) property allows to define the shape of the icon.
+The expandIcon’s and collapseIcon’s [`shape`](../../api/diagram/iconShapeModel#shape) property allows to define the shape of the icon.
 
 The following code example illustrates how to create an icon of various shapes.
 
@@ -47,13 +47,13 @@ The following code example illustrates how to create an icon of various shapes.
 
 ### Appearance and alignment of icon
 
-Set the borderColor, borderWidth, and background color for an icon using [`borderColor`](../../api/diagram/iconShapeModel#borderColor-string), [`borderWidth`](../../api/diagram/iconShapeModel#borderWidth-number), and [`fill`](../../api/diagram/iconShapeModel#fill-string) properties.
+Set the borderColor, borderWidth, and background color for an icon using [`borderColor`](../../api/diagram/iconShapeModel#borderColor), [`borderWidth`](../../api/diagram/iconShapeModel#borderWidth), and [`fill`](../../api/diagram/iconShapeModel#fill) properties.
 
-The corner radius can be set using the [`cornerRadius`](../../api/diagram/iconShapeModel#cornerRadius-number) property of the icon.
+The corner radius can be set using the [`cornerRadius`](../../api/diagram/iconShapeModel#cornerRadius) property of the icon.
 
 The icon can be aligned relative to the node boundaries. It has margin, offset, horizontalAlignment, and verticalAlignment settings. It is quite tricky, when all four alignments are used together but gives you more control over alignment.
 
-The [`iconColor`](../../api/diagram/iconShapeModel/#iconcolor) property can be used to set the strokeColor of the Icon.
+The [`iconColor`](../../api/diagram/iconShapeModel#iconcolor) property can be used to set the strokeColor of the Icon.
 
 The following code example illustrates the customization of icons.
 
@@ -70,7 +70,7 @@ The following code example illustrates the customization of icons.
 
 ## IsExpanded
 
-[`isExpanded`](../../api/diagram/nodeModel/#isexpanded) property is used to defines whether the node is expanded or not. The following example demonstrate node’s `isExpanded` property. The default value of isExpanded property is true.
+[`isExpanded`](../../api/diagram/nodeModel#isexpanded) property is used to defines whether the node is expanded or not. The following example demonstrate node’s `isExpanded` property. The default value of isExpanded property is true.
 
 ``` JavaScript
 

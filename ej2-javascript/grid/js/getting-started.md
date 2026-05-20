@@ -313,233 +313,71 @@ Based on your requirement, additional dependencies can be included as needed. In
 
 ## Adding Grid control
 
-Now, you can start adding Grid control in the application. For getting started, add a **div** element for Grid control in **index.html**. Then refer the **index.js** file into the **index.html** file.
+You can start adding Essential<sup style="font-size:70%">&reg;</sup> JS 2 grid component to the application. To get started, add the grid component in **index.js** file using the following code.
 
-```html
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+{% tabs %}
+{% highlight ts tabtitle="index.js" %}
 
-<head>
-    <title>Essential JS 2 Grid</title>
+// Defines the data to be displayed in the Grid.
+var data = [
+    { OrderID: 10248, CustomerName: 'Ana Trujillo', OrderDate: new Date(2025, 0, 12), ShipCountry: 'France', Freight: 32.38 },
+    { OrderID: 10249, CustomerName: 'Martin Sommer', OrderDate: new Date(2025, 0, 15), ShipCountry: 'Germany', Freight: 11.61 },
+    { OrderID: 10250, CustomerName: 'Thomas Hardy', OrderDate: new Date(2025, 1, 5), ShipCountry: 'Brazil', Freight: 65.83 },
+    { OrderID: 10251, CustomerName: 'Elizabeth Lincoln', OrderDate: new Date(2025, 1, 18), ShipCountry: 'France', Freight: 41.34 },
+    { OrderID: 10252, CustomerName: 'Victoria Ashworth', OrderDate: new Date(2025, 2, 10), ShipCountry: 'Belgium', Freight: 51.30 },
+    { OrderID: 10253, CustomerName: 'Martine Rance', OrderDate: new Date(2025, 2, 22), ShipCountry: 'Brazil', Freight: 58.17 },
+]
 
-    <!-- Essential JS 2 bootstrap5.3 theme -->
-    <link href="https://cdn.syncfusion.com/ej2/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-    <!-- Essential JS 2 all script -->
-    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
-
-</head>
-
-<body>
-    <!-- Add the HTML <div> element for grid  -->
-    <div id="Grid"></div>
-    <script src="index.js" type="text/javascript"></script>
-</body>
-
-</html>
-
-```
-
-Place the following grid code in the **index.js**.
-
-```javascript
-
-var grid = new ej.grids.Grid();
-grid.appendTo('#Grid');
-
-```
-
-## Defining row data
-
-Data for the Grid control is bind by using [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/grid#datasource) property. It accepts either array of JavaScript object or [DataManager](https://ej2.syncfusion.com/javascript/documentation/grid/data-binding/data-binding) instance.
-
-```html
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-    <title>Essential JS 2 Grid</title>
-
-    <!-- Essential JS 2 bootstrap5.3 theme -->
-    <link href="https://cdn.syncfusion.com/ej2/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-    <!-- Essential JS 2 all script -->
-    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
-
-</head>
-
-<body>
-    <!-- Add the HTML <div> element for grid  -->
-    <div id="Grid"></div>
-    <script src="index.js" type="text/javascript"></script>
-</body>
-
-</html>
-
-```
-
-Place the following grid code in the **index.js**.
-
-```javascript
-var data = [{ OrderID: 10248, CustomerID: 'VINET', Freight: 32.38, OrderDate: new Date(8364186e5) },
-            { OrderID: 10249, CustomerID: 'TOMSP', Freight: 11.61, OrderDate: new Date(836505e6) },
-            { OrderID: 10250, CustomerID: 'HANAR', Freight: 65.83, OrderDate: new Date(8367642e5) },
-            { OrderID: 10251, CustomerID: 'VICTE', Freight: 41.34, OrderDate: new Date(8368506e5) },
-            { OrderID: 10252, CustomerID: 'SUPRD', Freight: 51.3,  OrderDate: new Date(8367642e5) },
-            { OrderID: 10253, CustomerID: 'HANAR', Freight: 58.17, OrderDate: new Date(836937e6) },
-            { OrderID: 10254, CustomerID: 'CHOPS', Freight: 22.98, OrderDate: new Date(8370234e5) },
-            { OrderID: 10255, CustomerID: 'RICSU', Freight: 148.33, OrderDate: new Date(8371098e5) },
-            { OrderID: 10256, CustomerID: 'WELLI', Freight: 13.97, OrderDate: new Date(837369e6) }];
-var grid = new ej.grids.Grid({dataSource: data});
-grid.appendTo('#Grid');
-
-```
-
-## Defining columns
-
-The Grid has an option to define columns as array. Each column in this array supports various properties that allow customization. Let’s check the properties used here:
-
-* The [field](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#field) property is used to map the column to a corresponding property name in the array of JavaScript objects.
-* The [headerText](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#headertext) property is used to specify a custom title for the column.
-* The [textAlign](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#textalign) property controls the horizontal alignment of content in the column. By default, columns are left-aligned. To align content to the right, set [textAlign](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#textalign) to **Right**.
-* The [format](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#format) property is applied to format numeric and date values. In this case, it is used to convert numeric values into a standard currency format.
-
-```javascript
-var data = [{ OrderID: 10248, CustomerID: 'VINET', Freight: 32.38, OrderDate: new Date(8364186e5) },
-            { OrderID: 10249, CustomerID: 'TOMSP', Freight: 11.61, OrderDate: new Date(836505e6) },
-            { OrderID: 10250, CustomerID: 'HANAR', Freight: 65.83, OrderDate: new Date(8367642e5) },
-            { OrderID: 10251, CustomerID: 'VICTE', Freight: 41.34, OrderDate: new Date(8368506e5) },
-            { OrderID: 10252, CustomerID: 'SUPRD', Freight: 51.3,  OrderDate: new Date(8367642e5) },
-            { OrderID: 10253, CustomerID: 'HANAR', Freight: 58.17, OrderDate: new Date(836937e6) },
-            { OrderID: 10254, CustomerID: 'CHOPS', Freight: 22.98, OrderDate: new Date(8370234e5) },
-            { OrderID: 10255, CustomerID: 'RICSU', Freight: 148.33, OrderDate: new Date(8371098e5) },
-            { OrderID: 10256, CustomerID: 'WELLI', Freight: 13.97, OrderDate: new Date(837369e6) }];
 var grid = new ej.grids.Grid({
     dataSource: data,
     columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C' },
-        { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'yMd' }
+        { field: 'OrderID', headerText: 'Order ID', width: 120, textAlign: 'Right', type: 'number' },
+        { field: 'CustomerName', headerText: 'Customer Name', width: 140, type: 'string' },
+        { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'yMd', textAlign: 'Right' },
+        { field: 'Freight', headerText: 'Freight', width: 120, textAlign: 'Right', format: 'C' },
+        { field: 'ShipCountry', headerText: 'Ship Country', width: 140, type: 'string' },
     ]
 });
 grid.appendTo('#Grid');
 
-```
-
-## Module injection
-
-To create grids with additional features, inject the required modules. The following modules are used to extend grid's basic functionality.
-
-* [Page](https://helpej2.syncfusion.com/javascript/documentation/api/grid/page) - Inject this module to use paging feature.
-* [Sort](https://helpej2.syncfusion.com/javascript/documentation/api/grid/sort) - Inject this module to use sorting feature.
-* [Filter](https://helpej2.syncfusion.com/javascript/documentation/api/grid/filter) - Inject this module to use filtering feature.
-* [Group](https://helpej2.syncfusion.com/javascript/documentation/api/grid/group) - Inject this module to use grouping feature.
-* **ExcelExport** - Inject this module to use Excel export feature.
-* **PdfExport** - Inject this module to use PDF export feature.
-
-These modules should be injected into the grid using the **ej.grids.Grid.Inject** method.
-
-> Additional feature modules are available [here](https://helpej2.syncfusion.com/javascript/documentation/api/grid/overview).
-
-## Enable paging
-
-The paging feature enables you to view the grid record in a paged view. To enable paging, set the [allowPaging](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowpaging) property to true. Inject the [Page](https://ej2.syncfusion.com/javascript/documentation/api/grid#pagermodule) module as follows. If the [Page](https://ej2.syncfusion.com/javascript/documentation/api/grid#pagermodule) module is not injected, the pager will not be rendered in the grid. Pager can be customized using the [pageSettings](https://ej2.syncfusion.com/javascript/documentation/api/grid#pagesettings) property.
-
-Create a file named **my-app/es5-datasource.js** to bind JSON data. Then, import **my-app/es5-datasource.js** in **index.html**.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid/grid-cs128/index.js %}
 {% endhighlight %}
+
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/grid-cs128/index.html %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Essential JS 2 Grid</title>
+
+    <!-- Essential JS 2 bootstrap5.3 theme -->
+    <link href="https://cdn.syncfusion.com/ej2/33.1.44/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <!-- Essential JS 2 all script -->
+    <script src="https://cdn.syncfusion.com/ej2/33.1.44/dist/ej2.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <!-- Add the HTML <div> element for grid  -->
+    <div id="Grid"></div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
+
 {% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/grid/grid-cs128/es5-datasource.js %}
-{% endhighlight %}
+
 {% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs128" %}
 
-## Enable sorting
-
-The sorting feature enables you to order the records. It can be enabled by setting the  [allowSorting](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowsorting) property as true. Inject the [Sort](https://ej2.syncfusion.com/javascript/documentation/api/grid#sortmodule) module as follows. If [Sort](https://ej2.syncfusion.com/javascript/documentation/api/grid#sortmodule) module is not injected, you cannot sort when a header is clicked. Sorting feature can be customized using the  [sortSettings](https://ej2.syncfusion.com/javascript/documentation/api/grid#sortsettings) property.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid/grid-cs129/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/grid-cs129/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/grid/grid-cs129/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs129" %}
-
-## Enable filtering
-
-The filtering feature enables you to view reduced amount of records based on filter criteria. It can be enabled by setting the [allowFiltering](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowfiltering) property as true.  The [Filter](https://ej2.syncfusion.com/javascript/documentation/api/grid#filtermodule) module has to be injected as follows. If [Filter](https://ej2.syncfusion.com/javascript/documentation/api/grid#filtermodule) module is not injected,  filter bar will not be rendered in the grid. Filtering feature can be customized using the [filterSettings](https://ej2.syncfusion.com/javascript/documentation/api/grid#filtersettings) property.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid/grid-cs130/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/grid-cs130/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/grid/grid-cs130/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs130" %}
-
-## Enable grouping
-
-The grouping feature enables you to view the grid record in a grouped view. It can be enabled by setting the [allowGrouping](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowgrouping) property to true. The [Group](https://ej2.syncfusion.com/javascript/documentation/api/grid#groupmodule) module has to be injected as follows. If [Group](https://ej2.syncfusion.com/javascript/documentation/api/grid#groupmodule) module is not injected, the group drop area will not be rendered in the grid. The grouping feature can be customized using the [groupSettings](https://ej2.syncfusion.com/javascript/documentation/api/grid#groupsettings) property.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid/grid-cs131/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/grid-cs131/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/grid/grid-cs131/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs131" %}
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs132" %}
 
 ## Run the application
 
 Now, run the **index.html** in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid control.
 
-Output will be displayed as follows.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid/grid-cs132/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/grid-cs132/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/grid/grid-cs132/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs132" %}
-
-## Deploy the application
-
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid control features are segregated into individual feature-wise modules. The [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and **CDN** scripts include code for all Grid features. Therefore, these are **not recommended** for production environments. For production use, generate optimized script and style files using the **Custom Resource Generator**[(CRG)](https://crg.syncfusion.com) for Essential<sup style="font-size:70%">&reg;</sup> JS 2. CRG will allow you to generate the bundled script for the currently enabled features in grid.
-
 ## See also
 
+* [Grid Feature Modules](https://ej2.syncfusion.com/javascript/documentation/grid/module)
 * [How to display a table data after clicking Submit button in Javascript?](https://support.syncfusion.com/kb/article/10145/how-to-display-a-table-data-after-clicking-submit-button-in-javascript)
 * [How to display table in popup window using Javascript?](https://support.syncfusion.com/kb/article/10339/how-to-display-table-in-popup-window-using-javascript)
 * [How to open pdf document on button click inside a Grid](https://support.syncfusion.com/kb/article/10246/how-to-open-pdf-document-on-button-click-inside-a-grid)

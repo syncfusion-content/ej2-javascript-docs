@@ -3,7 +3,7 @@ var nodes = [{
         width: 140,
         height: 50,
         offsetX: 300,
-        offsetY: 50,
+        offsetY: 100,
         annotations: [{
             id: 'label1',
             content: 'Start'
@@ -18,7 +18,7 @@ var nodes = [{
         width: 140,
         height: 50,
         offsetX: 300,
-        offsetY: 140,
+        offsetY: 300,
         shape: {
             type: 'Flow',
             shape: 'Process'

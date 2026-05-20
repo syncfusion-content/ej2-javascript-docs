@@ -144,3 +144,32 @@ The example below shows how to add a `de-DE` locale for the File Manager compone
 
 {% previewsample "page.domainurl/code-snippet/file-manager/locale-cs2" %}
 {% endif %}
+
+## Rendering control in right-to-left direction
+
+Render the File Manager in the right-to-left direction by setting the [`enableRtl`](../api/file-manager#enablertl) API to `true`.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/file-manager/rtl-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/rtl-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/file-manager/rtl-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/es5-getting-started-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/file-manager/es5-getting-started-cs6" %}
+
+{% endif %}

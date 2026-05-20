@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and Cordova
+# Syncfusion® JavaScript (Essential® JS 2) library and Cordova
 
 This article provides a step-by-step guide to configure Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) in a Cordova application.
 
@@ -22,19 +22,19 @@ This article provides a step-by-step guide to configure Syncfusion<sup style="fo
 
 ### Setup development environment
 
-1. Open command prompt, and run the following command line to install the `cordova` with global flag.
-
+1. Open command prompt, and run the following command to install `cordova`:
     on Windows:
 
     ```
     npm install -g cordova
     ```
 
-    on OSX / LINUX:
+    on OSX / Linux:
 
     ```
     sudo npm install -g cordova typescript
     ```
+
 
 2. Create a new Cordova application by running the following command line. A new Cordova application will be created under `ej2-cordova` folder.
 
@@ -63,7 +63,7 @@ This article provides a step-by-step guide to configure Syncfusion<sup style="fo
 
     > The command line `cordova platform add browser` adds cordova platform browser.
 
-5. Open the application in Visual Studio Code, and configure the TypeScrit compilation settings by adding the following code snippets in `~/tsconfig.json` file.
+5. Open the application in Visual Studio Code, create a `~/tsconfig.json` file and configure the TypeScript compilation settings by adding the following code snippets in `~/tsconfig.json` file.
 
     ```
     {
@@ -84,7 +84,6 @@ This article provides a step-by-step guide to configure Syncfusion<sup style="fo
             "noEmitOnError": true,
             "forceConsistentCasingInFileNames": true,
             "moduleResolution": "node",
-            "suppressImplicitAnyIndexErrors": true,
             "outFile": "./www/js/ej2.js",
         },
         "files": [
@@ -137,7 +136,7 @@ This article provides a step-by-step guide to configure Syncfusion<sup style="fo
 
 ![ej2 cordova npm ej2 install](images/cordova-ej2-install.png)
 
-2.Add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI cotrols in the application. For getting started, the Button control is added in the application `~/www/index.html` file.
+2.Add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls in the application. For getting started, the Button control is added in the application `~/www/index.html` file.
 
  ```html
      <!DOCTYPE html>
@@ -194,7 +193,7 @@ This article provides a step-by-step guide to configure Syncfusion<sup style="fo
 5.Now, run the following command line to compile the TypeScript file into JavaScript AMD module file. The compiled JavaScript output file will be placed in `~/www/js/ej2.js`.
 
  ```
-    npm run build
+npm run build
  ```
 
     > This node script has already been configured in the `~/package.json` file's `scripts` section.
@@ -229,7 +228,7 @@ This article provides a step-by-step guide to configure Syncfusion<sup style="fo
 7.Finally, run the following command line to start the application. The button control will be rendered in the Cordova application.
 
  ```
-    cordova run browser
+cordova run browser
  ```
 
  ![ej2 cordova button](images/cordova-button.png)
@@ -240,36 +239,36 @@ This article provides a step-by-step guide to configure Syncfusion<sup style="fo
 
 ### Android
 
-1.The [Android SDK](https://developer.android.com/studio/) is required to run the Cordova application in Android emulator. Refer to this [Cordova documentation](https://cordova.apache.org/docs/en/8.x/guide/platforms/android/index.html) for more information about Android platform development in Cordava.
+1.The [Android SDK](https://developer.android.com/studio/) is required to run the Cordova application in Android emulator. Refer to this [Cordova documentation](https://cordova.apache.org/docs/en/8.x/guide/platforms/android/index.html) for more information about Android platform development in Cordova.
 
 2.Run the following command line to add the Android platform in the Cordova application after installing the [required software](https://cordova.apache.org/docs/en/8.x/guide/platforms/android/index.html#installing-the-requirements).
 
   ```
-    cordova platform add android
+cordova platform add android
  ```
 
 3.Then, run the following command line to start the Cordova application in Android emulator.
 
  ```
-    cordova run android
+cordova run android
  ```
 
-### IOS
+### iOS
 
-1.The [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) is required to run the Cordova application in IOS simulator. Refer to this [documentation](https://cordova.apache.org/docs/en/8.x/guide/platforms/ios/index.html) for more information about IOS platform development in Cordava.
+1.The [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) is required to run the Cordova application in iOS simulator. Refer to this [documentation](https://cordova.apache.org/docs/en/8.x/guide/platforms/ios/index.html) for more information about iOS platform development in Cordova.
 
-2.After installing the [required software](https://cordova.apache.org/docs/en/8.x/guide/platforms/ios/index.html#installing-the-requirements), run the following command line to add the IOS platform in the Cordova application.
+2.After installing the [required software](https://cordova.apache.org/docs/en/8.x/guide/platforms/ios/index.html#installing-the-requirements), run the following command line to add the iOS platform in the Cordova application.
 
  ```
-    cordova platform add ios
+cordova platform add ios
  ```
 
     > If this application need to be started in the OSX configuration, add it using the command line `cordova platform add osx`. Refer to this [documentation](https://cordova.apache.org/docs/en/8.x/guide/platforms/osx/index.html) for more information about OSX platform development in Cordova.
 
-3.Now, run the following command line to start the Cordova application in IOS simulator.
+3.Now, run the following command line to start the Cordova application in iOS simulator.
 
  ```
-    cordova run ios
+ cordova run ios
  ```
 
 ### Windows
@@ -277,13 +276,13 @@ This article provides a step-by-step guide to configure Syncfusion<sup style="fo
 1.Run the following command line to add the Windows platform in the Cordova application after installing the [required software](https://cordova.apache.org/docs/en/8.x/guide/platforms/windows/index.html#requirements-and-support).
 
  ```
-    cordova platform add windows
+cordova platform add windows
  ```
 
 2.Then, run the following command line to start the Cordova application in Windows emulator.
 
  ```
-    cordova run windows
+cordova run windows
  ```
 
 > Refer to this [documentation](https://cordova.apache.org/docs/en/8.x/guide/platforms/windows/index.html) for more information about Windows platform development in Cordova.

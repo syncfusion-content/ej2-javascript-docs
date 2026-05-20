@@ -946,3 +946,126 @@ The following table provides the default context menu item and the corresponding
 | Layout | • SortBy<br>• View<br>• Refresh<br>• NewFolder<br>• Upload<br>• Details<br>• Select all | • Empty space in the view section (details view and large icon view area).<br>• Empty folder content. |
 | Folders | • Open<br>• Delete<br>• Rename<br>• Downloads<br>• Details | • Folders in treeview, details view, and large icon view. |
 | Files | • Open<br>• Delete<br>• Rename<br>• Downloads<br>• Details | • Files in details view and large icon view. |
+
+## Ajax Settings Configuration
+
+The File Manager's [`ajaxSettings`](../api/file-manager#ajaxsettings) property allows you to configure the URLs for various file operations including file operations, upload, download, and image preview.
+
+### File download support
+
+To perform the download operation, initialize the [`downloadUrl`](../api/file-manager/ajaxSettingsModel#downloadurl) property in [`ajaxSettings`](../api/file-manager#ajaxsettings) of the File Manager component.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
+import { FileManager } from '@syncfusion/ej2-filemanager';
+
+let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+// initialize File Manager Control
+let filemanagerInstance: FileManager = new FileManager({
+    ajaxSettings: {
+        url: hostUrl + 'api/FileManager/FileOperations',
+        downloadUrl: hostUrl + 'api/FileManager/Download'
+    }
+});
+
+// render initialized File Manager
+filemanagerInstance.appendTo('#filemanager');
+
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+```html
+<script>
+        var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
+        // initialize File Manager Control
+        var filemanagerInstance = new ej.filemanager.FileManager({
+            ajaxSettings: {
+                url: hostUrl + 'api/FileManager/FileOperations',
+                downloadUrl: hostUrl + 'api/FileManager/Download'
+            }
+        });
+        // render initialized File Manager
+        filemanagerInstance.appendTo('#filemanager');
+</script>
+```
+
+{% endif %}
+
+### File upload support
+
+To perform the upload operation, initialize the [`uploadUrl`](../api/file-manager/ajaxSettingsModel#uploadurl) property in [`ajaxSettings`](../api/file-manager#ajaxsettings) of the File Manager component.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
+import { FileManager } from '@syncfusion/ej2-filemanager';
+
+let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+// initialize File Manager Control
+let filemanagerInstance: FileManager = new FileManager({
+    ajaxSettings: {
+        url: hostUrl + 'api/FileManager/FileOperations',
+        uploadUrl: hostUrl + 'api/FileManager/Upload'
+    }
+});
+
+// render initialized File Manager
+filemanagerInstance.appendTo('#filemanager');
+
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+```html
+<script>
+        var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
+        // initialize File Manager Control
+        var filemanagerInstance = new ej.filemanager.FileManager({
+            ajaxSettings: {
+                url: hostUrl + 'api/FileManager/FileOperations',
+                uploadUrl: hostUrl + 'api/FileManager/Upload'
+            }
+        });
+        // render initialized File Manager
+        filemanagerInstance.appendTo('#filemanager');
+</script>
+```
+
+{% endif %}
+
+### Image preview support
+
+To enable image preview in the File Manager component, initialize the [`getImageUrl`](../api/file-manager/ajaxSettingsModel#getimageurl) property in [`ajaxSettings`](../api/file-manager#ajaxsettings).
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/file-manager/getting-started-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/getting-started-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/file-manager/getting-started-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/es5-getting-started-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/file-manager/es5-getting-started-cs2" %}
+
+{% endif %}

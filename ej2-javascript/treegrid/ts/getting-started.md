@@ -131,6 +131,8 @@ treeGridObj.appendTo('#TreeGrid');
 
 {% endtabs %}
 
+{% previewsample "page.domainurl/code-snippet/treegrid/tree-grid-cs4" %}
+
 ## Run the application
 
 The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
@@ -138,9 +140,6 @@ The quickstart project is configured to compile and run the application in the b
 ```
 npm start
 ```
-
-Output will be displayed as follows.
-
 
 ## See also
 

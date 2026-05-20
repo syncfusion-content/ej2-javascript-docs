@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Getting Started with Electron Framework in Typescript
 
-[Electron](https://www.electronjs.org/docs/latest/) is a framework for building cross-platform desktop applications using JavaScript, HTML, and CSS. It bundles Chromium and Node.js, allowing a single codebase to run on Windows, macOS, and Linux.
+[Electron](https://www.electronjs.org/docs/latest/) is a framework for building cross-platform desktop applications using JavaScript, HTML, and CSS. It bundles Chromium and Node.js, allowing a single code base to run on Windows, macOS, and Linux.
 
 This guide walks you through setting up Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) in an Electron application using TypeScript and webpack.
 
-> The setup uses a custom `webpack.config.js` configuration with the latest webpack-cli. It requires **Node.js v18.0.0 or higher**. For more on webpack, see the [official webpack documentation](https://webpack.js.org/guides/getting-started/).
+> The setup uses a custom `webpack.config.js` configuration with the latest webpack-cli. It requires **Node.js v22.0.0 or higher**. For more on webpack, see the [official webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Prerequisites
 
@@ -29,11 +29,9 @@ Ensure the following tools are installed:
 * Open the command prompt in your desired location. To create the application folder, use the following commands.
 
   ```
-
   mkdir ej2-electron
 
   cd ej2-electron
-
   ```
 
 * Create a `package.json` file and install the required packages in the application using the following commands.
@@ -55,18 +53,16 @@ Ensure the following tools are installed:
 All Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are published on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. So, choose the desired control to install. In this getting started, the Grid control is used as an example. To install the Grid control package, use the following command.
 
 ```
-
 npm i @syncfusion/ej2-grids
-
 ```
 
-> Check out the [installation and upgrade](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation/) section to learn about the different ways of installing the packages.
+> Check out the [installation and upgrade](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation) section to learn about the different ways of installing the packages.
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
 After installing the Syncfusion<sup style="font-size:70%">&reg;</sup> control packages in the application, create a `~/style.css` file in the application root directory then add the required theme based on the controls used. 
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls comes with [built-in](https://ej2.syncfusion.com/documentation/appearance/theme/) themes, which are available in installed packages. It is easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls based on the application style by referring to any of the [built-in](https://ej2.syncfusion.com/documentation/appearance/theme/) themes. 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls comes with [built-in](https://ej2.syncfusion.com/documentation/appearance/theme) themes, which are available in installed packages. It is easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls based on the application style by referring to any of the [built-in](https://ej2.syncfusion.com/documentation/appearance/theme) themes. 
 
 Open the application in Visual Studio Code and import the `Fluent2` theme for the Grid control and its dependencies to the `~/style.css` file as follows.
 
@@ -82,7 +78,7 @@ Open the application in Visual Studio Code and import the `Fluent2` theme for th
   @import "node_modules/@syncfusion/ej2-grids/styles/fluent2.css";
 ```
 
-> Grid control have dependencies on other Syncfusion<sup style="font-size:70%">&reg;</sup> controls, so CSS references for the dependent control must be added in order to use all Grid functionalities. Check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme/) section to know more about built-in themes and combined CSS reference of all controls.
+> Grid control have dependencies on other Syncfusion<sup style="font-size:70%">&reg;</sup> controls, so CSS references for the dependent control must be added in order to use all Grid functionalities. Check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and combined CSS reference of all controls.
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> control to the application
 
@@ -206,7 +202,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 ```
 
-> Learn more about the [Electron process model](https://www.electronjs.org/docs/tutorial/process-model).
+> Learn more about the [Electron process model](https://www.electronjs.org/docs/latest/tutorial/process-model).
 
 ## Configure webpack
 
@@ -260,13 +256,12 @@ Modify the `main` and `scripts` fields in the `package.json` file as follows.
 
 
 ```js
-  “main”: “./dist/main-bundle.js”,
+  "main": "./dist/main-bundle.js",
   ...
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "start": "npm run build && electron ."
   },
-
 ```
 
 ## Run the application
@@ -279,10 +274,10 @@ npm start
 
 ![Grid control](./images/electron-grid.png)
 
-To learn more about the functionality of the Grid control, refer to the [Grid control](https://ej2.syncfusion.com/documentation/grid/getting-started/) section.
+To learn more about the functionality of the Grid control, refer to the [Grid control](https://ej2.syncfusion.com/documentation/grid/getting-started) section.
 
 > [View sample in github](https://github.com/SyncfusionExamples/ej2-electron)
 
 ## See also
 
-* [How to register Syncfusion<sup style="font-size:70%">&reg;</sup> License key in JavaScript(ES6) application](https://ej2.syncfusion.com/documentation/licensing/license-key-registration/)
+* [How to register Syncfusion<sup style="font-size:70%">&reg;</sup> License key in JavaScript(ES6) application](https://ej2.syncfusion.com/documentation/licensing/license-key-registration)

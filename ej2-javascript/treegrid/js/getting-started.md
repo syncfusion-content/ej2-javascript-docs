@@ -269,11 +269,11 @@ treeGridObj.appendTo('#TreeGrid');
 
 {% endtabs %}
 
+{% previewsample "page.domainurl/code-snippet/treegrid/tree-grid-cs4" %}
+
 ## Run the application
 
 Now, run the **index.html** in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid control.
-
-Output will be displayed as follows.
 
 ## See Also
 

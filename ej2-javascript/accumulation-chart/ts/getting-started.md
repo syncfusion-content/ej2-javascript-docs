@@ -16,6 +16,15 @@ This document explains how to create a simple Accumulation Chart and configure i
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
 
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+* [Node.js](https://nodejs.org/) (v14.15.0 or higher)
+* [Visual Studio Code](https://code.visualstudio.com) (or any text editor)
+* [Git](https://git-scm.com/) (for cloning the quickstart repository)
+* A web browser to view the result
+
 ## Dependencies
 
 Below is the list of minimum dependencies required to use the Accumulation Chart.
@@ -29,10 +38,24 @@ Below is the list of minimum dependencies required to use the Accumulation Chart
     |-- @syncfusion/ej2-compression
     |-- @syncfusion/ej2-svg-base
 ```
+Note: @syncfusion/ej2-pdf-export, @syncfusion/ej2-file-utils, and @syncfusion/ej2-compression are optional—required only for PDF export features. Omit if not using exports.
 
-## Set up development environment
+## Quick Setup
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
+### Step 1: Create a Project Folder
+
+Create a folder named `my-accumulation-chart` in your desired location. This folder will contain your Syncfusion Accumulation Chart TypeScript project.
+
+### Step 2: Open Command Prompt
+
+Open the command prompt and navigate to your desired directory where you want to create the project. You can do this by:
+
+* **For Windows**: Open Command Prompt (cmd) or PowerShell and use `cd` command to navigate to your desired directory
+* **For macOS/Linux**: Open Terminal and use `cd` command to navigate to your desired directory
+
+### Step 3: Clone the Quickstart Repository
+
+Run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -42,7 +65,9 @@ git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quick
 {% endhighlight %}
 {% endtabs %}
 
-After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
+### Step 4: Navigate to Project Folder
+
+After cloning the application in the `ej2-quickstart` folder, run the following command to navigate to the project directory.
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -52,11 +77,11 @@ cd ej2-quickstart
 {% endhighlight %}
 {% endtabs %}
 
-## Add Syncfusion JavaScript packages
+### Step 5: Install Required Packages
 
 Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
-The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+The quickstart application is already preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install all the dependent npm packages from the command prompt.
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -66,11 +91,15 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Add accumulation chart to the project
+This command will download and install all necessary dependencies for your project.
 
-Open the project in Visual Studio Code and add the Accumulation Chart to the application.
+### Step 6: Update the HTML Template
 
-Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.html` file to initialize the Accumulation Chart.
+Open the `ej2-quickstart` folder in Visual Studio Code or any text editor of your choice.
+
+> Note: Code snippets here use webpack for local development. For online demos or StackBlitz, SystemJS may be used—ignore loader/helper scripts in rendered previews.
+
+Locate the `~/src/index.html` file in the project. Add the HTML div tag with its `id` attribute as `element` to initialize the Accumulation Chart container.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -89,6 +118,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 </head>
 
 <body>
+     <h1>Syncfusion Accumulation Chart</h1>
      <!--container which is going to render the Accumulation chart-->
      <div id='element'>
      </div>
@@ -99,38 +129,52 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Import the Accumulation Chart component into `src/app/app.ts` to instantiate and render the Accumulation Chart.
+### Step 7: Create the Accumulation Chart Component with Data
+
+Locate the `src/app/app.ts` file in your project and import the AccumulationChart component to instantiate and render it with sample data.
+
+**Pie Series**: By default, a pie series is rendered when JSON data is assigned to the series [`dataSource`](../api/accumulation-chart/accumulationseries#datasource) property. Map JSON fields to the series [`xName`](../api/accumulation-chart/accumulationseries#xname) and [`yName`](../api/accumulation-chart/accumulationseries#yname) properties to bind data correctly.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
 import { AccumulationChart } from '@syncfusion/ej2-charts';
 
-// initialize Accumulation Chart component
-let chart: AccumulationChart = new AccumulationChart();
+// Sample data for the Accumulation Chart
+let pieData: Object[] = [
+    { month: 'Jan', sales: 35 },
+    { month: 'Feb', sales: 28 },
+    { month: 'Mar', sales: 34 },
+    { month: 'Apr', sales: 32 },
+    { month: 'May', sales: 40 },
+    { month: 'Jun', sales: 32 },
+    { month: 'Jul', sales: 35 },
+    { month: 'Aug', sales: 55 },
+    { month: 'Sep', sales: 38 },
+    { month: 'Oct', sales: 30 },
+    { month: 'Nov', sales: 25 },
+    { month: 'Dec', sales: 32 }
+];
 
-// render initialized Accumulation Chart
-chart.appendTo('#element');
+// Initialize and render Accumulation Chart
+let chart: AccumulationChart = new AccumulationChart({
+    series: [
+        {
+            dataSource: pieData,
+            xName: 'month',
+            yName: 'sales',
+            type: 'Pie'
+        }
+    ],
+    title: 'Sales Data'
+}, '#element');
 
 {% endhighlight %}
 {% endtabs %}
 
-**Pie Series**
+### Step 8: Run the Application
 
-By default, a pie series is rendered when JSON data is assigned to the series [`dataSource`](../api/accumulation-chart/accumulationseries#datasource) property. Map JSON fields to the series [`xName`](../api/accumulation-chart/accumulationseries#xname) and [`yName`](../api/accumulation-chart/accumulationseries#yname) properties to bind data correctly.
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/chart/chart-types-cs72/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-types-cs72/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs72" %}
-
-Now use the `npm run start` command to run the application in the browser.
+Open the integrated terminal in Visual Studio Code or use your command prompt to run the application. Use the `npm run start` command:
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -139,3 +183,15 @@ npm run start
 
 {% endhighlight %}
 {% endtabs %}
+
+The application will compile and automatically start in your default web browser. The application typically runs at `http://localhost:4000`. You should see the Syncfusion<sup style="font-size:70%">&reg;</sup> Accumulation Chart control displayed on the page.
+
+### Step 9: View Your Chart
+
+Wait for the webpack dev server to complete the build process. Once completed, you will see the Accumulation Chart control rendering in your browser. The chart is now successfully initialized with a pie chart displaying the sample sales data and is ready for further customization.
+
+## Output
+
+The following screenshot shows the output of the Syncfusion Accumulation Chart quick start application:
+
+![Syncfusion Accumulation Chart Quick Start Output](../../images/accumulation.png)

@@ -113,7 +113,7 @@ taskSettings = {
 
 Put everything together by adding the following code in the **app.ts** and **index.html** file
 
-### app.ts
+`app.ts`
 
 Place the following code in the **app.ts** file to create and configure the Gantt Chart component.
 
@@ -146,7 +146,7 @@ let gantt: Gantt = new Gantt({
 {% endhighlight %}
 {% endtabs %}
 
-### index.html
+`index.html`
 
 Add the following HTML element to the **index.html** file. This element acts as the container for rendering the Gantt Chart component.
 
@@ -191,7 +191,7 @@ npm start
 ## Output
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/gantt/getting-started-cs23/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
@@ -219,7 +219,7 @@ Error handling is used to identify errors, display them and develop recovery str
 The following code example shows how to use the [actionFailure](https://ej2.syncfusion.com/documentation/api/gantt#actionfailure) event in the Gantt control to display an exception when `isPrimaryKey` is not configured properly in the Gantt Chart column.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/gantt/exception-handling-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
@@ -231,4 +231,4 @@ The following code example shows how to use the [actionFailure](https://ej2.sync
 
 The following screenshot represents the Gantt Exception handling in `actionFailure` event.
 
-![Error Handling](../images/error-handling.png)
+![Error Handling](./images/error-handling.png)

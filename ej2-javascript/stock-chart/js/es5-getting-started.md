@@ -74,6 +74,7 @@ Copy and paste the following complete code into your `index.html` file:
 ```html
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Syncfusion Stock Chart - Quick Start</title>
 
@@ -84,41 +85,40 @@ Copy and paste the following complete code into your `index.html` file:
     <!-- Scripts -->
     <script src="https://cdn.syncfusion.com/ej2/33.2.3/dist/ej2.min.js" type="text/javascript"></script>
 </head>
-  
-  <body>
+
+<body>
     <h1>Syncfusion Stock Chart</h1>
     <div id="element"></div>
-    
+
     <script>
-      // Sample data
-      var chartData = [
-        { date: new Date('2012-04-02'), open: 85.9757, high: 90.6657, low: 85.7685, close: 90.5257, volume: 660187068 },
-        { date: new Date('2012-04-09'), open: 89.4471, high: 92, low: 86.2157, close: 86.4614, volume: 912634864 },
-        { date: new Date('2012-04-16'), open: 87.1514, high: 88.6071, low: 81.4885, close: 81.8543, volume: 1221746066 },
-        { date: new Date('2012-04-23'), open: 81.5157, high: 88.2857, low: 79.2857, close: 86.1428, volume: 965935749 },
-        { date: new Date('2012-04-30'), open: 85.4, high: 85.4857, low: 80.7385, close: 80.75, volume: 615249365 }
-      ];
-      
-      // Create Stock Chart
-      var chart = new ej.charts.StockChart({
-        series: [
-          {
-            dataSource: chartData,
-            xName: 'date',
-            yName: 'close',
-            type: 'Candle'
-          }
-        ],
-        title: 'Stock Price',
-        primaryXAxis: {
-          valueType: 'DateTime'
-        }
-      });
-      
-      // Render Chart
-      chart.appendTo('#element');
+        // Sample data
+        var chartData = [
+            { x: new Date('2012-04-02'), open: 320.71, high: 324.07, low: 317.74, close: 323.78, volume: 45638000 },
+            { x: new Date('2012-04-03'), open: 323.03, high: 324.30, low: 319.64, close: 321.63, volume: 40857000 },
+            { x: new Date('2012-04-04'), open: 319.54, high: 319.82, low: 315.87, close: 317.89, volume: 32519000 },
+            { x: new Date('2012-04-05'), open: 316.44, high: 318.53, low: 314.60, close: 316.48, volume: 46327000 },
+            { x: new Date('2012-04-06'), open: 317.20, high: 320.50, low: 315.30, close: 319.80, volume: 38200000 },
+            { x: new Date('2012-04-07'), open: 320.00, high: 322.90, low: 318.50, close: 321.10, volume: 35500000 },
+            { x: new Date('2012-04-08'), open: 321.50, high: 325.20, low: 320.80, close: 324.70, volume: 41200000 },
+            { x: new Date('2012-04-09'), open: 325.00, high: 326.80, low: 322.40, close: 323.90, volume: 39800000 },
+            { x: new Date('2012-04-10'), open: 324.20, high: 327.00, low: 323.10, close: 326.10, volume: 42100000 },
+            { x: new Date('2012-04-11'), open: 326.30, high: 329.20, low: 325.50, close: 328.70, volume: 44500000 },
+            { x: new Date('2012-04-12'), open: 328.90, high: 330.50, low: 326.70, close: 327.80, volume: 36700000 }
+        ];
+
+        // Create Stock Chart
+        var chart = new ej.charts.StockChart({
+            series: [{
+                dataSource: chartData,
+                type: 'Candle',
+                high: 'high', low: 'low', open: 'open', close: 'close', xName: 'x',
+            }]
+        });
+        // Render Chart
+        chart.appendTo('#element');
     </script>
-  </body>
+</body>
+
 </html>
 ```
 

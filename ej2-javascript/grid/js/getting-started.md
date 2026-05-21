@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Grid control
+# Getting started in JavaScript Grid control
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid and demonstrate the basic usage of the Grid control in a JavaScript application.
 
@@ -313,7 +313,7 @@ Based on your requirement, additional dependencies can be included as needed. In
 
 ## Adding Grid control
 
-You can start adding Essential<sup style="font-size:70%">&reg;</sup> JS 2 grid component to the application. To get started, add the grid component in **index.js** file using the following code.
+Add the grid control in **index.js** file using the following code.
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
@@ -351,9 +351,9 @@ grid.appendTo('#Grid');
     <title>Essential JS 2 Grid</title>
 
     <!-- Essential JS 2 bootstrap5.3 theme -->
-    <link href="https://cdn.syncfusion.com/ej2/33.1.44/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <!-- Essential JS 2 all script -->
-    <script src="https://cdn.syncfusion.com/ej2/33.1.44/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/dist/ej2.min.js" type="text/javascript"></script>
 
 </head>
 

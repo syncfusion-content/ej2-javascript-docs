@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Module in ##Platform_Name## Treegrid control
+# Module in JavaScript Treegrid control
 
-Syncfusion TypeScript TreeGrid modules help optimize your application’s bundle size by including only the features you need. To enable a specific TreeGrid feature, import and inject the corresponding Feature Module into your TreeGrid configuration.
+Syncfusion JavaScript TreeGrid modules help optimize your application’s bundle size by including only the features you need. To enable a specific TreeGrid feature, import and inject the corresponding Feature Module into your TreeGrid configuration.
 
 The available TreeGrid modules are:
 

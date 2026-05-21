@@ -72,6 +72,28 @@ The Gantt Chart control implements comprehensive [WAI-ARIA](https://www.w3.org/W
 | `aria-rowindex`    | Applied to grid rows to indicate position within the complete dataset                                                            | Updates based on current view and virtualization state                      |
 | `aria-colindex`    | Applied to grid cells to indicate column position                                                                                | Maintains column identification during horizontal scrolling                 |
 
+The Syncfusion ##Platform_Name## Gantt Chart control is structured using a combined TreeGrid and chart architecture for rendering its grid (table) and timeline sections. To enhance accessibility for screen readers, roles and ARIA attributes are incorporated for the treegrid parent and all its child elements. Although this architectural approach may have some limitations with accessibility checker tools, it is important to note that these limitations do not affect the readability or usability of the Gantt content in screen readers.
+
+The accessibility checker tools highlight the following known issues:
+
+* The `<table>` element with `role="presentation"` or `role="none"` contains structural elements such as `<th>`.
+* Verify that the table is not being used solely to format text content in columns unless the table can be properly linearized.  
+* Content is not placed within a landmark element.  
+* Verify that the `<div>` element with `role="grid"` provides proper keyboard access.  
+* The element with `role="grid"` contains child elements with roles such as `"generic"` and `"textbox"`, which are not allowed. Only `"row"` or `"rowgroup"` roles are permitted as direct children.  
+* Interactive component with ARIA role `treegrid` does not have a programmatically associated accessible name.  
+* None of the descendant elements with `role="row"` are tabbable.  
+* The explicitly assigned ARIA role `"rowgroup"` is redundant with the implicit role of the `<tbody>` element.  
+* The explicitly assigned ARIA role `"row"` is redundant with the implicit role of the `<tr>` element.  
+* The explicitly assigned ARIA role `"gridcell"` is redundant with the implicit role of the `<td>` element.  
+* The tabbable element with role `"columnheader"` is not a widget role.  
+* The explicitly assigned ARIA role `"columnheader"` is redundant with the implicit role of the `<th>` element.  
+* The element with `role="rowgroup"` does not contain required child elements with role `"row"`.  
+* The ARIA attribute `aria-valuenow` is not valid for a `<div>` element with `role="separator"`.  
+* The `cellspacing` attribute is deprecated for the `<table>` element in HTML5.  
+* The ARIA attribute `aria-label` is not valid for a `<div>` element with `role="term"`.  
+* The ARIA attribute `aria-label` is not valid for a `<div>` element with the implicit `"generic"` role.
+
 ## Keyboard navigation
 
 The Gantt Chart control provides comprehensive keyboard navigation support following [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns) guidelines. This ensures full functionality for users relying on assistive technologies or keyboard-only navigation patterns.
@@ -226,7 +248,7 @@ gantt.appendTo('#Gantt');
 
 The Gantt Chart control provides comprehensive accessibility support for mobile and touch devices through the [enableAdaptiveUI](../../api/gantt#enableadaptiveui) property, ensuring individuals with disabilities can effectively interact with the control across all device types.
 
-Touch gesture accessibility includes single tap equivalent to click for task selection and activation, double tap to open task editing dialog or activate focused elements, long press to open context menu with full keyboard navigation support, swipe gestures for horizontal scrolling through timeline with appropriate announcements, and pinch to zoom for timeline scaling with accessibility feedback. These gestures are optimized for assistive touch technologies and provide haptic feedback where supported by the device platform.
+Touch gesture accessibility includes single tap equivalent to click for task selection and activation, double tap to open task editing dialog or activate focused elements, long press to open context menu with full keyboard navigation support, swipe gestures for horizontal scrolling through timeline with appropriate announcements, and pinch to zoom for timeline scaling with accessibility feedback. These gestures are optimized for assistive touch technologies and provide tactile feedback where supported by the device platform.
 
 ## Testing accessibility
 

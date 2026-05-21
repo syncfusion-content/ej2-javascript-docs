@@ -90,6 +90,8 @@ grid.appendTo('#Grid');
     <meta name="author" content="Syncfusion" />
     <link rel="shortcut icon" href="resources/favicon.ico" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Syncfusion styling reference -->
+    <link href="/styles/styles.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -100,6 +102,12 @@ grid.appendTo('#Grid');
 </body>
 
 </html>
+
+{% endhighlight %}
+
+{% highlight html tabtitle="styles.css" %}
+
+@import '../../node_modules/@syncfusion/ej2/fluent2.css';
 
 {% endhighlight %}
 

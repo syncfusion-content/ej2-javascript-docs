@@ -39,7 +39,7 @@ cd ej2-quickstart
 
 ## Install Syncfusion TypeScript packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. The quickstart application is preconfigured with the dependent `@syncfusion/ej2` package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. The quickstart application is preconfigured with the dependent `@syncfusion/ej2` package in the **package.json** file. Use the following command to install the dependent npm packages from the command prompt.
 
 ```
 npm install
@@ -52,7 +52,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript controls come with b
 To use the `Tailwind` theme in the **~/src/styles/styles.css** file, as shown below:
 
 ```
-@import '../../node_modules/@syncfusion/ej2-diagrams/styles/tailwind.css';
+@import "../../node_modules/@syncfusion/ej2-diagrams/styles/tailwind.css";
 @import "../../node_modules/@syncfusion/ej2-base/styles/tailwind.css";
 @import "../../node_modules/@syncfusion/ej2-popups/styles/tailwind.css";
 @import "../../node_modules/@syncfusion/ej2-navigations/styles/tailwind.css";
@@ -71,7 +71,6 @@ Open the **~/src/index.html** file and add the following HTML element for the Di
     <title>Essential JS 2</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    ...
 </head>
 <body>
     <div>
@@ -86,9 +85,9 @@ Open the **~/src/index.html** file and add the following HTML element for the Di
 
 This section explains how to create a simple flowchart by adding nodes, customizing their appearance, and connecting them using connectors.
 
-The following example creates a flowchart with four nodes: Start, Process, Decision, and End. It also applies common node and connector settings using the getNodeDefaults and getConnectorDefaults properties.
+The following example creates a flowchart with four nodes: **Start**, **Process**, **Decision**, and **End**. It also applies common node and connector settings using the `getNodeDefaults` and `getConnectorDefaults` properties.
 
-Open the `~/src/app/app.ts` file and add the following code to render the Diagram control.
+Open the **src/app/app.ts** file and add the following code to render the Diagram control.
 
 ```
 import { Diagram, NodeModel, ConnectorModel } from '@syncfusion/ej2-diagrams';
@@ -215,4 +214,4 @@ Open the generated local URL in the browser. The application displays a flowchar
 
 The output will appear as follows:
 
-![Getting started](../images/Getting-started.png)
+![Getting started](images/Getting-started.png)

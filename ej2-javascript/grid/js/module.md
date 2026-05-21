@@ -11,40 +11,38 @@ domainurl: ##DomainURL##
 
 # Module in JavaScript Grid control
 
-The following feature modules should be injected to extend grid's functionality.
-
-The available grid modules are:
+The available Grid modules are:
 
 | Feature | Module | Description |
 |---------|--------|-------------|
-| [Page](../api/grid/page) | `Page` | Inject this module to use paging feature. |
-| [Sort](../api/grid/sort) | `Sort` | Inject this module to use sorting feature. |
-| [Filter](../api/grid/filter) | `Filter` | Inject this module to use filtering feature. |
-| [Group](../api/grid/group) | `Group` | Inject this module to use grouping feature. |
-| [LazyLoadGroup](../api/grid/lazyLoadGroup) | `LazyLoadGroup` | Inject this module to use lazy load grouping feature. |
-| [Edit](../api/grid/edit) | `Edit` | Inject this module to use editing feature. |
-| [Aggregate](../api/grid/aggregate) | `Aggregate` | Inject this module to use aggregate feature. |
-| [ColumnChooser](../api/grid/columnChooser) | `ColumnChooser` | Inject this module to use column chooser feature. |
-| [ColumnMenu](../api/grid/columnmenumodule) | `ColumnMenu` | Inject this module to use column menu feature. |
-| [CommandColumn](../api/grid/commandColumn) | `CommandColumn` | Inject this module to use command column feature. |
-| [ContextMenu](../api/grid/contextMenu) | `ContextMenu` | Inject this module to use context menu feature. |
-| [DetailRow](../api/grid/detailRow) | `DetailRow` | Inject this module to use detail template feature. |
-| [ForeignKey](../api/grid/foreignkey) | `ForeignKey` | Inject this module to use foreign key feature. |
-| [Freeze](../api/grid/freeze) | `Freeze` | Inject this module to use frozen rows and columns feature. |
-| [Resize](../api/grid/resize) | `Resize` | Inject this module to use resize feature. |
-| [Reorder](../api/grid/reorder) | `Reorder` | Inject this module to use reorder feature. |
-| [RowDD](../api/grid/rowdd) | `RowDD` | Inject this module to use row drag and drop feature. |
-| [Search](../api/grid/search) | `Search` | Inject this module to use search feature and this is a default injected module. |
-| [Selection](../api/grid/selection) | `Selection` | Inject this module to use selection feature and this is a default injected module. |
-| [VirtualScroll](../api/grid/virtualscroll) | `VirtualScroll` | Inject this module to use virtual scrolling feature. |
-| [InfiniteScroll](../api/grid/infinitescroll) | `InfiniteScroll` | Inject this module to use infinite scrolling feature. |
-| [Toolbar](../api/grid/toolbarmodule) | `Toolbar` | Inject this module to use toolbar feature. |
-| [ExcelExport](../api/grid/excelexportmodule) | `ExcelExport` | Inject this module to use excel export feature. |
-| [PdfExport](../api/grid/pdfexportmodule) | `PdfExport` | Inject this module to use PDF export feature. |
+| [Page](../api/grid/page) | `Page` | This module is used for the paging feature. |
+| [Sort](../api/grid/sort) | `Sort` | This module is used for the sorting feature. |
+| [Filter](../api/grid/filter) | `Filter` | This module is used for the filtering feature. |
+| [Group](../api/grid/group) | `Group` | This module is used for the grouping feature. |
+| [LazyLoadGroup](../api/grid/lazyLoadGroup) | `LazyLoadGroup` | This module is used for the lazy load grouping feature. |
+| [Edit](../api/grid/edit) | `Edit` | This module is used for the editing feature. |
+| [Aggregate](../api/grid/aggregate) | `Aggregate` | This module is used for the aggregate feature. |
+| [ColumnChooser](../api/grid/columnChooser) | `ColumnChooser` | This module is used for the column chooser feature. |
+| [ColumnMenu](../api/grid/columnmenumodule) | `ColumnMenu` | This module is used for the column menu feature. |
+| [CommandColumn](../api/grid/commandColumn) | `CommandColumn` | This module is used for the command column feature. |
+| [ContextMenu](../api/grid/contextMenu) | `ContextMenu` | This module is used for the context menu feature. |
+| [DetailRow](../api/grid/detailRow) | `DetailRow` | This module is used for the detail template feature. |
+| [ForeignKey](../api/grid/foreignkey) | `ForeignKey` | This module is used for the foreign key feature. |
+| [Freeze](../api/grid/freeze) | `Freeze` | This module is used for the frozen rows and columns feature. |
+| [Resize](../api/grid/resize) | `Resize` | This module is used for the resize feature. |
+| [Reorder](../api/grid/reorder) | `Reorder` | This module is used for the reorder feature. |
+| [RowDD](../api/grid/rowdd) | `RowDD` | This module is used for the row drag and drop feature. |
+| [Search](../api/grid/search) | `Search` | This module is used for the search feature and this is a default injected module. |
+| [Selection](../api/grid/selection) | `Selection` | This module is used for the selection feature and this is a default injected module. |
+| [VirtualScroll](../api/grid/virtualscroll) | `VirtualScroll` | This module is used for the virtual scrolling feature. |
+| [InfiniteScroll](../api/grid/infinitescroll) | `InfiniteScroll` | This module is used for the infinite scrolling feature. |
+| [Toolbar](../api/grid/toolbarmodule) | `Toolbar` | This module is used for the toolbar feature. |
+| [ExcelExport](../api/grid/excelexportmodule) | `ExcelExport` | This module is used for the excel export feature. |
+| [PdfExport](../api/grid/pdfexportmodule) | `PdfExport` | This module is used for the PDF export feature. |
 
 ## Enabling basic features
 
-The following example demonstrates how to enable basic features such as Paging, Sorting, Filtering, Toolbar and Editing by importing required modules from `@syncfusion/ej2-grids` and injecting them into the grid component.
+The following example demonstrates how to enable basic features such as Paging, Sorting, Filtering, Toolbar and Editing in the grid component.
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}

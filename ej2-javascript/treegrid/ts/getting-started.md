@@ -114,6 +114,8 @@ treeGridObj.appendTo('#TreeGrid');
     <meta name="author" content="Syncfusion" />
     <link rel="shortcut icon" href="resources/favicon.ico" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Syncfusion styling reference -->
+    <link href="/styles/styles.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -124,6 +126,12 @@ treeGridObj.appendTo('#TreeGrid');
 </body>
 
 </html>
+
+{% endhighlight %}
+
+{% highlight html tabtitle="style.css" %}
+
+@import '../../node_modules/@syncfusion/ej2/material.css';
 
 {% endhighlight %}
 

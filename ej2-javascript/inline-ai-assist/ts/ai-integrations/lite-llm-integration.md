@@ -52,7 +52,7 @@ In the following example:
 {% include code-snippet/inline-ai-assist/ai-integrations/lite-llm/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/inline-ai-assist/ai-integrations/lite-llm/ts/index.html %}
+{% include code-snippet/inline-ai-assist/ai-integrations/lite-llm/index.html %}
 {% endhighlight %}
 {% highlight yaml tabtitle="config.yaml" %}
 {% include code-snippet/inline-ai-assist/ai-integrations/lite-llm/config.yaml %}

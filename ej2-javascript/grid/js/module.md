@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Module in ##Platform_Name## Grid control
+# Module in JavaScript Grid control
 
 The following feature modules should be injected to extend grid's functionality.
 

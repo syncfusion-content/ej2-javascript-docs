@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Treegrid control
+# Getting started in JavaScript Treegrid control
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid and demonstrates the basic usage of the TreeGrid control in a JavaScript application.
 
@@ -188,9 +188,7 @@ After copying the files, refer the TreeGrid's scripts and styles into the `index
 
 ## Adding TreeGrid control
 
-You can start adding Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid component to the application. To get started, add the TreeGrid component in **index.js** file using the following code.
-
-**Complete HTML and JavaScript setup:**
+Add the TreeGrid control in **index.js** file using the following code.
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
@@ -250,11 +248,10 @@ treeGridObj.appendTo('#TreeGrid');
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Essential JS 2 TreeGrid</title>
-
-    <!-- Essential JS 2 bootstrap5.3 theme -->
-    <link href="https://cdn.syncfusion.com/ej2/33.1.44/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <!-- Essential JS 2 material theme -->
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/material.css" rel="stylesheet" type="text/css" />
     <!-- Essential JS 2 all script -->
-    <script src="https://cdn.syncfusion.com/ej2/33.1.44/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <!-- Add the HTML <div> element for TreeGrid  -->

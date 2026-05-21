@@ -246,7 +246,7 @@ Add a container element in the **index.html** file to render the Gantt component
 
 In this documentation, the **ej2.min.js** script and **tailwind3.css** theme file are used, which include all Essential<sup style="font-size:70%">&reg;</sup> JS 2 components and their dependent scripts and styles.
 
-### index.html
+`index.html`
 
 Add the following HTML element to the `index.html` file. This element acts as the container for rendering the Gantt Chart component.
 
@@ -268,7 +268,7 @@ Add the following HTML element to the `index.html` file. This element acts as th
   </html>
 ```
 
-### app.ts
+`index.js`
 
 Place the following code in the `index.js` file to create and configure the Gantt Chart component.
 
@@ -347,4 +347,4 @@ The following code example shows how to use the [actionFailure](https://ej2.sync
 
 The following screenshot represents the Gantt Exception handling in `actionFailure` event.
 
-![Error Handling](../images/error-handling.png)
+![Error Handling](./images/error-handling.png)

@@ -25,9 +25,9 @@ git clone https://github.com/syncfusion/ej2-quickstart.git
 cd ej2-quickstart
 ```
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Grid packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
 Use the following command to install the dependent npm packages from the command prompt.
 
@@ -35,7 +35,7 @@ Use the following command to install the dependent npm packages from the command
 npm install
 ```
 
-## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+## Adding CSS reference
 
 Combined CSS files are available in the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package root folder. This can be referenced in your `[src/styles/styles.css]` using the following code.
 
@@ -45,7 +45,7 @@ Combined CSS files are available in the Essential<sup style="font-size:70%">&reg
 
 ## Adding Grid component
 
-You can start adding Essential<sup style="font-size:70%">&reg;</sup> JS 2 grid component to the application. To get started, add the grid component in **app.ts** file using the following code.
+Add the grid component in **app.ts** file using the following code.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -90,6 +90,8 @@ grid.appendTo('#Grid');
     <meta name="author" content="Syncfusion" />
     <link rel="shortcut icon" href="resources/favicon.ico" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Syncfusion styling reference -->
+    <link href="/styles/styles.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -103,18 +105,21 @@ grid.appendTo('#Grid');
 
 {% endhighlight %}
 
+{% highlight html tabtitle="index.html" %}
+
+@import '../../node_modules/@syncfusion/ej2/fluent2.css';
+
+{% endhighlight %}
+
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs132" %}
 
 ## Run the application
 
-The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
-
 ```
 npm start
 ```
-
 
 ## See also
 

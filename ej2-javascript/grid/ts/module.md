@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Modules in ##Platform_Name## Grid control
+# Modules in TypeScript Grid control
 
 Syncfusion TypeScript Grid modules help optimize your application’s bundle size by including only the features you need. To enable a specific Grid feature, import and inject the corresponding Feature Module into your Grid configuration.
 
-The available grid modules are:
+The available Grid modules are:
 
 | Feature | Module | Description |
 |---------|--------|-------------|

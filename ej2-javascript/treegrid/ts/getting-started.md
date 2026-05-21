@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-#  Getting started in ##Platform_Name## Treegrid control
+#  Getting started in TypeScript Treegrid control
 
 The TreeGrid component is essential for displaying hierarchical data in a tabular format. It is commonly used for project management (displaying tasks and subtasks), organizational structures (displaying company hierarchies), file systems, and any scenario where data has parent-child relationships.
 
@@ -26,9 +26,9 @@ git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack-
 cd ej2-quickstart-webpack-
 ```
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript TreeGrid packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available in the public registry on [npmjs.com](https://www.npmjs.com/~syncfusionorg). You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls are available either as a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or as individual packages for each control.
+Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available in the public registry on [npmjs.com](https://www.npmjs.com/~syncfusionorg). You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls are available either as a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or as individual packages for each control.
 
 Use the following command to install the dependent npm packages from the command prompt.
 
@@ -36,17 +36,17 @@ Use the following command to install the dependent npm packages from the command
 npm install
 ```
 
-## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+## Adding CSS reference
 
 Combined CSS files are available in the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package root folder. This can be referenced in your `[src/styles/styles.css]` using the following code.
 
 ```
-@import '../../node_modules/@syncfusion/ej2/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2/material.css';
 ```
 
 ## Adding TreeGrid component
 
-You can start adding Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid component to the application. To get started, add the TreeGrid component in **app.ts** file using the following code.
+Add the TreeGrid component in **app.ts** file using the following code.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -114,8 +114,8 @@ treeGridObj.appendTo('#TreeGrid');
     <meta name="author" content="Syncfusion" />
     <link rel="shortcut icon" href="resources/favicon.ico" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-    ....
-    ....
+    <!-- Syncfusion styling reference -->
+    <link href="/styles/styles.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -129,13 +129,17 @@ treeGridObj.appendTo('#TreeGrid');
 
 {% endhighlight %}
 
+{% highlight html tabtitle="style.css" %}
+
+@import '../../node_modules/@syncfusion/ej2/material.css';
+
+{% endhighlight %}
+
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/treegrid/tree-grid-cs4" %}
 
 ## Run the application
-
-The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
 
 ```
 npm start

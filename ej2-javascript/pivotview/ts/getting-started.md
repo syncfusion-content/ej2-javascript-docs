@@ -52,21 +52,20 @@ You can start adding Essential<sup style="font-size:70%">&reg;</sup> JS 2 pivot 
 import { PivotView, IDataSet } from '@syncfusion/ej2-pivotview';
 
 let pivotData: IDataSet[] = [
-            { 'Sold': 31, 'Amount': 52824, 'Country': 'France', 'Products': 'Mountain Bikes', 'Year': 'FY 2015', 'Quarter': 'Q1' },
-            { 'Sold': 51, 'Amount': 86904, 'Country': 'France', 'Products': 'Mountain Bikes', 'Year': 'FY 2015', 'Quarter': 'Q2' },
-            { 'Sold': 90, 'Amount': 153360, 'Country': 'France', 'Products': 'Mountain Bikes', 'Year': 'FY 2015', 'Quarter': 'Q3' },
-            { 'Sold': 25, 'Amount': 42600, 'Country': 'France', 'Products': 'Mountain Bikes', 'Year': 'FY 2015', 'Quarter': 'Q4' },
-            { 'Sold': 27, 'Amount': 46008, 'Country': 'France', 'Products': 'Mountain Bikes', 'Year': 'FY 2016', 'Quarter': 'Q1' }];
+    { 'Sold': 31, 'Amount': 52824, 'Country': 'France', 'Products': 'Mountain Bikes', 'Year': 'FY 2025', 'Quarter': 'Q1' },
+    { 'Sold': 51, 'Amount': 86904, 'Country': 'France', 'Products': 'Mountain Bikes', 'Year': 'FY 2025', 'Quarter': 'Q2' },
+    { 'Sold': 90, 'Amount': 153360, 'Country': 'France', 'Products': 'Mountain Bikes', 'Year': 'FY 2025', 'Quarter': 'Q3' },
+    { 'Sold': 25, 'Amount': 42600, 'Country': 'France', 'Products': 'Mountain Bikes', 'Year': 'FY 2025', 'Quarter': 'Q4' }
+];
 
 let pivotTableObj: PivotView = new PivotView({
     dataSourceSettings: {
         dataSource: pivotData,
-        expandAll: false,
-        columns: [{ name: 'Year', caption: 'Production Year' }],
-        values: [{ name: 'Sold', caption: 'Units Sold', type: 'Sum' }, { name: 'Amount', caption: 'Sold Amount' }],
+        expandAll: true,
+        columns: [{ name: 'Year' }, { name: 'Quarter' }],
         rows: [{ name: 'Country' }, { name: 'Products' }],
-        filters: [{ name: 'Quarter' }],
-        formatSettings: [{ name: 'Amount', format: 'C0' }],
+        values: [{ name: 'Amount', caption: 'Sold Amount' }, { name: 'Sold', caption: 'Units Sold' }],
+        formatSettings: [{ name: 'Amount', format: 'C0' }]
     }
 });
 pivotTableObj.appendTo('#PivotTable');

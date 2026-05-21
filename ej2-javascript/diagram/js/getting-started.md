@@ -41,7 +41,7 @@ The Essential® JS 2 components can be initialized in two ways:
 
 **Step 4:** Create an HTML page (**index.html**) in **my-diagram-app** and include the required script and style references (either from the local `resources` folder or CDN). Add a container element (for example, `<div id="element">`) and initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Diagram component using the example code below.
 
-```html
+```
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -61,7 +61,7 @@ The Essential® JS 2 components can be initialized in two ways:
 
 The following example creates a flowchart with four nodes: Start, Process, Decision, and End. It also applies common node and connector settings using the getNodeDefaults and getConnectorDefaults properties.
 
-```html
+```
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 

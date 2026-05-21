@@ -21,10 +21,13 @@ You can explore some useful features in the Maps component using the following v
 
 ## Prerequisites
 
-Before getting started, ensure you have:
-- Node.js `v14.15.0` or higher installed
-- Basic knowledge of TypeScript and webpack
-- A code editor (Visual Studio Code recommended)
+Before you begin, ensure you have the following installed on your machine:
+
+* [Node.js](https://nodejs.org/en) (v14.15.0 or higher)
+* [Visual Studio Code](https://code.visualstudio.com) (or any text editor)
+* [Git](https://git-scm.com/) (for cloning the quickstart repository)
+* A web browser to view the result
+* Basic knowledge of TypeScript and webpack
 
 ## Dependencies
 
@@ -38,19 +41,36 @@ The Maps component requires the following minimum dependencies:
     |-- @syncfusion/ej2-svg-base
 ```
 
-## Set up development environment
+Note: @syncfusion/ej2-pdf-export and @syncfusion/ej2-data are optional—required only for PDF export and data binding features respectively.
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+## Quick Setup
+
+### Step 1: Create a Project Folder
+
+Create a folder named `my-maps` in your desired location. This folder will contain your Syncfusion Maps TypeScript project.
+
+### Step 2: Open Command Prompt
+
+Open the command prompt and navigate to your desired directory where you want to create the project. You can do this by:
+
+* **For Windows**: Open Command Prompt (cmd) or PowerShell
+* **For macOS/Linux**: Open Terminal
+
+### Step 3: Clone the Quickstart Repository
+
+Run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 
 {% endhighlight %}
 {% endtabs %}
 
-After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
+### Step 4: Navigate to Project Folder
+
+After cloning the application in the `ej2-quickstart` folder, run the following command to navigate to the project directory.
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -60,11 +80,11 @@ cd ej2-quickstart
 {% endhighlight %}
 {% endtabs %}
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
+### Step 5: Install Required Packages
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
-The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+The quickstart application is already preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install all the dependent npm packages from the command prompt.
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -74,11 +94,15 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Add Maps component to the project
+This command will download and install all necessary dependencies for your project.
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS2 Maps component can be added to the application. To get started, add the Maps component to the **app.ts** and **index.html** files using the following code.
+### Step 6: Update the HTML Template
 
-Add an HTML div element to act as the Maps element in the **index.html** file using the following code.
+Open the `ej2-quickstart` folder in Visual Studio Code or any text editor of your choice.
+
+> Note: Code snippets here use webpack for local development. For online demos or StackBlitz, SystemJS may be used—ignore loader/helper scripts in rendered previews.
+
+Locate the `~/src/index.html` file in the project. Add the HTML div tag with its `id` attribute as `container` to initialize the Maps container.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -95,6 +119,7 @@ Add an HTML div element to act as the Maps element in the **index.html** file us
 </head>
 
 <body>
+    <h1>Syncfusion Maps</h1>
     <!--container which is going to render the Map-->
     <div id='container'>
     </div>
@@ -105,23 +130,43 @@ Add an HTML div element to act as the Maps element in the **index.html** file us
 {% endhighlight %}
 {% endtabs %}
 
-Import the Maps component in the `app.ts` to initialize a Maps and append the Maps instance to the `#container`.
+### Step 7: Create the Maps Component with GeoJSON Data
+
+Locate the `src/app/app.ts` file in your project and add the Maps component with geographic data. The Maps component renders shapes based on GeoJSON data loaded from a remote URL.
+
+**Load GeoJSON Data**: The Maps component uses GeoJSON format to display geographic shapes. You can load this data from a CDN URL or include it as a local data source.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
 import { Maps } from '@syncfusion/ej2-maps';
 
-// initialize Maps component
-let map: Maps = new Maps();
+// Define GeoJSON data source (loading from CDN)
+const shapeData: object = { 
+    dataOptions: { 
+        type: 'GET', 
+        url: 'https://cdn.syncfusion.com/maps/map-data/world-map.json'
+    } 
+};
 
-// render initialized Map
+// Initialize and render Maps
+const map: Maps = new Maps({
+    layers: [
+        {
+            shapeData: shapeData
+        }
+    ]
+});
+
+// Append Maps to container
 map.appendTo('#container');
 
 {% endhighlight %}
 {% endtabs %}
 
-The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
+### Step 8: Run the Application
+
+Open the integrated terminal in Visual Studio Code or use your command prompt to run the application. Use the `npm start` command:
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -131,80 +176,14 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-Since no shape data is specified, the Maps displays as an empty SVG element. The next sections demonstrate how to add geographic data and customize the map.
+The application will compile and automatically start in your default web browser. The application typically runs at `http://localhost:4000`. You should see the Syncfusion<sup style="font-size:70%">&reg;</sup> Maps control displaying the world map.
 
-## Render shapes from GeoJSON data
+### Step 9: View Your Map
 
-This section explains how to bind GeoJSON data to the map.
+Wait for the webpack dev server to complete the build process. Once completed, you will see the Maps control rendering in your browser with the geographic shapes loaded from the GeoJSON data. The map is now successfully initialized and ready for further customization.
 
-```javascript
+## Output
 
-let usMap: Object =
-{
-    "type": "FeatureCollection",
-    "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-    "features": [
-        { "type": "Feature", "properties": { "iso_3166_2": "MA", "name": "Massachusetts", "admin": "United States of America" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -70.801756294617277, 41.248076234530558 ]] ] ] }
-        }
-    ]
-    //..
-};
+The following screenshot shows the output of the Syncfusion Maps quick start application:
 
-```
-
-```javascript
-
-export let world_map: object =
-{
-     "type": "FeatureCollection",
-     "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-     "features": [{ "type": "Feature", "properties": { "admin": "Afghanistan", "name": "Afghanistan", "continent": "Asia" }, ...
-     };
-<!-- markdownlint-disable MD009 -->
-``` 
-
-Elements in the maps will get rendered in the layers. So add a layer collection to the maps by using [`layers`](../api/maps/layers) property. Now bind the GeoJSON data to the [`shapeData`](../api/maps/layerSettingsModel/shapedata) property.
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/maps/default-map-cs170/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs170/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="world-map.ts" %}
-{% include code-snippet/maps/default-map-cs170/world-map.ts %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/maps/default-map-cs170" %}
-
->Note: Refer the data values for [`world_map`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map-710289613) here.
-
-## Bind data source to map
-
-The following properties in layers are used for binding data source to map.
-
-* `dataSource`
-* `shapeDataPath`
-* `shapePropertyPath`
-
-The [`dataSource`](../api/maps/layerSettingsModel/datasource) property takes a collection value as input. For example, a list of objects can be provided as input. This data is further used in tooltips, data labels, bubbles, legends, and color mapping.
-
-The [`shapeDataPath`](../api/maps/layerSettingsModel/shapedatapath) property is used to refer to the data ID in the dataSource. The [`shapePropertyPath`](../api/maps/layerSettingsModel/shapepropertypath) property is used to refer to the column name in shapeData to identify the shape. Both properties are related to each other. When the values of the shapeDataPath property in the dataSource and the value of shapePropertyPath in the shapeData match, the associated object from the dataSource is bound to the corresponding shape.
-
-The JSON object "electionData" is used as data source below.
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/maps/default-map-cs171/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs171/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="world-map.ts" %}
-{% include code-snippet/maps/default-map-cs171/world-map.ts %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/maps/default-map-cs171" %}
+![Syncfusion Maps Quick Start Output](../images/MapProviders/maps.png)

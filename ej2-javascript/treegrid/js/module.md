@@ -9,33 +9,31 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Module in ##Platform_Name## Treegrid control
-
-Syncfusion TypeScript TreeGrid modules help optimize your application’s bundle size by including only the features you need. To enable a specific TreeGrid feature, import and inject the corresponding Feature Module into your TreeGrid configuration.
+# Module in JavaScript Treegrid control
 
 The available TreeGrid modules are:
 
 | Feature | Module | Description |
 |---------|--------|-------------|
-| [`Page`](../treegrid/paging) | `Page` | Inject this module to use paging feature.|
-| [`Sort`](../treegrid/sorting) | `Sort` | Inject this module to use sorting feature.|
-| [`Filter`](../treegrid/filtering) | `Filter` | Inject this module to use filtering feature.|
-| [`Edit`](../treegrid/editing) | `Edit` | Inject this module to use editing feature.|
-| [`Aggregate`](../treegrid/aggregates) | `Aggregate` | Inject this module to use aggregate feature.|
-| [`ColumnChooser`](../treegrid/columns/column-chooser) | `ColumnChooser` | Inject this module to use column chooser feature.|
-| [`ColumnMenu`](../treegrid/columns/column-menu) | `ColumnMenu` | Inject this module to use column menu feature.|
-| [`CommandColumn`](../treegrid/editing/command-column-editing) | `CommandColumn` | Inject this module to use command column feature.|
-| [`ContextMenu`](../treegrid/context-menu) | `ContextMenu` | Inject this module to use context menu feature.|
-| [`Resize`](../treegrid/columns/column-resizing) | `Resize` | Inject this module to use resize feature.|
-| [`Reorder`](../treegrid/columns/column-reorder) | `Reorder` | Inject this module to use reorder feature.|
-| [`Print`](../treegrid/print) | `Print` | Inject this module to use to use print feature and this is a default injected module.|
-| [`Toolbar`](../treegrid/tool-bar) | `Toolbar` | Inject this module to use toolbar feature.|
-| [`ExcelExport`](../treegrid/excel-export) | `ExcelExport` | Inject this module to use Excel export feature.|
-| [`PdfExport`](../treegrid/pdf-export) | `PdfExport` | Inject this module to use PDF export feature.|
+| [`Page`](../treegrid/paging) | `Page` | This module is used for the paging feature. |
+| [`Sort`](../treegrid/sorting) | `Sort` | This module is used for the sorting feature.|
+| [`Filter`](../treegrid/filtering) | `Filter` | This module is used for the filtering feature.|
+| [`Edit`](../treegrid/editing) | `Edit` | This module is used for the editing feature.|
+| [`Aggregate`](../treegrid/aggregates) | `Aggregate` | This module is used for the aggregate feature.|
+| [`ColumnChooser`](../treegrid/columns/column-chooser) | `ColumnChooser` | This module is used for the column chooser feature.|
+| [`ColumnMenu`](../treegrid/columns/column-menu) | `ColumnMenu` | This module is used for the column menu feature.|
+| [`CommandColumn`](../treegrid/editing/command-column-editing) | `CommandColumn` | This module is used for the command column feature.|
+| [`ContextMenu`](../treegrid/context-menu) | `ContextMenu` | This module is used for the context menu feature.|
+| [`Resize`](../treegrid/columns/column-resizing) | `Resize` | This module is used for the resize feature.|
+| [`Reorder`](../treegrid/columns/column-reorder) | `Reorder` | This module is used for the reorder feature.|
+| [`Print`](../treegrid/print) | `Print` | This module is used for the print feature and this is a default injected module.|
+| [`Toolbar`](../treegrid/tool-bar) | `Toolbar` | This module is used for the toolbar feature.|
+| [`ExcelExport`](../treegrid/excel-export) | `ExcelExport` | This module is used for the Excel export feature.|
+| [`PdfExport`](../treegrid/pdf-export) | `PdfExport` | This module is used for the PDF export feature.|
 
 ## Enabling basic features
 
-The following example demonstrates how to enable basic features such as Paging, Sorting, Filtering, Toolbar and Editing by importing required modules from `@syncfusion/ej2-treegrid` and injecting them into the grid component.
+The following example demonstrates how to enable basic features such as Paging, Sorting, Filtering, Toolbar and Editing in the grid component.
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}

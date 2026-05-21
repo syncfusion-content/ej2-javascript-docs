@@ -27,13 +27,13 @@ Ensure the following tools are installed on your machine:
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
-```bash
+```
 git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 ```
 
 After cloning the application in the **ej2-quickstart** folder, run the following command line to navigate to the folder.
 
-```bash
+```
 cd ej2-quickstart
 ```
 
@@ -41,7 +41,7 @@ cd ej2-quickstart
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. The quickstart application is preconfigured with the dependent `@syncfusion/ej2` package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
 
-```bash
+```
 npm install
 ```
 
@@ -51,7 +51,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript controls come with b
 
 To use the `Tailwind` theme in the **~/src/styles/styles.css** file, as shown below:
 
-```css
+```
 @import '../../node_modules/@syncfusion/ej2-diagrams/styles/tailwind.css';
 @import "../../node_modules/@syncfusion/ej2-base/styles/tailwind.css";
 @import "../../node_modules/@syncfusion/ej2-popups/styles/tailwind.css";
@@ -64,7 +64,7 @@ N> Learn more about [built-in themes and individual control CSS references](http
 
 Open the **~/src/index.html** file and add the following HTML element for the Diagram component.
 
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,7 +90,7 @@ The following example creates a flowchart with four nodes: Start, Process, Decis
 
 Open the `~/src/app/app.ts` file and add the following code to render the Diagram control.
 
-```typescript
+```
 import { Diagram, NodeModel, ConnectorModel } from '@syncfusion/ej2-diagrams';
 
 // Node defaults function
@@ -196,18 +196,18 @@ diagram.appendTo('#diagram');
 
 In this example:
 
-* [`offsetX`](https://ej2.syncfusion.com/typescript/documentation/api/diagram/nodemodel#offsetx) and [`offsetY`](https://ej2.syncfusion.com/typescript/documentation/api/diagram/nodemodel#offsety) define the position of each node.
-* [`shape`](https://ej2.syncfusion.com/typescript/documentation/api/diagram/nodemodel#shape) defines the node shape configuration, and the `type: 'Flow'` with `shape: 'Terminator'`, `'Process'`, or `'Decision'` specifies flowchart shapes.
-* [`annotations`](https://ej2.syncfusion.com/typescript/documentation/api/diagram/annotationmodel) adds text inside each node using the [`content`](https://ej2.syncfusion.com/typescript/documentation/api/diagram/annotationmodel#content) property.
-* [`sourceID`](https://ej2.syncfusion.com/typescript/documentation/api/diagram/connectormodel#sourceid) and [`targetID`](https://ej2.syncfusion.com/typescript/documentation/api/diagram/connectormodel#targetid) connect one node to another.
-* [`getNodeDefaults`](https://ej2.syncfusion.com/typescript/documentation/api/diagram/index-default#getnodedefaults) applies common width, height, fill color, and stroke color to all nodes.
-* [`getConnectorDefaults`](https://ej2.syncfusion.com/typescript/documentation/api/diagram/index-default#getconnectordefaults) applies common connector settings, such as orthogonal routing and target arrows.
+* [`offsetX`](https://ej2.syncfusion.com/documentation/api/diagram/nodemodel#offsetx) and [`offsetY`](https://ej2.syncfusion.com/documentation/api/diagram/nodemodel#offsety) define the position of each node.
+* [`shape`](https://ej2.syncfusion.com/documentation/api/diagram/nodemodel#shape) defines the node shape configuration, and the `type: 'Flow'` with `shape: 'Terminator'`, `'Process'`, or `'Decision'` specifies flowchart shapes.
+* [`annotations`](https://ej2.syncfusion.com/documentation/api/diagram/annotationmodel) adds text inside each node using the [`content`](https://ej2.syncfusion.com/documentation/api/diagram/annotationmodel#content) property.
+* [`sourceID`](https://ej2.syncfusion.com/documentation/api/diagram/connectormodel#sourceid) and [`targetID`](https://ej2.syncfusion.com/documentation/api/diagram/connectormodel#targetid) connect one node to another.
+* [`getNodeDefaults`](https://ej2.syncfusion.com/documentation/api/diagram/index-default#getnodedefaults) applies common width, height, fill color, and stroke color to all nodes.
+* [`getConnectorDefaults`](https://ej2.syncfusion.com/documentation/api/diagram/index-default#getconnectordefaults) applies common connector settings, such as orthogonal routing and target arrows.
 
 ## Run the application
 
 Now, run the application in the browser using the following command.
 
-```bash
+```
 npm start
 ```
 

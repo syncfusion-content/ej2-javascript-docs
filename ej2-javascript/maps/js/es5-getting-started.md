@@ -89,4 +89,4 @@ Open the `quickstart/index.html` file in your web browser. You should see the Sy
 
 The following screenshot shows the output of the Syncfusion Maps quick start application:
 
-![Syncfusion Maps Quick Start Output](../images/MapProviders/maps.png)
+![Syncfusion Maps Quick Start Output](../maps/images/MapProviders/maps.png)

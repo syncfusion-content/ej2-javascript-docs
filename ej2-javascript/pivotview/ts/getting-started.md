@@ -22,6 +22,7 @@ Clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart applic
 
 ```
 git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+cd ej2-quickstart
 ```
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages

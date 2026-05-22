@@ -11,6 +11,8 @@ domainurl: ##DomainURL##
 
 # Getting Started in ##Platform_Name## Gantt Chart Control
 
+The **Syncfusion TypeScript Gantt Chart** is a UI component used to visualize and manage project schedules using a timeline view. It supports hierarchical task data, scheduling, and rich interactive features.
+
 This section explains the steps to create a simple Gantt and demonstrates the basic usage of the gantt component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
 > This application is integrated with the **webpack.config.js** configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). It requires node **v14.15.0** or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
@@ -55,7 +57,7 @@ npm install
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
 
-The quickstart application is preconfigured to use the **Tailwind3** theme in the **~/src/styles/styles.css** file, as shown below: 
+The quickstart application is preconfigured to use the **Tailwind3** theme in the `~/src/styles/styles.css` file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -67,7 +69,13 @@ The quickstart application is preconfigured to use the **Tailwind3** theme in th
 
 > You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
-## Create sample data
+### How styles are applied
+
+The imported CSS is added to the global stylesheet (`~/src/styles/styles.css`) and styles automatically applied to all components during application runtime.
+
+No additional configuration is required in the TypeScript (`.ts`) file.
+
+## Create sample task data
 
 Define a simple task list with hierarchical relationships. Each task must have a `StartDate` and either a `Duration` or `EndDate` to render properly.
 
@@ -83,9 +91,9 @@ data = [
 ];
 ```
 
-## Configure task fields
+## Configure task fields mapping
 
-Map your data fields to Gantt Chart properties using [taskFields](https://ej2.syncfusion.com/documentation/api/gantt#taskfields):
+Map the data fields to Gantt Chart properties using [taskFields](https://ej2.syncfusion.com/documentation/api/gantt#taskfields):
 
 ```typescript
 taskSettings = {
@@ -104,18 +112,14 @@ taskSettings = {
 | `id` | Unique task identifier | Yes |
 | `name` | Task display name | Yes |
 | `startDate` | Task start date | Yes |
-| `duration` | Task duration in days | Yes* |
+| `duration` | Task duration in days | Yes |
 | `parentID` | Parent task ID for hierarchy | No |
-
-*Either `duration` or `endDate` is required for a task to render properly.
 
 ## Render the Gantt component
 
 Put everything together by adding the following code in the **app.ts** and **index.html** file
 
-`app.ts`
-
-Place the following code in the **app.ts** file to create and configure the Gantt Chart component.
+Place the following code in the `app.ts` file to create and configure the Gantt Chart component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -141,14 +145,12 @@ let gantt: Gantt = new Gantt({
     }
 });
 
- gantt.appendTo('#Gantt');
+gantt.appendTo('#Gantt');
 
 {% endhighlight %}
 {% endtabs %}
 
-`index.html`
-
-Add the following HTML element to the **index.html** file. This element acts as the container for rendering the Gantt Chart component.
+Add the following HTML element to the `index.html` file. This element acts as the container for rendering the Gantt Chart component.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -190,12 +192,19 @@ npm start
 
 ## Output
 
+The Gantt Chart displays:
+
+- Task hierarchy with parent-child relationships
+- Timeline view showing task bars
+- Automatically calculated dates based on duration
+
+The chart displays two parent tasks (Project initiation, Project estimation) with subtasks shown in a tree structure. Task bars are rendered on the timeline, sized according to their duration and start dates.
+
+You can preview the following sample by clicking the **Preview Sample** button.
+
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/gantt/getting-started-cs23/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/getting-started-cs23/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -222,11 +231,8 @@ The following code example shows how to use the [actionFailure](https://ej2.sync
 {% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/gantt/exception-handling-cs1/index.ts %}
 {% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/exception-handling-cs1/index.html %}
-{% endhighlight %}
 {% endtabs %}
-          
+
 {% previewsample "page.domainurl/code-snippet/gantt/exception-handling-cs1" %}
 
 The following screenshot represents the Gantt Exception handling in `actionFailure` event.

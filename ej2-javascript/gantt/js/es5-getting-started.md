@@ -11,6 +11,8 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Gantt Chart control
 
+The **Syncfusion JavaScript Gantt Chart** is a UI component used to visualize and manage project schedules using a timeline view. It supports hierarchical task data, scheduling, and rich interactive features.
+
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt Chart and demonstrate the basic usage of the Gantt Chart control in a JavaScript application.
 
 ## Prerequisites
@@ -22,15 +24,15 @@ To get started, ensure the following software is installed on the machine.
 * [Visual Studio Code](https://code.visualstudio.com)
 > Check out the [download and installation](https://ej2.syncfusion.com/javascript/documentation/installation-and-upgrade/download) section of **Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript**. If you are using Syncfusion<sup style="font-size:70%">&reg;</sup> CDN resources to build your web application, you can skip the Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript prerequisite.
 
-## Setup for local environment
+## Setup local environment
 
-Refer to the following steps to set up your local environment.
+Refer to the following steps to set up local environment.
 
-**Step 1:** Create a root folder named **my-app** for your application.
+**Step 1:** Create a root folder named **my-app** for the application.
 
 **Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
 
-**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt Chart control.
+**Step 3:** Open Visual Studio Code and create `my-app/index.js` and `my-app/index.html` files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt Chart control.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
 
@@ -42,30 +44,35 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt Chart control can
 
 ### Using local scripts and styles
 
-To use local scripts and styles for Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt, you can follow these steps:
+To use local scripts and styles for Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component.
 
-**1. Download Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2):** Obtain the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installation location.
+Follow the steps below to set up the required resources:
 
-**2. Copy Files to Resources Folder:** After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, copy the Gantt Chart's scripts, and dependencies scripts and style file into the designated folders:
+**1. Download Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2):** Obtain the global scripts and styles from the official website: [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2)
 
-* **Scripts:** Copy the scripts to the **resources/scripts** folder.
-* **Styles:** Copy the styles to the **resources/styles** folder.
+**2. Copy Files to Resources Folder:** After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, the required scripts and styles will be available in the installed directory.
+Navigate to the installed location and copy the required Gantt scripts, dependent scripts, and styles into your project structure
 
-**3. Locate Script and Style Files:** Identify the location of the Gantt Chart's script and style files. The syntax for the file paths are as follows:
+- **Scripts:** Copy into the `resources/scripts` folder  
+- **Styles:** Copy into the `resources/styles` folder
 
-**Syntax:**
+**3. Locate Script and Style Files:** Identify the location of the Gantt Chart's script and style files. 
+Use the following path format to find the required files:
+
+**Script path:**
 > * Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+
+**Style path:**
 > * Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/tailwind3.css`
 
-
-**Example:**
+**Example Paths:**
 
 > * Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/33.1.44/Essential JS 2/ej2-gantt/dist/global/ej2-gantt.min.js`
 > * Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/33.1.44/Essential JS 2/ej2-gantt/styles/tailwind3.css`
 
-**4. Referencing in HTML File:** Once the files are copied, reference the Gantt's scripts and styles into the **index.html** file.
+**4. Reference Scripts and Styles:** After copying the files, include the required scripts and styles in the `index.html` file.
 
-Here's an example of referencing the Gantt's scripts and styles in an HTML file:
+Here is a sample configuration for referencing the Gantt scripts and styles in an HTML file:
 
 ```html
 <!DOCTYPE html>
@@ -122,21 +129,22 @@ Here's an example of referencing the Gantt's scripts and styles in an HTML file:
 
 ### Using CDN link for scripts and styles
 
-Using CDN links, you can directly refer the Gantt Chart control's script and style into the `index.html`.
+Using CDN links to include the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component's scripts and styles directly in the `index.html` file.
 
-Refer the Gantt Chart's CDN links as below
+Use the following CDN link format to refer in the `index.html` files:
 
-**Syntax:**
-
+**Script CDN link:**
 > * Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+
+**Style CDN link:**
 > * Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
 
-**Example:**
+**Example CDN link:**
 
 > * Script: [https://cdn.syncfusion.com/ej2/ej2-gantt/dist/global/ej2-gantt.min.js](http://cdn.syncfusion.com/ej2/ej2-gantt/dist/global/ej2-gantt.min.js)
 > * Styles: [https://cdn.syncfusion.com/ej2/ej2-gantt/styles/material.css](http://cdn.syncfusion.com/ej2/ej2-gantt/styles/material.css)
 
-Here's an example of referencing the Gantt Chart's scripts and styles in an HTML file using CDN links:
+The following example shows how to reference the Gantt scripts and styles in an HTML file using CDN links:
 
 ```html
 <!DOCTYPE html>
@@ -193,12 +201,17 @@ Here's an example of referencing the Gantt Chart's scripts and styles in an HTML
 
 **Single script and style CDN reference for all controls:**
 
-You can also refer to a single script and style CDN link that contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control resources as follows:
+A single CDN link can be used to include all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control resources.
 
-> * Script reference for all controls: [https://cdn.syncfusion.com/ej2/33.1.44/dist/ej2.min.js](https://cdn.syncfusion.com/ej2/33.1.44/dist/ej2.min.js)
-> * Style reference for all controls: [https://cdn.syncfusion.com/ej2/33.1.44/tailwind3.css](https://cdn.syncfusion.com/ej2/33.1.44/tailwind3.css)
+Use the following links:
 
-## Create sample data
+**Script (For all controls):**
+> * Script reference: [https://cdn.syncfusion.com/ej2/33.1.44/dist/ej2.min.js](https://cdn.syncfusion.com/ej2/33.1.44/dist/ej2.min.js)
+
+**Styles (For all controls):**
+> * Style reference: [https://cdn.syncfusion.com/ej2/33.1.44/tailwind3.css](https://cdn.syncfusion.com/ej2/33.1.44/tailwind3.css)
+
+## Create sample task data
 
 Define a simple task list with hierarchical relationships. Each task must have a `StartDate` and either a `Duration` or `EndDate` to render properly.
 
@@ -214,9 +227,9 @@ data = [
 ];
 ```
 
-## Configure task fields
+## Configure task fields mapping
 
-Map your data fields to Gantt Chart properties using [taskFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#taskfields):
+Map the data fields to Gantt Chart properties using [taskFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#taskfields):
 
 ```javascript
 taskSettings = {
@@ -235,18 +248,14 @@ taskSettings = {
 | `id` | Unique task identifier | Yes |
 | `name` | Task display name | Yes |
 | `startDate` | Task start date | Yes |
-| `duration` | Task duration in days | Yes* |
+| `duration` | Task duration in days | Yes |
 | `parentID` | Parent task ID for hierarchy | No |
-
-*Either `duration` or `endDate` is required for a task to render properly.
 
 ## Render the Gantt component
 
-Add a container element in the **index.html** file to render the Gantt component. Then, reference the **index.js** file in the **index.html** file.
+Add a container element in the `index.html` file to render the Gantt component. Then, reference the `index.js` file in the `index.html` file.
 
 In this documentation, the **ej2.min.js** script and **tailwind3.css** theme file are used, which include all Essential<sup style="font-size:70%">&reg;</sup> JS 2 components and their dependent scripts and styles.
-
-`index.html`
 
 Add the following HTML element to the `index.html` file. This element acts as the container for rendering the Gantt Chart component.
 
@@ -267,8 +276,6 @@ Add the following HTML element to the `index.html` file. This element acts as th
        </body>
   </html>
 ```
-
-`index.ts`
 
 Place the following code in the `index.js` file to create and configure the Gantt Chart component.
 
@@ -298,9 +305,19 @@ ganttChart.appendTo('#Gantt');
 
 ## Run the application
 
-Run the **index.html** file in a web browser to view the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt component.
+Run the `index.html` file in a web browser to view the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt component.
 
 ## Output
+
+The Gantt Chart displays:
+
+- Task hierarchy with parent-child relationships
+- Timeline view showing task bars
+- Automatically calculated dates based on duration
+
+The chart displays two parent tasks (Project initiation, Project estimation) with subtasks shown in a tree structure. Task bars are rendered on the timeline, sized according to their duration and start dates.
+
+You can preview the following sample by clicking the **Preview Sample** button.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

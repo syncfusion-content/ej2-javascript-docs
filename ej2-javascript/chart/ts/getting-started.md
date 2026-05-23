@@ -197,4 +197,4 @@ Wait for the webpack dev server to complete the build process. Once completed, y
 
 The following screenshot shows the output of the Syncfusion Chart quick start application:
 
-![Syncfusion Chart Quick Start Output](../../images/chart.png)
+![Syncfusion Chart Quick Start Output](../images/chart.png)

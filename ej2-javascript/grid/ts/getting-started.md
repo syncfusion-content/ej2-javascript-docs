@@ -105,7 +105,7 @@ grid.appendTo('#Grid');
 
 {% endhighlight %}
 
-{% highlight html tabtitle="index.html" %}
+{% highlight html tabtitle="style.css" %}
 
 @import '../../node_modules/@syncfusion/ej2/fluent2.css';
 

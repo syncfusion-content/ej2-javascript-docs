@@ -26,7 +26,7 @@ npm create vite@latest my-app -- --template vanilla-ts
 ```
 This command will prompt you to install the required packages and start the application. Select the options as shown below.
 
-![Markdown Editor Initial setup](../../rich-text-editor/images/svelte-ts/npm_setup.png)
+![Markdown Editor Initial setup](images/npm_setup.png)
 
 As Syncfusion packages are not installed yet, currently, the `No` option will be selected. Then, navigate to the project directory and install the dependencies using the following commands:
 

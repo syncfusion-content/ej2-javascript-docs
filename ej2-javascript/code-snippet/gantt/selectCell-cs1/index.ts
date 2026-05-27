@@ -1,7 +1,5 @@
-
-
-
 import { Gantt, Selection } from '@syncfusion/ej2-gantt';
+import { TextBox } from '@syncfusion/ej2-inputs';
 import { Button } from '@syncfusion/ej2-buttons';
 import { GanttData } from './datasource.ts';
 
@@ -9,7 +7,7 @@ Gantt.Inject(Selection);
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
-    height: '450px',
+    height: '370px',
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -19,14 +17,30 @@ let gantt: Gantt = new Gantt({
         parentID: 'ParentID'
     },
     selectionSettings: {
-        mode: 'Cell'
+        mode: 'Cell',
+        type: 'Single'
     }
 });
 gantt.appendTo('#Gantt');
 
-let cellBtn: Button = new Button();
-cellBtn.appendTo('#selectCell');
+let rowTextBox: TextBox = new TextBox({
+    width: '100'
+});
+rowTextBox.appendTo('#rowIndex');
 
-document.getElementById('selectCell').addEventListener('click', () => {
-    gantt.selectionModule.selectCell({ cellIndex: 1, rowIndex: 1 });
+let cellTextBox: TextBox = new TextBox({
+    width: '100'
+});
+cellTextBox.appendTo('#cellIndex');
+
+let selectBtn: Button = new Button();
+selectBtn.appendTo('#selectCell');
+
+document.getElementById('selectCell')!.addEventListener('click', () => {
+    let rowIndex: number = parseInt(rowTextBox.value as string, 10);
+    let cellIndex: number = parseInt(cellTextBox.value as string, 10);
+
+    if (!isNaN(rowIndex) && !isNaN(cellIndex)) {
+        gantt.selectCell({ rowIndex, cellIndex });
+    }
 });

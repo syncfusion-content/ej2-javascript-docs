@@ -1,8 +1,10 @@
-ej.gantt.Gantt.Inject(ej.gantt.Resize);
-
 var ganttChart = new ej.gantt.Gantt({
     dataSource: GanttData,
+    height: '450px',
     allowResizing: true,
+    splitterSettings: {
+        columnIndex: 6
+    },
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -11,17 +13,13 @@ var ganttChart = new ej.gantt.Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    splitterSettings: {
-        columnIndex: 5
-    },
-    height: '450px',
     columns: [
-        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
-        { field: 'TaskName', headerText: 'Task Name', width: '200', minWidth: '150', maxWidth: '250', },
-        { field: 'StartDate', headerText: 'Start Date', width: '150' },
-        { field: 'Duration', headerText: 'Duration', width: '100', minWidth: '50', maxWidth: '200' },
-        { field: 'Progress', headerText: 'Progress', width: '150' }
+        { field: 'TaskID', width: 100 },
+        { field: 'TaskName', headerText: 'Task Name', minWidth: 200, width: 250, maxWidth: 300 },
+        { field: 'StartDate' },
+        { field: 'Duration', minWidth: 100, maxWidth: 200 },
+        { field: 'Progress' }
     ]
-
 });
+
 ganttChart.appendTo('#Gantt');

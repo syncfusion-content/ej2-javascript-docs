@@ -41,150 +41,67 @@ Following is the list of dependencies to use the TreeGrid with all features:
 
 ## Setup for local environment
 
-There are two main approaches to use TreeGrid: **CDN** and **local installation**. This guide covers both, but CDN is simpler for getting started.
+Refer to the following steps to set up your local environment.
 
-### Approach 1: Using CDN
+**Step 1:** Create a root folder named **my-app** for your application.
 
-Using a CDN (Content Delivery Network) is the simplest approach to get started. The user can directly link to Syncfusion scripts and styles without installing anything locally. This approach is recommended for initial setup.
+**Step 2:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid control.
 
-**Refer to the [Using CDN link for script and style](#using-cdn-link-for-script-and-style) section below for complete setup.**
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid CDN resources
 
-### Approach 2: Using Local Installation
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid control can be initialized by the following way.
 
-For local installation, packages should be installed locally (useful for production applications or offline work):
-
-**Step 1:** Create a root folder `my-app` for your application.
-
-**Step 2:** Create `my-app/resources` folder to store local scripts and style files.
-- This `resources` folder will contain:
-  - `scripts/` subfolder - stores all Syncfusion JavaScript files
-  - `styles/` subfolder - stores all Syncfusion CSS theme files
-
-**Step 3:** Create `my-app/index.js` and `my-app/index.html` files.
-- `index.js` will contain your TreeGrid initialization code
-- `index.html` will contain the HTML structure and script references
-
-## Adding Syncfusion resources
-
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid control can be initialized by using either of the following ways.
-
-* Using CDN links 
-* Using local script and style files 
-
-### Using CDN link for script and style
-
-Using CDN, the TreeGrid control's script can be directly referred to and style in your `index.html` without installing anything locally.
-
-**Where to find CDN links:**
-
-The CDN provides the TreeGrid scripts and styles at these paths:
-
-**Syntax:**
-
-> Script: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/styles/material.css`
-
-**Example with version 32.19:**
-
-> Script: [`https://cdn.syncfusion.com/ej2/32.19/ej2-treegrid/dist/global/ej2-treegrid.min.js`](https://cdn.syncfusion.com/ej2/32.19/ej2-treegrid/dist/global/ej2-treegrid.min.js)
->
-> Styles: [`https://cdn.syncfusion.com/ej2/32.19/ej2-treegrid/styles/material.css`](https://cdn.syncfusion.com/ej2/32.19/ej2-treegrid/styles/material.css)
-
-**Complete CDN setup example:**
-
-The following HTML code shows the minimal dependencies needed to load TreeGrid from CDN:
+This setup includes additional dependencies required for more advanced functionalities of the treegrid, such as buttons, dropdowns, navigations and other components. Use this setup when you need to integrate additional features like filtering, paging, column menu and more.
 
 ```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <title>Essential JS 2 TreeGrid</title>
-    
+
     <!-- Essential JS 2 TreeGrid's dependent material theme -->
-    <link href="https://cdn.syncfusion.com/ej2/32.19/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-    <link href="https://cdn.syncfusion.com/ej2/32.19/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
-    <link href="https://cdn.syncfusion.com/ej2/32.19/ej2-grids/styles/material.css" rel="stylesheet" type="text/css"/>
-    
-    <!-- Essential JS 2 material theme -->
-    <link href="https://cdn.syncfusion.com/ej2/32.19/ej2-treegrid/styles/material.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-popups/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-dropdowns/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-lists/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-calendars/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-notifications/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-splitbuttons/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-grids/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-treegrid/styles/material.css" rel="stylesheet" type="text/css" />
 
     <!-- Essential JS 2 TreeGrid's dependent scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/32.19/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/32.19/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/32.19/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/32.19/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
-    
-    <!-- Essential JS 2 TreeGrid's global script -->
-    <script src="https://cdn.syncfusion.com/ej2/32.19/ej2-treegrid/dist/global/ej2-treegrid.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-dropdowns/dist/global/ej2-dropdowns.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-notifications/dist/global/ej2-notifications.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-treegrid/dist/global/ej2-treegrid.min.js" type="text/javascript"></script>
 </head>
-<body>
-    <!-- TreeGrid will be rendered here -->
-</body>
-</html>
-```
 
-**CSS files explained:**
-- `ej2-base/styles/material.css` - Base theme styles needed by all components
-- `ej2-popups/styles/material.css` - Styles for dialogs and popups
-- `ej2-grids/styles/material.css` - Grid component styles
-- `ej2-treegrid/styles/material.css` - TreeGrid-specific styles
-
-**Important note about CDN:** While CDN is convenient for learning and demos, it loads the complete bundle of all Syncfusion components.For production applications, a build process or the Custom Resource Generator should be used a build process or the [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) to include only the features the user need, reducing file size and improving performance.
-
-### Using local script and style
-
-If the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build is installed, the files should be copied locally instead of using CDN.
-
-**Prerequisites:**
-- The user must have Essential Studio JavaScript (Essential JS 2) product build installed
-- Access to the installation directory is needed where Syncfusion files are stored
-
-The global scripts and styles can be obtained from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
-
-After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, copy the TreeGrid and its dependencies scripts and style files into the `resources/scripts` and `resources/styles` folders.
-
-**File location syntax:**
-
-> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/material.css`
-
-**Example:**
-
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-treegrid/dist/global/ej2-treegrid.min.js`
->
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-treegrid/styles/material.css`
-
-After copying the files, refer the TreeGrid's scripts and styles into the `index.html` file.
-
-**Local setup example:**
-
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Essential JS 2 TreeGrid</title>
-    
-    <!-- Essential JS 2 TreeGrid's dependent material theme -->
-    <link href="resources/base/styles/material.css" rel="stylesheet" type="text/css"/>
-    <link href="resources/popups/styles/material.css" rel="stylesheet" type="text/css"/>
-    
-    <!-- Essential JS 2 material theme -->
-    <link href="resources/treegrid/styles/material.css" rel="stylesheet" type="text/css"/>
-
-    <!-- Essential JS 2 TreeGrid's dependent scripts -->
-    <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
-    <script src="resources/scripts/ej2-data.min.js" type="text/javascript"></script>
-    <script src="resources/scripts/ej2-popups.min.js" type="text/javascript"></script>
-    <script src="resources/scripts/ej2-grids.min.js" type="text/javascript"></script>
-    
-    <!-- Essential JS 2 TreeGrid's global script -->
-    <script src="resources/scripts/ej2-treegrid.min.js" type="text/javascript"></script>
-</head>
 <body>
 </body>
+
 </html>
 ```
+> To include all required Essential JS 2 styles and scripts, use the following CDN links.
+>
+> <!-- Essential JS 2 combined material theme (all components) -->
+> <!-- <link href="https://cdn.syncfusion.com/ej2/33.2.3/material.css" rel="stylesheet" type="text/css" /> -->
+>
+> <!-- Essential JS 2 combined script (all components) -->
+> <!-- <script src="https://cdn.syncfusion.com/ej2/33.2.3/dist/ej2.min.js" type="text/javascript"></script> -->
 
 ## Adding TreeGrid control
 
@@ -248,9 +165,10 @@ treeGridObj.appendTo('#TreeGrid');
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Essential JS 2 TreeGrid</title>
-    <!-- Essential JS 2 material theme -->
+
+    <!-- Essential JS 2 combined material theme (all components) -->
     <link href="https://cdn.syncfusion.com/ej2/33.2.3/material.css" rel="stylesheet" type="text/css" />
-    <!-- Essential JS 2 all script -->
+    <!-- Essential JS 2 combined script (all components) -->
     <script src="https://cdn.syncfusion.com/ej2/33.2.3/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>

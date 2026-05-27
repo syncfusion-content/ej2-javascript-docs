@@ -1,9 +1,5 @@
-
-
-
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
-
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
@@ -17,7 +13,7 @@ let gantt: Gantt = new Gantt({
         baselineStartDate: "BaselineStartDate",
         baselineEndDate: "BaselineEndDate",
         baselineDuration: "BaselineDuration",
-        parentID:"ParentID"
+        parentID: "ParentID"
     },
     renderBaseline: true,
     baselineColor: 'red'

@@ -1,5 +1,5 @@
 import { Gantt, Toolbar, Edit, Selection } from '@syncfusion/ej2-gantt';
-import { GanttData, editingResources } from 'datasource.ts';
+import { GanttData, editingResources } from './datasource.ts';
 
 Gantt.Inject(Toolbar, Edit, Selection);
 

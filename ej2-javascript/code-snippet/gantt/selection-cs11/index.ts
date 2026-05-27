@@ -1,6 +1,3 @@
-
-
-
 import { Gantt, Selection } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
 

@@ -1,12 +1,7 @@
-
-
-
-import { Gantt, Selection, Toolbar, DayMarkers, Edit, Filter, Sort, ContextMenu, RowDD} from '@syncfusion/ej2-gantt';
-import { WBSData } from 'datasource.ts';
-
+import { Gantt, Selection, Toolbar, DayMarkers, Edit, Filter, Sort, ContextMenu, RowDD, ActionBeginEventArgs } from '@syncfusion/ej2-gantt';
+import { WBSData } from './datasource.ts';
 
 Gantt.Inject(Selection, Toolbar, DayMarkers, Edit, Filter, Sort, ContextMenu, RowDD);
-
 
 let isRowDropped: boolean = false;
 let gantt: Gantt = new Gantt({
@@ -22,7 +17,7 @@ let gantt: Gantt = new Gantt({
             isRowDropped = false;
         }
     },
-    actionBegin: function (args) {
+    actionBegin: function (args: ActionBeginEventArgs) {
         if (args.requestType === "beforeDrop") {
             isRowDropped = true;
             gantt.enableAutoWbsUpdate = false;
@@ -102,6 +97,3 @@ let gantt: Gantt = new Gantt({
     projectEndDate: new Date('05/30/2024'),
 });
 gantt.appendTo('#Gantt');
-
-
-

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Baseline in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Baseline in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Baseline in ##Platform_Name## Gantt Chart Control | Syncfusion
+description: Learn here all about Baseline in Syncfusion ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Baseline 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Baseline in ##Platform_Name## Gantt control
+# Baseline in ##Platform_Name## Gantt Chart Control
 
-The baseline feature in the Gantt control enables comparison between original planned schedules and actual task execution timelines. This visualization provides clear insights into schedule deviations, helping assess project performance and identify areas requiring attention. Baseline functionality displays both the original planned timeline and current progress side-by-side for comprehensive project tracking.
+The baseline feature in the Gantt Chart control enables comparison between original planned schedules and actual task execution timelines. This visualization provides clear insights into schedule deviations, helping assess project performance and identify areas requiring attention. Baseline functionality displays both the original planned timeline and current progress side-by-side for comprehensive project tracking.
 
 Before implementing baseline functionality, ensure the data source includes baseline date fields and configure the [taskFields](../api/gantt/taskFields) object with appropriate field mappings. The baseline feature requires proper field mapping to display planned versus actual timelines effectively.
 
@@ -87,4 +87,43 @@ The following example demonstrates complete baseline configuration with proper f
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/gantt/baseline-cs1" %}
+{% endif %}
+
+{% if page.publishingplatform == "typescript" %}
+
+> For a comprehensive demonstration of baseline functionality, explore the [interactive sample](https://ej2.syncfusion.com/demos/#/tailwind3/gantt/baseline.html).
+
+{% elsif page.publishingplatform == "javascript" %}
+
+> For a comprehensive demonstration of baseline functionality, explore the [interactive sample](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/gantt/baseline.html).
+
+{% endif %}
+
+## Customize baseline using event
+
+You can customize the baseline bar in the Gantt chart using the [queryTaskbarInfo](../../gantt/events#querytaskbarinfo) event.
+ 
+{% if page.publishingplatform == "typescript" %}
+
+```ts
+queryTaskbarInfo: (args) => {
+    const element = args.rowElement.querySelector('.e-baseline-bar');
+    if (element) {
+        (element as HTMLElement).style.background =
+            'linear-gradient(red, yellow)';
+    }
+}
+```
+
+{% elsif page.publishingplatform == "javascript" %}
+
+```js
+queryTaskbarInfo: function (args) {
+    var element = args.rowElement.querySelector('.e-baseline-bar');
+    if (element) {
+        element.style.background = 'linear-gradient(red, yellow)';
+    }
+}
+```
+
 {% endif %}

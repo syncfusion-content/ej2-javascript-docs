@@ -1,14 +1,24 @@
-import { Gantt, Filter, Sort, Resize, ColumnMenu } from '@syncfusion/ej2-gantt';
+import { Gantt, ColumnMenu, Sort, ColumnMenuItemModel, SortSettingsModel, SplitterSettings } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
-import { MenuEventArgs } from '@syncfusion/ej2-navigations';
 
-Gantt.Inject(Filter, Sort, Resize, ColumnMenu);
+Gantt.Inject(ColumnMenu, Sort);
+
+let columnMenuItems: ColumnMenuItemModel[] = [
+    { text: 'Clear Sorting', id: 'ganttclearsorting' }
+];
+
+let sortSettings: SortSettingsModel = {
+    columns: [{ field: 'TaskName', direction: 'Ascending' }]
+};
+
+let splitterSettings: SplitterSettings = {
+    columnIndex: 5
+};
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
+    height: '450px',
     showColumnMenu: true,
-    allowFiltering: true,
-    allowResizing: true,
     allowSorting: true,
     taskFields: {
         id: 'TaskID',
@@ -18,26 +28,21 @@ let gantt: Gantt = new Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    columnMenuItems: [{ text: 'Clear Sorting', id: 'ganttclearsorting' }],
-    columnMenuClick: function (args: MenuEventArgs) {
+    sortSettings: sortSettings,
+    splitterSettings: splitterSettings,
+    columnMenuItems: columnMenuItems,
+    columnMenuClick: (args: any) => {
         if (args.item.id === 'ganttclearsorting') {
             gantt.clearSorting();
         }
     },
-    sortSettings: {
-        columns: [{ direction: "Ascending", field: "TaskName" }]
-    },
-    splitterSettings: {
-        position: '75%'
-    },
     columns: [
-        { field: 'TaskID', headerText: 'ID' },
+        { field: 'TaskID', width: 100 },
         { field: 'TaskName', headerText: 'Task Name' },
-        { field: 'StartDate', headerText: 'Start Date', width: '150' },
-        { field: 'Duration', headerText: 'Duration', width: '100' },
-        { field: 'Progress', headerText: 'Progress', width: '150' }
-    ],
-    height: '450px'
+        { field: 'StartDate' },
+        { field: 'Duration' },
+        { field: 'Progress' }
+    ]
 });
 
 gantt.appendTo('#Gantt');

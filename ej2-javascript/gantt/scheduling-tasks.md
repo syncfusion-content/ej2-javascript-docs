@@ -236,6 +236,7 @@ The following example defines units in duration values:
 Unscheduled tasks lack start date, end date, or duration, visualized as milestones or single-day tasks. Enable with [allowUnscheduledTasks](../api/gantt#allowunscheduledtasks) set to **true** (default: **false**), defaulting to a 1-day duration from the project start.
 
 Available unscheduled task types:
+
 - **Start date only**
 
     Tasks with only a start date defined, allowing for open-ended planning.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column pinning (Frozen) in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Column pinning (Frozen) in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Column Pinning (Frozen) in ##Platform_Name## Gantt Chart Control | Syncfusion
+description: Learn here all about Column pinning (Frozen) in Syncfusion ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Column pinning (Frozen) 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column pinning (Frozen) in ##Platform_Name## Gantt component
+# Column Pinning (Frozen) in ##Platform_Name## Gantt Chart Control
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt component provides a frozen columns feature that keeps selected columns fixed while scrolling horizontally through large datasets. This functionality ensures that critical information remains visible at all times, improving readability and user experience. By maintaining key columns in view, it simplifies navigation and makes referencing important data points easier when working with extensive project details.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control provides a frozen columns feature that keeps selected columns fixed while scrolling horizontally through large datasets. This functionality ensures that critical information remains visible at all times, improving readability and user experience. By maintaining key columns in view, it simplifies navigation and makes referencing important data points easier when working with extensive project details.
 
-To enable frozen columns, use the [frozenColumns](../../api/gantt#frozencolumns) property in the Gantt component.
+To enable frozen columns, use the [frozenColumns](../../api/gantt#frozencolumns) property in the Gantt control.
 
 In the following example, the `frozenColumns` property is set to **2**, which keeps the first two columns fixed on the left while the remaining columns can be scrolled horizontally.
 
@@ -93,7 +93,7 @@ The types of the `column.freeze` directions:
 
 * **Fixed**: The Fixed direction locks a column at a fixed position within the Gantt columns. This ensures that the column is always visible during horizontal scroll.
 
-In the following example, the **TaskID** column is frozen on the left side, the **resources** column is frozen on the right side and the **Progress** column is frozen on the fixed of the content table.
+In the following example, the **TaskID** column is frozen on the left side, the **resources** column is frozen on the right side and the **Progress** column is frozen in a fixed position within the content table.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -124,7 +124,7 @@ In the following example, the **TaskID** column is frozen on the left side, the 
 
 ## Change default frozen line color
 
-The frozen line borders of frozen columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt component can be customized by applying custom CSS styles to the respective frozen columns. This allows you to change the border color of left, right, and fixed frozen columns to match your application's design and theme.
+The frozen line borders of frozen columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt control can be customized by applying custom CSS styles to the respective frozen columns. This allows you to change the border color of left, right, and fixed frozen columns to match your application's design and theme.
 
 To change the default frozen line color, use the following CSS class names and apply the desired border color:
 

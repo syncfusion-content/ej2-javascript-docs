@@ -1,55 +1,53 @@
-ej.gantt.Gantt.Inject(ej.gantt.Edit,ej.gantt.Toolbar,ej.gantt.Selection);
-
-var gantt = new ej.gantt.Gantt({
-    dataSource: selfReferenceData,
-    resources: resourceCollection,
+var ganttChart = new ej.gantt.Gantt({
+    dataSource: data,
+    resources: resources,
+    height: '430px',
     viewType: 'ResourceView',
-        taskFields: {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            endDate: 'EndDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            resourceInfo: 'resources',
-            work: 'work',
-            parentID: 'ParentID'
-        },
-        resourceFields: {
-            id: 'resourceId',
-            name: 'resourceName',
-            unit: 'resourceUnit',
-            group: 'resourceGroup'
-        },
-        editSettings: {
-            allowAdding: true,
-            allowEditing: true,
-            allowDeleting: true,
-            allowTaskbarEditing: true,
-            showDeleteConfirmDialog: true
-        },
-        columns: [
-            { field: 'TaskID', visible: false },
-            { field: 'TaskName', headerText: 'Name', width: 250 },
-            { field: 'work', headerText: 'Work' },
-            { field: 'Progress' },
-            { field: 'resourceGroup', headerText: 'Group' },
-            { field: 'StartDate' },
-            { field: 'Duration' },
-        ],
-        toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-        labelSettings: {
-            rightLabel: 'resources'
-        },
-        splitterSettings: {
-            columnIndex: 3
-        },
-        allowResizing: true,
-        allowSelection: true,
-        highlightWeekends: true,
-        treeColumnIndex: 1,
-        height: '450px',
-        projectStartDate: new Date('03/28/2019'),
-        projectEndDate: new Date('05/18/2019')
+    highlightWeekends: true,
+    treeColumnIndex: 1,
+    projectStartDate: new Date('03/25/2019'),
+    projectEndDate: new Date('07/28/2019'),
+    taskFields: {
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        endDate: 'EndDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        dependency: 'Predecessor',
+        resourceInfo: 'resources',
+        work: 'work',
+        parentID: 'ParentID'
+    },
+    resourceFields: {
+        id: 'resourceId',
+        name: 'resourceName',
+        unit: 'Unit',
+        group: 'resourceGroup'
+    },
+    editSettings: {
+        allowAdding: true,
+        allowEditing: true,
+        allowDeleting: true,
+        allowTaskbarEditing: true,
+        showDeleteConfirmDialog: true
+    },
+    columns: [
+        { field: 'TaskID', visible: false },
+        { field: 'TaskName', headerText: 'Name', width: 250 },
+        { field: 'work', headerText: 'Work' },
+        { field: 'Progress' },
+        { field: 'resourceGroup', headerText: 'Group' },
+        { field: 'StartDate' },
+        { field: 'Duration' }
+    ],
+    toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
+    labelSettings: {
+        rightLabel: 'resources'
+    },
+    splitterSettings: {
+        columnIndex: 3
+    }
 });
-gantt.appendTo('#Gantt');
+
+ganttChart.appendTo('#Gantt');

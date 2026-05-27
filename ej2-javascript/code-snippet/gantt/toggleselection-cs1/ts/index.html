@@ -8,16 +8,31 @@
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
 
 <body>
-    <button id="toggle">Disable toggle</button>
     <div id='loader'>Loading....</div>
     <div id='container'>
-        <div id='Gantt'></div>        
+        <div style="display:flex; align-items:center">
+            <label style="padding:30px 17px 0 0; font-weight:bold">
+                Choose selection mode:
+            </label>
+            <input id="selectionMode" />
+        </div>
+
+        <div style="padding:20px 0">
+            <label style="margin-right:20px; font-weight:bold">
+                Enable/Disable toggle selection
+            </label>
+            <input id="toggleSelection" />
+        </div>
+
+        <div style="padding-top:20px">
+            <div id="Gantt"></div>
+        </div>
     </div>
 </body>
 

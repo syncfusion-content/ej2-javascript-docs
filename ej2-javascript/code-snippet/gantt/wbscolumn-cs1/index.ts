@@ -1,9 +1,5 @@
-
-
-
-import { Gantt, Selection, Toolbar, DayMarkers, Edit, Filter, Sort, ContextMenu} from '@syncfusion/ej2-gantt';
+import { Gantt, Selection, Toolbar, DayMarkers, Edit, Filter, Sort, ContextMenu } from '@syncfusion/ej2-gantt';
 import { WBSData } from './datasource.ts';
-
 
 Gantt.Inject(Selection, Toolbar, DayMarkers, Edit, Filter, Sort, ContextMenu);
 
@@ -87,6 +83,3 @@ let gantt: Gantt = new Gantt({
     projectEndDate: new Date('05/30/2024'),
 });
 gantt.appendTo('#Gantt');
-
-
-

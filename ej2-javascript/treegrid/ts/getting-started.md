@@ -46,7 +46,7 @@ Combined CSS files are available in the Essential<sup style="font-size:70%">&reg
 
 ## Adding TreeGrid component
 
-Add the TreeGrid component in **app.ts** file using the following code.
+Add the TreeGrid component in `[src/app/app.ts]` file using the following code and define a TreeGrid container element in [src/index.html] to render the component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -115,7 +115,7 @@ treeGridObj.appendTo('#TreeGrid');
     <link rel="shortcut icon" href="resources/favicon.ico" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Syncfusion styling reference -->
-    <link href="/styles/styles.css" rel="stylesheet" />
+    <link href="./styles/styles.css" rel="stylesheet" />
 </head>
 
 <body>

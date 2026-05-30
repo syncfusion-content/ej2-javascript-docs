@@ -11,107 +11,119 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## File Manager control
 
-This section explains the steps to create a simple File Manager and demonstrates the basic usage of the File Manager control using the Essential<sup style="font-size:70%">&reg;</sup> JS 2
-[quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
+This section explains how to create a simple File Manager and demonstrates the basic usage of the File Manager control.
 
-> This application is integrated with the **webpack.config.js** configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). It requires node **v14.15.0** or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
+## Prerequisites
 
-## Setup for local development
+This guide uses Vite as the bundler and development environment. Install Node.js 24.13.0 or higher before proceeding. For detailed information about Vite's capabilities and configuration options, refer to the [Vite documentation](https://vitejs.dev/).
 
-Clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart.git) using the following command line scripts.
+## Create a TypeScript application.
+
+To set-up a Typescript application in TypeScript environment, run the following command.
+
+```bash
+npm create vite@latest my-app -- --template vanilla-ts
+```
+This command will prompt you to install the required packages and start the application. Select the options as shown below.
+
+![File Manager Initial setup](../images/npm_setup.png)
+
+As Syncfusion packages are not installed yet, currently, the `No` option will be selected. Then, navigate to the project directory using the following command:
+
+```bash
+cd my-app
+```
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> File Manager package
+
+All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. To install File Manager component, use the following command.
 
 ```
-git clone https://github.com/syncfusion/ej2-quickstart.git
-cd ej2-quickstart
+npm i @syncfusion/ej2-filemanager
 ```
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
+## Adding CSS reference
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
-
-Use the following command to install the dependent npm packages from the command prompt.
+Add the following imports inside the `~/src/styles.css` file to include the `tailwind3` theme styles:
 
 ```
-npm install
-```
-
-## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
-
-Combined CSS files are available in the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package root folder. This can be referenced in your `[src/styles/styles.css]` using the following code.
-
-```
-@import '../../node_modules/@syncfusion/ej2/fluent2.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-icons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css';
+@import "../node_modules/@syncfusion/ej2-filemanager/styles/tailwind3.css";
 ```
 
 ## Adding File Manager control
 
-You can start adding Essential<sup style="font-size:70%">&reg;</sup> JS 2 file manager control to the application. To get started, add the file manager control in **app.ts** file using the following code.
+To get started, add the File Manager control in `main.ts` and `index.html` files. File Manager can be initialized through div element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+{% highlight ts tabtitle="main.ts" %}
 
-import { FileManager } from '@syncfusion/ej2-filemanager';
+import { FileManager, Toolbar, NavigationPane, DetailsView } from '@syncfusion/ej2-filemanager';
+import './style.css';
+
+FileManager.Inject(Toolbar, NavigationPane, DetailsView);
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
 let filemanagerInstance: FileManager = new FileManager({
-    ajaxSettings: {
-        url: hostUrl + 'api/FileManager/FileOperations'
-    }
+  ajaxSettings: {
+    url: hostUrl + 'api/FileManager/FileOperations'
+  }
 });
 
 filemanagerInstance.appendTo('#filemanager');
 
 {% endhighlight %}
 
-{% highlight html tabtitle="index.html" %}
+{% highlight css tabtitle="styles.css" %}
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Essential JS 2 File Manager control</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Essential JS 2" />
-    <meta name="author" content="Syncfusion" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-</head>
-
-<body>
-    <div>
-        <!--HTML file manager element, which is going to render as Essential JS 2 File Manager-->
-        <div id="filemanager"></div>
-    </div>
-</body>
-
-</html>
+@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-icons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css';
+@import "../node_modules/@syncfusion/ej2-filemanager/styles/tailwind3.css";
 
 {% endhighlight %}
 
+{% highlight html tabtitle="index.html" %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-app</title>
+  </head>
+  <body>
+    <div id="filemanager"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+
+{% endhighlight %}
 {% endtabs %}
 
 >Note: The [`ajaxSettings`](../api/file-manager#ajaxsettings) must be defined when initializing the File Manager. The File Manager uses the URLs specified in `ajaxSettings` to send file operation requests to the server. The File Manager service link is provided in `hostUrl`.
 
 ## Run the application
 
-The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
+Use the following command to run the application in the browser.
 
+```bash
+npm run dev
 ```
-npm start
-```
-
-Output will be displayed as follows.
-
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/file-manager/getting-started-cs1/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/file-manager/getting-started-cs1/index.ts %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/file-manager/getting-started-cs1" %}
 
 ## See also
 

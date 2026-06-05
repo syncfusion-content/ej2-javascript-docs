@@ -40,169 +40,50 @@ Refer to the following steps to set up your local environment.
 
 **Step 3:** Open Visual Studio Code and create `my-app/index.js` and `my-app/index.html` files for initializing the Essential JS 2 Markdown Editor control.
 
-## Adding Syncfusion resources
+## Adding Markdown Editor styles
 
-The Essential JS 2 JavaScript controls can be initialized by using either of the following ways.
+Add the following styles inside the `my-app/index.html` file to include the `tailwind3` theme styles:
 
-* Using local script and style
-* Using CDN link for script and style
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
 
-### Using local script and style
 
-**1. Download Essential Studio JavaScript (Essential JS 2):** Obtain the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-base/styles/tailwind3.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-buttons/styles/tailwind3.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-inputs/styles/tailwind3.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-lists/styles/tailwind3.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-navigations/styles/tailwind3.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-popups/styles/tailwind3.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-splitbuttons/styles/tailwind3.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-richtexteditor/styles/tailwind3.css" rel="stylesheet">
 
-**2. Locate Script and Style Files:** After installing the Essential JS 2 product build, identify the location of the Rich Text Editor’s script and style file. The syntax for the file paths is as follows:
+{% endhighlight %}
+{% endtabs %}
 
-**Syntax:**
-> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/tailwind3.css`
+I> Ensure that all Syncfusion Markdown Editor theme style files are loaded in the exact order shown above. The order is important because these styles have dependencies, and loading them incorrectly may cause styling issues in the controls. You can also refer to the [themes section](https://ej2.syncfusion.com/documentation/appearance/theme) for details about built-in themes and CSS references for individual controls.
 
-**Example:**
+## Adding Markdown Editor scripts
 
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js`
->
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-richtexteditor/styles/tailwind3.css`
+Add the following scripts inside the `my-app/index.html` file to include the Markdown Editor functionality:
 
-**3. Copy Files to Resources Folder:** Create a folder `my-app/resources` and copy/paste the global scripts and styles from the above installed location to `my-app/resources` location.
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
 
-**4. Referencing in HTML File** Once the files are copied, reference the Rich Text Editor’s scripts and styles into the **index.html** file.
+<script src="http://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+<script src="http://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+<script src="http://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
+<script src="http://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
+<script src="http://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+<script src="http://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
+<script src="http://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js" type="text/javascript"></script>
+<script src="http://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-filemanager/dist/global/ej2-filemanager.min.js" type="text/javascript"></script>
+<script src="http://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js" type="text/javascript"></script>
 
-Here’s an example of referencing the Rich Text Editor’s scripts and styles in an HTML file:
+{% endhighlight %}
+{% endtabs %}
 
-**a.Essential Dependency (Minimal Setup)**
-
-This setup includes only the necessary scripts and styles required to render the Syncfusion Markdown Editor. Use this setup for a lightweight application that requires basic Markdown Editor functionality.
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2 Markdown Editor</title>
-            <!-- Essential JS 2 Markdown Editor's dependent tailwind3 theme -->
-            <link href="resources/base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/lists/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/splitbuttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/filemanager/styles/tailwind3.css" rel="stylesheet" />
-            <!-- Essential JS 2 Markdown Editor's tailwind3 theme -->
-            <link href="resources/richtexteditor/tailwind3.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 Markdown Editor's dependent script -->
-            <script src="resources/ej2-base.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-buttons.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-inputs.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-lists.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-navigations.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-popups.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-splitbuttons.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-filemanager.min.js" type="text/javascript"></script>
-            <!-- Essential JS 2 Markdown Editor's global script -->
-            <script src="resources/ej2-richtexteditor.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
-```
-
-**b. Comprehensive Dependency (All Controls)**
-
-This setup includes all possible dependencies for Syncfusion controls in a single comprehensive file, ensuring maximum compatibility and functionality. Use this setup for a complex application that utilizes a wide range of Syncfusion controls.
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2 Markdown Editor</title>
-            <!-- Essential JS 2 tailwind3 theme -->
-            <link href="resources/tailwind3.css" rel="stylesheet" type="text/css" />
-            <!-- Essential JS 2 script -->
-            <script src="resources/ej2.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
-```
-
-### Using CDN link for script and style reference
-
-Using CDN link, you can directly refer the Rich Text Editor control’s script and style into the `index.html`.
-
-Refer the Rich Text Editor’s CDN links as belows.
-
-**Syntax:**
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/tailwind3.css`
-
-**Example:**
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js`](http://cdn.syncfusion.com/ej2/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js)
->
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-richtexteditor/styles/tailwind3.css`](http://cdn.syncfusion.com/ej2/ej2-richtexteditor/styles/tailwind3.css)
-
-Here’s an example of referencing the Rich Text Editor’s scripts and styles in an HTML file using CDN links:
-
-**a.Essential Dependency (Minimal Setup)**
-
-This setup includes only the necessary scripts and styles required to render the Syncfusion Markdown Editor. Use this setup for a lightweight application that requires basic Markdown Editor functionality.
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2 Markdown Editor</title>
-            <!-- Essential JS 2 Rich Text Editor's dependent tailwind3 theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-lists/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-splitbuttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-filemanager/styles/tailwind3.css" rel="stylesheet" type="text/css" />
-            <!-- Essential JS 2 Rich Text Editor's global tailwind3 theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-richtexteditor/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 Rich Text Editor's dependent script -->
-            <script src="http://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-filemanager/dist/global/ej2-filemanager.min.js" type="text/javascript"></script>
-            <!-- Essential JS 2 Rich Text Editor's global script -->
-            <script src="http://cdn.syncfusion.com/ej2/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
-
-```
-
-**c. Comprehensive Dependency (All Controls)**
-
-This setup includes all possible dependencies for Syncfusion controls in a single comprehensive file, ensuring maximum compatibility and functionality. Use this setup for a complex application that utilizes a wide range of Syncfusion controls.
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2 Markdown Editor</title>
-            <!-- Essential JS 2 tailwind3 theme -->
-            <link href="https://cdn.syncfusion.com/ej2/tailwind3.css" rel="stylesheet" type="text/css" />
-            <!-- Essential JS 2 all script -->
-            <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
-
-```
+I> Ensure that all Syncfusion Markdown Editor script files are loaded in the correct order and included before initializing the control. The order is important because the scripts have dependencies, and loading them incorrectly may prevent the Markdown Editor from working properly or cause runtime errors.
+Make sure the required base and dependent scripts are included along with the Markdown Editor script.
 
 ## Adding Markdown Editor control
 
@@ -210,76 +91,14 @@ To get started, add the Markdown Editor control in index.js and index.html files
 
 Markdown Editor can be initialized on div element as shown below:
 
-`[src/index.html]`
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Essential JS 2 Markdown Editor</title>
-      <!-- Essential JS 2 tailwind3 theme -->
-      <link href="https://cdn.syncfusion.com/ej2/tailwind3.css" rel="stylesheet" type="text/css" />
-      <!-- Essential JS 2 all script -->
-      <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
-</head>
-
-<body>
-    <!--Element which will render as Markdown Editor-->
-     <div id="editor">
-     </div>
-</body>
-</html>
-```
-
-Place the following Markdown Editor code in the `index.js` file.
-
-`[src/index.js]`
-
-```javascript
-// initialize Markdown Editor control
-var editor = new ej.richtexteditor.RichTextEditor({
-     editorMode: 'Markdown',
-});
-
-// render initialized Markdown Editor
-editor.appendTo("#editor");
-
-```
-
-Output will be displayed as follows
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/markdown-editor/getting-started-cs1/index.js %}
+{% include code-snippet/markdown-editor/getting-started-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/markdown-editor/getting-started-cs1/index.html %}
+{% include code-snippet/markdown-editor/getting-started-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/markdown-editor/getting-started-cs1" %}
-
-## Configure the Toolbar
-
-Configure the toolbar with the tools using items field of the [toolbarSettings](../api/rich-text-editor/toolbarSettings#toolbarsettings) property as your application requires.
-
-`[src/index.js]`
-
-```javascript
-var editor = new ej.richtexteditor.RichTextEditor({
-    editorMode: 'Markdown',
-    toolbarSettings: {
-        items: ['Bold', 'Italic', 'StrikeThrough', 'InlineCode', 'SuperScript', 'SubScript', '|', 
-            'Formats', 'Blockquote', '|', 'OrderedList', 'UnorderedList', 'CreateLink', 'Image', 'CreateTable', '|', 
-            'Undo', 'Redo']
-    },
-    value: 'In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation. The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content.'
-});
-
-editor.appendTo("#editor");
-```
-
-> `|` and `-` can insert a vertical and horizontal separator lines in the toolbar.
 
 ## Run the application
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bpmn Activity in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Bpmn shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+description: Learn here all about Bpmn Activity shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Bpmn Activity 
 publishingplatform: ##Platform_Name##
@@ -52,7 +52,7 @@ The different activities of BPMN process are listed as follows.
 
 ### Tasks
 
-The [`task`](../../api/diagram/bpmnTask#BpmnTask) property of the [`bpmn activity`](../../api/diagram/bpmnactivitymodel/) allows you to define the type of task such as sending, receiving, user based task, etc. By default, the type property of task is set as **none**. The following code illustrates how to create different types of
+The [`task`](../../api/diagram/bpmnTask#BpmnTask) property of the [`bpmn activity`](../../api/diagram/bpmnactivitymodel) allows you to define the type of task such as sending, receiving, user based task, etc. By default, the type property of task is set as **none**. The following code illustrates how to create different types of
 BPMN tasks.
 
 {% if page.publishingplatform == "typescript" %}
@@ -97,7 +97,7 @@ The various types of BPMN tasks are tabulated as follows.
 
 ### Collapsed Subprocess
 
-A [`Collapsed Sub-Process`](../../api/diagram/bpmnSubProcessModel/#collapsed) is a group of tasks, which is used to hide or reveal details of additional levels. The following code explains how to create a Collapsed Sub-Process.
+A [`Collapsed Sub-Process`](../../api/diagram/bpmnSubProcessModel#collapsed) is a group of tasks, which is used to hide or reveal details of additional levels. The following code explains how to create a Collapsed Sub-Process.
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
@@ -230,7 +230,7 @@ By default, the call property is false.
 
 N> This Property is only applicable for task Type activity. 
 
-#### Adhoc
+#### Ad-hoc
 
 An adhoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition and set it with the [`adhoc`](../../api/diagram/bpmnSubProcess#adhoc-boolean) property of subprocess. By default, the adhoc property is false.
 
@@ -342,7 +342,7 @@ A subprocess is defined as an event subprocess, when it is triggered by an event
 
 ##### Transaction subprocess
 
-* [`transaction`](../../api/diagram/bpmnSubProcess/#transaction) is a set of activities that logically belong together, in which all contained activities must complete their parts of the transaction; otherwise the process is undone. The execution result of a transaction is one of Successful Completion, Unsuccessful Completion (Cancel), and Hazard (Exception). The [`events`](../../api/diagram/bpmnSubProcess/#events) property of subprocess allows to represent these results as an event attached to the subprocess.
+* [`transaction`](../../api/diagram/bpmnSubProcess#transaction) is a set of activities that logically belong together, in which all contained activities must complete their parts of the transaction; otherwise the process is undone. The execution result of a transaction is one of Successful Completion, Unsuccessful Completion (Cancel), and Hazard (Exception). The [`events`](../../api/diagram/bpmnSubProcess#events) property of subprocess allows to represent these results as an event attached to the subprocess.
 
 * The event object allows you to define the type of event by which the subprocess will be triggered. The name of the event can be defined to identify the event at runtime.
 

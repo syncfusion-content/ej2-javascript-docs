@@ -152,7 +152,7 @@ The following code example illustrates how to customize the lane header.
 
 ### Add/remove lane at runtime
 
- You can add the a lanes at runtime by using the [`addLanes`](../../api/diagram/#addlanes) method and remove lane at runtime using the [`removeLane`](../../api/diagram/#removelane) method. The following code illustrates how to dynamically add and remove lane in swimlane.
+ You can add the a lanes at runtime by using the [`addLanes`](../../api/diagram#addlanes) method and remove lane at runtime using the [`removeLane`](../../api/diagram#removelane) method. The following code illustrates how to dynamically add and remove lane in swimlane.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -216,7 +216,7 @@ The following code example illustrates how to add nodes to lane.
 
 #### Add child dynamically into the lane.
 
-The child node can be inserted into the lane at runtime by using the [`addNodetoLane`](../../api/diagram/#addnodetolane) method.
+The child node can be inserted into the lane at runtime by using the [`addNodetoLane`](../../api/diagram#addnodetolane) method.
 
 
 {% if page.publishingplatform == "typescript" %}
@@ -289,7 +289,7 @@ Here is an example of how to apply these constraints:
 
 ### AddInfo
 
-AddInfo for lanes similar to the nodes. we can store additional informations about the specific lane by using the [`addInfo`](../../api/diagram/laneModel/#addinfo).
+AddInfo for lanes similar to the nodes. we can store additional informations about the specific lane by using the [`addInfo`](../../api/diagram/laneModel#addinfo).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -379,10 +379,14 @@ The following code illustrates how to disable swimlane lane swapping.
 * Drag and drop the child nodes from lane to diagram.
 * Drag and drop the child nodes from diagram to lane.
 * Based on the child node interactions,the lane size should be updated.
-The following image illustrates children interaction in lane. ![Lane Children Interaction](../images/child-interaction.gif)
+
+The following image illustrates children interaction in lane.
+![Lane Children Interaction](../images/child-interaction.gif)
 
 
 #### Lane header editing
 
 Diagram provides the support to edit Lane headers at runtime. We achieve the header editing by double click event. Double clicking the header label will enables the editing of that.
-The following image illustrates how to edit the lane header. ![Lane Header Editing](../images/lane-header-edit.gif)
+
+The following image illustrates how to edit the lane header.
+![Lane Header Editing](../images/lane-header-edit.gif)

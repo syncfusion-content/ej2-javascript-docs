@@ -15,7 +15,7 @@ Connectors are objects used to create link between two points, nodes or ports to
 
 ## Create connector
 
-Connector can be created by defining the source and target point of the connector. The path to be drawn can be defined with a collection of segments. To explore the properties of a [`connector`](../../api/diagram/connector), refer to [`Connector Properties`](../../api/diagram/connector). The [`id`](../../api/diagram/connectorModel/#id) property of a connector is used to define its unique identifier and can later be used to find the connector at runtime for customization. 
+Connector can be created by defining the source and target point of the connector. The path to be drawn can be defined with a collection of segments. To explore the properties of a [`connector`](../../api/diagram/connector), refer to [`Connector Properties`](../../api/diagram/connector). The [`id`](../../api/diagram/connectorModel#id) property of a connector is used to define its unique identifier and can later be used to find the connector at runtime for customization. 
 
 ``` javascript
 let connector = { id: "connector1",
@@ -47,7 +47,7 @@ The following code example illustrates how to add a connector through connector 
 
 ## Add/Remove connector at runtime
 
-Connectors can be added at runtime by using public method, [`add`](../../api/diagram/#add) and can be removed at runtime by using public method, [`remove`](../../api/diagram/#remove).
+Connectors can be added at runtime by using public method, [`add`](../../api/diagram#add) and can be removed at runtime by using public method, [`remove`](../../api/diagram#remove).
 
 The following code example illustrates how to add connector at runtime.
 
@@ -64,7 +64,7 @@ The following code example illustrates how to add connector at runtime.
 
 ## Add collection of connectors at runtime
 
-The collection of connectors can be dynamically added using [`addElements`](../../api/diagram/#addelements) method. Each time an element is added to the diagram canvas, the 'collectionChange' event will be triggered.
+The collection of connectors can be dynamically added using [`addElements`](../../api/diagram#addelements) method. Each time an element is added to the diagram canvas, the 'collectionChange' event will be triggered.
 
 The following code illustrates how to add a connectors collection at runtime.
 
@@ -101,7 +101,7 @@ The following code example illustrates how to add connectors in palette.
 
 Connectors can be interactively drawn by clicking and dragging the diagram surface.
 
-To draw a shape, you have to activate the drawing tool by setting `DrawOnce` or `ContinuousDraw` to the [`tool`](../../api/diagram/#tool) property and you need to set the `connector` object by using the [`drawingObject`](../../api/diagram/#drawingobject) property. The following code example illustrates how to draw a connector at runtime.
+To draw a shape, you have to activate the drawing tool by setting `DrawOnce` or `ContinuousDraw` to the [`tool`](../../api/diagram#tool) property and you need to set the `connector` object by using the [`drawingObject`](../../api/diagram#drawingobject) property. The following code example illustrates how to draw a connector at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -154,7 +154,7 @@ The following code example illustrates how to clone a connector
 
 Get Connector defaults helps to define default properties of the connector. It is triggered when the diagram is initialized. In this event, you can customize the connector properties.
 
-The following code example explains how to customize the connector using [`getConnectorDefaults`](../../api/diagram/#getconnectordefaults).
+The following code example explains how to customize the connector using [`getConnectorDefaults`](../../api/diagram#getconnectordefaults).
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -370,8 +370,8 @@ N> The `AvoidLineOverlapping` feature applies only to orthogonal connectors and 
 
 ## See Also
 
-* [How to add annotations to the connector](./connector-labels)
-* [How to enable/disable the behavior of the connector](./constraints#connector-constraints)
-* [How to add connectors to the symbol palette](./symbol-palette)
-* [How to perform the interaction on the connector](./interaction#connector-editing)
-* [How to create diagram connectors using drawing tools](./tools#draw-connectors)
+* [How to add annotations to the connector](../labels/connector-labels)
+* [How to enable/disable the behavior of the connector](../constraints#connector-constraints)
+* [How to add connectors to the symbol palette](../symbol-palette/symbol-palette)
+* [How to perform the interaction on the connector](../interaction#connector-editing)
+* [How to create diagram connectors using drawing tools](../tools#draw-connectors)

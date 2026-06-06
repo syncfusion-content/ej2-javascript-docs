@@ -25,7 +25,7 @@ By default, the diagram displays a tooltip showing size, position, and angle inf
 
 ### Disable default tooltip
 
-The default tooltip that appears while interacting with nodes can be disabled by removing the tooltip constraints from the [`selectorConstraints`](../api/diagram/selectorconstraints/) of the [`selectedItems`](../api/diagram/selectormodel/) property of the diagram.
+The default tooltip that appears while interacting with nodes can be disabled by removing the tooltip constraints from the [`selectorConstraints`](../api/diagram/selectorconstraints) of the [`selectedItems`](../api/diagram/selectormodel) property of the diagram.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -57,7 +57,7 @@ The default tooltip that appears while interacting with nodes can be disabled by
 
 ## Tooltip for a specific node/connector
 
-The tooltip can be customized for each node and connector. To show different tooltips for different diagram elements on mouse over, set the [`tooltip`](../api/diagram/diagramTooltipModel/) property of the node or connector with the tooltip [`content`](../api/diagram/diagramTooltipModel/#content) and [`position`](../api/diagram/diagramTooltipModel/#position). The following code example illustrates how to customize the tooltip for individual elements.
+The tooltip can be customized for each node and connector. To show different tooltips for different diagram elements on mouse over, set the [`tooltip`](../api/diagram/diagramTooltipModel) property of the node or connector with the tooltip [`content`](../api/diagram/diagramTooltipModel#content) and [`position`](../api/diagram/diagramTooltipModel#position). The following code example illustrates how to customize the tooltip for individual elements.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -88,7 +88,7 @@ The tooltip can be customized for each node and connector. To show different too
 
 ## Inherit diagram tooltip
 
-The diagram supports inheriting the diagram tooltip when the mouse hovers over any node or connector. To show a tooltip on mouse over, set the diagram's [`tooltip`](../api/diagram#tooltip) property with the tooltip [`content`](../api/diagram/diagramTooltip/#content) and [`position`](../api/diagram/diagramTooltip/#position). Ensure that the nodes and connectors have their constraints set to **InheritTooltip**, as shown in the following example.
+The diagram supports inheriting the diagram tooltip when the mouse hovers over any node or connector. To show a tooltip on mouse over, set the diagram's [`tooltip`](../api/diagram#tooltip) property with the tooltip [`content`](../api/diagram/diagramTooltip#content) and [`position`](../api/diagram/diagramTooltip#position). Ensure that the nodes and connectors have their constraints set to **InheritTooltip**, as shown in the following example.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -153,9 +153,9 @@ let diagram = new ej.diagrams.Diagram({
 
 The tooltip feature has been implemented to support Ports, providing the ability to display information or descriptions when the mouse hovers over them.
 
-To display tooltips on mouseover, set the desired tooltip [`content`](../api/diagram/diagramTooltip/#content) by utilizing the [`tooltip`](../api/diagram#tooltip) property.
+To display tooltips on mouseover, set the desired tooltip [`content`](../api/diagram/diagramTooltip#content) by utilizing the [`tooltip`](../api/diagram#tooltip) property.
 
-Tooltips for Ports can be enabled or disabled using the [`PortConstraints`](../api/diagram/port#constraints-portconstraints) Tooltip property.
+Tooltips for Ports can be enabled or disabled using the [`PortConstraints`](../api/diagram/port#constraints) Tooltip property.
 
 {% if page.publishingplatform == "typescript" %}
 ```ts
@@ -368,7 +368,7 @@ Refer the following sample where we used zoomIn animation for tooltip open and z
 
 ## Sticky tooltip
 
-A sticky tooltip will remain visible even after you move the mouse away from the node or connector. You can activate this feature by setting the [`isSticky`](../api/diagram/diagramTooltipModel/#issticky) property of the tooltip. 
+A sticky tooltip will remain visible even after you move the mouse away from the node or connector. You can activate this feature by setting the [`isSticky`](../api/diagram/diagramTooltipModel#issticky) property of the tooltip. 
 
 The following example shows how to render sticky tooltip. 
 
@@ -401,7 +401,7 @@ The following example shows how to render sticky tooltip.
 
 ## Hide tooltip pointer
 
-The [`showTipPointer`](../api/diagram/diagramTooltipModel/#showtippointer) property allows to control the visibility of tooltip pointer. By default, the `showTipPointer` is set as true.
+The [`showTipPointer`](../api/diagram/diagramTooltipModel#showtippointer) property allows to control the visibility of tooltip pointer. By default, the `showTipPointer` is set as true.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -432,7 +432,7 @@ The [`showTipPointer`](../api/diagram/diagramTooltipModel/#showtippointer) prope
 
 ## Tooltip size
 
-By default, the size of the tooltip is calculated based on its content. If you want to customize the size, you can use the  [`width`](../api/diagram/diagramTooltipModel/#width) and [`height`](../api/diagram/diagramTooltipModel/#height) properties of the tooltip.
+By default, the size of the tooltip is calculated based on its content. If you want to customize the size, you can use the  [`width`](../api/diagram/diagramTooltipModel#width) and [`height`](../api/diagram/diagramTooltipModel#height) properties of the tooltip.
 
 The following code example shows how to set the size for the tooltip:
 
@@ -465,7 +465,7 @@ The following code example shows how to set the size for the tooltip:
 
 ## Show/Hide tooltip at runtime
 
-You can show or hide the tooltip dynamically using a button click with the [`showTooltip`](../api/diagram/#showtooltip) and [`hideTooltip`](../api/diagram/#hidetooltip) methods of the diagram. This allows you to control the tooltip visibility programmatically rather than relying on user hover actions. In some cases, you may want to display the tooltip without requiring the user to hover over the object.
+You can show or hide the tooltip dynamically using a button click with the [`showTooltip`](../api/diagram#showtooltip) and [`hideTooltip`](../api/diagram#hidetooltip) methods of the diagram. This allows you to control the tooltip visibility programmatically rather than relying on user hover actions. In some cases, you may want to display the tooltip without requiring the user to hover over the object.
 
 The following example demonstrates how to show or hide the tooltip at runtime:
 
@@ -499,8 +499,8 @@ The following example demonstrates how to show or hide the tooltip at runtime:
 ## Tooltip for Annotation
 
 Tooltips can be added to annotations to display additional information on mouseover. 
-To display tooltips on mouseover, set the desired tooltip text to the [`tooltip`](../api/diagram/#tooltip) property of the annotation.
-Tooltips for Annotations can be enabled or disabled by setting the [`AnnotationConstraints`](../api/diagram/annotationConstraints) property as [`Tooltip`](../api/diagram/annotationConstraints). 
+To display tooltips on mouseover, set the desired tooltip text to the [`tooltip`](../api/diagram#tooltip) property of the annotation.
+Tooltips for Annotations can be enabled or disabled by setting the [`AnnotationConstraints`](../api/diagram/annotationConstraints) property as `Tooltip`. 
 
 {% if page.publishingplatform == "typescript" %}
 

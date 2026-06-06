@@ -49,7 +49,7 @@ The following code illustrates how to create a container node:
 
 ### Setting a Header
 
-You can provide a textual description for a container using its [header](https://ej2.syncfusion.com/documentation/api/diagram/ContainerModel/#header) property. Also, users can customize the header's appearance using the header's [style](https://ej2.syncfusion.com/documentation/api/diagram/HeaderModel/#style) property.
+You can provide a textual description for a container using its [header](https://ej2.syncfusion.com/documentation/api/diagram/ContainerModel#header) property. Also, users can customize the header's appearance using the header's [style](https://ej2.syncfusion.com/documentation/api/diagram/HeaderModel#style) property.
 
 The following code example explains how to define a container header and its customization:
 
@@ -97,11 +97,11 @@ You can interactively add or remove diagram elements from the Container in the r
 
 ## Interaction
 
-Containers support the same interactions as regular nodes—such as selection, dragging, resizing, and rotating. For more information refer to the [`nodes interactions`](./nodes-interaction)
+Containers support the same interactions as regular nodes—such as selection, dragging, resizing, and rotating. For more information refer to the [`nodes interactions`](./nodes/nodes-interaction)
 
 ## Events
 
-The events triggered when interacting with container nodes are similar to those for individual nodes. For more information, refer to the [`nodes events`](./nodes-events)
+The events triggered when interacting with container nodes are similar to those for individual nodes. For more information, refer to the [`nodes events`](./nodes/nodes-events)
 
 ## See Also
 

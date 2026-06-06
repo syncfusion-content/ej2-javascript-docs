@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bpmn Text annotation  in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Bpmn shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+description: Learn here all about Bpmn Text annotation shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Bpmn Text annotation 
 publishingplatform: ##Platform_Name##
@@ -110,7 +110,7 @@ There are several types of Text annotation directions as follows:
 
 ### Add text annotation at runtime
 
-Text annotations can be added dynamically using either the [`addTextAnnotation`](../../api/diagram/#addtextannotation) method or the [`add`](../../api/diagram/#add) method of the diagram. The following example shows how to use these methods to add a text annotation node.
+Text annotations can be added dynamically using either the [`addTextAnnotation`](../../api/diagram#addtextannotation) method or the [`add`](../../api/diagram#add) method of the diagram. The following example shows how to use these methods to add a text annotation node.
  
 {% if page.publishingplatform == "typescript" %}
 

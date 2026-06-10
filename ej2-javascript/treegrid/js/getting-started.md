@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Treegrid control | Syncfusion
-description: Checkout and learn about Getting started with ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Tree Grid control | Syncfusion
+description: Checkout and learn about Getting started with ##Platform_Name## Tree Grid control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in JavaScript Treegrid control
+# Getting started in JavaScript Tree Grid control
 
-This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid and demonstrates the basic usage of the TreeGrid control in a JavaScript application.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tree Grid and demonstrates the basic usage of the Tree Grid control in a JavaScript application.
 
 ## Dependencies
 
-The TreeGrid control requires several packages to function properly. These packages provide the core functionality and supporting components needed for the TreeGrid to work.
+The Tree Grid control requires several packages to function properly. These packages provide the core functionality and supporting components needed for the Tree Grid to work.
 
-Following is the list of dependencies to use the TreeGrid with all features:
+Following is the list of dependencies to use the Tree Grid with all features:
 
 ```javascript
 	|-- @syncfusion/ej2-treegrid
@@ -45,22 +45,22 @@ Refer to the following steps to set up your local environment.
 
 **Step 1:** Create a root folder named **my-app** for your application.
 
-**Step 2:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid control.
+**Step 2:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tree Grid control.
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid CDN resources
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid CDN resources
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid control can be initialized by the following way.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tree Grid control can be initialized by the following way.
 
-This setup includes additional dependencies required for more advanced functionalities of the treegrid, such as buttons, dropdowns, navigations and other components. Use this setup when you need to integrate additional features like filtering, paging, column menu and more.
+This setup includes additional dependencies required for more advanced functionalities of the tree grid, such as buttons, dropdowns, navigations and other components. Use this setup when you need to integrate additional features like filtering, paging, column menu and more.
 
 ```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Essential JS 2 TreeGrid</title>
+    <title>Essential JS 2 Tree Grid</title>
 
-    <!-- Essential JS 2 TreeGrid's dependent material theme -->
+    <!-- Essential JS 2 Tree Grid's dependent material theme -->
     <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-popups/styles/material.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />
@@ -74,7 +74,7 @@ This setup includes additional dependencies required for more advanced functiona
     <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-grids/styles/material.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-treegrid/styles/material.css" rel="stylesheet" type="text/css" />
 
-    <!-- Essential JS 2 TreeGrid's dependent scripts -->
+    <!-- Essential JS 2 Tree Grid's dependent scripts -->
     <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
@@ -103,9 +103,9 @@ This setup includes additional dependencies required for more advanced functiona
 > <!-- Essential JS 2 combined script (all components) -->
 > <!-- <script src="https://cdn.syncfusion.com/ej2/33.2.3/dist/ej2.min.js" type="text/javascript"></script> -->
 
-## Adding TreeGrid control
+## Adding Tree Grid control
 
-Add the TreeGrid control in **index.js** file using the following code.
+Add the Tree Grid control in **index.js** file using the following code.
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
@@ -164,7 +164,7 @@ treeGridObj.appendTo('#TreeGrid');
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Essential JS 2 TreeGrid</title>
+    <title>Essential JS 2 Tree Grid</title>
 
     <!-- Essential JS 2 combined material theme (all components) -->
     <link href="https://cdn.syncfusion.com/ej2/33.2.3/material.css" rel="stylesheet" type="text/css" />
@@ -172,10 +172,10 @@ treeGridObj.appendTo('#TreeGrid');
     <script src="https://cdn.syncfusion.com/ej2/33.2.3/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
-    <!-- Add the HTML <div> element for TreeGrid  -->
+    <!-- Add the HTML <div> element for Tree Grid  -->
     <div id="TreeGrid"></div>
     
-    <!-- Your TreeGrid initialization script -->
+    <!-- Your Tree Grid initialization script -->
     <script src="index.js" type="text/javascript"></script>
 </body>
 </html>
@@ -188,11 +188,11 @@ treeGridObj.appendTo('#TreeGrid');
 
 ## Run the application
 
-Now, run the **index.html** in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid control.
+Now, run the **index.html** in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tree Grid control.
 
 ## See Also
 
-* [TreeGrid Feature Modules](https://ej2.syncfusion.com/javascript/documentation/treegrid/module)
+* [Tree Grid Feature Modules](https://ej2.syncfusion.com/javascript/documentation/treegrid/module)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript documentation](https://ej2.syncfusion.com/documentation/treegrid/getting-started)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular documentation](https://ej2.syncfusion.com/angular/documentation/treegrid/getting-started)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> React documentation](https://ej2.syncfusion.com/react/documentation/treegrid/getting-started)

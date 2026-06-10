@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Treegrid control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Tree Grid control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## Tree Grid control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-#  Getting started in TypeScript Treegrid control
+#  Getting started in TypeScript Tree Grid control
 
-The TreeGrid component is essential for displaying hierarchical data in a tabular format. It is commonly used for project management (displaying tasks and subtasks), organizational structures (displaying company hierarchies), file systems, and any scenario where data has parent-child relationships.
+The Tree Grid component is essential for displaying hierarchical data in a tabular format. It is commonly used for project management (displaying tasks and subtasks), organizational structures (displaying company hierarchies), file systems, and any scenario where data has parent-child relationships.
 
-This section explains the steps to create a simple TreeGrid and demonstrates the basic usage of the TreeGrid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
+This section explains the steps to create a simple Tree Grid and demonstrates the basic usage of the Tree Grid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -26,7 +26,7 @@ git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack-
 cd ej2-quickstart-webpack-
 ```
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript TreeGrid packages
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Tree Grid package
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available in the public registry on [npmjs.com](https://www.npmjs.com/~syncfusionorg). You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls are available either as a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or as individual packages for each control.
 
@@ -44,9 +44,9 @@ Combined CSS files are available in the Essential<sup style="font-size:70%">&reg
 @import '../../node_modules/@syncfusion/ej2/material.css';
 ```
 
-## Adding TreeGrid component
+## Adding Tree Grid component
 
-Add the TreeGrid component in `[src/app/app.ts]` file using the following code and define a TreeGrid container element in [src/index.html] to render the component.
+Add the Tree Grid component in `[src/app/app.ts]` file using the following code and define a Tree Grid container element in [src/index.html] to render the component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -120,7 +120,7 @@ treeGridObj.appendTo('#TreeGrid');
 
 <body>
     <div>
-        <!--HTML TreeGrid element, which is going to render as Essential JS 2 TreeGrid-->
+        <!--HTML Tree Grid element, which is going to render as Essential JS 2 Tree Grid-->
         <div id="TreeGrid"></div>
     </div>
 </body>
@@ -147,7 +147,7 @@ npm start
 
 ## See also
 
-* [TreeGrid Feature Modules](https://ej2.syncfusion.com/documentation/treegrid/module)
+* [Tree Grid Feature Modules](https://ej2.syncfusion.com/documentation/treegrid/module)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) documentation](https://ej2.syncfusion.com/javascript/documentation/treegrid/getting-started)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular documentation](https://ej2.syncfusion.com/angular/documentation/treegrid/getting-started)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> React documentation](https://ej2.syncfusion.com/react/documentation/treegrid/getting-started)

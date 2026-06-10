@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with TypeScript Grid control | Syncfusion
-description:  Checkout and learn about Getting started with TypeScript Grid control of Syncfusion Essential JS 2 and more details.
+title: Getting started with TypeScript DataGrid control | Syncfusion
+description:  Checkout and learn about Getting started with TypeScript DataGrid control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in TypeScript Grid control
+# Getting started in TypeScript DataGrid control
 
-This section explains the steps to create a simple Grid and demonstrates the basic usage of the grid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2
+This section explains the steps to create a simple DataGrid and demonstrates the basic usage of the DataGrid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2
 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
 > This application is integrated with the **webpack.config.js** configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). It requires node **v14.15.0** or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
@@ -25,7 +25,7 @@ git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack
 cd ej2-quickstart-webpack
 ```
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Grid packages
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Grids package
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
@@ -43,9 +43,9 @@ Combined CSS files are available in the Essential<sup style="font-size:70%">&reg
 @import '../../node_modules/@syncfusion/ej2/fluent2.css';
 ```
 
-## Adding Grid component
+## Adding DataGrid component
 
-Add the grid component in **app.ts** file using the following code.
+Add the DataGrid component in **app.ts** file using the following code.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -96,7 +96,7 @@ grid.appendTo('#Grid');
 
 <body>
     <div>
-        <!--HTML grid element, which is going to render as Essential JS 2 Grid-->
+        <!--HTML DataGrid element, which is going to render as Essential JS 2 DataGrid-->
         <div id="Grid"></div>
     </div>
 </body>
@@ -123,5 +123,5 @@ npm start
 
 ## See also
 
-* [Grid Feature Modules](https://ej2.syncfusion.com/documentation/grid/module)
-* [How to open PDF document on button click inside a Grid](https://support.syncfusion.com/kb/article/10246/how-to-open-pdf-document-on-button-click-inside-a-grid)
+* [DataGrid Feature Modules](https://ej2.syncfusion.com/documentation/grid/module)
+* [How to open PDF document on button click inside a DataGrid](https://support.syncfusion.com/kb/article/10246/how-to-open-pdf-document-on-button-click-inside-a-grid)

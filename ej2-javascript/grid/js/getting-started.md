@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Grid control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## DataGrid control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## DataGrid control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in JavaScript Grid control
+# Getting started in JavaScript DataGrid control
 
-This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid and demonstrate the basic usage of the Grid control in a JavaScript application.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 DataGrid and demonstrate the basic usage of the DataGrid control in a JavaScript application.
 
 ## Dependencies
 
-A list of dependencies to use the grid with all features.
+A list of dependencies to use the DataGrid with all features.
 
 ```javascript
 |-- @syncfusion/ej2-grids
@@ -42,22 +42,22 @@ Refer to the following steps to set up your local environment.
 
 **Step 1:** Create a root folder named **my-app** for your application.
 
-**Step 2:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid control.
+**Step 2:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 DataGrid control.
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Grid CDN resources
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> DataGrid CDN resources
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid control can be initialized by the following way.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 DataGrid control can be initialized by the following way.
 
-This setup includes additional dependencies required for more advanced functionalities of the grid, such as buttons, dropdowns, navigations and other components. Use this setup when you need to integrate additional features like filtering, paging, column menu and more.
+This setup includes additional dependencies required for more advanced functionalities of the DataGrid, such as buttons, dropdowns, navigations and other components. Use this setup when you need to integrate additional features like filtering, paging, column menu and more.
 
 ```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Essential JS 2 Grid</title>
+    <title>Essential JS 2 DataGrid</title>
 
-    <!-- Essential JS 2 Grid's dependent bootstrap5.3 theme -->
+    <!-- Essential JS 2 DataGrid's dependent bootstrap5.3 theme -->
     <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-popups/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-buttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
@@ -70,7 +70,7 @@ This setup includes additional dependencies required for more advanced functiona
     <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-splitbuttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-grids/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
 
-    <!-- Essential JS 2 Grid's dependent scripts -->
+    <!-- Essential JS 2 DataGrid's dependent scripts -->
     <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
@@ -98,14 +98,14 @@ This setup includes additional dependencies required for more advanced functiona
 > Essential JS 2 combined script (all components)
 > <script src="https://cdn.syncfusion.com/ej2/33.2.3/dist/ej2.min.js" type="text/javascript"></script>
 
-## Adding Grid control
+## Adding DataGrid control
 
-Add the grid control in **index.js** file using the following code.
+Add the DataGrid control in **index.js** file using the following code.
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
 
-// Defines the data to be displayed in the Grid.
+// Defines the data to be displayed in the DataGrid.
 var data = [
     { OrderID: 10248, CustomerName: 'Ana Trujillo', OrderDate: new Date(2025, 0, 12), ShipCountry: 'France', Freight: 32.38 },
     { OrderID: 10249, CustomerName: 'Martin Sommer', OrderDate: new Date(2025, 0, 15), ShipCountry: 'Germany', Freight: 11.61 },
@@ -135,8 +135,8 @@ grid.appendTo('#Grid');
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Essential JS 2 Grid</title>
-
+    <title>Essential JS 2 DataGrid</title>
+    
     <!-- Essential JS 2 combined bootstrap5.3 theme (all components) -->
     <link href="https://cdn.syncfusion.com/ej2/33.2.3/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <!-- Essential JS 2 combined script (all components) -->
@@ -160,12 +160,12 @@ grid.appendTo('#Grid');
 
 ## Run the application
 
-Now, run the **index.html** in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid control.
+Now, run the **index.html** in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 DataGrid control.
 
 ## See also
 
-* [Grid Feature Modules](https://ej2.syncfusion.com/javascript/documentation/grid/module)
+* [DataGrid Feature Modules](https://ej2.syncfusion.com/javascript/documentation/grid/module)
 * [How to display a table data after clicking Submit button in Javascript?](https://support.syncfusion.com/kb/article/10145/how-to-display-a-table-data-after-clicking-submit-button-in-javascript)
 * [How to display table in popup window using Javascript?](https://support.syncfusion.com/kb/article/10339/how-to-display-table-in-popup-window-using-javascript)
-* [How to open pdf document on button click inside a Grid](https://support.syncfusion.com/kb/article/10246/how-to-open-pdf-document-on-button-click-inside-a-grid)
+* [How to open pdf document on button click inside a DataGrid](https://support.syncfusion.com/kb/article/10246/how-to-open-pdf-document-on-button-click-inside-a-grid)
 * [How to disable the default keyboard actions in Grid](https://support.syncfusion.com/kb/article/9578/how-to-disable-the-default-keyboard-actions-in-js-grid)

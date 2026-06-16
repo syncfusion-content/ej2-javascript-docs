@@ -127,3 +127,47 @@ queryTaskbarInfo: function (args) {
 ```
 
 {% endif %}
+
+## Customize baseline templates
+
+The [baselineTemplate](../api/gantt#baselinetemplate) property allows customization of baseline rendering by replacing the default baseline UI with a custom HTML structure. This enables advanced scenarios such as rendering additional baseline elements, visual indicators, or multiple baselines using task-specific data.
+
+Set the `baselineTemplate` property with a template string or function. The template receives the task data object, which can be used to dynamically generate baseline elements.
+
+### Multiple baseline rendering using template
+
+By default, the Gantt component supports a single baseline per task. However, using the `baselineTemplate`, you can extend this behavior to render multiple baselines by maintaining additional baseline data within a custom field in your data source.
+
+This enables rich visualization scenarios such as:
+* Comparing original vs revised schedules.
+* Visualizing multiple planning phases.
+* Highlighting deviations across timeline checkpoints.
+
+The following example demonstrates how to render multiple baselines using `baselineTemplate`.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/baseline-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/baseline-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/baseline-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/baseline-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/baseline-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/baseline-cs2" %}
+{% endif %}

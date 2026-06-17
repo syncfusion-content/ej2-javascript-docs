@@ -1,8 +1,7 @@
-
-
-import { TreeGrid, Page, PageEventArgs } from '@syncfusion/ej2-treegrid';
+import { TreeGrid, Page } from '@syncfusion/ej2-treegrid';
+import { PageEventArgs } from '@syncfusion/ej2-grids';
 import { sampleData } from './datasource.ts';
-import { NumericTextBox } from '@syncfusion/ej2-inputs';
+import {  ChangeEventArgs, NumericTextBox } from '@syncfusion/ej2-inputs';
 
 TreeGrid.Inject(Page);
 
@@ -21,6 +20,12 @@ let treeGridObj: TreeGrid = new TreeGrid({
         },
         { field: 'duration', headerText: 'Duration', width: 80, textAlign: 'Right' }
     ],
+    expanding: () => {
+        flag = true;
+    },
+    collapsing: () => {
+        flag = true;
+    },
     dataBound: () => {
         if (flag) {
             flag = false;
@@ -38,20 +43,20 @@ treeGridObj.appendTo('#TreeGrid');
 
 let updateTemplate: Function = () => {
     let numeric: NumericTextBox;
-    this.numeric = new NumericTextBox({
+    numeric = new NumericTextBox({
         min: 1,
         max: 3,
         step: 1,
-        width: 75,
+        width: 200,
         format: '###.##',
-        change: (args) => {
+        change: (args: ChangeEventArgs) => {
             let value: number = args.value;
             treeGridObj.goToPage(value);
         }
     });
-    this.numeric.appendTo('#currentPage');
+    numeric.appendTo('#currentPage');
 };
-let flag: boolean = true;
+
 
 
 

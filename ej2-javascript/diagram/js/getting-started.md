@@ -7,6 +7,7 @@ control: Getting started
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
+canonical_url: "https://www.syncfusion.com/javascript-ui-controls/js-diagram"
 ---
 
 # Getting started with ##Platform_Name## Diagram control

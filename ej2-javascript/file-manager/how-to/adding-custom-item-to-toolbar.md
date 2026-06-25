@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add custom item to toolbar in ##Platform_Name## File Manager | Syncfusion
-description: Learn how to add a custom item to the toolbar in the Syncfusion ##Platform_Name## File Manager component.
+description: Learn how to add and customize toolbar items in the ##Platform_Name## File Manager control to support custom commands and actions.
 platform: ej2-javascript
 control: File Manager
 publishingplatform: ##Platform_Name##

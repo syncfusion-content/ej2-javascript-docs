@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Service Provider in ##Platform_Name## File Manager | Syncfusion
-description: Learn how to implement a custom service provider for the Syncfusion ##Platform_Name## File Manager component.
+description: Learn how to implement a custom service provider in the ##Platform_Name## File Manager control to manage file operations and data processing
 platform: ej2-javascript
 control: File Manager
 publishingplatform: ##Platform_Name##

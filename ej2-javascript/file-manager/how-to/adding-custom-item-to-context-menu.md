@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add Custom Menu Item in ##Platform_Name## File Manager | Syncfusion
-description: Learn how to add a custom item to the context menu in the Syncfusion ##Platform_Name## File Manager component.
+description: Learn how to add custom items to the context menu in the ##Platform_Name## File Manager control and handle custom actions effectively.
 platform: ej2-javascript
 control: File Manager
 publishingplatform: ##Platform_Name##

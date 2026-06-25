@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The file system provider allows the File Manager component to manage files and folders in a physical or cloud-based file system. Providers implement methods for operations such as create, copy, move, delete, upload, and download.
 
-The following file providers are added in Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 File Manager control.
+The following file providers are added in EJ2 File Manager control.
 
 * [Physical file system provider](#physical-file-system-provider)
 * [Azure cloud file system Provider](#azure-cloud-file-system-provider)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Change Localization in ##Platform_Name## File Manager | Syncfusion
-description: Learn how to change the localization content in the Syncfusion ##Platform_Name## File Manager component.
+description: Learn how to change localization content in the ##Platform_Name## File Manager control and customize the text displayed in the user interface.
 platform: ej2-javascript
 control: File Manager
 publishingplatform: ##Platform_Name##

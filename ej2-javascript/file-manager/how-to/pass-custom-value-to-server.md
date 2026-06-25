@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pass Custom Values in ##Platform_Name## File Manager | Syncfusion
-description: Learn about how to Pass custom value to server in the Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn about how to Pass custom value to server in the ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: File Manager
 publishingplatform: ##Platform_Name##

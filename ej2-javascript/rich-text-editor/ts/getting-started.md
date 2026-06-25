@@ -2,6 +2,7 @@
 layout: post
 title: Getting started with ##Platform_Name## Rich Text Editor | Syncfusion
 description: Checkout and learn how to create and run a Rich Text Editor using a Vite-based TypeScript project and Syncfusion Essential JS 2.
+canonical_url: "https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor"
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##

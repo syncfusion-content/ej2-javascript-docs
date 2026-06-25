@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Index in ##Platform_Name## File manager control | Syncfusion
-description: Learn here all about Index in Syncfusion ##Platform_Name## File manager control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Index in ##Platform_Name## File manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Index 
 publishingplatform: ##Platform_Name##

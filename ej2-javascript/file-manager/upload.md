@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Upload in ##Platform_Name## File Manager component | Syncfusion
-description: Learn here all about Upload in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more
+description: Learn here all about Upload in ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more
 platform: ej2-javascript
 control: File Manager
 publishingplatform: ##Platform_Name##

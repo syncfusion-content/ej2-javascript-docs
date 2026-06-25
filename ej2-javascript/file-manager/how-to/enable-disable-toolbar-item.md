@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Manage Toolbar Items in ##Platform_Name## File Manager | Syncfusion
-description: Learn how to enable or disable toolbar items in the Syncfusion ##Platform_Name## File Manager component.
+description: Learn how to enable or disable toolbar items in the ##Platform_Name## File Manager control to customize available user actions.
 platform: ej2-javascript
 control: File Manager
 publishingplatform: ##Platform_Name##

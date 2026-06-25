@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## File Manager control
 
-This section explains how to create a simple File Manager and demonstrates the basic usage of the File Manager control.
+This section explains how to create a simple File Manager and demonstrates the basic usage of the [File Manager](https://www.syncfusion.com/javascript-ui-controls/js-file-manager) control.
 
 ## Prerequisites
 
@@ -34,9 +34,9 @@ As Syncfusion packages are not installed yet, currently, the `No` option will be
 cd my-app
 ```
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> File Manager package
+## Adding File Manager package
 
-All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. To install File Manager component, use the following command.
+All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. To install [File Manager](https://www.syncfusion.com/javascript-ui-controls/js-file-manager), use the following command.
 
 ```
 npm i @syncfusion/ej2-filemanager
@@ -61,7 +61,7 @@ Add the following imports inside the `~/src/styles.css` file to include the `tai
 
 ## Adding File Manager control
 
-To get started, add the File Manager control in `main.ts` and `index.html` files. File Manager can be initialized through div element.
+To get started, add the [File Manager](https://www.syncfusion.com/javascript-ui-controls/js-file-manager) control in `main.ts` and `index.html` files. File Manager can be initialized through div element.
 
 {% tabs %}
 {% highlight ts tabtitle="main.ts" %}

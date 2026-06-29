@@ -70,23 +70,17 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Ribbon control, need to import navigations and its dependent controls styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+To install the [tailwind3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme package, use the following command:
 
-{% tabs %}
-{% highlight css tabtitle="style.css" %}
+```bash
+npm install @syncfusion/ej2-tailwind3-theme --save
+```
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-ribbon/styles/tailwind3.css";
+To render the Ribbon control, add the below import in the `~/src/styles/styles.css` file which loads all the required dependency styles, as shown below:
 
-{% endhighlight %}
-{% endtabs %}
+```css
+@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/ribbon/index.css";
+```
 
 ## Adding Ribbon control to the application
 

@@ -10,7 +10,7 @@ var ganttChart = new ej.gantt.Gantt({
 	],
 	taskFields: {
 		id: 'TaskID',
-        name: 'TaskName',
+		name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         parentID: 'ParentID'
@@ -18,7 +18,7 @@ var ganttChart = new ej.gantt.Gantt({
 	columns: [
 		{ field: 'TaskName', width: '150' },
 		{ field: 'StartDate', width: '150' },
-		{ field: 'Duration', width: '150' }
+		{ field: 'Duration', width: '150' },
 	],
 	actionFailure: (args) => {
 		let span = document.createElement('span');
@@ -28,5 +28,3 @@ var ganttChart = new ej.gantt.Gantt({
 	}
 });
 ganttChart.appendTo('#Gantt');
-
-

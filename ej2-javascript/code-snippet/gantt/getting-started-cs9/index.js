@@ -18,8 +18,3 @@ var ganttChart = new ej.gantt.Gantt({
     }
 });
 ganttChart.appendTo('#Gantt');
-
-
-
-
-

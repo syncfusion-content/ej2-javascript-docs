@@ -36,7 +36,7 @@ System.config({
         "@syncfusion/ej2-pivotview": "syncfusion:ej2-pivotview/dist/ej2-pivotview.umd.min.js",
         "@syncfusion/ej2-notifications":"syncfusion:ej2-notifications/dist/ej2-notifications.umd.min.js",
     },
-     meta: { 
+    meta: { 
        '*.json': { loader: 'plugin-json' }
     }
 });

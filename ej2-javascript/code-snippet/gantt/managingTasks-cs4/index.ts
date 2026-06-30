@@ -1,14 +1,15 @@
-
-
-
-import { Gantt, Edit } from '@syncfusion/ej2-gantt';
+import { Gantt, Edit, Selection } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
 
-Gantt.Inject(Edit);
+Gantt.Inject(Edit, Selection);
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
     height: '450px',
+    allowSelection: true,
+    editSettings: {
+        allowEditing: true
+    },
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -17,17 +18,13 @@ let gantt: Gantt = new Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    editSettings: {
-        allowEditing: true
-    },
-    toolbar: ['Edit'],
     columns: [
-        { field: 'TaskID', headerText: 'Task ID' },
-        { field: 'TaskName', headerText: 'Task Name', allowEditing: false },
-        { field: 'StartDate', headerText: 'Start Date', },
-        { field: 'Duration', headerText: 'Duration' },
-        { field: 'Progress', headerText: 'Progress'  },
-    ],
+        { field: 'TaskID' },
+        { field: 'TaskName', allowEditing: false },
+        { field: 'StartDate' },
+        { field: 'Duration' },
+        { field: 'Progress' }
+    ]
 });
 
 gantt.appendTo('#Gantt');

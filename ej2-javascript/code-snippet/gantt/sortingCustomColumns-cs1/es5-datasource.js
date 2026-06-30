@@ -1,11 +1,10 @@
-var GanttData = [
-  { TaskID: 1, TaskName: 'Project Initiation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019'), ParentID: null },
-  { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50, CustomColumn: '2', ParentID: 1 },
-  { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50, CustomColumn: '3', ParentID: 1 },
-  { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50, CustomColumn: '4', ParentID: 1 },
-
-  { TaskID: 5, TaskName: 'Project Estimation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019'), ParentID: null },
-  { TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2019'), Duration: 3, Progress: 50, CustomColumn: '6', ParentID: 5 },
-  { TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 3, Progress: 50, CustomColumn: '1', ParentID: 5 },
-  { TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: 3, Progress: 50, CustomColumn: '5', ParentID: 5 }
+const data = [
+  { TaskID: 1, TaskName: "Initiation", StartDate: new Date("04/02/2019"), Duration: 5, Progress: 30, ParentID: null, CustomColumn: "Alpha" },
+  { TaskID: 2, TaskName: "Planning", StartDate: new Date("04/03/2019"), Duration: 4, Progress: 50, ParentID: 1, CustomColumn: "Beta" },
+  { TaskID: 3, TaskName: "Execution", StartDate: new Date("04/04/2019"), Duration: 6, Progress: 70, ParentID: 1, CustomColumn: "Gamma" },
+  { TaskID: 4, TaskName: "Closure", StartDate: new Date("04/05/2019"), Duration: 3, Progress: 90, ParentID: 1, CustomColumn: "Delta" },
+  { TaskID: 5, TaskName: "Review", StartDate: new Date("04/06/2019"), Duration: 2, Progress: 40, ParentID: null, CustomColumn: "Epsilon" },
+  { TaskID: 6, TaskName: "Documentation", StartDate: new Date("04/07/2019"), Duration: 3, Progress: 60, ParentID: 5, CustomColumn: "Zeta" },
+  { TaskID: 7, TaskName: "Training", StartDate: new Date("04/08/2019"), Duration: 4, Progress: 80, ParentID: 5, CustomColumn: "Eta" },
+  { TaskID: 8, TaskName: "Deployment", StartDate: new Date("04/09/2019"), Duration: 5, Progress: 100, ParentID: 5, CustomColumn: "Theta" }
 ];

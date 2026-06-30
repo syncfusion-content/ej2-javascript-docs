@@ -1,16 +1,16 @@
 
 var ganttChart = new ej.gantt.Gantt({
-    dataSource: GanttData,
-    height: "450px",
-    taskFields: {
-        id: "TaskID",
-        name: "TaskName",
-        startDate: "StartDate",
-        endDate: "EndDate",
-        duration: "Duration",
-        progress: "Progress",
-        child: "subtasks",
-        segmentId: "segmentId"
+  dataSource: GanttData,
+  height: "450px",
+  taskFields: {
+    id: "TaskID",
+    name: "TaskName",
+    startDate: "StartDate",
+    endDate: "EndDate",
+    duration: "Duration",
+    progress: "Progress",
+    parentID: "ParentID",
+    segmentId: "segmentId"
   },
   segmentData: [
     { segmentId: 2, StartDate: new Date("04/02/2019"), Duration: 2 },

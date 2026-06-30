@@ -1,30 +1,40 @@
-var gantt = new ej.gantt.Gantt({
-    height: '450px',
-    treeColumnIndex: 1,
+var ganttChart = new ej.gantt.Gantt({
+    dataSource: [],
+    height: '430px',
+    projectStartDate: new Date('02/24/2021'),
+    projectEndDate: new Date('07/20/2021'),
     taskFields: {
-      id: 'TaskId',
-      name: 'TaskName',
-      startDate: 'StartDate',
-      progress: 'Progress',
-      duration: 'Duration',
-      dependency: 'Predecessor',
-      child: 'SubTasks'
+        id: 'TaskId',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        child: 'SubTasks'
     },
-    projectStartDate: new Date('02/24/2019'),
-    projectEndDate: new Date('07/20/2019')
+    columns: [
+        { field: 'TaskId', headerText: 'Task ID', width: 100 },
+        { field: 'TaskName', headerText: 'Task Name', width: 150 },
+        { field: 'StartDate', headerText: 'Start Date', width: 150 },
+        { field: 'Duration', headerText: 'Duration', width: 150 },
+        { field: 'Progress', headerText: 'Progress', width: 150 }
+    ],
+    toolbar: ['ExcelExport'],
+    allowSelection: true
 });
-    
-gantt.appendTo('#Gantt');
 
-let button = document.createElement('button');
-button.textContent = 'Bind Data';
-gantt.element.parentNode.insertBefore(button, gantt.element);
-button.addEventListener("click", function(e){
-    let ajax = new ej.base.Ajax("https://services.syncfusion.com/js/production/api/GanttData","GET");
-    gantt.showSpinner();
-    ajax.send();
-    ajax.onSuccess = function (data) {
-        gantt.hideSpinner();
-        gantt.dataSource = (JSON.parse(data)).Items;
-    };
+ganttChart.appendTo('#Gantt');
+
+var bindBtn = new ej.buttons.Button();
+bindBtn.appendTo('#bindData');
+
+document.getElementById('bindData').addEventListener('click', function () {
+    ganttChart.showSpinner();
+
+    fetch('https://services.syncfusion.com/angular/production/api/GanttData')
+        .then(res => res.json())
+        .then(data => {
+            ganttChart.hideSpinner();
+            ganttChart.dataSource = data.Items;
+            ganttChart.refresh();
+        });
 });

@@ -8,32 +8,16 @@
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
-	
-	<style>
-	
-    .e-column:before {
-      content: '\e815';
-    }
-
-    .e-header:before {
-      content: '\ea9a';
-    }
-    </style>
 </head>
 
 <body>
-  
-    <script id="customertemplate" type="text/x-template">
-        <span class="e-icons e-header" ></span>
-        Task Name
-    </script>
     <div id='loader'>Loading....</div>
     <div id="container">
-        <button ejs-button id="restore">Restore</button>
-        <div id="Gantt"></div>      
+        <button id="restore" style="margin-bottom:20px">Restore</button>
+        <div id="Gantt"></div>
     </div>
 </body>
 

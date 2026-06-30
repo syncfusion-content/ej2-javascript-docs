@@ -1,36 +1,13 @@
-ej.gantt.Gantt.Inject(ej.gantt.Toolbar);
-
 var ganttChart = new ej.gantt.Gantt({
     dataSource: GanttData,
-    resources: resourceCollection,
-    addDialogFields: [
-        { type: 'General', headerText: 'General add',fields: ["TaskID", "TaskName", "newInput"] },
-        { type: 'Dependency'},
-        { type: 'Resources'} , 
-        { type: 'Notes' },
-        {type:"Segments"}
-    ],
-    editDialogFields: [
-        { type: 'General', headerText: 'General edit', fields: ["TaskID", "TaskName", "newInput"] },
-        {type: 'Dependency', },
-        { type: 'Resources'},
-        {type: 'Notes'},
-        {type: "Segments"}
-    ],
     height: '450px',
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        endDate: 'EndDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        dependency: 'Predecessor',
-        resourceInfo: 'resources',
-        work: 'work',
-        parentID: 'ParentID',
-        segments: 'Segments',
-        notes:"note",
+    allowSelection: true,
+    resources: resourceCollection,
+    resourceFields: {
+        id: 'ResourceId',
+        name: 'ResourceName',
+        unit: 'ResourceUnit',
+        group: 'ResourceGroup'
     },
     editSettings: {
         allowAdding: true,
@@ -40,6 +17,42 @@ var ganttChart = new ej.gantt.Gantt({
         showDeleteConfirmDialog: true
     },
     toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-		
+    taskFields: {
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        endDate: 'EndDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        dependency: 'Predecessor',
+        resourceInfo: 'Resources',
+        work: 'Work',
+        parentID: 'ParentID',
+        segments: 'Segments',
+        notes: 'Note'
+    },
+    columns: [
+        { field: 'TaskID', width: '100' },
+        { field: 'TaskName', headerText: 'TaskName', width: '250', clipMode: 'EllipsisWithTooltip' },
+        { field: 'StartDate' },
+        { field: 'Duration' },
+        { field: 'Progress' },
+        { field: 'newInput' }
+    ],
+    addDialogFields: [
+        { type: 'General', headerText: 'General', fields: ['TaskID', 'TaskName', 'newInput'] },
+        { type: 'Dependency' },
+        { type: 'Resources' },
+        { type: 'Segments' },
+        { type: 'Notes' }
+    ],
+    editDialogFields: [
+        { type: 'General', headerText: 'General', fields: ['TaskID', 'TaskName', 'newInput'] },
+        { type: 'Dependency' },
+        { type: 'Notes' },
+        { type: 'Resources' },
+        { type: 'Segments' }
+    ]
 });
+
 ganttChart.appendTo('#Gantt');

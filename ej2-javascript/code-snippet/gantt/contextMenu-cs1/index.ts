@@ -1,23 +1,23 @@
+import { Gantt, Selection, ContextMenu, Edit, Sort, Resize } from '@syncfusion/ej2-gantt';
+import { data } from './datasource.ts';
 
-
-import { Gantt, Resize, Sort, ContextMenu, Edit, Selection } from '@syncfusion/ej2-gantt';
-import { GanttData } from './datasource.ts';
-
-Gantt.Inject(Resize, Sort, Edit, ContextMenu, Selection);
+Gantt.Inject(Selection, ContextMenu, Edit, Sort, Resize);
 
 let gantt: Gantt = new Gantt({
-    dataSource: GanttData,
-    height: '450px',
+    dataSource: data,
+    height: '430px',
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
-        dependency: 'Predecessor',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        dependency: 'Predecessor',
+        parentID: 'ParentID'
     },
     enableContextMenu: true,
+    allowSorting: true,
+    allowResizing: true,
     editSettings: {
         allowAdding: true,
         allowEditing: true,
@@ -25,8 +25,4 @@ let gantt: Gantt = new Gantt({
     }
 });
 
-gantt.appendTo('#ContextMenu');
-
-
-
-
+gantt.appendTo('#Gantt');

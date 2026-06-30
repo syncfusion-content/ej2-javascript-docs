@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Splitting and merging tasks in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Splitting and merging tasks in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Splitting and Merging Tasks in ##Platform_Name## Gantt Chart Control | Syncfusion
+description: Learn how to split and merge tasks in the Syncfusion ##Platform_Name## Gantt Chart control for flexible task management in project timelines.
 platform: ej2-javascript
 control: Splitting and merging tasks 
 publishingplatform: ##Platform_Name##
@@ -9,23 +9,22 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Splitting and merging tasks in ##Platform_Name## Gantt control
+# Splitting and Merging Tasks in ##Platform_Name## Gantt Chart Control
 
-## Splitting task at load time
+Splitting and merging tasks in the ##Platform_Name## Gantt Chart control enhances project management by allowing tasks to be divided into segments or recombined, representing breaks or continuous work periods. Split tasks at load time using [taskFields.segments](../../api/gantt/taskFields#segments) for hierarchical data or [taskFields.segmentId](../../api/gantt/taskFields#segmentId) for self-referential data, ensuring segments fit within the task’s start and end dates. Dynamically split tasks via the dialog’s Segments tab or context menu’s Split Task option, requiring `Edit` and valid `taskFields` mappings. Merge tasks using the context menu’s Merge Task option or by dragging segments together in the UI, with [enableContextMenu](../../api/gantt#enablecontextmenu) and `ContextMenu` enabled. Ensure tasks have sufficient width relative to the timeline unit and are not parent or milestone tasks to enable splitting, and avoid using split tasks with multi-taskbar features to maintain compatibility.
 
-To split task at load time, we can define segment details in both hierarchical and self-referential way.
+## Split tasks at load time
 
-Refer below link for more details.
+Define task segments at load time using [taskFields.segments](../../api/gantt/taskFields#segments) or [taskFields.segmentId](../../api/gantt/taskFields#segmentId) mapped. This splits tasks into segments within their original start and end dates, ideal for representing interruptions like holidays in a project schedule.
 
-* [Split task at load time](https://ej2.syncfusion.com/documentation/gantt/data-binding#split-task)
+For more details, see [Split task at load time](../../gantt/data-binding#split-task).
 
-## Split task dynamically
+## Split tasks dynamically
 
-The task can be splitted dynamically, either by using the context menu or dialog.
+Split tasks dynamically using the dialog or context menu, requiring [taskFields.segments](../../api/gantt/taskFields#segments) or [taskFields.segmentId](../../api/gantt/taskFields#segmentId) mapped, `Edit` injected, and [editSettings.allowEditing](../../api/gantt/editSettings#allowediting) enabled:
 
-* `Dialog`: `Segments` tab is rendered in add/edit dialog, when the [taskFields.segments](../../api/gantt/taskFields#segments) or [taskFields.segmentId](../../api/gantt/taskFields#segmentId) property is mapped. Using this tab, we can split the task based on the original start and end date of a particular task.
-
-* `Context menu`: When the [taskFields.segments](../../api/gantt/taskFields#segments) or [taskFields.segmentId](../../api/gantt/taskFields#segmentId) property is mapped and the [enableContextMenu](../../api/gantt#enablecontextmenu) property is enabled, `Split Task` item will be included in the context menu.
+- **Dialog**: The Segments tab in the add/edit dialog allows splitting tasks based on their start and end dates.
+- **Context Menu**: Enable [enableContextMenu](../../api/gantt#enablecontextmenu) and inject `ContextMenu` to include the Split Task option in the context menu, enabling task splitting with a right-click.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -54,12 +53,49 @@ The task can be splitted dynamically, either by using the context menu or dialog
 {% previewsample "page.domainurl/code-snippet/gantt/split-task-cs5" %}
 {% endif %}
 
-## Merge tasks
+## Merge tasks dynamically
 
-The splitted tasks can be merged either by using the `Merge Task` item of the Context menu or by using the dialog. We can also merge the tasks, by simply dragging the segments together in the UI.
+Merge split tasks using the context menu’s **Merge Task** option, requiring [enableContextMenu](../../api/gantt#enablecontextmenu) and `ContextMenu`, or by dragging segments together in the UI. This recombines segments into a single task, ensuring continuity in the project timeline, with `Edit` and valid `taskFields` mappings required.
+
+## Get the clicked segment information
+
+You can get the clicked segment information using the [onTaskbarClick](../../gantt/events#ontaskbarclick) event.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/split-task-cs8/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/split-task-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/split-task-cs8" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/split-task-cs8/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/split-task-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/split-task-cs8" %}
+{% endif %}
 
 ## Limitations of Split tasks
 
 1. Parent and milestone tasks cannot be split into segments.
 2. The task must have a width greater than the timeline unit cell in order to be split.
 3. Split task is not supported with `Multi taskbar`.
+
+## See also
+
+- [How to bind data in Gantt?](../../gantt/data-binding)
+- [How to configure task editing?](../../gantt/editing)
+- [How to manage task dependencies?](../../gantt/task-dependency)

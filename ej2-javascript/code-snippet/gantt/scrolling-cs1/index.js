@@ -1,4 +1,3 @@
-
 var gantt = new ej.gantt.Gantt({
     dataSource: GanttData,
     height: '350px',

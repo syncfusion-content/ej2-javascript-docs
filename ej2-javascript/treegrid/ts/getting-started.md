@@ -38,10 +38,48 @@ npm install
 
 ## Adding CSS reference
 
-Combined CSS files are available in the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package root folder. This can be referenced in your `[src/styles/styles.css]` using the following code.
+You can add the CSS files required for the Syncfusion Tree Grid component using one of the following methods.
 
-```
-@import '../../node_modules/@syncfusion/ej2/material.css';
+### Option 1: Add CSS references from a theme package
+
+Themes for Syncfusion® Tree Grid component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/documentation/appearance/theme) documentation.
+
+Install the **Material 3** theme package using the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+
+npm install @syncfusion/ej2-material3-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
+Then add the following CSS reference to the **src/styles/styles.css** file:
+
+{% tabs %}
+{% highlight css tabtitle="App.css" %}
+
+@import "../node_modules/@syncfusion/ej2-material3-theme/grids/grid/index.css";
+
+{% endhighlight %}
+{% endtabs %}
+
+### Option 2: Add CSS references from component packages
+
+After installing the Tree Grid package, the required CSS files are available in the corresponding Syncfusion packages under the **node_modules/@syncfusion** directory. Add the following CSS references to the **src/styles/styles.css** file:
+
+```css
+@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/material3.css';
+@import "../node_modules/@syncfusion/ej2-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-treegrid/styles/material3.css";
 ```
 
 ## Adding Tree Grid component

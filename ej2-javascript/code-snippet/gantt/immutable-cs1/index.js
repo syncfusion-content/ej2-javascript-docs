@@ -12,13 +12,13 @@ var ganttChart = new ej.gantt.Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel','Indent','Outdent'],
+    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Indent', 'Outdent'],
     editSettings: {
-      allowAdding: true,
-      allowEditing: true,
-      allowDeleting: true,
-      allowTaskbarEditing: true,
-      showDeleteConfirmDialog: true
+        allowAdding: true,
+        allowEditing: true,
+        allowDeleting: true,
+        allowTaskbarEditing: true,
+        showDeleteConfirmDialog: true
     }
 });
 ganttChart.appendTo('#Gantt');

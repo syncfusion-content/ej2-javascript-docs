@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Sorting in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Sorting in ##Platform_Name## Gantt Chart Control | Syncfusion
+description: Learn here all about Sorting in Syncfusion ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Sorting 
 publishingplatform: ##Platform_Name##
@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting in ##Platform_Name## Gantt control
+# Sorting in ##Platform_Name## Gantt Chart Control
 
-Sorting enables you to sort data in the ascending or descending order. To sort a column, click the column header.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control provides sorting functionality to arrange task data in ascending or descending order based on column values.
 
-To sort multiple columns, press and hold the CTRL key and click the column header. You can clear sorting of any one of the multi-sorted columns by pressing and holding the SHIFT key and clicking the specific column header.
+To enable sorting, set the [allowSorting](../api/gantt#allowsorting) property to **true**. You can configure sorting behavior using the [sortSettings](../api/gantt/sortSettings) property.
 
-To enable sorting in the Gantt control, set the [allowSorting](../api/gantt#allowsorting) property to true. Sorting options can be configured through the [sortSettings](../api/gantt/sortSettings) property.
+Sorting is applied by clicking a column header. For multi-column sorting, hold the **CTRL** key while selecting additional headers. To remove sorting from a specific column in a multi-sorted view, hold the **SHIFT** key and click the column header. For details on keyboard interactions, refer to the [selection keyboard interaction](../grid/accessibility#keyboard-interaction) documentation.
 
-To sort, inject the [Sort](../api/gantt#sortmodule) module into the Gantt control.
+To enable sorting functionality, inject the [Sort](../api/gantt#sortmodule) module into the Gantt control.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,12 +46,14 @@ To sort, inject the [Sort](../api/gantt#sortmodule) module into the Gantt contro
 {% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs14" %}
 {% endif %}
 
-> * Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
-> * To disable sorting for a particular column, set the [columns.allowSorting](../api/gantt/column#allowsorting) property to false.
+> * The Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
+> * To disable sorting for a particular column, set the [columns.allowSorting](../api/gantt/column#allowsorting) property to **false**.
 
-## Sorting column on Gantt initialization
+## Initial sorting
 
-The Gantt control can be rendered with sorted columns initially, and this can be achieved by using the [sortSettings](../api/gantt/sortSettings) property. You can add columns that are sorted initially in the [sortSettings.columns](../api/gantt/sortSettings#columns) collection defined with [field](../api/gantt/sortDescriptorModel#field) and [direction](../api/gantt/sortDescriptorModel#direction) properties. The following code example shows how to add the sorted column to Gantt initialization.
+You can apply sorting during the initial render of the Syncfusion ##Platform_Name## Gantt Chart control by configuring the [sortSettings.columns](../api/gantt/sortSettings#columns) property. Each column should be defined with a specific [field](../api/gantt/sortDescriptorModel#field) and [direction](../api/gantt/sortDescriptorModel#direction), ensuring that the Gantt loads with the desired sort order applied to the specified columns.
+
+The following code example shows how to add sorted columns during Gantt initialization, with `field` set to **TaskID** and `direction` to **Descending**, and another with `field` as **TaskName** and `direction` as **Ascending**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -80,9 +82,13 @@ The Gantt control can be rendered with sorted columns initially, and this can be
 {% previewsample "page.domainurl/code-snippet/gantt/sorting-cs1" %}
 {% endif %}
 
-## Sorting column dynamically
+## Sort columns externally
 
-Columns in the Gantt control can be sorted dynamically using the [sortColumn](../api/gantt#sortcolumn) method. The following code example demonstrates how to invoke the [sortColumn](../api/gantt#sortcolumn) method by clicking the custom button.
+You can externally sort columns, remove a specific sort, or clear all sorting in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control using button clicks.
+
+### Add sort columns
+
+You can externally sort a column in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control using the [sortColumn](../api/gantt#sortcolumn) method with parameters for column name, sort direction, and multi-sort configuration.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -111,9 +117,40 @@ Columns in the Gantt control can be sorted dynamically using the [sortColumn](..
 {% previewsample "page.domainurl/code-snippet/gantt/sortingColumns-cs1" %}
 {% endif %}
 
-## Clear all the sorted columns dynamically
+### Remove sort columns
 
-In the Gantt control, you can clear all the sorted columns and return to previous position using the [clearSorting](../api/gantt#clearsorting) public method. The following code snippet shows how to clear all the sorted columns by clicking the custom button.
+You can externally remove sorting from a specific column in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control using the [removeSortColumn](../api/gantt/sort#removesortcolumn) method by passing the column name.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/sorting-cs3/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/sorting-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/sorting-cs3" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/sorting-cs3/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/sorting-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/sorting-cs3" %}
+{% endif %}
+
+### Clear sorting
+
+You can clear all sorted columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control using the [clearSorting](../api/gantt#clearsorting) method to reset the Gantt Chart to its unsorted state.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -142,45 +179,120 @@ In the Gantt control, you can clear all the sorted columns and return to previou
 {% previewsample "page.domainurl/code-snippet/gantt/clearSorting-cs1" %}
 {% endif %}
 
-## Sorting events
+## Customize sort icon
 
-During the sort action, the Gantt control triggers two events. The [actionBegin](../api/gantt#actionbegin) event triggers before the sort action starts, and the [actionComplete](../api/gantt#actioncomplete) event triggers after the sort action is completed.
+You can customize the sort icons in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control by overriding the **.e-icon-ascending** and **.e-icon-descending** CSS classes using the `content` property, as shown below:
+
+```css
+.e-gantt .e-icon-ascending::before {
+    content: '\e7aa';
+}
+
+.e-gantt .e-icon-descending::before {
+    content: '\e71f';
+}
+```
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/sorting-cs2/index.ts %}
+{% include code-snippet/gantt/sorting-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/sorting-cs2/index.html %}
+{% include code-snippet/gantt/sorting-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/gantt/sorting-cs2" %}
+{% previewsample "page.domainurl/code-snippet/gantt/sorting-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/sorting-cs2/index.js %}
+{% include code-snippet/gantt/sorting-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/sorting-cs2/index.html %}
+{% include code-snippet/gantt/sorting-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/gantt/sorting-cs2" %}
+{% previewsample "page.domainurl/code-snippet/gantt/sorting-cs4" %}
 {% endif %}
 
-> The `args.requestType` is the current action name. For example, for sorting the `args.requestType`, value is **sorting**.
+## Custom sorting
 
-## Sorting Custom Columns
+You can customize the default sort behavior for a column in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control by assigning a [column.sortComparer](../api/gantt/column#sortcomparer) function to define custom sorting logic.
 
-In Gantt, you can sort custom columns of different types like string, numeric, etc., By adding the custom column in the column collection,
-you can perform initial sort using the `sortSettings` or you can also sort the column dynamically by a button click.
+The sorting process includes the following steps:
 
-The following code snippets explains how to achieve this.
+1. Ascending → Descending → Clear Sorting (resets to original data source order).
+2. Child records are sorted within their respective parent groups.
+3. Null values in child records appear at the bottom of each parent group, not across the entire Gantt Chart dataset.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/sorting-cs5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/sorting-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/sorting-cs5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/sorting-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/sorting-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/sorting-cs5" %}
+{% endif %}
+
+### Display null values always at bottom
+
+You can customize the sorting behavior in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control to make `null` values consistently appear at the bottom, regardless of sort direction, by defining a column-level [column.sortComparer](../api/gantt/column#sortcomparer) function. By default, `null` values are placed at the bottom when sorting in ascending order and at the top when sorting in descending order. Applying a custom `sortComparer` helps override this default logic and is particularly useful when working with datasets where `null` entries should be visually separated from valid data.
+ 
+The example below demonstrates how to display `null` values at the bottom of the Gantt Chart while sorting the `TaskName` column in both ascending and descending order.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/sorting-cs6/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/sorting-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/sorting-cs6" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/sorting-cs6/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/sorting-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/sorting-cs6" %}
+{% endif %}
+
+## Sorting custom columns
+
+You can sort custom columns of various types such as string or numeric in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control by adding them to the column collection. Initial sorting can be configured using the [sortSettings](../api/gantt/sortSettings) property, or sorting can be triggered dynamically through external actions such as a button click. 
+
+The following code snippet demonstrates how to sort the `CustomColumn` using an external button.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -209,10 +321,68 @@ The following code snippets explains how to achieve this.
 {% previewsample "page.domainurl/code-snippet/gantt/sortingCustomColumns-cs1" %}
 {% endif %}
 
+## Prevent sorting on specific columns
+
+You can prevent sorting on specific columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control by handling the [actionBegin](../gantt/events#actionbegin) or [actionComplete](../gantt/events#actioncomplete) events. Alternatively, you can disable sorting for a column by setting its [allowSorting](../api/gantt/column#allowsorting) property to **false** in the column configuration.
+
+The following sample demonstrates how to prevent sorting for the **TaskID** and **StartDate** columns.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/sorting-cs7/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/sorting-cs7/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/sorting-cs7" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/sorting-cs7/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/sorting-cs7/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/sorting-cs7" %}
+{% endif %}
+
+## Disable clear sort
+
+By default, clicking a column header switches the sort order between ascending, descending, and unsorted. To restrict this to only ascending and descending, set [sortSettings.allowUnsort](../api/gantt/sortsettings#allowunsort) to **false**. This ensures sorting remains active without reverting to an unsorted state.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/sorting-cs8/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/sorting-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/sorting-cs8" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/sorting-cs8/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/sorting-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/sorting-cs8" %}
+{% endif %}
+
 ## Touch interaction
 
-To perform `tap` action on a column header, trigger [sorting](sorting#sorting) operation to the selected column. A popup is displayed for multi-column sorting. To sort multiple columns, tap the popup, and then tap the desired column headers.
+To perform a tap action on a column header in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control, the [sorting](sorting#sorting) operation is triggered for the selected column. A popup appears when multi-column sorting is enabled. To sort multiple columns, tap the popup and then tap the desired column headers. The following screenshot shows Gantt touch sorting.
 
-The following screenshot shows Gantt touch sorting,
-
-![Multiple Sorting](./images/multiple-sorting.png)
+![Multiple Sorting](images/multiple-sorting.png)

@@ -1,56 +1,50 @@
-
-
-
 import { Gantt } from '@syncfusion/ej2-gantt';
+import { Button } from '@syncfusion/ej2-buttons';
 import { GanttData } from './datasource.ts';
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
-    height: '450px',
+    height: '430px',
+    enablePersistence: true,
+    splitterSettings: { columnIndex: 2 },
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        parentID: 'ParentID',
+        parentID: 'ParentID'
     },
     columns: [
-        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: 120 },
-        { field: 'TaskName', headerText: 'Task Name', width: 150, headerTemplate: '#customertemplate' },
-        { field: 'StartDate', headerText: 'StartDate', width: 150 },
-        { field: 'Duration', headerText: 'Duration', width: 150}
-        { field: 'Progress', headerText: 'Progress', width: 150 },
-    ],
-    enablePersistence: true,
-    editSettings: {
-        allowAdding: true,
-        allowEditing: true,
-        allowDeleting: true,
-        allowTaskbarEditing: true,
-        showDeleteConfirmDialog: true
-    }
+        { field: 'TaskID', width: 90, textAlign: 'Right' },
+        {
+            field: 'TaskName',
+            width: 290,
+            headerTemplate: '<div style="width:20px;height:20px;">Tasks Name</div>'
+        },
+        { field: 'StartDate', width: 390, format: 'yMd', textAlign: 'Right' },
+        { field: 'Duration', width: 120, textAlign: 'Right' },
+        { field: 'Progress', width: 120, textAlign: 'Right' }
+    ]
 });
+
 gantt.appendTo('#Gantt');
 
-let savedProperties: any;
-document.getElementById('restore').onclick = () => {
-    savedProperties = JSON.parse(gantt.getPersistData());
-    var gridColumnsState = Object.assign([], gantt.ganttColumns);
-    savedProperties.columns.forEach((col: {
-        field: any;
-        headerText: any;
-        template: any;
-        headerTemplate: any;
-    }) => {
-        let headerText = gridColumnsState.find((colColumnsState) => colColumnsState.field === col.field)['headerText'];
-        let colTemplate = gridColumnsState.find((colColumnsState) => colColumnsState.field === col.field)['template'];
-        let headerTemplate = gridColumnsState.find((colColumnsState) => colColumnsState.field === col.field)['headerTemplate'];
-        col.headerText = 'Text Changed';
-        col.template = colTemplate;
-        col.headerTemplate = headerTemplate; //likewise you can restore required column properties as per your wants.
-    }
-  );
-    console.log(savedProperties);
-    gantt.treeGrid.setProperties(savedProperties);
-};
+let restoreBtn: Button = new Button();
+restoreBtn.appendTo('#restore');
+
+document.getElementById('restore')!.addEventListener('click', () => {
+    const savedProperties = JSON.parse(gantt.getPersistData());
+    const gridColumnsState = [...(gantt as any).ganttColumns];
+
+    savedProperties.columns.forEach((col: any) => {
+        const state = gridColumnsState.find((c: any) => c.field === col.field);
+        if (state) {
+            col.headerText = 'Text Changed';
+            col.template = state.template;
+            col.headerTemplate = state.headerTemplate;
+        }
+    });
+
+    (gantt as any).treeGrid.setProperties(savedProperties);
+});

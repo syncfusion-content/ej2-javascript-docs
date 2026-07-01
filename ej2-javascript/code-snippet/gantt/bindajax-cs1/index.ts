@@ -1,36 +1,45 @@
+import { Gantt, Toolbar, ExcelExport, Selection } from '@syncfusion/ej2-gantt';
+import { Button } from '@syncfusion/ej2-buttons';
 
-
-
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { Ajax } from '@syncfusion/ej2-base';
+Gantt.Inject(Toolbar, ExcelExport, Selection);
 
 let gantt: Gantt = new Gantt({
-    height: '450px',
-    treeColumnIndex: 1,
+    dataSource: [],
+    height: '430px',
+    projectStartDate: new Date('02/24/2021'),
+    projectEndDate: new Date('07/20/2021'),
     taskFields: {
-      id: 'TaskId',
-      name: 'TaskName',
-      startDate: 'StartDate',
-      progress: 'Progress',
-      duration: 'Duration',
-      dependency: 'Predecessor',
-      child: 'SubTasks'
+        id: 'TaskId',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        child: 'SubTasks'
     },
-    projectStartDate: new Date('02/24/2019'),
-    projectEndDate: new Date('07/20/2019')
+    columns: [
+        { field: 'TaskId', headerText: 'Task ID', width: 100 },
+        { field: 'TaskName', headerText: 'Task Name', width: 150 },
+        { field: 'StartDate', headerText: 'Start Date', width: 150 },
+        { field: 'Duration', headerText: 'Duration', width: 150 },
+        { field: 'Progress', headerText: 'Progress', width: 150 }
+    ],
+    toolbar: ['ExcelExport'],
+    allowSelection: true
 });
+
 gantt.appendTo('#Gantt');
 
-let button: HTMLElement = document.createElement('button');
-button.textContent = 'Bind Data';
-gantt.element.parentNode.insertBefore(button, gantt.element);
-button.addEventListener("click", function(e){
-    let ajax = new Ajax("https://services.syncfusion.com/js/production/api/GanttData","GET");
+let bindBtn: Button = new Button();
+bindBtn.appendTo('#bindData');
+
+document.getElementById('bindData')!.addEventListener('click', () => {
     gantt.showSpinner();
-    ajax.send();
-    ajax.onSuccess = function (data: string) {
-        gantt.hideSpinner();
-        gantt.dataSource = (JSON.parse(data)).Items;
-        gantt.refresh();
-    };
+
+    fetch('https://services.syncfusion.com/angular/production/api/GanttData')
+        .then(res => res.json())
+        .then((data: any) => {
+            gantt.hideSpinner();
+            gantt.dataSource = data.Items;
+            gantt.refresh();
+        });
 });

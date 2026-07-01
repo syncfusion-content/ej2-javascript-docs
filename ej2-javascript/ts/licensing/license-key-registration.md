@@ -1,6 +1,6 @@
 ---
 layout: post
-title: License key registration in ##Platform_Name## Licensing control | Syncfusion
+title: License key registration in ##Platform_Name## | Syncfusion
 description: Learn here all about License key registration in Syncfusion ##Platform_Name## Licensing control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: License key registration 
@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # License key registration in ##Platform_Name## Licensing control
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be registered, if your project using Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript(ES6) packages reference. The generated license key is a string that needs to be registered after any [Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript(ES6) reference](https://ej2.syncfusion.com/documentation/getting-started/quick-start/#configure-syncfusion-javascript-control-in-application).
+Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be registered, if your project using Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript(ES6) packages reference. The generated license key is a string that needs to be registered after any [Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript(ES6) reference](https://ej2.syncfusion.com/documentation/getting-started/quick-start).
 
 >Note: Syncfusion<sup style="font-size:70%">&reg;</sup> license validation is done offline during application execution and does not require internet access. Apps registered with a Syncfusion<sup style="font-size:70%">&reg;</sup> license key can be deployed on any system that does not have an internet connection.
 
-Generate the [Syncfusion<sup style="font-size:70%">&reg;</sup> license key](https://ej2.syncfusion.com/documentation/licensing/license-key-generation/) and register it in one of the following ways,
+Generate the [Syncfusion<sup style="font-size:70%">&reg;</sup> license key](https://ej2.syncfusion.com/documentation/licensing/license-key-generation) and register it in one of the following ways,
 
 * [Register the license key in the project](#register-syncfusion-license-key-in-the-project)
 * [Register the license key using the npx command](#register-syncfusion-license-key-using-the-npx-command)
@@ -61,7 +61,7 @@ npx syncfusion-license activate
 
   **License message:** <br /> (INFO) Syncfusion<sup style="font-size:70%">&reg;</sup> License imported successfully.
 
-* Now run the application. If you are facing a license validation error, refer to this [link](https://ej2.syncfusion.com/documentation/licensing/licensing-errors/) to resolve it. Also, find the most frequent license registration questions from this [`link`](https://ej2.syncfusion.com/documentation/licensing/licensing-troubleshoot/).
+* Now run the application. If you are facing a license validation error, refer to this [link](https://ej2.syncfusion.com/documentation/licensing/licensing-errors) to resolve it. Also, find the most frequent license registration questions from this [`link`](https://ej2.syncfusion.com/documentation/licensing/licensing-troubleshoot).
 
 >If you don't want to use the license text file in the application, refer to this [link](#register-the-license-key-with-the-environment-variable) to use an environment variable and register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key. Also, check out some common licensing FAQs while registering the license key using the npx command from this [link](https://ej2.syncfusion.com/documentation/licensing/licensing-troubleshoot#Reactivating-license-once-after-updating-the-package-version-while-using-npx)
 
@@ -123,7 +123,7 @@ npx syncfusion-license activate
 
   **License message:** <br /> (INFO) Syncfusion<sup style="font-size:70%">&reg;</sup> License imported successfully.
 
-* Now run the application. If you are facing a license validation error, refer to this [link](https://ej2.syncfusion.com/documentation/licensing/licensing-errors/) to resolve it. Also, find the most frequent license registration questions from this [`link`](https://ej2.syncfusion.com/documentation/licensing/licensing-troubleshoot/).
+* Now run the application. If you are facing a license validation error, refer to this [link](https://ej2.syncfusion.com/documentation/licensing/licensing-errors) to resolve it. Also, find the most frequent license registration questions from this [`link`](https://ej2.syncfusion.com/documentation/licensing/licensing-troubleshoot).
 
 ### Register Syncfusion<sup style="font-size:70%">&reg;</sup> license key in CI services
 
@@ -197,6 +197,19 @@ npx syncfusion-license activate
 
 ![Bash task](images/bash-script.png)
 
+## Register Multiple License Keys
+
+If you need to register multiple Syncfusion<sup style="font-size:70%">&reg;</sup> license keys in your application, you can do so by separating each key with a semicolon. This is useful when your application uses multiple Syncfusion<sup style="font-size:70%">&reg;</sup> products or editions.
+
+**Format:** `key1;key2;key3`
+
+**Example:**
+```ts
+registerLicense('license-key-1-here;license-key-2-here');
+```
+
+> When registering multiple keys, ensure there are no spaces before or after the semicolon separator.
+
 ## See also
 
-* [Licensing FAQ](https://ej2.syncfusion.com/documentation/licensing/licensing-troubleshoot/)
+* [Licensing FAQ](https://ej2.syncfusion.com/documentation/licensing/licensing-troubleshoot)

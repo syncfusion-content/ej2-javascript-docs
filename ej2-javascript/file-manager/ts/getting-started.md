@@ -44,19 +44,16 @@ npm i @syncfusion/ej2-filemanager
 
 ## Adding CSS reference
 
-Add the following imports inside the `~/src/styles.css` file to include the `tailwind3` theme styles:
+To install the [Tailwind3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme package, use the following command:
 
+```bash
+npm i @syncfusion/ej2-tailwind3-theme
 ```
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-icons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css';
-@import "../node_modules/@syncfusion/ej2-filemanager/styles/tailwind3.css";
+
+In this package, the File Manager control includes an `index.css` file that automatically loads all the required dependency styles. Add the following import to the `~/src/styles.css` file.
+
+```css
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/file-manager/index.css";
 ```
 
 ## Adding File Manager control
@@ -84,16 +81,7 @@ filemanagerInstance.appendTo('#filemanager');
 
 {% highlight css tabtitle="styles.css" %}
 
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-icons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css';
-@import "../node_modules/@syncfusion/ej2-filemanager/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/file-manager/index.css";
 
 {% endhighlight %}
 

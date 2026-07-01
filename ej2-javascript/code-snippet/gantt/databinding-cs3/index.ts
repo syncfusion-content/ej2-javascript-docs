@@ -1,6 +1,3 @@
-
-
-
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 
@@ -25,6 +22,3 @@ let gantt: Gantt = new Gantt({
     }
 });
 gantt.appendTo('#Gantt');
-
-
-

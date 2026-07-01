@@ -1,19 +1,17 @@
 ---
 layout: post
-title: Managing tasks in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Managing tasks in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Managing Tasks in ##Platform_Name## Gantt Chart Control | Syncfusion
+description: Learn here all about Managing tasks in Syncfusion ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Managing tasks 
+control: Managing tasks
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Managing tasks in ##Platform_Name## Gantt control
+# Managing Tasks in ##Platform_Name## Gantt Chart Control
 
-The Gantt component has options to dynamically insert, delete, and update tasks in the project. The primary key column is necessary to manage the tasks and perform CRUD operations in Gantt. To define the primary key, set the [columns.isPrimaryKey](../../api/gantt/column#isprimarykey) property to `true` in the particular column.
-
-To use CRUD, inject the [Edit](../../api/gantt#editmodule) module into the Gantt control.
+Managing tasks in the ##Platform_Name## Gantt Chart control enables dynamic project updates, such as inserting, deleting, or editing tasks and dependencies, by enabling [allowAdding](../../api/gantt/editSettings#allowadding), [allowDeleting](../../api/gantt/editSettings#allowdeleting), [allowEditing](../../api/gantt/editSettings#allowediting), and [allowTaskbarEditing](../../api/gantt/editSettings#allowtaskbarediting) with `Edit` module injected. A primary key column, defined by [columns.isPrimaryKey](../../api/gantt/column#isprimarykey) set to **true** (e.g., on id), ensures reliable CRUD operations and task identification. Editing modes include cell editing for quick TreeGrid updates, dialog editing for comprehensive changes, taskbar dragging for duration or date adjustments, and connector line dragging for dependencies. Customize dialogs with templates or fields using [addDialogFields](../../api/gantt#adddialogfields) and [editDialogFields](../../api/gantt#editdialogfields). Methods like [addRecord](../../api/gantt#addrecord), [deleteRow](../../api/gantt#deleterow), and [updateRecordById](../../api/gantt#updaterecordbyid) support programmatic management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -25,7 +23,7 @@ To use CRUD, inject the [Edit](../../api/gantt#editmodule) module into the Gantt
 {% include code-snippet/gantt/getting-started-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs12" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -42,34 +40,62 @@ To use CRUD, inject the [Edit](../../api/gantt#editmodule) module into the Gantt
 {% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs12" %}
 {% endif %}
 
+Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt Chart using the [columns](../../api/gantt#columns) property, it is mandatory that any one of the columns, must be a primary column. By default, the [id](../../api/gantt/taskFields#id) column will be the primary key column. If [id](../../api/gantt/taskFields#id) column is not defined, we need to enable [isPrimaryKey](../../api/gantt/column#isprimarykey) for any one of the columns defined in the [columns](../../api/gantt#columns) property.
+
+## Open new task dialog with default values
+
+You can set default values when new task dialog opens using [actionBegin](../../api/gantt#actionbegin) event when `requestType` is **beforeOpenAddDialog**.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/rows-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/rows-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/rows-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/rows-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/rows-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/rows-cs2" %}
+{% endif %}
+
 ## Cell edit type and its params
 
-The [columns.editType](../../api/gantt/column#edittype) is used to define the edit type for any particular column.
-You can set the [columns.editType](../../api/gantt/column#edittype) based on data type of the column.
+The [columns.editType](../../api/gantt/column#edittype) is used to define the edit type for any particular column. You can set the [columns.editType](../../api/gantt/column#edittype) based on data type of the column.
 
-* `numericedit` - [NumericTextBox](https://ej2.syncfusion.com/javascript/documentation/numerictextbox) component for integers, double, and decimal data types.
+Below is the combined content from the provided markdown sections in bullet points, as requested, ensuring clarity and conciseness while preserving the original information:
 
-* `defaultedit` - [TextBox](https://ej2.syncfusion.com/javascript/documentation/textbox) component for string data type.
+- **Cell edit types and components**:
+  - **numericedit**: Uses the [NumericTextBox](../../numerictextbox) control for editing integers, doubles, and decimals.
+  - **defaultedit**: Uses the [TextBox](../../textbox) control for editing string data.
+  - **dropdownedit**: Uses the [DropDownList](../../drop-down-list) control to display all unique values for a field.
+  - **booleanedit**: Uses the [CheckBox](../../check-box) control for editing boolean data.
+  - **datepickeredit**: Uses the [DatePicker](../../datepicker) control for editing date data.
+  - **datetimepickeredit**: Uses the [DateTimePicker](../../datetimepicker) control for editing date-time data.
 
-* `dropdownedit` - [DropDownList](https://ej2.syncfusion.com/javascript/documentation/drop-down-list) component to show all unique values related to that field.
+- **Customization**:
+  - Customize editor control behavior using the [columns.edit.params](../../api/gantt/column#edit) property.
 
-* `booleanedit` - [CheckBox](https://ej2.syncfusion.com/javascript/documentation/check-box) component for boolean data type.
-
-* `datepickeredit` - [DatePicker](https://ej2.syncfusion.com/javascript/documentation/datepicker) component for date data type.
-
-* `datetimepickeredit` - [DateTimePicker](https://ej2.syncfusion.com/javascript/documentation/datetimepicker) component for date time data type.
-
-Also, you can customize the behavior of the editor component through the [columns.edit.params](../../api/gantt/column#edit).
-
-The following table describes cell edit type component and their corresponding edit params of the column.
-
-| Edit Type            | Component                                                                            | Example                           |
-| -------------------- | ------------------------------------------------------------------------------------ | --------------------------------- |
-| `numericedit`        | [NumericTextBox](https://ej2.syncfusion.com/javascript/documentation/numerictextbox) | params: { decimals: 2, value: 5 } |
-| `dropdownedit`       | [DropDownList](https://ej2.syncfusion.com/javascript/documentation/drop-down-list)   | params: { value: 'Germany' }      |
-| `booleanedit`        | [Checkbox](https://ej2.syncfusion.com/javascript/documentation/check-box)            | params: { checked: true}          |
-| `datepickeredit`     | [DatePicker](https://ej2.syncfusion.com/javascript/documentation/datepicker)         | params: { format:'dd.MM.yyyy' }   |
-| `datetimepickeredit` | [DateTimePicker](https://ej2.syncfusion.com/javascript/documentation/datetimepicker) | params: { value: new Date() }     |
+- **Edit type parameters**:
+  - **numericedit**: Supports parameters like `decimals: 2`, `value: 5`.
+  - **dropdownedit**: Supports parameters like `value: 'Germany'`.
+  - **booleanedit**: Supports parameters like `checked: true`.
+  - **datepickeredit**: Supports parameters like `format: 'dd.MM.yyyy'`.
+  - **datetimepickeredit**: Supports parameters like `value: new Date()`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -81,7 +107,7 @@ The following table describes cell edit type component and their corresponding e
 {% include code-snippet/gantt/managingTasks-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/managingTasks-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -98,17 +124,50 @@ The following table describes cell edit type component and their corresponding e
 {% previewsample "page.domainurl/code-snippet/gantt/managingTasks-cs2" %}
 {% endif %}
 
+## Prevent particular column and taskbar editing
+
+You can prevent editing for the particular column by setting [columns.allowEditing](../../api/gantt/column/#allowEditing) to **false**.
+
+To restrict taskbar editing, set `args.cancel` to **true** in the [actionBegin](../../gantt/events#actionbegin) event based on `taskbarEditAction`.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/managingTasks-cs5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/managingTasks-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/managingTasks-cs5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/managingTasks-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/managingTasks-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/managingTasks-cs5" %}
+{% endif %}
+
 ## Cell Edit Template
 
-The cell edit template is used to create a custom component for a particular column by invoking the following functions:
+The cell edit template is used to create a custom control for a particular column by invoking the following functions:
 
-* `create` - It is used to create the element at the time of initialization.
+- `create` - It is used to create the element at the time of initialization.
 
-* `write` - It is used to create the custom component or assign default value at the time of editing.
+- `write` - It is used to create the custom control or assign default value at the time of editing.
 
-* `read` - It is used to read the value from the component at the time of save.
+- `read` - It is used to read the value from the control at the time of save.
 
-* `destroy` - It is used to destroy the component.
+- `destroy` - It is used to destroy the control.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -120,7 +179,7 @@ The cell edit template is used to create a custom component for a particular col
 {% include code-snippet/gantt/managingTasks-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/managingTasks-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -141,7 +200,7 @@ The cell edit template is used to create a custom component for a particular col
 
 You can disable editing for particular columns, by using the [columns.allowEditing](../../api/gantt/column#allowediting) property.
 
-In the following demo, editing is disabled for the `TaskName` column.
+In the following demo, editing is disabled for the **TaskName** column.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -153,7 +212,7 @@ In the following demo, editing is disabled for the `TaskName` column.
 {% include code-snippet/gantt/managingTasks-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/managingTasks-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -170,83 +229,17 @@ In the following demo, editing is disabled for the `TaskName` column.
 {% previewsample "page.domainurl/code-snippet/gantt/managingTasks-cs4" %}
 {% endif %}
 
-## Read-only Gantt
-
-In Gantt, all create, update, delete operations can be disabled by set `readOnly` property as `true`. The following sample demonstrates, render Gantt chart as read only.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/editing-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/editing-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/gantt/editing-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/editing-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/editing-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/gantt/editing-cs4" %}
-{% endif %}
-
-## Troubleshoot: Editing works only when primary key column is defined
-
-Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt using the [columns](../../api/gantt#columns) property, it is mandatory that any one of the columns, must be a primary column. By default, the [id](../../api/gantt/taskFields#id) column will be the primary key column.  If [id](../../api/gantt/taskFields#id) column is not defined, we need to enable [isPrimaryKey](../../api/gantt/column#isprimarykey) for any one of the columns defined in the [columns](../../api/gantt#columns) property.
-
-## Open new task dialog with default values
-
-You can set default values when new task dialog opens using [actionBegin](../../api/gantt#actionbegin) event when `requestType` is `beforeOpenAddDialog`.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/rows-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/rows-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/gantt/rows-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/rows-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/rows-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/gantt/rows-cs2" %}
-{% endif %}
-
 ## Customize control in add/edit dialog
 
-In Gantt Chart, the controls such as form elements, grid and RTE in add and edit dialog can be customized by using [additionalParams](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettingsModel#additionalParams) property.
+In Gantt Chart, the controls such as form elements, grid and RTE in add and edit dialog can be customized by using [additionalParams](../../api/gantt/addDialogFieldSettingsModel#additionalParams) property.
 
-### Customize general tab of dialog 
+### Customize general tab of dialog
 
-The form element in the `General` tab of the add/edit dialog can be added or removed by using the [fields](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettings#fields) property within the [addDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettings) and [editDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/editDialogFieldSettings) settings respectively.
+The form element in the General tab of the add/edit dialog can be added or removed by using the [fields](../../api/gantt/addDialogFieldSettings#fields) property within the [addDialogFields](../../api/gantt/addDialogFieldSettings) and [editDialogFields](../../api/gantt/editDialogFieldSettings) settings respectively.
 
-The controls of the `fields` can be customized by using the [edit](https://ej2.syncfusion.com/documentation/gantt/managing-tasks/managing-tasks#cell-edit-template) template feature.
+The controls of the `fields` can be customized by using the [edit](../../gantt/managing-tasks/managing-tasks#cell-edit-template) template feature.
 
-In the below sample, `General` tab is customized using the `fields` property. The fields **TaskID**, **TaskName** and **newInput** are added in both `addDialogFields` and `editDialogFields` settings.
+In the below sample, General tab is customized using the `fields` property. The fields **TaskID**, **TaskName** and **newInput** are added in both `addDialogFields` and `editDialogFields` settings.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -258,7 +251,7 @@ In the below sample, `General` tab is customized using the `fields` property. Th
 {% include code-snippet/gantt/rows-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/rows-cs14" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -275,15 +268,16 @@ In the below sample, `General` tab is customized using the `fields` property. Th
 {% previewsample "page.domainurl/code-snippet/gantt/rows-cs14" %}
 {% endif %}
 
-### Customize dependency, segments and resources tab of dialog 
+### Customize dependency, segments and resources tab of dialog
 
-You can customize the dependency, segments, and resource tabs of the dialog box using the [additionalParams](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettingsModel#additionalParams) property within the [addDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettings) and [editDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/editDialogFieldSettings) settings respectively. This customization involves defining properties from the [Grid](https://ej2.syncfusion.com/documentation/api/grid) within the `additionalParams` property.
+You can customize the dependency, segments, and resource tabs of the dialog box using the [additionalParams](../../api/gantt/addDialogFieldSettingsModel#additionalParams) property within the [addDialogFields](../../api/gantt/addDialogFieldSettings) and [editDialogFields](../../api/gantt/editDialogFieldSettings) settings respectively. This customization involves defining properties from the [grid](../../api/grid) within the `additionalParams` property.
 
-In the example below: 
-* The `dependency` tab enables [sorting](https://ej2.syncfusion.com/documentation/api/grid#allowsorting) and [toolbar](https://ej2.syncfusion.com/documentation/api/grid#toolbar) options. 
-* The `segments` tab enables `sorting` and `toolbar` options and includes a new column `newData` defined with a specified [field](https://ej2.syncfusion.com/documentation/api/grid/columnModel#field).
-* The `resources` tab defines a new column `Segment Task`  with specific properties such as `field`, [width](https://ej2.syncfusion.com/documentation/api/grid/columnmodel#width) and [headerText](https://ej2.syncfusion.com/documentation/api/grid/columnModel#headertext).
-These customizations are applied to both `addDialogFields` and `editDialogFields` settings.
+In the example below:
+
+- The dependency tab enables [sorting](../../api/grid#allowsorting) and [toolbar](../../api/grid#toolbar) options.
+- The segments tab enables `sorting` and `toolbar` options and includes a new column `newData` defined with a specified [field](../../api/grid/columnModel#field).
+- The resources tab defines a new column **Segment Task** with specific properties such as `field`, [width](../../api/grid/columnModel#width) and [headerText](../../api/grid/columnModel#headertext).
+  These customizations are applied to both `addDialogFields` and `editDialogFields` settings.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -295,7 +289,7 @@ These customizations are applied to both `addDialogFields` and `editDialogFields
 {% include code-snippet/gantt/rows-cs15/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/rows-cs15" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -314,9 +308,9 @@ These customizations are applied to both `addDialogFields` and `editDialogFields
 
 ### Customize note dialog tab
 
-You can customize the note dialog tab using the [additionalParams](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettingsModel#additionalParams) property within the [addDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettings) and [editDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/editDialogFieldSettings) settings respectively. This customization involves defining properties from the [RTE](https://ej2.syncfusion.com/documentation/api/rich-text-editor) module within the `additionalParams` property.
+You can customize the note dialog tab using the [additionalParams](../../api/gantt/addDialogFieldSettingsModel#additionalParams) property within the [addDialogFields](../../api/gantt/addDialogFieldSettings) and [editDialogFields](../../api/gantt/editDialogFieldSettings) settings respectively. This customization involves defining properties from the [RTE](../../api/rich-text-editor) module within the `additionalParams` property.
 
-In the following example, the `notes` tab is customized with the [inlinemode](https://ej2.syncfusion.com/documentation/api/rich-text-editor#inlinemode) property enabled, allowing for in-place editing. Additionally, the `OnSelection` property is enabled, which opens the toolbar inline upon selecting text.
+In the following example, the notes tab is customized with the [inlinemode](../../api/rich-text-editor#inlinemode) property enabled, allowing for in-place editing. Additionally, the `OnSelection` property is enabled, which opens the toolbar inline upon selecting text.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -328,7 +322,7 @@ In the following example, the `notes` tab is customized with the [inlinemode](ht
 {% include code-snippet/gantt/rows-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/rows-cs16" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -344,28 +338,26 @@ In the following example, the `notes` tab is customized with the [inlinemode](ht
 
 {% previewsample "page.domainurl/code-snippet/gantt/rows-cs16" %}
 {% endif %}
-        
+
 ## Touch interaction
 
 The Gantt control editing actions can be achieved using the double tap and tap and drag actions on a element.
 
 The following table describes different types of editing modes available in Gantt.
 
-| Action                                            | Description                                                                                                                                                                                                                                |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Cell editing](managing-tasks#cell-editing)       | To perform `double tap` on a specific cell, initiate the cell to be in edit state.                                                                                                                                                         |
-| [Dialog editing](managing-tasks#dialog-editing)   | To perform `double tap` on a specific row, initiate the edit dialog to be opened.                                                                                                                                                          |
-| [Taskbar editing](managing-tasks#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> |
-![Alt text](../images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br>
-![Alt text](../images/editing-state.PNG) <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.
+| Action                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Cell editing](managing-tasks#cell-editing)       | To perform double tap on a specific cell, initiate the cell to be in edit state.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| [Dialog editing](managing-tasks#dialog-editing)   | To perform double tap on a specific row, initiate the edit dialog to be opened.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [Taskbar editing](managing-tasks#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> ![Alt text](../images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br> ![Alt text](../images/editing-state.PNG) <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction. |
 
 ### Task dependency editing
 
-You can `tap` the left/right connector point to initiate [task dependencies](managing-tasks#task-dependencies) edit mode and again tap another taskbar to establish the dependency line between two taskbars.
+You can `tap` the left/right connector point to initiate [task dependencies](managing-tasks/#task-dependencies) edit mode and again tap another taskbar to establish the dependency line between two taskbars.
 
 The following table explains the taskbar state in dependency edit mode.
 
-![Taskbar states](../images/taskbar-states.png)
+![Taskbar states](../images/taskbar-states.PNG)
 
 | Taskbar state                | Description                                                                                                                                                                                  |
 | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -384,7 +376,7 @@ The following table explains the taskbar state in dependency edit mode.
 {% include code-snippet/gantt/touch-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/touch-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -401,11 +393,11 @@ The following table explains the taskbar state in dependency edit mode.
 {% previewsample "page.domainurl/code-snippet/gantt/touch-cs1" %}
 {% endif %}
 
->Note: In mobile device, you cannot create dependency other than `FS` by taskbar editing. By using cell/dialog editing, you can add all type of dependencies.
+> Note: In mobile device, you cannot create dependency other than `FS` by taskbar editing. By using cell/dialog editing, you can add all type of dependencies.
 
 ## Taskbar editing tooltip
 
-The taskbar editing tooltip can be customized using the [tooltipSettings.editing](../api/gantt/tooltipSettings#editing) property. The following code example shows how to customize the taskbar editing tooltip in Gantt.
+The taskbar editing tooltip can be customized using the [tooltipSettings.editing](../../api/gantt/tooltipSettings/#editing) property. The following code example shows how to customize the taskbar editing tooltip in Gantt.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -417,7 +409,7 @@ The taskbar editing tooltip can be customized using the [tooltipSettings.editing
 {% include code-snippet/gantt/editingTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/editingTooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -433,3 +425,10 @@ The taskbar editing tooltip can be customized using the [tooltipSettings.editing
 
 {% previewsample "page.domainurl/code-snippet/gantt/editingTooltip-cs1" %}
 {% endif %}
+
+## See also
+
+- [How to add new tasks?](../../gantt/managing-tasks/adding-new-tasks)
+- [How to delete tasks?](../../gantt/managing-tasks/deleting-tasks)
+- [How to manage task dependencies?](../../gantt/task-dependency)
+- [How to configure critical path?](../../gantt/critical-path)

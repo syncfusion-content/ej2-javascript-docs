@@ -129,7 +129,11 @@ The following code example illustrates how to customize the thickness of lines a
 
 ## Dot grid patterns
 
+<<<<<<< HEAD
 The appearance of the grid lines can be changed into dots by settings [`gridType`](../api/diagram/snapsettingsmodel#gridtype) of `snapSettings` as Dots.  By default, the `gridType` is **Lines**.
+=======
+The appearance of the grid lines can be changed into dots by settings [`gridType`](../api/diagram/snapsettingsmodel#gridtype) of `snapSettings` as Dots.  By default, the grid type is **Lines**.
+>>>>>>> 6d423ae3a72932cc7a70f3b683cc6314d695c6cf
 
 The following code illustrates how to render grid patterns as Dots.
 
@@ -206,7 +210,11 @@ Snapping to gridlines can be enabled or disabled using the [`snapConstraints`](.
 
 The snap-to-object feature provides visual cues to assist with aligning and spacing diagram elements. A node can snap to its neighboring objects based on specific alignments, such as the same size and position. These alignments are visually represented by smart guide lines in a cyan shade, with the color code **#07EDE1**.
 
+<<<<<<< HEAD
 The [`snapObjectDistance`](../api/diagram/snapsettingsmodel#snapobjectdistance) property allows you to define minimum distance between the selected object and the nearest object. By default, the `snapObjectDistance` is set to **5**.
+=======
+The [`snapObjectDistance`](../api/diagram/snapsettingsmodel#snapobjectdistance) property allows you to define minimum distance between the selected object and the nearest object. By default, the snap object distance is set to 5.
+>>>>>>> 6d423ae3a72932cc7a70f3b683cc6314d695c6cf
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -276,7 +284,11 @@ The following code example demonstrates how to set the `snapAngle` property and 
 
 ## Snap line color
 
+<<<<<<< HEAD
 The [`snapLineColor`](../api/diagram/snapsettingsmodel#snaplinecolor) property allows you to define the color of the snap line used in the diagram. By customizing the snap line color, you can enhance the visual contrast and visibility of these guides, making it easier to achieve accurate alignment. 
+=======
+The [`snapLineColor`](../api/diagram/snapsettingsmodel#snaplinecolor) property allows you to define the color of the snapline used in the diagram. By customizing the snapline color, you can enhance the visual contrast and visibility of these guides, making it easier to achieve accurate alignment. 
+>>>>>>> 6d423ae3a72932cc7a70f3b683cc6314d695c6cf
 
 This property accepts color values in various formats, such as hexadecimal, RGB, or predefined color names, providing flexibility in how you choose to represent the snap lines in your diagramming application. By default the `snapLineColor` is set to `'#07EDE1'`.
 

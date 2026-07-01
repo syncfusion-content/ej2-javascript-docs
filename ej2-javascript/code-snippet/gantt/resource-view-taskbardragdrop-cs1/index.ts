@@ -1,41 +1,70 @@
-import { Gantt, Toolbar, Edit, Selection, RowDD } from '@syncfusion/ej2-gantt';
-import { overAllocationData, resources } from 'datasource.ts';
+import {
+    Gantt,
+    Edit,
+    Selection,
+    Toolbar,
+    Resize,
+    RowDD,
+    TaskFieldsModel,
+    ResourceFieldsModel,
+    EditSettingsModel,
+    LabelSettingsModel
+} from '@syncfusion/ej2-gantt';
+import { data, resources } from './datasource.ts';
 
-Gantt.Inject(Toolbar, Edit, Selection, RowDD);
+Gantt.Inject(RowDD, Edit, Toolbar, Selection, Resize);
+
+let taskSettings: TaskFieldsModel = {
+    id: 'TaskID',
+    name: 'TaskName',
+    startDate: 'StartDate',
+    endDate: 'EndDate',
+    duration: 'Duration',
+    progress: 'Progress',
+    dependency: 'Predecessor',
+    resourceInfo: 'resources',
+    work: 'work',
+    expandState: 'isExpand',
+    parentID: 'ParentID'
+};
+
+let resourceFields: ResourceFieldsModel = {
+    id: 'resourceId',
+    name: 'resourceName',
+    unit: 'resourceUnit',
+    group: 'resourceGroup'
+};
+
+let editSettings: EditSettingsModel = {
+    allowAdding: true,
+    allowEditing: true,
+    allowDeleting: true,
+    allowTaskbarEditing: true,
+    showDeleteConfirmDialog: true
+};
+
+let labelSettings: LabelSettingsModel = {
+    rightLabel: 'resources',
+    taskLabel: 'TaskName'
+};
 
 let gantt: Gantt = new Gantt({
-    dataSource: overAllocationData,
+    dataSource: data,
     resources: resources,
+    height: '450px',
     viewType: 'ResourceView',
+    highlightWeekends: true,
+    treeColumnIndex: 1,
+    allowSelection: true,
+    allowResizing: true,
+    allowTaskbarDragAndDrop: true,
     showOverAllocation: true,
     enableMultiTaskbar: true,
-    allowTaskbarDragAndDrop: true,
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        endDate: 'EndDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        dependency: 'Predecessor',
-        resourceInfo: 'resources',
-        work: 'work',
-        expandState: 'isExpand',
-        parentID: 'ParentID'
-    },
-    resourceFields: {
-        id: 'resourceId',
-        name: 'resourceName',
-        unit: 'resourceUnit',
-        group: 'resourceGroup'
-    },
-    editSettings: {
-        allowAdding: true,
-        allowEditing: true,
-        allowDeleting: true,
-        allowTaskbarEditing: true,
-        showDeleteConfirmDialog: true
-    },
+    projectStartDate: new Date('03/25/2019'),
+    projectEndDate: new Date('07/28/2019'),
+    taskFields: taskSettings,
+    resourceFields: resourceFields,
+    editSettings: editSettings,
     columns: [
         { field: 'TaskID' },
         { field: 'TaskName', headerText: 'Name', width: 250 },
@@ -43,17 +72,10 @@ let gantt: Gantt = new Gantt({
         { field: 'Progress' },
         { field: 'resourceGroup', headerText: 'Group' },
         { field: 'StartDate' },
-        { field: 'Duration' },
+        { field: 'Duration' }
     ],
     toolbar: ['ExpandAll', 'CollapseAll'],
-    labelSettings: {
-        rightLabel: 'resources',
-        taskLabel: 'TaskName'
-    },
-    projectStartDate: new Date('03/28/2019'),
-    projectEndDate: new Date('05/18/2019')
+    labelSettings: labelSettings
 });
+
 gantt.appendTo('#Gantt');
-
-
-

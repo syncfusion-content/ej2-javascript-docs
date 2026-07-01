@@ -11,7 +11,11 @@ domainurl: ##DomainURL##
 
 # Lable Appearance
 
+<<<<<<< HEAD
+You can change the font style of the annotations with the font specific properties [`fontSize`](../../api/diagram/textstylemodel#fontsize), [`fontFamily`](../../api/diagram/textStyleModel#fontfamily), [`color`](../../api/diagram/textStyleModel#color).
+=======
 You can change the font style of the annotations with the font specific properties [`fontSize`](../../api/diagram/textstylemodel#fontsize), [`fontFamily`](../../api/diagram/textStyleModel/#fontfamily),[`color`](../../api/diagram/textStyleModel#color).
+>>>>>>> 6d423ae3a72932cc7a70f3b683cc6314d695c6cf
 The label’s [`bold`](../../api/diagram/textStyleModel#bold-boolean), [`italic`](../../api/diagram/textStyleModel#italic), and [`textDecoration`](../../api/diagram/textStyleModel#textdecoration) properties are used to style the label’s text.
 
 The label’s [`fill`](../../api/diagram/textstylemodel#fill), [`strokeColor`](../../api/diagram/textStyleModel#strokecolor), and [`strokeWidth`](../../api/diagram/textStyleModel#strokewidth) properties are used to define the background color and border color of the annotation and the [`opacity`](../../api/diagram/textStyleModel#opacity) property is used to define the transparency of the annotations.
@@ -34,7 +38,7 @@ The [`visible`](../../api/diagram/annotationmodel#visibility) property of the an
 
 ## Horizontal and vertical alignment
 
-The following tables illustrates all the possible alignments visually with 'offset (0, 0)'.
+The following tables illustrates all the possible alignments visually with **offset (0, 0)**.
 
 | Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
 | -------- | -------- | -------- |

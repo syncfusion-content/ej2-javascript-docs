@@ -1,30 +1,35 @@
+ej.gantt.Gantt.Inject(ej.gantt.Sort);
+
 var ganttChart = new ej.gantt.Gantt({
-dataSource: GanttData,
-height: '450px',
-allowSorting: true,
-taskFields: {
-    id: 'TaskID',
-    name: 'TaskName',
-    startDate: 'StartDate',
-    duration: 'Duration',
-    progress: 'Progress',
-    parentID: 'ParentID'
-},
-columns: [
-    { field: 'TaskID', headerText: 'Task ID' },
-    { field: 'Progress', headerText: 'Progress' },
-    { field: 'TaskName', headerText: 'Task Name' },
-    { field: 'StartDate', headerText: 'Start Date' },
-    { field: 'Duration', headerText: 'Duration' },
-    { field: 'CustomColumn', headerText: 'CustomColumn' }
-]
+    dataSource: data,
+    height: '430px',
+    allowSorting: true,
+    taskFields: {
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        parentID: 'ParentID'
+    },
+    splitterSettings: {
+        columnIndex: 3
+    },
+    columns: [
+        { field: 'TaskID', headerText: 'Task ID', width: 100 },
+        { field: 'TaskName', headerText: 'Task Name', width: 200 },
+        { field: 'StartDate', headerText: 'Start Date', width: 150 },
+        { field: 'Duration', headerText: 'Duration', width: 100 },
+        { field: 'Progress', headerText: 'Progress', width: 100 },
+        { field: 'CustomColumn', headerText: 'Custom Column', width: 150 }
+    ]
 });
+
 ganttChart.appendTo('#Gantt');
 
-var sortBtn= new ej.buttons.Button();
-sortBtn.appendTo('#sortColumn');
+var sortBtn = new ej.buttons.Button({ cssClass: 'e-outline' });
+sortBtn.appendTo('#sortCustom');
 
-document.getElementById('sortColumn').addEventListener('click', () => {
-    var ganttObj= document.getElementById('Gantt').ej2_instances[0];
-	ganttObj.sortModule.sortColumn('CustomColumn',"Ascending",false)
+document.getElementById('sortCustom').addEventListener('click', function () {
+    ganttChart.sortModule.sortColumn('CustomColumn', 'Ascending', false);
 });

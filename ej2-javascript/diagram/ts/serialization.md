@@ -17,7 +17,7 @@ Serialization involves saving the diagram's state as a JSON string, which can th
 
 ## Save
 
-The diagram method [`saveDiagram`](../api/diagram/#savediagram), helps to serialize the diagram as a string. This method captures the entire diagram's configuration and content, converting it into a string representation.
+The diagram method [`saveDiagram`](../api/diagram#savediagram), helps to serialize the diagram as a string. This method captures the entire diagram's configuration and content, converting it into a string representation.
 
 The following code illustrates how to save the diagram:
 
@@ -58,9 +58,7 @@ N> Before loading a new diagram, existing diagram is cleared.
 
 ## Prevent Default Values
 
-The [`preventDefaults`](../api/diagram/serializationSettingsModel) property of serializationSettings is used to simplifying the saved JSON object without adding the default properties that are presented in the diagram.
-
-The [`preventDefaults`](../api/diagram/serializationSettingsModel/#preventdefaults) property of [`serializationSettings`](../api/diagram/serializationSettingsModel/) is used to simplify the saved JSON object by excluding default properties that are inherent to the diagram. This helps reduce the size of the serialized data and improves efficiency when saving and loading diagrams.
+The [`preventDefaults`](../api/diagram/serializationsettingsmodel#preventdefaults) property of [`serializationSettings`](../api/diagram/serializationSettingsModel) is used to simplify the saved JSON object by excluding default properties that are inherent to the diagram. This helps reduce the size of the serialized data and improves efficiency when saving and loading diagrams.
 
 By enabling preventDefaults, only properties that you set in diagram are included in the serialized JSON object. This optimization is useful for scenarios where minimizing data size is crucial, such as in applications with large diagrams or when optimizing network transfers.
 
@@ -94,7 +92,7 @@ When a JSON file is uploaded, it undergoes parsing to extract its JSON data. Thi
 
 ## Importing and Exporting Diagrams using Mermaid Syntax
 
-The [`Diagram`](../api/diagram/) supports saving diagrams in Mermaid syntax format. Mermaid is a Markdown-inspired syntax that automatically generates diagrams. With this functionality, you can easily create mind maps, flowcharts, and UML sequence diagrams from Mermaid syntax data, simplifying the visualization of complex ideas and processes without manual drawing. Additionally, you can export your mind maps, flowcharts, and UML sequence diagrams to Mermaid syntax, allowing for easy sharing, editing, and use across different platforms.
+The [`Diagram`](../api/diagram) supports saving diagrams in Mermaid syntax format. Mermaid is a Markdown-inspired syntax that automatically generates diagrams. With this functionality, you can easily create mind maps, flowcharts, and UML sequence diagrams from Mermaid syntax data, simplifying the visualization of complex ideas and processes without manual drawing. Additionally, you can export your mind maps, flowcharts, and UML sequence diagrams to Mermaid syntax, allowing for easy sharing, editing, and use across different platforms.
 
 ### Save diagram as Mermaid syntax
 
@@ -108,7 +106,7 @@ let data = diagram.saveDiagramAsMermaid();
 
 ### Load diagram from Mermaid syntax
 
-You can load a [diagram](../api/diagram/) from the serialized Mermaid syntax data using the `loadDiagramFromMermaid` method. The following code illustrates how to load a diagram from a Mermaid string data.
+You can load a [diagram](../api/diagram) from the serialized Mermaid syntax data using the `loadDiagramFromMermaid` method. The following code illustrates how to load a diagram from a Mermaid string data.
 
 #### Load flowchart layout
 

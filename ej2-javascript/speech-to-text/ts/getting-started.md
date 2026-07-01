@@ -64,18 +64,17 @@ npm install
 
 ## Import the Syncfusion CSS styles
 
-To render SpeechToText control, need to import inputs and its dependent controls styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+To install the [tailwind3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme package, use the following command:
 
-{% tabs %}
-{% highlight css tabtitle="style.css" %}
+```bash
+npm install @syncfusion/ej2-tailwind3-theme --save
+```
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
+To render the SpeechToText control, add the below import in the `~/src/styles/styles.css` file which loads all the required dependency styles, as shown below:
 
-{% endhighlight %}
-{% endtabs %}
+```css
+@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/speech-to-text/index.css";
+```
 
 ## Adding SpeechToText to the Application
 
@@ -157,7 +156,7 @@ The following example shows a basic SpeechToText control.
 
 ## Adding button content
 
-The content of the SpeechToText button can be customized for its active and inactive states. Use the [content](../api/speech-to-text/buttonSettingsModel/#content) property to define the text for the start listening state and the [stopContent](../api/speech-to-text/buttonSettingsModel/#stopcontent) property for the stop listening state. These properties are configured within the [buttonSettings](../api/speech-to-text#buttonSettings) property.
+The content of the SpeechToText button can be customized for its active and inactive states. Use the [content](../api/speech-to-text/buttonSettingsModel#content) property to define the text for the start listening state and the [stopContent](../api/speech-to-text/buttonSettingsModel#stopcontent) property for the stop listening state. These properties are configured within the [buttonSettings](../api/speech-to-text#buttonSettings) property.
 
 The following example shows how to configure `buttonSettings` in the SpeechToText component.
 

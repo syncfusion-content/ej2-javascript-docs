@@ -13,11 +13,11 @@ domainurl: ##DomainURL##
 
 Orthogonal segments is used to create segments that are perpendicular to each other.
 
-Set the segment [`type`](../../../api/diagram/connector/#type) as orthogonal to create a default orthogonal segment and need to specify [`type`](../../../api/diagram/connector#type). The following code example illustrates how to create a default orthogonal segment.
+Set the segment [`type`](../../../api/diagram/connector#type) as orthogonal to create a default orthogonal segment and need to specify [`type`](../../../api/diagram/connector#type). The following code example illustrates how to create a default orthogonal segment.
 
 Multiple segments can be defined one after another. To create a connector with multiple segments, define and add the segments to [`connector.segments`](../../../api/diagram/connector#segments) collection. The following code example illustrates how to create a connector with multiple segments.
 
-The [`length`](../../../api/diagram/orthogonalSegment/#length) and [`direction`](../../../api/diagram/orthogonalSegment/#direction) properties allow to define the flow and length of segment. The following code example illustrates how to create customized orthogonal segments.
+The [`length`](../../../api/diagram/orthogonalSegment#length) and [`direction`](../../../api/diagram/orthogonalSegment#direction) properties allow to define the flow and length of segment. The following code example illustrates how to create customized orthogonal segments.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

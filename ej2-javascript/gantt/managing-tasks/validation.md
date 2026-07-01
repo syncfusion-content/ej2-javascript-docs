@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Validation Rule in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Validation in ##Platform_Name## Gantt Chart Control | Syncfusion
+description: Learn how to validate task data in the Syncfusion ##Platform_Name## Gantt Chart control using column, custom, dependency, and resource grid rules for accurate project management.
 platform: ej2-javascript
 control: Validating Tasks
 publishingplatform: ##Platform_Name##
@@ -9,12 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation in ##Platform_Name## Gantt control
+# Validation in ##Platform_Name## Gantt Chart Control
 
-## Column validation
+Validation in the ##Platform_Name## Gantt Chart control ensures accurate task data by enforcing rules during adding or editing, preventing invalid entries before saving. Using the [Form Validator](https://ej2.syncfusion.com/documentation/form-validator) control, apply validation to columns in inline or dialog editing, custom rules for specific fields, or dependency and resource grids in the add/edit dialog. Requires `Edit` and valid [taskFields](../../api/gantt#taskfields) mappings (e.g., id, name) to ensure data integrity for tasks updated on September 23, 2025, or later, maintaining valid date ranges or dependency formats.
 
-Column validation validates the editing and adding data and it display errors for invalid fields before saving data. This is effective in both inline and dialog editing.
-Gantt uses [Form Validator](https://ej2.syncfusion.com/documentation/form-validator) component for column validation. You can set [validation rules](https://ej2.syncfusion.com/documentation/form-validator/validation-rules) by defining the [columns.validationRules](../../api/gantt/column#validationrules). The value cannot be saved unless the validation rule get satisfied.
+## Validate columns
+
+Define validation rules for columns using [columns.validationRules](../../api/gantt/column#validationrules), such as `required` or `minLength`, to display error messages for invalid fields like missing task names in inline or dialog editing.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -26,7 +27,7 @@ Gantt uses [Form Validator](https://ej2.syncfusion.com/documentation/form-valida
 {% include code-snippet/gantt/getting-started-cs24/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs24" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -43,11 +44,9 @@ Gantt uses [Form Validator](https://ej2.syncfusion.com/documentation/form-valida
 {% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs24" %}
 {% endif %}
 
-## Custom validation
+## Apply custom validation
 
-You can define your own custom validation rules for the specific columns by using callback function to it's [validation rule](https://ej2.syncfusion.com/documentation/form-validator/validation-rules#defining-custom-rules).
-
-In the below demo, custom validation applied for `TaskName` column.
+Implement custom validation for specific columns, like `TaskName`, using callback functions in [columns.validationRules](../../api/gantt/column#validationrules) to enforce unique requirements, such as ensuring task names meet specific patterns.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -59,7 +58,7 @@ In the below demo, custom validation applied for `TaskName` column.
 {% include code-snippet/gantt/getting-started-cs25/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs25" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -76,10 +75,9 @@ In the below demo, custom validation applied for `TaskName` column.
 {% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs25" %}
 {% endif %}
 
-## Dependency and resource grid validation
+## Validate dependency and resource grids
 
-Validation rules can also be implemented for the dependency and resource grid in the add or edit dialog by employing the event [actionBegin](../api/gantt#actionbegin).
-Within the actionBegin event, validationRules can be configured for columns in the grid of the dependency and resource tabs using the requestType `beforeOpenEditDialog` or `beforeOpenAddDialog`.
+Set validation rules for dependency and resource grids in the add/edit dialog using the [actionBegin](../../api/gantt#actionbegin) event with `requestType` set to **beforeOpenEditDialog** or **beforeOpenAddDialog**, configuring `validationRules` for fields like predecessor types or resource assignments to ensure valid entries.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -91,7 +89,7 @@ Within the actionBegin event, validationRules can be configured for columns in t
 {% include code-snippet/gantt/getting-started-cs26/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs26" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -107,3 +105,9 @@ Within the actionBegin event, validationRules can be configured for columns in t
 
 {% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs26" %}
 {% endif %}
+
+## See also
+
+- [How to configure task editing?](../../gantt/managing-tasks/editing-tasks)
+- [How to manage task dependencies?](../../gantt/task-dependency)
+- [How to add new tasks?](../../gantt/managing-tasks/adding-new-tasks)

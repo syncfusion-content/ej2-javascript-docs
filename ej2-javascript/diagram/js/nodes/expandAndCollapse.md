@@ -21,7 +21,7 @@ The following properties of the Node are used to represent the state of the node
 
 N> Icon can be created only when the node has outEdges.
 
-To explore the properties of expand and collapse icon, refer to [`expandIcon`](../../api/diagram/node/#expandicon) and [`collapseIcon`](../../api/diagram/node/#collapseicon).
+To explore the properties of expand and collapse icon, refer to [`expandIcon`](../../api/diagram/node#expandicon) and [`collapseIcon`](../../api/diagram/node#collapseicon).
 
 
 ## Customizing expand and collapse icon

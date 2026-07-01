@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Constraints in ##Platform_Name## Diagram control
 
-Constraints are used to enable or disable certain behaviors of the diagram, nodes, and connectors. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled or disabled using the Bitwise operators (&, |, ~, <<, etc.).
+Constraints are used to enable or disable certain behaviors of the diagram, nodes, and connectors. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled or disabled using the Bitwise operators (`&`, `|`, `~`, `<<`, etc.).
 
 To know more about Bitwise operators, refer to [`Bitwise Operations`](#bitwise-operations).
 
 ## Diagram constraints
 
-[`Diagram constraints`](../api/diagram/diagramconstraints/) allows you to enable or disable the following behaviors:
+[`Diagram constraints`](../api/diagram/diagramconstraints) allows you to enable or disable the following behaviors:
 
 The following table displays the list of all diagram constraints.
 
@@ -656,11 +656,11 @@ diagram.appendTo('#element');
 
 ## Bitwise operations
 
-Bitwise operations are used to manipulate the flagged enumerations `enum`.In this section, Bitwise operations are shown by using the node constraints. The same is applicable when working connector constraints, or port constraints.
+Bitwise operations are used to manipulate the flagged enumerations `enum`. In this section, Bitwise operations are shown by using the node constraints. The same is applicable when working connector constraints, or port constraints.
 
 ### Add operation
 
-You can add or enable multiple values at a time by using Bitwise ‘|’ (OR) operator.
+You can add or enable multiple values at a time by using Bitwise `|` (OR) operator.
 
 The following code demonstrates how to add tooltip constraints to the default node constraints, thereby enabling tooltip functionality for the node:
 
@@ -672,7 +672,7 @@ In the previous example, you can perform basic interactions with the node while 
 
 ### Remove Operation
 
-You can remove or disable values by using Bitwise ‘&~’ (XOR) operator.
+You can remove or disable values by using Bitwise `&~` (XOR) operator.
 
 ```javascript
 node.constraints = ej.diagrams.NodeConstraints.Default & ~(ej.diagrams.NodeConstraints.Rotate);
@@ -682,7 +682,7 @@ In the previous example, rotation is disabled from the default node constraints.
 
 ### Check operation
 
-You can check any value by using Bitwise ‘&’ (AND) operator.
+You can check any value by using Bitwise `&` (AND) operator.
 
 ```javascript
 if ((node.constraints & (ej.diagrams.NodeConstraints.Rotate)) == (ej.diagrams.NodeConstraints.Rotate));

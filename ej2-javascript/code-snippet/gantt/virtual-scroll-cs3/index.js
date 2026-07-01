@@ -1,11 +1,17 @@
-ej.gantt.Gantt.Inject(ej.gantt.Selection);
-
 var ganttChart = new ej.gantt.Gantt({
     dataSource: virtualData,
-    treeColumnIndex: 1,
     height: '450px',
+    treeColumnIndex: 1,
     allowSelection: true,
     highlightWeekends: true,
+    enableVirtualization: true,
+    splitterSettings: {
+        columnIndex: 2
+    },
+    labelSettings: {
+        leftLabel: 'TaskName',
+        taskLabel: 'Progress'
+    },
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -13,22 +19,15 @@ var ganttChart = new ej.gantt.Gantt({
         endDate: 'EndDate',
         duration: 'Duration',
         progress: 'Progress',
-        parentID: 'parentID'
+        parentID: 'ParentID'
     },
-    enableVirtualization: true,
     columns: [
         { field: 'TaskID' },
-        { field: 'TaskName' },
+        { field: 'TaskName', headerText: 'Task Name' },
         { field: 'StartDate' },
         { field: 'Duration' },
         { field: 'Progress' }
-    ],
-    labelSettings: {
-        taskLabel: 'Progress'
-    },
-    gridLines: 'Both',
-    splitterSettings: {
-        columnIndex: 2
-    },
+    ]
 });
+
 ganttChart.appendTo('#Gantt');

@@ -109,3 +109,96 @@ To render a Step line series, use series `type` as **Step Line** and inject `Ste
 
 {% previewsample "page.domainurl/code-snippet/rangenavigator/axis-cs19" %}
 {% endif %}
+
+## Spline
+
+To render a Spline series, use series `type` as **Spline** and inject `SplineSeries` module using `RangeNavigator.Inject(SplineSeries)` method.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rangenavigator/axis-cs20/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rangenavigator/axis-cs20/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/rangenavigator/axis-cs20" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rangenavigator/axis-cs20/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rangenavigator/axis-cs20/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/rangenavigator/axis-cs20" %}
+{% endif %}
+
+## Spline Area
+
+To render a Spline Area series, use series `type` as **SplineArea** and inject `SplineAreaSeries` module using `RangeNavigator.Inject(SplineAreaSeries)` method.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rangenavigator/axis-cs21/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rangenavigator/axis-cs21/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/rangenavigator/axis-cs21" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rangenavigator/axis-cs21/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rangenavigator/axis-cs21/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/rangenavigator/axis-cs21" %}
+{% endif %}
+
+## Column
+
+To render a Column series, use series `type` as **Column** and inject `ColumnSeries` module using `RangeNavigator.Inject(ColumnSeries)` method.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rangenavigator/axis-cs22/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rangenavigator/axis-cs22/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/rangenavigator/axis-cs22" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rangenavigator/axis-cs22/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rangenavigator/axis-cs22/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/rangenavigator/axis-cs22" %}
+{% endif %}

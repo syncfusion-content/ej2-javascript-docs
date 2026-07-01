@@ -1,6 +1,3 @@
-
-
-
 import { Gantt, Selection } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
 
@@ -8,7 +5,7 @@ Gantt.Inject(Selection);
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
-    height: '450px',
+    height: '370px',
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -17,6 +14,17 @@ let gantt: Gantt = new Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    allowSelection: false
+    selectionSettings: {
+        mode: 'Row',
+        type: 'Single'
+    },
+    columns: [
+        { field: 'TaskID', width: 90, textAlign: 'Right' },
+        { field: 'TaskName', width: 250 },
+        { field: 'StartDate', width: 150, format: 'yMd' },
+        { field: 'Duration', width: 120, textAlign: 'Right' },
+        { field: 'Progress', width: 120, textAlign: 'Right' }
+    ]
 });
+
 gantt.appendTo('#Gantt');

@@ -17,7 +17,7 @@ To enable this feature, inject the `RowDD` module in Gantt. Once injected, enabl
 
 ## Drag and drop within the Gantt Chart
 
-The Gantt component allows you to rearrange rows using a drag icon. To enable this feature, set the [allowRowDragAndDrop](../api/gantt#allowrowdraganddrop) property to **true**.
+The Gantt Chart control allows you to rearrange rows using a drag icon. To enable this feature, set the [allowRowDragAndDrop](../api/gantt#allowrowdraganddrop) property to **true**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -74,7 +74,7 @@ If the border line appears at both the top and bottom of the target row (e.g., T
 
 ## Drag and drop to custom component 
 
-You can drag rows from the Gantt component into custom components for seamless data transfer. To enable this feature, set the [allowRowDragAndDrop](../api/gantt#allowrowdraganddrop) property to **true**, and configure the `targetID` property within the `rowDropSettings` object of the `treeGrid` in the Gantt instance, inside the [load](../api/gantt#load) event. The value of `targetID` must match the ID of the destination component. You can use the [rowDrop](../api/gantt#rowdrop) event to handle the drop and perform necessary actions.
+You can drag rows from the Gantt Chart component into custom components for seamless data transfer. To enable this feature, set the [allowRowDragAndDrop](../api/gantt#allowrowdraganddrop) property to **true**, and configure the `targetID` property within the `rowDropSettings` object of the `treeGrid` in the Gantt instance, inside the [load](../api/gantt#load) event. The value of `targetID` must match the ID of the destination component. You can use the [rowDrop](../api/gantt#rowdrop) event to handle the drop and perform necessary actions.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -105,7 +105,7 @@ You can drag rows from the Gantt component into custom components for seamless d
 
 ## Drag and drop multiple rows together
 
-You can drag and drop multiple rows simultaneously in the Gantt component. To enable this functionality, set the [selectionSettings.type](../api/gantt/selectionSettings#type) property to **Multiple** , and set the [allowRowDragAndDrop](../api/gantt#allowrowdraganddrop) property is set to **true**.
+You can drag and drop multiple rows simultaneously in the Gantt Chart control. To enable this functionality, set the [selectionSettings.type](../api/gantt/selectionSettings#type) property to **Multiple** , and set the [allowRowDragAndDrop](../api/gantt#allowrowdraganddrop) property is set to **true**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -136,7 +136,7 @@ You can drag and drop multiple rows simultaneously in the Gantt component. To en
 
 ## Taskbar drag and drop between rows
 
-You can rearrange rows in the Gantt component by dragging the taskbar element. This functionality is enabled by setting the [allowTaskbarDragAndDrop](../api/gantt#allowtaskbardraganddrop) property to **true**, allowing taskbars to be repositioned across rows for improved scheduling control.
+You can rearrange rows in the Gantt Chart control by dragging the taskbar element. This functionality is enabled by setting the [allowTaskbarDragAndDrop](../api/gantt#allowtaskbardraganddrop) property to **true**, allowing taskbars to be repositioned across rows for improved scheduling control.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -167,7 +167,7 @@ You can rearrange rows in the Gantt component by dragging the taskbar element. T
 
 ## Perform row drag and drop action programmatically
 
-To rearrange rows programmatically in the Gantt component, use the [reorderRows](../api/gantt#reorderrows) method. This method accepts the following parameters: 
+To rearrange rows programmatically in the Gantt Chart control, use the [reorderRows](../api/gantt#reorderrows) method. This method accepts the following parameters: 
 
 - **fromIndexes**: Indexes of the rows to be moved.  
 - **toIndex**: Target index for placement.  
@@ -204,7 +204,7 @@ In the example, a [click](..api/button#click) event on an external button moves 
 
 ## Customize the drag and drop action
 
-Customize the drag and drop behavior in the Gantt component using the [rowDragStartHelper](../api/gantt#rowdragstarthelper), [rowDragStart](../api/gantt#rowdragstart), [rowDrag](../api/gantt#rowdrag), and [rowDrop](../api/gantt#rowdrop) events. These events provide control over the drag lifecycle, allowing precise handling of row interactions.
+Customize the drag and drop behavior in the Gantt Chart control using the [rowDragStartHelper](../api/gantt#rowdragstarthelper), [rowDragStart](../api/gantt#rowdragstart), [rowDrag](../api/gantt#rowdrag), and [rowDrop](../api/gantt#rowdrop) events. These events provide control over the drag lifecycle, allowing precise handling of row interactions.
 
 In this example, drag and drop actions are customized using event hooks. The `rowDragStartHelper` event prevents dragging for the row where **TaskID** is 2, while the `rowDrop` event cancels the drop action for the row where **TaskID** is 4. Additionally, `rowDragStart` and `rowDrag` apply background styling based on the values in the **Progress** column.
 

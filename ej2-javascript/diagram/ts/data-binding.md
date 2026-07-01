@@ -49,13 +49,13 @@ To map the user defined JSON data with diagram, configure the fields of [`dataSo
 
 ## Remote data
 
-You can bind the diagram with remote data by using [`dataManager`].
+You can bind the diagram with remote data by using [`dataManager`](../api/diagram/datasourcemodel#datamanager). 
 
-It uses two different classes: `DataManager` for processing and `Query` for serving data. `DataManager` communicates with data source and `Query` generates data queries that are read by the [`dataManager`](../api/diagram/dataSourceModel).
+It uses two different classes: `DataManager` for processing and `Query` for serving data. `DataManager` communicates with data source and `Query` generates data queries that are read by the [`dataManager`](../api/diagram/datasourcemodel#datamanager).
 
-To learn more about data manager, refer to [`Data Manager`](../api/diagram/dataSourceModel).
+To learn more about data manager, refer to [`Data Manager`](https://ej2.syncfusion.com/documentation/data).
 
-To bind remote data to the diagram,configure the fields of [`dataSourceSettings`](../api/diagram/dataSourceModel). The following code illustrates how to bind remote data to the diagram.
+To bind remote data to the diagram, configure the fields of [`dataSourceSettings`](../api/diagram/dataSourceModel). The following code illustrates how to bind remote data to the diagram.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -90,9 +90,9 @@ This feature allows you to read the data source and perform add or edit or delet
 
 * The dataSourceSettings’s [`id`](../api/diagram/dataSourceModel#id) and connectionDataSource’s [`id`](../api/diagram/connectionDataSourceModel#id) properties are used to define the unique field of each JSON data.
 
-* The connectionDataSource’s [`sourceID`](../api/diagram/connectionDataSourceModel#sourceID) and [`targetID`](../api/diagram/connectionDataSourceModel#targetID) properties are used to set the sourceID and targetID for connection data source item.
+* The connectionDataSource’s [`sourceID`](../api/diagram/connectiondatasourcemodel#sourceid) and [`targetID`](../api/diagram/connectiondatasourcemodel#targetid) properties are used to set the sourceID and targetID for connection data source item.
 
-* The connectionDataSource’s [`sourcePointX`](../api/diagram/connectionDataSourceModel#sourcepointx), [`sourcePointY`](../api/diagram/connectionDataSourceModel#sourcePointy), [`targetPointX`](../api/diagram/connectionDataSourceModel#targetPointX), and [`targetPointY`](../api/diagram/connectionDataSourceModel#targetPointy) properties are used to define the sourcePoint and targetPoint values for connector from data source.
+* The connectionDataSource’s [`sourcePointX`](../api/diagram/connectiondatasourcemodel#sourcepointx), [`sourcePointY`](../api/diagram/connectiondatasourcemodel#sourcepointy), [`targetPointX`](../api/diagram/connectiondatasourcemodel#targetpointx), and [`targetPointY`](../api/diagram/connectiondatasourcemodel#targetpointy) properties are used to define the sourcePoint and targetPoint values for connector from data source.
 
 * The dataSourceSettings crudAction’s [`customFields`](../api/diagram/crudActionModel#customfields) property is used to maintain the additional information for nodes.
 

@@ -2,7 +2,11 @@
 layout: post
 title: Getting started with ##Platform_Name## Rich text editor | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more details.
+<<<<<<< HEAD
+canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/javascript-rich-text-editor"
+=======
 canonical_url: "https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor"
+>>>>>>> 6d423ae3a72932cc7a70f3b683cc6314d695c6cf
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##

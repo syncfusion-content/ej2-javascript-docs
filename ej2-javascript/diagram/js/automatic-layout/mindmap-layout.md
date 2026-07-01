@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Mind Map layout in ##Platform_Name## Diagram control
 
-A mind map is a diagram that displays the nodes as a spider diagram organizes information around a central concept. To create mind map, the [`type`](../../api/diagram/layout/#type) of layout should be set as `MindMap`.
+A mind map is a diagram that displays the nodes as a spider diagram organizes information around a central concept. To create mind map, the [`type`](../../api/diagram/layout#type) of layout should be set as `MindMap`.
 
 ## Mind Map Orientation
 
@@ -42,7 +42,7 @@ N> If you want to use mind map layout in diagram, you need to inject MindMap in 
 
 ## Mind Map branch
 
-You can also decide the branch for mind map using [`getBranch`](../../api/diagram/layoutModel/#getbranch) method. The following code demonstrates how to set all branches on the right side for mind map layout using `getBranch` method.
+You can also decide the branch for mind map using [`getBranch`](../../api/diagram/layoutModel#getbranch) method. The following code demonstrates how to set all branches on the right side for mind map layout using `getBranch` method.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

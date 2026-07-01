@@ -1,25 +1,32 @@
-import { Gantt } from '@syncfusion/ej2-gantt';
+import { Gantt, Selection, Filter, Toolbar, IQueryTaskbarInfoEventArgs } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
+
+Gantt.Inject(Selection, Filter, Toolbar);
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
-    height: '450px',
+    height: '430px',
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
+        endDate: 'EndDate',
         duration: 'Duration',
         progress: 'Progress',
+        dependency: 'Predecessor',
         parentID: 'ParentID'
     },
-    queryTaskbarInfo: function (args: any) {
-        if (args.data.Progress == 50) {
-            args.progressBarBgColor = "red";
-        } else if (args.data.Progress == 70) {
-            args.progressBarBgColor = "yellow";
-        } else if (args.data.Progress == 80) {
-            args.progressBarBgColor = "lightgreen";
+    queryTaskbarInfo: (args: IQueryTaskbarInfoEventArgs) => {
+        let record: any = args.data;
+
+        if (record.Progress === 50) {
+            args.progressBarBgColor = 'red';
+        } else if (record.Progress === 70) {
+            args.progressBarBgColor = 'yellow';
+        } else if (record.Progress === 80) {
+            args.progressBarBgColor = 'lightgreen';
         }
     }
 });
+
 gantt.appendTo('#Gantt');

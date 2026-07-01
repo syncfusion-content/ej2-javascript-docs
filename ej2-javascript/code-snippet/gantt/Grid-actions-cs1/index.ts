@@ -1,34 +1,35 @@
-import { Gantt, Filter, Sort, Resize, ColumnMenu, Reorder, Selection, Edit } from '@syncfusion/ej2-gantt';
+import { Gantt, Resize, Reorder, Sort, Filter } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
 
-Gantt.Inject(Edit, Selection, Filter, Sort, Resize, Reorder);
+Gantt.Inject(Resize, Reorder, Sort, Filter);
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
+    height: '430px',
+    treeColumnIndex: 1,
+    splitterSettings: {
+        position: '75%'
+    },
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
+        endDate: 'EndDate',
         duration: 'Duration',
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    allowFiltering: true,
     allowSorting: true,
+    allowFiltering: true,
     allowReordering: true,
-    splitterSettings: {
-        position: '75%'
-    },
-    editSettings: {
-        allowEditing: true
-    },
-    height: '450px',
+    allowResizing: true,
     columns: [
-        { field: 'TaskID', headerText: 'Task ID' },
-        { field: 'Progress', headerText: 'Progress', allowReordering: false },
-        { field: 'TaskName', headerText: 'Task Name', allowSorting: false },
-        { field: 'StartDate', headerText: 'Start Date', allowEditing: false },
-        { field: 'Duration', headerText: 'Duration', allowFiltering: false }
+        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: 120, allowSorting: false },
+        { field: 'TaskName', headerText: 'Task Name', textAlign: 'Left', width: 270, allowFiltering: false },
+        { field: 'StartDate', headerText: 'Start Date', textAlign: 'Right', width: 150, allowResizing: false },
+        { field: 'Duration', headerText: 'Duration', textAlign: 'Right', width: 150, allowReordering: false },
+        { field: 'Progress', headerText: 'Progress', textAlign: 'Right', width: 150 }
     ]
 });
+
 gantt.appendTo('#Gantt');

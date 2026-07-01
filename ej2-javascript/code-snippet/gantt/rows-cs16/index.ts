@@ -1,5 +1,5 @@
-import { Gantt, Toolbar, Edit} from '@syncfusion/ej2-gantt';
-import { GanttData,resourceCollection } from './datasource.ts';
+import { Gantt, Toolbar, Edit } from '@syncfusion/ej2-gantt';
+import { GanttData, resourceCollection } from './datasource.ts';
 
 Gantt.Inject(Toolbar, Edit);
 
@@ -7,18 +7,18 @@ let gantt: Gantt = new Gantt({
     dataSource: GanttData,
     resources: resourceCollection,
     addDialogFields: [
-        { type: 'General', headerText: 'General add'},
-        { type: 'Dependency'},
-        { type: 'Resources'} , 
-        {type: 'Notes', additionalParams: {inlineMode: { enable: true,onSelection: true }}},
-        {type:"Segments"}
+        { type: 'General', headerText: 'General add' },
+        { type: 'Dependency' },
+        { type: 'Resources' },
+        { type: 'Notes', additionalParams: { inlineMode: { enable: true, onSelection: true } } },
+        { type: "Segments" }
     ],
     editDialogFields: [
         { type: 'General', headerText: 'General edit' },
-        {type: 'Dependency'},
-        { type: 'Resources'},
-        {type: 'Notes', additionalParams: {inlineMode: { enable: true,onSelection: true }}},
-        {type: "Segments"}
+        { type: 'Dependency' },
+        { type: 'Resources' },
+        { type: 'Notes', additionalParams: { inlineMode: { enable: true, onSelection: true } } },
+        { type: "Segments" }
     ],
     height: '450px',
     taskFields: {
@@ -33,9 +33,9 @@ let gantt: Gantt = new Gantt({
         work: 'work',
         parentID: 'ParentID',
         segments: 'Segments',
-        notes:"note",
+        notes: "note",
     },
-        resourceFields: {
+    resourceFields: {
         id: 'resourceId',
         name: 'resourceName',
         unit: 'resourceUnit'

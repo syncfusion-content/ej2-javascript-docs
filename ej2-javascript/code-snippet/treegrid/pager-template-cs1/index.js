@@ -16,6 +16,12 @@ var treeGridObj = new ej.treegrid.TreeGrid({
         },
         { field: 'duration', headerText: 'Duration', width: 80, textAlign: 'Right' }
     ],
+    expanding: function(){
+        flag = true;
+    },
+    collapsing: function(){
+        flag = true;
+    },
     dataBound: function(){
         if (flag) {
             flag = false;

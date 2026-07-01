@@ -1,5 +1,5 @@
-import { Gantt, Toolbar, Edit} from '@syncfusion/ej2-gantt';
-import { GanttData,resourceCollection } from './datasource.ts';
+import { Gantt, Toolbar, Edit } from '@syncfusion/ej2-gantt';
+import { GanttData, resourceCollection } from './datasource.ts';
 
 Gantt.Inject(Toolbar, Edit);
 
@@ -7,16 +7,16 @@ let gantt: Gantt = new Gantt({
     dataSource: GanttData,
     resources: resourceCollection,
     addDialogFields: [
-        { type: 'General', headerText: 'General add'},
-        { type: 'Dependency', additionalParams: {allowPaging: true, allowSorting: true, toolbar: ["Search", "Print",]}},
-        { type: 'Resources', additionalParams: { allowSorting: true, allowPaging: true, toolbar: ["Search", "Print"], columns: [{ field: "newData" }]}},
-        {type:"Segments", additionalParams:{columns:[{field:"segmenttask",width:"170px" ,headerText:"Segment Task"}],}}
+        { type: 'General', headerText: 'General add' },
+        { type: 'Dependency', additionalParams: { allowPaging: true, allowSorting: true, toolbar: ["Search", "Print",] } },
+        { type: 'Resources', additionalParams: { allowSorting: true, allowPaging: true, toolbar: ["Search", "Print"], columns: [{ field: "newData" }] } },
+        { type: "Segments", additionalParams: { columns: [{ field: "segmenttask", width: "170px", headerText: "Segment Task" }], } }
     ],
     editDialogFields: [
         { type: 'General', headerText: 'General edit', fields: ["TaskID", "TaskName", "newinput"] },
-        {type: 'Dependency', additionalParams: {allowPaging: true, allowSorting: true, toolbar: ["Search", "Print",]}},
-        { type: 'Resources', additionalParams: { allowSorting: true, allowPaging: true, toolbar: ["Search", "Print"], columns: [{ field: "newData" }]}},
-        {type: "Segments", additionalParams: {columns: [{ field: "segmenttask", width: "170px", headerText: "Segment Task" }],}}
+        { type: 'Dependency', additionalParams: { allowPaging: true, allowSorting: true, toolbar: ["Search", "Print",] } },
+        { type: 'Resources', additionalParams: { allowSorting: true, allowPaging: true, toolbar: ["Search", "Print"], columns: [{ field: "newData" }] } },
+        { type: "Segments", additionalParams: { columns: [{ field: "segmenttask", width: "170px", headerText: "Segment Task" }], } }
     ],
     height: '450px',
     taskFields: {
@@ -31,7 +31,7 @@ let gantt: Gantt = new Gantt({
         work: 'work',
         parentID: 'ParentID',
         segments: 'Segments',
-        notes:"note",
+        notes: "note",
     },
     resourceFields: {
         id: 'resourceId',

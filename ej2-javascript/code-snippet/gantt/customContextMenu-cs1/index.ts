@@ -1,41 +1,38 @@
+import { Gantt, Selection, ContextMenu, Edit, Sort, Resize, ContextMenuClickEventArgs, ContextMenuOpenEventArgs } from '@syncfusion/ej2-gantt';
+import { data } from './datasource.ts';
 
-
-
-import { Gantt, Selection, Toolbar, Edit, Resize, Sort, ContextMenu, ContextMenuClickEventArgs, ContextMenuOpenEventArgs, ContextMenuItem} from '@syncfusion/ej2-gantt';
-import { ContextMenuItemModel } from '@syncfusion/ej2-grids';
-import { GanttData } from './datasource.ts';
-
-Gantt.Inject(Selection, Toolbar,  Edit, Resize, Sort, ContextMenu, );
-
-let contextMenuItems: (string | ContextMenuItemModel)[] = ['AutoFitAll', 'AutoFit', 'TaskInformation', 'DeleteTask', 'Save', 'Cancel',
-        'SortAscending', 'SortDescending', 'Add', 'DeleteDependency', 'Convert',
-        { text: 'Collapse the Row', target: '.e-content', id: 'collapserow' } as ContextMenuItemModel,
-        { text: 'Expand the Row', target: '.e-content', id: 'expandrow' } as ContextMenuItemModel,
-        { text: 'Hide Column', target: '.e-gridheader', id: 'hidecols' } as ContextMenuItemModel,
-    ];
+Gantt.Inject(Selection, ContextMenu, Edit, Sort, Resize);
 
 let gantt: Gantt = new Gantt({
-    dataSource: GanttData,
+    height: '430px',
+    dataSource: data,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        dependency:'Predecessor',
+        dependency: 'Predecessor',
         parentID: 'ParentID'
     },
+    enableContextMenu: true,
+    contextMenuItems: [
+        'AutoFitAll', 'AutoFit', 'TaskInformation', 'DeleteTask', 'Save', 'Cancel',
+        'SortAscending', 'SortDescending', 'Add', 'DeleteDependency', 'Convert',
+        { text: 'Collapse the Row', target: '.e-content', id: 'collapserow' },
+        { text: 'Expand the Row', target: '.e-content', id: 'expandrow' },
+        { text: 'Hide Column', target: '.e-gridheader', id: 'hidecols' }
+    ],
+    allowSorting: true,
+    allowResizing: true,
     editSettings: {
         allowAdding: true,
         allowEditing: true,
         allowDeleting: true
     },
-    enableContextMenu: true,
-    allowSorting: true,
-    allowResizing: true,
-    contextMenuItems: contextMenuItems as ContextMenuItem[],
-    contextMenuClick: (args?: ContextMenuClickEventArgs) => {
-        let record = args.rowData;
+    contextMenuClick: (args: ContextMenuClickEventArgs) => {
+        let record: any = args.rowData;
+
         if (args.item.id === 'collapserow') {
             gantt.collapseByID(Number(record.ganttProperties.taskId));
         }
@@ -43,24 +40,25 @@ let gantt: Gantt = new Gantt({
             gantt.expandByID(Number(record.ganttProperties.taskId));
         }
         if (args.item.id === 'hidecols') {
-            gantt.hideColumn(args.column.headerText);
+            gantt.hideColumn(args.column!.headerText);
         }
     },
-    contextMenuOpen: (args?: ContextMenuOpenEventArgs) => {
-        let record = args.rowData;
+    contextMenuOpen: (args: ContextMenuOpenEventArgs) => {
+        let record: any = args.rowData;
+
         if (args.type !== 'Header') {
             if (!record.hasChildRecords) {
-                args.hideItems.push('Collapse the Row');
-                args.hideItems.push('Expand the Row');
+                args.hideItems!.push('Collapse the Row');
+                args.hideItems!.push('Expand the Row');
             } else {
-                if(record.expanded){
-                    args.hideItems.push("Expand the Row");
+                if (record.expanded) {
+                    args.hideItems!.push('Expand the Row');
                 } else {
-                    args.hideItems.push("Collapse the Row");
+                    args.hideItems!.push('Collapse the Row');
                 }
             }
         }
     }
 });
 
-gantt.appendTo('#CustomContextMenu');
+gantt.appendTo('#Gantt');

@@ -15,10 +15,10 @@ Events in diagrams are triggered during interactions with diagram elements, allo
 
 ## Load event
 
-The [`load`](../api/diagram/iLoadEventArgs/) event triggers before the diagram load.
+The [`load`](../api/diagram/iLoadEventArgs) event triggers before the diagram load.
 
 ## Loaded Event
-The [`loaded`](../api/diagram/#loaded) event triggers when all diagram elements are loaded using [`loadDiagram`](../api/diagram/#loaddiagram) method. You can use this event to customize diagram elements during the loading process.
+The [`loaded`](../api/diagram#loaded) event triggers when all diagram elements are loaded using [`loadDiagram`](../api/diagram#loaddiagram) method. You can use this event to customize diagram elements during the loading process.
 
 ```javascript
 var diagram = new ej.diagrams.Diagram({
@@ -47,11 +47,11 @@ Users can perform customizations or modifications to the diagram elements once t
 
 ## Data loaded event
 
-The [`dataLoaded`](../api/diagram/iDataLoadedEventArgs/) event is triggered when the data source is loaded in diagram.
+The [`dataLoaded`](../api/diagram/iDataLoadedEventArgs) event is triggered when the data source is loaded in diagram.
 
 ## Created event
 
-The [`created`](../api/diagram/#created) event is triggered when the diagram component is rendered. You can perform any action in the created event such as selecting any object in the diagram or customizing the nodes/connector.
+The [`created`](../api/diagram#created) event is triggered when the diagram component is rendered. You can perform any action in the created event such as selecting any object in the diagram or customizing the nodes/connector.
 
 The following example shows the order of these event triggers and how to handle these events in a diagram.
 
@@ -85,7 +85,7 @@ The following example shows the order of these event triggers and how to handle 
 
 ## Mouse wheel event
 
-The [`mouseWheel`](../api/diagram/iMouseWheelEventArgs/) event triggers when the mouse is scrolled over the diagram area. You can use this event to prevent zooming and scrolling with the mouse wheel. The following example demonstrates how to handle this event and customize it to prevent zooming and scrolling using the mouse wheel.
+The [`mouseWheel`](../api/diagram/iMouseWheelEventArgs) event triggers when the mouse is scrolled over the diagram area. You can use this event to prevent zooming and scrolling with the mouse wheel. The following example demonstrates how to handle this event and customize it to prevent zooming and scrolling using the mouse wheel.
 
 
 {% if page.publishingplatform == "typescript" %}
@@ -117,7 +117,7 @@ The [`mouseWheel`](../api/diagram/iMouseWheelEventArgs/) event triggers when the
 
 ## Other events
 
-There are several other events that will be triggered while interacting with diagram elements. To learn more about these events, refer to the sections on [`node-events`](./nodes-events) , [`connector-events`](./connector-events) , [`port-events`](./ports-interaction/#events) , [`annotation-events`](./label-events) , [`scroll-events`](./scroll-settings/#scroll-change-event) , [`history-events`](./undo-redo/#history-change-event) , [`layout-events`](./layout-event), [`user-handle-events`](./user-handle/#user-handle-events) , [`fixed-user-handle-events`](./user-handle/#fixed-user-handle-events) , [`Symbol-palette-events`](./palette-events).
+There are several other events that will be triggered while interacting with diagram elements. To learn more about these events, refer to the sections on [`node-events`](./nodes/nodes-events) , [`connector-events`](./connectors/connector-events) , [`port-events`](./ports/ports-interaction#events) , [`annotation-events`](./labels/label-events) , [`scroll-events`](./scroll-settings#scroll-change-event) , [`history-events`](./undo-redo#history-change-event) , [`layout-events`](./automatic-layout/layout-event), [`user-handle-events`](./user-handle#user-handle-events) , [`fixed-user-handle-events`](./user-handle#fixed-user-handle-events) , [`Symbol-palette-events`](./symbol-palette/palette-events).
 
 
 

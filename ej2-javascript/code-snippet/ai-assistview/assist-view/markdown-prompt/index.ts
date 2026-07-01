@@ -28,7 +28,7 @@ let aiAssistView: AIAssistView = new AIAssistView({
 });
 
 // Handle prompt request with streaming response
-function onPromptRequest(args) {
+function onPromptRequest(args: PromptRequestEventArgs) {
     var markdownResponse = markdownData.find(function (data) {
         return data.prompt === args.prompt;
     });

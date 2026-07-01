@@ -22,27 +22,54 @@ The icons can be referenced in a JavaScript application using the following appr
 
 ### The npm package
 
-All Syncfusion<sup style="font-size:70%">&reg;</sup> theme icons are shipped in the [ej2-icons](https://www.npmjs.com/package/@syncfusion/ej2-icons) package, which is published on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. This package contains both CSS and SCSS theme files for all themes.
+All Syncfusion<sup style="font-size:70%">&reg;</sup> theme icons are distributed in the [@syncfusion/ej2-icons](https://www.npmjs.com/package/@syncfusion/ej2-icons) package and as well as through all theme packages such as [@syncfusion/ej2-material-theme](https://www.npmjs.com/package/@syncfusion/ej2-material-theme) available on npm. These packages include CSS/SCSS files for all supported themes.
 
-Icons can be used from the npm package `ej2-icons`. To use the icons, install the npm package using the following command:
+Install the package:
 
-```bash
- npm install @syncfusion/ej2-icons
-```
+{% tabs %}
+{% highlight bash tabtitle="Theme Package" %}
+
+npm install @syncfusion/ej2-material-theme --save
+
+{% endhighlight %}
+{% highlight bash tabtitle="Icon Package" %}
+
+npm install @syncfusion/ej2-icons --save
+
+{% endhighlight %}
+{% endtabs %}
 
 Refer to the following syntax to use icons in a JavaScript application:
 
 `[src/styles/styles.css]`
 
-```
+{% tabs %}
+{% highlight css tabtitle="Theme Package" %}
+
+@import "../node_modules/@syncfusion/ej2-<theme-name>-theme/styles/icons/<theme_name>.css";
+
+{% endhighlight %}
+{% highlight css tabtitle="Icon Package" %}
+
 @import "../node_modules/@syncfusion/ej2-icons/styles/<theme_name>.css";
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 **Example:**
 
-```
+{% tabs %}
+{% highlight css tabtitle="Theme Package" %}
+
+@import "../node_modules/@syncfusion/ej2-material-theme/styles/icons/material.css";
+
+{% endhighlight %}
+{% highlight css tabtitle="Component Package" %}
+
 @import "../node_modules/@syncfusion/ej2-icons/styles/material.css";
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ### CDN reference
 

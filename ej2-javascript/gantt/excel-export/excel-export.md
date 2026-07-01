@@ -264,5 +264,5 @@ To export Gantt data as a Blob object for advanced processing or custom download
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs11" %}
+{% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs12" %}
 {% endif %}

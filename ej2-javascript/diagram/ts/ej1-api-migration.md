@@ -26,16 +26,19 @@ This article describes the API migration process of Diagram component from Essen
 <tr>
 <td><b>Defines the background color of diagram elements</b></td>
 
-<td><b>Property</b>:<i>`backgroundColor`</i>
+<td><b>Property</b>: <i>backgroundColor</i>
+<br>
+<br>
 <code>
-
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     backgroundColor: "red"
 });
 </code>
 </td>
 
-<td><b>Property</b>:<i>`backgroundColor`</i>
+<td><b>Property</b>: <i>backgroundColor</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     backgroundColor: 'red'
@@ -47,7 +50,9 @@ diagram.appendTo('#diagram');
 
 <tr>
 <td><b>Defines how to align the background image over the diagram area</b></td>
-<td><b>Property</b>:<i>`backgroundImage.alignment`</i>
+<td><b>Property</b>: <i>backgroundImage.alignment</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     backgroundImage:{
@@ -57,7 +62,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 
-<td><b>Property</b>:<i>`background.align`</i>
+<td><b>Property</b>: <i>background.align</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
         pageSettings: {
@@ -74,7 +81,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines how the background image should be scaled/stretched</b></td>
 
-<td><b>Property</b>:<i>`backgroundImage.scale`</i>
+<td><b>Property</b>: <i>backgroundImage.scale</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     backgroundImage:{
@@ -84,7 +93,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 
-<td><b>Property</b>:<i>`background.scale`</i>
+<td><b>Property</b>: <i>background.scale</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     pageSettings: {
@@ -101,7 +112,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the source path of the background image</b></td>
 
-<td><b>Property</b>:<i>`backgroundImage.source`</i>
+<td><b>Property</b>: <i>backgroundImage.source</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     backgroundImage:{
@@ -111,7 +124,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 
-<td><b>Property</b>:<i>`background.source`</i>
+<td><b>Property</b>: <i>background.source</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     pageSettings: {
@@ -139,7 +154,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the direction of line bridges</b></td>
 
-<td><b>Property</b>:<i>`bridgeDirection`</i>
+<td><b>Property</b>: <i>bridgeDirection</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     bridgeDirection: ej.datavisualization.Diagram.BridgeDirection.Bottom
@@ -147,7 +164,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 
-<td><b>Property</b>:<i>`bridgeDirection`</i>
+<td><b>Property</b>: <i>bridgeDirection</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     bridgeDirection: 'Top'
@@ -171,9 +190,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>commands</b></td>
 <td>
-<b>Property</b>:<i>`commandManager.commands`</i>
-</br>
-</br>
+<b>Property</b>: <i>commandManager.commands</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     commandManager: {
@@ -199,9 +218,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`commandManager.commands`</i>
-</br>
-</br>
+<b>Property</b>: <i>commandManager.commands</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     commandManager: {
@@ -235,9 +254,9 @@ diagram.appendTo('#diagram');
 <td><b>The command is executable at the moment or not.
 </b></td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.canExecute`</i>
-</br>
-</br>
+<b>Property</b>: <i>commandManager.commands.canExecute</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     commandManager: {
@@ -263,9 +282,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.canExecute`</i>
-</br>
-</br>
+<b>Property</b>: <i>commandManager.commands.canExecute</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     commandManager: {
@@ -299,9 +318,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines what to be executed when the key combination is recognized
 </b></td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.execute`</i>
-</br>
-</br>
+<b>Property</b>: <i>commandManager.commands.execute</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     commandManager: {
@@ -327,9 +346,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.execute`</i>
-</br>
-</br>
+<b>Property</b>: <i>commandManager.commands.execute</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     commandManager: {
@@ -362,9 +381,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines a combination of keys and key modifiers, on recognition of which the command will be executed</b></td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.gesture`</i>
-</br>
-</br>
+<b>Property</b>: <i>commandManager.commands.gesture</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     commandManager: {
@@ -390,9 +409,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.gesture`</i>
-</br>
-</br>
+<b>Property</b>: <i>commandManager.commands.gesture</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     commandManager: {
@@ -426,9 +445,9 @@ diagram.appendTo('#diagram');
 <td><b>Sets the key value, on recognition of which the command will be executed
 </b></td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.gesture.key`</i>
-</br>
-</br>
+<b>Property</b>: <i>commandManager.commands.gesture.key</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     commandManager: {
@@ -454,9 +473,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.gesture.key`</i>
-</br>
-</br>
+<b>Property</b>: <i>commandManager.commands.gesture.key</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     commandManager: {
@@ -490,9 +509,9 @@ diagram.appendTo('#diagram');
 <td><b>Sets a combination of key modifiers, on recognition of which the command will be executed.
 </b></td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.gesture.keyModifiers`</i>
-</br>
-</br>
+<b>Property</b>: <i>commandManager.commands.gesture.keyModifiers</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     commandManager: {
@@ -518,9 +537,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.gesture.keyModifiers`</i>
-</br>
-</br>
+<b>Property</b>: <i>commandManager.commands.gesture.keyModifiers</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     commandManager: {
@@ -554,9 +573,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines any additional parameters that are required at runtime
 </b></td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.parameter`</i>
-</br>
-</br>
+<b>Property</b>: <i>commandManager.commands.parameter</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     commandManager: {
@@ -583,9 +602,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.parameter`</i>
-</br>
-</br>
+<b>Property</b>: <i>commandManager.commands.parameter</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     commandManager: {
@@ -629,9 +648,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>addInfo</b></td>
 <td>
-<b>Property</b>:<i>`connectors.addInfo`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.addInfo</i>
+<br>
+<br>
 <code>
 let addInfo = {
     Description: "Bidirectional Flow"
@@ -654,9 +673,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.addInfo`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.addInfo</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -680,9 +699,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the bridgeSpace of connector</b></td>
 <td>
-<b>Property</b>:<i>`connectors.bridgeSpace`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.bridgeSpace</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -702,9 +721,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.bridgeSpace`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.bridgeSpace</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -729,9 +748,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Enables or disables the behaviors of connectors</b></td>
 <td>
-<b>Property</b>:<i>`connectors.constraints`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.constraints</i>
+<br>
+<br>
 <code>
 let ConnectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
 let connector = {
@@ -752,9 +771,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.constraints`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.constraints</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -779,9 +798,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the radius of the rounded corner</b></td>
 <td>
-<b>Property</b>:<i>`connectors.cornerRadius`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.cornerRadius</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -801,9 +820,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.cornerRadius`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.cornerRadius</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -829,9 +848,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>cssClass</b></td>
 <td>
-<b>Property</b>:<i>`connectors.cssClass`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.cssClass</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -857,9 +876,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Alignment</b></td>
 <td>
-<b>Property</b>:<i>`connectors.horizontalAlign`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.horizontalAlign</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -885,9 +904,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>A collection of JSON objects where each object represents a label</b></td>
 <td>
-<b>Property</b>:<i>`connectors.labels`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.labels</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -907,9 +926,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.annotations`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.annotations</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -934,9 +953,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>stroke color of the connector</b></td>
 <td>
-<b>Property</b>:<i>`connectors.lineColor`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.lineColor</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -957,9 +976,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </td>
 
 <td>
-<b>Property</b>:<i>`connectors.style.strokeColor`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.style.strokeColor</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -984,9 +1003,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the pattern of dashes and gaps used to stroke the path of the connector</b></td>
 <td>
-<b>Property</b>:<i>`connectors.lineDashArray`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.lineDashArray</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1006,9 +1025,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.style.strokeDashArray`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.style.strokeDashArray</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1033,9 +1052,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the width of the line</b></td>
 <td>
-<b>Property</b>:<i>`connectors.lineWidth`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.lineWidth</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1055,9 +1074,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.style.strokeWidth`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.style.strokeWidth</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1083,9 +1102,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines the padding value to ease the interaction with connectors
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.lineHitPadding`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.lineHitPadding</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1105,9 +1124,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.hitPadding`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.hitPadding</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1133,9 +1152,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines the minimum space to be left between the bottom of parent bounds and the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.marginBottom`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.marginBottom</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1155,9 +1174,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.margin.bottom`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.margin.bottom</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1183,9 +1202,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines the minimum space to be left between the top of parent bounds and the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.marginTop`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.marginTop</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1205,9 +1224,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.margin.top`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.margin.top</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1233,9 +1252,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines the minimum space to be left between the left of parent bounds and the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.marginLeft`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.marginLeft</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1255,9 +1274,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.margin.left`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.margin.left</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1283,9 +1302,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines the minimum space to be left between the right of parent bounds and the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.marginRight`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.marginRight</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1305,9 +1324,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.margin.right`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.margin.right</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1332,9 +1351,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets a unique name for the connector</b></td>
 <td>
-<b>Property</b>:<i>`connectors.name`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.name</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1352,9 +1371,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.id`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.id</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1378,9 +1397,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the transparency of the connector</b></td>
 <td>
-<b>Property</b>:<i>`connectors.opacity`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.opacity</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1399,9 +1418,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.style.opacity`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.style.opacity</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1427,9 +1446,9 @@ diagram.appendTo('#diagram');
 <td><b>Sets the parent name of the connector.
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.parent`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.parent</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1458,9 +1477,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <td><b>An array of JSON objects where each object represents a segment
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1479,9 +1498,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1509,9 +1528,9 @@ diagram.appendTo('#diagram');
 <td><b>Sets the direction of orthogonal segment
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments.direction`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments.direction</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1530,9 +1549,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments.direction`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments.direction</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1560,9 +1579,9 @@ diagram.appendTo('#diagram');
 <td><b>Describes the length of orthogonal segment
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments.length`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments.length</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1581,9 +1600,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments.length`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments.length</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1610,9 +1629,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Describes the end point of bezier/straight segment</b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments.point`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments.point</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1631,9 +1650,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments.point`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments.point</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1659,9 +1678,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the first control point of the bezier segment</b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments.point1`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments.point1</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1680,9 +1699,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments.point1`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments.point1</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1711,9 +1730,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the second control point of bezier segment</b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments.point2`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments.point2</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1732,9 +1751,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments.point2`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments.point2</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1765,9 +1784,9 @@ diagram.appendTo('#diagram');
 <td><b>Sets the type of the segment
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments.type</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1786,9 +1805,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments.type</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1818,9 +1837,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Describes the length and angle between the first control point and the start point of bezier segment</b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments.vector1`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments.vector1</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1841,9 +1860,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments.vector1`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments.vector1</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1874,9 +1893,9 @@ diagram.appendTo('#diagram');
 <td><b>Describes the length and angle between the second control point and end point of bezier segment
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments.vector2`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments.vector2</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1899,9 +1918,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments.vector2`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.segments.vector2</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1932,9 +1951,9 @@ diagram.appendTo('#diagram');
 <td><b>Sets the type of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.shape.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.shape.type</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -1954,9 +1973,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.shape.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.shape.type</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -1988,9 +2007,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines the source decorator of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2009,9 +2028,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceDecorator`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -2038,9 +2057,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the border color of the source decorator</b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator.borderColor`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator.borderColor</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2059,9 +2078,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceDecorator.style.strokeColor`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator.style.strokeColor</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -2088,9 +2107,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the border width of the decorator</b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator.borderWidth`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator.borderWidth</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2109,9 +2128,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceDecorator.style.strokeWidth: 5`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator.style.strokeWidth: 5</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -2138,9 +2157,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines to customize sourceDecorator appearance using user-defined CSS
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator.cssClass`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator.cssClass</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2166,9 +2185,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <td><b>Sets the fill color of the source decorator
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator.fillColor`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator.fillColor</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2187,9 +2206,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceDecorator.style.fill`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator.style.fill</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -2215,9 +2234,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the height of the source decorator</b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator.height`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator.height</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2236,9 +2255,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceDecorator.height`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator.height</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -2266,9 +2285,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines the custom shape of the source decorator
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator.pathData`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator.pathData</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2287,9 +2306,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceDecorator.pathData`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator.pathData</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -2318,9 +2337,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines the shape of the source decorator.
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator.shape`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator.shape</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2339,9 +2358,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceDecorator.shape`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator.shape</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -2368,9 +2387,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines the width of the source decorator
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator.width`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator.width</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2389,9 +2408,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceDecorator.width`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceDecorator.width</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -2419,9 +2438,9 @@ diagram.appendTo('#diagram');
 <td><b>Sets the source node of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceNode`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceNode</i>
+<br>
+<br>
 <code>
 let node1 = {name:"source", offsetX:100, offsetY:100, width: 50, height: 50 };
 let node2 = {name:"target", offsetX:300, offsetY:300, width: 50, height: 50 };
@@ -2434,9 +2453,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceID`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourceID</i>
+<br>
+<br>
 <code>
 let nodes: NodeModel[] = [
     {
@@ -2460,9 +2479,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the space to be left between the source node and the source point of a connector</b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourcePadding`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourcePadding</i>
+<br>
+<br>
 <code>
 let node1 = {name:"source", offsetX:100, offsetY:100, width: 50, height: 50 };
 let node2 = {name:"target", offsetX:300, offsetY:300, width: 50, height: 50 };
@@ -2476,9 +2495,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.hitPadding`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.hitPadding</i>
+<br>
+<br>
 <code>
 let nodes: NodeModel[] = [
     {
@@ -2504,9 +2523,9 @@ diagram.appendTo('#diagram');
 <td><b>Describes the start point of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourcePoint`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourcePoint</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2518,9 +2537,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourcePoint`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourcePoint</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -2539,9 +2558,9 @@ diagram.appendTo('#diagram');
 <td><b>Sets the source port of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourcePort`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourcePort</i>
+<br>
+<br>
 <code>
 let node1 = {name:"source", offsetX:100, offsetY:100, width: 50, height: 50,
              ports:[{ name:"port", offset: { x:1, y:0.5 } }] };
@@ -2555,9 +2574,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourcePortID`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.sourcePortID</i>
+<br>
+<br>
 <code>
 
 let nodeport1: PointPortModel = { id: 'port', shape: 'Square', offset: { x: 1, y: 0.5 } };
@@ -2588,9 +2607,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines the target decorator of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2609,9 +2628,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetDecorator`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -2638,9 +2657,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the border color of the target decorator</b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator.borderColor`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator.borderColor</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2659,9 +2678,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetDecorator.style.strokeColor`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator.style.strokeColor</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -2688,9 +2707,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the border width of the decorator</b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator.borderWidth`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator.borderWidth</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2709,9 +2728,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetDecorator.style.strokeWidth: 5`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator.style.strokeWidth: 5</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -2738,9 +2757,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines to customize target Decorator appearance using user-defined CSS
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator.cssClass`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator.cssClass</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2766,9 +2785,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <td><b>Sets the fill color of the target decorator
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator.fillColor`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator.fillColor</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2787,9 +2806,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetDecorator.style.fill`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator.style.fill</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -2815,9 +2834,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the height of the target decorator</b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator.height`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator.height</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2836,9 +2855,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetDecorator.height`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator.height</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -2866,9 +2885,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines the custom shape of the target decorator
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator.pathData`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator.pathData</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2887,9 +2906,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetDecorator.pathData`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator.pathData</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -2918,9 +2937,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines the shape of the target decorator.
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator.shape`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator.shape</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2939,9 +2958,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetDecorator.shape`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator.shape</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -2968,9 +2987,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines the width of the target decorator
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator.width`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator.width</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -2989,9 +3008,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetDecorator.width`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetDecorator.width</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -3020,9 +3039,9 @@ diagram.appendTo('#diagram');
 <td><b>Sets the target node of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetNode`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetNode</i>
+<br>
+<br>
 <code>
 let node1 = {name:"source", offsetX:100, offsetY:100, width: 50, height: 50 };
 let node2 = {name:"target", offsetX:300, offsetY:300, width: 50, height: 50 };
@@ -3035,9 +3054,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetID`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetID</i>
+<br>
+<br>
 <code>
 let nodes: NodeModel[] = [
     {
@@ -3061,9 +3080,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the space to be left between the target node and the target point of a connector</b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetPadding`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetPadding</i>
+<br>
+<br>
 <code>
 let node1 = {name:"source", offsetX:100, offsetY:100, width: 50, height: 50 };
 let node2 = {name:"target", offsetX:300, offsetY:300, width: 50, height: 50 };
@@ -3077,9 +3096,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.hitPadding`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.hitPadding</i>
+<br>
+<br>
 <code>
 let nodes: NodeModel[] = [
     {
@@ -3105,9 +3124,9 @@ diagram.appendTo('#diagram');
 <td><b>Describes the start point of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetPoint`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetPoint</i>
+<br>
+<br>
 <code>
 let connector = {
     name: "connector",
@@ -3119,9 +3138,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetPoint`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetPoint</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -3140,9 +3159,9 @@ diagram.appendTo('#diagram');
 <td><b>Sets the target port of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetPort`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetPort</i>
+<br>
+<br>
 <code>
 let node1 = {name:"source", offsetX:100, offsetY:100, width: 50, height: 50,
              ports:[{ name:"port", offset: { x:1, y:0.5 } }] };
@@ -3156,9 +3175,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetPortID`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.targetPortID</i>
+<br>
+<br>
 <code>
 
 let nodeport1: PointPortModel = { id: 'port', shape: 'Square', offset: { x: 1, y: 0.5 } };
@@ -3189,9 +3208,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines the tooltip that should be shown when the mouse hovers over connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.tooltip`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.tooltip</i>
+<br>
+<br>
 <code>
 <script type="text/x-jsrender" id="mouseovertooltip">
    <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
@@ -3216,9 +3235,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.tooltip`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.tooltip</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -3241,9 +3260,9 @@ diagram.appendTo('#diagram');
 <td><b>Sets the vertical alignment of connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.verticalAlign`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.verticalAlign</i>
+<br>
+<br>
 <code>
 let connector = {
     name:"connector",
@@ -3261,9 +3280,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <td><b>Enables or disables the visibility of connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.visible`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.visible</i>
+<br>
+<br>
 <code>
 let connector = { name:"connector",
                   sourcePoint:{x:100, y:100},
@@ -3275,9 +3294,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.visible`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.visible</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -3297,9 +3316,9 @@ diagram.appendTo('#diagram');
 <td><b>Sets the z-index of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.zOrder`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.zOrder</i>
+<br>
+<br>
 <code>
 let connector = { name:"connector",
                   sourcePoint:{x:100, y:100},
@@ -3310,9 +3329,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.zIndex`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.zIndex</i>
+<br>
+<br>
 <code>
 let connectors: ConnectorModel[] = [{
     id: 'connector',
@@ -3332,9 +3351,9 @@ diagram.appendTo('#diagram');
 <td><b>Binds the custom JSON data with connector properties
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.connectorTemplate`</i>
-</br>
-</br>
+<b>Property</b>: <i>connectors.connectorTemplate</i>
+<br>
+<br>
 <code>
  let data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
@@ -3357,18 +3376,18 @@ function connectorTemplate(diagram, connector) {
 <td><b>Enables/Disables the default behaviors of the diagram
 </b></td>
 <td>
-<b>Property</b>:<i>`constraints`</i>
-</br>
-</br>
+<b>Property</b>: <i>constraints</i>
+<br>
+<br>
 <code>
 let DiagramConstraints = ej.datavisualization.Diagram.DiagramConstraints;
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     constraints: DiagramConstraints.Default | DiagramConstraints.Bridging });
 </code>
 </td><td>
-<b>Property</b>:<i>`constraints`</i>
-</br>
-</br>
+<b>Property</b>: <i>constraints</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     constraints: DiagramConstraints.Default | DiagramConstraints.Bridging
@@ -3391,9 +3410,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the collection of context menu items</b></td>
 <td>
-<b>Property</b>:<i>`contextMenu.items`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenu.items</i>
+<br>
+<br>
 <code>
 let menuitems = [{ "name": "hyperLink", "text": "Hyperlink", "image": "", "style": "" }];
 let contextMenu = { items: menuitems};
@@ -3401,9 +3420,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {contextMenu: cont
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.items`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenuSettings.items</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     contextMenuSettings: {   show: true,
@@ -3419,9 +3438,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the text for the collection of context menu item</b></td>
 <td>
-<b>Property</b>:<i>`contextMenu.items.text`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenu.items.text</i>
+<br>
+<br>
 <code>
 let menuitems = [{ "text": "ZoomIn" }];
 let contextMenu = { items: menuitems};
@@ -3429,9 +3448,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {contextMenu: cont
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.items.text`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenuSettings.items.text</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     contextMenuSettings: {   show: true,
@@ -3447,9 +3466,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the name for the collection of context menu items</b></td>
 <td>
-<b>Property</b>:<i>`contextMenu.items.name`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenu.items.name</i>
+<br>
+<br>
 <code>
 let menuitems = [{ "name": "hyperLink" }];
 let contextMenu = { items: menuitems};
@@ -3457,9 +3476,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {contextMenu: cont
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.items.id`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenuSettings.items.id</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     contextMenuSettings: {   show: true,
@@ -3475,9 +3494,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the image url for the collection of context menu items</b></td>
 <td>
-<b>Property</b>:<i>`contextMenu.items.imageUrl`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenu.items.imageUrl</i>
+<br>
+<br>
 <code>
 let menuitems = [{ "name": "zoomin", "text": "ZoomIn","imageUrl": "Images/zoomin.png", "style": "" }];
 let contextMenu = { items: menuitems};
@@ -3485,9 +3504,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {contextMenu: cont
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.items.url`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenuSettings.items.url</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     contextMenuSettings: {   show: true,
@@ -3502,9 +3521,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the cssClass for the collection of context menu items</b></td>
 <td>
-<b>Property</b>:<i>`contextMenu.items.cssClass`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenu.items.cssClass</i>
+<br>
+<br>
 <code>
 let menuitems = [{ "name": "zoomin", "text": "ZoomIn","imageUrl": "Images/zoomin.png", "cssClass":"menu", "style": "" }];
 let contextMenu = { items: menuitems};
@@ -3512,9 +3531,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {contextMenu: cont
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.items.iconCss`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenuSettings.items.iconCss</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     contextMenuSettings: {   show: true,
@@ -3529,9 +3548,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the collection of sub items for the context menu items</b></td>
 <td>
-<b>Property</b>:<i>`contextMenu.items.subItems`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenu.items.subItems</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
      contextMenu: {
@@ -3547,9 +3566,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.items`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenuSettings.items</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     contextMenuSettings: {   show: true,
@@ -3566,18 +3585,18 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>set whether to display the default context menu items or not</b></td>
 <td>
-<b>Property</b>:<i>`contextMenu.showCustomMenuItemsOnly`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenu.showCustomMenuItemsOnly</i>
+<br>
+<br>
 <code>
 let contextMenu = { showCustomMenuItemsOnly: true };
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {contextMenu: contextMenu});
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.showCustomMenuOnly`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenuSettings.showCustomMenuOnly</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     contextMenuSettings: {
@@ -3594,9 +3613,9 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.items.separator`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenuSettings.items.separator</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
        contextMenuSettings: {
@@ -3620,9 +3639,9 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.items.target`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenuSettings.items.target</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     contextMenuSettings: {   show: true,
@@ -3642,9 +3661,9 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.show`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenuSettings.show</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     contextMenuSettings: {   show: true,
@@ -3672,9 +3691,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the data source either as a collection of objects or as an instance of ej.DataManager</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.dataSource`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.dataSource</i>
+<br>
+<br>
 <code>
 let data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
@@ -3686,9 +3705,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.dataManager`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.dataManager</i>
+<br>
+<br>
 <code>
 let items: object[] = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
@@ -3703,9 +3722,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the unique id of the data source items</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.id`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.id</i>
+<br>
+<br>
 <code>
 let data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
@@ -3717,9 +3736,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.id`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.id</i>
+<br>
+<br>
 <code>
 let items: object[] = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
@@ -3734,9 +3753,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the parent id of the data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.parent`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.parent</i>
+<br>
+<br>
 <code>
 let data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
@@ -3748,9 +3767,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.parentId`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.parentId</i>
+<br>
+<br>
 <code>
 let items: object[] = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
@@ -3765,9 +3784,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Describes query to retrieve a set of data from the specified datasource</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.query`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.query</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings: {
@@ -3789,9 +3808,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the unique id of the root data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.root`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.root</i>
+<br>
+<br>
 <code>
 let data = [{
         "Id": "E1",
@@ -3817,9 +3836,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.root`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.root</i>
+<br>
+<br>
 <code>
 let items: object[] = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
@@ -3834,9 +3853,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Describes the name of the table on which the specified query has to be executed</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.tableName`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.tableName</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings: {
@@ -3860,9 +3879,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <td><b>Specifies the method name which is used to get the updated data from client side to the server side
 </b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.crudAction`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.crudAction</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -3884,9 +3903,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <td><b>Specifies the create method which is used to get the nodes to be added from client side to the server side
 </b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.crudAction.create`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.crudAction.create</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -3907,9 +3926,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <td><b>Specifies the update method which is used to get the updated data from client side to the server side
 </b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.crudAction.update`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.crudAction.update</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -3930,9 +3949,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <td><b>Specifies the destroy method which is used to get the deleted items data from client side to the server side
 </b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.crudAction.destroy`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.crudAction.destroy</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -3953,9 +3972,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <td><b>Specifies the read method to get the created nodes from client side to the server side
 </b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.crudAction.read`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.crudAction.read</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -3976,9 +3995,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the data source either as a collection of objects or as an instance of ej.DataManager</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.customFields`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.customFields</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings: {
@@ -3992,9 +4011,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.data`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.data</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     dataSourceSettings: { id: 'Name',
@@ -4010,9 +4029,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the data source either as a collection of objects or as an instance of ej.DataManager</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -4033,9 +4052,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the datasource for the connection datasource settings items</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.dataSource`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.dataSource</i>
+<br>
+<br>
 <code>
 let data = [{
         "Id": "E1",
@@ -4067,9 +4086,9 @@ dataSourceSettings: {
 <tr>
 <td><b>Sets the unique id of the connection data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.id`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.id</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -4089,9 +4108,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the source node of the connection data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.sourceNode`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.sourceNode</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -4112,9 +4131,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the target node of the connection data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.targetNode`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.targetNode</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -4135,9 +4154,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the sourcePointX value of the connection data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.sourcePointX`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.sourcePointX</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -4158,9 +4177,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the sourcePointY value of the connection data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.sourcePointY`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.sourcePointY</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -4181,9 +4200,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the x point value of the connection data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.targetPointX`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.targetPointX</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -4204,9 +4223,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the y point value of the connection data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.targetPointY`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.targetPointY</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -4227,9 +4246,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Specifies the method name which is used to get updated connectors from client side to the server side</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.crudAction`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.crudAction</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -4255,9 +4274,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Specifies the create method which is used to get the connectors to be added from client side to the server side</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.crudAction.create`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.crudAction.create</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -4283,9 +4302,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Specifies the update method which is used to get the updated connectors from client side to the server side</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.crudAction.update`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.crudAction.update</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -4309,9 +4328,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Specifies the destroy method which is used to get the deleted items data from client side to the server side</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.crudAction.destroy`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.crudAction.destroy</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -4335,9 +4354,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Specifies the read method which is used to get the data from client side to the server side</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.crudAction.read`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.crudAction.read</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -4361,9 +4380,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Specifies the custom fields to get the updated data from client side to the server side</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.customFields`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.customFields</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     dataSourceSettings:
@@ -4385,9 +4404,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Binds the custom data with node model</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.doBinding`</i>
-</br>
-</br>
+<b>Property</b>: <i>dataSourceSettings.doBinding</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     width: 1500, height: 2500,
@@ -4420,9 +4439,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Initializes the default values for nodes and connectors</b></td>
 <td>
-<b>Property</b>:<i>`defaultSettings.node`</i>
-</br>
-</br>
+<b>Property</b>: <i>defaultSettings.node</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     defaultSettings: { node: { fillColor:"red"} }
@@ -4430,9 +4449,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`getNodeDefaults`</i>
-</br>
-</br>
+<b>Property</b>: <i>getNodeDefaults</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
      getNodeDefaults: (object: Node) => {
@@ -4447,9 +4466,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Initializes the default connector properties</b></td>
 <td>
-<b>Property</b>:<i>`defaultSettings.connector`</i>
-</br>
-</br>
+<b>Property</b>: <i>defaultSettings.connector</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     defaultSettings: { connector: { lineColor:"red", lineWidth:4, lineDashArray:"2,2" } }
@@ -4457,9 +4476,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`getConnectorDefaults`</i>
-</br>
-</br>
+<b>Property</b>: <i>getConnectorDefaults</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
      getConnectorDefaults: (connector: ConnectorModel) => {
@@ -4476,9 +4495,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Initializes the default properties of groups</b></td>
 <td>
-<b>Property</b>:<i>`defaultSettings.group`</i>
-</br>
-</br>
+<b>Property</b>: <i>defaultSettings.group</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     defaultSettings: { group: {constraints: ej.datavisualization.Diagram.NodeConstraints.Default & ~ej.datavisualization.Diagram.NodeConstraints.Drag } }
@@ -4503,9 +4522,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the type of JSON object to be drawn through drawing tool</b></td>
 <td>
-<b>Property</b>:<i>`drawType`</i>
-</br>
-</br>
+<b>Property</b>: <i>drawType</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     drawType:{type:"node"}
@@ -4513,9 +4532,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`drawingObject`</i>
-</br>
-</br>
+<b>Property</b>: <i>drawingObject</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     drawingObject : {id: 'connector', type: 'Straight'}
@@ -4537,9 +4556,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Enables or disables auto scroll in diagram</b></td>
 <td>
-<b>Property</b>:<i>`enableAutoScroll`</i>
-</br>
-</br>
+<b>Property</b>: <i>enableAutoScroll</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     enableAutoScroll: false
@@ -4547,9 +4566,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`canAutoScroll`</i>
-</br>
-</br>
+<b>Property</b>: <i>canAutoScroll</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     canAutoScroll: true
@@ -4571,9 +4590,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Enables or disables diagram context menu</b></td>
 <td>
-<b>Property</b>:<i>`enableContextMenu`</i>
-</br>
-</br>
+<b>Property</b>: <i>enableContextMenu</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     enableContextMenu: false
@@ -4581,9 +4600,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.show`</i>
-</br>
-</br>
+<b>Property</b>: <i>contextMenuSettings.show</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     contextMenuSettings: {
@@ -4610,9 +4629,9 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`enablePersistence`</i>
-</br>
-</br>
+<b>Property</b>: <i>enablePersistence</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     width: '100%', height: '600px',
@@ -4634,13 +4653,13 @@ diagram.appendTo('#diagram');
 </tr>
 
 <tr>
-<td><b>Enable or disable rendering component in right to left direction<b></td>
+<td><b>Enable or disable rendering component in right to left direction</b></td>
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`enableRtl`</i>
-</br>
-</br>
+<b>Property</b>: <i>enableRtl</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     width: '100%', height: '600px',
@@ -4662,13 +4681,13 @@ diagram.appendTo('#diagram');
 </tr>
 
 <tr>
-<td><b>Enable or disable rendering component with custom cursor<b></td>
+<td><b>Enable or disable rendering component with custom cursor</b></td>
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`getCustomCursor`</i>
-</br>
-</br>
+<b>Property</b>: <i>getCustomCursor</i>
+<br>
+<br>
 <code>
 function getCustomCursor(action: string, active: boolean): string {
 let cursor: string;
@@ -4707,13 +4726,13 @@ diagram.appendTo('#diagram');
 </tr>
 
 <tr>
-<td><b>Allows to get the custom properties that have to be serialized<b></td>
+<td><b>Allows to get the custom properties that have to be serialized</b></td>
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`getCustomProperty`</i>
-</br>
-</br>
+<b>Property</b>: <i>getCustomProperty</i>
+<br>
+<br>
 <code>
 let nodes: NodeModel[] = [{
           id: 'node1', width: 100, height: 100, offsetX: 100, offsetY: 100,
@@ -4748,13 +4767,13 @@ diagram.appendTo('#diagram');
 </tr>
 
 <tr>
-<td><b>Allows to get the custom description<b></td>
+<td><b>Allows to get the custom description</b></td>
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`getDescription`</i>
-</br>
-</br>
+<b>Property</b>: <i>getDescription</i>
+<br>
+<br>
 <code>
 function getAccessibility(object: ConnectorModel, diagram: Diagram): string {
     let value: string;
@@ -4793,13 +4812,13 @@ diagram.appendTo('#diagram');
 </tr>
 
 <tr>
-<td><b>Allows to get the custom tool<b></td>
+<td><b>Allows to get the custom tool</b></td>
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`getCustomTool`</i>
-</br>
-</br>
+<b>Property</b>: <i>getCustomTool</i>
+<br>
+<br>
 <code>
 function getTool(action: string): ToolBase {
     let tool: ToolBase;
@@ -4844,9 +4863,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Specifies the height of the diagram</b></td>
 <td>
-<b>Property</b>:<i>`height`</i>
-</br>
-</br>
+<b>Property</b>: <i>height</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     height:"500",
@@ -4855,9 +4874,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`height`</i>
-</br>
-</br>
+<b>Property</b>: <i>height</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     height: 1000
@@ -4880,9 +4899,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>A method that takes a history entry as argument and returns whether the specific entry can be popped or not</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.canPop`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.canPop</i>
+<br>
+<br>
 <code>
 let diagram = $("#diagramcontent").ejDiagram("instance");
 let entry = { object: node, prevState: node.employeeData };
@@ -4902,9 +4921,9 @@ if(diagram.model.historyManager.canPop(entry)){
 <tr>
 <td><b>A method that ends grouping the changes</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.closeGroupAction`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.closeGroupAction</i>
+<br>
+<br>
 <code>
 let group = diagram.model.selectedItems;
 diagram.model.historyManager.startGroupAction();
@@ -4921,9 +4940,9 @@ diagram.model.historyManager.closeGroupAction();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.endGroupAction`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.endGroupAction</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -4960,9 +4979,9 @@ let objects: (NodeModel | ConnectorModel)[] = [];
 <tr>
 <td><b>A method that removes the history of a recent change made in diagram</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.pop`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.pop</i>
+<br>
+<br>
 <code>
 let diagram = $("#diagramcontent").ejDiagram("instance");
 diagram.model.historyManager.pop();
@@ -4975,9 +4994,9 @@ diagram.model.historyManager.pop();
 <tr>
 <td><b>A method that allows to track the custom changes made in diagram</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.push`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.push</i>
+<br>
+<br>
 <code>
 let diagram = $("#diagramcontent").ejDiagram("instance");
 
@@ -4989,9 +5008,9 @@ node.employeeData = value;
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.push`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.push</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5013,9 +5032,9 @@ let object = diagram.nodes[0];
 <tr>
 <td><b>Defines what should be happened while trying to restore a custom change</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.redo`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.redo</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     historyManager: {
@@ -5036,9 +5055,9 @@ function customUndoRedo(args) {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.redo`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.redo</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5070,18 +5089,18 @@ diagram.historyManager.redo = function(args: HistoryEntry) {
 <tr>
 <td><b>Gets the number of redo actions to be stored on the history manager. Its an read-only property and the collection should not be modified</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.redoStack`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.redoStack</i>
+<br>
+<br>
 <code>
 let diagram = $("#diagramcontent").ejDiagram("instance");
 diagram.model.historyManager.redoStack();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.redoStack`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.redoStack</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5099,18 +5118,18 @@ diagram.historyManager.redoStack();
 <tr>
 <td><b>Restricts the undo and redo actions to a certain limit</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.stackLimit`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.stackLimit</i>
+<br>
+<br>
 <code>
 let diagram = $("#diagramcontent").ejDiagram("instance");
 diagram.model.historyManager.stackLimit();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.stackLimit`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.stackLimit</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5128,9 +5147,9 @@ diagram.historyManager.stackLimit();
 <tr>
 <td><b>A method that starts to group the changes to revert/restore them in a single undo or redo</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.startGroupAction`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.startGroupAction</i>
+<br>
+<br>
 <code>
 let group = diagram.model.selectedItems
 
@@ -5147,9 +5166,9 @@ diagram.model.historyManager.closeGroupAction();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.startGroupAction`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.startGroupAction</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5185,9 +5204,9 @@ let objects: (NodeModel | ConnectorModel)[] = [];
 <tr>
 <td><b>Defines what should be happened while trying to revert a custom change</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.undo`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.undo</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     historyManager: {
@@ -5208,9 +5227,9 @@ function customUndoRedo(args) {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.undo`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.undo</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5242,18 +5261,18 @@ diagram.historyManager.redo = function(args: HistoryEntry) {
 <tr>
 <td><b>Gets the number of undo actions to be stored on the history manager. Its an read-only property and the collection should not be modified</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.undoStack`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.undoStack</i>
+<br>
+<br>
 <code>
 let diagram = $("#diagramcontent").ejDiagram("instance");
 diagram.model.historyManager.undoStack();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.undoStack`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.undoStack</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5271,18 +5290,18 @@ diagram.historyManager.undoStack();
 <tr>
 <td><b>Set the current entry object</b></td>
 <td>
-<b>Property</b>:<i>`historyList.currentEntry`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyList.currentEntry</i>
+<br>
+<br>
 <code>
 var diagram = $("#diagramcontent").ejDiagram("instance");
 diagram.historyList.currentEntry();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.currentEntry`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.currentEntry</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5300,18 +5319,18 @@ diagram.historyManager.currentEntry();
 <tr>
 <td><b>set the history entry can be undo</b></td>
 <td>
-<b>Property</b>:<i>`historyList.canUndo`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyList.canUndo</i>
+<br>
+<br>
 <code>
 var diagram = $("#diagramcontent").ejDiagram("instance");
 diagram.historyList.canUndo();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.canUndo`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.canUndo</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5327,18 +5346,19 @@ diagram.historyManager.canUndo = true;
 </tr>
 <tr>
 <td><b>Set the history entry can be redo</b></td>
-<b>Property</b>:<i>`historyList.canRedo`</i>
-</br>
-</br>
+<td>
+<b>Property</b>: <i>historyList.canRedo</i>
+<br>
+<br>
 <code>
 var diagram = $("#diagramcontent").ejDiagram("instance");
 diagram.historyList.canRedo();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.canRedo`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.canRedo</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5355,18 +5375,18 @@ diagram.historyManager.canRedo = true;
 <tr>
 <td><b>Used to decide to stored the changes to history</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.canLog`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.canLog</i>
+<br>
+<br>
 <code>
 let diagram = $("#diagramcontent").ejDiagram("instance");
 diagram.model.historyManager.canLog();
 </code>
-</td></td>
+</td>
 <td>
-<b>Property</b>:<i>`historyManager.canLog`</i>
-</br>
-</br>
+<b>Property</b>: <i>historyManager.canLog</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5397,9 +5417,9 @@ diagram.historyManager.canLog = function (entry: HistoryEntry) {
 <tr>
 <td><b>Defines the type of the rendering mode of label</b></td>
 <td>
-<b>Property</b>:<i>`labelRenderingMode`</i>
-</br>
-</br>
+<b>Property</b>: <i>labelRenderingMode</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), { labelRenderingMode: "svg" });
 </code></td>
@@ -5421,18 +5441,18 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), { labelRenderingMo
 <tr>
 <td><b>Specifies the custom bounds to arrange/align the layout</b></td>
 <td>
-<b>Property</b>:<i>`layout.bounds`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.bounds</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     layout: { bounds:{ x: 0, y: 0, width: 1000, height: 1000} }});
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.bounds`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.bounds</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5452,18 +5472,18 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the fixed node with reference to which, the layout will be arranged and fixed node will not be repositioned</b></td>
 <td>
-<b>Property</b>:<i>`layout.fixedNode`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.fixedNode</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     fixedNode: "node" });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.fixedNode`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.fixedNode</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5483,9 +5503,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Customizes the orientation of trees/sub trees</b></td>
 <td>
-<b>Property</b>:<i>`layout.getLayoutInfo`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.getLayoutInfo</i>
+<br>
+<br>
 <code>
 function getLayoutInfo(diagram, node, options) { options.orientation = "vertical"; options.type = "left"; offset = 10;};
 
@@ -5495,9 +5515,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.getLayoutInfo`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.getLayoutInfo</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5521,18 +5541,18 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines a method to customize the segments based on source and target nodes</b></td>
 <td>
-<b>Property</b>:<i>`layout.getConnectorSegments`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.getConnectorSegments</i>
+<br>
+<br>
 <code>
 function getConnectorSegment(diagram, node, options) { };
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {layout: { getConnectorSegments:getConnectorSegment } });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.connectorSegments`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.connectorSegments</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5552,17 +5572,17 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the space to be horizontally left between nodes</b></td>
 <td>
-<b>Property</b>:<i>`layout.horizontalSpacing`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.horizontalSpacing</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {layout: { horizontalSpacing: 50 }});
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.horizontalSpacing`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.horizontalSpacing</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5582,18 +5602,18 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the space to be left between layout bounds and layout</b></td>
 <td>
-<b>Property</b>:<i>`layout.margin`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.margin</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     layout: { margin:{ left: 10, right: 10, top: 10, bottom: 10} }});
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.margin`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.margin</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5612,9 +5632,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines how to horizontally align the layout within the layout bounds</b></td>
 <td>
-<b>Property</b>:<i>`layout.horizontalAlignment`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.horizontalAlignment</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     layout: { horizontalAlignment:ej.datavisualization.Diagram.HorizontalAlignment.Center }
@@ -5622,9 +5642,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.horizontalAlignment`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.horizontalAlignment</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5644,9 +5664,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines how to vertically align the layout within the layout bounds</b></td>
 <td>
-<b>Property</b>:<i>`layout.verticalAlignment`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.verticalAlignment</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     layout: {
@@ -5656,9 +5676,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.verticalAlignment`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.verticalAlignment</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5678,9 +5698,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the orientation/direction to arrange the diagram elements</b></td>
 <td>
-<b>Property</b>:<i>`layout.orientation`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.orientation</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     layout: { orientation: ej.datavisualization.Diagram.LayoutOrientations.LeftToRight }
@@ -5688,9 +5708,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.orientation`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.orientation</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5709,9 +5729,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the type of the layout based on which the elements will be arranged</b></td>
 <td>
-<b>Property</b>:<i>`layout.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.type</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), { layout: {
     type: ej.datavisualization.Diagram.LayoutTypes.HierarchicalTree }
@@ -5719,9 +5739,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), { layout: {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.type</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5741,18 +5761,18 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the space to be vertically left between nodes</b></td>
 <td>
-<b>Property</b>:<i>`layout.verticalSpacing`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.verticalSpacing</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     layout: { verticalSpacing: 50 }});
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.verticalSpacing`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.verticalSpacing</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5772,9 +5792,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the value is used to define the root node of the layout</b></td>
 <td>
-<b>Property</b>:<i>`layout.root`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.root</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     layout: { root: 'rootNode' }
@@ -5782,9 +5802,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.root`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.root</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5804,9 +5824,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines how long edges should be, ideally. This will be the resting length for the springs</b></td>
 <td>
-<b>Property</b>:<i>`layout.springFactor`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.springFactor</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     layout: { springFactor: 0.442 }
@@ -5814,9 +5834,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.springFactor`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.springFactor</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5837,9 +5857,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines how long edges should be, ideally. This will be the resting length for the springs</b></td>
 <td>
-<b>Property</b>:<i>`layout.maxIteration`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.maxIteration</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     layout: { maxIteration: 442 }
@@ -5847,9 +5867,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.maxIteration`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.maxIteration</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5870,9 +5890,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines how long edges should be, ideally. This will be the resting length for the springs</b></td>
 <td>
-<b>Property</b>:<i>`layout.springLength`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.springLength</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     layout: { springLength: 80 }
@@ -5880,9 +5900,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.springLength`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.springLength</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5905,9 +5925,9 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`layout.connectionDirection`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.connectionDirection</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5931,9 +5951,9 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`layout.enableAnimation`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.enableAnimation</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5958,9 +5978,9 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`layout.getBranch`</i>
-</br>
-</br>
+<b>Property</b>: <i>layout.getBranch</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -5995,9 +6015,9 @@ diagram.dataBind();
 <tr>
 <td><b>Defines the current culture of diagram</b></td>
 <td>
-<b>Property</b>:<i>`locale`</i>
-</br>
-</br>
+<b>Property</b>: <i>locale</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     locale: "en-US"
@@ -6005,9 +6025,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`locale`</i>
-</br>
-</br>
+<b>Property</b>: <i>locale</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     locale: 'en-US'
@@ -6030,18 +6050,18 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Array of JSON objects where each object represents a node</b></td>
 <td>
-<b>Property</b>:<i>`nodes`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes</i>
+<br>
+<br>
 <code>
 let nodes = [{ name: "node1", width: 175, height: 60, offsetX:100, offsetY:100}];
 let diagram = new ej.datavisualization.Diagram($("#diagram"), { nodes:nodes });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.content`</i>
-</br>
-</br>
+<b>Property</b>: <i>annotations.content</i>
+<br>
+<br>
 <code>
 let node: NodeModel = {
     offsetX: 250,
@@ -6059,9 +6079,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the type of BPMN Activity. Applicable, if the node is a BPMN activity</b></td>
 <td>
-<b>Property</b>:<i>`nodes.activity`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.activity</i>
+<br>
+<br>
 <code>
 let nodes = [{
     type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Activity, activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess, width:50, height:50
@@ -6070,9 +6090,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), { nodes:nodes });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.activity`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.shape.activity</i>
+<br>
+<br>
 <code>
 let node: NodeModel = {
     offsetX: 250,
@@ -6097,9 +6117,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>To maintain additional information about nodes</b></td>
 <td>
-<b>Property</b>:<i>`nodes.addInfo`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.addInfo</i>
+<br>
+<br>
 <code>
 let addInfo = { TooltipData: "Shares the information with the customer" };
 
@@ -6110,9 +6130,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {nodes:[node1, nod
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.addInfo`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.addInfo</i>
+<br>
+<br>
 <code>
 let node: NodeModel = {
     offsetX: 250,
@@ -6133,9 +6153,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the additional information of a process. It is not directly related to the message flows or sequence flows of the process</b></td>
 <td>
-<b>Property</b>:<i>`nodes.annotation`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.annotation</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "node1", width: 100, height:100, offsetX:50, offsetY:50,
@@ -6149,9 +6169,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), { nodes:nodes });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.annotations`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.shape.annotations</i>
+<br>
+<br>
 <code>
 let node: NodeModel = {
     offsetX: 250,
@@ -6183,9 +6203,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the angle between the BPMN shape and the annotation</b></td>
 <td>
-<b>Property</b>:<i>`nodes.annotation.angle`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.annotation.angle</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "node1", width: 100, height:100, offsetX:50, offsetY:50,
@@ -6199,9 +6219,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), { nodes:nodes });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.annotations.angle`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.shape.annotations.angle</i>
+<br>
+<br>
 <code>
 let node: NodeModel = {
     offsetX: 250,
@@ -6231,9 +6251,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the direction of the text annotation</b></td>
 <td>
-<b>Property</b>:<i>`nodes.annotation.direction`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.annotation.direction</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "node1", width: 100, height:100, offsetX:50, offsetY:50,
@@ -6253,9 +6273,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), { nodes:nodes });
 <tr>
 <td><b>Sets the height of the text annotation</b></td>
 <td>
-<b>Property</b>:<i>`nodes.annotation.height`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.annotation.height</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "node1", width: 100, height:100, offsetX:50, offsetY:50,
@@ -6268,9 +6288,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), { nodes:nodes });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.annotations.height`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.shape.annotations.height</i>
+<br>
+<br>
 <code>
 let node: NodeModel = {
     offsetX: 250,
@@ -6301,9 +6321,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the distance between the BPMN shape and the annotation</b></td>
 <td>
-<b>Property</b>:<i>`nodes.annotation.length`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.annotation.length</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "node1", width: 100, height:100, offsetX:50, offsetY:50,
@@ -6317,9 +6337,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), { nodes:nodes });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.annotations.length`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.shape.annotations.length</i>
+<br>
+<br>
 <code>
 let node: NodeModel = {
     offsetX: 250,
@@ -6350,9 +6370,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the additional information about the flow object in a BPMN Process</b></td>
 <td>
-<b>Property</b>:<i>`nodes.annotation.text`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.annotation.text</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "node1", width: 100, height:100, offsetX:50, offsetY:50,
@@ -6365,9 +6385,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), { nodes:nodes });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.annotations.text`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.shape.annotations.text</i>
+<br>
+<br>
 <code>
 let node: NodeModel = {
     offsetX: 250,
@@ -6396,9 +6416,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the width of the text annotation</b></td>
 <td>
-<b>Property</b>:<i>`nodes.annotation.width`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.annotation.width</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "node1", width: 100, height:100, offsetX:50, offsetY:50,
@@ -6411,9 +6431,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), { nodes:nodes });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.annotations.width`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.shape.annotations.width</i>
+<br>
+<br>
 <code>
 let node: NodeModel = {
     offsetX: 250,
@@ -6447,9 +6467,9 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.annotations.id`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.shape.annotations.id</i>
+<br>
+<br>
 <code>
 let node: NodeModel = {
     offsetX: 250,
@@ -6479,9 +6499,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines whether the group can be ungrouped or not</b></td>
 <td>
-<b>Property</b>:<i>`nodes.canUngroup`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.canUngroup</i>
+<br>
+<br>
 <code>
 let node1 = { name: "node1", width: 50, height:50, offsetX:50, offsetY:50, borderColor: "red" , borderDashArray: "4,2"};
 let node2 = { name: "node2", width: 50, height:50, offsetX:150, offsetY:150, borderColor: "red" , borderDashArray: "4,2"};
@@ -6497,9 +6517,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {nodes:[group]});
 <tr>
 <td><b>Array of JSON objects where each object represents a child node/connector</b></td>
 <td>
-<b>Property</b>:<i>`nodes.children`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.children</i>
+<br>
+<br>
 <code>
 let node1 = { name: "node1", width: 50, height:50, offsetX:50, offsetY:50, borderColor: "red" , borderDashArray: "4,2"};
 let node2 = { name: "node2", width: 50, height:50, offsetX:150, offsetY:150, borderColor: "red" , borderDashArray: "4,2"};
@@ -6509,9 +6529,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), { nodes:[group] })
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.children`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.children</i>
+<br>
+<br>
 <code>
 let node1: NodeModel = {
     id: 'node1',
@@ -6541,9 +6561,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the type of UML classifier</b></td>
 <td>
-<b>Property</b>:<i>`nodes.classifier`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.classifier</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient", offsetX: 100, offsetY: 100, borderWidth: 2, borderColor: "black",
@@ -6559,9 +6579,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), { nodes:nodes });
 <tr>
 <td><b>Defines the name, attributes and methods of a Class. Applicable, if the node is a Class</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.class</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -6587,9 +6607,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the name of class</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.name`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.class.name</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -6614,9 +6634,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the collection of attributes</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.attributes`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.class.attributes</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -6642,9 +6662,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the name of the attribute</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.attributes.name`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.class.attributes.name</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -6670,9 +6690,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the data type of attribute</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.attributes.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.class.attributes.type</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -6698,9 +6718,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the visibility of the attribute</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.attributes.scope`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.class.attributes.scope</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -6726,9 +6746,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the collection of methods of a Class</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.methods`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.class.methods</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -6753,9 +6773,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the name of the method</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.methods.name`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.class.methods.name</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -6784,9 +6804,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the arguments of the method</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.methods.arguments`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.class.methods.arguments</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -6818,9 +6838,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the name, attributes and methods of a Class. Applicable, if the node is a Class</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.methods.arguments.name`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.class.methods.arguments.name</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -6853,9 +6873,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the type of the argument</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.methods.arguments.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.class.methods.arguments.type</i>
+<br>
+<br>
 <code>
     let nodes = [{
         name: "Patient",
@@ -6888,9 +6908,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the return type of the method</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.methods.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.class.methods.type</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -6919,9 +6939,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the visibility of the method</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.methods.scope`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.class.methods.scope</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -6952,9 +6972,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the state of the node is collapsed</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -6978,9 +6998,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7000,9 +7020,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the border color for collapse icon of node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.borderColor`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.borderColor</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -7028,9 +7048,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.borderColor`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.borderColor</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7050,9 +7070,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the border width for collapse icon of node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.borderWidth`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.borderWidth</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -7078,9 +7098,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.borderWidth`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.borderWidth</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7100,9 +7120,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the fill color for collapse icon of node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.fillColor`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.fillColor</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -7128,9 +7148,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.fill`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.fill</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7150,9 +7170,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the height for collapse icon of node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.height`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.height</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -7176,9 +7196,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.height`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.height</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7198,9 +7218,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the horizontal alignment of the icon</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.horizontalAlignment`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.horizontalAlignment</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -7226,9 +7246,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.horizontalAlignment`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.horizontalAlignment</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7248,9 +7268,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>To set the margin for the collapse icon of node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.margin`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.margin</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -7276,9 +7296,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.margin`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.margin</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7300,9 +7320,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the fraction/ratio(relative to node) that defines the position of the icon</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.offset`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.offset</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -7328,9 +7348,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.offset`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.offset</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7352,9 +7372,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the shape of the collapsed state of the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.shape`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.shape</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -7378,9 +7398,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.shape`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.shape</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7400,9 +7420,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the vertical alignment of the icon</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.verticalAlignment `</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.verticalAlignment </i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -7428,9 +7448,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.verticalAlignment `</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.verticalAlignment </i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7453,9 +7473,9 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.content`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.content</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7497,9 +7517,9 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.pathData`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.pathData</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7522,9 +7542,9 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.cornerRadius`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.cornerRadius</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7547,9 +7567,9 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.padding`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.collapseIcon.padding</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7569,9 +7589,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the distance to be left between a node and its connections(In coming and out going connections)</b></td>
 <td>
-<b>Property</b>:<i>`nodes.connectorPadding`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.connectorPadding</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -7592,9 +7612,9 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>Enables or disables the default behaviors of the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.constraints`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.constraints</i>
+<br>
+<br>
 <code>
 let NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 
@@ -7611,9 +7631,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.constraints`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.constraints</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7631,9 +7651,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines how the child objects need to be arranged(Either in any predefined manner or automatically). Applicable, if the node is a group</b></td>
 <td>
-<b>Property</b>:<i>`nodes.container`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.container</i>
+<br>
+<br>
 <code>
 let node1 = {
     name: "node1",
@@ -7670,9 +7690,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the orientation of the container. Applicable, if the group is a container</b></td>
 <td>
-<b>Property</b>:<i>`nodes.container.orientation`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.container.orientation</i>
+<br>
+<br>
 <code>
 let node1 = {
     name: "node1",
@@ -7710,9 +7730,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the type of the container. Applicable if the group is a container.</b></td>
 <td>
-<b>Property</b>:<i>`nodes.container.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.container.type</i>
+<br>
+<br>
 <code>
 let node1 = {
     name: "node1",
@@ -7749,9 +7769,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the corner radius of rectangular shapes</b></td>
 <td>
-<b>Property</b>:<i>`nodes.cornerRadius`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.cornerRadius</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -7774,9 +7794,9 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>This property allows you to customize nodes appearance using user-defined CSS</b></td>
 <td>
-<b>Property</b>:<i>`nodes.cssClass`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.cssClass</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -7797,9 +7817,9 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>Defines the BPMN data object</b></td>
 <td>
-<b>Property</b>:<i>`nodes.data.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.data.type</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -7818,9 +7838,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.dataObject.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.shape.dataObject.type</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7842,9 +7862,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines whether the BPMN data object is a collection or not</b></td>
 <td>
-<b>Property</b>:<i>`nodes.data.collection`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.data.collection</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -7864,9 +7884,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.dataObject.collection`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.shape.dataObject.collection</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -7888,9 +7908,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines an Enumeration in a UML Class Diagram</b></td>
 <td>
-<b>Property</b>:<i>`nodes.enumeration`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.enumeration</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes : [{
@@ -7915,9 +7935,9 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>Sets the name of the Enumeration</b></td>
 <td>
-<b>Property</b>:<i>`nodes.enumeration.name`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.enumeration.name</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes : [{
@@ -7942,9 +7962,9 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>Defines the collection of enumeration members</b></td>
 <td>
-<b>Property</b>:<i>`nodes.enumeration.members`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.enumeration.members</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes : [{
@@ -7970,9 +7990,9 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>Sets the name of the enumeration member</b></td>
 <td>
-<b>Property</b>:<i>`nodes.enumeration.members.name`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.enumeration.members.name</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes : [{
@@ -7998,9 +8018,9 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>Sets the type of the BPMN Events. Applicable, if the node is a BPMN event</b></td>
 <td>
-<b>Property</b>:<i>`nodes.event`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.event</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes : [{
@@ -8015,9 +8035,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.event`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.shape.event</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -8037,9 +8057,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the type of the trigger</b></td>
 <td>
-<b>Property</b>:<i>`nodes.event.trigger`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.event.trigger</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes : [{
@@ -8054,9 +8074,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.event.trigger`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.shape.event.trigger</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -8076,9 +8096,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines whether the node can be automatically arranged using layout or not</b></td>
 <td>
-<b>Property</b>:<i>`nodes.excludeFromLayout`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.excludeFromLayout</i>
+<br>
+<br>
 <code>
 let node1 = {
     name: "node1",
@@ -8109,9 +8129,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.excludeFromLayout`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.excludeFromLayout</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -8136,9 +8156,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the fill color of the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.fillColor`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.fillColor</i>
+<br>
+<br>
 <code>
 let node1 = {
     name: "node1",
@@ -8154,9 +8174,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.fill`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.style.fill</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -8176,9 +8196,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the type of the BPMN Gateway. Applicable, if the node is a BPMN gateway</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gateway`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.gateway</i>
+<br>
+<br>
 <code>
 let node1 = {
     name: "node1",
@@ -8197,9 +8217,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.gateway`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.shape.gateway</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -8215,9 +8235,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Paints the node with linear color transitions</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.gradient.type</i>
+<br>
+<br>
 <code>
     let gradient = {
         LinearGradient: {
@@ -8240,9 +8260,9 @@ diagram.appendTo('#diagram');
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.style.gradient.type</i>
+<br>
+<br>
 <code>
 let stopscol: StopModel[] = [];
 let stops1: StopModel = {
@@ -8283,9 +8303,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the x1 value of linear gradient</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.LinearGradient.x1`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.gradient.LinearGradient.x1</i>
+<br>
+<br>
 <code>
 let gradient = {
     type: "linear", x1: 0, x2: 50, y1: 0, y2: 50, stops: [
@@ -8306,9 +8326,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.LinearGradient.x1`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.style.gradient.LinearGradient.x1</i>
+<br>
+<br>
 <code>
 let stopscol: StopModel[] = [];
 let stops1: StopModel = {
@@ -8349,9 +8369,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the x2 value of linear gradient</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.LinearGradient.x2`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.gradient.LinearGradient.x2</i>
+<br>
+<br>
 <code>
 let gradient = {
     LinearGradient:{
@@ -8374,9 +8394,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.LinearGradient.x2`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.style.gradient.LinearGradient.x2</i>
+<br>
+<br>
 <code>
 let stopscol: StopModel[] = [];
 let stops1: StopModel = {
@@ -8417,9 +8437,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the y1 value of linear gradient</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.LinearGradient.y1`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.gradient.LinearGradient.y1</i>
+<br>
+<br>
 <code>
 let gradient = {
     LinearGradient:{
@@ -8442,9 +8462,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.LinearGradient.y1`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.style.gradient.LinearGradient.y1</i>
+<br>
+<br>
 <code>
 let stopscol: StopModel[] = [];
 let stops1: StopModel = {
@@ -8485,9 +8505,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the y2 value of linear gradient</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.LinearGradient.y2`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.gradient.LinearGradient.y2</i>
+<br>
+<br>
 <code>
 let gradient = {
     LinearGradient:{
@@ -8509,9 +8529,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.LinearGradient.y2`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.style.gradient.LinearGradient.y2</i>
+<br>
+<br>
 <code>
 let stopscol: StopModel[] = [];
 let stops1: StopModel = {
@@ -8552,9 +8572,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the type of gradient</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.RadialGradient.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.gradient.RadialGradient.type</i>
+<br>
+<br>
 <code>
 let node = {
     name: "node",
@@ -8586,9 +8606,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.style.gradient.type</i>
+<br>
+<br>
 <code>
 let stops: StopModel[] = [{ color: 'white', offset: 0 }, { color: 'red', offset: 50 }];
 let gradient: RadialGradientModel = { cx: 50, cy: 50, fx: 50, fy: 50, stops: stops, type: 'Radial' };
@@ -8612,9 +8632,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines the position of the outermost circle
 </b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.RadialGradient.cx`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.gradient.RadialGradient.cx</i>
+<br>
+<br>
 <code>
 let node = {
     name: "node",
@@ -8646,9 +8666,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.RadialGradient.cx`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.style.RadialGradient.cx</i>
+<br>
+<br>
 <code>
 let stops: StopModel[] = [{ color: 'white', offset: 0 }, { color: 'red', offset: 50 }];
 let gradient: RadialGradientModel = { cx: 50, cy: 50, fx: 50, fy: 50, stops: stops, type: 'Radial' };
@@ -8671,9 +8691,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the outer most circle of the radial gradient</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.RadialGradient.cy`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.gradient.RadialGradient.cy</i>
+<br>
+<br>
 <code>
 let node = {
     name: "node",
@@ -8705,9 +8725,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.RadialGradient.cy`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.style.RadialGradient.cy</i>
+<br>
+<br>
 <code>
 let stops: StopModel[] = [{ color: 'white', offset: 0 }, { color: 'red', offset: 50 }];
 let gradient: RadialGradientModel = { cx: 50, cy: 50, fx: 50, fy: 50, stops: stops, type: 'Radial' };
@@ -8730,9 +8750,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the innermost circle of the radial gradient</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.RadialGradient.fx`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.gradient.RadialGradient.fx</i>
+<br>
+<br>
 <code>
 let node = {
     name: "node",
@@ -8764,9 +8784,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.RadialGradient.fx`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.style.RadialGradient.fx</i>
+<br>
+<br>
 <code>
 let stops: StopModel[] = [{ color: 'white', offset: 0 }, { color: 'red', offset: 50 }];
 let gradient: RadialGradientModel = { cx: 50, cy: 50, fx: 50, fy: 50, stops: stops, type: 'Radial' };
@@ -8789,9 +8809,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the innermost circle of the radial gradient</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.RadialGradient.fy`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.gradient.RadialGradient.fy</i>
+<br>
+<br>
 <code>
 let node = {
     name: "node",
@@ -8823,9 +8843,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.RadialGradient.fy`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.style.RadialGradient.fy</i>
+<br>
+<br>
 <code>
 let stops: StopModel[] = [{ color: 'white', offset: 0 }, { color: 'red', offset: 50 }];
 let gradient: RadialGradientModel = { cx: 50, cy: 50, fx: 50, fy: 50, stops: stops, type: 'Radial' };
@@ -8848,9 +8868,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the different colors and the region of color transitions</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.RadialGradient.stops`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.gradient.RadialGradient.stops</i>
+<br>
+<br>
 <code>
 let node = {
     name: "node",
@@ -8882,9 +8902,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.RadialGradient.stops`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.style.RadialGradient.stops</i>
+<br>
+<br>
 <code>
 let stops: StopModel[] = [{ color: 'white', offset: 0 }, { color: 'red', offset: 50 }];
 let gradient: RadialGradientModel = { cx: 50, cy: 50, fx: 50, fy: 50, stops: stops, type: 'Radial' };
@@ -8907,9 +8927,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the color to be filled over the specified region</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.stops.color`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.gradient.stops.color</i>
+<br>
+<br>
 <code>
 let node = {
     name: "node",
@@ -8941,9 +8961,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.stops.color`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.style.gradient.stops.color</i>
+<br>
+<br>
 <code>
 let stops: StopModel[] = [{ color: 'white', offset: 0 }, { color: 'red', offset: 50 }];
 let gradient: RadialGradientModel = { cx: 50, cy: 50, fx: 50, fy: 50, stops: stops, type: 'Radial' };
@@ -8966,9 +8986,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the position where the previous color transition ends and a new color transition starts</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.stops.offset`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.gradient.stops.offset</i>
+<br>
+<br>
 <code>
 let node = {
     name: "node",
@@ -9000,9 +9020,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.stops.offset`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.style.gradient.stops.offset</i>
+<br>
+<br>
 <code>
 let stops: StopModel[] = [{ color: 'white', offset: 0 }, { color: 'red', offset: 50 }];
 let gradient: RadialGradientModel = { cx: 50, cy: 50, fx: 50, fy: 50, stops: stops, type: 'Radial' };
@@ -9025,9 +9045,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Describes the transparency level of the region</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.stops.opacity`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.gradient.stops.opacity</i>
+<br>
+<br>
 <code>
 let node = {
     name: "node",
@@ -9060,9 +9080,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.stops.opacity`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.style.gradient.stops.opacity</i>
+<br>
+<br>
 <code>
 let stops: StopModel[] = [{ color: 'white', offset: 0 }, { color: 'red', offset: 50, opacity: 0.5 }];
 let gradient: RadialGradientModel = { cx: 50, cy: 50, fx: 50, fy: 50, stops: stops, type: 'Radial' };
@@ -9085,9 +9105,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the header of a swimlane/lane</b></td>
 <td>
-<b>Property</b>:<i>`nodes.header`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.header</i>
+<br>
+<br>
 <code>
 let swimlane = {
     type: "swimlane",
@@ -9110,9 +9130,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the height of the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.height`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.height</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -9126,9 +9146,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.height`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.height</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -9145,9 +9165,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the horizontal alignment of the node. Applicable, if the parent of the node is a container</b></td>
 <td>
-<b>Property</b>:<i>`nodes.horizontalAlign`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.horizontalAlign</i>
+<br>
+<br>
 <code>
 let node1 = {
     name: "node1",
@@ -9184,9 +9204,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>A read only collection of the incoming connectors/edges of the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.inEdges`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.inEdges</i>
+<br>
+<br>
 <code>
 let node = diagram.selectionList[0];
 for(let i = 0; i < node.inEdges.length; i++){
@@ -9195,9 +9215,9 @@ for(let i = 0; i < node.inEdges.length; i++){
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.height`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.height</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -9218,9 +9238,9 @@ console.log(node[i]);
 <tr>
 <td><b>Defines an interface in a UML interface Diagram</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.interface</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient", offsetX: 100, offsetY: 100, borderWidth: 2, borderColor: "black",
@@ -9236,9 +9256,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), { nodes:nodes });
 <tr>
 <td><b>Defines the name, attributes and methods of a Interface. Applicable, if the node is a Interface</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.name`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.interface.name</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -9264,9 +9284,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the collection of attributes</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.attributes`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.interface.attributes</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -9292,9 +9312,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the name of the attribute</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.attributes.name`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.interface.attributes.name</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -9320,9 +9340,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the data type of attribute</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.attributes.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.interface.attributes.type</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -9348,9 +9368,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the visibility of the attribute</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.attributes.scope`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.interface.attributes.scope</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -9376,9 +9396,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the collection of methods of a interface</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.methods`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.interface.methods</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -9403,9 +9423,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the name of the method</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.methods.name`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.interface.methods.name</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -9434,9 +9454,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the arguments of the method</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.methods.arguments`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.interface.methods.arguments</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -9468,9 +9488,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the name, attributes and methods of a interface. Applicable, if the node is a interface</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.methods.arguments.name`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.interface.methods.arguments.name</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -9503,9 +9523,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the type of the argument</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.methods.arguments.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.interface.methods.arguments.type</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -9538,9 +9558,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the return type of the method</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.methods.type`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.interface.methods.type</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -9569,9 +9589,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the visibility of the method</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.methods.scope`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.interface.methods.scope</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "Patient",
@@ -9602,9 +9622,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines whether the sub tree of the node is expanded or collapsed</b></td>
 <td>
-<b>Property</b>:<i>`nodes.isExpanded`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.isExpanded</i>
+<br>
+<br>
 <code>
 let node1 = {
     name: "node1",
@@ -9635,9 +9655,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.isExpanded`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.isExpanded</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -9669,9 +9689,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the node as a swimlane</b></td>
 <td>
-<b>Property</b>:<i>`nodes.isSwimlane`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.isSwimlane</i>
+<br>
+<br>
 <code>
 let swimlane = {
     type: "swimlane",
@@ -9695,9 +9715,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>A collection of objects where each object represents a label</b></td>
 <td>
-<b>Property</b>:<i>`nodes.labels`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.labels</i>
+<br>
+<br>
 <code>
 $("#diagram").ejDiagram({
     nodes: [{
@@ -9717,9 +9737,9 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.annotations`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.annotations</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -9739,9 +9759,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>An array of objects where each object represents a lane. Applicable, if the node is a swimlane</b></td>
 <td>
-<b>Property</b>:<i>`nodes.lanes`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.lanes</i>
+<br>
+<br>
 <code>
 let swimlane = {
     type: "swimlane",
@@ -9770,9 +9790,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>This property allows you to customize lanes appearance using user-defined CSS</b></td>
 <td>
-<b>Property</b>:<i>`nodes.lanes.cssClass`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.lanes.cssClass</i>
+<br>
+<br>
 <code>
 let addInfo = { Description:"Describe the functionality" };
 let swimlane = {
@@ -9805,9 +9825,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the header of the lane</b></td>
 <td>
-<b>Property</b>:<i>`nodes.lanes.header`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.lanes.header</i>
+<br>
+<br>
 <code>
 let swimlane = {
     type: "swimlane",
@@ -9841,9 +9861,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the width of lane</b></td>
 <td>
-<b>Property</b>:<i>`nodes.lanes.width`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.lanes.width</i>
+<br>
+<br>
 <code>
 let swimlane = {
     type: "swimlane",
@@ -9874,9 +9894,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>An array of objects where each object represents a child node of the lane</b></td>
 <td>
-<b>Property</b>:<i>`nodes.lanes.children`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.lanes.children</i>
+<br>
+<br>
 <code>
 let swimlane = {
     type: "swimlane",
@@ -9906,9 +9926,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the object as a lane</b></td>
 <td>
-<b>Property</b>:<i>`nodes.lanes.isLane`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.lanes.isLane</i>
+<br>
+<br>
 <code>
 let swimlane = {
     type: "swimlane",
@@ -9940,9 +9960,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Defines the minimum space to be left between the bottom of parent bounds and the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.margin`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.margin</i>
+<br>
+<br>
 <code>
 let swimlane = {
     type: "swimlane",
@@ -9969,9 +9989,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.margin`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.margin</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -9989,9 +10009,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the maximum height limit of the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.maxHeight`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.maxHeight</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "node1",
@@ -10010,9 +10030,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.maxHeight`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.maxHeight</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -10033,9 +10053,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the unique identifier of the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.name`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.name</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "node1",
@@ -10050,9 +10070,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.id`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.id</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -10070,9 +10090,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the opaque of the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.opacity`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.opacity</i>
+<br>
+<br>
 <code>
 let nodes = [{
     name: "node1",
@@ -10089,9 +10109,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.opacity`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.style.opacity</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     nodes: [{
@@ -10113,9 +10133,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the minimum padding value to be left between the bottom most position of a group and its children. Applicable, if the group is a container</b></td>
 <td>
-<b>Property</b>:<i>`nodes.paddingBottom`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.paddingBottom</i>
+<br>
+<br>
 <code>
 let node1 = { name: "node1", width: 50, height:50};
 let node2 = { name: "node2", width: 50, height:50, verticalAlign: "bottom"};
@@ -10130,9 +10150,13 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {nodes:[group]});
 <td>
 <b>Not applicable</b></td>
 </tr>
-<b>Property</b>:<i>`pageSettings.background.color`</i>
-</br>
-</br>
+<tr>
+<td></td>
+<td></td>
+<td>
+<b>Property</b>: <i>pageSettings.background.color</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     width: '100%', height: '600px',
@@ -10152,9 +10176,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the scrollable area of diagram. Applicable, if the scroll limit is “limited”</b></td>
 <td>
-<b>Property</b>:<i>`pageSettings.scrollableArea`</i>
-</br>
-</br>
+<b>Property</b>: <i>pageSettings.scrollableArea</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     pageSettings: {
@@ -10164,9 +10188,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`scrollSettings.scrollableArea`</i>
-</br>
-</br>
+<b>Property</b>: <i>scrollSettings.scrollableArea</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     width: '100%', height: '600px',
@@ -10181,9 +10205,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the draggable region of diagram elements</b></td>
 <td>
-<b>Property</b>:<i>`pageSettings.boundaryConstraints`</i>
-</br>
-</br>
+<b>Property</b>: <i>pageSettings.boundaryConstraints</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
     pageSettings: {
@@ -10193,9 +10217,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`pageSettings.boundaryConstraints`</i>
-</br>
-</br>
+<b>Property</b>: <i>pageSettings.boundaryConstraints</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     width: '100%', height: '600px',
@@ -10221,9 +10245,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the size and preview size of the node to add that to symbol palette</b></td>
 <td>
-<b>Property</b>:<i>`nodes.paletteItem`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.paletteItem</i>
+<br>
+<br>
 <code>
 let palette= new ej.datavisualization.SymbolPalette($("#SymbolPalette"), {
     palettes: [{
@@ -10243,9 +10267,9 @@ let palette= new ej.datavisualization.SymbolPalette($("#SymbolPalette"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`palettes`</i>
-</br>
-</br>
+<b>Property</b>: <i>palettes</i>
+<br>
+<br>
 <code>
 export function getFlowShapes(): NodeModel[] {
     let flowShapes = [{
@@ -10315,9 +10339,9 @@ palette.appendTo('#symbolpalette');
 <tr>
 <td><b>Defines whether the symbol should be drawn at its actual size regardless of precedence factors or not</b></td>
 <td>
-<b>Property</b>:<i>`nodes.paletteItem.enableScale`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.paletteItem.enableScale</i>
+<br>
+<br>
 <code>
 let palette= new ej.datavisualization.SymbolPalette($("#SymbolPalette"), {
     palettes: [{
@@ -10338,9 +10362,9 @@ let palette= new ej.datavisualization.SymbolPalette($("#SymbolPalette"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`palettes.fit`</i>
-</br>
-</br>
+<b>Property</b>: <i>palettes.fit</i>
+<br>
+<br>
 <code>
 export function getFlowShapes(): NodeModel[] {
     let flowShapes = [{
@@ -10410,9 +10434,9 @@ palette.appendTo('#symbolpalette');
 <tr>
 <td><b>To display a name for nodes in the symbol palette</b></td>
 <td>
-<b>Property</b>:<i>`nodes.paletteItem.label`</i>
-</br>
-</br>
+<b>Property</b>: <i>nodes.paletteItem.label</i>
+<br>
+<br>
 <code>
 let palette= new ej.datavisualization.SymbolPalette($("#SymbolPalette"), {
     palettes: [{
@@ -10434,9 +10458,9 @@ let palette= new ej.datavisualization.SymbolPalette($("#SymbolPalette"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`palettes.title`</i>
-</br>
-</br>
+<b>Property</b>: <i>palettes.title</i>
+<br>
+<br>
 <code>
 export function getFlowShapes(): NodeModel[] {
     let flowShapes = [{
@@ -10517,9 +10541,9 @@ palette.appendTo('#symbolpalette');
 <tr>
 <td><b>A read only collection of the selected items</b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.children`</i>
-</br>
-</br>
+<b>Property</b>: <i>selectedItems.children</i>
+<br>
+<br>
 <code>
 let diagram = $("#diagramcontent").ejDiagram("instance");
 for(let i =0; i< diagram.model.selectedItems.children; i++){
@@ -10534,9 +10558,9 @@ for(let i =0; i< diagram.model.selectedItems.children; i++){
 <tr>
 <td><b>Controls the visibility of selector</b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.constraints`</i>
-</br>
-</br>
+<b>Property</b>: <i>selectedItems.constraints</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
      selectedItems: { constraints: ej.datavisualization.Diagram.SelectorConstraints.UserHandles }
@@ -10544,9 +10568,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`selectedItems.constraints`</i>
-</br>
-</br>
+<b>Property</b>: <i>selectedItems.constraints</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     selectedItems: { constraints: SelectorConstraints.UserHandles },
@@ -10558,9 +10582,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines a method that dynamically enables/ disables the interaction with multiple selection</b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.getConstraints`</i>
-</br>
-</br>
+<b>Property</b>: <i>selectedItems.getConstraints</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 selectedItems: {
@@ -10579,9 +10603,9 @@ selectedItems: {
 <tr>
 <td><b>Sets the height of the selected items</b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.height`</i>
-</br>
-</br>
+<b>Property</b>: <i>selectedItems.height</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
      selectedItems: {
@@ -10593,9 +10617,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`selectedItems.height`</i>
-</br>
-</br>
+<b>Property</b>: <i>selectedItems.height</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     selectedItems: {
@@ -10610,9 +10634,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the angle to rotate the selected items</b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.tooltip`</i>
-</br>
-</br>
+<b>Property</b>: <i>selectedItems.tooltip</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), {
      selectedItems: {
@@ -10628,9 +10652,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>A collection of frequently used commands that will be added around the selector</b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.userHandles`</i>
-</br>
-</br>
+<b>Property</b>: <i>selectedItems.userHandles</i>
+<br>
+<br>
 <code>
 let userHandle= [];
 let cloneHandle = ej.datavisualization.Diagram.UserHandle();
@@ -10643,9 +10667,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`selectedItems.userHandles`</i>
-</br>
-</br>
+<b>Property</b>: <i>selectedItems.userHandles</i>
+<br>
+<br>
 <code>
 let handle: UserHandleModel[] = [{
     name: 'handle1', pathData: 'M 60.3,18 H 27.5 c -3,0-5.5,2.4-5.5,5.5 v 38.2 h 5.5 V 23.5 h 32.7 V 18 z M 68.5,28.9 h -30 c -3,0-5.5,2.4-5.5,5.5 v 38.2 c 0,3,2.4,5.5,5.5,5.5 h 30 c 3,0,5.5-2.4,5.5-5.5 V 34.4 C 73.9,31.4,71.5,28.9,68.5,28.9 z M 68.5,72.5 h -30 V 34.4 h 30 V 72.5 z'
@@ -10665,9 +10689,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the horizontal alignment of the user handle</b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.userHandles.horizontalAlignment`</i>
-</br>
-</br>
+<b>Property</b>: <i>selectedItems.userHandles.horizontalAlignment</i>
+<br>
+<br>
 <code>
 let userHandle = [];
 let cloneHandle = ej.datavisualization.Diagram.UserHandle();
@@ -10705,9 +10729,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`selectedItems.userHandles`</i>
-</br>
-</br>
+<b>Property</b>: <i>selectedItems.userHandles</i>
+<br>
+<br>
 <code>
 let handle: UserHandleModel[] = [{
     name: 'handle1',
@@ -10738,9 +10762,9 @@ diagram.appendTo('#diagram');
 <td><b>Defines the interactive behaviors of the user handle
 </b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.userHandles.tool`</i>
-</br>
-</br>
+<b>Property</b>: <i>selectedItems.userHandles.tool</i>
+<br>
+<br>
 <code>
 let CloneTool = (function(base) {
     ej.datavisualization.Diagram.extend(CloneTool, base);
@@ -10784,9 +10808,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <td><b>Defines whether the user handle should be added, when more than one element is selected
 </b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.userHandles.enableMultiSelection`</i>
-</br>
-</br>
+<b>Property</b>: <i>selectedItems.userHandles.enableMultiSelection</i>
+<br>
+<br>
 <code>
 let userHandle = [];
 let cloneHandle = ej.datavisualization.Diagram.UserHandle();
@@ -10812,9 +10836,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`selectedItems.userHandles.displacement`</i>
-</br>
-</br>
+<b>Property</b>: <i>selectedItems.userHandles.displacement</i>
+<br>
+<br>
 <code>
 let handle: UserHandleModel[] = [{
     name: 'handle1',
@@ -10845,9 +10869,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines whether the default diagram properties can be serialized or not</b></td>
 <td>
-<b>Property</b>:<i>`serializationSettings.preventDefaultValues`</i>
-</br>
-</br>
+<b>Property</b>: <i>serializationSettings.preventDefaultValues</i>
+<br>
+<br>
 <code>
 let diagram = new ej.datavisualization.Diagram($("#diagram"), { serializationSettings:{ preventDefaultValues: true } });
 </code>
@@ -10861,25 +10885,23 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), { serializationSet
 
 To load EJ1 JSON data in an EJ2 diagram, follow these steps.
 
-1.	Import and inject the EJ1SerializationModule as shown in the following code example.
+1. Import and inject the `EJ1SerializationModule` as shown in the following code example.
 
-```typescript
+   ```typescript
+   import { Diagram } from '@syncfusion/ej2-diagrams';
+   import { EJ1SerializationModule } from '@syncfusion/ej2-diagrams';
 
-import { Diagram } from '@syncfusion/ej2-diagrams';
-import { EJ1SerializationModule } from '@syncfusion/ej2-diagrams';
-Diagram.Inject(EJ1SerializationModule);
+   Diagram.Inject(EJ1SerializationModule);
+   ```
 
-```
+2. Load the EJ1 JSON data using the `loadDiagram` method and set the second parameter to `true`.
 
-2.	Load the EJ1 JSON data using the diagram loadDiagram method and set the second parameter to true.
+   ```typescript
+   let ej1Data = { /* your EJ1 JSON data */ };
 
-```typescript
-
-let ej1Data = {"JSONData"};  // Replace JSONData with your EJ1 JSON data
-//Load the EJ1 JSON and pass boolean value as true
-diagram.loadDiagram(ej1Data, true);
-
-```
+   // Load the EJ1 JSON and pass boolean value as true
+   diagram.loadDiagram(ej1Data, true);
+   ```
 
 ## Tooltip
 
@@ -10894,9 +10916,9 @@ diagram.loadDiagram(ej1Data, true);
 <tr>
 <td><b>An object that defines the description, appearance and alignments of tooltip</b></td>
 <td>
-<b>Property</b>:<i>`tooltip`</i>
-</br>
-</br>
+<b>Property</b>: <i>tooltip</i>
+<br>
+<br>
 <code>
 <script type="text/x-jsrender" id="mouseovertooltip">
    <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
@@ -10920,9 +10942,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`tooltip`</i>
-</br>
-</br>
+<b>Property</b>: <i>tooltip</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     width: '100%', height: '600px',
@@ -10944,9 +10966,9 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the alignment of tooltip</b></td>
 <td>
-<b>Property</b>:<i>`tooltip.alignment`</i>
-</br>
-</br>
+<b>Property</b>: <i>tooltip.alignment</i>
+<br>
+<br>
 <code>
 <script type="text/x-jsrender" id="mouseovertooltip">
    <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
@@ -10981,9 +11003,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the margin of the tooltip</b></td>
 <td>
-<b>Property</b>:<i>`tooltip.margin`</i>
-</br>
-</br>
+<b>Property</b>: <i>tooltip.margin</i>
+<br>
+<br>
 <code>
 <script type="text/x-jsrender" id="mouseovertooltip">
    <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
@@ -11018,9 +11040,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <tr>
 <td><b>Sets the svg/html template to be bound with tooltip</b></td>
 <td>
-<b>Property</b>:<i>`tooltip.templateId`</i>
-</br>
-</br>
+<b>Property</b>: <i>tooltip.templateId</i>
+<br>
+<br>
 <code>
 <script type="text/x-jsrender" id="mouseovertooltip">
    <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
@@ -11049,9 +11071,9 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`tooltip.content`</i>
-</br>
-</br>
+<b>Property</b>: <i>tooltip.content</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     width: '100%', height: '600px',
@@ -11070,9 +11092,9 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`tooltip.showTipPointer`</i>
-</br>
-</br>
+<b>Property</b>: <i>tooltip.showTipPointer</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     width: '100%', height: '600px',
@@ -11093,9 +11115,9 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`tooltip.position`</i>
-</br>
-</br>
+<b>Property</b>: <i>tooltip.position</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     width: '100%', height: '600px',
@@ -11115,9 +11137,9 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`tooltip.animation`</i>
-</br>
-</br>
+<b>Property</b>: <i>tooltip.animation</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     width: '100%', height: '600px',
@@ -11141,9 +11163,9 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`tooltip.width`</i>
-</br>
-</br>
+<b>Property</b>: <i>tooltip.width</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     width: '100%', height: '600px',
@@ -11168,9 +11190,9 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`tooltip.height`</i>
-</br>
-</br>
+<b>Property</b>: <i>tooltip.height</i>
+<br>
+<br>
 <code>
 let diagram: Diagram = new Diagram({
     width: '100%', height: '600px',
@@ -11202,9 +11224,9 @@ diagram.appendTo('#diagram');
 <td><b>API in Essential® JS 2</b></td>
 </tr>
 <tr>
-<td><b>Set constraints to node</b> </br>
+<td><b>Set constraints to node</b> <br>
 <b>The diagram.setConstraints(node) property is not available in the EJ2 Diagram </b></td>
-<td><b>Property</b>:<i>`setConstraints`</i>
+<td><b>Property</b>: <i>setConstraints</i>
 <code>
     for (var i = 0; i < diagram.nodes.length; i++) {
         var node = diagram.nodes[i];
@@ -11212,8 +11234,8 @@ diagram.appendTo('#diagram');
     }
 </code>
 </td>
-<td><b>Property</b>:<i>`setConstraints`</i>
-<b>Not applicable</b></br>
+<td><b>Property</b>: <i>setConstraints</i>
+<b>Not applicable</b><br>
 <b>In EJ2, constraints are set directly on each node</b>
 <code>
 let nodes = [{

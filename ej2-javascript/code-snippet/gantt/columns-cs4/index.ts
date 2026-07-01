@@ -1,11 +1,17 @@
-import { Gantt, Resize } from '@syncfusion/ej2-gantt';
+import { Gantt, Resize, SplitterSettings } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Resize);
 
+let splitterSettings: SplitterSettings = {
+    columnIndex: 6
+};
+
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
+    height: '450px',
     allowResizing: true,
+    splitterSettings: splitterSettings,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -14,17 +20,13 @@ let gantt: Gantt = new Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    splitterSettings: {
-        columnIndex: 5
-    },
-    height: '450px',
     columns: [
-        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
-        { field: 'TaskName', headerText: 'Task Name', width: '200', minWidth: '150', maxWidth: '250', },
-        { field: 'StartDate', headerText: 'Start Date', width: '150' },
-        { field: 'Duration', headerText: 'Duration', width: '100', minWidth: '50', maxWidth: '200' },
-        { field: 'Progress', headerText: 'Progress', width: '150' }
+        { field: 'TaskID', width: 100 },
+        { field: 'TaskName', headerText: 'Task Name', minWidth: 200, width: 250, maxWidth: 300 },
+        { field: 'StartDate' },
+        { field: 'Duration', minWidth: 100, maxWidth: 200 },
+        { field: 'Progress' }
     ]
-
 });
+
 gantt.appendTo('#Gantt');

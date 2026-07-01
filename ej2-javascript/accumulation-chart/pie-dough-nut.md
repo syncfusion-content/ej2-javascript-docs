@@ -166,6 +166,37 @@ To achieve a doughnut in pie series, customize the [`innerRadius`](../api/accumu
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs45" %}
 {% endif %}
 
+## Multiple Donut
+
+You can create multiple donuts within a single chart by adding multiple series with different [`innerRadius`](../api/accumulation-chart/accumulationSeries/#innerradius) and [`radius`](../api/accumulation-chart/accumulationSeries/#radius) values. This allows you to compare multiple data sets with the same categories. Each series can have different data, colors, and customizations. You can also use the [`mappingKey`](../api/accumulation-chart/accumulationLegendSettings/#mappingkey) property in `legendSettings` to map the legend items based on the specified field from the data source. When set, points with matching `mappingKey` values are grouped into a single legend item.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs500/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs500/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs500" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs500/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs500/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs500" %}
+{% endif %}
+
 ## Start and end angles
 
 You can customize the start and end angle of the pie series using the [`startAngle`](../api/accumulation-chart/accumulationSeries/#startangle) and [`endAngle`](../api/accumulation-chart/accumulationSeries/#endangle) properties. The default value of  `startAngle` is 0 degree, and `endAngle` is 360 degrees. By customizing this, you can achieve a semi pie series.

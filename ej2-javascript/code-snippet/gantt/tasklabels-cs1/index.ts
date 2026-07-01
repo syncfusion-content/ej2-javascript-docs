@@ -4,23 +4,21 @@ import { GanttData } from './datasource.ts';
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
     height: '450px',
+    projectStartDate: new Date('03/31/2019'),
+    projectEndDate: new Date('04/18/2019'),
     taskFields: {
-        id: 'TaskId',
+        id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
-		duration: 'Duration',
+        duration: 'Duration',
         progress: 'Progress',
-		parentID: 'ParentId'
+        parentID: 'ParentID'
     },
     labelSettings: {
-        leftLabel: 'TaskId',
+        leftLabel: 'Task ID: ${TaskID}',
         rightLabel: 'Task Name: ${taskData.TaskName}',
         taskLabel: '${Progress}%'
-    },
-    projectStartDate: new Date('03/31/2019'),
-    projectEndDate: new Date('04/19/2019'),
+    }
 });
+
 gantt.appendTo('#Gantt');
-
-
-

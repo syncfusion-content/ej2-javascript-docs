@@ -87,7 +87,11 @@ The following example demonstrates how text wrapping and text overflow are appli
 
 ### Appearance of symbol description
 
+<<<<<<< HEAD
+The appearance of a symbol description in the palette can be customized by changing its [`color`](../../api/diagram/symbolDescription#color), [`fill`](../../api/diagram/symbolDescription#fill), [`fontSize`](../../api/diagram/symbolDescription#fontsize), [`fontFamily`](../../api/diagram/symbolDescription#fontfamily), [`bold`](../../api/diagram/symbolDescription#bold), [`italic`](../../api/diagram/symbolDescription#italic), [`textDecoration`](../../api/diagram/symboldescription#textdecoration) and [`margin`](../../api/diagram/symbolDescription#margin)
+=======
 The appearance of a symbol description in the palette can be customized by changing its [`color`](../../api/diagram/symbolDescription#color) , [`fill`](../../api/diagram/symbolDescription#fill), [`fontSize`](../../api/diagram/symbolDescription#fontsize) , [`fontFamily`](../../api/diagram/symbolDescription#fontfamily), [`bold`](../../api/diagram/symbolDescription#bold) [`italic`](../../api/diagram/symbolDescription#italic), [`textDecoration`](../../api/diagram/symboldescription#textdecoration)  and [`margin`](../../api/diagram/symbolDescription#margin)
+>>>>>>> 6d423ae3a72932cc7a70f3b683cc6314d695c6cf
 
 The following code example shows how to customize the symbol description.
 
@@ -223,7 +227,11 @@ The code provided below demonstrates how to define tooltip content for symbols w
 
 ### How to enable or disable the default tooltip for shapes in the symbol palette
 
+<<<<<<< HEAD
+By default, the symbol ID is displayed as a tooltip when hovering over a symbol in the Symbol Palette. To disable this default tooltip, you can use the [`showTooltip`](../../api/diagram/symbolinfo#showtooltip) property within the [`getSymbolInfo`](../../api/diagram/symbolPaletteModel#getsymbolinfo) method. The `showTooltip` property is set to **true** by default, which enables the tooltip.
+=======
 By default, the symbol ID is displayed as a tooltip when hovering over a symbol in the Symbol Palette. To disable this default tooltip, you can use the [`showTooltip`](../../api/diagram/symbolInfo#showTooltip) property within the [`getSymbolInfo`](../../api/diagram/symbolPaletteModel#getsymbolinfo) method. The `showTooltip` property is set to **true** by default, which enables the tooltip.
+>>>>>>> 6d423ae3a72932cc7a70f3b683cc6314d695c6cf
 
 The following example demonstrates how to configure selective tooltip display:
 
@@ -265,7 +273,11 @@ The following code snippet will demonstrate how to define two different tooltip 
 
 ## Localization
 
+<<<<<<< HEAD
+To localize the symbol palette search box, we need to define the [`locale`](../../api/diagram/symbolPaletteModel#locale) property of the symbol palette with our preferred culture. In the example below, we use **de-DE**, which is the locale code for German as used in Germany.
+=======
 To localize the symbol palette search box, we need to define the [`locale`](../../api/diagram/symbolPaletteModel#locale) property of the symbol palette with our preferred culture. In the example below, we use **'de-DE**', which is the locale code for German as used in Germany.
+>>>>>>> 6d423ae3a72932cc7a70f3b683cc6314d695c6cf
 
 The following code shows how to localize symbol palette.
 
@@ -349,4 +361,4 @@ N> The diagram provides support to cancel the drag and drop operation from the s
 
 ## See Also
 
-* [How to add the symbol to the diagram](./nodes)
+* [How to add the symbol to the diagram](../nodes)

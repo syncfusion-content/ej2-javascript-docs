@@ -1,50 +1,53 @@
 import { Gantt } from '@syncfusion/ej2-gantt';
+import { Button } from '@syncfusion/ej2-buttons';
 import { GanttData } from './datasource.ts';
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
-    height: '450px',
+    height: '430px',
+    enablePersistence: true,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        parentID: 'ParentID',
+        parentID: 'ParentID'
     },
     columns: [
         { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: 120 },
-        { field: 'TaskName', headerText: 'Task Name', width: 150},
-        { field: 'StartDate', headerText: 'StartDate', width: 150 },
-        { field: 'Duration', headerText: 'Duration', width: 150},
+        { field: 'TaskName', headerText: 'Task Name', width: 150 },
+        { field: 'StartDate', headerText: 'Start Date', width: 150 },
+        { field: 'Duration', headerText: 'Duration', width: 150 },
+        { field: 'Progress', headerText: 'Progress', width: 150 }
     ],
-    enablePersistence: true,
-    editSettings: {
-        allowAdding: true,
-        allowEditing: true,
-        allowDeleting: true,
-        allowTaskbarEditing: true,
-        showDeleteConfirmDialog: true
-    },
-    dataBound: dataBound
+    dataBound: function () {
+        const originalPersist = (this as any).addOnPersist;
+        (this as any).addOnPersist = (keys: string[]) => {
+            const filteredKeys = keys.filter(key => key !== 'columns');
+            return originalPersist.call(this, filteredKeys);
+        };
+    }
 });
+
 gantt.appendTo('#Gantt');
 
-function dataBound(args: any) {
-    let cloned = this.addOnPersist;
-    this.addOnPersist = function (key: any) {
-        key = key.filter((item: string)  => item !== "columns");
-        return cloned.call(this, key);
-    };
-}
+let addBtn: Button = new Button();
+addBtn.appendTo('#add');
 
-document.getElementById('add').onclick = () => {
-    let obj = { field: "Progress", headerText: 'Progress', width: 100 };
-    gantt.columns.push(obj as any); //you can add the columns by using the Gantt columns method
-    gantt.treeGrid.refreshColumns();
-};
+let removeBtn: Button = new Button();
+removeBtn.appendTo('#remove');
 
-document.getElementById('remove').onclick = () => {
-    gantt.columns.pop();
-    gantt.treeGrid.refreshColumns();
-};
+document.getElementById('add')!.addEventListener('click', () => {
+    (gantt.columns as any).push({
+        field: 'Progress',
+        headerText: 'Progress',
+        width: 100
+    });
+    gantt.refresh();
+});
+
+document.getElementById('remove')!.addEventListener('click', () => {
+    (gantt.columns as any).pop();
+    gantt.refresh();
+});

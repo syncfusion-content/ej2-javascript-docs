@@ -3,33 +3,36 @@ import { virtualData } from './datasource.ts';
 
 Gantt.Inject(Selection, VirtualScroll);
 
-let gantt: Gantt = new Gantt({
+let ganttChart: Gantt = new Gantt({
     dataSource: virtualData,
-    treeColumnIndex: 1,
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'parentID'
-    },
-    enableVirtualization: true,
-    columns: [
-        { field: 'TaskID' },
-        { field: 'TaskName' },
-        { field: 'StartDate' },
-        { field: 'Duration' },
-        { field: 'Progress' },
-    ],
-    allowSelection: true,
-    gridLines: 'Both',
     height: '450px',
+    treeColumnIndex: 1,
+    allowSelection: true,
+    highlightWeekends: true,
+    enableVirtualization: true,
     splitterSettings: {
         columnIndex: 2
     },
     labelSettings: {
+        leftLabel: 'TaskName',
         taskLabel: 'Progress'
-    }
+    },
+    taskFields: {
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        endDate: 'EndDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        parentID: 'ParentID'
+    },
+    columns: [
+        { field: 'TaskID' },
+        { field: 'TaskName', headerText: 'Task Name' },
+        { field: 'StartDate' },
+        { field: 'Duration' },
+        { field: 'Progress' }
+    ]
 });
-gantt.appendTo('#Gantt');
+
+ganttChart.appendTo('#Gantt');

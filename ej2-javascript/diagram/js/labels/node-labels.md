@@ -88,7 +88,7 @@ The following codes illustrates how to align annotations.
 {% previewsample "page.domainurl/code-snippet/diagram/annotations-cs6" %}
 
 
-The following tables illustrates all the possible alignments visually with 'offset (0, 0)'.
+The following tables illustrates all the possible alignments visually with **offset (0, 0)**.
 
 | Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
 | -------- | -------- | -------- |

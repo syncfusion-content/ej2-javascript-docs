@@ -1,8 +1,35 @@
 var elem;
 var dropdownlistObj;
+var ganttChart;
+
+var dropdownlist = {
+    create: function () {
+        elem = document.createElement('input');
+        return elem;
+    },
+    read: function () {
+        return dropdownlistObj.value;
+    },
+    destroy: function () {
+        dropdownlistObj.destroy();
+    },
+    write: function (args) {
+        dropdownlistObj = new ej.dropdowns.DropDownList({
+            dataSource: ganttChart.treeGrid.grid.dataSource,
+            fields: { value: 'TaskName' },
+            value: args.rowData[args.column.field],
+            floatLabelType: 'Auto'
+        });
+        dropdownlistObj.appendTo(elem);
+    }
+};
+
 var ganttChart = new ej.gantt.Gantt({
     dataSource: GanttData,
     height: '450px',
+    editSettings: {
+        allowEditing: true
+    },
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -11,38 +38,15 @@ var ganttChart = new ej.gantt.Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    editSettings: {
-        allowEditing: true
-    },
     columns: [
-        { field: 'TaskID', headerText: 'Task ID' },
-        { 
-            field: 'TaskName', headerText: 'Task Name',
-            edit: {
-                create: function() {
-                    elem = document.createElement('input');
-                    return elem;
-                },
-                read: function() {
-                   return dropdownlistObj.value;
-                },
-                destroy: function() {
-                    dropdownlistObj.destroy();
-                },
-                write: function(args) {
-                    dropdownlistObj = new ej.dropdowns.DropDownList({
-                        dataSource: ganttChart.treeGrid.grid.dataSource,
-                        fields: { value: 'TaskName' },
-                        value: args.rowData[args.column.field],
-                        floatLabelType: 'Auto',
-                    });
-                    dropdownlistObj.appendTo(elem);
-                }
-            }
-        },
-        { field: 'StartDate', headerText: 'Start Date' },
-        { field: 'Duration', headerText: 'Duration' },
-        { field: 'Progress', headerText: 'Progress' },
-    ],
+        { field: 'TaskID' },
+        { field: 'TaskName', edit: dropdownlist },
+        { field: 'StartDate' },
+        { field: 'Duration' },
+        { field: 'Progress' }
+    ]
 });
+
+ej.gantt.Gantt.Inject(ej.gantt.Edit);
+
 ganttChart.appendTo('#Gantt');

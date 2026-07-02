@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Timeline in ##Platform_Name## Gantt Chart Control
 
-The timeline in the ##Platform_Name## Gantt Chart control represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization. Configure modes using the [timelineViewMode](../../api/gantt/timelineViewMode) property, with top and bottom tiers customized via [topTier.unit](../../api/gantt/timelineTierSettings#unit) and [bottomTier.unit](../../api/gantt/timelineTierSettings#unit) in [timelineSettings](../../api/gantt/timelineSettings). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
+The timeline in the [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization. Configure modes using the [timelineViewMode](../../api/gantt/timelineViewMode) property, with top and bottom tiers customized via [topTier.unit](../../api/gantt/timelineTierSettings#unit) and [bottomTier.unit](../../api/gantt/timelineTierSettings#unit) in [timelineSettings](../../api/gantt/timelineSettings). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
 
 ## Configure timeline view modes
 

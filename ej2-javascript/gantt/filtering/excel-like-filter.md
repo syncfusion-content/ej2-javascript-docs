@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Excel-like Filtering in ##Platform_Name## Gantt Chart Control
 
-The Excel-like filter in Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control enables column-level filtering similar to Microsoft Excel. It supports sorting, clearing filters, and applying advanced conditions through a submenu available in each column header. This feature is highly effective for working with large datasets and applying multiple filter criteria.
+The Excel-like filter in Gantt Chart control enables column-level filtering similar to Microsoft Excel. It supports sorting, clearing filters, and applying advanced conditions through a submenu available in each column header. This feature is highly effective for working with large datasets and applying multiple filter criteria.
 
 To enable this feature, configure [filterSettings.type](../../api/gantt/filtersettings#type) as **Excel** and set [allowFiltering](../../api/gantt#allowfiltering) to **true**.
 
@@ -123,7 +123,7 @@ If you want to hide only the built-in sorting options (ascending, descending, an
 
 ## Customize filter choice count
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control displays up to 1000 distinct values per column in the filter dialog by default. These values are taken from the first 1000 records bound to the control and shown as checkbox list items to maintain optimal performance. Additional values can be accessed using the search option within the filter dialog.
+The Gantt Chart control displays up to 1000 distinct values per column in the filter dialog by default. These values are taken from the first 1000 records bound to the control and shown as checkbox list items to maintain optimal performance. Additional values can be accessed using the search option within the filter dialog.
 
 To customize this behavior, the `filterChoiceCount` property can be adjusted to increase or decrease the number of distinct values displayed, depending on the dataset size and filtering requirements.
 

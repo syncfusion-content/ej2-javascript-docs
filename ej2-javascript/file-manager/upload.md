@@ -56,7 +56,7 @@ To learn more about folder upload actions, refer to this [link](https://ej2.sync
 
 ## Sequential upload
 
-The [`sequentialUpload`](../api/file-manager/uploadSettingsModel#sequentialupload) property controls whether users can upload files one by one in a sequential manner in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## File Manager control.
+The [`sequentialUpload`](../api/file-manager/uploadSettingsModel#sequentialupload) property controls whether users can upload files one by one in a sequential manner in the ##Platform_Name## File Manager control.
 
 To enable sequential upload, set the [`sequentialUpload`](../api/file-manager/uploadSettingsModel#sequentialupload) property to `true` in the [`uploadSettings`](../api/file-manager/uploadsettings) configuration.
 

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Critical Path in ##Platform_Name## Gantt Chart Control
 
-The critical path represents the longest sequence of dependent tasks that determines the minimum project duration. Tasks on the critical path have zero or negative [slack](../api/gantt/iganttdata#slack) (float), meaning any delay in these tasks directly impacts the overall project completion date. The ##Platform_Name## Gantt control automatically calculates and highlights critical tasks in red with emphasized dependency connector lines when the [enableCriticalPath](../api/gantt#enablecriticalpath) property is enabled. Critical path analysis helps identify which tasks require immediate attention and cannot be delayed without affecting project deadlines.
+The critical path represents the longest sequence of dependent tasks that determines the minimum project duration. Tasks on the critical path have zero or negative [slack](../api/gantt/iganttdata#slack) (float), meaning any delay in these tasks directly impacts the overall project completion date. The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control automatically calculates and highlights critical tasks in red with emphasized dependency connector lines when the [enableCriticalPath](../api/gantt#enablecriticalpath) property is enabled. Critical path analysis helps identify which tasks require immediate attention and cannot be delayed without affecting project deadlines.
 
 ## Understanding critical path calculation
 

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Row Drag and Drop in ##Platform_Name## Gantt Chart Control
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control includes built-in support for row drag and drop, enabling rows to be rearranged within the Gantt Chart or dropped into custom components. 
+The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control includes built-in support for row drag and drop, enabling rows to be rearranged within the Gantt Chart or dropped into custom components. 
 
 To enable this feature, inject the `RowDD` module in Gantt. Once injected, enable the functionality by setting the [allowRowDragAndDrop](../api/gantt#allowrowdraganddrop) property.
 

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Toolbar in ##Platform_Name## Gantt Chart Control
 
-The ##Platform_Name## Gantt Chart control includes built-in toolbar support for executing common actions such as editing, searching, and navigating the timeline. The [toolbar](../api/gantt#toolbar) property accepts the collection of built-in toolbar items and `ItemModel` objects for custom toolbar items.
+The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control includes built-in toolbar support for executing common actions such as editing, searching, and navigating the timeline. The [toolbar](../api/gantt#toolbar) property accepts the collection of built-in toolbar items and `ItemModel` objects for custom toolbar items.
 
 ## Built-in toolbar items
 

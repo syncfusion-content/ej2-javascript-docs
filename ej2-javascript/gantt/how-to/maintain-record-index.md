@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maintain Record Index Position in ##Platform_Name## Gantt Chart Control | Syncfusion
+title: Record Index Position in ##Platform_Name## Gantt Chart | Syncfusion
 description: Learn how to maintain record index positions in the Syncfusion ##Platform_Name## Gantt Chart control using row drag-and-drop for efficient task reordering.
 platform: ej2-javascript
 control: Copy paste records 
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Maintain Record Index Position in ##Platform_Name## Gantt Chart Control
 
-The ##Platform_Name## Gantt Chart control enables seamless task reordering by maintaining record index positions through the [rowDrop](../../api/gantt#rowdrop) event, which updates the task order in the data source when a row is dragged and dropped. For example, dragging a task from row 5 to row 2 updates the data source to reflect the new position, preserving project structure. Inject `RowDD` and enable `allowRowDragAndDrop` to activate this feature. Use the `rowDrop` event to capture `fromIndex` (source row), `dropIndex` (target row), and `dropPosition` and send them to the server via an Ajax request using `DataManager` with `UrlAdaptor`. On the server side, update the data source (e.g., database) with custom methods like `Insert` or `InsertAtTop`, ensuring hierarchical records with parent-child relationships are correctly handled by updating `parentID` in the task data. Configure valid [taskFields](../../api/gantt#taskfields) mappings (e.g., id, child) to support hierarchical tasks. This feature integrates with task dependencies, critical path, and virtual scrolling, ensuring reordered tasks align with the project timeline for efficient schedule management.
+The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control enables seamless task reordering by maintaining record index positions through the [rowDrop](../../api/gantt#rowdrop) event, which updates the task order in the data source when a row is dragged and dropped. For example, dragging a task from row 5 to row 2 updates the data source to reflect the new position, preserving project structure. Inject `RowDD` and enable `allowRowDragAndDrop` to activate this feature. Use the `rowDrop` event to capture `fromIndex` (source row), `dropIndex` (target row), and `dropPosition` and send them to the server via an Ajax request using `DataManager` with `UrlAdaptor`. On the server side, update the data source (e.g., database) with custom methods like `Insert` or `InsertAtTop`, ensuring hierarchical records with parent-child relationships are correctly handled by updating `parentID` in the task data. Configure valid [taskFields](../../api/gantt#taskfields) mappings (e.g., id, child) to support hierarchical tasks. This feature integrates with task dependencies, critical path, and virtual scrolling, ensuring reordered tasks align with the project timeline for efficient schedule management.
 
 ```ts
 import { Gantt, Selection, Edit, RowDD, IGanttData } from '../src/index';

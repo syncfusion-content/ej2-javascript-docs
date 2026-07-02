@@ -2,10 +2,10 @@
 var umlSequenceDiagramModel = {
   // Defines the participants involved in the sequence diagram
   participants: [
-    { id: "User", content: "User", isActor: true, }, // User as an actor
-    { id: "System", content: "System", isActor: false, showDestructionMarker: true, }, // System participant
-    { id: "Logger", content: "Logger", isActor: false, showDestructionMarker: true, }, // Logger participant
-    { id: "SessionManager", content: "SessionManager", isActor: false, } // SessionManager participant
+    { id: "User", content: "User", stereotype: ej.diagrams.UmlSequenceParticipantStereotype.Actor }, // User as an actor
+    { id: "System", content: "System", showDestructionMarker: true, }, // System participant
+    { id: "Logger", content: "Logger", showDestructionMarker: true, }, // Logger participant
+    { id: "SessionManager", content: "SessionManager", } // SessionManager participant
   ],
   // Define messages exchanged between participants
   messages: [

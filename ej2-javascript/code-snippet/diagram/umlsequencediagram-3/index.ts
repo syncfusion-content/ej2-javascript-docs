@@ -1,4 +1,4 @@
-import { Diagram, UmlSequenceDiagramModel, UmlSequenceMessageType, SnapConstraints } from "@syncfusion/ej2-diagrams";
+import { Diagram, UmlSequenceDiagramModel, UmlSequenceMessageType, SnapConstraints, UmlSequenceParticipantStereotype } from "@syncfusion/ej2-diagrams";
 
 // Define the UML Sequence Diagram model with participants and activation boxes
 const model: UmlSequenceDiagramModel = {
@@ -7,12 +7,11 @@ const model: UmlSequenceDiagramModel = {
     {
       id: "User",
       content: "User",
-      isActor: true,
+      stereotype: UmlSequenceParticipantStereotype.Actor
     },
     {
       id: "System",
       content: "System",
-      isActor: false,
       showDestructionMarker: true,
       // Activation boxes for System
       activationBoxes: [

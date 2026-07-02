@@ -72,6 +72,25 @@ var diagram = new ej.diagrams.Diagram({
 
 ```
 
+## Detect unsaved changes
+
+The [isModified](../api/diagram#ismodified) property indicates whether the diagram has unsaved changes. It becomes **true** when the diagram is changed, such as when nodes, connectors, or diagram properties are updated, or when undo and redo actions are performed.
+
+For example, this property can be used to show a save indicator or display a warning message before closing or navigating away from a diagram with unsaved changes.
+
+```javascript
+// Check whether the diagram has unsaved changes.
+if (diagram.isModified) {
+    const confirmed = confirm('There are unsaved changes. Discard them?');
+
+    if (!confirmed) {
+        return;
+    }
+}
+```
+
+N> Transient interactions such as zooming, panning, or selecting elements do not affect the `isModified` state.
+
 ## Save and load diagram using uploader control
 
 The JSON files can be uploaded using the uploader component, where they are parsed to extract the JSON data they contain. To achieve this, configure the uploader component with the saveUrl property to receive uploaded files and store them on the server. Similarly, use the removeUrl property to handle file removal operations on the server.

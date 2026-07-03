@@ -194,7 +194,7 @@ sf lightning:generate:component --type lwc -n scheduler -d force-app/main/defaul
 </LightningComponentBundle> 
 ```
 
-3. Open the `scheduler.html` file located in `force-app/main/default/lwc/scheduler` and add an element with a class name to append the Syncfusion<sup style="font-size:70%">&reg;</sup> scheduler. Here's an example of the modified file.
+3. Open the `scheduler.html` file located in `force-app/main/default/lwc/scheduler` and add an element with a class name to append the scheduler. Here's an example of the modified file.
 
 ```html
 <template> 

@@ -56,7 +56,7 @@ The grid will persist only the last selected row index.
 
 ## Restore initial Grid state
 
-In the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control, you have the capability to restore the grid to its initial state, reverting all changes and configurations made during the interaction. This feature can be particularly useful when you want to reset the grid to its original settings, eliminating any applied filters, sorting, or column reordering.
+In the ##Platform_Name## Grid control, you have the capability to restore the grid to its initial state, reverting all changes and configurations made during the interaction. This feature can be particularly useful when you want to reset the grid to its original settings, eliminating any applied filters, sorting, or column reordering.
 
 Here are the steps to reset the grid to its initial state, even when the [enablePersistence](../api/grid/#enablepersistence) property is enabled:
 
@@ -128,7 +128,7 @@ Here is an example code on how to clear local storage to retain its default stat
 
 ## Restore to specific state version
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid supports version-based persistence for easy restoration to a specific state. To enable version based persistence, import `enableVersionBasedPersistence` from `@syncfusion/ej2-base` and set it globally to **true**. Define the grid in the template with properties, bind data, and configure persistence using [enablePersistence](../api/grid/#enablepersistence) and [ej2state-persistenceVersion](../api/grid/#ej2state-persistenceversion). 
+##Platform_Name## Grid supports version-based persistence for easy restoration to a specific state. To enable version based persistence, import `enableVersionBasedPersistence` from `@syncfusion/ej2-base` and set it globally to **true**. Define the grid in the template with properties, bind data, and configure persistence using [enablePersistence](../api/grid/#enablepersistence) and [ej2state-persistenceVersion](../api/grid/#ej2state-persistenceversion). 
 
 In the below example, the `clickHandler` method is responsible for handling button clicks corresponding to different versions. Inside this method, the targeted version is assigned to the grid's `ej2state-persistenceVersion` dynamically. The code checks if there is already a persisted state for the selected version in the local storage. If found, the grid is updated with the settings retrieved from the local storage, including columns, filter settings, group settings, sort settings, page settings, and selected row index. If no persisted state is found, the current grid state is persisted to the local storage using the [getPersistData](../api/grid/#getpersistdata) method.
 
@@ -163,11 +163,11 @@ Here is an example of how to integrate version-based persistence into your ##Pla
 
 ## Restore to previous state
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control allows you to save and restore its state using local storage. This feature is helpful when you want to preserve the current state of the Grid, such as column order, sorting, and filtering, so that you can return to your previous work or configurations.
+The ##Platform_Name## Grid control allows you to save and restore its state using local storage. This feature is helpful when you want to preserve the current state of the Grid, such as column order, sorting, and filtering, so that you can return to your previous work or configurations.
 
 To implement this functionality, use the `getItem` and `setItem` methods for local storage, along with the Grid control's `setProperties` and [getPersistData](../api/grid/#getpersistdata) methods.
 
-The provided code demonstrates how to save and restore the previous state of a Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control using local storage.
+The provided code demonstrates how to save and restore the previous state of a ##Platform_Name## Grid control using local storage.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -307,7 +307,7 @@ window.localStorage.setItem('gridOrders', JSON.stringify(value)); //"gridOrders"
 
 ## Prevent columns from persisting
 
-In the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control, you may sometimes want to prevent certain settings from being persisted when using the [enablePersistence](../api/grid/#enablepersistence) feature. When the `enablePersistence` property is set to **true**, the Grid properties such as [Grouping](../api/grid/groupSettings/), [Paging](../api/grid/pageSettings/), [Filtering](../api/grid/filterSettings/), [Sorting](../api/grid/sortSettings/), and [Columns](../api/grid/column/) will persist. You can use the `addOnPersist` method to prevent these Grid properties from persisting.
+In the ##Platform_Name## Grid control, you may sometimes want to prevent certain settings from being persisted when using the [enablePersistence](../api/grid/#enablepersistence) feature. When the `enablePersistence` property is set to **true**, the Grid properties such as [Grouping](../api/grid/groupSettings/), [Paging](../api/grid/pageSettings/), [Filtering](../api/grid/filterSettings/), [Sorting](../api/grid/sortSettings/), and [Columns](../api/grid/column/) will persist. You can use the `addOnPersist` method to prevent these Grid properties from persisting.
 
 The following example demonstrates how to prevent Grid columns from persisting. In the [dataBound](../api/grid/#databound) event of the Grid, you can override the `addOnPersist` method and remove the columns from the key list given for persistence.
 
@@ -340,7 +340,7 @@ The following example demonstrates how to prevent Grid columns from persisting. 
 
 ## Add to persist
 
-Persistence can be added to a Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control to enhance the user experience. Persistence allows saving and restoring the state of the grid, including column layouts, sorting, filtering, and other user-specific settings. In this documentation, you will explore how to persist column templates, header templates, and header text settings in the ##Platform_Name## Grid.
+Persistence can be added to a ##Platform_Name## Grid control to enhance the user experience. Persistence allows saving and restoring the state of the grid, including column layouts, sorting, filtering, and other user-specific settings. In this documentation, you will explore how to persist column templates, header templates, and header text settings in the ##Platform_Name## Grid.
 
 ### Add a new column in persisted columns list
 

@@ -40,7 +40,7 @@ Syncfusion's<sup style="font-size:70%">&reg;</sup> Theme Studio tool allows you 
 
 ## Customizing the grid root element
 
-To customize the appearance of the root element of the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control, you can use CSS. Here's an example of how to modify the font family and row colors using CSS:
+To customize the appearance of the root element of the ##Platform_Name## Grid control, you can use CSS. Here's an example of how to modify the font family and row colors using CSS:
 
 ```css
 .e-grid {
@@ -51,7 +51,7 @@ To customize the appearance of the root element of the Syncfusion<sup style="fon
 
 ![grid root element](../images/style-font-family.png)
 
-The above code snippet, the **.e-grid** class targets the root element of the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control, and the `font-family` property is set to cursive to change the font family of the grid content.
+The above code snippet, the **.e-grid** class targets the root element of the ##Platform_Name## Grid control, and the `font-family` property is set to cursive to change the font family of the grid content.
 
 In the following sample, the font family of grid content is changed to **cursive**, and the background color of rows, selected rows, alternate rows, and row hovering color is modified using the below CSS styles.
 

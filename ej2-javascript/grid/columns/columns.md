@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Columns in ##Platform_Name## Grid control
 
-In Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid, Columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the grid.
+In ##Platform_Name## Grid, Columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the grid.
 
 ## Column types
 
@@ -292,7 +292,7 @@ In this example, the format property specifies the date format as "**yyyy-MMM-dd
 
 ### Format template column value 
 
-In the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid, you have the ability to customize the display of data in a column through the use of template columns. Formatting template column values is Essential<sup style="font-size:70%">&reg;</sup> for enhancing the visual representation of data in a web application. It allows the customization of the appearance of specific column data, such as dates and numbers, to improve readability and user understanding.
+In the ##Platform_Name## Grid, you have the ability to customize the display of data in a column through the use of template columns. Formatting template column values is Essential<sup style="font-size:70%">&reg;</sup> for enhancing the visual representation of data in a web application. It allows the customization of the appearance of specific column data, such as dates and numbers, to improve readability and user understanding.
 
 To illustrate how to format a template column value, consider the following example where the **OrderDate** column is formatted to display dates in the **‘dd/MMM/yyyy’** format.
 
@@ -765,7 +765,7 @@ Here's an example of how to show or hide a column based on the field in the ##Pl
 
 ## Controlling Grid actions
 
-You can control various actions such as filtering, grouping, sorting, resizing, reordering, editing, and searching for specific columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid using the following properties:
+You can control various actions such as filtering, grouping, sorting, resizing, reordering, editing, and searching for specific columns in the JavaScript DataGrid using the following properties:
 
 * [allowEditing](../../api/grid/columnModel#allowediting): Enables or disables editing for a column.
 * [allowFiltering](../../api/grid/columnModel#allowfiltering): Enables or disables filtering for a column.
@@ -944,7 +944,7 @@ grid.refreshColumns();
 
 ## Responsive columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](../../api/grid/column#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
+The ##Platform_Name## Grid provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](../../api/grid/column#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
 
 In this example, we have a Grid that displays data with three columns: **Order ID, Customer ID, and Freight**. We have set the `hideAtMedia` property of the **OrderID** column to (min-width: 700px) which means that this column will be hidden when the browser screen width is less than or equal to 700px.
 

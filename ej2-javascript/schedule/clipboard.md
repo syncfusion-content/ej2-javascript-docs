@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Clipboard in ##Platform_Name## Scheduler control
 
-The Clipboard functionality in the Syncfusion<sup style="font-size:70%">&reg;</sup> Scheduler control enhances scheduling efficiency by enabling users to cut, copy, and paste appointments seamlessly. This feature is particularly beneficial for managing multiple appointments, eliminating repetitive data entry and allowing users to quickly adjust their schedules.
+The Clipboard functionality in the Scheduler control enhances scheduling efficiency by enabling users to cut, copy, and paste appointments seamlessly. This feature is particularly beneficial for managing multiple appointments, eliminating repetitive data entry and allowing users to quickly adjust their schedules.
 
 To activate clipboard functionality in the Scheduler, set the [`allowClipboard`](https://ej2.syncfusion.com/documentation/api/schedule#allowclipboard) property to **true**.
 
@@ -19,7 +19,7 @@ To activate clipboard functionality in the Scheduler, set the [`allowClipboard`]
 
 ## Cut, copy, and paste using keyboard
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Scheduler control supports keyboard shortcuts to streamline appointment management operations.
+The Scheduler control supports keyboard shortcuts to streamline appointment management operations.
 
 Use these keyboard shortcuts to efficiently manage appointments:
 
@@ -70,7 +70,7 @@ To perform these operations, select an appointment and press **Ctrl+C** to copy 
 
 You can programmatically manage appointments by using the public methods **cut**, **copy**, and **paste**. These methods allow you to perform the same actions as the context menu or external buttons.
 
-Use these public methods to programmatically control appointment operations in the Syncfusion<sup style="font-size:70%">&reg;</sup> Scheduler control:
+Use these public methods to programmatically control appointment operations in the Scheduler control:
 
 | Method | Parameters                     | Description                                                                                     |
 |--------|--------------------------------|-------------------------------------------------------------------------------------------------|

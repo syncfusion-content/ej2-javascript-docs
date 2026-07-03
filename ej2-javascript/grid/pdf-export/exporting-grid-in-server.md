@@ -15,7 +15,7 @@ The Grid control provides an option to export grid data to a PDF document on the
 
 ## Server dependencies
 
-To enable server-side PDF exporting in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control, you need to include the following dependencies:
+To enable server-side PDF exporting in the ##Platform_Name## Grid control, you need to include the following dependencies:
 
 * Syncfusion.EJ2
 * Syncfusion.EJ2.GridExport
@@ -332,7 +332,7 @@ private void PdfHeaderQueryCellInfo(object pdf)
 
 ## Passing additional parameters to the server while exporting
 
-Passing additional parameters to the server when exporting data in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid involves providing flexibility to include extra information or customize the export process based on specific requirements.
+Passing additional parameters to the server when exporting data in the ##Platform_Name## Grid involves providing flexibility to include extra information or customize the export process based on specific requirements.
 
 You can achieve this by utilizing the [query](../../api/grid/#query) property and the [toolbarClick](../../api/grid/#toolbarclick) event. Within the `query` property, you can invoke the `addParams` method to add parameters to the request.
 

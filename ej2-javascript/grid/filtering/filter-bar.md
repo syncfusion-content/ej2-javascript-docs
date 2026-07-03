@@ -134,7 +134,7 @@ To enable the display of filter text within the pager, you should set the [showF
 
 ## Show or hide filter bar operator in filter bar cell
 
-In the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control, you have the ability to modify the filter operator for a column directly within the user interface during the filtering process through the filter bar cell. For instance, the default operator for filtering string-type columns in the filter bar is "startswith". Now, you can customize the default operator for a specific column using the filter operator feature.
+In the ##Platform_Name## Grid control, you have the ability to modify the filter operator for a column directly within the user interface during the filtering process through the filter bar cell. For instance, the default operator for filtering string-type columns in the filter bar is "startswith". Now, you can customize the default operator for a specific column using the filter operator feature.
 
 To achieve this functionality, you can enable the  [showFilterBarOperator](../../api/grid/filterSettings/#showfilterbaroperator) property within the [filterSettings](../../api/grid/filterSettings/).
 
@@ -167,9 +167,9 @@ To achieve this functionality, you can enable the  [showFilterBarOperator](../..
 
 ## Prevent filtering for particular column
 
-In the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid, you can prevent filtering for a specific column by utilizing the [allowFiltering](../../api/grid/#allowfiltering) property of the [column](../../api/grid/column/) object and setting it to **false**. This feature is useful when you want to disable filtering options for a particular column.
+In the ##Platform_Name## Grid, you can prevent filtering for a specific column by utilizing the [allowFiltering](../../api/grid/#allowfiltering) property of the [column](../../api/grid/column/) object and setting it to **false**. This feature is useful when you want to disable filtering options for a particular column.
 
-Here's an example that demonstrates how to remove the filter bar for the **CustomerID** column in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid:
+Here's an example that demonstrates how to remove the filter bar for the **CustomerID** column in ##Platform_Name## Grid:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -204,7 +204,7 @@ By default, the filter bar is set to a disabled mode for template columns in the
 
 To hide the filter bar for a template column, you can use the [filterTemplate](../../api/grid/column/#filtertemplate) property of the [column](../../api/grid/column/). This property allows you to define a custom template for the filter bar of a column.
 
-Here's an example that demonstrates how to hide the filter bar for a template column in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid:
+Here's an example that demonstrates how to hide the filter bar for a template column in the ##Platform_Name## Grid:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -235,7 +235,7 @@ Here's an example that demonstrates how to hide the filter bar for a template co
 
 ## Filter bar template with custom control
 
-The [filterBarTemplate](../../api/grid/column/#filterbartemplate) feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows you to customize the controls displayed in the filter bar. Normally, a text box is the default element rendered in the filter bar cell. This flexibility allows you to use various controls, such as datepicker, numerictextbox, combobox, and multiselect, within the filter bar based on your specific requirements.
+The [filterBarTemplate](../../api/grid/column/#filterbartemplate) feature in the ##Platform_Name## Grid allows you to customize the controls displayed in the filter bar. Normally, a text box is the default element rendered in the filter bar cell. This flexibility allows you to use various controls, such as datepicker, numerictextbox, combobox, and multiselect, within the filter bar based on your specific requirements.
 
 To utilize this feature, you can define a custom template for the filter bar by setting the `filterBarTemplate` property of a column in your ##Platform_Name## application:
 

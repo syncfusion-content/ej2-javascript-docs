@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Clipboard in ##Platform_Name## Grid control
 
-The clipboard feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid provides an easy way to copy selected rows or cells data into the clipboard. You can use keyboard shortcuts to perform the copy operation. The following list of keyboard shortcuts is supported in the Grid to copy selected rows or cells data into clipboard.
+The clipboard feature in the ##Platform_Name## Grid provides an easy way to copy selected rows or cells data into the clipboard. You can use keyboard shortcuts to perform the copy operation. The following list of keyboard shortcuts is supported in the Grid to copy selected rows or cells data into clipboard.
 
 Interaction keys |Description
 -----|-----
@@ -51,9 +51,9 @@ To enable the clipboard feature, you can use the grid control with your data sou
 
 ## Copy to clipboard by external buttons
 
-Copying data to the clipboard by using external buttons in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows you to programmatically trigger the copy operation, making it more friendly, especially for those who may not be familiar with keyboard shortcuts or manual copying.
+Copying data to the clipboard by using external buttons in the ##Platform_Name## Grid allows you to programmatically trigger the copy operation, making it more friendly, especially for those who may not be familiar with keyboard shortcuts or manual copying.
 
-To copy selected rows or cells data into the clipboard with the help of external buttons, you can utilize the [copy](../api/grid/clipboard/#copy) method available in the grid control. This is demonstrated in the following example,
+To copy selected rows or cells data into the clipboard with the help of external buttons, you can utilize the [copy](../api/grid/clipboard#copy) method available in the grid control. This is demonstrated in the following example,
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -84,7 +84,7 @@ To copy selected rows or cells data into the clipboard with the help of external
 
 ## AutoFill
 
-The AutoFill feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows you to copy the data of selected cells and paste it into other cells by simply dragging the autofill icon of the selected cells to the desired cells. This feature provides a convenient way to quickly populate data in a grid.
+The AutoFill feature in the ##Platform_Name## Grid allows you to copy the data of selected cells and paste it into other cells by simply dragging the autofill icon of the selected cells to the desired cells. This feature provides a convenient way to quickly populate data in a grid.
 
 **how to use the autofill feature**
 
@@ -96,7 +96,7 @@ The AutoFill feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##P
 
 4. Release the mouse to complete the autofill action, and the data from the source cells will be copied and pasted into the target cells.
 
-This feature is enabled by defining [enableAutoFill](../api/grid/#enableautofill) property as **true**. 
+This feature is enabled by defining [enableAutoFill](../api/grid#enableautofill) property as **true**. 
 
 The following example demonstrates, how to enable autofill feature in the grid.
 
@@ -127,7 +127,7 @@ The following example demonstrates, how to enable autofill feature in the grid.
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs2" %}
 {% endif %}
 
-> * If [enableAutoFill](../api/grid/#enableautofill) is set to **true**, then the autofill icon will be displayed on cell selection to copy cells.
+> * If [enableAutoFill](../api/grid#enableautofill) is set to **true**, then the autofill icon will be displayed on cell selection to copy cells.
 > * It requires the selection `mode` to be **Cell**,  `cellSelectionMode` to be **Box** and also `editMode` to be **Batch** .
 
 ### Limitations
@@ -140,7 +140,7 @@ The following example demonstrates, how to enable autofill feature in the grid.
 
 ## Paste
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid provides a paste feature that allows you to copy the content of a cell or a group of cells and paste it into another set of cells. This feature allows you to quickly copy and paste content within the grid, making it convenient for data entry and manipulation.
+The ##Platform_Name## Grid provides a paste feature that allows you to copy the content of a cell or a group of cells and paste it into another set of cells. This feature allows you to quickly copy and paste content within the grid, making it convenient for data entry and manipulation.
 
 Follow the steps below to use the Paste feature in the grid:
 

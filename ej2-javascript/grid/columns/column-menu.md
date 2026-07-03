@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Column menu in ##Platform_Name## Grid control
 
-The column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control provides options to enable features such as sorting, grouping, filtering, column chooser, and autofit. When users click on the column header’s menu icon, a menu will be displayed with these integrated features. To enable the column menu, you need to set the [showColumnMenu](../../api/grid/#showcolumnmenu) property to **true** in the Grid configuration.
+The column menu in the ##Platform_Name## Grid control provides options to enable features such as sorting, grouping, filtering, column chooser, and autofit. When users click on the column header’s menu icon, a menu will be displayed with these integrated features. To enable the column menu, you need to set the [showColumnMenu](../../api/grid#showcolumnmenu) property to **true** in the Grid configuration.
 
 To use the column menu, inject the **ColumnMenu** module in the grid.
 
@@ -26,7 +26,7 @@ The default column menu items are displayed in following table.
 | **AutoFit** | Auto fit the current column. |
 | **AutoFitAll** | Auto fit all columns. |
 | **ColumnChooser** | Choose the column visibility. |
-| **Filter** | Show the filter option as given in [filterSettings->type](../../api/grid/filterSettings/#type) |
+| **Filter** | Show the filter option as given in [filterSettings->type](../../api/grid/filterSettings#type) |
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -55,14 +55,14 @@ The default column menu items are displayed in following table.
 {% previewsample "page.domainurl/code-snippet/grid/row-template-cs4" %}
 {% endif %}
 
-> * You can disable column menu for a particular column by defining the [columns.showColumnMenu](../../api/grid/column/#showcolumnmenu) as false.
-> *  You can customize the default items by defining the [columnMenuItems](../../api/grid/#columnmenuitems) with required items.
+> * You can disable column menu for a particular column by defining the [columns.showColumnMenu](../../api/grid/column#showcolumnmenu) as false.
+> *  You can customize the default items by defining the [columnMenuItems](../../api/grid#columnmenuitems) with required items.
 
 ## Prevent column menu for particular column
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control provides the ability to prevent the appearance of the column menu for specific columns. This feature is useful when you want to restrict certain columns from being customizable through the column menu.
+The ##Platform_Name## Grid control provides the ability to prevent the appearance of the column menu for specific columns. This feature is useful when you want to restrict certain columns from being customizable through the column menu.
 
-To prevent the column menu for a particular column, you can set the [showColumnMenu](../../api/grid/column/#showcolumnmenu) property to **false** for that specific column configuration. This will disable the column menu options specifically for the designated column, while other columns will have the column menu enabled.
+To prevent the column menu for a particular column, you can set the [showColumnMenu](../../api/grid/column#showcolumnmenu) property to **false** for that specific column configuration. This will disable the column menu options specifically for the designated column, while other columns will have the column menu enabled.
 
 The following example demonstrates how to prevent the column menu for a specific column. In this example, the column menu is disabled for the **OrderID** column by setting the `showColumnMenu` property to **false**.
 
@@ -95,7 +95,7 @@ The following example demonstrates how to prevent the column menu for a specific
 
 ## Add custom column menu item
 
-The custom column menu item feature allows you to add additional menu items to the column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. These custom menu items can be defined using the [columnMenuItems](../../api/grid/#columnmenuitems) property, which accepts a collection of [columnMenuItemModel](../../api/grid/columnMenuItemModel) objects. You can define the actions for these custom items in the [columnMenuClick](../../api/grid/#columnmenuclick) event.
+The custom column menu item feature allows you to add additional menu items to the column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. These custom menu items can be defined using the [columnMenuItems](../../api/grid#columnmenuitems) property, which accepts a collection of [columnMenuItemModel](../../api/grid/columnMenuItemModel) objects. You can define the actions for these custom items in the [columnMenuClick](../../api/grid#columnmenuclick) event.
 
 Consider the following example, which demonstrates how to add a custom column menu item to clear the sorting of the Grid:
 
@@ -128,7 +128,7 @@ Consider the following example, which demonstrates how to add a custom column me
 
 ## Customize menu items for particular columns
 
-Sometimes, you have a scenario that to hide an item from column menu for particular columns. In that case, you need to define the [columnMenuOpenEventArgs.hide](../../api/grid/columnMenuOpenEventArgs) as true in the [columnMenuOpen](../../api/grid/#columnmenuopen) event.
+Sometimes, you have a scenario that to hide an item from column menu for particular columns. In that case, you need to define the [columnMenuOpenEventArgs.hide](../../api/grid/columnMenuOpenEventArgs) as true in the [columnMenuOpen](../../api/grid#columnmenuopen) event.
 
 The following sample, **Filter** item was hidden in column menu when opens for the **OrderID** column.
 
@@ -163,7 +163,7 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 
 The nested column menu feature provides an extended menu option in the grid column headers, allows you to access additional actions and options related to the columns.
 
-To enable the nested column menu feature, you need to define the [columnMenuItems](../../api/grid/#columnmenuitems) property in your control. The `columnMenuItems` property is an array that contains the items for the column menu. Each item can be a string representing a built-in menu item or an object defining a custom menu item.
+To enable the nested column menu feature, you need to define the [columnMenuItems](../../api/grid#columnmenuitems) property in your control. The `columnMenuItems` property is an array that contains the items for the column menu. Each item can be a string representing a built-in menu item or an object defining a custom menu item.
 
 Here is an example of how to configure the `columnMenuItems` property to include a nested menu:
 
@@ -246,10 +246,10 @@ Here is an example that demonstrates how to customize the column menu icon in th
 
 ## Column menu events
 
-The column menu in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid provides a set of events that allow customization of behavior and performing actions when the column menu is opened or clicked. The below events are helpful for adding additional functionality or implementing specific actions based on user interactions with the column menu.
+The column menu in ##Platform_Name## Grid provides a set of events that allow customization of behavior and performing actions when the column menu is opened or clicked. The below events are helpful for adding additional functionality or implementing specific actions based on user interactions with the column menu.
 
-1. The [columnMenuOpen](../../api/grid/#columnmenuopen) event triggers before the column menu opens.
-2. The [columnMenuClick](../../api/grid/#columnmenuclick) event triggers when the user clicks the column menu of the grid.
+1. The [columnMenuOpen](../../api/grid#columnmenuopen) event triggers before the column menu opens.
+2. The [columnMenuClick](../../api/grid#columnmenuclick) event triggers when the user clicks the column menu of the grid.
 
 {% if page.publishingplatform == "typescript" %}
 

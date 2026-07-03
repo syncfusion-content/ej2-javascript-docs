@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Searching in ##Platform_Name## Grid control
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid includes a powerful built-in searching feature that allows users to search for specific data within the grid. This feature enables efficient filtering of grid records based on user-defined search criteria, making it easier to locate and display relevant information. Whether you have a large dataset or simply need to find specific records quickly, the search feature provides a convenient solution.
+The ##Platform_Name## Grid includes a powerful built-in searching feature that allows users to search for specific data within the grid. This feature enables efficient filtering of grid records based on user-defined search criteria, making it easier to locate and display relevant information. Whether you have a large dataset or simply need to find specific records quickly, the search feature provides a convenient solution.
 
 To use the searching feature, need to inject  **Search** module in the grid and set the [allowSearching](../api/grid/column/#allowsearching) property to **true** to enable the searching feature in the grid.
 

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Grouping customization in ##Platform_Name## Grid control
 
-You can customize the appearance of grouping elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control using CSS. Here are examples of how to customize the group header, group expand/collapse icons, group caption row, and grouping indent cell.
+You can customize the appearance of grouping elements in the ##Platform_Name## Grid control using CSS. Here are examples of how to customize the group header, group expand/collapse icons, group caption row, and grouping indent cell.
 
 ## Customizing the group header
 

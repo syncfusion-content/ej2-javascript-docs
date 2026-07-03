@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Custom aggregate in ##Platform_Name## Grid control
 
-The custom aggregate feature in Syncfusion's<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control allows you to calculate aggregate values using your own aggregate function. This feature can be useful in scenarios where the built-in aggregate functions do not meet your specific requirements. To use the custom aggregate option, follow the steps below:
+The custom aggregate feature in ##Platform_Name## Grid control allows you to calculate aggregate values using your own aggregate function. This feature can be useful in scenarios where the built-in aggregate functions do not meet your specific requirements. To use the custom aggregate option, follow the steps below:
 
-* Set the [type](../../api/grid/aggregateColumn/#type) property to **Custom** in the [AggregateColumnn](../../api/grid/aggregateColumn)
+* Set the [type](../../api/grid/aggregateColumn#type) property to **Custom** in the [AggregateColumnn](../../api/grid/aggregateColumn)
 
-* Provide your custom aggregate function in the [customAggregate](../../api/grid/aggregateColumn/#customaggregate) property.
+* Provide your custom aggregate function in the [customAggregate](../../api/grid/aggregateColumn#customaggregate) property.
 
 The custom aggregate function will be invoked differently for total and group aggregations:
 
@@ -56,7 +56,7 @@ Here's an example that demonstrates how to use the custom aggregate feature in t
 
 ## Show the count of distinct values in aggregate row
 
-You can calculate the count of distinct values in an aggregate row by using custom aggregate functions. By specifying the [type](../../api/grid/aggregateColumn/#type) as **Custom** and providing a custom aggregate function in the [customAggregate](../../api/grid/aggregateColumn/#customaggregate) property, you can achieve this behavior.
+You can calculate the count of distinct values in an aggregate row by using custom aggregate functions. By specifying the [type](../../api/grid/aggregateColumn#type) as **Custom** and providing a custom aggregate function in the [customAggregate](../../api/grid/aggregateColumn#customaggregate) property, you can achieve this behavior.
 
 Here's an example that demonstrates how to show the count of distinct values for the **ShipCountry** column using a custom aggregate.
 
@@ -87,4 +87,4 @@ Here's an example that demonstrates how to show the count of distinct values for
 {% previewsample "page.domainurl/code-snippet/grid/custom-agg-cs1" %}
 {% endif %}
 
-> To display the aggregate value of the current column in another column, you can use the [columnName](../../api/grid/aggregateColumn/#columnname) property. If the `columnName` property is not defined, the field name value will be assigned to the `columnName` property.
+> To display the aggregate value of the current column in another column, you can use the [columnName](../../api/grid/aggregateColumn#columnname) property. If the `columnName` property is not defined, the field name value will be assigned to the `columnName` property.

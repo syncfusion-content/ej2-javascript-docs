@@ -79,7 +79,7 @@ The following example demonstrates how to add a custom text to the group caption
 
 ## Customize group caption text using locale
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows you to customize the group caption text based on the locale. This feature enables you to display localized text or translated content in the group captions according to different language or region settings.
+The ##Platform_Name## Grid allows you to customize the group caption text based on the locale. This feature enables you to display localized text or translated content in the group captions according to different language or region settings.
 
 To achieve this, you can utilize the `L10n` and `setCulture` methods from the `@syncfusion/ej2-base` package. The `L10n.load()` method is used to load the localized strings, where the grid object contains the specific translations for the group caption text and the `setCulture` method sets the active locale to **ar** culture to the Grid control.
 
@@ -114,7 +114,7 @@ The following example demonstrates, how to customize group caption text based on
 
 ## Render custom control in group caption
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid offers the flexibility to render a custom control in the group caption, providing advanced or interactive functionality within the group caption row. This feature allows you to display custom UI elements, like buttons, icons, or dropdowns, and handle user interactions directly within the group caption. 
+The ##Platform_Name## Grid offers the flexibility to render a custom control in the group caption, providing advanced or interactive functionality within the group caption row. This feature allows you to display custom UI elements, like buttons, icons, or dropdowns, and handle user interactions directly within the group caption. 
 
 To render custom control in the group caption, you can utilize the [captionTemplate](../../api/grid/groupSettings/#captiontemplate) property. This feature enables you to replace plain text with a custom control in the group caption, enhancing customization and interactivity.
 

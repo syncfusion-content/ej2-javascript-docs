@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Row drag and drop in ##Platform_Name## Grid control
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the grid by dragging and dropping them to new positions. Additionally, you can also drag and drop rows from one grid to another grid, as well as drag and drop rows to custom controls.
+The ##Platform_Name## Grid control provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the grid by dragging and dropping them to new positions. Additionally, you can also drag and drop rows from one grid to another grid, as well as drag and drop rows to custom controls.
 
 To use the row drag and drop feature in Grid control, you need to inject the **RowDD** module in the grid. The **RowDD** is responsible for handling the row drag and drop functionality in the grid control. Once you have injected the **RowDD**, you can then use the [allowRowDragAndDrop](../../api/grid/#allowrowdraganddrop) and [targetID](../../api/grid/rowDropSettings/#targetid) properties to enable and configure the row drag and drop feature in the Grid.
 

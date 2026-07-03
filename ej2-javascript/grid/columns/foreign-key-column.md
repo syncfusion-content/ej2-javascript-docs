@@ -34,11 +34,11 @@ To enable and integrate the foreign key column in the ##Platform_Name## Grid con
 
 2.Define the foreign key column in the grid using the following properties:
 
-* [dataSource](../../api/grid/column/#datasource): Specifies the foreign data source that  contains the related data.
+* [dataSource](../../api/grid/column#datasource): Specifies the foreign data source that  contains the related data.
 
-* [foreignKeyField](../../api/grid/column/#foreignkeyfield): Maps the column name in the grid to the field in the foreign data source that represents the foreign key relationship.
+* [foreignKeyField](../../api/grid/column#foreignkeyfield): Maps the column name in the grid to the field in the foreign data source that represents the foreign key relationship.
 
-* [foreignKeyValue](../../api/grid/column/#foreignkeyvalue): Specifies the field from the foreign data source that should be displayed in the grid as the related data.
+* [foreignKeyValue](../../api/grid/column#foreignkeyvalue): Specifies the field from the foreign data source that should be displayed in the grid as the related data.
 
 ```typescript
 
@@ -114,20 +114,20 @@ This example demonstrates how to use the foreign key column with remote data bin
 {% previewsample "page.domainurl/code-snippet/grid/foreign-key-cs1remote" %}
 {% endif %}
 
-> * For remote data, the sorting and grouping is done based on [column.foreignKeyField](../../api/grid/column/#foreignkeyfield) instead of [column.foreignKeyValue](../../api/grid/column/#foreignkeyvalue).
-> * If [column.foreignKeyField](../../api/grid/column/#foreignkeyfield) is not defined, then the column uses [column.field](../../api/grid/column/#field).
+> * For remote data, the sorting and grouping is done based on [column.foreignKeyField](../../api/grid/column#foreignkeyfield) instead of [column.foreignKeyValue](../../api/grid/column#foreignkeyvalue).
+> * If [column.foreignKeyField](../../api/grid/column#foreignkeyfield) is not defined, then the column uses [column.field](../../api/grid/column#field).
 
 ## Use edit template in foreignkey column
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides support for using an edit template in a foreign key column. By default, a dropdown control is used for editing foreign key column. However, you can render a different control for editing by using the [column.edit](../../api/grid/column/#edit) property. Here's an example that demonstrates how to use an edit template in a foreign key column:
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides support for using an edit template in a foreign key column. By default, a dropdown control is used for editing foreign key column. However, you can render a different control for editing by using the [column.edit](../../api/grid/column#edit) property. Here's an example that demonstrates how to use an edit template in a foreign key column:
 
 {% if page.publishingplatform == "typescript" %}
  
-In this example, an [AutoComplete](https://ej2.syncfusion.com/demos/#/bootstrap5/auto-complete/default.html) control is rendered as the edit template for the **"EmployeeID"** foreign key column. The [dataSource](../../api/auto-complete/#datasource) property of the `AutoComplete` control is set to the employees data, and the fields property is configured to display the **"FirstName"** field as the value.
+In this example, an [AutoComplete](https://ej2.syncfusion.com/demos/#/bootstrap5/auto-complete/default.html) control is rendered as the edit template for the **"EmployeeID"** foreign key column. The [dataSource](../../api/auto-complete#datasource) property of the `AutoComplete` control is set to the employees data, and the fields property is configured to display the **"FirstName"** field as the value.
 
 {% elsif page.publishingplatform == "javascript" %}
  
-In this example, an [AutoComplete](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/auto-complete/default.html) control is rendered as the edit template for the **"EmployeeID"** foreign key column. The [dataSource](../../api/auto-complete/#datasource) property of the `AutoComplete` control is set to the employees data, and the fields property is configured to display the **"FirstName"** field as the value.  
+In this example, an [AutoComplete](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/auto-complete/default.html) control is rendered as the edit template for the **"EmployeeID"** foreign key column. The [dataSource](../../api/auto-complete#datasource) property of the `AutoComplete` control is set to the employees data, and the fields property is configured to display the **"FirstName"** field as the value.  
 {% endif %}
 
 {% if page.publishingplatform == "typescript" %}
@@ -159,7 +159,7 @@ In this example, an [AutoComplete](https://ej2.syncfusion.com/javascript/demos/#
 
 ## Customize filter UI in foreignkey column
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to customize the filtering user interface (UI) for foreign key columns by using the [column.filter](../../api/grid/column/#filter) property. By default, a dropdown control is used for filtering foreign key columns. However, you can create your own custom filtering UI by specifying a template function for the `column.filter` property. Here's an example that demonstrates how to create a custom filtering UI in a foreign key column:
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to customize the filtering user interface (UI) for foreign key columns by using the [column.filter](../../api/grid/column#filter) property. By default, a dropdown control is used for filtering foreign key columns. However, you can create your own custom filtering UI by specifying a template function for the `column.filter` property. Here's an example that demonstrates how to create a custom filtering UI in a foreign key column:
 
 {% if page.publishingplatform == "typescript" %}
  
@@ -200,7 +200,7 @@ In this example, a [DropDownList](https://ej2.syncfusion.com/javascript/demos/#/
 
 ## Use filter bar template in foreignkey column
 
-You can use the filter bar template in a foreign key column in Grid by defining the [column.filterBarTemplate](../../api/grid/column/#filterbartemplate) property. This allows you to customize the filter bar for the foreign key column with a custom control or HTML template. Here's an example that demonstrates how to use a filter bar template in a foreign key column:
+You can use the filter bar template in a foreign key column in Grid by defining the [column.filterBarTemplate](../../api/grid/column#filterbartemplate) property. This allows you to customize the filter bar for the foreign key column with a custom control or HTML template. Here's an example that demonstrates how to use a filter bar template in a foreign key column:
 
 In this example, the **"EmployeeID"** column is a foreign key column, and the **filter** function is used as the filter bar template for this column. The `filter` function can be defined in your control code and should return the desired control or HTML template for the filter bar. The column header shows the custom filter bar template and you can select filter value by using the **DropDown** options.
 
@@ -233,13 +233,13 @@ In this example, the **"EmployeeID"** column is a foreign key column, and the **
 
 ## Perform aggregation in foreignkey column
 
-By default, aggregations are not supported in a foreign key column in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. However, you can achieve aggregation for a foreign key column by using [customAggregate](../../api/grid/aggregateColumn/#customaggregate).
+By default, aggregations are not supported in a foreign key column in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. However, you can achieve aggregation for a foreign key column by using [customAggregate](../../api/grid/aggregateColumn#customaggregate).
 
 To perform aggregation in a foreign key column, follow these steps:
 
 1.Define a foreign key column in the Grid.
 2.Implement a custom aggregate function to calculate the aggregation for the foreign key column.
-3.Set the [customAggregate](../../api/grid/aggregateColumn/#customaggregate) property of the column to the custom aggregate function.
+3.Set the [customAggregate](../../api/grid/aggregateColumn#customaggregate) property of the column to the custom aggregate function.
 
 Here's an example that demonstrates how to perform aggregation in a foreign key column:
 
@@ -274,9 +274,9 @@ In the provided example, the `customAggregateFn` function is used to filter the 
 
 ## Render foreign key value in column template
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows for rendering foreign key values within a column template, enhancing the display of related data in a clear format. This feature is particularly useful when you want to show a more meaningful representation of a foreign key instead of its underlying value.
+The ##Platform_Name## Grid allows for rendering foreign key values within a column template, enhancing the display of related data in a clear format. This feature is particularly useful when you want to show a more meaningful representation of a foreign key instead of its underlying value.
 
-To render foreign key values in a column template, you need to define a [template](../../api/grid/column/#template) for the column using the template property. The `template` property can accept either an HTML element or a function that returns the desired HTML element.
+To render foreign key values in a column template, you need to define a [template](../../api/grid/column#template) for the column using the template property. The `template` property can accept either an HTML element or a function that returns the desired HTML element.
 
 The following example demonstrates how to render foreign key values in a column template within the Grid:
 
@@ -342,15 +342,15 @@ In the following example, **Customer Name** and **Ship City** are foreign key co
 
 ## Edit template in foreign key column using remote data
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows you to customize the edit template for foreign key columns when using remote data. By default, a [DropDownList](../../drop-down-list/getting-started) control is used for editing foreign key column. However, you can render a different control by configuring the [column.edit](../../api/grid/column/#edit) property. 
+The ##Platform_Name## Grid allows you to customize the edit template for foreign key columns when using remote data. By default, a [DropDownList](../../drop-down-list/getting-started) control is used for editing foreign key column. However, you can render a different control by configuring the [column.edit](../../api/grid/column#edit) property. 
 
-This example demonstrates how to use an edit template in a foreign key column with remote data. In this case, an [AutoComplete](../../auto-complete/getting-started) control is rendered as the edit template for the **EmployeeID** foreign key column. The [dataSource](../../api/auto-complete/#datasource) property of the **AutoComplete** control is set to the employees data, and the [field](../../api/grid/column/#field) property is configured to display the **FirstName** field as the value. Follow the steps below to achieve this:
+This example demonstrates how to use an edit template in a foreign key column with remote data. In this case, an [AutoComplete](../../auto-complete/getting-started) control is rendered as the edit template for the **EmployeeID** foreign key column. The [dataSource](../../api/auto-complete#datasource) property of the **AutoComplete** control is set to the employees data, and the [field](../../api/grid/column#field) property is configured to display the **FirstName** field as the value. Follow the steps below to achieve this:
 
 {% if page.publishingplatform == "typescript" %}
 
 **Step 1:** Open Visual Studio and create an project using following [link](https://ej2.syncfusion.com/documentation/grid/connecting-to-adaptors/web-api-adaptor#creating-an-api-service) and named **EditTemplate**.
 
-**Step 2 :** Create a simple Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid by following the [Getting Started](../../grid/getting-started.md) documentation link.
+**Step 2 :** Create a simple ##Platform_Name## Grid by following the [Getting Started](../../grid/getting-started.md) documentation link.
 
 **Step 3:**  In your ##Platform_Name## control HTML file (e.g., **index.html**), define the  Grid and include the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> styles:
 
@@ -461,7 +461,7 @@ grid.appendTo('#Grid');
 
 **Step 1:** Open Visual Studio and create an project using following [link](https://ej2.syncfusion.com/javascript/documentation/grid/connecting-to-adaptors/web-api-adaptor#creating-an-api-service) and named **EditTemplate**.
 
-**Step 2 :** Create a simple Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid by following the [Getting Started](../../grid/getting-started.md) documentation link.
+**Step 2 :** Create a simple ##Platform_Name## Grid by following the [Getting Started](../../grid/getting-started.md) documentation link.
 
 **Step 3:**  In your ##Platform_Name## control HTML file (e.g., **index.html**), define the  Grid and include the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> styles:
 

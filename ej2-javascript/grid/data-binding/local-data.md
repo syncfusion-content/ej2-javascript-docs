@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid offers a straight forward way to bind local data, such as arrays or JSON objects, to the grid control. This feature allows you to display and manipulate data within the grid without the need for external server calls, making it particularly useful for scenarios where you're working with static or locally stored data.
 
-To achieve this, you can assign a JavaScript object array to the [dataSource](../../api/grid/#datasource) property. Additionally, you have an option to provide the local data source using an instance of the **DataManager**.
+To achieve this, you can assign a JavaScript object array to the [dataSource](../../api/grid#datasource) property. Additionally, you have an option to provide the local data source using an instance of the **DataManager**.
 
 The following example demonstrates how to utilize the local data binding feature in the ##Platform_Name## Grid control:
 
@@ -48,7 +48,7 @@ The following example demonstrates how to utilize the local data binding feature
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides support for real-time data binding using SignalR, allowing you to update the grid automatically as data changes on the server-side. This feature is particularly useful for applications requiring live updates and synchronization across multiple clients.
 
-To achieve real-time data binding with SignalR in your Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid, follow the steps below:
+To achieve real-time data binding with SignalR in your ##Platform_Name## Grid, follow the steps below:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -1472,11 +1472,11 @@ npm install @syncfusion/ej2-buttons --save
 
 **Step 15:** Create an **index.ts** file in the **src** folder and follow the steps below.
 
-A. To bind data from an external Fetch request, utilize the [dataSource](../api/grid/#datasource) property of the Grid. Fetch data from the server and provide it to the `dataSource` property using the `onSuccess` event of the Fetch request.
+A. To bind data from an external Fetch request, utilize the [dataSource](../api/grid#datasource) property of the Grid. Fetch data from the server and provide it to the `dataSource` property using the `onSuccess` event of the Fetch request.
 
-B. To perform CRUD actions, leverage the [actionBegin](../api/grid/#actionbegin) event. You can cancel the default CRUD operations by utilizing the **cancel** argument provided by this event. This allows you to dynamically call your server-side method using Fetch, along with the relevant data received from the `actionBegin` event, to update your server data accordingly.
+B. To perform CRUD actions, leverage the [actionBegin](../api/grid#actionbegin) event. You can cancel the default CRUD operations by utilizing the **cancel** argument provided by this event. This allows you to dynamically call your server-side method using Fetch, along with the relevant data received from the `actionBegin` event, to update your server data accordingly.
 
-C. In the Fetch success event, you have the flexibility to utilize the Grid [endEdit](../api/grid/#endedit) and [deleteRecord](../api/grid/#deleterecord) methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `actionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, you can employ a flag variable and manage it within the `actionComplete` and Fetch failure events: The following code snippet demonstrates this approach:
+C. In the Fetch success event, you have the flexibility to utilize the Grid [endEdit](../api/grid#endedit) and [deleteRecord](../api/grid#deleterecord) methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `actionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, you can employ a flag variable and manage it within the `actionComplete` and Fetch failure events: The following code snippet demonstrates this approach:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1861,11 +1861,11 @@ app.Run();
 
 **Step 6:**  Create a **js** folder under the **wwwroot** folder, then create an **index.js** file within the **js** folder and follow the steps below:
 
-A. To bind data from an external Fetch request, utilize the [dataSource](../api/grid/#datasource) property of the Grid. Fetch data from the server and provide it to the `dataSource` property using the `onSuccess` event of the Fetch request.
+A. To bind data from an external Fetch request, utilize the [dataSource](../api/grid#datasource) property of the Grid. Fetch data from the server and provide it to the `dataSource` property using the `onSuccess` event of the Fetch request.
 
-B. To perform CRUD actions, leverage the [actionBegin](../api/grid/#actionbegin) event. You can cancel the default CRUD operations by utilizing the **cancel** argument provided by this event. This allows you to dynamically call your server-side method using Fetch, along with the relevant data received from the `actionBegin` event, to update your server data accordingly.
+B. To perform CRUD actions, leverage the [actionBegin](../api/grid#actionbegin) event. You can cancel the default CRUD operations by utilizing the **cancel** argument provided by this event. This allows you to dynamically call your server-side method using Fetch, along with the relevant data received from the `actionBegin` event, to update your server data accordingly.
 
-C. In the Fetch success event, you have the flexibility to utilize the Grid [endEdit](../api/grid/#endedit) and [deleteRecord](../api/grid/#deleterecord) methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `actionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, you can employ a flag variable and manage it within the `actionComplete` and Fetch failure events: The following code snippet demonstrates this approach:
+C. In the Fetch success event, you have the flexibility to utilize the Grid [endEdit](../api/grid#endedit) and [deleteRecord](../api/grid#deleterecord) methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `actionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, you can employ a flag variable and manage it within the `actionComplete` and Fetch failure events: The following code snippet demonstrates this approach:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -2133,7 +2133,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to display 
 
 To display the loading indicator with local data, you need to set the [showSpinner](../api/grid#showspinner) property to **true**. This property controls the visibility of the loading indicator.
 
-The following example demonstrates how to display the loading indicator in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the [load](../api/grid#load) and [created](../api/grid/#created) events:
+The following example demonstrates how to display the loading indicator in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the [load](../api/grid#load) and [created](../api/grid#created) events:
 
 
 {% if page.publishingplatform == "typescript" %}
@@ -2449,11 +2449,11 @@ npm install @syncfusion/ej2-buttons --save
 
 **Step 15:** Create an **index.ts** file in the **src** folder and follow the steps below.
 
-A. To bind data from an external AJAX request, utilize the [dataSource](../api/grid/#datasource) property of the Grid. AJAX data from the server and provide it to the `dataSource` property using the `onSuccess` event of the AJAX request.
+A. To bind data from an external AJAX request, utilize the [dataSource](../api/grid#datasource) property of the Grid. AJAX data from the server and provide it to the `dataSource` property using the `onSuccess` event of the AJAX request.
 
-B. To perform CRUD actions, leverage the [actionBegin](../api/grid/#actionbegin) event. You can cancel the default CRUD operations by utilizing the **cancel** argument provided by this event. This allows you to dynamically call your server-side method using AJAX, along with the relevant data received from the `actionBegin` event, to update your server data accordingly.
+B. To perform CRUD actions, leverage the [actionBegin](../api/grid#actionbegin) event. You can cancel the default CRUD operations by utilizing the **cancel** argument provided by this event. This allows you to dynamically call your server-side method using AJAX, along with the relevant data received from the `actionBegin` event, to update your server data accordingly.
 
-C. In the AJAX success event, you have the flexibility to utilize the Grid [endEdit](../api/grid/#endedit) and [deleteRecord](../api/grid/#deleterecord) methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `actionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, you can employ a flag variable and manage it within the `actionComplete` and AJAX failure events: The following code snippet demonstrates this approach:
+C. In the AJAX success event, you have the flexibility to utilize the Grid [endEdit](../api/grid#endedit) and [deleteRecord](../api/grid#deleterecord) methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `actionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, you can employ a flag variable and manage it within the `actionComplete` and AJAX failure events: The following code snippet demonstrates this approach:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -2837,11 +2837,11 @@ app.Run();
 
 **Step 6:**  Create a **js** folder under the **wwwroot** folder, then create an **index.js** file within the **js** folder and follow the steps below:
 
-A. To bind data from an external AJAX request, utilize the [dataSource](../api/grid/#datasource) property of the Grid. AJAX data from the server and provide it to the `dataSource` property using the `onSuccess` event of the AJAX request.
+A. To bind data from an external AJAX request, utilize the [dataSource](../api/grid#datasource) property of the Grid. AJAX data from the server and provide it to the `dataSource` property using the `onSuccess` event of the AJAX request.
 
-B. To perform CRUD actions, leverage the [actionBegin](../api/grid/#actionbegin) event. You can cancel the default CRUD operations by utilizing the **cancel** argument provided by this event. This allows you to dynamically call your server-side method using AJAX, along with the relevant data received from the `actionBegin` event, to update your server data accordingly.
+B. To perform CRUD actions, leverage the [actionBegin](../api/grid#actionbegin) event. You can cancel the default CRUD operations by utilizing the **cancel** argument provided by this event. This allows you to dynamically call your server-side method using AJAX, along with the relevant data received from the `actionBegin` event, to update your server data accordingly.
 
-C. In the AJAX success event, you have the flexibility to utilize the Grid [endEdit](../api/grid/#endedit) and [deleteRecord](../api/grid/#deleterecord) methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `actionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, you can employ a flag variable and manage it within the `actionComplete` and AJAX failure events: The following code snippet demonstrates this approach:
+C. In the AJAX success event, you have the flexibility to utilize the Grid [endEdit](../api/grid#endedit) and [deleteRecord](../api/grid#deleterecord) methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `actionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, you can employ a flag variable and manage it within the `actionComplete` and AJAX failure events: The following code snippet demonstrates this approach:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -3109,7 +3109,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to display 
 
 To display the loading indicator with local data, you need to set the [showSpinner](../api/grid#showspinner) property to **true**. This property controls the visibility of the loading indicator.
 
-The following example demonstrates how to display the loading indicator in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the [load](../api/grid#load) and [created](../api/grid/#created) events:
+The following example demonstrates how to display the loading indicator in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the [load](../api/grid#load) and [created](../api/grid#created) events:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -3213,9 +3213,9 @@ function created() {
 
 ## Managing spinner visibility during data loading
 
-Showing a spinner during data loading in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid enhances the experience by providing a visual indication of the loading progress. This feature helps to understand that data is being fetched or processed.
+Showing a spinner during data loading in the ##Platform_Name## Grid enhances the experience by providing a visual indication of the loading progress. This feature helps to understand that data is being fetched or processed.
 
-To show or hide a spinner during data loading in the grid, you can utilize the [showSpinner](../../api/grid/#showspinner) and [hideSpinner](../../api/grid/#hidespinner) methods provided by the Grid control.
+To show or hide a spinner during data loading in the grid, you can utilize the [showSpinner](../../api/grid#showspinner) and [hideSpinner](../../api/grid#hidespinner) methods provided by the Grid control.
 
 The following example demonstrates how to show and hide the spinner during data loading using external buttons in a grid:
 
@@ -3248,15 +3248,15 @@ The following example demonstrates how to show and hide the spinner during data 
 
 ## Immutable mode  
 
-Immutable mode in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid is designed to optimize re-rendering performance by utilizing the object reference and [deep compare](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. This mode ensures that when performing Grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
+Immutable mode in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid is designed to optimize re-rendering performance by utilizing the object reference and deep compare concept. This mode ensures that when performing Grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
 
-To enable this feature, you need to set the [enableImmutableMode](../../api/grid/#enableImmutableMode) property as **true**.
+To enable this feature, you need to set the [enableImmutableMode](../../api/grid#enableImmutableMode) property as **true**.
 
-If immutable mode is enabled, when the datasource changes, only newly added rows are regenerated or reused. Consequently, the grid's [queryCellInfo](../../api/grid/#querycellinfo) and [rowDataBound](../../api/grid/#rowdatabound) events trigger only for newly generated rows, not for existing rows. 
+If immutable mode is enabled, when the datasource changes, only newly added rows are regenerated or reused. Consequently, the grid's [queryCellInfo](../../api/grid#querycellinfo) and [rowDataBound](../../api/grid#rowdatabound) events trigger only for newly generated rows, not for existing rows. 
 
 If immutable mode is not enabled, both newly added rows and existing rows are regenerated or reused when the datasource changes. As a result, the `rowDataBound` and `queryCellInfo` events trigger for both newly added and existing rows. 
 
-> This feature uses the primary key value for data comparison. So, you need to provide the [isPrimaryKey](../../api/grid/column/#isprimarykey) column.
+> This feature uses the primary key value for data comparison. So, you need to provide the [isPrimaryKey](../../api/grid/column#isprimarykey) column.
 
 The following example demonstrates how to enable immutable mode in an ##Platform_Name## control. When add, delete, or update actions are performed, existing rows are not regenerated or reused, ensuring efficient rendering of only the modified or newly added rows:
 

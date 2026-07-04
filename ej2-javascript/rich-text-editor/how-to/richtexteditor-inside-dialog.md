@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editor inside Dialog in ##Platform_Name## Richtexteditor control | Syncfusion
+title: Editor inside Dialog in ##Platform_Name## Richtexteditor | Syncfusion
 description: Learn here all about Rich Text Editor inside Dialog in ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Integrating Rich Text Editor in Dialog control 
@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 When rendering the Rich Text Editor inside a Dialog control, the dialog container and its wrapper elements are initially styled with `display: none`. This styling prevents the editor's toolbar from calculating the proper offset width. As a result, the toolbar may render incorrectly, appearing above the edit area container.
 
-To resolve this issue, we can utilize the [refreshUI](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#refreshui) method of the Rich Text Editor in conjunction with the [open](https://ej2.syncfusion.com/documentation/api/dialog/#open) event. This approach ensures that the Rich Text Editor's UI is properly refreshed and rendered once the Dialog is visible.
+To resolve this issue, we can utilize the [refreshUI](https://helpej2.syncfusion.com/documentation/api/rich-text-editor#refreshui) method of the Rich Text Editor in conjunction with the [open](https://ej2.syncfusion.com/documentation/api/dialog#open) event. This approach ensures that the Rich Text Editor's UI is properly refreshed and rendered once the Dialog is visible.
 
 {% if page.publishingplatform == "typescript" %}
 

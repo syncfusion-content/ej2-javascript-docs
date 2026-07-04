@@ -67,7 +67,7 @@ When the editor is created, the actual length of the text content is calculated,
 {% highlight ts tabtitle="app.ts" %}
 
 let editor: RichTextEditor = new RichTextEditor({
-  value: `<p>The Syncfusion Rich Text Editor, a WYSIWYG editor...</p>`,
+  value: `<p>The Rich Text Editor, a WYSIWYG editor...</p>`,
   height: 400,
   created: (): void => {
     setTimeout(() => {
@@ -93,7 +93,7 @@ editor.appendTo('#editor');
 {% highlight js tabtitle="index.js" %}
 
 var editor = new ej.richtexteditor.RichTextEditor({
-  value: `<p>The Syncfusion Rich Text Editor, a WYSIWYG (what you see is what you get) editor, is a user interface that allows you to create, edit, and format rich text content. You can try out a demo of this editor here. Key features: Provides IFRAME and DIV modes. Bulleted and numbered lists. Handles images, hyperlinks, videos, hyperlinks, uploads, etc. Contains undo/redo manager.</p>`,
+  value: `<p>The Rich Text Editor, a WYSIWYG (what you see is what you get) editor, is a user interface that allows you to create, edit, and format rich text content. You can try out a demo of this editor here. Key features: Provides IFRAME and DIV modes. Bulleted and numbered lists. Handles images, hyperlinks, videos, hyperlinks, uploads, etc. Contains undo/redo manager.</p>`,
   height: 400,
   created: () => {
     setTimeout(() => {

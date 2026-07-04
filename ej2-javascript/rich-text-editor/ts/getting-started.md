@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Rich Text Editor control
 
-The Syncfusion Typescript Rich Text Editor is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section explains the steps to create a simple Rich Text Editor and demonstrates the basic usage of the Rich Text Editor control using a Vite-based TypeScript project scaffolded with latest vite version.
+The Typescript Rich Text Editor is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section explains the steps to create a simple Rich Text Editor and demonstrates the basic usage of the Rich Text Editor control using a Vite-based TypeScript project scaffolded with latest vite version.
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ cd my-app
 npm install
 ```
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Rich Text Editor packages
+## Adding Rich Text Editor packages
 
 All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) public registry.
 To install Rich Text Editor component, use the following command
@@ -151,3 +151,5 @@ npm run dev
 * [Accessibility in Rich text editor](https://ej2.syncfusion.com/documentation/rich-text-editor/accessibility)
 * [Keyboard support in Rich text editor](https://ej2.syncfusion.com/documentation/rich-text-editor/keyboard-support)
 * [Globalization in Rich text editor](https://ej2.syncfusion.com/documentation/rich-text-editor/globalization)
+
+N> Looking for the full JavaScript Rich Text Editor component overview, features, pricing, and documentation? Visit the [JavaScript Rich Text Editor](https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor) page.

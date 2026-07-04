@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Rich text editor control | Syncfusion
+title: Es5 getting started with ##Platform_Name## Richtexteditor | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -313,7 +313,7 @@ Rich Text Editor can be initialized on div element as shown below
 
 The Rich Text Editor’s content is placed in an iframe and isolated from the rest of the page.
 
-Initialize the Rich Text Editor on div element and set the `enable` field of [iframeSettings](../api/rich-text-editor/iFrameSettings/#iframesettings) property to true.
+Initialize the Rich Text Editor on div element and set the `enable` field of [iframeSettings](../api/rich-text-editor/iFrameSettings#iframesettings) property to true.
 
 `[src/index.html]`
 
@@ -370,7 +370,7 @@ Initialize the Rich Text Editor on div element and set the `enable` field of [if
 
 ## Configure the toolbar
 
-Configure the toolbar with the tools using items field of the [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings) property as your application requires.
+Configure the toolbar with the tools using items field of the [toolbarSettings](../api/rich-text-editor/toolbarSettings#toolbarsettings) property as your application requires.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -387,7 +387,7 @@ Configure the toolbar with the tools using items field of the [toolbarSettings](
 
 ## Insert images and links
 
-The [`image`](../api/rich-text-editor/image/#image) module inserts an image into Rich Text Editor’s content area, and the [`link`](../api/rich-text-editor/link/#link) module links external resources such as website URLs, to selected text in the Rich Text Editor’s content, respectively.
+The [`image`](../api/rich-text-editor/image#image) module inserts an image into Rich Text Editor’s content area, and the [`link`](../api/rich-text-editor/link#link) module links external resources such as website URLs, to selected text in the Rich Text Editor’s content, respectively.
 
 The link inject module adds a link icon to the toolbar and the image inject module adds an image icon to the toolbar.
 
@@ -406,28 +406,28 @@ Specifies the items to be rendered in the quick toolbar based on the target elem
 
 ## Retrieve the formatted content
 
-To retrieve the editor contents, use [`value`](../api/rich-text-editor/#value) property of Rich Text Editor.
+To retrieve the editor contents, use [`value`](../api/rich-text-editor#value) property of Rich Text Editor.
 
 ```ts
   var rteValue = defaultRTE.value;
 ```
 
-Or, you can use the public method, [`getHtml`](../api/rich-text-editor/#gethtml) to retrieve the Rich Text Editor content.
+Or, you can use the public method, [`getHtml`](../api/rich-text-editor#gethtml) to retrieve the Rich Text Editor content.
 
 ```ts
   var rteValue = defaultRTE.getHtml();
 ```
 
-To fetch the Rich Text Editor's text content, use [`getText`](../api/rich-text-editor/#gettext) method of Rich Text Editor.
+To fetch the Rich Text Editor's text content, use [`getText`](../api/rich-text-editor#gettext) method of Rich Text Editor.
 
 ```ts
   var rteValue = defaultRTE.getText();
 ```
 
-> You can refer to our [JavaScript Rich Text Editor](https://www.syncfusion.com/javascript-ui-controls/js-wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Rich Text Editor example](https://ej2.syncfusion.com/javascript/demos/#/material/rich-text-editor/rich-text-editor.html) that shows how to render the rich text editor tools.
+> You can refer to our [JavaScript Rich Text Editor](https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Rich Text Editor example](https://ej2.syncfusion.com/javascript/demos/#/material/rich-text-editor/rich-text-editor.html) that shows how to render the rich text editor tools.
 
 ## See also
 
-* [How to change the editor type](./editor-modes/)
-* [How to render the iframe](./iframe/)
-* [How to render the toolbar in inline mode](./inline-mode/)
+* [How to change the editor type](./editor-modes)
+* [How to render the iframe](./iframe)
+* [How to render the toolbar in inline mode](./inline-mode)

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Custom Toolbar Items in ##Platform_Name## Rich Text Editor control
 
-The Syncfusion Rich Text Editor allows you to customize the toolbar using the [`toolbarSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor#toolbarSettings) property. You can add custom commands with text, icons, or HTML templates and define their position in the toolbar.
+The Rich Text Editor allows you to customize the toolbar using the [`toolbarSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor#toolbarSettings) property. You can add custom commands with text, icons, or HTML templates and define their position in the toolbar.
 
 ## Adding a custom command  
 

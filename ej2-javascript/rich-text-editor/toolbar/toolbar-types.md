@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Toolbar in ##Platform_Name## Rich Text Editor control
 
-The Syncfusion ##Platform_Name## Rich Text Editor provides a powerful toolbar that enables users to format, style, and edit content efficiently. The toolbar includes essential editing tools such as bold, italic, underline, alignment, and lists, along with customization options to suit different use cases.
+The ##Platform_Name## Rich Text Editor provides a powerful toolbar that enables users to format, style, and edit content efficiently. The toolbar includes essential editing tools such as bold, italic, underline, alignment, and lists, along with customization options to suit different use cases.
 
 > To create Rich Text Editor with Toolbar feature, inject the [Toolbar](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarSettings) module to the Rich Text Editor using the `RichTextEditor.Inject(Toolbar)` method.
 

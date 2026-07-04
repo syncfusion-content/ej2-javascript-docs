@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Top Tier and Bottom Tier in ##Platform_Name## Gantt Chart Control
 
-The ##Platform_Name## Gantt Chart control supports a two-tier timeline layout, enabling customization of both the top and bottom tiers through specific configuration options.
+The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control supports a two-tier timeline layout, enabling customization of both the top and bottom tiers through specific configuration options.
 
 - [topTier](../../api/gantt/timelineSettings#toptier) and [bottomTier](../../api/gantt/timelineSettings#bottomtier): Define the structure and visibility of each timeline tier.
 - [unit](../../api/gantt/timelineTierSettings#unit): Specifies the time unit for each tier, such as day, week, or month.

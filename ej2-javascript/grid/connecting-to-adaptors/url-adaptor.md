@@ -955,7 +955,7 @@ grid.appendTo('#Grid');
 
 ## Handling CRUD operations
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid Control seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: `insertUrl`, `removeUrl`, `updateUrl`, `crudUrl`, and `batchUrl`. These properties enable the grid to communicate with the data service for every grid action, facilitating server-side operations.
+The ##Platform_Name## Grid Control seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: `insertUrl`, `removeUrl`, `updateUrl`, `crudUrl`, and `batchUrl`. These properties enable the grid to communicate with the data service for every grid action, facilitating server-side operations.
 
 **CRUD operations mapping:**
 

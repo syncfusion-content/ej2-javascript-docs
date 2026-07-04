@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Column chooser in ##Platform_Name## Grid control
 
-The column chooser feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](../../api/grid/#showcolumnchooser) property as **true**.
+The column chooser feature in the ##Platform_Name## Grid control allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](../../api/grid#showcolumnchooser) property as **true**.
 
 To use the column chooser, inject the **ColumnChooser** module in the grid.
 
@@ -46,7 +46,7 @@ To use the column chooser, inject the **ColumnChooser** module in the grid.
 
 ## Hide column in column chooser dialog
 
-You can hide the column names in column chooser by defining the [columns->showInColumnChooser](../../api/grid/column/#showincolumnchooser) as **false**. This feature is useful when working with a large number of columns or when you want to limit the number of columns that are available for selection in the column chooser dialog.
+You can hide the column names in column chooser by defining the [columns->showInColumnChooser](../../api/grid/column#showincolumnchooser) as **false**. This feature is useful when working with a large number of columns or when you want to limit the number of columns that are available for selection in the column chooser dialog.
 
 In this example, the `columns->showInColumnChooser` property is set to false for the **Order ID** column. As a result, the **Order ID** column will not be displayed in the column chooser dialog.
 
@@ -82,7 +82,7 @@ In this example, the `columns->showInColumnChooser` property is set to false for
 
 ## Open column chooser by external button
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid provides the flexibility to open the column chooser dialog on a web page using an external button. By default, the column chooser button is displayed in the right corner of the grid control, and clicking the button opens the column chooser dialog below it. However, you can programmatically open the column chooser dialog at specific **X** and **Y** axis positions by using the [openColumnChooser](../../api/grid/columnChooser/#opencolumnchooser) method.
+The ##Platform_Name## Grid provides the flexibility to open the column chooser dialog on a web page using an external button. By default, the column chooser button is displayed in the right corner of the grid control, and clicking the button opens the column chooser dialog below it. However, you can programmatically open the column chooser dialog at specific **X** and **Y** axis positions by using the [openColumnChooser](../../api/grid/columnChooser#opencolumnchooser) method.
 
 Here's an example of how to open the column chooser in the Grid using an external button:
 
@@ -115,7 +115,7 @@ Here's an example of how to open the column chooser in the Grid using an externa
 
 ## Customize column chooser dialog size
 	
-The column chooser dialog in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid comes with default size, but you can modify its height and width as per your specific needs using CSS styles.
+The column chooser dialog in ##Platform_Name## Grid comes with default size, but you can modify its height and width as per your specific needs using CSS styles.
 To customize the column chooser dialog size, you can use the following CSS styles:
 
 ```css
@@ -240,9 +240,9 @@ Here is an example of how to show only specific columns in the column chooser:
 
 ## Change default search operator of the column chooser 
 
-The column chooser dialog in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid provides a search box that allows you to search for column names. By default, the search functionality uses the "startswith" operator to match columns and display the results in the column chooser dialog. However, there might be cases where you need to change the default search operator to achieve more precise data matching.
+The column chooser dialog in the ##Platform_Name## Grid provides a search box that allows you to search for column names. By default, the search functionality uses the "startswith" operator to match columns and display the results in the column chooser dialog. However, there might be cases where you need to change the default search operator to achieve more precise data matching.
 
-To change the default search operator of the column chooser in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you need to use the [operator](../../api/grid/columnChooserSettings/#operator) property of the `columnChooserSettings`.
+To change the default search operator of the column chooser in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you need to use the [operator](../../api/grid/columnChooserSettings#operator) property of the `columnChooserSettings`.
 
 Here's an example of how to change the default search operator of the column chooser to **contains** in the ##Platform_Name## Grid:
 
@@ -275,7 +275,7 @@ Here's an example of how to change the default search operator of the column cho
 
 ## Diacritics searching in column chooser
 
-By default, the grid ignores diacritic characters when performing a search in the column chooser. However, in some cases, you may want to include diacritic characters in the search. To enable this behavior, you can set the [columnChooserSettings->ignoreAccent](../../api/grid/columnChooserSettings/#ignoreaccent) property to **true**.
+By default, the grid ignores diacritic characters when performing a search in the column chooser. However, in some cases, you may want to include diacritic characters in the search. To enable this behavior, you can set the [columnChooserSettings->ignoreAccent](../../api/grid/columnChooserSettings#ignoreaccent) property to **true**.
 
 Here is an example that demonstrates the usage of the `ignoreAccent` property to include diacritic characters for searching in the column chooser:
 
@@ -306,9 +306,9 @@ Here is an example that demonstrates the usage of the `ignoreAccent` property to
 {% previewsample "page.domainurl/code-snippet/grid/columnchooser-diacriticsSearch-cs1" %}
 {% endif %}
 
-## Column Chooser Template in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid
+## Column Chooser Template in ##Platform_Name## Grid
 
-The Column Chooser Template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [showColumnChooser](../../api/grid/#showcolumnchooser) to **true** and add **ColumnChooser** to the [toolbar](../../api/grid#toolbar) property.
+The Column Chooser Template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [showColumnChooser](../../api/grid#showcolumnchooser) to **true** and add **ColumnChooser** to the [toolbar](../../api/grid#toolbar) property.
 
 To implement a custom column chooser template in the Grid, use the following properties:
 

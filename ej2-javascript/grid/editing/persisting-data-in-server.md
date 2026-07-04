@@ -37,7 +37,7 @@ For further details on configuration, refer to the [Web API Adaptor documentatio
 
 **Using Remote Save adaptor**
 
-The RemoteSaveAdaptor in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid component allows you to perform grid actions such as sorting, filtering, searching, and paging primarily on the client side, while handling CRUD operations (updating, inserting, and removing data) on the server side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
+The RemoteSaveAdaptor in the ##Platform_Name## Grid component allows you to perform grid actions such as sorting, filtering, searching, and paging primarily on the client side, while handling CRUD operations (updating, inserting, and removing data) on the server side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
 
 For further details on configuration, refer to the[Remote Save Adaptor Documentation]( ../connecting-to-adaptors/remote-save-adaptor)
 

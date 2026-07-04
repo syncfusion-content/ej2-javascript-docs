@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization and Localization in ##Platform_Name## Gantt Chart Component | Syncfusion
+title: Localization in ##Platform_Name## Gantt Chart | Syncfusion
 description: Learn here all about globalization and localization in Syncfusion ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Globalization and Localization 
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Globalization and Localization in ##Platform_Name## Gantt Chart Control
 
-The ##Platform_Name## Gantt Chart control supports globalization to adapt project management interfaces to diverse languages, cultures, and regional preferences without code changes. Globalization encompasses localization for translating text elements like column headers and dialog titles, internationalization for formatting dates, numbers, and times in timelines and task fields, and Right-to-Left (RTL) support for languages like Arabic and Hebrew. These features ensure that task names, toolbar actions, and timeline displays align with users’ linguistic and cultural expectations, enhancing accessibility and usability in project management workflows for global users.
+The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control supports globalization to adapt project management interfaces to diverse languages, cultures, and regional preferences without code changes. Globalization encompasses localization for translating text elements like column headers and dialog titles, internationalization for formatting dates, numbers, and times in timelines and task fields, and Right-to-Left (RTL) support for languages like Arabic and Hebrew. These features ensure that task names, toolbar actions, and timeline displays align with users’ linguistic and cultural expectations, enhancing accessibility and usability in project management workflows for global users.
 
 ## Key globalization features
 
@@ -229,8 +229,8 @@ The following tables organize all available locale keys by functional category:
 | milestone        | Milestone            |
 | toTask           | To Task              |
 | toMilestone      | To Milestone         |
-| autoFitAll       | Auto Fit all columns |
-| autoFit          | Auto Fit this column |
+| AutoFitAll       | Auto Fit all columns |
+| AutoFit          | Auto Fit this column |
 | SortAscending    | Sort Ascending       |
 | SortDescending   | Sort Descending      |
 

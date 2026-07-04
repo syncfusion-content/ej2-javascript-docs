@@ -50,7 +50,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 File Manager control ca
 
 ### Using local script and style
 
-To use local scripts and styles for Syncfusion<sup style="font-size:70%">&reg;</sup> File Manager, you can follow these steps:
+To use local scripts and styles for File Manager, you can follow these steps:
 
 **1. Download Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2):** Obtain the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installation location.
 
@@ -75,7 +75,7 @@ Here's an example of referencing the file manager's scripts and styles in an HTM
 
 **a.Essential<sup style="font-size:70%">&reg;</sup> Dependency (Minimal Setup)**
 
-This setup includes only the necessary scripts and styles required to render the Syncfusion<sup style="font-size:70%">&reg;</sup> File Manager. Use this setup for a lightweight application that requires basic file manager functionality.
+This setup includes only the necessary scripts and styles required to render the File Manager. Use this setup for a lightweight application that requires basic file manager functionality.
 
 ```html
 
@@ -196,7 +196,7 @@ Here's an example of referencing the file manager's scripts and styles in an HTM
 
 **a.Essential<sup style="font-size:70%">&reg;</sup> Dependency (Minimal Setup)**
 
-This setup includes only the necessary scripts and styles required to render the Syncfusion<sup style="font-size:70%">&reg;</sup> File Manager. Use this setup for a lightweight application that requires basic file manager functionality.
+This setup includes only the necessary scripts and styles required to render the File Manager. Use this setup for a lightweight application that requires basic file manager functionality.
 
 ```html
 <!DOCTYPE html>
@@ -361,6 +361,8 @@ Output will be displayed as follows.
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/file-manager/es5-getting-started-cs1" %}
+
+N> Looking for the full JavaScript File Manager component overview, features, pricing, and documentation? Visit the [JavaScript File Manager](https://www.syncfusion.com/javascript-ui-controls/js-file-manager) page
 
 ## See also
 

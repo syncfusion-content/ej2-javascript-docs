@@ -161,7 +161,7 @@ The following example demonstrates how to enable the lazy load grouping with inf
 
 ## Lazy load grouping with virtual scrolling
 
-The lazy load grouping with virtual scrolling feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows you to efficiently present and analyze large grouped datasets. This feature optimizes performance, reduces initial load time, and provides smooth scrolling through the dataset. 
+The lazy load grouping with virtual scrolling feature in the ##Platform_Name## Grid allows you to efficiently present and analyze large grouped datasets. This feature optimizes performance, reduces initial load time, and provides smooth scrolling through the dataset. 
 
 **How lazy load grouping with virtual scrolling works**
 

@@ -123,8 +123,13 @@ editor.appendTo('#editor');
 </head>
 
 <body>
+<<<<<<< HEAD
+     <div id="editor"></div>
+     <script type="module" src="/src/main.ts"></script>
+=======
     <div id="editor"></div>
     <script type="module" src="/src/main.ts"></script>
+>>>>>>> 6d423ae3a72932cc7a70f3b683cc6314d695c6cf
 </body>
 </html>
 
@@ -137,6 +142,11 @@ editor.appendTo('#editor');
  
 Use the following command to run the application.
 
+<<<<<<< HEAD
+Use the following command to run the application.
+
+=======
+>>>>>>> 6d423ae3a72932cc7a70f3b683cc6314d695c6cf
 ```bash
 npm run dev
 ```

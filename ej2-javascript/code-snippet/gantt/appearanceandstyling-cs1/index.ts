@@ -3,16 +3,18 @@ import { GanttData } from './datasource.ts';
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
-    height: '450px',
+    height: '430px',
+    taskbarHeight: 50,
+    rowHeight: 60,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
+        dependency: 'Predecessor',
         parentID: 'ParentID'
-    },
-    taskbarHeight: 50,
-    rowHeight: 60
+    }
 });
+
 gantt.appendTo('#Gantt');

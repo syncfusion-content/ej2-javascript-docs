@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row selection in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Row selection in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Gantt Row Selection API Guide | Syncfusion
+description: Explore how to configure and customize row selection in the Syncfusion ##Platform_Name## Gantt Chart control using API methods and events.
 platform: ej2-javascript
 control: Row selection 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row selection in ##Platform_Name## Gantt control
+# Row Selection in ##Platform_Name## Gantt Chart Control
 
-The row selection in the Gantt control can be enabled or disabled using the [allowSelection](../../api/gantt#allowselection) property. You can get the selected row object using the [getSelectedRecords](../../api/gantt/selection#getselectedrecords) method. The following code example shows how to disable the row selection in Gantt.
+The ##Platform_Name## Gantt Chart control supports row selection using mouse clicks or keyboard navigation (arrow keys). This enables users to highlight, manipulate, or trigger actions on selected task rows.
+
+## Single row selection
+
+You can enable single row selection in the Gantt Chart control by setting [selectionSettings.mode](../../api/gantt/selectionSettings#mode) to **Row** and [selectionSettings.type](../../api/gantt/selectionSettings#type) to **Single**. This allows you to select only one task row at a time.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -40,11 +44,54 @@ The row selection in the Gantt control can be enabled or disabled using the [all
 {% previewsample "page.domainurl/code-snippet/gantt/selection-cs4" %}
 {% endif %}
 
-> `Row` selection is the default type of Gantt selection mode.
+## Multiple row selection
 
-## Selecting a row on initial load
+You can enable multiple row selection in the Gantt Chart control by setting  [selectionSettings.mode](../../api/gantt/selectionSettings#mode) to **Row** and [selectionSettings.type](../../api/gantt/selectionSettings#type) to **Multiple**. This allows selection of more than one task row at a time by holding down the **Ctrl** key while clicking on multiple rows.
 
-You can select a row at the time of loading by setting the index of the row to the [selectedRowIndex](../../api/gantt#selectedrowindex) property. Find the following code example for details.
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/selection-cs14/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/selection-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/selection-cs14" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/selection-cs14/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/selection-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/selection-cs14" %}
+{% endif %}
+
+## Row selection event sequence
+
+- On initial row selection: `rowSelecting` triggers first, followed by `rowSelected`.
+
+- When selecting a different row:
+
+  - [rowSelecting](../../api/gantt#rowselecting) is followed by [rowDeselecting](../../api/gantt#rowdeselecting) and [rowDeselected](../../api/gantt#rowdeselected) to deselect the previously selected row.
+
+  - Then, [rowSelected](../../api/gantt#rowselected) triggers for the newly selected row.
+
+This sequence ensures proper handling of row transitions during selection and deselection.
+
+## Select row at initial rendering
+
+You can highlight or pre-select a specific row during the initial rendering of the Gantt Chart control by setting the [selectedRowIndex](../../api/gantt#selectedrowindex) property. This selects the row at the specified index when the Gantt loads.
+
+The following example selects the row at index 5 during initial load:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -73,9 +120,13 @@ You can select a row at the time of loading by setting the index of the row to t
 {% previewsample "page.domainurl/code-snippet/gantt/selection-cs5" %}
 {% endif %}
 
-## Selecting a row dynamically
+## Select rows externally
 
-You can also select a row dynamically using the [selectRow](../../api/gantt/selection#selectrow) method. Similarly, You can also select rows dynamically using the [selectRows](../../api/gantt/selection#selectrows) method. The following code demonstrates how to select a single or multiples row dynamically by clicking the custom button.
+You can programmatically or dynamically select single rows, multiple rows, or a range of rows in the ##Platform_Name## Gantt Chart control.
+
+### Single row selection
+
+Select a single row in the Gantt Chart control by calling the [selectRow](../../api/gantt/selection#selectrow) method with the desired row index.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -104,9 +155,9 @@ You can also select a row dynamically using the [selectRow](../../api/gantt/sele
 {% previewsample "page.domainurl/code-snippet/gantt/selectRow-cs1" %}
 {% endif %}
 
-## Multiple row selection
+### Multiple rows selection
 
-You can select multiple rows by setting the [selectionSettings.type](../../api/gantt/selectionSettings#type) property to `multiple`. You can select more than one row by holding down the CTRL key while selecting multiple rows. The following code example explains how to enable multiple selection in Gantt.
+Select multiple rows in the Gantt Chart control by using the [selectRows](../../api/gantt/selection#selectrows) method with an array of row indexes.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -135,9 +186,117 @@ You can select multiple rows by setting the [selectionSettings.type](../../api/g
 {% previewsample "page.domainurl/code-snippet/gantt/selection-cs6" %}
 {% endif %}
 
+### Range of rows selection
+
+Select a range of rows in the Gantt Chart control by using the [selectRowsByRange](../../api/gantt/selection#selectrowsbyrange) method with the start and end row indexes.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/selection-cs15/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/selection-cs15/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/selection-cs15" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/selection-cs15/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/selection-cs15/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/selection-cs15" %}
+{% endif %}
+
+## Enable multi row selection without Ctrl key
+
+You can enable simple multi-row selection by setting the `enableSimpleMultiRowSelection` property to **true** in the Grid configuration during the [created](../../gantt/events#created) event. This allows multiple rows to be selected individually through clicks without holding the Ctrl key.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/selection-cs16/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/selection-cs16/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/selection-cs16" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/selection-cs16/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/selection-cs16/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/selection-cs16" %}
+{% endif %}
+
+## Get selected row information
+
+To access selected row details in the ##Platform_Name## Gantt Chart control:
+
+- [getSelectedRowIndexes](../../api/gantt/selection#getselectedrowindexes) – Returns the index positions of selected rows.
+- [getSelectedRecords](../../api/gantt/selection#getselectedrecords) – Provides the corresponding data objects.
+- [getSelectedRows](../../api/gantt/selection#getselectedrows) – Retrieves the actual row elements from the DOM.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/selection-cs17/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/selection-cs17/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/selection-cs17" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/selection-cs17/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/selection-cs17/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/selection-cs17" %}
+{% endif %}
+
+> **Note:** The Gantt Chart control supports keyboard navigation for row selection. Use arrow keys to move focus and `Enter` or `Space` to select rows. Ensure accessibility compliance by providing appropriate ARIA attributes.
+
 ## Customize row selection action
 
-While selecting a row in Gantt, the [rowSelecting](../../api/gantt#rowselecting) and [rowSelected](../../api/gantt#rowselected) events will be triggered. The the [rowSelecting](../../api/gantt#rowselecting) event will be triggered on initialization of row selection, and you can get the previously selected row and current selecting row’s information, which is used to prevent selection of a particular row. The [rowSelected](../../api/gantt#rowselected) event will be triggered on completion of row selection action, and you can get the current selected row’s information through this event. The following code example demonstrates how to prevent the selection of a row using the [rowSelecting](../../api/gantt#rowselecting) event.
+You can customize row selection in the Gantt Chart using [rowSelecting](../../gantt/events#rowselecting), [rowSelected](../../gantt/events#rowselected), [rowDeselecting](../../gantt/events#rowdeselecting), and [rowDeselected](../../gantt/events#rowdeselected) events, which allow dynamic control over selection behavior based on specific conditions.
+
+The following demonstrates how row selection and background color updates are handled in the ##Platform_Name## Gantt Chart control:
+
+- In `rowSelecting`, selection is prevented when `TaskID` is 2.
+- In `rowSelected`, rows with **Progress** > 40 are highlighted with a green background.
+- In `rowDeselected`, rows with **Progress** ≤ 40 are styled with mauve background color.
+- In `rowDeselecting`, if **Progress** > 80, the background color changes to yellow.
+
+The following sample demonstrates
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -165,5 +324,3 @@ While selecting a row in Gantt, the [rowSelecting](../../api/gantt#rowselecting)
 
 {% previewsample "page.domainurl/code-snippet/gantt/selection-cs7" %}
 {% endif %}
-
-In the Gantt control, when you click an already selected row, selection will be cleared. While deselecting a row in Gantt, the [rowDeselecting](../../api/gantt#rowdeselecting) and [rowDeselected](../../api/gantt#rowselected) events will occur. The [rowDeselecting](../../api/gantt#rowdeselecting) event will occur on initialization of deselecting row, and you can get the current deselecting row’s information to prevent the deselection of particular row. The [rowDeselected](../../api/gantt#rowselected) event will occur on completion of row deselection action, and you can get the current deselected row’s information.

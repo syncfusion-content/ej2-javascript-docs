@@ -510,13 +510,20 @@ In the demo below, the expand/collapse icons have been changed to arrow-down and
 
 ## Detail row events
 
-The Grid control's `detailExpand` and `detailCollapse` events fire before a detail row actually expands or collapses, allowing you a chance to control whether the action should continue. The `detailExpand` event is raised just before a row expands, and `detailCollapse` fires just before a row collapses, with both events providing respective details through their event arguments.
+The Grid provides detail row events that enable control over actions before expanding or collapsing a row and support executing custom logic after the action is completed.
 
-In the example below, expansion is prevented for the "Nancy" row, and collapse is prevented for the "Andrew" row.
+| Event Name         | When It Fires                  | Description |
+|--------------------|--------------------------------|-------------|
+| `detailExpand`     | Before a detail row expands.    | Triggered just before a row expands, allowing the expand action to be controlled or canceled using event arguments. |
+| `detailCollapse`   | Before a detail row collapses.  | Triggered just before a row collapses, allowing the collapse action to be controlled or canceled using event arguments. |
+| `detailExpanded`   | After the detail row expands.   | Fired after the detail row has expanded, enabling custom actions to be performed. |
+| `detailCollapsed`  | After the detail row collapses. | Fired after the detail row has collapsed, enabling custom actions to be performed. |
+
+In the example below, expansion is prevented for the "Nancy" row using `detailExpand` event, collapse is prevented for the "Andrew" row using `detailCollapse` event, and expanded and collapsed row details are logged using the `detailExpanded` and `detailCollapsed` events.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid/detail-row-events/index.ts %}
 {% endhighlight %}

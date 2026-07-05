@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Change schedule date in ##Platform_Name## Gantt control | Syncfusion
-description: Learn how to programmatically update project schedule dates in the Syncfusion ##Platform_Name## Gantt Chart to adjust timelines and task schedules efficiently.
+description: Learn how to update project schedule dates programmatically in the Syncfusion ##Platform_Name## Gantt Chart to efficiently adjust timelines and task schedules.
 platform: ej2-javascript
 control: Schedule dates
 publishingplatform: ##Platform_Name##

@@ -30,7 +30,7 @@ diagram.exportDiagram(options);
 
 ## Exporting options
 
-The diagram provides support to export the desired region of the diagram to various formats. The following table shows the list of [`exportOptions`](../api/diagram/iExportOptions/) in diagram.
+The diagram provides support to export the desired region of the diagram to various formats. The following table shows the list of [`exportOptions`](../api/diagram/iExportOptions) in diagram.
 
 | Name | Type | Description|
 |-------- | -------- | -------- |
@@ -112,7 +112,7 @@ diagram.appendTo('#element');
 
 ### Region
 
-Exporting particular region of diagram is possible by using the [`region`](../api/diagram/iExportOptions/#region) property of the [`exportOptions`](../api/diagram/iExportOptions/). The available export regions are listed in the table below.
+Exporting particular region of diagram is possible by using the [`region`](../api/diagram/iExportOptions#region) property of the [`exportOptions`](../api/diagram/iExportOptions). The available export regions are listed in the table below.
 
 | Region | Description |
 |-------- | -------- |
@@ -133,11 +133,11 @@ The following example shows how to export diagram with different regions.
         
 {% previewsample "page.domainurl/code-snippet/diagram/export-cs-3" %}
 
-N> The [`bounds`](../api/diagram/iExportOptions/#bounds) property of [`exportOptions`](../api/diagram/iExportOptions/) should be defined to export the diagram with CustomBounds region.
+N> The [`bounds`](../api/diagram/iExportOptions#bounds) property of [`exportOptions`](../api/diagram/iExportOptions) should be defined to export the diagram with CustomBounds region.
 
 ### MultiplePage
 
-When the [`multiplePage`](../api/diagram/iExportOptions/#multiplepage) option is set to false, the diagram is exported as a single image. When it set to true, the diagram is exported as multiple images based on its width and height.
+When the [`multiplePage`](../api/diagram/iExportOptions#multiplepage) option is set to false, the diagram is exported as a single image. When it set to true, the diagram is exported as multiple images based on its width and height.
 
 The following code example demonstrates how to export the diagram as multiple images.
 
@@ -154,7 +154,7 @@ The following code example demonstrates how to export the diagram as multiple im
 
 ### Export image
 
-You can pass the base64 data of an image to the [`exportImage`](../api/diagram/#exportimage) method to export it directly. The following example shows how to export base64 data using the `exportImage` method.
+You can pass the base64 data of an image to the [`exportImage`](../api/diagram#exportimage) method to export it directly. The following example shows how to export base64 data using the `exportImage` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -169,7 +169,7 @@ You can pass the base64 data of an image to the [`exportImage`](../api/diagram/#
 
 ### Get diagram content
 
-To get the html diagram content, the [`getDiagramContent`](../api/diagram/#getdiagramcontent) method is used. the following example shows how to get the diagram content at runtime.
+To get the html diagram content, the [`getDiagramContent`](../api/diagram#getdiagramcontent) method is used. the following example shows how to get the diagram content at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

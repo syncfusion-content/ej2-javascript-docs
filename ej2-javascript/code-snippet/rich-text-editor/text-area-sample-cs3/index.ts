@@ -5,4 +5,3 @@ const editor: RichTextEditor = new RichTextEditor({ });
 editor.appendTo('#editor');
 
 
-

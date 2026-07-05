@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Task bar editing in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Task bar editing in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Task bar editing in ##Platform_Name## Gantt Chart Control | Syncfusion
+description: Learn how to edit tasks via taskbar interactions in the Syncfusion ##Platform_Name## Gantt Chart control for intuitive project timeline adjustments.
 platform: ej2-javascript
 control: Task bar editing 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Task bar editing in ##Platform_Name## Gantt control
+# Task Bar Editing in ##Platform_Name## Gantt Chart Control
 
-## Taskbar editing
+Task bar editing in the ##Platform_Name## Gantt Chart control enables intuitive project timeline adjustments by allowing to drag or resize taskbars to modify task details, such as start dates, durations, or progress, using mouse or touch interactions. Enable this feature by setting the [allowTaskbarEditing](../../api/gantt/editSettings#allowtaskbarediting) property to **true** and injecting `Edit`, ensuring task data aligns with valid [taskFields](../../api/gantt#taskfields) mappings (e.g., id, startDate, duration). Taskbars can be dragged to shift dates, resize them to adjust durations, or move progress grips to update completion percentages. The [taskbarEditing](../../gantt/events#taskbarediting) event allows preventing edits for specific tasks, while the [queryTaskbarInfo](../../gantt/events#querytaskbarinfo) event customizes taskbar visuals by hiding editing indicators like resizers or connector points.
 
-Modify the task details through user interaction such as resizing and dragging the taskbar by enabling the [allowTaskbarEditing](../../api/gantt/editSettings#allowtaskbarediting) property.
+## Edit taskbars
+
+Enable taskbar editing by setting [allowTaskbarEditing](../../api/gantt/editSettings#allowtaskbarediting) to **true** and injecting `Edit`. Drag taskbars to adjust start and end dates, resize them to modify durations, or adjust progress grips to update completion percentages, ideal for quick timeline updates.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -42,9 +44,9 @@ Modify the task details through user interaction such as resizing and dragging t
 {% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs13" %}
 {% endif %}
 
-## Prevent editing for specific tasks
+## Prevent taskbar editing for specific tasks
 
-On taskbar edit action, the [taskbarEditing](../../api/gantt#taskbarediting) event will be triggered. You can prevent the taskbar from editing using the [taskbarEditing](../../api/gantt#taskbarediting) event. This can be done by setting cancel property of [taskbarEditing](../../api/gantt#taskbarediting) event argument to true. And we can hide the taskbar editing indicators like taskbar resizer, progress resizer and connector points by using [queryTaskbarInfo](../../api/gantt#querytaskbarinfo) event.  The following code example shows how to achieve this.
+Prevent taskbar editing for specific tasks using the [taskbarEditing](../../gantt/events#taskbarediting) event by setting its `cancel` property to **true** based on task data, such as protecting milestones. Customize taskbar visuals by hiding editing indicators (e.g., resizers, connector points) using the [queryTaskbarInfo](../../gantt/events#querytaskbarinfo) event, ensuring a tailored editing experience.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -72,3 +74,8 @@ On taskbar edit action, the [taskbarEditing](../../api/gantt#taskbarediting) eve
 
 {% previewsample "page.domainurl/code-snippet/gantt/editing-cs5" %}
 {% endif %}
+
+## See also
+- [How to configure task editing?](../../gantt/editing)
+- [How to manage task dependencies?](../../gantt/task-dependency)
+- [How to configure critical path?](../../gantt/critical-path)

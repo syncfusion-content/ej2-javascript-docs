@@ -1,5 +1,3 @@
-
-
 import { Gantt, Reorder } from '@syncfusion/ej2-gantt';
 import { Button } from '@syncfusion/ej2-buttons';
 import { GanttData } from './datasource.ts';
@@ -8,7 +6,12 @@ Gantt.Inject(Reorder);
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
+    height: '430px',
     allowReordering: true,
+    treeColumnIndex: 1,
+    splitterSettings: {
+        position: '75%'
+    },
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -17,23 +20,27 @@ let gantt: Gantt = new Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    height: '450px',
-    splitterSettings: {
-        position: '100%'
-    },
     columns: [
-        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
-        { field: 'TaskName', headerText: 'Task Name', width: '150' },
-        { field: 'StartDate', headerText: 'Start Date', width: '150' },
-        { field: 'Duration', headerText: 'Duration', width: '150' },
-        { field: 'Progress', headerText: 'Progress', width: '150' }
+        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: 90 },
+        { field: 'TaskName', headerText: 'Task Name', textAlign: 'Left', width: 290 },
+        { field: 'StartDate', headerText: 'Start Date', textAlign: 'Right', width: 120 },
+        { field: 'Duration', headerText: 'Duration', textAlign: 'Right', width: 90 },
+        { field: 'Progress', headerText: 'Progress', textAlign: 'Right', width: 120 }
     ]
 });
+
 gantt.appendTo('#Gantt');
 
-let reorderMultipleCols: Button = new Button();
-reorderMultipleCols.appendTo('#reorderMultipleCols');
+let singleBtn: Button = new Button();
+singleBtn.appendTo('#reorderSingle');
 
-document.getElementById('reorderMultipleCols').addEventListener('click', () => {
-    gantt.reorderColumns(['TaskID','TaskName'], 'Progress');
+let multipleBtn: Button = new Button();
+multipleBtn.appendTo('#reorderMultiple');
+
+document.getElementById('reorderSingle').addEventListener('click', () => {
+    gantt.reorderColumns('TaskName', 'TaskID');
+});
+
+document.getElementById('reorderMultiple').addEventListener('click', () => {
+    gantt.reorderColumns(['TaskName', 'StartDate', 'Duration'], 'TaskID');
 });

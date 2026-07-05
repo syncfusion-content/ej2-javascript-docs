@@ -1,85 +1,110 @@
 ---
 layout: post
-title: Resources in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Resources in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Resources in ##Platform_Name## Gantt Chart Control | Syncfusion
+description: Learn how to configure resources in the Syncfusion ##Platform_Name## Gantt Chart control for task allocation and utilization visualization.
 platform: ej2-javascript
-control: Resources 
+control: Resources
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resources in ##Platform_Name## Gantt control
+# Resources in ##Platform_Name## Gantt Chart Control
 
-In Gantt, the resources are represented by staff, equipment and materials etc. In Gantt control you can show or allocate the resources (human resources) for each task.
+Resources in the  ##Platform_Name## Gantt Chart control represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [resources](../api/gantt#resources) property, resources map to tasks using [resourceFields](../api/gantt#resourcefields) for ID, name, unit, and group. This enables display of resource names in columns or labels with [labelSettings](../api/gantt/labelSettings), highlighting workloads and overallocation. The [queryTaskbarInfo](../gantt/events#querytaskbarinfo) event customizes taskbar styles based on resources, such as color-coding. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
 
-## Resource collection
+## Configure resource collection
 
-The resource collection contains details about resources that are used in the project. Resources are JSON object that contains id, name, unit and group of the resources and this collection is mapped to the Gantt control using the [resources](../api/gantt#resources) property. These resource fields are mapped to the Gantt control using the [resourceFields](../api/gantt#resourceFields) property.
+The resource collection defines available resources as JSON objects with ID, name, unit, and group, mapped via [resourceFields](../api/gantt#resourcefields):
 
-| Resource fields                            | Description                                                                                                                                                                                    |
-| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](../api/gantt/resourceFields#id)       | This field is used to assign resources to the tasks.                                                                                                                                           |
-| [name](../api/gantt/resourceFields#name)   | This field is used to map the resource names. These names are displayed as one of Gantt columns and also can display as labels using the [labelSettings](../api/gantt/labelSettings) property. |
-| [unit](../api/gantt/resourceFields#unit)   | It indicates the amount of work that can be done by a resource for the task in a day.                                                                                                          |
-| [group](../api/gantt/resourceFields#group) | This field is used to group the resources and the tasks assigned to that particular resource into category.                                                                                    |
+- **id**: Maps to a unique identifier for task assignment.
+- **name**: Maps to the resource name displayed in labels or columns.
+- **unit**: Maps to the work capacity percentage (0-100%) per day.
+- **group**: Maps to categories for grouping resources.
 
-The following code snippets shows resource collection and how it assigned to Gantt control.
+The following code demonstrates resource collection setup:
+
+{% if page.publishingplatform == "typescript" %}
 
 ```ts
-
-let projectResources: object[] =  resources: [
-    { resourceId: 1, resourceName: 'Martin Tamer', resourceGroup: 'Planning Team', resourceUnit: 50},
+var projectResources: Object[] = [
+    { resourceId: 1, resourceName: 'Martin Tamer', resourceGroup: 'Planning Team', resourceUnit: 50 },
     { resourceId: 2, resourceName: 'Rose Fuller', resourceGroup: 'Testing Team', resourceUnit: 70 },
     { resourceId: 3, resourceName: 'Margaret Buchanan', resourceGroup: 'Approval Team' },
     { resourceId: 4, resourceName: 'Fuller King', resourceGroup: 'Development Team' },
     { resourceId: 5, resourceName: 'Davolio Fuller', resourceGroup: 'Approval Team' },
-    { resourceId: 6, resourceName: 'Van Jack', resourceGroup: 'Development Team', resourceUnit: 40 },
+    { resourceId: 6, resourceName: 'Van Jack', resourceGroup: 'Development Team', resourceUnit: 40 }
 ];
 
-let gantt: Gantt = new Gantt({
-    resourceFields: {
-        id: 'resourceId', //resource Id Mapping
-        name: 'resourceName', //resource Name mapping
-        unit: 'resourceUnit', //resource Unit mapping
-        group: 'resourceGroup' //resource Group mapping
-    },
-    resources: projectResources //resource collection dataSource
- });
-gantt.appendTo('#Gantt');
-
+var resourceFields: ResourceFieldsModel = {
+    id: 'resourceId',
+    name: 'resourceName',
+    unit: 'resourceUnit',
+    group: 'resourceGroup'
+};
 ```
 
-## Assign resource
+{% elsif page.publishingplatform == "javascript" %}
 
-We can assign resources for a task at initial load, using the resource id value of the resources as a collection. This collection is mapped from the dataSource to the Gantt control using the [resourceInfo](../api/gantt/taskFields#resourceinfo) property.
+```js
+var projectResources = [
+    { resourceId: 1, resourceName: 'Martin Tamer', resourceGroup: 'Planning Team', resourceUnit: 50 },
+    { resourceId: 2, resourceName: 'Rose Fuller', resourceGroup: 'Testing Team', resourceUnit: 70 },
+    { resourceId: 3, resourceName: 'Margaret Buchanan', resourceGroup: 'Approval Team' },
+    { resourceId: 4, resourceName: 'Fuller King', resourceGroup: 'Development Team' },
+    { resourceId: 5, resourceName: 'Davolio Fuller', resourceGroup: 'Approval Team' },
+    { resourceId: 6, resourceName: 'Van Jack', resourceGroup: 'Development Team', resourceUnit: 40 }
+];
 
-Resources are assigned to tasks in following ways.
-
-### Assign resource alone
-
-If the unit is not specified for specific resource, the amount of work done will be consider as 100% by default. In such cases, the resource unit will not be displayed in Gantt UI.
-
-```ts
-
-  { TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50, resources: [1] },
-
+var resourceFields = {
+  id: "resourceId",
+  name: "resourceName",
+  unit: "resourceUnit",
+  group: "resourceGroup",
+};
 ```
 
-### Assign resource with unit
+{% endif %}
 
-We can assign the quantity of work done by the resources for the specific task as like below code snippet.
+This configuration maps resources for assignment and display.
 
-```ts
+## Assign resources to tasks
 
- { TaskID: 3, TaskName: 'Perform soil test', StartDate: new Date('03/29/2019'), Duration: 4,
-    resources: [{resourceId: 2, resourceUnit: 70}, {resourceId: 1, resourceUnit: 70}] },
+Resources are assigned to tasks using resource IDs in the data source, mapped via [taskFields.resourceInfo](../api/gantt/taskFields#resourceinfo). Assignments can be added or edited dynamically via cell or dialog editing, triggered by double-clicking.
 
+**Single resource assignment:**
+
+Assign a single resource without unit for default 100% allocation.
+
+```typescript
+{
+    TaskID: 2,
+    TaskName: 'Identify site location',
+    StartDate: new Date('04/02/2019'),
+    Duration: 0,
+    Progress: 50,
+    resources: [1]
+}
 ```
 
-When resource unit is defined in resource collection, the amount of work done by that particular resource will be same for all the tasks.
+**Multiple resources with custom units:**
 
-The following code snippet shows how to assign the resource for each task and map to Gantt control.
+Assign multiple resources with specific units.
+
+```typescript
+{
+    TaskID: 2,
+    TaskName: 'Identify site location',
+    StartDate: new Date('03/29/2019'),
+    Duration: 2,
+    Progress: 30,
+    resources: [{ resourceId: 1, unit: 70 }, 6]
+}
+```
+
+Units from the resource collection apply unless overridden at the task level.
+
+The following example shows resource assignment:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -91,7 +116,7 @@ The following code snippet shows how to assign the resource for each task and ma
 {% include code-snippet/gantt/resources-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/resources-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -108,21 +133,21 @@ The following code snippet shows how to assign the resource for each task and ma
 {% previewsample "page.domainurl/code-snippet/gantt/resources-cs1" %}
 {% endif %}
 
-## Add/Edit resource collection
+## Manage resource assignments
 
-By using cell/ dialog edit option, we can add/remove the multiple resources for a particular task. Resource Unit can be change for a each task on resource tab in the edit dialog by double click on the unit cell.
+Add or remove resources via cell or dialog editing. Cell editing modifies assignments by double-clicking the resource cell, while dialog editing uses the resource tab in the edit dialog.
 
-![Cell Edit](./images/cellEdit-resource.png)
+![Resource cell editing](./images/cellEdit-resource.png)
+_Alt text: Resource cell editing in the Gantt grid for assignment modifications._
 
-![Dialog Edit](./images/dialogedit-resource.png)
+![Resource dialog editing](./images/dialogedit-resource.png)
+_Alt text: Resource dialog editing tab for multiple allocations and units._
 
-## Custom background colors for resource column and taskbar
+## Customize resource styling
 
-In Gantt Component, you can customize the background colors of the resource column and taskbars based on the resources assigned to each task. This customization enhances the readability and usability of the Gantt chart.
+Customize resource display using column templates for the resource column and the [queryTaskbarInfo](../gantt/events#querytaskbarinfo) event for taskbar styling based on assigned resources.
 
-To achieve this, utilize the [template](https://ej2.syncfusion.com/documentation/api/gantt/column#template) property for the resource column and the [queryTaskbarInfo](https://ej2.syncfusion.com/documentation/api/gantt#querytaskbarinfo) event. The `template` property allows you to define a custom template for the resource column, while the `queryTaskbarInfo` event to modify the taskbar properties, including background colors.
-
-The following code snippet demonstrates how to customize the background colors of the taskbar and resource column according to the assigned resources:
+The following example demonstrates custom resource styling:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -134,7 +159,7 @@ The following code snippet demonstrates how to customize the background colors o
 {% include code-snippet/gantt/resource-customization-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/resource-customization-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -150,3 +175,11 @@ The following code snippet demonstrates how to customize the background colors o
 
 {% previewsample "page.domainurl/code-snippet/gantt/resource-customization-cs1" %}
 {% endif %}
+
+This configuration applies background colors to resource columns and taskbars, with the `queryTaskbarInfo` event modifying taskbar properties dynamically.
+
+## See also
+
+- [How to configure resource view?](../gantt/resource-view)
+- [How to manage task dependencies?](../gantt/task-dependency)
+- [How to customize taskbars?](../gantt/taskbar)

@@ -134,7 +134,7 @@ To show only icons in the built-in toolbar items, apply custom CSS to hide the t
 
 ## Customize toolbar buttons using CSS
 
-You can customize the appearance of toolbar buttons in the Gantt component using CSS. Use the following class selectors to target the toolbar icons and buttons:
+You can customize the appearance of toolbar buttons in the Gantt Chart control using CSS. Use the following class selectors to target the toolbar icons and buttons:
 
 ```css
 .e-gantt .e-toolbar .e-tbar-btn .e-icons,
@@ -238,7 +238,7 @@ By default, custom toolbar items are aligned to the left. However, you can chang
 
 ## Built-in and custom items in toolbar
 
-The Gantt component supports using both built-in and custom toolbar items simultaneously. In this example, **ExpandAll** and **CollapseAll** are built-in items, while **Test** and **Schedule** is a custom item added to the toolbar.
+The Gantt control supports using both built-in and custom toolbar items simultaneously. In this example, **ExpandAll** and **CollapseAll** are built-in items, while **Test** and **Schedule** is a custom item added to the toolbar.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -300,7 +300,7 @@ You can control toolbar items dynamically using the [enableItems](../api/gantt#e
 
 ## Add input elements to toolbar
 
-You can enhance the Gantt toolbar component by adding editor elements such as numeric text boxes, drop-down lists, and date pickers. These input controls improve user interaction by enabling filtering, searching, and other dynamic actions.
+You can enhance the Gantt toolbar control by adding editor elements such as numeric text boxes, drop-down lists, and date pickers. These input controls improve user interaction by enabling filtering, searching, and other dynamic actions.
 
 The following example demonstrates how to integrate an [AutoComplete](../../auto-complete/getting-started) compoenent into the toolbar.
 

@@ -26,7 +26,7 @@ This article describes the API migration process of Diagram component from Essen
 <tr>
 <td><b>Defines the background color of diagram elements</b></td>
 
-<td><b>Property</b>:<i>`backgroundColor`</i>
+<td><b>Property</b>: <i>backgroundColor</i>
 <code>
 $("#diagram").ejDiagram({
     backgroundColor: "red"
@@ -34,7 +34,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 
-<td><b>Property</b>:<i>`backgroundColor`</i>
+<td><b>Property</b>: <i>backgroundColor</i>
 <code>
 var diagram = new ej.diagrams.Diagram({
     backgroundColor: 'red'
@@ -46,7 +46,7 @@ diagram.appendTo('#diagram');
 
 <tr>
 <td><b>Defines how to align the background image over the diagram area</b></td>
-<td><b>Property</b>:<i>`backgroundImage.alignment`</i>
+<td><b>Property</b>: <i>backgroundImage.alignment</i>
 <code>
 $("#diagramcontent").ejDiagram({
     backgroundImage: {
@@ -56,7 +56,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 
-<td><b>Property</b>:<i>`background.align`</i>
+<td><b>Property</b>: <i>background.align</i>
 <code>
 var diagram = new ej.diagrams.Diagram({
     pageSettings: {
@@ -73,7 +73,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines how the background image should be scaled/stretched</b></td>
 
-<td><b>Property</b>:<i>`backgroundImage.scale`</i>
+<td><b>Property</b>: <i>backgroundImage.scale</i>
 <code>
 $("#diagramcontent").ejDiagram({
     backgroundImage: {
@@ -83,7 +83,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 
-<td><b>Property</b>:<i>`background.scale`</i>
+<td><b>Property</b>: <i>background.scale</i>
 <code>
 var diagram = new ej.diagrams.Diagram({
     pageSettings: {
@@ -100,7 +100,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the source path of the background image</b></td>
 
-<td><b>Property</b>:<i>`backgroundImage.source`</i>
+<td><b>Property</b>: <i>backgroundImage.source</i>
 <code>
 $("#diagramcontent").ejDiagram({
     backgroundImage: {
@@ -110,7 +110,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 
-<td><b>Property</b>:<i>`background.source`</i>
+<td><b>Property</b>: <i>background.source</i>
 <code>
 var diagram = new ej.diagrams.Diagram({
     pageSettings: {
@@ -138,7 +138,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the direction of line bridges</b></td>
 
-<td><b>Property</b>:<i>`bridgeDirection`</i>
+<td><b>Property</b>: <i>bridgeDirection</i>
 <code>
 $("#diagramcontent").ejDiagram({
     bridgeDirection: ej.datavisualization.Diagram.BridgeDirection.Bottom
@@ -146,7 +146,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 
-<td><b>Property</b>:<i>`bridgeDirection`</i>
+<td><b>Property</b>: <i>bridgeDirection</i>
 <code>
 var diagram = new ej.diagrams.Diagram({
     bridgeDirection: 'Top'
@@ -170,7 +170,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Stores the multiple command names with the corresponding command objects</b></td>
 <td>
-<b>Property</b>:<i>`commandManager.commands`</i>
+<b>Property</b>: <i>commandManager.commands</i>
 </br>
 </br>
 <code>
@@ -198,7 +198,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`commandManager.commands`</i>
+<b>Property</b>: <i>commandManager.commands</i>
 </br>
 </br>
 <code>
@@ -234,7 +234,7 @@ diagram.appendTo('#diagram');
 <td><b>The command is executable at the moment or not.
 </b></td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.canExecute`</i>
+<b>Property</b>: <i>commandManager.commands.canExecute</i>
 </br>
 </br>
 <code>
@@ -262,7 +262,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.canExecute`</i>
+<b>Property</b>: <i>commandManager.commands.canExecute</i>
 </br>
 </br>
 <code>
@@ -298,7 +298,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines what to be executed when the key combination is recognized
 </b></td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.execute`</i>
+<b>Property</b>: <i>commandManager.commands.execute</i>
 </br>
 </br>
 <code>
@@ -326,7 +326,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.execute`</i>
+<b>Property</b>: <i>commandManager.commands.execute</i>
 </br>
 </br>
 <code>
@@ -361,7 +361,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines a combination of keys and key modifiers, on recognition of which the command will be executed</b></td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.gesture`</i>
+<b>Property</b>: <i>commandManager.commands.gesture</i>
 </br>
 </br>
 <code>
@@ -389,7 +389,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.gesture`</i>
+<b>Property</b>: <i>commandManager.commands.gesture</i>
 </br>
 </br>
 <code>
@@ -425,7 +425,7 @@ diagram.appendTo('#diagram');
 <td><b>Sets the key value, on recognition of which the command will be executed
 </b></td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.gesture.key`</i>
+<b>Property</b>: <i>commandManager.commands.gesture.key</i>
 </br>
 </br>
 <code>
@@ -453,7 +453,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.gesture.key`</i>
+<b>Property</b>: <i>commandManager.commands.gesture.key</i>
 </br>
 </br>
 <code>
@@ -489,7 +489,7 @@ diagram.appendTo('#diagram');
 <td><b>Sets a combination of key modifiers, on recognition of which the command will be executed.
 </b></td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.gesture.keyModifiers`</i>
+<b>Property</b>: <i>commandManager.commands.gesture.keyModifiers</i>
 </br>
 </br>
 <code>
@@ -517,7 +517,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.gesture.keyModifiers`</i>
+<b>Property</b>: <i>commandManager.commands.gesture.keyModifiers</i>
 </br>
 </br>
 <code>
@@ -553,7 +553,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines any additional parameters that are required at runtime
 </b></td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.parameter`</i>
+<b>Property</b>: <i>commandManager.commands.parameter</i>
 </br>
 </br>
 <code>
@@ -582,7 +582,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`commandManager.commands.parameter`</i>
+<b>Property</b>: <i>commandManager.commands.parameter</i>
 </br>
 </br>
 <code>
@@ -628,7 +628,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Allows the user to save custom information/data about a connector</b></td>
 <td>
-<b>Property</b>:<i>`connectors.addInfo`</i>
+<b>Property</b>: <i>connectors.addInfo</i>
 </br>
 </br>
 <code>
@@ -653,7 +653,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.addInfo`</i>
+<b>Property</b>: <i>connectors.addInfo</i>
 </br>
 </br>
 <code>
@@ -679,7 +679,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the bridgeSpace of connector</b></td>
 <td>
-<b>Property</b>:<i>`connectors.bridgeSpace`</i>
+<b>Property</b>: <i>connectors.bridgeSpace</i>
 </br>
 </br>
 <code>
@@ -701,7 +701,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.bridgeSpace`</i>
+<b>Property</b>: <i>connectors.bridgeSpace</i>
 </br>
 </br>
 <code>
@@ -728,7 +728,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Enables or disables the behaviors of connectors</b></td>
 <td>
-<b>Property</b>:<i>`connectors.constraints`</i>
+<b>Property</b>: <i>connectors.constraints</i>
 </br>
 </br>
 <code>
@@ -751,7 +751,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.constraints`</i>
+<b>Property</b>: <i>connectors.constraints</i>
 </br>
 </br>
 <code>
@@ -778,7 +778,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the radius of the rounded corner</b></td>
 <td>
-<b>Property</b>:<i>`connectors.cornerRadius`</i>
+<b>Property</b>: <i>connectors.cornerRadius</i>
 </br>
 </br>
 <code>
@@ -800,7 +800,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.cornerRadius`</i>
+<b>Property</b>: <i>connectors.cornerRadius</i>
 </br>
 </br>
 <code>
@@ -828,7 +828,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Customize connectors appearance using user-defined CSS</b></td>
 <td>
-<b>Property</b>:<i>`connectors.cssClass`</i>
+<b>Property</b>: <i>connectors.cssClass</i>
 </br>
 </br>
 <code>
@@ -856,7 +856,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the horizontal alignment of the connector</b></td>
 <td>
-<b>Property</b>:<i>`connectors.horizontalAlign`</i>
+<b>Property</b>: <i>connectors.horizontalAlign</i>
 </br>
 </br>
 <code>
@@ -884,7 +884,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>A collection of JSON objects where each object represents a label</b></td>
 <td>
-<b>Property</b>:<i>`connectors.labels`</i>
+<b>Property</b>: <i>connectors.labels</i>
 </br>
 </br>
 <code>
@@ -906,7 +906,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.annotations`</i>
+<b>Property</b>: <i>connectors.annotations</i>
 </br>
 </br>
 <code>
@@ -937,7 +937,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Stroke color of the connector</b></td>
 <td>
-<b>Property</b>:<i>`connectors.lineColor`</i>
+<b>Property</b>: <i>connectors.lineColor</i>
 </br>
 </br>
 <code>
@@ -960,7 +960,7 @@ $("#diagramcontent").ejDiagram({
 </td>
 
 <td>
-<b>Property</b>:<i>`connectors.style.strokeColor`</i>
+<b>Property</b>: <i>connectors.style.strokeColor</i>
 </br>
 </br>
 <code>
@@ -989,7 +989,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the pattern of dashes and gaps used to stroke the path of the connector</b></td>
 <td>
-<b>Property</b>:<i>`connectors.lineDashArray`</i>
+<b>Property</b>: <i>connectors.lineDashArray</i>
 </br>
 </br>
 <code>
@@ -1012,7 +1012,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.style.strokeDashArray`</i>
+<b>Property</b>: <i>connectors.style.strokeDashArray</i>
 </br>
 </br>
 <code>
@@ -1043,7 +1043,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the width of the line</b></td>
 <td>
-<b>Property</b>:<i>`connectors.lineWidth`</i>
+<b>Property</b>: <i>connectors.lineWidth</i>
 </br>
 </br>
 <code>
@@ -1065,7 +1065,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.style.strokeWidth`</i>
+<b>Property</b>: <i>connectors.style.strokeWidth</i>
 </br>
 </br>
 <code>
@@ -1097,7 +1097,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines the padding value to ease the interaction with connectors
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.lineHitPadding`</i>
+<b>Property</b>: <i>connectors.lineHitPadding</i>
 </br>
 </br>
 <code>
@@ -1119,7 +1119,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.hitPadding`</i>
+<b>Property</b>: <i>connectors.hitPadding</i>
 </br>
 </br>
 <code>
@@ -1147,7 +1147,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines the minimum space to be left between the bottom of parent bounds and the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.marginBottom`</i>
+<b>Property</b>: <i>connectors.marginBottom</i>
 </br>
 </br>
 <code>
@@ -1169,7 +1169,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.margin.bottom`</i>
+<b>Property</b>: <i>connectors.margin.bottom</i>
 </br>
 </br>
 <code>
@@ -1199,7 +1199,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines the minimum space to be left between the top of parent bounds and the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.marginTop`</i>
+<b>Property</b>: <i>connectors.marginTop</i>
 </br>
 </br>
 <code>
@@ -1221,7 +1221,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.margin.top`</i>
+<b>Property</b>: <i>connectors.margin.top</i>
 </br>
 </br>
 <code>
@@ -1251,7 +1251,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines the minimum space to be left between the left of parent bounds and the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.marginLeft`</i>
+<b>Property</b>: <i>connectors.marginLeft</i>
 </br>
 </br>
 <code>
@@ -1273,7 +1273,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.margin.left`</i>
+<b>Property</b>: <i>connectors.margin.left</i>
 </br>
 </br>
 <code>
@@ -1303,7 +1303,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines the minimum space to be left between the right of parent bounds and the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.marginRight`</i>
+<b>Property</b>: <i>connectors.marginRight</i>
 </br>
 </br>
 <code>
@@ -1325,7 +1325,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`connectors.margin.right`</i>
+<b>Property</b>: <i>connectors.margin.right</i>
 </br>
 </br>
 <code>
@@ -1354,7 +1354,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets a unique name for the connector</b></td>
 <td>
-<b>Property</b>:<i>`connectors.name`</i>
+<b>Property</b>: <i>connectors.name</i>
 </br>
 </br>
 <code>
@@ -1374,7 +1374,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.id`</i>
+<b>Property</b>: <i>connectors.id</i>
 </br>
 </br>
 <code>
@@ -1400,7 +1400,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the transparency of the connector</b></td>
 <td>
-<b>Property</b>:<i>`connectors.opacity`</i>
+<b>Property</b>: <i>connectors.opacity</i>
 </br>
 </br>
 <code>
@@ -1421,7 +1421,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.style.opacity`</i>
+<b>Property</b>: <i>connectors.style.opacity</i>
 </br>
 </br>
 <code>
@@ -1451,7 +1451,7 @@ diagram.appendTo('#diagram');
 <td><b>Sets the parent name of the connector.
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.parent`</i>
+<b>Property</b>: <i>connectors.parent</i>
 </br>
 </br>
 <code>
@@ -1485,7 +1485,7 @@ $("#diagramcontent").ejDiagram({
 <td><b>An array of JSON objects where each object represents a segment
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments`</i>
+<b>Property</b>: <i>connectors.segments</i>
 </br>
 </br>
 <code>
@@ -1512,7 +1512,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments`</i>
+<b>Property</b>: <i>connectors.segments</i>
 </br>
 </br>
 <code>
@@ -1550,7 +1550,7 @@ diagram.appendTo('#diagram');
 <td><b>Sets the direction of orthogonal segment
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments.direction`</i>
+<b>Property</b>: <i>connectors.segments.direction</i>
 </br>
 </br>
 <code>
@@ -1578,7 +1578,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments.direction`</i>
+<b>Property</b>: <i>connectors.segments.direction</i>
 </br>
 </br>
 <code>
@@ -1616,7 +1616,7 @@ diagram.appendTo('#diagram');
 <td><b>Describes the length of orthogonal segment
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments.length`</i>
+<b>Property</b>: <i>connectors.segments.length</i>
 </br>
 </br>
 <code>
@@ -1644,7 +1644,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments.length`</i>
+<b>Property</b>: <i>connectors.segments.length</i>
 </br>
 </br>
 <code>
@@ -1681,7 +1681,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Describes the end point of bezier/straight segment</b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments.point`</i>
+<b>Property</b>: <i>connectors.segments.point</i>
 </br>
 </br>
 <code>
@@ -1708,7 +1708,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments.point`</i>
+<b>Property</b>: <i>connectors.segments.point</i>
 </br>
 </br>
 <code>
@@ -1741,7 +1741,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the first control point of the bezier segment</b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments.point1`</i>
+<b>Property</b>: <i>connectors.segments.point1</i>
 </br>
 </br>
 <code>
@@ -1768,7 +1768,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments.point1`</i>
+<b>Property</b>: <i>connectors.segments.point1</i>
 </br>
 </br>
 <code>
@@ -1805,7 +1805,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the second control point of bezier segment</b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments.point2`</i>
+<b>Property</b>: <i>connectors.segments.point2</i>
 </br>
 </br>
 <code>
@@ -1836,7 +1836,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments.point2`</i>
+<b>Property</b>: <i>connectors.segments.point2</i>
 </br>
 </br>
 <code>
@@ -1878,7 +1878,7 @@ diagram.appendTo('#diagram');
 <td><b>Sets the type of the segment
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments.type`</i>
+<b>Property</b>: <i>connectors.segments.type</i>
 </br>
 </br>
 <code>
@@ -1901,7 +1901,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments.type`</i>
+<b>Property</b>: <i>connectors.segments.type</i>
 </br>
 </br>
 <code>
@@ -1942,7 +1942,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Describes the length and angle between the first control point and the start point of bezier segment</b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments.vector1`</i>
+<b>Property</b>: <i>connectors.segments.vector1</i>
 </br>
 </br>
 <code>
@@ -1973,7 +1973,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments.vector1`</i>
+<b>Property</b>: <i>connectors.segments.vector1</i>
 </br>
 </br>
 <code>
@@ -2015,7 +2015,7 @@ diagram.appendTo('#diagram');
 <td><b>Describes the length and angle between the second control point and end point of bezier segment
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.segments.vector2`</i>
+<b>Property</b>: <i>connectors.segments.vector2</i>
 </br>
 </br>
 <code>
@@ -2046,7 +2046,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.segments.vector2`</i>
+<b>Property</b>: <i>connectors.segments.vector2</i>
 </br>
 </br>
 <code>
@@ -2088,7 +2088,7 @@ diagram.appendTo('#diagram');
 <td><b>Sets the type of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.shape.type`</i>
+<b>Property</b>: <i>connectors.shape.type</i>
 </br>
 </br>
 <code>
@@ -2114,7 +2114,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.shape.type`</i>
+<b>Property</b>: <i>connectors.shape.type</i>
 </br>
 </br>
 <code>
@@ -2161,7 +2161,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines the source decorator of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator`</i>
+<b>Property</b>: <i>connectors.sourceDecorator</i>
 </br>
 </br>
 <code>
@@ -2184,7 +2184,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceDecorator`</i>
+<b>Property</b>: <i>connectors.sourceDecorator</i>
 </br>
 </br>
 <code>
@@ -2213,7 +2213,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the border color of the source decorator</b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator.borderColor`</i>
+<b>Property</b>: <i>connectors.sourceDecorator.borderColor</i>
 </br>
 </br>
 <code>
@@ -2237,7 +2237,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceDecorator.style.strokeColor`</i>
+<b>Property</b>: <i>connectors.sourceDecorator.style.strokeColor</i>
 </br>
 </br>
 <code>
@@ -2268,7 +2268,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the border width of the decorator</b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator.borderWidth`</i>
+<b>Property</b>: <i>connectors.sourceDecorator.borderWidth</i>
 </br>
 </br>
 <code>
@@ -2292,7 +2292,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceDecorator.style.strokeWidth`</i>
+<b>Property</b>: <i>connectors.sourceDecorator.style.strokeWidth</i>
 </br>
 </br>
 <code>
@@ -2322,7 +2322,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines to customize sourceDecorator appearance using user-defined CSS
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator.cssClass`</i>
+<b>Property</b>: <i>connectors.sourceDecorator.cssClass</i>
 </br>
 </br>
 <code>
@@ -2353,7 +2353,7 @@ $("#diagramcontent").ejDiagram({
 <td><b>Sets the fill color of the source decorator
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator.fillColor`</i>
+<b>Property</b>: <i>connectors.sourceDecorator.fillColor</i>
 </br>
 </br>
 <code>
@@ -2377,7 +2377,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceDecorator.style.fill`</i>
+<b>Property</b>: <i>connectors.sourceDecorator.style.fill</i>
 </br>
 </br>
 <code>
@@ -2406,7 +2406,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the height of the source decorator</b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator.height`</i>
+<b>Property</b>: <i>connectors.sourceDecorator.height</i>
 </br>
 </br>
 <code>
@@ -2430,7 +2430,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceDecorator.height`</i>
+<b>Property</b>: <i>connectors.sourceDecorator.height</i>
 </br>
 </br>
 <code>
@@ -2461,7 +2461,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines the custom shape of the source decorator
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator.pathData`</i>
+<b>Property</b>: <i>connectors.sourceDecorator.pathData</i>
 </br>
 </br>
 <code>
@@ -2485,7 +2485,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceDecorator.pathData`</i>
+<b>Property</b>: <i>connectors.sourceDecorator.pathData</i>
 </br>
 </br>
 <code>
@@ -2516,7 +2516,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines the shape of the source decorator.
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator.shape`</i>
+<b>Property</b>: <i>connectors.sourceDecorator.shape</i>
 </br>
 </br>
 <code>
@@ -2539,7 +2539,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceDecorator.shape`</i>
+<b>Property</b>: <i>connectors.sourceDecorator.shape</i>
 </br>
 </br>
 <code>
@@ -2568,7 +2568,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines the width of the source decorator
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceDecorator.width`</i>
+<b>Property</b>: <i>connectors.sourceDecorator.width</i>
 </br>
 </br>
 <code>
@@ -2593,7 +2593,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceDecorator.width`</i>
+<b>Property</b>: <i>connectors.sourceDecorator.width</i>
 </br>
 </br>
 <code>
@@ -2624,7 +2624,7 @@ diagram.appendTo('#diagram');
 <td><b>Sets the source node of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourceNode`</i>
+<b>Property</b>: <i>connectors.sourceNode</i>
 </br>
 </br>
 <code>
@@ -2652,7 +2652,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourceID`</i>
+<b>Property</b>: <i>connectors.sourceID</i>
 </br>
 </br>
 <code>
@@ -2688,7 +2688,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the space to be left between the source node and the source point of a connector</b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourcePadding`</i>
+<b>Property</b>: <i>connectors.sourcePadding</i>
 </br>
 </br>
 <code>
@@ -2719,7 +2719,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.hitPadding`</i>
+<b>Property</b>: <i>connectors.hitPadding</i>
 </br>
 </br>
 <code>
@@ -2757,7 +2757,7 @@ diagram.appendTo('#diagram');
 <td><b>Describes the start point of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourcePoint`</i>
+<b>Property</b>: <i>connectors.sourcePoint</i>
 </br>
 </br>
 <code>
@@ -2777,7 +2777,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourcePoint`</i>
+<b>Property</b>: <i>connectors.sourcePoint</i>
 </br>
 </br>
 <code>
@@ -2804,7 +2804,7 @@ diagram.appendTo('#diagram');
 <td><b>Sets the source port of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.sourcePort`</i>
+<b>Property</b>: <i>connectors.sourcePort</i>
 </br>
 </br>
 <code>
@@ -2849,7 +2849,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.sourcePortID`</i>
+<b>Property</b>: <i>connectors.sourcePortID</i>
 </br>
 </br>
 <code>
@@ -2908,7 +2908,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines the target decorator of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator`</i>
+<b>Property</b>: <i>connectors.targetDecorator</i>
 </br>
 </br>
 <code>
@@ -2931,7 +2931,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetDecorator`</i>
+<b>Property</b>: <i>connectors.targetDecorator</i>
 </br>
 </br>
 <code>
@@ -2960,7 +2960,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the border color of the target decorator</b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator.borderColor`</i>
+<b>Property</b>: <i>connectors.targetDecorator.borderColor</i>
 </br>
 </br>
 <code>
@@ -2984,7 +2984,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetDecorator.style.strokeColor`</i>
+<b>Property</b>: <i>connectors.targetDecorator.style.strokeColor</i>
 </br>
 </br>
 <code>
@@ -3015,7 +3015,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the border width of the decorator</b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator.borderWidth`</i>
+<b>Property</b>: <i>connectors.targetDecorator.borderWidth</i>
 </br>
 </br>
 <code>
@@ -3039,7 +3039,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetDecorator.style.strokeWidth`</i>
+<b>Property</b>: <i>connectors.targetDecorator.style.strokeWidth</i>
 </br>
 </br>
 <code>
@@ -3069,7 +3069,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines to customize target Decorator appearance using user-defined CSS
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator.cssClass`</i>
+<b>Property</b>: <i>connectors.targetDecorator.cssClass</i>
 </br>
 </br>
 <code>
@@ -3100,7 +3100,7 @@ $("#diagramcontent").ejDiagram({
 <td><b>Sets the fill color of the target decorator
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator.fillColor`</i>
+<b>Property</b>: <i>connectors.targetDecorator.fillColor</i>
 </br>
 </br>
 <code>
@@ -3124,7 +3124,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetDecorator.style.fill`</i>
+<b>Property</b>: <i>connectors.targetDecorator.style.fill</i>
 </br>
 </br>
 <code>
@@ -3153,7 +3153,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the height of the target decorator</b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator.height`</i>
+<b>Property</b>: <i>connectors.targetDecorator.height</i>
 </br>
 </br>
 <code>
@@ -3177,7 +3177,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetDecorator.height`</i>
+<b>Property</b>: <i>connectors.targetDecorator.height</i>
 </br>
 </br>
 <code>
@@ -3208,7 +3208,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines the custom shape of the target decorator
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator.pathData`</i>
+<b>Property</b>: <i>connectors.targetDecorator.pathData</i>
 </br>
 </br>
 <code>
@@ -3232,7 +3232,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetDecorator.pathData`</i>
+<b>Property</b>: <i>connectors.targetDecorator.pathData</i>
 </br>
 </br>
 <code>
@@ -3263,7 +3263,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines the shape of the target decorator.
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator.shape`</i>
+<b>Property</b>: <i>connectors.targetDecorator.shape</i>
 </br>
 </br>
 <code>
@@ -3286,7 +3286,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetDecorator.shape`</i>
+<b>Property</b>: <i>connectors.targetDecorator.shape</i>
 </br>
 </br>
 <code>
@@ -3315,7 +3315,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines the width of the target decorator
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetDecorator.width`</i>
+<b>Property</b>: <i>connectors.targetDecorator.width</i>
 </br>
 </br>
 <code>
@@ -3340,7 +3340,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetDecorator.width`</i>
+<b>Property</b>: <i>connectors.targetDecorator.width</i>
 </br>
 </br>
 <code>
@@ -3372,7 +3372,7 @@ diagram.appendTo('#diagram');
 <td><b>Sets the target node of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetNode`</i>
+<b>Property</b>: <i>connectors.targetNode</i>
 </br>
 </br>
 <code>
@@ -3401,7 +3401,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetID`</i>
+<b>Property</b>: <i>connectors.targetID</i>
 </br>
 </br>
 <code>
@@ -3437,7 +3437,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the space to be left between the target node and the target point of a connector</b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetPadding`</i>
+<b>Property</b>: <i>connectors.targetPadding</i>
 </br>
 </br>
 <code>
@@ -3468,7 +3468,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.hitPadding`</i>
+<b>Property</b>: <i>connectors.hitPadding</i>
 </br>
 </br>
 <code>
@@ -3506,7 +3506,7 @@ diagram.appendTo('#diagram');
 <td><b>Describes the start point of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetPoint`</i>
+<b>Property</b>: <i>connectors.targetPoint</i>
 </br>
 </br>
 <code>
@@ -3526,7 +3526,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetPoint`</i>
+<b>Property</b>: <i>connectors.targetPoint</i>
 </br>
 </br>
 <code>
@@ -3553,7 +3553,7 @@ diagram.appendTo('#diagram');
 <td><b>Sets the target port of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.targetPort`</i>
+<b>Property</b>: <i>connectors.targetPort</i>
 </br>
 </br>
 <code>
@@ -3598,7 +3598,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.targetPortID`</i>
+<b>Property</b>: <i>connectors.targetPortID</i>
 </br>
 </br>
 <code>
@@ -3657,7 +3657,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines the tooltip that should be shown when the mouse hovers over connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.tooltip`</i>
+<b>Property</b>: <i>connectors.tooltip</i>
 </br>
 </br>
 <code>
@@ -3723,7 +3723,7 @@ $("#diagramcontent").ejDiagram({
 });;
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.tooltip`</i>
+<b>Property</b>: <i>connectors.tooltip</i>
 </br>
 </br>
 <code>
@@ -3756,7 +3756,7 @@ diagram.appendTo('#diagram');
 <td><b>Sets the vertical alignment of connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.verticalAlign`</i>
+<b>Property</b>: <i>connectors.verticalAlign</i>
 </br>
 </br>
 <code>
@@ -3784,7 +3784,7 @@ $("#diagramcontent").ejDiagram({
 <td><b>Enables or disables the visibility of connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.visible`</i>
+<b>Property</b>: <i>connectors.visible</i>
 </br>
 </br>
 <code>
@@ -3805,7 +3805,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.visible`</i>
+<b>Property</b>: <i>connectors.visible</i>
 </br>
 </br>
 <code>
@@ -3833,7 +3833,7 @@ diagram.appendTo('#diagram');
 <td><b>Sets the z-index of the connector
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.zOrder`</i>
+<b>Property</b>: <i>connectors.zOrder</i>
 </br>
 </br>
 <code>
@@ -3854,7 +3854,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`connectors.zIndex`</i>
+<b>Property</b>: <i>connectors.zIndex</i>
 </br>
 </br>
 <code>
@@ -3882,7 +3882,7 @@ diagram.appendTo('#diagram');
 <td><b>Binds the custom JSON data with connector properties
 </b></td>
 <td>
-<b>Property</b>:<i>`connectors.connectorTemplate`</i>
+<b>Property</b>: <i>connectors.connectorTemplate</i>
 </br>
 </br>
 <code>
@@ -3921,7 +3921,7 @@ function connectorTemplate(diagram, connector) {
 <td><b>Enables/Disables the default behaviors of the diagram
 </b></td>
 <td>
-<b>Property</b>:<i>`constraints`</i>
+<b>Property</b>: <i>constraints</i>
 </br>
 </br>
 <code>
@@ -3931,7 +3931,7 @@ $("#diagramcontent").ejDiagram({
 });
 </code>
 </td><td>
-<b>Property</b>:<i>`constraints`</i>
+<b>Property</b>: <i>constraints</i>
 </br>
 </br>
 <code>
@@ -3956,7 +3956,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the collection of context menu items</b></td>
 <td>
-<b>Property</b>:<i>`contextMenu.items`</i>
+<b>Property</b>: <i>contextMenu.items</i>
 </br>
 </br>
 <code>
@@ -3975,7 +3975,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.items`</i>
+<b>Property</b>: <i>contextMenuSettings.items</i>
 </br>
 </br>
 <code>
@@ -3997,7 +3997,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the text for the collection of context menu item</b></td>
 <td>
-<b>Property</b>:<i>`contextMenu.items.text`</i>
+<b>Property</b>: <i>contextMenu.items.text</i>
 </br>
 </br>
 <code>
@@ -4013,7 +4013,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.items.text`</i>
+<b>Property</b>: <i>contextMenuSettings.items.text</i>
 </br>
 </br>
 <code>
@@ -4032,7 +4032,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the name for the collection of context menu items</b></td>
 <td>
-<b>Property</b>:<i>`contextMenu.items.name`</i>
+<b>Property</b>: <i>contextMenu.items.name</i>
 </br>
 </br>
 <code>
@@ -4048,7 +4048,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.items.id`</i>
+<b>Property</b>: <i>contextMenuSettings.items.id</i>
 </br>
 </br>
 <code>
@@ -4068,7 +4068,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the image url for the collection of context menu items</b></td>
 <td>
-<b>Property</b>:<i>`contextMenu.items.imageUrl`</i>
+<b>Property</b>: <i>contextMenu.items.imageUrl</i>
 </br>
 </br>
 <code>
@@ -4087,7 +4087,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.items.url`</i>
+<b>Property</b>: <i>contextMenuSettings.items.url</i>
 </br>
 </br>
 <code>
@@ -4107,7 +4107,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the cssClass for the collection of context menu items</b></td>
 <td>
-<b>Property</b>:<i>`contextMenu.items.cssClass`</i>
+<b>Property</b>: <i>contextMenu.items.cssClass</i>
 </br>
 </br>
 <code>
@@ -4127,7 +4127,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.items.iconCss`</i>
+<b>Property</b>: <i>contextMenuSettings.items.iconCss</i>
 </br>
 </br>
 <code>
@@ -4148,7 +4148,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the collection of sub items for the context menu items</b></td>
 <td>
-<b>Property</b>:<i>`contextMenu.items.subItems`</i>
+<b>Property</b>: <i>contextMenu.items.subItems</i>
 </br>
 </br>
 <code>
@@ -4170,7 +4170,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.items`</i>
+<b>Property</b>: <i>contextMenuSettings.items</i>
 </br>
 </br>
 <code>
@@ -4197,7 +4197,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Set whether to display the default context menu items or not</b></td>
 <td>
-<b>Property</b>:<i>`contextMenu.showCustomMenuItemsOnly`</i>
+<b>Property</b>: <i>contextMenu.showCustomMenuItemsOnly</i>
 </br>
 </br>
 <code>
@@ -4210,7 +4210,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.showCustomMenuOnly`</i>
+<b>Property</b>: <i>contextMenuSettings.showCustomMenuOnly</i>
 </br>
 </br>
 <code>
@@ -4229,7 +4229,7 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.items.separator`</i>
+<b>Property</b>: <i>contextMenuSettings.items.separator</i>
 </br>
 </br>
 <code>
@@ -4261,7 +4261,7 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.items.target`</i>
+<b>Property</b>: <i>contextMenuSettings.items.target</i>
 </br>
 </br>
 <code>
@@ -4287,7 +4287,7 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.show`</i>
+<b>Property</b>: <i>contextMenuSettings.show</i>
 </br>
 </br>
 <code>
@@ -4321,7 +4321,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the data source either as a collection of objects or as an instance of ej.DataManager</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.dataSource`</i>
+<b>Property</b>: <i>dataSourceSettings.dataSource</i>
 </br>
 </br>
 <code>
@@ -4346,7 +4346,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.dataManager`</i>
+<b>Property</b>: <i>dataSourceSettings.dataManager</i>
 </br>
 </br>
 <code>
@@ -4374,7 +4374,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the unique id of the data source items</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.id`</i>
+<b>Property</b>: <i>dataSourceSettings.id</i>
 </br>
 </br>
 <code>
@@ -4400,7 +4400,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.id`</i>
+<b>Property</b>: <i>dataSourceSettings.id</i>
 </br>
 </br>
 <code>
@@ -4429,7 +4429,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the parent id of the data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.parent`</i>
+<b>Property</b>: <i>dataSourceSettings.parent</i>
 </br>
 </br>
 <code>
@@ -4456,7 +4456,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.parentId`</i>
+<b>Property</b>: <i>dataSourceSettings.parentId</i>
 </br>
 </br>
 <code>
@@ -4486,7 +4486,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Describes query to retrieve a set of data from the specified datasource</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.query`</i>
+<b>Property</b>: <i>dataSourceSettings.query</i>
 </br>
 </br>
 <code>
@@ -4510,7 +4510,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the unique id of the root data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.root`</i>
+<b>Property</b>: <i>dataSourceSettings.root</i>
 </br>
 </br>
 <code>
@@ -4538,7 +4538,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.root`</i>
+<b>Property</b>: <i>dataSourceSettings.root</i>
 </br>
 </br>
 <code>
@@ -4569,7 +4569,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Describes the name of the table on which the specified query has to be executed</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.tableName`</i>
+<b>Property</b>: <i>dataSourceSettings.tableName</i>
 </br>
 </br>
 <code>
@@ -4595,7 +4595,7 @@ $("#diagramcontent").ejDiagram({
 <td><b>Specifies the method name which is used to get the updated data from client side to the server side
 </b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.crudAction`</i>
+<b>Property</b>: <i>dataSourceSettings.crudAction</i>
 </br>
 </br>
 <code>
@@ -4619,7 +4619,7 @@ $("#diagramcontent").ejDiagram({
 <td><b>Specifies the create method which is used to get the nodes to be added from client side to the server side
 </b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.crudAction.create`</i>
+<b>Property</b>: <i>dataSourceSettings.crudAction.create</i>
 </br>
 </br>
 <code>
@@ -4642,7 +4642,7 @@ $("#diagramcontent").ejDiagram({
 <td><b>Specifies the update method which is used to get the updated data from client side to the server side
 </b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.crudAction.update`</i>
+<b>Property</b>: <i>dataSourceSettings.crudAction.update</i>
 </br>
 </br>
 <code>
@@ -4665,7 +4665,7 @@ $("#diagramcontent").ejDiagram({
 <td><b>Specifies the destroy method which is used to get the deleted items data from client side to the server side
 </b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.crudAction.destroy`</i>
+<b>Property</b>: <i>dataSourceSettings.crudAction.destroy</i>
 </br>
 </br>
 <code>
@@ -4688,7 +4688,7 @@ $("#diagramcontent").ejDiagram({
 <td><b>Specifies the read method to get the created nodes from client side to the server side
 </b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.crudAction.read`</i>
+<b>Property</b>: <i>dataSourceSettings.crudAction.read</i>
 </br>
 </br>
 <code>
@@ -4711,7 +4711,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Defines the data source either as a collection of objects or as an instance of ej.DataManager</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.customFields`</i>
+<b>Property</b>: <i>dataSourceSettings.customFields</i>
 </br>
 </br>
 <code>
@@ -4727,7 +4727,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.data`</i>
+<b>Property</b>: <i>dataSourceSettings.data</i>
 </br>
 </br>
 <code>
@@ -4745,7 +4745,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the data source either as a collection of objects or as an instance of ej.DataManager</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource`</i>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource</i>
 </br>
 </br>
 <code>
@@ -4768,7 +4768,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the datasource for the connection datasource settings items</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.dataSource`</i>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.dataSource</i>
 </br>
 </br>
 <code>
@@ -4802,7 +4802,7 @@ dataSourceSettings: {
 <tr>
 <td><b>Sets the unique id of the connection data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.id`</i>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.id</i>
 </br>
 </br>
 <code>
@@ -4824,7 +4824,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the source node of the connection data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.sourceNode`</i>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.sourceNode</i>
 </br>
 </br>
 <code>
@@ -4847,7 +4847,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the target node of the connection data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.targetNode`</i>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.targetNode</i>
 </br>
 </br>
 <code>
@@ -4870,7 +4870,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the sourcePointX value of the connection data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.sourcePointX`</i>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.sourcePointX</i>
 </br>
 </br>
 <code>
@@ -4893,7 +4893,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the sourcePointY value of the connection data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.sourcePointY`</i>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.sourcePointY</i>
 </br>
 </br>
 <code>
@@ -4916,7 +4916,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the x point value of the connection data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.targetPointX`</i>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.targetPointX</i>
 </br>
 </br>
 <code>
@@ -4939,7 +4939,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the y point value of the connection data source item</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.targetPointY`</i>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.targetPointY</i>
 </br>
 </br>
 <code>
@@ -4962,7 +4962,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Specifies the method name which is used to get updated connectors from client side to the server side</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.crudAction`</i>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.crudAction</i>
 </br>
 </br>
 <code>
@@ -4990,7 +4990,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Specifies the create method which is used to get the connectors to be added from client side to the server side</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.crudAction.create`</i>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.crudAction.create</i>
 </br>
 </br>
 <code>
@@ -5018,7 +5018,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Specifies the update method which is used to get the updated connectors from client side to the server side</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.crudAction.update`</i>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.crudAction.update</i>
 </br>
 </br>
 <code>
@@ -5044,7 +5044,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Specifies the destroy method which is used to get the deleted items data from client side to the server side</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.crudAction.destroy`</i>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.crudAction.destroy</i>
 </br>
 </br>
 <code>
@@ -5070,7 +5070,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Specifies the read method which is used to get the data from client side to the server side</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.crudAction.read`</i>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.crudAction.read</i>
 </br>
 </br>
 <code>
@@ -5096,7 +5096,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Specifies the custom fields to get the updated data from client side to the server side</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.connectionDataSource.customFields`</i>
+<b>Property</b>: <i>dataSourceSettings.connectionDataSource.customFields</i>
 </br>
 </br>
 <code>
@@ -5120,7 +5120,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Binds the custom data with node model</b></td>
 <td>
-<b>Property</b>:<i>`dataSourceSettings.doBinding`</i>
+<b>Property</b>: <i>dataSourceSettings.doBinding</i>
 </br>
 </br>
 <code>
@@ -5155,7 +5155,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Initializes the default values for nodes and connectors</b></td>
 <td>
-<b>Property</b>:<i>`defaultSettings.node`</i>
+<b>Property</b>: <i>defaultSettings.node</i>
 </br>
 </br>
 <code>
@@ -5165,7 +5165,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`getNodeDefaults`</i>
+<b>Property</b>: <i>getNodeDefaults</i>
 </br>
 </br>
 <code>
@@ -5182,7 +5182,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Initializes the default connector properties</b></td>
 <td>
-<b>Property</b>:<i>`defaultSettings.connector`</i>
+<b>Property</b>: <i>defaultSettings.connector</i>
 </br>
 </br>
 <code>
@@ -5192,7 +5192,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`getConnectorDefaults`</i>
+<b>Property</b>: <i>getConnectorDefaults</i>
 </br>
 </br>
 <code>
@@ -5211,7 +5211,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Initializes the default properties of groups</b></td>
 <td>
-<b>Property</b>:<i>`defaultSettings.group`</i>
+<b>Property</b>: <i>defaultSettings.group</i>
 </br>
 </br>
 <code>
@@ -5238,7 +5238,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the type of JSON object to be drawn through drawing tool</b></td>
 <td>
-<b>Property</b>:<i>`drawType`</i>
+<b>Property</b>: <i>drawType</i>
 </br>
 </br>
 <code>
@@ -5248,7 +5248,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`drawingObject`</i>
+<b>Property</b>: <i>drawingObject</i>
 </br>
 </br>
 <code>
@@ -5272,7 +5272,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Enables or disables auto scroll in diagram</b></td>
 <td>
-<b>Property</b>:<i>`enableAutoScroll`</i>
+<b>Property</b>: <i>enableAutoScroll</i>
 </br>
 </br>
 <code>
@@ -5282,7 +5282,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`canAutoScroll`</i>
+<b>Property</b>: <i>canAutoScroll</i>
 </br>
 </br>
 <code>
@@ -5306,7 +5306,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Enables or disables diagram context menu</b></td>
 <td>
-<b>Property</b>:<i>`enableContextMenu`</i>
+<b>Property</b>: <i>enableContextMenu</i>
 </br>
 </br>
 <code>
@@ -5316,7 +5316,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`contextMenuSettings.show`</i>
+<b>Property</b>: <i>contextMenuSettings.show</i>
 </br>
 </br>
 <code>
@@ -5345,7 +5345,7 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`getCustomCursor`</i>
+<b>Property</b>: <i>getCustomCursor</i>
 </br>
 </br>
 <code>
@@ -5390,7 +5390,7 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`getCustomProperty`</i>
+<b>Property</b>: <i>getCustomProperty</i>
 </br>
 </br>
 <code>
@@ -5431,7 +5431,7 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`getCustomTool`</i>
+<b>Property</b>: <i>getCustomTool</i>
 </br>
 </br>
 <code>
@@ -5478,7 +5478,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Specifies the height of the diagram</b></td>
 <td>
-<b>Property</b>:<i>`height`</i>
+<b>Property</b>: <i>height</i>
 </br>
 </br>
 <code>
@@ -5489,7 +5489,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`height`</i>
+<b>Property</b>: <i>height</i>
 </br>
 </br>
 <code>
@@ -5514,7 +5514,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>A method that takes a history entry as argument and returns whether the specific entry can be popped or not</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.canPop`</i>
+<b>Property</b>: <i>historyManager.canPop</i>
 </br>
 </br>
 <code>
@@ -5536,7 +5536,7 @@ if(diagram.model.historyManager.canPop(entry)){
 <tr>
 <td><b>A method that ends grouping the changes</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.closeGroupAction`</i>
+<b>Property</b>: <i>historyManager.closeGroupAction</i>
 </br>
 </br>
 <code>
@@ -5555,7 +5555,7 @@ diagram.model.historyManager.closeGroupAction();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.endGroupAction`</i>
+<b>Property</b>: <i>historyManager.endGroupAction</i>
 </br>
 </br>
 <code>
@@ -5594,7 +5594,7 @@ var objects = [];
 <tr>
 <td><b>A method that removes the history of a recent change made in diagram</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.pop`</i>
+<b>Property</b>: <i>historyManager.pop</i>
 </br>
 </br>
 <code>
@@ -5609,7 +5609,7 @@ diagram.model.historyManager.pop();
 <tr>
 <td><b>A method that allows to track the custom changes made in diagram</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.push`</i>
+<b>Property</b>: <i>historyManager.push</i>
 </br>
 </br>
 <code>
@@ -5623,7 +5623,7 @@ node.empInfo = value;
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.push`</i>
+<b>Property</b>: <i>historyManager.push</i>
 </br>
 </br>
 <code>
@@ -5647,7 +5647,7 @@ var object = diagram.nodes[0];
 <tr>
 <td><b>Defines what should be happened while trying to restore a custom change</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.redo`</i>
+<b>Property</b>: <i>historyManager.redo</i>
 </br>
 </br>
 <code>
@@ -5670,7 +5670,7 @@ function customUndoRedo(args) {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.redo`</i>
+<b>Property</b>: <i>historyManager.redo</i>
 </br>
 </br>
 <code>
@@ -5704,7 +5704,7 @@ diagram.historyManager.redo = function(args: HistoryEntry) {
 <tr>
 <td><b>Gets the number of redo actions to be stored on the history manager. Its an read-only property and the collection should not be modified</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.redoStack`</i>
+<b>Property</b>: <i>historyManager.redoStack</i>
 </br>
 </br>
 <code>
@@ -5713,7 +5713,7 @@ diagram.model.historyManager.redoStack();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.redoStack`</i>
+<b>Property</b>: <i>historyManager.redoStack</i>
 </br>
 </br>
 <code>
@@ -5733,7 +5733,7 @@ diagram.historyManager.redoStack();
 <tr>
 <td><b>Restricts the undo and redo actions to a certain limit</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.stackLimit`</i>
+<b>Property</b>: <i>historyManager.stackLimit</i>
 </br>
 </br>
 <code>
@@ -5742,7 +5742,7 @@ diagram.model.historyManager.stackLimit();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.stackLimit`</i>
+<b>Property</b>: <i>historyManager.stackLimit</i>
 </br>
 </br>
 <code>
@@ -5762,7 +5762,7 @@ diagram.historyManager.stackLimit();
 <tr>
 <td><b>A method that starts to group the changes to revert/restore them in a single undo or redo</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.startGroupAction`</i>
+<b>Property</b>: <i>historyManager.startGroupAction</i>
 </br>
 </br>
 <code>
@@ -5781,7 +5781,7 @@ diagram.model.historyManager.closeGroupAction();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.startGroupAction`</i>
+<b>Property</b>: <i>historyManager.startGroupAction</i>
 </br>
 </br>
 <code>
@@ -5819,7 +5819,7 @@ var objects = [];
 <tr>
 <td><b>Defines what should be happened while trying to revert a custom change</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.undo`</i>
+<b>Property</b>: <i>historyManager.undo</i>
 </br>
 </br>
 <code>
@@ -5842,7 +5842,7 @@ function customUndoRedo(args) {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.undo`</i>
+<b>Property</b>: <i>historyManager.undo</i>
 </br>
 </br>
 <code>
@@ -5876,7 +5876,7 @@ diagram.historyManager.redo = function(args: HistoryEntry) {
 <tr>
 <td><b>Gets the number of undo actions to be stored on the history manager. Its an read-only property and the collection should not be modified</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.undoStack`</i>
+<b>Property</b>: <i>historyManager.undoStack</i>
 </br>
 </br>
 <code>
@@ -5885,7 +5885,7 @@ diagram.model.historyManager.undoStack();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.undoStack`</i>
+<b>Property</b>: <i>historyManager.undoStack</i>
 </br>
 </br>
 <code>
@@ -5905,7 +5905,7 @@ diagram.historyManager.undoStack();
 <tr>
 <td><b>Set the current entry object</b></td>
 <td>
-<b>Property</b>:<i>`historyList.currentEntry`</i>
+<b>Property</b>: <i>historyList.currentEntry</i>
 </br>
 </br>
 <code>
@@ -5914,7 +5914,7 @@ diagram.historyList.currentEntry();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.currentEntry`</i>
+<b>Property</b>: <i>historyManager.currentEntry</i>
 </br>
 </br>
 <code>
@@ -5934,7 +5934,7 @@ diagram.historyManager.currentEntry();
 <tr>
 <td><b>Set the history entry can be undo</b></td>
 <td>
-<b>Property</b>:<i>`historyList.canUndo`</i>
+<b>Property</b>: <i>historyList.canUndo</i>
 </br>
 </br>
 <code>
@@ -5943,7 +5943,7 @@ diagram.historyList.canUndo();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.canUndo`</i>
+<b>Property</b>: <i>historyManager.canUndo</i>
 </br>
 </br>
 <code>
@@ -5962,7 +5962,7 @@ diagram.historyManager.canUndo = true;
 <tr>
 <td><b>Set the history entry can be redo</b></td>
 <td>
-<b>Property</b>:<i>`historyList.canRedo`</i>
+<b>Property</b>: <i>historyList.canRedo</i>
 </br>
 </br>
 <code>
@@ -5971,7 +5971,7 @@ diagram.historyList.canRedo();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyManager.canRedo`</i>
+<b>Property</b>: <i>historyManager.canRedo</i>
 </br>
 </br>
 <code>
@@ -5990,7 +5990,7 @@ diagram.historyManager.canRedo = true;
 <tr>
 <td><b>Used to decide to stored the changes to history</b></td>
 <td>
-<b>Property</b>:<i>`historyManager.canLog`</i>
+<b>Property</b>: <i>historyManager.canLog</i>
 </br>
 </br>
 <code>
@@ -5999,7 +5999,7 @@ diagram.model.historyManager.canLog();
 </code>
 </td></td>
 <td>
-<b>Property</b>:<i>`historyManager.canLog`</i>
+<b>Property</b>: <i>historyManager.canLog</i>
 </br>
 </br>
 <code>
@@ -6032,7 +6032,7 @@ diagram.historyManager.canLog = function (entry: HistoryEntry) {
 <tr>
 <td><b>Defines the type of the rendering mode of label</b></td>
 <td>
-<b>Property</b>:<i>`labelRenderingMode`</i>
+<b>Property</b>: <i>labelRenderingMode</i>
 </br>
 </br>
 <code>
@@ -6056,7 +6056,7 @@ $("#diagramcontent").ejDiagram({ labelRenderingMode: "svg" });
 <tr>
 <td><b>Specifies the custom bounds to arrange/align the layout</b></td>
 <td>
-<b>Property</b>:<i>`layout.bounds`</i>
+<b>Property</b>: <i>layout.bounds</i>
 </br>
 </br>
 <code>
@@ -6065,7 +6065,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.bounds`</i>
+<b>Property</b>: <i>layout.bounds</i>
 </br>
 </br>
 <code>
@@ -6087,7 +6087,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the fixed node with reference to which, the layout will be arranged and fixed node will not be repositioned</b></td>
 <td>
-<b>Property</b>:<i>`layout.fixedNode`</i>
+<b>Property</b>: <i>layout.fixedNode</i>
 </br>
 </br>
 <code>
@@ -6096,7 +6096,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.fixedNode`</i>
+<b>Property</b>: <i>layout.fixedNode</i>
 </br>
 </br>
 <code>
@@ -6118,7 +6118,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Customizes the orientation of trees/sub trees</b></td>
 <td>
-<b>Property</b>:<i>`layout.getLayoutInfo`</i>
+<b>Property</b>: <i>layout.getLayoutInfo</i>
 </br>
 </br>
 <code>
@@ -6130,7 +6130,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.getLayoutInfo`</i>
+<b>Property</b>: <i>layout.getLayoutInfo</i>
 </br>
 </br>
 <code>
@@ -6156,7 +6156,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines a method to customize the segments based on source and target nodes</b></td>
 <td>
-<b>Property</b>:<i>`layout.getConnectorSegments`</i>
+<b>Property</b>: <i>layout.getConnectorSegments</i>
 </br>
 </br>
 <code>
@@ -6165,7 +6165,7 @@ $("#diagramcontent").ejDiagram({layout: { getConnectorSegments:getConnectorSegme
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.connectorSegments`</i>
+<b>Property</b>: <i>layout.connectorSegments</i>
 </br>
 </br>
 <code>
@@ -6187,7 +6187,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the space to be horizontally left between nodes</b></td>
 <td>
-<b>Property</b>:<i>`layout.horizontalSpacing`</i>
+<b>Property</b>: <i>layout.horizontalSpacing</i>
 </br>
 </br>
 <code>
@@ -6195,7 +6195,7 @@ $("#diagramcontent").ejDiagram({layout: { horizontalSpacing: 50 }});
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.horizontalSpacing`</i>
+<b>Property</b>: <i>layout.horizontalSpacing</i>
 </br>
 </br>
 <code>
@@ -6217,7 +6217,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the space to be left between layout bounds and layout</b></td>
 <td>
-<b>Property</b>:<i>`layout.margin`</i>
+<b>Property</b>: <i>layout.margin</i>
 </br>
 </br>
 <code>
@@ -6226,7 +6226,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.margin`</i>
+<b>Property</b>: <i>layout.margin</i>
 </br>
 </br>
 <code>
@@ -6247,7 +6247,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines how to horizontally align the layout within the layout bounds</b></td>
 <td>
-<b>Property</b>:<i>`layout.horizontalAlignment`</i>
+<b>Property</b>: <i>layout.horizontalAlignment</i>
 </br>
 </br>
 <code>
@@ -6257,7 +6257,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.horizontalAlignment`</i>
+<b>Property</b>: <i>layout.horizontalAlignment</i>
 </br>
 </br>
 <code>
@@ -6279,7 +6279,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines how to vertically align the layout within the layout bounds</b></td>
 <td>
-<b>Property</b>:<i>`layout.verticalAlignment`</i>
+<b>Property</b>: <i>layout.verticalAlignment</i>
 </br>
 </br>
 <code>
@@ -6291,7 +6291,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.verticalAlignment`</i>
+<b>Property</b>: <i>layout.verticalAlignment</i>
 </br>
 </br>
 <code>
@@ -6313,7 +6313,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the orientation/direction to arrange the diagram elements</b></td>
 <td>
-<b>Property</b>:<i>`layout.orientation`</i>
+<b>Property</b>: <i>layout.orientation</i>
 </br>
 </br>
 <code>
@@ -6323,7 +6323,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.orientation`</i>
+<b>Property</b>: <i>layout.orientation</i>
 </br>
 </br>
 <code>
@@ -6344,7 +6344,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the type of the layout based on which the elements will be arranged</b></td>
 <td>
-<b>Property</b>:<i>`layout.type`</i>
+<b>Property</b>: <i>layout.type</i>
 </br>
 </br>
 <code>
@@ -6354,7 +6354,7 @@ s});
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.type`</i>
+<b>Property</b>: <i>layout.type</i>
 </br>
 </br>
 <code>
@@ -6376,7 +6376,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the space to be vertically left between nodes</b></td>
 <td>
-<b>Property</b>:<i>`layout.verticalSpacing`</i>
+<b>Property</b>: <i>layout.verticalSpacing</i>
 </br>
 </br>
 <code>
@@ -6385,7 +6385,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.verticalSpacing`</i>
+<b>Property</b>: <i>layout.verticalSpacing</i>
 </br>
 </br>
 <code>
@@ -6407,7 +6407,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the value is used to define the root node of the layout</b></td>
 <td>
-<b>Property</b>:<i>`layout.root`</i>
+<b>Property</b>: <i>layout.root</i>
 </br>
 </br>
 <code>
@@ -6417,7 +6417,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.root`</i>
+<b>Property</b>: <i>layout.root</i>
 </br>
 </br>
 <code>
@@ -6439,7 +6439,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines how long edges should be, ideally. This will be the resting length for the springs</b></td>
 <td>
-<b>Property</b>:<i>`layout.springFactor`</i>
+<b>Property</b>: <i>layout.springFactor</i>
 </br>
 </br>
 <code>
@@ -6449,7 +6449,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.springFactor`</i>
+<b>Property</b>: <i>layout.springFactor</i>
 </br>
 </br>
 <code>
@@ -6472,7 +6472,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines how long edges should be, ideally. This will be the resting length for the springs</b></td>
 <td>
-<b>Property</b>:<i>`layout.maxIteration`</i>
+<b>Property</b>: <i>layout.maxIteration</i>
 </br>
 </br>
 <code>
@@ -6482,7 +6482,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.maxIteration`</i>
+<b>Property</b>: <i>layout.maxIteration</i>
 </br>
 </br>
 <code>
@@ -6505,7 +6505,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines how long edges should be, ideally. This will be the resting length for the springs</b></td>
 <td>
-<b>Property</b>:<i>`layout.springLength`</i>
+<b>Property</b>: <i>layout.springLength</i>
 </br>
 </br>
 <code>
@@ -6515,7 +6515,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layout.springLength`</i>
+<b>Property</b>: <i>layout.springLength</i>
 </br>
 </br>
 <code>
@@ -6540,7 +6540,7 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`layout.connectionDirection`</i>
+<b>Property</b>: <i>layout.connectionDirection</i>
 </br>
 </br>
 <code>
@@ -6566,7 +6566,7 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`layout.enableAnimation`</i>
+<b>Property</b>: <i>layout.enableAnimation</i>
 </br>
 </br>
 <code>
@@ -6593,7 +6593,7 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`layout.getBranch`</i>
+<b>Property</b>: <i>layout.getBranch</i>
 </br>
 </br>
 <code>
@@ -6630,7 +6630,7 @@ diagram.dataBind();
 <tr>
 <td><b>Array of JSON objects where each object represents a node</b></td>
 <td>
-<b>Property</b>:<i>`nodes`</i>
+<b>Property</b>: <i>nodes</i>
 </br>
 </br>
 <code>
@@ -6639,7 +6639,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes`</i>
+<b>Property</b>: <i>nodes</i>
 </br>
 </br>
 <code>
@@ -6659,7 +6659,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the type of BPMN Activity. Applicable, if the node is a BPMN activity</b></td>
 <td>
-<b>Property</b>:<i>`nodes.activity`</i>
+<b>Property</b>: <i>nodes.activity</i>
 </br>
 </br>
 <code>
@@ -6670,7 +6670,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.activity`</i>
+<b>Property</b>: <i>nodes.shape.activity</i>
 </br>
 </br>
 <code>
@@ -6697,7 +6697,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>To maintain additional information about nodes</b></td>
 <td>
-<b>Property</b>:<i>`nodes.addInfo`</i>
+<b>Property</b>: <i>nodes.addInfo</i>
 </br>
 </br>
 <code>
@@ -6710,7 +6710,7 @@ $("#diagramcontent").ejDiagram({nodes:[node1, node2]});
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.addInfo`</i>
+<b>Property</b>: <i>nodes.addInfo</i>
 </br>
 </br>
 <code>
@@ -6733,7 +6733,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the additional information of a process. It is not directly related to the message flows or sequence flows of the process</b></td>
 <td>
-<b>Property</b>:<i>`nodes.annotation`</i>
+<b>Property</b>: <i>nodes.annotation</i>
 </br>
 </br>
 <code>
@@ -6749,7 +6749,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.annotations`</i>
+<b>Property</b>: <i>nodes.shape.annotations</i>
 </br>
 </br>
 <code>
@@ -6783,7 +6783,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the angle between the BPMN shape and the annotation</b></td>
 <td>
-<b>Property</b>:<i>`nodes.annotation.angle`</i>
+<b>Property</b>: <i>nodes.annotation.angle</i>
 </br>
 </br>
 <code>
@@ -6799,7 +6799,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.annotations.angle`</i>
+<b>Property</b>: <i>nodes.shape.annotations.angle</i>
 </br>
 </br>
 <code>
@@ -6831,7 +6831,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the direction of the text annotation</b></td>
 <td>
-<b>Property</b>:<i>`nodes.annotation.direction`</i>
+<b>Property</b>: <i>nodes.annotation.direction</i>
 </br>
 </br>
 <code>
@@ -6853,7 +6853,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 <tr>
 <td><b>Sets the height of the text annotation</b></td>
 <td>
-<b>Property</b>:<i>`nodes.annotation.height`</i>
+<b>Property</b>: <i>nodes.annotation.height</i>
 </br>
 </br>
 <code>
@@ -6868,7 +6868,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.annotations.height`</i>
+<b>Property</b>: <i>nodes.shape.annotations.height</i>
 </br>
 </br>
 <code>
@@ -6901,7 +6901,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the distance between the BPMN shape and the annotation</b></td>
 <td>
-<b>Property</b>:<i>`nodes.annotation.length`</i>
+<b>Property</b>: <i>nodes.annotation.length</i>
 </br>
 </br>
 <code>
@@ -6917,7 +6917,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.annotations.length`</i>
+<b>Property</b>: <i>nodes.shape.annotations.length</i>
 </br>
 </br>
 <code>
@@ -6950,7 +6950,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the additional information about the flow object in a BPMN Process</b></td>
 <td>
-<b>Property</b>:<i>`nodes.annotation.text`</i>
+<b>Property</b>: <i>nodes.annotation.text</i>
 </br>
 </br>
 <code>
@@ -6965,7 +6965,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.annotations.text`</i>
+<b>Property</b>: <i>nodes.shape.annotations.text</i>
 </br>
 </br>
 <code>
@@ -6996,7 +6996,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the width of the text annotation</b></td>
 <td>
-<b>Property</b>:<i>`nodes.annotation.width`</i>
+<b>Property</b>: <i>nodes.annotation.width</i>
 </br>
 </br>
 <code>
@@ -7011,7 +7011,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.annotations.width`</i>
+<b>Property</b>: <i>nodes.shape.annotations.width</i>
 </br>
 </br>
 <code>
@@ -7047,7 +7047,7 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.annotations.id`</i>
+<b>Property</b>: <i>nodes.shape.annotations.id</i>
 </br>
 </br>
 <code>
@@ -7079,7 +7079,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines whether the group can be ungrouped or not</b></td>
 <td>
-<b>Property</b>:<i>`nodes.canUngroup`</i>
+<b>Property</b>: <i>nodes.canUngroup</i>
 </br>
 </br>
 <code>
@@ -7119,7 +7119,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Array of JSON objects where each object represents a child node/connector</b></td>
 <td>
-<b>Property</b>:<i>`nodes.children`</i>
+<b>Property</b>: <i>nodes.children</i>
 </br>
 </br>
 <code>
@@ -7145,7 +7145,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.children`</i>
+<b>Property</b>: <i>nodes.children</i>
 </br>
 </br>
 <code>
@@ -7177,7 +7177,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the type of UML classifier</b></td>
 <td>
-<b>Property</b>:<i>`nodes.classifier`</i>
+<b>Property</b>: <i>nodes.classifier</i>
 </br>
 </br>
 <code>
@@ -7195,7 +7195,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 <tr>
 <td><b>Defines the name, attributes and methods of a Class. Applicable, if the node is a Class</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class`</i>
+<b>Property</b>: <i>nodes.class</i>
 </br>
 </br>
 <code>
@@ -7223,7 +7223,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Sets the name of class</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.name`</i>
+<b>Property</b>: <i>nodes.class.name</i>
 </br>
 </br>
 <code>
@@ -7250,7 +7250,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Defines the collection of attributes</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.attributes`</i>
+<b>Property</b>: <i>nodes.class.attributes</i>
 </br>
 </br>
 <code>
@@ -7278,7 +7278,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Sets the name of the attribute</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.attributes.name`</i>
+<b>Property</b>: <i>nodes.class.attributes.name</i>
 </br>
 </br>
 <code>
@@ -7306,7 +7306,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Sets the data type of attribute</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.attributes.type`</i>
+<b>Property</b>: <i>nodes.class.attributes.type</i>
 </br>
 </br>
 <code>
@@ -7334,7 +7334,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Defines the visibility of the attribute</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.attributes.scope`</i>
+<b>Property</b>: <i>nodes.class.attributes.scope</i>
 </br>
 </br>
 <code>
@@ -7362,7 +7362,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Defines the collection of methods of a Class</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.methods`</i>
+<b>Property</b>: <i>nodes.class.methods</i>
 </br>
 </br>
 <code>
@@ -7389,7 +7389,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Sets the name of the method</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.methods.name`</i>
+<b>Property</b>: <i>nodes.class.methods.name</i>
 </br>
 </br>
 <code>
@@ -7420,7 +7420,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Defines the arguments of the method</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.methods.arguments`</i>
+<b>Property</b>: <i>nodes.class.methods.arguments</i>
 </br>
 </br>
 <code>
@@ -7454,7 +7454,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Defines the name, attributes and methods of a Class. Applicable, if the node is a Class</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.methods.arguments.name`</i>
+<b>Property</b>: <i>nodes.class.methods.arguments.name</i>
 </br>
 </br>
 <code>
@@ -7489,7 +7489,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Sets the type of the argument</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.methods.arguments.type`</i>
+<b>Property</b>: <i>nodes.class.methods.arguments.type</i>
 </br>
 </br>
 <code>
@@ -7524,7 +7524,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Sets the return type of the method</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.methods.type`</i>
+<b>Property</b>: <i>nodes.class.methods.type</i>
 </br>
 </br>
 <code>
@@ -7555,7 +7555,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Sets the visibility of the method</b></td>
 <td>
-<b>Property</b>:<i>`nodes.class.methods.scope`</i>
+<b>Property</b>: <i>nodes.class.methods.scope</i>
 </br>
 </br>
 <code>
@@ -7588,7 +7588,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Defines the state of the node is collapsed/expanded</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon`</i>
+<b>Property</b>: <i>nodes.collapseIcon</i>
 </br>
 </br>
 <code>
@@ -7614,7 +7614,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon`</i>
+<b>Property</b>: <i>nodes.collapseIcon</i>
 </br>
 </br>
 <code>
@@ -7635,7 +7635,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the border color for collapse icon of node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.borderColor`</i>
+<b>Property</b>: <i>nodes.collapseIcon.borderColor</i>
 </br>
 </br>
 <code>
@@ -7663,7 +7663,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.borderColor`</i>
+<b>Property</b>: <i>nodes.collapseIcon.borderColor</i>
 </br>
 </br>
 <code>
@@ -7684,7 +7684,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the border width for collapse icon of node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.borderWidth`</i>
+<b>Property</b>: <i>nodes.collapseIcon.borderWidth</i>
 </br>
 </br>
 <code>
@@ -7712,7 +7712,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.borderWidth`</i>
+<b>Property</b>: <i>nodes.collapseIcon.borderWidth</i>
 </br>
 </br>
 <code>
@@ -7733,7 +7733,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the fill color for collapse icon of node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.fillColor`</i>
+<b>Property</b>: <i>nodes.collapseIcon.fillColor</i>
 </br>
 </br>
 <code>
@@ -7761,7 +7761,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.fill`</i>
+<b>Property</b>: <i>nodes.collapseIcon.fill</i>
 </br>
 </br>
 <code>
@@ -7782,7 +7782,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the height for collapse icon of node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.height`</i>
+<b>Property</b>: <i>nodes.collapseIcon.height</i>
 </br>
 </br>
 <code>
@@ -7808,7 +7808,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.height`</i>
+<b>Property</b>: <i>nodes.collapseIcon.height</i>
 </br>
 </br>
 <code>
@@ -7829,7 +7829,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the horizontal alignment of the icon</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.horizontalAlignment`</i>
+<b>Property</b>: <i>nodes.collapseIcon.horizontalAlignment</i>
 </br>
 </br>
 <code>
@@ -7857,7 +7857,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.horizontalAlignment`</i>
+<b>Property</b>: <i>nodes.collapseIcon.horizontalAlignment</i>
 </br>
 </br>
 <code>
@@ -7878,7 +7878,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>To set the margin for the collapse icon of node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.margin`</i>
+<b>Property</b>: <i>nodes.collapseIcon.margin</i>
 </br>
 </br>
 <code>
@@ -7906,7 +7906,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.margin`</i>
+<b>Property</b>: <i>nodes.collapseIcon.margin</i>
 </br>
 </br>
 <code>
@@ -7929,7 +7929,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the fraction/ratio(relative to node) that defines the position of the icon</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.offset`</i>
+<b>Property</b>: <i>nodes.collapseIcon.offset</i>
 </br>
 </br>
 <code>
@@ -7957,7 +7957,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.offset`</i>
+<b>Property</b>: <i>nodes.collapseIcon.offset</i>
 </br>
 </br>
 <code>
@@ -7980,7 +7980,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the shape of the collapsed state of the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.shape`</i>
+<b>Property</b>: <i>nodes.collapseIcon.shape</i>
 </br>
 </br>
 <code>
@@ -8006,7 +8006,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.shape`</i>
+<b>Property</b>: <i>nodes.collapseIcon.shape</i>
 </br>
 </br>
 <code>
@@ -8027,7 +8027,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the vertical alignment of the icon</b></td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.verticalAlignment `</i>
+<b>Property</b>: <i>nodes.collapseIcon.verticalAlignment </i>
 </br>
 </br>
 <code>
@@ -8055,7 +8055,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.verticalAlignment `</i>
+<b>Property</b>: <i>nodes.collapseIcon.verticalAlignment </i>
 </br>
 </br>
 <code>
@@ -8079,7 +8079,7 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.content`</i>
+<b>Property</b>: <i>nodes.collapseIcon.content</i>
 </br>
 </br>
 <code>
@@ -8123,7 +8123,7 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.pathData`</i>
+<b>Property</b>: <i>nodes.collapseIcon.pathData</i>
 </br>
 </br>
 <code>
@@ -8147,7 +8147,7 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.cornerRadius`</i>
+<b>Property</b>: <i>nodes.collapseIcon.cornerRadius</i>
 </br>
 </br>
 <code>
@@ -8171,7 +8171,7 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.collapseIcon.padding`</i>
+<b>Property</b>: <i>nodes.collapseIcon.padding</i>
 </br>
 </br>
 <code>
@@ -8192,7 +8192,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the distance to be left between a node and its connections(In coming and out going connections)</b></td>
 <td>
-<b>Property</b>:<i>`nodes.connectorPadding`</i>
+<b>Property</b>: <i>nodes.connectorPadding</i>
 </br>
 </br>
 <code>
@@ -8215,7 +8215,7 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>Enables or disables the default behaviors of the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.constraints`</i>
+<b>Property</b>: <i>nodes.constraints</i>
 </br>
 </br>
 <code>
@@ -8234,7 +8234,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.constraints`</i>
+<b>Property</b>: <i>nodes.constraints</i>
 </br>
 </br>
 <code>
@@ -8254,7 +8254,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines how the child objects need to be arranged(Either in any predefined manner or automatically). Applicable, if the node is a group</b></td>
 <td>
-<b>Property</b>:<i>`nodes.container`</i>
+<b>Property</b>: <i>nodes.container</i>
 </br>
 </br>
 <code>
@@ -8293,7 +8293,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Defines the orientation of the container. Applicable, if the group is a container</b></td>
 <td>
-<b>Property</b>:<i>`nodes.container.orientation`</i>
+<b>Property</b>: <i>nodes.container.orientation</i>
 </br>
 </br>
 <code>
@@ -8333,7 +8333,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the type of the container. Applicable if the group is a container.</b></td>
 <td>
-<b>Property</b>:<i>`nodes.container.type`</i>
+<b>Property</b>: <i>nodes.container.type</i>
 </br>
 </br>
 <code>
@@ -8372,7 +8372,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Defines the corner radius of rectangular shapes</b></td>
 <td>
-<b>Property</b>:<i>`nodes.cornerRadius`</i>
+<b>Property</b>: <i>nodes.cornerRadius</i>
 </br>
 </br>
 <code>
@@ -8397,7 +8397,7 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>This property allows you to customize nodes appearance using user-defined CSS</b></td>
 <td>
-<b>Property</b>:<i>`nodes.cssClass`</i>
+<b>Property</b>: <i>nodes.cssClass</i>
 </br>
 </br>
 <code>
@@ -8420,7 +8420,7 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>Defines the BPMN data object</b></td>
 <td>
-<b>Property</b>:<i>`nodes.data.type`</i>
+<b>Property</b>: <i>nodes.data.type</i>
 </br>
 </br>
 <code>
@@ -8441,7 +8441,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.dataObject.type`</i>
+<b>Property</b>: <i>nodes.shape.dataObject.type</i>
 </br>
 </br>
 <code>
@@ -8465,7 +8465,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines whether the BPMN data object is a collection or not</b></td>
 <td>
-<b>Property</b>:<i>`nodes.data.collection`</i>
+<b>Property</b>: <i>nodes.data.collection</i>
 </br>
 </br>
 <code>
@@ -8487,7 +8487,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.dataObject.collection`</i>
+<b>Property</b>: <i>nodes.shape.dataObject.collection</i>
 </br>
 </br>
 <code>
@@ -8511,7 +8511,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines an Enumeration in a UML Class Diagram</b></td>
 <td>
-<b>Property</b>:<i>`nodes.enumeration`</i>
+<b>Property</b>: <i>nodes.enumeration</i>
 </br>
 </br>
 <code>
@@ -8538,7 +8538,7 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>Sets the name of the Enumeration</b></td>
 <td>
-<b>Property</b>:<i>`nodes.enumeration.name`</i>
+<b>Property</b>: <i>nodes.enumeration.name</i>
 </br>
 </br>
 <code>
@@ -8565,7 +8565,7 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>Defines the collection of enumeration members</b></td>
 <td>
-<b>Property</b>:<i>`nodes.enumeration.members`</i>
+<b>Property</b>: <i>nodes.enumeration.members</i>
 </br>
 </br>
 <code>
@@ -8593,7 +8593,7 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>Sets the name of the enumeration member</b></td>
 <td>
-<b>Property</b>:<i>`nodes.enumeration.members.name`</i>
+<b>Property</b>: <i>nodes.enumeration.members.name</i>
 </br>
 </br>
 <code>
@@ -8621,7 +8621,7 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>Sets the type of the BPMN Events. Applicable, if the node is a BPMN event</b></td>
 <td>
-<b>Property</b>:<i>`nodes.event`</i>
+<b>Property</b>: <i>nodes.event</i>
 </br>
 </br>
 <code>
@@ -8638,7 +8638,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.event`</i>
+<b>Property</b>: <i>nodes.shape.event</i>
 </br>
 </br>
 <code>
@@ -8660,7 +8660,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the type of the trigger</b></td>
 <td>
-<b>Property</b>:<i>`nodes.event.trigger`</i>
+<b>Property</b>: <i>nodes.event.trigger</i>
 </br>
 </br>
 <code>
@@ -8677,7 +8677,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.event.trigger`</i>
+<b>Property</b>: <i>nodes.shape.event.trigger</i>
 </br>
 </br>
 <code>
@@ -8699,7 +8699,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines whether the node can be automatically arranged using layout or not</b></td>
 <td>
-<b>Property</b>:<i>`nodes.excludeFromLayout`</i>
+<b>Property</b>: <i>nodes.excludeFromLayout</i>
 </br>
 </br>
 <code>
@@ -8732,7 +8732,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.excludeFromLayout`</i>
+<b>Property</b>: <i>nodes.excludeFromLayout</i>
 </br>
 </br>
 <code>
@@ -8759,7 +8759,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the fill color of the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.fillColor`</i>
+<b>Property</b>: <i>nodes.fillColor</i>
 </br>
 </br>
 <code>
@@ -8777,7 +8777,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.fill`</i>
+<b>Property</b>: <i>nodes.style.fill</i>
 </br>
 </br>
 <code>
@@ -8799,7 +8799,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the type of the BPMN Gateway. Applicable, if the node is a BPMN gateway</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gateway`</i>
+<b>Property</b>: <i>nodes.gateway</i>
 </br>
 </br>
 <code>
@@ -8820,7 +8820,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.gateway`</i>
+<b>Property</b>: <i>nodes.shape.gateway</i>
 </br>
 </br>
 <code>
@@ -8838,7 +8838,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Paints the node with linear color transitions</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.type`</i>
+<b>Property</b>: <i>nodes.gradient.type</i>
 </br>
 </br>
 <code>
@@ -8871,7 +8871,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.type`</i>
+<b>Property</b>: <i>nodes.style.gradient.type</i>
 </br>
 </br>
 <code>
@@ -8914,7 +8914,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the x1 value of linear gradient</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.LinearGradient.x1`</i>
+<b>Property</b>: <i>nodes.gradient.LinearGradient.x1</i>
 </br>
 </br>
 <code>
@@ -8947,7 +8947,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.LinearGradient.x1`</i>
+<b>Property</b>: <i>nodes.style.gradient.LinearGradient.x1</i>
 </br>
 </br>
 <code>
@@ -8990,7 +8990,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the x2 value of linear gradient</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.LinearGradient.x2`</i>
+<b>Property</b>: <i>nodes.gradient.LinearGradient.x2</i>
 </br>
 </br>
 <code>
@@ -9023,7 +9023,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.LinearGradient.x2`</i>
+<b>Property</b>: <i>nodes.style.gradient.LinearGradient.x2</i>
 </br>
 </br>
 <code>
@@ -9066,7 +9066,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the y1 value of linear gradient</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.LinearGradient.y1`</i>
+<b>Property</b>: <i>nodes.gradient.LinearGradient.y1</i>
 </br>
 </br>
 <code>
@@ -9099,7 +9099,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.LinearGradient.y1`</i>
+<b>Property</b>: <i>nodes.style.gradient.LinearGradient.y1</i>
 </br>
 </br>
 <code>
@@ -9142,7 +9142,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the y2 value of linear gradient</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.LinearGradient.y2`</i>
+<b>Property</b>: <i>nodes.gradient.LinearGradient.y2</i>
 </br>
 </br>
 <code>
@@ -9175,7 +9175,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.LinearGradient.y2`</i>
+<b>Property</b>: <i>nodes.style.gradient.LinearGradient.y2</i>
 </br>
 </br>
 <code>
@@ -9218,7 +9218,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the type of gradient</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.RadialGradient.type`</i>
+<b>Property</b>: <i>nodes.gradient.RadialGradient.type</i>
 </br>
 </br>
 <code>
@@ -9250,7 +9250,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.type`</i>
+<b>Property</b>: <i>nodes.style.gradient.type</i>
 </br>
 </br>
 <code>
@@ -9289,7 +9289,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines the position of the outermost circle
 </b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.RadialGradient.cx`</i>
+<b>Property</b>: <i>nodes.gradient.RadialGradient.cx</i>
 </br>
 </br>
 <code>
@@ -9321,7 +9321,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.RadialGradient.cx`</i>
+<b>Property</b>: <i>nodes.style.RadialGradient.cx</i>
 </br>
 </br>
 <code>
@@ -9359,7 +9359,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the outer most circle of the radial gradient</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.RadialGradient.cy`</i>
+<b>Property</b>: <i>nodes.gradient.RadialGradient.cy</i>
 </br>
 </br>
 <code>
@@ -9391,7 +9391,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.RadialGradient.cy`</i>
+<b>Property</b>: <i>nodes.style.RadialGradient.cy</i>
 </br>
 </br>
 <code>
@@ -9429,7 +9429,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the innermost circle of the radial gradient</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.RadialGradient.fx`</i>
+<b>Property</b>: <i>nodes.gradient.RadialGradient.fx</i>
 </br>
 </br>
 <code>
@@ -9461,7 +9461,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.RadialGradient.fx`</i>
+<b>Property</b>: <i>nodes.style.RadialGradient.fx</i>
 </br>
 </br>
 <code>
@@ -9499,7 +9499,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the innermost circle of the radial gradient</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.RadialGradient.fy`</i>
+<b>Property</b>: <i>nodes.gradient.RadialGradient.fy</i>
 </br>
 </br>
 <code>
@@ -9531,7 +9531,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.RadialGradient.fy`</i>
+<b>Property</b>: <i>nodes.style.RadialGradient.fy</i>
 </br>
 </br>
 <code>
@@ -9569,7 +9569,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the different colors and the region of color transitions</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.RadialGradient.stops`</i>
+<b>Property</b>: <i>nodes.gradient.RadialGradient.stops</i>
 </br>
 </br>
 <code>
@@ -9601,7 +9601,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.RadialGradient.stops`</i>
+<b>Property</b>: <i>nodes.style.RadialGradient.stops</i>
 </br>
 </br>
 <code>
@@ -9639,7 +9639,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the color to be filled over the specified region</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.stops.color`</i>
+<b>Property</b>: <i>nodes.gradient.stops.color</i>
 </br>
 </br>
 <code>
@@ -9671,7 +9671,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.stops.color`</i>
+<b>Property</b>: <i>nodes.style.gradient.stops.color</i>
 </br>
 </br>
 <code>
@@ -9709,7 +9709,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the position where the previous color transition ends and a new color transition starts</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.stops.offset`</i>
+<b>Property</b>: <i>nodes.gradient.stops.offset</i>
 </br>
 </br>
 <code>
@@ -9741,7 +9741,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.stops.offset`</i>
+<b>Property</b>: <i>nodes.style.gradient.stops.offset</i>
 </br>
 </br>
 <code>
@@ -9779,7 +9779,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Describes the transparency level of the region</b></td>
 <td>
-<b>Property</b>:<i>`nodes.gradient.stops.opacity`</i>
+<b>Property</b>: <i>nodes.gradient.stops.opacity</i>
 </br>
 </br>
 <code>
@@ -9812,7 +9812,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.gradient.stops.opacity`</i>
+<b>Property</b>: <i>nodes.style.gradient.stops.opacity</i>
 </br>
 </br>
 <code>
@@ -9851,7 +9851,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the header of a swimlane/lane</b></td>
 <td>
-<b>Property</b>:<i>`nodes.header`</i>
+<b>Property</b>: <i>nodes.header</i>
 </br>
 </br>
 <code>
@@ -9876,7 +9876,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Defines the height of the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.height`</i>
+<b>Property</b>: <i>nodes.height</i>
 </br>
 </br>
 <code>
@@ -9892,7 +9892,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.height`</i>
+<b>Property</b>: <i>nodes.height</i>
 </br>
 </br>
 <code>
@@ -9911,7 +9911,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the horizontal alignment of the node. Applicable, if the parent of the node is a container</b></td>
 <td>
-<b>Property</b>:<i>`nodes.horizontalAlign`</i>
+<b>Property</b>: <i>nodes.horizontalAlign</i>
 </br>
 </br>
 <code>
@@ -9950,7 +9950,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>A read only collection of the incoming connectors/edges of the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.inEdges`</i>
+<b>Property</b>: <i>nodes.inEdges</i>
 </br>
 </br>
 <code>
@@ -9961,7 +9961,7 @@ for(var i = 0; i < node.inEdges.length; i++){
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.inEdges`</i>
+<b>Property</b>: <i>nodes.inEdges</i>
 </br>
 </br>
 <code>
@@ -9984,7 +9984,7 @@ console.log(node[i]);
 <tr>
 <td><b>Defines an interface in a UML interface Diagram</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface`</i>
+<b>Property</b>: <i>nodes.interface</i>
 </br>
 </br>
 <code>
@@ -10002,7 +10002,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 <tr>
 <td><b>Defines the name, attributes and methods of a Interface. Applicable, if the node is a Interface</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.name`</i>
+<b>Property</b>: <i>nodes.interface.name</i>
 </br>
 </br>
 <code>
@@ -10030,7 +10030,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Defines the collection of attributes</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.attributes`</i>
+<b>Property</b>: <i>nodes.interface.attributes</i>
 </br>
 </br>
 <code>
@@ -10058,7 +10058,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Sets the name of the attribute</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.attributes.name`</i>
+<b>Property</b>: <i>nodes.interface.attributes.name</i>
 </br>
 </br>
 <code>
@@ -10086,7 +10086,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Sets the data type of attribute</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.attributes.type`</i>
+<b>Property</b>: <i>nodes.interface.attributes.type</i>
 </br>
 </br>
 <code>
@@ -10114,7 +10114,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Defines the visibility of the attribute</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.attributes.scope`</i>
+<b>Property</b>: <i>nodes.interface.attributes.scope</i>
 </br>
 </br>
 <code>
@@ -10142,7 +10142,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Defines the collection of methods of a interface</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.methods`</i>
+<b>Property</b>: <i>nodes.interface.methods</i>
 </br>
 </br>
 <code>
@@ -10169,7 +10169,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Sets the name of the method</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.methods.name`</i>
+<b>Property</b>: <i>nodes.interface.methods.name</i>
 </br>
 </br>
 <code>
@@ -10200,7 +10200,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Defines the arguments of the method</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.methods.arguments`</i>
+<b>Property</b>: <i>nodes.interface.methods.arguments</i>
 </br>
 </br>
 <code>
@@ -10234,7 +10234,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Defines the name, attributes and methods of a interface. Applicable, if the node is a interface</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.methods.arguments.name`</i>
+<b>Property</b>: <i>nodes.interface.methods.arguments.name</i>
 </br>
 </br>
 <code>
@@ -10269,7 +10269,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Sets the type of the argument</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.methods.arguments.type`</i>
+<b>Property</b>: <i>nodes.interface.methods.arguments.type</i>
 </br>
 </br>
 <code>
@@ -10304,7 +10304,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Sets the return type of the method</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.methods.type`</i>
+<b>Property</b>: <i>nodes.interface.methods.type</i>
 </br>
 </br>
 <code>
@@ -10335,7 +10335,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Sets the visibility of the method</b></td>
 <td>
-<b>Property</b>:<i>`nodes.interface.methods.scope`</i>
+<b>Property</b>: <i>nodes.interface.methods.scope</i>
 </br>
 </br>
 <code>
@@ -10368,7 +10368,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td><b>Defines whether the sub tree of the node is expanded or collapsed</b></td>
 <td>
-<b>Property</b>:<i>`nodes.isExpanded`</i>
+<b>Property</b>: <i>nodes.isExpanded</i>
 </br>
 </br>
 <code>
@@ -10401,7 +10401,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.isExpanded`</i>
+<b>Property</b>: <i>nodes.isExpanded</i>
 </br>
 </br>
 <code>
@@ -10435,7 +10435,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the node as a swimlane</b></td>
 <td>
-<b>Property</b>:<i>`nodes.isSwimlane`</i>
+<b>Property</b>: <i>nodes.isSwimlane</i>
 </br>
 </br>
 <code>
@@ -10461,7 +10461,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>A collection of objects where each object represents a label</b></td>
 <td>
-<b>Property</b>:<i>`nodes.labels`</i>
+<b>Property</b>: <i>nodes.labels</i>
 </br>
 </br>
 <code>
@@ -10483,7 +10483,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.annotations`</i>
+<b>Property</b>: <i>nodes.annotations</i>
 </br>
 </br>
 <code>
@@ -10505,7 +10505,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>An array of objects where each object represents a lane. Applicable, if the node is a swimlane</b></td>
 <td>
-<b>Property</b>:<i>`nodes.lanes`</i>
+<b>Property</b>: <i>nodes.lanes</i>
 </br>
 </br>
 <code>
@@ -10536,7 +10536,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>This property allows you to customize lanes appearance using user-defined CSS</b></td>
 <td>
-<b>Property</b>:<i>`nodes.lanes.cssClass`</i>
+<b>Property</b>: <i>nodes.lanes.cssClass</i>
 </br>
 </br>
 <code>
@@ -10571,7 +10571,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Defines the header of the lane</b></td>
 <td>
-<b>Property</b>:<i>`nodes.lanes.header`</i>
+<b>Property</b>: <i>nodes.lanes.header</i>
 </br>
 </br>
 <code>
@@ -10607,7 +10607,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Defines the width of lane</b></td>
 <td>
-<b>Property</b>:<i>`nodes.lanes.width`</i>
+<b>Property</b>: <i>nodes.lanes.width</i>
 </br>
 </br>
 <code>
@@ -10640,7 +10640,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>An array of objects where each object represents a child node of the lane</b></td>
 <td>
-<b>Property</b>:<i>`nodes.lanes.children`</i>
+<b>Property</b>: <i>nodes.lanes.children</i>
 </br>
 </br>
 <code>
@@ -10672,7 +10672,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Defines the object as a lane</b></td>
 <td>
-<b>Property</b>:<i>`nodes.lanes.isLane`</i>
+<b>Property</b>: <i>nodes.lanes.isLane</i>
 </br>
 </br>
 <code>
@@ -10706,7 +10706,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Defines the minimum space to be left between the bottom of parent bounds and the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.margin`</i>
+<b>Property</b>: <i>nodes.margin</i>
 </br>
 </br>
 <code>
@@ -10735,7 +10735,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.margin`</i>
+<b>Property</b>: <i>nodes.margin</i>
 </br>
 </br>
 <code>
@@ -10755,7 +10755,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the maximum height limit of the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.maxHeight`</i>
+<b>Property</b>: <i>nodes.maxHeight</i>
 </br>
 </br>
 <code>
@@ -10776,7 +10776,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.maxHeight`</i>
+<b>Property</b>: <i>nodes.maxHeight</i>
 </br>
 </br>
 <code>
@@ -10799,7 +10799,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the unique identifier of the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.name`</i>
+<b>Property</b>: <i>nodes.name</i>
 </br>
 </br>
 <code>
@@ -10816,7 +10816,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.id`</i>
+<b>Property</b>: <i>nodes.id</i>
 </br>
 </br>
 <code>
@@ -10836,7 +10836,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the opaque of the node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.opacity`</i>
+<b>Property</b>: <i>nodes.opacity</i>
 </br>
 </br>
 <code>
@@ -10855,7 +10855,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.style.opacity`</i>
+<b>Property</b>: <i>nodes.style.opacity</i>
 </br>
 </br>
 <code>
@@ -10879,7 +10879,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the minimum padding value to be left between the bottom most position of a group and its children. Applicable, if the group is a container</b></td>
 <td>
-<b>Property</b>:<i>`nodes.paddingBottom`</i>
+<b>Property</b>: <i>nodes.paddingBottom</i>
 </br>
 </br>
 <code>
@@ -10920,7 +10920,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 <tr>
 <td><b>Sets the name of the parent group</b></td>
 <td>
-<b>Property</b>:<i>`nodes.parent`</i>
+<b>Property</b>: <i>nodes.parent</i>
 </br>
 </br>
 <code>
@@ -10958,7 +10958,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the path geometry that defines the shape of a path node</b></td>
 <td>
-<b>Property</b>:<i>`nodes.pathData`</i>
+<b>Property</b>: <i>nodes.pathData</i>
 </br>
 </br>
 <code>
@@ -10979,7 +10979,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.data`</i>
+<b>Property</b>: <i>nodes.shape.data</i>
 </br>
 </br>
 <code>
@@ -10999,7 +10999,7 @@ var diagram = new ej.diagrams.Diagram({
 <tr>
 <td><b>An array of objects, where each object represents a smaller region(phase) of a swimlane</b></td>
 <td>
-<b>Property</b>:<i>`nodes.phases`</i>
+<b>Property</b>: <i>nodes.phases</i>
 </br>
 </br>
 <code>
@@ -11037,7 +11037,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Defines the header of the smaller regions</b></td>
 <td>
-<b>Property</b>:<i>`nodes.phases.label`</i>
+<b>Property</b>: <i>nodes.phases.label</i>
 </br>
 </br>
 <code>
@@ -11075,7 +11075,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Defines the line color of the splitter that splits adjacent phases</b></td>
 <td>
-<b>Property</b>:<i>`nodes.phases.lineColor`</i>
+<b>Property</b>: <i>nodes.phases.lineColor</i>
 </br>
 </br>
 <code>
@@ -11116,7 +11116,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the length of the smaller region(phase) of a swimlane</b></td>
 <td>
-<b>Property</b>:<i>`nodes.phases.offset`</i>
+<b>Property</b>: <i>nodes.phases.offset</i>
 </br>
 </br>
 <code>
@@ -11154,7 +11154,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the orientation of the phase</b></td>
 <td>
-<b>Property</b>:<i>`nodes.phases.orientation`</i>
+<b>Property</b>: <i>nodes.phases.orientation</i>
 </br>
 </br>
 <code>
@@ -11174,7 +11174,7 @@ diagram.addPhase(diagram.selectionList[0].name,
 <tr>
 <td><b>Sets the height of the phase headers</b></td>
 <td>
-<b>Property</b>:<i>`nodes.phaseSize`</i>
+<b>Property</b>: <i>nodes.phaseSize</i>
 </br>
 </br>
 <code>
@@ -11206,7 +11206,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the ratio/ fractional value relative to node, based on which the node will be transformed(positioning, scaling and rotation)</b></td>
 <td>
-<b>Property</b>:<i>`nodes.pivot`</i>
+<b>Property</b>: <i>nodes.pivot</i>
 </br>
 </br>
 <code>
@@ -11227,7 +11227,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.pivot`</i>
+<b>Property</b>: <i>nodes.pivot</i>
 </br>
 </br>
 <code>
@@ -11250,7 +11250,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines a collection of points to draw a polygon. Applicable, if the shape is a polygon</b></td>
 <td>
-<b>Property</b>:<i>`nodes.points`</i>
+<b>Property</b>: <i>nodes.points</i>
 </br>
 </br>
 <code>
@@ -11288,7 +11288,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.points`</i>
+<b>Property</b>: <i>nodes.shape.points</i>
 </br>
 </br>
 <code>
@@ -11336,7 +11336,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>An array of objects where each object represents a port</b></td>
 <td>
-<b>Property</b>:<i>`nodes.ports`</i>
+<b>Property</b>: <i>nodes.ports</i>
 </br>
 </br>
 <code>
@@ -11368,7 +11368,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.ports`</i>
+<b>Property</b>: <i>nodes.ports</i>
 </br>
 </br>
 <code>
@@ -11397,7 +11397,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the border color of the port</b></td>
 <td>
-<b>Property</b>:<i>`nodes.ports.borderColor`</i>
+<b>Property</b>: <i>nodes.ports.borderColor</i>
 </br>
 </br>
 <code>
@@ -11435,7 +11435,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.ports.style.strokeColor`</i>
+<b>Property</b>: <i>nodes.ports.style.strokeColor</i>
 </br>
 </br>
 <code>
@@ -11471,7 +11471,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines whether connections can be created with the port</b></td>
 <td>
-<b>Property</b>:<i>`nodes.ports.constraints`</i>
+<b>Property</b>: <i>nodes.ports.constraints</i>
 </br>
 </br>
 <code>
@@ -11503,7 +11503,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.ports.constraints`</i>
+<b>Property</b>: <i>nodes.ports.constraints</i>
 </br>
 </br>
 <code>
@@ -11533,7 +11533,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>An array of objects where each object represents a port</b></td>
 <td>
-<b>Property</b>:<i>`nodes.ports.shape`</i>
+<b>Property</b>: <i>nodes.ports.shape</i>
 </br>
 </br>
 <code>
@@ -11567,7 +11567,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.ports.shape`</i>
+<b>Property</b>: <i>nodes.ports.shape</i>
 </br>
 </br>
 <code>
@@ -11600,7 +11600,7 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.ports.verticalAlignment`</i>
+<b>Property</b>: <i>nodes.ports.verticalAlignment</i>
 </br>
 </br>
 <code>
@@ -11633,7 +11633,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the opacity and the position of shadow</b></td>
 <td>
-<b>Property</b>:<i>`nodes.shadow`</i>
+<b>Property</b>: <i>nodes.shadow</i>
 </br>
 </br>
 <code>
@@ -11651,7 +11651,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shadow`</i>
+<b>Property</b>: <i>nodes.shadow</i>
 </br>
 </br>
 <code>
@@ -11671,7 +11671,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the sub process of a BPMN Activity. Applicable, if the type of the BPMN activity is sub process</b></td>
 <td>
-<b>Property</b>:<i>`nodes.subProcess`</i>
+<b>Property</b>: <i>nodes.subProcess</i>
 </br>
 </br>
 <code>
@@ -11697,7 +11697,7 @@ $("#diagramcontent").ejDiagram({
 });</code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.activity.subProcess`</i>
+<b>Property</b>: <i>nodes.shape.activity.subProcess</i>
 </br>
 </br>
 <code>
@@ -11727,7 +11727,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the collection of events that need to be appended with BPMN Sub-Process</b></td>
 <td>
-<b>Property</b>:<i>`nodes.subProcess.events`</i>
+<b>Property</b>: <i>nodes.subProcess.events</i>
 </br>
 </br>
 <code>
@@ -11766,7 +11766,7 @@ $("#diagramcontent").ejDiagram({
 });</code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.activity.subProcess.events`</i>
+<b>Property</b>: <i>nodes.shape.activity.subProcess.events</i>
 </br>
 </br>
 <code>
@@ -11799,7 +11799,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>An array of objects where each object represents a port</b></td>
 <td>
-<b>Property</b>:<i>`nodes.subProcess.events.ports`</i>
+<b>Property</b>: <i>nodes.subProcess.events.ports</i>
 </br>
 </br>
 <code>
@@ -11844,7 +11844,7 @@ $("#diagramcontent").ejDiagram({
 });</code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.activity.subProcess.events.ports`</i>
+<b>Property</b>: <i>nodes.shape.activity.subProcess.events.ports</i>
 </br>
 </br>
 <code>
@@ -11881,7 +11881,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>A collection of objects where each object represents a label</b></td>
 <td>
-<b>Property</b>:<i>`nodes.subProcess.events.labels`</i>
+<b>Property</b>: <i>nodes.subProcess.events.labels</i>
 </br>
 </br>
 <code>
@@ -11913,7 +11913,7 @@ $("#diagramcontent").ejDiagram({
 });</code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.activity.subProcess.events.annotations`</i>
+<b>Property</b>: <i>nodes.shape.activity.subProcess.events.annotations</i>
 </br>
 </br>
 <code>
@@ -11955,7 +11955,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the task of the BPMN activity. Applicable, if the type of activity is set as task</b></td>
 <td>
-<b>Property</b>:<i>`nodes.task`</i>
+<b>Property</b>: <i>nodes.task</i>
 </br>
 </br>
 <code>
@@ -11980,7 +11980,7 @@ $("#diagramcontent").ejDiagram({
 });</code>
 </td>
 <td>
-<b>Property</b>:<i>`nodes.shape.activity.task`</i>
+<b>Property</b>: <i>nodes.shape.activity.task</i>
 </br>
 </br>
 <code>
@@ -12027,7 +12027,7 @@ diagram.tool = DiagramTools.ZoomPan;
 <tr>
 <td><b>Binds the custom JSON data with node properties</b></td>
 <td>
-<b>Property</b>:<i>`nodeTemplate`</i>
+<b>Property</b>: <i>nodeTemplate</i>
 </br>
 </br>
 <code>
@@ -12058,7 +12058,7 @@ function nodeTemplate(diagram, node) {
 }</code>
 </td>
 <td>
-<b>Property</b>:<i>`setNodeTemplate`</i>
+<b>Property</b>: <i>setNodeTemplate</i>
 </br>
 </br>
 <code>
@@ -12139,7 +12139,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Allows to see a preview or an overall view of the entire content of a Diagram</b></td>
 <td>
-<b>Property</b>:<i>`overview`</i>
+<b>Property</b>: <i>overview</i>
 </br>
 </br>
 <code>
@@ -12166,7 +12166,7 @@ $("#overview").ejOverview({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`Overview`</i>
+<b>Property</b>: <i>Overview</i>
 </br>
 </br>
 <code>
@@ -12198,7 +12198,7 @@ overview.appendTo('#overview');
 <tr>
 <td><b>A collection of JSON objects where each object represents a layer. Layer is a named category of diagram shapes</b></td>
 <td>
-<b>Property</b>:<i>`layers`</i>
+<b>Property</b>: <i>layers</i>
 </br>
 </br>
 <code>
@@ -12216,7 +12216,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`layers`</i>
+<b>Property</b>: <i>layers</i>
 </br>
 </br>
 <code>
@@ -12272,7 +12272,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>A collection of JSON objects where each object represents a layer. Layer is a named category of diagram shapes</b></td>
 <td>
-<b>Property</b>:<i>`layers.print`</i>
+<b>Property</b>: <i>layers.print</i>
 </br>
 </br>
 <code>
@@ -12300,7 +12300,7 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>A collection of objects where each object represents a label</b></td>
 <td>
-<b>Property</b>:<i>`labels.text`</i>
+<b>Property</b>: <i>labels.text</i>
 </br>
 </br>
 <code>
@@ -12321,7 +12321,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.content`</i>
+<b>Property</b>: <i>annotations.content</i>
 </br>
 </br>
 <code>
@@ -12343,7 +12343,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Offset for annotation content</b></td>
 <td>
-<b>Property</b>:<i>`labels.offset`</i>
+<b>Property</b>: <i>labels.offset</i>
 </br>
 </br>
 <code>
@@ -12366,7 +12366,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.offset`</i>
+<b>Property</b>: <i>annotations.offset</i>
 </br>
 </br>
 <code>
@@ -12390,7 +12390,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the hyperlink for the labels</b></td>
 <td>
-<b>Property</b>:<i>`labels.hyperText`</i>
+<b>Property</b>: <i>labels.hyperText</i>
 </br>
 </br>
 <code>
@@ -12413,7 +12413,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.hyperlink`</i>
+<b>Property</b>: <i>annotations.hyperlink</i>
 </br>
 </br>
 <code>
@@ -12441,7 +12441,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Enables/disables the bold style</b></td>
 <td>
-<b>Property</b>:<i>`labels.bold`</i>
+<b>Property</b>: <i>labels.bold</i>
 </br>
 </br>
 <code>
@@ -12463,7 +12463,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.style.bold`</i>
+<b>Property</b>: <i>annotations.style.bold</i>
 </br>
 </br>
 <code>
@@ -12487,7 +12487,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the border color of the label</b></td>
 <td>
-<b>Property</b>:<i>`labels.borderColor`</i>
+<b>Property</b>: <i>labels.borderColor</i>
 </br>
 </br>
 <code>
@@ -12510,7 +12510,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.style.borderColor`</i>
+<b>Property</b>: <i>annotations.style.borderColor</i>
 </br>
 </br>
 <code>
@@ -12536,7 +12536,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the border width of the label</b></td>
 <td>
-<b>Property</b>:<i>`labels.borderWidth`</i>
+<b>Property</b>: <i>labels.borderWidth</i>
 </br>
 </br>
 <code>
@@ -12559,7 +12559,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.style.borderWidth`</i>
+<b>Property</b>: <i>annotations.style.borderWidth</i>
 </br>
 </br>
 <code>
@@ -12588,7 +12588,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>This property allows you to customize labels appearance using user-defined CSS</b></td>
 <td>
-<b>Property</b>:<i>`labels.cssClass`</i>
+<b>Property</b>: <i>labels.cssClass</i>
 </br>
 </br>
 <code>
@@ -12617,7 +12617,7 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>Enables or disables the default behaviors of the label</b></td>
 <td>
-<b>Property</b>:<i>`labels.constraints`</i>
+<b>Property</b>: <i>labels.constraints</i>
 </br>
 </br>
 <code>
@@ -12639,7 +12639,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.constraints`</i>
+<b>Property</b>: <i>annotations.constraints</i>
 </br>
 </br>
 <code>
@@ -12662,7 +12662,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the fill color of the text area</b></td>
 <td>
-<b>Property</b>:<i>`labels.fillColor`</i>
+<b>Property</b>: <i>labels.fillColor</i>
 </br>
 </br>
 <code>
@@ -12684,7 +12684,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.style.fill`</i>
+<b>Property</b>: <i>annotations.style.fill</i>
 </br>
 </br>
 <code>
@@ -12710,7 +12710,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the font color of the text</b></td>
 <td>
-<b>Property</b>:<i>`labels.fontColor`</i>
+<b>Property</b>: <i>labels.fontColor</i>
 </br>
 </br>
 <code>
@@ -12732,7 +12732,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.style.color`</i>
+<b>Property</b>: <i>annotations.style.color</i>
 </br>
 </br>
 <code>
@@ -12757,7 +12757,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the font family of the text</b></td>
 <td>
-<b>Property</b>:<i>`labels.fontFamily`</i>
+<b>Property</b>: <i>labels.fontFamily</i>
 </br>
 </br>
 <code>
@@ -12781,7 +12781,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.style.fontFamily`</i>
+<b>Property</b>: <i>annotations.style.fontFamily</i>
 </br>
 </br>
 <code>
@@ -12810,7 +12810,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the height of the label</b></td>
 <td>
-<b>Property</b>:<i>`labels.height`</i>
+<b>Property</b>: <i>labels.height</i>
 </br>
 </br>
 <code>
@@ -12833,7 +12833,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.height`</i>
+<b>Property</b>: <i>annotations.height</i>
 </br>
 </br>
 <code>
@@ -12857,7 +12857,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the horizontal alignment of the label</b></td>
 <td>
-<b>Property</b>:<i>`labels.horizontalAlignment`</i>
+<b>Property</b>: <i>labels.horizontalAlignment</i>
 </br>
 </br>
 <code>
@@ -12880,7 +12880,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.horizontalAlignment`</i>
+<b>Property</b>: <i>annotations.horizontalAlignment</i>
 </br>
 </br>
 <code>
@@ -12904,7 +12904,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>To set the margin of the label</b></td>
 <td>
-<b>Property</b>:<i>`labels.margin`</i>
+<b>Property</b>: <i>labels.margin</i>
 </br>
 </br>
 <code>
@@ -12927,7 +12927,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.margin`</i>
+<b>Property</b>: <i>annotations.margin</i>
 </br>
 </br>
 <code>
@@ -12950,7 +12950,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines whether the label is editable or not</b></td>
 <td>
-<b>Property</b>:<i>`labels.readOnly`</i>
+<b>Property</b>: <i>labels.readOnly</i>
 </br>
 </br>
 <code>
@@ -12972,7 +12972,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.constraints`</i>
+<b>Property</b>: <i>annotations.constraints</i>
 </br>
 </br>
 <code>
@@ -12995,7 +12995,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the id of svg/html templates. Applicable, if the node’s label is HTML or native</b></td>
 <td>
-<b>Property</b>:<i>`labels.templateId`</i>
+<b>Property</b>: <i>labels.templateId</i>
 </br>
 </br>
 <code>
@@ -13029,7 +13029,7 @@ $("#diagram").ejDiagram({
 <tr>
 <td><b>Defines how to align the text inside the label</b></td>
 <td>
-<b>Property</b>:<i>`labels.textAlign`</i>
+<b>Property</b>: <i>labels.textAlign</i>
 </br>
 </br>
 <code>
@@ -13055,7 +13055,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.style.textAlign`</i>
+<b>Property</b>: <i>annotations.style.textAlign</i>
 </br>
 </br>
 <code>
@@ -13083,7 +13083,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Enables or disables the visibility of the label</b></td>
 <td>
-<b>Property</b>:<i>`labels.visible`</i>
+<b>Property</b>: <i>labels.visible</i>
 </br>
 </br>
 <code>
@@ -13105,7 +13105,7 @@ $("#diagram").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`annotations.visible`</i>
+<b>Property</b>: <i>annotations.visible</i>
 </br>
 </br>
 <code>
@@ -13128,7 +13128,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Gets whether the label is currently being edited or not</b></td>
 <td>
-<b>Property</b>:<i>`labels.mode`</i>
+<b>Property</b>: <i>labels.mode</i>
 </br>
 </br>
 <code>
@@ -13154,7 +13154,7 @@ console.log(node.labels[0].mode);
 <tr>
 <td><b>Defines the size and appearance of diagram page</b></td>
 <td>
-<b>Property</b>:<i>`pageSettings.autoScrollBorder`</i>
+<b>Property</b>: <i>pageSettings.autoScrollBorder</i>
 </br>
 </br>
 <code>
@@ -13172,7 +13172,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets whether multiple pages can be created to fit all nodes and connectors</b></td>
 <td>
-<b>Property</b>:<i>`pageSettings.multiplePage`</i>
+<b>Property</b>: <i>pageSettings.multiplePage</i>
 </br>
 </br>
 <code>
@@ -13187,7 +13187,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`pageSettings.multiplePage`</i>
+<b>Property</b>: <i>pageSettings.multiplePage</i>
 </br>
 </br>
 <code>
@@ -13205,7 +13205,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the background color of diagram pages</b></td>
 <td>
-<b>Property</b>:<i>`pageSettings.pageBackgroundColor`</i>
+<b>Property</b>: <i>pageSettings.pageBackgroundColor</i>
 </br>
 </br>
 <code>
@@ -13217,7 +13217,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`pageSettings.background.color`</i>
+<b>Property</b>: <i>pageSettings.background.color</i>
 </br>
 </br>
 <code>
@@ -13239,7 +13239,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the scrollable area of diagram. Applicable, if the scroll limit is “limited”</b></td>
 <td>
-<b>Property</b>:<i>`pageSettings.scrollableArea`</i>
+<b>Property</b>: <i>pageSettings.scrollableArea</i>
 </br>
 </br>
 <code>
@@ -13251,7 +13251,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`scrollSettings.scrollableArea`</i>
+<b>Property</b>: <i>scrollSettings.scrollableArea</i>
 </br>
 </br>
 <code>
@@ -13268,7 +13268,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the draggable region of diagram elements</b></td>
 <td>
-<b>Property</b>:<i>`pageSettings.boundaryConstraints`</i>
+<b>Property</b>: <i>pageSettings.boundaryConstraints</i>
 </br>
 </br>
 <code>
@@ -13280,7 +13280,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`pageSettings.boundaryConstraints`</i>
+<b>Property</b>: <i>pageSettings.boundaryConstraints</i>
 </br>
 </br>
 <code>
@@ -13308,7 +13308,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the size and preview size of the node to add that to symbol palette</b></td>
 <td>
-<b>Property</b>:<i>`nodes.paletteItem`</i>
+<b>Property</b>: <i>nodes.paletteItem</i>
 </br>
 </br>
 <code>
@@ -13330,7 +13330,7 @@ $("#symbolpalette").ejSymbolPalette({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`palettes`</i>
+<b>Property</b>: <i>palettes</i>
 </br>
 </br>
 <code>
@@ -13402,7 +13402,7 @@ palette.appendTo('#symbolpalette');
 <tr>
 <td><b>Defines whether the symbol should be drawn at its actual size regardless of precedence factors or not</b></td>
 <td>
-<b>Property</b>:<i>`nodes.paletteItem.enableScale`</i>
+<b>Property</b>: <i>nodes.paletteItem.enableScale</i>
 </br>
 </br>
 <code>
@@ -13425,7 +13425,7 @@ $("#symbolpalette").ejSymbolPalette({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`palettes.fit`</i>
+<b>Property</b>: <i>palettes.fit</i>
 </br>
 </br>
 <code>
@@ -13497,7 +13497,7 @@ palette.appendTo('#symbolpalette');
 <tr>
 <td><b>To display a name for nodes in the symbol palette</b></td>
 <td>
-<b>Property</b>:<i>`nodes.paletteItem.label`</i>
+<b>Property</b>: <i>nodes.paletteItem.label</i>
 </br>
 </br>
 <code>
@@ -13521,7 +13521,7 @@ $("#symbolpalette").ejSymbolPalette({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`palettes.title`</i>
+<b>Property</b>: <i>palettes.title</i>
 </br>
 </br>
 <code>
@@ -13604,7 +13604,7 @@ palette.appendTo('#symbolpalette');
 <tr>
 <td><b>Defines the zoom value, zoom factor, scroll status and view port size of the diagram</b></td>
 <td>
-<b>Property</b>:<i>`scrollSettings.horizontalOffset`</i>
+<b>Property</b>: <i>scrollSettings.horizontalOffset</i>
 </br>
 </br>
 <code>
@@ -13616,7 +13616,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`scrollSettings.horizontalOffset`</i>
+<b>Property</b>: <i>scrollSettings.horizontalOffset</i>
 </br>
 </br>
 <code>
@@ -13633,7 +13633,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Allows to read the view port width of the diagram</b></td>
 <td>
-<b>Property</b>:<i>`scrollSettings.viewPortWidth`</i>
+<b>Property</b>: <i>scrollSettings.viewPortWidth</i>
 </br>
 </br>
 <code>
@@ -13645,7 +13645,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`scrollSettings.viewPortWidth`</i>
+<b>Property</b>: <i>scrollSettings.viewPortWidth</i>
 </br>
 </br>
 <code>
@@ -13662,7 +13662,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Allows to extend the scrollable region that is based on the scroll limit</b></td>
 <td>
-<b>Property</b>:<i>`scrollSettings.padding`</i>
+<b>Property</b>: <i>scrollSettings.padding</i>
 </br>
 </br>
 <code>
@@ -13680,7 +13680,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Allows to read the zoom value of diagram</b></td>
 <td>
-<b>Property</b>:<i>`scrollSettings.currentZoom`</i>
+<b>Property</b>: <i>scrollSettings.currentZoom</i>
 </br>
 </br>
 <code>
@@ -13692,7 +13692,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`scrollSettings.currentZoom`</i>
+<b>Property</b>: <i>scrollSettings.currentZoom</i>
 </br>
 </br>
 <code>
@@ -13711,7 +13711,7 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`scrollSettings.maxZoom`</i>
+<b>Property</b>: <i>scrollSettings.maxZoom</i>
 </br>
 </br>
 <code>
@@ -13730,7 +13730,7 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`scrollSettings.autoScrollBorder`</i>
+<b>Property</b>: <i>scrollSettings.autoScrollBorder</i>
 </br>
 </br>
 <code>
@@ -13749,7 +13749,7 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`scrollSettings.canAutoScroll`</i>
+<b>Property</b>: <i>scrollSettings.canAutoScroll</i>
 </br>
 </br>
 <code>
@@ -13768,7 +13768,7 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`scrollSettings.scrollableArea`</i>
+<b>Property</b>: <i>scrollSettings.scrollableArea</i>
 </br>
 </br>
 <code>
@@ -13796,7 +13796,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Enables or disables both the horizontal and vertical ruler</b></td>
 <td>
-<b>Property</b>:<i>`rulerSettings.showRulers`</i>
+<b>Property</b>: <i>rulerSettings.showRulers</i>
 </br>
 </br>
 <code>
@@ -13808,7 +13808,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`rulerSettings.showRulers`</i>
+<b>Property</b>: <i>rulerSettings.showRulers</i>
 </br>
 </br>
 <code>
@@ -13830,7 +13830,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Enables or disables both the horizontal and vertical ruler</b></td>
 <td>
-<b>Property</b>:<i>`rulerSettings.horizontalRuler`</i>
+<b>Property</b>: <i>rulerSettings.horizontalRuler</i>
 </br>
 </br>
 <code>
@@ -13850,7 +13850,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`rulerSettings.horizontalRuler`</i>
+<b>Property</b>: <i>rulerSettings.horizontalRuler</i>
 </br>
 </br>
 <code>
@@ -13881,7 +13881,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Enables or disables both the horizontal and vertical ruler</b></td>
 <td>
-<b>Property</b>:<i>`rulerSettings.verticalRuler`</i>
+<b>Property</b>: <i>rulerSettings.verticalRuler</i>
 </br>
 </br>
 <code>
@@ -13901,7 +13901,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`rulerSettings.verticalRuler`</i>
+<b>Property</b>: <i>rulerSettings.verticalRuler</i>
 </br>
 </br>
 <code>
@@ -13936,7 +13936,7 @@ diagram.appendTo('#diagram');
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`rulerSettings.dynamicGrid`</i>
+<b>Property</b>: <i>rulerSettings.dynamicGrid</i>
 </br>
 </br>
 <code>
@@ -13970,7 +13970,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Enables or disables snapping nodes/connectors to objects</b></td>
 <td>
-<b>Property</b>:<i>`snapSettings.enableSnapToObject`</i>
+<b>Property</b>: <i>snapSettings.enableSnapToObject</i>
 </br>
 </br>
 <code>
@@ -13986,7 +13986,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Defines the appearance of horizontal gridlines</b></td>
 <td>
-<b>Property</b>:<i>`snapSettings.horizontalGridLines`</i>
+<b>Property</b>: <i>snapSettings.horizontalGridLines</i>
 </br>
 </br>
 <code>
@@ -14002,7 +14002,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`snapSettings.horizontalGridlines`</i>
+<b>Property</b>: <i>snapSettings.horizontalGridlines</i>
 </br>
 </br>
 <code>
@@ -14025,7 +14025,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the appearance of vertical gridlines</b></td>
 <td>
-<b>Property</b>:<i>`snapSettings.verticalGridLines`</i>
+<b>Property</b>: <i>snapSettings.verticalGridLines</i>
 </br>
 </br>
 <code>
@@ -14041,7 +14041,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`snapSettings.verticalGridlines`</i>
+<b>Property</b>: <i>snapSettings.verticalGridlines</i>
 </br>
 </br>
 <code>
@@ -14064,7 +14064,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the angle by which the object needs to be snapped</b></td>
 <td>
-<b>Property</b>:<i>`snapSettings.snapAngle`</i>
+<b>Property</b>: <i>snapSettings.snapAngle</i>
 </br>
 </br>
 <code>
@@ -14072,7 +14072,7 @@ $("#diagramcontent").ejDiagram({snapSettings: { snapAngle: 10} });
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`snapSettings.snapAngle`</i>
+<b>Property</b>: <i>snapSettings.snapAngle</i>
 </br>
 </br>
 <code>
@@ -14090,7 +14090,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the minimum distance between the selected object and the nearest object</b></td>
 <td>
-<b>Property</b>:<i>`snapSettings.snapObjectDistance`</i>
+<b>Property</b>: <i>snapSettings.snapObjectDistance</i>
 </br>
 </br>
 <code>
@@ -14100,7 +14100,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`snapSettings.snapObjectDistance`</i>
+<b>Property</b>: <i>snapSettings.snapObjectDistance</i>
 </br>
 </br>
 <code>
@@ -14118,7 +14118,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines and sets the snapConstraints</b></td>
 <td>
-<b>Property</b>:<i>`snapSettings.snapConstraints`</i>
+<b>Property</b>: <i>snapSettings.snapConstraints</i>
 </br>
 </br>
 <code>
@@ -14128,7 +14128,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`snapSettings.constraints`</i>
+<b>Property</b>: <i>snapSettings.constraints</i>
 </br>
 </br>
 <code>
@@ -14157,7 +14157,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the factor by which we can zoom in or zoom out</b></td>
 <td>
-<b>Property</b>:<i>`zoomFactor`</i>
+<b>Property</b>: <i>zoomFactor</i>
 </br>
 </br>
 <code>
@@ -14165,7 +14165,7 @@ $("#diagramcontent").ejDiagram({zoomFactor: 1});
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`zoomFactor`</i>
+<b>Property</b>: <i>zoomFactor</i>
 </br>
 </br>
 <code>
@@ -14192,7 +14192,7 @@ diagram.zoomTo(zoomin);
 <tr>
 <td><b>Enables/Disables the interactive behaviors of diagram</b></td>
 <td>
-<b>Property</b>:<i>`tool`</i>
+<b>Property</b>: <i>tool</i>
 </br>
 </br>
 <code>
@@ -14200,7 +14200,7 @@ $("#diagramcontent").ejDiagram({tool: ej.datavisualization.Diagram.Tool.ZoomPan}
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`tool`</i>
+<b>Property</b>: <i>tool</i>
 </br>
 </br>
 <code>
@@ -14226,7 +14226,7 @@ diagram.tool = DiagramTools.ZoomPan;
 <tr>
 <td><b>Enables or disables tooltip of diagram</b></td>
 <td>
-<b>Property</b>:<i>`showTooltip`</i>
+<b>Property</b>: <i>showTooltip</i>
 </br>
 </br>
 <code>
@@ -14234,7 +14234,7 @@ $("#diagramcontent").ejDiagram({showTooltip: true});
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`constraints`</i>
+<b>Property</b>: <i>constraints</i>
 </br>
 </br>
 <code>
@@ -14260,7 +14260,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>A read only collection of the selected items</b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.children`</i>
+<b>Property</b>: <i>selectedItems.children</i>
 </br>
 </br>
 <code>
@@ -14277,7 +14277,7 @@ for(var i =0; i< diagram.model.selectedItems.children; i++){
 <tr>
 <td><b>Controls the visibility of selector</b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.constraints`</i>
+<b>Property</b>: <i>selectedItems.constraints</i>
 </br>
 </br>
 <code>
@@ -14287,7 +14287,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`selectedItems.constraints`</i>
+<b>Property</b>: <i>selectedItems.constraints</i>
 </br>
 </br>
 <code>
@@ -14301,7 +14301,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines a method that dynamically enables/ disables the interaction with multiple selection</b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.getConstraints`</i>
+<b>Property</b>: <i>selectedItems.getConstraints</i>
 </br>
 </br>
 <code>
@@ -14322,7 +14322,7 @@ selectedItems: {
 <tr>
 <td><b>Sets the height of the selected items</b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.height`</i>
+<b>Property</b>: <i>selectedItems.height</i>
 </br>
 </br>
 <code>
@@ -14336,7 +14336,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`selectedItems.height`</i>
+<b>Property</b>: <i>selectedItems.height</i>
 </br>
 </br>
 <code>
@@ -14353,7 +14353,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the angle to rotate the selected items</b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.tooltip`</i>
+<b>Property</b>: <i>selectedItems.tooltip</i>
 </br>
 </br>
 <code>
@@ -14371,7 +14371,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>A collection of frequently used commands that will be added around the selector</b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.userHandles`</i>
+<b>Property</b>: <i>selectedItems.userHandles</i>
 </br>
 </br>
 <code>
@@ -14386,7 +14386,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`selectedItems.userHandles`</i>
+<b>Property</b>: <i>selectedItems.userHandles</i>
 </br>
 </br>
 <code>
@@ -14408,7 +14408,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Sets the horizontal alignment of the user handle</b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.userHandles.horizontalAlignment`</i>
+<b>Property</b>: <i>selectedItems.userHandles.horizontalAlignment</i>
 </br>
 </br>
 <code>
@@ -14448,7 +14448,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`selectedItems.userHandles.horizontalAlignment`</i>
+<b>Property</b>: <i>selectedItems.userHandles.horizontalAlignment</i>
 </br>
 </br>
 <code>
@@ -14481,7 +14481,7 @@ diagram.appendTo('#diagram');
 <td><b>Defines the interactive behaviors of the user handle
 </b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.userHandles.tool`</i>
+<b>Property</b>: <i>selectedItems.userHandles.tool</i>
 </br>
 </br>
 <code>
@@ -14527,7 +14527,7 @@ $("#diagramcontent").ejDiagram({
 <td><b>Defines whether the user handle should be added, when more than one element is selected
 </b></td>
 <td>
-<b>Property</b>:<i>`selectedItems.userHandles.enableMultiSelection`</i>
+<b>Property</b>: <i>selectedItems.userHandles.enableMultiSelection</i>
 </br>
 </br>
 <code>
@@ -14555,7 +14555,7 @@ $("#diagramcontent").ejDiagram({
 <b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`selectedItems.userHandles.displacement`</i>
+<b>Property</b>: <i>selectedItems.userHandles.displacement</i>
 </br>
 </br>
 <code>
@@ -14588,7 +14588,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines whether the default diagram properties can be serialized or not</b></td>
 <td>
-<b>Property</b>:<i>`serializationSettings.preventDefaultValues`</i>
+<b>Property</b>: <i>serializationSettings.preventDefaultValues</i>
 </br>
 </br>
 <code>
@@ -14641,7 +14641,7 @@ diagram.loadDiagram(ej1Data, true);
 <tr>
 <td><b>An object that defines the description, appearance and alignments of tooltip</b></td>
 <td>
-<b>Property</b>:<i>`tooltip`</i>
+<b>Property</b>: <i>tooltip</i>
 </br>
 </br>
 <code>
@@ -14667,7 +14667,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`tooltip`</i>
+<b>Property</b>: <i>tooltip</i>
 </br>
 </br>
 <code>
@@ -14691,7 +14691,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Defines the alignment of tooltip</b></td>
 <td>
-<b>Property</b>:<i>`tooltip.alignment`</i>
+<b>Property</b>: <i>tooltip.alignment</i>
 </br>
 </br>
 <code>
@@ -14728,7 +14728,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the margin of the tooltip</b></td>
 <td>
-<b>Property</b>:<i>`tooltip.margin`</i>
+<b>Property</b>: <i>tooltip.margin</i>
 </br>
 </br>
 <code>
@@ -14765,7 +14765,7 @@ $("#diagramcontent").ejDiagram({
 <tr>
 <td><b>Sets the svg/html template to be bound with tooltip</b></td>
 <td>
-<b>Property</b>:<i>`tooltip.templateId`</i>
+<b>Property</b>: <i>tooltip.templateId</i>
 </br>
 </br>
 <code>
@@ -14796,7 +14796,7 @@ $("#diagramcontent").ejDiagram({
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`tooltip.content`</i>
+<b>Property</b>: <i>tooltip.content</i>
 </br>
 </br>
 <code>
@@ -14816,7 +14816,7 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`tooltip.showTipPointer`</i>
+<b>Property</b>: <i>tooltip.showTipPointer</i>
 </br>
 </br>
 <code>
@@ -14837,7 +14837,7 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`tooltip.position`</i>
+<b>Property</b>: <i>tooltip.position</i>
 </br>
 </br>
 <code>
@@ -14859,7 +14859,7 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`tooltip.animation`</i>
+<b>Property</b>: <i>tooltip.animation</i>
 </br>
 </br>
 <code>
@@ -14885,7 +14885,7 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`tooltip.width`</i>
+<b>Property</b>: <i>tooltip.width</i>
 </br>
 </br>
 <code>
@@ -14908,7 +14908,7 @@ diagram.appendTo('#diagram');
 <td><b>Not applicable</b>
 </td>
 <td>
-<b>Property</b>:<i>`tooltip.height`</i>
+<b>Property</b>: <i>tooltip.height</i>
 </br>
 </br>
 <code>
@@ -14940,7 +14940,7 @@ diagram.appendTo('#diagram');
 <tr>
 <td><b>Set constraints to node</b> </br>
 <b>The diagram.setConstraints(node) property is not available in the EJ2 Diagram </b></td>
-<td><b>Property</b>:<i>`setConstraints`</i>
+<td><b>Property</b>: <i>setConstraints</i>
 <code>
     for (var i = 0; i < diagram.nodes.length; i++) {
         var node = diagram.nodes[i];
@@ -14948,7 +14948,7 @@ diagram.appendTo('#diagram');
     }
 </code>
 </td>
-<td><b>Property</b>:<i>`setConstraints`</i>
+<td><b>Property</b>: <i>setConstraints</i>
 <b>Not applicable</b></br>
 <b>In EJ2, constraints are set directly on each node</b>
 <code>

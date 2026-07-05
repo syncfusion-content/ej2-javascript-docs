@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style and Appearance in ##Platform_Name## Gantt Chart control | Syncfusion
+title: Style and Appearance in ##Platform_Name## Gantt Chart | Syncfusion
 description: Learn how to customize the style and appearance of the Syncfusion ##Platform_Name## Gantt Chart control with CSS overrides and grid line configurations.
 platform: ej2-javascript
 control: Style and appearance

@@ -25,6 +25,6 @@ Diagram provides support to auto-arrange the nodes in the diagram area that is r
 
 ## See also
 
-* [How to create a node](./nodes)
+* [How to create a node](../nodes)
 
-* [How to create a connector](./connectors)
+* [How to create a connector](../connectors)

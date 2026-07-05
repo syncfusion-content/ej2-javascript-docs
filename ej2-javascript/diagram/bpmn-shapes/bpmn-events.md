@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bpmn Events in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Bpmn shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+description: Learn here all about Bpmn Event shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Bpmn Events 
 publishingplatform: ##Platform_Name##
@@ -52,7 +52,7 @@ The [`event`](../../api/diagram/bpmnEvent#event-bpmnevents) property of the node
 
 ## BPMN event trigger
 
-Event triggers are notated as icons inside the circle and they represent the specific details of the process. The [`trigger`](../../api/diagram/bpmnEvent/#trigger ) property of the node allows you to set the type of trigger and by default, it is set as **none**. The following table illustrates the type of event triggers.
+Event triggers are notated as icons inside the circle and they represent the specific details of the process. The [`trigger`](../../api/diagram/bpmnEvent#trigger ) property of the node allows you to set the type of trigger and by default, it is set as **none**. The following table illustrates the type of event triggers.
 
 | Triggers | Start | Non-Interrupting Start | Intermediate | Non-Interrupting Intermediate | Throwing Intermediate | End |
 | -------- | -------- | -------- | -------- | -------- | -------- | -------- |

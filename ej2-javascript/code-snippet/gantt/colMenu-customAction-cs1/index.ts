@@ -1,14 +1,17 @@
-import { Gantt, Filter, Sort, Resize, ColumnMenu, Selection} from '@syncfusion/ej2-gantt';
+import { Gantt, ColumnMenu, Sort, Filter, ColumnMenuOpenEventArgs, SplitterSettings } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
-import { ColumnMenuOpenEventArgs, ColumnMenuItemModel } from '@syncfusion/ej2-grids';
 
-Gantt.Inject(Filter, Sort, Resize, ColumnMenu, Selection);
+Gantt.Inject(ColumnMenu, Sort, Filter);
+
+let splitterSettings: SplitterSettings = {
+    columnIndex: 5
+};
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
+    height: '450px',
     showColumnMenu: true,
     allowFiltering: true,
-    allowResizing: true,
     allowSorting: true,
     taskFields: {
         id: 'TaskID',
@@ -18,23 +21,13 @@ let gantt: Gantt = new Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    splitterSettings: {
-        position: '100%'
-    },
-    columns: [
-        { field: 'TaskID', headerText: 'Task ID'},
-        { field: 'TaskName', headerText: 'Task Name' },
-        { field: 'StartDate', headerText: 'Start Date', width: '150' },
-        { field: 'Duration', headerText: 'Duration', width: '100' },
-        { field: 'Progress', headerText: 'Progress', width: '150' }
-    ],
-    height: '450px',
-    columnMenuOpen: function (args: ColumnMenuOpenEventArgs) {
+    splitterSettings: splitterSettings,
+    columnMenuOpen: (args: ColumnMenuOpenEventArgs) => {
         for (let item of args.items) {
             if (item.text === 'Filter' && args.column.field === 'TaskName') {
-                (item as ColumnMenuItemModel).hide = true;
+                item.hide = true;
             } else {
-                (item as ColumnMenuItemModel).hide = false;
+                item.hide = false;
             }
         }
     },

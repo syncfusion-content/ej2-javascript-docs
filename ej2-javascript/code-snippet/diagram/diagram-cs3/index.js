@@ -19,5 +19,6 @@ diagram = new ej.diagrams.Diagram({
   nodes: nodes,
   //Sets backgrounf color for diagram
   backgroundColor: 'yellow',
+  addInfo: { description: 'This is a diagram that has a yellow background color' }
 });
 diagram.appendTo('#element');

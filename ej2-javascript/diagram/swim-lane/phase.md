@@ -44,7 +44,7 @@ The following code example illustrates how to create phase.
 
 ### Dynamically add/remove phase to Lane
 
- You can add the a phase at runtime by using [`addPhases`](../../api/diagram/#addphases) method and remove phase by using [`removePhase`](../../api/diagram/#removephase) method. The following code example illustrates how to add and remove phase at run time.
+ You can add the a phase at runtime by using [`addPhases`](../../api/diagram#addphases) method and remove phase by using [`removePhase`](../../api/diagram#removephase) method. The following code example illustrates how to add and remove phase at run time.
 
 {% if page.publishingplatform == "typescript" %}
 

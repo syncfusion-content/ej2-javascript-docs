@@ -40,6 +40,25 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript library provides
 
 > The Syncfusion<sup style="font-size:70%">&reg;</sup> Bootstrap theme is designed based on `Bootstrap v3`, but it is compatible with `Bootstrap v4` applications. In addition to these built-in themes, [ThemeStudio](https://ej2.syncfusion.com/documentation/appearance/theme-studio) also provides support for the Fusion theme, which can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
 
+## Theme packages
+
+Syncfusion built-in themes are distributed as theme packages available on npm. These packages include CSS/SCSS files for all controls. The following table lists all available theme packages:
+
+| Theme | Light Package | Dark Package |
+|-------|---------------|---------------|
+| Tailwind 3 | [`@syncfusion/ej2-tailwind3-theme`](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) | [`@syncfusion/ej2-tailwind3-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-dark-theme) |
+| Bootstrap 5.3 | [`@syncfusion/ej2-bootstrap5.3-theme`](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap5.3-theme) | [`@syncfusion/ej2-bootstrap5.3-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap5.3-dark-theme) |
+| Fluent 2 | [`@syncfusion/ej2-fluent2-theme`](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) | [`@syncfusion/ej2-fluent2-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-dark-theme) |
+| Material 3 | [`@syncfusion/ej2-material3-theme`](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) | [`@syncfusion/ej2-material3-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-material3-dark-theme) |
+| Bootstrap 5 | [`@syncfusion/ej2-bootstrap5-theme`](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap5-theme) | [`@syncfusion/ej2-bootstrap5-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap5-dark-theme) |
+| Bootstrap 4 | [`@syncfusion/ej2-bootstrap4-theme`](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap4-theme) | - |
+| Bootstrap | [`@syncfusion/ej2-bootstrap-theme`](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap-theme) | [`@syncfusion/ej2-bootstrap-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap-dark-theme) |
+| Material | [`@syncfusion/ej2-material-theme`](https://www.npmjs.com/package/@syncfusion/ej2-material-theme) | [`@syncfusion/ej2-material-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-material-dark-theme) |
+| Tailwind | [`@syncfusion/ej2-tailwind-theme`](https://www.npmjs.com/package/@syncfusion/ej2-tailwind-theme) | [`@syncfusion/ej2-tailwind-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-tailwind-dark-theme) |
+| Fluent | [`@syncfusion/ej2-fluent-theme`](https://www.npmjs.com/package/@syncfusion/ej2-fluent-theme) | [`@syncfusion/ej2-fluent-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-fluent-dark-theme) |
+| Fabric | [`@syncfusion/ej2-fabric-theme`](https://www.npmjs.com/package/@syncfusion/ej2-fabric-theme) | [`@syncfusion/ej2-fabric-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-fabric-dark-theme) |
+| High Contrast | [`@syncfusion/ej2-highcontrast-theme`](https://www.npmjs.com/package/@syncfusion/ej2-highcontrast-theme) | - |
+
 ## Optimized CSS files
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> controls provide two size modes for each theme: **normal** and **bigger**. By default, the **normal size mode** is applied, offering a standard appearance suitable for all devices. The **bigger size mode** provides an enlarged interface for enhanced interactions, improved visibility, and a better overall user experience by increasing the size of UI controls. This mode is particularly useful for touch-based interactions and accessibility requirements.
@@ -72,90 +91,91 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control themes can b
 
 ## NPM packages
 
-All Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. Themes are shipped as individual and combined CSS files. A combined CSS file can be referred to from the npm package [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) and individual CSS files are available within the same control repository’s `style` folder. In the `ej2` npm package, we have shipped both CSS and SCSS files for all controls.
+All Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. Themes are shipped as both combined and individual CSS/SCSS files. Each theme package includes Combined and control-specific styles in both CSS and SCSS formats. For a list of available theme packages, refer to the [available theme packages](#theme-packages) section.
+
+To use the combined SCSS/CSS files, install the required theme package. 
+
+```bash
+npm install @syncfusion/ej2-material3-theme
+```
 
 ### Referring all controls theme
 
-Referring all control CSS theme from ej2 package
+Referring all control CSS theme from theme package
 
-```
-@import "./node_modules/@syncfusion/ej2/<theme_name>.css";
+```css
+@import "@syncfusion/ej2-<theme-name>-theme/styles/<theme-name>.css";
 ```
 
-Referring all control SCSS theme from ej2 package
+**Example:**
+
+```css
+@import "@syncfusion/ej2-material3-theme/styles/material3.css";
+```
+
+Referring all control SCSS theme from theme package
 
 ```scss
-@import "./node_modules/@syncfusion/ej2/<theme_name>.scss";
+@use "@syncfusion/ej2-<theme-name>-theme/styles/<theme-name>.scss" as *;
+```
+
+**Example:**
+
+```scss
+@use "@syncfusion/ej2-material3-theme/styles/material3.scss" as *;
 ```
 
 ### Referring individual control theme
 
-The individual control theme can be referred from the [individual package](../deployment#anatomy-of-npm-packages) or from the `ej2` package.
+The individual control theme can be referred from the unified theme package. In this package, each control includes an `index.css/index.scss` file that automatically loads all the required dependency styles.
 
-Referring individual control SCSS theme from an individual package.
+Referring individual control CSS theme from an theme package.
 
-```scss
-@import "<dependent-package>/<dependent-control>/<theme_name>.scss";
-@import "ej2-buttons/styles/button/<theme_name>.scss";
+```css
+@import "@syncfusion/ej2-<theme-name>-theme/styles/<component-name>/index.css";
 ```
 
 **Example:**
 
-```scss
-@import "ej2-base/styles/material.scss";
-@import "ej2-buttons/styles/button/material.scss";
+```css
+@import "@syncfusion/ej2-material3-theme/styles/grid/index.css";
 ```
-
-> `ej2-base` is common dependent package for all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control styles. so, it needs to be added first in the import statement.
-
-Referring individual control SCSS theme from ej2 package
-
-```scss
-@import "ej2/<dependent-control>/<theme_name>.scss";
-@import "ej2/button/<theme_name>.scss";
-```
-
-**Example:**
-
-```scss
-@import "ej2/base/material.scss";
-@import "ej2/button/material.scss";
 ```
 
 ### Referring all controls optimized CSS file
 
-To refer to all control's optimized CSS files from the `@syncfusion/ej2` package, follow the below syntax:
+To refer to all control's optimized CSS files from the theme package, follow the below syntax:
 
 ```css
-@import "@syncfusion/ej2/<theme_name>-lite.css";
+@import "@syncfusion/ej2-<theme-name>-theme/styles/<theme-name>-lite.css";
 /* or */
-@import "@syncfusion/ej2/<theme_name>-lite.scss";
+@use "@syncfusion/ej2-<theme-name>-theme/styles/<theme-name>-lite.scss" as *;
 ```
 
 **Example:**
 
 ```css
-@import "@syncfusion/ej2/fluent2-lite.css";
+@import "@syncfusion/ej2-fluent2-theme/styles/fluent2-lite.css";
 /* or */
-@import "@syncfusion/ej2/fluent2-lite.scss";
+@use "@syncfusion/ej2-fluent2-theme/styles/fluent2-lite.scss" as *;
 ```
 
 ### Referring individual control optimized CSS file
 
-To refer to individual control's optimized CSS files from an individual packages, follow the below syntax:
+To refer to individual control's optimized CSS files from an theme package, follow the below syntax:
 
 ```css
-@import "<dependent-package>/styles/<theme_name>-lite.css";
+@import "@syncfusion/ej2-<theme-name>-theme/styles/<component-name>/index-lite.css";
 /* or */
-@import "<dependent-package>/styles/<theme_name>-lite.scss";
+@use "@syncfusion/ej2-<theme-name>-theme/styles/<component-name>/index-lite.scss" as *;
 ```
 
 **Example:**
 
 ```css
-@import "@syncfusion/ej2-buttons/styles/fluent2-lite.css";
+@import "@syncfusion/ej2-fluent2-theme/styles/grid/index-lite.css";
 /* or */
-@import "@syncfusion/ej2-buttons/styles/fluent2-lite.scss";
+@use "@syncfusion/ej2-fluent2-theme/styles/grid/index-lite.scss" as *;
 ```
 
 ## CDN reference

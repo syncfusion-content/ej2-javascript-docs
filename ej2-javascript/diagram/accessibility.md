@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## Diagram control
 
-Diagram provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. WAI-ARIA Accessibility supports are achieved through the attributes like `aria-label`. It helps to provides information about elements in a document for assistive technology.
+Diagram provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA Accessibility supports are achieved through the attributes like `aria-label`. It helps to provides information about elements in a document for assistive technology.
 
 The accessibility compliance for the diagram component is outlined below.
 
@@ -41,7 +41,7 @@ The accessibility compliance for the diagram component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Diagram component followed the [WAI-ARIA](?) patterns to meet the accessibility. The following ARIA attributes are used in the Diagram component:
+The Diagram component followed the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) patterns to meet the accessibility. The following ARIA attributes are used in the Diagram component:
 
 | Attributes | Purpose |
 | --- | --- |

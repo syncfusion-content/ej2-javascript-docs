@@ -6,7 +6,6 @@ ej.gantt.Gantt.Inject(ej.gantt.Selection,
     ej.gantt.Sort,
     ej.gantt.ContextMenu);
 
-
 var isRowDropped = false;
 var ganttChart = new ej.gantt.Gantt({
     dataSource: WBSData,
@@ -100,4 +99,3 @@ var ganttChart = new ej.gantt.Gantt({
     projectEndDate: new Date('05/30/2024'),
 });
 ganttChart.appendTo('#Gantt');
-

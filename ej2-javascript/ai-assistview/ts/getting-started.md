@@ -64,20 +64,17 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render AI AssistView control, need to import interactive-chat and its dependent controls styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+To install the [tailwind3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme package, use the following command:
 
-{% tabs %}
-{% highlight css tabtitle="style.css" %}
+```bash
+npm install @syncfusion/ej2-tailwind3-theme --save
+```
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-interactive-chat/styles/tailwind3.css";
+To render the AI AssistView control, add the below import in the `~/src/styles/styles.css` file which loads all the required dependency styles, as shown below:
 
-{% endhighlight %}
-{% endtabs %}
+```
+@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/ai-assistview/index.css";   
+```
 
 ## Adding AI AssistView to the Application
 

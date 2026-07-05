@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bpmn DataSource in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Bpmn shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+description: Learn here all about Bpmn DataSource shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Bpmn DataSource 
 publishingplatform: ##Platform_Name##

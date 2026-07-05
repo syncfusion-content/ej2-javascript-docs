@@ -1,13 +1,13 @@
-import { Diagram, UmlSequenceDiagramModel, UmlSequenceMessageType, SnapConstraints } from "@syncfusion/ej2-diagrams";
+import { Diagram, UmlSequenceDiagramModel, UmlSequenceMessageType, SnapConstraints, UmlSequenceParticipantStereotype } from "@syncfusion/ej2-diagrams";
 
 // Define the UML Sequence Diagram model with participants and messages
 const umlSequenceDiagramModel: UmlSequenceDiagramModel = {
   // Defines the participants involved in the sequence diagram
   participants: [
-    { id: "User", content: "User", isActor: true, }, // User as an actor
-    { id: "System", content: "System", isActor: false, showDestructionMarker: true, }, // System participant
-    { id: "Logger", content: "Logger", isActor: false, showDestructionMarker: true, }, // Logger participant
-    { id: "SessionManager", content: "SessionManager", isActor: false, } // SessionManager participant
+    { id: "User", content: "User", stereotype: UmlSequenceParticipantStereotype.Actor }, // User as an actor
+    { id: "System", content: "System", showDestructionMarker: true, }, // System participant
+    { id: "Logger", content: "Logger", showDestructionMarker: true, }, // Logger participant
+    { id: "SessionManager", content: "SessionManager", } // SessionManager participant
   ],
   // Define messages exchanged between participants
   messages: [

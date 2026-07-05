@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Organizational Chart layout in ##Platform_Name## Diagram control
 
-An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, the [`type`](../../api/diagram/layoutModel/#type) of layout should be set as an `OrganizationalChart`.
+An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, the [`type`](../../api/diagram/layoutModel#type) of layout should be set as an `OrganizationalChart`.
 
 ## Organizational chart with DataSource
 
@@ -49,7 +49,7 @@ You can render an org-chart layout without using DataSource. The following code 
 
 ## GetLayout info
 
-Organizational chart layout starts parsing from root and iterate through all its child elements. The [`getLayoutInfo`](../../api/diagram/layoutModel/#getlayoutinfo) method provides necessary information of a node’s children and the way to arrange (direction, orientation, offsets, etc.) them. The arrangements can be customized by overriding this function as explained.
+Organizational chart layout starts parsing from root and iterate through all its child elements. The [`getLayoutInfo`](../../api/diagram/layoutModel#getlayoutinfo) method provides necessary information of a node’s children and the way to arrange (direction, orientation, offsets, etc.) them. The arrangements can be customized by overriding this function as explained.
 
 Set chart orientations, chart types, and offset to be left between parent and child nodes by overriding the `getLayoutInfo` method. The `getLayoutInfo` method is called to configure every subtree of the organizational chart. It takes the following arguments.
 
@@ -57,7 +57,7 @@ Set chart orientations, chart types, and offset to be left between parent and ch
     * options: Object to set the customizable properties.
 
 
-The following table illustrates the properties that “options” argument takes.
+The following table illustrates the properties that `options` argument takes.
 
 | Property | Description | Default Value |
 | -------- | ----------- | ------------- |
@@ -75,12 +75,12 @@ The following table illustrates the different chart orientations and chart types
 |Orientation|Type|Description|Example|
 | -------- | ----------- | ------------- |------|
 |Horizontal|Left|Arranges the child nodes horizontally at the left side of the parent.|![Horizontal Left](../images//hleft.JPG)|
-||Right|Arranges the child nodes horizontally at the right side of the parent.|![Horizontal Right](../images//hright.JPG)|
-||Center|Arranges the children like standard tree layout orientation.|![Horizontal Center](../images//hcenter.JPG)|
-||Balanced|Arranges the leaf level child nodes in multiple rows.|![Horizontal Balanced](../images//hbalanced.JPG)|
+|Horizontal|Right|Arranges the child nodes horizontally at the right side of the parent.|![Horizontal Right](../images//hright.JPG)|
+|Horizontal|Center|Arranges the children like standard tree layout orientation.|![Horizontal Center](../images//hcenter.JPG)|
+|Horizontal|Balanced|Arranges the leaf level child nodes in multiple rows.|![Horizontal Balanced](../images//hbalanced.JPG)|
 |Vertical|Left|Arranges the children vertically at the left side of the parent.|![Vertical Left](../images//vleft.JPG)|
-||Right|Arranges the children vertically at the right side of the parent.|![Vertical Right](../images//vright.JPG)|
-||Alternate|Arranges the children vertically at both left and right sides of the parent.|![Vertical Alternate](../images//vAlternate.JPG)|
+|Vertical|Right|Arranges the children vertically at the right side of the parent.|![Vertical Right](../images//vright.JPG)|
+|Vertical|Alternate|Arranges the children vertically at both left and right sides of the parent.|![Vertical Alternate](../images//vAlternate.JPG)|
 
 ### SubTree horizontal orientation
 
@@ -115,7 +115,7 @@ The following code example illustrates how to set the vertical arrangement to th
 
 ### Assistant
 
-Assistants are child item that have a different relationship with the parent node. They are laid out in a dedicated part of the tree. A node can be specified as an assistant of its parent by adding it to the `assistants` property of the argument “options”.
+Assistants are child item that have a different relationship with the parent node. They are laid out in a dedicated part of the tree. A node can be specified as an assistant of its parent by adding it to the `assistants` property of the argument `options`.
 
 The following code example illustrates how to add assistants to layout.
 

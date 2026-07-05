@@ -18,7 +18,7 @@ Group is used to cluster multiple nodes and connectors into a single element. It
 
 ## Add group when initializing diagram
 
-A group can be added to the diagram model through [`nodes`](../api/diagram/#nodes) collection. To define an object as group, add the child objects to the [`children`](../api/diagram/node/#children) collection of the group. The following code illustrates how to create a group node.
+A group can be added to the diagram model through [`nodes`](../api/diagram#nodes) collection. To define an object as group, add the child objects to the [`children`](../api/diagram/node#children) collection of the group. The following code illustrates how to create a group node.
 
 * While creating group, its child node need to be declared before the group declaration.
 
@@ -52,7 +52,7 @@ A group can be added to the diagram model through [`nodes`](../api/diagram/#node
 
 ## Group nodes at runtime
 
-Groups can be dynamically created during runtime in the diagram by invoking the [`diagram.group`](../api/diagram/#group) method. To initiate this process, first, select the nodes that you intend to include within the group. Subsequently, by utilizing the [`diagram.group`](../api/diagram/#group) method, the selected nodes will be encapsulated within a newly formed group node.
+Groups can be dynamically created during runtime in the diagram by invoking the [`diagram.group`](../api/diagram#group) method. To initiate this process, first, select the nodes that you intend to include within the group. Subsequently, by utilizing the [`diagram.group`](../api/diagram#group) method, the selected nodes will be encapsulated within a newly formed group node.
 
 The following code illustrates how a group  at runtime.
 
@@ -85,7 +85,7 @@ The following code illustrates how a group  at runtime.
 
 ## UnGroup nodes at runtime
 
-Group node can be unGrouped dynamically, by using the [`diagram.unGroup`](../api/diagram/#ungroup) method. The following code example shows how to unGroup group node at runtime.
+Group node can be unGrouped dynamically, by using the [`diagram.unGroup`](../api/diagram#ungroup) method. The following code example shows how to unGroup group node at runtime.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -116,7 +116,7 @@ Group node can be unGrouped dynamically, by using the [`diagram.unGroup`](../api
 
 ## Add group node at runtime
 
-A group node can be added at runtime by using the diagram method [`add`](../api/diagram/#add).
+A group node can be added at runtime by using the diagram method [`add`](../api/diagram#add).
 
 The following code illustrates how a group node is added at runtime.
 
@@ -184,7 +184,7 @@ The following code illustrates how to add a group nodes collection at runtime.
 
 ### Add children To group at runtime
 
-A child node can be added to the specified Group at runtime by utilizing the diagram method [`addChildToGroup`](../api/diagram/#addchildtogroup).
+A child node can be added to the specified Group at runtime by utilizing the diagram method [`addChildToGroup`](../api/diagram#addchildtogroup).
 
 This functionality is achieved by passing the group and existing children as arguments to the method.
 
@@ -198,7 +198,7 @@ diagram.addChildToGroup(groupNode, childNode);
 
 ### Remove children from group at runtime
 
-A specific child from a group node can be removed at runtime by utilizing the diagram method [`removeChildFromGroup`](../api/diagram/#removechildfromgroup).
+A specific child from a group node can be removed at runtime by utilizing the diagram method [`removeChildFromGroup`](../api/diagram#removechildfromgroup).
 
 This functionality is achieved by passing the group and its children as arguments to the method.
 
@@ -239,7 +239,7 @@ diagram.removeChildFromGroup (groupNode, childNode);
 
 ## Group padding
 
-The [`Padding`](../api/diagram/node/#padding) property of a group node defines the spacing between the group node’s edges and its children.
+The [`Padding`](../api/diagram/node#padding) property of a group node defines the spacing between the group node’s edges and its children.
 
 The following code illustrates how to add Padding to the node group.
 
@@ -310,7 +310,7 @@ The following example shows how to apply flip for group node.
 
 ## Group flip mode
 
-The [`flipMode`](../api/diagram/flipMode/) of a group node also behave similarly to those of normal nodes. However,When you apply a flip mode to a group node, it takes precedence over any flip mode set on its child nodes, overriding their individual settings.
+The [`flipMode`](../api/diagram/flipMode) of a group node also behave similarly to those of normal nodes. However,When you apply a flip mode to a group node, it takes precedence over any flip mode set on its child nodes, overriding their individual settings.
 
 For example, in the below code,
 the flipMode for the child node `Node1` is set to `LabelText`.
@@ -492,7 +492,7 @@ The following code illustrates how to add canvas panel.
 
 * Stack panel is used to arrange its children in a single line or stack order, either vertically or horizontally.
 
-* It controls spacing by setting margin properties of child and padding properties of group. By default, a stack panel’s [`orientation`](../api/diagram/stackPanel/#orientation) is vertical.
+* It controls spacing by setting margin properties of child and padding properties of group. By default, a stack panel’s [`orientation`](../api/diagram/stackPanel#orientation) is vertical.
 
 The following code illustrates how to add a stack panel.
 
@@ -533,7 +533,7 @@ The following code illustrates how to add a stack panel.
 
 ## Interaction
 
-Group node interactions can be performed similarly to normal nodes. Fundamental diagram interactions like selecting, dragging, resizing, and rotating apply equally to group nodes. For more informatation refer to the [`nodes interactions`](./nodes-interaction)
+Group node interactions can be performed similarly to normal nodes. Fundamental diagram interactions like selecting, dragging, resizing, and rotating apply equally to group nodes. For more informatation refer to the [`nodes interactions`](./nodes/nodes-interaction)
 
 ### Selecting a Node Group
 
@@ -543,11 +543,11 @@ When a child element within a node group is clicked, the entire contained node g
 
 ## Events
 
-The events triggered when interacting with group nodes are similar to those for individual nodes. For more information, refer to the [`nodes events`](./nodes-events)
+The events triggered when interacting with group nodes are similar to those for individual nodes. For more information, refer to the [`nodes events`](./nodes/nodes-events)
 
 ## See Also
 
-* [How to add annotations to the node](./node-labels)
+* [How to add annotations to the node](./nodes/node-labels)
 * [How to add ports to the node](./ports)
 * [How to enable/disable the behavior of the node](./constraints)
 * [How to add nodes to the symbol palette](./symbol-palette)

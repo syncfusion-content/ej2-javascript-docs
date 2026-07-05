@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column menu in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Column menu in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Column Menu in ##Platform_Name## Gantt Chart Control | Syncfusion
+description: Learn here all about column menu in Syncfusion ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Column menu 
 publishingplatform: ##Platform_Name##
@@ -9,19 +9,22 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column menu in ##Platform_Name## Gantt control
+# Column Menu in ##Platform_Name## Gantt Chart Control
 
-The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click the Multiple icon of the column. To enable the column menu, you should set the [showColumnMenu](../../api/gantt#showcolumnmenu) property to true.
+The column menu in the ##Platform_Name## Gantt Chart control offers built-in actions including sorting, filtering, column chooser, and autofit. When you click the column menu icon, a menu appears with these features.
 
-The default items are displayed in the following table:
+To activate the column menu feature, set the [showColumnMenu](../../api/gantt#showcolumnmenu) property to **true** in the Gantt configuration and inject the `ColumnMenu` service in the Gantt Chart control.
 
-| Item             | Description                                                            |
-| ---------------- | ---------------------------------------------------------------------- |
-| `SortAscending`  | Sort the current column in ascending order.                            |
-| `SortDescending` | Sort the current column in descending order.                           |
-| `AutoFit`        | Auto fit the current column.                                           |
-| `AutoFitAll`     | Auto fit all columns.                                                  |
-| `Filter`         | Show the filter option as given in the `filterSettings.type` property. |
+The following built-in column menu items are available:
+
+| Item           | Description                                                                                                                           |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| SortAscending  | Sorts the column in ascending order.                                                                                                  |
+| SortDescending | Sorts the column in descending order.                                                                                                 |
+| AutoFit        | Adjusts the width of the current column.                                                                                              |
+| AutoFitAll     | Adjusts the width of all columns.                                                                                                     |
+| ColumnChooser  | Allows toggling column visibility .                                                                                                   |
+| Filter         | Displays filter options based on [filterSettings.type](../../api/gantt/filtersettings#type). |
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -50,45 +53,17 @@ The default items are displayed in the following table:
 {% previewsample "page.domainurl/code-snippet/gantt/columns-cs1" %}
 {% endif %}
 
-> You can disable the column menu for a particular column by setting the `columns.showColumnMenu` to `false`.
+> * You can disable the column menu for specific columns by setting [columns.showColumnMenu](../../api/gantt/column#showcolumnmenu) to **false**.
 
-## Column menu events
+> * You can customize the default column menu items by defining [columnMenuItems](../../api/gantt#columnmenuitems) with only the required items.
 
-During the resizing action, the gantt component triggers the below two events.
+## Add a custom column menu item
 
-1. The [columnMenuOpen](../../api/gantt#columnmenuopen) event triggers before the column menu opens.
-2. The [columnMenuClick](../../api/gantt#columnmenuclick) event triggers when the user clicks the column menu of the gantt.
+The ##Platform_Name## Gantt Chart control allows adding custom items to the column menu using the [columnMenuItems](../../api/gantt#columnmenuitems) property, which accepts a set of `columnMenuItemModel` objects.
 
-{% if page.publishingplatform == "typescript" %}
+Define the behavior of custom items through the [columnMenuClick](../../gantt/events#columnmenuclick) event.
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/columnMenu-events-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/columnMenu-events-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/gantt/columnMenu-events-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/columnMenu-events-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/columnMenu-events-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/gantt/columnMenu-events-cs1" %}
-{% endif %}
-
-## Custom Column Menu Item
-
-Custom column menu items can be added by defining the [columnMenuItems](../../api/gantt#columnmenuitems). Actions for this customized items can be defined in the [columnMenuClick](../../api/gantt#columnmenuclick) event.
+The following example demonstrates how to add a custom column menu item to clear the sorting in the Gantt chart.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -117,11 +92,11 @@ Custom column menu items can be added by defining the [columnMenuItems](../../ap
 {% previewsample "page.domainurl/code-snippet/gantt/columnMenu-custom-item-cs1" %}
 {% endif %}
 
-## Customize menu items for particular columns
+## Customize column menu items per column
 
-Sometimes, you have a scenario that to hide an item from column menu for particular columns. In that case, you need to define the [columnMenuOpenEventArgs.hide](../../api/grid/columnMenuOpenEventArgs) as true in the [columnMenuOpen](../../api/gantt#columnmenuopen) event.
+Control the visibility of column menu items for specific columns by using the [columnMenuOpen](../../gantt/events#columnmenuopen) event. To hide an item, set `args.hide` to **true** for the target item.
 
-The following sample, **Filter** item was hidden in column menu when opens for the **Task Name** column.
+The following example demonstrates hiding the **Filter** item when the column menu opens for the **TaskName** column.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -148,4 +123,85 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/gantt/colMenu-customAction-cs1" %}
+{% endif %}
+
+## Render nested column menu items
+
+Extend the column menu in Gantt Chart control by adding nested items using the [columnMenuItems](../../api/gantt#columnmenuitems) property. This property accepts an array of built-in item names or custom objects to define additional actions.
+
+The following example demonstrates how to configure `columnMenuItems` to include a nested menu.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/column-menu-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/column-menu-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/column-menu-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/column-menu-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/column-menu-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/column-menu-cs1" %}
+{% endif %}
+
+## Customize the column menu icon
+
+Customize the default column menu icon in Gantt Chart control by overriding the **.e-icons.e-columnmenu** class using the `content` CSS property. This allows you to use a Unicode character or a custom icon font.
+
+To customize the column menu icon, follow these steps:
+
+**1.** Add custom CSS to override the default icon:
+
+```css
+.e-gantt .e-columnheader .e-icons.e-columnmenu::before {
+  content: "\e99a";
+}
+```
+
+**2.** Import the required icon stylesheets (e.g., Material or Bootstrap5):
+
+```html
+<link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/tailwind3.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css" rel="stylesheet" />
+```
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/column-menu-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/column-menu-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/column-menu-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/column-menu-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/column-menu-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/column-menu-cs2" %}
 {% endif %}

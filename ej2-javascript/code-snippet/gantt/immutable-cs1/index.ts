@@ -1,6 +1,3 @@
-
-
-
 import { Gantt, Toolbar, Edit } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
 
@@ -18,16 +15,13 @@ let gantt: Gantt = new Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel','Indent','Outdent'],
+    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Indent', 'Outdent'],
     editSettings: {
-      allowAdding: true,
-      allowEditing: true,
-      allowDeleting: true,
-      allowTaskbarEditing: true,
-      showDeleteConfirmDialog: true
+        allowAdding: true,
+        allowEditing: true,
+        allowDeleting: true,
+        allowTaskbarEditing: true,
+        showDeleteConfirmDialog: true
     }
 });
 gantt.appendTo('#Gantt');
-
-
-

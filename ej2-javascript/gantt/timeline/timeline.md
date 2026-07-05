@@ -3,7 +3,7 @@ layout: post
 title: Timeline in ##Platform_Name## Gantt Chart control | Syncfusion
 description: Learn how to configure timelines in the Syncfusion ##Platform_Name## Gantt Chart control with view modes, zooming, weekend highlighting, and templates.
 platform: ej2-javascript
-control: Timeline 
+control: Timeline
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -33,7 +33,7 @@ In Week mode, the top tier shows weeks and the bottom tier days, suitable for sh
 {% include code-snippet/gantt/timeline-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -64,7 +64,7 @@ In Month mode, the top tier shows months and the bottom tier weeks, ideal for me
 {% include code-snippet/gantt/timeline-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -95,7 +95,7 @@ In Year mode, the top tier shows years and the bottom tier months, suitable for 
 {% include code-snippet/gantt/timeline-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -126,7 +126,7 @@ In Day mode, the top tier shows days and the bottom tier hours, ideal for detail
 {% include code-snippet/gantt/timeline-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -157,7 +157,7 @@ In Hour mode, the top tier shows hours and the bottom tier minutes, perfect for 
 {% include code-snippet/gantt/timeline-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -188,7 +188,7 @@ In Minutes timeline mode, the tier displays minute-level intervals, ideal for tr
 {% include code-snippet/gantt/timeline-cs13/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-cs13" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -219,7 +219,7 @@ The Gantt Chart control supports rendering a fixed timeline range using the [vie
 {% include code-snippet/gantt/timeline-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-cs12" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -235,18 +235,18 @@ The Gantt Chart control supports rendering a fixed timeline range using the [vie
 
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-cs12" %}
 {% endif %}
-	
+
 **Key behaviors**
 
 When `viewStartDate` and `viewEndDate` are set to concrete Date values, the timeline rendering is restricted to the inclusive range [viewStartDate, viewEndDate].
 
-* When `viewStartDate` is set to **auto**:
-  * If `projectStartDate` is defined, the timeline begins at `projectStartDate`.
-  * If `projectStartDate` is not defined, the earliest task start date is used as the beginning of the visible range.
+- When `viewStartDate` is set to **auto**:
+  - If `projectStartDate` is defined, the timeline begins at `projectStartDate`.
+  - If `projectStartDate` is not defined, the earliest task start date is used as the beginning of the visible range.
 
-* When `viewEndDate` is set to **auto**: 
-  * If `projectEndDate` is defined, the timeline ends at `projectEndDate`.
-  * If `projectEndDate` is not defined, the maximum task end date is used. If this end date leaves visible white-space in the timeline area, the end date is automatically extended to fill the chart width.
+- When `viewEndDate` is set to **auto**:
+  - If `projectEndDate` is defined, the timeline ends at `projectEndDate`.
+  - If `projectEndDate` is not defined, the maximum task end date is used. If this end date leaves visible white-space in the timeline area, the end date is automatically extended to fill the chart width.
 
 > Note: The `ZoomToFit` feature uses `projectStartDate` and `projectEndDate` to fit the entire project within the available timeline viewport.
 
@@ -266,7 +266,7 @@ The `weekStartDay` property will take effect only when the timeline displays wee
 {% include code-snippet/gantt/timeline-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-cs6" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -297,7 +297,7 @@ In the Gantt Chart control, the schedule timeline will be automatically updated 
 {% include code-snippet/gantt/timeline-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-cs7" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -328,7 +328,7 @@ You can dynamically change the timeline mode in the Gantt Chart by updating the 
 {% include code-snippet/gantt/timeline-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-cs14" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -359,7 +359,7 @@ In the Gantt Chart control, you can enable or disable the mouse hover tooltip of
 {% include code-snippet/gantt/gantt-tooltip-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/gantt-tooltip-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -390,7 +390,7 @@ Highlight weekends by setting [showWeekend](../../api/gantt/timelineSettings#sho
 {% include code-snippet/gantt/timeline-showweekend-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-showweekend-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -409,9 +409,9 @@ Highlight weekends by setting [showWeekend](../../api/gantt/timelineSettings#sho
 
 **Limitations:**
 
-* The `showWeekend` feature does not support baselines and not compatible with the manual task mode.
-* Non-working hours cannot be excluded when `showWeekend` is set to **false**.
-* Holidays are not excluded from the timeline if `showWeekend` is set to **false**.
+- The `showWeekend` feature does not support baselines and not compatible with the manual task mode.
+- Non-working hours cannot be excluded when `showWeekend` is set to **false**.
+- Holidays are not excluded from the timeline if `showWeekend` is set to **false**.
 
 ## Navigating Gantt Chart Timeline
 
@@ -431,7 +431,7 @@ You can adjust the Gantt Chart view by shifting the timeline forward or backward
 {% include code-snippet/gantt/timeline-cs15/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-cs15" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -454,9 +454,9 @@ In the Gantt Chart control, you can customize timeline cells using the [timeline
 
 When designing the timeline cells, you can utilize the following context properties within the template:
 
-* `date`: Defines the date of the timeline cells.
-* `value`: Defines the formatted date value that will be displayed in the timeline cells.
-* `tier`: Defines whether the cell is part of the top or bottom tier.
+- `date`: Defines the date of the timeline cells.
+- `value`: Defines the formatted date value that will be displayed in the timeline cells.
+- `tier`: Defines whether the cell is part of the top or bottom tier.
 
 The following code example how to customize the top tier to display the week's weather details and the bottom tier to highlight working and non-working days, with formatted text for holidays.
 
@@ -470,7 +470,7 @@ The following code example how to customize the top tier to display the week's w
 {% include code-snippet/gantt/gantt-tooltip-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/gantt-tooltip-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -487,7 +487,47 @@ The following code example how to customize the top tier to display the week's w
 {% previewsample "page.domainurl/code-snippet/gantt/gantt-tooltip-cs4" %}
 {% endif %}
 
+## Infinite timeline scrolling
+
+The [enableInfiniteTimelineScroll](../../api/gantt#enableinfinitetimelinescroll) property enables infinite horizontal scrolling in the Gantt Chart timeline by dynamically extending the visible timeline range as the user navigates. Set `enableInfiniteTimelineScroll` to **true** to enable this feature.
+
+**Key behaviors**
+
+- When `enableInfiniteTimelineScroll` is enabled, the timeline automatically extends in the forward direction as the user scrolls using the horizontal scrollbar or clicks the forward scroll arrow.
+- In the backward direction, the timeline extends only when the user clicks the backward scroll arrow. Scrolling or dragging the scrollbar backward does not trigger timeline extension.
+- Infinite scrolling extends only the visible timeline range and does not modify the project dates.
+
+This feature enables exploration of long project schedules without manually updating the timeline range.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/gantt-infinite-cs/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/gantt-infinite-cs/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/gantt-infinite-cs" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/gantt-infinite-cs/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/gantt-infinite-cs/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/gantt-infinite-cs" %}
+{% endif %}
+
 ## See also
+
 - [How to configure taskbars?](../../gantt/taskbar)
 - [How to zoom the timeline?](../../gantt/timeline/zooming)
 - [How to configure non-working days?](../../gantt/scheduling-tasks#weekendnon-working-days)

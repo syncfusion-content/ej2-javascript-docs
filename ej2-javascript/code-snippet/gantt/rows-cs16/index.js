@@ -4,18 +4,18 @@ var ganttChart = new ej.gantt.Gantt({
     dataSource: GanttData,
     resources: resourceCollection,
     addDialogFields: [
-        { type: 'General', headerText: 'General add'},
-        { type: 'Dependency'},
-        { type: 'Resources'} , 
-        {type: 'Notes', additionalParams: {inlineMode: { enable: true,onSelection: true }}},
-        {type:"Segments"}
+        { type: 'General', headerText: 'General add' },
+        { type: 'Dependency' },
+        { type: 'Resources' },
+        { type: 'Notes', additionalParams: { inlineMode: { enable: true, onSelection: true } } },
+        { type: "Segments" }
     ],
     editDialogFields: [
         { type: 'General', headerText: 'General edit' },
-        {type: 'Dependency'},
-        { type: 'Resources'},
-        {type: 'Notes', additionalParams: {inlineMode: { enable: true,onSelection: true }}},
-        {type: "Segments"}
+        { type: 'Dependency' },
+        { type: 'Resources' },
+        { type: 'Notes', additionalParams: { inlineMode: { enable: true, onSelection: true } } },
+        { type: "Segments" }
     ],
     height: '450px',
     taskFields: {
@@ -30,7 +30,7 @@ var ganttChart = new ej.gantt.Gantt({
         work: 'work',
         parentID: 'ParentID',
         segments: 'Segments',
-        notes:"note",
+        notes: "note",
     },
     resourceFields: {
         id: 'resourceId',
@@ -45,6 +45,6 @@ var ganttChart = new ej.gantt.Gantt({
         showDeleteConfirmDialog: true
     },
     toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-		
+
 });
 ganttChart.appendTo('#Gantt');

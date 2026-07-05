@@ -1,35 +1,45 @@
-import { Gantt, Sort } from '@syncfusion/ej2-gantt';
+import { Gantt, Sort, TaskFieldsModel, ColumnModel, SplitterSettingsModel } from '@syncfusion/ej2-gantt';
 import { Button } from '@syncfusion/ej2-buttons';
-import { GanttData } from './datasource.ts';
+import { data } from './datasource.ts';
 
 Gantt.Inject(Sort);
 
+let taskFields: TaskFieldsModel = {
+    id: 'TaskID',
+    name: 'TaskName',
+    startDate: 'StartDate',
+    duration: 'Duration',
+    progress: 'Progress',
+    parentID: 'ParentID'
+};
+
+let splitterSettings: SplitterSettingsModel = {
+    columnIndex: 3
+};
+
+let columns: ColumnModel[] = [
+    { field: 'TaskID', headerText: 'Task ID', width: 100 },
+    { field: 'TaskName', headerText: 'Task Name', width: 200 },
+    { field: 'StartDate', headerText: 'Start Date', width: 150 },
+    { field: 'Duration', headerText: 'Duration', width: 100 },
+    { field: 'Progress', headerText: 'Progress', width: 100 },
+    { field: 'CustomColumn', headerText: 'Custom Column', width: 150 }
+];
+
 let gantt: Gantt = new Gantt({
-    dataSource: GanttData,
-    height: '450px',
+    dataSource: data,
+    height: '430px',
     allowSorting: true,
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentID'
-    },
-    columns: [
-        { field: 'TaskID', headerText: 'Task ID' },
-        { field: 'Progress', headerText: 'Progress' },
-        { field: 'TaskName', headerText: 'Task Name' },
-        { field: 'StartDate', headerText: 'Start Date' },
-        { field: 'Duration', headerText: 'Duration' },
-        { field: 'CustomColumn', headerText: 'CustomColumn' }
-    ]
+    taskFields: taskFields,
+    splitterSettings: splitterSettings,
+    columns: columns
 });
+
 gantt.appendTo('#Gantt');
 
-let sortBtn: Button = new Button();
-sortBtn.appendTo('#sortColumn');
+let sortBtn: Button = new Button({ cssClass: 'e-outline' });
+sortBtn.appendTo('#sortCustom');
 
-document.getElementById('sortColumn').addEventListener('click', () => {
-    gantt.sortModule.sortColumn('CustomColumn', "Ascending", false)
+document.getElementById('sortCustom')!.addEventListener('click', () => {
+    gantt.sortModule.sortColumn('CustomColumn', 'Ascending', false);
 });

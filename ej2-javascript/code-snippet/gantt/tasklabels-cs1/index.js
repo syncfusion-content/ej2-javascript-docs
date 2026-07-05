@@ -1,34 +1,21 @@
 var ganttChart = new ej.gantt.Gantt({
     dataSource: GanttData,
-	height:'450px',
-	taskFields: {
-        id: 'TaskId',
+    height: '450px',
+    projectStartDate: new Date('03/31/2019'),
+    projectEndDate: new Date('04/18/2019'),
+    taskFields: {
+        id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
-		duration: 'Duration',
+        duration: 'Duration',
         progress: 'Progress',
-		parentID: 'ParentId'
+        parentID: 'ParentID'
     },
-	labelSettings: {
-        leftLabel: 'TaskId',
-		rightLabel: 'Task Name: ${taskData.TaskName}',
-		taskLabel: '${Progress}%'
-    },
-    projectStartDate: new Date('03/31/2019'),
-    projectEndDate: new Date('04/19/2019'),
+    labelSettings: {
+        leftLabel: 'Task ID: ${TaskID}',
+        rightLabel: 'Task Name: ${taskData.TaskName}',
+        taskLabel: '${Progress}%'
+    }
 });
+
 ganttChart.appendTo('#Gantt');
-
-
-
-
-
-
-
-
-
-
-
-
-
-

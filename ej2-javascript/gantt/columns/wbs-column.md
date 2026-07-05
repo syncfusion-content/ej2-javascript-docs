@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Work Breakdown Structure (WBS) in ##Platform_Name## Gantt | Syncfusion
-description: Learn how to integrate and manage WBS codes in the Syncfusion ##Platform_Name## Gantt component to improve task hierarchy visualization and project tracking.
+description: Learn how to integrate and manage WBS codes in the Syncfusion ##Platform_Name## Gantt Chart control to improve task hierarchy visualization and project tracking.
 platform: ej2-javascript
 control: WBS Column
 publishingplatform: ##Platform_Name##
@@ -9,14 +9,16 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Work Breakdown Structure (WBS) in ##Platform_Name## Gantt Component
+# Work Breakdown Structure (WBS) in ##Platform_Name## Gantt Chart
 
-The Work Breakdown Structure (WBS) organizes project tasks hierarchically in the Gantt component by assigning unique codes to each task. This system enhances visualization and management by clearly reflecting task relationships and levels. It is especially useful in complex environments like construction projects or enterprise-scale software development.
+The Work Breakdown Structure (WBS) organizes project tasks hierarchically by assigning unique codes to each task. This improves task visibility and management, especially in large-scale construction or enterprise-level software projects.
 
 ## Configuration and implementation
 
-- **Enable WBS Codes**: Set the [enableWBS](https://ej2.syncfusion.com/documentation/api/gantt#enablewbs) property to `true` to automatically generate unique task codes and their predecessors.
-- **Auto-Update Codes**: Set the [enableAutoWbsUpdate](https://ej2.syncfusion.com/documentation/api/gantt#enableautowbsupdate) property to `true` to maintain WBS code accuracy during operations like sorting, filtering, editing, or drag-and-drop.
+To enable WBS in the Gantt Chart control:
+
+- **Enable WBS Codes**: Set [enableWBS](../../api/gantt#enablewbs) to **true**  to automatically generate unique task codes and define their predecessors.
+- **Auto-Update Codes**: Set [enableAutoWbsUpdate](../../api/gantt#enableautowbsupdate) to **true** to maintain accurate WBS codes during operations such as sorting, editing, or drag-and-drop.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,13 +48,11 @@ The Work Breakdown Structure (WBS) organizes project tasks hierarchically in the
 
 {% endif %}
 
----
-
 ## Managing WBS code updates
 
-For better performance, you can control when WBS codes are updated by using the [actionBegin](https://ej2.syncfusion.com/documentation/api/gantt#actionbegin) and [dataBound](https://ej2.syncfusion.com/documentation/api/gantt#databound) events. This is particularly useful during actions like dragging and dropping rows.
+To optimize performance, WBS code updates can be controlled using the [actionBegin](../../gantt/events#actionbegin) and [dataBound](../../gantt/events#databound) events. This is especially useful during operations like row drag-and-drop, where auto-update is triggered only during that specific action to ensure efficient and accurate code handling.
 
-In the following example, WBS auto-update is enabled only during the **row drag and drop** action using these events.
+In the following example, WBS auto-update is enabled only during the row drag and drop action using these events.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -84,7 +84,7 @@ In the following example, WBS auto-update is enabled only during the **row drag 
 
 ## Limitations
 
-The WBS feature has a few limitations in the Gantt component:
+The WBS feature has a few limitations in the Gantt Chart control:
 
 * Editing of the WBS code and WBS predecessor columns is not supported.
 * Load on demand is not supported with the WBS feature.

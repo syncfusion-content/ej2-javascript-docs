@@ -1,35 +1,26 @@
-ej.gantt.Gantt.Inject(ej.gantt.Filter, ej.gantt.Sort, ej.gantt.Resize);
 var ganttChart = new ej.gantt.Gantt({
-        dataSource: GanttData,
-		height:'450px',
-        showColumnMenu: true,
-        allowFiltering: true,
-        allowResizing: true,
-        allowSorting: true,
-		taskFields: {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-			duration: 'Duration',
-            progress: 'Progress',
-			parentID: 'ParentID'
-        },
-        splitterSettings: {
-            position: '100%'
-        },
-    columns: [
-        { field: 'TaskID', headerText: 'Task ID' },
-        { field: 'TaskName', headerText: 'Task Name' },
-        { field: 'Progress', headerText: 'Progress' },
-        { field: 'StartDate', headerText: 'Start Date' },
-        { field: 'Duration', headerText: 'Duration' }
-    ],
-     columnMenuOpen: function (args) {
-        for (var item of args.items) {
-            if (item.text === 'Filter' && args.column.field === 'TaskName') {
-                item.hide = true;
+    dataSource: GanttData,
+    height: '450px',
+    showColumnMenu: true,
+    allowFiltering: true,
+    allowSorting: true,
+    taskFields: {
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        parentID: 'ParentID'
+    },
+    splitterSettings: {
+        columnIndex: 5
+    },
+    columnMenuOpen: function (args) {
+        for (var i = 0; i < args.items.length; i++) {
+            if (args.items[i].text === 'Filter' && args.column.field === 'TaskName') {
+                args.items[i].hide = true;
             } else {
-                item.hide = false;
+                args.items[i].hide = false;
             }
         }
     },

@@ -29,9 +29,9 @@ To explore the properties of expand and collapse icon, refer to [`expandIcon`](.
 
 ### Size and shape
 
-Set a size for an icon by using [`width`](../../api/diagram/iconShapeModel/#width) and [`height`](../../api/diagram/iconShapeModel/#height) properties.
+Set a size for an icon by using [`width`](../../api/diagram/iconShapeModel#width) and [`height`](../../api/diagram/iconShapeModel#height) properties.
 
-The expandIcon’s and collapseIcon’s [`shape`](../../api/diagram/iconShapeModel/#shape) property allows to define the shape of the icon.
+The expandIcon’s and collapseIcon’s [`shape`](../../api/diagram/iconShapeModel#shape) property allows to define the shape of the icon.
 
 The following code example illustrates how to create an icon of various shapes.
 
@@ -71,7 +71,7 @@ The following code example illustrates the customization of icons.
 
 ## IsExpanded
 
-[`isExpanded`](../../api/diagram/nodeModel/#isexpanded) property is used to defines whether the node is expanded or not. The following example demonstrate node’s `isExpanded` property. The default value of isExpanded property is true.
+[`isExpanded`](../../api/diagram/nodeModel#isexpanded) property is used to defines whether the node is expanded or not. The following example demonstrate node’s `isExpanded` property. The default value of isExpanded property is true.
 
 ``` JavaScript
 

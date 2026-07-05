@@ -3,9 +3,9 @@ var model = {
   // Define the space between participants
   spaceBetweenParticipants: 300,
   participants: [
-    { id: "Customer", content: "Customer", isActor: true },
-    { id: "OrderSystem", content: "Order System", isActor: false },
-    { id: "PaymentGateway", content: "Payment Gateway", isActor: false }
+    { id: "Customer", content: "Customer", stereotype: ej.diagrams.UmlSequenceParticipantStereotype.Actor },
+    { id: "OrderSystem", content: "Order System" },
+    { id: "PaymentGateway", content: "Payment Gateway" }
   ],
   // Define the messages passed between participants
   messages: [

@@ -1,16 +1,14 @@
-
-
-
 import { Gantt, Edit } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Edit);
-function durationFormat(field: string, data: Object, column: Object): string {
-    return data[field];
-}
+
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
     height: '450px',
+    editSettings: {
+        allowEditing: true
+    },
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -19,17 +17,24 @@ let gantt: Gantt = new Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    editSettings: {
-        allowEditing: true
-    },
-    toolbar: ['Edit'],
     columns: [
-        { field: 'TaskID', headerText: 'Task ID' },
-        { field: 'TaskName', headerText: 'Task Name' },
-        { field: 'StartDate', headerText: 'Start Date'  },
-        { field: 'Duration', headerText: 'Duration', editType:'numericedit', edit: { params: { min:1 } }, valueAccessor: durationFormat },
-        { field: 'Progress', headerText: 'Progress', edit: { params: { showSpinButton: false }  } },
-    ],
+        { field: 'TaskID' },
+        { field: 'TaskName' },
+        { field: 'StartDate' },
+        { 
+            field: 'Duration',
+            editType: 'numericedit',
+            edit: { params: { min: 1 } },
+            valueAccessor: (field: string, data: any) => {
+                return data[field];
+            }
+        },
+        { 
+            field: 'Progress',
+            editType: 'numericedit',
+            edit: { params: { showSpinButton: false } }
+        }
+    ]
 });
 
 gantt.appendTo('#Gantt');

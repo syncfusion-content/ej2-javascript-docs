@@ -150,7 +150,11 @@ Corner radius allows to create connectors with rounded corners. The radius of th
 
 ## Connector Appearance
 
+<<<<<<< HEAD
 * The connector’s [`strokeWidth`](../../api/diagram/strokeStyle#strokewidth), [`strokeColor`](../../api/diagram/strokeStyle#strokecolor), [`strokeDashArray`](../../api/diagram/strokeStyle#strokedasharray), and [`opacity`](../../api/diagram/strokeStyle#opacity) properties are used to customize the appearance of the connector segments.
+=======
+* The connector’s [`strokeWidth`](../../api/diagram/strokeStyle#strokewidth), [`strokeColor`](../../api/diagram/strokeStyle/#strokecolor), [`strokeDashArray`](../../api/diagram/strokeStyle#strokedasharray), and [`opacity`](../../api/diagram/strokeStyle#opacity) properties are used to customize the appearance of the connector segments.
+>>>>>>> 6d423ae3a72932cc7a70f3b683cc6314d695c6cf
 
 * The [`visible`](../../api/diagram/connectormodel#visible) property of the connector enables or disables the visibility of connector.
 

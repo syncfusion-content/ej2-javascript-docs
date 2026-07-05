@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Filter Menu in ##Platform_Name## Gantt Chart Control
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as equal, contains, greaterthan, etc. To enable this feature, set [allowFiltering](../../api/gantt#allowfiltering) to **true** and configure [filterSettings.type](../../api/gantt/filtersettings#type) as **Menu**.
+The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as equal, contains, greaterthan, etc. To enable this feature, set [allowFiltering](../../api/gantt#allowfiltering) to **true** and configure [filterSettings.type](../../api/gantt/filtersettings#type) as **Menu**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Cha
 
 ## Custom control in filter menu
 
-You can customize the filter menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control using the `column.filter.ui` property. This allows you to replace the default filter controls with custom components such as dropdowns or textboxes for specific columns. By default, the Gantt uses AutoComplete for string columns, NumericTextBox for number columns, DatePicker for date columns, DropDownList for boolean columns, and DateTimePicker for datetime columns.
+You can customize the filter menu in the ##Platform_Name## Gantt Chart control using the `column.filter.ui` property. This allows you to replace the default filter controls with custom components such as dropdowns or textboxes for specific columns. By default, the Gantt uses AutoComplete for string columns, NumericTextBox for number columns, DatePicker for date columns, DropDownList for boolean columns, and DateTimePicker for datetime columns.
 
 The `column.filter.ui` property supports three essential functions:
 
@@ -163,7 +163,7 @@ The following sample demonstrates how to disable the autofill feature by setting
 
 ## Customizing filter menu operators list
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control allows customization of the default filter operator list using the [filterSettings.operators](../../api/gantt/filterSettings#operators) property. This allows you to define a custom set of operators shown in the filter menu for each column type, improving usability and relevance.
+The ##Platform_Name## Gantt Chart control allows customization of the default filter operator list using the [filterSettings.operators](../../api/gantt/filterSettings#operators) property. This allows you to define a custom set of operators shown in the filter menu for each column type, improving usability and relevance.
 
 You can configure operators for different types using the following options: 
 

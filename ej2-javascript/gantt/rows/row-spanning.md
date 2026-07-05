@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Row Spanning in ##Platform_Name## Gantt Chart Control
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control supports row cell spanning, allowing multiple cells in a row to merge into a single cell. This is useful for displaying shared information across rows without duplication.
+The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control supports row cell spanning, allowing multiple cells in a row to merge into a single cell. This is useful for displaying shared information across rows without duplication.
 
 To enable row spanning, use the [rowSpan](../api/gantt/queryCellInfoEventArgs#rowspan) attribute inside the [queryCellInfo](../api/gantt#querycellinfo) event. This event is triggered for each grid cell, where you can define the number of rows a cell should span based on its data.
 

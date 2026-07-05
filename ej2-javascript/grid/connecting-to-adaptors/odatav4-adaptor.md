@@ -10,7 +10,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ODataV4Adaptor in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid Control
+# ODataV4Adaptor in ##Platform_Name## Grid Control
 
 The `ODataV4Adaptor` in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Control allows seamless integration of the Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Control.
 
@@ -974,7 +974,7 @@ grid.appendTo('#Grid');
 {% endif %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit [mode](../../api/grid/editSettings/#mode) for the Grid control. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](../../api/grid/editSettings#mode) for the Grid control. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 

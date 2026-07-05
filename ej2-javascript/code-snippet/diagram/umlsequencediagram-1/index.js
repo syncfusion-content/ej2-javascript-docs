@@ -5,12 +5,11 @@ var umlSequenceDiagramModel = {
     {
       id: "User", // Unique identifier for the participant
       content: "User", // Label or name of the participant
-      isActor: true, // Indicates that the participant is an actor
+      stereotype: ej.diagrams.UmlSequenceParticipantStereotype.Actor // Indicates that the participant is an actor
     },
     {
       id: "System", // Unique identifier for the participant
       content: "System", // Label or name of the participant
-      isActor: false,
       showDestructionMarker: true, // Flag to show destruction marker at the end of the lifeline
     }
   ],

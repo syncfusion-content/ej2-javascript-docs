@@ -159,9 +159,10 @@ If the specified format does not match the resolved value type, the original val
 {% endhighlight %}
 {% endtabs %}
 
+{% previewsample "page.domainurl/code-snippet/circular-chart/user-interaction/inline-format" %}
+
 {% elsif page.publishingplatform == "javascript" %}
 
-{% previewsample "page.domainurl/code-snippet/circular-chart/user-interaction/inline-format" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/circular-chart/user-interaction/inline-format/index.js %}
@@ -172,6 +173,8 @@ If the specified format does not match the resolved value type, the original val
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/circular-chart/user-interaction/inline-format" %}
+
+{% endif %}
 
 ## Tooltip template
 
@@ -295,4 +298,5 @@ Using the `tooltipRender` event, you can customize tooltip values for a particu
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/circular-chart/user-interaction/tooltip-event" %}
+
 {% endif %}

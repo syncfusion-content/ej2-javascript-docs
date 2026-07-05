@@ -405,7 +405,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control triggers two p
 
 [actionComplete](../api/grid/#actioncomplete)- This event triggered after a pager action is completed. It provides information about the action, such as the new page number, page size, and the total number of records. You can use this event to perform actions or update the UI after the operation has been executed.
 
-The following example that example demonstrates how to use these events to display notification messages to indicate the current and next page during paging actions in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid:
+The following example that example demonstrates how to use these events to display notification messages to indicate the current and next page during paging actions in the ##Platform_Name## Grid:
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -5,12 +5,11 @@ var model = {
     {
       id: "User",
       content: "User",
-      isActor: true,
+      stereotype: ej.diagrams.UmlSequenceParticipantStereotype.Actor
     },
     {
       id: "System",
       content: "System",
-      isActor: false,
       showDestructionMarker: true,
       // Activation boxes for System
       activationBoxes: [

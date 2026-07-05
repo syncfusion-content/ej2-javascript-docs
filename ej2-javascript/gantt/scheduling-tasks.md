@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Scheduling Tasks in ##Platform_Name## Gantt Chart Control
 
-Task scheduling in the ##Platform_Name## Gantt Chart control defines and visualizes task start dates, durations, and end dates as taskbars in a project timeline, enabling precise planning and tracking. Configure scheduling with properties like [taskFields](../api/gantt#taskfields) for mapping task data, [taskMode](../api/gantt#taskmode) for auto or manual validation, [taskType](../api/gantt#tasktype) for fixed unit, work, or duration, and [durationUnit](../api/gantt#durationunit) for day, hour, or minute units. Working time, set via [dayWorkingTime](../api/gantt#dayworkingtime), and non-working periods, like weekends or holidays, ensure realistic calculations. Events like [dataBound](../api/gantt#databound) customize scheduling logic on run-time. Taskbars include ARIA labels for accessibility, describing start, end, and duration, and adapt to responsive designs, though narrow screens may require scrolling for long timelines.
+Task scheduling in the [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control defines and visualizes task start dates, durations, and end dates as taskbars in a project timeline, enabling precise planning and tracking. Configure scheduling with properties like [taskFields](../api/gantt#taskfields) for mapping task data, [taskMode](../api/gantt#taskmode) for auto or manual validation, [taskType](../api/gantt#tasktype) for fixed unit, work, or duration, and [durationUnit](../api/gantt#durationunit) for day, hour, or minute units. Working time, set via [dayWorkingTime](../api/gantt#dayworkingtime), and non-working periods, like weekends or holidays, ensure realistic calculations. Events like [dataBound](../api/gantt#databound) customize scheduling logic on run-time. Taskbars include ARIA labels for accessibility, describing start, end, and duration, and adapt to responsive designs, though narrow screens may require scrolling for long timelines.
 
 ## Configure scheduling modes
 
@@ -236,7 +236,6 @@ The following example defines units in duration values:
 Unscheduled tasks lack start date, end date, or duration, visualized as milestones or single-day tasks. Enable with [allowUnscheduledTasks](../api/gantt#allowunscheduledtasks) set to **true** (default: **false**), defaulting to a 1-day duration from the project start.
 
 Available unscheduled task types:
-
 - **Start date only**
 
     Tasks with only a start date defined, allowing for open-ended planning.

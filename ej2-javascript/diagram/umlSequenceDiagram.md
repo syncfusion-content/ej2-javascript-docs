@@ -15,23 +15,35 @@ A UML sequence diagram is an interaction diagram that demonstrates how objects i
 
 ## UML Sequence Diagram Elements
 
-A sequence diagram includes several key elements such as participants, messages, activation boxes, and fragments. The sections below demonstrate how to define and configure these components using the diagram control.
+A sequence diagram includes several key elements, such as participants, messages, activation boxes, and fragments. The sections below demonstrate how to define and configure these components using the Diagram control.
 
 ### Participants
 
-[UmlSequenceParticipantModel](https://ej2.syncfusion.com/documentation/api/diagram/umlSequenceParticipantModel) in a sequence diagram represent the entities that interact with each other, appearing at the top of the diagram with lifelines extending vertically downward.
+[UmlSequenceParticipantModel](https://ej2.syncfusion.com/documentation/api/diagram/umlSequenceParticipantModel) represents an entity that interacts with other entities in a sequence diagram. Participants appear at the top of the diagram, with lifelines extending vertically downward.
 
 #### UmlSequenceParticipantModel Properties
 
 | Property | Type | Description |
 |---|---|---|
-| id | string \| number | A unique identifier for the participant |
-| content | string | The display text for the participant |
-| isActor | boolean | Specifies whether the participant is displayed as an actor (true) or an object (false) |
-| showDestructionMarker | boolean | Indicates whether a destruction marker (X) is shown at the end of the lifeline |
-| activationBoxes | UmlSequenceActivationBoxModel[] | A collection of activation boxes associated with the participant |
+| id | string \| number | A unique identifier for the participant. |
+| content | string | The display text of the participant. |
+| showDestructionMarker | boolean | Indicates whether a destruction marker (X) is shown at the end of the participant lifeline. |
+| activationBoxes | UmlSequenceActivationBoxModel[] | A collection of activation boxes associated with the participant. |
+| stereotype | UmlSequenceParticipantStereotype | The visual stereotype used to render the participant header, such as Actor, Boundary, Control, Entity, or Database. |
 
-The following code example illustrates how to create participants:
+#### Participant Stereotypes
+
+The [UmlSequenceParticipantStereotype](https://ej2.syncfusion.com/documentation/api/diagram/umlSequenceParticipantStereotype) enum defines the visual style of a participant. A stereotype helps show the role of a participant in the interaction.
+
+| Stereotype | Description | Shape |
+|---|---|---|
+| Default | Standard object participant displayed as a labeled rectangle. | ![Default stereotype](./images/umlSequenceDiagram-images/Default.png) |
+| Actor | External person or system that interacts with the process. | ![Actor stereotype](./images/umlSequenceDiagram-images/Actor.png) |
+| Boundary | Interface or entry point, such as a UI, API gateway, or external system. | ![Boundary stereotype](./images/umlSequenceDiagram-images/Boundary.png) |
+| Control | Object that manages the flow, such as a controller or coordinator. | ![Control stereotype](./images/umlSequenceDiagram-images/Control.png) |
+| Entity | Object that represents data, domain objects, or stored information. | ![Entity stereotype](./images/umlSequenceDiagram-images/Entity.png) |
+| Database | Database or persistent storage system, displayed using a cylindrical shape. | ![Database stereotype](./images/umlSequenceDiagram-images/Database.png) |
+
 
 {% if page.publishingplatform == "typescript" %}
 

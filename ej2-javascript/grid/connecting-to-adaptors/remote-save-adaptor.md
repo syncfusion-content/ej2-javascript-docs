@@ -10,9 +10,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# RemoteSaveAdaptor in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid Control
+# RemoteSaveAdaptor in Control
 
-The RemoteSaveAdaptor in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid Component allows you to perform grid actions such as sorting, filtering, searching and paging primarily on the client-side while handling CRUD operations, such as updating, inserting, and removing data, on the server-side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
+The RemoteSaveAdaptor in Angular Grid Component allows you to perform grid actions such as sorting, filtering, searching and paging primarily on the client-side while handling CRUD operations, such as updating, inserting, and removing data, on the server-side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
 
 Ensure your server-side implementation in ASP.NET Core handles CRUD operations. Here is an example of how you can set up your ASP.NET Core controller to handle these operations:
 

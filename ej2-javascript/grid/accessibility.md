@@ -209,9 +209,9 @@ The Grid control followed the [keyboard interaction](https://www.w3.org/WAI/ARIA
 
 ### How to prevent default key action behavior
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid provides flexibility to prevent the default key action behavior based on your requirements. This enables you to intercept and customize the behavior when specific keys are pressed within a web application
+The ##Platform_Name## Grid provides flexibility to prevent the default key action behavior based on your requirements. This enables you to intercept and customize the behavior when specific keys are pressed within a web application
 
-To prevent the default key action behavior in the grid, you can utilize the [keyPressed](../api/grid/#keypressed) event. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
+To prevent the default key action behavior in the grid, you can utilize the [keyPressed](../api/grid#keypressed) event. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
 
 The following example demonstrates how to prevent the default behavior of the **"ENTER"** key using the `keyPressed` event.
 
@@ -244,9 +244,9 @@ The following example demonstrates how to prevent the default behavior of the **
 
 ### Custom shortcut keys to perform grid actions
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control enables you to enhance the usablity of keyboard shortcuts for various grid actions and navigation. In addition to the built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
+The ##Platform_Name## Grid control enables you to enhance the usablity of keyboard shortcuts for various grid actions and navigation. In addition to the built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
 
-To achieve this, you can utilize the [keyPressed](../api/grid/#keypressed) event of the grid. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
+To achieve this, you can utilize the [keyPressed](../api/grid#keypressed) event of the grid. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
 
 The following example demonstrates how to perform grid actions using shortcut keys through the `keyPressed` event. Within the event, define the following custom shortcuts to perform various grid actions:
 
@@ -264,7 +264,7 @@ And prevented the default actions associated with the following keyboard shortcu
 * Delete 
 * Enter
 
-You can add more custom shortcuts and actions as needed to enhance the functionality of your Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control.
+You can add more custom shortcuts and actions as needed to enhance the functionality of your ##Platform_Name## Grid control.
 
 {% if page.publishingplatform == "typescript" %}
 

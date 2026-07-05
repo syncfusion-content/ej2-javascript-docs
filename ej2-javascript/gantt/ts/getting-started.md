@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting Started in ##Platform_Name## Gantt Chart Control
 
-The **Syncfusion TypeScript Gantt Chart** is a UI component used to visualize and manage project schedules using a timeline view. It supports hierarchical task data, scheduling, and rich interactive features.
+The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) is a UI component used to visualize and manage project schedules using a timeline view. It supports hierarchical task data, scheduling, and rich interactive features.
 
 This section explains the steps to create a simple Gantt and demonstrates the basic usage of the gantt component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 

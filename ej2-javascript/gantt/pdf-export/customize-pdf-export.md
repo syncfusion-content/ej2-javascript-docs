@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # To customize PDF export
 
-Customizing PDF export in the ##Platform_Name## Gantt Chart control allows tailoring exported documents for specific needs, using [PdfExportProperties](../../api/gantt/pdfexportproperties) to adjust file names, page orientation, size, columns, headers, footers, timelines, and templates. Ensuring focused content like selected rows or styled taskbars, with the `PdfExport` module injected and [allowPdfExport](../../api/gantt#allowpdfexport) enabled. Use [beforePdfExport](../../gantt/events#beforepdfexport) and [pdfExportComplete](../../gantt/events#pdfexportcomplete) events for pre-export and post-export modifications, and [pdfQueryTaskbarInfo](../../gantt/events#pdfquerytaskbarinfo) for taskbar styling, supporting RTL layouts via [enableRtl](../../api/gantt#enablertl).
+Customizing PDF export in the [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control allows tailoring exported documents for specific needs, using [PdfExportProperties](../../api/gantt/pdfexportproperties) to adjust file names, page orientation, size, columns, headers, footers, timelines, and templates. Ensuring focused content like selected rows or styled taskbars, with the `PdfExport` module injected and [allowPdfExport](../../api/gantt#allowpdfexport) enabled. Use [beforePdfExport](../../gantt/events#beforepdfexport) and [pdfExportComplete](../../gantt/events#pdfexportcomplete) events for pre-export and post-export modifications, and [pdfQueryTaskbarInfo](../../gantt/events#pdfquerytaskbarinfo) for taskbar styling, supporting RTL layouts via [enableRtl](../../api/gantt#enablertl).
 
 ## Customize file name
 
@@ -448,9 +448,9 @@ The [taskSegmentStyles](../../api/gantt/itaskbarstyle#tasksegmentstyles) propert
 
 ### Exporting with column template
 
-The PDF export functionality allows to export Grid columns that include images, hyperlinks, and custom text to an PDF document using [pdfQueryCellInfo](../../api/gantt/pdfquerycellinfoeventargs/) event.
+The PDF export functionality allows to export Grid columns that include images, hyperlinks, and custom text to an PDF document using [pdfQueryCellInfo](../../api/gantt/pdfquerycellinfoeventargs) event.
 
-In the following sample, the hyperlinks and images are exported to PDF using [hyperlink](../../api/gantt/pdfquerycellinfoeventargs#hyperlink) and [image](../../api/gantt/pdfquerycellinfoeventargs#image) properties in the [pdfQueryCellInfo](../../api/gantt/pdfquerycellinfoeventargs/) event.
+In the following sample, the hyperlinks and images are exported to PDF using [hyperlink](../../api/gantt/pdfquerycellinfoeventargs#hyperlink) and [image](../../api/gantt/pdfquerycellinfoeventargs#image) properties in the [pdfQueryCellInfo](../../api/gantt/pdfquerycellinfoeventargs) event.
 
 >Note: PDF Export supports base64 string to export the images.
 
@@ -553,9 +553,9 @@ In the following sample, task label template with images and text are exported t
 
 ### Exporting with header template
 
-The PDF export functionality allows to export header template that include `images` and `text` to an PDF document using [pdfColumnHeaderQueryCellInfo](../../api/gantt/pdfColumnHeaderQueryCellInfoEventArgs/) event.
+The PDF export functionality allows to export header template that include `images` and `text` to an PDF document using [pdfColumnHeaderQueryCellInfo](../../api/gantt/pdfColumnHeaderQueryCellInfoEventArgs) event.
 
-In the following sample, header template with images and text are exported to PDF using [headerTemplate](../../api/gantt/pdfcolumnheaderquerycellinfoeventargs#headertemplate) properties in the [pdfColumnHeaderQueryCellInfo](../../api/gantt/pdfcolumnheaderquerycellinfoeventargs/) event.
+In the following sample, header template with images and text are exported to PDF using [headerTemplate](../../api/gantt/pdfcolumnheaderquerycellinfoeventargs#headertemplate) properties in the [pdfColumnHeaderQueryCellInfo](../../api/gantt/pdfcolumnheaderquerycellinfoeventargs) event.
 
 >Note: PDF Export supports base64 string to export the images.
 

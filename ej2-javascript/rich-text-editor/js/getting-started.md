@@ -2,11 +2,7 @@
 layout: post
 title: Getting started with ##Platform_Name## Rich text editor | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more details.
-<<<<<<< HEAD
-canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/javascript-rich-text-editor"
-=======
 canonical_url: "https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor"
->>>>>>> 6d423ae3a72932cc7a70f3b683cc6314d695c6cf
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -65,7 +61,7 @@ Add the following styles inside the `my-app/index.html` file to include the `tai
 {% endhighlight %}
 {% endtabs %}
 
-I> Ensure that all Syncfusion Rich Text Editor theme style files are loaded in the exact order shown above. The order is important because these styles have dependencies, and loading them incorrectly may cause styling issues in the controls. You can also refer to the [themes section](https://ej2.syncfusion.com/documentation/appearance/theme) for details about built-in themes and CSS references for individual controls.
+I> Ensure that all Rich Text Editor theme style files are loaded in the exact order shown above. The order is important because these styles have dependencies, and loading them incorrectly may cause styling issues in the controls. You can also refer to the [themes section](https://ej2.syncfusion.com/documentation/appearance/theme) for details about built-in themes and CSS references for individual controls.
 
 ## Adding Rich Text Editor scripts
 
@@ -87,7 +83,7 @@ Add the following scripts inside the `my-app/index.html` file to include the Ric
 {% endhighlight %}
 {% endtabs %}
 
-I> Ensure that all Syncfusion Rich Text Editor script files are loaded in the correct order and included before initializing the control. The order is important because the scripts have dependencies, and loading them incorrectly may prevent the Rich Text Editor from working properly or cause runtime errors.
+I> Ensure that all Rich Text Editor script files are loaded in the correct order and included before initializing the control. The order is important because the scripts have dependencies, and loading them incorrectly may prevent the Rich Text Editor from working properly or cause runtime errors.
 Make sure the required base and dependent scripts are included along with the Rich Text Editor script.
 
 ## Adding Rich Text Editor control
@@ -122,7 +118,7 @@ Output will be displayed as follows.
         
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/text-area-sample-cs3" %}
 
-> You can refer to our [JavaScript Rich Text Editor](https://www.syncfusion.com/javascript-ui-controls/js-wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Rich Text Editor example](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/rich-text-editor.html) that shows how to render the rich text editor tools.
+> You can refer to our [JavaScript Rich Text Editor](https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Rich Text Editor example](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/rich-text-editor.html) that shows how to render the rich text editor tools. 
 
 ## See also
 

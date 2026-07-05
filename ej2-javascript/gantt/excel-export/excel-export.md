@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Excel Export in ##Platform_Name## Gantt Chart Control
 
-The Syncfusion ##Platform_Name## Gantt Chart control supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.
+The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.
 
 To enable Excel or CSV export functionality, set the [allowExcelExport](../../api/gantt#allowexcelexport) property to **true** and inject the `ExcelExport` service into the control's `providers` array.
 

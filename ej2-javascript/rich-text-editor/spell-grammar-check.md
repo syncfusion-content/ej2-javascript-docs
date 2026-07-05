@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spell & Grammar Check in ##Platform_Name## Rich text editor control | Syncfusion
+title: Spell & Grammar Check in ##Platform_Name## Richtexteditor | Syncfusion
 description: Learn here all about Spell & Grammar Check in Syncfusion ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Spell & Grammar Check
@@ -25,7 +25,7 @@ WProofreader is a powerful tool that enhances content quality by detecting and c
 
 ## Set up the WProofreader
 
-For integrating the `WProofreader` refer the following link : https://webspellchecker.com, you need to install the[@webspellchecker/wproofreader-sdk-js](https://www.npmjs.com/package/@webspellchecker/wproofreader-sdk-js) package using NPM or Yarn:
+For integrating the `WProofreader` refer the following link : [WebSpellChecker](https://webspellchecker.com), you need to install the `@webspellchecker/wproofreader-sdk-js` package using NPM or Yarn:
 
 ```bash
 npm install @webspellchecker/wproofreader-sdk-js
@@ -47,7 +47,7 @@ After installing the package, you can integrate WProofreader with the Rich Text 
 5. Configure the activation key in the `serviceId` property.
 
 
-Below is an example code snippet to integrate WProofreader with the Syncfusion Rich Text Editor:
+Below is an example code snippet to integrate WProofreader with the Rich Text Editor:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -73,6 +73,6 @@ Below is an example code snippet to integrate WProofreader with the Syncfusion R
 
 {% endif %}
 
-Below is a GIF demonstrating how to integrate WProofreader with the Syncfusion Rich Text Editor.
+Below is a GIF demonstrating how to integrate WProofreader with the Rich Text Editor.
 
 ![WebSpellChecker](images/spell-grammar-check.gif)

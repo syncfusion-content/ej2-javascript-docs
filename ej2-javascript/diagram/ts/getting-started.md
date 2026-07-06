@@ -20,13 +20,8 @@ This section explains the steps required to create a simple diagram and demonstr
 Ensure the following tools are installed on your machine:
 
 * [Git](https://git-scm.com/downloads)
-<<<<<<< HEAD
 * [Node.js](https://nodejs.org/en)
 * [Visual Studio Code](https://code.visualstudio.com)
-=======
-* [Node.js](https://nodejs.org/en/)
-* [Visual Studio Code](https://code.visualstudio.com/)
->>>>>>> 6d423ae3a72932cc7a70f3b683cc6314d695c6cf
 
 ## Set up the development environment
 

@@ -57,13 +57,8 @@ Next, it will ask the specific information about the web part.
 1.Install the [`@syncfusion/ej2-buttons`](https://www.npmjs.com/package/@syncfusion/ej2-buttons) package and required theme package from npm in the application using the following command line.
 
 ```
-<<<<<<< HEAD
 npm install @syncfusion/ej2-buttons @syncfusion/ej2-fabric-theme --save
 ```
-=======
-npm install @syncfusion/ej2 --save
- ```
->>>>>>> 6d423ae3a72932cc7a70f3b683cc6314d695c6cf
 
 2.Open the SharePoint application in Visual Studio Code, and add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Button control script and styles in the `~/src/webparts/buttonComponent/ButtonComponentWebPart.ts` file.
 
@@ -81,11 +76,7 @@ import * as strings from 'ButtonComponentWebPartStrings';
 import { Button } from '@syncfusion/ej2-buttons';
 
 // add Syncfusion Essential JS 2 style reference from node_modules
-<<<<<<< HEAD
 require('../../../node_modules/@syncfusion/ej2-fabric-theme/styles/fabric.css');
-=======
-require('../../../node_modules/@syncfusion/ej2/fabric.css');
->>>>>>> 6d423ae3a72932cc7a70f3b683cc6314d695c6cf
 
 ....
 ....

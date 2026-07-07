@@ -1,16 +1,28 @@
-import { Diagram, NodeModel, ErShapeModel, ErFieldModel, ErDiagrams } from "@syncfusion/ej2-diagrams";
+import {
+  Diagram,
+  NodeModel,
+  ErShapeModel,
+  ErFieldModel,
+  ErDiagrams
+} from '@syncfusion/ej2-diagrams';
 
 Diagram.Inject(ErDiagrams);
 
 // Define ER entities with custom styling
 const customer: NodeModel = {
   id: 'Customer',
-  offsetX: 300,
-  offsetY: 300,
+  offsetX: 200,
+  offsetY: 200,
   shape: {
     type: 'Er',
     header: {
-      annotation: { content: 'CUSTOMER TABLE', style: { bold: true, color: 'white' } },
+      annotation: {
+        content: 'CUSTOMER TABLE',
+        style: {
+          bold: true,
+          color: 'white'
+        }
+      },
       height: 35,
       style: {
         fill: '#2E75B6',
@@ -38,24 +50,26 @@ const customer: NodeModel = {
       }
     ] as ErFieldModel[],
     fieldDefaults: {
-      alternateRowColors: ['#ffffff', '#E7F0F7']
-    },
+      alternateRowColors: ['#E7F0F7', '#ffffff']
+    }
   } as ErShapeModel,
   style: {
     fill: '#ffffff',
     strokeColor: '#2E75B6',
-    strokeWidth: 1,
+    strokeWidth: 1
   }
 };
 
 const product: NodeModel = {
   id: 'Product',
-  offsetX: 850,
-  offsetY: 300,
+  offsetX: 600,
+  offsetY: 200,
   shape: {
     type: 'Er',
     header: {
-      annotation: { content: 'PRODUCT CATALOG' },
+      annotation: {
+        content: 'PRODUCT CATALOG'
+      },
       height: 35,
       style: {
         fill: '#70AD47',
@@ -70,7 +84,9 @@ const product: NodeModel = {
         name: 'ProductID',
         dataType: 'INT',
         isPrimaryKey: true,
-        style: { fill: '#FFE699' }
+        style: {
+          fill: '#FFE699'
+        }
       },
       {
         id: 'prod_name',
@@ -81,25 +97,27 @@ const product: NodeModel = {
         id: 'prod_price',
         name: 'Price',
         dataType: 'DECIMAL(10,2)',
-        style: { fill: '#C6E0B4' }
+        style: {
+          fill: '#C6E0B4'
+        }
       }
     ] as ErFieldModel[],
     fieldDefaults: {
       alternateRowColors: ['#ffffff', '#F2F2F2']
-    },
+    }
   } as ErShapeModel,
   style: {
     fill: '#ffffff',
     strokeColor: '#70AD47',
-    strokeWidth: 1.5,
+    strokeWidth: 1.5
   }
 };
 
 // Initialize diagram control
-let diagram: Diagram = new Diagram({
+const diagram: Diagram = new Diagram({
   width: '100%',
-  height: '600px',
-  nodes: [customer, product],
+  height: '400px',
+  nodes: [customer, product]
 });
 
-diagram.appendTo("#element");
+diagram.appendTo('#element');

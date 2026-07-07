@@ -1,12 +1,16 @@
+ej.diagrams.Diagram.Inject(ej.diagrams.ErDiagrams);
+
 // Define a basic ER entity (Customer table)
 var customer = {
   id: 'Customer',
-  offsetX: 400,
-  offsetY: 300,
+  offsetX: 300,
+  offsetY: 200,
   shape: {
     type: 'Er',
     header: {
-      annotation: { content: 'Customer' }
+      annotation: {
+        content: 'Customer'
+      }
     },
     fields: [
       {
@@ -36,8 +40,8 @@ var customer = {
 var diagram = new ej.diagrams.Diagram(
   {
     width: '100%',
-    height: '600px',
-    nodes: [customer],
+    height: '400px',
+    nodes: [customer]
   },
   '#element'
 );

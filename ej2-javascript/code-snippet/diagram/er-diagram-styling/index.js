@@ -1,12 +1,20 @@
+ej.diagrams.Diagram.Inject(ej.diagrams.ErDiagrams);
+
 // Define ER entities with custom styling
 var customer = {
   id: 'Customer',
-  offsetX: 300,
-  offsetY: 300,
+  offsetX: 200,
+  offsetY: 200,
   shape: {
     type: 'Er',
     header: {
-      annotation: { content: 'CUSTOMER TABLE', style: { bold: true, color: 'white' } },
+      annotation: {
+        content: 'CUSTOMER TABLE',
+        style: {
+          bold: true,
+          color: 'white'
+        }
+      },
       height: 35,
       style: {
         fill: '#2E75B6',
@@ -34,8 +42,8 @@ var customer = {
       }
     ],
     fieldDefaults: {
-      alternateRowColors: ['#ffffff', '#E7F0F7']
-    },
+      alternateRowColors: ['#E7F0F7', '#ffffff']
+    }
   },
   style: {
     fill: '#ffffff',
@@ -46,12 +54,18 @@ var customer = {
 
 var product = {
   id: 'Product',
-  offsetX: 850,
-  offsetY: 300,
+  offsetX: 600,
+  offsetY: 200,
   shape: {
     type: 'Er',
     header: {
-      annotation: { content: 'PRODUCT CATALOG', style: { bold: true, color: 'white' } },
+      annotation: {
+        content: 'PRODUCT CATALOG',
+        style: {
+          bold: true,
+          color: 'white'
+        }
+      },
       height: 35,
       style: {
         fill: '#70AD47',
@@ -66,7 +80,9 @@ var product = {
         name: 'ProductID',
         dataType: 'INT',
         isPrimaryKey: true,
-        style: { fill: '#FFE699' }
+        style: {
+          fill: '#FFE699'
+        }
       },
       {
         id: 'prod_name',
@@ -77,17 +93,19 @@ var product = {
         id: 'prod_price',
         name: 'Price',
         dataType: 'DECIMAL(10,2)',
-        style: { fill: '#C6E0B4' }
+        style: {
+          fill: '#C6E0B4'
+        }
       }
     ],
     fieldDefaults: {
       alternateRowColors: ['#ffffff', '#F2F2F2']
-    },
+    }
   },
   style: {
     fill: '#ffffff',
     strokeColor: '#70AD47',
-    strokeWidth: 1.5,
+    strokeWidth: 1.5
   }
 };
 
@@ -95,8 +113,8 @@ var product = {
 var diagram = new ej.diagrams.Diagram(
   {
     width: '100%',
-    height: '600px',
-    nodes: [customer, product],
+    height: '400px',
+    nodes: [customer, product]
   },
   '#element'
 );

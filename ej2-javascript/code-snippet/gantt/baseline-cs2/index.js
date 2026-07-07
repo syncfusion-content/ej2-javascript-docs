@@ -50,19 +50,19 @@ function baselineTemplate(props) {
     }
     var taskRecord = props.taskData;
     var ganttProperties = taskRecord.ganttProperties;
-    var chartRowsModule = gantt.chartRowsModule;
+    var chartRowsModule = ganttChart.chartRowsModule;
     var baselineTop = chartRowsModule.baselineTop;
     var baselineHeight = chartRowsModule.baselineHeight;
     var taskBarHeight = chartRowsModule.taskBarHeight;
     var milestoneHeight = chartRowsModule.milestoneHeight;
     var milestoneMarginTop = chartRowsModule.milestoneMarginTop;
-    var rowHeight = gantt.rowHeight;
-    var renderBaseline = gantt.renderBaseline;
-    var enableRtl = gantt.enableRtl;
+    var rowHeight = ganttChart.rowHeight;
+    var renderBaseline = ganttChart.renderBaseline;
+    var enableRtl = ganttChart.enableRtl;
     var taskSpacing = 9;
     var baselineSpacing = 4;
     function getLeft(date) {
-        return gantt.dataOperation.getTaskLeft(new Date(date), false, ganttProperties.calendarContext);
+        return ganttChart.dataOperation.getTaskLeft(new Date(date), false, ganttProperties.calendarContext);
     }
     function getWidth(start, duration) {
         if (!start || duration == null || duration === 0)
@@ -70,8 +70,8 @@ function baselineTemplate(props) {
         // Calculate end date based on start date and duration
         var end = new Date(start);
         end.setDate(end.getDate() + duration);
-        var leftStart = gantt.dataOperation.getTaskLeft(new Date(start), false, ganttProperties.calendarContext);
-        var leftEnd = gantt.dataOperation.getTaskLeft(end, false, ganttProperties.calendarContext);
+        var leftStart = ganttChart.dataOperation.getTaskLeft(new Date(start), false, ganttProperties.calendarContext);
+        var leftEnd = ganttChart.dataOperation.getTaskLeft(end, false, ganttProperties.calendarContext);
         return leftEnd - leftStart;
     }
     function render(start, duration, index) {

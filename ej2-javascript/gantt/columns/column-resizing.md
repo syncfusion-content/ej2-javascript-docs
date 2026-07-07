@@ -244,4 +244,4 @@ To resize a column:
 
 The screenshot below illustrates column resizing on a touch device.
 
-![Column resize](./images/column-resize.png)
+![Column resize](../images/column-resize.png)

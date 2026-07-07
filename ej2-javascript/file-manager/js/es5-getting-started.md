@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## File Manager control
 
-This section explains the steps required to create a simple JS2 File Manager and demonstrate the basic usage of the File Manager control in a JavaScript application.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 File Manager and demonstrate the basic usage of the File Manager control in a JavaScript application.
 
 ## Dependencies
 

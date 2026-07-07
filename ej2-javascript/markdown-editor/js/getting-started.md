@@ -117,7 +117,7 @@ Output will be displayed as follows.
           
 {% previewsample "page.domainurl/code-snippet/markdown-editor/getting-started-cs2" %}
 
-> You can refer to our [JavaScript Rich Text Editor](https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Markdown Editor example](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/mark-down-editor/overview.html) that shows how to render the markdown editor.
+> You can refer to our [JavaScript Rich Text Editor](https://www.syncfusion.com/javascript-ui-controls/js-wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Markdown Editor example](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/mark-down-editor/overview.html) that shows how to render the markdown editor.
 
 ## See Also
 

@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 ## Key features
 
-- Lightweight Svelte component integration for the Rich Text Editor.  
+- Lightweight Svelte component integration for the Syncfusion Rich Text Editor.  
 - Support for toolbar modules, HTML source editing, image/link handling, and quick toolbar.  
 - Seamless life cycle handling using onMount and onDestroy for DOM-dependent initialization and cleanup.  
 - Easy theming via Syncfusion built-in themes and CSS imports. 

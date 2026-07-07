@@ -1,16 +1,23 @@
-import { Diagram, NodeModel, ErShapeModel, ErDiagrams } from "@syncfusion/ej2-diagrams";
+import {
+  Diagram,
+  NodeModel,
+  ErShapeModel,
+  ErDiagrams
+} from '@syncfusion/ej2-diagrams';
 
 Diagram.Inject(ErDiagrams);
 
 // Define a basic ER entity (Customer table)
 const customer: NodeModel = {
   id: 'Customer',
-  offsetX: 400,
-  offsetY: 300,
+  offsetX: 300,
+  offsetY: 200,
   shape: {
     type: 'Er',
     header: {
-      annotation: { content: 'Customer' }
+      annotation: {
+        content: 'Customer'
+      }
     },
     fields: [
       {
@@ -37,10 +44,10 @@ const customer: NodeModel = {
 };
 
 // Initialize diagram control
-let diagram: Diagram = new Diagram({
+const diagram: Diagram = new Diagram({
   width: '100%',
-  height: '600px',
-  nodes: [customer],
+  height: '400px',
+  nodes: [customer]
 });
 
-diagram.appendTo("#element");
+diagram.appendTo('#element');

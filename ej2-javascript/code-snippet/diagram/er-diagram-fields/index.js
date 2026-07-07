@@ -1,12 +1,16 @@
+ej.diagrams.Diagram.Inject(ej.diagrams.ErDiagrams);
+
 // Define an ER entity with various field properties
 var product = {
   id: 'Product',
-  offsetX: 400,
-  offsetY: 350,
+  offsetX: 300,
+  offsetY: 200,
   shape: {
     type: 'Er',
     header: {
-      annotation: { content: 'Product' }
+      annotation: {
+        content: 'Product'
+      }
     },
     fields: [
       {
@@ -53,8 +57,8 @@ var product = {
 var diagram = new ej.diagrams.Diagram(
   {
     width: '100%',
-    height: '600px',
-    nodes: [product],
+    height: '400px',
+    nodes: [product]
   },
   '#element'
 );

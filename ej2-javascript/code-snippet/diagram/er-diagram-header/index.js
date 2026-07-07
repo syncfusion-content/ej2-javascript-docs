@@ -1,17 +1,22 @@
+ej.diagrams.Diagram.Inject(ej.diagrams.ErDiagrams);
+
 // Define an ER entity with customized header
 var customer = {
   id: 'Customer',
-  offsetX: 400,
-  offsetY: 300,
+  offsetX: 300,
+  offsetY: 200,
   shape: {
     type: 'Er',
     header: {
-      annotation: { content: 'CUSTOMER TABLE', style: {
-        color: 'white',
-        fontSize: 13,
-        bold: true,
-        fontFamily: 'Arial'
-      }},
+      annotation: {
+        content: 'CUSTOMER TABLE',
+        style: {
+          color: 'white',
+          fontSize: 13,
+          bold: true,
+          fontFamily: 'Arial'
+        }
+      },
       height: 35,
       style: {
         fill: '#2E75B6'
@@ -42,7 +47,7 @@ var customer = {
 var diagram = new ej.diagrams.Diagram(
   {
     width: '100%',
-    height: '600px',
+    height: '400px',
     nodes: [customer]
   },
   '#element'

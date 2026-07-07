@@ -53,7 +53,6 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide bui
 
 The quickstart application is preconfigured to use the `Fluent2` theme. To install the [Fluent2](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) theme package, use the following command:
 
-<<<<<<< HEAD
 {% tabs %}
 {% highlight bash tabtitle="npm" %}
 
@@ -71,11 +70,6 @@ The required styles are imported in the `~/src/styles/styles.css` file, as shown
 
 {% endhighlight %}
 {% endtabs %}
-=======
-```
-@import "../../node_modules/@syncfusion/ej2/fluent2.css";
-```
->>>>>>> 6d423ae3a72932cc7a70f3b683cc6314d695c6cf
 
 > Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 

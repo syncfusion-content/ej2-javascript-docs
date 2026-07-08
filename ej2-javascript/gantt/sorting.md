@@ -263,6 +263,8 @@ You can customize the sorting behavior in the Syncfusion<sup style="font-size:70
  
 The example below demonstrates how to display `null` values at the bottom of the Gantt Chart while sorting the `TaskName` column in both ascending and descending order.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/sorting-cs6/index.ts %}
@@ -327,6 +329,8 @@ You can prevent sorting on specific columns in the Syncfusion<sup style="font-si
 
 The following sample demonstrates how to prevent sorting for the **TaskID** and **StartDate** columns.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/sorting-cs7/index.ts %}
@@ -355,6 +359,8 @@ The following sample demonstrates how to prevent sorting for the **TaskID** and 
 ## Disable clear sort
 
 By default, clicking a column header switches the sort order between ascending, descending, and unsorted. To restrict this to only ascending and descending, set [sortSettings.allowUnsort](../api/gantt/sortsettings#allowunsort) to **false**. This ensures sorting remains active without reverting to an unsorted state.
+
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

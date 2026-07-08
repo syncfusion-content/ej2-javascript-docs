@@ -152,27 +152,27 @@ If the specified format does not match the resolved value type, the original val
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/circular-chart/user-interaction/inline-format/index.ts %}
+{% include code-snippet/circular-chart/user-interaction/tooltip-inline-format/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/circular-chart/user-interaction/inline-format/index.html %}
+{% include code-snippet/circular-chart/user-interaction/tooltip-inline-format/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/circular-chart/user-interaction/inline-format" %}
+{% previewsample "page.domainurl/code-snippet/circular-chart/user-interaction/tooltip-inline-format" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/circular-chart/user-interaction/inline-format/index.js %}
+{% include code-snippet/circular-chart/user-interaction/tooltip-inline-format/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/circular-chart/user-interaction/inline-format/index.html %}
+{% include code-snippet/circular-chart/user-interaction/tooltip-inline-format/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/circular-chart/user-interaction/inline-format" %}
+{% previewsample "page.domainurl/code-snippet/circular-chart/user-interaction/tooltip-inline-format" %}
 
 {% endif %}
 

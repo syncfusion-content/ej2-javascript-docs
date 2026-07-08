@@ -11,7 +11,7 @@ Diagram.Inject(ErDiagrams);
 // Define ER entities with custom styling
 const customer: NodeModel = {
   id: 'Customer',
-  offsetX: 300,
+  offsetX: 200,
   offsetY: 200,
   shape: {
     type: 'Er',
@@ -62,8 +62,8 @@ const customer: NodeModel = {
 
 const product: NodeModel = {
   id: 'Product',
-  offsetX: 850,
-  offsetY: 300,
+  offsetX: 600,
+  offsetY: 200,
   shape: {
     type: 'Er',
     header: {

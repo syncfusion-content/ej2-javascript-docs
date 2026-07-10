@@ -11,7 +11,9 @@ domainurl: ##DomainURL##
 
 # License key registration in ##Platform_Name## Licensing control
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be registered, if your project using Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript(ES6) packages reference. The generated license key is a string that needs to be registered after any [Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript(ES6) reference](https://ej2.syncfusion.com/documentation/getting-started/quick-start).
+Syncfusion<sup style="font-size:70%">&reg;</sup> license key must be registered if your project uses Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES6) package references. The generated license key is a string that needs to be registered after any [Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES6) reference](https://ej2.syncfusion.com/documentation/getting-started/quick-start).
+
+> **Prerequisites:** Ensure [Node.js](https://nodejs.org/) and npm are installed on your machine before using the `npx` command.
 
 >Note: Syncfusion<sup style="font-size:70%">&reg;</sup> license validation is done offline during application execution and does not require internet access. Apps registered with a Syncfusion<sup style="font-size:70%">&reg;</sup> license key can be deployed on any system that does not have an internet connection.
 
@@ -38,7 +40,8 @@ registerLicense('Replace your generated license key here');
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> license key using the npx command
 
-Register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key through npx command in one of the following ways,
+Register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key through the `npx syncfusion-license` command in one of the following ways.
+
 
 * [Register the license key with the license file](#register-the-license-key-with-the-license-file)
 * [Register the license key with the environment variable](#register-the-license-key-with-the-environment-variable)
@@ -75,37 +78,38 @@ The following steps show how to set environment variable in different operating 
 
 #### Windows
 
-* Open the command prompt and use [setx](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/setx) command to add the new environment variable.
+* Open the command prompt and use the [setx](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/setx) command to add the new environment variable.
 
 ```
 setx SYNCFUSION_LICENSE "license key"
 ```
 
+
 #### Mac
 
 * Open the terminal and use the `env` command to view the variables list.
 
-* You can set the environment variable by using below command,
+* If you use `zsh` (the default shell on recent macOS versions), add the variable to `~/.zshrc` instead of `~/.bash_profile`. You can set the environment variable by using the command below,
 
 ```
 echo 'export SYNCFUSION_LICENSE="license key"' >> ~/.bash_profile
 ```
 
-* If you want to modify the environment variable in the bash profile. Use the below command,
+* If you want to modify the environment variable in the bash profile, use the command below,
 
 ```
 nano .bash_profile
 ```
 
-* Once modified the variable. Press `ctrl+x` to exit then `Y` and `Enter` button to save the changes.
+* Once you have modified the variable, press `Ctrl+X` to exit, then `Y` and `Enter` to save the changes.
 
-* Close the terminal and open it again to see the environment variables changes using `env` command.
+* Close the terminal and open it again to see the environment variable changes using the `env` command.
 
 #### Linux
 
 * Open the terminal and use the `env` command to view the variables list.
 
-* You can set or modify the [environment variable](https://help.ubuntu.com/community/EnvironmentVariables) by using below command,
+* You can set the [environment variable](https://help.ubuntu.com/community/EnvironmentVariables) for the current session by using the command below,
 
 ```
 export SYNCFUSION_LICENSE='license key'
@@ -131,7 +135,7 @@ The following sections show how to use an environment variable in CI services.
 
 #### GitHub actions
 
-* Create a [new Repository Secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) or an [Organization Secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-an-organization). Set the name of the secret to `SYNCFUSION_LICENSE` and use the license key as a value.
+* Create a [new Repository Secret](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository) or an [Organization Secret](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-an-organization). Set the name of the secret to `SYNCFUSION_LICENSE` and use the license key as a value.
 
 * Add the Syncfusion<sup style="font-size:70%">&reg;</sup> license activation command after running npm install or yarn like below,
 
@@ -209,6 +213,7 @@ registerLicense('license-key-1-here;license-key-2-here');
 ```
 
 > When registering multiple keys, ensure there are no spaces before or after the semicolon separator.
+
 
 ## See also
 

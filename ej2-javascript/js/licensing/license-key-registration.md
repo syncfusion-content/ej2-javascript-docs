@@ -18,18 +18,18 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> license key must be registe
 
 The following code is used to register the license.
 
-## Javascript es5
+## JavaScript ES5
 
-Register the license key by using  'registerLicense' method after the [Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript script](https://ej2.syncfusion.com/javascript/documentation/getting-started/quick-start) file reference as below.
+Register the license key by using the `registerLicense` method after the [Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript script](https://ej2.syncfusion.com/javascript/documentation/getting-started/quick-start) file reference as below.
 
->Note: As we have mandated License registration for the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript components, we realize there is a possibility to view the registered Syncfusion<sup style="font-size:70%">&reg;</sup> License key from your application by others. We acknowledge this is taking place in the JavaScript platform, as we have minimal scope for hiding the License key and we also recommend not to advertise it.
+> **Note:** Because the license key is registered in client-side JavaScript, it can be viewed in the application source. Avoid exposing the key publicly.
 
 ```ts
 // Registering Syncfusion license key
 ej.base.registerLicense('Replace your generated license key here');
 ```
 
->Note: Only from 2022 Vol 1 v20.1.0.47, license key registration required for Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 products.
+> **Note:** License key registration is required starting from 2022 Vol 1 v20.1.0.47 for Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 products.
 
 ## Register Multiple License Keys
 

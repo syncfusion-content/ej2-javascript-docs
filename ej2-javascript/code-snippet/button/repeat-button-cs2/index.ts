@@ -37,7 +37,7 @@ btnObj.clicked = (args: ClickedEventArgs) => {
     btnObj.disabled = (e.target as HTMLInputElement).checked;
 });
 
-document.getElementById('reset-btn')?.addEventListener('click', () => {
+(document.getElementById('reset-btn') as HTMLInputElement).addEventListener('click', () => {
     initialCount = 0;
     repeatCount = 0;
     (document.getElementById('initial-count') as HTMLElement).textContent = '0';

@@ -13,8 +13,6 @@ domainurl: ##DomainURL##
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> license key must be registered if your project uses Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES6) package references. The generated license key is a string that needs to be registered after any [Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES6) reference](https://ej2.syncfusion.com/documentation/getting-started/quick-start).
 
-> **Prerequisites:** Ensure [Node.js](https://nodejs.org/) and npm are installed on your machine before using the `npx` command.
-
 >Note: Syncfusion<sup style="font-size:70%">&reg;</sup> license validation is done offline during application execution and does not require internet access. Apps registered with a Syncfusion<sup style="font-size:70%">&reg;</sup> license key can be deployed on any system that does not have an internet connection.
 
 Generate the [Syncfusion<sup style="font-size:70%">&reg;</sup> license key](https://ej2.syncfusion.com/documentation/licensing/license-key-generation) and register it in one of the following ways,

@@ -3,7 +3,7 @@ layout: post
 title: AI-Powered Development with JavaScript Controls | Syncfusion
 description: Master AI-powered development with Syncfusion JavaScript controls  using MCP Server and skills. Learn which approach fits the workflow and get better results.
 platform: ej2-javascript
-control: AI AssistView
+control: AI Assist
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -46,22 +46,26 @@ npm install @syncfusion/ej2-pivotview --save
 
 ## Adding CSS reference
 
-Add the following imports inside the `~/src/style.css` file to include the `tailwind3` theme styles:
+Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls can be applied using CSS or SASS files from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages), CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
+
+The following example demonstrates the installation of the `Tailwind 3` theme package from npm. Each component in this theme package includes an `index.css` file that automatically loads all required dependency styles.
+
+To install the [Tailwind 3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme package, use the following command:
 
 {% tabs %}
-{% highlight css tabtitle="style.css" %}
+{% highlight bash tabtitle="npm" %}
 
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-pivotview/styles/tailwind3.css';
+npm install @syncfusion/ej2-tailwind3-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
+Import the required theme styles in the `~/src/style.css` file:
+
+{% tabs %}
+{% highlight css tabtitle="styles.css" %}
+
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/pivotview/index.css';
 
 {% endhighlight %}
 {% endtabs %}

@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Getting Started with JavaScript UI Composer Skill | Syncfusion®
-description: Install Syncfusion® JavaScript UI Composer to generate production-ready JavaScript controls from natural-language prompts.
+title: Syncfusion JavaScript UI Builder Skill for AI Assistants | Syncfusion®
+description: Install Syncfusion® JavaScript UI Builder to generate production-ready JavaScript controls from natural-language prompts.
 control: Skills
 platform: ej2-javascript
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion® JavaScript UI Composer Skill for AI Assistants
+# Syncfusion® JavaScript UI Builder Skill for AI Assistants
 
-**Syncfusion® JavaScript UI Composer** is an AI-powered skill and companion agent that accelerates JavaScript application development by transforming natural-language UI requirements into production-ready code using Syncfusion® JavaScript UI libraries. 
+**Syncfusion® JavaScript UI Builder** is an AI-powered agent skill that accelerates JavaScript application development by transforming natural-language UI requirements into production-ready code using Syncfusion® JavaScript UI controls. 
 
 Integrated with your AI-powered IDE, it leverages deep knowledge of **Syncfusion® controls** to deliver accurate and ready-to-use code.
-By combining intelligent code generation with best practices, accessibility standards, and design-system consistency, JavaScript UI Composer helps you rapidly build scalable dashboards and user interfaces without leaving your development workflow.
+By combining intelligent code generation with best practices, accessibility standards, and design-system consistency, JavaScript UI Builder helps you rapidly build scalable dashboards and user interfaces without leaving your development workflow.
 
 ## Prerequisites
 
-Before installing JavaScript UI Composer, ensure the following:
+Before installing JavaScript UI Builder, ensure the following:
 
 - Install [APM (Agent Package Manager)](https://microsoft.github.io/apm/getting-started/installation/#quick-install-recommended)
 - Required [Node.js](https://nodejs.org/en) version ≥ 18
@@ -30,33 +30,33 @@ Before installing JavaScript UI Composer, ensure the following:
 
 ## Key Benefits
 
-### **AI-Driven UI Generation**
-- Converts prompts into complete JavaScript controls—not just snippets
+**AI-Driven UI Generation**
+- Transforms prompts into fully developed JavaScript controls rather than just partial code snippets.
 - Automatically selects appropriate Syncfusion® controls and features
 - Produces structured, maintainable code
 
-### **Component Usage & API Accuracy**
+**Component Usage & API Accuracy**
 - Uses correct Syncfusion® component APIs
 - Injects required feature modules (paging, sorting, filtering, etc.)
 - Avoids unsupported or deprecated patterns
 
-### **Patterns & Best Practices**
+**Patterns & Best Practices**
 - Recommended component composition and state management
 - Event handling aligned with JavaScript standards
 - Secure and scalable coding patterns
 
-### **Accessibility & Responsiveness**
+**Accessibility & Responsiveness**
 - WCAG 2.1 AA–aligned output
 - Semantic HTML with ARIA support
 - Mobile-first responsive layouts
 
-### **Design-System Integration**
+**Design-System Integration**
 - Supports Tailwind, Bootstrap, Material, or custom themes
 - Ensures consistent Syncfusion® styling and theme usage
 
 ## Installation
 
-Before installing JavaScript UI Composer, ensure that APM (Agent Package Manager) is installed and available in your environment.
+Before installing JavaScript UI Builder, ensure that APM (Agent Package Manager) is installed and available in your environment.
 
 ### Verify APM Installation
 
@@ -66,29 +66,29 @@ Run the following command to confirm APM is installed:
 apm --version
 ```
 
-### Install the Syncfusion® JavaScript UI Composer package using APM
+### Install the Syncfusion® JavaScript UI Builder package using APM
 
-Use the APM CLI to install the JavaScript UI Composer skill for your preferred environment:
+Use the APM CLI to install the JavaScript UI Builder skill for your preferred environment:
 
 {% tabs %}
 {% highlight bash tabtitle="Copilot" %}
 
-apm install syncfusion/javascript-ui-composer -t copilot
+apm install syncfusion/javascript-ui-builder -t copilot
 
 {% endhighlight  %}
 {% highlight bash tabtitle="Cursor" %}
 
-apm install syncfusion/javascript-ui-composer -t cursor
+apm install syncfusion/javascript-ui-builder -t cursor
 
 {% endhighlight  %}
 {% highlight bash tabtitle="Codex" %}
 
-apm install syncfusion/javascript-ui-composer -t codex
+apm install syncfusion/javascript-ui-builder -t codex
 
 {% endhighlight  %}
 {% highlight bash tabtitle="Claude" %}
 
-apm install syncfusion/javascript-ui-composer -t claude
+apm install syncfusion/javascript-ui-builder -t claude
 
 {% endhighlight  %}
 {% endtabs %}
@@ -100,23 +100,23 @@ After installation, the following artifacts are added to your project for the Gi
 
 Refer to the [documentation](https://microsoft.github.io/apm/reference/cli/targets/#detection-signals) for details about supported deployment targets.
 
-> For Syncfusion® Code Studio, use the Copilot command above to install the JavaScript UI Composer.
+> For Syncfusion® Code Studio, use the Copilot command above to install the JavaScript UI Builder.
 
-## How the Syncfusion® JavaScript UI Composer Skill Works
+## How the Syncfusion® JavaScript UI Builder Skill Works
 
-1. **Intent Analysis** — Parse the user's prompt to identify component types and high-level layout intent.
-2. **Project Detection** — Automatically detects project framework, package manager, and existing themes.
-3. **Component Mapping** — Map intent to Syncfusion® controls and required feature modules.
+1. **Intent Analysis:** Parse the user's prompt to identify component types and high-level layout intent.
+2. **Project Detection:** Automatically detects project framework, package manager, and existing themes.
+3. **Component Mapping:** Map intent to Syncfusion® controls and required icons.
 4. **Theming & Design System**  
    Load required theming guidelines and confirm key design choices:
-   - CSS framework (Tailwind, Bootstrap, Material, or Greenfield(custom theme)). If no themes detected in the existing project, Greenfield and Syncfusion Tailwind3 theme are shown as the default option—proceed with this or change the theme as preferred.
+   - CSS framework (Tailwind, Bootstrap, Material, or Greenfield(custom theme)). If no themes detected in the existing project, Greenfield and Syncfusion Tailwind3 theme are shown as the default option, which can be used as is or changed based on preference.
    - Syncfusion theme (Tailwind3, Bootstrap5, Material3, fluent2)
    - Light and Dark Mode
    - Core design basics (colors, spacing, typography, responsiveness, accessibility)
-5. **Code Generation** — Produce JavaScript controls with HTML templates and CSS styling.
-6. **Dependency Management** — Recommend or install required Syncfusion® packages and peer dependencies.
-7. **Validation** — Run accessibility and basic security checks, request confirmation for changes.
-8. **Code Insertion** — Create files or patch existing files following project structure and conventions.
+5. **Code Generation:** Produce JavaScript controls with HTML templates and CSS styling.
+6. **Dependency Management:** Recommend or install required Syncfusion® packages and peer dependencies.
+7. **Validation:** Run accessibility and basic security checks, request confirmation for changes.
+8. **Code Insertion:** Create files or patch existing files following project structure and conventions.
 
 Key enforcement points:
 
@@ -129,28 +129,30 @@ Key enforcement points:
 
 ## Using the AI Assistant
 
-After installing JavaScript UI Composer with APM, the relevant agent and skill files are added to your project under:
+After installing JavaScript UI Builder with APM, the relevant agent and skill files are added to your project under:
 
 - `.agent/skills/` (skill files)
-- `.github/agents/` (JavaScript UI composer agent configuration, based on the selected target)
+- `.github/agents/` (JavaScript UI builder agent configuration, based on the selected target)
 
 To start using the skill:
 
 1. Open your supported IDE.
-2. In the chat panel, select the `syncfusion-javascript-ui-composer` agent from the **Agent dropdown**.
+2. In the chat panel, select the `syncfusion-javascript-ui-builder` agent from the **Agent dropdown**.
 
 ![Set Agent](ai-tools/images/UI-Builder-Agent.png)
 
 3. Start prompting the agent with a clear description of your UI requirements.
 
-Examples Prompts:
+> For Syncfusion® Code Studio, If the ui builder agent is not shown, ensure that the agent location is configured to use it in the chat, and refer to the  [documentation](https://help.syncfusion.com/code-studio/reference/configure-properties/usersettings#agent-file-locations) for configure the agent location properly.
+
+**Examples Prompts:**
 
 {% promptcards %}
 {% promptcard Authentication %}
 Create a login page with the Tailwind 3 theme using a centered card layout containing email and password input fields with validation. Include a "Remember Me" checkbox, a forgot password link, and a primary login button. Add a secondary "Create Account" button below. Ensure the layout is responsive and works on mobile, tablet, and desktop.
 {% endpromptcard %}
 {% promptcard Admin Dashboard %}
-Create a CMS Admin Dashboard UI featuring a collapsible sidebar with navigation items for Dashboard, Content, Users, Analytics, and Settings; a top header (AppBar) showing the title "CMS Admin Dashboard" on the left and a user name with profile icon on the right; and a main content area that includes three compact summary cards in a single row displaying Total Content, Total Users, and Active Sessions (each card showing a label, relevant icon, prominent count value, and percentage change from last month), followed by a "Content Management" section with a filterable and data grid containing columns for Title, Author, Status, Date, and Actions (with edit and delete buttons), and finally two charts displayed side by side—a bar chart titled "Content Over Time" and a donut chart titled "Content by Category"—using realistic sample data for both the grid (10–12 rows) and the charts.
+Design a full-viewport premium admin dashboard that feels fluid, spacious, and visually rich—avoid boxed or narrow layouts. Use a soft neutral background (#F8FAFC) with layered white surfaces, subtle shadows, soft borders, and light gradients to create depth. Include a floating glass-style header (logo, search, notifications, avatar dropdown) and a stylish collapsible sidebar with tinted background, smooth animations, and highlighted active states. Structure the main area with an asymmetrical, responsive grid layout using generous spacing (24–32px), featuring larger, visually dominant cards (with icons, gradients, trend indicators, and hover lift), charts (line/bar/pie in cards), and an enhanced data grid (sticky header, sorting, filtering, badges, hover states, pagination). Apply a modern design system (Inter font, 4/8px spacing, muted grays, indigo/blue accents, semantic colors) with smooth 150–250ms transitions, micro-interactions, tooltips, and high accessibility (WCAG AA, ≥44px targets).
 {% endpromptcard %}
 {% endpromptcards %}
 
@@ -158,11 +160,11 @@ Generated code follows best practices with accessible, semantic HTML, responsive
 
 ## Best Practices
 
-Follow these guidelines to get the most out of UI Composer and ensure high-quality production-ready result:
+Follow these guidelines to get the most out of UI Builder and ensure high-quality production-ready result:
 
-- **Stay consistent** — Maintain consistent file organization, naming conventions, and coding standards throughout your project.
-- **Use advanced AI models** — For best results, use **Claude Sonnet 4.6 or higher** capability models to produce better code quality and more accurate implementations.
-- **Review all content and assets before production** — Replace any placeholder images or icons (e.g., from Unsplash or emoji sets) with your brand assets. Also validate the logic, security, and compatibility with your existing code before deployment.
+- **Stay consistent:** Maintain consistent file organization, naming conventions, and coding standards throughout your project.
+- **Use advanced AI models:** For best results, use **Claude Sonnet 4.6 or higher** capability models to produce better code quality and more accurate implementations.
+- **Review all content and assets before production:** Replace any placeholder images or icons (e.g., from Unsplash or emoji sets) with your brand assets. Also validate the logic, security, and compatibility with your existing code before deployment.
 
 ## Troubleshooting
 

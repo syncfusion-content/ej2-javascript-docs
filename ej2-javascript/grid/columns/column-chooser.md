@@ -44,6 +44,41 @@ To use the column chooser, inject the **ColumnChooser** module in the grid.
 
 > The column chooser dialog displays the header text of each column by default. If the header text is not defined for a column, the corresponding column field name is displayed instead.
 
+## Column chooser modes
+
+The Grid column chooser supports two modes, `Default` and `Immediate`. In `Default` mode, column visibility changes are applied only after clicking the "OK" button in the column chooser dialog. In `Immediate` mode, column visibility changes are applied automatically when columns are checked or unchecked through the checkboxes in the column chooser.
+ 
+The following example enables immediate mode by setting the `columnChooserSettings.mode` property to `Immediate`:
+ 
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/columnchooser-cs3/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/columnchooser-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/columnchooser-cs3" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/columnchooser-cs3/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/columnchooser-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/columnchooser-cs3" %}
+{% endif %}
+ 
+> The `columnChooserSettings.immediateModeDelay` property can be used to control how quickly visibility changes are applied in immediate mode. This property specifies the delay interval, in milliseconds, before the update is executed. The default value is `0`, which applies changes immediately.
+
 ## Hide column in column chooser dialog
 
 You can hide the column names in column chooser by defining the [columns->showInColumnChooser](../../api/grid/column#showincolumnchooser) as **false**. This feature is useful when working with a large number of columns or when you want to limit the number of columns that are available for selection in the column chooser dialog.

@@ -48,4 +48,4 @@ Register the license key by using the [`registerLicense`](https://ej2.syncfusion
 
 ## Troubleshooting
 
-If you encounter issues during installation, see [Common installation errors](https://ej2.syncfusion.com/documentation/installation-and-upgrade/common-installation-errors/) for solutions to typical problems such as trial vs. license key mismatch, blocked installations, and controlled folder access.
+If you encounter issues during installation, see [Common installation errors](https://ej2.syncfusion.com/documentation/installation-and-upgrade/common-installation-errors) for solutions to typical problems such as trial vs. license key mismatch, blocked installations, and controlled folder access.

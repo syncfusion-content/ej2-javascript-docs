@@ -15,7 +15,7 @@ This guide explains how to install Syncfusion<sup style="font-size:70%">&reg;</s
 
 **Prerequisites**
 
-* [Node.js](https://nodejs.org/) and npm installed. npm is bundled with Node.js.
+* Node.js and npm installed. npm is bundled with Node.js.
 * An existing JavaScript / TypeScript project. (For framework-specific wrappers, see the corresponding control documentation.)
 * Access to the npm registry (public, or your private registry if applicable).
 

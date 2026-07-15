@@ -45,14 +45,14 @@ It is not required to install the Volume release before installing the Service P
 3. In the installer, accept the License Terms and sign in with your Syncfusion<sup style="font-size:70%">&reg;</sup> account.
 4. Select the products to upgrade, configure the install location, and complete the wizard. The new version installs side-by-side with any earlier versions.
 
-For full step-by-step instructions, see [Installation using web installer](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation-using-web-installer/).
+For full step-by-step instructions, see [Installation using web installer](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation-using-web-installer).
 
 ## Upgrade from trial version to license version
 
 Uninstall the trial version and install the fully licensed installer from the [License and Downloads](https://www.syncfusion.com/account/downloads) section of our website to upgrade from the trial version.
 
->Note: License key registration is not required for JavaScript if you are using scripts (`.js`) and CSS files. If you are using the Syncfusion npm packages, you must register the license key in your application as described in the [licensing documentation](https://ej2.syncfusion.com/documentation/licensing/).
+>Note: License key registration is not required for JavaScript if you are using scripts (`.js`) and CSS files. If you are using the Syncfusion npm packages, you must register the license key in your application as described in the [licensing documentation](https://ej2.syncfusion.com/documentation/licensing).
 
 ## Troubleshooting
 
-If you encounter issues during the upgrade, see [Common installation errors](https://ej2.syncfusion.com/documentation/installation-and-upgrade/common-installation-errors/) for solutions to typical problems such as license key mismatch, blocked installations, and controlled folder access.
+If you encounter issues during the upgrade, see [Common installation errors](https://ej2.syncfusion.com/documentation/installation-and-upgrade/common-installation-errors) for solutions to typical problems such as license key mismatch, blocked installations, and controlled folder access.

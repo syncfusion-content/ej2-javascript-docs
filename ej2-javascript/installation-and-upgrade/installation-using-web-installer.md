@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Installation using Web Installer
 
-You can refer to the [Download](https://ej2.syncfusion.com/documentation/installation-and-upgrade/download/) section to learn how to get the JavaScript – EJ2 trial or licensed installer.
+You can refer to the [Download](https://ej2.syncfusion.com/documentation/installation-and-upgrade/download) section to learn how to get the JavaScript – EJ2 trial or licensed installer.
 
 **Applies to:** Syncfusion Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Web Installer on Windows.
 
@@ -121,7 +121,7 @@ The steps below show how to install Essential Studio<sup style="font-size:70%">&
 
 ## Troubleshooting
 
-If you encounter issues during installation, see [Common installation errors](https://ej2.syncfusion.com/documentation/installation-and-upgrade/common-installation-errors/) for solutions to typical problems such as trial vs. license key mismatch, blocked installations, and controlled folder access.
+If you encounter issues during installation, see [Common installation errors](https://ej2.syncfusion.com/documentation/installation-and-upgrade/common-installation-errors) for solutions to typical problems such as trial vs. license key mismatch, blocked installations, and controlled folder access.
 
 ## Uninstallation
 

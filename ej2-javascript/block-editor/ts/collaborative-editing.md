@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Collaborative Editing in Block Editor Control | Syncfusion
-description: Enable real-time collaborative editing in the Block Editor component of Syncfusion Essential JS 2 with user presence and version history.
+title: Collaborative Editing in TypeScript Block Editor Control | Syncfusion
+description: Enable real-time collaborative editing in the TypeScript Block Editor component of Syncfusion Essential JS 2 with user presence and version history.
 platform: ej2-javascript
 control: Block Editor
 publishingplatform: ##Platform_Name##
@@ -21,7 +21,7 @@ With collaboration enabled, users can:
 * Perform collaboration-aware undo and redo operations.
 * Create, restore, compare, export, and import document versions.
 
-*Try the live demo [here](https://ej2.syncfusion.com/)*
+*Try the live demo [here](https://ej2.syncfusion.com/showcase/typescript/blockeditor-collaborative-editing/)*
 
 ## Prerequisites
 

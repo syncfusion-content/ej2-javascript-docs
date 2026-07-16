@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with TypeScript DataGrid control | Syncfusion
-description:  Checkout and learn about Getting started with TypeScript DataGrid control of Syncfusion Essential JS 2 and more details.
+title: Getting started with TypeScript Data Grid control | Syncfusion
+description:  Checkout and learn about Getting started with TypeScript Data Grid control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in TypeScript DataGrid control
+# Getting started in TypeScript Data Grid control
 
-This section explains the steps to create a simple DataGrid and demonstrates the basic usage of the DataGrid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2
+This section explains the steps to create a simple Data Grid and demonstrates the basic usage of the Data Grid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2
 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
 > This application is integrated with the **webpack.config.js** configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). It requires node **v14.15.0** or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
@@ -37,11 +37,7 @@ npm install
 
 ## Adding CSS reference
 
-You can add the CSS files required for the Syncfusion TypeScript DataGrid component using one of the following methods.
-
-### Option 1: Add CSS references from a theme package
-
-Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> DataGrid components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/react/documentation/appearance/theme) documentation.
+Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> Data Grid components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/react/documentation/appearance/theme) documentation.
 
 Install the **Material 3** theme package using the following command:
  
@@ -63,33 +59,16 @@ Then add the following CSS reference to the **src/styles/styles.css** file:
 {% endhighlight %}
 {% endtabs %}
 
-### Option 2: Add CSS references from component packages
+## Adding Data Grid component
 
-After installing the DataGrid package, the required CSS files are available in the corresponding Syncfusion packages under the **node_modules/@syncfusion** directory. Add the following CSS references to the **src/styles/styles.css** file:
-
-```css
-@import '../../node_modules/@syncfusion/ej2-base/styles/material3.css';  
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/material3.css';  
-@import '../../node_modules/@syncfusion/ej2-calendars/styles/material3.css';  
-@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';  
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/material3.css';  
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import '../../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import '../../node_modules/@syncfusion/ej2-notifications/styles/material3.css';
-@import "../../node_modules/@syncfusion/ej2-react-grids/styles/material3.css";
-```
-
-## Adding DataGrid component
-
-Add the DataGrid component in **app.ts** file using the following code.
+Add the Data Grid component in **app.ts** file using the following code.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
 import { Grid } from '@syncfusion/ej2-grids';
 
-// Defines the data to be displayed in the DataGrid.
+// Defines the data to be displayed in the Data Grid.
 const data: object[] = [
     { OrderID: 10248, CustomerName: 'Ana Trujillo', OrderDate: new Date(2025, 0, 12), ShipCountry: 'France', Freight: 32.38 },
     { OrderID: 10249, CustomerName: 'Martin Sommer', OrderDate: new Date(2025, 0, 15), ShipCountry: 'Germany', Freight: 11.61 },
@@ -133,7 +112,7 @@ grid.appendTo('#Grid');
 
 <body>
     <div>
-        <!--HTML DataGrid element, which is going to render as Essential JS 2 DataGrid-->
+        <!--HTML Data Grid element, which is going to render as Essential JS 2 Data Grid-->
         <div id="Grid"></div>
     </div>
 </body>
@@ -160,5 +139,5 @@ npm start
 
 ## See also
 
-* [DataGrid Feature Modules](https://ej2.syncfusion.com/documentation/grid/module)
-* [How to open PDF document on button click inside a DataGrid](https://support.syncfusion.com/kb/article/10246/how-to-open-pdf-document-on-button-click-inside-a-grid)
+* [Data Grid Feature Modules](https://ej2.syncfusion.com/documentation/grid/module)
+* [How to open PDF document on button click inside a Data Grid](https://support.syncfusion.com/kb/article/10246/how-to-open-pdf-document-on-button-click-inside-a-grid)

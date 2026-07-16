@@ -11,8 +11,15 @@ domainurl: ##DomainURL##
 
 # Getting started in TypeScript Pivot Table control
 
-This section explains the steps to create a simple **Pivot Table** and demonstrates the basic usage of the pivot table component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2
-[quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
+This section explains the steps to create a simple **Pivot Table** and demonstrates the basic usage of the Pivot Table component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
+
+## Prerequisites
+
+Ensure the following tools are installed on your machine:
+
+* [Git](https://git-scm.com/install/)
+* [Node.js](https://nodejs.org/en/)
+* [Visual Studio Code](https://code.visualstudio.com/)
 
 > This application is integrated with the **webpack.config.js** configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). It requires node **v14.15.0** or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
 
@@ -63,7 +70,7 @@ Import the required theme styles in the `~/src/styles/styles.css` file:
 
 ## Adding Pivot Table component
 
-You can start adding Essential<sup style="font-size:70%">&reg;</sup> JS 2 pivot table component to the application. To get started, add the pivot table component in **app.ts** file using the following code.
+You can start adding the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Pivot Table component to the application. To get started, add the Pivot Table component in the **app.ts** file located in the `src/` folder using the following code.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -92,7 +99,7 @@ pivotTableObj.appendTo('#PivotTable');
 {% endhighlight %}
 {% endtabs %}
 
-Now, add an HTML div element which act as the pivot table element in `index.html` using the following code.
+Now, add an HTML `div` element that acts as the Pivot Table host element in `index.html` using the following code. The bundled script is injected by webpack at the end of the page, so the `#PivotTable` element is available in the DOM before `app.ts` runs.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -100,15 +107,16 @@ Now, add an HTML div element which act as the pivot table element in `index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>pivot table Typescript Component</title>
+    <title>Pivot Table TypeScript Component</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="description" content="Essential JS 2" />
     <meta name="author" content="Syncfusion" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css " />
+    <!-- Optional: Bootstrap CDN for basic page layout styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
 <body>
-    <!--Element where the pivot table will be rendered-->
+    <!--Element where the Pivot Table will be rendered-->
     <div id="PivotTable"></div>
 </body>
 </html>

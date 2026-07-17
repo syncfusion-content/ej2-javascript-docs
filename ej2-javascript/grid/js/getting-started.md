@@ -9,13 +9,24 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in JavaScript DataGrid control
+# Getting started with JavaScript DataGrid control
 
-This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 DataGrid and demonstrate the basic usage of the DataGrid control in a JavaScript application.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 DataGrid and demonstrates the basic usage of the DataGrid control in a JavaScript application.
+
+## Prerequisites
+
+Before getting started, ensure the following requirements are met:
+
+| Requirement | Notes |
+|-------------|-------|
+| Modern web browser | Chrome, Firefox, Edge, or Safari — latest version recommended |
+| Code editor | Visual Studio Code is recommended |
+| Local HTTP server | Required to serve the application. Opening HTML files directly via `file://` may block script loading in some browsers. VS Code Live Server extension is recommended |
+| Syncfusion<sup style="font-size:70%">&reg;</sup> license key | Required from version 16.2.0.17 onwards. Refer to the [Registering a license key](#registering-a-license-key) section |
 
 ## Dependencies
 
-A list of dependencies to use the DataGrid with all features.
+The following packages are required to use the DataGrid with all features. These package names apply to **npm-based projects**. If you are using CDN, all dependencies are automatically included — refer to the [Adding Syncfusion DataGrid CDN resources](#adding-syncfusion-datagrid-cdn-resources) section.
 
 ```javascript
 |-- @syncfusion/ej2-grids
@@ -36,13 +47,25 @@ A list of dependencies to use the DataGrid with all features.
     |-- @syncfusion/ej2-notifications
 ```
 
+> For npm-based projects, install the packages using: `npm install @syncfusion/ej2-grids --save`
+
 ## Setup for local environment
 
-Refer to the following steps to set up your local environment.
+Follow these steps to set up your local environment.
 
 **Step 1:** Create a root folder named **my-app** for your application.
 
-**Step 2:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 DataGrid control.
+**Step 2:** Open Visual Studio Code and create two files inside the **my-app** folder:
+- **index.html** — the main HTML file that loads the CDN resources and provides the grid container element.
+- **index.js** — the JavaScript file where the DataGrid control is initialized.
+
+Refer to the [Adding Syncfusion DataGrid CDN resources](#adding-syncfusion-datagrid-cdn-resources) and [Adding DataGrid control](#adding-datagrid-control) sections below for the content to add to each file.
+
+**Step 3:** In **index.html**, add a `<script>` tag at the end of `<body>` to link **index.js**:
+
+```html
+<script src="index.js" type="text/javascript"></script>
+```
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> DataGrid CDN resources
 
@@ -158,9 +181,41 @@ grid.appendTo('#Grid');
 
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs132" %}
 
+## Registering a license key
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls require a valid license key from version 16.2.0.17 onwards. Without a license key, a license validation message will appear in the browser console.
+
+**Step 1:** Obtain your license key from the [Syncfusion License Portal](https://www.syncfusion.com/account/downloads) or from the [licensing FAQ page](https://ej2.syncfusion.com/documentation/licensing/licensing-troubleshoot).
+
+**Step 2:** Register the license key in your **index.js** file before initializing any Syncfusion<sup style="font-size:70%">&reg;</sup> control.
+
+```javascript
+// Register Syncfusion license key
+ej.base.registerLicense('YOUR_LICENSE_KEY_HERE');
+```
+
+> Replace `'YOUR_LICENSE_KEY_HERE'` with the actual license key obtained from your Syncfusion account. For more information, refer to the [Syncfusion Licensing documentation](https://ej2.syncfusion.com/documentation/licensing/license-key-registration).
+
 ## Run the application
 
 Now, run the **index.html** in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 DataGrid control.
+
+## Troubleshooting
+
+**Grid renders blank / no rows appear**
+- Verify that the `dataSource` property is set and the data array is not empty.
+- Open the browser developer console (F12) and check for JavaScript errors.
+- Ensure all CDN script tags are loading successfully (check the Network tab for 4xx/5xx errors).
+
+**License validation warning in the console**
+- Register your license key before instantiating any Syncfusion<sup style="font-size:70%">&reg;</sup> control. Refer to the [Registering a license key](#registering-a-license-key) section.
+
+**Scripts blocked when opening via `file://`**
+- Serve the application through a local HTTP server. Refer to the [Run the application](#run-the-application) section.
+
+**CDN resources fail to load**
+- Check your internet connection.
+- Confirm the version number in the CDN URLs matches a valid published release. See the [Syncfusion CDN page](https://cdn.syncfusion.com/ej2/) for available versions.
 
 ## See also
 

@@ -31,4 +31,4 @@ It is not required to install the Volume release before installing the Service P
 
 Uninstall the trial version and install the fully licensed installer from the [License and Downloads](https://www.syncfusion.com/account/downloads ) section of our website to upgrade from the trial version.
 
->Note: License key registration is not required for JavaScript, if you are using scripts (.js) and css files.
+N> License key registration is not required for JavaScript, if you are using scripts (.js) and css files.

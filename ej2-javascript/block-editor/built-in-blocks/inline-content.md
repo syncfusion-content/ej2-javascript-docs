@@ -113,9 +113,9 @@ Use the [triggerChar](https://ej2.syncfusion.com/documentation/api/blockeditor/l
 
 ### Label items configuration
 
-Define the labels using the [items](https://ej2.syncfusion.com/documentation/api/blockeditor/labelSettingsModel#items) array. When a user types the trigger character, a popup will show the given items.
+Define the labels using the [items](https://ej2.syncfusion.com/documentation/api/blockeditor/labelsettingsmodel#items) array. When a user types the trigger character, a popup will show the given items.
 
-Each item in the [items](https://ej2.syncfusion.com/documentation/api/blockeditor/labelSettingsModel#items) array supports the following properties:
+Each item in the [items](https://ej2.syncfusion.com/documentation/api/blockeditor/labelsettingsmodel#items) array supports the following properties:
 
 | Property                                          | Description                                         |
 | --------------------------------------------------| --------------------------------------------------- |

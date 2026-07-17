@@ -1,5 +1,5 @@
-import { RichTextEditor, Toolbar, Image,  Link, HtmlEditor, QuickToolbar, ClipboardCleanup, ClipboardWriteEventArgs } from '@syncfusion/ej2-richtexteditor';
-RichTextEditor.Inject(Toolbar, Image,  Link, HtmlEditor, QuickToolbar, ClipboardCleanup, ClipboardWriteEventArgs );
+import { RichTextEditor, Toolbar, Image,  Link, HtmlEditor, QuickToolbar, ClipBoardCleanup, ClipboardWriteEventArgs } from '@syncfusion/ej2-richtexteditor';
+RichTextEditor.Inject(Toolbar, Image,  Link, HtmlEditor, QuickToolbar, ClipBoardCleanup, ClipboardWriteEventArgs );
 
 let editor: RichTextEditor = new RichTextEditor({
     beforeClipboardWrite: onBeforeClipboardWrite,

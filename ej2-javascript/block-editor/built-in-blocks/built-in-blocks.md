@@ -115,7 +115,7 @@ Custom CSS classes allow you to define specialized styling for specific blocks i
 
 ## Configure templates
 
-The Block Editor allows you to use custom templates for specialized content using the [template](https://ej2.syncfusion.com/documentation/api/blockeditor/blockModel#template) property. Templates can be defined as strings, functions, or HTML elements.
+The Block Editor allows you to use custom templates for specialized content using the [template](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#template) property. Templates can be defined as strings, functions, or HTML elements.
 
 {% if page.publishingplatform == "typescript" %}
 

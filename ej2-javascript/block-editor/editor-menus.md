@@ -272,7 +272,7 @@ The following example demonstrates how to customize the transform, inline code, 
 
 #### Font and background color support
 
-Enhanced font and background color options in the inline toolbar with integrated ColorPicker. You can use the [fontColorSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#fontColorSettings), [backgroundColorSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#backgroundColorSettings) properties to handle for text customization, highlighting, predefined palettes, custom inputs, and quick previews.
+Enhanced font and background color options in the inline toolbar with integrated ColorPicker. You can use the [fontColorSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#fontcolorsettings), [backgroundColorSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#backgroundcolorsettings) properties to handle for text customization, highlighting, predefined palettes, custom inputs, and quick previews.
 
 The following example demonstrates how to customize the font and background color toolbar items.
 

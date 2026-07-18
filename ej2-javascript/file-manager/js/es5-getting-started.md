@@ -312,7 +312,7 @@ You can start adding Essential<sup style="font-size:70%">&reg;</sup> JS 2 file m
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
+var hostUrl = 'https://physical-service.syncfusion.com/';
 var filemanagerInstance = new ej.filemanager.FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations'

@@ -68,7 +68,7 @@ import './style.css';
 
 FileManager.Inject(Toolbar, NavigationPane, DetailsView);
 
-let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+let hostUrl: string = 'https://physical-service.syncfusion.com/';
 let filemanagerInstance: FileManager = new FileManager({
   ajaxSettings: {
     url: hostUrl + 'api/FileManager/FileOperations'

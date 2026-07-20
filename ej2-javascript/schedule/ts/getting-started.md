@@ -37,20 +37,28 @@ npm install @syncfusion/ej2-schedule --save
 
 ## Adding CSS reference
 
-Add the Scheduler component styles as shown below in the `src/style.css` file:
+Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/react/documentation/appearance/theme) documentation.
 
-```css
-@import "../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-schedule/styles/tailwind3.css";
-```
+Install the **Tailwind 3** theme package using the following command:
+ 
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+ 
+npm install @syncfusion/ej2-tailwind3-theme --save
+ 
+{% endhighlight %}
+{% endtabs %}
+ 
+Then add the following CSS reference to the **src/styles/styles.css** file:
+ 
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
+ 
+@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/schedule/index.css";
+ 
+{% endhighlight %}
+{% endtabs %}
+
 >To refer `style.css` in the application then import it in the `src/main.ts` file.
 
 ## Module injection

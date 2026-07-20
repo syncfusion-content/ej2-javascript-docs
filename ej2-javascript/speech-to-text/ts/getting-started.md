@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## SpeechToText control
+# Getting started with ##Platform_Name## SpeechToText control
 
 This section explains how to create a simple SpeechToText control and configure its available functionalities in TypeScript, using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
@@ -76,7 +76,7 @@ To render the SpeechToText control, add the below import in the `~/src/styles/st
 @import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/speech-to-text/index.css";
 ```
 
-## Adding SpeechToText to the Application
+## Adding SpeechToText to the application
 
 Add the HTML input tag with ID attribute as the `element` to your `index.html` file.
 

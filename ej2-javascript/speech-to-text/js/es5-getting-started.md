@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## SpeechToText control | Syncfusion
+title: Es5 getting started with ##Platform_Name## SpeechToText | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## SpeechToText control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## SpeechToText control
+# ES5 getting started with ##Platform_Name## SpeechToText control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential JS 2 for JavaScript (global script) is an ES5-formatted pure JavaScript framework that can be used directly in the latest web browsers.
 
 ## Dependencies
 

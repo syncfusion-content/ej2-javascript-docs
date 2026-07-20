@@ -32,7 +32,7 @@ The steps below show how to install Essential Studio<sup style="font-size:70%">&
 
     ![license download](images/1.png)
 
-    N> The installer wizard extracts the syncfusionejs2webinstaller_{version}.exe dialog, which displays the package’s unzip operation.
+    >Note: The installer wizard extracts the syncfusionejs2webinstaller_{version}.exe dialog, which displays the package’s unzip operation.
 
 2. The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript - EJ2 Web Installer’s welcome wizard will be displayed. Click the Next button.
 
@@ -60,7 +60,7 @@ The steps below show how to install Essential Studio<sup style="font-size:70%">&
 
     ![license download](images/6.png)
 
-    N> From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> has provided option to uninstall the previous versions from 18.1 while installing the new version.
+    >Note: From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> has provided option to uninstall the previous versions from 18.1 while installing the new version.
 
 5. Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
 
@@ -70,7 +70,7 @@ The steps below show how to install Essential Studio<sup style="font-size:70%">&
 
     ![license download](images/8.png)
 
-    N> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
+    >Note: By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
 
 7. The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
 
@@ -131,7 +131,7 @@ You can uninstall all the installed products by selecting the **Syncfusion<sup s
 
 ![license download](images/u3.png)
 
-N> If the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup>** for JavaScript **{version}** entry is selected from the Windows control panel, the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 alone will be removed and the below default MSI uninstallation window will be displayed.
+>Note: If the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup>** for JavaScript **{version}** entry is selected from the Windows control panel, the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 alone will be removed and the below default MSI uninstallation window will be displayed.
 
 1. The Platform Selection Wizard will appear. From the **Installed** tab, select the products to be uninstalled. To select all products, check the **Uninstall All** checkbox. Click the Next button.
 
@@ -155,7 +155,7 @@ N> If the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<su
 
     ![license download](images/u8.png)
 
-    N> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
+    >Note: By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
 
 5. The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
 

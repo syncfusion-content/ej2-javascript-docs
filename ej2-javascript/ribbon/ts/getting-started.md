@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Ribbon control
+# Getting started with ##Platform_Name## Ribbon control
 
 This section explains how to create a simple Ribbon and configure its available functionalities in TypeScript using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
@@ -186,7 +186,7 @@ ribbon.appendTo("#ribbon");
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Ribbon Item
+## Adding Ribbon Items
 
 You can use the `collections` property of ribbon group to define each ribbon collection that contains one or more items. To define each ribbon item, you can use the `items` property of ribbon collection and the `type` property of ribbon item to specify the type of control to be rendered, like a button, a drop-down button, a combo box, and more.
 

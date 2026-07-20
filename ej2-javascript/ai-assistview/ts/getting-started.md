@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## AI AssistView control
+# Getting started with ##Platform_Name## AI AssistView control
 
 This section explains how to create a simple AI AssistView control and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
@@ -76,7 +76,7 @@ To render the AI AssistView control, add the below import in the `~/src/styles/s
 @import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/ai-assistview/index.css";   
 ```
 
-## Adding AI AssistView to the Application
+## Adding AI AssistView to the application
 
 Add the HTML div tag with ID attribute as the `defaultAssist` to your `index.html` file.
 

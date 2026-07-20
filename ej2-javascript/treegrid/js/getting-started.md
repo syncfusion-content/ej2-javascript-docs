@@ -13,6 +13,27 @@ domainurl: ##DomainURL##
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tree Grid and demonstrates the basic usage of the Tree Grid control in a JavaScript application.
 
+## Prerequisites
+
+To get started with application, ensure the following software to be installed in the machine.
+
+* [git](https://git-scm.com/downloads)
+* [Node.js](https://nodejs.org/en/)
+
+### Browser support
+
+| Browser | Supported versions |
+|----------|----------|
+| Chrome | 63+ |
+| Firefox | 58+ |
+| Opera | 50+ |
+| Edge | 13+ |
+| IE | 11+ |
+| Safari | 9+ |
+| iOS | 9+ |
+| Android | 4.4+ |
+| Windows Mobile | IE 11+ |
+
 ## Dependencies
 
 The following packages are required to use the DataGrid with all features. These package names apply to **npm-based projects**. If you are using CDN, all dependencies are automatically included — refer to the [Adding Syncfusion® Tree Grid CDN resources](#adding-syncfusion-tree-grid-cdn-resources) section.
@@ -194,7 +215,11 @@ treeGridObj.appendTo('#TreeGrid');
 
 {% previewsample "page.domainurl/code-snippet/treegrid/tree-grid-cs4" %}
 
-## Registering a license key
+## Run the application
+
+Now, run the **index.html** in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tree Grid control.
+
+## Registering Syncfusion license
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls require a valid license key from version 16.2.0.17 onwards. Without a license key, a license validation message will appear in the browser console.
 
@@ -209,34 +234,12 @@ ej.base.registerLicense('YOUR_LICENSE_KEY_HERE');
 
 > Replace `'YOUR_LICENSE_KEY_HERE'` with the actual license key obtained from your Syncfusion account. For more information, refer to the [Syncfusion Licensing documentation](https://ej2.syncfusion.com/documentation/licensing/license-key-registration).
 
-## Run the application
-
-Now, run the **index.html** in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tree Grid control.
-
 ## Troubleshooting
 
-**Grid renders blank / no rows appear**
-- Verify that the `dataSource` property is set and the data array is not empty.
-- Open the browser developer console (F12) and check for JavaScript errors.
-- Ensure all CDN script tags are loading successfully (check the Network tab for 4xx/5xx errors).
+**Tree Grid styles are not applied:** Ensure that the required Syncfusion theme CDN link is correctly included in `index.html` file. Verify that the CDN links are accessible and loaded before the Tree Grid is rendered.
 
-**License validation warning in the console**
-- Register your license key before instantiating any Syncfusion<sup style="font-size:70%">&reg;</sup> control. Refer to the [Registering a license key](#registering-a-license-key) section.
-
-**Scripts blocked when opening via `file://`**
-- Serve the application through a local HTTP server. Refer to the [Run the application](#run-the-application) section.
-
-**CDN resources fail to load**
-- Check your internet connection.
-- Confirm the version number in the CDN URLs matches a valid published release. See the [Syncfusion CDN page](https://cdn.syncfusion.com/ej2/) for available versions.
+**Trial license warning message:** Register your Syncfusion license key before initializing any Syncfusion<sup style="font-size:70%">&reg;</sup> control. Refer to the [Registering a license key](#registering-a-license-key) section.
 
 ## See Also
 
 * [Tree Grid Feature Modules](https://ej2.syncfusion.com/javascript/documentation/treegrid/module)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript documentation](https://ej2.syncfusion.com/documentation/treegrid/getting-started)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular documentation](https://ej2.syncfusion.com/angular/documentation/treegrid/getting-started)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> React documentation](https://ej2.syncfusion.com/react/documentation/treegrid/getting-started)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Vue documentation](https://ej2.syncfusion.com/vue/documentation/treegrid/getting-started)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core documentation](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/getting-started-mvc)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor documentation](https://blazor.syncfusion.com/documentation/treegrid/getting-started-webapp)

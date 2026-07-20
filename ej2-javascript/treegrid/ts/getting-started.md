@@ -17,6 +17,41 @@ This section explains the steps to create a simple Tree Grid and demonstrates th
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
+## Prerequisites
+
+Before getting started, ensure the following tools are installed on your machine:
+
+| Tool | Version / Notes |
+|------|----------------|
+| Node.js | v14.15.0 or higher |
+| npm | Bundled with Node.js |
+| Git | Required to clone the quickstart repository |
+| Visual Studio Code | Recommended code editor |
+
+You can verify your Node.js and npm versions by running:
+
+```
+node -v
+npm -v
+```
+
+## Registering the license key
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 components require a valid license key from version **16.2.0.41** onwards. Using the components without a license key will display a **license validation message** in the browser console.
+
+**Steps to register the license key:**
+
+1. Sign in to the [Syncfusion License Portal](https://www.syncfusion.com/account/downloads) and copy your license key.
+2. Register the key in your **src/app/app.ts** file, before instantiating any Syncfusion component:
+
+```ts
+import { registerLicense } from '@syncfusion/ej2-base';
+
+registerLicense('YOUR_LICENSE_KEY_HERE');
+```
+
+> For more details on obtaining and registering a license key, refer to the [License Key Generation](https://ej2.syncfusion.com/documentation/licensing/license-key-generation) and [License Key Registration](https://ej2.syncfusion.com/documentation/licensing/license-key-registration) documentation.
+
 ## Set up development environment
 
 Clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart application project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) using the following command line scripts.
@@ -30,11 +65,18 @@ cd ej2-quickstart-webpack-
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available in the public registry on [npmjs.com](https://www.npmjs.com/~syncfusionorg). You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls are available either as a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or as individual packages for each control.
 
-Use the following command to install the dependent npm packages from the command prompt.
+Use the following command to install the `@syncfusion/ej2-treegrid` package:
+
+```
+npm install @syncfusion/ej2-treegrid --save
+```
+
+Then, install the remaining dependent npm packages using the following command:
 
 ```
 npm install
 ```
+
 
 ## Adding CSS reference
 
@@ -157,9 +199,13 @@ treeGridObj.appendTo('#TreeGrid');
 
 ## Run the application
 
+The `npm start` command compiles the TypeScript source files and starts the webpack development server. Run the following command:
+
 ```
 npm start
 ```
+
+Open `http://localhost:8080` (or the port shown in the terminal) in a browser. You should see a Data Grid rendered with the sample order data, displaying the following columns: **Task ID**, **Task Name**, **Start Date**, **End Date**.
 
 ## See also
 

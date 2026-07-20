@@ -324,8 +324,6 @@ Output will be displayed as follows.
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs76" %}
 {% endif %}
 
-N> Looking for the full JavaScript DataGrid control overview, features, pricing, and documentation? Visit the [JavaScript DataGrid](https://www.syncfusion.com/javascript-ui-controls/js-data-grid) page.
-
 ## See Also
 
 * [Overview of Grid](https://www.syncfusion.com/blogs/post/overview-of-grid-in-essential-js-2-part-1)

@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Chat UI control
+# ES5 getting started with ##Platform_Name## Chat UI control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5-formatted pure JavaScript framework that can be used directly in the latest web browsers.
 
 ## Dependencies
 
@@ -177,7 +177,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 **Example:**
 > Script: [`https://cdn.syncfusion.com/ej2/ej2-interactive-chat/dist/global/ej2-interactive-chat.min.js`](https://cdn.syncfusion.com/ej2/ej2-interactive-chat/dist/global/ej2-interactive-chat.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-interactive-chat/styles/tailwind3.css`](http://cdn.syncfusion.com/ej2/ej2-interactive-chat/styles/tailwind3.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/ej2-interactive-chat/styles/tailwind3.css`](https://cdn.syncfusion.com/ej2/ej2-interactive-chat/styles/tailwind3.css)
 
 **Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Chat UI` element and initiate the `JavaScript (ES5) Chat UI` control in the index.html by using following code.
 

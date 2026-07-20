@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Inline AI Assist control
+# Getting started with ##Platform_Name## Inline AI Assist control
 
 This section explains how to create a simple Inline AI Assist control and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
@@ -20,7 +20,7 @@ This section explains how to create a simple Inline AI Assist control and config
 The list of dependencies required to use the Inline AI Assist control in your application is given as follows:
 
 ```javascript
-|-- @syncfusion/ej2-react-interactive-chat
+|-- @syncfusion/ej2-interactive-chat
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-navigations
     |-- @syncfusion/ej2-inputs
@@ -79,7 +79,7 @@ To render the Inline AI Assist control, add the below import in the `~/src/style
 @import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/inline-ai-assist/index.css";  
 ```
 
-## Adding Inline AI Assist to the Application
+## Adding Inline AI Assist to the application
 
 Add the HTML div tag with ID attribute as the `defaultInlineAssist` to your `index.html` file.
 
@@ -143,7 +143,7 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-The following example shows a basic AI AssistView control.
+The following example shows a basic Inline AI Assist control.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

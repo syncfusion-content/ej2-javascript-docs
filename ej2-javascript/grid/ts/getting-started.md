@@ -14,42 +14,32 @@ domainurl: ##DomainURL##
 This section explains the steps to create a simple Data Grid and demonstrates the basic usage of the Data Grid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2
 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
-> This application is integrated with the **webpack.config.js** configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). It requires node **v14.15.0** or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
+> This application is integrated with the **webpack.config.js** configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
 
 ## Prerequisites
 
-Before getting started, ensure the following tools are installed on your machine:
+To get started with application, ensure the following software to be installed in the machine.
 
-| Tool | Version / Notes |
-|------|----------------|
-| Node.js | v14.15.0 or higher |
-| npm | Bundled with Node.js |
-| Git | Required to clone the quickstart repository |
-| Visual Studio Code | Recommended code editor |
+| Requirement | Version |
+|-------------|---------|
+| [git](https://git-scm.com/downloads) | Latest version |
+| [Node.js](https://nodejs.org/en/) | 14.15.0 or above |
+| [Visual Studio Code](https://code.visualstudio.com/) | Latest version |
 
-You can verify your Node.js and npm versions by running:
 
-```
-node -v
-npm -v
-```
+### Browser support
 
-## Registering the license key
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 components require a valid license key from version **16.2.0.41** onwards. Using the components without a license key will display a **license validation message** in the browser console.
-
-**Steps to register the license key:**
-
-1. Sign in to the [Syncfusion License Portal](https://www.syncfusion.com/account/downloads) and copy your license key.
-2. Register the key in your **src/app/app.ts** file, before instantiating any Syncfusion component:
-
-```ts
-import { registerLicense } from '@syncfusion/ej2-base';
-
-registerLicense('YOUR_LICENSE_KEY_HERE');
-```
-
-> For more details on obtaining and registering a license key, refer to the [License Key Generation](https://ej2.syncfusion.com/documentation/licensing/license-key-generation) and [License Key Registration](https://ej2.syncfusion.com/documentation/licensing/license-key-registration) documentation.
+| Browser | Supported versions |
+|----------|----------|
+| Chrome | 63+ |
+| Firefox | 58+ |
+| Opera | 50+ |
+| Edge | 13+ |
+| IE | 11+ |
+| Safari | 9+ |
+| iOS | 9+ |
+| Android | 4.4+ |
+| Windows Mobile | IE 11+ |
 
 ## Setup for local development
 
@@ -180,7 +170,29 @@ The `npm start` command compiles the TypeScript source files and starts the webp
 npm start
 ```
 
-Open `http://localhost:8080` (or the port shown in the terminal) in a browser. You should see a Data Grid rendered with the sample order data, displaying the following columns: **Order ID**, **Customer Name**, **Order Date**, **Freight**, and **Ship Country**.
+## Registering Syncfusion license
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 components require a valid license key from version **16.2.0.41** onwards. Using the components without a license key will display a **license validation message** in the browser console.
+
+**Steps to register the license key:**
+
+1. Sign in to the [Syncfusion License Portal](https://www.syncfusion.com/account/downloads) and copy your license key.
+2. Register the key in your **src/app/app.ts** file, before instantiating any Syncfusion component:
+
+```ts
+import { registerLicense } from '@syncfusion/ej2-base';
+
+registerLicense('YOUR_LICENSE_KEY_HERE');
+```
+
+> For more details on obtaining and registering a license key, refer to the [License Key Generation](https://ej2.syncfusion.com/documentation/licensing/license-key-generation) and [License Key Registration](https://ej2.syncfusion.com/documentation/licensing/license-key-registration) documentation.
+
+## Troubleshooting
+
+**Grid styles are not applied:** Ensure that the required Syncfusion theme package is installed and the theme CSS is imported correctly in the `src/styles/styles.css` file.
+
+**Trial license warning message:** Register your Syncfusion license key before initializing any Syncfusion<sup style="font-size:70%">&reg;</sup> control. Refer to the [Registering a license key](#registering-a-license-key) section.
+
 
 ## See also
 

@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Chat UI control
+# Getting started with ##Platform_Name## Chat UI control
 
 This section explains how to create a simple Chat UI control and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
@@ -79,7 +79,7 @@ To render the Chat UI control, add the below import in the `~/src/styles/styles.
 @import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/chat-ui/index.css";  
 ```
 
-## Adding Chat UI to the Application
+## Adding Chat UI to the application
 
 Add the HTML div tag with ID attribute as the `chatUI` to your `index.html` file.
 

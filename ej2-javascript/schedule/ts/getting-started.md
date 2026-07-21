@@ -13,6 +13,22 @@ domainurl: ##DomainURL##
 
 This section explains how to create the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) component and configure its available functionalities in a TypeScript environment.
 
+## Prerequisites
+
+Before getting started, ensure the following tools are installed on your machine:
+
+| Tool | Version / Notes |
+|------|----------------|
+| Node.js | v14.15.0 or higher |
+| npm | Bundled with Node.js |
+
+You can verify your Node.js and npm versions by running:
+
+```
+node -v
+npm -v
+```
+
 ## Installation and configuration
 
 To build a high-performance TypeScript application with a smooth development workflow, Vite is the recommended tool. Unlike traditional setups, Vite is designed for speed and simplicity, providing near-instant startup and fast updates during development. For detailed steps, refer to the Vite [installation instructions](https://vite.dev/guide/)

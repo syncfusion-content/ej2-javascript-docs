@@ -25,13 +25,13 @@ Ensure the following tools are installed on your machine:
 
 ## Set up the development environment
 
-Clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from GitHub:
+Clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from GitHub in the command prompt:
 
 ```
 git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 ```
 
-Navigate to the project folder:
+Navigate to the project folder in the command prompt:
 
 ```
 cd ej2-quickstart
@@ -87,8 +87,6 @@ In this article, the Grid control is used as an example. Add the following Grid 
     <title>Essential JS 2</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    ....
-    ....
 </head>
 
 <body>
@@ -111,23 +109,20 @@ const data: Object[] = [
     {
         OrderID: 10248,
         CustomerID: 'VINET',
-        EmployeeID: 5,
-        ShipCountry: 'France',
-        Freight: 32.38
+        Freight: 32.38,
+        OrderDate: new Date(8364186e5)
     },
     {
         OrderID: 10249,
         CustomerID: 'TOMSP',
-        EmployeeID: 6,
-        ShipCountry: 'Germany',
-        Freight: 11.61
+        Freight: 11.61,
+        OrderDate: new Date(8367642e5)
     },
     {
         OrderID: 10250,
         CustomerID: 'HANAR',
-        EmployeeID: 4,
-        ShipCountry: 'Brazil',
-        Freight: 65.83
+        Freight: 65.83,
+        OrderDate: new Date(8371242e5)
     }
 ];
 
@@ -135,11 +130,10 @@ const data: Object[] = [
 let grid: Grid = new Grid({
     dataSource: data,
     columns: [
-            { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number' },
-            { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-            { field: 'EmployeeID', width: 140, headerText: 'Employee ID', textAlign: 'Right', type: 'string' },
-            { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C' },
-            { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'yMd' }
+        { field: 'OrderID', headerText: 'Order ID', width: 120, type: 'number', textAlign: 'Center' },
+        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string', textAlign: 'Center' },
+        { field: 'Freight', headerText: 'Freight', width: 120, format: 'C', textAlign: 'Center' },
+        { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'M/d/yyyy', type: 'date', textAlign: 'Center' }
     ]
 });
 

@@ -46,8 +46,8 @@ To get started with application, ensure the following software to be installed i
 Clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart application project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) using the following command line scripts.
 
 ```
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack-
-cd ej2-quickstart-webpack-
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack
+cd ej2-quickstart-webpack
 ```
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Tree Grid package
@@ -175,9 +175,9 @@ treeGridObj.appendTo('#TreeGrid');
 
 {% endhighlight %}
 
-{% highlight html tabtitle="style.css" %}
+{% highlight html tabtitle="styles.css" %}
 
-@import '../../node_modules/@syncfusion/ej2/material.css';
+@import '../../node_modules/@syncfusion/ej2-material3-theme/styles/treegrid/index.css';
 
 {% endhighlight %}
 

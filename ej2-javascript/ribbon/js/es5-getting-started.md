@@ -9,9 +9,20 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ES5 getting started with ##Platform_Name## Ribbon control
+# Getting started with JavaScript Ribbon control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5-formatted pure JavaScript framework that can be used directly in the latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Ribbon and demonstrates the basic usage of the Ribbon control in a JavaScript application.
+
+## Prerequisites
+
+Before getting started, ensure the following requirements are met:
+
+| Requirement | Notes |
+|-------------|-------|
+| Modern web browser | Chrome, Firefox, Edge, or Safari — latest version recommended |
+| Code editor | Visual Studio Code is recommended |
+| Local HTTP server | Required to serve the application. Opening HTML files directly via `file://` may block script loading in some browsers. VS Code Live Server extension is recommended |
+| Syncfusion<sup style="font-size:70%">&reg;</sup> license key | Required from version 16.2.0.17 onwards. Refer to the [Registering a license key](#registering-a-license-key) section |
 
 ## Dependencies
 
@@ -29,6 +40,8 @@ The following list of dependencies are required to use the Ribbon control in you
     |-- @syncfusion/ej2-dropdowns
     |-- @syncfusion/ej2-navigations
 ```
+
+> For npm-based projects, install the packages using: `npm install @syncfusion/ej2-ribbon --save`
 
 ## Control Initialization
 
@@ -49,9 +62,9 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 >
 > Control Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\tailwind3.css`
+> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\bootstrap5.3.css`
 >
-> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\tailwind3.css`
+> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\bootstrap5.3.css`
 
 **Example:**
 
@@ -59,15 +72,15 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 >
 > Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\21.1.35\Web (Essential JS 2)\JavaScript\ej2-navigations\dist\global\ej2-navigations.min.js`
 >
-> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\21.1.35\Web (Essential JS 2)\JavaScript\ej2-base\styles\tailwind3.css`
+> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\21.1.35\Web (Essential JS 2)\JavaScript\ej2-base\styles\bootstrap5.3.css`
 >
-> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\21.1.35\Web (Essential JS 2)\JavaScript\ej2-navigations\styles\tailwind3.css`
+> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\21.1.35\Web (Essential JS 2)\JavaScript\ej2-navigations\styles\bootstrap5.3.css`
 
 The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\tailwind3.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\bootstrap5.3.css`
 
 The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific controls. This web tool is useful to combine the required control scripts and styles in a single file.
 
@@ -81,16 +94,16 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
   <head>
     <title>Essential JS 2 - Ribbon</title>
     <!-- Essential JS 2 Ribbon's dependent material theme -->
-    <link href="resources/base/tailwind3.css" rel="stylesheet" type="text/css" />
-    <link href="resources/buttons/tailwind3.css" rel="stylesheet" type="text/css" />
-    <link href="resources/popups/tailwind3.css" rel="stylesheet" type="text/css" />
-    <link href="resources/splitbuttons/tailwind3.css" rel="stylesheet" type="text/css" />
-    <link href="resources/inputs/tailwind3.css" rel="stylesheet" type="text/css" />
-    <link href="resources/lists/tailwind3.css" rel="stylesheet" type="text/css" />
-    <link href="resources/dropdowns/tailwind3.css" rel="stylesheet" type="text/css" />
-    <link href="resources/navigations/tailwind3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/base/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/buttons/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/popups/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/splitbuttons/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/inputs/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/lists/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/dropdowns/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/navigations/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <!-- Essential JS 2 Ribbon's control material theme -->
-    <link href="resources/ribbon/tailwind3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/ribbon/bootstrap5.3.css" rel="stylesheet" type="text/css" />
 
     <!-- Essential JS 2 Ribbon's dependent global script -->
     <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
@@ -243,15 +256,15 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 >
 > Control Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/tailwind3.css`
+> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/bootstrap5.3.css`
 >
-> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/tailwind3.css`
+> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
 
 **Example:**
 
 > Script: [`https://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js`](https://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-navigations/styles/tailwind3.css`](https://cdn.syncfusion.com/ej2/ej2-navigations/styles/tailwind3.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css`](https://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css)
 
 **Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Ribbon` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Ribbon** control in the `index.html` by using following code.
 
@@ -263,4 +276,36 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
         
 {% previewsample "page.domainurl/code-snippet/ribbon/es5-getting-started-cs1" %}
 
+## Registering a license key
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls require a valid license key from version 16.2.0.17 onwards. Without a license key, a license validation message will appear in the browser console.
+
+**Step 1:** Obtain your license key from the [Syncfusion License Portal](https://www.syncfusion.com/account/downloads) or from the [licensing FAQ page](https://ej2.syncfusion.com/documentation/licensing/licensing-troubleshoot).
+
+**Step 2:** Register the license key in your **index.js** file before initializing any Syncfusion<sup style="font-size:70%">&reg;</sup> control.
+
+```javascript
+// Register Syncfusion license key
+ej.base.registerLicense('YOUR_LICENSE_KEY_HERE');
+```
+
+> Replace `'YOUR_LICENSE_KEY_HERE'` with the actual license key obtained from your Syncfusion account. For more information, refer to the [Syncfusion Licensing documentation](https://ej2.syncfusion.com/documentation/licensing/license-key-registration).
+
 **Step 4:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Ribbon** control.
+
+## Troubleshooting
+
+**Ribbon renders blank / does not load**
+- Verify that the container element exists and has a valid ID.
+- Open the browser developer console (F12) and check for JavaScript errors.
+- Ensure all CDN script tags are loading successfully (check the Network tab for 4xx/5xx errors).
+
+**License validation warning in the console**
+- Register your license key before instantiating any Syncfusion<sup style="font-size:70%">&reg;</sup> control.
+
+**Scripts blocked when opening via `file://`**
+- Serve the application through a local HTTP server.
+
+**CDN resources fail to load**
+- Check your internet connection.
+- Confirm the version number in the CDN URLs matches a valid published release. See the [Syncfusion CDN page](https://cdn.syncfusion.com/ej2/) for available versions.

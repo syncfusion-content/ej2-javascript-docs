@@ -106,7 +106,7 @@ The [allowInterimResults](../api/speech-to-text#allowInterimResults) property co
 
 ## Managing listening state
 
-The [listeningState](../api/speech-to-text#listeningState) property manages and indicates the component's current status. It can be `Inactive` (idle), `Listening` (actively capturing audio), or `Stopped` (recognition complete). The default state is `Inactive`.
+The [listeningState](../api/speech-to-text#listeningState) property manages and indicates the control's current status. It can be `Inactive` (idle), `Listening` (actively capturing audio), or `Stopped` (recognition complete). The default state is `Inactive`.
 
 ### Inactive
 
@@ -180,9 +180,39 @@ The [showTooltip](../api/speech-to-text#showTooltip) property determines whether
 {% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/showTooltip/index" %}
 {% endif %}
 
+## Adding button content
+
+The content of the SpeechToText button can be customized for its active and inactive states. Use the [content](../api/speech-to-text/buttonSettingsModel#content) property to define the text for the start listening state and the [stopContent](../api/speech-to-text/buttonSettingsModel#stopcontent) property for the stop listening state. These properties are configured within the [buttonSettings](../api/speech-to-text#buttonSettings) property.
+
+The following example shows how to configure `buttonSettings` in the SpeechToText control.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/speech-to-text/getting-started/buttonContent/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/getting-started/buttonContent/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/getting-started/buttonContent/index" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/getting-started/buttonContent/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/getting-started/buttonContent/index" %}
+{% endif %}
+
 ## Setting disabled
 
-The [disabled](../api/speech-to-text#disabled) property, when set to `true`, disables the SpeechToText component and prevents user interaction. By default, it is `false`.
+The [disabled](../api/speech-to-text#disabled) property, when set to `true`, disables the SpeechToText control and prevents user interaction. By default, it is `false`.
 
 {% if page.publishingplatform == "typescript" %}
 

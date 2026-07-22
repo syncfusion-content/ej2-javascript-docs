@@ -68,7 +68,7 @@ npm install
 
 ## Adding CSS reference
 
-Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> Data Grid components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/react/documentation/appearance/theme) documentation.
+Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> Data Grid components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/documentation/appearance/theme) documentation.
 
 Install the **Material 3** theme package using the following command:
  
@@ -83,7 +83,7 @@ npm install @syncfusion/ej2-material3-theme --save
 Then add the following CSS reference to the **src/styles/styles.css** file:
  
 {% tabs %}
-{% highlight css tabtitle="style.css" %}
+{% highlight css tabtitle="styles.css" %}
  
 @import "../../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
  
@@ -152,9 +152,9 @@ grid.appendTo('#Grid');
 
 {% endhighlight %}
 
-{% highlight html tabtitle="style.css" %}
+{% highlight html tabtitle="styles.css" %}
 
-@import '../../node_modules/@syncfusion/ej2/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css';
 
 {% endhighlight %}
 
@@ -191,7 +191,7 @@ registerLicense('YOUR_LICENSE_KEY_HERE');
 
 **Grid styles are not applied:** Ensure that the required Syncfusion theme package is installed and the theme CSS is imported correctly in the `src/styles/styles.css` file.
 
-**Trial license warning message:** Register your Syncfusion license key before initializing any Syncfusion<sup style="font-size:70%">&reg;</sup> control. Refer to the [Registering a license key](#registering-a-license-key) section.
+**Trial license warning message:** Register your Syncfusion license key before initializing any Syncfusion<sup style="font-size:70%">&reg;</sup> control. Refer to the [Registering a license key](https://ej2.syncfusion.com/documentation/licensing/license-key-registration#register-syncfusion-license-key-in-the-project) section.
 
 
 ## See also

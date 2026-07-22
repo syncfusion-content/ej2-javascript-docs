@@ -37,7 +37,7 @@ To get started with application, ensure the following software to be installed i
 
 ## Dependencies
 
-The following packages are required to use the DataGrid with all features. These package names apply to **npm-based projects**. If you are using CDN, all dependencies are automatically included — refer to the [Adding Syncfusion DataGrid CDN resources](#adding-syncfusion-datagrid-cdn-resources) section.
+A list of dependencies to use the DataGrid with all features.
 
 ```javascript
 |-- @syncfusion/ej2-grids
@@ -57,8 +57,6 @@ The following packages are required to use the DataGrid with all features. These
     |-- @syncfusion/ej2-compression
     |-- @syncfusion/ej2-notifications
 ```
-
-> For npm-based projects, install the packages using: `npm install @syncfusion/ej2-grids --save`
 
 ## Setup for local environment
 
@@ -215,7 +213,7 @@ ej.base.registerLicense('YOUR_LICENSE_KEY_HERE');
 
 **Grid styles are not applied:** Ensure that the required Syncfusion theme CDN link is correctly included in `index.html` file. Verify that the CDN links are accessible and loaded before the Data Grid is rendered.
 
-**Trial license warning message:** Register your Syncfusion license key before initializing any Syncfusion<sup style="font-size:70%">&reg;</sup> control. Refer to the [Registering a license key](#registering-a-license-key) section.
+**Trial license warning message:** Register your Syncfusion license key before initializing any Syncfusion<sup style="font-size:70%">&reg;</sup> control. Refer to the [Registering a license key](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration#javascript-es5) section.
 
 ## See also
 

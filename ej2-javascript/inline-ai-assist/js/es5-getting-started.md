@@ -9,9 +9,20 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ES5 getting started with ##Platform_Name## Inline AI Assist control
+# Getting started with JavaScript Inline AI Assist control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5-formatted pure JavaScript framework that can be used directly in the latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Inline AI Assist and demonstrates the basic usage of the Inline AI Assist control in a JavaScript application.
+
+## Prerequisites
+
+Before getting started, ensure the following requirements are met:
+
+| Requirement | Notes |
+|-------------|-------|
+| Modern web browser | Chrome, Firefox, Edge, or Safari — latest version recommended |
+| Code editor | Visual Studio Code is recommended |
+| Local HTTP server | Required to serve the application. Opening HTML files directly via `file://` may block script loading in some browsers. VS Code Live Server extension is recommended |
+| Syncfusion<sup style="font-size:70%">&reg;</sup> license key | Required from version 16.2.0.17 onwards. Refer to the [Registering a license key](#registering-a-license-key) section |
 
 ## Dependencies
 
@@ -26,6 +37,8 @@ The list of dependencies required to use the Inline AI Assist control in your ap
     |-- @syncfusion/ej2-dropdowns
     |-- @syncfusion/ej2-popups
 ```
+
+> For npm-based projects, install the packages using: `npm install @syncfusion/ej2-interactive-chat --save`
 
 ## Control Initialization
 
@@ -77,13 +90,13 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
        <head>
             <title>JavaScript (ES5)</title>
             <!-- JavaScript (ES5) Inline AI Assist's dependency style -->
-            <link href="resources/base/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/buttons/tailwind3.css" rel="stylesheet" type="text/css" />
-            <link href="resources/notifications/tailwind3.css" rel="stylesheet" type="text/css" />
-            <link href="resources/inputs/tailwind3.css" rel="stylesheet" type="text/css" />
-            <link href="resources/navigations/tailwind3.css" rel="stylesheet" type="text/css" />
+            <link href="resources/base/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/buttons/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+            <link href="resources/notifications/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+            <link href="resources/inputs/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+            <link href="resources/navigations/bootstrap5.3.css" rel="stylesheet" type="text/css" />
             <!-- JavaScript (ES5) Inline AI Assist control style -->
-            <link href="resources/ej2-interactive-chat/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/ej2-interactive-chat/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
             <!-- JavaScript (ES5) Inline AI Assist's dependency global script -->
             <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
@@ -113,14 +126,14 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
        <head>
           <title>JavaScript (ES5)</title>
           <!-- JavaScript (ES5) Inline AI Assist's dependency style -->
-            <link href="resources/base/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/buttons/tailwind3.css" rel="stylesheet" type="text/css" />
-            <link href="resources/notifications/tailwind3.css" rel="stylesheet" type="text/css" />
-            <link href="resources/inputs/tailwind3.css" rel="stylesheet" type="text/css" />
-            <link href="resources/navigations/tailwind3.css" rel="stylesheet" type="text/css" />
+            <link href="resources/base/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/buttons/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+            <link href="resources/notifications/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+            <link href="resources/inputs/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+            <link href="resources/navigations/bootstrap5.3.css" rel="stylesheet" type="text/css" />
 
           <!-- JavaScript (ES5) Inline AI Assist control style -->
-          <link href="resources/ej2-interactive-chat/tailwind3.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/ej2-interactive-chat/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
           <!-- JavaScript (ES5) Inline AI Assist's dependency global script -->
             <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
@@ -172,7 +185,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 **Example:**
 > Script: [`https://cdn.syncfusion.com/ej2/ej2-interactive-chat/dist/global/ej2-interactive-chat`](https://cdn.syncfusion.com/ej2/ej2-interactive-chat/dist/global/ej2-interactive-chat.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-interactive-chat/styles/tailwind3.css`](https://cdn.syncfusion.com/ej2/ej2-interactive-chat/styles/tailwind3.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/ej2-interactive-chat/styles/tailwind3.css`](http://cdn.syncfusion.com/ej2/ej2-interactive-chat/styles/tailwind3.css)
 
 **Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Inline AI Assist` element and initiate the `JavaScript (ES5) Inline AI Assist` control in the index.html by using following code.
 
@@ -183,6 +196,21 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/inline-ai-assist/gettingstarted" %}
+
+## Registering a license key
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls require a valid license key from version 16.2.0.17 onwards. Without a license key, a license validation message will appear in the browser console.
+
+**Step 1:** Obtain your license key from the [Syncfusion License Portal](https://www.syncfusion.com/account/downloads) or from the [licensing FAQ page](https://ej2.syncfusion.com/documentation/licensing/licensing-troubleshoot).
+
+**Step 2:** Register the license key in your **index.js** file before initializing any Syncfusion<sup style="font-size:70%">&reg;</sup> control.
+
+```javascript
+// Register Syncfusion license key
+ej.base.registerLicense('YOUR_LICENSE_KEY_HERE');
+```
+
+> Replace `'YOUR_LICENSE_KEY_HERE'` with the actual license key obtained from your Syncfusion account. For more information, refer to the [Syncfusion Licensing documentation](https://ej2.syncfusion.com/documentation/licensing/license-key-registration).
 
 **Step 4:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Inline AI Assist** control.
 
@@ -215,3 +243,20 @@ Responses can be shown in two modes: `Inline` (updates content in-place) and `Po
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/inline-ai-assist/response-mode" %}
+
+## Troubleshooting
+
+**Inline AI Assist renders blank / does not load**
+- Verify that the container element exists and has a valid ID.
+- Open the browser developer console (F12) and check for JavaScript errors.
+- Ensure all CDN script tags are loading successfully (check the Network tab for 4xx/5xx errors).
+
+**License validation warning in the console**
+- Register your license key before instantiating any Syncfusion<sup style="font-size:70%">&reg;</sup> control.
+
+**Scripts blocked when opening via `file://`**
+- Serve the application through a local HTTP server.
+
+**CDN resources fail to load**
+- Check your internet connection.
+- Confirm the version number in the CDN URLs matches a valid published release. See the [Syncfusion CDN page](https://cdn.syncfusion.com/ej2/) for available versions.

@@ -36,7 +36,7 @@ To get started with application, ensure the following software to be installed i
 
 ## Dependencies
 
-The following packages are required to use the DataGrid with all features. These package names apply to **npm-based projects**. If you are using CDN, all dependencies are automatically included — refer to the [Adding Syncfusion® Tree Grid CDN resources](#adding-syncfusion-tree-grid-cdn-resources) section.
+A list of dependencies to use the Tree Grid with all features.
 
 ```javascript
 	|-- @syncfusion/ej2-treegrid
@@ -68,7 +68,7 @@ Follow these steps to set up your local environment.
 - **index.html** — the main HTML file that loads the CDN resources and provides the tree grid container element.
 - **index.js** — the JavaScript file where the DataGrid control is initialized.
 
-Refer to the [Adding Syncfusion® Tree Grid CDN resources](#adding-syncfusion-tree-grid-cdn-resources) and [Adding Tree Grid control](#adding-tree-grid-control) sections below for the content to add to each file.
+Refer to the [Adding Syncfusion® Tree Grid CDN resources](https://ej2.syncfusion.com/javascript/documentation/treegrid/getting-started#adding-syncfusion-tree-grid-cdn-resources) and [Adding Tree Grid control](https://ej2.syncfusion.com/javascript/documentation/treegrid/getting-started#adding-tree-grid-control) sections below for the content to add to each file.
 
 **Step 3:** In **index.html**, add a `<script>` tag at the end of `<body>` to link **index.js**:
 
@@ -238,7 +238,7 @@ ej.base.registerLicense('YOUR_LICENSE_KEY_HERE');
 
 **Tree Grid styles are not applied:** Ensure that the required Syncfusion theme CDN link is correctly included in `index.html` file. Verify that the CDN links are accessible and loaded before the Tree Grid is rendered.
 
-**Trial license warning message:** Register your Syncfusion license key before initializing any Syncfusion<sup style="font-size:70%">&reg;</sup> control. Refer to the [Registering a license key](#registering-a-license-key) section.
+**Trial license warning message:** Register your Syncfusion license key before initializing any Syncfusion<sup style="font-size:70%">&reg;</sup> control. Refer to the [Registering a license key](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration#javascript-es5) section.
 
 ## See Also
 

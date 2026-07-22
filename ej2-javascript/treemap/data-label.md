@@ -13,6 +13,38 @@ domainurl: ##DomainURL##
 
 Data Labels are used to identify the name of items or groups in the TreeMap component. Data Labels will be shown by specifying the data source properties in the `labelPath` of the `leafItemSettings`.
 
+## Add labels
+
+Labels display descriptive text directly on TreeMap items, providing immediate context without requiring a legend lookup. Labels are shown by default, but you can customize their visibility and appearance using the [`showLabels`](https://ej2.syncfusion.com/javascript/documentation/api/treemap/leafitemsettingsmodel#showlabels) property in the [`leafItemSettings`](https://ej2.syncfusion.com/javascript/documentation/api/treemap/leafitemsettingsmodel) object.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.ts" %}
+{% include code-snippet/treemap/getting-started-cs4/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/treemap/getting-started-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/treemap/getting-started-cs4" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/treemap/getting-started-cs4/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/treemap/getting-started-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/treemap/getting-started-cs4" %}
+{% endif %}
+
 ## Format
 
 Customize the labels for each item using the `labelFormat` property in the `leafItemSettings`.
@@ -77,7 +109,7 @@ The template supports customizing labels of each leaf node using the `labelTempl
 
 ## InterSectAction
 
-When the label size in each item exceeds the actual size, use the `interSectAction` property in the `leafItemSettings` to customise the labels.
+When the label size in each item exceeds the actual size, use the `interSectAction` property in the `leafItemSettings` to customize the labels.
 
 {% if page.publishingplatform == "typescript" %}
 

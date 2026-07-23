@@ -22,8 +22,7 @@ This section explains the steps required to create a simple Essential<sup style=
 
 A list of dependencies to use the Tree Grid with all features.
 
-```javascript
-	|-- @syncfusion/ej2-treegrid
+```
      |-- @syncfusion/ej2-treegrid
           |-- @syncfusion/ej2-base
           |-- @syncfusion/ej2-data

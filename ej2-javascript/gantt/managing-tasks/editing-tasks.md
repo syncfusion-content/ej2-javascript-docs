@@ -208,9 +208,9 @@ Updating with dialog
 
 ## Update task values using method
 
-Tasks' value can be dynamically updated by using the [updateRecordById](../../api/gantt#updaterecordbyid) method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
+Tasks' value can be dynamically updated by using the [updateRecordByID](../../api/gantt#updaterecordbyid) method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
 
->NOTE: Using the [updateRecordById](../../api/gantt#updaterecordbyid) method, you cannot update the task ID value.
+>NOTE: Using the [updateRecordByID](../../api/gantt#updaterecordbyid) method, you cannot update the task ID value.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -244,3 +244,40 @@ Tasks' value can be dynamically updated by using the [updateRecordById](../../ap
 {% endif %}
 
 ![Delete action](../images/delete-action.png)
+
+## Update custom column values using updateRecordByID
+
+The [updateRecordByID](../../api/gantt#updaterecordbyid) method can be used to update task records dynamically in the Gantt chart. When working with custom fields, the field must be defined in the Gantt columns collection. If a custom field is not bound to a column, the `updateRecordByID` method cannot maintain or update its value in the Gantt chart.
+
+This behavior occurs because custom fields are stored within the task data (taskData). Only the custom fields that are bound in the column collection are tracked and maintained by the Gantt component during record updates.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/updateRecordById-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/updateRecordById-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/updateRecordById-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/updateRecordById-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/updateRecordById-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/updateRecordById-cs2" %}
+{% endif %}
+
+In the above example, the description field is bound in the column collection. Therefore, calling `updateRecordByID` successfully updates the custom column value for the specified task record. If the description field is removed from the column collection, the updated value will not be maintained by the Gantt chart.
+
+>NOTE: Custom column values can be updated through the [updateRecordByID](../../api/gantt#updaterecordbyid) method only when the corresponding field is included in the Gantt columns collection.

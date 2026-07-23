@@ -67,20 +67,31 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render the Sidebar control, need to import Sidebar and its dependent control’s styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
+
+The quickstart application is preconfigured to use the `Fluent2` theme. To install the [Fluent2](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) theme package, use the following command:
 
 {% tabs %}
-{% highlight css tabtitle="style.css" %}
+{% highlight bash tabtitle="npm" %}
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/fluent2.css";
-@import "../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css";
-  
+npm install @syncfusion/ej2-fluent2-theme --save
+
 {% endhighlight %}
 {% endtabs %}
 
->Note: If you want to refer the combined control styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+The required styles are imported in the `~/src/styles/styles.css` file, as shown below: 
+
+{% tabs %}
+{% highlight bash tabtitle="styles.css" %}
+
+@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/fluent2.css";
+
+{% endhighlight %}
+{% endtabs %}
+
+> Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 
 ## Initialize Sidebar using HTML elements
 
@@ -165,13 +176,13 @@ npm start
           
 {% previewsample "page.domainurl/code-snippet/sidebar/default-cs1" %}
 
-> Sidebar will, by default, fit the size of its content. There is also an option to set a certain width using the [`width`](../api/sidebar/#width) property.
+> Sidebar will, by default, fit the size of its content. There is also an option to set a certain width using the [`width`](https://ej2.syncfusion.com/documentation/api/sidebar/index-default#width) property.
 
 ## Enable backdrop
 
-Enabling the [`showBackdrop`](../api/sidebar/#showbackdrop) in the Sidebar control will prevent the main content from user interactions, when it is in expanded state. Here, the DOM elements will not get changed. It only closes the main content by covering with a black backdrop overlay and focuses the Sidebar in the screen. Sidebar can be rendered with specific width by setting [`width`](../api/sidebar/#width) property.
+Enabling the [`showBackdrop`](https://ej2.syncfusion.com/documentation/api/sidebar/index-default#showbackdrop) in the Sidebar control will prevent the main content from user interactions, when it is in expanded state. Here, the DOM elements will not get changed. It only closes the main content by covering with a black backdrop overlay and focuses the Sidebar in the screen. Sidebar can be rendered with specific width by setting [`width`](https://ej2.syncfusion.com/documentation/api/sidebar/index-default#width) property.
 
-N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent container for the div block in which you intend to enable the backdrop. Set the class name of this parent container as the [`target`](../api/sidebar/#target) for the Sidebar. Alternatively, you can place an empty div container after the target container.
+N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent container for the div block in which you intend to enable the backdrop. Set the class name of this parent container as the [`target`](https://ej2.syncfusion.com/documentation/api/sidebar/index-default#target) for the Sidebar. Alternatively, you can place an empty div container after the target container.
 
 The following example shows a Sidebar control with enabled backdrop.
 
@@ -191,7 +202,7 @@ The following example shows a Sidebar control with enabled backdrop.
 
 ## Position
 
-Positioning the Sidebar to the right or left of the main content can be achieved by using the [`position`](../api/sidebar/#position) property. If the position is not set, the Sidebar will expand from the left to the body element. [`enablePersistence`](../api/sidebar/#enablepersistence) will persist the control's state between page reloads. [`change`](../api/sidebar/#change) event will be triggered when the state(expand/collapse) of the control is changed.
+Positioning the Sidebar to the right or left of the main content can be achieved by using the [`position`](https://ej2.syncfusion.com/documentation/api/sidebar/index-default#position) property. If the position is not set, the Sidebar will expand from the left to the body element. [`enablePersistence`](https://ej2.syncfusion.com/documentation/api/sidebar/index-default#enablepersistence) will persist the control's state between page reloads. [`change`](https://ej2.syncfusion.com/documentation/api/sidebar/index-default#change) event will be triggered when the state(expand/collapse) of the control is changed.
 
 In the following sample, the position of the Sidebar can be changed using the radio buttons in the main content.
 
@@ -211,7 +222,7 @@ In the following sample, the position of the Sidebar can be changed using the ra
 
 ## Animate
 
-Animation transitions can be set while expanding or collapsing the Sidebar using the [`animate`](../api/sidebar/#animate) property. By default , [`animate`](../api/sidebar/#animate) property is set to **true**.
+Animation transitions can be set while expanding or collapsing the Sidebar using the [`animate`](https://ej2.syncfusion.com/documentation/api/sidebar/index-default#animate) property. By default , [`animate`](https://ej2.syncfusion.com/documentation/api/sidebar/index-default#animate) property is set to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -229,7 +240,7 @@ Animation transitions can be set while expanding or collapsing the Sidebar using
 
 ## Close on document click
 
-Sidebar can be closed on document click by setting [`closeOnDocumentClick`](../api/sidebar/#closeondocumentclick) to **true**. If this property is not set, the Sidebar will not close on document click since its default value is **false**. Sidebar can be kept opened during rendering using [`isOpen`](../api/sidebar/#isopen) property.
+Sidebar can be closed on document click by setting [`closeOnDocumentClick`](https://ej2.syncfusion.com/documentation/api/sidebar/index-default#closeondocumentclick) to **true**. If this property is not set, the Sidebar will not close on document click since its default value is **false**. Sidebar can be kept opened during rendering using [`isOpen`](https://ej2.syncfusion.com/documentation/api/sidebar/index-default#isopen) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -247,7 +258,7 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](../a
 
 ## Enable gestures
 
-Expand or collapse the Sidebar while swiping in touch devices using [`enableGestures`](../api/sidebar/#enablegestures) property. By default, [`enableGestures`](../api/sidebar/#enablegestures) is set to **true**.
+Expand or collapse the Sidebar while swiping in touch devices using [`enableGestures`](https://ej2.syncfusion.com/documentation/api/sidebar/index-default#enablegestures) property. By default, [`enableGestures`](https://ej2.syncfusion.com/documentation/api/sidebar/index-default#enablegestures) is set to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

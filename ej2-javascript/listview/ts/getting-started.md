@@ -61,18 +61,31 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render the ListView control, need to import lists and its dependent control’s styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
+
+The quickstart application is preconfigured to use the `Fluent2` theme. To install the [Fluent2](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) theme package, use the following command:
 
 {% tabs %}
-{% highlight css tabtitle="style.css" %}
+{% highlight bash tabtitle="npm" %}
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/fluent2.css";
-@import "../../node_modules/@syncfusion/ej2-lists/styles/fluent2.css";
+npm install @syncfusion/ej2-fluent2-theme --save
 
 {% endhighlight %}
 {% endtabs %}
+
+The required styles are imported in the `~/src/styles/styles.css` file, as shown below: 
+
+{% tabs %}
+{% highlight bash tabtitle="styles.css" %}
+
+@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/fluent2.css";
+
+{% endhighlight %}
+{% endtabs %}
+
+> Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 
 ## Add ListView to the project
 
@@ -188,8 +201,8 @@ The following example shows a basic ListView.
 
 ## See Also
 
-[Data Binding Types](./data-binding/)
+[Data Binding Types](./data-binding)
 
-[ListView customization](./customizing-templates/)
+[ListView customization](./customizing-templates)
 
-[Virtualization](./virtualization/)
+[Virtualization](./virtualization)

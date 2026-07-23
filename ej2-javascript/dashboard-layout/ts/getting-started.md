@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Dashboard layout control | Syncfusion
+title: Getting started with Dashboard layout control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Dashboard layout control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Dashboard Layout
@@ -60,20 +60,31 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render the Dashboard Layout control, import the Dashboard Layout and its dependent control’s styles as given below in the `~/src/styles/styles.css` file, as shown below:
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
+
+The quickstart application is preconfigured to use the `Fluent2` theme. To install the [Fluent2](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) theme package, use the following command:
 
 {% tabs %}
-{% highlight css tabtitle="style.css" %}
+{% highlight bash tabtitle="npm" %}
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/fluent2.css";
-@import "../../node_modules/@syncfusion/ej2-layouts/styles/fluent2.css";
+npm install @syncfusion/ej2-fluent2-theme --save
 
 {% endhighlight %}
 {% endtabs %}
 
-> Note: To refer the combined control styles, use Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com) (Custom Resource Generator) in your application.
+The required styles are imported in the `~/src/styles/styles.css` file, as shown below: 
+
+{% tabs %}
+{% highlight bash tabtitle="styles.css" %}
+
+@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/fluent2.css";
+
+{% endhighlight %}
+{% endtabs %}
+
+> Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 
 ## Add Dashboard Layout to the application
 
@@ -242,4 +253,4 @@ The following example shows a basic Dashboard Layout by defining the [`panels`](
 
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/getting-started-cs4" %}
 
-> You can refer to our [JavaScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Dashboard Layout example](https://ej2.syncfusion.com/demos#/material/dashboard-layout/default.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Dashboard Layout example](https://ej2.syncfusion.com/demos/#/tailwind3/dashboard-layout/default.html) to knows how to present and manipulate data.

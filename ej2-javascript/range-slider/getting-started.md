@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Range slider control
+# Getting started in Range slider control
 
 The following section explains the required steps to build the Slider control with its basic usage in step-by-step procedure.
 

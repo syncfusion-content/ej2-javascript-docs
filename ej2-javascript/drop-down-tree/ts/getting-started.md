@@ -64,23 +64,31 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-Combined CSS files are available in the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package root folder. This can be referenced in the `~/src/styles/styles.css` file of your application using the following code.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
+
+The quickstart application is preconfigured to use the `Fluent2` theme. To install the [Fluent2](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) theme package, use the following command:
 
 {% tabs %}
-{% highlight css tabtitle="style.css" %}
+{% highlight bash tabtitle="npm" %}
 
-@import '../../node_modules/@syncfusion/ej2-base/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css';
+npm install @syncfusion/ej2-fluent2-theme --save
 
 {% endhighlight %}
 {% endtabs %}
 
-> To refer individual control CSS, please refer to the [Individual control theme files](../appearance/theme/#referring-individual-control-theme) section. If you want to refer the combined control styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+The required styles are imported in the `~/src/styles/styles.css` file, as shown below: 
+
+{% tabs %}
+{% highlight bash tabtitle="styles.css" %}
+
+@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/fluent2.css";
+
+{% endhighlight %}
+{% endtabs %}
+
+> Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 
 ## Initialize the Dropdown Tree
 
@@ -129,7 +137,7 @@ DropDownTreeObject.appendTo('#ddTreeElement');
 
 ## Binding data source
 
-The Dropdown Tree control can load the data either from local data sources or remote data services. This can be done using the [`dataSource`](../api/drop-down-tree/fieldsModel/#datasource) property that is a member of the [`fields`](../api/drop-down-tree/#fields) property. The dataSource property supports array of JavaScript objects and DataManager. Here, an array of JSON values is passed to the Dropdown Tree control.
+The Dropdown Tree control can load the data either from local data sources or remote data services. This can be done using the [`dataSource`](https://ej2.syncfusion.com/documentation/api/drop-down-tree/fieldsmodel#datasource) property that is a member of the [`fields`](https://ej2.syncfusion.com/documentation/api/drop-down-tree/dropdowntreemodel#fields) property. The dataSource property supports array of JavaScript objects and DataManager. Here, an array of JSON values is passed to the Dropdown Tree control.
 
 ```ts
 import { DropDownTree } from '@syncfusion/ej2-dropdowns';

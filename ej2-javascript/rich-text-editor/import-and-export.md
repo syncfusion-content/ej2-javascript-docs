@@ -15,7 +15,7 @@ domainurl: ##DomainURL##
 
 The Rich Text Editor provides functionality to import content directly from Microsoft Word documents, preserving the original formatting and structure. This feature ensures a smooth transition of content from Word to the editor, maintaining elements such as headings, lists, tables, and text styles.
 
-To integrate an `ImportWord` option into the Rich Text Editor toolbar, you can add it as a custom toolbar [items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarSettings#items) using the items property in toolbarSettings.
+To integrate an `ImportWord` option into the Rich Text Editor toolbar, you can add it as a custom toolbar [items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#items) using the items property in toolbarSettings.
 
 The following example illustrates how to set up the `ImportWord` in the Rich Text Editor to facilitate content importation from Word documents:
 
@@ -159,7 +159,7 @@ public class RichTextEditorController : Controller
 
 The Rich Text Editor's export functionality allows users to convert their edited content into PDF or Word documents with a single click, preserving all text styles, images, tables, and other formatting elements.
 
-You can add `ExportWord` and `ExportPdf` tools to the Rich Text Editor toolbar using the toolbarSettings [items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarSettings#items) property.
+You can add `ExportWord` and `ExportPdf` tools to the Rich Text Editor toolbar using the toolbarSettings [items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings) property.
 
 The following example demonstrates how to configure the `ExportWord` and `ExportPdf` tools in the Rich Text Editor, facilitating the export of content into Word or PDF documents:
 
@@ -194,7 +194,7 @@ The following example demonstrates how to configure the `ExportWord` and `Export
 
 The Rich Text Editor provides functionality to export Word or PDF documents with authentication for secure exporting.
 
-The [documentExporting](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#documentexporting) event provides `ExportingEventArgs` for secure export of Word or PDF files. Use `exportType` to identify the format, `currentRequest` to add authentication headers, and `customFormData` to send extra parameters in the POST body. On the server, read headers and custom data to validate and process the export securely.
+The [documentExporting](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#items) event provides `ExportingEventArgs` for secure export of Word or PDF files. Use `exportType` to identify the format, `currentRequest` to add authentication headers, and `customFormData` to send extra parameters in the POST body. On the server, read headers and custom data to validate and process the export securely.
 
 The following example demonstrates how to configure `documentExporting` for secure exporting:
 

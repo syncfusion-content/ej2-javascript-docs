@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started | Syncfusion
+title: Getting started with Drop down list control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -42,6 +42,46 @@ npm install
 ```
 
 >The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with common settings (`src/styles/styles.css`, `system.config.js` ) to start all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components.
+
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+
+The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
+npm install
+
+{% endhighlight %}
+{% endtabs %}
+
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
+
+The quickstart application is preconfigured to use the `Fluent2` theme. To install the [Fluent2](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) theme package, use the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+
+npm install @syncfusion/ej2-fluent2-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
+The required styles are imported in the `~/src/styles/styles.css` file, as shown below: 
+
+{% tabs %}
+{% highlight bash tabtitle="styles.css" %}
+
+@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/fluent2.css";
+
+{% endhighlight %}
+{% endtabs %}
+
+> Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 
 ## Initialize the DropDownList
 

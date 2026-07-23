@@ -244,6 +244,39 @@ The below code illustrates the pdf export customization.
 {% previewsample "page.domainurl/code-snippet/gantt/pdf-export-customization-cs1" %}
 {% endif %}
 
+## Export Gantt Chart with external form elements in PDF
+
+The Gantt Chart allows you to export external form elements, such as custom headers, footers, and user-entered form data, along with the Gantt content in a PDF document. This can be achieved by configuring the `header` and `footer` properties in the `pdfExportProperties` object and passing the required content during PDF export.
+
+The following example demonstrates how to export the Gantt Chart along with external form element values in the PDF document.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/pdf-export-form-cs18/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-form-cs18/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-form-cs18" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/pdf-export-form-cs18/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-form-cs18/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-form-cs18" %}
+{% endif %}
+
 ## Disable footer
 
 By default, the exported PDF file includes a footer. The footer can be disabled by setting the [enableFooter](../../api/gantt/pdfexportproperties#enablefooter) property to `false`.

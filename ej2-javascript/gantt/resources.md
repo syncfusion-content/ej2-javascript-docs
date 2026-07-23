@@ -178,6 +178,49 @@ The following example demonstrates custom resource styling:
 
 This configuration applies background colors to resource columns and taskbars, with the `queryTaskbarInfo` event modifying taskbar properties dynamically.
 
+## Restrict resource selection to a single resource in the edit dialog
+
+By default, the **Resources tab** in the Gantt edit dialog allows users to select multiple resources for a task. You can restrict resource assignment to a single resource by customizing the resource grid displayed in the edit dialog.
+
+To achieve this requirement:
+
+- Remove the checkbox column from the **Resources tab** using the [actionBegin](../gantt/events#actionbegin) event with the `requestType` of  `beforeOpenEditDialog`.
+- Configure the resource grid selection behavior using the [actionComplete](../gantt/events#actioncomplete) event with `requestType` of `openEditDialog` by,
+    - Setting `checkboxOnly` to `false` to allow row selection without requiring a checkbox click.
+    - Setting the resource grid selection type to `Single` to allow only one resource selection at a time.
+    - Disabling persistent selection by setting `persistSelection` to `false`.
+
+The following example demonstrates how to restrict resource selection to a single resource in the **Resources tab** of the edit dialog. Additionally, a custom condition is applied to disable resource selection in the **Resources tab** when editing **Task 3**.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/resourcetab-single-select-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/resourcetab-single-select-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/resourcetab-single-select-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/resourcetab-single-select-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/resourcetab-single-select-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/resourcetab-single-select-cs1" %}
+{% endif %}
+
+With this configuration, users can assign only a single resource to a task through the **Resources tab** of the Gantt edit dialog.
+
 ## See also
 
 - [How to configure resource view?](../gantt/resource-view)

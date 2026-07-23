@@ -24,7 +24,7 @@ Ensure the following tools are installed on your machine:
 
 A list of dependencies to use the DataGrid with all features.
 
-```javascript
+```
 |-- @syncfusion/ej2-grids
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -181,7 +181,7 @@ Now, run the **index.html** in web browser, it will render the Essential<sup sty
 
 ## Registering Syncfusion license
 
-The Syncfusion® Data Grid requires a valid license key to be registered in the application. To prevent license validation warnings, refer to the [Syncfusion licensing](https://ej2.syncfusion.com/javascript/documentation/licensing/overview) documentation
+The Syncfusion® Data Grid requires a valid license key to be registered in the application. To prevent license validation warnings, refer to the [Syncfusion licensing](https://ej2.syncfusion.com/javascript/documentation/licensing/overview) documentation.
 
 ## Troubleshooting
 

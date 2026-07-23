@@ -26,7 +26,7 @@ domainurl: ##DomainURL##
 
    3. When you click "Open" the installer window will be opened.
 
-## Step-by-Step Installation
+## Step-by-step installation
 
 The steps below show how to install the Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript - EJ2 Mac installer.
 

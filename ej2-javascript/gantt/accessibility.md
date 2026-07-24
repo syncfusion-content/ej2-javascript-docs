@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## Gantt Chart Control
 
-The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control is designed with comprehensive accessibility support, adhering to established guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles). This ensures the control is usable by individuals with disabilities and meets legal accessibility requirements for enterprise applications.
+The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/gantt-sdk/javascript-gantt-chart) control is designed with comprehensive accessibility support, adhering to established guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles). This ensures the control is usable by individuals with disabilities and meets legal accessibility requirements for enterprise applications.
 
 ## Accessibility compliance
 

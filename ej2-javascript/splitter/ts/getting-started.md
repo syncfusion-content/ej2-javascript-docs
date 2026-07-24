@@ -11,57 +11,51 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Splitter control
 
-This section explains how to create a simple **Splitter** component and configure its available functionalities, using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
+This section explains the steps to create a simple Splitter and demonstrates the basic usage of the Splitter component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
 
-## Dependencies
+## Prerequisites
 
-The following list of dependencies required to use the splitter control in your application:
+Ensure the following tools are installed on your machine:
 
-```js
-|-- @syncfusion/ej2-layouts
-    |-- @syncfusion/ej2-base
+* [Git](https://git-scm.com/downloads)
+* [Node.js](https://nodejs.org/en/)
+* [Visual Studio Code](https://code.visualstudio.com/)
+
+## Set up the development environment
+
+Clone the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from GitHub in the command prompt:
 
 ```
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
+```
 
-## Set up development environment
+Navigate to the project folder in the command prompt:
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-
-{% endhighlight %}
-{% endtabs %}
-
-After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
+```
 cd ej2-quickstart
+```
 
-{% endhighlight %}
-{% endtabs %}
+## Install Syncfusion<sup style="font-size:70%">&reg;</sup> Splitter package
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
+Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+Use the following command to install the `@syncfusion/ej2-layouts` package:
 
-The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+```
+npm install @syncfusion/ej2-layouts --save
+```
 
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
+Then, install the remaining dependent npm packages using the following command:
 
+```
 npm install
+```
 
-{% endhighlight %}
-{% endtabs %}
+> For more information about individual package and alternative installation methods, see the [installation guide](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation).
 
-## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> Splitter CSS styles
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
 
@@ -80,22 +74,20 @@ The required styles are imported in the `~/src/styles/styles.css` file, as shown
 {% tabs %}
 {% highlight bash tabtitle="styles.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/splitter/index.css";
 
 {% endhighlight %}
 {% endtabs %}
 
 > Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 
-## Adding splitter to the project
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Splitter control to the application
 
-The splitter can be initialized through div tag with child elements. Add the div element with the id attribute `#splitter` inside the body tag in your `index.html`.
+Open the application in Visual Studio Code and add the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript UI controls. 
 
-`[src/index.html]`
+In this article, the Splitter control is used as an example. Add the following Splitter element to the `~/src/index.html` file.
 
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -122,17 +114,11 @@ The splitter can be initialized through div tag with child elements. Add the div
 </body>
 
 </html>
+```
 
-{% endhighlight %}
-{% endtabs %}
+Now, to render the Splitter control, add the following TypeScript code to the `~/src/app/app.ts` file.
 
-Now, import the  splitter control to your `app.ts` and initialize it to the element `#splitter` as follows.
-
-`[src/app/app.ts]`
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
+```ts
 import { Splitter } from '@syncfusion/ej2-layouts';
 
 // Initialize Splitter control
@@ -143,9 +129,7 @@ let splitObject: Splitter = new Splitter({
 
 // Render initialized splitter
 splitObject.appendTo('#splitter');
-
-{% endhighlight %}
-{% endtabs %}
+```
 
 ## Load content to the pane
 
@@ -153,12 +137,9 @@ You can load the pane contents in either HTML element or string types using [con
 
 For detailed information, refer to the [pane content](./pane-content) section.
 
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
+```ts
 import { Splitter } from '@syncfusion/ej2-layouts';
 
-// Initialize splitter control
 let splitObj: Splitter = new Splitter({
     paneSettings: [
         // Content for Pane 1
@@ -173,26 +154,18 @@ let splitObj: Splitter = new Splitter({
     height: '250px'
 });
 
-// Render initialized splitter
 splitObj.appendTo('#splitter');
-
-{% endhighlight %}
-{% endtabs %}
+```
 
 ## Run the application
 
-After completing the configuration to render the splitter, run the following command to display
-the output in your default browser.
+Now, run the application in the browser using the following command.
 
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
+```
+npm start
+```
 
-npm run start
-
-{% endhighlight %}
-{% endtabs %}
-
-The following example illustrates the output in your browser.
+The below output can be achieved by following the steps mentioned above.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -205,8 +178,6 @@ The following example illustrates the output in your browser.
           
 {% previewsample "page.domainurl/code-snippet/splitter/getting-started-cs2" %}
 
-## See Also
+## See also
 
-* [Resizable split panes](./resizing)
-* [Collapsible panes](./expand-and-collapse)
-* [Construct different layouts using Splitter](./different-layouts)
+* [How to register Syncfusion<sup style="font-size:70%">&reg;</sup> license key in TypeScript(ES6) application](https://ej2.syncfusion.com/documentation/licensing/license-key-registration)

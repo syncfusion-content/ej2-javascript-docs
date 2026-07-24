@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Zooming functionality in ##Platform_Name## Gantt Chart Control | Syncfusion
-description: Explore zooming options in the Syncfusion ##Platform_Name## Gantt Chart control, including Zoom In, Zoom Out, Zoom To Fit, and custom zooming levels.
+title: Zooming functionality in ##Platform_Name## Gantt Chart | Syncfusion
+description: Explore zooming options in ##Platform_Name## Gantt Chart, including Zoom In, Zoom Out, Zoom To Fit, and custom zooming levels.
 platform: ej2-javascript
 control: Zooming 
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Zooming Functionality in ##Platform_Name## Gantt Chart Control
 
-The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control provides zooming support to adjust the timeline view dynamically. This includes increasing or decreasing the width of timeline cells and changing the timeline units to view tasks across various timespan from minutes to decades.
+The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/gantt-sdk/javascript-gantt-chart) control provides zooming support to adjust the timeline view dynamically. This includes increasing or decreasing the width of timeline cells and changing the timeline units to view tasks across various timespan from minutes to decades.
 
 To enable zooming features, add `ZoomIn`, `ZoomOut`, and `ZoomToFit` to the toolbar items collection. These actions can also be triggered externally using the built-in methods like [zoomIn](../../api/gantt#zoomin), [zoomOut](../../api/gantt#zoomout), and [fitToProject](../../api/gantt#fittoproject).
 

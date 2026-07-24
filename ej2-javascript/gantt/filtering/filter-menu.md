@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Filter Menu in ##Platform_Name## Gantt Chart Control
 
-The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as equal, contains, greaterthan, etc. To enable this feature, set [allowFiltering](../../api/gantt#allowfiltering) to **true** and configure [filterSettings.type](../../api/gantt/filtersettings#type) as **Menu**.
+The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/gantt-sdk/javascript-gantt-chart) control offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as equal, contains, greaterthan, etc. To enable this feature, set [allowFiltering](../../api/gantt#allowfiltering) to **true** and configure [filterSettings.type](../../api/gantt/filtersettings#type) as **Menu**.
 
 {% if page.publishingplatform == "typescript" %}
 

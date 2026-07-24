@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started | Syncfusion
+title: Getting started with List box control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## List box control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -31,50 +31,53 @@ The following list of dependencies are required to use the ListBox component in 
         |-- @syncfusion/ej2-buttons
 ```
 
-## Set up the development environment
+## Set up development environment
 
-To get started with the ListBox component, clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [`quickstart`](https://github.com/syncfusion/ej2-quickstart.git) project and install the npm packages by using the following commands.
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
-```
-git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
-cd quickstart
-npm install
-```
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
 
->The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with common settings (`src/styles/styles.css`, `system.config.js` ) to start all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components.
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 
-* Refer to the [Button component dependencies](./getting-started#dependencies) in `system.config.js` configuration file.
+{% endhighlight %}
+{% endtabs %}
 
-`[src/system.config.js]`
+After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
 
-```js
-System.config({
-    paths: {
-        'npm:': './node_modules/',
-        'syncfusion:': 'npm:@syncfusion/'
-    },
-    map: {
-        app: 'app',
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
 
-        //Syncfusion packages mapping
-        "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
-        "@syncfusion/ej2-data": "syncfusion:ej2-data/dist/ej2-data.umd.min.js",
-        "@syncfusion/ej2-inputs": "syncfusion:ej2-inputs/dist/ej2-inputs.umd.min.js",
-        "@syncfusion/ej2-buttons": "syncfusion:ej2-buttons/dist/ej2-buttons.umd.min.js",
-        "@syncfusion/ej2-lists": "syncfusion:ej2-lists/dist/ej2-lists.umd.min.js",
-        "@syncfusion/ej2-popups": "syncfusion:ej2-popups/dist/ej2-popups.umd.min.js",
-        "@syncfusion/ej2-dropdowns": "syncfusion:ej2-dropdowns/dist/ej2-dropdowns.umd.min.js",
-    },
-    packages: {
-        'app': { main: 'app', defaultExtension: 'js' }
-    }
-});
+cd ej2-quickstart
 
-System.import('app.ts').catch(console.error.bind(console)).then(function () {
-    document.getElementById('loader').style.display = "none";
-    document.getElementById('container').style.visibility = "visible";
-});
-```
+{% endhighlight %}
+{% endtabs %}
+
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
+
+The quickstart application is preconfigured to use the `Fluent2` theme. To install the [Fluent2](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) theme package, use the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+
+npm install @syncfusion/ej2-fluent2-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
+The required styles are imported in the `~/src/styles/styles.css` file, as shown below: 
+
+{% tabs %}
+{% highlight bash tabtitle="styles.css" %}
+
+@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/fluent2.css";
+
+{% endhighlight %}
+{% endtabs %}
+
+> Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 
 ## Initialize the ListBox
 

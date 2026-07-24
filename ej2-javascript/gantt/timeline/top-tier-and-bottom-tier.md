@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Top tier and bottom tier in ##Platform_Name## Gantt Chart Control | Syncfusion
-description: Learn how to configure top and bottom tiers in the Syncfusion ##Platform_Name## Gantt Chart Control using timeline settings such as unit, format, count, and formatter.
+title: Top tier and bottom tier in ##Platform_Name## Gantt Chart | Syncfusion
+description: Learn how to configure top and bottom tiers in ##Platform_Name## Gantt Chart using timeline settings such as unit, format, count, and formatter.
 platform: ej2-javascript
 control: Top tier and bottom tier 
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Top Tier and Bottom Tier in ##Platform_Name## Gantt Chart Control
 
-The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control supports a two-tier timeline layout, enabling customization of both the top and bottom tiers through specific configuration options.
+The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/gantt-sdk/javascript-gantt-chart) control supports a two-tier timeline layout, enabling customization of both the top and bottom tiers through specific configuration options.
 
 - [topTier](../../api/gantt/timelineSettings#toptier) and [bottomTier](../../api/gantt/timelineSettings#bottomtier): Define the structure and visibility of each timeline tier.
 - [unit](../../api/gantt/timelineTierSettings#unit): Specifies the time unit for each tier, such as day, week, or month.

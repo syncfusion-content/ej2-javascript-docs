@@ -91,28 +91,47 @@ Block Editor can be initialized on a div element as shown below
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/block-editor/getting-started/index.js %}
+var blockeditor = new ej.blockeditor.BlockEditor({ });
+blockeditor.appendTo('#blockeditor_default');
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/block-editor/getting-started/index.html %}
-{% endhighlight %}
-{% endtabs %}
+<!DOCTYPE html>
+<html lang="en">
 
-## Run the application
+<head>
+    <title>Essential JS 2 - BlockEditor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Essential JS 2">
+    <meta name="author" content="Syncfusion">
 
-Now, run the index.html in web browser, it will render the Essential JS 2 Rich Text Editor control.
+    <!-- Essential JS 2 Block Editor's dependent tailwind3 theme -->
+    <link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-base/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-buttons/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-popups/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-inputs/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-navigations/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-splitbuttons/styles/tailwind3.css" rel="stylesheet"/>
+    <link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-dropdowns/styles/tailwind3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-blockeditor/styles/tailwind3.css" rel="stylesheet" />
 
-Output will be displayed as follows.
+    <!-- Essential JS 2 all script -->
+    <script src="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/dist/ej2.min.js" type="text/javascript"></script>
+</head>
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/block-editor/getting-started/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/block-editor/getting-started/index.html %}
+<body>
+    <div id="blockeditor_default"></div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
 {% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/block-editor/getting-started" %}
+
+## Run the application
+
+Now, run the index.html in web browser, it will render the Essential JS 2 Block Editor control.
 
 > You can refer to our [JavaScript Block Editor](https://www.syncfusion.com/rich-text-editor-sdk/javascript-block-editor) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Block Editor example](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/block-editor/overview.html) that shows how to render the block editor.

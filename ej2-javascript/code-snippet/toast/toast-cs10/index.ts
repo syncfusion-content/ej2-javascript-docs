@@ -7,9 +7,9 @@ enableRipple(true);
 let toast: Toast = new Toast({
     title: 'Matt sent you a friend request',
     content: 'You have a new friend request yet to accept',
-    timeOut: 0
+    created: () => {
+        toast.show();
+    }
 });
+
 toast.appendTo('#element');
-toast.show();
-
-

@@ -11,57 +11,51 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Dialog control
 
-This section explains how to create a simple Dialog component and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains the steps to create a simple Dialog and demonstrates the basic usage of the Dialog component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
-## Dependencies
+## Prerequisites
 
-The following list of dependencies are required to use Dialog component in your application.
+Ensure the following tools are installed on your machine:
 
-```javascript
-|-- @syncfusion/ej2-popups
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-buttons
+* [Git](https://git-scm.com/downloads)
+* [Node.js](https://nodejs.org/en/)
+* [Visual Studio Code](https://code.visualstudio.com/)
+
+## Set up the development environment
+
+Clone the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from GitHub in the command prompt:
+
+```
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 ```
 
-## Set up development environment
+Navigate to the project folder in the command prompt:
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-
-{% endhighlight %}
-{% endtabs %}
-
-After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
+```
 cd ej2-quickstart
+```
 
-{% endhighlight %}
-{% endtabs %}
+## Install Syncfusion<sup style="font-size:70%">&reg;</sup> Dialog package
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
+Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+Use the following command to install the `@syncfusion/ej2-popups` package:
 
-The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+```
+npm install @syncfusion/ej2-popups --save
+```
 
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
+Then, install the remaining dependent npm packages using the following command:
 
+```
 npm install
+```
 
-{% endhighlight %}
-{% endtabs %}
+> For more information about individual package and alternative installation methods, see the [installation guide](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation).
 
-## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> Dialog CSS styles
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
 
@@ -80,37 +74,31 @@ The required styles are imported in the `~/src/styles/styles.css` file, as shown
 {% tabs %}
 {% highlight bash tabtitle="styles.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/dialog/index.css";
 
 {% endhighlight %}
 {% endtabs %}
 
 > Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 
-## Adding Dialog to the project
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Dialog control to the application
 
-Add the div element with id attribute `#dialog` inside the body tag in your `index.html`.
+Open the application in Visual Studio Code and add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls. 
 
-`[src/index.html]`
+In this article, the Dialog control is used as an example. Add the following Dialog element to the `~/src/index.html` file.
 
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Essential JS 2 Dialog Component</title>
+    <title>Essential JS 2</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Essential JS 2" />
-    <meta name="author" content="Syncfusion" />
-    <link rel="shortcut icon" href="resources/favicon.ico" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
-<body>
-    <div>
+<body style="margin-top: 100px;">
+    <div id="container">
       <!--element which is going to render the Dialog -->
         <button class="e-control e-btn" id="targetButton" role="button" e-ripple="true">Open Dialog</button>
         <div id="dialog"></div>
@@ -118,61 +106,55 @@ Add the div element with id attribute `#dialog` inside the body tag in your `ind
 </body>
 
 </html>
+ ```
 
-{% endhighlight %}
-{% endtabs %}
-
-> The [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
-> This web tool is useful to combine the required component scripts and styles in a single file.
-
-Now import the  Dialog component into your `app.ts` and append it to `#dialog`
-`[src/app/app.ts]`
+To render the Dialog control, add the following JavaScript code to the `~/src/app/app.ts` file
 
 {% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+{% highlight ts tabtitle="~/src/app/app.ts" %}
 
 import { Dialog } from '@syncfusion/ej2-popups';
 
-// Initialization of Dialog component
-let dialog: Dialog = new Dialog({
-    // Dialog content
-    content: 'This is a Dialog with content',
-    // The Dialog shows within the target element
-    target: document.getElementById("container"),
-    // Dialog width
-    width: '250px'
-});
+// Initialize Dialog component
+let dialog = new Dialog({
 
+    // Dialog content
+    content: 'This is a Dialog',
+    // The Dialog shows within the target element
+    target: document.getElementById("container") as HTMLElement,
+    // Dialog width
+    width: '250px',
+    // Dialog position
+    position: { X: 'center', Y: 'center' }
+});
 // Render initialized Dialog
 dialog.appendTo('#dialog');
+
+// Sample level code to handle the button click action
+
+document.getElementById('targetButton')!.onclick = (): void => {
+    if (dialog.visible) {
+        dialog.hide();
+    } else {
+        dialog.show();
+    }
+};
+
+{% endhighlight %}
+{% highlight css tabtitle="~/src/styles/styles.css" %}
+
+html,
+body,    
+#container {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
 
 {% endhighlight %}
 {% endtabs %}
 
 > In the dialog control, max-height is calculated based on the dialog target element height. If the target property is not configured, the document.body is considered as a target. Therefore, to show a dialog in proper height, you need to add min-height to the target element.
-
-## Run the application
-
-The **Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart** application project is configured to compile and run the application in the browser. Use the following command to run the application:
-
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
-npm start
-
-{% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/dialog/getting-started-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/dialog/getting-started-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/dialog/getting-started-cs2" %}
 
 > If the dialog is rendered based on the body element, it gets the height based on the body's height. If the dialog height exceeds the body height, the dialog height will not be set. In this scenario, set the CSS height style for html and body elements:
 
@@ -184,97 +166,16 @@ html, body {
 
 ```
 
-## Modal dialog
+## Run the application
 
-A [modal](https://ej2.syncfusion.com/documentation/api/dialog/index-default#ismodal) dialog displays an overlay behind the dialog, requiring the user to interact with it before accessing other content in the application.
+Now, run the application in the browser using the following command.
 
-When the user clicks the overlay, the action can be handled through the [`overlayClick`](https://ej2.syncfusion.com/documentation/api/dialog/index-default#overlayclick) event. In the sample below, the dialog closes when clicking the overlay.
-
-> When the modal dialog is opened, the Dialog's target scrolling will be disabled. The scrolling will be enabled again once close the Dialog.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/dialog/modal-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/dialog/modal-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```
+npm start
+```
           
-{% previewsample "page.domainurl/code-snippet/dialog/modal-cs2" %}
+{% previewsample "page.domainurl/code-snippet/dialog/getting-started-cs2" %}
 
-## Enable header
-
-The Dialog header can be enabled by adding the header content as text or HTML content through the [`header`](https://ej2.syncfusion.com/documentation/api/dialog/index-default#header) property.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/dialog/header-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/dialog/header-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/dialog/header-cs2" %}
-
-## Configure action buttons
-
-The Dialog provides built-in support to render the action buttons on the footer (for ex: 'OK' or 'Cancel' buttons) by using [buttons](https://ej2.syncfusion.com/documentation/api/dialog/index-default#buttons) property. Each Dialog button allows the user to perform any action while clicking on it.
-
-The primary button will be focused automatically on open the Dialog, and add the [click](https://ej2.syncfusion.com/documentation/api/dialog/buttonpropsmodel#click) event to handle the actions
-
-> When the Dialog initialize with more than one primary buttons, the first primary button gets focus on open the Dialog.
-
-The below sample render with buttons and its action.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/dialog/footer-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/dialog/footer-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/dialog/footer-cs2" %}
-
-## Draggable
-
-The Dialog supports to [drag](https://ej2.syncfusion.com/documentation/api/dialog/index-default#allowdragging) within its target container by grabbing the Dialog header, which allows the user to reposition the Dialog dynamically.
-
-> The Dialog can be draggable only when the Dialog header is enabled. From `16.2.x` version, enabled draggable support for modal dialog also.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/dialog/draggable-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/dialog/draggable-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/dialog/draggable-cs2" %}
-
-## Positioning
-
-The Dialog can be positioned using the [position](https://ej2.syncfusion.com/documentation/api/dialog/index-default#position) property by providing the X and Y co-ordinates. It can be positioned inside the target of the container or `<body>` of the element based on the given X and Y values.
-
-for X is: left, center, right (or) any offset value
-for Y is: top, center, bottom (or) any offset value
-
-The below example demonstrates the different Dialog positions.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/dialog/positioning-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/dialog/positioning-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/dialog/positioning-cs2" %}
 
 ## See Also
 

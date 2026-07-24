@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Globalization and Localization in ##Platform_Name## Gantt Chart Control
 
-The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control supports globalization to adapt project management interfaces to diverse languages, cultures, and regional preferences without code changes. Globalization encompasses localization for translating text elements like column headers and dialog titles, internationalization for formatting dates, numbers, and times in timelines and task fields, and Right-to-Left (RTL) support for languages like Arabic and Hebrew. These features ensure that task names, toolbar actions, and timeline displays align with users’ linguistic and cultural expectations, enhancing accessibility and usability in project management workflows for global users.
+The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/gantt-sdk/javascript-gantt-chart) control supports globalization to adapt project management interfaces to diverse languages, cultures, and regional preferences without code changes. Globalization encompasses localization for translating text elements like column headers and dialog titles, internationalization for formatting dates, numbers, and times in timelines and task fields, and Right-to-Left (RTL) support for languages like Arabic and Hebrew. These features ensure that task names, toolbar actions, and timeline displays align with users’ linguistic and cultural expectations, enhancing accessibility and usability in project management workflows for global users.
 
 ## Key globalization features
 

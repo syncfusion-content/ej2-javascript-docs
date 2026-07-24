@@ -11,88 +11,86 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Sidebar control
 
-This section briefly explains how to create a simple **Sidebar** control, and configure it in TypeScript using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section briefly explains the steps to create a simple Sidebar and demonstrates the basic usage of the Sidebar component using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
-## Dependencies
+## Prerequisites
 
-The following list of dependencies are required to use the Sidebar control in your application.
+Ensure the following tools are installed on your machine:
 
-```js
-|-- @syncfusion/ej2-navigations
-  |-- @syncfusion/ej2-base
-  |-- @syncfusion/ej2-build
-  |-- @syncfusion/ej2-lists
-  |-- @syncfusion/ej2-data
-  |-- @syncfusion/ej2-inputs
-    |-- @syncfusion/ej2-splitbuttons
-  |-- @syncfusion/ej2-popups
-    |-- @syncfusion/ej2-buttons
+* [Git](https://git-scm.com/downloads)
+* [Node.js](https://nodejs.org/en/)
+* [Visual Studio Code](https://code.visualstudio.com/)
+
+## Set up the development environment
+
+Clone the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from GitHub in the command prompt:
+
+```
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 ```
 
-## Set up development environment
+Navigate to the project folder in the command prompt:
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-
-{% endhighlight %}
-{% endtabs %}
-
-After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
+```
 cd ej2-quickstart
+```
 
-{% endhighlight %}
-{% endtabs %}
+## Install Syncfusion<sup style="font-size:70%">&reg;</sup> Sidebar package
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
+Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
-
-The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
-
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
+Use the following command to install the `@syncfusion/ej2-navigations` package:
+ 
+```
+npm install @syncfusion/ej2-navigations --save
+```
+ 
+Install the required npm packages:
+ 
+```
 npm install
+```
+> For more information about individual packages and alternative installation methods, see the [installation guide](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation).
 
-{% endhighlight %}
-{% endtabs %}
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> Sidebar CSS styles
 
-## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
 
-To render the Sidebar control, need to import Sidebar and its dependent control’s styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+The quickstart application is preconfigured to use the `Fluent2` theme. To install the [Fluent2](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) theme package, use the following command:
 
 {% tabs %}
-{% highlight css tabtitle="style.css" %}
+{% highlight bash tabtitle="npm" %}
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/fluent2.css";
-@import "../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css";
-  
+npm install @syncfusion/ej2-fluent2-theme --save
+
 {% endhighlight %}
 {% endtabs %}
 
->Note: If you want to refer the combined control styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+The required styles are imported in the `~/src/styles/styles.css` file, as shown below: 
 
-## Initialize Sidebar using HTML elements
+{% tabs %}
+{% highlight bash tabtitle="styles.css" %}
+
+@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/sidebar/index.css";
+
+{% endhighlight %}
+{% endtabs %}
+
+> Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
+
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Sidebar control to the application
 
 A Sidebar can be initialized using any HTML element. Most probably the `<aside>` tag is used to render Sidebar as it contains secondary content aside from the main content. The immediate sibling element of the Sidebar will be considered as the main content.
 
 To render the Sidebar, refer to the following structure of the HTML elements:
 
-`[src/index.html]`
+Open the application in Visual Studio Code and add the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript UI controls. 
 
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
+In this article, the Sidebar control is used as an example. Add the following Sidebar element to the `~/src/index.html` file.
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -118,38 +116,26 @@ To render the Sidebar, refer to the following structure of the HTML elements:
     </div>
 </body>
 
-</html>
+</html> 
+```
 
-{% endhighlight %}
-{% endtabs %}
+Now, to render the Sidebar control, add the following TypeScript code to the `~/src/app/app.ts` file, and initialize it to the `#default` as follows:
 
-* Import the Sidebar control to your `app.ts` file, and initialize it to the `#default` as follows:
-
-`[src/app/app.ts]`
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+```ts
 
 import { Sidebar } from '@syncfusion/ej2-navigations';
 
 let defaultSidebar: Sidebar = new Sidebar();
 defaultSidebar.appendTo('#default');
 
-{% endhighlight %}
-{% endtabs %}
-
+````
 ## Run the application
 
-The **Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart** application project is configured to compile and run the application in browser.
-Use the following command to run the application.
+Now, run the application in the browser using the following command.
 
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
+```
 npm start
-
-{% endhighlight %}
-{% endtabs %}
+```
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -165,103 +151,7 @@ npm start
           
 {% previewsample "page.domainurl/code-snippet/sidebar/default-cs1" %}
 
-> Sidebar will, by default, fit the size of its content. There is also an option to set a certain width using the [`width`](../api/sidebar/#width) property.
-
-## Enable backdrop
-
-Enabling the [`showBackdrop`](../api/sidebar/#showbackdrop) in the Sidebar control will prevent the main content from user interactions, when it is in expanded state. Here, the DOM elements will not get changed. It only closes the main content by covering with a black backdrop overlay and focuses the Sidebar in the screen. Sidebar can be rendered with specific width by setting [`width`](../api/sidebar/#width) property.
-
-N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent container for the div block in which you intend to enable the backdrop. Set the class name of this parent container as the [`target`](../api/sidebar/#target) for the Sidebar. Alternatively, you can place an empty div container after the target container.
-
-The following example shows a Sidebar control with enabled backdrop.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/sidebar/sidebar-howTo-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/sidebar/sidebar-howTo-cs3/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/sidebar/sidebar-howTo-cs3/styles.css %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/sidebar/sidebar-howTo-cs3" %}
-
-## Position
-
-Positioning the Sidebar to the right or left of the main content can be achieved by using the [`position`](../api/sidebar/#position) property. If the position is not set, the Sidebar will expand from the left to the body element. [`enablePersistence`](../api/sidebar/#enablepersistence) will persist the control's state between page reloads. [`change`](../api/sidebar/#change) event will be triggered when the state(expand/collapse) of the control is changed.
-
-In the following sample, the position of the Sidebar can be changed using the radio buttons in the main content.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/sidebar/position-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/sidebar/position-cs3/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/sidebar/position-cs3/styles.css %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/sidebar/position-cs3" %}
-
-## Animate
-
-Animation transitions can be set while expanding or collapsing the Sidebar using the [`animate`](../api/sidebar/#animate) property. By default , [`animate`](../api/sidebar/#animate) property is set to **true**.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/sidebar/animate-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/sidebar/animate-cs2/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/sidebar/animate-cs2/styles.css %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/sidebar/animate-cs2" %}
-
-## Close on document click
-
-Sidebar can be closed on document click by setting [`closeOnDocumentClick`](../api/sidebar/#closeondocumentclick) to **true**. If this property is not set, the Sidebar will not close on document click since its default value is **false**. Sidebar can be kept opened during rendering using [`isOpen`](../api/sidebar/#isopen) property.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/sidebar/document-click-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/sidebar/document-click-cs2/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/sidebar/document-click-cs2/styles.css %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/sidebar/document-click-cs2" %}
-
-## Enable gestures
-
-Expand or collapse the Sidebar while swiping in touch devices using [`enableGestures`](../api/sidebar/#enablegestures) property. By default, [`enableGestures`](../api/sidebar/#enablegestures) is set to **true**.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/sidebar/gestures-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/sidebar/gestures-cs2/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/sidebar/gestures-cs2/styles.css %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/sidebar/gestures-cs2" %}
+> Sidebar will, by default, fit the size of its content. There is also an option to set a certain width using the [`width`](https://ej2.syncfusion.com/documentation/api/sidebar/index-default#width) property.
 
 ## See Also
 

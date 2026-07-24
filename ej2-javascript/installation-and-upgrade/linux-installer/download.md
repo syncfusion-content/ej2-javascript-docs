@@ -18,7 +18,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> installer can be downloaded
 
 You can download the Syncfusion<sup style="font-size:70%">&reg;</sup> installer from [Syncfusion.com](https://www.syncfusion.com/) website 
 
-## Download the Trial Version
+## Download the trial version
 
 Our 30-day trial can be downloaded in two ways.
 
@@ -26,7 +26,7 @@ Our 30-day trial can be downloaded in two ways.
 * Start Trials if using components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
 
-### Download Free Trial Setup
+### Download free trial setup
 
 1. You can evaluate our 30-day free trial by visiting the [Download Free Trial](https://www.syncfusion.com/downloads) page and select the product
 2. After completing the required form or logging in with your registered Syncfusion<sup style="font-size:70%">&reg;</sup> account, you can download the trial installer from the confirmation page. (as shown in below screenshot.)
@@ -43,7 +43,7 @@ Our 30-day trial can be downloaded in two ways.
 
    ![License and downloads of Syncfusion JavaScript](images/start-trial-download-offline-installer.png)
 
-### Start Trials if using components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
+### Start trials if using components through [nuget.org](https://www.nuget.org/packages?q=syncfusion)
 
 You should initiate an evaluation if you have already obtained our components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
@@ -65,7 +65,7 @@ You should initiate an evaluation if you have already obtained our components th
 5. You can find your current active trial products on the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page.
    
 
-## Download the License Version
+## Download the license version
 
 1. Syncfusion<sup style="font-size:70%">&reg;</sup> licensed products will be available in the [License & Downloads](https://www.syncfusion.com/account/downloads) page under your registered Syncfusion<sup style="font-size:70%">&reg;</sup> account.
 2. You can view all the licenses (both active and expired) associated with your account.

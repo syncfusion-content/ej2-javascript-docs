@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Searching in ##Platform_Name## Gantt Chart Control
 
-The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control allows quick filtering of records based on search input, improving access to relevant data in large datasets.
+The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/gantt-sdk/javascript-gantt-chart) control allows quick filtering of records based on search input, improving access to relevant data in large datasets.
 
 To enable search functionality, include the **Search** item in the [toolbar](../../api/gantt#toolbar) configuration and inject both `Filter` service and `Toolbar` service into the control's `providers` array.
 

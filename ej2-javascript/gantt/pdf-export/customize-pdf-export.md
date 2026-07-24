@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # To customize PDF export
 
-Customizing PDF export in the [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control allows tailoring exported documents for specific needs, using [PdfExportProperties](../../api/gantt/pdfexportproperties) to adjust file names, page orientation, size, columns, headers, footers, timelines, and templates. Ensuring focused content like selected rows or styled taskbars, with the `PdfExport` module injected and [allowPdfExport](../../api/gantt#allowpdfexport) enabled. Use [beforePdfExport](../../gantt/events#beforepdfexport) and [pdfExportComplete](../../gantt/events#pdfexportcomplete) events for pre-export and post-export modifications, and [pdfQueryTaskbarInfo](../../gantt/events#pdfquerytaskbarinfo) for taskbar styling, supporting RTL layouts via [enableRtl](../../api/gantt#enablertl).
+Customizing PDF export in the [##Platform_Name## Gantt Chart](https://www.syncfusion.com/gantt-sdk/javascript-gantt-chart) control allows tailoring exported documents for specific needs, using [PdfExportProperties](../../api/gantt/pdfexportproperties) to adjust file names, page orientation, size, columns, headers, footers, timelines, and templates. Ensuring focused content like selected rows or styled taskbars, with the `PdfExport` module injected and [allowPdfExport](../../api/gantt#allowpdfexport) enabled. Use [beforePdfExport](../../gantt/events#beforepdfexport) and [pdfExportComplete](../../gantt/events#pdfexportcomplete) events for pre-export and post-export modifications, and [pdfQueryTaskbarInfo](../../gantt/events#pdfquerytaskbarinfo) for taskbar styling, supporting RTL layouts via [enableRtl](../../api/gantt#enablertl).
 
 ## Customize file name
 

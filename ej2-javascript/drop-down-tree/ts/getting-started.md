@@ -1,88 +1,86 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Dropdown Tree control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Dropdown Tree control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## DropDown Tree control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## DropDown Tree control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Dropdown Tree
+control: DropDown Tree
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with ##Platform_Name## Dropdown Tree control
+# Getting started with ##Platform_Name## DropDown Tree control
 
-This section explains you about how to create a simple **Dropdown Tree** control and configure its available functionalities in TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart).
+This section explains the steps to create a simple DropDown Tree and demonstrates the basic usage of the DropDown Tree component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
-## Dependencies
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
-The following list of dependencies are required to use the Dropdown Tree control in your application.
 
-```javascript
-|-- @syncfusion/ej2-dropdowns
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-data
-    |-- @syncfusion/ej2-inputs
-    |-- @syncfusion/ej2-lists
-    |-- @syncfusion/ej2-navigations
-    |-- @syncfusion/ej2-popups
-        |-- @syncfusion/ej2-buttons
+## Prerequisites
+
+Ensure the following tools are installed on your machine:
+
+* [Git](https://git-scm.com/downloads)
+* [Node.js](https://nodejs.org/en/)
+* [Visual Studio Code](https://code.visualstudio.com/)
+
+## Set up the development environment
+
+Clone the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from GitHub in the command prompt:
+
+```
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 ```
 
-## Set up development environment
+Navigate to the project folder in the command prompt:
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-
-{% endhighlight %}
-{% endtabs %}
-
-After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
+```
 cd ej2-quickstart
+```
 
-{% endhighlight %}
-{% endtabs %}
+## Install Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript DropDown Tree packages
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
+Use the following command to install the @syncfusion/ej2-dropdowns package:
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+```
+npm install @syncfusion/ej2-dropdowns
+```
+Install the required npm packages:
 
-The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
-
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
+```
 npm install
+```
 
-{% endhighlight %}
-{% endtabs %}
 
-## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+> For more information about individual packages and alternative installation methods, see the [installation guide](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation).
 
-Combined CSS files are available in the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package root folder. This can be referenced in the `~/src/styles/styles.css` file of your application using the following code.
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
+
+The quickstart application is preconfigured to use the `Fluent2` theme. To install the [Fluent2](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) theme package, use the following command:
 
 {% tabs %}
-{% highlight css tabtitle="style.css" %}
+{% highlight bash tabtitle="npm" %}
 
-@import '../../node_modules/@syncfusion/ej2-base/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css';
+npm install @syncfusion/ej2-fluent2-theme --save
 
 {% endhighlight %}
 {% endtabs %}
 
-> To refer individual control CSS, please refer to the [Individual control theme files](../appearance/theme/#referring-individual-control-theme) section. If you want to refer the combined control styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+The required styles are imported in the `~/src/styles/styles.css` file, as shown below: 
 
-## Initialize the Dropdown Tree
+{% tabs %}
+{% highlight bash tabtitle="styles.css" %}
+
+@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/drop-down-tree/index.css";
+
+{% endhighlight %}
+{% endtabs %}
+
+> Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
+
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> DropDown Tree control to the application
 
 Add the HTML input element that needs to be initialized as a Dropdown Tree in `index.html`.
 
@@ -95,10 +93,6 @@ Add the HTML input element that needs to be initialized as a Dropdown Tree in `i
     <title>Essential JS 2 Dropdown Tree control</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Essential JS 2" />
-    <meta name="author" content="Syncfusion" />
-    <link rel="shortcut icon" href="resources/favicon.ico" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -111,25 +105,11 @@ Add the HTML input element that needs to be initialized as a Dropdown Tree in `i
 </html>
 ```
 
+The Dropdown Tree control can load the data either from local data sources or remote data services. This can be done using the [`dataSource`](https://ej2.syncfusion.com/documentation/api/drop-down-tree/fieldsmodel#datasource) property that is a member of the [`fields`](https://ej2.syncfusion.com/documentation/api/drop-down-tree/dropdowntreemodel#fields) property. The dataSource property supports array of JavaScript objects and DataManager. Here, an array of JSON values is passed to the Dropdown Tree control.
+
 Now, import the  Dropdown Tree control to your `app.ts` and initialize it to the element `#ddTreeElement` as shown below.
 
 `[src/app/app.ts]`
-
-```ts
-
-import { DropDownTree } from '@syncfusion/ej2-dropdowns';
-
-// initialize Dropdown Tree control
-let DropDownTreeObject: DropDownTree = new DropDownTree();
-
-// render initialized Dropdown Tree
-DropDownTreeObject.appendTo('#ddTreeElement');
-
-```
-
-## Binding data source
-
-The Dropdown Tree control can load the data either from local data sources or remote data services. This can be done using the [`dataSource`](../api/drop-down-tree/fieldsModel/#datasource) property that is a member of the [`fields`](../api/drop-down-tree/#fields) property. The dataSource property supports array of JavaScript objects and DataManager. Here, an array of JSON values is passed to the Dropdown Tree control.
 
 ```ts
 import { DropDownTree } from '@syncfusion/ej2-dropdowns';
@@ -173,24 +153,10 @@ DropDownTreeObject.appendTo('#ddTreeElement');
 
 ## Run the application
 
-After completing the configuration required to render a basic Dropdown Tree, run the following command to display the output in your default browser.
+Now, run the application in the browser using the following command.
 
 ```
-npm run start
+npm start
 ```
-
-The following example explains the output in your browser.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/dropdowntree/getting-started-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/dropdowntree/getting-started-cs1/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/dropdowntree/getting-started-cs1/styles.css %}
-{% endhighlight %}
-{% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/dropdowntree/getting-started-cs1" %}

@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Installation using web installer
+# Installation using Web Installer
 
 You can refer to the [Download](https://ej2.syncfusion.com/documentation/installation-and-upgrade/download/) section to learn how to get the JavaScript – EJ2 trial or licensed installer.
 

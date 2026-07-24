@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Multi select control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Multi select control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## MultiSelect control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## MultiSelect control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,67 +9,53 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Multi select control
+# Getting started in ##Platform_Name## MultiSelect control
 
-This section explains how to create a simple **MultiSelect** component and configure its available functionalities in TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
+This section explains the steps to create a simple MultiSelect and demonstrates the basic usage of the MultiSelect component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires Node.js v14.0 or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
-## Dependencies
 
-The following list of dependencies are required to use the MultiSelect component in your application.
+## Prerequisites
 
-```javascript
-|-- @syncfusion/ej2-dropdowns
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-data
-    |-- @syncfusion/ej2-inputs
-    |-- @syncfusion/ej2-lists
-    |-- @syncfusion/ej2-navigations
-    |-- @syncfusion/ej2-notifications
-    |-- @syncfusion/ej2-popups
-        |-- @syncfusion/ej2-buttons
+Ensure the following tools are installed on your machine:
+
+* [Git](https://git-scm.com/downloads)
+* [Node.js](https://nodejs.org/en/)
+* [Visual Studio Code](https://code.visualstudio.com/)
+
+## Set up the development environment
+
+Clone the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from GitHub in the command prompt:
+
+```
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 ```
 
-## Set up development environment
+Navigate to the project folder in the command prompt:
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-
-{% endhighlight %}
-{% endtabs %}
-
-After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
+```
 cd ej2-quickstart
+```
 
-{% endhighlight %}
-{% endtabs %}
+## Install Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript MultiSelect packages
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
+Use the following command to install the @syncfusion/ej2-dropdowns package:
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+```
+npm install @syncfusion/ej2-dropdowns --save
+```
+Install the required npm packages:
 
-The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
-
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
+```
 npm install
+```
 
-{% endhighlight %}
-{% endtabs %}
+> For more information about individual packages and alternative installation methods, see the [installation guide](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation).
 
 ## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
+Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
 
 The quickstart application is preconfigured to use the `Fluent2` theme. To install the [Fluent2](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) theme package, use the following command:
 
@@ -86,14 +72,14 @@ The required styles are imported in the `~/src/styles/styles.css` file, as shown
 {% tabs %}
 {% highlight bash tabtitle="styles.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/multi-select/index.css";
 
 {% endhighlight %}
 {% endtabs %}
 
 > Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 
-## Initialize the MultiSelect
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> MultiSelect control to the application
 
 The MultiSelect can be initialized through three different tags as described in the [Initialize Tags](https://ej2.syncfusion.com/documentation/multi-select/tags).
 
@@ -101,9 +87,7 @@ Add the HTML input element that needs to be initialized as a MultiSelect in `ind
 
 `[src/index.html]`
 
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -111,9 +95,6 @@ Add the HTML input element that needs to be initialized as a MultiSelect in `ind
     <title>Essential JS 2 MultiSelect component</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Essential JS 2" />
-    <meta name="author" content="Syncfusion" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -125,35 +106,15 @@ Add the HTML input element that needs to be initialized as a MultiSelect in `ind
 </body>
 
 </html>
-
-{% endhighlight %}
-{% endtabs %}
+```
 
 Now, import the  MultiSelect component to your `app.ts` and initialize it to the element `#select` as shown below.
 
-`[src/app/app.ts]`
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
-import { MultiSelect } from '@syncfusion/ej2-dropdowns';
-
-// initialize MultiSelect component
-let msObject: MultiSelect = new MultiSelect();
-
-// render initialized MultiSelect
-msObject.appendTo('#select');
-
-{% endhighlight %}
-{% endtabs %}
-
-## Binding data source
-
 After initialization, populate the MultiSelect with data using the [dataSource](https://ej2.syncfusion.com/documentation/api/multi-select#datasource) &nbsp;property. Here, an array of string values is passed to the MultiSelect component.
 
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+`[src/app/app.ts]`
 
+```ts
 import { MultiSelect } from '@syncfusion/ej2-dropdowns';
 
 // define the array of data
@@ -167,53 +128,17 @@ let msObject: MultiSelect = new MultiSelect({
 
 // render initialized MultiSelect
 msObject.appendTo('#select');
-
-{% endhighlight %}
-{% endtabs %}
+```
 
 ## Run the application
 
-After completing the configuration required to render a basic MultiSelect, run the following command to display the output in your default browser.
+Now, run the application in the browser using the following command.
 
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
-npm run start
-
-{% endhighlight %}
-{% endtabs %}
-
-The following example illustrates the output in your browser.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/multiselect/getting-started-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/multiselect/getting-started-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
+```
+npm start
+```
+      
 {% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs3" %}
-
-## Configure the popup list
-
-By default, the width of the popup list automatically adjusts according to the MultiSelect input element's width, and the height auto adjust's according to the height of the popup list items.
-
-The height and width of the popup list can also be customized using the [popupHeight](https://ej2.syncfusion.com/documentation/api/multi-select#popupheight) &nbsp;and [popupWidth](https://ej2.syncfusion.com/documentation/api/multi-select#popupwidth) properties respectively.
-
-In the following sample, popup list's width and height are configured.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/multiselect/getting-started-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/multiselect/getting-started-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs4" %}
 
 ## See Also
 

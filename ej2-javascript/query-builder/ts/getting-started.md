@@ -11,63 +11,51 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Query builder control
 
-This section explains how to create a simple Query Builder and to configure the [Query Builder component](https://www.syncfusion.com/javascript-ui-controls/js-query-builder).
+This section explains the steps to create a simple Querybuilder and demonstrates the basic usage of the Querybuilder component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
-## Dependencies
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
-The list of dependencies required to use the Query Builder component in your application is given below:
+## Prerequisites
 
-```js
-|-- @syncfusion/ej2-querybuilder
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-buttons
-    |-- @syncfusion/ej2-datamanager
-    |-- @syncfusion/ej2-dropdowns
-    |-- @syncfusion/ej2-calendars
-    |-- @syncfusion/ej2-inputs
-    |-- @syncfusion/ej2-popups
-    |-- @syncfusion/ej2-splitbuttons
+Ensure the following tools are installed on your machine:
+
+* [Git](https://git-scm.com/downloads)
+* [Node.js](https://nodejs.org/en/)
+* [Visual Studio Code](https://code.visualstudio.com/)
+
+## Setup for local development
+
+Clone the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from GitHub in the command prompt:
+
+```
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 ```
 
-## Set up development environment
+Navigate to the project folder in the command prompt:
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-
-{% endhighlight %}
-{% endtabs %}
-
-After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
+```
 cd ej2-quickstart
+```
 
-{% endhighlight %}
-{% endtabs %}
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Querybuilder packages
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
+Use the following command to install the @syncfusion/ej2-querybuilder package:
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+```
+npm install @syncfusion/ej2-querybuilder --save
+```
 
-The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+Install the required npm packages:
 
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
+```
 npm install
+```
 
-{% endhighlight %}
-{% endtabs %}
+> For more information about individual packages and alternative installation methods, see the [installation guide](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation).
 
 ## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
+Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
 
 The quickstart application is preconfigured to use the `Fluent2` theme. To install the [Fluent2](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) theme package, use the following command:
 
@@ -84,22 +72,20 @@ The required styles are imported in the `~/src/styles/styles.css` file, as shown
 {% tabs %}
 {% highlight bash tabtitle="styles.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/query-builder/index.css";
 
 {% endhighlight %}
 {% endtabs %}
 
 > Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 
-## Add Query Builder to the project
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Querybuilder control to the application
 
-Add the HTML Div tag with id attribute as the `element` to your `index.html` file.
+Open the application in Visual Studio Code and add the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript UI controls. 
 
-`[src/index.html]`
+In this article, the Query builder control is used as an example. Add the following Query builder element to the `~/src/index.html` file.
 
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -107,29 +93,21 @@ Add the HTML Div tag with id attribute as the `element` to your `index.html` fil
     <title>Essential JS 2</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Essential JS 2" />
-    <meta name="author" content="Syncfusion" />
-    <link rel="shortcut icon" href="resources/favicon.ico" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
     <div>
-        <!--Element which is going to render-->
+        <!--HTML querybuilder element, which is going to render as Essential JS 2 Querybuilder-->
         <div id="querybuilder"></div>
+    </div>
 </body>
 
 </html>
+ ```
 
-{% endhighlight %}
-{% endtabs %}
+To render the Querybuilder control, add the following TypeScript code to the `~/src/app/app.ts` file
 
-Then, import the Query Builder component in your `app.ts` file, and initialize it with the `#element`.
-
-`[src/app/app.ts]`
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+```ts
 
 import { QueryBuilder, ColumnsModel } from '@syncfusion/ej2-querybuilder';
 
@@ -152,122 +130,19 @@ import { QueryBuilder, ColumnsModel } from '@syncfusion/ej2-querybuilder';
     });
     qryBldrObj.appendTo('#querybuilder');
 
-{% endhighlight %}
-{% endtabs %}
+
+```
 
 ## Run the application
 
-Run the application in the browser using the following command:
+Now, run the application in the browser using the following command.
 
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
+```
 npm start
+```
+        
+{% previewsample "psage.domainurl/code-snippet/query-builder/getting-started-cs17" %}
 
-{% endhighlight %}
-{% endtabs %}
+## See also
 
-The following example shows a basic Query Builder component.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/query-builder/getting-started-cs16/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/query-builder/getting-started-cs16/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/query-builder/getting-started-cs16" %}
-
-## Rendering with rule
-
-`[src/app/app.ts]`
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
-import { QueryBuilder, ColumnsModel, RuleModel } from '@syncfusion/ej2-querybuilder';
-
-let employeeData: Object[] = [{
-      'EmployeeID': 1,
-      'FirstName': 'Nancy',
-      'Title': 'Sales Representative',
-      'TitleOfCourtesy': 'Ms.',
-      'HireDate': '22/07/2001',
-      'City': 'Seattle',
-      'Country': 'USA'
-    },
-    {
-      'EmployeeID': 2,
-      'FirstName': 'Andrew',
-      'Title': 'Vice President',
-      'TitleOfCourtesy': 'Dr.',
-      'HireDate': '21/04/2003',
-      'City': 'Tacoma',
-      'Country': 'USA'
-    },
-    {
-      'EmployeeID': 3,
-      'FirstName': 'Janet',
-      'Title': 'Sales Representative',
-      'TitleOfCourtesy': 'Ms.',
-      'HireDate': '22/07/2001',
-      'City': 'Kirkland',
-      'Country': 'USA'
-    }];
-/**
- * Default querybuilder sample
- */
-
-    let columnData: ColumnsModel[] = [
-        { field: 'EmployeeID', label: 'EmployeeID', type: 'number'},
-        { field: 'FirstName', label: 'FirstName', type: 'string' },
-        { field: 'TitleOfCourtesy', label: 'Title Of Courtesy', type: 'boolean', values: ['Mr.', 'Mrs.'] },
-        { field: 'Title', label: 'Title', type: 'string' },
-        { field: 'HireDate', label: 'HireDate', type: 'date', format: 'dd/MM/yyyy' },
-        { field: 'Country', label: 'Country', type: 'string' },
-        { field: 'City', label: 'City', type: 'string' }
-    ];
-    let importRules: RuleModel = {
-        'condition': 'and',
-        'rules': [{
-            'label': 'EmployeeID',
-            'field': 'EmployeeID',
-            'type': 'number',
-            'operator': 'equal',
-            'value': 1001
-        },
-        {
-            'label': 'Title',
-            'field': 'Title',
-            'type': 'string',
-            'operator': 'equal',
-            'value': 'Sales Manager'
-        }]
-    };
-    let qryBldrObj: QueryBuilder = new QueryBuilder({
-        width: '70%',
-        dataSource: employeeData,
-        columns: columnData,
-        rule: importRules,
-    });
-    qryBldrObj.appendTo('#querybuilder');
-
-{% endhighlight %}
-{% endtabs %}
-
-The following example shows a basic QueryBuilder component.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/query-builder/getting-started-cs17/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/query-builder/getting-started-cs17/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/query-builder/getting-started-cs17" %}
-
-> You can also explore our [JavaScript Query Builder example](https://ej2.syncfusion.com/demos/#/material/query-builder/getting-started) that shows how to render the Query Builder in JavaScript.
+* [How to register Syncfusion<sup style="font-size:70%">&reg;</sup> license key in TypeScript application](https://ej2.syncfusion.com/documentation/licensing/license-key-registration)

@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Common installation errors
+# Common Installation Errors
 
 This article describes the most common installation errors, as well as the causes and solutions to those errors.
 

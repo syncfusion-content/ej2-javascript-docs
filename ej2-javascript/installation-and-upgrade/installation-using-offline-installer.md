@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Installation using offline installer
+# Installation using Offline Installer
 
 You can refer to the [Download](../installation-and-upgrade/download) section to learn how to get the JavaScript – EJ2 trial or licensed installer.
 
@@ -95,7 +95,7 @@ The steps below show how to install the Essential Studio<sup style="font-size:70
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Installer supports installation and uninstallation via the command line.
 
-### Command line installation
+### Command Line Installation
 
 To install through the Command Line in Silent mode, follow the steps below.
 
@@ -116,7 +116,7 @@ To install through the Command Line in Silent mode, follow the steps below.
 
     >Note: x.x.x.x should be replaced with the Essential Studio<sup style="font-size:70%">&reg;</sup> version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
 
-### Command line uninstallation
+### Command Line Uninstallation
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 can be uninstalled silently using the Command Line.
 

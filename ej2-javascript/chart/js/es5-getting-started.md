@@ -132,12 +132,12 @@ The following screenshot shows the output of the Syncfusion Chart quick start ap
 
 ## See also
 
-* [Line Series](../chart-types/line.md)
-* [Column Series](../chart-types/column.md)
-* [Category Axis](../category-axis.md)
-* [Chart Title and Subtitle](../title-subtitle.md)
-* [Chart Legend](../legend.md)
-* [Chart Tooltip](../tool-tip.md)
-* [Working with Data](../working-with-data.md)
+* [Line Series](../chart/chart-types/line)
+* [Column Series](../chart/chart-types/column)
+* [Category Axis](../chart/category-axis)
+* [Chart Title and Subtitle](../chart/title-subtitle)
+* [Chart Legend](../chart/legend)
+* [Chart Tooltip](../chart/tool-tip)
+* [Working with Data](../chart/working-with-data)
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/javascript/documentation/ai-coding-assistant/overview)

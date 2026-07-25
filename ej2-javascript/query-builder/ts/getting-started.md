@@ -70,7 +70,7 @@ npm install @syncfusion/ej2-fluent2-theme --save
 The required styles are imported in the `~/src/styles/styles.css` file, as shown below: 
 
 {% tabs %}
-{% highlight bash tabtitle="styles.css" %}
+{% highlight css tabtitle="styles.css" %}
 
 @import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/query-builder/index.css";
 

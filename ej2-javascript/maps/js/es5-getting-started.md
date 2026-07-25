@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Maps component | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more details.
+title: ES5 getting started with ##Platform_Name## Maps component | Syncfusion
+description: Check out and learn about getting started with ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Es5 getting started 
+control: ES5 getting started
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -18,7 +18,7 @@ Build your first Syncfusion JavaScript (ES5) application with a simple Maps cont
 ## Prerequisites
 
 * [Visual Studio Code](https://code.visualstudio.com) (or any text editor)
-* A web browser to view the result
+* A modern web browser (Chrome, Edge, Firefox, or Safari) to view the result
 
 ## Quick Setup
 
@@ -49,19 +49,19 @@ Copy and paste the following complete code into your `index.html` file:
 <html>
   <head>
     <title>Syncfusion Maps - Quick Start</title>
-    
-    <!-- Scripts -->
+
+    <!-- Syncfusion CDN scripts (version 33.2.3) -->
     <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/dist/global/ej2-base.min.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-data/dist/global/ej2-data.min.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-maps/dist/global/ej2-maps.min.js"></script>
   </head>
-  
+
   <body>
     <h1>Syncfusion Maps</h1>
     <div id="element" style="width: 100%; height: 400px;"></div>
-    
+
     <script>
       var shapeData = { dataOptions: { type: 'GET', url: 'https://cdn.syncfusion.com/maps/map-data/world-map.json'} };
       
@@ -69,12 +69,12 @@ Copy and paste the following complete code into your `index.html` file:
       var map = new ej.maps.Maps({
             layers: [
                 {
-                    shapeData: shapeData,
+                    shapeData: shapeData
                 }
             ]
         });
-      
-      // Render Map
+
+      // Render the map into the <div> with id="element"
       map.appendTo('#element');
     </script>
   </body>
@@ -83,10 +83,16 @@ Copy and paste the following complete code into your `index.html` file:
 
 ### Step 4: Open in Browser
 
-Open the `quickstart/index.html` file in your web browser. You should see the Syncfusion Maps control displaying the sample map data.
+Open `quickstart/index.html` through a local web server (for example, right-click the file in VS Code with the Live Server extension installed and choose **Open with Live Server**). The page should display the Syncfusion Maps control rendered with the sample world map.
 
 ## Output
 
 The following screenshot shows the output of the Syncfusion Maps quick start application:
 
-![Syncfusion Maps Quick Start Output](../maps/images/MapProviders/maps.png)
+![Syncfusion Maps Quick Start Output](../images/MapProviders/maps.png)
+
+## Next Steps
+
+* Explore the [Maps API reference](https://ej2.syncfusion.com/javascript/documentation/api/maps) to learn about the available properties, events, and methods.
+* Add additional [layers](https://ej2.syncfusion.com/javascript/documentation/maps/layers), [markers](https://ej2.syncfusion.com/javascript/documentation/maps/markers), and [legends](https://ej2.syncfusion.com/javascript/documentation/maps/legend) to enrich the map.
+* Browse the [Maps samples](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/maps/default) for runnable examples.

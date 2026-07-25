@@ -211,9 +211,9 @@ The following screenshot shows the output of the Syncfusion Chart quick start ap
 
 ## See also
 
-* [Working with Data](../working-with-data.md)
-* [Line Series](../chart-types/line.md)
-* [Category Axis](../category-axis.md)
-* [Chart Title and Subtitle](../title-and-sub-title.md)
-* [Chart Legend](../legend.md)
-* [Chart Tooltip](../tool-tip.md)
+* [Working with Data](../chart/working-with-data)
+* [Line Series](../chart/chart-types/line)
+* [Category Axis](../chart/category-axis)
+* [Chart Title and Subtitle](../chart/title-and-sub-title)
+* [Chart Legend](../chart/legend)
+* [Chart Tooltip](../chart/tool-tip)

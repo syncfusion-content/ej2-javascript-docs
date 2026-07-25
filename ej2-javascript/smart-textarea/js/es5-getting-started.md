@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Smart TextArea control | Syncfusion
+title: ES5 Getting started with ##Platform_Name## Smart TextArea | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Smart TextArea control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Smart TextArea control
+# ES5 Getting Started in ##Platform_Name## Smart TextArea Control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in the latest web browsers.
 
 The **Smart TextArea** is an advanced control designed to elevate the text input experience by providing intelligent autocomplete suggestions for entire sentences through text-generative AI functionality. This control enhances user productivity by predicting and offering relevant completions based on the context of what is being typed.
 
 ## Prerequisites
 
-To get started, ensure the following software to be installed in the machine.
+To get started, ensure that the following software is installed on the machine.
 
 * [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2)
 
@@ -25,7 +25,7 @@ To get started, ensure the following software to be installed in the machine.
 
 * [OpenAI](https://github.com/syncfusion/smart-ai-samples/blob/master/typescript/README.md#openai) or [Azure OpenAI Account](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource) 
 
-> Check out the [download and installation](https://ej2.syncfusion.com/javascript/documentation/installation-and-upgrade/download/) section of **Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript**. If you are using Syncfusion<sup style="font-size:70%">&reg;</sup> CDN resources to build your web application, you can skip the Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript prerequisite.
+> Check out the [download and installation](https://ej2.syncfusion.com/javascript/documentation/installation-and-upgrade/download) section of **Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript**. If you are using Syncfusion<sup style="font-size:70%">&reg;</sup> CDN resources to build your web application, you can skip the Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript prerequisite.
 
 ## Dependencies
 
@@ -38,40 +38,40 @@ The following list of dependencies are required to use the Smart TextArea contro
 
 ## Control Initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized in either of the following ways.
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+* Using local script and style references in an HTML page.
+* Using a CDN link for script and style reference.
 
 ### Using local script and style references in a HTML page
 
 **Step 1:** Create an app folder `quickstart` for getting started.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts and styles from the installed build location of [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2).
 
 **Syntax:**
 > Dependency Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\dist\global\{DEPENDENCY_PACKAGE_NAME}.min.js`
 >
 > Control Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\material.css`
+> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\tailwind3.css`
 >
-> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
+> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\tailwind3.css`
 
 **Example:**
-> Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\19.3.0.44\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
+> Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.1.29\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
 >
-> Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\19.3.0.44\Web (Essential JS 2)\JavaScript\ej2-inputs\dist\global\ej2-inputs.min.js`
+> Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.1.29\Web (Essential JS 2)\JavaScript\ej2-inputs\dist\global\ej2-inputs.min.js`
 >
-> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\19.3.0.44\Web (Essential JS 2)\JavaScript\ej2-base\styles\material.css`
+> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.1.29\Web (Essential JS 2)\JavaScript\ej2-base\styles\tailwind3.css`
 >
-> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\19.3.0.44\Web (Essential JS 2)\JavaScript\ej2-inputs\styles\material.css`
+> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.1.29\Web (Essential JS 2)\JavaScript\ej2-inputs\styles\tailwind3.css`
 
 The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\tailwind3.css`
 
 The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific controls. This web tool is useful to combine the required control scripts and styles in a single file.
 
@@ -84,11 +84,11 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
           <title>Essential JS 2 - Smart TextArea</title>
-          <!-- Essential JS 2 Inputs's dependent material theme -->
-          <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
+          <!-- Essential JS 2 Inputs's dependent tailwind3 theme -->
+          <link href="resources/base/tailwind3.css" rel="stylesheet" type="text/css"/>
 
-          <!-- Essential JS 2 Smart TextArea's control material theme -->
-          <link href="resources/inputs/material.css" rel="stylesheet" type="text/css"/>
+          <!-- Essential JS 2 Smart TextArea's control tailwind3 theme -->
+          <link href="resources/inputs/tailwind3.css" rel="stylesheet" type="text/css"/>
 
           <!-- Essential JS 2 Inputs's dependent global script -->
           <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
@@ -101,7 +101,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
   </html>
 ```
 
-**Step 5:** Now, add the `Smart TextArea` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smart TextArea** control in the `index.html` by using following code. In **Smart TextArea**, the [aiSuggestionHandler](https://ej2.syncfusion.com/javascript/documentation/api/smart-textarea#aisuggestionhandler) property, which sends prompts to the `AI` model and receives context-aware suggestions. These suggestions appear inline for non-touch devices and as an overlay popup for touch devices by default, helping users type faster and more accurately.
+**Step 5:** Now, add the `Smart TextArea` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smart TextArea** control in the `index.html` by using the following code. In **Smart TextArea**, the [aiSuggestionHandler](https://ej2.syncfusion.com/javascript/documentation/api/smart-textarea#aisuggestionhandler) property sends prompts to the `AI` model and receives context-aware suggestions. These suggestions appear inline for non-touch devices and as an overlay popup for touch devices by default, helping users type faster and more accurately.
 
 ```html
 <!DOCTYPE html>
@@ -109,11 +109,11 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 <head>
     <title>Essential JS 2 - Smart TextArea</title>
-    <!-- Essential JS 2 Inputs's dependent material theme -->
-    <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
+    <!-- Essential JS 2 Inputs's dependent tailwind3 theme -->
+    <link href="resources/base/tailwind3.css" rel="stylesheet" type="text/css"/>
 
-    <!-- Essential JS 2 Smart TextArea control material theme -->
-    <link href="resources/inputs/material.css" rel="stylesheet" type="text/css"/>
+    <!-- Essential JS 2 Smart TextArea control tailwind3 theme -->
+    <link href="resources/inputs/tailwind3.css" rel="stylesheet" type="text/css"/>
 
     <!-- Essential JS 2 Smart TextArea dependent global script -->
     <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
@@ -167,29 +167,31 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smart TextArea** control.
+**Step 6:** Now, run the `index.html` in a web browser; it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smart TextArea** control.
 
 ### Using CDN link for script and style reference
 
 **Step 1:** Create an app folder `quickstart` for getting started.
 
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 control's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 control's global scripts and styles are already hosted in the following CDN link formats.
 
 **Syntax:**
-> Dependency Script: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Dependency Script: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{DEPENDENCY_PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Control Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Control Script: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/material.css`
+> Dependency Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{DEPENDENCY_PACKAGE_NAME}/styles/tailwind3.css`
 >
-> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Control Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
-> Script: [`https://cdn.syncfusion.com/ej2/ej2-inputs/dist/global/ej2-inputs.min.js`](https://cdn.syncfusion.com/ej2/ej2-inputs/dist/global/ej2-inputs.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/dist/global/ej2-inputs.min.js`](https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/dist/global/ej2-inputs.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/styles/tailwind3.css`](https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/styles/tailwind3.css)
 
-**Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Smart TextArea` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smart TextArea** control in the index.html by using following code.
+**Step 3:** Create an HTML page (index.html) in the `~/quickstart/index.html` location and add the CDN link references by using the following code.
+
+**Step 4:** Now, add the `Smart TextArea` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smart TextArea** control in the `index.html` by using the following code. In **Smart TextArea**, the [aiSuggestionHandler](https://ej2.syncfusion.com/javascript/documentation/api/smart-textarea#aisuggestionhandler) property sends prompts to the `AI` model and receives context-aware suggestions. These suggestions appear inline for non-touch devices and as an overlay popup for touch devices by default, helping users type faster and more accurately.
 
 ```html
 <!DOCTYPE html>
@@ -197,17 +199,17 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 <head>
     <title>Essential JS 2 - Smart TextArea</title>
-    <!-- Essential JS 2 Inputs's dependent material theme -->
-    <link href="https://cdn.syncfusion.com/ej2/27.1.48/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
+    <!-- Essential JS 2 Inputs's dependent tailwind3 theme -->
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
 
-    <!-- Essential JS 2 Smart TextArea control material theme -->
-    <link href="https://cdn.syncfusion.com/ej2/27.1.48/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
+    <!-- Essential JS 2 Smart TextArea control tailwind3 theme -->
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
 
     <!-- Essential JS 2 Smart TextArea dependent global script -->
-    <script src="https://cdn.syncfusion.com/ej2/27.1.48/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
 
     <!-- Essential JS 2 Smart TextArea control global script -->
-    <script src="https://cdn.syncfusion.com/ej2/27.1.48/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -255,7 +257,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 ## Adding Smart TextArea control to the application
 
-* Add the HTML textarea tag with the `id` attribute as `Smart TextArea` to your `index.html` file. The following example shows the Smart TextArea control.
+* Add the HTML textarea tag with the `id` attribute as `Smart TextArea` to your `index.html` file. The following example shows the Smart TextArea control's output.
 
 > In our demonstration, Azure AI is used, but you can integrate any text-generative AI of your choice.
 

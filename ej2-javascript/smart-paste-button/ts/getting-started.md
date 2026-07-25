@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Smart Paste button control | Syncfusion
+title: Getting started with ##Platform_Name## Smart Paste button | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Smart Paste button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -19,7 +19,7 @@ This section explains how to create a simple Smart Paste button, and configure i
 
 ## Prerequisites
  
-To get started, ensure the following software to be installed in the machine.
+To get started, ensure the following software is installed on the machine.
  
 * [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2)
  
@@ -27,7 +27,7 @@ To get started, ensure the following software to be installed in the machine.
  
 * [OpenAI](https://github.com/syncfusion/smart-ai-samples/blob/master/typescript/README.md#openai) or [Azure OpenAI Account](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource)
  
-> Check out the [download and installation](https://ej2.syncfusion.com/javascript/documentation/installation-and-upgrade/download/) section of **Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript**. If you are using Syncfusion<sup style="font-size:70%">&reg;</sup> CDN resources to build your web application, you can skip the Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript prerequisite.
+> Check out the [download and installation](https://ej2.syncfusion.com/javascript/documentation/installation-and-upgrade/download) section of **Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript**. If you are using Syncfusion<sup style="font-size:70%">&reg;</sup> CDN resources to build your web application, you can skip the Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript prerequisite.
 
 ## Dependencies
 
@@ -76,13 +76,24 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Smart Paste Button control, need to import Button and its dependent components styles as given below in the `~/src/styles/index.css` file, as shown below: 
+Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls can be applied using CSS or SASS files from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages), CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, see the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
+
+This example uses the `Tailwind 3` theme for the Smart Paste Button control from the theme package. To install the [Tailwind 3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme package, use the following command:
 
 {% tabs %}
-{% highlight css tabtitle="style.css" %}
+{% highlight bash tabtitle="npm" %}
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+npm install @syncfusion/ej2-tailwind3-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
+Add Smart Paste Button component's styles as given below in the `~/src/styles/index.css` file.
+
+{% tabs %}
+{% highlight css tabtitle="index.css" %}
+
+@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/button/index.css";
 
 {% endhighlight %}
 {% endtabs %}
@@ -124,7 +135,7 @@ Add the HTML Button tag with ID attribute as the `smart-paste-button` to your `i
 
 Then, import the Smart Paste Button control in your `app.ts` file, and initialize it with the `#smart-paste-button`.
 
-The control utilizes the [aiAssistHandler](https://ej2.syncfusion.com/documentation/api/smart-paste-button/smartPasteButtonModel/#aiassisthandler) property, a callback function that sends a request to the AI model and updates the form with the generated content based on the AI's response.
+The control uses the [aiAssistHandler](https://ej2.syncfusion.com/documentation/api/smart-paste-button/smartPasteButtonModel#aiassisthandler) property, which is a callback function that sends a request to the AI model and updates the form with the generated content based on the AI's response.
 
 `[src/app/app.ts]`
 
@@ -186,6 +197,6 @@ The following example shows a basic Smart Paste Button control.
 {% endhighlight %}
 {% endtabs %}
 
-![smart-paste-button](./images/smart-paste-button.gif)
+![smart-paste-button](../images/smart-paste-button.gif)
 
 > [Javascript Smart Paste Button Sample in github](https://github.com/syncfusion/smart-ai-samples/tree/master/typescript/src/app/smartpaste)

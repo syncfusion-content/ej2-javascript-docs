@@ -1,4 +1,3 @@
-
 import { Grid } from '@syncfusion/ej2-grids';
 
     // Grid data
@@ -9,12 +8,12 @@ import { Grid } from '@syncfusion/ej2-grids';
             ShipRegion: 'CJ', ShipPostalCode: '51100', ShipCountry: 'France', Freight: 32.38, Verified: !0
         },
         {
-            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6, OrderDate: new Date(836505e6),
+            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6, OrderDate: new Date(8367642e5),
             ShipName: 'Toms Spezialitäten', ShipCity: 'Münster', ShipAddress: 'Luisenstr. 48',
             ShipRegion: 'CJ', ShipPostalCode: '44087', ShipCountry: 'Germany', Freight: 11.61, Verified: !1
         },
         {
-            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4, OrderDate: new Date(8367642e5),
+            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4, OrderDate: new Date(8371242e5),
             ShipName: 'Hanari Carnes', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua do Paço, 67',
             ShipRegion: 'RJ', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 65.83, Verified: !0
         }
@@ -24,10 +23,10 @@ import { Grid } from '@syncfusion/ej2-grids';
     let grid: Grid = new Grid({
         dataSource: data,
         columns: [
-            { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number' },
-            { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-            { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C' },
-            { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'yMd' }
+            { field: 'OrderID', headerText: 'Order ID', width: 120, type: 'number', textAlign: 'Center' },
+            { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string', textAlign: 'Center' },
+            { field: 'Freight', headerText: 'Freight', width: 120, format: 'C', textAlign: 'Center' },
+            { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'M/d/yyyy', type: 'date', textAlign: 'Center' }
         ]
     });
 

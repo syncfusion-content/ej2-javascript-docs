@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Smart Paste button control | Syncfusion
+title: Es5 getting started with Smart Paste button | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Smart Paste button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -17,7 +17,7 @@ The `Smart Paste Button` is a user interface control designed to simplify and im
 
 ## Prerequisites
  
-To get started, ensure the following software to be installed in the machine.
+To get started, ensure the following software is installed on the machine.
  
 * [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2)
  
@@ -25,7 +25,7 @@ To get started, ensure the following software to be installed in the machine.
  
 * [OpenAI](https://github.com/syncfusion/smart-ai-samples/blob/master/typescript/README.md#openai) or [Azure OpenAI Account](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource)
  
-> Check out the [download and installation](https://ej2.syncfusion.com/javascript/documentation/installation-and-upgrade/download/) section of **Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript**. If you are using Syncfusion<sup style="font-size:70%">&reg;</sup> CDN resources to build your web application, you can skip the Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript prerequisite.
+> Check out the [download and installation](https://ej2.syncfusion.com/javascript/documentation/installation-and-upgrade/download) section of **Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript**. If you are using Syncfusion<sup style="font-size:70%">&reg;</sup> CDN resources to build your web application, you can skip the Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript prerequisite.
 
 ## Dependencies
 
@@ -54,31 +54,31 @@ The JavaScript (ES5) Smart Paste Button control can be initialized by using eith
 >
 > Control Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\material.css`
+> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\tailwind3.css`
 >
-> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
+> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\tailwind3.css`
 
 **Example:**
 
-> Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.3.0.47\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
+> Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.1.29\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
 >
-> Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.3.0.47\Web (Essential JS 2)\JavaScript\ej2-buttons\dist\global\ej2-buttons.min.js`
+> Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.1.29\Web (Essential JS 2)\JavaScript\ej2-buttons\dist\global\ej2-buttons.min.js`
 >
-> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.3.0.47\Web (Essential JS 2)\JavaScript\ej2-base\styles\material.css`
+> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.1.29\Web (Essential JS 2)\JavaScript\ej2-base\styles\tailwind3.css`
 >
-> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.3.0.47\Web (Essential JS 2)\JavaScript\ej2-buttons\styles\material.css`
+> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.1.29\Web (Essential JS 2)\JavaScript\ej2-buttons\styles\tailwind3.css`
 
-The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
+The script and style files below contain all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\tailwind3.css`
 
 The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific controls. This web tool is useful to combine the required control scripts and styles in a single file.
 
-**Step 3:** Create a folder `~/quickstart/resources` and copy/paste the global scripts and styles from the above installed location to `~/quickstart/resources/package` corresponding package location.
+**Step 3:** Create a folder `~/quickstart/resources` and copy the global scripts and styles from the installed location above to the corresponding package location in `~/quickstart/resources/package`.
 
-**Step 4:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the JavaScript (ES5) script and style references.
+**Step 4:** Create an HTML page, `index.html`, in `~/quickstart/index.html` and add the JavaScript (ES5) script and style references.
 
 ```html
 <!DOCTYPE html>
@@ -102,9 +102,9 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
   </html>
 ```
 
-**Step 5:** Now, add the `Smart Paste Button` element and initiate the `JavaScript (ES5) Smart Paste Button` control in the `index.html` by using following code.
+**Step 5:** Now, add the `Smart Paste Button` element and initialize the `JavaScript (ES5) Smart Paste Button` control in `index.html` by using the following code.
 
-The control utilizes the [aiAssistHandler](https://ej2.syncfusion.com/javascript/documentation/api/smart-paste-button/smartPasteButtonModel/#aiassisthandler) property, a callback function that sends a request to the AI model and updates the form with the generated content based on the AI's response.
+The control utilizes the [aiAssistHandler](https://ej2.syncfusion.com/javascript/documentation/api/smart-paste-button/smartPasteButtonModel#aiassisthandler) property, a callback function that sends a request to the AI model and updates the form with the generated content based on the AI's response.
 
 ```html
 <!DOCTYPE html>
@@ -154,29 +154,29 @@ The control utilizes the [aiAssistHandler](https://ej2.syncfusion.com/javascript
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Smart Paste Button** control.
+**Step 6:** Now, run `index.html` in a web browser, and it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Smart Paste Button** control.
 
-### Using CDN link for script and style reference
+### Using CDN links for script and style references
 
 **Step 1:** Create an app folder `quickstart` for getting started.
 
-**Step 2:** The JavaScript (ES5) control's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The JavaScript (ES5) control's global scripts and styles are already hosted at the CDN links shown below.
 
 **Syntax:**
-> Dependency Script: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Dependency Script: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{DEPENDENCY_PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Control Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Control Script: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/material.css`
+> Dependency Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{DEPENDENCY_PACKAGE_NAME}/styles/tailwind3.css`
 >
-> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Control Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
-> Script: [`https://cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js`](https://cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/dist/global/ej2-buttons.min.js`](https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/dist/global/ej2-buttons.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/styles/tailwind3.css`](https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/styles/tailwind3.css)
 
-**Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Smart Paste Button` element and initiate the `JavaScript (ES5) Smart Paste Button` control in the `index.html` by using following code.
+**Step 3:** Create an HTML page, `index.html`, in `~/quickstart/index.html` and add the CDN link references. Then, add the `Smart Paste Button` element and initialize the `JavaScript (ES5) Smart Paste Button` control in `index.html` by using the following code.
 
 > In our demonstration, Azure AI is used, but you can integrate any text-generative AI of your choice.
 
@@ -192,8 +192,8 @@ The control utilizes the [aiAssistHandler](https://ej2.syncfusion.com/javascript
 {% endhighlight %}
 {% endtabs %}
 
-![smart-paste-button](./images/smart-paste-button.gif)
+![smart-paste-button](../images/smart-paste-button.gif)
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smart Paste Button** control.
+**Step 4:** Now, run `index.html` in a web browser, and it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smart Paste Button** control.
 
 > [Javascript Smart Paste Button Sample in github](https://github.com/syncfusion/smart-ai-samples/tree/master/typescript/src/app/smartpaste)

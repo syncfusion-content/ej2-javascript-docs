@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Smart Textarea control | Syncfusion
+title: Getting started with ##Platform_Name## Smart TextArea | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Smart Textarea control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started in ##Platform_Name## Smart TextArea Control
+# Getting Started with ##Platform_Name## Smart TextArea Control
 
 The **Smart TextArea** is an advanced control designed to elevate the text input experience by providing intelligent autocomplete suggestions for entire sentences through text-generative AI functionality. This control enhances user productivity by predicting and offering relevant completions based on the context of what is being typed.
 
@@ -19,7 +19,7 @@ This section explains how to create a simple **Smart TextArea** Control and conf
 
 ## Prerequisites
 
-To get started with application, ensure the following software to be installed in the machine.
+To get started with the application, ensure the following software is installed on the machine.
 
 * [git](https://git-scm.com/downloads)
 * [Node.js](https://nodejs.org/en/)
@@ -73,13 +73,24 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Smart TextArea Control, need to import inputs and its dependent controls styles as given below in the `~/src/styles/index.css` file, as shown below: 
+Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript components can be applied using CSS or SASS files from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages), CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, see the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
+
+This example uses the `tailwind3` theme for the Smart TextArea component from the theme package. To install the [tailwind3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme package, use the following command:
 
 {% tabs %}
-{% highlight css tabtitle="style.css" %}
+{% highlight bash tabtitle="npm" %}
 
-@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+npm install @syncfusion/ej2-tailwind3-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
+Add the Smart TextArea component's styles as given below in the `~/src/styles/index.css` file.
+
+{% tabs %}
+{% highlight css tabtitle="index.css" %}
+
+@import '../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/textarea/index.css';
 
 {% endhighlight %}
 {% endtabs %}
@@ -101,8 +112,8 @@ Add the HTML Smart TextArea tag with the `id` attribute as `default` to your `in
     <meta name="description" content="Essential JS 2 TextArea Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-inputs/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/styles/tailwind3.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -119,7 +130,7 @@ Add the HTML Smart TextArea tag with the `id` attribute as `default` to your `in
 {% endhighlight %}
 {% endtabs %}
 
-Then, import the Smart TextArea Control in your `src/app/app.ts` file and initialize it with the `#default`. In **Smart TextArea**, the [aiSuggestionHandler](https://ej2.syncfusion.com/documentation/api/smart-textarea#aisuggestionhandler) property, which sends prompts to the `AI` model and receives context-aware suggestions. These suggestions appear inline for non-touch devices and as an overlay popup for touch devices by default, helping users type faster and more accurately.
+Then, import the Smart TextArea Control in your `src/app/app.ts` file and initialize it with `#default`. In **Smart TextArea**, the [aiSuggestionHandler](https://ej2.syncfusion.com/documentation/api/smart-textarea#aisuggestionhandler) property sends prompts to the `AI` model and receives context-aware suggestions. These suggestions appear inline for non-touch devices and as an overlay popup for touch devices by default, helping users type faster and more accurately.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

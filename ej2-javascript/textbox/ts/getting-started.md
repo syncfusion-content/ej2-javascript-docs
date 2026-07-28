@@ -16,54 +16,47 @@ This section explains how to create a simple TextBox component and configure its
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 
-## Dependencies
+## Prerequisites
 
-The following list of dependencies are required to use the TextBox component in your application.
+Ensure the following tools are installed on your machine:
 
-```js
+* [Git](https://git-scm.com/downloads)
+* [Node.js](https://nodejs.org/en/)
+* [Visual Studio Code](https://code.visualstudio.com/)
 
-|-- @syncfusion/ej2-inputs
-    |-- @syncfusion/ej2-base
+## Set up the development environment
+
+Clone the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from GitHub in the command prompt:
 
 ```
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
+```
 
-## Set up development environment
+Navigate to the project folder in the command prompt:
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-
-{% endhighlight %}
-{% endtabs %}
-
-After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
+```
 cd ej2-quickstart
+```
 
-{% endhighlight %}
-{% endtabs %}
+## Install Syncfusion<sup style="font-size:70%">&reg;</sup> TextBox package
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
+Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+Use the following command to install the `@syncfusion/ej2-inputs` package:
 
-The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+```
+npm install @syncfusion/ej2-inputs --save
+```
 
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
+Then, install the remaining dependent npm packages using the following command:
 
+```
 npm install
+```
 
-{% endhighlight %}
-{% endtabs %}
+> For more information about individual package and alternative installation methods, see the [installation guide](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation).
 
-## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> TextBox CSS styles
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
 
@@ -82,49 +75,42 @@ The required styles are imported in the `~/src/styles/styles.css` file, as shown
 {% tabs %}
 {% highlight bash tabtitle="styles.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/textbox/index.css";
 
 {% endhighlight %}
 {% endtabs %}
 
 > Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 
-## Adding TextBox to the application
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> TextBox control to the application
 
-Add an HTML input element with the `e-input` class to your `index.html` file.
+Open the application in Visual Studio Code and add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls. 
 
-`[src/index.html]`
+In this article, the TextBox control is used as an example. Add the following input element to the `~/src/index.html` file.
 
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Essential JS 2 TextBox </title>
+    <title>Essential JS 2</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Essential JS 2" />
-    <meta name="author" content="Syncfusion" />
-    <link rel="shortcut icon" href="resources/favicon.ico" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div>
+     <div>
       <!--element which is going to render the TextBox-->
       <input id="firstName"/>
     </div>
 </body>
 
 </html>
+ ```
 
-{% endhighlight %}
+To render the TextBox control, add the following JavaScript code to the `~/src/app/app.ts` file
 
-{% highlight html tabtitle="index.ts" %}
-
-```
+```ts
     import { TextBox } from '@syncfusion/ej2-inputs'
 
     let input: TextBox = new TextBox({
@@ -134,86 +120,15 @@ Add an HTML input element with the `e-input` class to your `index.html` file.
     input.appendTo('#firstName');
 ```
 
-{% endhighlight %}
-{% endtabs %}
+## Run the application
 
-## Adding icons to the TextBox
-
-You can create a TextBox with icon as a group by creating the parent div element with the class `e-input-group` and add the icon element as span with the class `e-input-group-icon`. For detailed information, refer to the [Groups](./groups) section.
-
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-
-      <!--element which is going to render the TextBox with date icon-->
-      <div>
-            <input id="textbox" />
-      </div>
-
-{% endhighlight %}
-{% highlight html tabtitle="index.ts" %}
-```
-    import { TextBox } from '@syncfusion/ej2-inputs';
-
-
-    let iconTextBox: TextBox = new TextBox({
-    placeholder: 'Enter Date',
-    created: createHandler,
-    });
-    iconTextBox.appendTo('#textbox');
-
-    function createHandler() {
-       iconTextBox.addIcon('append', 'e-icons e-date-range');
-    }
+Now, run the application in the browser using the following command.
 
 ```
-{% endhighlight %}
-{% endtabs %}
-
-* Now, run the application in the browser using the following command.
-
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
 npm start
-
-{% endhighlight %}
-{% endtabs %}
-
-Output will be as follows:
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/textbox/icon-samples-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/textbox/icon-samples-cs3/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/textbox/icon-samples-cs3/index.css %}
-{% endhighlight %}
-{% endtabs %}
+```
           
 {% previewsample "page.domainurl/code-snippet/textbox/icon-samples-cs3" %}
-
-## Floating label
-
-The floating label TextBox floats the label above the TextBox after focusing, or filled with value in the TextBox.
-
-You can create the floating label TextBox by using the [floatLabelType](https://ej2.syncfusion.com/documentation/api/textbox/index-default#floatlabeltype) API.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/textbox/textbox-component-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/textbox/textbox-component-cs2/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/textbox/textbox-component-cs2/index.css %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/textbox/textbox-component-cs2" %}
 
 ## See Also
 

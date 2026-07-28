@@ -1,4 +1,3 @@
-
 import { Grid } from '@syncfusion/ej2-grids';
 
     // Grid data
@@ -24,10 +23,10 @@ import { Grid } from '@syncfusion/ej2-grids';
     let grid: Grid = new Grid({
         dataSource: data,
         columns: [
-            { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number' },
-            { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-            { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C' },
-            { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'yMd' }
+            { field: 'OrderID', headerText: 'Order ID', width: 120, type: 'number', textAlign: 'Center' },
+            { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string', textAlign: 'Center' },
+            { field: 'Freight', headerText: 'Freight', width: 120, format: 'C', textAlign: 'Center' },
+            { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'M/d/yyyy', type: 'date', textAlign: 'Center' }
         ]
     });
 

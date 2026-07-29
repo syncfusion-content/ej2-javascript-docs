@@ -98,7 +98,7 @@ Rich Text Editor can be initialized on a div element as shown below
 {% endhighlight %}
 {% endtabs %}
 
-## Run the application
+## Run the Application
 
 Now, run the `index.html` file in a web browser.
 
@@ -106,21 +106,21 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Rich Text Editor
 
 ![Syncfusion JavaScript Rich Text Editor output](images/getting-started.png)
 
-## See also
+## See Also
 
 **Documentation:**
 
 * [Accessibility in Rich Text Editor](accessibility.md)
 * [Keyboard support in Rich Text Editor](keyboard-support.md)
 * [Globalization in Rich Text Editor](globalization.md)
+* [How to change the editor type](editor-types/editor-modes.md)
+* [How to render the iframe](editor-types/iframe.md)
+* [How to render the toolbar in inline mode](editor-types/inline-editing.md)
 
 **Live examples:**
 
-* [How to change the editor type](https://ej2.syncfusion.com/javascript/documentation/rich-text-editor/editor-types/editor-modes)
-* [How to render the iframe](https://ej2.syncfusion.com/javascript/documentation/rich-text-editor/editor-types/iframe)
-* [How to render the toolbar in inline mode](https://ej2.syncfusion.com/javascript/documentation/rich-text-editor/editor-types/inline-editing)
-* [Emoji Picker in Rich Text Editor](https://ej2.syncfusion.com/javascript/documentation/rich-text-editor/smart-editing/emoji-picker)
-* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/blog-posting.html)
-* [Form support with Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/reactive-form)
+* [How to insert Emoticons](https://ej2.syncfusion.com/demos/#/tailwind3/rich-text-editor/insert-emoticons.html)
+* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/demos/#/tailwind3/rich-text-editor/blog-posting.html)
+* [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/tailwind3/rich-text-editor/reactive-form)
 
 N> You can refer to our [JavaScript Rich Text Editor](https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Rich Text Editor example](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/rich-text-editor.html) that shows how to render the Rich Text Editor tools. 

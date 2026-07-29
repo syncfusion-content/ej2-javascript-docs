@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with ##Platform_Name## Rich Text Editor | Syncfusion
-description: Checkout and learn how to create and run a Rich Text Editor using a Vite-based TypeScript project and Syncfusion Essential JS 2.
+description: Check out and learn how to create and run a Rich Text Editor using a Vite-based TypeScript project and Syncfusion Essential JS 2.
 canonical_url: "https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor"
 platform: ej2-javascript
 control: Getting started 
@@ -39,7 +39,7 @@ npm install
 
 ## Adding Rich Text Editor packages
 
-All available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) public registry.
+All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) public registry.
 To install the Rich Text Editor control, use the following command
 
 ```bash
@@ -50,19 +50,19 @@ npm install @syncfusion/ej2-richtexteditor
 
 Syncfusion provides multiple themes for the Rich Text Editor control. For a complete list of available themes, refer to the [themes packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages).
 
-To apply the [Tailwind 3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme, install the corresponding theme package using the following command:
+To apply the [Tailwind 3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme, install the corresponding theme package by using the following command:
 
 ```bash
 npm install @syncfusion/ej2-tailwind3-theme
 ```
 
-The installed theme package includes an `index.css` file that automatically imports all the required dependency styles. Import the following stylesheet into `src/style.css`.
+The installed theme package includes an `index.css` file that automatically imports all the required dependency styles. Import the following stylesheet into `~/src/styles.css`.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css';
 ```
 
-I> To apply the application-specific styles correctly, import **style.css** into **src/main.ts** and remove all the default styles from **src/style.css** and use the Rich Text Editor styles provided above.
+I> To apply the application-specific styles correctly, import style.css into **src/main.ts** and remove all the default styles from **src/style.css** and use the Rich Text Editor styles provided above.
 
 ## Module Injection
 
@@ -134,7 +134,7 @@ editor.appendTo('#editor');
 {% endhighlight %}
 {% endtabs %}
           
-## Run the application
+## Run the Application
 
 Use the following command to run the application in the browser.
 
@@ -146,14 +146,21 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Rich Text Editor
 
 ![Syncfusion TypeScript Rich Text Editor output](images/getting-started.png)
 
-## See also
+## See Also
 
-* [How to change the editor type](https://ej2.syncfusion.com/javascript/documentation/rich-text-editor/editor-types/editor-modes)
-* [How to render the iframe](https://ej2.syncfusion.com/javascript/documentation/rich-text-editor/editor-types/iframe)
-* [How to render the toolbar in inline mode](https://ej2.syncfusion.com/javascript/documentation/rich-text-editor/editor-types/inline-editing)
-* [How to insert Emoticons](https://ej2.syncfusion.com/angular/demos/#/tailwind3/rich-text-editor/insert-emoticons)
-* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/tailwind3/rich-text-editor/blog-posting)
-* [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/tailwind3/rich-text-editor/reactive-form)
-* [Accessibility in Rich text editor](https://ej2.syncfusion.com/documentation/rich-text-editor/accessibility)
-* [Keyboard support in Rich text editor](https://ej2.syncfusion.com/documentation/rich-text-editor/keyboard-support)
-* [Globalization in Rich text editor](https://ej2.syncfusion.com/documentation/rich-text-editor/globalization)
+**Documentation:**
+
+* [How to change the editor type](editor-types/editor-modes.md)
+* [How to render the iframe](editor-types/iframe.md)
+* [How to render the toolbar in inline mode](editor-types/inline-editing.md)
+* [Accessibility in Rich Text Editor](accessibility.md)
+* [Keyboard support in Rich Text Editor](keyboard-support.md)
+* [Globalization in Rich Text Editor](globalization.md)
+
+**Live examples:**
+
+* [Insert Emoticons](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/insert-emoticons)
+* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/blog-posting)
+* [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/reactive-form)
+
+N> Looking for the full JavaScript Rich Text Editor control overview, features, pricing, and documentation? Visit the [JavaScript Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/javascript-rich-text-editor) page.

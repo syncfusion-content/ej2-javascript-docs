@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started | Syncfusion
+title: Getting started with JavaScript TimePicker | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Timepicker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 

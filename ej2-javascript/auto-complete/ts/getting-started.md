@@ -1,73 +1,60 @@
 ---
 layout: post
-title: Getting started with Auto complete control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Auto complete control of Syncfusion Essential JS 2 and more details.
+title: Getting started with AutoComplete control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## AutoComplete control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: AutoComplete 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
+# Getting started in ##Platform_Name## AutoComplete control
 
-# Getting started in ##Platform_Name## Auto complete control
+This section explains the steps to create a simple AutoComplete and demonstrates the basic usage of the AutoComplete component  using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
-This section explains how to create a simple **AutoComplete** component and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires Node.js v14.0 or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+## Prerequisites
 
-## Dependencies
+Ensure the following tools are installed on your machine:
 
-The following list of dependencies are required to use the AutoComplete component in your application.
+* [Git](https://git-scm.com/downloads)
+* [Node.js](https://nodejs.org/en/)
+* [Visual Studio Code](https://code.visualstudio.com/)
 
-```javascript
-|-- @syncfusion/ej2-dropdowns
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-data
-    |-- @syncfusion/ej2-inputs
-    |-- @syncfusion/ej2-lists
-    |-- @syncfusion/ej2-navigations
-    |-- @syncfusion/ej2-notifications
-    |-- @syncfusion/ej2-popups
-        |-- @syncfusion/ej2-buttons
+## Set up the development environment
+
+Clone the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from GitHub in the command prompt:
+
+```
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 ```
 
-## Set up development environment
+Navigate to the project folder in the command prompt:
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
-
-{% endhighlight %}
-{% endtabs %}
-
-After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
+```
 cd ej2-quickstart
+``` 
 
-{% endhighlight %}
-{% endtabs %}
+## Install Syncfusion<sup style="font-size:70%">&reg;</sup> AutoComplete package
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
+Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+Use the following command to install the `@syncfusion/ej2-dropdowns` package:
 
-The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+```
+npm install @syncfusion/ej2-dropdowns --save
+```
 
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
+Then, install the remaining dependent npm packages using the following command:
 
+```
 npm install
+```
 
-{% endhighlight %}
-{% endtabs %}
+> For more information about individual package and alternative installation methods, see the [installation guide](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation).
 
-## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> AutoComplete CSS styles
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
 
@@ -86,24 +73,24 @@ The required styles are imported in the `~/src/styles/styles.css` file, as shown
 {% tabs %}
 {% highlight bash tabtitle="styles.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/auto-complete/index.css";
 
 {% endhighlight %}
 {% endtabs %}
 
 > Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 
-## Initialize the AutoComplete
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> AutoComplete control to the application
 
 The AutoComplete can be initialized through input tags.
 
 Add the HTML input element which needs to be initialized as AutoComplete in `index.html`.
 
-`[src/index.html]`
+Open the application in Visual Studio Code and add the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript UI controls. 
 
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
+In this article, the AutoComplete control is used as an example. Add the following AutoComplete element to the `~/src/index.html` file.
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -127,34 +114,12 @@ Add the HTML input element which needs to be initialized as AutoComplete in `in
 </body>
 
 </html>
+```
 
-{% endhighlight %}
-{% endtabs %}
 
-Now import the AutoComplete component in your `app.ts` and initialize it to the element `#auto`, as shown below.
+Now, to render the AutoComplete control, add the following TypeScript code to the `~/src/app/app.ts` file.
 
-`[src/app/app.ts]`
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
-import { AutoComplete } from '@syncfusion/ej2-dropdowns';
-
-// initialize AutoComplete component
-let atcObject: AutoComplete = new AutoComplete();
-
-// render initialized AutoComplete
-atcObject.appendTo('#auto');
-
-{% endhighlight %}
-{% endtabs %}
-
-## Binding data source
-
-After initialization, populate the AutoComplete with data using the [`dataSource`](https://ej2.syncfusion.com/documentation/api/auto-complete#datasource) property. Here, an array of string values is passed to the AutoComplete component.
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+```ts
 
 import { AutoComplete } from '@syncfusion/ej2-dropdowns';
 
@@ -170,21 +135,16 @@ let atcObject: AutoComplete = new AutoComplete({
 // render initialized AutoComplete
 atcObject.appendTo('#atcelement');
 
-{% endhighlight %}
-{% endtabs %}
+````
 
 ## Run the application
 
-After completing the configuration required to render a basic AutoComplete, run the following command to display the output in your default browser.
+Now, run the application in the browser using the following command.
 
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
+```
 npm run start
-
-{% endhighlight %}
-{% endtabs %}
-
+```
+          
 The following example illustrates the output in your browser.
 
 {% tabs %}

@@ -11,56 +11,51 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Speed dial control
 
-This section explains how to create a simple Speed dial, and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a simple Speed dial, and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
-## Dependencies
+## Prerequisites
 
-The list of dependencies required to use the SpeedDial control in your application is given as follows:
+Ensure the following tools are installed on your machine:
 
-```js
-|-- @syncfusion/ej2-buttons
-    |-- @syncfusion/ej2-base
+* [Git](https://git-scm.com/downloads)
+* [Node.js](https://nodejs.org/en/)
+* [Visual Studio Code](https://code.visualstudio.com/)
+
+## Set up the development environment
+
+Clone the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from GitHub in the command prompt:
+
+```
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 ```
 
-## Setup development environment
+Navigate to the project folder in the command prompt:
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-
-{% endhighlight %}
-{% endtabs %}
-
-After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
+```
 cd ej2-quickstart
+``` 
 
-{% endhighlight %}
-{% endtabs %}
+## Install Syncfusion<sup style="font-size:70%">&reg;</sup> Speed dial package
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
+Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+Use the following command to install the `@syncfusion/ej2-buttons` package:
 
-The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+```
+npm install @syncfusion/ej2-buttons --save
+```
 
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
+Then, install the remaining dependent npm packages using the following command:
 
+```
 npm install
+```
 
-{% endhighlight %}
-{% endtabs %}
+> For more information about individual package and alternative installation methods, see the [installation guide](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation).
 
-## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> Speed dial CSS styles
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
 
@@ -79,22 +74,24 @@ The required styles are imported in the `~/src/styles/styles.css` file, as shown
 {% tabs %}
 {% highlight bash tabtitle="styles.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/speed-dial/index.css";
 
 {% endhighlight %}
 {% endtabs %}
 
 > Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 
-## Adding SpeedDial to the Application
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Speed dial control to the application
 
-Add the HTML Button tag with ID attribute as the `speedDial` to your `index.html` file.
+The Speed dial can be initialized through input tags.
 
-`[src/index.html]`
+Add the HTML input element which needs to be initialized as Speed dial in `index.html`.
 
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
+Open the application in Visual Studio Code and add the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript UI controls. 
 
+In this article, the Speed dial control is used as an example. Add the following Speed dial element to the `~/src/index.html` file.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -117,16 +114,11 @@ Add the HTML Button tag with ID attribute as the `speedDial` to your `index.html
 </body>
 
 </html>
+```
 
-{% endhighlight %}
-{% endtabs %}
+Now, to render the Button control, add the following TypeScript code to the `~/src/app/app.ts` file.
 
-Then, import the SpeedDial control in your `app.ts` file, define the action items using [`items`](../api/speed-dial#items) property and initialize it with the `#speedDial`.
-
-`[src/app/app.ts]`
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+```ts
 
 import { SpeedDial, SpeedDialItemModel } from '@syncfusion/ej2-buttons';
 import { enableRipple } from '@syncfusion/ej2-base';
@@ -146,20 +138,15 @@ let speeddial: SpeedDial = new SpeedDial({ items: items, content: 'Edit' });
 // Render initialized SpeedDial
 speeddial.appendTo('#speeddial');
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 ## Run the application
 
-Run the application in the browser using the following command:
+Now, run the application in the browser using the following command.
 
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
-npm start
-
-{% endhighlight %}
-{% endtabs %}
+```
+npm run start
+```
 
 The following example shows a basic SpeedDial control.
 
@@ -169,9 +156,6 @@ The following example shows a basic SpeedDial control.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/getting-started-cs1/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/speed-dial/getting-started-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

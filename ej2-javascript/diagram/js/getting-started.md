@@ -19,7 +19,7 @@ This section explains how to create and render a simple Essential® JS 2 Diagram
 
 Follow these steps to set up your local environment.
 
-> **Prerequisite:** If you plan to use the local-script setup with a local HTTP server (e.g., `npx http-server`), ensure [Node.js](https://nodejs.org/) is installed on your machine.
+> **Prerequisite:** If you plan to use the local-script setup with a local HTTP server (e.g., `npx http-server`), ensure `Node.js` is installed on your machine.
 
 **Step 1:** Create a root folder named **my-diagram-app** for your application.
 

@@ -47,14 +47,6 @@ Use the following command to install the dependent npm packages from the command
 npm install
 ```
 
-To render the Diagram control, install the `@syncfusion/ej2-diagrams` package using the following command:
-
-```
-npm install @syncfusion/ej2-diagrams
-```
-
-> Install the latest version of `@syncfusion/ej2-diagrams` to ensure compatibility with the sample code in this guide.
-
 ## Import Syncfusion® CSS styles
 
 The Diagram control needs Syncfusion® theme styles to display correctly. Syncfusion® theme packages include ready-to-use styles for supported controls.

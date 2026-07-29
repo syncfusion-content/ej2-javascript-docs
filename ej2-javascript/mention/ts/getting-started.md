@@ -3,7 +3,7 @@ layout: post
 title: Getting started with ##Platform_Name## Mention control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Mention
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,64 +11,51 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Mention control
 
-This section explains how to create a `Mention`, and configure its available functionalities in TypeScript using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains the steps to create a simple Mention and demonstrates the basic usage of the Mention component using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires Node.js v14.0 or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
-## Dependencies
+## Prerequisites
 
-The following list of dependencies are required to use the Mention control in your application.
+Ensure the following tools are installed on your machine:   
 
-```js
-
-|-- @syncfusion/ej2-dropdowns
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-inputs
-    |-- @syncfusion/ej2-data
-    |-- @syncfusion/ej2-lists
-    |-- @syncfusion/ej2-navigations
-    |-- @syncfusion/ej2-notifications
-    |-- @syncfusion/ej2-popups
-        |-- @syncfusion/ej2-buttons
-```
+* [Git](https://git-scm.com/downloads)
+* [Node.js](https://nodejs.org/en/)
+* [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
+Clone the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from GitHub in the command prompt:
 
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
+```
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
+```
 
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+Navigate to the project folder in the command prompt:
 
-{% endhighlight %}
-{% endtabs %}
-
-After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
+```
 cd ej2-quickstart
+```
 
-{% endhighlight %}
-{% endtabs %}
+## Install Syncfusion<sup style="font-size:70%">&reg;</sup> Mention package
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
+Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+Use the following command to install the `@syncfusion/ej2-dropdowns` package:
 
-The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+```
+npm install @syncfusion/ej2-dropdowns --save
+```
 
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
+Then, install the remaining dependent npm packages using the following command:
 
+```
 npm install
+```
 
-{% endhighlight %}
-{% endtabs %}
+> For more information about individual package and alternative installation methods, see the [installation guide](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation).
 
-## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> Mention CSS styles
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
 
@@ -87,23 +74,20 @@ The required styles are imported in the `~/src/styles/styles.css` file, as shown
 {% tabs %}
 {% highlight bash tabtitle="styles.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-fluent2-theme/styles/mention/index.css";
 
 {% endhighlight %}
 {% endtabs %}
 
 > Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 
-## Adding the Mention control to the application
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Mention control to the application
 
-Open the application in Visual Studio Code and add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls.
+Open the application in Visual Studio Code and add the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript UI controls.
 
-Add the HTML div tag with the `id` attribute as `mentionElement` to your `index.html` file.
+In this article, the Mention control is used as an example. Add the following Mention element to the `~/src/index.html` file.
 
-`[src/index.html]`
-
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
+```html
 
 <!DOCTYPE html>
 <html lang="en">
@@ -128,33 +112,11 @@ Add the HTML div tag with the `id` attribute as `mentionElement` to your `index.
 </body>
 </html>
 
-{% endhighlight %}
-{% endtabs %}
+```
 
-Import the Mention control in your `app.ts` file and initialize it with the `#mentionElement`.
+Now, to render the Mention control, add the following TypeScript code to the `~/src/app/app.ts` file.
 
-`[src/app/app.ts]`
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
-import { Mention } from '@syncfusion/ej2-dropdowns';
-
-// initialize Mention control
-let mentionObject: Mention = new Mention({});
-
-// render initialized Mention
-mentionObject.appendTo('#mentionElement');
-
-{% endhighlight %}
-{% endtabs %}
-
-## Binding the data source
-
-After initialization, populate the Mention with data using the [dataSource](https://ej2.syncfusion.com/documentation/api/mention/index-default#datasource) property. Here, an array of string values is passed to the Mention control.
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+```ts
 
 import { Mention } from '@syncfusion/ej2-dropdowns';
 
@@ -170,21 +132,16 @@ let mentionObject: Mention = new Mention({
 // render initialized Mention
 mentionObject.appendTo('#mentionElement');
 
-{% endhighlight %}
-{% endtabs %}
+````
 
 ## Run the application
 
-Run the application in the browser using the following command:
+Now, run the application in the browser using the following command.    
 
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
+```
 npm run start
-
-{% endhighlight %}
-{% endtabs %}
-
+```
+          
 The following example, shows a basic Mention control.
 
 {% tabs %}

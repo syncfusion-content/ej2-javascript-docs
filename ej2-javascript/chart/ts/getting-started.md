@@ -13,20 +13,20 @@ domainurl: ##DomainURL##
 
 This document explains how to create a simple Chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). Ensure that Node.js is installed on your machine. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
 
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your machine:
 
-* [Node.js](https://nodejs.org/) (v14.15.0 or higher)
+* [Node.js](https://nodejs.org/)
 * [Visual Studio Code](https://code.visualstudio.com) (or any text editor)
 * [Git](https://git-scm.com/) (for cloning the quickstart repository)
 * A web browser to view the result
 
 ## Dependencies
 
-Below is the list of minimum dependencies required to use the Chart.
+Below is the list of dependencies used by the Charts package.
 
 ```
 |-- @syncfusion/ej2-charts
@@ -37,9 +37,9 @@ Below is the list of minimum dependencies required to use the Chart.
     |-- @syncfusion/ej2-compression
     |-- @syncfusion/ej2-svg-base
 ```
-> Note: `@syncfusion/ej2-pdf-export`, `@syncfusion/ej2-file-utils`, and `@syncfusion/ej2-compression` are optional and required only for PDF export features. Omit them if you are not using exports.
+>`@syncfusion/ej2-pdf-export`, `@syncfusion/ej2-file-utils`, and `@syncfusion/ej2-compression` are optional and required only for PDF export features. Omit them if you are not using exports.
 
-> Use the latest `@syncfusion/ej2-*` packages that are compatible with Node.js v14.15.0 or higher.
+>Use the latest `@syncfusion/ej2-*` packages that are compatible with your installed Node.js version.
 
 ## Quick Setup
 
@@ -134,7 +134,7 @@ The webpack dev server injects the compiled `app.js` bundle automatically, so no
 
 Locate the `src/app/app.ts` file in your project. Import the `Chart` component along with the modules you need, prepare the sample data, and instantiate the chart.
 
-**Module Injection**: The Chart component requires specific feature modules to be registered before use. To render a line series with a category axis, inject the [`LineSeries`](../api/chart/lineseries) and [`Category`](../api/chart/category) modules.
+**Module Injection**: The Chart component requires specific feature modules to be registered before use. To render a column series with a category axis, inject the `ColumnSeries` and `Category` modules.
 
 **Populate Chart with Data**: Add a series object to the chart by using the [`series`](../api/chart/series) property. Map the JSON fields `month` and `sales` to the series [`xName`](../api/chart/series#xname) and [`yName`](../api/chart/series#yname) properties, and assign the JSON array as the [`dataSource`](../api/chart/series#datasource) property.
 
@@ -142,40 +142,7 @@ Since the JSON contains category data, set the [`valueType`](../api/chart/axisMo
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
-
-import { Chart, LineSeries, Category } from '@syncfusion/ej2-charts';
-
-// Register required feature modules
-Chart.Inject(LineSeries, Category);
-
-// Sample data for the chart
-let chartData: Object[] = [
-    { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
-    { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
-    { month: 'May', sales: 40 }, { month: 'Jun', sales: 32 },
-    { month: 'Jul', sales: 35 }, { month: 'Aug', sales: 55 },
-    { month: 'Sep', sales: 38 }, { month: 'Oct', sales: 30 },
-    { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }
-];
-
-// Initialize the Chart
-let chart: Chart = new Chart({
-    primaryXAxis: {
-        valueType: 'Category'
-    },
-    series: [{
-        // Data source for chart series
-        dataSource: chartData,
-        xName: 'month',
-        yName: 'sales',
-        type: 'Line'
-    }],
-    title: 'Sales Data'
-});
-
-// Render the chart to the target container
-chart.appendTo('#element');
-
+{% include code-snippet/chart/getting-started-cs16/index.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -199,21 +166,23 @@ When the build completes, the Syncfusion<sup style="font-size:70%">&reg;</sup> C
 
 The following screenshot shows the output of the Syncfusion Chart quick start application:
 
-![Syncfusion Chart Quick Start Output - Line chart of monthly sales data](../images/chart.png)
+{% previewsample "page.domainurl/code-snippet/chart/getting-started-cs16" %}
+
+![Syncfusion Chart Quick Start Output - Column chart of monthly sales data](../images/chart.png)
 
 ## Troubleshooting
 
 * **`Cannot find module '@syncfusion/ej2-charts'`** — Dependencies are not installed. Run `npm install` in the project root.
-* **Chart renders but axis is empty** — The `Category` module was not injected. Verify that `Chart.Inject(LineSeries, Category)` is called before chart construction.
-* **Series does not appear** — The `LineSeries` module was not injected. Add `LineSeries` to the `Chart.Inject(...)` call.
+* **Chart renders but axis is empty** — The `Category` module was not injected. Verify that `Chart.Inject(ColumnSeries, Category)` is called before chart construction.
+* **Series does not appear** — The `ColumnSeries` module was not injected. Add `ColumnSeries` to the `Chart.Inject(...)` call.
 * **Port `4000` already in use** — Another process is bound to the port. Stop the conflicting process or change `devServer.port` in `webpack.config.js`.
-* **TypeScript build error** — TypeScript version mismatch. Install TypeScript as a dev dependency: `npm install typescript --save-dev`.
+* **TypeScript build error** — Verify that all dependencies are installed by running `npm install`. If the issue continues, check the TypeScript version configured in the project.
 
 ## See also
 
-* [Working with Data](../working-with-data.md)
-* [Line Series](../chart-types/line.md)
-* [Category Axis](../category-axis.md)
-* [Chart Title and Subtitle](../title-and-sub-title.md)
-* [Chart Legend](../legend.md)
-* [Chart Tooltip](../tool-tip.md)
+* [Working with Data](https://ej2.syncfusion.com/documentation/chart/working-with-data)
+* [Column Series](https://ej2.syncfusion.com/documentation/chart/chart-types/column)
+* [Category Axis](https://ej2.syncfusion.com/documentation/chart/category-axis)
+* [Chart Title and Subtitle](https://ej2.syncfusion.com/documentation/chart/title-subtitle)
+* [Chart Legend](https://ej2.syncfusion.com/documentation/chart/legend)
+* [Chart Tooltip](https://ej2.syncfusion.com/documentation/chart/tool-tip)

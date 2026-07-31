@@ -82,7 +82,7 @@ The required styles are imported in the `~/src/styles/styles.css` file, as shown
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> AutoComplete control to the application
 
-The AutoComplete can be initialized through input tags.
+The AutoComplete can be initialized using an input element.
 
 Add the HTML input element which needs to be initialized as AutoComplete in `index.html`.
 

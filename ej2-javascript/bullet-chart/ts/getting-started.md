@@ -13,20 +13,20 @@ domainurl: ##DomainURL##
 
 This document explains how to create a simple Bullet Chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). Ensure that Node.js is installed on your machine. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
 
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your machine:
 
-* [Node.js](https://nodejs.org/) (v14.15.0 or higher)
+* [Node.js](https://nodejs.org/)
 * [Visual Studio Code](https://code.visualstudio.com) (or any text editor)
 * [Git](https://git-scm.com/) for cloning the quickstart repository
 * A modern web browser (Chrome, Edge, Firefox, or Safari) to view the result
 
 ## Dependencies
 
-The Bullet Chart control ships as part of the `@syncfusion/ej2-charts` package. Below is the list of minimum dependencies required.
+The Bullet Chart control is included in the `@syncfusion/ej2-charts` package. Below is the list of core and optional dependencies used by the package.
 
 ```
 |-- @syncfusion/ej2-charts
@@ -40,18 +40,14 @@ The Bullet Chart control ships as part of the `@syncfusion/ej2-charts` package. 
 
 ## Quick Setup
 
-### Step 1: Create a Project Folder
+### Step 1: Open Command Prompt
 
-Create a folder named `my-bullet-chart` in your desired location. This folder will contain your Syncfusion Bullet Chart TypeScript project.
+Open the command prompt and navigate to the directory where you want to create the project.
 
-### Step 2: Open Command Prompt
+* **For Windows**: Open Command Prompt (cmd) or PowerShell and use the `cd` command to navigate to your desired directory.
+* **For macOS/Linux**: Open Terminal and use the `cd` command to navigate to your desired directory.
 
-Open the command prompt and navigate to `my-bullet-chart` folder created in Step 1. You can do this by:
-
-* **For Windows**: Open Command Prompt (cmd) or PowerShell and use the `cd` command to navigate to `my-bullet-chart` folder.
-* **For macOS/Linux**: Open Terminal and use the `cd` command to navigate to `my-bullet-chart` folder.
-
-### Step 3: Clone the Quickstart Repository
+### Step 2: Clone the Quickstart Repository
 
 Run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
@@ -63,7 +59,7 @@ git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quick
 {% endhighlight %}
 {% endtabs %}
 
-### Step 4: Navigate to Project Folder
+### Step 3: Navigate to Project Folder
 
 After cloning the application in the `ej2-quickstart` folder, run the following command to navigate to the project directory.
 
@@ -75,7 +71,7 @@ cd ej2-quickstart
 {% endhighlight %}
 {% endtabs %}
 
-### Step 5: Install Required Packages
+### Step 4: Install Required Packages
 
 Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
@@ -91,7 +87,7 @@ npm install
 
 This command will download and install all necessary dependencies for your project.
 
-### Step 6: Update the HTML Template
+### Step 5: Update the HTML Template
 
 Open the `ej2-quickstart` folder in Visual Studio Code or any text editor of your choice.
 
@@ -124,11 +120,11 @@ Locate the `~/src/index.html` file in the project, preserve any existing `<link>
 {% endhighlight %}
 {% endtabs %}
 
-### Step 7: Create the Bullet Chart Component with Data
+### Step 6: Create the Bullet Chart Component with Data
 
 Locate the `src/app/app.ts` file in your project and add the Bullet Chart component with sample data.
 
-**Populate Bullet Chart with Data**: Create a [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/bullet-chart/index-default#title) array of objects (each with a `value` and a `target`) and a single chart instance. Map the `value` and `target` fields to the [`valueField`](https://ej2.syncfusion.com/documentation/api/bullet-chart/index-default#valuefield) and [`targetField`](https://ej2.syncfusion.com/documentation/api/bullet-chart/index-default#targetfield) properties. Set [`minimum`](https://ej2.syncfusion.com/documentation/api/bullet-chart/index-default#minimum), [`maximum`](https://ej2.syncfusion.com/documentation/api/bullet-chart/index-default#maximum), and [`interval`](https://ej2.syncfusion.com/documentation/api/bullet-chart/index-default#interval) to control the numeric axis.
+**Populate Bullet Chart with Data**: Create a [`dataSource`](https://ej2.syncfusion.com/documentation/api/bullet-chart/index-default#datasource) array of objects, where each object contains a `value` and a `target` field. Map the `value` and `target` fields to the [`valueField`](https://ej2.syncfusion.com/documentation/api/bullet-chart/index-default#valuefield) and [`targetField`](https://ej2.syncfusion.com/documentation/api/bullet-chart/index-default#targetfield) properties. Set [`minimum`](https://ej2.syncfusion.com/documentation/api/bullet-chart/index-default#minimum), [`maximum`](https://ej2.syncfusion.com/documentation/api/bullet-chart/index-default#maximum), and [`interval`](https://ej2.syncfusion.com/documentation/api/bullet-chart/index-default#interval) to control the numeric axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -136,9 +132,9 @@ Locate the `src/app/app.ts` file in your project and add the Bullet Chart compon
 {% endhighlight %}
 {% endtabs %}
 
-> You can refer to our [JavaScript Bullet Chart](https://www.syncfusion.com/javascript-ui-controls/js-bullet-chart) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Bullet Chart example](https://ej2.syncfusion.com/demos/#/bootstrap5/bullet-chart/default-functionalities.html) that shows various Bullet Chart configurations.
+> You can refer to our [JavaScript Bullet Chart](https://www.syncfusion.com/javascript-ui-controls/js-bullet-chart) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Bullet Chart example](https://ej2.syncfusion.com/demos/#/bootstrap5/bullet-chart/default.html) that shows various Bullet Chart configurations.
 
-### Step 8: Run the Application
+### Step 7: Run the Application
 
 Open the integrated terminal in Visual Studio Code or use your command prompt to run the application. Use the `npm run start` command:
 
@@ -151,10 +147,6 @@ npm run start
 {% endtabs %}
 
 The application will compile and automatically start in your default web browser. The application typically runs at `http://localhost:4000`. You should see the Syncfusion<sup style="font-size:70%">&reg;</sup> Bullet Chart control displayed on the page. To stop the dev server, press `Ctrl+C` in the terminal. For a production build, use `npm run build`.
-
-### Step 9: View Your Bullet Chart
-
-Wait for the webpack dev server to complete the build process. Once completed, you will see the Bullet Chart control rendering in your browser with the sample monthly data. The control is now successfully initialized and ready for further customization.
 
 ## Output
 

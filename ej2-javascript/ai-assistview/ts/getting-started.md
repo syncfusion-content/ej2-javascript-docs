@@ -94,7 +94,7 @@ Then add the following CSS reference to the `src/styles/styles.css` file:
 Add the AI AssistView control in **src/app/app.ts** file using the following code.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/ai-assistview/gettingstarted/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
@@ -121,7 +121,7 @@ Open `http://localhost:8080` (or the port shown in the terminal) in a browser. Y
 You can use the [promptSuggestions](../api/ai-assistview#promptsuggestions) property to add prompt suggestions and the [promptRequest](../api/ai-assistview#promptrequest) event to add responses when the prompt matches the specified prompts data otherwise, the default response will be displayed.
 
 {% tabs %}
-{% highlight js tabtitle="index.ts" %}
+{% highlight js tabtitle="app.ts" %}
 {% include code-snippet/ai-assistview/defaultprompts/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}

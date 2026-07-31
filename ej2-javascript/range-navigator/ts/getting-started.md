@@ -13,20 +13,20 @@ domainurl: ##DomainURL##
 
 This document explains how to create a simple Range Navigator and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). Ensure that Node.js is installed on your machine. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
 
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your machine:
 
-* [Node.js](https://nodejs.org/) (v14.15.0 or higher)
+* [Node.js](https://nodejs.org/)
 * [Visual Studio Code](https://code.visualstudio.com) (or any text editor)
 * [Git](https://git-scm.com/) for cloning the quickstart repository
 * A modern web browser (Chrome, Edge, Firefox, or Safari) to view the result
 
 ## Dependencies
 
-The Range Navigator control ships as part of the `@syncfusion/ej2-charts` package. Below is the list of minimum dependencies required.
+The Range Navigator control is included in the `@syncfusion/ej2-charts` package. Below is the list of core and optional dependencies used by the package.
 
 ```
 |-- @syncfusion/ej2-charts
@@ -41,18 +41,14 @@ The Range Navigator control ships as part of the `@syncfusion/ej2-charts` packag
 
 ## Quick Setup
 
-### Step 1: Create a Project Folder
+### Step 1: Open Command Prompt
 
-Create a folder named `my-range-navigator` in your desired location. This folder will contain your Syncfusion Range Navigator TypeScript project.
+Open the command prompt and navigate to the directory where you want to create the project.
 
-### Step 2: Open Command Prompt
+* **For Windows**: Open Command Prompt (cmd) or PowerShell and use the `cd` command to navigate to your desired directory.
+* **For macOS/Linux**: Open Terminal and use the `cd` command to navigate to your desired directory.
 
-Open the command prompt and navigate to `my-range-navigator` folder created in Step 1. You can do this by:
-
-* **For Windows**: Open Command Prompt (cmd) or PowerShell and use the `cd` command to navigate to `my-range-navigator` folder.
-* **For macOS/Linux**: Open Terminal and use the `cd` command to navigate to `my-range-navigator` folder.
-
-### Step 3: Clone the Quickstart Repository
+### Step 2: Clone the Quickstart Repository
 
 Run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
@@ -64,7 +60,7 @@ git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quick
 {% endhighlight %}
 {% endtabs %}
 
-### Step 4: Navigate to Project Folder
+### Step 3: Navigate to Project Folder
 
 After cloning the application in the `ej2-quickstart` folder, run the following command to navigate to the project directory.
 
@@ -76,7 +72,7 @@ cd ej2-quickstart
 {% endhighlight %}
 {% endtabs %}
 
-### Step 5: Install Required Packages
+### Step 4: Install Required Packages
 
 Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
@@ -92,7 +88,7 @@ npm install
 
 This command will download and install all necessary dependencies for your project.
 
-### Step 6: Update the HTML Template
+### Step 5: Update the HTML Template
 
 Open the `ej2-quickstart` folder in Visual Studio Code or any text editor of your choice.
 
@@ -125,13 +121,13 @@ Locate the `~/src/index.html` file in the project, preserve any existing `<link>
 {% endhighlight %}
 {% endtabs %}
 
-### Step 7: Create the Range Navigator Component with Data
+### Step 6: Create the Range Navigator Component with Data
 
 Locate the `src/app/app.ts` file in your project and add the Range Navigator component with module injection and sample data.
 
 **Module Injection**: The Range Navigator requires specific feature modules to be injected. For displaying an Area series and a DateTime axis, inject the `AreaSeries` and `DateTime` modules.
 
-**Populate Range Navigator with Data**: Create a [`series`](https://ej2.syncfusion.com/documentation/api/range-navigator/index-default#series) object on the Range Navigator. Map the field names `x` and `y` in the JSON data to the [`xName`](https://ej2.syncfusion.com/documentation/api/range-navigator/rangenavigatorseriesmodel#xname) and [`yName`](https://ej2.syncfusion.com/documentation/api/range-navigator/rangenavigatorseriesmodel#yname) properties of the series, then set the JSON data to the [`dataSource`](https://ej2.syncfusion.com/documentation/api/range-navigator/index-default#datasource) property. Since the JSON contains DateTime data, set the [`valueType`](https://ej2.syncfusion.com/documentation/api/range-navigator/index-default#valuetype) to `'DateTime'`. By default, the axis `valueType` is `'Numeric'`.
+**Populate Range Navigator with Data**: Create a [`series`](https://ej2.syncfusion.com/documentation/api/range-navigator/index-default#series) object for the Range Navigator. Map the field names `x` and `y` in the JSON data to the [`xName`](https://ej2.syncfusion.com/documentation/api/range-navigator/rangenavigatorseriesmodel#xname) and [`yName`](https://ej2.syncfusion.com/documentation/api/range-navigator/rangenavigatorseriesmodel#yname) properties of the series, then set the JSON data to the [`dataSource`](https://ej2.syncfusion.com/documentation/api/range-navigator/index-default#datasource) property. Since the JSON contains DateTime data, set the [`valueType`](https://ej2.syncfusion.com/documentation/api/range-navigator/index-default#valuetype) to `'DateTime'`. By default, the axis `valueType` is `'Double'`.
 
 **Provide the Sample Data**: Create a `datasource.ts` file in `src/app` that exports the sample data as a `datasrc` array (for example, `export let datasrc: Object[] = [...]`).
 
@@ -144,7 +140,7 @@ Locate the `src/app/app.ts` file in your project and add the Range Navigator com
 {% endhighlight %}
 {% endtabs %}
 
-### Step 8: Run the Application
+### Step 7: Run the Application
 
 Open the integrated terminal in Visual Studio Code or use your command prompt to run the application. Use the `npm run start` command:
 
@@ -158,17 +154,13 @@ npm run start
 
 The application will compile and automatically start in your default web browser. The application typically runs at `http://localhost:4000`. You should see the Syncfusion<sup style="font-size:70%">&reg;</sup> Range Navigator control displayed on the page with the sample data and Area series. To stop the dev server, press `Ctrl+C` in the terminal. For a production build, use `npm run build`.
 
-### Step 9: View Your Range Navigator
-
-Wait for the webpack dev server to complete the build process. Once completed, you will see the Range Navigator control rendering in your browser. The control is now successfully initialized and ready for further customization.
-
 ## Output
 
 The following screenshot shows the output of the Syncfusion Range Navigator quick start application — an Area series rendering the sample data with a DateTime axis.
 
 {% previewsample "page.domainurl/code-snippet/rangenavigator/getting-started-cs10" %}
 
-![Syncfusion Range Navigator Quick Start Output](../images/navigator.png)
+![Syncfusion Range Navigator Quick Start Output](./images/navigator.png)
 
 ## Troubleshooting
 

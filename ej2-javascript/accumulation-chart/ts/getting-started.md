@@ -14,20 +14,20 @@ domainurl: ##DomainURL##
 
 This document explains how to create a simple Accumulation Chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). Ensure that Node.js is installed on your machine. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
 
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your machine:
 
-* [Node.js](https://nodejs.org/) (v14.15.0 or higher)
+* [Node.js](https://nodejs.org/)
 * [Visual Studio Code](https://code.visualstudio.com) (or any text editor)
 * [Git](https://git-scm.com/) (for cloning the quickstart repository)
 * A web browser to view the result
 
 ## Dependencies
 
-Below is the list of minimum dependencies required to use the Accumulation Chart.
+Below is the list of dependencies used by the `@syncfusion/ej2-charts` package.
 
 ```
 |-- @syncfusion/ej2-charts
@@ -100,7 +100,7 @@ Open the `ej2-quickstart` folder in Visual Studio Code or any text editor of you
 
 > Note: Code snippets here use webpack for local development. For online demos or StackBlitz, SystemJS may be used—ignore loader/helper scripts in rendered previews.
 
-Locate the `~/src/index.html` file in the project add an HTML `<div>` with its `id` attribute set to `element` to host the chart.
+Locate the `~/src/index.html` file in the project and add an HTML `<div>` element with its `id` attribute set to `element` to host the chart.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -135,41 +135,7 @@ By default, a **Pie series** is rendered when JSON data is assigned to the serie
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
-
-import { AccumulationChart } from '@syncfusion/ej2-charts';
-
-// Sample data for the Accumulation Chart
-let pieData: Object[] = [
-    { month: 'Jan', sales: 35 },
-    { month: 'Feb', sales: 28 },
-    { month: 'Mar', sales: 34 },
-    { month: 'Apr', sales: 32 },
-    { month: 'May', sales: 40 },
-    { month: 'Jun', sales: 32 },
-    { month: 'Jul', sales: 35 },
-    { month: 'Aug', sales: 55 },
-    { month: 'Sep', sales: 38 },
-    { month: 'Oct', sales: 30 },
-    { month: 'Nov', sales: 25 },
-    { month: 'Dec', sales: 32 }
-];
-
-// Initialize the Accumulation Chart
-let chart: AccumulationChart = new AccumulationChart({
-    series: [
-        {
-            dataSource: pieData,
-            xName: 'month',
-            yName: 'sales',
-            type: 'Pie'
-        }
-    ],
-    title: 'Sales Data'
-});
-
-// Render the chart to the target container
-chart.appendTo('#element');
-
+{% include code-snippet/chart/getting-started-cs17/index.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -193,6 +159,8 @@ When the build completes, the Syncfusion<sup style="font-size:70%">&reg;</sup> A
 
 The following screenshot shows the output of the Syncfusion Accumulation Chart quick start application:
 
+{% previewsample "page.domainurl/code-snippet/chart/getting-started-cs17" %}
+
 ![Syncfusion Accumulation Chart Quick Start Output - Pie chart of monthly sales data](../images/accumulation.png "Syncfusion Accumulation Chart displaying monthly sales data")
 
 ## Troubleshooting
@@ -200,14 +168,13 @@ The following screenshot shows the output of the Syncfusion Accumulation Chart q
 * **`Cannot find module '@syncfusion/ej2-charts'`** — Dependencies are not installed. Run `npm install` in the project root.
 * **Port `4000` already in use** — Another process is bound to the port. Stop the conflicting process or change `devServer.port` in `webpack.config.js`.
 * **TypeScript build error** — TypeScript version mismatch. Install TypeScript as a dev dependency: `npm install typescript --save-dev`.
-* **Chart does not render** — `app.ts` is not compiled or not referenced. Confirm that `app.js` is referenced in `index.html` and that `npm run start` completed without errors.
+* **Chart does not render** — Verify that the `id` of the target element is `element`, the `app.ts` file is saved, and `npm run start` completed without errors.
 
 ## See also
 
-* [Pie Chart](../pie.md)
-* [Doughnut Chart](../pie-dough-nut.md)
-* [Funnel Chart](../funnel.md)
-* [Pyramid Chart](../pyramid.md)
-* [Accumulation Chart Legend](../legend.md)
-* [Accumulation Chart Data Labels](../data-label.md)
-* [Accumulation Chart Tooltip](../tool-tip.md)
+* [Pie and Doughnut Chart](https://ej2.syncfusion.com/documentation/accumulation-chart/pie-dough-nut)
+* [Funnel Chart](https://ej2.syncfusion.com/documentation/accumulation-chart/funnel)
+* [Pyramid Chart](https://ej2.syncfusion.com/documentation/accumulation-chart/pyramid)
+* [Accumulation Chart Legend](https://ej2.syncfusion.com/documentation/accumulation-chart/legend)
+* [Accumulation Chart Data Labels](https://ej2.syncfusion.com/documentation/accumulation-chart/data-label)
+* [Accumulation Chart Tooltip](https://ej2.syncfusion.com/documentation/accumulation-chart/tool-tip)

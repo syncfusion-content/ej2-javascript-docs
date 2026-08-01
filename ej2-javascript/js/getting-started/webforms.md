@@ -14,11 +14,11 @@ This guide provides a comprehensive walkthrough for integrating Syncfusion JavaS
 
 ## Prerequisites
 
-To get started with ASP.NET Web Forms application, ensure the following software to be installed in the machine.
+To get started with the ASP.NET Web Forms application, ensure that the following software is installed on the machine.
 
-* .NET Framework 4.5 and above
+* .NET Framework 4.8
 * ASP.NET Web Forms
-* Visual Studio 2017
+* Visual Studio 2022
 
 ## Create ASP.NET Web Forms application
 
@@ -26,35 +26,31 @@ To get started with ASP.NET Web Forms application, ensure the following software
 
     ![new project in aspnet web forms](images/new-mvc-project.png)
 
-2. Select the **ASP.NET Web Forms Site** and change the application name, and then click **OK**.
+2. Select **ASP.NET Web Forms Site**, change the application name, and then click **OK**.
 
-    ![aspnet web forms syncfusion project template](images/webforms-site.png)
+    ![aspnet web forms syncfusion project template](images/new-mvc-template.png)
 
 ### Configure Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) control in the Web Forms application
 
- 1. Add the [`Syncfusion.EJ2.Javascript`](https://www.nuget.org/packages/Syncfusion.EJ2.Javascript/) NuGet package to the new application by using the NuGet Package Manager. Right-click the project and select **Manage NuGet Packages...**.
-
-    ![javascript manage nuget packages](images/webforms-nuget.png)
-
- 2. Search the `Syncfusion.EJ2.JavaScript` keyword in the **Browse** tab and install **Syncfusion.EJ2.JavaScript** NuGet package in the application.
+ 1. Search the `Syncfusion.EJ2.JavaScript` keyword in the **Browse** tab and install the **Syncfusion.EJ2.JavaScript** in the application by using the NuGet Package Manager.
 
     ![javascript install nuget package](images/webforms-nuget-install.png)
 
-    The Syncfusion Javascript NuGet package will be included in the project after the installation process is completed.
+    The Syncfusion JavaScript NuGet package will be included in the project after the installation process is completed.
 
- 3. Open `~/Site.master` file and add the required styles and script references of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to the `<head>` element.
+ 2. Open `~/Site.master` file and add the required styles and script references of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to the `<head>` element.
 
     ```html
     <head>
     <!-- Syncfusion CSS -->
-    <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/styles/material.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/33.2.3/ej2-grids/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/material3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-grids/styles/material3.css" rel="stylesheet">
     <!-- Syncfusion JS -->
-    <script src="https://cdn.syncfusion.com/ej2/33.2.3/dist/ej2.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/34.1.29/dist/ej2.min.js"></script>
     </head>
     ```
 
- 4. Open `~/Default.aspx` file and add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control to the `<div>` element and intimate the Grid control inside the `<script>` element.
+ 3. Open the `~/Default.aspx` file, add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control to the `<div>` element, and initialize the Grid control inside the `<script>` element.
 
     ```html
     <div class="row">
@@ -78,15 +74,13 @@ To get started with ASP.NET Web Forms application, ensure the following software
                 { field: 'Active', headerText: 'Active' },
                 { field: 'Mainfieldsofinvention', headerText: 'Field' }
             ],
-            allowPaging: true,
-            pageSettings: { pageSize: 5 }
         });
         grid.appendTo('#Grid');
     </script>
     </div>
     ```
 
-5. Run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Grid control will render in the web browser.
+4. Run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Grid control will render in the web browser.
 
     ![aspnet web forms grid control](images/webforms-grid.png)
 

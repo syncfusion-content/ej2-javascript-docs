@@ -15,12 +15,12 @@ Use Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style
 
 ## Prerequisites
 
-* [Visual Studio Code](https://code.visualstudio.com/) (or any text editor)
+* [Visual Studio Code] (or any text editor)
 * Basic understanding of HTML and JavaScript
 
 ## Quick Setup
 
-### Step 1: Start with Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2
+### Step 1: Get started with Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2
 
 Follow the [Quick Start](./quick-start) guide to create an Essential JS 2 application with a basic Button control.
 
@@ -28,7 +28,7 @@ Follow the [Quick Start](./quick-start) guide to create an Essential JS 2 applic
 
 Replace your default style with the compatibility style to prevent UI conflicts.
 
-**Using CDN:**
+**Reference the styles from the CDN:**
 ```
 https://cdn.syncfusion.com/ej2/styles/compatibility/material.css
 ```
@@ -42,44 +42,45 @@ Below is a ready-to-use HTML file that includes both EJ1 and EJ2 controls:
 
 ```html
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Essential Js1 + Essential Js2 Compatibility</title>
-    
-    <!-- Compatibility Styles -->
-    <link href="https://cdn.syncfusion.com/ej2/styles/compatibility/material.css" rel="stylesheet" />
-    
-    <!-- jQuery (required by EJ1) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    
-    <!-- EJ1 Script -->
-    <script src="https://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js"></script>
-    
-    <!-- EJ2 Scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-base/dist/global/ej2-base.min.js"></script>
-    <script src="https://cdn.syncfusion.com/ej2/33.2.3/ej2-grids/dist/global/ej2-grids.min.js"></script>
-  </head>
-  
-  <body>
-    
-    <!-- EJ1 Button -->
-    <button id="ej1Button">ESSENTIAL JS 1</button>
-    
-    <!-- EJ2 Button -->
-    <button id="ej2Button">ESSENTIAL JS 2 </button>
-    
+<head>
+    <title>Essential JS 2 - Essential JS 1</title>
+    <!-- Essential JS 1 default theme -->
+    <link href=" http://cdn.syncfusion.com/16.1.0.24/js/web/flat-azure/ej.web.all.compatibility.min.css " rel="stylesheet" type="text/css" />
+    <!-- Essential JS 2 material theme -->
+    <link href="https://cdn.syncfusion.com/ej2/styles/compatibility/material.css" rel="stylesheet" type="text/css" />
+    <!-- Essential JS 1 scripts -->
+    <script src="https://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <script src=" https://cdn.syncfusion.com/16.1.0.24/js/web/ej.web.all.min.js" type="text/javascript"></script>
+    <!-- Essential JS 2 script -->
+    <script src=" https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div style="margin: 50px;">
+        <!-- Add HTML Button element for Essential JS 2 -->
+        <h2>Essential JS 2 Button</h2>
+        <button id="btn2">Essential JS 2</button>
+    </div>
+	<div style="margin: 50px;">
+        <h2>Essential JS 1 Button</h2>
+        <!-- Add HTML Button element for Essential JS 1 -->
+        <button id="btn1">Essential JS 1</button>
+    </div>
     <script>
-      // Extend ej namespace with Syncfusion
-      $.extend(ej, Syncfusion);
-      
-      // Initialize EJ1 Button
-      $("#ej1Button").ejButton();
-      
-      // Initialize EJ2 Button
-      var button2 = new ej.buttons.Button({ isPrimary: true });
-      button2.appendTo('#ej2Button');
-    </script>
-  </body>
+   // Extend ej namespace with Syncfusion
+   $.extend(ej, Syncfusion);
+   // Initialize Essential JS 1 JavaScript Button component
+   $("#btn1").ejButton({
+        size: "medium",
+        showRoundedCorner: true,
+   })
+   // Initialize Essential JS 2 JavaScript Button component
+   var button = new ej.buttons.Button();
+   button.appendTo('#btn2');
+</script>
+</body>
+
 </html>
 ```
 

@@ -81,7 +81,9 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 4:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the Essentials JS 2 script and style references.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -106,13 +108,15 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
        <body>
        </body>
   </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 **Step 5:** Now, add the `SpeechToText` element and initiate the `JavaScript (ES5) SpeechToText` control in the `index.html` by using following code
 
-`[src/index.html]`
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
 
-```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -148,7 +152,9 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
             </script>
        </body>
   </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 **Step 6:** Now, run the `index.html` in web browser, it will render the **Syncfusion JavaScript (ES5) SpeechToText** control.
 
@@ -179,6 +185,8 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 {% include code-snippet/speech-to-text/getting-started/es5-getting-started-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
+
+**Step 4:** Now, run the `index.html` in web browser, it will render the **Syncfusion JavaScript (ES5) SpeechToText** control.
 
 {% previewsample "page.domainurl/code-snippet/speech-to-text/getting-started/es5-getting-started-cs1/index" %}
 

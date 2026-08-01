@@ -94,7 +94,7 @@ Then add the following CSS reference to the `src/styles/styles.css` file:
 Add the Inline AI Assist control in **src/app/app.ts** file using the following code.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/inline-ai-assist/gettingstarted/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
@@ -119,7 +119,7 @@ Open `http://localhost:8080` (or the port shown in the terminal) in a browser. Y
 You can use the `relateTo` property to position the Inline AI Assist relative to a specific DOM element. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement. The `target` property specifies the element or CSS selector where the Inline AI Assist will be appended. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement.
 
 {% tabs %}
-{% highlight js tabtitle="index.ts" %}
+{% highlight js tabtitle="app.ts" %}
 {% include code-snippet/inline-ai-assist/relateTo-target/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
@@ -134,7 +134,7 @@ You can use the `relateTo` property to position the Inline AI Assist relative to
 Responses can be shown in two modes: `Inline` (updates content in-place) and `Popup` (shows responses in a floating popup). Use the `responseMode` property to choose the desired behavior.
 
 {% tabs %}
-{% highlight js tabtitle="index.ts" %}
+{% highlight js tabtitle="app.ts" %}
 {% include code-snippet/inline-ai-assist/response-mode/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}

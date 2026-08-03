@@ -84,7 +84,9 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 4:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script and style references.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -118,13 +120,15 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
        <body>
        </body>
   </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 **Step 5:** Now, add the `Chat UI` element and initiate the `JavaScript (ES5) Chat UI` control in the `index.html` by using following code
 
-`[src/index.html]`
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
 
-```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -168,7 +172,9 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
           </script>
        </body>
   </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 **Step 6:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Chat UI** control.
 
@@ -204,6 +210,8 @@ You can use the [messages](../api/chat-ui#messages) property to add messages and
 {% include code-snippet/chat-ui/default-messages/index.html %}
 {% endhighlight %}
 {% endtabs %}
+
+**Step 4:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Chat UI** control.
   
 {% previewsample "page.domainurl/code-snippet/chat-ui/default-messages" %}
 

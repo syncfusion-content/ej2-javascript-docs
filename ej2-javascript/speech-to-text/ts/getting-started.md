@@ -94,7 +94,7 @@ Then add the following CSS reference to the `src/styles/styles.css` file:
 Add the SpeechToText control in `src/app/app.ts` file using the following code.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speech-to-text/getting-started/getting-started-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}

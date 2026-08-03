@@ -96,7 +96,7 @@ Add the Chat UI control in **src/app/app.ts** file using the following code.
 You can use the [messages](../api/chat-ui#messages) property to add messages and the [user](../api/chat-ui#user) property to configure the current user for the chat.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/chat-ui/default-messages/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}

@@ -43,7 +43,7 @@ cd ej2-quickstart
 Use the following command to install the @syncfusion/ej2-dropdowns package:
 
 ```
-npm install @syncfusion/ej2-dropdowns --save
+npm install @syncfusion/ej2-dropdowns
 ```
 Install the required npm packages:
 

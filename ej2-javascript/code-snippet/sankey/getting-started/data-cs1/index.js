@@ -19,5 +19,5 @@ const sankey = new ej.charts.Sankey(
     nodes: nodes,
     links: links
   },
-  '#sankey-container'
+  '#element'
 );

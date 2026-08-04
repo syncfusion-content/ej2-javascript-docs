@@ -21,5 +21,5 @@ const sankey: Sankey = new Sankey(
     nodes: nodes,
     links: links
   },
-  '#sankey-container'
+  '#element'
 );

@@ -13,20 +13,20 @@ domainurl: ##DomainURL##
 
 This document explains how to create a simple Smith Chart and configure its features in TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). Ensure that Node.js is installed on your machine. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
 
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your machine:
 
-* Node.js (v14.15.0 or higher)
+* Node.js
 * [Visual Studio Code](https://code.visualstudio.com) (or any text editor)
 * [Git](https://git-scm.com/) for cloning the quickstart repository
 * A modern web browser (Chrome, Edge, Firefox, or Safari) to view the result
 
 ## Dependencies
 
-The Smith Chart control ships as part of the `@syncfusion/ej2-charts` package. Below is the list of minimum dependencies required.
+The Smith Chart control is included in the `@syncfusion/ej2-charts` package. Below is the list of core and optional dependencies used by the package.
 
 ```
 |-- @syncfusion/ej2-charts
@@ -40,18 +40,14 @@ The Smith Chart control ships as part of the `@syncfusion/ej2-charts` package. B
 
 ## Quick Setup
 
-### Step 1: Create a Project Folder
+### Step 1: Open Command Prompt
 
-Create a folder named `my-smithchart` in your desired location. This folder will contain your Syncfusion Smith Chart TypeScript project.
+Open the command prompt and navigate to the directory where you want to create the project.
 
-### Step 2: Open Command Prompt
+* On Windows, use Command Prompt or PowerShell.
+* On macOS or Linux, use Terminal.
 
-Open the command prompt and navigate to the `my-smithchart` folder created in Step 1. You can do this by:
-
-* **Windows**: Open Command Prompt or PowerShell and navigate to the `my-smithchart` folder.
-* **macOS/Linux**: Open Terminal and navigate to the `my-smithchart` folder.
-
-### Step 3: Clone the Quickstart Repository
+### Step 2: Clone the Quickstart Repository
 
 Run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
@@ -63,7 +59,7 @@ git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quick
 {% endhighlight %}
 {% endtabs %}
 
-### Step 4: Navigate to Project Folder
+### Step 3: Navigate to Project Folder
 
 After cloning the application in the `ej2-quickstart` folder, run the following command to navigate to the project directory.
 
@@ -75,7 +71,7 @@ cd ej2-quickstart
 {% endhighlight %}
 {% endtabs %}
 
-### Step 5: Install Required Packages
+### Step 4: Install Required Packages
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
@@ -89,7 +85,7 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-### Step 6: Update the HTML Template
+### Step 5: Update the HTML Template
 
 Open the `ej2-quickstart` folder in Visual Studio Code or any text editor of your choice.
 
@@ -121,7 +117,7 @@ Locate the `~/src/index.html` file in the project, preserve any existing `<link>
 {% endhighlight %}
 {% endtabs %}
 
-### Step 7: Create the Smith Chart Component
+### Step 6: Create the Smith Chart Component
 
 Locate the `src/app/app.ts` file in your project and add the Smith Chart component.
 
@@ -138,12 +134,12 @@ Locate the `src/app/app.ts` file in your project and add the Smith Chart compone
 The `new Smithchart({...})` call creates the Smith Chart component. Pass [`series`](https://ej2.syncfusion.com/documentation/api/smithchart/index-default#series), an array of series objects, to render curves on the chart. Each series with a [`dataSource`](https://ej2.syncfusion.com/documentation/api/smithchart/smithchartseriesmodel#datasource) needs matching [`resistance`](https://ej2.syncfusion.com/documentation/api/smithchart/smithchartseriesmodel#resistance) and [`reactance`](https://ej2.syncfusion.com/documentation/api/smithchart/smithchartseriesmodel#reactance) field names; each series with `points` does not. Finally, `smithchart.appendTo('#container')` renders the control into the `<div id="container">` element declared in `index.html`.
 
 {% tabs %}
-{% highlight js tabtitle="index.ts" %}
-{% include code-snippet/smithchart/getting-started-cs1/index.ts %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/smithchart/getting-started-cs2/index.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-### Step 8: Run the Application
+### Step 7: Run the Application
 
 Open the integrated terminal in Visual Studio Code or use your command prompt to run the application. Use the `npm run start` command:
 
@@ -157,21 +153,17 @@ npm run start
 
 The application will compile and automatically start in your default web browser. The application typically runs at `http://localhost:4000`. You should see the Syncfusion<sup style="font-size:70%">&reg;</sup> Smith Chart control displayed on the page. To stop the dev server, press `Ctrl+C` in the terminal.
 
-### Step 9: View Your Smith Chart
-
-Wait for the webpack dev server to complete the build process. Once completed, you will see the Smith Chart rendering in your browser with the transmission-line sample data. The chart is now successfully initialized and ready for further customization.
-
 ## Output
 
 The following screenshot shows the output of the Syncfusion Smith Chart quick start application.
 
-![Syncfusion Smith Chart Quick Start Output](../images/smithchart-TS.png)
+{% previewsample "page.domainurl/code-snippet/smithchart/getting-started-cs2" %}
 
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started-cs1" %}
+![Syncfusion Smith Chart Quick Start Output](./images/smithchart-TS.png)
 
 ## Troubleshooting
 
 * **`Cannot find module '@syncfusion/ej2-charts'`** — Dependencies were not installed. Re-run `npm install`.
-* **`Smithchart is undefined`** — `Smithchart.Inject(...)` was not called before the `new Smithchart(...)` call. Add the `Inject` line at the top of `app.ts`.
+* **`Smithchart` is undefined or cannot be imported** — Ensure that `Smithchart` is imported from `@syncfusion/ej2-charts` and that the package is installed.
 * **Chart renders without data** — When using `series[].dataSource`, you must also set the matching `resistance` and `reactance` field names; otherwise the series renders empty. Use `series[].points` instead if you want to pass values directly.
-* **TypeScript compile errors after `npm install`** — Run `npm run build` to see the full error; common causes are mismatched `ej2-charts` and theme package versions.
+* **TypeScript compile errors after `npm install`** — Run `npm run build` to view the complete error details. Common causes include missing dependencies, incorrect import statements, or mismatched Syncfusion package versions.

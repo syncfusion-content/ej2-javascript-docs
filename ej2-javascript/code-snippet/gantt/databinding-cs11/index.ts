@@ -1,12 +1,9 @@
 import { Gantt } from '@syncfusion/ej2-gantt';
 
-let emptyRecordTemplate: any = () => {
-    return '<div class="emptyRecordTemplate"><span>There is no data available to display at the moment.</span></div>';
-};
-
 let gantt: Gantt = new Gantt({
     dataSource: [],
     height: '450px',
+    emptyRecordTemplate: '#emptyRecordTemplate',
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -14,13 +11,12 @@ let gantt: Gantt = new Gantt({
         endDate: 'EndDate',
         duration: 'Duration',
         progress: 'Progress',
-        dependency: 'Predecessor',
-        parentID: 'ParentID',
-        resourceInfo: 'resources'
+        parentID: 'ParentID'
     },
-    created: function (this: Gantt): void {
-        (this as any).treeGrid.grid.emptyRecordTemplate = emptyRecordTemplate;
+    splitterSettings: {
+        columnIndex: 3
     }
+    
 });
 
 gantt.appendTo('#Gantt');

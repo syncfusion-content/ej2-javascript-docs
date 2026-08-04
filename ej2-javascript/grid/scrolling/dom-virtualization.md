@@ -138,6 +138,7 @@ Use the [setRowHeight](../../api/grid#setrowheight) callback to programmatically
 var grid = new ej.grids.Grid({
     enableDomVirtualization: true,
     setRowHeight: function(row) {
+        // Return custom height in pixels based on row data
         return row.data['Priority'] === 'High' ? 80 : 40;
     }
 });

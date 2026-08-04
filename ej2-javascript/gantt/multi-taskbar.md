@@ -175,3 +175,8 @@ The following example demonstrates non-overlapping multi taskbar:
 
 {% previewsample "page.domainurl/code-snippet/gantt/resource-view-taskbaroverlap-cs1" %}
 {% endif %}
+
+## Limitations
+
+- Task overallocation is determined only by overlapping task date ranges for the same resource and does not consider `resourceUnit` values. Therefore, capacity-based validation (for example, checking whether the total assigned units exceed 100%) is not supported in the current implementation.
+- Dependency relationships are not displayed when parent tasks or project records are in a collapsed state with `enableMultiTaskbar` is enabled. This is the expected behavior of the Gantt Chart and applies to collapsed parent tasks in both Project View and Resource View.

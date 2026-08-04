@@ -113,7 +113,7 @@ In this article, the TreeView control is used as an example. Add the following T
 </html>
 ```
 
-Now, to render the TreeView control, add the following TypeScript code to the `~/src/app/app.ts` file.
+Now, to render the Dashboard Layout control, add the following TypeScript code to the `~/src/app/app.ts` file.
 
 ```ts
 

@@ -36,7 +36,7 @@ Moves focus to and selects the previous item.</td></tr>
 <tr>
 <td>
 <kbd>Down arrow</kbd></td><td>
-Moves focus to and selects the next item..</td></tr>
+Moves focus to and selects the next item.</td></tr>
 <tr>
 <td>
 <kbd>Home</kbd></td><td>

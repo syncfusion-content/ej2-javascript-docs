@@ -14,9 +14,9 @@ domainurl: ##DomainURL##
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 DataGrid and demonstrates the basic usage of the DataGrid control in a JavaScript application.
 
 ## Prerequisites
- 
+
 Ensure the following tools are installed on your machine:
- 
+
 * [Visual Studio Code](https://code.visualstudio.com) (or any text editor) to create the HTML file
 * A modern web browser (Chrome, Edge, Firefox, or Safari) to view the result
 

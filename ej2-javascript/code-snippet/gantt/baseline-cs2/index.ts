@@ -3,7 +3,7 @@ import { baselineTemplateData } from './datasource.ts';
 
 Gantt.Inject(Selection, DayMarkers);
 
-let gantt: Gantt = new Gantt({
+let ganttChart: Gantt = new Gantt({
     dataSource: baselineTemplateData,
     taskFields: {
         id: 'TaskID',
@@ -45,7 +45,7 @@ let gantt: Gantt = new Gantt({
     height: '450px',
     baselineColor: 'red'
 });
-gantt.appendTo('#Gantt');
+ganttChart.appendTo('#Gantt');
 
 function baselineTemplate(props: any): string {
     if (props.hasChildRecords || (props.data && props.data.hasChildRecords)) {
@@ -55,7 +55,7 @@ function baselineTemplate(props: any): string {
     const taskRecord = props.taskData;
     const ganttProperties = taskRecord.ganttProperties;
 
-    const chartRowsModule = gantt.chartRowsModule;
+    const chartRowsModule = ganttChart.chartRowsModule;
 
     const baselineTop = chartRowsModule.baselineTop;
     const baselineHeight = chartRowsModule.baselineHeight;
@@ -63,15 +63,15 @@ function baselineTemplate(props: any): string {
     const milestoneHeight = chartRowsModule.milestoneHeight;
     const milestoneMarginTop = chartRowsModule.milestoneMarginTop;
 
-    const rowHeight = gantt.rowHeight;
-    const renderBaseline = gantt.renderBaseline;
-    const enableRtl = gantt.enableRtl;
+    const rowHeight = ganttChart.rowHeight;
+    const renderBaseline = ganttChart.renderBaseline;
+    const enableRtl = ganttChart.enableRtl;
 
     const taskSpacing = 9;
     const baselineSpacing = 4; // spacing between baselines
 
     function getLeft(date: any): number {
-        return gantt.dataOperation.getTaskLeft(
+        return ganttChart.dataOperation.getTaskLeft(
             new Date(date),
             false,
             ganttProperties.calendarContext
@@ -85,13 +85,13 @@ function baselineTemplate(props: any): string {
         const end = new Date(start);
         end.setDate(end.getDate() + duration);
 
-        const leftStart = gantt.dataOperation.getTaskLeft(
+        const leftStart = ganttChart.dataOperation.getTaskLeft(
             new Date(start),
             false,
             ganttProperties.calendarContext
         );
 
-        const leftEnd = gantt.dataOperation.getTaskLeft(
+        const leftEnd = ganttChart.dataOperation.getTaskLeft(
             end,
             false,
             ganttProperties.calendarContext

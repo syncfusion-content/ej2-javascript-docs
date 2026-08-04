@@ -324,7 +324,7 @@ Here's an example that demonstrates how to achieve immediate saving or updating 
 The Grid supports Undo / Redo actions in batch editing, allowing changes such as cell edits, row additions, and row deletions to be reverted or reapplied before saving. This feature can be enabled by setting the `editSettings.enableUndoRedo` property to **true**.
  
 Undo and redo operations can be performed using keyboard shortcuts. Press Ctrl + Z to undo an action, and Ctrl + Y to redo an action.
-
+ 
 In addition, **Undo** and **Redo** toolbar items can be added to the Grid toolbar to perform these actions through the user interface.
 
 Here's an example that demonstrates how to enable Undo / Redo in batch editing:

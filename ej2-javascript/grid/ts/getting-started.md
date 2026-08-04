@@ -22,7 +22,6 @@ Ensure the following tools are installed on your machine:
 * [Git](https://git-scm.com/downloads)
 * [Node.js](https://nodejs.org/en/)
 * [Visual Studio Code](https://code.visualstudio.com/)
- 
 
 ## Setup for local development
 
@@ -152,11 +151,10 @@ The `npm start` command compiles the TypeScript source files and starts the webp
 ```
 npm start
 ```
-
 ## Registering Syncfusion license
 
 The Syncfusion® Data Grid requires a valid license key to be registered in the application. To prevent license validation warnings, refer to the [Syncfusion licensing](https://ej2.syncfusion.com/documentation/licensing/overview) documentation.
- 
+
 ## Troubleshooting
 
 **Grid styles are not applied:** Ensure that the required Syncfusion theme package is installed and the theme CSS is imported correctly in the `src/styles/styles.css` file.

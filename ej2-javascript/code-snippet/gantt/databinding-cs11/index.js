@@ -1,10 +1,7 @@
-var emptyRecordTemplate = function () {
-    return '<div class="emptyRecordTemplate"><span>There is no data available to display at the moment.</span></div>';
-};
-
 var ganttChart = new ej.gantt.Gantt({
     dataSource: [],
     height: '450px',
+    emptyRecordTemplate: '#emptyRecordTemplate',
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -12,13 +9,12 @@ var ganttChart = new ej.gantt.Gantt({
         endDate: 'EndDate',
         duration: 'Duration',
         progress: 'Progress',
-        dependency: 'Predecessor',
-        parentID: 'ParentID',
-        resourceInfo: 'resources'
+        parentID: 'ParentID'
     },
-    created: function () {
-        this.treeGrid.grid.emptyRecordTemplate = emptyRecordTemplate;
-    }
+    splitterSettings: {
+        columnIndex: 3
+    },
+   
 });
 
 ganttChart.appendTo('#Gantt');

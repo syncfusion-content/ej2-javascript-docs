@@ -15,7 +15,7 @@ Use Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style
 
 ## Prerequisites
 
-* [Visual Studio Code] (or any text editor)
+* [Visual Studio Code](or any text editor)
 * Basic understanding of HTML and JavaScript
 
 ## Quick Setup

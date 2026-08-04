@@ -60,7 +60,7 @@ The installed theme package includes an `index.css` file that automatically impo
 @import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css';
 ```
 
-I> To apply the application-specific styles correctly, import style.css into **src/main.ts** and remove all the default styles from **src/style.css** and use the Rich Text Editor styles provided above.
+I> To apply the application-specific styles correctly, import style.css into **src/main.ts** and remove all the default styles from **src/style.css** and use the Rich Text editor styles provided above.
 
 ## Module Injection
 

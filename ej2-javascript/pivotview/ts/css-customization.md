@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Css customization in ##Platform_Name## Pivot Table component | Syncfusion
-description: Learn here all about Css customization in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: CSS Customization in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table uses CSS classes like `e-rowsheader` and `e-fieldlist-columns` to style row headers, column axes, and Field List areas.
 platform: ej2-javascript
-control: Css customization 
+control: CSS customization
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Css customization in ##Platform_Name## Pivot Table component
+# CSS Customization in ##Platform_Name## Pivot Table
 
 The TypeScript Pivot Table component provides extensive CSS customization options, allowing users to modify the visual appearance and layout of various pivot table elements. This includes styling row headers, column headers, value cells, summary cells, Field List components, and Grouping Bar areas to match application themes and design requirements.
 

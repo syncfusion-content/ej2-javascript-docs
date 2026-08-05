@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Excel export in ##Platform_Name## Pivot Table component | Syncfusion
-description: Learn here all about Excel export in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Excel Export in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table exports pivot data to .xlsx and .csv files via `excelExport` and `csvExport`, preserving formatting and structure.
 platform: ej2-javascript
-control: Excel export 
+control: Excel export
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Excel export in ##Platform_Name## Pivot Table component
+# Excel Export in ##Platform_Name## Pivot Table
 
 The Pivot Table component supports exporting pivot data to **Excel** and **CSV** file formats. This enables data sharing and analysis in spreadsheet applications such as Microsoft Excel, Google Sheets, and more. To enable the export functionality, inject the `ExcelExport` module into the Pivot Table and set the [`allowExcelExport`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#allowexcelexport) property to **true**.
 

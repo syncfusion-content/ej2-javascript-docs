@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Pivot chart in ##Platform_Name## Pivot Table component | Syncfusion
-description: Learn here all about Pivot chart in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Pivot Chart in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table renders 15+ Pivot Chart types with drill down, axis options, and series, legend, export, and tooltip settings.
 platform: ej2-javascript
-control: Pivot chart 
+control: Pivot chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pivot chart in ##Platform_Name## Pivot Table component
+# Pivot Chart in ##Platform_Name## Pivot Table
 
 The Pivot Chart in the Syncfusion Typescript Pivot Table component helps users visualize aggregated values in a clear and graphical format. It provides essential options like drill down and drill up operations, over 15 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Summary customization in ##Platform_Name## Pivot Table component | Syncfusion
-description: Learn here all about Summary customization in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Summary Customization in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table shows or hides grand totals and sub-totals via `showGrandTotals`, `showRowGrandTotals`, `showSubTotals`, and `showColumnSubTotals` flags.
 platform: ej2-javascript
-control: Summary customization 
+control: Summary customization
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Summary customization in ##Platform_Name## Pivot Table component
+# Summary Customization in ##Platform_Name## Pivot Table
 
 ## Show or hide grand totals
 

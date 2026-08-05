@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Snowflake in ##Platform_Name## Pivot Table control | Syncfusion
-description: Learn here all about Snowflake in Syncfusion ##Platform_Name## Pivot Table control of Syncfusion Essential JS 2 and more.
+title: Snowflake in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table connects to Snowflake via the Snowflake.Data library and a Web API controller to fetch and bind data at runtime.
 platform: ej2-javascript
-control: Snowflake 
+control: Snowflake
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Snowflake in ##Platform_Name## Pivot Table Component
+# Snowflake in ##Platform_Name## Pivot Table
 
 This guide explains how to retrieve data from a Snowflake database using the [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data) library and bind it to the Pivot Table through a Web API controller.
 

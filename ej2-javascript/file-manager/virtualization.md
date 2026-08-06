@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Virtualization in ##Platform_Name## File Manager component | Syncfusion
-description: Learn how to enable UI virtualization for the ##Platform_Name## File Manager component to efficiently render large file sets in Details and Large Icons views.
-platform: ej2-javascript
+title: Virtualization in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to enable virtualization in the ##Platform_Name## File Manager to efficiently load large folders without performance loss.
 control: File Manager
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtualization in ##Platform_Name## File Manager component
+# Virtualization in ##Platform_Name## File Manager
 
 The File Manager control's UI virtualization allows for the dynamic loading of a large number of directories and files in both the details view and large icons view without degrading performance.
 

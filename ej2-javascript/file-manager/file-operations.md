@@ -1,15 +1,15 @@
 ---
 layout: post
-title: File operations in ##Platform_Name## File Manager component | Syncfusion
-description: Learn how the ##Platform_Name## File Manager component performs file operations and the request/response formats.
-platform: ej2-javascript
+title: File Operations in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to perform file operations in the ##Platform_Name## File Manager, including read, create, delete, rename, copy, move, upload, and download.
 control: File Manager
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# File operations in ##Platform_Name## File Manager component
+# File Operations in ##Platform_Name## File Manager
 
 The File Manager component provides a web-based interface to browse, manage, and organize files and folders. It supports basic file operations such as creating folders, uploading and downloading files, deleting and renaming items, and previewing images.
 

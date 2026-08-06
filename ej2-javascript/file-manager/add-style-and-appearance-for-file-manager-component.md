@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style customize in ##Platform_Name## File Manager component | Syncfusion
-description: Learn how to customize styles and appearance in the ##Platform_Name## File Manager component using CSS selectors.
-platform: ej2-javascript
+title: Style and Appearance in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to customize the appearance of the ##Platform_Name## File Manager by overriding CSS selectors for the navigation pane, layout, and toolbar.
 control: File Manager
+platform: ej2-javascript
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to customize style and appearance in ##Platform_Name## File Manager
+# Style and Appearance in ##Platform_Name## File Manager
 
 The following CSS structure can be used to customize the component's appearance based on user preference.
 

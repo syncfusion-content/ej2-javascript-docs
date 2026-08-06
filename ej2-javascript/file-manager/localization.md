@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## File Manager component | Syncfusion
-description: Learn how to localize the ##Platform_Name## File Manager component by providing culture-specific texts and messages.
-platform: ej2-javascript
+title: Localization in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to localize the ##Platform_Name## File Manager to any culture by defining locale-specific texts and messages beyond the default English locale.
 control: File Manager
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## File Manager component
+# Localization in ##Platform_Name## File Manager
 
 The File Manager component supports localization by providing culture-specific texts and messages. The default [`locale`](../api/file-manager#locale) is `en` (English). To localize the component, supply translations for the keys listed below for your target culture and register them with the localization framework.
 

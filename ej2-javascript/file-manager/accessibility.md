@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## File Manager component | Syncfusion
-description: Learn how the ##Platform_Name## File Manager component meets accessibility standards with keyboard, screen reader, and RTL support.
+title: Accessibility in ##Platform_Name## File Manager | Syncfusion
+description: Learn about the accessibility support in the ##Platform_Name## File Manager, including WCAG 2.2, Section 508, ADA, and WAI-ARIA role compliance.
+control: File Manager
 platform: ej2-javascript
-control: File Manager 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## File Manager component
+# Accessibility in ##Platform_Name## File Manager
 
 The File Manager component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles), which are commonly used to evaluate accessibility.
 

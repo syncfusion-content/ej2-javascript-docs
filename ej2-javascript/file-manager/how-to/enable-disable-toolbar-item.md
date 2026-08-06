@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Manage Toolbar Items in ##Platform_Name## File Manager | Syncfusion
-description: Learn how to enable or disable toolbar items in the ##Platform_Name## File Manager control to customize available user actions.
-platform: ej2-javascript
+title: Manage toolbar items in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to enable or disable a toolbar item in the ##Platform_Name## File Manager at runtime based on user actions or selection state.
 control: File Manager
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable or Disable Toolbar Item in ##Platform_Name## File Manager
+# How to enable or disable a toolbar item in ##Platform_Name## File Manager
 
 Toolbar items can be enabled or disabled using the [`enableToolbarItems`](../../api/file-manager#enabletoolbaritems) and [`disableToolbarItems`](../../api/file-manager#disabletoolbaritems) methods.
 

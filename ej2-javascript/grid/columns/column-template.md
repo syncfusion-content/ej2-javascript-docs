@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column template in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Column template in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Column Template| Syncfusion
+description: Learn how to create custom column templates in ##Platform_Name## Data Grid to render rich cell content, editors, formatting, and interactive UI elements.
 platform: ej2-javascript
 control: Column template 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column template in ##Platform_Name## Grid control
+# Column Template in ##Platform_Name## Data Grid
 
 Grid control provides a [template](../../api/grid/column#template) option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
 

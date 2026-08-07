@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Paging in ##Platform_Name## Pivot Table component | Syncfusion
-description: Learn here all about Paging in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Paging in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table paginates large row and column data via `enablePaging` and `pageSettings`, with a built-in pager UI for navigation.
 platform: ej2-javascript
-control: Paging 
+control: Paging
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Paging in ##Platform_Name## Pivot Table component
+# Paging in ##Platform_Name## Pivot Table
 
 The paging feature in the Pivot Table component is designed to handle large datasets efficiently by dividing the data into manageable pages. This prevents performance issues associated with rendering large amounts of data at once, allowing users to navigate through rows and columns page by page.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Drag and drop in ##Platform_Name## File Manager component | Syncfusion
-description: Learn how to enable and configure drag-and-drop in the ##Platform_Name## File Manager component, and the events it raises during the operation.
-platform: ej2-javascript
+title: Drag and Drop in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to enable drag and drop in the ##Platform_Name## File Manager to move or upload files between folders using built-in drag events.
 control: File Manager
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and drop in ##Platform_Name## File Manager component
+# Drag and Drop in ##Platform_Name## File Manager
 
 The File Manager component supports moving files and folders within the file system using drag-and-drop. Enable or disable this feature using the [`allowDragAndDrop`](../api/file-manager#allowdraganddrop) property of the File Manager.
 

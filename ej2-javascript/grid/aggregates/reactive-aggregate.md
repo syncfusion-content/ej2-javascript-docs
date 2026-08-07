@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Reactive aggregate in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Reactive aggregate in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Reactive Aggregate | Syncfusion
+description: Learn how to use reactive aggregates in ##Platform_Name## Data Grid to automatically update summary values when data is edited, added, or removed.
 platform: ej2-javascript
 control: Reactive aggregate 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Reactive aggregate in ##Platform_Name## Grid control
+# Reactive Aggregate in ##Platform_Name## Data Grid
 
 The ##Platform_Name## Grid control provides support for reactive aggregates, which allow you to update the aggregate values dynamically as the data changes. Reactive aggregates automatically recalculate their values when there are changes in the underlying data, providing real-time updates to the aggregate values in the grid.
 

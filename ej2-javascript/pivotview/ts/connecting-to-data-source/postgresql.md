@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Postgresql in ##Platform_Name## Pivot Table Component | Syncfusion
-description: Learn here all about Postgresql in Syncfusion ##Platform_Name## Pivot Table Component of Syncfusion Essential JS 2 and more.
+title: PostgreSQL in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table connects to PostgreSQL via the Npgsql.EntityFrameworkCore.PostgreSQL library and a Web API controller to fetch and bind data.
 platform: ej2-javascript
-control: Postgresql 
+control: PostgreSQL
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# PostgreSQL in ##Platform_Name## Pivot Table Component
+# PostgreSQL in ##Platform_Name## Pivot Table
 
 This guide explains how to retrieve data from a PostgreSQL database using the [Microsoft Npgsql](https://www.npgsql.org/doc/index.html) library and bind it to the Pivot Table through a Web API controller.
 

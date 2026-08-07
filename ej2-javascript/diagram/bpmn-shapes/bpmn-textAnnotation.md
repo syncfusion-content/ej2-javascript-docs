@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bpmn Text annotation  in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Bpmn Text annotation shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: BPMN Text Annotation in ##Platform_Name## Diagram | Syncfusion®
+description: Attach text annotations to BPMN shapes in the Syncfusion® ##Platform_Name## Diagram to add context that does not affect the process flow.
 platform: ej2-javascript
 control: Bpmn Text annotation 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# BPMN text annotation in ##Platform_Name## Diagram control
+# BPMN Text Annotation in ##Platform_Name## Diagram
 
 ## Text annotation
 
@@ -58,7 +58,7 @@ domainurl: ##DomainURL##
 
 ### Text annotation in palette.
 
-Text annotation node can be rendered in symbol palette like other bpmn shapes. The following example shows how to render Bpmn text annotation node in symbol palette.
+Text annotation node can be rendered in symbol palette like other BPMN shapes. The following example shows how to render BPMN text annotation node in symbol palette.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -90,7 +90,7 @@ Text annotation node can be rendered in symbol palette like other bpmn shapes. T
 
 ### Connect the TextAnnotation to BPMN node
 
-Drag and drop any bpmn shapes from the palette to diagram and connect the BPMN Node and textAnnotation.
+Drag and drop any BPMN shape from the palette to diagram and connect the BPMN Node and textAnnotation.
 
 The following image shows how to drag a symbol from the palette and connect the textAnnotation to the BPMNNode with interaction.
 

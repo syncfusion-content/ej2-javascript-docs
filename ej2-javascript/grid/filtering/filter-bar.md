@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter bar in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Filter bar in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Filter Bar | Syncfusion
+description: Learn how to use Filter Bar in ##Platform_Name## Data Grid with expression operators, configurable modes, column settings, custom templates, and filter status display.
 platform: ej2-javascript
 control: Filter bar 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filter bar in ##Platform_Name## Grid control
+# Filter Bar in ##Platform_Name## Data Grid
 
 The filter bar feature provides a user-friendly way to filter data in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name##  Grid. It displays an input field for each column, allowing you to enter filter criteria and instantly see the filtered results.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Row in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Row | Syncfusion
+description: Learn how to configure and customize rows in ##Platform_Name## Data Grid using Syncfusion. Manage row events, selection, styling, and interaction capabilities.
 platform: ej2-javascript
 control: Row 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row in ##Platform_Name## Grid control
+# Row in ##Platform_Name## Data Grid
 
 Each row typically represents a single record or item from a data source. Rows in a grid are used to present data in a tabular format. Each row displays a set of values representing the fields of an individual data record. Rows allow users to interact with the data in the grid. Users can select rows, edit cell values, perform sorting or filtering operations, and trigger events based on actions.
 

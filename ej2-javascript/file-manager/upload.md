@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Upload in ##Platform_Name## File Manager component | Syncfusion
-description: Learn here all about Upload in ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more
-platform: ej2-javascript
+title: Upload in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to upload files in the ##Platform_Name## File Manager with chunk uploads, directory uploads, and drag-and-drop support.
 control: File Manager
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Upload in ##Platform_Name## File Manager component
+# Upload in ##Platform_Name## File Manager
 
 The ##Platform_Name## File Manager component provides an [`uploadSettings`](../api/file-manager/uploadsettings) property with options to control file uploads, including file size limits, allowed extensions, directory uploads, sequential and chunked uploads, auto-close behavior, and more.
 

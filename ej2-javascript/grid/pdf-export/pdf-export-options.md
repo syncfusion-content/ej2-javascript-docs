@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pdf export options in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Pdf export options in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid PDF Export Options | Syncfusion
+description: Learn how to customize PDF export in ##Platform_Name## Data Grid with page sizes, margins, styles, headers, footers, and advanced export settings.
 platform: ej2-javascript
 control: Pdf export options 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pdf Export Options in ##Platform_Name## Grid control
+# PDF Export Options in ##Platform_Name## Data Grid
 
 The ##Platform_Name## Grid control allows you to customize the PDF export options functionality. This flexibility enables you to have greater control over the exported content and layout to meet your specific requirements.
 

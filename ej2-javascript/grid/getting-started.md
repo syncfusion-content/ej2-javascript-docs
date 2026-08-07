@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Grid control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more details.
+title: ##Platform_Name## Data Grid Getting Started (Quick Setup Guide) | Syncfusion
+description: Learn how to install and configure the ##Platform_Name## Data Grid. Set up a new TypeScript app and enable paging, sorting, filtering, and grouping.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Grid control
+# Getting Started with TypeScript Data Grid Control
 
 This section explains the steps to create a simple Grid and demonstrates the basic usage of the grid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2
 [quickstart](https://github.com/syncfusion/ej2-quickstart.git) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
@@ -323,6 +323,8 @@ Output will be displayed as follows.
 
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs76" %}
 {% endif %}
+
+N> Looking for the full JavaScript DataGrid control overview, features, pricing, and documentation? Visit the [JavaScript DataGrid](https://www.syncfusion.com/javascript-ui-controls/js-data-grid) page.
 
 ## See Also
 

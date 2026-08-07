@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bpmn DataObject in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Bpmn DataObject shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: BPMN Data Object in ##Platform_Name## Diagram | Syncfusion®
+description: Show data flowing through a BPMN process in the Syncfusion® ##Platform_Name## Diagram using input, output, and collection DataObject shapes.
 platform: ej2-javascript
 control: Bpmn DataObject 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# BPMN Data object in ##Platform_Name## Diagram control
+# BPMN Data Object in ##Platform_Name## Diagram
 
 ## Data Object
 

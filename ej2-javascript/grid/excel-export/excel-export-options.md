@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Excel export options in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Excel export options in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Excel Export Options | Syncfusion
+description: Learn how to export ##Platform_Name## Data Grid into Excel with custom content, record and column selection, styles, themes, grouping, and advanced export options.
 platform: ej2-javascript
 control: Excel export options 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Excel export options in ##Platform_Name## Grid control
+# Excel Export Options in ##Platform_Name## Data Grid
 
 The ##Platform_Name## Grid control allows you to customize the Excel or CSV export options functionality. This flexibility enables you to have greater control over the exported content and layout to meet your specific requirements.
 

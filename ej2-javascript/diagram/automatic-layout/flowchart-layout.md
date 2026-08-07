@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Flowchart layout in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about flowchart layout in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Flowchart Layout in ##Platform_Name## Diagram | Syncfusion®
+description: Render flowcharts in the Syncfusion® ##Platform_Name## Diagram with common symbols like Terminator, Process, Decision, Document, and PreDefinedProcess shapes.
 platform: ej2-javascript
 control: Flowchart layout 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Flowchart layout in ##Platform_Name## Diagram control
+# Flowchart Layout in ##Platform_Name## Diagram
 
 The flowchart layout provides a visual representation of processes, workflows, systems, or algorithms in a diagrammatic format. It uses various symbols to depict different actions, with arrows connecting these symbols to indicate the flow or direction of the process. Flowcharts are Essential<sup style="font-size:70%">&reg;</sup> tools for illustrating step-by-step sequences, making complex processes easier to understand and communicate.
 

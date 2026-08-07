@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ports positioning in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Ports in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Port Positioning in ##Platform_Name## Diagram | Syncfusion®
+description: Align ports to node boundaries in the Syncfusion® ##Platform_Name## Diagram using offset, margin, horizontalAlignment, and verticalAlignment settings.
 platform: ej2-javascript
 control: Ports 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Positioning node's port
+# Port Positioning in ##Platform_Name## Diagram
 
 Diagram allows you to customize the position of the port efficiently. Port can be aligned relative to the node boundaries. It has Margin, Offset, Horizontal, and Vertical alignment settings.
 

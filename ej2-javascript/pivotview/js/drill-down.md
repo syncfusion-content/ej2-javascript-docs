@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Drill down in ##Platform_Name## Pivot Table component | Syncfusion
-description: Learn here all about Drill down in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Drill Down in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table expands or collapses hierarchical data with drill down, drill position, and `expandAll` for one-click full expansion.
 platform: ej2-javascript
-control: Drill down 
+control: Drill down
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drill down in ##Platform_Name## Pivot Table component
+# Drill Down in ##Platform_Name## Pivot Table
 
 ## Drill down and drill up
 

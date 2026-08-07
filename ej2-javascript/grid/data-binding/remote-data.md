@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Remote data in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Remote data in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Remote Data Binding | Syncfusion
+description: Learn how to bind remote data sources in ##Platform_Name## Data Grid using adaptors, configure server-side operations, and manage data efficiently.
 platform: ej2-javascript
 control: Remote data 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Remote data in ##Platform_Name## Grid control
+# Remote Data Binding in ##Platform_Name## Data Grid
 
 In ##Platform_Name## Grid component, binding remote data is a fundamental aspect that enhances the efficiency of data interaction. This process involves assigning the service data, represented as an instance of `DataManager`, to the [dataSource](../../api/grid#datasource) property of the ##Platform_Name## Grid component. By doing so, you enable seamless interaction with a remote data source, and this is achieved by specifying the endpoint URL where the data is hosted.
 

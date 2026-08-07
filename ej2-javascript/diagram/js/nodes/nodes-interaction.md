@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interaction of nodes in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Nodes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Node Interaction in ##Platform_Name## Diagram | Syncfusion®
+description: Select, drag, resize, and rotate nodes interactively in the Syncfusion® ##Platform_Name## Diagram, or use select, drag, and rotate methods.
 platform: ej2-javascript
 control: Nodes interaction 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Node Interaction in ##Platform_Name## Diagram control
+# Node Interaction in ##Platform_Name## Diagram
 
 The diagram provides support for selecting, dragging, resizing, and rotating nodes interactively. A node can be selected by simply clicking on it, dragged by dragging it on diagram canvas, resized using the resize handle, and rotated using the rotate handle. Additionally, interactions can be performed using some public methods, which are explained below:
 

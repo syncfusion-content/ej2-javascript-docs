@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Overview in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Overview in ##Platform_Name## Diagram | Syncfusion®
+description: Show a navigable preview of the entire Syncfusion® ##Platform_Name## Diagram with the Overview control, including viewport rectangle and pan/zoom support.
 platform: ej2-javascript
 control: Overview 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Overview in ##Platform_Name## Diagram control
+# Overview in ##Platform_Name## Diagram
 
 The Overview control allows you to see a preview or an overall view of the entire content of a diagram. This helps you to grasp the overall picture of a large diagram and navigate, pan, or zoom to a specific position on the page.
 

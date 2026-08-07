@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Migration in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Migration in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Migration Guide | Syncfusion
+description: Learn how to migrate ##Platform_Name## Data Grid applications by updating enum values, API changes, and PascalCase naming conventions in Essential JS 2.
 platform: ej2-javascript
 control: Migration 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Migration in ##Platform_Name## Grid control
+# Migration Guide for ##Platform_Name## Data Grid
 
 The following enum property values are changed from camel casing to pascal casing.
 

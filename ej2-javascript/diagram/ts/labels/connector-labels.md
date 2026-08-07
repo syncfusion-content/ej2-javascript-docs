@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connector Labels in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Labels in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Connector Annotation in ##Platform_Name## Diagram | Syncfusion®
+description: Position ##Platform_Name## Diagram connector annotations with offset, alignment, displacement, segment angle, and margin.
 platform: ej2-javascript
 control: Connector Labels
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connector annotations in ##Platform_Name## Diagram control
+# Connector Annotation in ##Platform_Name## Diagram
 
 Annotations of a connector can be positioned using the following properties of Annotation class.
 

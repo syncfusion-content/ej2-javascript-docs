@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Sorting in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Sorting Customization | Syncfusion
+description: Learn how to customize sorting icons and multi-sort indicators in ##Platform_Name## Data Grid using CSS and built-in Syncfusion icons for different themes.
 platform: ej2-javascript
 control: Sorting 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting in ##Platform_Name## Grid control
+# Sorting Style in ##Platform_Name## Data Grid
 
 You can customize the appearance of the sorting icons and multi sorting icons in the ##Platform_Name## Grid control using CSS. You can use the available Syncfusion<sup style="font-size:70%">&reg;</sup> [icons](../../appearance/icons/#material) based on your theme. Here's how to do it:
 

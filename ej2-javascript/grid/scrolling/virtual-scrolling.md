@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtual scrolling in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Virtual scrolling in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Virtual Scrolling | Syncfusion
+description: Learn how to use virtual scrolling and row virtualization in ##Platform_Name## Data Grid to efficiently render large datasets and improve scrolling performance.
 platform: ej2-javascript
 control: Virtual scrolling 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtual scrolling in ##Platform_Name## Grid control
+# Virtual Scrolling in ##Platform_Name## Data Grid
 
 The virtual scrolling feature in the Grid allows you to efficiently handle and display a large amount of data without experiencing any performance degradation. It optimizes the rendering process by loading only the visible rows in the Grid viewport, rather than rendering the entire dataset at once. This is particularly useful when dealing with datasets that contain thousands of records.
 

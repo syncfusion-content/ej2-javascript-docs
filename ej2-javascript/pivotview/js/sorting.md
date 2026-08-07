@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Sorting in ##Platform_Name## Pivot Table component | Syncfusion
-description: Learn here all about Sorting in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Sorting in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table sorts field members in ascending or descending order via `enableSorting` and `sortSettings` for member and value sort.
 platform: ej2-javascript
-control: Sorting 
+control: Sorting
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting in ##Platform_Name## Pivot Table component
+# Sorting in ##Platform_Name## Pivot Table
 
 ## Member Sorting
 

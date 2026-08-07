@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connector customization in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Connectors in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Connector Customization in ##Platform_Name## Diagram | Syncfusion®
+description: Customize connector appearance in the Syncfusion® ##Platform_Name## Diagram with source/target decorators, paddings, corners, and bridge support.
 platform: ej2-javascript
 control: Connector customization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connector customization
+# Connector Customization in ##Platform_Name## Diagram
 
 Diagram allows you to customize the connector appearances. The following topics shows how to customize several properties of the connectors.
 

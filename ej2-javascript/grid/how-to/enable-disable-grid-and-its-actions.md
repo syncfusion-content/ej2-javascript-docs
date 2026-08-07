@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable disable grid and its actions in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Enable disable grid and its actions in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Enable or Disable Actions | Syncfusion
+description: Learn how to enable or disable ##Platform_Name## Data Grid and its actions using CSS and event handling to control user interaction dynamically.
 platform: ej2-javascript
 control: Enable disable grid and its actions 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable disable grid and its actions in ##Platform_Name## Grid control
+# Enable or Disable Grid Actions in ##Platform_Name## Data Grid
 
 You can enable or disable the ##Platform_Name## Grid and its actions by applying or removing specific CSS styles. This functionality is particularly useful in scenarios where interactions need to be restricted. Follow the steps below to implement this feature.
 

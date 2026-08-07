@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bpmn Flows in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Bpmn Flow shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: BPMN Flow Connectors in ##Platform_Name## Diagram | Syncfusion®
+description: Connect BPMN flow objects with Association, Sequence, and Message flows in the Syncfusion® ##Platform_Name## Diagram control.
 platform: ej2-javascript
 control: Bpmn Flows
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# BPMN flows in ##Platform_Name## Diagram control
+# BPMN Flow Connectors in ##Platform_Name## Diagram
 
 [`BPMN Flows`](../../api/diagram/bpmnFlow#BpmnFlow) are lines that connects BPMN flow objects.
 

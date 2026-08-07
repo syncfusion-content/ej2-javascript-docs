@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Radial tree layout in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Automatic layout in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Radial Tree in ##Platform_Name## Diagram | Syncfusion®
+description: Lay out ##Platform_Name## Diagram nodes in concentric rings around a central root, with horizontal and vertical spacing per ring.
 platform: ej2-javascript
 control: Radial tree 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Radial tree layout in ##Platform_Name## Diagram control
+# Radial Tree in ##Platform_Name## Diagram
 
 A Radial tree layout is a diagram that presents information in a hierarchical structure, with a central node at the core of the diagram. The central node represents the main concept or topic, and branches extend outward in a radial fashion, creating a tree-like structure. The layout [`root`](../../api/diagram/layoutModel#root) property can be used to define the root node of the layout. When no root node is set, the algorithm automatically considers the node without any incoming edges (InEdges connector count of 0) as the root node. To create radial tree, the [`type`](../../api/diagram/layoutModel#type) of the layout as `RadialTree`.
 

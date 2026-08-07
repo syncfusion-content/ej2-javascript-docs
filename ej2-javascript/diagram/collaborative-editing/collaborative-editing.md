@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Diagram Collaboration in ##Platform_Name## | Syncfusion
-description: Checkout and learn to set up real-time collaborative editing in ##Platform_Name## Diagram using SignalR.
+title: Collaborative Editing in ##Platform_Name## Diagram | Syncfusion®
+description: Set up real-time collaborative editing in the Syncfusion® ##Platform_Name## Diagram using SignalR and Redis for multi-user diagram updates.
 platform: ej2-javascript
 control: Diagram
 documentation: ug

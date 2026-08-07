@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Context menu in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Context menu in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Context Menu | Syncfusion
+description: Learn how to use Context Menu in ##Platform_Name## Data Grid with default items, custom actions, event handling, and options to prevent menu items.
 platform: ej2-javascript
 control: Context menu 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Context menu in ##Platform_Name## Grid control
+# Context Menu in ##Platform_Name## Data Grid
 
 The ##Platform_Name## Grid control comes equipped with a context menu feature, which is triggered when a user right-clicks anywhere within the grid. This feature serves to enrich the user experience by offering immediate access to a variety of supplementary actions and operations that can be executed on the data displayed in the grid.
 
@@ -88,7 +88,7 @@ The following example demonstrates how to enable context menu feature in the gri
 
 The ##Platform_Name## Grid empowers you to enhance your user experience by incorporating custom context menu items into the default context menu. These customized options enable you to tailor the context menu to meet the unique requirements of your application.
  
-To incorporate custom context menu items in the Syncfusion<sup style="font-size:70%">&reg;</sup> Vue Grid, you can achieve this by specifying the [contextMenuItems](../api/grid#contextmenuitems) property as a collection of [contextMenuItemModel](../api/grid/contextMenuItemModel). This allows you to define and customize the appearance and behavior of these additional context menu items according to your requirements.
+To incorporate custom context menu items in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can achieve this by specifying the [contextMenuItems](../api/grid#contextmenuitems) property as a collection of [contextMenuItemModel](../api/grid/contextMenuItemModel). This allows you to define and customize the appearance and behavior of these additional context menu items according to your requirements.
  
 Furthermore, you can assign actions to these custom items by utilizing the [contextMenuClick](../api/grid#contextmenuclick) event. This event provides you with the means to handle user interactions with the custom context menu items, enabling you to execute specific actions or operations when these items are clicked.
  

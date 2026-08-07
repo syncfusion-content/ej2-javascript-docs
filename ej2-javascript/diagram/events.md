@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Group in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Diagram Events in ##Platform_Name## Diagram | Syncfusion®
+description: Handle ##Platform_Name## Diagram lifecycle events like load, loaded, dataLoaded, created, and mouseWheel to customize initialization and user interaction.
 platform: ej2-javascript
 control: Events 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## Diagram control
+# Diagram Events in ##Platform_Name## Diagram
 
 Events in diagrams are triggered during interactions with diagram elements, allowing for extensive customization and enhancing the overall user experience. These events can be used to dynamically update the diagram, apply specific styles, validate user actions, and more. By leveraging these events, you can create interactive and responsive diagramming applications tailored to specific needs.
 

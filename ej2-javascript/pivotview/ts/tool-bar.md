@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Tool bar in ##Platform_Name## Pivot Table component | Syncfusion
-description: Learn here all about Tool bar in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Tool Bar in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table shows a built-in toolbar for new, save, export, chart switch, conditional formatting, and field list via `showToolbar`.
 platform: ej2-javascript
-control: Tool bar 
+control: Tool bar
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool bar in ##Platform_Name## Pivot Table component
+# Tool Bar in ##Platform_Name## Pivot Table
 
 The toolbar in the Typescript Pivot Table component provides easy access to commonly used features, such as switching between a pivot table and a pivot chart, changing chart types, applying conditional formatting, exporting data, and more. To enable the toolbar, set the [`showToolbar`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#showtoolbar) property to **true**. Additionally, the [`toolbar`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#toolbar) property accepts a collection of built-in toolbar options, allowing users to interact with the Pivot Table efficiently at runtime.
 

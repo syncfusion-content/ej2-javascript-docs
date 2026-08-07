@@ -1,15 +1,15 @@
 ---
 layout: post
-title: User interface in ##Platform_Name## File Manager component | Syncfusion
-description: Learn about the File Manager component UI features including its toolbar, navigation pane, breadcrumb, views, context menu and customization options.
-platform: ej2-javascript
+title: User Interface in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to use the ##Platform_Name## File Manager UI with view, toolbar, breadcrumb, context menu, and navigation pane modules for file browsing.
 control: File Manager
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# User interface in ##Platform_Name## File Manager component
+# User Interface in ##Platform_Name## File Manager
 
 The File Manager component UI consists of several sections: view area, toolbar, breadcrumb, context menu, navigation pane, and more. The UI is enhanced by injectable modules such as Details View (grid-based browsing), Navigation Pane (folder navigation), and Toolbar (file operations). A full-featured File Manager includes these sections:
 
@@ -130,3 +130,5 @@ File Manager control allows to perform the files or folder [upload](https://ej2.
 ![Uploading a file](./images/filemanager-fileupload.png)
 
 ![Uploading a folder](./images/filemanager-folderupload.png)
+
+N> Looking for the full JavaScript File Manager component overview, features, pricing, and documentation? Visit the [JavaScript File Manager](https://www.syncfusion.com/javascript-ui-controls/js-file-manager) page

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Pass Custom Values in ##Platform_Name## File Manager | Syncfusion
-description: Learn about how to Pass custom value to server in the ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
-platform: ej2-javascript
+title: Pass values to server in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to pass a custom value to the server in the ##Platform_Name## File Manager for authentication, logging, or role-based access on each request.
 control: File Manager
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pass custom value to server in ##Platform_Name## File Manager component
+# How to pass a custom value to the server in ##Platform_Name## File Manager
 
 The File Manager component allows seamless backend server interaction by passing custom values. This enhances the functionality and security of file operations, particularly helpful for tasks like authentication, logging, or user role-based processing. In multi-user systems, it ensures file access permissions and actions are user-specific and secure. You can manage user-specific operations such as **Read**, **Delete**, **Rename**, **Create**, **Move**, **Copy**, **Details**, **Search**, **Upload**, **Download**, and **GetImage** using custom headers or query parameters. This guide demonstrates implementing these features using the [`beforeSend`](../../api/file-manager#beforesend), [`beforeDownload`](../../api/file-manager#beforedownload) and [`beforeImageLoad`](../../api/file-manager#beforeimageload) events. Let's explore how to achieve this in [`Physical file system provider`](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider).
 

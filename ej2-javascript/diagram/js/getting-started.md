@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Diagram control | Syncfusion
-description: Checkout and learn about Getting started with ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more details.
+title: Getting Started with ##Platform_Name## Diagram | Syncfusion®
+description: Learn how to get started with the Syncfusion® ##Platform_Name## Diagram. Set up local scripts, CDN, or npm and render a simple diagram in your app.
 platform: ej2-javascript
 control: Getting started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with ##Platform_Name## Diagram control
+# Getting Started with ##Platform_Name## Diagram
 
 This section explains how to create and render a simple Essential® JS 2 Diagram in a plain JavaScript application.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind data & perform CRUD action with CustomAdaptor in Syncfusion ##Platform_Name## Grid
-description: Learn here all about how to bind data and perform CRUD action using CustomAdaptor in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Custom Remote Data Binding| Syncfusion
+description: Learn how to bind remote data with custom rules in ##Platform_Name## Data Grid, customize data operations, and manage CRUD actions.
 platform: ej2-javascript
 control: grid
 keywords: adaptors, custom adaptor, remotedata
@@ -10,9 +10,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# CustomAdaptor in Syncfusion ##Platform_Name## Grid
+# Custom Remote Data Binding in ##Platform_Name## Data Grid
 
-The `CustomAdaptor` in the Syncfusion ##Platform_Name## Grid allows to create their own custom adaptors by extending the built-in adaptors. The custom adaptor involves handling the query process, requests, and responses of the built-in adaptor. The `CustomAdaptor` can be used to extend OData V4 services, enabling efficient data fetching and manipulation. By default, there are three built-in methods available for `CustomAdaptor`.
+The custom adaptorin the Syncfusion ##Platform_Name## Grid allows to create their own custom adaptors by extending the built-in adaptors. The custom adaptor involves handling the query process, requests, and responses of the built-in adaptor. The custom adaptorcan be used to extend OData V4 services, enabling efficient data fetching and manipulation. By default, there are three built-in methods available for `CustomAdaptor`.
 
 ## Types of CustomAdaptor methods
 
@@ -20,7 +20,7 @@ There are three types of methods in custom adaptors.
 
 ### ProcessQuery
 
-The `ProcessQuery` method handles the execution of a query sent to a [dataSource](../../api/grid/#datasource), such as a database or custom data service. This query is responsible for performing operations like data retrieval, insertion, updating, or deletion. The `ProcessQuery` method accepts two arguments: 
+The `ProcessQuery` method handles the execution of a query sent to a [dataSource](../../api/grid#datasource), such as a database or custom data service. This query is responsible for performing operations like data retrieval, insertion, updating, or deletion. The `ProcessQuery` method accepts two arguments: 
 
 * `DataManager`: Used to modify the URL dynamically.
 
@@ -60,7 +60,7 @@ public override processQuery(dm, query) {
 
 The `beforeSend` method is executed before a request is sent to the server. This function allows modifying parameters, request headers, and data, or performing validation before the request is processed. It accepts three arguments:
 
-* `DataManager`: Provides the [dataSource](../../api/grid/#datasource) and `adaptor` value.
+* `DataManager`: Provides the [dataSource](../../api/grid#datasource) and `adaptor` value.
 
 * `Request`: Used to send custom headers, such as setting the `Authorization` header.
 
@@ -131,7 +131,7 @@ public override processResponse() {
 
 {% endif %}
 
-This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `CustomAdaptor` by extending the `ODataV4Adaptor` in your Syncfusion ##Platform_Name## Grid.
+This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the custom adaptorby extending the `ODataV4Adaptor` in your Syncfusion ##Platform_Name## Grid.
 
 ## Creating an Custom service
 
@@ -1193,7 +1193,7 @@ grid.appendTo('#Grid');
 
 To manage CRUD (Create, Read, Update, and Delete) operations using `CustomAdaptor`, follow the provided guide for configuring the Syncfusion ##Platform_Name## Grid for [editing](../../grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller processes HTTP requests for CRUD operations, including GET, POST, PATCH, and DELETE.
 
-To enable CRUD operations in the Syncfusion ##Platform_Name## Grid within an Angular application, follow the below steps:
+To enable CRUD operations in the Syncfusion ##Platform_Name## Grid within an ##Platform_Name## application, follow the below steps:
 
 {% tabs %}
 {% if page.publishingplatform == "typescript" %}
@@ -1257,7 +1257,7 @@ grid.appendTo('#Grid');
 {% endif %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit [mode](../../api/grid/editSettings/#mode) for the Syncfusion ##Platform_Name## Grid. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](../../api/grid/editSettings#mode) for the Syncfusion ##Platform_Name## Grid. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 

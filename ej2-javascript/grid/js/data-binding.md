@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Data binding in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Data Binding | Syncfusion
+description: Learn how to bind local and remote data sources in ##Platform_Name## Data Grid, enable dynamic updates, and manage data flow efficiently.
 platform: ej2-javascript
 control: Data binding 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in ##Platform_Name## Grid control
+# Data Binding in ##Platform_Name## Data Grid
 
 The Grid uses [`DataManager`](../data), which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](../api/grid/#datasource) property can be assigned either with the instance of [`DataManager`](../data) or JavaScript object array collection.
 It supports two kinds of data binding method:

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Microsoft sql server in Typescript | Syncfusion
-description: Learn here all about Microsoft sql server in Syncfusion ##Platform_Name## Pivot Table Component of Syncfusion Essential JS 2 and more.
+title: Microsoft SQL Server in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table connects to Microsoft SQL Server via Microsoft SqlClient and a Web API controller to fetch and bind data at runtime.
 platform: ej2-javascript
-control: Microsoft sql server 
+control: Microsoft SQL Server
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Microsoft SQL server in ##Platform_Name## Pivot Table Component
+# Microsoft SQL Server in ##Platform_Name## Pivot Table
 
 This section describes how to retrieve data from SQL Server database using [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) and bind it to the Pivot Table via a Web API controller.
 

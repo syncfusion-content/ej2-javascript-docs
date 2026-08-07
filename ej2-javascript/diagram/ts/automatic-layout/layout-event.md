@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layout events in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Automatic layout in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Layout Events in ##Platform_Name## Diagram | Syncfusion®
+description: Handle ##Platform_Name## Diagram dataLoaded, expandStateChange, and layout complete events to react to layout lifecycle.
 platform: ej2-javascript
 control: Layout events
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Layout events in ##Platform_Name## Diagram control
+# Layout Events in ##Platform_Name## Diagram
 
 ## DataLoaded event
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Views in ##Platform_Name## File Manager component | Syncfusion
-description: Learn about the available views (Large Icons and Details) in the ##Platform_Name## File Manager component and how to customize them.
-platform: ej2-javascript
+title: Views in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to switch between Large Icons and Details views in the ##Platform_Name## File Manager for flexible file browsing.
 control: File Manager
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Views in ##Platform_Name## File Manager component
+# Views in ##Platform_Name## File Manager
 
 The View section displays files and folders for users to browse. Use the [`view`](../api/file-manager/index-default#view) API to set or change the initial view of the File Manager component.
 

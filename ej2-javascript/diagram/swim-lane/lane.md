@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Lane in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Swim lane in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Lane in ##Platform_Name## Diagram | Syncfusion®
+description: Add functional lanes to a Swimlane in the Syncfusion® ##Platform_Name## Diagram to map a process within or across departments, with custom header text.
 platform: ej2-javascript
 control: Lane 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## Lanes
+# Lane in ##Platform_Name## Diagram
 
 Lane is a functional unit or a responsible department of a business process that helps to map a  process within the functional unit or in between other functional units.
 

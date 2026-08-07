@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting grid in cordova application in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Exporting grid in cordova application in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Cordova Export Support | Syncfusion
+description: Learn how to export ##Platform_Name## Data Grid data in Cordova applications using Blob streams, Excel and PDF export events, and mobile-friendly file handling.
 platform: ej2-javascript
 control: Exporting grid in cordova application 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Exporting grid in cordova application in ##Platform_Name## Grid control
+# Cordova Export in ##Platform_Name## Data Grid
 
 Exporting the ##Platform_Name## Grid in a Cordova application can be beneficial in various scenarios where users need to generate and download reports, share data in Excel or PDF formats, or archive information for offline use. A Cordova application does not support direct file download. To export the ##Platform_Name## Grid component in a Cordova application, you need to utilize Blob streams. This can be achieved by using the appropriate exporting methods and export complete events to obtain the Blob stream.
 

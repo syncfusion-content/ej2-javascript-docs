@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row drag and drop in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Row drag and drop in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Row Drag and Drop | Syncfusion
+description: Learn how to implement row drag and drop in ##Platform_Name## Data Grid using Syncfusion. Reorder rows, configure drop targets, and handle drag events efficiently.
 platform: ej2-javascript
 control: Row drag and drop 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row drag and drop in ##Platform_Name## Grid control
+# Row Drag and Drop in ##Platform_Name## Data Grid
 
 The ##Platform_Name## Grid control provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the grid by dragging and dropping them to new positions. Additionally, you can also drag and drop rows from one grid to another grid, as well as drag and drop rows to custom controls.
 

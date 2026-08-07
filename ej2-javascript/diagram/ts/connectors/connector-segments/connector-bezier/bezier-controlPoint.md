@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bezier control points interaction in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Connectors in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Bezier Control Points in ##Platform_Name## Diagram | Syncfusion®
+description: Smooth bezier ##Platform_Name## Diagram connectors using symmetric distance and angle modes, with visibility controls per segment.
 platform: ej2-javascript
 control: Bezier control points interaction
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Bezier Control points 
+# Bezier Control Points in ##Platform_Name## Diagram
 
 ## How to interact with the bezier segments efficiently
 

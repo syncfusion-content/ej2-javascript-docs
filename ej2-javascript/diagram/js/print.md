@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Print in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Export in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Printing in ##Platform_Name## Diagram | Syncfusion®
+description: Print the Syncfusion® ##Platform_Name## Diagram as an image using the print method with customizable printOptions for region, scale, and page layout.
 platform: ej2-javascript
 control: Print 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Print in ##Platform_Name## Diagram control
+# Printing in ##Platform_Name## Diagram
 
 The [`print`](../api/diagram#print) method helps to print the diagram as image.
 

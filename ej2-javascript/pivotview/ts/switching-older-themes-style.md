@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Switching older themes style in ##Platform_Name## Pivot Table component | Syncfusion
-description: Learn here all about Switching older themes style in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: How to Switch to Older Themes Style in ##Platform_Name## Pivot Table | Syncfusion
+description: Step-by-step example showing how to switch to older themes style in the ##Platform_Name## Pivot Table, with CSS selectors and pivot table height configuration.
 platform: ej2-javascript
-control: Switching older themes style 
+control: Switching older themes style
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD009 -->
 
-# Switching older themes style in ##Platform_Name## Pivot Table component
+# How to Switch to Older Themes Style in ##Platform_Name## Pivot Table
 
 From Volume 1, 2020 onwards Syncfusion<sup style="font-size:70%">&reg;</sup> has revised the theming and layout of the Pivot Table. So, to inherit the older theme style and layout please do the necessary changes in CSS and pivot table height.
 

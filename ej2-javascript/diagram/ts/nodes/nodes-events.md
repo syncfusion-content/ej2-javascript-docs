@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events of node interaction in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Nodes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Node Events in ##Platform_Name## Diagram | Syncfusion®
+description: Handle ##Platform_Name## Diagram node click, selection change, double-click, key events, and drag with runtime event args.
 platform: ej2-javascript
 control: Events of node 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Node events in ##Platform_Name## Diagram control
+# Node Events in ##Platform_Name## Diagram
 
 Diagram provides some events support for node that triggers when interacting with the node.
 

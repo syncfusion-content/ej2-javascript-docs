@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Positioning of a nodes in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Nodes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Node Positioning in ##Platform_Name## Diagram | Syncfusion®
+description: Position, size, and rotate nodes in the Syncfusion® ##Platform_Name## Diagram using offsetX, offsetY, width, height, rotateAngle, and pivot.
 platform: ej2-javascript
 control: Positioning of nodes 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Positioning a node in ##Platform_Name## Diagram control
+# Node Positioning in ##Platform_Name## Diagram
 
 ## Position
 

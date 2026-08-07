@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column menu in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Column menu in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Column Menu | Syncfusion
+description: Learn how to configure and customize the column menu in ##Platform_Name## Data Grid, including sorting, filtering, menu items, and column-specific actions.
 platform: ej2-javascript
 control: Column menu 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column menu in ##Platform_Name## Grid control
+# Column Menu in ##Platform_Name## Data Grid
 
 The column menu in the ##Platform_Name## Grid control provides options to enable features such as sorting, grouping, filtering, column chooser, and autofit. When users click on the column header’s menu icon, a menu will be displayed with these integrated features. To enable the column menu, you need to set the [showColumnMenu](../../api/grid#showcolumnmenu) property to **true** in the Grid configuration.
 

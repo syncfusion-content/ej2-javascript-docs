@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Container in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Container in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Container in ##Platform_Name## Diagram | Syncfusion®
+description: Group related shapes inside a visible boundary in the Syncfusion® ##Platform_Name## Diagram Container, with header text and dynamic add/remove.
 platform: ej2-javascript
 control: Group 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Container in ##Platform_Name## Diagram control
+# Container in ##Platform_Name## Diagram
 
 A Container is a group of logically related shapes surrounded by a visible boundary. Shapes can be added or removed from the container at runtime. Changes made to the container do not affect its child elements, which can be individually selected, moved, or edited.
 

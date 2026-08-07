@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scrolling in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Scrolling in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Scrolling | Syncfusion
+description: Learn how to configure scrolling in ##Platform_Name## Data Grid, including scroll behavior, responsive layouts, sticky headers, auto-scrolling, and scrollbar settings.
 platform: ej2-javascript
 control: Scrolling 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Scrolling in ##Platform_Name## Grid control
+# Scrolling in ##Platform_Name## Data Grid
 
 The scrolling feature in the ##Platform_Name## Grid control allows you to navigate through the content that extends beyond the visible area of the grid. It provides scrollbars that are automatically displayed when the content exceeds the specified `width` or `height` of the grid element. This feature is useful when you have a large amount of data or when the content needs to be displayed within a limited space. The vertical and horizontal scrollbars will be displayed based on the following criteria:
 

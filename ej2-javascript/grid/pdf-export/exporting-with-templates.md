@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting Grid with Templates in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Exporting grids with templates in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid PDF Export Templates | Syncfusion
+description: Learn how to export ##Platform_Name## Data Grid into PDF using templates, including column, detail, and caption templates with custom formatting, images, and links.
 platform: ej2-javascript
 control: Exporting grid with templates
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Exporting grid with templates in ##Platform_Name## Grid control
+# PDF Export Templates in ##Platform_Name## Data Grid
 
 The grid offers the option to export the column, detail, and caption templates to a PDF document. The template contains images, hyperlinks, and customized text.
 

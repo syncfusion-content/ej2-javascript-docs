@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interaction in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Interaction in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Diagram Interaction in ##Platform_Name## Diagram | Syncfusion®
+description: Select, drag, resize, and rotate ##Platform_Name## Diagram elements with the selector, rubber-band selection, and runtime APIs.
 platform: ej2-javascript
 control: Interaction 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Interaction in ##Platform_Name## Diagram control
+# Diagram Interaction in ##Platform_Name## Diagram
 
 ## Selector
 

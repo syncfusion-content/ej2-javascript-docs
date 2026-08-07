@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Headers in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Headers in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Column Headers | Syncfusion
+description: Learn how to customize column headers in ##Platform_Name## Data Grid with header text, templates, tooltips, and multi-line layouts.
 platform: ej2-javascript
 control: Headers 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Headers in ##Platform_Name## Grid control
+# Column Headers in ##Platform_Name## Data Grid
 
 The ##Platform_Name## Grid control provides a comprehensive set of options to customize and manage headers efficiently. Headers play a crucial role in organizing and presenting data effectively in the grid.
 

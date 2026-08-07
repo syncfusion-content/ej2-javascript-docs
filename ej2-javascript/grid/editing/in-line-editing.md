@@ -1,7 +1,7 @@
 ---
 layout: post
-title: In line editing in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about In line editing in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Inline Editing | Syncfusion
+description: Learn how to perform inline editing in ##Platform_Name## Data Grid, update records directly, customize editing behavior, and manage CRUD operations efficiently.
 platform: ej2-javascript
 control: In line editing 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# In line editing in ##Platform_Name## Grid control
+# Inline Editing in ##Platform_Name## Data Grid
 
 The ##Platform_Name## Grid control provides a powerful in-line editing feature that allows you to edit cell values of row directly within the grid. This feature is especially useful when you want to quickly modify data without the need for a separate edit form. In normal edit mode, the selected record is changed to an edit state, and you can modify the cell values and save the edited data to the data source.
 

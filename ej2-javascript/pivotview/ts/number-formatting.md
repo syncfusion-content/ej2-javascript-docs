@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Number formatting in ##Platform_Name## Pivot Table component | Syncfusion
-description: Learn here all about Number formatting in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Number Formatting in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table formats numeric values as Number, Currency, Percentage, or custom patterns via `formatSettings` with N, C, P codes.
 platform: ej2-javascript
-control: Number formatting 
+control: Number formatting
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Number formatting in ##Platform_Name## Pivot Table component
+# Number Formatting in ##Platform_Name## Pivot Table
 
 The Pivot Table component provides comprehensive number formatting capabilities, allowing you to display numeric values in various formats. This enhances data readability and ensures values are displayed accurately to meet your specific needs.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Access control in ##Platform_Name## File Manager component | Syncfusion
-description: Learn how to configure access control (permissions and rules) in the ##Platform_Name## File Manager component using Syncfusion Essential JS 2.
-platform: ej2-javascript
+title: Access Control in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to configure access control in the ##Platform_Name## File Manager with role-based permissions and restricted file operations.
 control: File Manager
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Access control in ##Platform_Name## File Manager component
+# Access Control in ##Platform_Name## File Manager
 
 The File Manager component allows defining access permissions for folders and files using access rules assigned to users or roles.
 

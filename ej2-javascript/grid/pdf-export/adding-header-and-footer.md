@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adding header and footer in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Adding header and footer in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Adding Header and Footer | Syncfusion
+description: Learn how to add custom headers and footers in ##Platform_Name## Data Grid PDF export, customize content, apply templates, and format exported documents.
 platform: ej2-javascript
 control: Adding header and footer 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adding header and footer in ##Platform_Name## Grid control
+# Adding Header and Footer in ##Platform_Name## Data Grid
 
 The ##Platform_Name## Grid allows you to add customized header and footer sections in the exported PDF document. This feature enables you to include custom text, page numbers, lines, page size, and even change the orientation of the header and footer. 
 

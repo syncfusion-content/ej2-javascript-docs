@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Commands in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Commands in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Commands in ##Platform_Name## Diagram | Syncfusion®
+description: Run ##Platform_Name## Diagram commands to align, distribute, size, group, reorder, zoom, nudge, fit, and manage clipboard actions.
 platform: ej2-javascript
 control: Commands 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Commands in ##Platform_Name## Diagram control
+# Commands in ##Platform_Name## Diagram
 
 <!-- markdownlint-disable MD010 -->
 

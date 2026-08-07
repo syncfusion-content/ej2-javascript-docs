@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Export in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Exporting in ##Platform_Name## Diagram | Syncfusion®
+description: Export the Syncfusion® ##Platform_Name## Diagram as image or SVG files using the exportDiagram method with options for region, mode, and file name.
 platform: ej2-javascript
 control: Export 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Export in ##Platform_Name## Diagram control
+# Exporting in ##Platform_Name## Diagram
 
 Diagram provides support to export its content as image/svg files. The [`exportDiagram`](../api/diagram/index-default#exportdiagram) method of diagram helps to export the diagram. The following code illustrates how to export the diagram as image.
 

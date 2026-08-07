@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bpmn Events in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Bpmn Event shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: BPMN Events in ##Platform_Name## Diagram | Syncfusion®
+description: Represent start, intermediate, and end events in a BPMN process with the Syncfusion® ##Platform_Name## Diagram event shape and trigger configuration.
 platform: ej2-javascript
 control: Bpmn Events 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# BPMN Event in ##Platform_Name## Diagram control
+# BPMN Events in ##Platform_Name## Diagram
 
 ## Event
 

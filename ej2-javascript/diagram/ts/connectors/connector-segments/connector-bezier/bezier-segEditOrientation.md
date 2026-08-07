@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bezier Segment edit orientation in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Connectors in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Bezier Segment Edit Orientation in ##Platform_Name## Diagram | Syncfusion®
+description: Edit bezier ##Platform_Name## Diagram segment intermediate points in bidirectional or freeform drag orientation.
 platform: ej2-javascript
 control: Bezier Segment edit orientation
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Bezier Connector Settings
+# Bezier Segment Edit Orientation in ##Platform_Name## Diagram
 
 ## How to edit bezier segments based on bezier connector settings
 

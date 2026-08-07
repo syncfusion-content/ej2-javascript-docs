@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dialog editing in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Dialog editing in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Dialog Editing | Syncfusion
+description: ##Platform_Name## Grid dialog editing opens record editors in modal dialogs, supports templates, enforces validation, and manages single-record save workflows.
 platform: ej2-javascript
 control: Dialog editing 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dialog editing in ##Platform_Name## Grid control
+# Dialog Editing in ##Platform_Name## Data Grid
 
 Dialog editing is a feature in the Grid control that allows you to edit the data of the currently selected row using a dialog window. With dialog editing, you can easily modify cell values and save the changes back to the data source.This feature is particularly beneficial in scenarios where you need to quickly modify data without navigating to a separate page or view, and it streamlines the process of editing multiple cells.
 

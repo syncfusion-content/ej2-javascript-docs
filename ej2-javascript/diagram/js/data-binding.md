@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Data binding in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Data Binding in ##Platform_Name## Diagram | Syncfusion®
+description: Bind external data to the Syncfusion® ##Platform_Name## Diagram with Data Manager, id, parentId, root, and doBinding to populate nodes and connectors.
 platform: ej2-javascript
 control: Data binding 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in ##Platform_Name## Diagram control
+# Data Binding in ##Platform_Name## Diagram
 
 Its Essential<sup style="font-size:70%">&reg;</sup> for binding external data to the diagram, enabling dynamic creation of nodes and connectors based on the provided data. Here's a detailed explanation of the key properties and their usage:
 

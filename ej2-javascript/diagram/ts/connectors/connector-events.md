@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connector Events in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Connectors in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Connector Events in ##Platform_Name## Diagram | Syncfusion®
+description: Handle ##Platform_Name## Diagram connector click, selection change, double-click, and hover events with cancel support.
 platform: ej2-javascript
 control: Connector Events
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connector Events in ##Platform_Name## Diagram control
+# Connector Events in ##Platform_Name## Diagram
 
 Diagram provides some events support for connectors that triggers when interacting with the connector.
 

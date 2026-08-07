@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Page settings in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Page settings in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Page Settings in ##Platform_Name## Diagram | Syncfusion®
+description: Set the page width, height, background color, and margins of the Syncfusion® ##Platform_Name## Diagram using the pageSettings property.
 platform: ej2-javascript
 control: Page settings 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Page settings in ##Platform_Name## Diagram control
+# Page Settings in ##Platform_Name## Diagram
 
 Page settings allow customization of the appearance, size, and orientation of the diagram page.
 

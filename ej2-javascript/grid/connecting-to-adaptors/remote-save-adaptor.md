@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind data & perform CRUD with RemoteSaveAdaptor in Syncfusion Grid
-description: Learn here all about how to bind data and perform CRUD action using RemoteSaveAdaptor in Syncfusion ##Platform_Name## Grid control.
+title: ##Platform_Name## Grid Bind Data with RemoteSaveAdaptor | Syncfusion
+description: Learn how to use hybrid data binding in ##Platform_Name## Data Grid to perform data operations locally while handling CRUD actions on the server.
 platform: ej2-javascript
 control: grid
 keywords: Adaptors, RemoteSaveAdaptor, remotesave adaptor, remotedata 
@@ -10,15 +10,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# RemoteSaveAdaptor in Control
+# Hybrid Data Binding in ##Platform_Name## Data Grid
 
-The RemoteSaveAdaptor in Angular Grid Component allows you to perform grid actions such as sorting, filtering, searching and paging primarily on the client-side while handling CRUD operations, such as updating, inserting, and removing data, on the server-side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
+The RemoteSaveAdaptor in ##Platform_Name## Grid Component allows you to perform grid actions such as sorting, filtering, searching and paging primarily on the client-side while handling CRUD operations, such as updating, inserting, and removing data, on the server-side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
 
 Ensure your server-side implementation in ASP.NET Core handles CRUD operations. Here is an example of how you can set up your ASP.NET Core controller to handle these operations:
 
 **Server-Side Implementation**
 
-To configure a server with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, you need to follow the below steps:
+To configure a server with Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid, you need to follow the below steps:
 
 **Step 1:** Set Up Your Development Environment
 

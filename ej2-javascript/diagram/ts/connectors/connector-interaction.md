@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connector Interaction in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Connectors in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Connector Interaction in ##Platform_Name## Diagram | Syncfusion®
+description: Select, drag, and route ##Platform_Name## Diagram connectors interactively or via select, drag, and clearSelection APIs.
 platform: ej2-javascript
 control: Connector Interaction
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connector interaction in ##Platform_Name## Diagram
+# Connector Interaction in ##Platform_Name## Diagram
 
 Connectors can be selected, dragged, and routed over the diagram page.
 

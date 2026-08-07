@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column chooser in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Column chooser in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title:  ##Platform_Name## Grid Column Chooser | Syncfusion
+description: Learn how to show, hide, and manage column visibility in ##Platform_Name## Data Grid using the Column Chooser for a customizable view.
 platform: ej2-javascript
 control: Column chooser 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column chooser in ##Platform_Name## Grid control
+# Column Chooser in ##Platform_Name## Data Grid
 
 The column chooser feature in the ##Platform_Name## Grid control allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](../../api/grid#showcolumnchooser) property as **true**.
 

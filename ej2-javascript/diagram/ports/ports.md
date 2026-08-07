@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ports in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Ports in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Port in ##Platform_Name## Diagram | Syncfusion®
+description: Glue connectors to specific connection points on a node with ports in the Syncfusion® ##Platform_Name## Diagram, supporting node-to-node and port-to-port links.
 platform: ej2-javascript
 control: Ports 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ports in ##Platform_Name## Diagram control
+# Port in ##Platform_Name## Diagram
 
 Port is a special connection point in a Node where you can glue the connectors. When you glue a connector to a node or port, they remain connected even if one of the nodes is moved.
 

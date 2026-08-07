@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connector ports in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Ports in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Connector Port in ##Platform_Name## Diagram | Syncfusion®
+description: Add a port collection to a connector in the Syncfusion® ##Platform_Name## Diagram to define connection points for connector-level links.
 platform: ej2-javascript
 control: Ports 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## Create connector port
+# Connector Port in ##Platform_Name## Diagram
 
 The creation of connector ports is similar to the creation of node ports. To create connector ports, you need to define a port collection and assign it to the connector's ports property. 
 

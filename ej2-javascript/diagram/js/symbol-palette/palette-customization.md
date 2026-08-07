@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Palette customization in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here how to customize symbol palette in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Symbol Palette Customization in ##Platform_Name## Diagram | Syncfusion®
+description: Customize the title, expanded state, height, and icon of each palette in the Syncfusion® ##Platform_Name## Diagram symbol palette component.
 platform: ej2-javascript
 control: Symbol palette 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Symbol Palette customization in ##Platform_Name## Diagram control
+# Symbol Palette Customization in ##Platform_Name## Diagram
 
 ## Customize the palette properties
 

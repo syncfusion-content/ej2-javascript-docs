@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Integrate Chart in ##Platform_Name## Grid | Syncfusion
-description: Learn here all about integrate Chart in Syncfusion ##Platform_Name## Grid of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Integrate Chart in Grid | Syncfusion
+description: Learn how to integrate charts in ##Platform_Name## Data Grid by embedding charts in cells or detail views to visualize and analyze data effectively.
 platform: ej2-javascript
 control: Integrate Chart 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate Chart in EJ2 ##Platform_Name## Grid
+# Integrate Chart in ##Platform_Name## Data Grid
 
 The Grid and Chart Integration feature in Syncfusion allows users to visualize tabular data in a graphical format by linking the Grid with the Chart.This feature allows seamless integration with Charts to visualize selected data interactively. You can generate various Chart types such as bar, line, or pie directly from Grid data using the [ContextMenu](../../documentation/grid/context-menu) feature. This feature is particularly useful in scenarios where tabular data can be better understood through graphical representation.
 

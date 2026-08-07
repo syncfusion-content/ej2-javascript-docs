@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Enable all-day section scroll in ##Platform_Name## Scheduler | Syncfusion
-description: Learn here all about Enable scroll option on all day section in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: Scroll on All-Day Section in ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to enable a scroll option on the all-day section in the Syncfusion ##Platform_Name## Scheduler when many appointments overflow the row.
 platform: ej2-javascript
-control: Scheduler 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable scroll in all-day section | ##Platform_Name## Scheduler
+# Enable Scrolling in the All-Day Section of the ##Platform_Name## Scheduler
 
 When the all-day row contains a large number of appointments, viewing all of them can become difficult due to limited space. To address this, enable an individual scroller for the all-day row by setting the [`enableAllDayScroll`](https://ej2.syncfusion.com/documentation/api/schedule#enablealldayscroll) property to `true` (default value is `false`).
 

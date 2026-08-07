@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Migrating from mxGraph to ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about migrating diagrams from mxGraph to ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: mxGraph Migration in ##Platform_Name## Diagram | Syncfusion®
+description: Migrate diagrams from mxGraph to the Syncfusion® ##Platform_Name## Diagram by converting mxGraph XML to EJ2 format and rebuilding typical diagramming scenarios.
 platform: ej2-javascript
 control: MxGraph to Syncfusion® Ej2 Migration
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Migrating from mxGraph to Syncfusion® JavaScript Diagram control
+# mxGraph Migration in ##Platform_Name## Diagram
 
 [mxGraph](https://github.com/jgraph/mxgraph) was once one of the most popular client-side diagramming libraries for JavaScript. However, with its official end-of-life status since 2020, the need for modern alternatives has grown. Syncfusion® JavaScript Diagram presents a powerful and feature-rich option with robust features, better performance, and extensive documentation. This guide will walk you through setting up the Syncfusion® JavaScript Diagram, and migrating typical diagramming scenarios from `mxGraph` to this platform. You’ll also learn how to convert existing `mxGraph` diagrams into an EJ2-compatible format and continue building with a supported solution.
 

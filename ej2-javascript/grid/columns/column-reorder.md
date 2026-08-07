@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column reorder in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Column reorder in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Column Reorder | Syncfusion
+description: Learn how to reorder columns in ##Platform_Name## Data Grid using drag-and-drop, configure reorder restrictions, handle reorder events, and persist column order.
 platform: ej2-javascript
 control: Column reorder 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column reorder in ##Platform_Name## Grid control
+# Column Reorder in ##Platform_Name## Data Grid
 
 The ##Platform_Name## Grid control allows to reorder columns by drag and drop of a particular column header from one index to another index within the grid. This feature can be enabled by injecting the [Reorder](../../api/grid/reorder) module in the grid.
 

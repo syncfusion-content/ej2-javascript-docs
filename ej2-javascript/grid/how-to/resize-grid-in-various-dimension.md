@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resize grid in various dimension in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Resize grid in various dimension in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Dynamic Resizing | Syncfusion
+description: Learn how to resize ##Platform_Name## Data Grid dynamically by adjusting parent container dimensions and managing grid width and height responsively.
 platform: ej2-javascript
 control: Resize grid in various dimension 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resize the grid in various dimension in ##Platform_Name## Grid control
+# Grid Resizing in ##Platform_Name## Data Grid
 
 The ##Platform_Name## Grid control offers a friendly way to resize the grid, allowing you to adjust its width and height for improved data visualization.
 

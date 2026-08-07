@@ -1,7 +1,7 @@
 ---
 layout: post
-title: User handle in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about User handle in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Userhandle in ##Platform_Name## Diagram | Syncfusion®
+description: Add custom user handles around the selector in the Syncfusion® ##Platform_Name## Diagram to expose frequently used commands for nodes, connectors, and groups.
 platform: ej2-javascript
 control: User handle 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# User handle in ##Platform_Name## Diagram control
+# Userhandle in ##Platform_Name## Diagram
 
 User handles are used to add frequently used commands around the selector. 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting grid in server in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Exporting grid in server in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Server-Side Excel Export | Syncfusion
+description: Learn how to export ##Platform_Name## Data Grid data on the server, generate Excel workbooks in the backend, and handle large-scale exports efficiently.
 platform: ej2-javascript
 control: Exporting grid in server 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Exporting grid in server in ##Platform_Name## Grid control
+# Server-Side Excel Export in ##Platform_Name## Data Grid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control in ##Platform_Name## provides a powerful option to export data to Excel on the server side using the Grid server export library. This allows you to perform Excel export operations on the server, providing additional security and flexibility. To enable server-side Excel exporting, you need to configure the server dependencies and implement the necessary server configuration.
 

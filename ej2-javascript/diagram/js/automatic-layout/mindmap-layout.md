@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mind map layout in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Automatic layout in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Mind Map in ##Platform_Name## Diagram | Syncfusion®
+description: Build a Mind Map in the Syncfusion® ##Platform_Name## Diagram by setting the layout type to MindMap, with Horizontal or Vertical orientation options.
 platform: ej2-javascript
 control: Mind map 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Mind Map layout in ##Platform_Name## Diagram control
+# Mind Map in ##Platform_Name## Diagram
 
 A mind map is a diagram that displays the nodes as a spider diagram organizes information around a central concept. To create mind map, the [`type`](../../api/diagram/layout#type) of layout should be set as `MindMap`.
 

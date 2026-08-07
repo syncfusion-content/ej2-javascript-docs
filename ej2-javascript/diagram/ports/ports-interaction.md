@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ports interaction in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Ports in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Port Interaction in ##Platform_Name## Diagram | Syncfusion®
+description: Draw connectors from ports and customize port behavior in the Syncfusion® ##Platform_Name## Diagram with the port constraints property.
 platform: ej2-javascript
 control: Ports 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ports interaction in ##Platform_Name## Diagram control | Syncfusion®
+# Port Interaction in ##Platform_Name## Diagram
 
 ## Draw connector from port
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Symbol palette in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Symbol Palette in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more
+title: Symbol Palette in ##Platform_Name## Diagram | Syncfusion®
+description: Add a gallery of reusable nodes, connectors, and groups to the Syncfusion® ##Platform_Name## Diagram with the symbol palette component for drag and drop.
 platform: ej2-javascript
 control: Symbol palette 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Symbol palette in ##Platform_Name## Diagram control
+# Symbol Palette in ##Platform_Name## Diagram
 
 The [`symbolPalette`](../../api/diagram/symbolPaletteModel) is a gallery of reusable symbols and diagram elements that can be dragged and dropped on the diagram surface multiple times.
 

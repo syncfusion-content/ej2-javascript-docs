@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Data binding in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Data Binding in ##Platform_Name## Diagram | Syncfusion®
+description: Populate the ##Platform_Name## Diagram from local or remote data sources and perform CRUD operations on nodes and connectors.
 platform: ej2-javascript
 control: Data binding 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in ##Platform_Name## Diagram control
+# Data Binding in ##Platform_Name## Diagram
 
 * Diagram can be populated with the `nodes` and `connectors` based on the information provided from an external data source.
 

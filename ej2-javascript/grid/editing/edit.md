@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Edit in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Edit in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Editing | Syncfusion
+description: Learn how to configure editing in ##Platform_Name## Data Grid, customize edit modes, apply validation rules, use templates, and manage CRUD workflows efficiently.
 platform: ej2-javascript
 control: Edit 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Edit in ##Platform_Name## Grid control
+# Editing in ##Platform_Name## Data Grid
 
 The Grid control provides powerful options for dynamically inserting, deleting, and updating records, enabling you to modify data directly within the grid. This feature is useful when you want to seamlessly perform CRUD (Create, Read, Update, Delete) operations.
 

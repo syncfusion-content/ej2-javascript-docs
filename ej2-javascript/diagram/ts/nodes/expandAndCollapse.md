@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Expand and collapse of a nodes in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Nodes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Node Expand and Collapse in ##Platform_Name## Diagram | Syncfusion®
+description: Show expand and collapse icons on ##Platform_Name## Diagram parent nodes to compress hierarchies and reveal children on demand.
 platform: ej2-javascript
 control: Expand and collapse of nodes
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 ---
 
 
-# Expand icon and collapse icon in ##Platform_Name## Diagram control
+# Node Expand and Collapse in ##Platform_Name## Diagram
 
 Diagram provides support to describe the state of the node. i.e., the node is expanded or collapsed state. The IsExpanded property of node is used to expand or collapse the children nodes.The Expand and Collapse support is used to compress the hierarchy view so that only the roots of each elements are visible.
 

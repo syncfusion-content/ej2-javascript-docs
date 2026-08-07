@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Crud actions in ##Platform_Name## Scheduler control | Syncfusion
-description: Learn here all about Crud actions in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: CRUD Operations in ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to add, edit, and delete appointments in the Syncfusion ##Platform_Name## Scheduler using the editor window and drag actions.
 platform: ej2-javascript
-control: Crud actions 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# CRUD operations in ##Platform_Name## Scheduler control
+# CRUD Operations in ##Platform_Name## Scheduler
 
 Appointments are the core elements of the Scheduler component, representing scheduled events that users can create, view, modify, and delete. The Scheduler provides comprehensive support for manipulating appointments using editor window or through the drag and resize action.
 

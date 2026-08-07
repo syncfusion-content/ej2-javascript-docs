@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Global local in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Global local in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Globalization and Localization | Syncfusion
+description: Learn how to use globalization in ##Platform_Name## Data Grid with localization, internationalization, culture switching, RTL support, and locale-specific formatting.
 platform: ej2-javascript
 control: Global local 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Global local in ##Platform_Name## Grid control
+# Globalization in ##Platform_Name## Data Grid
 
 The ##Platform_Name## Grid control provides a feature known as Globalization (global and local), which makes the application more accessible and useful for individuals from different regions and language backgrounds. You have the ability to view data in your preferred language and format, resulting in an enhanced overall experience.
 

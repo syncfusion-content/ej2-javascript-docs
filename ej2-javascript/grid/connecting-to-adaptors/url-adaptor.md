@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind data & perform CRUD with UrlAdaptor in Syncfusion Grid
-description: Learn here all about how to bind data and perform CRUD action using UrlAdaptor in Syncfusion ##Platform_Name## Grid control.
+title: ##Platform_Name## Grid Bind Data with UrlAdaptor | Syncfusion
+description: Learn how to bind remote data from custom REST APIs in ##Platform_Name## Data Grid and perform data operations and CRUD actions.
 platform: ej2-javascript
 control: grid
 keywords: Adaptors, UrlAdaptor, url method adaptor, remotedata 
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# UrlAdaptor in Syncfusion ##Platform_Name## Grid Control
+# Custom REST API Remote Data Binding in ##Platform_Name## Data Grid
 
 The `UrlAdaptor` serves as the base adaptor for facilitating communication between remote data services and an UI control. It enables seamless data binding and interaction with custom API services or any remote service through URLs. The `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name##  Grid control.
 

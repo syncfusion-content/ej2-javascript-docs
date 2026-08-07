@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row pinning in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Row pinning in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Row Pinning | Syncfusion
+description: Learn how to pin rows in ##Platform_Name## Data Grid using Syncfusion. Keep important rows fixed at the top while supporting data operations.
 platform: ej2-javascript
 control: Row Pinning
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row Pinning in EJ2 ##Platform_Name## Grid Control
+# Row Pinning in ##Platform_Name## Data Grid
 
 The Syncfusion <sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control provides option to pin specific rows at the top, ensuring important information remains visible while scrolling vertically. This feature is useful when you want to keep specific rows always visible for quick reference or priority viewing, regardless of user interactions.
 

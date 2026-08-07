@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Diagram in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Group in Syncfusion® ##Platform_Name## Diagram control of Syncfusion® Essential JS 2 and more.
+title: Diagram Properties in ##Platform_Name## Diagram | Syncfusion®
+description: Call Syncfusion® ##Platform_Name## Diagram methods like getDiagramBounds, refresh, clear, destroy, and getCustomTool to manage the diagram programmatically.
 platform: ej2-javascript
 control: Diagram API 
 publishingplatform: ##Platform_Name##
@@ -9,8 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-
-# Diagram properties in TypeScript
+# Diagram Properties in ##Platform_Name## Diagram
 
 ## Get diagram bounds
 
@@ -95,7 +94,7 @@ The following example demonstrates how to apply custom cursors for the Select an
 
 ## Get custom tool
 
-The  [`getCustomtTool`](../api/diagram#getcustomtool) function is called when a mouse down event occurs on diagram elements. This function allows you to specify the tool to use based on the action. The [`getTool`](../api/diagram#gettool) method is used to retrieve the tool that handles a particular action.
+The  [`getCustomTool`](../api/diagram#getcustomtool) function is called when a mouse down event occurs on diagram elements. This function allows you to specify the tool to use based on the action. The [`getTool`](../api/diagram#gettool) method is used to retrieve the tool that handles a particular action.
 
 In the following example, `getCustomTool` is used to clone a node when clicking on the user handle.
 

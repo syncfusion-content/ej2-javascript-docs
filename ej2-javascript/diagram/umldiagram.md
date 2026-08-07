@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Umldiagram in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Umldiagram in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: UML Diagram Shapes in ##Platform_Name## Diagram | Syncfusion®
+description: Model class, interface, enumeration, and relationship shapes in the Syncfusion® ##Platform_Name## Diagram for UML class diagrams.
 platform: ej2-javascript
 control: Umldiagram 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# UML diagram in ##Platform_Name## Diagram control
+# UML Diagram Shapes in ##Platform_Name## Diagram
 
 ## UML Class Diagram
 

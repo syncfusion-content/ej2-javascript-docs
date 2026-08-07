@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Nodes in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Nodes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Nodes in ##Platform_Name## Diagram | Syncfusion®
+description: Create ##Platform_Name## Diagram nodes from a collection or runtime API, set position, size, style, and id constraints.
 platform: ej2-javascript
 control: Nodes 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Nodes in ##Platform_Name## Diagram control
+# Nodes in ##Platform_Name## Diagram
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data, and it represents the functions of a complete system regarding to how it interacts with external entities.
 

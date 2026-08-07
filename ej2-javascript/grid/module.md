@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Module in TypeScript Grid control | Syncfusion
-description: Learn here all about Module in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Modules and Feature Injection | Syncfusion
+description: Learn how to configure ##Platform_Name## Data Grid modules and services for paging, sorting, filtering, grouping, editing, and export features.
 platform: ej2-javascript
 control: Module 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Module in TypeScript Grid control
+# Modules in ##Platform_Name## Data Grid
 
 The following feature modules should be injected to extend grid's functionality.
 

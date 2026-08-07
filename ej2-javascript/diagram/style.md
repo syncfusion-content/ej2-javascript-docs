@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Style in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: CSS Structure in ##Platform_Name## Diagram | Syncfusion®
+description: Customize the CSS structure of the Syncfusion® ##Platform_Name## Diagram, including connector end point handles, resize thumbs, and selection visuals.
 platform: ej2-javascript
 control: Style 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in ##Platform_Name## Diagram control
+# CSS Structure in ##Platform_Name## Diagram
 
 ## Customizing the connector end point handle
 

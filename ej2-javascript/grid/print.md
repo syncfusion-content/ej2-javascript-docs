@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Print in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Print in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Print | Syncfusion
+description: Learn how to print ##Platform_Name## Data Grid content with print customization options, formatted layouts, and print-ready output for grid data.
 platform: ej2-javascript
 control: Print 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Print in ##Platform_Name## Grid control
+# Print in ##Platform_Name## Data Grid
 
 The printing feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to easily generate and print a representation of the grid's content for better offline accessibility and documentation. You can enable this feature using either the grid's toolbar or the programmatically available `print` method.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layers in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Layers in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential®  2 and more.
+title: Layers in ##Platform_Name## Diagram | Syncfusion®
+description: Group ##Platform_Name## Diagram shapes into named layers to selectively show, hide, lock, and store custom metadata.
 platform: ej2-javascript
 control: Layers 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Layers in ##Platform_Name## Diagram control
+# Layers in ##Platform_Name## Diagram
 
 **Layer** organizes related shapes within a diagram control as named categories. Assigning shapes to different layers enables selective viewing, removal, and locking of distinct shape categories.
 

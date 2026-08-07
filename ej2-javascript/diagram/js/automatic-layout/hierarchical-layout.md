@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hierarchical tree layout in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Automatic layout in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Hierarchical Tree in ##Platform_Name## Diagram | Syncfusion®
+description: Arrange nodes in a Hierarchical Tree in the Syncfusion® ##Platform_Name## Diagram by setting the layout type to HierarchicalTree with no root needed.
 platform: ej2-javascript
 control: Hierarchical tree 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hierarchical tree layout in ##Platform_Name## Diagram control
+# Hierarchical Tree in ##Platform_Name## Diagram
 
 The hierarchical tree layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root.
 

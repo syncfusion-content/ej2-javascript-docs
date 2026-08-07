@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grid lines in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Grid lines in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Gridlines in ##Platform_Name## Diagram | Syncfusion®
+description: Show and customize horizontal and vertical gridlines in the Syncfusion® ##Platform_Name## Diagram, with dot patterns, line intervals, and snap-to-lines support.
 platform: ej2-javascript
 control: Grid lines 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grid lines in ##Platform_Name## Diagram control
+# Gridlines in ##Platform_Name## Diagram
 
 Gridlines are crisscross lines drawn in diagram page like the lines on traditional graph paper. It helps to position the diagram elements on the diagram page.
 

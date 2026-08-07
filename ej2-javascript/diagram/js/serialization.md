@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialization in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Serialization in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Serialization in ##Platform_Name## Diagram | Syncfusion®
+description: Save and load the Syncfusion® ##Platform_Name## Diagram as a JSON string with saveDiagram and loadDiagram for persisting diagram state.
 platform: ej2-javascript
 control: Serialization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Serialization in ##Platform_Name## Diagram control
+# Serialization in ##Platform_Name## Diagram
 
 **Serialization** is the process of converting the state of the diagram into a format that can be saved and later restored. This ensures that the diagram's current state, including its nodes, connectors, and configurations, can be persisted across sessions.
 

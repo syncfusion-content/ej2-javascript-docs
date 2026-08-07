@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Virtual scrolling in ##Platform_Name## Schedule control | Syncfusion
-description: Discover virtual scrolling in Syncfusion ##Platform_Name## Scheduler (Essential JS 2), covering lazy loading, server integration, and view limitations.
+title: Virtual Scrolling in ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to enable virtual scrolling in the Syncfusion ##Platform_Name## Scheduler timeline and agenda views to load resources and events on demand.
 platform: ej2-javascript
-control: Virtual scrolling 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtual scrolling in ##Platform_Name## Scheduler control
+# Virtual Scrolling in ##Platform_Name## Scheduler
 
 To improve performance when loading many resources and events, the Scheduler supports virtual scrolling. Virtual scrolling loads resources and events on demand as the user scrolls, reducing initial render time and memory usage. Enable virtual scrolling by setting `true` on the [`allowVirtualScrolling`](../api/schedule/viewsModel#allowvirtualscrolling) property within the view-specific settings. Virtual loading of events is also supported in the Agenda view by enabling [`allowVirtualScrolling`](../api/schedule/viewsModel#allowvirtualscrolling) in the agenda view settings.
 

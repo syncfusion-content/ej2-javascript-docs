@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hierarchy grid in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Hierarchy grid in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Hierarchy Grid | Syncfusion
+description: earn how to create hierarchy grids in ##Platform_Name## Data Grid with parent-child relationships, nested child grids, hierarchical data binding, and expandable rows.
 platform: ej2-javascript
 control: Hierarchy grid 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hierarchy grid in ##Platform_Name## Grid control
+# Hierarchy Grid in ##Platform_Name## Data Grid
 
 The Hierarchy Grid in an ##Platform_Name## Grid control is typically used when you need to display hierarchical data in a tabular format with expandable and collapsible rows. It allows you to represent parent and child relationships within the grid, making it easier for you to navigate and understand the data.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Columns in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Columns in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Columns | Syncfusion
+description: Learn how to define and configure columns in ##Platform_Name## Data Grid, including column types, widths, templates, and behaviors for effective data presentation.
 platform: ej2-javascript
 control: Columns 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Columns in ##Platform_Name## Grid control
+# Columns in ##Platform_Name## Data Grid
 
 In ##Platform_Name## Grid, Columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the grid.
 

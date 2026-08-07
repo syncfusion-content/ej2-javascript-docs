@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MySQL Server Data Binding in Syncfusion ##Platform_Name## Grid
-description: Learn how to consume data from SQL Server using MySQL Client, bind it to Syncfusion ##Platform_Name## Grid, and perform CRUD operations.
+title: ##Platform_Name## Grid MySQL Server Integration | Syncfusion
+description: Learn how to connect ##Platform_Name## Data Grid to MySQL Server using LINQ2DB, execute database queries, and manage grid data efficiently.
 platform: ej2-javascript
 control: grid
 keywords: adaptors, customadaptor, urladaptor, mysql, remotedata
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting MySQL Server data to Syncfusion ##Platform_Name## Grid
+# MySQL Server Integration in ##Platform_Name## Data Grid
 
 This section describes how to connect and retrieve data from a MySQL Server database using [MySQL data](https://www.nuget.org/packages/MySql.Data) and bind it to the Syncfusion ##Platform_Name## Grid.
 
@@ -1528,11 +1528,11 @@ public class CRUDModel<T> where T : class
 
 When you run the application, the resultant Grid will look like this
 
-![Syncfusion Angular Grid bound with MySQL Server data](.../images/connecting-micro-curd.gif)
+![Syncfusion ##Platform_Name## Grid bound with MySQL Server data](.../images/connecting-micro-curd.gif)
 
 ## Binding data from MySQL Server using CustomAdaptor
 
-This section describes step by step process how to retrieve data from a MySQL Server using [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion ##Platform_Name## Grid.
+This section describes step by step process how to retrieve data from a MySQL Server using [CustomAdaptor](../connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion ##Platform_Name## Grid.
 
 **1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion ##Platform_Name## Grid to an API service](#connecting-syncfusion-##Platform_Name##-grid-to-an-api-service)
 
@@ -2820,4 +2820,4 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-![Syncfusion Angular Grid bound with MySQL Server data](../images/connecting-micro-curd.gif)
+![Syncfusion ##Platform_Name## Grid bound with MySQL Server data](../images/connecting-micro-curd.gif)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearence of a nodes in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Nodes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Node Customization in ##Platform_Name## Diagram | Syncfusion®
+description: Customize the appearance of nodes in the Syncfusion® ##Platform_Name## Diagram with fill, stroke, opacity, shadows, gradients, and getNodeDefaults.
 platform: ej2-javascript
 control: Appearence of nodes 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearence of a nodes in ##Platform_Name## Diagram control
+# Node Customization in ##Platform_Name## Diagram
 
 ## Common values to the node.
 

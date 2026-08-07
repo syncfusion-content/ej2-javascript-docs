@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row template in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Row template in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Row Template | Syncfusion
+description: Customize row layouts in ##Platform_Name## Data Grid with Syncfusion row templates. Create rich row designs, display custom content, and enhance data presentation.
 platform: ej2-javascript
 control: Row template 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row template in ##Platform_Name## Grid control
+# Row Template in ##Platform_Name## Data Grid
 
 The row template feature in Grid allows you to customize the appearance and layout of rows in the grid. This feature is useful when you want to display custom content, such as images, buttons, or other controls, within the rows.
 

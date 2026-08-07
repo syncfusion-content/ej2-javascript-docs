@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Swim lane in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Swim lane in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Swimlane in ##Platform_Name## Diagram | Syncfusion®
+description: Visualize a business process and its responsible departments with a Swimlane in the Syncfusion® ##Platform_Name## Diagram, with horizontal or vertical layout.
 platform: ej2-javascript
 control: Swim lane 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Swim lane in ##Platform_Name## Diagram control
+# Swimlane in ##Platform_Name## Diagram
 
 A swimlane is a type of diagram node commonly used to visualize the relationship between a business process and the department responsible for it. It focuses on illustrating the logical connections between activities, making it simpler to grasp the dynamics of the process and the corresponding departmental responsibilities.
 

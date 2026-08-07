@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Calendar mode in ##Platform_Name## Scheduler control | Syncfusion
-description: Learn here all about Calendar mode in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: Calendar Mode in ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to render the Syncfusion ##Platform_Name## Scheduler in Gregorian and Islamic calendar modes to support different regional date formats.
 platform: ej2-javascript
-control: Calendar mode 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Calendar mode in ##Platform_Name## Scheduler control
+# Calendar Mode in ##Platform_Name## Scheduler
 
 The Scheduler supports two calendar modes to accommodate different regional and cultural requirements for date representation and event scheduling.
 

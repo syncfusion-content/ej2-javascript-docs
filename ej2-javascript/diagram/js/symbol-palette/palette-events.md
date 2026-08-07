@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Symbol Palette Events in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Symbol palette in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Symbol Palette Events in ##Platform_Name## Diagram | Syncfusion®
+description: Handle dragEnter and paletteExpanding events on the Syncfusion® ##Platform_Name## Diagram symbol palette to customize drag and expand interactions.
 platform: ej2-javascript
 control: Symbol palette 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Symbol Palette events in ##Platform_Name## Diagram control
+# Symbol Palette Events in ##Platform_Name## Diagram
 
 There are some events which will get triggered while interacting with the symbol palette. They are explained below.
 

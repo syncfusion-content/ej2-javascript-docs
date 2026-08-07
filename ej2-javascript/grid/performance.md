@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Performance tips for ##Platform_Name## Grid control | Syncfusion
-description: Checkout and learn here all about how to improve the loading performance of ##Platform_Name##  Grid control even binding large data set.
+title: ##Platform_Name## Grid Performance | Syncfusion
+description: Learn how to optimize ##Platform_Name## Data Grid performance with virtualization, paging, efficient data operations, and best practices for large datasets.
 platform: ej2-javascript
 control: Performance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Performance tips for ##Platform_Name## Grid control
+# Performance Tips for ##Platform_Name## Data Grid
 
 This article is a comprehensive guide on improving the loading performance of the ##Platform_Name## Grid, especially when dealing with large datasets along with large number of columns. It provides valuable insights into the steps that need to be followed to bind a large data source without experiencing any performance degradations. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the ##Platform_Name## Grid during data binding, ensuring a smooth and efficient user experience.
 

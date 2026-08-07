@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Label Interaction in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Labels in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Annotation Interaction in ##Platform_Name## Diagram | Syncfusion®
+description: Enable select, drag, rotate, and resize interactions on annotations in the Syncfusion® ##Platform_Name## Diagram using annotation constraints.
 platform: ej2-javascript
 control: Label Interaction
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Annotation Interactions
+# Annotation Interaction in ##Platform_Name## Diagram
 
 Diagram allows annotation to be interacted by selecting, dragging, rotating, and resizing. Annotation interaction is disabled, by default. You can enable annotation interaction with the `constraints` property of annotation. You can also curtail the services of interaction by enabling either selecting, dragging, rotating, or resizing individually with the respective constraints property of annotation. The following code illustrates how to enable interactive mode.
 

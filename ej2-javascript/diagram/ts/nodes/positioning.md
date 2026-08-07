@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Positioning of a nodes in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Nodes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Node Positioning in ##Platform_Name## Diagram | Syncfusion®
+description: Position, size, rotate, and clamp ##Platform_Name## Diagram nodes with offset, pivot, min/max, and margin properties.
 platform: ej2-javascript
 control: Positioning of nodes 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Positioning a node in ##Platform_Name## Diagram control
+# Node Positioning in ##Platform_Name## Diagram
 
 ## Position
 

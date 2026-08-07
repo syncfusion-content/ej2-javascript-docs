@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Node Labels in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Labels in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Node Annotation in ##Platform_Name## Diagram | Syncfusion®
+description: Position ##Platform_Name## Diagram node annotations with offset, margin, horizontal and vertical alignment relative to node bounds.
 platform: ej2-javascript
 control: Node Labels 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Node annotations in ##Platform_Name## Diagram control
+# Node Annotation in ##Platform_Name## Diagram
 
 Diagram allows you to customize the position and appearance of the annotation efficiently. Annotation can be aligned relative to the node boundaries. It has Margin, Offset, Horizontal, and Vertical alignment properties. It is quite tricky when all four alignments are used together but gives more control over alignments properties of the ShapeAnnotation class. Annotations of a node can be positioned using the following properties of ShapeAnnotation.
 

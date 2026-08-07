@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Aggregates in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Aggregates in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Aggregates | Syncfusion
+description: Learn how to use aggregates in ##Platform_Name## Data Grid to display column summaries, footer and group aggregates, and create custom aggregate calculations.
 platform: ej2-javascript
 control: Aggregates 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Aggregates in ##Platform_Name## Grid control
+# Aggregates in ##Platform_Name## Data Grid
 
 The Aggregates feature in the ##Platform_Name## Grid control allows you to display aggregate values in the footer, group footer, and group caption of the grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the `aggregates` property. To represent an aggregate column, you need to specify the minimum required properties, such as [field](../../api/grid/aggregateColumn#field) and [type](../../api/grid/aggregateColumn#type).
 

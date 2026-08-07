@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pdf export in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Pdf export in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid PDF Export | Syncfusion
+description: Learn how to export ##Platform_Name## Data Grid data to PDF, customize export settings, configure layouts, and generate printable and shareable PDF documents.
 platform: ej2-javascript
 control: Pdf export 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pdf export in ##Platform_Name## Grid control
+# PDF Export in ##Platform_Name## Data Grid
 
 The PDF export feature in the ##Platform_Name## Grid allows you to export grid data to a PDF document, providing the ability to generate printable reports or share data in a standardized format.
 

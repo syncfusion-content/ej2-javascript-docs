@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Swim lane in symbol palette ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Swim lane in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Swimlane Palette in ##Platform_Name## Diagram | Syncfusion®
+description: Add preconfigured Swimlanes and phases to the symbol palette in the Syncfusion® ##Platform_Name## Diagram for drag-and-drop reuse.
 platform: ej2-javascript
 control: Swim lane in symbol palette 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## Add swimlane to palette
+# Swimlane Palette in ##Platform_Name## Diagram
 
    Diagram provides the support to add swimlane and phases to symbol palette. The following code sample illustrate how to add swimlane and phases to palette.
 

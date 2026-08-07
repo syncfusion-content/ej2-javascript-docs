@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Views in ##Platform_Name## Scheduler control | Syncfusion
-description: Learn here all about Views in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: Views in ##Platform_Name## Scheduler | Syncfusion
+description: Learn about the available views in the Syncfusion ##Platform_Name## Scheduler, including day, week, month, agenda, and timeline view modes.
 platform: ej2-javascript
-control: Views 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Views in ##Platform_Name## Scheduler control
+# Views in ##Platform_Name## Scheduler
 
 The Scheduler includes a wide variety of view modes with unique configuration options for each view. The available view modes are Day, Week, Work Week, Month, Agenda, Month Agenda, Year, Timeline Day, Timeline Week, Timeline Work Week, Timeline Year, and Timeline Month, of which the `Week` view is set as active by default.
 

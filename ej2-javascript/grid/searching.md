@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Searching in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Searching in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Searching | Syncfusion
+description: Learn how to search data in ##Platform_Name## Data Grid with built-in search functionality, search configuration options, case sensitivity, and result highlighting.
 platform: ej2-javascript
 control: Searching 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Searching in ##Platform_Name## Grid control
+# Searching in ##Platform_Name## Data Grid
 
 The ##Platform_Name## Grid includes a powerful built-in searching feature that allows users to search for specific data within the grid. This feature enables efficient filtering of grid records based on user-defined search criteria, making it easier to locate and display relevant information. Whether you have a large dataset or simply need to find specific records quickly, the search feature provides a convenient solution.
 

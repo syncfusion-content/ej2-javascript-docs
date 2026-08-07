@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load JSON Data ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here about Ej1 api migration in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Load EJ1 JSON in EJ2 ##Platform_Name## Diagram | Syncfusion®
+description: Load a saved Essential® JS 1 JSON diagram into the Syncfusion® ##Platform_Name## Diagram by injecting EJ1SerializationModule and using loadDiagram with the EJ1 flag.
 platform: ej2-javascript
 control: EJ1 Migration
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## How to load EJ1 diagram in EJ2 diagram
+# Load EJ1 JSON in EJ2 ##Platform_Name## Diagram
 
 To load EJ1 JSON data in an EJ2 diagram, follow these steps.
 

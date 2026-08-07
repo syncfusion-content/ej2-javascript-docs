@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Add custom item to toolbar in ##Platform_Name## File Manager | Syncfusion
-description: Learn how to add and customize toolbar items in the ##Platform_Name## File Manager control to support custom commands and actions.
-platform: ej2-javascript
+title: Add toolbar items in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to add a custom item to the toolbar in the ##Platform_Name## File Manager to extend built-in actions with custom controls.
 control: File Manager
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add Custom Toolbar Item in ##Platform_Name## File Manager
+# How to add a custom item to the toolbar in ##Platform_Name## File Manager
 
 Use the [`toolbarItems`](../../api/file-manager#toolbaritems) API to modify the items displayed in the toolbar. When combining default and custom items, assign a unique `name` to each item so they can be managed independently. Default items can be customized by setting properties such as `tooltipText`, `iconCss`, `text`, `suffixIcon`, and `template`.
 

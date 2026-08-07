@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Shapes in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Shapes in ##Platform_Name## Diagram | Syncfusion®
+description: Add text, image, HTML, native, basic, and flow shapes to the Syncfusion® ##Platform_Name## Diagram with style, scale, and alignment options.
 platform: ej2-javascript
 control: Shapes 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Shapes in ##Platform_Name## Diagram control
+# Shapes in ##Platform_Name## Diagram
 
 Diagram provides support to add different kind of nodes. They are as follows:
 

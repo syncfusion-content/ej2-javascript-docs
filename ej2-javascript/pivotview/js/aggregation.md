@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Aggregation in ##Platform_Name## Pivot Table component | Syncfusion
-description: Learn here all about Aggregation in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Aggregation in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table applies aggregation types like Sum, Count, and Average to value fields, with custom aggregations at runtime.
 platform: ej2-javascript
-control: Aggregation 
+control: Aggregation
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Aggregation in ##Platform_Name## Pivot Table component
+# Aggregation in ##Platform_Name## Pivot Table
 
 > This feature is applicable only for the relational data source.
 

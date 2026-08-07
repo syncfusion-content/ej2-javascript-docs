@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Group in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Group in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Group in ##Platform_Name## Diagram | Syncfusion®
+description: Cluster multiple nodes and connectors into a single group in the Syncfusion® ##Platform_Name## Diagram, edit children individually or together.
 platform: ej2-javascript
 control: Group 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Group in ##Platform_Name## Diagram control
+# Group in ##Platform_Name## Diagram
 
 ## Create group
 

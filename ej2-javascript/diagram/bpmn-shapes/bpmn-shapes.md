@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bpmn shapes in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Bpmn shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: BPMN Shapes in ##Platform_Name## Diagram | Syncfusion®
+description: Model business processes in the Syncfusion® ##Platform_Name## Diagram with built-in BPMN shapes including events, gateways, activities, and flows.
 platform: ej2-javascript
 control: Bpmn shapes 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bpmn shapes in ##Platform_Name## Diagram control
+# BPMN Shapes in ##Platform_Name## Diagram
 
 BPMN shapes are used to represent the internal business procedure in a graphical notation and enable you to communicate the procedures in a standard manner. To create a BPMN shape, in the node property shape, type should be set as “bpmn” and its shape should be set as any one of the built-in shapes. The following code example illustrates how to create a simple business process.
 

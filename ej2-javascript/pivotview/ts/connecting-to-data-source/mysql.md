@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Mysql in ##Platform_Name## Pivot Table Component | Syncfusion
-description: Learn here all about Mysql in Syncfusion ##Platform_Name## Pivot Table Component of Syncfusion Essential JS 2 and more.
+title: MySQL in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table connects to MySQL via the MySql.Data library and a Web API controller to fetch and bind data at runtime.
 platform: ej2-javascript
-control: Mysql 
+control: MySQL
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# MySQL in ##Platform_Name## Pivot Table Component
+# MySQL in ##Platform_Name## Pivot Table
 
 This guide explains how to retrieve data from a MySQL database using the [MySqlClient](https://mysqlclient.readthedocs.io) library and bind it to the Pivot Table through a Web API controller.
 

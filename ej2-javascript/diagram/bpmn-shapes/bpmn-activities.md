@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bpmn Activity in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Bpmn Activity shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: BPMN Activity in ##Platform_Name## Diagram | Syncfusion®
+description: Model tasks and subprocesses as BPMN activities in the Syncfusion® ##Platform_Name## Diagram with task, sub-process, and call activity types.
 platform: ej2-javascript
 control: Bpmn Activity 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# BPMN activity in ##Platform_Name## Diagram control
+# BPMN Activity in ##Platform_Name## Diagram
 
 ## Activity
 

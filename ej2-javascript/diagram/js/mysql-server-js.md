@@ -1,14 +1,14 @@
 ---
 layout: post
-title: JavaScript Diagram - MySQL Server | Syncfusion
-description: Learn how to integrate the Syncfusion JavaScript Diagram with a MySQL database using LINQ2DB and an ASP.NET Core Web.
+title: How to Connect MySQL in ##Platform_Name## Diagram | Syncfusion®
+description: Connect the Syncfusion® ##Platform_Name## Diagram to a MySQL database using LINQ2DB and an ASP.NET Core Web API to render an organizational chart.
 platform: ej2-javascript
 control: diagram
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting MySQL to Syncfusion® JavaScript Diagram using LINQ2DB
+# How to Connect MySQL in ##Platform_Name## Diagram
 
 This guide explains how to load and visualize organizational chart data stored in a MySQL database using the Syncfusion® JavaScript Diagram component. It demonstrates how to configure MySQL, create the required database schema, expose the data through an ASP.NET Core Web API, and bind the API response to a JavaScript application to render an organizational chart.
 

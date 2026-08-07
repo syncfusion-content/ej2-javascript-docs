@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Collaborative Editing in ##Platform_Name## Diagram | Syncfusion
-description: Checkout and learn to configure SignalR and Redis for real-time collaborative editing in Syncfusion ##Platform_Name## Diagram.
+title: SignalR Hub Configuration in ##Platform_Name## Diagram | Syncfusion®
+description: Configure the SignalR client in the Syncfusion® ##Platform_Name## Diagram app to connect to a hub and enable real-time collaborative editing.
 platform: ej2-javascript
 control: Diagram
 documentation: ug
@@ -9,7 +9,7 @@ publishingplatform: ##Platform_Name##
 domainurl: ##DomainURL##
 ---
 
-# SignalR hub configuration in ##Platform_Name## application
+# SignalR Hub Configuration in ##Platform_Name## Diagram
 
 ## Overview
 

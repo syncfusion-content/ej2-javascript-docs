@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Lazy load grouping in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Lazy load grouping in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Lazy Load Grouping | Syncfusion
+description: Learn how to use Lazy Load Grouping in ##Platform_Name## Data Grid to load grouped records on demand, improve performance, and efficiently handle large datasets.
 platform: ej2-javascript
 control: Lazy load grouping 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Lazy load grouping in ##Platform_Name## Grid control
+# Lazy Load Grouping in ##Platform_Name## Data Grid
 
 In ##Platform_Name##, lazy loading refers to the technique of loading data dynamically when they are needed, instead of loading everything upfront. Lazy loading can significantly improve the performance of your application by reducing the initial load time.
 

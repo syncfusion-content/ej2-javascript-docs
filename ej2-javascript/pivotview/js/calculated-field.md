@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Calculated field in ##Platform_Name## Pivot Table component | Syncfusion
-description: Learn here all about Calculated field in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Calculated Field in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table creates calculated fields via the dialog or `calculatedFieldSettings`, then adds them to the values axis.
 platform: ej2-javascript
-control: Calculated field 
+control: Calculated field
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Calculated field in ##Platform_Name## Pivot Table component
+# Calculated Field in ##Platform_Name## Pivot Table
 
 The calculated field feature enables users to create custom value fields using mathematical formulas and existing fields from their data source. Users can perform complex calculations with basic arithmetic operators and seamlessly integrate these custom fields into their pivot table for enhanced data visualization and reporting.
 

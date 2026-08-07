@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column selection in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Column selection in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Column Selection | Syncfusion
+description: Learn how to select columns in ##Platform_Name## Data Grid with selection APIs, column-level selection, keyboard interactions, and advanced column selection options.
 platform: ej2-javascript
 control: Column selection 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column selection in ##Platform_Name## Grid control
+# Column Selection in ##Platform_Name## Data Grid
 
 Column selection in grid control allows you to select one or more columns using mouse interactions or arrow keys. This feature is useful when you want to highlight, manipulate, or perform actions on specific columns within the Grid.
 

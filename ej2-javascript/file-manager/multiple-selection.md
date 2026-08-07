@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## File Manager component | Syncfusion
-description: Learn how to use and configure multiple selection, range selection, and disabling multi-selection in the ##Platform_Name## File Manager component.
-platform: ej2-javascript
+title: Multiple Selection in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to enable multiple selection in the ##Platform_Name## File Manager using Ctrl/Shift keys and checkboxes to select many files at once.
 control: File Manager
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Multiple selection in ##Platform_Name## File Manager component
+# Multiple Selection in ##Platform_Name## File Manager
 
 The File Manager component supports multiple selection by enabling the [`allowMultiSelection`](../api/file-manager#allowmultiselection) property (enabled by default). Use the Ctrl or Shift keys while selecting items to create multi-selection ranges; checkboxes can also be used. Use `Ctrl + A` to select all items in the current directory. The [`fileSelect`](../api/file-manager#fileselect) is triggered whenever items are selected or unselected.
 

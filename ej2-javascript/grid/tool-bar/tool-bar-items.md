@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tool bar items in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Tool bar items in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Toolbar Items | Syncfusion
+description: Learn how to use toolbar items in ##Platform_Name## Data Grid with built-in actions, custom toolbar items, templates, export options, and search functionality.
 platform: ej2-javascript
 control: Tool bar items 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool bar items in ##Platform_Name## Grid control
+# Toolbar Items in ##Platform_Name## Data Grid
 
 The ##Platform_Name## Grid offers a flexible toolbar that enables the addition of custom toolbar items or modification of existing ones. This customizable toolbar is positioned above the grid, providing a convenient way to access various actions and functionalities
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Grouping in ##Platform_Name## Pivot Table component | Syncfusion
-description: Learn here all about Grouping in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Grouping in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table groups date, number, and string fields into ranges, with date, number, and custom grouping via `allowGrouping`.
 platform: ej2-javascript
-control: Grouping 
+control: Grouping
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grouping in ##Platform_Name## Pivot Table component
+# Grouping in ##Platform_Name## Pivot Table
 
 > This feature is applicable only for the relational data source.
 

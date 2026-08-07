@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about How to in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid How-To Guide | Syncfusion
+description: Learn how to customize and extend ##Platform_Name## Data Grid with practical examples for editing, sorting, exporting, data binding, column customization, and more.
 platform: ej2-javascript
 control: How to 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to in ##Platform_Name## Grid control
+# How-To Examples in ##Platform_Name## Data Grid
 
 ## Refresh the data source
 

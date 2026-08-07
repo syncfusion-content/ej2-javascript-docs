@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Straight connector in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Connectors in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Straight in ##Platform_Name## Diagram | Syncfusion®
+description: Draw straight connector segments in the Syncfusion® ##Platform_Name## Diagram by adding a straight segment to the connector segments collection.
 platform: ej2-javascript
 control: Straight 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Straight
+# Straight in ##Platform_Name## Diagram
 
 To create a straight line, specify the [`type`](../../../api/diagram/segments) of the segment as **straight** and add a straight segment to [`segments`](../../../api/diagram/connector#segments) collection and need to specify [`type`](../../../api/diagram/connector#type) for the connector. The following code example illustrates how to create a default straight segment.
 

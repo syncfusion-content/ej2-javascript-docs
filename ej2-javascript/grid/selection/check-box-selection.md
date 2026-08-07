@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Check box selection in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Check box selection in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Checkbox Selection | Syncfusion
+description: Learn how to enable checkbox selection in ##Platform_Name## Data Grid with checkbox columns, select-all functionality, selection APIs, and multiple selection support.
 platform: ej2-javascript
 control: Check box selection 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Check box selection in ##Platform_Name## Grid control
+# Checkbox Selection in ##Platform_Name## Data Grid
 
 Checkbox selection in the Grid control allows you to provide an option to select multiple records by using a checkbox in each row. This feature is particularly useful when you need to perform bulk actions or operations on selected records within the Grid.
 

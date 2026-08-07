@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom aggregate in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Custom aggregate in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Custom Aggregate | Syncfusion
+description: Learn how to create custom aggregate functions in ##Platform_Name## Data Grid to calculate and display custom summary values in aggregate rows.
 platform: ej2-javascript
 control: Custom aggregate 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom aggregate in ##Platform_Name## Grid control
+# Custom Aggregate in ##Platform_Name## Data Grid
 
 The custom aggregate feature in ##Platform_Name## Grid control allows you to calculate aggregate values using your own aggregate function. This feature can be useful in scenarios where the built-in aggregate functions do not meet your specific requirements. To use the custom aggregate option, follow the steps below:
 

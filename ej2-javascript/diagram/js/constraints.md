@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Constraints in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Constraints in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Constraints in ##Platform_Name## Diagram | Syncfusion®
+description: Enable or disable diagram, node, connector, port, and annotation behaviors in the Syncfusion® ##Platform_Name## Diagram using flagged constraints.
 platform: ej2-javascript
 control: Constraints 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Constraints in ##Platform_Name## Diagram control
+# Constraints in ##Platform_Name## Diagram
 
 Constraints are used to enable or disable certain behaviors of the diagram, nodes, and connectors. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled or disabled using the Bitwise operators (`&`, `|`, `~`, `<<`, etc.).
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Context menu in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Context menu in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Context Menu in ##Platform_Name## Diagram | Syncfusion®
+description: Add default and custom right-click context menus in the Syncfusion® ##Platform_Name## Diagram with nested items, icons, URLs, and visibility filters.
 platform: ej2-javascript
 control: Context menu 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Context menu in ##Platform_Name## Diagram control
+# Context Menu in ##Platform_Name## Diagram
 
 <!-- markdownlint-disable MD010 -->
 In a graphical user interface (GUI), a context menu is a type of menu that appears when you perform a right-click operation. It offers users a set of actions relevant to the current context. In diagrams, context menus can be customized extensively. The Diagram control provides built-in context menu items while also allowing users to define custom menu items through the [`contextMenuSettings`](../api/diagram/contextmenusettingsmodel) property. This flexibility enables tailoring menus to specific application needs, including creating nested levels of menu items for more intricate user interactions.To ensure the context menu is rendered correctly with the appropriate styles, make sure to include the necessary CSS references from the Syncfusion<sup style="font-size:70%">&reg;</sup> `ej2-navigations` package. This can be done by adding the following `<link>` element to the `<head>` section of your HTML document.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row selection in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Row selection in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Row Selection | Syncfusion
+description: Learn how to select single or multiple rows in ##Platform_Name## Data Grid with selection modes, keyboard interactions, selection APIs, and row selection events.
 platform: ej2-javascript
 control: Row selection 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row selection in ##Platform_Name## Grid control
+# Row Selection in ##Platform_Name## Data Grid
 
 Row selection in the Grid control allows you to interactively select specific rows or ranges of rows within the grid. This selection can be done effortlessly through mouse clicks or arrow keys (up, down, left, and right). This feature is useful when you want to highlight, manipulate, or perform actions on specific row within the Grid.
 

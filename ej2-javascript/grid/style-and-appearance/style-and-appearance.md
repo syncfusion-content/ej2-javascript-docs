@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style and appearance in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Style and Appearance | Syncfusion
+description: Learn how to customize the style and appearance of ##Platform_Name## Data Grid with built-in themes, CSS customization, theme packages, and design configuration.
 platform: ej2-javascript
 control: Style and appearance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and appearance in ##Platform_Name## Grid control
+# Style and Appearance in ##Platform_Name## Data Grid
 
 The Grid control offers various ways to customize its appearance using both default CSS and custom themes. Let's go over some common approaches:
 

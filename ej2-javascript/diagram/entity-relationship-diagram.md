@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Entity Relationship Diagrams in ##Platform_Name## Diagram Control | Syncfusion®
+title: Entity Relationship Diagram in ##Platform_Name## Diagram | Syncfusion®
 description: Learn how to create and customize Entity Relationship Diagrams in the Syncfusion® ##Platform_Name## Diagram control.
 platform: ej2-javascript
 control: ERDiagram
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Entity Relationship Diagrams in ##Platform_Name## Diagram Control
+# Entity Relationship Diagram in ##Platform_Name## Diagram
 
 An Entity Relationship (ER) diagram is a visual representation of a database structure. It displays entities (such as tables), their attributes (such as columns), and the relationships between those entities. In the Syncfusion® Diagram control, ER diagrams can be created by configuring nodes with [ErShapeModel](../api/diagram/erShapeModel) and connectors with [ErConnectorShapeModel](../api/diagram/erConnectorShapeModel).
 

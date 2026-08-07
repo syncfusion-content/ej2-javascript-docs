@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter menu in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Filter menu in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Filter Menu | Syncfusion
+description: Learn how to use Filter Menu in ##Platform_Name## Data Grid with configurable dialogs, custom components, operator options, and multi-value filtering.
 platform: ej2-javascript
 control: Filter menu 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filter menu in ##Platform_Name## Grid control
+# Filter Menu in ##Platform_Name## Data Grid
 
 The filter menu in the ##Platform_Name## Grid control allows you to enable filtering and provides a user-friendly interface for filtering data based on column types and operators.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with TypeScript Data Grid control | Syncfusion
-description: Checkout and learn about Getting started with TypeScript Data Grid control of Syncfusion Essential JS 2 and more details.
+title: TypeScript Data Grid Getting Started (Quick Setup Guide) | Syncfusion
+description: Learn how to install and configure the TypeScript Data Grid. Set up a new TypeScript app and enable paging, sorting, filtering, and grouping.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in TypeScript Data Grid control
+# Getting Started with TypeScript Data Grid Control
 
 This section explains the steps to create a simple Data Grid and demonstrates the basic usage of the Data Grid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Edit types in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Edit types in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Edit Types | Syncfusion
+description: Learn how to configure edit types in ##Platform_Name## Data Grid, choose appropriate cell editors, customize editing behavior, and manage column editing efficiently.
 platform: ej2-javascript
 control: Edit types 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Edit types in ##Platform_Name## Grid control
+# Edit Types in ##Platform_Name## Data Grid
 
 The ##Platform_Name## Grid control in Syncfusion<sup style="font-size:70%">&reg;</sup> provides various edit types that allow you to customize the editing behavior for different types of columns. These edit types enhance the editing experience and provide flexibility in handling different data types. 
 

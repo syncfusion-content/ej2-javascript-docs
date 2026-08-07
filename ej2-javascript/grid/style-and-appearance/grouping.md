@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping customization in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Grouping customization in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Grouping Customization | Syncfusion
+description: Learn how to customize grouping styles in ##Platform_Name## Data Grid with group headers, captions, aggregates, and group area appearance.
 platform: ej2-javascript
 control: Grouping 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grouping customization in ##Platform_Name## Grid control
+# Grouping Style in ##Platform_Name## Data Grid
 
 You can customize the appearance of grouping elements in the ##Platform_Name## Grid control using CSS. Here are examples of how to customize the group header, group expand/collapse icons, group caption row, and grouping indent cell.
 

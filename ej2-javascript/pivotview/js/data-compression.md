@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data Compression in ##Platform_Name## Pivot Table component | Syncfusion
-description: Learn here all about data compression in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Data Compression in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table compresses unique raw data via `allowDataCompression` to speed up rendering on large datasets.
 platform: ej2-javascript
-control: Data Compression 
+control: Data Compression
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-# Data Compression in ##Platform_Name## Pivot Table component
+# Data Compression in ##Platform_Name## Pivot Table
 
 > This property is applicable only for the relational data source.
 

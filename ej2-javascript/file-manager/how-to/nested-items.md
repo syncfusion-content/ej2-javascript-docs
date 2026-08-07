@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Nested items in ##Platform_Name## File Manager component | Syncfusion
-description: Learn here all about Nested items in ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
-platform: ej2-javascript
+title: Use nested File Manager in ##Platform_Name## | Syncfusion
+description: Learn how to integrate the ##Platform_Name## File Manager within components such as Tab and Dialog to build flexible and interactive application layouts.
 control: File Manager
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# c in ##Platform_Name## File Manager component
+# Nested items in ##Platform_Name## File Manager component
 
 The File Manager can be rendered inside other UI components such as Dialog and more.
 

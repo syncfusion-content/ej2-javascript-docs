@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tools in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Tools in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Tools in ##Platform_Name## Diagram | Syncfusion®
+description: Use Select, Pan, and Draw tools in the Syncfusion® ##Platform_Name## Diagram to navigate, edit, and create shapes and connectors at runtime.
 platform: ej2-javascript
 control: Tools 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tools in ##Platform_Name## Diagram control
+# Tools in ##Platform_Name## Diagram
 
 The tools in the diagram control can perform various actions such as selecting, panning, and drawing. These tools are explained below.
 

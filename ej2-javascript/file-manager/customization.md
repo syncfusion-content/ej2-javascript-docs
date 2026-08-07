@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## File Manager component | Syncfusion
-description: Learn how to customize the ##Platform_Name## File Manager component in Syncfusion Essential JS 2, and more.
-platform: ej2-javascript
+title: Customization in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to customize the ##Platform_Name## File Manager context menu, toolbar, navigation pane, upload, and tooltip using built-in APIs.
 control: File Manager
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in ##Platform_Name## File Manager component
+# Customization in ##Platform_Name## File Manager
 
 The File Manager component allows customizing features such as context menu, search, upload, and toolbar using APIs. The following areas can be customized in the File Manager component:
 

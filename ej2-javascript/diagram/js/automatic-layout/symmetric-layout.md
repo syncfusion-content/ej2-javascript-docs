@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Symmetric layout in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Automatic layout in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Symmetric Layout in ##Platform_Name## Diagram | Syncfusion®
+description: Lay out nodes using the Symmetric Layout in the Syncfusion® ##Platform_Name## Diagram, with spring length, spring factor, and max iteration properties.
 platform: ej2-javascript
 control: Symmetric 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Symmetric layout in ##Platform_Name## Diagram control
+# Symmetric Layout in ##Platform_Name## Diagram
 
 The symmetric layout has been formed using nodes position by closer together or pushing them further apart. This is repeated iteratively until the system comes to an equilibrium state.
 

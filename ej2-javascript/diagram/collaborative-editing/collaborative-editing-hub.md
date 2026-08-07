@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SignalR Hub for ##Platform_Name## Diagram | Syncfusion
-description: Checkout and learn to implement SignalR hub services with Redis for real-time collaborative editing in Syncfusion ##Platform_Name## Diagram.
+title: SignalR Hub Services in ##Platform_Name## Diagram | Syncfusion®
+description: Implement ASP.NET Core SignalR hub services with Redis in the Syncfusion® ##Platform_Name## Diagram for real-time collaborative editing.
 platform: ej2-javascript
 control: Diagram
 documentation: ug
@@ -9,7 +9,7 @@ publishingplatform: ##Platform_Name##
 domainurl: ##DomainURL##
 ---
 
-# SignalR hub configuration for collaborative editing
+# SignalR Hub Services in ##Platform_Name## Diagram
 
 ## Overview
 

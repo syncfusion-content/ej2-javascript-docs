@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scroll settings in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Scroll settings in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Scroll Settings in ##Platform_Name## Diagram | Syncfusion®
+description: Read and control the horizontal offset, vertical offset, zoom level, and scrollable area of the Syncfusion® ##Platform_Name## Diagram.
 platform: ej2-javascript
 control: Scroll settings 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Scroll settings in ##Platform_Name## Diagram control
+# Scroll Settings in ##Platform_Name## Diagram
 
 The diagram can be scrolled using both the vertical and horizontal scrollbars. Additionally, the mouse wheel can be used to scroll the diagram. The diagram's [`scrollSettings`](../api/diagram/scrollSettingsModel) allow you to read the current scroll status, view port size, current zoom level, and zoom factor. These settings also provide the capability to programmatically control the scrolling of the diagram.
 

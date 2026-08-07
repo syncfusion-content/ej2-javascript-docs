@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Persisting data in server in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Persisting data in server in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Server Data Persistence | Syncfusion
+description: Learn how to persist ##Platform_Name## Data Grid changes to a server, send CRUD requests, handle server responses, and synchronize data using adaptors.
 platform: ej2-javascript
 control: Persisting data in server 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Persisting data in server in ##Platform_Name## Grid component
+# Server Data Persistence in ##Platform_Name## Data Grid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name##  Grid component allows data edited within the grid to be persisted in a database using RESTful web services. All CRUD (Create, Read, Update, Delete) operations within the grid are handled by the [DataManager](../../data), which can bind server-side data and send updates to the server. This capability is Essential<sup style="font-size:70%">&reg;</sup> for maintaining data integrity and ensuring that changes made in the UI are reflected in the backend.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Custom Service Provider in ##Platform_Name## File Manager | Syncfusion
-description: Learn how to implement a custom service provider in the ##Platform_Name## File Manager control to manage file operations and data processing
-platform: ej2-javascript
+title: Custom file provider for ##Platform_Name## File Manager | Syncfusion
+description: Learn how to implement a custom file provider in the ##Platform_Name## File Manager using Node.js with Azure Blob Storage as the data source.
 control: File Manager
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create the custom file provider using Node JS
+# How to implement a custom file provider in ##Platform_Name## File Manager
 
 Here we manipulate the Azure Blob Storage to supply the necessary data for the File Manager. We achieve this by utilizing Node JS to fetch the required data from the Azure blob storage.
 

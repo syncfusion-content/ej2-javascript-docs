@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connectors in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Connectors in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Connectors in ##Platform_Name## Diagram | Syncfusion®
+description: Link two nodes, points, or ports in the Syncfusion® ##Platform_Name## Diagram with straight, orthogonal, or bezier connectors and source/target decorators.
 platform: ej2-javascript
 control: Connectors 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connectors in ##Platform_Name## Diagram control
+# Connectors in ##Platform_Name## Diagram
 
 Connectors are objects used to create link between two points, nodes or ports to represent the relationships between them.
 

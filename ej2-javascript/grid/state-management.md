@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State Management in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about State Management in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid State Management | Syncfusion
+description: Learn how to manage and persist ##Platform_Name## Data Grid state using local storage, state restoration, version-based persistence, and custom state handling.
 platform: ej2-javascript
 control: State Management 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State Management in ##Platform_Name## Grid control
+# State Management in ##Platform_Name## Data Grid
 
 State management in the ##Platform_Name## Grid control allows you to maintain the grid's state even after a browser refresh or when navigating to a different page within the same browser session. This feature is particularly useful for retaining the grid's configuration and data even after a page reload.
 

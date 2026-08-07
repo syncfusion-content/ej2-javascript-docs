@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Label Events in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Labels in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Annotation Events in ##Platform_Name## Diagram | Syncfusion®
+description: Capture keyDown, keyUp, doubleClick, and textEdit events on ##Platform_Name## Diagram annotations at runtime.
 platform: ej2-javascript
 control: Label Events
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Annotation events.
+# Annotation Events in ##Platform_Name## Diagram
 
 There are some events which will trigger while interacting with annotation.
 * KeyDown.

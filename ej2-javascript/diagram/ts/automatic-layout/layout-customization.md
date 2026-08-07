@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizing layout in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Automatic layout in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Layout Customization in ##Platform_Name## Diagram | Syncfusion®
+description: Customize ##Platform_Name## Diagram automatic-layout bounds, alignment, margins, spacing, and orientation at runtime.
 platform: ej2-javascript
 control: Customizing layout
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customizing layout in ##Platform_Name## Diagram control
+# Layout Customization in ##Platform_Name## Diagram
 
 Orientation, spacings, and alignment of the layout can be customized with a set of properties.
 

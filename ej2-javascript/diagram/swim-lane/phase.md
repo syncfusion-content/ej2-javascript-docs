@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Phase in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Swim lane in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Phase in ##Platform_Name## Diagram | Syncfusion®
+description: Split a Swimlane into horizontal or vertical phases in the Syncfusion® ##Platform_Name## Diagram to represent subprocesses or timeline stages.
 platform: ej2-javascript
 control: Phase 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## Phase
+# Phase in ##Platform_Name## Diagram
 
  Phase are the subprocess which will split each lanes as horizontally or vertically based on the swimlane orientation. We can add multiple number of [`Phase`](../../api/diagram/phaseModel) to swimlane.
 

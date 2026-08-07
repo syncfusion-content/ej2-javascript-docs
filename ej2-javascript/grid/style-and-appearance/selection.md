@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Selection in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Selection Customization | Syncfusion
+description: Learn how to customize selection styles in ##Platform_Name## Data Grid for selected rows, cells, and columns using CSS and selection templates.
 platform: ej2-javascript
 control: Selection 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in ##Platform_Name## Grid control
+# Selection Style in ##Platform_Name## Data Grid
 
 You can customize the appearance of the selection in the ##Platform_Name## Grid control using CSS. Here are examples of how to customize the row selection background, cell selection background, and column selection background.
 

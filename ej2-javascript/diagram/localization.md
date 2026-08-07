@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Localization in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Localization in ##Platform_Name## Diagram | Syncfusion®
+description: Localize the symbol palette search and context menu items in the Syncfusion® ##Platform_Name## Diagram by setting the locale property of the component.
 platform: ej2-javascript
 control: Localization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## Diagram control
+# Localization in ##Platform_Name## Diagram
 
 The EJ2 Diagram component supports `localization`. In the Diagram component, the symbol palette search box and context menu items can be localized based on the selected culture. By using the locale property of the diagram, you can change the culture.
 

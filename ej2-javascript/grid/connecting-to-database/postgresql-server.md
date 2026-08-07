@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PostgreSQL Server Data Binding Syncfusion ##Platform_Name## Grid
-description: Learn how to consume data from PostgreSQL Server, bind it to Syncfusion Grid, and perform CRUD operations.
+title: ##Platform_Name## Grid PostgreSQL Server Data Binding | Syncfusion
+description: Learn how to connect ##Platform_Name## Data Grid to PostgreSQL Server, bind data through API services, and perform efficient CRUD operations.
 platform: ej2-javascript
 control: grid
 keywords: adaptors, customadaptor, urladaptor, postgresql, remotedata
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting PostgreSQL Server data to Syncfusion ##Platform_Name## Grid
+# PostgreSQL Server Data Binding in ##Platform_Name## Data Grid
 
 This section describes how to connect and retrieve data from a PostgreSQL Server database using [Npgsql EntityFrameworkCore PostgreSQL](https://www.nuget.org/packages/Npgsql.EntityFrameworkCore.PostgreSQL) and bind it to the Syncfusion ##Platform_Name## Grid.
 

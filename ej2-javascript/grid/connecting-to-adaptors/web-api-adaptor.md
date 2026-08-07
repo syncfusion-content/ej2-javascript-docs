@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind data & perform CRUD with WebApiAdaptor in Syncfusion Grid
-description: Learn here all about how to bind data and perform CRUD action using WebApiAdaptor in Syncfusion ##Platform_Name## Grid control.
+title: ##Platform_Name## Grid Bind Data with WebApiAdaptor | Syncfusion
+description: Learn how to use WebApiAdaptor in ##Platform_Name## Data Grid to connect Web APIs, bind remote data, and perform CRUD operations efficiently.
 platform: ej2-javascript
 control: grid
 keywords: Adaptors, WebApiAdaptor, web api adaptor, remotedata 
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# WebApiAdaptor in Control
+# Connect ##Platform_Name## Data Grid to Web API Services
 
 The `WebApiAdaptor` is an extension of the `ODataAdaptor`, designed to interact with Web APIs created with OData endpoints. This adaptor ensures seamless communication between Grid and OData-endpoint based Web APIs, enabling efficient data retrieval and manipulation. For successful integration, the endpoint must be capable of understanding OData-formatted queries sent along with the request.
 

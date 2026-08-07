@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bpmn Gateway in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Bpmn Gateway shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: BPMN Gateway in ##Platform_Name## Diagram | Syncfusion®
+description: Control the flow of a BPMN process with exclusive, parallel, inclusive, and event-based gateways in the Syncfusion® ##Platform_Name## Diagram.
 platform: ej2-javascript
 control: Bpmn Gateway 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# BPMN Gateway in ##Platform_Name## Diagram control
+# BPMN Gateway in ##Platform_Name## Diagram
 
 ## Gateway
 

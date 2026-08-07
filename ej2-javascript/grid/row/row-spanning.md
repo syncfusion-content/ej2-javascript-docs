@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row spanning in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Row spanning in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Row Spanning | Syncfusion
+description: Learn how to implement row spanning in ##Platform_Name## Data Grid using Syncfusion. Merge cells across rows, configure rowspan behavior, and create rich data layouts.
 platform: ej2-javascript
 control: Row spanning 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row spanning in ##Platform_Name## Grid control
+# Row Spanning in ##Platform_Name## Data Grid
 
 The grid provides an option to span row cells, allowing you to merge two or more cells in a row into a single cell. This feature can be useful in scenarios where you want to display information that spans across multiple rows, but want to avoid repeating the same information in each row.
 

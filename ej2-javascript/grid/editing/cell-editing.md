@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell editing in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Cell editing in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Cell Editing | Syncfusion
+description: Learn how to edit grid cells in ##Platform_Name## Data Grid, customize editing workflows, validate input, manage updates, and control editing behavior.
 platform: ej2-javascript
 control: Cell editing 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell editing in ##Platform_Name## Grid control
+# Cell Editing in ##Platform_Name## Data Grid
 
 Cell editing provides a streamlined way to update individual cell values directly within the grid. Cell editing is designed for quick, inline modifications, making data entry and corrections more efficient. This approach ensures that changes are applied seamlessly to large datasets while maintaining consistency with the Grid’s overall editing experience.
  

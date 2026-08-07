@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tool tip in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Tool tip in Syncfusion® ##Platform_Name## Diagram control of Syncfusion® Essential JS 2 and more.
+title: Tooltip in ##Platform_Name## Diagram | Syncfusion®
+description: Show default and custom tooltips on diagram elements in the Syncfusion® ##Platform_Name## Diagram while dragging, resizing, rotating, or hovering nodes.
 platform: ej2-javascript
 control: Tool tip 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool tip in ##Platform_Name## Diagram control
+# Tooltip in ##Platform_Name## Diagram
 
 <!-- markdownlint-disable MD010 -->
 

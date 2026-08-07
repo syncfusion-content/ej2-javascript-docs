@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Label Appearance in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Labels in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Annotation Appearance in ##Platform_Name## Diagram | Syncfusion®
+description: Style ##Platform_Name## Diagram annotation text with font size, color, bold, fill, stroke, and opacity properties.
 platform: ej2-javascript
 control: Label Appearance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance in ##Platform_Name## Diagram control
+# Annotation Appearance in ##Platform_Name## Diagram
 
 You can change the font style of the annotations with the font specific properties [`fontSize`](../../api/diagram/textStyleModel#fontsize), [`fontFamily`](../../api/diagram/textStyleModel#fontfamily), [`color`](../../api/diagram/textStyleModel#color).
 The label’s [`bold`](../../api/diagram/textStyleModel#bold), [`italic`](../../api/diagram/textStyleModel#italic), and [`textDecoration`](../../api/diagram/textStyleModel#textdecoration) properties are used to style the label’s text.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Footer aggregate in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Footer aggregate in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Footer Aggregate | Syncfusion
+description: Learn how to display and format footer aggregate values in ##Platform_Name## Data Grid, apply summary calculations, and combine multiple aggregates.
 platform: ej2-javascript
 control: Footer aggregate 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Footer aggregate in ##Platform_Name## Grid control
+# Footer Aggregate in ##Platform_Name## Data Grid
 
 The ##Platform_Name## Grid control allows you to calculate and display aggregate values in the footer cells. The footer aggregate value is calculated from all the rows in the grid. You can use the [footerTemplate](../../api/grid/aggregateColumn#footertemplate) property to render the aggregate value in the footer cells.
 

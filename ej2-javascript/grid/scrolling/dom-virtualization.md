@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DOM virtualization in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about DOM virtualization in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid DOM Virtualization | Syncfusion
+description: Learn how DOM virtualization in ##Platform_Name## Data Grid improves large dataset performance through viewport rendering, row virtualization, and efficient scrolling.
 platform: ej2-javascript
 control: DOM virtualization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# DOM virtualization in ##Platform_Name## Grid control
+# DOM Virtualization in ##Platform_Name## Data Grid
 
 DOM virtualization is a rendering technique that improves performance by displaying only the visible portion of data in the viewport, plus a configurable buffer zone. The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid implements DOM virtualization to handle datasets ranging from thousands to millions of rows while maintaining smooth grid interactions.
 

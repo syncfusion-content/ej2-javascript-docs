@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Org-chart layout in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Automatic layout in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Organizational Chart in ##Platform_Name## Diagram | Syncfusion®
+description: Render ##Platform_Name## Diagram organizational charts from a DataSource or explicit nodes, with assistant and getLayoutInfo.
 platform: ej2-javascript
 control: Org-chart 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Organizational Chart layout in ##Platform_Name## Diagram control
+# Organizational Chart in ##Platform_Name## Diagram
 
 An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, the [`type`](../../api/diagram/layoutModel#type) of layout should be set as an `OrganizationalChart`.
 

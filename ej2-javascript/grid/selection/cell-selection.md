@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell selection in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Cell selection in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Cell Selection | Syncfusion
+description: Learn how to select single or multiple cells in ##Platform_Name## Data Grid using selection APIs, keyboard interactions, and advanced cell selection options.
 platform: ej2-javascript
 control: Cell selection 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell selection in ##Platform_Name## Grid control
+# Cell Selection in ##Platform_Name## Data Grid
 
 Cell selection in the Grid control allows you to interactively select specific cells or ranges of cells within the grid. This selection can be done effortlessly through mouse clicks or arrow keys (up, down, left, and right). This feature is useful when you want to highlight, manipulate, or perform actions on specific cell within the Grid.
 

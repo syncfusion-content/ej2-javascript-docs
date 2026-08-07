@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template editing in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Template editing in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Custom Template Editing | Syncfusion
+description: Learn how to use inline and dialog template editing in ##Platform_Name## Data Grid to customize edit forms, capture user input, and manage CRUD operations efficiently.
 platform: ej2-javascript
 control: Template editing 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template editing in ##Platform_Name## Grid control
+# Custom Template Editing in ##Platform_Name## Data Grid
 
 ## Inline or dialog template editing
 

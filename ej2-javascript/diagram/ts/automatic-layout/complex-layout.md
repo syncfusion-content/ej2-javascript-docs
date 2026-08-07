@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Complex hierarchical tree layout in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Automatic layout in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Complex Hierarchical Tree in ##Platform_Name## Diagram | Syncfusion®
+description: Build complex hierarchical ##Platform_Name## Diagrams where any child can have multiple parents using the ComplexHierarchicalTree layout.
 platform: ej2-javascript
 control: Complex hierarchical tree  
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Complex hierarchical tree layout in ##Platform_Name## Diagram control
+# Complex Hierarchical Tree in ##Platform_Name## Diagram
 
 Complex hierarchical tree layout arranges nodes in a tree-like structure, where the child node can have more than one parent. This layout is an extended version of the hierarchical tree layout. To create a complex hierarchical tree, the [`type`](../../api/diagram/layoutModel#type) property of layout should be set as `ComplexHierarchicalTree`.
 

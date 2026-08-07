@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Orthogonal connector in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Connectors in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Orthogonal in ##Platform_Name## Diagram | Syncfusion®
+description: Create perpendicular connector segments in the Syncfusion® ##Platform_Name## Diagram with length, direction, and editing thumb support.
 platform: ej2-javascript
 control: Orthogonal 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Orthogonal Connectors in ##Platform_Name## Diagram control
+# Orthogonal in ##Platform_Name## Diagram
 
 Orthogonal segments is used to create segments that are perpendicular to each other.
 

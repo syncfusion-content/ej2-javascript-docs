@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtualization in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Virtualization in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Virtualization in ##Platform_Name## Diagram | Syncfusion®
+description: Boost ##Platform_Name## Diagram performance on large canvases by loading only nodes and connectors inside the current viewport.
 platform: ej2-javascript
 control: Virtualization 
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 ---
 
 
-# Virtualization in ##Platform_Name## Diagram control
+# Virtualization in ##Platform_Name## Diagram
 
 Virtualization is a technique to optimize the performance of diagrams, especially when working with larger diagrams
 

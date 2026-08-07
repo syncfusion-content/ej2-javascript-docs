@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Labels in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Labels in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Annotation in ##Platform_Name## Diagram | Syncfusion®
+description: Add and update ##Platform_Name## Diagram annotations on nodes and connectors with editable text, ids, and runtime APIs.
 platform: ej2-javascript
 control: Labels 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Labels in ##Platform_Name## Diagram control
+# Annotation in ##Platform_Name## Diagram
 
 [`Annotation`](../../api/diagram/annotationModel) is a block of text that can be displayed over a node or connector. Annotation is used to textually represent an object with a string that can be edited at runtime. Multiple annotations can be added to a node/connector.
 

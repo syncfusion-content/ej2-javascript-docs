@@ -28,6 +28,7 @@ The following list of dependencies are required to use the `Rich Text Editor` co
     |-- @syncfusion/ej2-popups
     |-- @syncfusion/ej2-splitbuttons
     |-- @syncfusion/ej2-filemanager
+
 ```
 ## Setup for local development
 

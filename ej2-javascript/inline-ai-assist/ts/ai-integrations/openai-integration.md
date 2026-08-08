@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Azure OpenAI in ##Platform_Name## Inline AI Assist control | Syncfusion
-description: Checkout and learn about Integration of Azure OpenAI with ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
+title: Azure OpenAI in ##Platform_Name## Inline AI Assist | Syncfusion®
+description: Wire the Syncfusion® ##Platform_Name## Inline AI Assist to Azure OpenAI using your endpoint, API key, deployment, and the marked library for Markdown.
 platform: ej2-javascript
 control: Inline AI Assist 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate Azure OpenAI With TypeScript Inline AI Assist control 
+# Azure OpenAI in ##Platform_Name## Inline AI Assist 
 
 The Inline AI Assist control integrates with [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) to enable advanced conversational AI features in your applications. The control acts as a user interface, where user prompts are sent to the Azure OpenAI service via API calls, providing natural language understanding and context-aware responses
 

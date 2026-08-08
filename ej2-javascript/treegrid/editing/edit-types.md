@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Edit types in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Edit types in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Edit Types | Syncfusion
+description: Learn how to use different edit types in ##Platform_Name## TreeGrid, including cell, row, batch, and dialog editing modes for managing data.
 platform: ej2-javascript
 control: Edit types 
 publishingplatform: ##Platform_Name##
@@ -9,12 +9,12 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Edit types in ##Platform_Name## Treegrid control
+# Edit Types in ##Platform_Name## TreeGrid
 
 ## Cell edit type and its params
 
-The [`columns.editType`](../../api/treegrid/column/#edittype) is used to customize the edit type of the particular column.
-You can set the [`columns.editType`](../../api/treegrid/column/#edittype) based on data type of the column.
+The [`columns.editType`](../../api/treegrid/column#edittype) is used to customize the edit type of the particular column.
+You can set the [`columns.editType`](../../api/treegrid/column#edittype) based on data type of the column.
 
 * `numericedit` - [`NumericTextBox`](../../numerictextbox) component for integers, double, and decimal data types.
 
@@ -28,7 +28,7 @@ You can set the [`columns.editType`](../../api/treegrid/column/#edittype) based 
 
 * `datetimepickeredit` - [`DateTimePicker`](../../datetimepicker) component for date time data type.
 
-Also, you can customize model of the [`columns.editType`](../../api/treegrid/column/#edittype) component through the [`columns.edit.params`](../../api/treegrid/column/#edit).
+Also, you can customize model of the [`columns.editType`](../../api/treegrid/column#edittype) component through the [`columns.edit.params`](../../api/treegrid/column#edit).
 
 The following table describes cell edit type component and their corresponding edit params of the column.
 

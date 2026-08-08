@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Inline toolbar configuration in ##Platform_Name## Inline AI Assist control | Syncfusion
-description: Checkout and learn about inline toolbar with ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
+title: Inline Toolbar in ##Platform_Name## AI Assist | Syncfusion®
+description: Customize the Syncfusion® ##Platform_Name## AI Assist inline toolbar: position, built-in send item, and custom button, separator, and input items.
 platform: ej2-javascript
 control: Inline AI Assist 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar configuration in ##Platform_Name## Inline AI Assist control
+# Inline Toolbar in ##Platform_Name## AI Assist
 
 The inline toolbar provides a customizable interface for users to interact with the Inline AI Assist control. You can render inline toolbar items by using the `items` property in the [inlineToolbarSettings](../api/inline-ai-assist#inlinetoolbarsettings) property.
 

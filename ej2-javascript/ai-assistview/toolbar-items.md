@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Toolbar items in ##Platform_Name## AI AssistView control | Syncfusion
-description: Checkout and learn about Toolbar items with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Toolbar Items in ##Platform_Name## AI AssistView | Syncfusion®
+description: Customize Syncfusion® ##Platform_Name## AI AssistView toolbars: footer send/attachment items, position, custom buttons, header icons, and item click events.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar items in ##Platform_Name## AI AssistView control
+# Toolbar Items in ##Platform_Name## AI AssistView
 
 You can render the AI AssistView toolbar items by using the `items` property in the [toolbarSettings](../api/ai-assistview#toolbarsettings), [responseToolbarSettings](../api/ai-assistview#responsetoolbarsettings), [promptToolbarSettings](../api/ai-assistview#prompttoolbarsettings) & [footerToolbarSettings](../api/ai-assistview#footertoolbarsettings) properties.
 

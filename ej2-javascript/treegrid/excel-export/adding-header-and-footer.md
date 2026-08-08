@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adding header and footer in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Adding header and footer in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Add Headers and Footers to Excel Export | Syncfusion
+description: Learn how to add headers and footers to Excel exports in ##Platform_Name## TreeGrid, including configuration, customization, and export options.
 platform: ej2-javascript
 control: Adding header and footer 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adding header and footer in ##Platform_Name## Treegrid control
+# Adding Headers and Footers in ##Platform_Name## TreeGrid
 
 The excel export provides an option to include header and footer content for exported excel document.
 

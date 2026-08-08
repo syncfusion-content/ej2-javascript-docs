@@ -1,7 +1,7 @@
 ---
 layout: post
-title: LLM Model in ##Platform_Name## AI AssistView control | Syncfusion
-description: Checkout and learn about Integration of LLM Model with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Ollama LLM in ##Platform_Name## AI AssistView | Syncfusion®
+description: Run local LLMs via Ollama and pipe prompts from the Syncfusion® ##Platform_Name## AI AssistView to your chosen model through the Ollama server.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate LLM via Ollama with JavaScript AI AssistView control
+# Ollama LLM in ##Platform_Name## AI AssistView
 
 The AI AssistView control integrates with [LLM via Ollama](https://ollama.com) to enable advanced conversational AI features in your application. The control acts as a user interface where user prompts are sent to the selected LLM model via API calls, providing natural language understanding and context-aware responses.
 

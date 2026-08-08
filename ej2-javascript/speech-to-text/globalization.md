@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## SpeechToText control | Syncfusion
-description: Checkout and learn about globalization with ##Platform_Name## SpeechToText control of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## Speech To Text | Syncfusion®
+description: Localize the Syncfusion® ##Platform_Name## Speech To Text control for any culture using L10n.load, and enable RTL support with the enableRtl property.
 platform: ej2-javascript
 control: SpeechToText
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in ##Platform_Name## SpeechToText control
+# Globalization in ##Platform_Name## Speech To Text
 
 ## Localization
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adaptive in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Adaptive in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title:  ##Platform_Name## TreeGrid Adaptive UI | Syncfusion
+description: Learn how to enable adaptive UI in ##Platform_Name## TreeGrid for optimized mobile, tablet, and small-screen user experiences.
 platform: ej2-javascript
 control: Adaptive 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adaptive in ##Platform_Name## Treegrid control
+# Adaptive UI in ##Platform_Name## TreeGrid
 
 The Tree Grid user interface (UI) was redesigned to provide an optimal viewing experience and improve usability on small screens. This interface will render the filter, edit dialog and other features adaptively. For example, Filtering opens the UI for user in a pop-up occupying the entire screen.
 
-To make the tree grid adaptive, set the [`enableAdaptiveUI`](../api/treegrid/#enableAdaptiveUI) to true.
+To make the tree grid adaptive, set the [`enableAdaptiveUI`](../api/treegrid#enableAdaptiveUI) to true.
 
 {% if page.publishingplatform == "typescript" %}
 

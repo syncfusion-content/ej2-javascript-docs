@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Get row cell index in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Get row cell index in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Row Cell Index | Syncfusion
+description: Learn how to get the specific row and cell index in the ##Platform_Name## TreeGrid using the rowSelected event and element attributes.
 platform: ej2-javascript
 control: Get row cell index 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Get row cell index in ##Platform_Name## Treegrid control
+# Get Row Cell Index in ##Platform_Name## TreeGrid
 
 You can get the specific row and cell index of the Tree Grid by using [`rowSelected`](../api/treegrid/#rowselected) event of the treegrid. Here, we can get the row and cell index by using *aria-rowindex* (get row Index from *tr* element) and *aria-colindex* (column index from *td* element) attribute.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in ##Platform_Name## Inline AI Assist control | Syncfusion
-description: Checkout and learn about events with ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
+title: Events in ##Platform_Name## Inline AI Assist | Syncfusion®
+description: Handle Syncfusion® ##Platform_Name## Inline AI Assist events: created, promptRequest, open, and close lifecycle for the inline popup.
 platform: ej2-javascript
 control: Inline AI Assist 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## Inline AI Assist control
+# Events in ##Platform_Name## Inline AI Assist
 
 This section describes the Inline AI Assist events that will be triggered when appropriate actions are performed. The following events are available in the Inline AI Assist control.
 

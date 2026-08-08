@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting filtered data in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Exporting filtered data in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Filtered Data Export | Syncfusion
+description: Learn how to export filtered data in the ##Platform_Name## TreeGrid, including specifying filtered results using PdfExportProperties for exporting.
 platform: ej2-javascript
 control: Exporting filtered data 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Exporting filtered data in ##Platform_Name## Treegrid control
+# Exporting Filtered Data in ##Platform_Name## TreeGrid
 
 You can export the filtered data by defining the resulted data in [`PdfExportProperties.dataSource`](../../api/grid/pdfExportProperties/#datasource) before export.
 

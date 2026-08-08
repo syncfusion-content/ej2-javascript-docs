@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Assist view in ##Platform_Name## AI AssistView control | Syncfusion
-description: Checkout and learn about Assist view with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Assist View in ##Platform_Name## AI AssistView | Syncfusion®
+description: Configure the Syncfusion® ##Platform_Name## AI AssistView: prompt text, placeholder, prompt-response collection, Markdown responses, and prompt suggestions.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Assist view in ##Platform_Name## AI AssistView control
+# Assist View in ##Platform_Name## AI AssistView
 
 ## Setting prompt text
 

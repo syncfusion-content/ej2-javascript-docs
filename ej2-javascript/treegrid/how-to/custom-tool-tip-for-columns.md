@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom tool tip for columns in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Custom tool tip for columns in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title:  ##Platform_Name## TreeGrid Custom Column Tooltips | Syncfusion
+description: Learn how to add custom tooltips for columns in ##Platform_Name## TreeGrid using the Tooltip component and queryCellInfo event.
 platform: ej2-javascript
 control: Custom tool tip for columns 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom tool tip for columns in ##Platform_Name## Treegrid control
+# Custom Tooltips for Columns in ##Platform_Name## TreeGrid
 
 You can show the tooltip content in Tree Grid using [`queryCellInfo`] event of Tree Grid.
 

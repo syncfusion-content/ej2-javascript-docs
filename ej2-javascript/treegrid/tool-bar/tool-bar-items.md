@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tool bar items in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Tool bar items in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Toolbar Items | Syncfusion
+description: Learn about configuring built-in and custom toolbar items in the ##Platform_Name## TreeGrid, including actions, alignment, and best practices.
 platform: ej2-javascript
 control: Tool bar items 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool bar items in ##Platform_Name## Treegrid control
+# Toolbar Items in ##Platform_Name## TreeGrid
 
 ## Built-in toolbar items
 

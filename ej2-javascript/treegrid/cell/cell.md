@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Cell in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Cells | Syncfusion
+description: Learn how to customize and format cells in ##Platform_Name## TreeGrid, including tooltips, styling, clip mode, autowrap, and cell templates.
 platform: ej2-javascript
 control: Cell 
 publishingplatform: ##Platform_Name##
@@ -9,12 +9,12 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell in ##Platform_Name## Treegrid control
+# Cells in ##Platform_Name## TreeGrid
 
 ## Customize cell styles
 
-The appearance of cells can be customized by using the [`queryCellInfo`](../../api/treegrid/#querycellinfo) event.
-The [`queryCellInfo`](../../api/treegrid/#querycellinfo) event triggers for every cell. In that event handler, you can get `QueryCellInfoEventArgs` that contains the details of the cell.
+The appearance of cells can be customized by using the [`queryCellInfo`](../../api/treegrid#querycellinfo) event.
+The [`queryCellInfo`](../../api/treegrid#querycellinfo) event triggers for every cell. In that event handler, you can get `QueryCellInfoEventArgs` that contains the details of the cell.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -45,7 +45,7 @@ The [`queryCellInfo`](../../api/treegrid/#querycellinfo) event triggers for ever
 
 ## Custom attributes
 
-You can customize the treegrid cells by adding a CSS class to the [`customAttribute`](../../api/treegrid/column/#customattributes) property of the column.
+You can customize the treegrid cells by adding a CSS class to the [`customAttribute`](../../api/treegrid/column#customattributes) property of the column.
 
 ```css
 .e-attr {
@@ -90,7 +90,7 @@ In the below example, we have customized the cells of `TaskID` and `StartDate` c
 
 ## Grid lines
 
-The [`gridLines`](../../api/treegrid/#gridlines) have option to display cell border and it can be defined by the [`gridLines`](../../api/treegrid/#gridlines) property.
+The [`gridLines`](../../api/treegrid#gridlines) have option to display cell border and it can be defined by the [`gridLines`](../../api/treegrid#gridlines) property.
 
 The available modes of grid lines are:
 

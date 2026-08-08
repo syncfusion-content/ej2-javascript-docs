@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Attachments in ##Platform_Name## AI AssistView control | Syncfusion
-description: Checkout and learn about attachments with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: File Attachments in ##Platform_Name## AI AssistView | Syncfusion®
+description: Enable file attachments in the Syncfusion® ##Platform_Name## AI AssistView with upload endpoints, allowed file types, size limits, and max file count.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Attachments in ##Platform_Name## AI AssistView control
+# File Attachments in ##Platform_Name## AI AssistView
 
 The `Attachment` support in AI AssistView specifies user to include file attachments along with their prompts in the AI AssistView. This enhances the interaction by allowing users to provide additional context through files. You can enable this feature using the `enableAttachments` property, and customize its behavior using the `attachmentSettings` configuration.
 

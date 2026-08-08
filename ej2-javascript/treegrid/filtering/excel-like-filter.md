@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Excel like filter in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Excel like filter in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Excel-Like Filter | Syncfusion
+description: Learn how to use Excel-like filtering in ##Platform_Name## TreeGrid, including filter menus, search, checkbox filtering, and custom filter options.
 platform: ej2-javascript
 control: Excel like filter 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Excel like filter in ##Platform_Name## Treegrid control
+# Excel-Like Filter in ##Platform_Name## TreeGrid
 
-You can enable Excel like filter by defining.[`filterSettings.type`](../../api/treegrid/filterSettingsModel/#type) as `Excel`.The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
+You can enable Excel like filter by defining.[`filterSettings.type`](../../api/treegrid/filterSettingsModel#type) as `Excel`.The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -42,7 +42,7 @@ You can enable Excel like filter by defining.[`filterSettings.type`](../../api/t
 
 ## Change default excel filter operator
 
-You can change the default excel-filter operator by changing the column operator as `contains` from `startsWith` in the [`actionBegin`](../../api/treegrid/#actionBegin) event
+You can change the default excel-filter operator by changing the column operator as `contains` from `startsWith` in the [`actionBegin`](../../api/treegrid#actionBegin) event
 
 {% if page.publishingplatform == "typescript" %}
 

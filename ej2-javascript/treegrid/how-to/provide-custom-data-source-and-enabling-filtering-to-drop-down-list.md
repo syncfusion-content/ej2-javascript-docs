@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Provide custom data source and enabling filtering to drop down list in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Provide custom data source and enabling filtering to drop down list in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid DropDownList Data & Filtering | Syncfusion
+description: Learn how to provide a custom data source and enable filtering for DropDownList in the ##Platform_Name## TreeGrid with column edit parameters.
 platform: ej2-javascript
 control: Provide custom data source and enabling filtering to drop down list 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Provide custom data source and enabling filtering to drop down list in ##Platform_Name## Treegrid control
+# Custom Data Source and Filtering for DropDownList in ##Platform_Name## TreeGrid
 
 You can provide data source to the DropDownList by using the **params** of [`columns.edit`](../api/treegrid/column/#edit) property.
 

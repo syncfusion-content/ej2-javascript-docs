@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Methods in ##Platform_Name## Chat UI control | Syncfusion
-description: Checkout and learn about methods with ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Methods in ##Platform_Name## Chat UI | Syncfusion®
+description: Public methods on the Syncfusion® ##Platform_Name## Chat UI: addMessage to insert messages, updateMessage to edit, and scrollToBottom to control the view.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Methods in ##Platform_Name## Chat UI control
+# Methods in ##Platform_Name## Chat UI
 
 ## Adding message
 

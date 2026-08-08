@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mention Integration in ##Platform_Name## Chat UI control | Syncfusion
-description: Checkout and learn about Mention Integration with ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Mention Integration in ##Platform_Name## Chat UI | Syncfusion®
+description: Add @mention support to the Syncfusion® ##Platform_Name## Chat UI: define mention users, customize the trigger character, and predefine mentions in messages.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Mention Integration in ##Platform_Name## Chat UI control
+# Mention Integration in ##Platform_Name## Chat UI
 
 The Syncfusion ChatUI allows users to mention others in messages using the `@` character, with an dropdown for selecting users. The following sections explain how to configure mentions
 

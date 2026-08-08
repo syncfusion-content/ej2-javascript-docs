@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom views in ##Platform_Name## AI AssistView control | Syncfusion
-description: Checkout and learn about Custom views with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Custom Views in ##Platform_Name## AI AssistView | Syncfusion®
+description: Add multiple views to the Syncfusion® ##Platform_Name## AI AssistView: choose Assist or Custom, set names, icons, templates, and the active view.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom views in ##Platform_Name## AI AssistView control
+# Custom Views in ##Platform_Name## AI AssistView
 
 ## Adding custom views
 

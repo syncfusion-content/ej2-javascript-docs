@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Messages in ##Platform_Name## Chat UI control | Syncfusion
-description: Checkout and learn about Messages with ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Messages in ##Platform_Name## Chat UI | Syncfusion®
+description: Add and render messages in the Syncfusion® ##Platform_Name## Chat UI: text, author, timestamp, status, pinning, replies, and forwarding.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Messages in ##Platform_Name## Chat UI control
+# Messages in ##Platform_Name## Chat UI
 
 The Chat UI allows to add messages using the [messages](../api/chat-ui/#messages) property. The message collection stores all the messages being sent and received.
 

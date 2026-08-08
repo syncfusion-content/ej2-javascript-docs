@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Complex data binding in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Complex data binding in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Complex Data Binding | Syncfusion
+description: Learn how to use complex data binding in ##Platform_Name## TreeGrid with nested field mapping, dot notation, and hierarchical data display.
 platform: ej2-javascript
 control: Complex data binding 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Complex data binding in ##Platform_Name## Treegrid control
+# Complex Data Binding in ##Platform_Name## TreeGrid
 
-You can achieve complex data binding in the treegrid by using the dot(.) operator in the [`column.field`](../../api/treegrid/column/#field).
+You can achieve complex data binding in the treegrid by using the dot(.) operator in the [`column.field`](../../api/treegrid/column#field).
 
 {% if page.publishingplatform == "typescript" %}
 

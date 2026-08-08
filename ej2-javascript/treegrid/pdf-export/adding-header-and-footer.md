@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adding header and footer in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Adding header and footer in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid PDF Headers and Footers | Syncfusion
+description: Learn how to add and customize headers and footers in PDF exports for the ##Platform_Name## TreeGrid, including text, page numbers, lines, and images.
 platform: ej2-javascript
 control: Adding header and footer 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adding header and footer in ##Platform_Name## Treegrid control
+# Adding Headers and Footers in ##Platform_Name## TreeGrid
 
 You can customize text, page number, line, page size and changing orientation in header and footer.
 

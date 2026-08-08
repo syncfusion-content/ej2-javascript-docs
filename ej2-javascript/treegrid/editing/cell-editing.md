@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell editing in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Cell editing in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Cell Editing | Syncfusion
+description: Learn how to use cell editing in the ##Platform_Name## TreeGrid, including enabling, editing, and handling cell edit events.
 platform: ej2-javascript
 control: Cell editing 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell editing in ##Platform_Name## Treegrid control
+# Cell Editing in ##Platform_Name## TreeGrid
 
 In Cell edit mode, when you double click on a cell, it is changed to edit state.
 You can change the cell value and save to the data source.
-To enable Cell edit, set the [`editSettings.mode`](../../api/treegrid/editSettingsModel/#mode) as `Cell`.
+To enable Cell edit, set the [`editSettings.mode`](../../api/treegrid/editSettingsModel#mode) as `Cell`.
 
 {% if page.publishingplatform == "typescript" %}
 

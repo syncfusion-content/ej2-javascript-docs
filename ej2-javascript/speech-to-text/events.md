@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in ##Platform_Name## SpeechToText control | Syncfusion
-description: Learn here all about Events in Syncfusion ##Platform_Name## SpeechToText control of Syncfusion Essential JS 2 and more.
+title: Events in ##Platform_Name## Speech To Text | Syncfusion®
+description: Handle Syncfusion® ##Platform_Name## Speech To Text events like onStart, onStop, onError, and transcriptChanged to react to recognition lifecycle changes.
 platform: ej2-javascript
 control: SpeechToText 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## SpeechToText control
+# Events in ##Platform_Name## Speech To Text
 
 This section describes the events that are triggered when performing actions with the SpeechToText control. The following events are available:
  

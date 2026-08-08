@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Commands configuration in ##Platform_Name## Inline AI Assist control | Syncfusion
-description: Checkout and learn about command items with ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
+title: Commands in ##Platform_Name## Inline AI Assist | Syncfusion®
+description: Configure the Syncfusion® ##Platform_Name## Inline AI Assist command popup: add commands with prompts, icons, and labels, and customize popup width and height.
 platform: ej2-javascript
 control: Inline AI Assist 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Commands configuration in ##Platform_Name## Inline AI Assist control
+# Commands in ##Platform_Name## Inline AI Assist
 
 You can render and use the command action popup by using the `commands` property in the [commandSettings](../api/inline-ai-assist#commandsettings) property. This property helps to supply commands, control popup dimensions, and customize behavior.
 

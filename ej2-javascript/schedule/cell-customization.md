@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Cell customization in ##Platform_Name## Scheduler control | Syncfusion
-description: Learn here all about Cell customization in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: Cell Customization in ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to customize work cells in the Syncfusion ##Platform_Name## Scheduler for vertical, timeline, and month views with custom content and styling.
 platform: ej2-javascript
-control: Cell customization 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell customization in ##Platform_Name## Scheduler control
+# Cell Customization in ##Platform_Name## Scheduler
 
 The cells of the Scheduler can be easily customized to modify their appearance, add custom content, or apply conditional styling. This can be achieved using the [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#celltemplate) property or the [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event. Cell customization allows you to highlight specific dates, display additional information, or create a unique visual experience for your scheduling application.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom aggregate in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Custom aggregate in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Custom Aggregate | Syncfusion
+description: Learn about implementing custom aggregates in the ##Platform_Name## TreeGrid, including configuration and usage of custom aggregation functions.
 platform: ej2-javascript
 control: Custom aggregate 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom aggregate in ##Platform_Name## Treegrid control
+# Custom Aggregate in ##Platform_Name## TreeGrid
 
-To calculate the aggregate value with your own aggregate functions, use the custom aggregate option. To use custom aggregation, specify the [`type`](../../api/treegrid/aggregateColumnModel/#type) as `Custom`, and provide the custom aggregate function in the [`customAggregate`](../../api/treegrid/aggregateColumnModel/#customaggregate) property.
+To calculate the aggregate value with your own aggregate functions, use the custom aggregate option. To use custom aggregation, specify the [`type`](../../api/treegrid/aggregateColumnModel#type) as `Custom`, and provide the custom aggregate function in the [`customAggregate`](../../api/treegrid/aggregateColumnModel#customaggregate) property.
 
 {% if page.publishingplatform == "typescript" %}
 

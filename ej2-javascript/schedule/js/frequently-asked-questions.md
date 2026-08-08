@@ -1,15 +1,15 @@
 ---
 layout: post
-title: ##Platform_Name## Scheduler FAQs | Syncfusion
-description: Find solutions to common questions and issues encountered while using the Syncfusion ##Platform_Name## Scheduler control (Essential JS 2).
+title: Frequently Asked Questions in ##Platform_Name## Scheduler | Syncfusion
+description: Find answers to common questions and solutions to frequent issues when working with the Syncfusion ##Platform_Name## Scheduler control.
 platform: ej2-javascript
-control: Frequently asked questions 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Frequently asked questions in ##Platform_Name## Scheduler control
+# Frequently Asked Questions in ##Platform_Name## Scheduler
 
 This article provides answers to frequently asked questions and solutions to common issues encountered while working with the Scheduler control.
 

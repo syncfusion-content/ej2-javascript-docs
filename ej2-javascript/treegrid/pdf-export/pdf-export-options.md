@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pdf export options in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Pdf export options in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title:  ##Platform_Name## TreeGrid PDF Export Options | Syncfusion
+description: Learn about PDF export options in ##Platform_Name## TreeGrid, including exporting selected records, hidden columns, custom fonts, and advanced settings.
 platform: ej2-javascript
 control: Pdf export options 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pdf export options in ##Platform_Name## Treegrid control
+# PDF Export Options in ##Platform_Name## TreeGrid
 
 ## Export hidden columns
 

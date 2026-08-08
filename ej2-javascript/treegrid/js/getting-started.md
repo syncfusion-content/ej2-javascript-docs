@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Tree Grid control | Syncfusion
-description: Checkout and learn about Getting started with ##Platform_Name## Tree Grid control of Syncfusion Essential JS 2 and more details.
+title: ##Platform_Name## TreeGrid Getting Started | Syncfusion
+description: Learn how to get started with ##Platform_Name## TreeGrid, including installation, configuration, data binding, and basic setup.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in JavaScript Tree Grid control
+# Getting Started with ##Platform_Name## TreeGrid
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tree Grid and demonstrates the basic usage of the Tree Grid control in a JavaScript application.
 

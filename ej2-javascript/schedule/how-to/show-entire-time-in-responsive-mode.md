@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Responsive Full Time Display in ##Platform_Name## Scheduler | Syncfusion
-description: Learn here all about Show entire time in responsive mode in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: Show Full Time on Responsive ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to show the entire time label in responsive mode in the Syncfusion ##Platform_Name## Scheduler by customizing the time slot display.
 platform: ej2-javascript
 control: Scheduler
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show entire time in responsive mode in ##Platform_Name## Scheduler control
+# Show Entire Time in Responsive Mode in ##Platform_Name## Scheduler
 
 In responsive mode, time slots may not always display the full time label if the available space is limited. For example, **9 AM** is visible since it has enough space, but if the Scheduler’s start hour is set to **08:45 AM**, the time slot may truncate the label.  
 

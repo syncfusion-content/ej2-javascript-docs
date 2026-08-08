@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Recurrence editor in ##Platform_Name## Scheduler control | Syncfusion
-description: Learn here all about Recurrence editor in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: Recurrence Editor in ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to use the Recurrence Editor in the Syncfusion ##Platform_Name## Scheduler to configure daily, weekly, monthly, and yearly recurrence rules.
 platform: ej2-javascript
-control: Recurrence editor 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Recurrence editor in ##Platform_Name## Scheduler control
+# Recurrence Editor in ##Platform_Name## Scheduler
 
 The Recurrence editor is integrated into Scheduler editor window by default, to process the recurrence rule generation for events. Tt can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
 

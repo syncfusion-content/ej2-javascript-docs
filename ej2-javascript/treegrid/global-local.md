@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Global local in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Global local in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Global Localization | Syncfusion
+description: Learn how to implement global localization in ##Platform_Name## TreeGrid, including internationalization, localization, and RTL language support.
 platform: ej2-javascript
 control: Global local 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Global local in ##Platform_Name## Treegrid control
+# Global Localization in ##Platform_Name## TreeGrid
 
 ## Localization
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Frozen in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Frozen in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Frozen Columns | Syncfusion
+description: Learn how to pin or freeze columns in ##Platform_Name## TreeGrid to keep important columns visible while scrolling horizontally.
 platform: ej2-javascript
 control: Frozen 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Frozen in ##Platform_Name## Treegrid control
+# Frozen Columns in ##Platform_Name## TreeGrid
 
 ## Frozen rows and columns
 

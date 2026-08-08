@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pdf cell style customization in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Pdf cell style customization in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title:  ##Platform_Name## TreeGrid PDF Cell Style Customization | Syncfusion
+description: Learn how to customize PDF cell styles in the ##Platform_Name## TreeGrid, including conditional formatting and theme options for PDF export.
 platform: ej2-javascript
 control: Pdf cell style customization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pdf cell style customization in ##Platform_Name## Treegrid control
+# PDF Cell Style Customization in ##Platform_Name## TreeGrid
 
 ## Conditional cell formatting
 

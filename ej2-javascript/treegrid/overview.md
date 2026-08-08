@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Index in ##Platform_Name## Tree Grid control | Syncfusion
-description: Learn here all about Index in Syncfusion ##Platform_Name## Tree Grid control of Syncfusion Essential JS 2 and more.
+title:  ##Platform_Name## TreeGrid Key Features | Syncfusion
+description: Explore the key features of ##Platform_Name## TreeGrid, including hierarchical data binding, editing, filtering, sorting, virtualization, and exporting.
 platform: ej2-javascript
 control: Index 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in ##Platform_Name## Tree Grid control
+# Key Features of ##Platform_Name## TreeGrid
 
 The Essential Studio<sup style="font-size:70%">&reg;</sup> for JavaScript Tree Grid is a feature-rich control used to visualize  self-referential hierarchical data effectively in a tabular format. It can pull data from data sources such as an array of JSON, RESTful services, `OData services`, `WCF services` or `DataManager`, and binding data fields to columns. It also expands or collapses child data using the tree column.
 

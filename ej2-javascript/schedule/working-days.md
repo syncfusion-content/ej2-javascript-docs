@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Working days in ##Platform_Name## Scheduler control | Syncfusion
-description: Learn here all about Working days in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: Working Days in ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to set working days, working hours, time range, and first day of the week in the Syncfusion ##Platform_Name## Scheduler.
 platform: ej2-javascript
-control: Working days 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Working days in ##Platform_Name## Scheduler control
+# Working Days in ##Platform_Name## Scheduler
 
 The Scheduler can be customized on various aspects and inherits almost all calendar-specific features, including options to:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disable date navigation in ##Platform_Name## Scheduler | Syncfusion
-description: Learn here all about Prevent date navigation in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: Prevent Date Navigation in ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to prevent date navigation in the Syncfusion ##Platform_Name## Scheduler to lock the view on a specific date or range.
 platform: ej2-javascript
 control: Scheduler
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent date navigation in ##Platform_Name## Scheduler control
+# Prevent Date Navigation in ##Platform_Name## Scheduler
 
 By default, clicking on date headers in the Scheduler control navigates to the corresponding date view. In certain scenarios, you may want to disable this navigation behavior to maintain a fixed view.
 

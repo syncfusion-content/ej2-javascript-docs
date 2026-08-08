@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Paging in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Paging in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Paging | Syncfusion
+description: Learn how to use paging in ##Platform_Name## TreeGrid, including pagination configuration, customization, and advanced features for managing large datasets.
 platform: ej2-javascript
 control: Paging 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Paging in ##Platform_Name## Treegrid control
+# Paging in ##Platform_Name## TreeGrid
 
 Paging provides an option to display TreeGrid data in page segments. To enable paging, set the [`allowPaging`](../api/treegrid/#allowpaging) to true. When paging is enabled, pager component renders at the bottom of the treegrid.
 Paging options can be configured through the [`pageSettings`](../api/treegrid/#pagesettings).

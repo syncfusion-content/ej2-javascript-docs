@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Appointments in ##Platform_Name## Scheduler control | Syncfusion
-description: Learn here all about Appointments in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: Appointments in ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to create and manage appointments in the Syncfusion ##Platform_Name## Scheduler, including normal, all-day, spanned, and recurring events.
 platform: ej2-javascript
-control: Appointments 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appointments in ##Platform_Name## Scheduler control
+# Appointments in ##Platform_Name## Scheduler
 
 Appointments in the Scheduler represent events scheduled for specific time periods. Each appointment can be configured for various time ranges and categorized based on its duration and recurrence pattern. The Scheduler supports the following appointment types:
 

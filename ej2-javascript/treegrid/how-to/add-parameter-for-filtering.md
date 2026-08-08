@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add parameter for filtering in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Add parameter for filtering in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Filtering Parameters | Syncfusion
+description: Learn how to add filtering parameters in ##Platform_Name## TreeGrid, including menu filter customization, parameter handling, and advanced filtering options.
 platform: ej2-javascript
 control: Add parameter for filtering 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add parameter for filtering in ##Platform_Name## Treegrid control
+# Add Parameters for Filtering in ##Platform_Name## TreeGrid
 
 You can customize the default settings of the components which are used in Menu filter by using params of filter property in column definition.
 In the below sample, TaskID and Duration Columns are numeric columns, while opening the filter dialog you can see that NumericTextBox with spin button is displayed to change/set the filter value. Now using the params option we hide the spin button in NumericTextBox for TaskID Column.

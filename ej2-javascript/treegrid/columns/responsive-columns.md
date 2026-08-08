@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Responsive columns in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Responsive columns in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Responsive Columns | Syncfusion
+description: Learn how to create responsive columns in ##Platform_Name## TreeGrid using media queries to control column visibility and optimize layouts across devices.
 platform: ej2-javascript
 control: Responsive columns 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Responsive columns in ##Platform_Name## Treegrid control
+# Responsive Columns in ##Platform_Name## TreeGrid
 
 You can toggle column visibility based on media queries which are defined
-at the [`hideAtMedia`](../../api/treegrid/column/#hideatmedia).
-The [`hideAtMedia`](../../api/treegrid/column/#hideatmedia) accepts valid
+at the [`hideAtMedia`](../../api/treegrid/column#hideatmedia).
+The [`hideAtMedia`](../../api/treegrid/column#hideatmedia) accepts valid
 [Media Queries]( http://cssmediaqueries.com/what-are-css-media-queries.html ).
 
 {% if page.publishingplatform == "typescript" %}

@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Events in  ##Platform_Name## Ribbon control | Syncfusion
-description:  Checkout and learn about Ribbon Events with ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more details.
-platform: ej2-javascript
+title: Events in ##Platform_Name## Ribbon | Syncfusion
+description: Learn about the events triggered by the ##Platform_Name## Ribbon in response to user interactions such as tab selection, item clicks, and ribbon expansion.
 control: Ribbon
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## Ribbon control
+# Events in ##Platform_Name## Ribbon
 
 The Ribbon control triggers a variety of events in response to user interactions, such as selecting a tab, clicking a button, or expanding the ribbon. This section provides detailed explanations and code examples for each available event.
 
 ## tabSelected
 
-The [tabSelected](../api/ribbon/ribbonModel/#tabselected) event is triggered after a tab is successfully selected, allowing you to execute logic based on the newly active tab.
+The [tabSelected](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonModel#tabselected) event is triggered after a tab is successfully selected, allowing you to execute logic based on the newly active tab.
 
 ```js
 var tabs = [{
@@ -62,7 +62,7 @@ ribbon.appendTo("#ribbon");
 
 ## tabSelecting
 
-The [tabSelecting](../api/ribbon/ribbonModel/#tabselecting) event is triggered before a tab is selected. This event can be canceled to prevent the tab selection.
+The [tabSelecting](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonModel#tabselecting) event is triggered before a tab is selected. This event can be canceled to prevent the tab selection.
 
 ```js
 var tabs = [{
@@ -109,7 +109,7 @@ ribbon.appendTo("#ribbon");
 
 ## ribbonCollapsing
 
-The [ribbonCollapsing](../api/ribbon/ribbonModel/#ribboncollapsing) event is triggered before the ribbon is collapsed. This action can be canceled.
+The [ribbonCollapsing](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonModel#ribboncollapsing) event is triggered before the ribbon is collapsed. This action can be canceled.
 
 ```js
 var tabs = [{
@@ -140,7 +140,7 @@ ribbon.appendTo("#ribbon");
 
 ## ribbonExpanding
 
-The [ribbonExpanding](../api/ribbon/ribbonModel/#ribbonexpanding) event is triggered before the ribbon is expanded. This action can be canceled.
+The [ribbonExpanding](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonModel#ribbonexpanding) event is triggered before the ribbon is expanded. This action can be canceled.
 
 ```js
 var tabs = [{
@@ -171,7 +171,7 @@ ribbon.appendTo("#ribbon");
 
 ## launcherIconClick
 
-The [launcherIconClick](../api/ribbon/ribbonModel/#launchericonclick) event is triggered when the launcher icon of a group is clicked. This is useful for opening dialogs or performing group-specific actions.
+The [launcherIconClick](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonModel#launchericonclick) event is triggered when the launcher icon of a group is clicked. This is useful for opening dialogs or performing group-specific actions.
 
 ```js
 var tabs = [{
@@ -203,11 +203,11 @@ ribbon.appendTo("#ribbon");
 
 ## overflowPopupOpen
 
-The [overflowPopupOpen](../api/ribbon/ribbonModel/#overflowpopupopen) event is triggered while the overflow popup is opening.
+The [overflowPopupOpen](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonModel#overflowpopupopen) event is triggered while the overflow popup is opening.
 
 ## overflowPopupClose
 
-The [overflowPopupClose](../api/ribbon/ribbonModel/#overflowpopupclose) event is triggered while the overflow popup is closing.
+The [overflowPopupClose](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonModel#overflowpopupclose) event is triggered while the overflow popup is closing.
 
 The following code example demonstrates the ribbon with the `overflowPopupOpen` and `overflowPopupClose` events.
 
@@ -246,7 +246,7 @@ ribbon.appendTo("#ribbon");
 
 ### clicked
 
-The [clicked](../api/ribbon/ribbonButtonSettings/#clicked) event is triggered when a ribbon button is clicked.
+The [clicked](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonButtonSettings#clicked) event is triggered when a ribbon button is clicked.
 
 ```js
 var tabs = [{
@@ -275,7 +275,7 @@ ribbon.appendTo("#ribbon");
 
 ### created
 
-The [created](../api/ribbon/ribbonButtonSettings/#created) event is triggered when a ribbon button is created.
+The [created](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonButtonSettings#created) event is triggered when a ribbon button is created.
 
 ```js
 var tabs = [{
@@ -306,7 +306,7 @@ ribbon.appendTo("#ribbon");
 
 ### change
 
-The [change](../api/ribbon/ribbonCheckBoxSettings/#change) event is triggered when the state of the checkbox is changed.
+The [change](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonCheckBoxSettings#change) event is triggered when the state of the checkbox is changed.
 
 ```js
 var tabs = [{
@@ -335,7 +335,7 @@ ribbon.appendTo("#ribbon");
 
 ### created
 
-The [created](../api/ribbon/ribbonCheckBoxSettings/#created) event is triggered once the Checkbox is created.
+The [created](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonCheckBoxSettings#created) event is triggered once the Checkbox is created.
 
 ```js
 var tabs = [{
@@ -366,7 +366,7 @@ ribbon.appendTo("#ribbon");
 
 ### change
 
-The [change](../api/ribbon/ribbonColorPickerSettings/#change) event is triggered when changing the color value.
+The [change](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonColorPickerSettings#change) event is triggered when changing the color value.
 
 ```js
 var tabs = [{
@@ -394,7 +394,7 @@ ribbon.appendTo("#ribbon");
 
 ### created
 
-The [created](../api/ribbon/ribbonColorPickerSettings/#created) event is triggered once the ColorPicker is created.
+The [created](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonColorPickerSettings#created) event is triggered once the ColorPicker is created.
 
 ```js
 var tabs = [{
@@ -422,7 +422,7 @@ ribbon.appendTo("#ribbon");
 
 ### open
 
-The [open](../api/ribbon/ribbonColorPickerSettings/#open) event is triggered while the ColorPicker popup is opening.
+The [open](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonColorPickerSettings#open) event is triggered while the ColorPicker popup is opening.
 
 ```js
 var tabs = [{
@@ -450,7 +450,7 @@ ribbon.appendTo("#ribbon");
 
 ### select
 
-The [select](../api/ribbon/ribbonColorPickerSettings/#select) event is triggered when selecting a color from the picker or palette, particularly when the `showButtons` property is enabled.
+The [select](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonColorPickerSettings#select) event is triggered when selecting a color from the picker or palette, particularly when the `showButtons` property is enabled.
 
 ```js
 var tabs = [{
@@ -478,7 +478,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeClose
 
-The [beforeClose](../api/ribbon/ribbonColorPickerSettings/#beforeclose) event is triggered before the ColorPicker popup closes.
+The [beforeClose](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonColorPickerSettings#beforeclose) event is triggered before the ColorPicker popup closes.
 
 ```js
 var tabs = [{
@@ -506,7 +506,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeOpen
 
-The [beforeOpen](../api/ribbon/ribbonColorPickerSettings/#beforeopen) event is triggered before the ColorPicker popup opens.
+The [beforeOpen](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonColorPickerSettings#beforeopen) event is triggered before the ColorPicker popup opens.
 
 ```js
 var tabs = [{
@@ -534,7 +534,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeTileRender
 
-The [beforeTileRender](../api/ribbon/ribbonColorPickerSettingsModel/#beforetilerender) event is triggered while rendering each palette tile, allowing for customization.
+The [beforeTileRender](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonColorPickerSettingsModel#beforetilerender) event is triggered while rendering each palette tile, allowing for customization.
 
 ```js
 var tabs = [{
@@ -564,7 +564,7 @@ ribbon.appendTo("#ribbon");
 
 ### change
 
-The [change](../api/ribbon/ribbonComboBoxSettings/#change) event is triggered when an item in a popup is selected or the model value is changed by the user.
+The [change](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonComboBoxSettings#change) event is triggered when an item in a popup is selected or the model value is changed by the user.
 
 ```js
 var fontStyle = ["Algerian", "Arial", "Calibri", "Cambria", "Cambria Math", "Courier New", "Candara", "Georgia"];
@@ -594,7 +594,7 @@ ribbon.appendTo("#ribbon");
 
 ### close
 
-The [close](../api/ribbon/ribbonComboBoxSettings/#close) event is triggered when the popup is closed.
+The [close](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonComboBoxSettings#close) event is triggered when the popup is closed.
 
 ```js
 var fontStyle = ["Algerian", "Arial", "Calibri", "Cambria", "Cambria Math", "Courier New", "Candara", "Georgia"];
@@ -624,7 +624,7 @@ ribbon.appendTo("#ribbon");
 
 ### open
 
-The [open](../api/ribbon/ribbonComboBoxSettings/#open) event is triggered when the popup is opened.
+The [open](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonComboBoxSettings#open) event is triggered when the popup is opened.
 
 ```js
 var fontStyle = ["Algerian", "Arial", "Calibri", "Cambria", "Cambria Math", "Courier New", "Candara", "Georgia"];
@@ -654,7 +654,7 @@ ribbon.appendTo("#ribbon");
 
 ### created
 
-The [created](../api/ribbon/ribbonComboBoxSettings/#created) event is triggered when the ComboBox is created.
+The [created](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonComboBoxSettings#created) event is triggered when the ComboBox is created.
 
 ```js
 var fontStyle = ["Algerian", "Arial", "Calibri", "Cambria", "Cambria Math", "Courier New", "Candara", "Georgia"];
@@ -684,7 +684,7 @@ ribbon.appendTo("#ribbon");
 
 ### filtering
 
-The [filtering](../api/ribbon/ribbonComboBoxSettings/#filtering) event triggers when typing a character in the ComboBox.
+The [filtering](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonComboBoxSettings#filtering) event triggers when typing a character in the ComboBox.
 
 ```js
 var fontStyle = ["Algerian", "Arial", "Calibri", "Cambria", "Cambria Math", "Courier New", "Candara", "Georgia"];
@@ -715,7 +715,7 @@ ribbon.appendTo("#ribbon");
 
 ### select
 
-The [select](../api/ribbon/ribbonComboBoxSettings/#select) event is triggered when an item in the popup is selected.
+The [select](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonComboBoxSettings#select) event is triggered when an item in the popup is selected.
 
 ```js
 var fontStyle = ["Algerian", "Arial", "Calibri", "Cambria", "Cambria Math", "Courier New", "Candara", "Georgia"];
@@ -745,7 +745,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeOpen
 
-The [beforeOpen](../api/ribbon/ribbonComboBoxSettings/#beforeOpen) event triggers before the popup opens.
+The [beforeOpen](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonComboBoxSettings#beforeOpen) event triggers before the popup opens.
 
 ```js
 var fontStyle = ["Algerian", "Arial", "Calibri", "Cambria", "Cambria Math", "Courier New", "Candara", "Georgia"];
@@ -777,7 +777,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeClose
 
-The [beforeClose](../api/ribbon/ribbonDropDownSettings/#beforeclose) event is triggered before the DropDownButton popup closes.
+The [beforeClose](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonDropDownSettings#beforeclose) event is triggered before the DropDownButton popup closes.
 
 ```js
 var tabs = [{
@@ -807,7 +807,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeOpen
 
-The [beforeOpen](../api/ribbon/ribbonDropDownSettings/#beforeopen) event is triggered before the DropDownButton popup opens.
+The [beforeOpen](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonDropDownSettings#beforeopen) event is triggered before the DropDownButton popup opens.
 
 ```js
 var tabs = [{
@@ -837,7 +837,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeItemRender
 
-The [beforeItemRender](../api/ribbon/ribbonDropDownSettings/#beforeitemrender) event is triggered while rendering each popup item of the DropDownButton.
+The [beforeItemRender](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonDropDownSettings#beforeitemrender) event is triggered while rendering each popup item of the DropDownButton.
 
 ```js
 var tabs = [{
@@ -867,7 +867,7 @@ ribbon.appendTo("#ribbon");
 
 ### open
 
-The [open](../api/ribbon/ribbonDropDownSettings/#open) event is triggered when the DropDownButton popup opens.
+The [open](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonDropDownSettings#open) event is triggered when the DropDownButton popup opens.
 
 ```js
 var tabs = [{
@@ -897,7 +897,7 @@ ribbon.appendTo("#ribbon");
 
 ### close
 
-The [close](../api/ribbon/ribbonDropDownSettings/#close) event is triggered when the DropDownButton popup closes.
+The [close](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonDropDownSettings#close) event is triggered when the DropDownButton popup closes.
 
 ```js
 var tabs = [{
@@ -927,7 +927,7 @@ ribbon.appendTo("#ribbon");
 
 ### created
 
-The [created](../api/ribbon/ribbonDropDownSettings/#created) event is triggered when the DropDownButton is created.
+The [created](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonDropDownSettings#created) event is triggered when the DropDownButton is created.
 
 ```js
 var tabs = [{
@@ -957,7 +957,7 @@ ribbon.appendTo("#ribbon");
 
 ### select
 
-The [select](../api/ribbon/ribbonDropDownSettings/#select) event is triggered when an action item is selected in the DropDownButton popup.
+The [select](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonDropDownSettings#select) event is triggered when an action item is selected in the DropDownButton popup.
 
 ```js
 var tabs = [{
@@ -989,7 +989,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeClose
 
-The [beforeClose](../api/ribbon/ribbonSplitButtonSettings/#beforeclose) event is triggered before the SplitButton popup closes.
+The [beforeClose](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonSplitButtonSettings#beforeclose) event is triggered before the SplitButton popup closes.
 
 ```js
 var tabs = [{
@@ -1019,7 +1019,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeOpen
 
-The [beforeOpen](../api/ribbon/ribbonSplitButtonSettings/#beforeopen) event is triggered before the SplitButton popup opens.
+The [beforeOpen](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonSplitButtonSettings#beforeopen) event is triggered before the SplitButton popup opens.
 
 ```js
 var tabs = [{
@@ -1049,7 +1049,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeItemRender
 
-The [beforeItemRender](../api/ribbon/ribbonSplitButtonSettings/#beforeitemrender) event is triggered while rendering each popup item of the SplitButton.
+The [beforeItemRender](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonSplitButtonSettings#beforeitemrender) event is triggered while rendering each popup item of the SplitButton.
 
 ```js
 var tabs = [{
@@ -1079,7 +1079,7 @@ ribbon.appendTo("#ribbon");
 
 ### open
 
-The [open](../api/ribbon/ribbonSplitButtonSettings/#open) event is triggered when the SplitButton popup opens.
+The [open](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonSplitButtonSettings#open) event is triggered when the SplitButton popup opens.
 
 ```js
 var tabs = [{
@@ -1109,7 +1109,7 @@ ribbon.appendTo("#ribbon");
 
 ### close
 
-The [close](../api/ribbon/ribbonSplitButtonSettings/#close) event is triggered when the SplitButton popup closes.
+The [close](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonSplitButtonSettings#close) event is triggered when the SplitButton popup closes.
 
 ```js
 var tabs = [{
@@ -1139,7 +1139,7 @@ ribbon.appendTo("#ribbon");
 
 ### created
 
-The [created](../api/ribbon/ribbonSplitButtonSettings/#created) event is triggered when the SplitButton is created.
+The [created](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonSplitButtonSettings#created) event is triggered when the SplitButton is created.
 
 ```js
 var tabs = [{
@@ -1169,7 +1169,7 @@ ribbon.appendTo("#ribbon");
 
 ### select
 
-The [select](../api/ribbon/ribbonSplitButtonSettings/#select) event is triggered when an action item is selected in the SplitButton popup.
+The [select](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonSplitButtonSettings#select) event is triggered when an action item is selected in the SplitButton popup.
 
 ```js
 var tabs = [{
@@ -1199,7 +1199,7 @@ ribbon.appendTo("#ribbon");
 
 ### click
 
-The [click](../api/ribbon/ribbonSplitButtonSettings/#click) event is triggered when clicking the primary button in the SplitButton.
+The [click](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonSplitButtonSettings#click) event is triggered when clicking the primary button in the SplitButton.
 
 ```js
 var tabs = [{
@@ -1231,7 +1231,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeClick
 
-The [beforeClick](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/ribbonGroupButtonItemModel/#beforeclick) event is triggered before a button is selected from the GroupButton items.
+The [beforeClick](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/ribbonGroupButtonItemModel#beforeclick) event is triggered before a button is selected from the GroupButton items.
 
 ```js
 var tabs = [{
@@ -1287,7 +1287,7 @@ ribbon.appendTo("#ribbon");
 
 ### click
 
-The [click](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/ribbonGroupButtonItemModel/#click) event is triggered when a button is selected from the GroupButton items.
+The [click](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/ribbonGroupButtonItemModel#click) event is triggered when a button is selected from the GroupButton items.
 
 ```js
 var tabs = [{
@@ -1345,7 +1345,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeClose
 
-The [beforeClose](../api/ribbon/fileMenuSettings/#beforeclose) event is triggered before the File Menu popup closes.
+The [beforeClose](https://ej2.syncfusion.com/documentation/api/ribbon/fileMenuSettings#beforeclose) event is triggered before the File Menu popup closes.
 
 ```js
 var tabs = [{
@@ -1387,7 +1387,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeOpen
 
-The [beforeOpen](../api/ribbon/fileMenuSettings/#beforeopen) event is triggered before the File Menu popup opens.
+The [beforeOpen](https://ej2.syncfusion.com/documentation/api/ribbon/fileMenuSettings#beforeopen) event is triggered before the File Menu popup opens.
 
 ```js
 var tabs = [{
@@ -1429,7 +1429,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeItemRender
 
-The [beforeItemRender](../api/ribbon/fileMenuSettings/#beforeitemrender) event is triggered while rendering each ribbon File Menu item.
+The [beforeItemRender](https://ej2.syncfusion.com/documentation/api/ribbon/fileMenuSettings#beforeitemrender) event is triggered while rendering each ribbon File Menu item.
 
 ```js
 var tabs = [{
@@ -1471,7 +1471,7 @@ ribbon.appendTo("#ribbon");
 
 ### open
 
-The [open](../api/ribbon/fileMenuSettings/#open) event is triggered when the File Menu popup opens.
+The [open](https://ej2.syncfusion.com/documentation/api/ribbon/fileMenuSettings#open) event is triggered when the File Menu popup opens.
 
 ```js
 var tabs = [{
@@ -1513,7 +1513,7 @@ ribbon.appendTo("#ribbon");
 
 ### close
 
-The [close](../api/ribbon/fileMenuSettings/#close) event is triggered when the File Menu popup closes.
+The [close](https://ej2.syncfusion.com/documentation/api/ribbon/fileMenuSettings#close) event is triggered when the File Menu popup closes.
 
 ```js
 var tabs = [{
@@ -1555,7 +1555,7 @@ ribbon.appendTo("#ribbon");
 
 ### select
 
-The [select](../api/ribbon/fileMenuSettings/#select) event is triggered when an item is selected in the ribbon File Menu.
+The [select](https://ej2.syncfusion.com/documentation/api/ribbon/fileMenuSettings#select) event is triggered when an item is selected in the ribbon File Menu.
 
 ```js
 var tabs = [{
@@ -1599,7 +1599,7 @@ ribbon.appendTo("#ribbon");
 
 ### backStageItemClick
 
-The [backStageItemClick](../api/ribbon/backstageItem/#backstageitemclick) event is triggered when a backstage item is selected.
+The [backStageItemClick](https://ej2.syncfusion.com/documentation/api/ribbon/backstageItem#backstageitemclick) event is triggered when a backstage item is selected.
 
 ```js
 var tabs = [{
@@ -1644,7 +1644,7 @@ ribbon.appendTo("#ribbon");
 
 ### popupOpen
 
-The [popupOpen](../api/ribbon/ribbonGallerySettings/#popupopen) event is triggered when the gallery popup opens.
+The [popupOpen](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGallerySettings#popupopen) event is triggered when the gallery popup opens.
 
 ```js
 var tabs = [
@@ -1695,7 +1695,7 @@ ribbon.appendTo("#ribbon");
 
 ### popupClose
 
-The [popupClose](../api/ribbon/ribbonGallerySettings/#popupclose) event is triggered when the gallery popup closes.
+The [popupClose](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGallerySettings#popupclose) event is triggered when the gallery popup closes.
 
 ```js
 var tabs = [
@@ -1746,7 +1746,7 @@ ribbon.appendTo("#ribbon");
 
 ### itemHover
 
-The [itemHover](../api/ribbon/ribbonGallerySettings/#itemhover) event is triggered when hovering over a gallery item.
+The [itemHover](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGallerySettings#itemhover) event is triggered when hovering over a gallery item.
 
 ```js
 var tabs = [
@@ -1797,7 +1797,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeItemRender
 
-The [beforeItemRender](../api/ribbon/ribbonGallerySettings/#beforeitemrender) event is triggered before each gallery item is rendered.
+The [beforeItemRender](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGallerySettings#beforeitemrender) event is triggered before each gallery item is rendered.
 
 ```js
 var tabs = [
@@ -1848,7 +1848,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeSelect
 
-The [beforeSelect](../api/ribbon/ribbonGallerySettings/#beforeselect) event is triggered before an item is selected in the Ribbon gallery.
+The [beforeSelect](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGallerySettings#beforeselect) event is triggered before an item is selected in the Ribbon gallery.
 
 ```js
 var tabs = [
@@ -1899,7 +1899,7 @@ ribbon.appendTo("#ribbon");
 
 ### select
 
-The [select](../api/ribbon/gallerySelectEventArgs/) event is triggered when an item is selected in the Ribbon Gallery.
+The [select](https://ej2.syncfusion.com/documentation/api/ribbon/gallerySelectEventArgs) event is triggered when an item is selected in the Ribbon Gallery.
 
 ```js
 var tabs = [

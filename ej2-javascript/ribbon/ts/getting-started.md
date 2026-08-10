@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Ribbon control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more details.
-platform: ej2-javascript
+title: Getting Started with ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to get started with the ##Platform_Name## Ribbon and explore setup, configuration, and core feature examples for building ribbon interfaces.
 control: Ribbon
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with ##Platform_Name## Ribbon control
+# Getting Started with ##Platform_Name## Ribbon
 
 This section explains how to create a simple Ribbon and configure its available functionalities in TypeScript using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Clip mode in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Clip mode in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Clip Mode | Syncfusion
+description: Learn how to configure clip mode in ##Platform_Name## TreeGrid to manage overflowing cell content using clipping, ellipsis, or ellipsis with tooltip display.
 platform: ej2-javascript
 control: Clip mode 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Clip mode in ##Platform_Name## Treegrid control
+# Clip Mode in ##Platform_Name## TreeGrid
 
-The clip mode provides options to display its overflow cell content and it can be defined by the [`columns.clipMode`](../../api/treegrid/column/#clipmode) property.
+The clip mode provides options to display its overflow cell content and it can be defined by the [`columns.clipMode`](../../api/treegrid/column#clipmode) property.
 
-There are three types of [`clipMode`](../../api/treegrid/column/#clipmode). They are:
+There are three types of [`clipMode`](../../api/treegrid/column#clipmode). They are:
 
 * **`Clip`**: Truncates the cell content when it overflows its area.
 * **`Ellipsis`**: Displays ellipsis when the cell content overflows its area.
@@ -46,4 +46,4 @@ There are three types of [`clipMode`](../../api/treegrid/column/#clipmode). They
 {% previewsample "page.domainurl/code-snippet/treegrid/cell-cs4" %}
 {% endif %}
 
->By default, [`columns.clipMode`](../../api/treegrid/column/#clipmode) value is `Ellipsis`.
+>By default, [`columns.clipMode`](../../api/treegrid/column#clipmode) value is `Ellipsis`.

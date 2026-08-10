@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Excel export options in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Excel export options in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Excel Export Options | Syncfusion
+description: Learn about Excel export options in ##Platform_Name## TreeGrid, including export customization, hidden columns, selected records, and advanced export settings.
 platform: ej2-javascript
 control: Excel export options 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Excel export options in ##Platform_Name## Treegrid control
+# Excel Export Options in ##Platform_Name## TreeGrid
 
 ## To customize excel export
 
@@ -48,7 +48,7 @@ The excel export provides an option to export hidden columns of treegrid by defi
 
 ### Show or hide columns on exported excel
 
-You can show a hidden column or hide a visible column while printing the treegrid using [`toolbarClick`](../../api/treegrid#toolbarclick) and [`excelExportComplete`](../../api/treegrid/#excelExportComplete) events.
+You can show a hidden column or hide a visible column while printing the treegrid using [`toolbarClick`](../../api/treegrid#toolbarclick) and [`excelExportComplete`](../../api/treegrid#excelExportComplete) events.
 
 In the `toolbarClick` event, based on `args.item.text` as `Excel Export`. We can show or hide columns by setting `column.visible` property to `true` or `false` respectively.
 
@@ -85,7 +85,7 @@ In the below example, we have `Duration` as a hidden column in the treegrid. Whi
 
 ### File name for exported document
 
-You can assign the file name for the exported document by defining `fileName` property in [`ExcelExportProperties`](../../api/treegrid/#excelExportProperties).
+You can assign the file name for the exported document by defining `fileName` property in [`ExcelExportProperties`](../../api/treegrid#excelExportProperties).
 
 {% if page.publishingplatform == "typescript" %}
 

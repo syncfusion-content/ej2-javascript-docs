@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Persisting data in server in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Persisting data in server in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Persisting Data in Server | Syncfusion
+description: Learn how to persist edited data in a database using RESTful services and DataManager in the ##Platform_Name## TreeGrid.
 platform: ej2-javascript
 control: Persisting data in server 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Persisting data in server in ##Platform_Name## Treegrid control
+# Persisting data in Server in ##Platform_Name## TreeGrid
 
 Edited data can be persisted in the database using the RESTful web services.
 

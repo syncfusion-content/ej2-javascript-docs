@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Validation in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Validation | Syncfusion
+description: Learn how to configure validation in ##Platform_Name## TreeGrid, including required fields, custom rules, and error handling during editing.
 platform: ej2-javascript
 control: Validation 
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation in ##Platform_Name## Treegrid control
+# Validation in ##Platform_Name## TreeGrid
 
 ## Column validation
 
 Column validation allows you to validate the edited or added row data and it display errors for invalid fields before saving data.
 TreeGrid uses `Form Validator` component for column validation.
-You can set validation rules by defining the [`columns.validationRules`](../../api/treegrid/column/#validationrules).
+You can set validation rules by defining the [`columns.validationRules`](../../api/treegrid/column#validationrules).
 
 {% if page.publishingplatform == "typescript" %}
 

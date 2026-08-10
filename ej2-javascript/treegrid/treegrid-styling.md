@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Treegrid styling in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Treegrid styling in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Styling | Syncfusion
+description: Learn how to customize the appearance of ##Platform_Name## TreeGrid using CSS classes, Theme Studio, and advanced styling techniques.
 platform: ej2-javascript
 control: Treegrid styling 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Treegrid styling in ##Platform_Name## Treegrid control
+# Styling in ##Platform_Name## TreeGrid
 
 To modify the TreeGrid appearance, you need to override the default CSS of treegrid. Please find the list of CSS classes and its corresponding section in treegrid. Also, you have an option to create your own custom theme for all the JavaScript controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 

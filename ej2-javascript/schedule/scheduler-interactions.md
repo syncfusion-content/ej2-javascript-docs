@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Scheduler interactions in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Scheduler interactions in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Scheduler Interactions in ##Platform_Name## Scheduler | Syncfusion
+description: Learn about mouse and touch interactions in the Syncfusion ##Platform_Name## Scheduler, including cell selection, event selection, and date navigation.
 platform: ej2-javascript
-control: Scheduler interactions 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Scheduler interactions in ##Platform_Name## Schedule control
+# Interactions in ##Platform_Name## Scheduler
 
 The following table describes the Scheduler actions and illustrates how these actions are carried out through mouse and touch interactions on the Scheduler.
 

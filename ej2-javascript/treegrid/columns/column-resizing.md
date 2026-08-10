@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column resizing in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Column resizing in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Column Resizing | Syncfusion
+description: Learn how to resize columns in ##Platform_Name## TreeGrid, including column width adjustment, resizing modes, and auto-fit options.
 platform: ej2-javascript
 control: Column resizing 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column resizing in ##Platform_Name## Treegrid control
+# Column Resizing in ##Platform_Name## TreeGrid
 
-Column width can be resized by clicking and dragging the right edge of the column header. While dragging, the width of the respective column will be resized immediately. Each column can be auto resized by double-clicking the right edge of the column header to fit the width of that column based on the widest cell content. To enable column resize, set the [`allowResizing`](../../api/treegrid/#allowresizing) property to true.
+Column width can be resized by clicking and dragging the right edge of the column header. While dragging, the width of the respective column will be resized immediately. Each column can be auto resized by double-clicking the right edge of the column header to fit the width of that column based on the widest cell content. To enable column resize, set the [`allowResizing`](../../api/treegrid#allowresizing) property to true.
 
 To use the column resize, inject `Resize` module in the treegrid.
 
@@ -42,12 +42,12 @@ To use the column resize, inject `Resize` module in the treegrid.
 {% previewsample "page.domainurl/code-snippet/treegrid/resize-cs1" %}
 {% endif %}
 
-> * You can disable resizing for a particular column by setting the [`columns.allowResizing`](../../api/treegrid/column/#allowresizing) to false.
+> * You can disable resizing for a particular column by setting the [`columns.allowResizing`](../../api/treegrid/column#allowresizing) to false.
 > * In RTL mode, you can click and drag the left edge of the header cell to resize the column.
 
 ## Min and max width
 
-Column resize can be restricted between minimum and maximum width by defining the [`columns->minWidth`](../../api/treegrid/column/#minwidth) and [`columns->maxWidth`](../../api/treegrid/column/#maxwidth).
+Column resize can be restricted between minimum and maximum width by defining the [`columns->minWidth`](../../api/treegrid/column#minwidth) and [`columns->maxWidth`](../../api/treegrid/column#maxwidth).
 
 In the following sample, minimum and maximum width are defined for `Duration`, and `Task Name` columns.
 

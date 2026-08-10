@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtual scroll in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Virtual scroll in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title:  ##Platform_Name## TreeGrid Virtual Scrolling | Syncfusion
+description: Learn how to use virtual scrolling in ##Platform_Name## TreeGrid for large datasets, including row and column virtualization and performance optimization.
 platform: ej2-javascript
 control: Virtual scroll 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtual scroll in ##Platform_Name## Treegrid control
+# Virtual Scrolling in ##Platform_Name## TreeGrid
 
 TreeGrid allows you to load large amount of data without performance degradation.
 

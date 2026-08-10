@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Different work hours in ##Platform_Name## Scheduler | Syncfusion
-description: Learn here all about Set different work hours in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: Set Different Work Hours in ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to set different work hours for specific days in the Syncfusion ##Platform_Name## Scheduler to match varied team schedules.
 platform: ej2-javascript
 control: Scheduler
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set different work hours in ##Platform_Name## Scheduler control
+# Set Different Work Hours in ##Platform_Name## Scheduler
 
 By default, the work hours in the Scheduler are highlighted based on the start and end values defined within the [`workHours`](https://ej2.syncfusion.com/documentation/api/schedule#workhours) property, which applies uniformly to all days. If you need to highlight different work hour ranges for specific days, you can use the [`setWorkHours`](https://ej2.syncfusion.com/documentation/api/schedule#setworkhours) method.  
 

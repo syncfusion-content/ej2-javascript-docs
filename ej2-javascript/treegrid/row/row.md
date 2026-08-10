@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Row in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Rows | Syncfusion
+description: Learn how to work with rows in ##Platform_Name## TreeGrid, including row customization, selection, styling, rendering, and row-level operations.
 platform: ej2-javascript
 control: Row 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row in ##Platform_Name## Treegrid control
+# Rows in ##Platform_Name## TreeGrid
 
 The row represents record details fetched from data source.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Clipboard in ##Platform_Name## Scheduler control | Syncfusion
-description: Learn here all about Clipboard in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: Clipboard in ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to enable cut, copy, and paste for appointments in the Syncfusion ##Platform_Name## Scheduler with built-in clipboard support and keyboard shortcuts.
 platform: ej2-javascript
-control: Clipboard 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Clipboard in ##Platform_Name## Scheduler control
+# Clipboard in ##Platform_Name## Scheduler
 
 The Clipboard functionality in the Scheduler control enhances scheduling efficiency by enabling users to cut, copy, and paste appointments seamlessly. This feature is particularly beneficial for managing multiple appointments, eliminating repetitive data entry and allowing users to quickly adjust their schedules.
 

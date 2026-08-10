@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Clipboard in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Clipboard in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Clipboard | Syncfusion
+description: Learn how to use clipboard operations in ##Platform_Name## TreeGrid, including copy, paste, hierarchy modes, and autofill for rows and cells.
 platform: ej2-javascript
 control: Clipboard 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Clipboard in ##Platform_Name## Treegrid control
+# Clipboard in ##Platform_Name## TreeGrid
 
 The clipboard provides an option to copy selected rows or cells data into the clipboard.
 
@@ -49,7 +49,7 @@ Interaction keys |Description
 
 ## Copy to clipboard by external buttons
 
-To copy selected rows or cells data into the clipboard with help of external buttons, you need to invoke the [`copy`](../api/treegrid/#copy) method.
+To copy selected rows or cells data into the clipboard with help of external buttons, you need to invoke the [`copy`](../api/treegrid#copy) method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -80,7 +80,7 @@ To copy selected rows or cells data into the clipboard with help of external but
 
 ## Copy Hierarchy Modes
 
-Tree Grid provides support for a set of copy modes with [`copyHierarchyMode`](../api/treegrid/#copyhierarchymode) property.
+Tree Grid provides support for a set of copy modes with [`copyHierarchyMode`](../api/treegrid#copyhierarchymode) property.
 The below are the type of filter mode available in TreeGrid.
 
 * **Parent** : This is the default copy hierarchy mode in Tree Grid. Clipboard value have the selected records with its parent records. If the selected records not have any parent record then the selected record will be in clipboard.

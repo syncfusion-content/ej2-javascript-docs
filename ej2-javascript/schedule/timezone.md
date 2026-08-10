@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Timezone in ##Platform_Name## Schedule control | Syncfusion
-description: Learn all about timezone handling in the Syncfusion ##Platform_Name## Scheduler control of Essential JS 2.
+title: Timezone in ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to render appointments in different time zones in the Syncfusion ##Platform_Name## Scheduler for global users and cross-region scheduling.
 platform: ej2-javascript
-control: Timezone 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timezone in ##Platform_Name## Schedule control
+# Timezone in ##Platform_Name## Scheduler
 
 By default, the Scheduler uses the client system's time zone. To display or process appointments in a specific time zone, use the [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) property. Individual appointments can also carry their own time zone information by using `startTimezone` and `endTimezone` fields in the event data.
 

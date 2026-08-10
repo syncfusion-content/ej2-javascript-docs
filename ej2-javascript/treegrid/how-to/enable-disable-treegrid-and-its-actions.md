@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable disable treegrid and its actions in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Enable disable treegrid and its actions in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Enable or Disable Actions | Syncfusion
+description: Learn how to enable or disable the ##Platform_Name## TreeGrid and its actions using custom CSS to control user interaction.
 platform: ej2-javascript
 control: Enable disable treegrid and its actions 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable disable treegrid and its actions in ##Platform_Name## Treegrid control
+# Enable or Disable TreeGrid Actions in ##Platform_Name## TreeGrid
 
 You can enable/disable the Tree Grid and its actions by applying/removing corresponding CSS styles.
 

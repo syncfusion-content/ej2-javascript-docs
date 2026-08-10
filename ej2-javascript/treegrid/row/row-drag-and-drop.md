@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row drag and drop in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Row drag and drop in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: Row drag and drop in ##Platform_Name## TreeGrid component | Syncfusion
+description: Learn here all about Row drag and drop in ##Platform_Name## TreeGrid of Essential JS 2 and more.
 platform: ej2-javascript
 control: Row drag and drop 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row drag and drop in ##Platform_Name## Treegrid control
+# Row Drag and Drop in ##Platform_Name## TreeGrid
 
 The TreeGrid rows can be reordered, dropped to another TreeGrid or custom control by enabling the [`allowRowDragAndDrop`](../../api/treegrid/#allowrowdraganddrop) to true.
 

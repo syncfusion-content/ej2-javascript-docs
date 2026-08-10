@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom tool bar in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Custom tool bar in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Custom Toolbar | Syncfusion
+description: Learn how to add and configure custom toolbars in the ##Platform_Name## TreeGrid, including event handling, alignment, and mixing with built-in items.
 platform: ej2-javascript
 control: Custom tool bar 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom tool bar in ##Platform_Name## Treegrid control
+# Custom Toolbar in ##Platform_Name## TreeGrid
 
 Custom toolbar items can be added by defining the [`toolbar`](../../api/treegrid/#toolbar) as a collection of [`ItemModels`](../../api/toolbar/#item).
 Actions for this customized toolbar items are defined in the [`toolbarClick`](../../api/treegrid/#toolbarclick) event.

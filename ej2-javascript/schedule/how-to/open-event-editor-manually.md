@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Manual event editor in ##Platform_Name## Scheduler | Syncfusion
-description: Learn here all about Open event editor manually in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: Open Event Editor Manually in ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to open the event editor manually in the Syncfusion ##Platform_Name## Scheduler on cell or event click, including on a single click.
 platform: ej2-javascript
 control: Scheduler
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open event editor manually in ##Platform_Name## Scheduler control
+# Open Event Editor Programmatically in ##Platform_Name## Scheduler
 
 The Scheduler control provides flexibility for event creation and editing. By default, the editor opens when double-clicking on cells or appointments. However, you can also trigger the editor programmatically. This guide demonstrates different approaches to manually open the event editor window in your Scheduler application.
 

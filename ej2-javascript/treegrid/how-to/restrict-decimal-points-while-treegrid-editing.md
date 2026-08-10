@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Restrict decimal points while treegrid editing in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Restrict decimal points while treegrid editing in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Decimal Point Restriction | Syncfusion
+description: Learn how to restrict decimal points while editing in the ##Platform_Name## TreeGrid using NumericTextBox configuration.
 platform: ej2-javascript
 control: Restrict decimal points while treegrid editing 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Restrict decimal points while treegrid editing in ##Platform_Name## Treegrid control
+# Restrict Decimal Points While Editing in ##Platform_Name## TreeGrid
 
 By default, the number of decimal places will be restricted to two in the NumericTextBox while editing the numeric column. We can restrict to type the decimal points in a NumericTextBox by using the **validateDecimalOnType** and **decimals** properties of NumericTextBox.
 

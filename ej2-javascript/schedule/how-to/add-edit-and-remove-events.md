@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add edit and remove events in ##Platform_Name## Scheduler | Syncfusion
-description: Learn here all about Add edit and remove events in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: Add, Edit, and Remove Events in ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to add, edit, and remove events dynamically in the Syncfusion ##Platform_Name## Scheduler control.
 platform: ej2-javascript
 control: Scheduler
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add, edit, and remove events in ##Platform_Name## Scheduler control
+# Add, Edit, and Remove Events in ##Platform_Name## Scheduler
 
 You can manually perform CRUD (Create, Read, Update, Delete) operations on appointments in the Scheduler by using the following methods:
 

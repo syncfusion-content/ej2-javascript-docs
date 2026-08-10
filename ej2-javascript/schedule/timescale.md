@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Timescale in ##Platform_Name## Scheduler control | Syncfusion
-description: Learn all about Timescale in the Syncfusion ##Platform_Name## Scheduler control of Essential JS 2, including configuration, customization, and advanced options.
+title: Timescale in ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to customize time slots in the Syncfusion ##Platform_Name## Scheduler to set the interval and slot count per row.
 platform: ej2-javascript
-control: Timescale 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timescale in ##Platform_Name## Scheduler control
+# Timescale in ##Platform_Name## Scheduler
 
 Time slots are the individual time cells displayed in the Day, Week, and Work Week views of the Scheduler—positioned to the left in calendar views and at the top in timeline views. The [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) property enables precise control over the time slot duration and appearance for Scheduler work cells. The `timeScale` property includes the following sub-options:
 

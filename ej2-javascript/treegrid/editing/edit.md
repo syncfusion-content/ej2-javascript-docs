@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Edit in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Edit in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Edit | Syncfusion
+description: Learn how to edit data in ##Platform_Name## TreeGrid, including CRUD operations, editing modes, validation, and data update workflows.
 platform: ej2-javascript
 control: Edit 
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Edit in ##Platform_Name## Treegrid control
+# Edit in ##Platform_Name## TreeGrid
 
 The TreeGrid component has options to dynamically insert, delete and update records.
-Editing feature is enabled by using [`editSettings`](../../api/treegrid/#editsettings) property and it requires a primary key column for CRUD operations.
-To define the primary key, set [`columns.isPrimaryKey`](../../api/treegrid/column/#isprimarykey) to `true` in particular column.
+Editing feature is enabled by using [`editSettings`](../../api/treegrid#editsettings) property and it requires a primary key column for CRUD operations.
+To define the primary key, set [`columns.isPrimaryKey`](../../api/treegrid/column#isprimarykey) to `true` in particular column.
 
-To use CRUD, inject the [`Edit`](../../api/treegrid/#editmodule) module in treegrid.
+To use CRUD, inject the [`Edit`](../../api/treegrid#editmodule) module in treegrid.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,12 +44,12 @@ To use CRUD, inject the [`Edit`](../../api/treegrid/#editmodule) module in treeg
 {% previewsample "page.domainurl/code-snippet/treegrid/edit-cs8" %}
 {% endif %}
 
-> * You can disable editing for a particular column, by specifying [`columns.allowEditing`](../../api/treegrid/column/#allowediting) to `false`.
+> * You can disable editing for a particular column, by specifying [`columns.allowEditing`](../../api/treegrid/column#allowediting) to `false`.
 
 ## Toolbar with edit option
 
 The treegrid toolbar has the built-in items to execute Editing actions.
-You can define this by using the [`toolbar`](../../api/treegrid/#toolbar) property.
+You can define this by using the [`toolbar`](../../api/treegrid#toolbar) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -80,7 +80,7 @@ You can define this by using the [`toolbar`](../../api/treegrid/#toolbar) proper
 
 ## Adding row position
 
-The TreeGrid control provides the support to add the new row in the top, bottom, above selected row, below selected row and child position of tree grid content using [`editSettings.newRowPosition`](../../api/treegrid/editSettingsModel/#newrowposition) property. By default, a new row will be added at the top of the treegrid.
+The TreeGrid control provides the support to add the new row in the top, bottom, above selected row, below selected row and child position of tree grid content using [`editSettings.newRowPosition`](../../api/treegrid/editSettingsModel#newrowposition) property. By default, a new row will be added at the top of the treegrid.
 
 The following examples shows how to set new row position as `Child` in tree grid.
 
@@ -115,7 +115,7 @@ The following examples shows how to set new row position as `Child` in tree grid
 
 ### Delete confirmation
 
-The delete confirm dialog can be shown when deleting a record by defining the [`showDeleteConfirmDialog`](../../api/treegrid/editSettingsModel/#showdeleteconfirmdialog) as `true`
+The delete confirm dialog can be shown when deleting a record by defining the [`showDeleteConfirmDialog`](../../api/treegrid/editSettingsModel#showdeleteconfirmdialog) as `true`
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -149,7 +149,7 @@ The delete confirm dialog can be shown when deleting a record by defining the [`
 ## Default column values on add new
 
 The treegrid provides an option to set the default value for the columns when adding a new record in it.
-To set a default value for the particular column by defining the [`columns.defaultValue`](../../api/treegrid/column/#defaultvalue).
+To set a default value for the particular column by defining the [`columns.defaultValue`](../../api/treegrid/column#defaultvalue).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -180,7 +180,7 @@ To set a default value for the particular column by defining the [`columns.defau
 
 ## Disable editing for particular column
 
-You can disable editing for particular columns by using the [`columns.allowEditing`](../../api/treegrid/column/#allowediting).
+You can disable editing for particular columns by using the [`columns.allowEditing`](../../api/treegrid/column#allowediting).
 
 In the following demo, editing is disabled for the `Start Date` column.
 

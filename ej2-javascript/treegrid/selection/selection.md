@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Selection in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Selection | Syncfusion
+description: Learn all about selection in the ##Platform_Name## TreeGrid, including single/multiple selection, selection modes, toggle selection, and touch interactions.
 platform: ej2-javascript
 control: Selection 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in ##Platform_Name## Treegrid control
+# Selection in ##Platform_Name## TreeGrid
 
 Selection provides an option to highlight a row or a cell. It can be done through simple mouse down or arrow keys. To disable selection in TreeGrid, set the [`allowSelection`](../../api/treegrid/#allowselection) to false.
 

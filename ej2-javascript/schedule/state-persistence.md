@@ -1,15 +1,15 @@
 ---
 layout: post
-title: State persistence in ##Platform_Name## Scheduler control | Syncfusion
-description: Learn here all about State persistence in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: State Persistence in ##Platform_Name## Scheduler | Syncfusion
+description: Learn how to enable state persistence in the Syncfusion ##Platform_Name## Scheduler to retain current view, selected date, and scroll position.
 platform: ej2-javascript
-control: State persistence 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State persistence in ##Platform_Name## Scheduler control
+# State Persistence in ##Platform_Name## Scheduler
 
 State persistence allowed Scheduler to retain the [`currentView`](https://ej2.syncfusion.com/documentation/api/schedule#currentview), [`selectedDate`](.https://ej2.syncfusion.com/documentation/api/schedule#selecteddate) and Scroll position values in the [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) for state maintenance even if the browser is refreshed or when navigating to another page within the browser. This action is handled through the [`enablePersistence`](https://ej2.syncfusion.com/documentation/api/schedule#enablepersistence) property which is set to false by default. When set to true, the [`currentView`](https://ej2.syncfusion.com/documentation/api/schedule#currentview), [`selectedDate`](https://ej2.syncfusion.com/documentation/api/schedule#selecteddate) and Scroll position values of the scheduler component will be retained even after refreshing the page.
 

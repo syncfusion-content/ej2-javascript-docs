@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tool bar in ##Platform_Name## Treegrid control | Syncfusion
-description: Learn here all about Tool bar in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Toolbar | Syncfusion
+description: Learn how to customize the toolbar in ##Platform_Name## TreeGrid, including item control, toolbar placement, and toolbar templates.
 platform: ej2-javascript
 control: Tool bar 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool bar in ##Platform_Name## Treegrid control
+# Toolbar in ##Platform_Name## TreeGrid
 
 The TreeGrid provides ToolBar support to handle treegrid actions. The [`toolbar`](../../api/treegrid/#toolbar) property accepts either the collection of built-in toolbar items and [`ItemModel`](../../api/toolbar/#item) objects for custom toolbar items or HTML element ID for toolbar template.
 

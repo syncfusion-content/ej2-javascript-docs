@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Ribbon Modules in  ##Platform_Name## Ribbon control | Syncfusion
-description:  Checkout and learn about Ribbon Modules with ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more details.
-platform: ej2-javascript
+title: Feature Modules in ##Platform_Name## Ribbon | Syncfusion
+description: Learn about the feature-based modules in the ##Platform_Name## Ribbon that must be injected to enable functionalities like the file menu, backstage, and keytips.
 control: Ribbon
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Modules in Ribbon control
+# Feature Modules in ##Platform_Name## Ribbon
 
 The Ribbon control contains several feature-based modules that must be injected to enable their respective functionalities.
 

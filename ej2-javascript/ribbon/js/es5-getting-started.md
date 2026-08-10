@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Ribbon control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more details.
-platform: ej2-javascript
+title: Getting Started with ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to get started with the ##Platform_Name## Ribbon and explore setup, configuration, and core feature examples for building ribbon interfaces.
 control: Ribbon
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with JavaScript Ribbon control
+# Getting Started with ##Platform_Name## Ribbon
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Ribbon and demonstrates the basic usage of the Ribbon control in a JavaScript application.
 

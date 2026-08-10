@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Ribbon Backstage in  ##Platform_Name## Ribbon control | Syncfusion
-description:  Checkout and learn about Ribbon Backstage with ##Platform_Name## Ribbon control of Syncfusion Essential ts 2 and more details.
-platform: ej2-javascript
+title: Backstage in ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to add a Backstage view in the ##Platform_Name## Ribbon to display application-level information and settings like user details and options pages.
 control: Ribbon
+platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ribbon Backstage
+# Backstage in ##Platform_Name## Ribbon
 
 The Ribbon control includes a Backstage view, which serves as a comprehensive replacement for the traditional file menu. It is designed to display application-level information and settings, such as user details, document properties, or options pages. The Backstage view is enabled by configuring the [backStageMenu](https://ej2.syncfusion.com/documentation/api/ribbon#backstagemenu) property.
 
@@ -17,7 +17,7 @@ When active, backstage options are displayed in a list on the left, and the cont
 
 ## Adding backstage items
 
-Define and add items to the Backstage view by populating the [items](https://ej2.syncfusion.com/documentation/api/ribbon/backStageMenuModel/#items) property. To display the Backstage, set the [visible](https://ej2.syncfusion.com/documentation/api/ribbon/backStageMenuModel/#visible) property to `true`. By default, the Backstage view is hidden.
+Define and add items to the Backstage view by populating the [items](https://ej2.syncfusion.com/documentation/api/ribbon/backStageMenuModel#items) property. To display the Backstage, set the [visible](https://ej2.syncfusion.com/documentation/api/ribbon/backStageMenuModel#visible) property to `true`. By default, the Backstage view is hidden.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -32,7 +32,7 @@ Define and add items to the Backstage view by populating the [items](https://ej2
 
 ## Adding footer items
 
-To designate an item as a footer menu item, set its [isFooter](https://ej2.syncfusion.com/documentation/api/ribbon/backstageItemModel/#isfooter) property in the [items](https://ej2.syncfusion.com/documentation/api/ribbon/backStageMenuModel/#items) collection to `true`.
+To designate an item as a footer menu item, set its [isFooter](https://ej2.syncfusion.com/documentation/api/ribbon/backstageItemModel#isfooter) property in the [items](https://ej2.syncfusion.com/documentation/api/ribbon/backStageMenuModel#items) collection to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -47,7 +47,7 @@ To designate an item as a footer menu item, set its [isFooter](https://ej2.syncf
 
 ## Adding separator
 
-Separators are horizontal lines used to visually group related items within the Backstage view. To add a separator, set the [separator](https://ej2.syncfusion.com/documentation/api/ribbon/backstageItemModel/#separator) property of a Backstage item to `true`.
+Separators are horizontal lines used to visually group related items within the Backstage view. To add a separator, set the [separator](https://ej2.syncfusion.com/documentation/api/ribbon/backstageItemModel#separator) property of a Backstage item to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -62,7 +62,7 @@ Separators are horizontal lines used to visually group related items within the 
 
 ## Back button customization
 
-Customize the text and icon of the Backstage view's close button using the [backButton](https://ej2.syncfusion.com/documentation/api/ribbon/backStageMenuModel/#backbutton) property. The button's text is set with the [text](https://ej2.syncfusion.com/documentation/api/ribbon/backstageBackButtonModel/#text) property and its icon with the [iconCss](https://ej2.syncfusion.com/documentation/api/ribbon/backstageBackButtonModel/#iconcss) property. The back button is displayed by setting its [visible](https://ej2.syncfusion.com/documentation/api/ribbon/backstageBackButtonModel/#visible) property to `true`.
+Customize the text and icon of the Backstage view's close button using the [backButton](https://ej2.syncfusion.com/documentation/api/ribbon/backStageMenuModel#backbutton) property. The button's text is set with the [text](https://ej2.syncfusion.com/documentation/api/ribbon/backstageBackButtonModel#text) property and its icon with the [iconCss](https://ej2.syncfusion.com/documentation/api/ribbon/backstageBackButtonModel#iconcss) property. The back button is displayed by setting its [visible](https://ej2.syncfusion.com/documentation/api/ribbon/backstageBackButtonModel#visible) property to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

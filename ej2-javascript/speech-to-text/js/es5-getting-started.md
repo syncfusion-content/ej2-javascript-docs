@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## SpeechToText | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## SpeechToText control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Speech To Text | Syncfusion®
+description: Step-by-step guide to set up the Syncfusion® ##Platform_Name## Speech To Text control in a JavaScript (ES5) app using local scripts or CDN references.
 platform: ej2-javascript
 control: Es5 getting started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with JavaScript SpeechToText control
+# Getting Started with ##Platform_Name## Speech To Text
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 SpeechToText and demonstrates the basic usage of the SpeechToText control in a JavaScript application.
 

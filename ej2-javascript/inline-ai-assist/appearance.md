@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance and styling in React Inline AI Assist | Syncfusion ##Platform_Name## Inline AI Assist control | Syncfusion
-description: Checkout and learn about Appearance with ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
+title: Appearance in ##Platform_Name## Inline AI Assist | Syncfusion®
+description: Style the Syncfusion® ##Platform_Name## Inline AI Assist: set popup width, height, z-index, and a custom cssClass for the inline component.
 platform: ej2-javascript
 control: Inline AI Assist 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance and styling in React Inline AI Assist control
+# Appearance in ##Platform_Name## Inline AI Assist
 
 ## Component Dimensions
 

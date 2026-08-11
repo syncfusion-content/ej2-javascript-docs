@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Inline AI Assist control | Syncfusion
-description: Checkout and learn about Globalization with ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## AI Assist | Syncfusion®
+description: Localize the Syncfusion® ##Platform_Name## AI Assist to any culture and enable right-to-left layout using the enableRtl property.
 platform: ej2-javascript
 control: Inline AI Assist 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in ##Platform_Name## Inline AI Assist control
+# Globalization in ##Platform_Name## AI Assist
 
 ## Localization
 

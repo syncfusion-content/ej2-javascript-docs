@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ES5 getting started with ##Platform_Name## AI AssistView | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## AI AssistView | Syncfusion®
+description: Step-by-step setup for the Syncfusion® ##Platform_Name## AI AssistView in ES5, including CDN/local scripts, dependencies, and control initialization.
 platform: ej2-javascript
 control: AI AssistView
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with JavaScript AI AssistView control
+# Getting Started with ##Platform_Name## AI AssistView
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 AI AssistView and demonstrates the basic usage of the AI AssistView control in a JavaScript application.
 

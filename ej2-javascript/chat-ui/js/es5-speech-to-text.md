@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Speech-to-Text With ##Platform_Name## Chat UI control | Syncfusion
-description: Checkout and learn about configuration of Speech-to-Text in ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Speech to Text in ##Platform_Name## Chat UI | Syncfusion®
+description: Enable Speech-to-Text in the Syncfusion® ##Platform_Name## Chat UI using the browser Web Speech API with custom language and interim results.
 platform: ej2-javascript
 control: Chat UI 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Speech-to-Text in JavaScript Chat UI
+# Speech to Text in ##Platform_Name## Chat UI
 
 The Syncfusion JavaScript Chat UI control integrates `Speech-to-Text` functionality through the browser's [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API). This enables the conversion of spoken words into text using the device's microphone, allowing users to interact with the Chat UI through voice input.
 

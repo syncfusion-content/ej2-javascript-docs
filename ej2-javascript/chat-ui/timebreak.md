@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Time breaks in ##Platform_Name## Chat UI control | Syncfusion
-description: Checkout and learn about Time breaks with ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Time Breaks in ##Platform_Name## Chat UI | Syncfusion®
+description: Show or hide date-wise time break separators in the Syncfusion® ##Platform_Name## Chat UI to group messages by day and improve readability.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Time breaks in ##Platform_Name## Chat UI control
+# Time Breaks in ##Platform_Name## Chat UI
 
 ## Show or hide time breaks
 

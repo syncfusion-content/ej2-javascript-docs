@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Chat UI control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Chat UI | Syncfusion®
+description: Step-by-step setup for the Syncfusion® ##Platform_Name## Chat UI in TypeScript, using the ej2-quickstart-webpack seed and the Essential JS 2 packages.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with ##Platform_Name## Chat UI control
+# Getting Started with ##Platform_Name## Chat UI
 
 This section explains how to create a simple Chat UI control and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 

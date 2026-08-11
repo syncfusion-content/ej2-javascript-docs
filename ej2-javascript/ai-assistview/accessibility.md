@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## AI AssistView control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## AI AssistView | Syncfusion®
+description: Accessibility in the Syncfusion® ##Platform_Name## AI AssistView: WCAG 2.2, Section 508, screen reader, RTL, keyboard navigation, and WAI-ARIA roles.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## AI AssistView control
+# Accessibility in ##Platform_Name## AI AssistView
 
 The AI AssistView control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load on-demand in ##Platform_Name## Chat UI control | Syncfusion
-description: Checkout and learn about Load on-demand with ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Load On-Demand in ##Platform_Name## Chat UI | Syncfusion®
+description: Load older messages on demand in the Syncfusion® ##Platform_Name## Chat UI when the user scrolls to the top, reducing initial load time.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Load on-demand in ##Platform_Name## Chat UI control
+# Load On-Demand in ##Platform_Name## Chat UI
 
 You can use the [loadOnDemand](../api/chat-ui#loadondemand) property to load messages dynamically when the scroll reaches the top of the message list improving performance and reducing load times, particularly in long conversations. This ensures a smooth user experience by only fetching messages as needed rather than loading the entire conversation at once.
 

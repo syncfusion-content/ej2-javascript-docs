@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Chat UI control | Syncfusion
-description: Checkout and learn about templates with ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Templates in ##Platform_Name## Chat UI | Syncfusion®
+description: Customize the Syncfusion® ##Platform_Name## Chat UI with templates for the empty conversation, messages, time breaks, and the typing indicator.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in ##Platform_Name## Chat UI control
+# Templates in ##Platform_Name## Chat UI
 
 The Chat UI control provides several templates for customizing the appearance of the empty conversation area, messages, typing indicator, and more. These templates provide flexibility for users to create a unique, personalized chat experience.
 

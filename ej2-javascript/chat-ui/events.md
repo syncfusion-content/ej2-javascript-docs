@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in ##Platform_Name## Chat UI control | Syncfusion
-description: Checkout and learn about events with ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Events in ##Platform_Name## Chat UI | Syncfusion®
+description: Handle Syncfusion® ##Platform_Name## Chat UI events: created, messageSend, userTyping, and the file attachment upload and removal lifecycle.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## Chat UI control
+# Events in ##Platform_Name## Chat UI
 
 This section describes the Chat UI events that will be triggered when appropriate actions are performed. The following events are available in the Chat UI control.
 

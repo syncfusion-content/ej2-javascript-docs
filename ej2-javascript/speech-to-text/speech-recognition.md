@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Speech recognition in ##Platform_Name## SpeechToText control | Syncfusion
-description: Checkout and learn about Speech recognition with ##Platform_Name## SpeechToText control of Syncfusion Essential JS 2 and more.
+title: Speech Recognition in ##Platform_Name## Speech To Text | Syncfusion®
+description: Configure the Syncfusion® ##Platform_Name## Speech To Text control with the transcript, lang, and allowInterimResults properties to capture spoken input.
 platform: ej2-javascript
 control: SpeechToText
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Speech recognition in ##Platform_Name## SpeechToText control
+# Speech recognition in ##Platform_Name## Speech To Text
 
 ## Retrieving transcripts
 

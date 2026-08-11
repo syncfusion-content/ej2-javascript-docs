@@ -1,14 +1,14 @@
 ---
 layout: post
-title: LiteLLM With TypeScript Inline AI Assist control | Syncfusion
-description: Checkout and learn about integrating LiteLLM with the TypeScript Inline AI Assist control of Syncfusion Essential JS 2 and more details.
+title: Lite LLM in ##Platform_Name## Inline AI Assist | Syncfusion®
+description: Use LiteLLM as a unified proxy so the Syncfusion® ##Platform_Name## Inline AI Assist can route prompts to multiple LLM providers through one OpenAI-style API.
 platform: ej2-javascript
 control: Inline AI Assist 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate Inline AI Assist with LiteLLM
+# Lite LLM in ##Platform_Name## Inline AI Assist
 
 The **Inline AI Assist** control can also be integrated with [LiteLLM](https://docs.litellm.ai/docs), an open-source proxy that provides a unified, OpenAI-compatible API for multiple LLM providers such as [OpenAI](https://openai.com) and [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai).
 

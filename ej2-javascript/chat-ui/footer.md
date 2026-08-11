@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Footer in ##Platform_Name## Chat UI control | Syncfusion
-description: Checkout and learn about Footer with ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Footer in ##Platform_Name## Chat UI | Syncfusion®
+description: Show or hide the Syncfusion® ##Platform_Name## Chat UI footer and customize its template to host the message input and send controls.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Footer in ##Platform_Name## Chat UI control
+# Footer in ##Platform_Name## Chat UI
 
 ## Show or hide footer
 

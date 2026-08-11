@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Data in ##Platform_Name## Range navigator control | Syncfusion
-description: Learn here all about Data in Syncfusion ##Platform_Name## Range navigator control of Syncfusion Essential JS 2 and more.
+title: Data in ##Platform_Name## Range Selector | Syncfusion
+description: Learn here all about Data in Syncfusion ##Platform_Name## Range Selector of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Data 
+control: Range Selector
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Data in ##Platform_Name## Range navigator control
+# Data in ##Platform_Name## Range Selector
 
 ## Numeric
 

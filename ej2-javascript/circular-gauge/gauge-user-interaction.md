@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Gauge user interaction in ##Platform_Name## Circular gauge control | Syncfusion
-description: Learn here all about Gauge user interaction in Syncfusion ##Platform_Name## Circular gauge control of Syncfusion Essential JS 2 and more.
+title: User Interaction in ##Platform_Name## Circular Gauge | Syncfusion
+description: Learn here all about User Interaction in Syncfusion ##Platform_Name## Circular Gauge of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Gauge user interaction 
+control: User Interaction
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 
-# Gauge user interaction in ##Platform_Name## Circular gauge control
+# User Interaction in ##Platform_Name## Circular Gauge
 
 ## Tooltip for pointers
 
@@ -152,7 +152,7 @@ The following code example shows the tooltip for the ranges and annotation.
 ## Pointer Drag
 
 Pointers can be dragged over the axis value. This can be achieved by clicking and dragging the pointer. To enable or disable the pointer drag, you can use
-[`enablePointerDrag`](../api/circular-gauge/#enablepointerdrag-boolean) property.
+[`enablePointerDrag`](../api/circular-gauge#enablepointerdrag-boolean) property.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Axis customization in ##Platform_Name## Stock chart control | Syncfusion
-description: Learn here all about Axis customization in Syncfusion ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more.
+title: Axis customization in ##Platform_Name## Stock Charts | Syncfusion
+description: Learn here all about Axis customization in Syncfusion ##Platform_Name## Stock Charts of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Axis customization 
+control: Stock Charts
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Axis customization in ##Platform_Name## Stock chart control
+# Axis customization in ##Platform_Name## Stock Charts
 
 ## Axis Crossing
 

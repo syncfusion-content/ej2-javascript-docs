@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Legend in table in ##Platform_Name## Chart control | Syncfusion
+title: How to add legend in table in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Legend in table in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Legend in table 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Legend in table in ##Platform_Name## Chart control
+# How to add legend in table in ##Platform_Name## Chart
 
 The `annotation` property is used to add legend in table and the `multiLevelLabels` property is used to customize the axis label in table format.
 

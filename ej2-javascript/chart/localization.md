@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Chart control | Syncfusion
+title: Localization in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Localization in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Localization 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## Chart control
+# Localization in ##Platform_Name## Chart
 
 The localization library localizes the Chart's default text content. Static text used by chart features (for example, zoom toolbar labels) can be translated by providing a locale value and a translation object.
 

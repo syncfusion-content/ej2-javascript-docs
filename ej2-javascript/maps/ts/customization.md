@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in the ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Customization in TypeScript Maps | Syncfusion
+description: Customize TypeScript Maps by configuring dimensions, titles, themes, colors, shapes, and projection types to create tailored map visualizations.
 platform: ej2-javascript
 control: Customization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in ##Platform_Name## Maps component
+# Customization in TypeScript Maps
 
 The Maps component provides extensive customization options to control its appearance, layout, and visual presentation. This includes configuring dimensions, titles, themes, colors, shapes, and projection types to create tailored map visualizations that meet specific application requirements.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populate data in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Populate data in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Populate data in TypeScript Maps | Syncfusion
+description: Bind GeoJSON, geographic, or remote data sources to TypeScript Maps to populate shape geometry and render the requested geographic features.
 platform: ej2-javascript
 control: Populate data 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Populate data in ##Platform_Name## Maps component
+# Populate data in TypeScript Maps
 
 This section explains how to populate data inputs and provide it to the Maps component.
 
@@ -99,7 +99,7 @@ The following properties in the [`layers`](../api/maps/layerSettingsModel) are u
 
 ### Shape property path
 
-The [`shapePropertyPath`](../api/maps/layerSettingsModel/shapepropertypath) property is used to refer to the column name in the [`shapeData`](../api/maps/layerSettingsModel/shapedata) property of shape layers to identify the shape. When the values of [`shapeDataPath`](../api/maps/layerSettingsModel/shapedatapath) property from the [`dataSource`](../api/maps/layerSettingsModel/datasource) property and [`shapePropertyPath`](../api/maps/layerSettingsModel/shapepropertypath) property from the [`shapeData`](../api/maps/layerSettingsModel/shapedata) property match, then the associated object from the data source is bound to the corresponding shape.
+The [`shapePropertyPath`](../api/maps/layerSettingsModel#shapepropertypath) property is used to refer to the column name in the [`shapeData`](../api/maps/layerSettingsModel#shapedata) property of shape layers to identify the shape. When the values of [`shapeDataPath`](../api/maps/layerSettingsModel#shapedatapath) property from the [`dataSource`](../api/maps/layerSettingsModel#datasource) property and [`shapePropertyPath`](../api/maps/layerSettingsModel#shapepropertypath) property from the [`shapeData`](../api/maps/layerSettingsModel#shapedata) property match, then the associated object from the data source is bound to the corresponding shape.
 
 > `world-map.ts` file contains following data and its field **name** value is used to map the corresponding shape with the provided data source.
 
@@ -118,7 +118,7 @@ export let world_map: object = {
 
 ### Shape data path
 
-The [`shapeDataPath`](../api/maps/layerSettingsModel/shapedatapath) property is similar to the [`shapePropertyPath`](../api/maps/layerSettingsModel/shapepropertypath) property, but it refers to the field name in the [`dataSource`](../api/maps/layerSettingsModel/datasource) property. For example, [populationData](#data-source) contains the **code**, **value**, **name**, **population**, and **density** fields. Here, the **name** field is set to the shapeDataPath to map the corresponding value of the field name in shape data.
+The [`shapeDataPath`](../api/maps/layerSettingsModel#shapedatapath) property is similar to the [`shapePropertyPath`](../api/maps/layerSettingsModel#shapepropertypath) property, but it refers to the field name in the [`dataSource`](../api/maps/layerSettingsModel#datasource) property. For example, [populationData](#data-source) contains the **code**, **value**, **name**, **population**, and **density** fields. Here, the **name** field is set to the shapeDataPath to map the corresponding value of the field name in shape data.
 
 In the following example, both **name** fields contain the same value **Afghanistan**. This value is matched in both the shape data and data source, so the details associated with **Afghanistan** are mapped to the corresponding shape and used to color the shape, display data labels, display tooltips, and more.
 
@@ -137,9 +137,9 @@ In the following example, both **name** fields contain the same value **Afghanis
 
 Data from a data source can be bound to the Maps in two different ways.
 
-1. Bind the field name directly to the properties as [`shapeDataPath`](../api/maps/layerSettingsModel/shapedatapath), [`colorValuePath`](../api/maps/markerSettingsModel/colorvaluepath), [`valuePath`](../api/maps/tooltipSettingsModel/valuepath) and [`shapeValuePath`](../api/maps/markerSettingsModel/shapevaluepath).
+1. Bind the field name directly to the properties as [`shapeDataPath`](../api/maps/layerSettingsModel#shapedatapath), [`colorValuePath`](../api/maps/markerSettingsModel#colorvaluepath), [`valuePath`](../api/maps/tooltipSettingsModel#valuepath) and [`shapeValuePath`](../api/maps/markerSettingsModel#shapevaluepath).
 
-2. Bind the field name as `data.field` to the properties as [`shapeDataPath`](../api/maps/layerSettingsModel/shapedatapath), [`colorValuePath`](../api/maps/markerSettingsModel/colorvaluepath), [`valuePath`](../api/maps/tooltipSettingsModel/valuepath) and [`shapeValuePath`](../api/maps/markerSettingsModel/shapevaluepath).
+2. Bind the field name as `data.field` to the properties as [`shapeDataPath`](../api/maps/layerSettingsModel#shapedatapath), [`colorValuePath`](../api/maps/markerSettingsModel#colorvaluepath), [`valuePath`](../api/maps/tooltipSettingsModel#valuepath) and [`shapeValuePath`](../api/maps/markerSettingsModel#shapevaluepath).
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

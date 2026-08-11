@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Smith chart tooltip in ##Platform_Name## Smithchart control | Syncfusion
+title: Tooltip in ##Platform_Name## Smith Chart | Syncfusion
 description: Learn here all about Smith chart tooltip in Syncfusion ##Platform_Name## Smithchart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Smith chart tooltip 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Smith chart tooltip in ##Platform_Name## Smithchart control
+# Tooltip in ##Platform_Name## Smith Chart
 
 Smithchart will display details about the points through tooltip, when the mouse is moved over the point. By default, tooltip is disabled. To enable the tooltip for smithchart, you need to import and inject TooltipRender module from chart. And also set the property visible as true, in tooltip settings. You can customize the tooltip's visibility and appearance differently each series in the smithchart.
 

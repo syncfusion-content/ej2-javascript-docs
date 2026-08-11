@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection and highlight in ##Platform_Name## Treemap control | Syncfusion
-description: Learn here all about Selection and highlight in Syncfusion ##Platform_Name## Treemap control of Syncfusion Essential JS 2 and more.
+title: Selection and highlight in TypeScript Treemap control | Syncfusion
+description: Learn here all about Selection and highlight in Syncfusion TypeScript Treemap control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Selection and highlight 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection and highlight in ##Platform_Name## Treemap control
+# Selection and highlight in TypeScript Treemap control
 
 ## Selection
 

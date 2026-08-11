@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Data markers in ##Platform_Name## Chart control | Syncfusion
+title: Markers in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Data markers in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Data markers 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data markers in ##Platform_Name## Chart control
+# Markers in ##Platform_Name## Chart
 
 Data markers are visual indicators placed at each data point on a series, helping to clearly identify and highlight individual values in your chart. Markers improve readability and accessibility, especially in line and area charts where data points may otherwise be unclear. Customize marker shape, color, size, and appearance to match your design requirements.
 

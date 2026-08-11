@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Special points customization in ##Platform_Name## Sparkline | Syncfusion
+title: Customizing special points in ##Platform_Name## Sparkline | Syncfusion
 description: Learn here all about Special points customization in Syncfusion ##Platform_Name## Sparkline control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Special points customization 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Special points customization in ##Platform_Name## Sparkline control
+# Special points customization in ##Platform_Name## Sparkline
 
 You can customize the points by initializing the point colors. The customization options allows to differentiate the [`start`], [`end`], [`positive`], [`negative`], and [`low`] points. This customization is only applicable for line, column, and area type sparklines.
 

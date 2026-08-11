@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Polar Chart in ##Platform_Name## Charts | Syncfusion
+title: Polar Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Polar in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Polar 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Polar Chart in ##Platform_Name## Charts
+# Polar Chart in ##Platform_Name## Chart
 
 ## Polar Chart
 

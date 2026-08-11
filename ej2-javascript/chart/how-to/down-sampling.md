@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Down sampling in ##Platform_Name## Chart control | Syncfusion
+title: How to downsample data in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Down sampling in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Down sampling 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Down sampling in ##Platform_Name## Chart control
+# How to downsample data in ##Platform_Name## Chart
 
 Downsampling is the process of reducing the data rate. We have given a 2000 data points for chart. After applying downsampling algorithm, chart data points has been reduced  and rendered with 400 data points.
 

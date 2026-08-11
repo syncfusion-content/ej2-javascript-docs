@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Theme in ##Platform_Name## Progressbar control | Syncfusion
-description: Learn here all about Theme in Syncfusion ##Platform_Name## Progressbar control of Syncfusion Essential JS 2 and more.
+title: Theme in ##Platform_Name## Progress Bar control | Syncfusion
+description: Learn here all about Theme in Syncfusion ##Platform_Name## Progress Bar control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Theme 
+control: Theme
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Theme in ##Platform_Name## Progressbar control
+# Theme in ##Platform_Name## Progress Bar control
 
-To enhance the visualization of the Progress Bar, use different themes that are mapped to the [`theme`](https://ej2.syncfusion.com/javascript/documentation/api/progressbar/#theme) property. The following themes are available in the Progress Bar.
+To enhance the visualization of the Progress Bar, use different themes that are mapped to the [`theme`](https://ej2.syncfusion.com/javascript/documentation/api/progressbar#theme) property. The following themes are available in the Progress Bar.
 
 * Material
 * Fabric

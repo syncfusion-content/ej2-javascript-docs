@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populate data in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Populate data in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Populate data in ##Platform_Name## Maps | Syncfusion
+description: Learn here all about Populate data in Syncfusion ##Platform_Name## Maps of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Populate data 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Populate data in ##Platform_Name## Maps component
+# Populate data in ##Platform_Name## Maps
 
 ## Shape data
 

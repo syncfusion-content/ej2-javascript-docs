@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Gauge annotations in ##Platform_Name## Circular gauge control | Syncfusion
-description: Learn here all about Gauge annotations in Syncfusion ##Platform_Name## Circular gauge control of Syncfusion Essential JS 2 and more.
+title: Annotations in ##Platform_Name## Circular Gauge | Syncfusion
+description: Learn here all about Annotations in Syncfusion ##Platform_Name## Circular Gauge of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Gauge annotations 
+control: Annotations
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Gauge annotations in ##Platform_Name## Circular gauge control
+# Annotations in ##Platform_Name## Circular Gauge
 
 Annotations are used to mark a specific area of interest in the gauge with texts, shapes or images.
 

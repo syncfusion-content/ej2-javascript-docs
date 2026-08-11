@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Module in ##Platform_Name## Chart control | Syncfusion
+title: Feature modules in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Module in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Module 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Module in ##Platform_Name## Chart control
+# Feature modules in ##Platform_Name## Chart
 
 The following available modules should be injected to extend the Chart's functionality.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visio Integration in ##Platform_Name## Diagram | Syncfusion®
+title: Import and Export Visio files in ##Platform_Name## Diagram | Syncfusion®
 description: Import and export Microsoft Visio (.vsdx) diagrams in the ##Platform_Name## Diagram, including page, shape, and connector mapping.
 platform: ej2-javascript
 control: Diagram
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Visio Integration in ##Platform_Name## Diagram
+# Import and Export Visio files in ##Platform_Name## Diagram
 
 N> Visio import and export support is currently **experimental**. Certain features may be limited or may not function as expected.
 

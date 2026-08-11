@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Candle Chart in ##Platform_Name## Charts | Syncfusion
+title: Candle Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Candle in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Candle 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Candle Chart in ##Platform_Name## Charts
+# Candle Chart in ##Platform_Name## Chart
 
 ## Candle
 

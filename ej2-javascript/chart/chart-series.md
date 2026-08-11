@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Chart series in ##Platform_Name## Chart control | Syncfusion
+title: Multiple series in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Chart series in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Chart series 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart series in ##Platform_Name## Chart control
+# Multiple series in ##Platform_Name## Chart
 
 ## Multiple Series
 

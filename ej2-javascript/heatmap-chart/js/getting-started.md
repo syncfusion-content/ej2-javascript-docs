@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ES5 getting started with ##Platform_Name## HeatMap component | Syncfusion
-description: Learn how to create and configure a Syncfusion JavaScript ES5 HeatMap component using CDN resources and data binding.
+title: ES5 Getting Started with ##Platform_Name## HeatMap Chart | Syncfusion
+description: Learn how to create and configure a Syncfusion JavaScript ES5 HeatMap Chart using CDN resources and data binding.
 platform: ej2-javascript
 control: HeatMap
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion® JavaScript (ES5) HeatMap Component
+# Getting Started with Syncfusion® JavaScript (ES5) HeatMap Chart
 
 Build your first Syncfusion JavaScript (ES5) application with a HeatMap in a few minutes. This quickstart guides you through creating a minimal HTML page, loading the required Syncfusion scripts from the CDN, supplying two-dimensional data, and rendering a color-coded data grid.
 

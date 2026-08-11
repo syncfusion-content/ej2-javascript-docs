@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Working with data in ##Platform_Name## Stock chart control | Syncfusion
-description: Learn here all about Working with data in Syncfusion ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more.
+title: Working with data in ##Platform_Name## Stock Charts | Syncfusion
+description: Learn here all about Working with data in Syncfusion ##Platform_Name## Stock Charts of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Working with data 
+control: Stock Charts
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Working with data in ##Platform_Name## Stock chart control
+# Working with data in ##Platform_Name## Stock Charts
 
 Stock Chart can visualise data bound from local or remote data.
 
@@ -78,4 +78,4 @@ When no data is available to render in the stock chart, the `noDataTemplate` pro
 
 ## See Also
 
-* [Series Types](./series-types/)
+* [Series Types](./series-types)

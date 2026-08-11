@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Bullet chart control | Syncfusion
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Bullet chart control of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## Bullet Chart | Syncfusion
+description: Learn how to customize the Syncfusion ##Platform_Name## Bullet Chart, including orientation, flow direction, and animation.
 platform: ej2-javascript
-control: Customization 
+control: Bullet Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Customization in ##Platform_Name## Bullet chart control
+# Customization in ##Platform_Name## Bullet Chart
 
 ## Orientation
 

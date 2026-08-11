@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## ProgressBar control | Syncfusion
-description: Check out and learn about Getting started with ##Platform_Name## ProgressBar control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Progress Bar control | Syncfusion
+description: Check out and learn about Getting started with ##Platform_Name## Progress Bar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: ProgressBar
+control: Progress Bar
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with ##Platform_Name## ProgressBar control
+# Getting started with ##Platform_Name## Progress Bar control
 
 This document explains how to create a simple ProgressBar and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). Ensure that Node.js is installed on your machine. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). Ensure that Node.js is installed on your machine. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started).
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ Before you begin, ensure you have the following installed on your machine:
 
 * Node.js
 * [Visual Studio Code](https://code.visualstudio.com) (or any text editor)
-* [Git](https://git-scm.com/) for cloning the quickstart repository
+* [Git](https://git-scm.com) for cloning the quickstart repository
 * A modern web browser (Chrome, Edge, Firefox, or Safari) to view the result
 
 ## Dependencies

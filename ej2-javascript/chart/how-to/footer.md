@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Footer in ##Platform_Name## Chart control | Syncfusion
+title: How to add footer and watermark in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Footer in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Footer 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Footer in ##Platform_Name## Chart control
+# How to add footer and watermark in ##Platform_Name## Chart
 
 By using `annotation`, you can place any html elements to chart in a desired view.
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: DateTime axis in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about DateTime axis in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+title: DateTime Axis in ##Platform_Name## 3D Chart | Syncfusion
+description: Learn how to render the Syncfusion ##Platform_Name## 3D Chart with a DateTime axis that displays date and time scale values.
 platform: ej2-javascript
-control: 3D Chart 
+control: 3D Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# DateTime axis in ##Platform_Name## 3D Chart control
+# DateTime Axis in ##Platform_Name## 3D Chart
 
 ## DateTime axis
 
@@ -43,7 +43,7 @@ DateTime axis uses date time scale and displays the date time values as axis lab
 {% previewsample "page.domainurl/code-snippet/chart3d/date-time-cs1" %}
 {% endif %}
 
->Note: To use datetime axis, we need to inject `DateTime3D` module using `Chart3D.Inject(DateTime3D)` method and set the [`valueType`](../api/chart3d/axis3D/#valuetype) of axis to **DateTime**.
+>Note: To use datetime axis, we need to inject `DateTime3D` module using `Chart3D.Inject(DateTime3D)` method and set the [`valueType`](../api/chart3d/axis3D#valuetype) of axis to **DateTime**.
 
 ## DateTime category axis
 
@@ -76,11 +76,11 @@ DateTime category axis is used to display the date time values with non-linear i
 {% previewsample "page.domainurl/code-snippet/chart3d/date-time-cs2" %}
 {% endif %}
 
->Note: To use datetime category axis, we need to inject `DateTimeCategory3D` module using the `Chart3D.Inject(DateTimeCategory3D)` method and set the [`valueType`](../api/chart3d/axis3D/#valuetype) of axis to **DateTimeCategory**.
+>Note: To use datetime category axis, we need to inject `DateTimeCategory3D` module using the `Chart3D.Inject(DateTimeCategory3D)` method and set the [`valueType`](../api/chart3d/axis3D#valuetype) of axis to **DateTimeCategory**.
 
 ### Range
 
-Range of an axis will be calculated automatically based on the provided data. You can also customize the range of an axis using [`minimum`](../api/chart3d/axis3D/#minimum), [`maximum`](../api/chart3d/axis3D/#maximum) and [`interval`](../api/chart3d/axis3D/#interval) properties.
+Range of an axis will be calculated automatically based on the provided data. You can also customize the range of an axis using [`minimum`](../api/chart3d/axis3D#minimum), [`maximum`](../api/chart3d/axis3D#maximum) and [`interval`](../api/chart3d/axis3D#interval) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -111,7 +111,7 @@ Range of an axis will be calculated automatically based on the provided data. Yo
 
 ### Interval customization
 
-Date time intervals can be customized by using the [`interval`](../api/chart3d/axis3D/#interval) and [`intervalType`](../api/chart3d/axis3D/#intervaltype) properties of the axis. For example, when you set `interval` as **2** and `intervalType` as **Years**, it considers 2 years as interval. DateTime axis supports following interval types,
+Date time intervals can be customized by using the [`interval`](../api/chart3d/axis3D#interval) and [`intervalType`](../api/chart3d/axis3D#intervaltype) properties of the axis. For example, when you set `interval` as **2** and `intervalType` as **Years**, it considers 2 years as interval. DateTime axis supports following interval types,
 
 * Auto
 * Years
@@ -150,7 +150,7 @@ Date time intervals can be customized by using the [`interval`](../api/chart3d/a
 
 **Applying padding to the range**
 
-Padding can be applied to the minimum and maximum extremes of the range by using the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) property. DateTime axis supports the following types of padding,
+Padding can be applied to the minimum and maximum extremes of the range by using the [`rangePadding`](../api/chart3d/axis3D#rangepadding) property. DateTime axis supports the following types of padding,
 
 * None
 * Round
@@ -158,7 +158,7 @@ Padding can be applied to the minimum and maximum extremes of the range by using
 
 **DateTime - None**
 
-When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `None`, minimum and maximum of an axis is based on the data.
+When the [`rangePadding`](../api/chart3d/axis3D#rangepadding) is set to `None`, minimum and maximum of an axis is based on the data.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -189,7 +189,7 @@ When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `None`,
 
 **DateTime - Round**
 
-When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Round`, minimum and maximum will be rounded to the nearest possible value, which is divisible by interval. For example, when the minimum is **15th Jan**, interval is **1** and interval type is **Month**, then the axis minimum will be **Jan 1st**.
+When the [`rangePadding`](../api/chart3d/axis3D#rangepadding) is set to `Round`, minimum and maximum will be rounded to the nearest possible value, which is divisible by interval. For example, when the minimum is **15th Jan**, interval is **1** and interval type is **Month**, then the axis minimum will be **Jan 1st**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -220,7 +220,7 @@ When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Round`
 
 **DateTime - Additional**
 
-When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Additional`, interval of an axis will be padded to the minimum and maximum of the axis.
+When the [`rangePadding`](../api/chart3d/axis3D#rangepadding) is set to `Additional`, interval of an axis will be padded to the minimum and maximum of the axis.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -251,7 +251,7 @@ When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Additi
 
 ## Label format
 
-The date can be formatted and parsed to all globalize format using the [`labelFormat`](../api/chart3d/axis3D/#labelformat) property in an axis.
+The date can be formatted and parsed to all globalize format using the [`labelFormat`](../api/chart3d/axis3D#labelformat) property in an axis.
 
 {% if page.publishingplatform == "typescript" %}
 

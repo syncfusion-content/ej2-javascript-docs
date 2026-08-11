@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom path in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Custom path in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Custom path in ##Platform_Name## Maps | Syncfusion
+description: Learn here all about Custom path in Syncfusion ##Platform_Name## Maps of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Custom path 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom path in ##Platform_Name## Maps component
+# Custom path in ##Platform_Name## Maps
 
 Maps component can be customized as the desired layout using the custom path map feature. Here, the Maps component has been showcased with normal geometry type shapes to represent the bus seat selection layout. Please refer to the following example to render the bus seat selection.
 

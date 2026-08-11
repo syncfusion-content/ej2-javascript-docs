@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Render methods in ##Platform_Name## Chart control | Syncfusion
+title: Rendering methods in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Render methods in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Render methods 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-# Render methods in ##Platform_Name## Chart control
+# Rendering methods in ##Platform_Name## Chart
 
 Chart uses following two rendering methods.
 

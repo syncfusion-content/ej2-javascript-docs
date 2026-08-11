@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Internationalization in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Internationalization in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Internationalization in ##Platform_Name## Maps | Syncfusion
+description: Learn here all about Internationalization in Syncfusion ##Platform_Name## Maps of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Internationalization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Internationalization in ##Platform_Name## Maps component
+# Internationalization in ##Platform_Name## Maps
 
 Internationalization enables the Maps component to display content in different cultures and locales, making it accessible to users worldwide. The Maps component supports internationalization for the following elements:
 

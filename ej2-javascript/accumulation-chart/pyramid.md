@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Pyramid in ##Platform_Name## Accumulation chart control | Syncfusion
-description: Learn here all about Pyramid in Syncfusion ##Platform_Name## Accumulation chart control of Syncfusion Essential JS 2 and more.
+title: Pyramid in ##Platform_Name## Accumulation Chart | Syncfusion
+description: Learn how to render a pyramid series in the Syncfusion ##Platform_Name## Accumulation Chart using the PyramidSeries module.
 platform: ej2-javascript
-control: Pyramid 
+control: Accumulation Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pyramid in ##Platform_Name## Accumulation chart control
+# Pyramid in ##Platform_Name## Accumulation Chart
 
-To render a pyramid series, use the series [`type`](../api/accumulation-chart/accumulationSeriesModel/) as `Pyramid` and inject `PyramidSeries` module using the `AccumulationChart.Inject(PyramidSeries)` method.
+To render a pyramid series, use the series [`type`](../api/accumulation-chart/accumulationSeriesModel) as `Pyramid` and inject `PyramidSeries` module using the `AccumulationChart.Inject(PyramidSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 

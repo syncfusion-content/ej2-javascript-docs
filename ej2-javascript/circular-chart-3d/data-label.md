@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Data Label in ##Platform_Name## 3D Circular Chart control | Syncfusion
-description: Learn here all about data label in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
+title: Data Label in ##Platform_Name## 3D Circular Chart | Syncfusion
+description: Learn here all about data label in Syncfusion ##Platform_Name## 3D Circular Chart of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Data Label
+control: 3D Circular Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data Label in ##Platform_Name## 3D Circular Chart control
+# Data Label in ##Platform_Name## 3D Circular Chart
 
 A data label refers to a label associated with specific data points. It can be added to a 3D Circular Chart series by enabling the `visible` option in the `dataLabel` property. By default, the labels will arrange themselves smartly to avoid overlapping.
 

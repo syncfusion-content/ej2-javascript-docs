@@ -1,15 +1,15 @@
 ---
 layout: post
-title: ES5 getting started with ##Platform_Name## ProgressBar | Syncfusion
-description: Check out and learn about ES5 getting started with ##Platform_Name## ProgressBar control of Syncfusion Essential JS 2 and more details.
+title: ES5 getting started with ##Platform_Name## Progress Bar | Syncfusion
+description: Check out and learn about ES5 getting started with ##Platform_Name## Progress Bar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: ProgressBar
+control: Progress Bar
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion® JavaScript (ES5) ProgressBar Control
+# Getting Started with Syncfusion® JavaScript (ES5) Progress Bar Control
 
 Build your first Syncfusion JavaScript (ES5) application with a simple ProgressBar in just a few minutes. This quickstart guides you through creating a minimal, runnable HTML page that loads the Syncfusion EJ2 (ES5) ProgressBar control from the CDN, initializes it with a value, and renders an interactive progress indicator.
 

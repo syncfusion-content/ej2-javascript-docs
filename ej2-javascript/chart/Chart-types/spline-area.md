@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Spline Area Chart in ##Platform_Name## Charts | Syncfusion
+title: Spline Area Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Spline Area in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Spline Area 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Spline Area Chart in ##Platform_Name## Charts
+# Spline Area Chart in ##Platform_Name## Chart
 
 ## Spline Area
 

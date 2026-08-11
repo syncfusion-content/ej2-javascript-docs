@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Progressbar control | Syncfusion
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Progressbar control of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## Progress Bar control | Syncfusion
+description: Learn here all about Customization in Syncfusion ##Platform_Name## Progress Bar control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Customization 
+control: Customization
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in ##Platform_Name## Progressbar control
+# Customization in ##Platform_Name## Progress Bar control
 
 ## Segments
 
@@ -46,7 +46,7 @@ We can divide a progress bar into multiple segments using a `segmentCount` to vi
 
 ## Thickness
 
- Customize the thickness of the track using [`trackThickness`](../api/progressbar/progressBarModel/#trackthickness), progress using [`progressThickness`](../api/progressbar/progressBarModel/#progressthickness) and secondary progress using [`secondaryProgressThickness`](../api/progressbar/progressBarModel/#secondaryprogressthickness) to render the progress bar with different appearances.
+ Customize the thickness of the track using [`trackThickness`](../api/progressbar/progressBarModel#trackthickness), progress using [`progressThickness`](../api/progressbar/progressBarModel#progressthickness) and secondary progress using [`secondaryProgressThickness`](../api/progressbar/progressBarModel#secondaryprogressthickness) to render the progress bar with different appearances.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -145,7 +145,7 @@ The inner radius of the progress bar can be customized using `innerRadius` prope
 
 <!-- markdownlint-disable MD033 -->
 
-Customize the color of progress, secondary progress, and track by using the [`progressColor`](../api/progressbar/progressBarModel/#progresscolor), [`secondaryProgressColor`](../api/progressbar/progressBarModel/#secondaryprogresscolor), and [`trackColor`](../api/progressbar/progressBarModel/#trackcolor) properties.
+Customize the color of progress, secondary progress, and track by using the [`progressColor`](../api/progressbar/progressBarModel#progresscolor), [`secondaryProgressColor`](../api/progressbar/progressBarModel#secondaryprogresscolor), and [`trackColor`](../api/progressbar/progressBarModel#trackcolor) properties.
 
 {% if page.publishingplatform == "typescript" %}
 

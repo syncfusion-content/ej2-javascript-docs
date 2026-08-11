@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Points customization in ##Platform_Name## Chart control | Syncfusion
+title: How to customize points in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Points customization in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Points customization 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Points customization in ##Platform_Name## Chart control
+# How to customize points in ##Platform_Name## Chart
 
 You can customize the series points with patterns by using the `pointColorMapping` property.
 

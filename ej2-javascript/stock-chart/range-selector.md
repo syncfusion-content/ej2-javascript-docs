@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Range selector in ##Platform_Name## Stock chart control | Syncfusion
-description: Learn here all about Range selector in Syncfusion ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more.
+title: Range selector in ##Platform_Name## Stock Charts | Syncfusion
+description: Learn here all about Range selector in Syncfusion ##Platform_Name## Stock Charts of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Range selector 
+control: Stock Charts
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Range selector in ##Platform_Name## Stock chart control
+# Range selector in ##Platform_Name## Stock Charts
 
 The left and right thumb of RangeNavigator are used to indicate the selected range in the large collection of data. Following are the ways you can select a range.
 

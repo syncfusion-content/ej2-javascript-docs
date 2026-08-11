@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Tool tip format in ##Platform_Name## Chart control | Syncfusion
+title: How to format tooltip in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Tool tip format in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Tool tip format 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool tip format in ##Platform_Name## Chart control
+# How to format tooltip in ##Platform_Name## Chart
 
 Using [`tooltipRender`](../../api/chart/chartModel/#tooltiprender) event, you can able to format the datetime value instead of rendered value.
 

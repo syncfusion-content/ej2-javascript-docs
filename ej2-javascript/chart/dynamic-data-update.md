@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Dynamic data update in ##Platform_Name## Chart control | Syncfusion
+title: Dynamic data update in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about dynamic data update in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Dynamic Data Update
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dynamic data update in ##Platform_Name## Chart control
+# Dynamic data update in ##Platform_Name## Chart
 
 The ##Platform_Name## Chart control provides methods to dynamically modify data without requiring a full chart refresh. This enables real-time data visualization, interactive features, and responsive user experiences. Common scenarios include adding sensor readings, removing outdated data points, replacing entire datasets, and enabling click-based data manipulation.
 

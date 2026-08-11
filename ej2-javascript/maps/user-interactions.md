@@ -1,7 +1,7 @@
 ---
 layout: post
-title: User interactions in ##Platform_Name## Maps control | Syncfusion
-description: Learn here all about User interactions in Syncfusion ##Platform_Name## Maps control of Syncfusion Essential JS 2 and more.
+title: User interactions in ##Platform_Name## Maps | Syncfusion
+description: Learn here all about User interactions in Syncfusion ##Platform_Name## Maps of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: User interactions 
 publishingplatform: ##Platform_Name##
@@ -9,19 +9,19 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# User interactions in ##Platform_Name## Maps control
+# User interactions in ##Platform_Name## Maps
 
 ## Zooming
 
-The zooming feature is used to zoom in and out of Maps to show in-depth information. It is controlled by the [`zoomFactor`](../api/maps/zoomSettingsModel/zoomfactor) property of the [`zoomSettings`](../api/maps/zoomSettingsModel) of the Maps. The [`zoomFactor`](../api/maps/zoomSettingsModel/zoomfactor) increases or decreases dynamically based on zoom in and out interactions.
+The zooming feature is used to zoom in and out of Maps to show in-depth information. It is controlled by the [`zoomFactor`](../api/maps/zoomSettingsModel#zoomfactor) property of the [`zoomSettings`](../api/maps/zoomSettingsModel) of the Maps. The [`zoomFactor`](../api/maps/zoomSettingsModel#zoomfactor) increases or decreases dynamically based on zoom in and out interactions.
 
 <b>Enable zooming</b>
 
-Zooming of Maps is enabled by setting the [`enable`](../api/maps/zoomSettingsModel/enable) property of [`zoomSettings`](../api/maps/zoomSettingsModel) to **true**.
+Zooming of Maps is enabled by setting the [`enable`](../api/maps/zoomSettingsModel#enable) property of [`zoomSettings`](../api/maps/zoomSettingsModel) to **true**.
 
 <b>Enable panning</b>
 
-To enable the panning feature, set the [`enablePanning`](../api/maps/zoomSettingsModel/enablepanning) property of [`zoomSettings`](../api/maps/zoomSettingsModel) to **true**.
+To enable the panning feature, set the [`enablePanning`](../api/maps/zoomSettingsModel#enablepanning) property of [`zoomSettings`](../api/maps/zoomSettingsModel) to **true**.
 
 ```ts
 import { world_map } from './world-map.ts';

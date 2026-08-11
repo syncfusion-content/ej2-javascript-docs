@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Series visible in ##Platform_Name## Chart control | Syncfusion
+title: How to show series on legend click in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Series visible in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Series visible 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Series visible in ##Platform_Name## Chart control
+# How to show series on legend click in ##Platform_Name## Chart
 
 By using the `chartMouseClick` event, you can show the series based on respective legend click. In this event, you can get the legend target id, using which you can get the current series index. Based on the index, you can set value of `visible` to `true` or `false`.
 

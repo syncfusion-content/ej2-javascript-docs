@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Color mapping in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Color mapping in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Color mapping in ##Platform_Name## Maps | Syncfusion
+description: Learn here all about Color mapping in Syncfusion ##Platform_Name## Maps of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Color mapping 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Color mapping in ##Platform_Name## Maps component
+# Color mapping in ##Platform_Name## Maps
 
 Color mapping enables dynamic coloring of map shapes based on data values, making it easier to visualize data patterns across geographical regions. The Maps component supports three types of color mapping:
 

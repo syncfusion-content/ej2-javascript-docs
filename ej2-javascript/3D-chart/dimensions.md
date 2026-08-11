@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dimensions in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about dimensions in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+title: Dimensions in ##Platform_Name## 3D Chart | Syncfusion
+description: Learn how to set the width and height of the Syncfusion ##Platform_Name## 3D Chart by configuring the container size.
 platform: ej2-javascript
 control: 3D Chart
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dimensions in ##Platform_Name## 3D Chart control
+# Dimensions in ##Platform_Name## 3D Chart
 
 ## Size for container
 
@@ -53,7 +53,7 @@ The 3D chart can be rendered to its container size and it can be set via inline 
 
 <!-- markdownlint-disable MD036 -->
 
-The size of the 3D chart can be set directly through [`width`](../api/chart3d/chart3DModel/#width) and [`height`](../api/chart3d/chart3DModel/#height) properties.
+The size of the 3D chart can be set directly through [`width`](../api/chart3d/chart3DModel#width) and [`height`](../api/chart3d/chart3DModel#height) properties.
 
 **In Pixel**
 

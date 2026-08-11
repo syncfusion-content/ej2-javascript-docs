@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with data in ##Platform_Name## Smithchart control | Syncfusion
+title: Working with Data in ##Platform_Name## Smith Chart | Syncfusion
 description: Learn here all about Working with data in Syncfusion ##Platform_Name## Smithchart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Working with data 
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Working with data in ##Platform_Name## Smithchart control
+# Working with Data in ##Platform_Name## Smith Chart
 
-Smithchart can visualise the data bound from local data. The data you bind for the smithchart, should be an array of object and that should contain the field resistance and rectangle. This should be bind to points or datasource in the smithchart.
+Smithchart can visualize the data bound from local data. The data you bind for the smithchart, should be an array of object and that should contain the field resistance and rectangle. This should be bind to points or datasource in the smithchart.
 
 ## Data Binding
 

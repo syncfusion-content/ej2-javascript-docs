@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Gauge legend in ##Platform_Name## Circular gauge control | Syncfusion
-description: Learn here all about Gauge legend in Syncfusion ##Platform_Name## Circular gauge control of Syncfusion Essential JS 2 and more.
+title: Legend in ##Platform_Name## Circular Gauge | Syncfusion
+description: Learn here all about Legend in Syncfusion ##Platform_Name## Circular Gauge of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Gauge legend 
+control: Legend
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Gauge legend in ##Platform_Name## Circular gauge control
+# Legend in ##Platform_Name## Circular Gauge
 
 Legend provides valuable information for interpreting what the circular gauge axis range displays, and they can be represented in various colors, shapes, and other identifiers based on the data. It gives a breakdown of what each symbol represents in the axis range of circular gauge.
 

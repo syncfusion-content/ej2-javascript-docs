@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Legend in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Legend in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Legend in ##Platform_Name## Maps | Syncfusion
+description: Learn here all about Legend in Syncfusion ##Platform_Name## Maps of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Legend 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Legend in ##Platform_Name## Maps component
+# Legend in ##Platform_Name## Maps
 
 A Legend is a visual representation of the symbols used on the Maps. It can be represented in various colors, shapes or other identifiers based on the data and provides valuable information for interpreting what the Maps are displaying. It explains what each symbol in the Maps represents. Legends are enabled by setting the [`visible`](../api/maps/legendSettingsModel/visible) property of [`legendSettings`](../api/maps/legendSettingsModel) to **true**.
 

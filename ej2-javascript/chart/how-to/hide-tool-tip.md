@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Hide tool tip in ##Platform_Name## Chart control | Syncfusion
+title: How to hide tooltip in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Hide tool tip in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Hide tool tip 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hide tool tip in ##Platform_Name## Chart control
+# How to hide tooltip in ##Platform_Name## Chart
 
 By using the [`tooltipRender`](../../api/chart/chartModel/#tooltiprender) event, you can cancel the tooltip for unselected series in the chart.
 

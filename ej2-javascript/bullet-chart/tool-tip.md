@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Tool tip in ##Platform_Name## Bullet chart control | Syncfusion
-description: Learn here all about Tool tip in Syncfusion ##Platform_Name## Bullet chart control of Syncfusion Essential JS 2 and more.
+title: Tooltip in ##Platform_Name## Bullet Chart | Syncfusion
+description: Learn how to enable and customize tooltips in the Syncfusion ##Platform_Name## Bullet Chart to display actual and target values.
 platform: ej2-javascript
-control: Tool tip 
+control: Bullet Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool tip in ##Platform_Name## Bullet chart control
+# Tooltip in ##Platform_Name## Bullet Chart
 
 When the mouse is hovered over a bar in the Bullet Chart, the tooltip displays important summary about the actual and the target bar values.
 

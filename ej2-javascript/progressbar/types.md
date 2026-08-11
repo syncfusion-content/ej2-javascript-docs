@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Progressbar control | Syncfusion
-description: Learn here all about Types in Syncfusion ##Platform_Name## Progressbar control of Syncfusion Essential JS 2 and more.
+title: Types in ##Platform_Name## Progress Bar control | Syncfusion
+description: Learn here all about Types in Syncfusion ##Platform_Name## Progress Bar control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Types 
+control: Types
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Types in ##Platform_Name## Progressbar control
+# Types in ##Platform_Name## Progress Bar control
 
 Visualize progress in different shapes (rectangle, circle, and semi-circle) to give a unique appearance to your app design.
 

@@ -180,7 +180,7 @@ Run the **index.html** file in a web browser. It will render the Essential<sup s
 
 The output will appear as follows:
 
-![JavaScript Form Renderer](../images/form-renderer.png)
+![JavaScript Form Renderer](./images/form-renderer.png)
 
 ## Registering Syncfusion license
 

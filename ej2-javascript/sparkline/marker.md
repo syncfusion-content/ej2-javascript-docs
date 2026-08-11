@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Marker in ##Platform_Name## Sparkline control | Syncfusion
+title: Marker in ##Platform_Name## Sparkline | Syncfusion
 description: Learn here all about Marker in Syncfusion ##Platform_Name## Sparkline control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Marker 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Marker in ##Platform_Name## Sparkline control
+# Marker in ##Platform_Name## Sparkline
 
 This section explains how to add markers to the sparklines.
 

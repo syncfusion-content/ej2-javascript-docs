@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ES5 ##Platform_Name## Smith Chart control | Syncfusion
+title: Getting Started with ##Platform_Name## (ES5) Smith Chart | Syncfusion
 description: Render an interactive Smith Chart with the Syncfusion JavaScript (ES5) library by adding a CDN script and writing a few lines of code.
 platform: ej2-javascript
 control: Smith Chart
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion® JavaScript (ES5) Smith Chart Control
+# Getting Started with Syncfusion® ##Platform_Name## (ES5) Smith Chart
 
 Build your first Syncfusion JavaScript (ES5) application with a simple Smith Chart in just a few minutes. This quickstart guides you through creating a minimal, runnable HTML page that loads the Syncfusion EJ2 (ES5) Smith Chart control from the CDN, binds it to sample transmission-line data, and renders an interactive impedance plot.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Chart dimensions in ##Platform_Name## Chart control | Syncfusion
+title: Chart dimensions in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Chart dimensions in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Chart dimensions 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart dimensions in ##Platform_Name## Chart control
+# Chart dimensions in ##Platform_Name## Chart
 
 ## Size for Container
 

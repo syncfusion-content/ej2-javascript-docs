@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Series label in ##Platform_Name## Chart control | Syncfusion
+title: Series label in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Series label in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Series label 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Series label in ##Platform_Name## Chart control
+# Series label in ##Platform_Name## Chart
 
 The series label displays the name of each series inline, positioned near the end of the series path or the last visible data point. This helps identify each series without referring to the legend.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Chart print in ##Platform_Name## Chart control | Syncfusion
+title: Print and export in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Chart print in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Chart print 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart print in ##Platform_Name## Chart control
+# Print and export in ##Platform_Name## Chart
 
 ## Print
 

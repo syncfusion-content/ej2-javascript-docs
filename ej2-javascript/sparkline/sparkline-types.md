@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sparkline types in ##Platform_Name## Sparkline control | Syncfusion
+title: Sparkline types in ##Platform_Name## Sparkline | Syncfusion
 description: Learn here all about Sparkline types in Syncfusion ##Platform_Name## Sparkline control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Sparkline types 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sparkline types in ##Platform_Name## Sparkline control
+# Sparkline types in ##Platform_Name## Sparkline
 
 Different types of shapes can be used to represent the sparkline. You can change the sparkline type by setting the type property. Sparkline supports the following types:
 

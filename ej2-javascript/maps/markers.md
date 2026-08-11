@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Markers in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Markers in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Markers in ##Platform_Name## Maps | Syncfusion
+description: Learn here all about Markers in Syncfusion ##Platform_Name## Maps of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Markers 
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Markers in ##Platform_Name## Maps component
+# Markers in ##Platform_Name## Maps
 
-Markers are visual indicators used to pinpoint specific locations on the Maps. They can display desired symbols to highlight points of interest or important geographic positions. Markers can be enabled by setting the [`visible`](../api/maps/markerSettingsModel/visible) property of the [`markerSettings`](../api/maps/markerSettingsModel) to **true**.
+Markers are visual indicators used to pinpoint specific locations on the Maps. They can display desired symbols to highlight points of interest or important geographic positions. Markers can be enabled by setting the [`visible`](../api/maps/markerSettingsModel#visible) property of the [`markerSettings`](../api/maps/markerSettingsModel) to **true**.
 
 ## Adding marker
 
-To add the markers, the [`dataSource`](../api/maps/markerSettingsModel/datasource) property of the [`markerSettings`](../api/maps/markerSettingsModel) has a list of objects that contains the data for markers. Using this property, any number of markers can be added to the layers of the Maps. By default, it displays the markers based on the specified latitude and longitude in the given data source. Each data source object contains the following list of properties.
+To add the markers, the [`dataSource`](../api/maps/markerSettingsModel#datasource) property of the [`markerSettings`](../api/maps/markerSettingsModel) has a list of objects that contains the data for markers. Using this property, any number of markers can be added to the layers of the Maps. By default, it displays the markers based on the specified latitude and longitude in the given data source. Each data source object contains the following list of properties.
 
 * latitude - The latitude value that determines the vertical (Y) position of the marker.
 * longitude - The longitude value that determines the horizontal (X) position of the marker.
@@ -49,7 +49,7 @@ To add the markers, the [`dataSource`](../api/maps/markerSettingsModel/datasourc
 
 ## Adding marker template
 
-The Marker can be added as a template in the Maps component. The [`template`](../api/maps/markerSettingsModel/template) property of the [`markerSettings`](../api/maps/markerSettingsModel) is used to set the HTML string or id of an element as a template.
+The Marker can be added as a template in the Maps component. The [`template`](../api/maps/markerSettingsModel#template) property of the [`markerSettings`](../api/maps/markerSettingsModel) is used to set the HTML string or id of an element as a template.
 
 {% if page.publishingplatform == "typescript" %}
 

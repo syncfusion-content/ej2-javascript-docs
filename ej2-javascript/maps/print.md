@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Print in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Print in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Print in ##Platform_Name## Maps | Syncfusion
+description: Learn here all about Print in Syncfusion ##Platform_Name## Maps of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Print 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Print in ##Platform_Name## Maps component
+# Print in ##Platform_Name## Maps
 
 ## Print
 

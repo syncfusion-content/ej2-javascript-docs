@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Sparkline control | Syncfusion
+title: Getting Started with TypeScript Sparkline | Syncfusion
 description: Check out and learn how to get started with the ##Platform_Name## Sparkline control in Syncfusion Essential JS 2.
 platform: ej2-javascript
 control: Sparkline
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with ##Platform_Name## Sparkline control
+# Getting Started with TypeScript Sparkline
 
 This document explains how to create a simple Sparkline and configure its basic features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
-> This application uses the `webpack.config.js` configuration included in the quickstart repository. Ensure that Node.js is installed on your machine. For information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
+> This application uses the `webpack.config.js` configuration included in the quickstart repository. Ensure that Node.js is installed on your machine. For information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started).
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ Before you begin, ensure that the following software is installed:
 
 * Node.js
 * [Visual Studio Code](https://code.visualstudio.com) or another text editor
-* [Git](https://git-scm.com/) for cloning the quickstart repository
+* [Git](https://git-scm.com) for cloning the quickstart repository
 * A modern web browser, such as Chrome, Edge, Firefox, or Safari
 
 ## Dependencies

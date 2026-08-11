@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Chart print in ##Platform_Name## Accumulation chart control | Syncfusion
-description: Learn here all about Chart print in Syncfusion ##Platform_Name## Accumulation chart control of Syncfusion Essential JS 2 and more.
+title: Print and Export in ##Platform_Name## Accumulation Chart | Syncfusion
+description: Learn how to print and export the Syncfusion ##Platform_Name## Accumulation Chart to PNG, JPEG, SVG, or PDF formats.
 platform: ej2-javascript
-control: Chart print 
+control: Accumulation Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart print in ##Platform_Name## Accumulation chart control
+# Chart Print in ##Platform_Name## Accumulation Chart
 
 ## Print
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drilldown with label in ##Platform_Name## Treemap control | Syncfusion
-description: Learn here all about Drilldown with label in Syncfusion ##Platform_Name## Treemap control of Syncfusion Essential JS 2 and more.
+title: Drilldown with label in JavaScript Treemap control | Syncfusion
+description: Learn here all about Drilldown with label in Syncfusion JavaScript Treemap control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Drilldown with label 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drilldown with label in ##Platform_Name## Treemap control
+# Drilldown with label in JavaScript Treemap control
 
 Yon can add a label template as <div> element to the tree map control when using the label template. To add a label template to the tree map control, you have to hide another labels by setting the `showLabels` property to **false** in `leafItemSettings` to show only the label template.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Dynamic chart in ##Platform_Name## Chart control | Syncfusion
+title: How to create a dynamic chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Dynamic chart in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Dynamic chart 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dynamic chart in ##Platform_Name## Chart control
+# How to create a dynamic chart in ##Platform_Name## Chart
 
 By using html button, you can add the chart dynamically when click the button.
 

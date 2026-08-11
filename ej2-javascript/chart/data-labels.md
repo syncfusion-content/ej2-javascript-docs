@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Data labels in ##Platform_Name## Chart control | Syncfusion
+title: Data labels in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Data labels in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Data labels 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data labels in ##Platform_Name## Chart control
+# Data labels in ##Platform_Name## Chart
 
 Data labels display the values of data points directly on the chart, reducing the need to reference axes for exact values. Enable data labels by setting the [`visible`](../api/chart/dataLabelSettingsModel#visible-boolean) option to `true` in the `dataLabel` configuration. Labels automatically adjust to avoid overlapping and maintain readability.
 

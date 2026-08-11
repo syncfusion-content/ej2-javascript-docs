@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Line Chart in ##Platform_Name## Charts | Syncfusion
+title: Line Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Line Chart in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Line Chart
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Line Chart in ##Platform_Name## Charts
+# Line Chart in ##Platform_Name## Chart
 
 ## Line
 

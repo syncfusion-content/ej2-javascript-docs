@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about selection in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+title: Selection in ##Platform_Name## 3D Chart | Syncfusion
+description: Learn how to enable selection in the Syncfusion ##Platform_Name## 3D Chart for series and data points on mouse click.
 platform: ej2-javascript
 control: 3D Chart
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Selection in ##Platform_Name## 3D Chart control
+# Selection in ##Platform_Name## 3D Chart
 
 The 3D chart provides selection support for the series and its data points on mouse click.
 
@@ -25,7 +25,7 @@ We have different types of selection mode for selecting a data.
 
 ## Point
 
-To select a point, set the [`selectionMode`](../api/chart3d/chart3DModel/#selectionmode) property to **Point**.
+To select a point, set the [`selectionMode`](../api/chart3d/chart3DModel#selectionmode) property to **Point**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -56,7 +56,7 @@ To select a point, set the [`selectionMode`](../api/chart3d/chart3DModel/#select
 
 ## Series
 
-To select a series, set the [`selectionMode`](../api/chart3d/chart3DModel/#selectionmode) property to **Series**.
+To select a series, set the [`selectionMode`](../api/chart3d/chart3DModel#selectionmode) property to **Series**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -87,7 +87,7 @@ To select a series, set the [`selectionMode`](../api/chart3d/chart3DModel/#selec
 
 ## Cluster
 
-To select the points that corresponds to the same index in all the series, set the [`selectionMode`](../api/chart3d/chart3DModel/#selectionmode) property to **Cluster**.
+To select the points that corresponds to the same index in all the series, set the [`selectionMode`](../api/chart3d/chart3DModel#selectionmode) property to **Cluster**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -118,7 +118,7 @@ To select the points that corresponds to the same index in all the series, set t
 
 ## Selection type
 
-To select multiple points or series, enable the [`isMultiSelect`](../api/chart3d/chart3DModel/#ismultiselect) property.
+To select multiple points or series, enable the [`isMultiSelect`](../api/chart3d/chart3DModel#ismultiselect) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -149,7 +149,7 @@ To select multiple points or series, enable the [`isMultiSelect`](../api/chart3d
 
 ## Selection during initial loading
 
-In a 3D chart, selecting a point or series during initial loading can only be done programmatically. The [`selectedDataIndexes`](../api/chart3d/chart3DModel/#selecteddataindexes) property can be used for this.
+In a 3D chart, selecting a point or series during initial loading can only be done programmatically. The [`selectedDataIndexes`](../api/chart3d/chart3DModel#selecteddataindexes) property can be used for this.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -180,7 +180,7 @@ In a 3D chart, selecting a point or series during initial loading can only be do
 
 ## Selection through legend
 
-To select a point or series through legend use the [`toggleVisibility`](../api/chart3d/legendSettingsModel/#togglevisibility) property. Also, use [`enableHighlight`](../api/chart3d/legendSettingsModel/#enablehighlight) property for highlighting the series through legend.
+To select a point or series through legend use the [`toggleVisibility`](../api/chart3d/legendSettingsModel#togglevisibility) property. Also, use [`enableHighlight`](../api/chart3d/legendSettingsModel#enablehighlight) property for highlighting the series through legend.
 
 {% if page.publishingplatform == "typescript" %}
 

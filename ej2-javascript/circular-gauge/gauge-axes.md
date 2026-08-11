@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Gauge axes in ##Platform_Name## Circular gauge control | Syncfusion
-description: Learn here all about Gauge axes in Syncfusion ##Platform_Name## Circular gauge control of Syncfusion Essential JS 2 and more.
+title: Axes in ##Platform_Name## Circular Gauge | Syncfusion
+description: Learn here all about Axes in Syncfusion ##Platform_Name## Circular Gauge of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Gauge axes 
+control: Axes
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Gauge axes in ##Platform_Name## Circular gauge control
+# Axes in ##Platform_Name## Circular Gauge
 
 By default, gauge will be displayed with an axis. Each axis contains its own ranges, pointers and annotation.
 

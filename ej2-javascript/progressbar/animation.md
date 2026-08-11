@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Progressbar control | Syncfusion
-description: Learn here all about Animation in Syncfusion ##Platform_Name## Progressbar control of Syncfusion Essential JS 2 and more.
+title: Animation in ##Platform_Name## Progress Bar control | Syncfusion
+description: Learn here all about Animation in Syncfusion ##Platform_Name## Progress Bar control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Animation 
+control: Animation
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation in ##Platform_Name## Progressbar control
+# Animation in ##Platform_Name## Progress Bar control
 
 <!-- markdownlint-disable MD033 -->
 

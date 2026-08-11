@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Multiple panes in ##Platform_Name## Chart control | Syncfusion
+title: Multiple panes in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Multiple panes in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Multiple panes 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Multiple panes in ##Platform_Name## Chart control
+# Multiple panes in ##Platform_Name## Chart
 
 The chart area can be divided into multiple panes by defining rows and columns using the [`rows`](../api/chart/row) and [`columns`](../api/chart/column) collections. This feature is useful for displaying multiple related datasets within the same chart container while maintaining clear visual separation.
 

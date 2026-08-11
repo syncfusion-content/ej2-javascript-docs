@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Gradient in ##Platform_Name## Stock chart control | Syncfusion
-description: Learn here all about Gradient in Syncfusion ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more.
+title: Gradient in ##Platform_Name## Stock Charts | Syncfusion
+description: Learn here all about Gradient in Syncfusion ##Platform_Name## Stock Charts of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Gradient
+control: Stock Charts
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-# Gradient in ##Platform_Name## Stock chart control
+# Gradient in ##Platform_Name## Stock Charts
 
 <!-- markdownlint-disable MD038 -->
 

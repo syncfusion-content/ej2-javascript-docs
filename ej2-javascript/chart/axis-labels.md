@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Axis labels in ##Platform_Name## Chart control | Syncfusion
+title: Axis labels in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Axis labels in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Axis labels 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Axis labels in ##Platform_Name## Chart control
+# Axis labels in ##Platform_Name## Chart
 
 ## Smart axis labels
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Legend in ##Platform_Name## 3D Circular Chart control | Syncfusion
-description: Learn here all about legend in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
+title: Legend in ##Platform_Name## 3D Circular Chart | Syncfusion
+description: Learn here all about legend in Syncfusion ##Platform_Name## 3D Circular Chart of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Legend 
+control: 3D Circular Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Legend in ##Platform_Name## 3D Circular Chart control
+# Legend in ##Platform_Name## 3D Circular Chart
 
 The legend provides information about the data points rendered in the 3D Circular Chart. It can be added by enabling the `visible` option in the `legendSettings` property.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Maps component | Syncfusion
-description: Explore here all about Customization in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## Maps | Syncfusion
+description: Explore here all about Customization in Syncfusion ##Platform_Name## Maps of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Customization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in the ##Platform_Name## Maps component
+# Customization in ##Platform_Name## Maps
 
 The Maps component provides various options to customize its appearance, including size, title, theme, container styling, shape properties, and projection type. This section explains how to configure these customization options.
 

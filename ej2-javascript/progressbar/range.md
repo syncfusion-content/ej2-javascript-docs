@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Range in ##Platform_Name## Progressbar control | Syncfusion
-description: Learn here all about Range in Syncfusion ##Platform_Name## Progressbar control of Syncfusion Essential JS 2 and more.
+title: Range in ##Platform_Name## Progress Bar control | Syncfusion
+description: Learn here all about Range in Syncfusion ##Platform_Name## Progress Bar control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Range 
+control: Range
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Range in ##Platform_Name## Progressbar control
+# Range in ##Platform_Name## Progress Bar control
 
 <!-- markdownlint-disable MD033 -->
 Range represents the entire span of the ProgressBar and can be defined using the `minimum` and `maximum` properties.

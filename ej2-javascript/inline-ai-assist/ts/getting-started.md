@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Inline AI Assist control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Inline AI Assist | Syncfusion®
+description: Step-by-step setup for the Syncfusion® ##Platform_Name## Inline AI Assist in TypeScript, using the ej2-quickstart-webpack seed and the Essential JS 2 packages.
 platform: ej2-javascript
 control: Inline AI Assist
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with ##Platform_Name## Inline AI Assist control
+# Getting Started with ##Platform_Name## Inline AI Assist
 
 This section explains how to create a simple Inline AI Assist control and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 

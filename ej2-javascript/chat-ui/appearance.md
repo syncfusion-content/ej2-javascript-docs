@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in ##Platform_Name## Chat UI control | Syncfusion
-description: Checkout and learn about templates with ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Appearance in ##Platform_Name## Chat UI | Syncfusion®
+description: Style the Syncfusion® ##Platform_Name## Chat UI: set width, height, cssClass, and customize the message input placeholder text.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance in ##Platform_Name## Chat UI control
+# Appearance in ##Platform_Name## Chat UI
 
 ## Setting placeholder
 

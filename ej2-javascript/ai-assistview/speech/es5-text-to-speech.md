@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Text-to-Speech With ##Platform_Name## AI AssistView control | Syncfusion
-description: Checkout and learn about configuration of Text-to-Speech with Azure OpenAI in ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Text to Speech in ##Platform_Name## AI AssistView | Syncfusion®
+description: Enable Text-to-Speech in the Syncfusion® ##Platform_Name## AI AssistView using SpeechSynthesisUtterance with configurable language, pitch, rate, and volume.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Text to Speech in AI AssistView
+# Text to Speech in ##Platform_Name## AI AssistView
 
 The Syncfusion JavaScript AI AssistView control provides built-in `Text-to-Speech` (TTS) support using the browser's Web Speech API, specifically the [SpeechSynthesisUtterance](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance) interface. This allows AI-generated responses into spoken audio, enhancing accessibility and user interaction.
 

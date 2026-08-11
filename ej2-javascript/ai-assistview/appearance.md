@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in ##Platform_Name## AI AssistView control | Syncfusion
-description: Checkout and learn about templates with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Appearance in ##Platform_Name## AI AssistView | Syncfusion®
+description: Style the Syncfusion® ##Platform_Name## AI AssistView: set width, height, and a custom cssClass to match your application layout and theme.
 platform: ej2-javascript
 control: AI AssistView
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance in ##Platform_Name## AI AssistView control
+# Appearance in ##Platform_Name## AI AssistView
 
 ## Setting width
 

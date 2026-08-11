@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template customization in ##Platform_Name## Inline AI Assist control | Syncfusion
-description: Checkout and learn about templates with ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
+title: Templates in ##Platform_Name## Inline AI Assist | Syncfusion®
+description: Customize the Syncfusion® ##Platform_Name## Inline AI Assist with editor and response templates, including prompt area and per-response item rendering.
 platform: ej2-javascript
 control: Inline AI Assist
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template customization in ##Platform_Name## Inline AI Assist control
+# Templates in ##Platform_Name## Inline AI Assist
 
 The Inline AI Assist provides the template options to customize the response and footer items.
 

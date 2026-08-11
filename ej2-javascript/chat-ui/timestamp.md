@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Time stamp in ##Platform_Name## Chat UI control | Syncfusion
-description: Checkout and learn about Time stamp with ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Time Stamp in ##Platform_Name## Chat UI | Syncfusion®
+description: Configure the Syncfusion® ##Platform_Name## Chat UI message timestamp: show or hide, and set the format (default dd/MM/yyyy hh:mm a).
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Time stamp in ##Platform_Name## Chat UI control
+# Time Stamp in ##Platform_Name## Chat UI
 
 ## Show or hide timestamp
 

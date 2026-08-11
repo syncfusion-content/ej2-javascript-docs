@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Methods in ##Platform_Name## Inline AI Assist control | Syncfusion
-description: Checkout and learn about methods with ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
+title: Methods in ##Platform_Name## Inline AI Assist | Syncfusion®
+description: Public methods on the Syncfusion® ##Platform_Name## Inline AI Assist: addResponse, executePrompt, showPopup, and hidePopup for the inline component.
 platform: ej2-javascript
 control: Inline AI Assist 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Methods in ##Platform_Name## Inline AI Assist control
+# Methods in ##Platform_Name## Inline AI Assist
 
 ## Adding response
 

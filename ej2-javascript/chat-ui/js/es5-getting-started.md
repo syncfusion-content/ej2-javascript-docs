@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Chat UI control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Chat UI | Syncfusion®
+description: Step-by-step setup for the Syncfusion® ##Platform_Name## Chat UI in ES5, including CDN/local scripts, dependencies, and control initialization.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with JavaScript Chat UI control
+# Getting Started with ##Platform_Name## Chat UI
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Chat UI and demonstrates the basic usage of the Chat UI control in a JavaScript application.
 

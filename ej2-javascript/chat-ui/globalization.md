@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Chat UI control | Syncfusion
-description: Checkout and learn about Globalization with ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## Chat UI | Syncfusion®
+description: Localize the Syncfusion® ##Platform_Name## Chat UI to any culture and enable right-to-left layout using the enableRtl property.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in ##Platform_Name## Chat UI control
+# Globalization in ##Platform_Name## Chat UI
 
 ## Localization
 

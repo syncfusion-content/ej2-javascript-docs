@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header in ##Platform_Name## Chat UI control | Syncfusion
-description: Checkout and learn about Header with ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Header in ##Platform_Name## Chat UI | Syncfusion®
+description: Configure the Syncfusion® ##Platform_Name## Chat UI header: show or hide, header text, header icon CSS, and a customizable header toolbar.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Header in ##Platform_Name## Chat UI control
+# Header in ##Platform_Name## Chat UI
 
 ## Show or hide header
 

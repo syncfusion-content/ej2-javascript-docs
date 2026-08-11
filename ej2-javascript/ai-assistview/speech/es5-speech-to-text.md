@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Speech-to-Text With ##Platform_Name## AI AssistView control | Syncfusion
-description: Checkout and learn about configuration of Speech-to-Text with Azure OpenAI in ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Speech to Text in ##Platform_Name## AI AssistView | Syncfusion®
+description: Enable Speech-to-Text in the Syncfusion® ##Platform_Name## AI AssistView using the browser Web Speech API with custom language, interim results, and tooltips.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Speech-to-Text in JavaScript AI AssistView
+# Speech to Text in ##Platform_Name## AI AssistView
 
 The Syncfusion JavaScript AI AssistView control integrates `Speech-to-Text` functionality through the browser's [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API). This enables the conversion of spoken words into text using the device's microphone, allowing users to interact with the AI AssistView through voice input.
 

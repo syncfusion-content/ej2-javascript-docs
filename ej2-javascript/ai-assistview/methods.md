@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Methods in ##Platform_Name## AI AssistView control | Syncfusion
-description: Checkout and learn about methods with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Methods in ##Platform_Name## AI AssistView | Syncfusion®
+description: Programmatically add prompt-response pairs and execute prompts in the Syncfusion® ##Platform_Name## AI AssistView using addPromptResponse and executePrompt.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Methods in ##Platform_Name## AI AssistView control
+# Methods in ##Platform_Name## AI AssistView
 
 ## Adding prompt response
 

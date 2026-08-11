@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Azure OpenAI in ##Platform_Name## AI AssistView control | Syncfusion
-description: Checkout and learn about Integration of Azure OpenAI with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Azure OpenAI in ##Platform_Name## AI AssistView | Syncfusion®
+description: Wire the Syncfusion® ##Platform_Name## AI AssistView to Azure OpenAI using your endpoint, API key, deployment, and the marked library for Markdown replies.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate Azure OpenAI With JavaScript AI AssistView control 
+# Azure OpenAI in ##Platform_Name## AI AssistView 
 
 The AI AssistView control integrates with [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai) to enable advanced conversational AI features in your applications. The control acts as a user interface, where user prompts are sent to the Azure OpenAI service via API calls, providing natural language understanding and context-aware responses.
 

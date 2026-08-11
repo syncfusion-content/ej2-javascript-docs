@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Methods in ##Platform_Name## SpeechToText control | Syncfusion
-description: Checkout and learn about methods with ##Platform_Name## SpeechToText control of Syncfusion Essential JS 2 and more.
+title: Methods in ##Platform_Name## Speech To Text | Syncfusion®
+description: Use the Syncfusion® ##Platform_Name## Speech To Text startListening and stopListening methods to programmatically control speech recognition sessions.
 platform: ej2-javascript
 control: SpeechToText
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Methods in ##Platform_Name## SpeechToText control
+# Methods in ##Platform_Name## Speech To Text
 
 ## Start listening
 

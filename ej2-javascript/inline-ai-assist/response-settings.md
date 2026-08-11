@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Response actions in ##Platform_Name## Inline AI Assist control | Syncfusion
-description: Checkout and learn about response items with ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
+title: Response Actions in ##Platform_Name## AI Assist | Syncfusion®
+description: Add custom response actions to the Syncfusion® ##Platform_Name## AI Assist accept/discard popup, with labels, icons, and disabled or grouped items.
 platform: ej2-javascript
 control: Inline AI Assist 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Response actions in ##Platform_Name## Inline AI Assist control
+# Response Actions in ##Platform_Name## AI Assist
 
 You can render response action popup by using the `items` property in the [responseSettings](../api/inline-ai-assist#responsesettings) property. This feature enables users to accept, discard, or perform custom actions on AI-generated responses.
 

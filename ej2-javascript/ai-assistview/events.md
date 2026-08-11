@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in ##Platform_Name## AI AssistView control | Syncfusion
-description: Checkout and learn about events with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Events in ##Platform_Name## AI AssistView | Syncfusion®
+description: Handle Syncfusion® ##Platform_Name## AI AssistView events: created, promptRequest, promptChanged, and the before/after attachment upload and removal lifecycle.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## AI AssistView control
+# Events in ##Platform_Name## AI AssistView
 
 This section describes the AI AssistView events that will be triggered when appropriate actions are performed. The following events are available in the AI AssistView control.
 

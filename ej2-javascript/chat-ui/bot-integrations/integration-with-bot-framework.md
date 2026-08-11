@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Microsoft Bot With ##Platform_Name## Chat UI control | Syncfusion
-description:  Checkout and learn about Integration of Microsoft Bot Framework With ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more details.
+title: Microsoft Bot Framework in ##Platform_Name## Chat UI | Syncfusion®
+description: Connect the Syncfusion® ##Platform_Name## Chat UI to a Microsoft Bot Framework bot on Azure using a Direct Line token server and the directline-js client.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate Microsoft Bot With JavaScript Chat UI control
+# Microsoft Bot Framework in ##Platform_Name## Chat UI
 
 The Chat UI control integrates with a [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0) bot hosted on Azure, enabling a custom chat interface for seamless user interaction. The process involves setting up a secure backend token server, configuring Direct Line in Azure, and integrating the Chat UI in the application.
 

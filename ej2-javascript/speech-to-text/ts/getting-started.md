@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## SpeechToText control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## SpeechToText control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Speech To Text | Syncfusion®
+description: Step-by-step guide to set up the Syncfusion® ##Platform_Name## Speech To Text control in a TypeScript project, including prerequisites, license, and configuration.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with ##Platform_Name## SpeechToText control
+# Getting Started with ##Platform_Name## Speech To Text
 
 This section explains how to create a simple SpeechToText control and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 

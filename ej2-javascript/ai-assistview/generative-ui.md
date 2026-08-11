@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Generative UI in ##Platform_Name## AI AssistView control | Syncfusion
-description: Checkout and learn about generative UI with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Generative UI in ##Platform_Name## AI AssistView | Syncfusion®
+description: Render dynamic generative UI in the Syncfusion® ##Platform_Name## AI AssistView by registering custom tool templates and returning them as AI response blocks.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Generative UI in ##Platform_Name## AI AssistView control
+# Generative UI in ##Platform_Name## AI AssistView
 
 The `Generative UI` in AI AssistView allows you to render dynamic tools and UI elements within the AI AssistView. This enables seamless integration of interactive components based on AI-generated responses.
 

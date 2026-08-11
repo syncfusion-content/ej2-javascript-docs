@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typing indicator in ##Platform_Name## Chat UI control | Syncfusion
-description: Checkout and learn about Typing indicator with ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Typing Indicator in ##Platform_Name## Chat UI | Syncfusion®
+description: Show a typing indicator in the Syncfusion® ##Platform_Name## Chat UI for one or more active participants using the typingUsers collection.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Typing indicator in ##Platform_Name## Chat UI control
+# Typing Indicator in ##Platform_Name## Chat UI
 
 ## Show or hide typing indicator
 

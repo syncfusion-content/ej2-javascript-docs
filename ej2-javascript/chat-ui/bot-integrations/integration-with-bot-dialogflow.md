@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dialogflow With ##Platform_Name## Chat UI control | Syncfusion
-description:  Checkout and learn about Integration of Google Dialogflow With ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Google Dialogflow in ##Platform_Name## Chat UI | Syncfusion®
+description: Connect the Syncfusion® ##Platform_Name## Chat UI to Google Dialogflow so user messages route to a Dialogflow agent and replies appear in the conversation.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate Google Dialogflow Chat UI control
+# Google Dialogflow in ##Platform_Name## Chat UI
 
 The Chat UI control integrates with [Google Dialogflow](https://cloud.google.com/dialogflow/docs) to enable advanced conversational AI features in your Angular applications. The control acts as a user interface for a support bot, where user prompts are sent to the Dialogflow service via API calls, providing natural language understanding and context-aware responses.
 

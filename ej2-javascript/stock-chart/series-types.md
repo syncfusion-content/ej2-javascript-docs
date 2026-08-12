@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Series types in ##Platform_Name## Stock chart control | Syncfusion
-description: Learn here all about Series types in Syncfusion ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more.
+title: Series types in ##Platform_Name## Stock Charts | Syncfusion
+description: Learn here all about Series types in Syncfusion ##Platform_Name## Stock Charts of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Series types 
+control: Stock Charts
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Series types in ##Platform_Name## Stock chart control
+# Series types in ##Platform_Name## Stock Charts
 
 Essential JS 2 StockChart supports 6 major types of series namely `Line`, `Spline`, `Hilo`, `HiloOpenClose`, `Hollow Candle` and `Candle` . By using the series dropdown button you can navigate between the above listed series types.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Chart annotations in ##Platform_Name## Chart control | Syncfusion
+title: Annotations in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Chart annotations in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Chart annotations 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart annotations in ##Platform_Name## Chart control
+# Annotations in ##Platform_Name## Chart
 
 Chart annotations allow highlighting specific areas of the chart using text, shapes, images, or custom HTML elements. Annotations can be used to emphasize trends, mark thresholds, show custom notes, or display additional information directly inside the chart area.
 

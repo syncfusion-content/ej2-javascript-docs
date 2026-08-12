@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Range Area Chart in ##Platform_Name## Charts | Syncfusion
+title: Range Area Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Range Area in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Range Area
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Range Area Chart in ##Platform_Name## Charts
+# Range Area Chart in ##Platform_Name## Chart
 
 ## Range Area
 

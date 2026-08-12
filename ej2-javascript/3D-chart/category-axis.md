@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Category axis in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about category axis in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+title: Category Axis in ##Platform_Name## 3D Chart | Syncfusion
+description: Learn how to render the Syncfusion ##Platform_Name## 3D Chart with a category axis that shows text values along the horizontal axis.
 platform: ej2-javascript
-control: 3D Chart 
+control: 3D Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Category axis in ##Platform_Name## 3D Chart control
+# Category Axis in ##Platform_Name## 3D Chart
 
 The category axis is the horizontal axis of a 3D chart that shows text values rather than numerical values. Compared to the vertical axis, this axis has fewer labels. The following sample shows to render the 3D chart using category axis.
 
@@ -40,11 +40,11 @@ The category axis is the horizontal axis of a 3D chart that shows text values ra
 {% previewsample "page.domainurl/code-snippet/chart3d/column-cs1" %}
 {% endif %}
 
->Note: To use category axis, we need to inject `Category3D` module using `Chart3D.Inject(Category3D)` method and set the [`valueType`](../api/chart3d/axis3D/#valuetype) of axis to **Category**.
+>Note: To use category axis, we need to inject `Category3D` module using `Chart3D.Inject(Category3D)` method and set the [`valueType`](../api/chart3d/axis3D#valuetype) of axis to **Category**.
 
 ## Labels placement
 
-By default, category axis labels are placed between ticks in an axis. It can also be placed on ticks using the [`labelPlacement`](../api/chart3d/axis3D/#labelplacement) property.
+By default, category axis labels are placed between ticks in an axis. It can also be placed on ticks using the [`labelPlacement`](../api/chart3d/axis3D#labelplacement) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ By default, category axis labels are placed between ticks in an axis. It can als
 
 ## Range
 
-The range of the category axis can be customized using [`minimum`](../api/chart3d/axis3D/#minimum), [`maximum`](../api/chart3d/axis3D/#maximum) and [`interval`](../api/chart3d/axis3D/#interval) properties of the axis.
+The range of the category axis can be customized using [`minimum`](../api/chart3d/axis3D#minimum), [`maximum`](../api/chart3d/axis3D#maximum) and [`interval`](../api/chart3d/axis3D#interval) properties of the axis.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -106,7 +106,7 @@ The range of the category axis can be customized using [`minimum`](../api/chart3
 
 ## Indexed category axis
 
-The category axis can also be rendered based on the index values of the data source. This can be achieved by defining the [`isIndexed`](../api/chart3d/axis3D/#isindexed) property to **true** in the axis.
+The category axis can also be rendered based on the index values of the data source. This can be achieved by defining the [`isIndexed`](../api/chart3d/axis3D#isindexed) property to **true** in the axis.
 
 {% if page.publishingplatform == "typescript" %}
 

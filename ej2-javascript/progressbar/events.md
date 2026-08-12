@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Events in ##Platform_Name## Progressbar control | Syncfusion
-description: Learn here all about Events in Syncfusion ##Platform_Name## Progressbar control of Syncfusion Essential JS 2 and more.
+title: Events in ##Platform_Name## Progress Bar control | Syncfusion
+description: Learn here all about Events in Syncfusion ##Platform_Name## Progress Bar control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Events 
+control: Events
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## Progressbar control
+# Events in ##Platform_Name## Progress Bar control
 
 This section describes the Progress Bar events that will be triggered when appropriate actions are performed. Following events are available in the Progress Bar.
 

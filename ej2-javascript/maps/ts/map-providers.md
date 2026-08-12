@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Map providers in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Map providers in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Map providers in TypeScript Maps | Syncfusion
+description: Integrate OpenStreetMap and other online map providers into TypeScript Maps to display real-world geographic tiles on any map layer.
 platform: ej2-javascript
 control: Map providers 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Map providers in ##Platform_Name## Maps component
+# Map providers in TypeScript Maps
 
 Map control support map providers such as OpenStreetMap that can be added to any layers in maps.
 

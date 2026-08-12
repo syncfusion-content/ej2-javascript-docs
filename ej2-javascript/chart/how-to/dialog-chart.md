@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Dialog chart in ##Platform_Name## Chart control | Syncfusion
+title: How to show chart in dialog in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Dialog chart in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Dialog chart 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dialog chart in ##Platform_Name## Chart control
+# How to show chart in dialog in ##Platform_Name## Chart
 
 Using the `content` property of the dialog component, you can show the chart in dialog pop-up.
 

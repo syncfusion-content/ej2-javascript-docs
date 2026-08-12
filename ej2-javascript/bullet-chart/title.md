@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Title in ##Platform_Name## Bullet chart control | Syncfusion
-description: Learn here all about Title in Syncfusion ##Platform_Name## Bullet chart control of Syncfusion Essential JS 2 and more.
+title: Title and Subtitle in ##Platform_Name## Bullet Chart | Syncfusion
+description: Learn how to add a title and subtitle to the Syncfusion ##Platform_Name## Bullet Chart and customize their text styles.
 platform: ej2-javascript
-control: Title 
+control: Bullet Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Title in ##Platform_Name## Bullet chart control
+# Title and Subtitle in ##Platform_Name## Bullet Chart
 
 ## Title
 

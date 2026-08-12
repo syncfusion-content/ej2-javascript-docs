@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Export print in ##Platform_Name## Stock chart control | Syncfusion
-description: Learn here all about Export print in Syncfusion ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more.
+title: Export print in ##Platform_Name## Stock Charts | Syncfusion
+description: Learn here all about Export print in Syncfusion ##Platform_Name## Stock Charts of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Export print 
+control: Stock Charts
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Export print in ##Platform_Name## Stock chart control
+# Export print in ##Platform_Name## Stock Charts
 
 The rendered stock chart can be exported to `JPEG`, `PNG`, `SVG`, or `PDF` format using the export dropdown button in the period selector toolbar. You can choose the required format using the export dropdown button in stock-chart.
 

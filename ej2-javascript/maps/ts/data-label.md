@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data label in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Data label in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Data label in TypeScript Maps | Syncfusion
+description: Display informative text labels on TypeScript Maps shapes by enabling dataLabelSettings to give users context about each geographic region.
 platform: ej2-javascript
 control: Data label 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data label in ##Platform_Name## Maps component
+# Data label in TypeScript Maps
 
 Data labels provide information to users about the shapes of the Maps component. It can be enabled by setting the [visible](../api/maps/dataLabelSettingsModel#visible) property of the [dataLabelSettings](../api/maps/dataLabelSettingsModel) to **true**. To display the data labels in Maps, **DataLabel** module must be injected into the Maps using **Maps.Inject(DataLabel)** method. Refer to the below code snippet to inject the **DataLabel** module into the Maps component.
 

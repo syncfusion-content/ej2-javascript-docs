@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Stacking total in ##Platform_Name## Chart control | Syncfusion
+title: How to display stacking series total in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Stacking total in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Stacking total 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Stacking total in ##Platform_Name## Chart control
+# How to display stacking series total in ##Platform_Name## Chart
 
 By using the `annotation`, you can show any element in desired view.
 

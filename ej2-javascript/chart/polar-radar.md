@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Polar radar in ##Platform_Name## Chart control | Syncfusion
+title: Polar and radar in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Polar radar in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Polar radar 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Polar radar in ##Platform_Name## Chart control
+# Polar and radar in ##Platform_Name## Chart
 
 ## Polar Chart
 

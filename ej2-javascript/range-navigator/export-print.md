@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Export print in ##Platform_Name## Range navigator control | Syncfusion
-description: Learn here all about Export print in Syncfusion ##Platform_Name## Range navigator control of Syncfusion Essential JS 2 and more.
+title: Export print in ##Platform_Name## Range Selector | Syncfusion
+description: Learn here all about Export print in Syncfusion ##Platform_Name## Range Selector of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Export print 
+control: Range Selector
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Export print in ##Platform_Name## Range navigator control
+# Export print in ##Platform_Name## Range Selector
 
 ## Export
 

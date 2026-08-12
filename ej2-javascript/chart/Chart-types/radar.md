@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Radar Chart in ##Platform_Name## Charts | Syncfusion
+title: Radar Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Radar in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Radar 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Radar Chart in ##Platform_Name## Charts
+# Radar Chart in ##Platform_Name## Chart
 
 ## Radar Chart
 

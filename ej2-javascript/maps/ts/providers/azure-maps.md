@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Azure maps in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Azure maps in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Azure Maps in TypeScript Maps | Syncfusion
+description: Add Microsoft Azure Maps as a tile provider in TypeScript Maps to display satellite imagery, road maps, and terrain views with global coverage.
 platform: ej2-javascript
 control: Azure maps 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Azure Maps integration in ##Platform_Name## Maps component
+# Azure Maps integration in TypeScript Maps
 
 Azure Maps is an online map service provider from Microsoft. Similar to OSM and Bing Maps, it provides map tile images based on requests and combines them to display the map area. Azure Maps offers various map styles including satellite imagery, road maps, and terrain views with global coverage.
 

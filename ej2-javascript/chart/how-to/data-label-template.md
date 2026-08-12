@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Data label template in ##Platform_Name## Chart control | Syncfusion
+title: How to use data label template in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Data label template in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Data label template 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data label template in ##Platform_Name## Chart control
+# How to use data label template in ##Platform_Name## Chart
 
 You can bind text and interior information for a point from dataSource other than x and y value. To change color for the background in the datalabel template, you can use `${point.text}`.
 

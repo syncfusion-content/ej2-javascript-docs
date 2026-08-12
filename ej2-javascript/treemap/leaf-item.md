@@ -3,7 +3,7 @@ layout: post
 title: Leaf item in ##Platform_Name## Treemap control | Syncfusion
 description: Learn here all about Leaf item in Syncfusion ##Platform_Name## Treemap control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Leaf item 
+control: TreeMap
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

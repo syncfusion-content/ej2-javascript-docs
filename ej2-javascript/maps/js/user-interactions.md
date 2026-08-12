@@ -1,7 +1,7 @@
 ---
 layout: post
-title: User interactions in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about User interactions in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: User interactions in JavaScript Maps | Syncfusion
+description: Enable zooming, panning, single and double click, highlight, and selection in JavaScript Maps to give users rich ways to interact with elements.
 platform: ej2-javascript
 control: User interactions 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# User interactions in ##Platform_Name## Maps component
+# User interactions in JavaScript Maps
 
 Zooming, panning, single and double click, highlight and selection are all options that allow for effective interaction with Map elements.
 

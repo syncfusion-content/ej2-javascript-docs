@@ -196,7 +196,7 @@ npm run start
 
 The output will appear as follows:
 
-![TypeScript Form Renderer](../images/form-renderer.png)
+![TypeScript Form Renderer](./images/form-renderer.png)
 
 ## Registering Syncfusion license
 

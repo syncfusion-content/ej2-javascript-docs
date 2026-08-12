@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Grid data chart in ##Platform_Name## Chart control | Syncfusion
+title: How to visualize grid records in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Grid data chart in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Grid data chart 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grid data chart in ##Platform_Name## Chart control
+# How to visualize grid records in ##Platform_Name## Chart
 
 You can visualize the data that returned by grid in chart.
 

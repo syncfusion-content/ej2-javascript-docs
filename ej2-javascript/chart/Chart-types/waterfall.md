@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Waterfall Chart in ##Platform_Name## Charts | Syncfusion
+title: Waterfall Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Waterfall in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Waterfall 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Waterfall Chart in ##Platform_Name## Charts
+# Waterfall Chart in ##Platform_Name## Chart
 
 ## Waterfall Chart
 

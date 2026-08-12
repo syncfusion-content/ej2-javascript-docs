@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Ej1 api migration in ##Platform_Name## Heatmap chart control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Heatmap chart control of Syncfusion Essential JS 2 and more.
-platform: ej2-javascript
+title: Ej1 api migration in ##Platform_Name## HeatMap Chart | Syncfusion
+description: Migrate Essential JS 1 HeatMap properties, events, and member mappings to their TypeScript HeatMap Chart equivalents in Essential JS 2.
+platform: ej2-typescript
 control: Ej1 api migration 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in ##Platform_Name## Heatmap chart control
+# Ej1 api migration in ##Platform_Name## HeatMap Chart
 
 This article describes the API migration process of heat map component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

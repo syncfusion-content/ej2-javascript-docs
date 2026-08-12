@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Map provider in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Map provider in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: OpenStreetMap in TypeScript Maps | Syncfusion
+description: Render OpenStreetMap tiles inside a TypeScript Maps layer using the open-source OSM provider for collaborative, license-friendly geographic visualization.
 platform: ej2-javascript
 control: Map provider 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# OpenStreetMap integration in ##Platform_Name## Maps component
+# OpenStreetMap integration in TypeScript Maps
 
 Map providers are online services that supply map tile images for rendering geographic visualizations. The Maps component supports integration with various tile-based map providers to display real-world geographic data.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Selecting range in ##Platform_Name## Range navigator control | Syncfusion
-description: Learn here all about Selecting range in Syncfusion ##Platform_Name## Range navigator control of Syncfusion Essential JS 2 and more.
+title: Selecting range in ##Platform_Name## Range Selector | Syncfusion
+description: Learn here all about Selecting range in Syncfusion ##Platform_Name## Range Selector of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Selecting range 
+control: Range Selector
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selecting range in ##Platform_Name## Range navigator control
+# Selecting range in ##Platform_Name## Range Selector
 
 The Range Selector's left and right thumbs are used to indicate the selected range in the large collection of data. A range can be selected in the following ways:
 

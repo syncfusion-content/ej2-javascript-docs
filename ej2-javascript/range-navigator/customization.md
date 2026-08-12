@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Range navigator control | Syncfusion
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Range navigator control of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## Range Selector | Syncfusion
+description: Learn here all about Customization in Syncfusion ##Platform_Name## Range Selector of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Customization 
+control: Range Selector
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in ##Platform_Name## Range navigator control
+# Customization in ##Platform_Name## Range Selector
 
 ## Navigator appearance
 
@@ -199,5 +199,5 @@ The speed of the animation can be controlled using the `animationDuration` prope
 
 ## See Also
 
-* [Grid and Tick Lines](./grid-tick/)
-* [Labels](./labels/)
+* [Grid and Tick Lines](./grid-tick)
+* [Labels](./labels)

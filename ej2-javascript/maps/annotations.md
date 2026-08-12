@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Annotations in ##Platform_Name## Maps control | Syncfusion
-description: Learn here all about Annotations in Syncfusion ##Platform_Name## Maps control of Syncfusion Essential JS 2 and more.
+title: Annotations in ##Platform_Name## Maps | Syncfusion
+description: Learn here all about Annotations in Syncfusion ##Platform_Name## Maps of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Annotations 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Annotations in the ##Platform_Name## Maps component
+# Annotations in ##Platform_Name## Maps
 
 <!-- markdownlint-disable MD013 -->
 

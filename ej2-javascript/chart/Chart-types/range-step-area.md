@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Range Step Area Chart in ##Platform_Name## Charts | Syncfusion
+title: Range Step Area Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Range Step Area in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Range Step Area 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Range Step Area Chart in ##Platform_Name## Charts
+# Range Step Area Chart in ##Platform_Name## Chart
 
 ## Range Step Area
 

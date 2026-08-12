@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Ej1 api migration in ##Platform_Name## Accumulation chart control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Accumulation chart control of Syncfusion Essential JS 2 and more.
+title: Migration from Essential JS 1 in ##Platform_Name## Accumulation Chart | Syncfusion
+description: Learn how to migrate Accumulation Chart code and APIs from Syncfusion Essential JS 1 to Syncfusion Essential JS 2.
 platform: ej2-javascript
-control: Ej1 api migration 
+control: Accumulation Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in ##Platform_Name## Accumulation chart control
+# Migration from Essential JS 1 in ##Platform_Name## Accumulation Chart
 
 This article describes the API migration process of Chart component from Essential JS 1 to Essential JS 2.
 

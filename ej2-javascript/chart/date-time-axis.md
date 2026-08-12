@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Date time axis in ##Platform_Name## Chart control | Syncfusion
+title: DateTime axis in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Date time axis in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Date time axis 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Date time axis in ##Platform_Name## Chart control
+# DateTime axis in ##Platform_Name## Chart
 
 ## DateTime Axis
 

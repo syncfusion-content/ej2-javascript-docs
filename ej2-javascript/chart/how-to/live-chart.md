@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Live chart in ##Platform_Name## Chart control | Syncfusion
+title: How to create a live chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Live chart in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Live chart 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Live chart in ##Platform_Name## Chart control
+# How to create a live chart in ##Platform_Name## Chart
 
 You can update a chart with live data by using the set interval.
 

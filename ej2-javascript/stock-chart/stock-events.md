@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Stock events in ##Platform_Name## Stock chart control | Syncfusion
-description: Learn here all about Stock events in Syncfusion ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more.
+title: Stock events in ##Platform_Name## Stock Charts | Syncfusion
+description: Learn here all about Stock events in Syncfusion ##Platform_Name## Stock Charts of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Stock events 
+control: Stock Charts
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-# Stock events in ##Platform_Name## Stock chart control
+# Stock events in ##Platform_Name## Stock Charts
 
 Stock Events visualizes stock events in stock chart. 'SplineSeries' is used to represent selected data value. You can customize the specific data value using `stockEvents` event.
 
@@ -76,4 +76,4 @@ By default, stock events will be showed for all series. Now, you can set the sto
 
 ## See Also
 
-* [Series Types](./series-types/)
+* [Series Types](./series-types)

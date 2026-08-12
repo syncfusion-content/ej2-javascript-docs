@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Add series in ##Platform_Name## Chart control | Syncfusion
+title: How to add or remove series in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Add series in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Add series 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add series in ##Platform_Name## Chart control
+# How to add or remove series in ##Platform_Name## Chart
 
 You can add or remove the chart series dynamically by using the `addSeries` or `removeSeries` method.
 

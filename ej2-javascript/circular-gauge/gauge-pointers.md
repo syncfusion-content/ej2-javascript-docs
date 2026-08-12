@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Gauge pointers in ##Platform_Name## Circular gauge control | Syncfusion
-description: Learn here all about Gauge pointers in Syncfusion ##Platform_Name## Circular gauge control of Syncfusion Essential JS 2 and more.
+title: Pointers in ##Platform_Name## Circular Gauge | Syncfusion
+description: Learn here all about Pointers in Syncfusion ##Platform_Name## Circular Gauge of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Gauge pointers 
+control: Pointers
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 
-# Gauge pointers in ##Platform_Name## Circular gauge control
+# Pointers in ##Platform_Name## Circular Gauge
 
 Pointers are used to indicate values on the axis. Value of the pointer can be modified using the [`value`](../api/circular-gauge/pointer/#value-number) property.
 

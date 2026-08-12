@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Pie and Donut in ##Platform_Name## 3D Circular Chart control | Syncfusion
-description: Learn here all about Pie and Donut in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
+title: Pie and Donut in ##Platform_Name## 3D Circular Chart | Syncfusion
+description: Learn here all about Pie and Donut in Syncfusion ##Platform_Name## 3D Circular Chart of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Pie and Donut 
+control: 3D Circular Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pie and Donut in ##Platform_Name## 3D Circular Chart control
+# Pie and Donut in ##Platform_Name## 3D Circular Chart
 
 ## Pie chart
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Gauge ranges in ##Platform_Name## Circular gauge control | Syncfusion
-description: Learn here all about Gauge ranges in Syncfusion ##Platform_Name## Circular gauge control of Syncfusion Essential JS 2 and more.
+title: Ranges in ##Platform_Name## Circular Gauge | Syncfusion
+description: Learn here all about Ranges in Syncfusion ##Platform_Name## Circular Gauge of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Gauge ranges 
+control: Ranges
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 
-# Gauge ranges in ##Platform_Name## Circular gauge control
+# Ranges in ##Platform_Name## Circular Gauge
 
 You can categories certain interval on gauge axis using [`ranges`](../api/circular-gauge/range/#properties) property.
 

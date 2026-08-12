@@ -3,7 +3,7 @@ layout: post
 title: Data label in ##Platform_Name## Treemap control | Syncfusion
 description: Learn here all about Data label in Syncfusion ##Platform_Name## Treemap control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Data label 
+control: TreeMap
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

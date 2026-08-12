@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Events in ##Platform_Name## Sankey Chart component | Syncfusion
-description: Learn here all about Events in Syncfusion ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
-control: Events
+title: Events in ##Platform_Name## Sankey Diagram | Syncfusion
+description: Learn here all about Events in Syncfusion ##Platform_Name## Sankey Diagram of Syncfusion Essential JS 2 and more.
+control: Sankey Diagram
 platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## Sankey Chart component
+# Events in ##Platform_Name## Sankey Diagram
 
 The Sankey Chart provides comprehensive events that allow you to customize behavior, respond to user interactions, and hook into the chart lifecycle. These events enable advanced customization scenarios including data transformation, analytics tracking, and dynamic UI updates.
 

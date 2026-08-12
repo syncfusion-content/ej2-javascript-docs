@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Internationalization in ##Platform_Name## Circular gauge control | Syncfusion
-description: Learn here all about Internationalization in Syncfusion ##Platform_Name## Circular gauge control of Syncfusion Essential JS 2 and more.
+title: Internationalization in ##Platform_Name## Circular Gauge | Syncfusion
+description: Learn here all about Internationalization in Syncfusion ##Platform_Name## Circular Gauge of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Internationalization 
+control: Internationalization
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Internationalization in ##Platform_Name## Circular gauge control
+# Internationalization in ##Platform_Name## Circular Gauge
 
 Circular Gauge provides internationalization support for below elements.
 
@@ -57,7 +57,7 @@ In the below example, axis labels are globalized to **EUR**.
 
 ## Right-to-left
 
-Circular Gauge can render its elements from right to left, which improves the user experience for certain language users. To do so, set the [enableRtl](../api/circular-gauge/#enablertl) property to **true**. When this property is enabled, elements such as the tooltip and legend will be rendered from right to left. Meanwhile, the axis can be rendered from right to left by setting the [direction](../api/circular-gauge/axis/#direction) property to **AntiClockWise**. For more information on axis, click [here](../circular-gauge/gauge-axes/#angles-and-direction).
+Circular Gauge can render its elements from right to left, which improves the user experience for certain language users. To do so, set the [enableRtl](../api/circular-gauge#enablertl) property to **true**. When this property is enabled, elements such as the tooltip and legend will be rendered from right to left. Meanwhile, the axis can be rendered from right to left by setting the [direction](../api/circular-gauge/axis/#direction) property to **AntiClockWise**. For more information on axis, click [here](../circular-gauge/gauge-axes/#angles-and-direction).
 
 The following example illustrates the right to left rendering of the Circular Gauge.
 

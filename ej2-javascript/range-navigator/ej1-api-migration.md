@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Ej1 api migration in ##Platform_Name## Range navigator control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Range navigator control of Syncfusion Essential JS 2 and more.
+title: Ej1 api migration in ##Platform_Name## Range Selector | Syncfusion
+description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Range Selector of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Ej1 api migration 
+control: Range Selector
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in ##Platform_Name## Range navigator control
+# Ej1 api migration in ##Platform_Name## Range Selector
 
 This article describes the API migration process of Chart component from Essential JS 1 to Essential JS 2.
 

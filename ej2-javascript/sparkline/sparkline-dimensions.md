@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sparkline dimensions in ##Platform_Name## Sparkline control | Syncfusion
+title: Sparkline dimensions in ##Platform_Name## Sparkline | Syncfusion
 description: Learn here all about Sparkline dimensions in Syncfusion ##Platform_Name## Sparkline control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Sparkline dimensions 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sparkline dimensions in ##Platform_Name## Sparkline control
+# Sparkline dimensions in ##Platform_Name## Sparkline
 
 ## Size for container
 
@@ -50,7 +50,7 @@ Sparkline can be rendered to its container size. You can set the size through in
 
 ## Size for sparkline
 
-You can also set the size for sparkline directly using the [`width`](../../api/sparkline/#width-string) and [`height`](../../api/sparkline/#height-string) properties.
+You can also set the size for sparkline directly using the [`width`](../../api/sparkline#width-string) and [`height`](../../api/sparkline#height-string) properties.
 
 **In pixel**
 

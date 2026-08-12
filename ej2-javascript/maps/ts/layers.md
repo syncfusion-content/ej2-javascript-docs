@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layers in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Layers in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Layers in TypeScript Maps | Syncfusion
+description: Add multiple shape and map provider layers in TypeScript Maps to display GeoJSON data and tile sources together as a single layered visualization.
 platform: ej2-javascript
 control: Layers 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Layers in ##Platform_Name## Maps component
+# Layers in TypeScript Maps
 
 Layers are the fundamental building blocks of the Maps component. Each layer can display shape data from GeoJSON files or map providers. The Maps component renders content through the [`layers`](../api/maps/layers) property, and multiple layers can be added to create rich, layered map visualizations.
 

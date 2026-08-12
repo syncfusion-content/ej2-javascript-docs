@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Selected data grid in ##Platform_Name## Chart control | Syncfusion
+title: How to display selected data in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Selected data grid in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Selected data grid 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selected data grid in ##Platform_Name## Chart control
+# How to display selected data in ##Platform_Name## Chart
 
 By using the [`dragComplete`](../../api/chart/chartModel/#dragcomplete), you can get the selected data values for range selection.
 

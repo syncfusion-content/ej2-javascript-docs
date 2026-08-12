@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Annotation in ##Platform_Name## Accumulation chart control | Syncfusion
-description: Learn here all about Annotation in Syncfusion ##Platform_Name## Accumulation chart control of Syncfusion Essential JS 2 and more.
+title: Annotation in ##Platform_Name## Accumulation Chart | Syncfusion
+description: Learn how to add annotations to the Syncfusion ##Platform_Name## Accumulation Chart to mark areas of interest with text, shapes, or images.
 platform: ej2-javascript
-control: Annotation 
+control: Accumulation Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Annotation in ##Platform_Name## Accumulation chart control
+# Annotation in ##Platform_Name## Accumulation Chart
 
 The annotations are used to mark the specific area of interest in the chart area with texts, shapes or images.
 

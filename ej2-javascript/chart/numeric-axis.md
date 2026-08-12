@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Numeric axis in ##Platform_Name## Chart control | Syncfusion
+title: Numeric axis in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Numeric axis in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Numeric axis 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Numeric axis in ##Platform_Name## Chart control
+# Numeric axis in ##Platform_Name## Chart
 
 The [numeric axis](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-axis) is used to represent numeric values in a chart. By default, the `valueType` of an axis is set to `Double`, which is suitable for displaying continuous numerical data.
 

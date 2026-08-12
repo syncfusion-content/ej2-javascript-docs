@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Series types in ##Platform_Name## Range navigator control | Syncfusion
-description: Learn here all about Series types in Syncfusion ##Platform_Name## Range navigator control of Syncfusion Essential JS 2 and more.
+title: Series types in ##Platform_Name## Range Selector | Syncfusion
+description: Learn here all about Series types in Syncfusion ##Platform_Name## Range Selector of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Series types 
+control: Range Selector
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Series types in ##Platform_Name## Range navigator control
+# Series types in ##Platform_Name## Range Selector
 
 To render the data, the Range Selector supports three types of series.
 

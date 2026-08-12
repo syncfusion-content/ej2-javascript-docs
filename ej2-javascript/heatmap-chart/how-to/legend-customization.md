@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Legend customization in ##Platform_Name## Heatmap chart control | Syncfusion
-description: Learn here all about Legend customization in Syncfusion ##Platform_Name## Heatmap chart control of Syncfusion Essential JS 2 and more.
+title: How to customize legend labels in ##Platform_Name## HeatMap | Syncfusion
+description: Customize or hide JavaScript HeatMap Chart legend labels by handling the legendRender client-side event to change label text on the fly.
 platform: ej2-javascript
 control: Legend customization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Legend customization in ##Platform_Name## Heatmap chart control
+# How to customize legend labels in ##Platform_Name## HeatMap Chart
 
 You can change the legend label using the `legendRender` client-side event. You can also hide the legend label using this client-side event.
 

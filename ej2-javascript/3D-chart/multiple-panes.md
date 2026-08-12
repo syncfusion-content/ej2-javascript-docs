@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Multiple panes in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about multiple panes in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+title: Multiple Panes in ##Platform_Name## 3D Chart | Syncfusion
+description: Learn how to split the Syncfusion ##Platform_Name## 3D Chart area into multiple rows and columns to create multiple panes.
 platform: ej2-javascript
-control: 3D Chart 
+control: 3D Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Multiple panes in ##Platform_Name## 3D Chart control
+# Multiple Panes in ##Platform_Name## 3D Chart
 
-The chart area can be divided into multiple panes using [`rows`](../api/chart3d/chart3DModel/#rows) and [`columns`](../api/chart3d/chart3DModel/#columns).
+The chart area can be divided into multiple panes using [`rows`](../api/chart3d/chart3DModel#rows) and [`columns`](../api/chart3d/chart3DModel#columns).
 
 ## Rows
 
-To split the chart area vertically into number of rows, use [`rows`](../api/chart3d/chart3DModel/#rows) property of the 3D chart.
+To split the chart area vertically into number of rows, use [`rows`](../api/chart3d/chart3DModel#rows) property of the 3D chart.
 
-* The space for each row can be allocated by using the [`height`](../api/chart3d/threeDimensionRowModel/#height) property. The value can be either in percentage or in pixel.
-* To associate a vertical axis to a particular row, specify its index to [`rowIndex`](../api/chart3d/axis3DModel/#rowindex) property of the axis.
+* The space for each row can be allocated by using the [`height`](../api/chart3d/threeDimensionRowModel#height) property. The value can be either in percentage or in pixel.
+* To associate a vertical axis to a particular row, specify its index to [`rowIndex`](../api/chart3d/axis3DModel#rowindex) property of the axis.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -47,7 +47,7 @@ To split the chart area vertically into number of rows, use [`rows`](../api/char
 {% previewsample "page.domainurl/code-snippet/chart3d/multi-pane-cs1" %}
 {% endif %}
 
-For spanning the vertical axis along multiple rows, use [`span`](../api/chart3d/axis3DModel/#span)  property of an axis.
+For spanning the vertical axis along multiple rows, use [`span`](../api/chart3d/axis3DModel#span)  property of an axis.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -78,10 +78,10 @@ For spanning the vertical axis along multiple rows, use [`span`](../api/chart3d
 
 ## Columns
 
-To split the chart area horizontally into number of columns, use [`columns`](../api/chart3d/chart3DModel/#columns) property of the 3D chart.
+To split the chart area horizontally into number of columns, use [`columns`](../api/chart3d/chart3DModel#columns) property of the 3D chart.
 
-* The space for each column can be allocated by using the [`width`](../api/chart3d/threeDimensionColumnModel/#width) property. The given width can be either in percentage or in pixel.
-* To associate a horizontal axis to a particular column, specify its index to [`columnIndex`](../api/chart3d/axis3DModel/#columnindex) property of the axis.
+* The space for each column can be allocated by using the [`width`](../api/chart3d/threeDimensionColumnModel#width) property. The given width can be either in percentage or in pixel.
+* To associate a horizontal axis to a particular column, specify its index to [`columnIndex`](../api/chart3d/axis3DModel#columnindex) property of the axis.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -110,7 +110,7 @@ To split the chart area horizontally into number of columns, use [`columns`](../
 {% previewsample "page.domainurl/code-snippet/chart3d/multi-pane-cs3" %}
 {% endif %}
 
-For spanning the vertical axis along multiple column, you can use [`span`](../api/chart3d/axis3DModel/#span) property of an axis.
+For spanning the vertical axis along multiple column, you can use [`span`](../api/chart3d/axis3DModel#span) property of an axis.
 
 {% if page.publishingplatform == "typescript" %}
 

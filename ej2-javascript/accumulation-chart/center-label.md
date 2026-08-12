@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Center label in ##Platform_Name## Accumulation chart control | Syncfusion
-description: Learn here all about Center label in Syncfusion ##Platform_Name## Accumulation chart control of Syncfusion Essential JS 2 and more.
+title: Center Label in ##Platform_Name## Accumulation Chart | Syncfusion
+description: Learn how to place a label at the center of a pie or doughnut chart in the Syncfusion ##Platform_Name## Accumulation Chart.
 platform: ej2-javascript
-control: Center label 
+control: Accumulation Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Center label in ##Platform_Name## Accumulation chart control
+# Center Label in ##Platform_Name## Accumulation Chart
 
-Using [`centerLabel`](../api/accumulation-chart/centerLabel) it is now possible to place a label at the center of a pie or doughnut chart. To configure the default text rendered on the center label for the pie and doughnut charts, use the [`text`](../api/accumulation-chart/centerLabel/#text) property in the [`centerLabel`](../api/accumulation-chart/centerLabel).
+Using [`centerLabel`](../api/accumulation-chart/centerLabel) it is now possible to place a label at the center of a pie or doughnut chart. To configure the default text rendered on the center label for the pie and doughnut charts, use the [`text`](../api/accumulation-chart/centerLabel#text) property in the [`centerLabel`](../api/accumulation-chart/centerLabel).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -42,7 +42,7 @@ Using [`centerLabel`](../api/accumulation-chart/centerLabel) it is now possible 
 
 ## Hover text
 
-The default text in the center label can be changed when the mouse pointer hovers over the pie and doughnut charts slice using the [`hoverTextFormat`](../api/accumulation-chart/centerLabel/#hovertextformat) property.
+The default text in the center label can be changed when the mouse pointer hovers over the pie and doughnut charts slice using the [`hoverTextFormat`](../api/accumulation-chart/centerLabel#hovertextformat) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -73,7 +73,7 @@ The default text in the center label can be changed when the mouse pointer hover
 
 ## Customization
 
-Customize the center label text using the [`textStyle`](../api/accumulation-chart/centerLabel/#textstyle) property.
+Customize the center label text using the [`textStyle`](../api/accumulation-chart/centerLabel#textstyle) property.
 
 {% if page.publishingplatform == "typescript" %}
 

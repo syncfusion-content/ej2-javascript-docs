@@ -1,15 +1,15 @@
 ---
 layout: post
-title: States in ##Platform_Name## Progressbar control | Syncfusion
-description: Learn here all about States in Syncfusion ##Platform_Name## Progressbar control of Syncfusion Essential JS 2 and more.
+title: States in ##Platform_Name## Progress Bar control | Syncfusion
+description: Learn here all about States in Syncfusion ##Platform_Name## Progress Bar control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: States 
+control: States
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# States in ##Platform_Name## Progressbar control
+# States in ##Platform_Name## Progress Bar control
 
 Visualize progress in different states.
 

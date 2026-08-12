@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Accessibility customization in ##Platform_Name## Chart control | Syncfusion
+title: Advanced accessibility in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Accessibility customization in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Accessibility customization
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility customization in ##Platform_Name## Chart control
+# Advanced accessibility in ##Platform_Name## Chart
 
 The ##Platform_Name## Chart control visualizes data graphically and provides accessibility customization options to improve usability for people with disabilities. The primary accessibility attributes are described in this section.
 

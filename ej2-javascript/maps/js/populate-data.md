@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populate data in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Populate data in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Populate data in JavaScript Maps | Syncfusion
+description: Bind GeoJSON, geographic, or remote data sources to JavaScript Maps to populate shape geometry and render the requested geographic features.
 platform: ej2-javascript
 control: Populate data 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Populate data in ##Platform_Name## Maps component
+# Populate data in JavaScript Maps
 
 This section explains how to populate data inputs and provide it to the Maps component.
 

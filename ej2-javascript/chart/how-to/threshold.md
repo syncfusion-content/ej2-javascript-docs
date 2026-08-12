@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Threshold in ##Platform_Name## Chart control | Syncfusion
+title: How to add threshold in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Threshold in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Threshold 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Threshold in ##Platform_Name## Chart control
+# How to add threshold in ##Platform_Name## Chart
 
 You can mark a threshold in chart by using the `stripline`.
 

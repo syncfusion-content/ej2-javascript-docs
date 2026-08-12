@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with data source in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about working with data source in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+title: Working with Data in ##Platform_Name## 3D Chart | Syncfusion
+description: Learn how to bind local, remote, and complex data sources to the Syncfusion ##Platform_Name## 3D Chart using the dataSource property.
 platform: ej2-javascript
 control: 3D Chart
 publishingplatform: ##Platform_Name##
@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Working with data in ##Platform_Name## 3D Chart control
+# Working with Data in ##Platform_Name## 3D Chart
 
 ## Local data
 
-A simple JSON data can be bound to the 3D chart using [`dataSource`](../api/chart3d/series3DModel/#datasource) property in series. Now map the fields in JSON to [`xName`](../api/chart3d/series3DModel/#xname) and [`yName`](../api/chart3d/series3DModel/#yname) properties.
+A simple JSON data can be bound to the 3D chart using [`dataSource`](../api/chart3d/series3DModel#datasource) property in series. Now map the fields in JSON to [`xName`](../api/chart3d/series3DModel#xname) and [`yName`](../api/chart3d/series3DModel#yname) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -45,7 +45,7 @@ A simple JSON data can be bound to the 3D chart using [`dataSource`](../api/char
 
 ## Remote data
 
-The remote data can be bound to the 3D chart using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/). The `DataManager` requires minimal information like web service URL, adaptor and cross domain to interact with service endpoint properly. Assign the instance of the `DataManager` to the [`dataSource`](../api/chart3d/series3DModel/#datasource) property in series and map the fields of data to [`xName`](../api/chart3d/series3DModel/#xname) and [`yName`](../api/chart3d/series3DModel/#yname) properties. You can also use the [`query`](../api/chart3d/series3DModel/#query) property of the series to filter the data.
+The remote data can be bound to the 3D chart using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/). The `DataManager` requires minimal information like web service URL, adaptor and cross domain to interact with service endpoint properly. Assign the instance of the `DataManager` to the [`dataSource`](../api/chart3d/series3DModel#datasource) property in series and map the fields of data to [`xName`](../api/chart3d/series3DModel#xname) and [`yName`](../api/chart3d/series3DModel#yname) properties. You can also use the [`query`](../api/chart3d/series3DModel#query) property of the series to filter the data.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -107,7 +107,7 @@ The remote data can be bound to the 3D chart using the [`DataManager`](https://e
 
 ## Empty points
 
-The data points that uses the `null` or `undefined` as value are considered as empty points. The empty data points are ignored and is not plotted in the chart. When the data is provided by using the points property, by using [`emptyPointSettings`](../api/chart3d/threeDimensionalEmptyPointSettingsModel/) property in series, the empty can be customized. The default [`mode`](../api/chart3d/threeDimensionalEmptyPointSettingsModel/#mode) of the empty point is **Gap**.
+The data points that uses the `null` or `undefined` as value are considered as empty points. The empty data points are ignored and is not plotted in the chart. When the data is provided by using the points property, by using [`emptyPointSettings`](../api/chart3d/threeDimensionalEmptyPointSettingsModel) property in series, the empty can be customized. The default [`mode`](../api/chart3d/threeDimensionalEmptyPointSettingsModel#mode) of the empty point is **Gap**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -138,7 +138,7 @@ The data points that uses the `null` or `undefined` as value are considered as e
 
 **Customizing empty point**
 
-The specific color for empty point can be set by the [`fill`](../api/chart3d/threeDimensionalEmptyPointSettingsModel/#fill) property in [`emptyPointSettings`](../api/chart3d/threeDimensionalEmptyPointSettingsModel/).
+The specific color for empty point can be set by the [`fill`](../api/chart3d/threeDimensionalEmptyPointSettingsModel#fill) property in [`emptyPointSettings`](../api/chart3d/threeDimensionalEmptyPointSettingsModel).
 
 {% if page.publishingplatform == "typescript" %}
 

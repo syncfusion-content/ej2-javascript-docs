@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ES5 getting started with ##Platform_Name## Circular Gauge control | Syncfusion
+title: Getting Started with JavaScript (ES5) Circular Gauge | Syncfusion
 description: Create and configure your first Syncfusion JavaScript ES5 Circular Gauge using CDN resources, sample data, and pointer settings.
 platform: ej2-javascript
 control: Circular Gauge
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion® JavaScript (ES5) Circular Gauge Control
+# Getting Started with JavaScript (ES5) Circular Gauge
 
 Build your first Syncfusion JavaScript (ES5) application with a simple Circular Gauge in just a few minutes. This quickstart guides you through creating a minimal, runnable HTML page that loads the Syncfusion EJ2 Circular Gauge control from the CDN, initializes it, and displays a pointer value.
 

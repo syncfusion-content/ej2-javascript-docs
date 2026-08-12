@@ -3,7 +3,7 @@ layout: post
 title: Selection and highlight in ##Platform_Name## Treemap control | Syncfusion
 description: Learn here all about Selection and highlight in Syncfusion ##Platform_Name## Treemap control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Selection and highlight 
+control: TreeMap
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

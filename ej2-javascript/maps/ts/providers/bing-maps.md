@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bing maps in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Bing maps in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Bing Maps in TypeScript Maps | Syncfusion
+description: Integrate Microsoft Bing Maps as a tile provider in TypeScript Maps to display aerial imagery, road maps, and themed canvas map content.
 platform: ej2-javascript
 control: Bing maps 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bing Maps integration in ##Platform_Name## Maps component
+# Bing Maps integration in TypeScript Maps
 
 Bing Maps is a online Maps provider, owned by Microsoft. As like OSM, it provide Maps tile images based on our requests and combines those images into a single one to display Maps area.
 

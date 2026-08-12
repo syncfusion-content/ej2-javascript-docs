@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Scatter Chart in ##Platform_Name## Charts | Syncfusion
+title: Scatter Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Scatter in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Scatter 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Scatter Chart in ##Platform_Name## Charts
+# Scatter Chart in ##Platform_Name## Chart
 
 ## Scatter Chart
 

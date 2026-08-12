@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Appearance in ##Platform_Name## Stock chart control | Syncfusion
-description: Learn here all about Appearance in Syncfusion ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more.
+title: Appearance in ##Platform_Name## Stock Charts | Syncfusion
+description: Learn here all about Appearance in Syncfusion ##Platform_Name## Stock Charts of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Appearance 
+control: Stock Charts
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance in ##Platform_Name## Stock chart control
+# Appearance in ##Platform_Name## Stock Charts
 
 ## Stock Chart Title
 
@@ -110,4 +110,4 @@ Changing Stock Chart theme will affect background color, grid lines, tooltip col
 
 ## See Also
 
-* [Axis Customization](./axis-customization/)
+* [Axis Customization](./axis-customization)

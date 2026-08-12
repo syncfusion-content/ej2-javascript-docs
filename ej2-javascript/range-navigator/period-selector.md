@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Period selector in ##Platform_Name## Range navigator control | Syncfusion
-description: Learn here all about Period selector in Syncfusion ##Platform_Name## Range navigator control of Syncfusion Essential JS 2 and more.
+title: Period selector in ##Platform_Name## Range Selector | Syncfusion
+description: Learn here all about Period selector in Syncfusion ##Platform_Name## Range Selector of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Period selector 
+control: Range Selector
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Period selector in ##Platform_Name## Range navigator control
+# Period selector in ##Platform_Name## Range Selector
 
 The period selector allows to select a range with specified periods.
 
@@ -127,4 +127,4 @@ The `disableRangeSelector` property allows the users to display only the period 
 
 ## See Also
 
-* [LightWeight](./lightweight/)
+* [LightWeight](./lightweight)

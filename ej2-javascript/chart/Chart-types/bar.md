@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bar Chart in ##Platform_Name## Charts | Syncfusion
+title: Bar Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Bar in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Bar 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Bar Chart in ##Platform_Name## Charts
+# Bar Chart in ##Platform_Name## Chart
 
 ## Bar
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Title in ##Platform_Name## Chart control | Syncfusion
+title: Title and subtitle in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Title in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Title 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart title and subtitle in ##Platform_Name## Chart component
+# Title and subtitle in ##Platform_Name## Chart
 
 Chart titles and subtitles help provide context for the visualized data. The title typically indicates the main subject or metric represented in the chart, while the subtitle adds supporting details such as data sources, time ranges, or explanatory notes. Both elements can be customized in terms of position, alignment, and style to align with application design requirements.
 

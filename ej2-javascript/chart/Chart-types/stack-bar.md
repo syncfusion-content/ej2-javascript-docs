@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Stacked Bar Chart in ##Platform_Name## Charts | Syncfusion
+title: Stacked Bar Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Stacked Bar in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Stacked Bar 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stacked Bar Chart in ##Platform_Name## Charts
+# Stacked Bar Chart in ##Platform_Name## Chart
 
 ## Stacked Bar
 

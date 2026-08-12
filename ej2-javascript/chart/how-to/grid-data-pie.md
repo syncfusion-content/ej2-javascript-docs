@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Grid data pie in ##Platform_Name## Chart control | Syncfusion
+title: How to visualize grid records in pie chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Grid data pie in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Grid data pie 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grid data pie in ##Platform_Name## Chart control
+# How to visualize grid records in pie chart in ##Platform_Name## Chart
 
 You can visualize the filtered data that returned by grid in pie chart.
 

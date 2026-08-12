@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layers in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Layers in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Layers in ##Platform_Name## Maps | Syncfusion
+description: Learn here all about Layers in Syncfusion ##Platform_Name## Maps of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Layers 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Layers in ##Platform_Name## Maps component
+# Layers in ##Platform_Name## Maps
 
 Layers are the fundamental building blocks of the Maps component. Each layer can display shape data from GeoJSON files or map providers. The Maps component renders content through the [`layers`](../api/maps/layers) property, and multiple layers can be added to create rich, layered map visualizations.
 
@@ -87,7 +87,7 @@ Custom shapes (also known as custom maps) can be rendered in the Maps component 
 
 Please refer this [`link`](https://cdn.syncfusion.com/maps/map-data/seat.json) for an example GeoJSON file containing information about bus seat selection.
 
-Please refer this [`link`](https://ej2.syncfusion.com/demos//bootstrap5/maps/seat-selection.html) for more information and a live demonstration.
+Please refer this [`link`](https://ej2.syncfusion.com/demos/#/tailwind3/maps/seat-selection.html) for more information and a live demonstration.
 
 ## See Also
 

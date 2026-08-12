@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Funnel in ##Platform_Name## Accumulation chart control | Syncfusion
-description: Learn here all about Funnel in Syncfusion ##Platform_Name## Accumulation chart control of Syncfusion Essential JS 2 and more.
+title: Funnel in ##Platform_Name## Accumulation Chart | Syncfusion
+description: Learn how to render a funnel series in the Syncfusion ##Platform_Name## Accumulation Chart using the FunnelSeries module.
 platform: ej2-javascript
-control: Funnel 
+control: Accumulation Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Funnel in ##Platform_Name## Accumulation chart control
+# Funnel in ##Platform_Name## Accumulation Chart
 
 To render a funnel series, use the series [`type`](../api/accumulation-chart/accumulationSeriesModel/) as `Funnel` and inject, the `FunnelSeries` module using the `AccumulationChart.Inject(FunnelSeries)` method.
 
@@ -228,7 +228,7 @@ Individual points can be customized using the `pointRender` event.
 
 ## Modes
 
-The Funnel chart supports both Standard and Trapezoidal modes of rendering. The default value of the [`funnelMode`](../api/accumulation-chart/funnelModes/) is `Standard`.
+The Funnel chart supports both Standard and Trapezoidal modes of rendering. The default value of the [`funnelMode`](../api/accumulation-chart/funnelModes) is `Standard`.
 
 ### Standard
 

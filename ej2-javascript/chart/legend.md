@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Legend in ##Platform_Name## Chart control | Syncfusion
+title: Legend in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Legend in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Legend 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Legend in ##Platform_Name## Chart control
+# Legend in ##Platform_Name## Chart
 
 <!-- markdownlint-disable MD036 -->
 

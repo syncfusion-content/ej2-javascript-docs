@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Print and Export in ##Platform_Name## 3D Circular Chart control | Syncfusion
-description: Learn here all about print and export in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
+title: Print and Export in ##Platform_Name## 3D Circular Chart | Syncfusion
+description: Learn here all about print and export in Syncfusion ##Platform_Name## 3D Circular Chart of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Print and Export
+control: 3D Circular Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Print and Export in ##Platform_Name## 3D Circular Chart control
+# Print and Export in ##Platform_Name## 3D Circular Chart
 
 ## Print
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State persistence in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about State persistence in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: State persistence in TypeScript Maps | Syncfusion
+description: Persist TypeScript Maps state across page refreshes by enabling enablePersistence to retain zoom, center, and selection values in browser storage.
 platform: ej2-javascript
 control: State persistence 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State persistence in ##Platform_Name## Maps component
+# State persistence in TypeScript Maps
 
 State persistence enables the Maps component to retain the current state in browser storage for state maintenance across page refreshes. This feature is controlled through the [`enablePersistence`](../api/maps#enablepersistence) property which is set to **false** by default. When this property is set to **true**, specific Maps component model values are preserved even after the page is refreshed.
 

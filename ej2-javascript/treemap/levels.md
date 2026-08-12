@@ -3,7 +3,7 @@ layout: post
 title: Levels in ##Platform_Name## Treemap control | Syncfusion
 description: Learn here all about Levels in Syncfusion ##Platform_Name## Treemap control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Levels 
+control: TreeMap
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

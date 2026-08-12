@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Grouping in ##Platform_Name## Accumulation chart control | Syncfusion
-description: Learn here all about Grouping in Syncfusion ##Platform_Name## Accumulation chart control of Syncfusion Essential JS 2 and more.
+title: Grouping in ##Platform_Name## Accumulation Chart | Syncfusion
+description: Learn how to group data points in the Syncfusion ##Platform_Name## Accumulation Chart using the groupTo property.
 platform: ej2-javascript
-control: Grouping 
+control: Accumulation Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grouping in ##Platform_Name## Accumulation chart control
+# Grouping in ##Platform_Name## Accumulation Chart
 
 You can club/group few points of the series based on
-[`groupTo`](../api/accumulation-chart/accumulationSeries/) property. For example, if the club
+[`groupTo`](../api/accumulation-chart/accumulationSeries) property. For example, if the club
 value is 11, then the points with value less than 11 is grouped together and will be showed as a single
 point with label `others`. The property also takes value in percentage (percentage of total data points value).
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Histogram Chart in ##Platform_Name## Charts | Syncfusion
+title: Histogram Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Histogram in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Histogram 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Histogram Chart in ##Platform_Name## Charts
+# Histogram Chart in ##Platform_Name## Chart
 
 ## Histogram
 

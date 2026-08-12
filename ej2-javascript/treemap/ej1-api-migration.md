@@ -3,7 +3,7 @@ layout: post
 title: Ej1 api migration in ##Platform_Name## Treemap control | Syncfusion
 description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Treemap control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Ej1 api migration 
+control: TreeMap
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

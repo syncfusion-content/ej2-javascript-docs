@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Axis in ##Platform_Name## HeatMap chart control | Syncfusion
-description: Learn here all about axis in Syncfusion ##Platform_Name## HeatMap chart control of Syncfusion Essential JS 2 and more.
+title: Axis in ##Platform_Name## HeatMap Chart | Syncfusion
+description: Configure X and Y axes in the JavaScript HeatMap Chart with category, numeric, or date-time types, plus inversed, opposed, multilevel, and formatted labels.
 platform: ej2-javascript
 control: Axis 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Axis in ##Platform_Name## HeatMap chart control
+# Axis in ##Platform_Name## HeatMap Chart
 
 HeatMap consists of two axes namely, X-axis and Y-axis that displays the row headers and column headers to plot the data points respectively.
 You can define the type, format, and other customizing options for both axes in the HeatMap.

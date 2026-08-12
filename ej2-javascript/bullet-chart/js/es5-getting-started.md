@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ES5 getting started with ##Platform_Name## Bullet Chart control | Syncfusion
-description: Check out and learn about ES5 getting started with ##Platform_Name## Bullet Chart control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Bullet Chart (ES5) | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Bullet Chart in an ES5 application using the CDN approach.
 platform: ej2-javascript
 control: Bullet Chart
 publishingplatform: ##Platform_Name##

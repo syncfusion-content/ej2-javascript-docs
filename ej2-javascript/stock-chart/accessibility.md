@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Stock chart control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Stock Charts | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Stock Charts of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Accessibility 
+control: Stock Charts
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Stock chart control
+# Accessibility in ##Platform_Name## Stock Charts
 
 The Stock chart control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

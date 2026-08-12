@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## Chart control | Syncfusion
+title: Selection in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Selection in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Selection 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Selection in ##Platform_Name## Chart control
+# Selection in ##Platform_Name## Chart
 
 The chart provides selection support for both series and individual data points when users interact with the chart using mouse clicks.
 

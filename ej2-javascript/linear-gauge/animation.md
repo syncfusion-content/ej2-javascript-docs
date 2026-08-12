@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Linear Gauge control | Syncfusion
-description: Learn here all about animation in the Syncfusion ##Platform_Name## Linear Gauge control of Syncfusion Essential JS 2 and more.
+title: Animation in ##Platform_Name## Linear Gauge | Syncfusion
+description: Animate the elements of the ##Platform_Name## Linear Gauge, including axis lines, ticks, labels, ranges, pointers, and annotations.
 platform: ej2-javascript
-control: Linear Gauge 
+control: Linear Gauge
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation in ##Platform_Name## Linear Gauge control
+# Animation in ##Platform_Name## Linear Gauge
 
 All of the elements in the Linear Gauge, such as the axis lines, ticks, labels, ranges, pointers, and annotations, can be animated sequentially by using the [animationDuration](../api/linear-gauge#animationduration) property. The animation for the Linear Gauge is enabled when the `animationDuration` property is set to an appropriate value in milliseconds, providing a smooth rendering effect for the control. If the `animationDuration` property is set to **0**, which is the default value, the animation effect is disabled. If the animation is enabled, the control will behave in the following order.
 

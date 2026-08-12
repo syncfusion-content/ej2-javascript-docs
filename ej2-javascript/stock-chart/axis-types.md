@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Axis types in ##Platform_Name## Stock chart control | Syncfusion
-description: Learn here all about Axis types in Syncfusion ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more.
+title: Axis types in ##Platform_Name## Stock Charts | Syncfusion
+description: Learn here all about Axis types in Syncfusion ##Platform_Name## Stock Charts of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Axis types 
+control: Stock Charts
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Axis types in ##Platform_Name## Stock chart control
+# Axis types in ##Platform_Name## Stock Charts
 
 ## DateTime axis
 
@@ -115,4 +115,4 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing dat
 
 ## See also
 
-* [Axis Customization](./axis-customization/)
+* [Axis Customization](./axis-customization)

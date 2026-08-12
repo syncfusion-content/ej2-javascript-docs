@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## Chart control | Syncfusion
+title: Tooltip in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Tooltip 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip in ##Platform_Name## Chart control
+# Tooltip in ##Platform_Name## Chart
 
 <!-- markdownlint-disable MD036 -->
 

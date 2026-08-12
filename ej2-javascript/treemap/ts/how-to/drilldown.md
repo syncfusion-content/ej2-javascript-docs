@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drilldown in ##Platform_Name## Treemap control | Syncfusion
-description: Learn here all about Drilldown in Syncfusion ##Platform_Name## Treemap control of Syncfusion Essential JS 2 and more.
+title: Drilldown in TypeScript Treemap control | Syncfusion
+description: Learn here all about Drilldown in Syncfusion TypeScript Treemap control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Drilldown 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drilldown in ##Platform_Name## Treemap control
+# Drilldown in TypeScript Treemap control
 
 ## Customize the header for treemap drilldown
 

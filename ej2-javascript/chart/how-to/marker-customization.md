@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Marker customization in ##Platform_Name## Chart control | Syncfusion
+title: How to customize markers in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Marker customization in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Marker customization 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Marker customization in ##Platform_Name## Chart control
+# How to customize markers in ##Platform_Name## Chart
 
 By using the [`pointRender`](../../api/chart/chartModel/#pointrender), you can customize the marker shape.
 

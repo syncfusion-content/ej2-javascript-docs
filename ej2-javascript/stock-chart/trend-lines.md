@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Trend lines in ##Platform_Name## Stock chart control | Syncfusion
-description: Learn here all about Trend lines in Syncfusion ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more.
+title: Trend lines in ##Platform_Name## Stock Charts | Syncfusion
+description: Learn here all about Trend lines in Syncfusion ##Platform_Name## Stock Charts of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Trend lines 
+control: Stock Charts
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Trend lines in ##Platform_Name## Stock chart control
+# Trend lines in ##Platform_Name## Stock Charts
 
 Trendlines are used to show the direction and speed of price.
 

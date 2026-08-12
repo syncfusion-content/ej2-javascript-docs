@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Bullet chart dimensions in ##Platform_Name## Bullet chart control | Syncfusion
-description: Learn here all about Bullet chart dimensions in Syncfusion ##Platform_Name## Bullet chart control of Syncfusion Essential JS 2 and more.
+title: Bullet Chart Dimensions in ##Platform_Name## Bullet Chart | Syncfusion
+description: Learn how to set the width and height of the Syncfusion ##Platform_Name## Bullet Chart by configuring the container size.
 platform: ej2-javascript
-control: Bullet chart dimensions 
+control: Bullet Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bullet chart dimensions in ##Platform_Name## Bullet chart control
+# Bullet Chart Dimensions in ##Platform_Name## Bullet Chart
 
 ## Size for Container
 

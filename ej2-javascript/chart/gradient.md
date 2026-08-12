@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Gradient in ##Platform_Name## Chart control | Syncfusion
+title: Gradient in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Gradient in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Gradient
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Gradient in ##Platform_Name## Chart control
+# Gradient in ##Platform_Name## Chart
 
 <!-- markdownlint-disable MD036 -->
 

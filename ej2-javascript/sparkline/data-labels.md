@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data labels in ##Platform_Name## Sparkline control | Syncfusion
+title: Data labels in ##Platform_Name## Sparkline | Syncfusion
 description: Learn here all about Data labels in Syncfusion ##Platform_Name## Sparkline control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Data labels 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data labels in ##Platform_Name## Sparkline control
+# Data labels in ##Platform_Name## Sparkline
 
 Data labels are used to display values of data points to improve the readability.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Lightweight in ##Platform_Name## Range navigator control | Syncfusion
-description: Learn here all about Lightweight in Syncfusion ##Platform_Name## Range navigator control of Syncfusion Essential JS 2 and more.
+title: Lightweight in ##Platform_Name## Range Selector | Syncfusion
+description: Learn here all about Lightweight in Syncfusion ##Platform_Name## Range Selector of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Lightweight 
+control: Range Selector
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Lightweight in ##Platform_Name## Range navigator control
+# Lightweight in ##Platform_Name## Range Selector
 
 By default, when the `dataSource` for `series` is empty, a lightweight Range Selector will be shown without Chart.
 
@@ -42,4 +42,4 @@ By default, when the `dataSource` for `series` is empty, a lightweight Range Sel
 
 ## See Also
 
-* [Period Selector](./period-selector/)
+* [Period Selector](./period-selector)

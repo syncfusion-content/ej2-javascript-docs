@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Chart appearance in ##Platform_Name## Chart control | Syncfusion
+title: Appearance in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Chart appearance in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Chart appearance 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart appearance in ##Platform_Name## Chart control
+# Appearance in ##Platform_Name## Chart
 
 ## Custom color palette
 

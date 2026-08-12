@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Zooming in ##Platform_Name## Chart control | Syncfusion
+title: Zooming in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Zooming in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Zooming 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Zooming in ##Platform_Name## Chart control
+# Zooming in ##Platform_Name## Chart
 
 ## Enable zooming
 

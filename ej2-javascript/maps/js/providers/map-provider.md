@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Map provider in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Map provider in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: OpenStreetMap in JavaScript Maps | Syncfusion
+description: Render OpenStreetMap tiles inside a JavaScript Maps layer using the open-source OSM provider for collaborative, license-friendly geographic visualization.
 platform: ej2-javascript
 control: Map provider 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# OpenStreetMap integration in ##Platform_Name## Maps component
+# OpenStreetMap integration in JavaScript Maps
 
 Map providers are online services that supply map tile images for rendering geographic visualizations. The Maps component supports integration with various tile-based map providers to display real-world geographic data.
 
@@ -40,7 +40,7 @@ The OSM tile server can be changed by specifying a different tile server URL in 
 
 ## Enabling zooming and panning
 
-The OSM layer supports zooming and panning interactions for enhanced map exploration. Zooming provides a closer view of specific areas for detailed analysis, while panning allows navigation across different regions of the map. These features can be enabled using the [`zoomSettings`](../../api/maps/zoomSettingsModel/) property with toolbar controls for user interaction.
+The OSM layer supports zooming and panning interactions for enhanced map exploration. Zooming provides a closer view of specific areas for detailed analysis, while panning allows navigation across different regions of the map. These features can be enabled using the [`zoomSettings`](../../api/maps/zoomSettingsModel) property with toolbar controls for user interaction.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Sankey Chart component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
-control: Accessibility
+title: Accessibility in ##Platform_Name## Sankey Diagram | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Sankey Diagram of Syncfusion Essential JS 2 and more.
+control: Sankey Diagram
 platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Sankey Chart component
+# Accessibility in ##Platform_Name## Sankey Diagram
 
 The Sankey Chart component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22), and relevant [WAI-ARIA](https://www.w3.org/TR/wai-aria#roles) roles.
 

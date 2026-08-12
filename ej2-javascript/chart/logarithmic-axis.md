@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Logarithmic axis in ##Platform_Name## Chart control | Syncfusion
+title: Logarithmic axis in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Logarithmic axis in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Logarithmic axis 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Logarithmic axis in ##Platform_Name## Chart control
+# Logarithmic axis in ##Platform_Name## Chart
 
 <!-- markdownlint-disable MD033 -->
 

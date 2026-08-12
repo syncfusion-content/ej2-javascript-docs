@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ES5 getting started with ##Platform_Name## Linear Gauge | Syncfusion
-description: Learn how to create and configure a Syncfusion JavaScript ES5 Linear Gauge component using CDN resources.
+title: Getting Started with ##Platform_Name## (ES5) Linear Gauge | Syncfusion
+description: Learn how to create and configure a Syncfusion ##Platform_Name## ES5 Linear Gauge component using CDN resources.
 platform: ej2-javascript
 control: Linear Gauge
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion® JavaScript (ES5) Linear Gauge Control
+# Getting Started with ##Platform_Name## (ES5) Linear Gauge
 
 Build your first Syncfusion JavaScript (ES5) application with a Linear Gauge in a few minutes. This quickstart guides you through creating a minimal HTML page, loading the required Syncfusion scripts from the CDN, initializing the Linear Gauge, and configuring its title, axis, labels, and pointer.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: R t l in ##Platform_Name## Range navigator control | Syncfusion
-description: Learn here all about R t l in Syncfusion ##Platform_Name## Range navigator control of Syncfusion Essential JS 2 and more.
+title: R t l in ##Platform_Name## Range Selector | Syncfusion
+description: Learn here all about R t l in Syncfusion ##Platform_Name## Range Selector of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: R t l 
+control: Range Selector
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# R t l in ##Platform_Name## Range navigator control
+# R t l in ##Platform_Name## Range Selector
 
 The Range Selector supports right-to-left (RTL), which can be enabled with the `enableRtl` property.
 

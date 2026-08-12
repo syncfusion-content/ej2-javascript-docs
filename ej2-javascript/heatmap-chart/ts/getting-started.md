@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## HeatMap component | Syncfusion
-description: Create and configure a Syncfusion JavaScript HeatMap in TypeScript using the Essential JS 2 webpack quickstart project.
+title: Getting Started with ##Platform_Name## HeatMap Chart | Syncfusion
+description: Create a JavaScript HeatMap Chart in TypeScript with the Syncfusion EJ2 webpack quickstart, including setup, rendering, and module injection.
 platform: ej2-javascript
 control: HeatMap
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with ##Platform_Name## HeatMap Component
+# Getting Started with ##Platform_Name## HeatMap Chart
 
 This document explains how to create a HeatMap and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 

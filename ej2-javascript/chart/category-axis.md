@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Category axis in ##Platform_Name## Chart control | Syncfusion
+title: Category axis in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Category axis in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Category axis 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Category axis in ##Platform_Name## Chart control
+# Category axis in ##Platform_Name## Chart
 
 <!-- markdownlint-disable MD036 -->
 

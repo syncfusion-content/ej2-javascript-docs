@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Range Column in ##Platform_Name## Chart control | Syncfusion
+title: Range Column Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Range Column in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Range Column 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Range Column Chart in ##Platform_Name## Charts
+# Range Column Chart in ##Platform_Name## Chart
 
 ## Range Column
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Tool tip in ##Platform_Name## Stock chart control | Syncfusion
-description: Learn here all about Tool tip in Syncfusion ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more.
+title: Tool tip in ##Platform_Name## Stock Charts | Syncfusion
+description: Learn here all about Tool tip in Syncfusion ##Platform_Name## Stock Charts of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Tool tip 
+control: Stock Charts
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool tip in ##Platform_Name## Stock chart control
+# Tool tip in ##Platform_Name## Stock Charts
 
 <!-- markdownlint-disable MD036 -->
 

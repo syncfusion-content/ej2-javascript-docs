@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Gradient in ##Platform_Name## Accumulation chart control | Syncfusion
-description: Learn here all about Gradient in Syncfusion ##Platform_Name## Accumulation chart control of Syncfusion Essential JS 2 and more.
+title: Gradient in ##Platform_Name## Accumulation Chart | Syncfusion
+description: Learn how to apply linear and radial gradients to the Syncfusion ##Platform_Name## Accumulation Chart for richer styling.
 platform: ej2-javascript
-control: Gradient
+control: Accumulation Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Gradient in ##Platform_Name## Accumulation chart control
+# Gradient in ##Platform_Name## Accumulation Chart
 
 Gradients add depth and modern styling to charts by smoothly blending multiple colors. The Charts component supports two gradient types:
 

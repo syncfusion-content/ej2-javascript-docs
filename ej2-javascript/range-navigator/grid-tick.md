@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Grid tick in ##Platform_Name## Range navigator control | Syncfusion
-description: Learn here all about Grid tick in Syncfusion ##Platform_Name## Range navigator control of Syncfusion Essential JS 2 and more.
+title: Grid tick in ##Platform_Name## Range Selector | Syncfusion
+description: Learn here all about Grid tick in Syncfusion ##Platform_Name## Range Selector of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Grid tick 
+control: Range Selector
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grid tick in ##Platform_Name## Range navigator control
+# Grid tick in ##Platform_Name## Range Selector
 
 ## Grid line customization
 

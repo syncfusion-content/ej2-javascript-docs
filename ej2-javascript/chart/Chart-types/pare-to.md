@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Pareto Chart in ##Platform_Name## Charts | Syncfusion
+title: Pareto Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Pareto in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Pareto 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pareto Chart in ##Platform_Name## Charts
+# Pareto Chart in ##Platform_Name## Chart
 
 ## Pareto
 

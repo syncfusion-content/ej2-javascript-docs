@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Cross hair in ##Platform_Name## Stock chart control | Syncfusion
-description: Learn here all about Cross hair in Syncfusion ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more.
+title: Cross hair in ##Platform_Name## Stock Charts | Syncfusion
+description: Learn here all about Cross hair in Syncfusion ##Platform_Name## Stock Charts of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Cross hair 
+control: Stock Charts
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cross hair in ##Platform_Name## Stock chart control
+# Cross hair in ##Platform_Name## Stock Charts
 
 Crosshair has a vertical and horizontal line to view the value of the axis at mouse or touch position.
 

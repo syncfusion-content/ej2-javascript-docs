@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Methods in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about the methods in the Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Methods in JavaScript Maps | Syncfusion
+description: Use public JavaScript Maps methods to retrieve coordinates, manipulate layers, refresh content, and export map visualizations programmatically.
 platform: ej2-javascript
 control: Maps 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Methods in ##Platform_Name## Maps component
+# Methods in JavaScript Maps
 
 The Maps component provides several public methods that enable programmatic control and interaction with map controls. These methods allow developers to perform operations such as retrieving geographic coordinates, manipulating layers, refreshing content, and exporting map visualizations. This section documents the available methods and their usage.
 

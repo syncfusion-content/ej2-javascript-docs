@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Title and subtitle in ##Platform_Name## 3D Circular Chart control | Syncfusion
-description: Learn here all about title and subtitle in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
+title: Title and subtitle in ##Platform_Name## 3D Circular Chart | Syncfusion
+description: Learn here all about title and subtitle in Syncfusion ##Platform_Name## 3D Circular Chart of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Title and subtitle 
+control: 3D Circular Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Title and subtitle in ##Platform_Name## 3D Circular Chart control
+# Title and subtitle in ##Platform_Name## 3D Circular Chart
 
 ## Title
 

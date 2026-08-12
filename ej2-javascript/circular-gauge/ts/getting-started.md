@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Circular Gauge control | Syncfusion
+title: Getting Started with ##Platform_Name## Circular Gauge | Syncfusion
 description: Create and configure a Syncfusion JavaScript Circular Gauge in TypeScript using the Essential JS 2 webpack quickstart project.
 platform: ej2-javascript
 control: Circular Gauge
@@ -9,19 +9,19 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with ##Platform_Name## Circular Gauge Control
+# Getting Started with ##Platform_Name## Circular Gauge
 
 This document explains how to create a Circular Gauge and configure its pointer value in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
-> This application uses the `webpack.config.js` configuration provided by the quickstart repository. For information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
+> This application uses the `webpack.config.js` configuration provided by the quickstart repository. For information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started).
 
 ## Prerequisites
 
 Before you begin, ensure that the following software is installed:
 
-* [Node.js](https://nodejs.org/)
+* [Node.js](https://nodejs.org)
 * [Visual Studio Code](https://code.visualstudio.com) or another text editor
-* [Git](https://git-scm.com/) for cloning the quickstart repository
+* [Git](https://git-scm.com) for cloning the quickstart repository
 * A modern web browser such as Chrome, Edge, Firefox, or Safari
 
 > Register your Syncfusion license key before initializing the control. For more information, refer to the [license key registration documentation](https://ej2.syncfusion.com/documentation/licensing/license-key-registration).

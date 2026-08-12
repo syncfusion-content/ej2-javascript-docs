@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Prevent data label in ##Platform_Name## Chart control | Syncfusion
+title: How to prevent data label in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Prevent data label in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Prevent data label 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent data label in ##Platform_Name## Chart control
+# How to prevent data label in ##Platform_Name## Chart
 
 To prevent the chart data label when the data value is 0, follow the given steps:
 

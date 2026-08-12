@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Step Area Chart in ##Platform_Name## Charts | Syncfusion
+title: Step Area Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Step Area in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Step Area 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Step Area Chart in ##Platform_Name## Charts
+# Step Area Chart in ##Platform_Name## Chart
 
 ## Step Area
 

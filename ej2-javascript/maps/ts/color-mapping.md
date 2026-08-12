@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Color mapping in ##Platform_Name## Maps control | Syncfusion
-description: Learn here all about Color mapping in Syncfusion ##Platform_Name## Maps control of Syncfusion Essential JS 2 and more.
+title: Color mapping in TypeScript Maps | Syncfusion
+description: Apply range, equal, or desaturation color mapping in TypeScript Maps to differentiate shape regions based on their underlying data values.
 platform: ej2-javascript
 control: Color mapping 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Color mapping in ##Platform_Name## Maps control
+# Color mapping in TypeScript Maps
 
 Color mapping customizes shape colors based on data values. It supports three primary types: range, equal, and desaturation. To apply color mapping, bind data to the [`dataSource`](../api/maps/layerSettingsModel#datasource) property of [`layerSettings`](../api/maps/layerSettingsModel) and set the [`colorValuePath`](../api/maps/shapeSettingsModel#colorvaluepath) property in [`shapeSettings`](../api/maps/shapeSettingsModel) to specify which field controls the color value.
 

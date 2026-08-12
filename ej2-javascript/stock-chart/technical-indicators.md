@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Technical indicators in ##Platform_Name## Stock chart control | Syncfusion
-description: Learn here all about Technical indicators in Syncfusion ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more.
+title: Technical indicators in ##Platform_Name## Stock Charts | Syncfusion
+description: Learn here all about Technical indicators in Syncfusion ##Platform_Name## Stock Charts of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Technical indicators 
+control: Stock Charts
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Technical indicators in ##Platform_Name## Stock chart control
+# Technical indicators in ##Platform_Name## Stock Charts
 
 A technical indicator is a mathematical calculation based on historic price, volume or open interest information that aims to forecast financial market direction.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Maps | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Maps of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Maps component
+# Accessibility in ##Platform_Name## Maps
 
 Accessibility enables users with disabilities to interact with the Maps component through assistive technologies such as screen readers and keyboard navigation. The Maps component is designed to comply with [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles).
 

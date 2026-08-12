@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Smith chart legend in ##Platform_Name## Smithchart control | Syncfusion
+title: Legend in ##Platform_Name## Smith Chart | Syncfusion
 description: Learn here all about Smith chart legend in Syncfusion ##Platform_Name## Smithchart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Smith chart legend 
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-# Smith chart legend in ##Platform_Name## Smithchart control
+# Legend in ##Platform_Name## Smith Chart
 
 Legend is a key used in smithchart, that contains symbol and descriptions. It provides valuable information for interpreting what the smithchart is displaying and can be represented in various colors, shapes or other identifiers based on the data. In simple words, we can define that legend is used to denote the series rendered in the smithchart.
 

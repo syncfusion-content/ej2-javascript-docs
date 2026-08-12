@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Percentage tool tip in ##Platform_Name## Chart control | Syncfusion
+title: How to show pie percentage in tooltip in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Percentage tool tip in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Percentage tool tip 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Percentage tool tip in ##Platform_Name## Chart control
+# How to show pie percentage in tooltip in ##Platform_Name## Chart
 
 By using the [`tooltipRender`](../../api/accumulation-chart/accumulationChartModel/#tooltiprender) event, you can show the percentage value for each point of pie series in tooltip.
 

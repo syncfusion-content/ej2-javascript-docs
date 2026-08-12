@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data labels in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about data labels in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+title: Data Labels in ##Platform_Name## 3D Chart | Syncfusion
+description: Learn how to add and customize data labels in the Syncfusion ##Platform_Name## 3D Chart for each chart series.
 platform: ej2-javascript
 control: 3D Chart
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data labels in ##Platform_Name## 3D Chart control
+# Data Labels in ##Platform_Name## 3D Chart
 
-Data labels are fields that includes information about the sample point connected to an output. It can be added to a chart series by enabling the [`visible`](../api/chart3d/dataLabelStyleModel/#visible) property in the [`dataLabel`](../api/chart3d/series3DModel/#datalabel). By default, the labels will arrange smartly without overlapping.
+Data labels are fields that includes information about the sample point connected to an output. It can be added to a chart series by enabling the [`visible`](../api/chart3d/dataLabelStyleModel#visible) property in the [`dataLabel`](../api/chart3d/series3DModel#datalabel). By default, the labels will arrange smartly without overlapping.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ Data labels are fields that includes information about the sample point connecte
 
 ## Position
 
-The [`position`](../api/chart3d/dataLabelStyleModel/#position) property is used to place the label either on `Top`, `Middle`, or `Bottom`.
+The [`position`](../api/chart3d/dataLabelStyleModel#position) property is used to place the label either on `Top`, `Middle`, or `Bottom`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ The [`position`](../api/chart3d/dataLabelStyleModel/#position) property is used 
 
 ## Template
 
-Label content can be formatted by using the template option. Inside the template, the placeholder text `${point.x}` and `${point.y}` can be added to display corresponding data points x & y value. Using [`template`](../api/chart3d/dataLabelStyleModel/#template) property, the data label template can be set.
+Label content can be formatted by using the template option. Inside the template, the placeholder text `${point.x}` and `${point.y}` can be added to display corresponding data points x & y value. Using [`template`](../api/chart3d/dataLabelStyleModel#template) property, the data label template can be set.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -106,7 +106,7 @@ Label content can be formatted by using the template option. Inside the template
 
 ## Text mapping
 
-Text from the data source can be mapped using the [`name`](../api/chart3d/dataLabelStyleModel/#name) property.
+Text from the data source can be mapped using the [`name`](../api/chart3d/dataLabelStyleModel#name) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -137,7 +137,7 @@ Text from the data source can be mapped using the [`name`](../api/chart3d/dataLa
 
 ## Format
 
-Data label for the chart can be formatted using the [`format`](../api/chart3d/dataLabelStyleModel/#format) property. The global formatting options can be used as 'n', 'p', and 'c'.
+Data label for the chart can be formatted using the [`format`](../api/chart3d/dataLabelStyleModel#format) property. The global formatting options can be used as 'n', 'p', and 'c'.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -225,7 +225,7 @@ Data label for the chart can be formatted using the [`format`](../api/chart3d/da
 
 ## Margin
 
-The [`margin`](../api/chart3d/dataLabelStyleModel/#margin) for data label can be applied by using [`left`](../api/chart3d/marginModel/#left), [`right`](../api/chart3d/marginModel/#right), [`bottom`](../api/chart3d/marginModel/#bottom) and [`top`](../api/chart3d/marginModel/#top) properties.
+The [`margin`](../api/chart3d/dataLabelStyleModel#margin) for data label can be applied by using [`left`](../api/chart3d/marginModel#left), [`right`](../api/chart3d/marginModel#right), [`bottom`](../api/chart3d/marginModel#bottom) and [`top`](../api/chart3d/marginModel#top) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -256,7 +256,7 @@ The [`margin`](../api/chart3d/dataLabelStyleModel/#margin) for data label can be
 
 ## Customization
 
-The `stroke` and `border` of data label can be customized using [`fill`](../api/chart3d/dataLabelStyleModel/#fill) and [`border`](../api/chart3d/dataLabelStyleModel/#border) properties.
+The `stroke` and `border` of data label can be customized using [`fill`](../api/chart3d/dataLabelStyleModel#fill) and [`border`](../api/chart3d/dataLabelStyleModel#border) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -287,7 +287,7 @@ The `stroke` and `border` of data label can be customized using [`fill`](../api/
 
 ## Customizing specific label
 
-A specific label can be customized by using the [`textRender`](../api/chart3d/i3dtextrendereventargs/) event. The `textRender` event allows you to change the label text for the point.
+A specific label can be customized by using the [`textRender`](../api/chart3d/i3dtextrendereventargs) event. The `textRender` event allows you to change the label text for the point.
 
 {% if page.publishingplatform == "typescript" %}
 

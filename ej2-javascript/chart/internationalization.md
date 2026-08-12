@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Internationalization in ##Platform_Name## Chart control | Syncfusion
+title: Internationalization in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Internationalization in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Internationalization 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Internationalization in ##Platform_Name## Chart control
+# Internationalization in ##Platform_Name## Chart
 
 Chart provides support for internationalization for the following elements:
 

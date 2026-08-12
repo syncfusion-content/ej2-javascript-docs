@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Orientation and RTL in ##Platform_Name## Sankey Chart component | Syncfusion
-description: Learn here all about Orientation and RTL in Syncfusion ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
-control: Orientation and RTL
+title: Orientation and RTL in ##Platform_Name## Sankey Diagram | Syncfusion
+description: Learn here all about Orientation and RTL in Syncfusion ##Platform_Name## Sankey Diagram of Syncfusion Essential JS 2 and more.
+control: Sankey Diagram
 platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Orientation and RTL in ##Platform_Name## Sankey Chart component
+# Orientation and RTL in ##Platform_Name## Sankey Diagram
 
 The Sankey Chart supports flexible layout options including horizontal and vertical orientations, as well as right-to-left (RTL) rendering for international applications. These features enable you to create localized and directionally appropriate visualizations.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Axis customization in ##Platform_Name## Chart control | Syncfusion
+title: Axis customization in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Axis customization in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Axis customization 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Axis customization in ##Platform_Name## Chart control
+# Axis customization in ##Platform_Name## Chart
 
 ## Axis Crossing
 

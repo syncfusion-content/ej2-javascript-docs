@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Bullet Chart control | Syncfusion
-description: Check out and learn about Getting started with ##Platform_Name## Bullet Chart control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Bullet Chart | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Bullet Chart in a TypeScript application using the EJ2 webpack quickstart.
 platform: ej2-javascript
 control: Bullet Chart
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with ##Platform_Name## Bullet Chart control
+# Getting Started with ##Platform_Name## Bullet Chart
 
 This document explains how to create a simple Bullet Chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 

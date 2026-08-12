@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Legend in ##Platform_Name## Sankey Chart component | Syncfusion
-description: Learn here all about Legend in Syncfusion ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
-control: Legend
+title: Legend in ##Platform_Name## Sankey Diagram | Syncfusion
+description: Learn here all about Legend in Syncfusion ##Platform_Name## Sankey Diagram of Syncfusion Essential JS 2 and more.
+control: Sankey Diagram
 platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Legend in ##Platform_Name## Sankey Chart component
+# Legend in ##Platform_Name## Sankey Diagram
 
 A legend provides a visual key that helps users understand the categories and meanings represented by nodes in the Sankey Chart. The Sankey Chart provides comprehensive legend configuration options including positioning, styling, customization, and interactive behaviors. You can enable and customize legend using the `legend` property and by injecting the `SankeyLegend` module.
 

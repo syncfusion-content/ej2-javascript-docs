@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Tool tip in ##Platform_Name## Range navigator control | Syncfusion
-description: Learn here all about Tool tip in Syncfusion ##Platform_Name## Range navigator control of Syncfusion Essential JS 2 and more.
+title: Tool tip in ##Platform_Name## Range Selector | Syncfusion
+description: Learn here all about Tool tip in Syncfusion ##Platform_Name## Range Selector of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Tool tip 
+control: Range Selector
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool tip in ##Platform_Name## Range navigator control
+# Tool tip in ##Platform_Name## Range Selector
 
 <!-- markdownlint-disable MD036 -->
 

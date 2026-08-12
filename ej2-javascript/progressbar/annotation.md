@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Annotation in ##Platform_Name## Progressbar control | Syncfusion
-description: Learn here all about Annotation in Syncfusion ##Platform_Name## Progressbar control of Syncfusion Essential JS 2 and more.
+title: Annotation in ##Platform_Name## Progress Bar control | Syncfusion
+description: Learn here all about Annotation in Syncfusion ##Platform_Name## Progress Bar control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Annotation 
+control: Annotation
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Annotation in ##Platform_Name## Progressbar control
+# Annotation in ##Platform_Name## Progress Bar control
 
 ## Annotation
 

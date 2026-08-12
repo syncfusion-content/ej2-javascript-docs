@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Title in ##Platform_Name## Linear gauge control | Syncfusion
-description: Learn here all about Title in Syncfusion ##Platform_Name## Linear gauge control of Syncfusion Essential JS 2 and more.
+title: Title in ##Platform_Name## Linear Gauge | Syncfusion
+description: Add and customize a title for the ##Platform_Name## Linear Gauge using the title and titleStyle properties to control text and appearance.
 platform: ej2-javascript
-control: Title
+control: Linear Gauge
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Title in ##Platform_Name## Linear Gauge Control
+# Title in ##Platform_Name## Linear Gauge
 
 ## Adding the Linear Gauge Title
 

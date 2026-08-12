@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Cross hair and track ball in ##Platform_Name## Chart control | Syncfusion
+title: Crosshair and trackball in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Cross hair and track ball in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Cross hair and track ball 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cross hair and track ball in ##Platform_Name## Chart control
+# Crosshair and trackball in ##Platform_Name## Chart
 
 The crosshair feature displays vertical and horizontal guide lines that intersect at the mouse or touch position, helping to identify the corresponding axis values precisely.
 

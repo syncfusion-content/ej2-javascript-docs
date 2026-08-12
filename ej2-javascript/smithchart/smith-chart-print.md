@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Smith chart print in ##Platform_Name## Smithchart control | Syncfusion
+title: Print and Export in ##Platform_Name## Smith Chart | Syncfusion
 description: Learn here all about Smith chart print in Syncfusion ##Platform_Name## Smithchart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Smith chart print 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Smith chart print in ##Platform_Name## Smithchart control
+# Print and Export in ##Platform_Name## Smith Chart
 
 ## Print
 

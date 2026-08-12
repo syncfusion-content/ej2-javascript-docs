@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Data label in ##Platform_Name## Accumulation chart control | Syncfusion
-description: Learn here all about Data label in Syncfusion ##Platform_Name## Accumulation chart control of Syncfusion Essential JS 2 and more.
+title: Data Label in ##Platform_Name## Accumulation Chart | Syncfusion
+description: Learn how to add and customize data labels in the Syncfusion ##Platform_Name## Accumulation Chart series.
 platform: ej2-javascript
-control: Data label 
+control: Accumulation Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data label in ##Platform_Name## Accumulation chart control
+# Data Label in ##Platform_Name## Accumulation Chart
 
-Data label can be added to a chart series by enabling the [`visible`](../api/accumulation-chart/accumulationDataLabelSettingsModel/)
+Data label can be added to a chart series by enabling the [`visible`](../api/accumulation-chart/accumulationDataLabelSettingsModel)
 option in the dataLabel property.
 
 {% if page.publishingplatform == "typescript" %}
@@ -76,7 +76,7 @@ Accumulation chart provides support for placing the data label either `inside` o
 
 ## Smart labels
 
-Data labels will be arranged smartly without overlapping with each other. You can enable or disable this feature using the [`enableSmartLabels`](../api/accumulation-chart/accumulationChartModel/#enablesmartlabels) property.
+Data labels will be arranged smartly without overlapping with each other. You can enable or disable this feature using the [`enableSmartLabels`](../api/accumulation-chart/accumulationChartModel#enablesmartlabels) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -107,7 +107,7 @@ Data labels will be arranged smartly without overlapping with each other. You ca
 
 ## Data Label Template
 
-Label content can be formatted by using the template option. Inside the template, you can add the placeholder text `${point.x}` and `${point.y}` to display corresponding data points x & y value. Using [`template`](../api/accumulation-chart/accumulationDataLabelSettingsModel/)property, you can set data label template in chart.
+Label content can be formatted by using the template option. Inside the template, you can add the placeholder text `${point.x}` and `${point.y}` to display corresponding data points x & y value. Using [`template`](../api/accumulation-chart/accumulationDataLabelSettingsModel)property, you can set data label template in chart.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -200,7 +200,7 @@ Text from the data source can be mapped to data label using `name` property.
 
 ## Format
 
-Data label for the accumulation chart can be formatted using [`format`](../api/accumulation-chart/accumulationChartModel/#format) property. You can use the global formatting options, such as 'n', 'p', and 'c'.
+Data label for the accumulation chart can be formatted using [`format`](../api/accumulation-chart/accumulationChartModel#format) property. You can use the global formatting options, such as 'n', 'p', and 'c'.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -319,7 +319,7 @@ Individual text can be customized using the `textRender` event.
 
 ## Text wrap
 
-When the data label text exceeds the container, the text can be wrapped by using [`textWrap`](../api/accumulation-chart/accumulationDataLabelSettings/#textwrap) property. End user can also wrap the data label text based on [`maxWidth`](../api/accumulation-chart/accumulationDataLabelSettings/#maxwidth) property.
+When the data label text exceeds the container, the text can be wrapped by using [`textWrap`](../api/accumulation-chart/accumulationDataLabelSettings#textwrap) property. End user can also wrap the data label text based on [`maxWidth`](../api/accumulation-chart/accumulationDataLabelSettings#maxwidth) property.
 
 {% if page.publishingplatform == "typescript" %}
 

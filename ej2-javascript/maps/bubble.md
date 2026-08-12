@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bubble in ##Platform_Name## Maps control | Syncfusion
-description: Learn here all about Bubble in Syncfusion ##Platform_Name## Maps control of Syncfusion Essential JS 2 and more.
+title: Bubble in ##Platform_Name## Maps | Syncfusion
+description: Learn here all about Bubble in Syncfusion ##Platform_Name## Maps of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Bubble 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bubble in the ##Platform_Name## Maps component
+# Bubble in ##Platform_Name## Maps
 
 Bubbles in the Maps component provide a visual representation of data values across geographical regions. They appear as circular or square shapes scattered over map areas, with their size proportional to the underlying data values. To enable bubbles, set the [`visible`](../api/maps/bubbleSettingsModel#visible) property of [`bubbleSettings`](../api/maps/bubbleSettingsModel) to **true**. Then, bind the data source to the [`dataSource`](../api/maps/bubbleSettingsModel#datasource) property and specify the field containing numerical data using the [`valuePath`](../api/maps/bubbleSettingsModel#valuepath) property.
 

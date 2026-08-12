@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Ranges in ##Platform_Name## Bullet chart control | Syncfusion
-description: Learn here all about Ranges in Syncfusion ##Platform_Name## Bullet chart control of Syncfusion Essential JS 2 and more.
+title: Ranges in ##Platform_Name## Bullet Chart | Syncfusion
+description: Learn how to define qualitative ranges in the Syncfusion ##Platform_Name## Bullet Chart scale using the ranges property.
 platform: ej2-javascript
-control: Ranges 
+control: Bullet Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Ranges in ##Platform_Name## Bullet chart control
+# Ranges in ##Platform_Name## Bullet Chart
 
 Ranges represent the quality of a specific range such as **Good**, **Bad** and **Satisfactory** in the Bullet Chart scale. The ending point of a qualitative range is specified in the `end` property in `ranges`. The `minimum` value of a quantitative scale is considered the starting point of the first range or the previous range end point.
 

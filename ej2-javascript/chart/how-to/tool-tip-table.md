@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Tool tip table in ##Platform_Name## Chart control | Syncfusion
+title: How to show table in tooltip in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Tool tip table in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Tool tip table 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool tip table in ##Platform_Name## Chart control
+# How to show table in tooltip in ##Platform_Name## Chart
 
 You can show the tooltip as table by using template property in tooltip.
 

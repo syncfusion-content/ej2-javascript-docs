@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Navigation line in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Navigation line in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Navigation line in ##Platform_Name## Maps | Syncfusion
+description: Learn here all about Navigation line in Syncfusion ##Platform_Name## Maps of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Navigation line 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Navigation line in ##Platform_Name## Maps component
+# Navigation line in ##Platform_Name## Maps
 
 Navigation lines are curved paths used to denote the route between two locations on the Maps. This feature is commonly used to draw flight routes, sea routes, or any path connecting two geographic points. Navigation lines are enabled by setting the [`visible`](../api/maps/navigationLineSettingsModel/visible) property of the [`navigationLineSettings`](../api/maps/navigationLineSettingsModel) to **true**.
 

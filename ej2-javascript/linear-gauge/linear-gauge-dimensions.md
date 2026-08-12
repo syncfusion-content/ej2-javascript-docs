@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Linear gauge dimensions in ##Platform_Name## Linear gauge control | Syncfusion
-description: Learn here all about Linear gauge dimensions in Syncfusion ##Platform_Name## Linear gauge control of Syncfusion Essential JS 2 and more.
+title: Linear Gauge Dimensions in ##Platform_Name## Linear Gauge | Syncfusion
+description: Learn how to set the width and height of the ##Platform_Name## Linear Gauge using pixel values or percentage values for a responsive layout.
 platform: ej2-javascript
-control: Linear gauge dimensions 
+control: Linear Gauge
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Linear gauge dimensions in ##Platform_Name## Linear gauge control
+# Linear Gauge Dimensions in ##Platform_Name## Linear Gauge
 
 ## Size for Linear Gauge
 
-The height and width of the Linear Gauge can be set using the [`width`](https://ej2.syncfusion.com/documentation/api/linear-gauge/#width) and [`height`](https://ej2.syncfusion.com/documentation/api/linear-gauge/#height) properties in Linear Gauge.
+The height and width of the Linear Gauge can be set using the [`width`](https://ej2.syncfusion.com/documentation/api/linear-gauge#width) and [`height`](https://ej2.syncfusion.com/documentation/api/linear-gauge#height) properties in Linear Gauge.
 
 ### In Pixel
 

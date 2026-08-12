@@ -3,7 +3,7 @@ layout: post
 title: Accessibility in ##Platform_Name## TreeMap control | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## TreeMap control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Accessibility 
+control: TreeMap
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

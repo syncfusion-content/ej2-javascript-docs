@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## 3D Chart control | Syncfusion
-description: Check out and learn about Getting started with ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## 3D Chart | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## 3D Chart in a TypeScript application using the EJ2 webpack quickstart.
 platform: ej2-javascript
 control: 3D Chart
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with ##Platform_Name## 3D Chart control
+# Getting Started with ##Platform_Name## 3D Chart
 
 This document explains how to create a simple 3D Chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 

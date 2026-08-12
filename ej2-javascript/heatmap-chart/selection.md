@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## Heatmap chart control | Syncfusion
-description: Learn here all about Selection in Syncfusion ##Platform_Name## Heatmap chart control of Syncfusion Essential JS 2 and more.
+title: Selection in ##Platform_Name## HeatMap Chart | Syncfusion
+description: Enable single or multiple cell selection in the JavaScript HeatMap Chart with mouse, touch, and keyboard interactions and clear selection support.
 platform: ej2-javascript
 control: Selection 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in ##Platform_Name## Heatmap chart control
+# Selection in ##Platform_Name## HeatMap Chart
 
-In the HeatMap, the cell selection is used to select single or multiple HeatMap cells at runtime and get the selected cell details using the [cellSelected](../api/heatmap/#cellselected) event. You can enable the cell selection using the [allowSelection](../api/heatmap/#allowselection) property.
+In the HeatMap, the cell selection is used to select single or multiple HeatMap cells at runtime and get the selected cell details using the [cellSelected](../api/heatmap#cellselected) event. You can enable the cell selection using the [allowSelection](../api/heatmap#allowselection) property.
 
 The HeatMap cells can be selected using the following interactions, as shown in the table below.
 
@@ -50,7 +50,7 @@ The HeatMap cells can be selected using the following interactions, as shown in 
 
 ## Enable single cell selection
 
-In the HeatMap, the [enableMultiSelect](../api/heatmap/#enablemultiselect) property is used to allow single cell selection. When you set the `enableMultiSelect` property to **false**, only one cell is selected. By default, `enableMultiSelect` property is set to **true**.
+In the HeatMap, the [enableMultiSelect](../api/heatmap#enablemultiselect) property is used to allow single cell selection. When you set the `enableMultiSelect` property to **false**, only one cell is selected. By default, `enableMultiSelect` property is set to **true**.
 
 {% if page.publishingplatform == "typescript" %}
 

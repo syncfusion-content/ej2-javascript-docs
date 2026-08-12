@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data editing in ##Platform_Name## Chart control | Syncfusion
+title: Data editing in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Data editing in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Data editing 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-# Data editing in ##Platform_Name## Chart control
+# Data editing in ##Platform_Name## Chart
 
 ## Enable Data Editing
 

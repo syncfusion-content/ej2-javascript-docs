@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Print in ##Platform_Name## Maps component | Syncfusion
-description: Learn here all about Print in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: Print in JavaScript Maps | Syncfusion
+description: Print and export JavaScript Maps as images in JPEG, PNG, or SVG formats, or save the rendered map as a PDF document from the browser.
 platform: ej2-javascript
 control: Print 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Print in ##Platform_Name## Maps component
+# Print in JavaScript Maps
 
 ## Print
 

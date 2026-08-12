@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title subtitle in ##Platform_Name## Smithchart control | Syncfusion
+title: Title and Subtitle in ##Platform_Name## Smith Chart | Syncfusion
 description: Learn here all about Title subtitle in Syncfusion ##Platform_Name## Smithchart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Title subtitle 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Title subtitle in ##Platform_Name## Smithchart control
+# Title and Subtitle in ##Platform_Name## Smith Chart
 
 ## Enable title
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Labels in ##Platform_Name## Sankey Chart component | Syncfusion
-description: Learn here all about Labels in Syncfusion ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
-control: Labels
+title: Labels in ##Platform_Name## Sankey Diagram | Syncfusion
+description: Learn here all about Labels in Syncfusion ##Platform_Name## Sankey Diagram of Syncfusion Essential JS 2 and more.
+control: Sankey Diagram
 platform: ej2-javascript
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Labels in ##Platform_Name## Sankey Chart component
+# Labels in ##Platform_Name## Sankey Diagram
 
 Labels display descriptive text associated with nodes in the Sankey Chart, making the diagram more understandable and interpretable. The Sankey Chart provides comprehensive label customization options including visibility control, font styling, individual label configuration, and dynamic rendering events.
 
@@ -191,5 +191,5 @@ Use the `labelRendering` event to customize label text, styling, and appearance 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/ccode-snippet/sankey/labels/rendering-event-cs1" %}
+{% previewsample "page.domainurl/code-snippet/sankey/labels/rendering-event-cs1" %}
 {% endif %}

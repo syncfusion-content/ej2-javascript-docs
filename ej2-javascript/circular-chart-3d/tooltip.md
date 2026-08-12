@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## 3D Circular Chart control | Syncfusion
-description: Learn here all about tooltip in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
+title: Tooltip in ##Platform_Name## 3D Circular Chart | Syncfusion
+description: Learn here all about tooltip in Syncfusion ##Platform_Name## 3D Circular Chart of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Tooltip 
+control: 3D Circular Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip in ##Platform_Name## 3D Circular Chart control
+# Tooltip in ##Platform_Name## 3D Circular Chart
 
 The 3D Circular Chart will display details about the points through a tooltip, when the mouse is moved over a specific point. By default, the tooltip is not visible. It can be enabled by using the `enable` property in `tooltip` to **true**.
 

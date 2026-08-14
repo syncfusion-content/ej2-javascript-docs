@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Methods in ##Platform_Name## Linear gauge control | Syncfusion
-description: Learn here all about Methods in Syncfusion ##Platform_Name## Linear gauge control of Syncfusion Essential JS 2 and more.
+title: Methods in ##Platform_Name## Linear Gauge | Syncfusion
+description: Use the built-in methods of the ##Platform_Name## Linear Gauge such as setPointerValue, setAnnotationValue, and refresh to update the component dynamically.
 platform: ej2-javascript
-control: Methods 
+control: Linear Gauge
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Methods in ##Platform_Name## Linear gauge control
+# Methods in ##Platform_Name## Linear Gauge
 
 The following methods are available in the Linear Gauge component.
 
 ## setPointerValue
 
-To change the pointer value dynamically, use the [`setPointerValue`](../api/linear-gauge/#setpointervalue) method in the Linear Gauge component. The following are the arguments for this method.
+To change the pointer value dynamically, use the [`setPointerValue`](../api/linear-gauge#setpointervalue) method in the Linear Gauge component. The following are the arguments for this method.
 
 |   Argument name      |   Description                            |
 |----------------------| -----------------------------------------|

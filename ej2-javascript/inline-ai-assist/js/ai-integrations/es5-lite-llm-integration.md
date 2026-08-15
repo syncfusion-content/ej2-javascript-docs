@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lite LLM Model in ##Platform_Name## Inline AI Assist control | Syncfusion
+title: Lite LLM Model in ##Platform_Name## Inline AI Assist | Syncfusion®
 description: Checkout and learn about Integration of Lite LLM Model with ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Inline AI Assist 

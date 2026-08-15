@@ -45,7 +45,7 @@ Ensure the following tools are installed:
 * Then, create a default `tsconfig.json` file in the application using the following command.
     
   ```
-  tsc --init
+  npx tsc --init
   ```
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> packages
@@ -74,7 +74,7 @@ npm install @syncfusion/ej2-fluent2-theme --save
 {% endhighlight %}
 {% endtabs %}
 
-Import the `Fluent2` theme for the Grid control to the `~/style.css` file as follows.
+Create a `~/style.css` file in the application root directory. Import the `Fluent2` theme for the Grid control to the `~/style.css` file as follows.
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -102,7 +102,7 @@ Create a `~/index.html` file in the application root directory and add the follo
     Chromium <span id="chrome-version"></span>,
     and Electron <span id="electron-version"></span>.
 
-    <div id="container" style="margin:0 auto; width:300px;">
+    <div id="container">
         <!--HTML grid element, which is going to render as Essential JS 2 Grid-->
         <div id="Grid"></div>
     </div>

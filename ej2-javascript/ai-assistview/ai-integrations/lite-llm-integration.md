@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LiteLLM With TypeScript AI AssistView control | Syncfusion
+title: LiteLLM With TypeScript AI AssistView | Syncfusion®
 description: Checkout and learn about integrating LiteLLM with the TypeScript AI AssistView control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: AI AssistView 

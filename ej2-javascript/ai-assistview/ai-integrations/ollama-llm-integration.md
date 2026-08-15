@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LLM Model in ##Platform_Name## AI AssistView control | Syncfusion
+title: LLM Model in ##Platform_Name## AI AssistView | Syncfusion®
 description: Checkout and learn about Integration of LLM Model with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: AI AssistView 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate LLM via Ollama With TypeScript AI AssistView control
+# Integrate LLM via Ollama With TypeScript AI AssistView
 
 The AI AssistView control integrates with [LLM via Ollama](https://ollama.com) to enable advanced conversational AI features in your application. The control acts as a user interface where user prompts are sent to the selected LLM model via API calls, providing natural language understanding and context-aware responses.
 

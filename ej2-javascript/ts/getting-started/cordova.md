@@ -51,6 +51,12 @@ This article provides a step-by-step guide to configure Syncfusion<sup style="fo
     npm install
     ```
 
+    If TypeScript is not installed, run the following command to install it as a Dev dependency:
+
+    ```
+    npm install -D typescript
+    ```
+
     ![ej2 cordova npm install](images/cordova-npm-install.png)
 
 4. Run the following command line in the command prompt to install the required platforms. For getting started, the browser platform has been installed in this application.

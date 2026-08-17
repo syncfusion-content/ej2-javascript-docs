@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Smart TextArea | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Smart Textarea control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Smart TextArea | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Smart TextArea control. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with ##Platform_Name## Smart TextArea Control
+# Getting Started with ##Platform_Name## Smart TextArea
 
 The **Smart TextArea** is an advanced control designed to elevate the text input experience by providing intelligent autocomplete suggestions for entire sentences through text-generative AI functionality. This control enhances user productivity by predicting and offering relevant completions based on the context of what is being typed.
 

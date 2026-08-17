@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Suggestion Customization with ##Platform_Name## Smart Textarea control | Syncfusion
-description:  Checkout and learn here all about Suggestion Customization with ##Platform_Name## Smart Textarea control of Syncfusion Essential JS 2 and more details.
+title: Customization in ##Platform_Name## Smart TextArea | Syncfusion
+description: Control how AI suggestions appear in the ##Platform_Name## Smart TextArea by toggling the ShowSuggestionOnPopup property to display them in a popup or inline.
 platform: ej2-javascript
 control: Customization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customizing Appearance of Suggestions 
+# Customization in ##Platform_Name## Smart TextArea
 
 The [ShowSuggestionOnPopup](https://ej2.syncfusion.com/documentation/api/smart-textarea/#showsuggestiononpopup) property in Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smart TextArea allows you to control how text suggestions are displayed to the users.
 

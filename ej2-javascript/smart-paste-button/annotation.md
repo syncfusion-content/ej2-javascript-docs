@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Annotations in ##Platform_Name## Smart Paste Button control | Syncfusion
-description: Learn here all about Annotations in Syncfusion ##Platform_Name## Smart Paste Button control of Syncfusion Essential JS 2 and more.
+title: Annotation in ##Platform_Name## Smart Paste Button | Syncfusion
+description: Customize Smart Paste behavior in ##Platform_Name## by defining formatting, validation, and content-type rules for each field.
 platform: ej2-javascript
 control: Annotations 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Annotations (data-smartpaste-description)
+# Annotations in ##Platform_Name## Smart Paste Button
 
 The `data-smartpaste-description` attribute provides a way to customize the behavior of the Smart Paste Button. By using this attribute, pasted content is handled based on specific requirements. This customization can include setting content validation rules, formatting instructions, and defining acceptable content types.
 

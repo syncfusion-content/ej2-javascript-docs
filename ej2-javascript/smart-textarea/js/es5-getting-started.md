@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ES5 Getting started with ##Platform_Name## Smart TextArea | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Smart TextArea control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Smart TextArea | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Smart TextArea control. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ES5 Getting Started in ##Platform_Name## Smart TextArea Control
+# Getting Started with ##Platform_Name## Smart TextArea 
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in the latest web browsers.
 

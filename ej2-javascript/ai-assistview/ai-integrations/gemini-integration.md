@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gemini AI in ##Platform_Name## AI AssistView control | Syncfusion
+title: Gemini AI in ##Platform_Name## AI AssistView | Syncfusion®
 description: Checkout and learn about Integration of Gemini AI with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: AI AssistView 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate Gemini AI With TypeScript AI AssistView control
+# Integrate Gemini AI With TypeScript AI AssistView
 
 The AI AssistView control integrates with Google’s [Gemini](https://ai.google.dev/gemini-api/docs) API to deliver intelligent conversational interfaces. It leverages advanced natural language understanding to interpret user input, maintain context throughout interactions, and provide accurate, relevant responses. By configuring secure authentication and data handling, developers can unlock powerful AI-driven communication features that elevate user engagement and streamline support experiences.
 

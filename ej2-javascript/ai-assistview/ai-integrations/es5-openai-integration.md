@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure OpenAI in ##Platform_Name## AI AssistView | Syncfusion®
+title: Azure OpenAI in EJ2 JavaScript(ES5) AI AssistView | Syncfusion®
 description: Wire the Syncfusion® ##Platform_Name## AI AssistView to Azure OpenAI using your endpoint, API key, deployment, and the marked library for Markdown replies.
 platform: ej2-javascript
 control: AI AssistView 

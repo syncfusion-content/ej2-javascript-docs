@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ollama LLM in ##Platform_Name## InlineAIAssist control | Syncfusion
+title: Ollama LLM in ##Platform_Name## InlineAIAssist | Syncfusion®
 description: Checkout and learn about LLM Model Integration with ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Inline AI Assist 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate LLM via Ollama with JavaScript Inline AI Assist control
+# Integrate LLM via Ollama with JavaScript Inline AI Assist
 
 The Inline AI Assist control integrates with [LLM via Ollama](https://ollama.com) to enable advanced conversational AI features in your application. The control acts as a user interface where user prompts are sent to the selected LLM model via API calls, providing natural language understanding and context-aware responses.
 

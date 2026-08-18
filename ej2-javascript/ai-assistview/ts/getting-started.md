@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## AI AssistView control | Syncfusion
+title: Getting started with ##Platform_Name## AI AssistView | Syncfusion®
 description:  Checkout and learn about Getting started with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: AI AssistView
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with ##Platform_Name## AI AssistView control
+# Getting started with ##Platform_Name## AI AssistView
 
 This section explains how to create a simple AI AssistView control and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 

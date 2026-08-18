@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MCP with ##Platform_Name## AI AssistView control | Syncfusion
+title: MCP with ##Platform_Name## AI AssistView | Syncfusion®
 description: Checkout and learn about Integration of MCP with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: AI AssistView 
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate MCP With TypeScript AI AssistView control
+# Integrate MCP With TypeScript AI AssistView
 
-The AI AssistView control can be integrated with an [MCP](https://modelcontextprotocol.io/docs/getting-started/intro) backend to enable conversational AI features powered by OpenAI, along with [local tool](https://modelcontextprotocol.io/docs/develop/connect-local-servers) capabilities such as file-aware analysis via `@mentions`. This integration allows the control to reference files in prompts using `@filename`, inject their contents into the model context, and enables analysis of those files alongside the user’s prompt.
+The AI AssistView control can be integrated with an [MCP](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro) backend to enable conversational AI features powered by OpenAI, along with [local tool](https://modelcontextprotocol.io/docs/2026-07-28/develop/connect-local-servers) capabilities such as file-aware analysis via `@mentions`. This integration allows the control to reference files in prompts using `@filename`, inject their contents into the model context, and enables analysis of those files alongside the user’s prompt.
 
 ## Prerequisites
 

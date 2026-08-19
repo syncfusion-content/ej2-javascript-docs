@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Smart Paste button | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Smart Paste button control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Smart Paste Button | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Smart Paste Button control. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Smart Paste button control
+# Getting Started with ##Platform_Name## Smart Paste Button
 
 The `Smart Paste Button` is a user interface control designed to simplify and improve the experience of pasting text into form fields. It comes with smart features such as automatic text formatting, validation, and integration with various form controls. It is especially useful in applications where users frequently paste text from other sources and where data consistency is important.
 

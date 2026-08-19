@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Features with ##Platform_Name## Smart Textarea control | Syncfusion
-description:  Checkout and learn here all about Features with ##Platform_Name## Smart Textarea control of Syncfusion Essential JS 2 and more details.
+title: Features in ##Platform_Name## Smart TextArea | Syncfusion
+description: Explore the ##Platform_Name## Smart TextArea features inherited from the TextArea control, including form support, floating labels, events, methods, and styling.
 platform: ej2-javascript
 control: Features 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Inherited Features from TextArea
+# Features in ##Platform_Name## Smart TextArea
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smart TextArea control fully inherits all the properties, features, and styling options of the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript TextArea control. This means that you can leverage the existing features of the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript TextArea while benefiting from the enhanced functionality of the Smart TextArea.
 

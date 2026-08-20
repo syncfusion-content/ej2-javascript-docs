@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ionic with ##Platform_Name## Getting started control | Syncfusion
-description:  Checkout and learn about Ionic with ##Platform_Name## Getting started control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## in Ionic | Syncfusion
+description: Learn how to integrate Syncfusion ##Platform_Name## controls into an Ionic application, including setup, configuration, and a Calendar control example.
 platform: ej2-javascript
 control: Ionic 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion® JavaScript (Essential® JS 2) library and Ionic Framework
+# Getting Started with Syncfusion® JavaScript Controls in Ionic
 
 This article explains how to integrate Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls into an Ionic application.
 

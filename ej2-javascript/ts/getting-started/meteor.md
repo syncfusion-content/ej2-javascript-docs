@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Meteor with ##Platform_Name## Getting started control | Syncfusion
-description:  Checkout and learn about Meteor with ##Platform_Name## Getting started control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## in Meteor | Syncfusion
+description: Learn how to set up Syncfusion ##Platform_Name## controls in a Meteor application using the Meteor.startup hook, with a Calendar control example.
 platform: ej2-javascript
 control: Meteor 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion® JS (Essential® JS 2) and Meteor Framework
+# Getting Started with Syncfusion® JS Controls in Meteor
 
 This article provides a step-by-step guide to configure and use Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 controls in a Meteor application.
 

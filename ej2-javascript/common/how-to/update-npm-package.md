@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Update npm package in  ##Platform_Name## Common control | Syncfusion
-description: Learn here all about Update npm package in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
+title: How to Update NPM Package in ##Platform_Name## Controls | Syncfusion
+description: Update Syncfusion ##Platform_Name## npm packages with npm-check-updates, then run npm update and npm dedupe to keep dependencies current and remove duplicates.
 platform: ej2-javascript
 control: common
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Updating Syncfusion<sup style="font-size:70%">&reg;</sup> npm packages
+# How to Update NPM Packages in Syncfusion® ##Platform_Name## Controls
 
 Keeping Syncfusion<sup style="font-size:70%">&reg;</sup> packages up to date ensures access to new features, bug fixes, performance improvements, and security patches.
 

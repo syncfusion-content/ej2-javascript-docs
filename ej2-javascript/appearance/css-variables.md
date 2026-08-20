@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Themes using CSS Variables ##Platform_Name## Appearance control | Syncfusion
-description: Learn here all about Themes in Syncfusion ##Platform_Name## Appearance control of Syncfusion Essential JS 2 and more.
+title: Themes using CSS Variables in ##Platform_Name## | Syncfusion
+description: Customize Syncfusion ##Platform_Name## themes with CSS variables across Material 3, Fluent 2, Bootstrap 5.3, and Tailwind 3.4, including light/dark modes.
 platform: ej2-javascript
 control: Themes using CSS variable 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# About CSS Variables in themes
+# Themes Using CSS Variables in ##Platform_Name##
 
 [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), also known as custom properties, are entities defined by CSS authors that contain specific values to be reused throughout a document. CSS variables are identified by names that begin with two hyphens (--) followed by a unique identifier. These variables can be assigned any valid CSS value, such as colors, lengths, or fonts. To retrieve the value of a CSS variable, use the var() function.
 

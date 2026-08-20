@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Theme studio in ##Platform_Name## Appearance control | Syncfusion
-description: Learn here all about Theme studio in Syncfusion ##Platform_Name## Appearance control of Syncfusion Essential JS 2 and more.
+title: Theme studio in ##Platform_Name## | Syncfusion
+description: Learn how to customize Syncfusion ##Platform_Name## themes using Theme Studio, export custom CSS, and import previously changed settings or Figma tokens.
 platform: ej2-javascript
-control: Theme studio 
+control: Theme studio
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Overview
+# Theme Studio Overview
 
 Theme Studio for Essential<sup style="font-size:70%">&reg;</sup> JS 2 can be used to customize a new theme from an existing theme. It doesn't support with Data visualization controls like Chart, Diagram, Gauge, Range Navigator, Maps.
 

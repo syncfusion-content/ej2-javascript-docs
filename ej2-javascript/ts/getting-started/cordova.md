@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cordova with ##Platform_Name## Getting started control | Syncfusion
-description:  Checkout and learn about Cordova with ##Platform_Name## Getting started control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## in Cordova | Syncfusion
+description: Learn how to get started with Syncfusion ##Platform_Name## controls in Cordova, including setup, configuration, and key features.
 platform: ej2-javascript
 control: Cordova 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion® JavaScript (Essential® JS 2) library and Cordova
+# Getting Started with Syncfusion® JavaScript Controls in Cordova
 
 This article provides a step-by-step guide to configure Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) in a Cordova application.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State persistence in  ##Platform_Name## Common control | Syncfusion
-description: Learn here all about State persistence in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
+title: State persistence in ##Platform_Name## Controls | Syncfusion
+description: Learn how to enable state persistence in Syncfusion ##Platform_Name## components to preserve user settings and UI states across reloads.
 platform: ej2-javascript
 control: common
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State Persistence in Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls
+# State Persistence in Syncfusion® ##Platform_Name## Controls
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls can persist their state across page refreshes and navigation. Enable this feature by setting the [`enablePersistence`](https://ej2.syncfusion.com/documentation/api/base/component/#enablepersistence) property to `true` on the desired control. When enabled, the control's state is serialized and stored in the browser's `localStorage` (typically on the page `unload` event), then restored when the control reinitializes.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls can persist their state across page refreshes and navigation. Enable this feature by setting the [`enablePersistence`](https://ej2.syncfusion.com/documentation/api/base/component#enablepersistence) property to `true` on the desired control. When enabled, the control's state is serialized and stored in the browser's `localStorage` (typically on the page `unload` event), then restored when the control reinitializes.
 
 Note: `localStorage` has size limits and is scoped per origin. Avoid persisting large data structures (for example, full data sources); prefer persisting UI state such as paging, selection, sorting, and filter settings.
 

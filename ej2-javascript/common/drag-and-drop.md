@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drag and drop in  ##Platform_Name## Common control | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
+title: Drag and drop in ##Platform_Name## Controls | Syncfusion
+description: Learn how to enable drag-and-drop interactions in Syncfusion ##Platform_Name## controls using Draggable and Droppable utilities.
 platform: ej2-javascript
 control: common
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and drop in ##Platform_Name##
+# Drag and Drop in Syncfusion® ##Platform_Name## Controls
 
 Drag and drop is a user interface feature that allows users to select an item or items and move them to a different location or onto another interface element by "dragging" the selected item(s) with a pointing device (such as a mouse) and then "dropping" them at the desired location.
 
@@ -48,7 +48,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> [`Draggable`](https://ej2.s
 
 ### Clone draggable element
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides the option to create a clone of a draggable element while the user is dragging it. This can be achieved by setting the [`clone`](https://ej2.syncfusion.com/documentation/api/base/draggable/#clone) property to `true`. The following example demonstrates how to create a clone of a draggable element.
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides the option to create a clone of a draggable element while the user is dragging it. This can be achieved by setting the [`clone`](https://ej2.syncfusion.com/documentation/api/base/draggable#clone) property to `true`. The following example demonstrates how to create a clone of a draggable element.
 
  {% if page.publishingplatform == "typescript" %}
 
@@ -79,7 +79,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> provides the option to create a
 
 ### Drag area
 
-A drag area is a specific area within a user interface that is designated for drag and drop operations. When an object or element is dragged within a drag area, certain actions or events may be triggered. The user can specify the drag area by using the [dragArea](https://ej2.syncfusion.com/documentation/api/base/draggable/#dragarea) property. Refer to the below sample.
+A drag area is a specific area within a user interface that is designated for drag and drop operations. When an object or element is dragged within a drag area, certain actions or events may be triggered. The user can specify the drag area by using the [dragArea](https://ej2.syncfusion.com/documentation/api/base/draggable#dragarea) property. Refer to the below sample.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -112,7 +112,7 @@ A drag area is a specific area within a user interface that is designated for dr
 
 A droppable element refers to an area of a user interface that can receive a draggable element that is being moved by a user. The Syncfusion<sup style="font-size:70%">&reg;</sup> [`Droppable`](https://ej2.syncfusion.com/documentation/api/base/droppable) library converts any DOM element into a droppable zone, which accepts draggable elements.
 
-When a draggable element is moved over a droppable element, the [`drop`](https://ej2.syncfusion.com/documentation/api/base/droppable/#events) event can be triggered. Details about the dropped element can be obtained through the event argument. Based on the event argument, the dragged element can be appended to the target element.
+When a draggable element is moved over a droppable element, the [`drop`](https://ej2.syncfusion.com/documentation/api/base/droppable#events) event can be triggered. Details about the dropped element can be obtained through the event argument. Based on the event argument, the dragged element can be appended to the target element.
 
 Refer to the following code snippet to enable droppable zones.
 

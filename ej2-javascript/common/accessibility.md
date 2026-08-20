@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in  ##Platform_Name## Common control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
+title: Accessibility in  ##Platform_Name## Controls | Syncfusion
+description: Learn accessibility in Syncfusion ##Platform_Name## controls, covering WCAG 2.2, Section 508, WAI-ARIA, keyboard navigation, and screen reader support.
 platform: ej2-javascript
 control: common
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls
+# Accessibility in Syncfusion® ##Platform_Name## Controls
 
 ## Accessibility overview
 
@@ -107,504 +107,504 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls are 
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../grid/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="DataGrid accessibility documentation" href="../grid/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Pivot Table</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../pivotview/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Pivot Table accessibility documentation" href="../pivotview/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Tree Grid</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../treegrid/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Tree Grid accessibility documentation" href="../treegrid/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Spreadsheet</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../spreadsheet/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Spreadsheet accessibility documentation" href="../spreadsheet/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>In-place Editor</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../inplace-editor/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="In-place Editor accessibility documentation" href="../inplace-editor/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>PDF Viewer</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../pdfviewer/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="PDF Viewer accessibility documentation" href="../pdfviewer/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>RichTextEditor</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../rich-text-editor/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="RichTextEditor accessibility documentation" href="../rich-text-editor/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Word Processor</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../document-editor/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Word Processor accessibility documentation" href="../document-editor/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Image Editor</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../image-editor/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Image Editor accessibility documentation" href="../image-editor/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Dialog</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../dialog/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Dialog accessibility documentation" href="../dialog/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>ListView</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../listview/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="ListView accessibility documentation" href="../listview/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Tooltip</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../tooltip/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Tooltip accessibility documentation" href="../tooltip/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Splitter</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../splitter/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Splitter accessibility documentation" href="../splitter/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Dashboard Layout</td>
         <td>Yes</td>
         <td>AA</td>
         <td>NA</td>
-        <td><a target="_self" href="../dashboard-layout/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Dashboard Layout accessibility documentation" href="../dashboard-layout/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Accumulation Chart</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../accumulation-chart/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Accumulation Chart accessibility documentation" href="../accumulation-chart/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Charts</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../chart/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Charts accessibility documentation" href="../chart/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Stock Chart</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../stock-chart/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Stock Chart accessibility documentation" href="../stock-chart/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Circular Gauge</td>
         <td>Yes</td>
         <td>AA</td>
         <td>NA</td>
-        <td><a target="_self" href="../circular-gauge/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Circular Gauge accessibility documentation" href="../circular-gauge/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Diagram</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../diagram/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Diagram accessibility documentation" href="../diagram/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>HeatMap Chart</td>
         <td>Yes</td>
         <td>AA</td>
         <td>NA</td>
-        <td><a target="_self" href="../heatmap-chart/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="HeatMap Chart accessibility documentation" href="../heatmap-chart/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Linear Gauge</td>
         <td>Yes</td>
         <td>AA</td>
         <td>NA</td>
-        <td><a target="_self" href="../linear-gauge/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Linear Gauge accessibility documentation" href="../linear-gauge/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Maps</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../maps/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Maps accessibility documentation" href="../maps/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Range Selector</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../range-navigator/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Range Selector accessibility documentation" href="../range-navigator/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Smith Chart</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../smithchart/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Smith Chart accessibility documentation" href="../smithchart/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Sparkline Charts</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../sparkline/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Sparkline Charts accessibility documentation" href="../sparkline/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>TreeMap</td>
         <td>Yes</td>
         <td>AA</td>
         <td>NA</td>
-        <td><a target="_self" href="../treemap/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="TreeMap accessibility documentation" href="../treemap/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Bullet Chart</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../bullet-chart/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Bullet Chart accessibility documentation" href="../bullet-chart/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Kanban</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../kanban/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Kanban accessibility documentation" href="../kanban/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Button</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../button/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Button accessibility documentation" href="../button/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Button Group</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../button-group/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Button Group accessibility documentation" href="../button-group/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Dropdown Menu</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../drop-down-button/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Dropdown Menu accessibility documentation" href="../drop-down-button/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Progress Button</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../progress-button/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Progress Button accessibility documentation" href="../progress-button/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Split Button</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../split-button/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Split Button accessibility documentation" href="../split-button/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Chips</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../chips/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Chips accessibility documentation" href="../chips/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>FAB</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../floating-action-button/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="FAB accessibility documentation" href="../floating-action-button/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Speed Dial</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../speed-dial/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Speed Dial accessibility documentation" href="../speed-dial/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Calendar</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../calendar/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Calendar accessibility documentation" href="../calendar/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>DatePicker</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../datepicker/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="DatePicker accessibility documentation" href="../datepicker/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>DateRangePicker</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../daterangepicker/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="DateRangePicker accessibility documentation" href="../daterangepicker/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>DateTime Picker</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../datetimepicker/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="DateTime Picker accessibility documentation" href="../datetimepicker/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>TimePicker</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../timepicker/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="TimePicker accessibility documentation" href="../timepicker/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Gantt Chart</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../gantt/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Gantt Chart accessibility documentation" href="../gantt/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>TextBox</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../textbox/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="TextBox accessibility documentation" href="../textbox/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Input Mask</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../maskedtextbox/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Input Mask accessibility documentation" href="../maskedtextbox/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Masked TextBox</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../maskedtextbox/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Masked TextBox accessibility documentation" href="../maskedtextbox/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Numeric TextBox</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../numerictextbox/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Numeric TextBox accessibility documentation" href="../numerictextbox/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Radio Button</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../radio-button/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Radio Button accessibility documentation" href="../radio-button/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>CheckBox</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../check-box/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="CheckBox accessibility documentation" href="../check-box/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Color Picker</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../color-picker/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Color Picker accessibility documentation" href="../color-picker/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>File Upload</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../uploader/wai-aria-accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="File Upload accessibility documentation" href="../uploader/wai-aria-accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Range Slider</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../range-slider/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Range Slider accessibility documentation" href="../range-slider/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Toggle Switch Button</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../switch/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Toggle Switch Button accessibility documentation" href="../switch/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Signature</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../signature/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Signature accessibility documentation" href="../signature/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Rating</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../rating/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Rating accessibility documentation" href="../rating/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Query Builder</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../query-builder/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Query Builder accessibility documentation" href="../query-builder/accessibility">Documentation</a></td>
     </tr> 
     <tr>
         <td>Accordion</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../accordion/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Accordion accessibility documentation" href="../accordion/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>AppBar</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../appbar/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="AppBar accessibility documentation" href="../appbar/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Breadcrumb</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../breadcrumb/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Breadcrumb accessibility documentation" href="../breadcrumb/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Carousel</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../carousel/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Carousel accessibility documentation" href="../carousel/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Context Menu</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../context-menu/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Context Menu accessibility documentation" href="../context-menu/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Menu Bar</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../menu/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Menu Bar accessibility documentation" href="../menu/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Sidebar</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../sidebar/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Sidebar accessibility documentation" href="../sidebar/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Tabs</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../tab/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Tabs accessibility documentation" href="../tab/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Toolbar</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../toolbar/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Toolbar accessibility documentation" href="../toolbar/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Ribbon</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../ribbon/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Ribbon accessibility documentation" href="../ribbon/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>TreeView</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../treeview/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="TreeView accessibility documentation" href="../treeview/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>File Manager</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../file-manager/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="File Manager accessibility documentation" href="../file-manager/accessibility">Documentation</a></td>
     </tr> 
     <tr>
         <td>Stepper</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../stepper/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Stepper accessibility documentation" href="../stepper/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Message</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../message/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Message accessibility documentation" href="../message/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Toast</td>
         <td>Yes</td>
         <td>AA</td>
         <td>NA</td>
-        <td><a target="_self" href="../toast/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Toast accessibility documentation" href="../toast/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Progress Bar</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../progress-bar/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Progress Bar accessibility documentation" href="../progress-bar/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Skeleton</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="../skeleton/accessibility">Documentation</a></td>
+        <td><a target="_self" aria-label="Skeleton accessibility documentation" href="../skeleton/accessibility">Documentation</a></td>
     </tr>
 </tbody>
 </table>

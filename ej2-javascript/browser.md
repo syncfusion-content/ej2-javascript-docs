@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Browser in ##Platform_Name## Browser md control | Syncfusion
-description: Learn here all about Browser in Syncfusion ##Platform_Name## Browser md control of Syncfusion Essential JS 2 and more.
+title: Browser Support in ##Platform_Name## Controls | Syncfusion
+description: Learn about browser support requirements and necessary polyfills for Syncfusion EJ2 ##Platform_Name## controls across browsers.
 platform: ej2-javascript
 control: Browser 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Browser support
+# Browser Support for Syncfusion® ##Platform_Name## Controls
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 components are fully supported in modern browsers. The following versions are officially supported:
 
-|    Chrome    |    Firefox    |    Opera     |    Edge    |    IE      |    Safari    |    IOS    |    Android    |    Windows   Mobile    |
+|    Chrome    |    Firefox    |    Opera     |    Edge    |    IE      |    Safari    |    iOS    |    Android    |    Windows   Mobile    |
 |--------------|---------------|--------------|------------|------------|--------------|-----------|---------------|------------------------|
 |    63+     |    58+     |    50+     |    13 +    |    11 +    |    9 +       |    9 +    |    4.4 +      |    IE 11 +             |
 
@@ -44,7 +44,7 @@ To add ES6 Promise polyfill using CDN, include this in your HTML file.
 
 ## Node.js
 
-ES6 Promise polyfill can also be installed in node.js.
+ES6 Promise polyfill can also be installed in Node.js.
 
 To install:
 

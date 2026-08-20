@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resolve CSP errors in  ##Platform_Name## Common control | Syncfusion
-description: Learn here all about Content Security Policy in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
+title: How to resolve CSP errors in ##Platform_Name## Controls | Syncfusion
+description: Learn to resolve CSP issues in Syncfusion ##Platform_Name## controls, including license banners, inline styles, font loading, and CSP directives.
 platform: ej2-javascript
 control: common
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to resolve Content Security Policy (CSP) errors
+# How to Resolve CSP Errors in Syncfusion® ##Platform_Name## Controls
 
 Enabling the strict Content Security Policy (CSP) may cause the following issues with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls in your application.
 

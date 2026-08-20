@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Size modes in ##Platform_Name## Appearance control | Syncfusion
-description: Learn here all about Size modes in Syncfusion ##Platform_Name## Appearance control of Syncfusion Essential JS 2 and more.
+title: Size modes in ##Platform_Name## Appearance | Syncfusion
+description: Learn how to enable and customize normal and touch size modes for Syncfusion ##Platform_Name## controls to optimize UI sizing for different devices.
 platform: ej2-javascript
 control: Size modes 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Size modes Size Mode for Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Controls
+# Size Mode for Syncfusion® ##Platform_Name## Controls
 
 Applications accessed through web browsers on various devices, including desktop computers and mobile devices, benefit from distinct layouts or user interfaces optimized for different screen sizes. Mobile interfaces typically require larger touch targets and enhanced spacing to accommodate touch-based interactions.
 
@@ -122,7 +122,7 @@ The size mode of an individual control can be changed between touch and normal (
 
 * [Sidebar responsiveness](https://ej2.syncfusion.com/documentation/sidebar/auto-close)
 * [DataGrid responsiveness](https://ej2.syncfusion.com/documentation/grid/columns/responsive-columns)
-* [TreeGrid responsiveness](https://ej2.syncfusion.com/documentation/treegrid/scrolling/#responsive-with-parent-container)
+* [TreeGrid responsiveness](https://ej2.syncfusion.com/documentation/treegrid/scrolling#responsive-with-parent-container)
 * [Dashboard Layout responsiveness](https://ej2.syncfusion.com/documentation/dashboard-layout/responsive-adaptive)
 * [Kanban responsiveness](https://ej2.syncfusion.com/documentation/kanban/responsive-mode)
 * [Toolbar responsiveness](https://ej2.syncfusion.com/documentation/toolbar/responsive-mode)

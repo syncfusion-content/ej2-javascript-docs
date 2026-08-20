@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Quick start with ##Platform_Name## Getting started control | Syncfusion
-description:  Checkout and learn about Quick start with ##Platform_Name## Getting started control of Syncfusion Essential JS 2 and more details.
+title: Quick Start with ##Platform_Name## Control | Syncfusion
+description: Learn how to build your first Syncfusion ##Platform_Name## app in TypeScript using the webpack quickstart seed repository, with a Grid control example.
 platform: ej2-javascript
 control: Quick start 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with JavaScript library from a seed application
+# Getting Started with Syncfusion® JavaScript Controls
 
 This article provides a step-by-step guide to set up the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and build a simple JavaScript web application using the GitHub [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 

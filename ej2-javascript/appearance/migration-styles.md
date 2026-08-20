@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Migrating Styles to Theme Packages in ##Platform_Name## Controls | Syncfusion
-description: Migrate Syncfusion ##Platform_Name## Controls to theme packages for centralized styling, single file reference, and automatic dependency management.
+title: Migrating Styles to Theme Packages in ##Platform_Name## | Syncfusion
+description: Learn how to migrate Syncfusion ##Platform_Name## controls styles from controls packages to theme packages with centralized SCSS and CSS references.
 platform: ej2-javascript
 control: Theme
 publishingplatform: ##Platform_Name##

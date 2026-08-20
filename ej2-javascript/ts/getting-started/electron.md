@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Electron with ##Platform_Name## Getting started control | Syncfusion
-description:  Checkout and learn about Electron with ##Platform_Name## Getting started control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## in Electron | Syncfusion
+description: Learn how to build an Electron app with Syncfusion ##Platform_Name## controls using TypeScript and webpack, including a Grid example.
 platform: ej2-javascript
 control: Electron 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Electron Framework in Typescript
+# Getting Started with Syncfusion® JavaScript Controls in Electron
 
 [Electron](https://www.electronjs.org/docs/latest/) is a framework for building cross-platform desktop applications using JavaScript, HTML, and CSS. It bundles Chromium and Node.js, allowing a single code base to run on Windows, macOS, and Linux.
 

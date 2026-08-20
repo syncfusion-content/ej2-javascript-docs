@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Content Security Policy in  ##Platform_Name## Common control | Syncfusion
-description: Learn here all about Content Security Policy in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
+title: Content Security Policy in ##Platform_Name## Controls | Syncfusion
+description: Learn how to enable strict Content Security Policy (CSP) in Syncfusion ##Platform_Name## apps with style-src, font-src, and img-src directives..
 platform: ej2-javascript
 control: common
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Content Security Policy
+# Content Security Policy in Syncfusion® ##Platform_Name## Controls
 
 Content Security Policy (CSP) is a security feature implemented by web browsers that helps to protect against attacks such as cross-site scripting (XSS) and data injection. It limits the sources from which content can be loaded on a web page.
 
@@ -47,7 +47,7 @@ The resultant meta tag is included within the `<head>` tag and resolves the CSP 
 
 N> From the release 2023 Vol2 - 22.1 version, the Content Security Policy for Syncfusion<sup style="font-size:70%">&reg;</sup> controls has been enhanced by implementing a [function template](../template#function-template) approach for template properties to eliminate the usage of the `unsafe-eval` directive in the CSP meta tag.
 
-> [View the JavaScript sample enabled with strict CSP in Github](https://github.com/SyncfusionExamples/ej2-javascript-csp-example)
+> [View the JavaScript sample enabled with strict CSP in GitHub](https://github.com/SyncfusionExamples/ej2-javascript-csp-example)
 
 ## See also
 

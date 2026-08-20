@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Webforms with ##Platform_Name## Getting started control | Syncfusion
-description:  Checkout and learn about Webforms with ##Platform_Name## Getting started control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## in Web Forms | Syncfusion
+description: Learn how to get started with Syncfusion ##Platform_Name## controls in Web Forms, including setup, configuration, and key features.
 platform: ej2-javascript
 control: Webforms 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion® JavaScript and ASP.NET Web Forms
+# Getting Started with JavaScript (ES5) Controls in ASP.NET Web Forms
 This guide provides a comprehensive walkthrough for integrating Syncfusion JavaScript (ES5) controls into an ASP.NET Web Forms application using NuGet-based installation. It includes step-by-step instructions for project setup and dependency configuration, along with a minimal working example using the Grid component to validate the implementation.
 
 ## Prerequisites

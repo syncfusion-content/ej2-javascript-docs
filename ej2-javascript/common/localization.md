@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in  ##Platform_Name## Common control | Syncfusion
-description: Learn here all about Localization in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Controls | Syncfusion
+description: Learn how to localize and translate Syncfusion ##Platform_Name## control into different languages using the L10n library for multi-language UI support.
 platform: ej2-javascript
 control: common
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Localization
+# Localization in Syncfusion® ##Platform_Name## Controls
 
 The localization library enables localizing the text content of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls. Use localization to present UI strings in languages other than English.
 

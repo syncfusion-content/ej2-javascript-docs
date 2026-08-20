@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Quick start with ##Platform_Name## Getting started control | Syncfusion
-description: Checkout and learn about Quick start with ##Platform_Name## Getting started control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Controls| Syncfusion
+description: Learn how to get started with Syncfusion ##Platform_Name## controls, including setup, configuration, and key features.
 platform: ej2-javascript
 control: Quick start
 publishingplatform: ##Platform_Name##

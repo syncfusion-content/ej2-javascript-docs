@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Theme in ##Platform_Name## Appearance control | Syncfusion
-description: Learn here all about Theme in Syncfusion ##Platform_Name## Appearance control of Syncfusion Essential JS 2 and more.
+title: Theme in ##Platform_Name## | Syncfusion
+description: Explore Syncfusion ##Platform_Name## built-in themes including Tailwind 3.4, Material 3, Fluent 2, and Bootstrap 5.3, with optimized CSS and customization options.
 platform: ej2-javascript
 control: Theme 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Theme in ##Platform_Name## controls
+# Built-in Themes in ##Platform_Name##
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript library provides the following list of built-in themes:
 

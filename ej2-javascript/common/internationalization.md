@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Internationalization in  ##Platform_Name## Common control | Syncfusion
-description: Learn here all about Internationalization in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
+title: Internationalization in ##Platform_Name## Controls | Syncfusion
+description: Learn internationalization in Syncfusion ##Platform_Name## controls using CLDR data to format and parse dates, numbers, currencies, and locales.
 platform: ej2-javascript
 control: common
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Internationalization
+# Internationalization in Syncfusion® ##Platform_Name## Controls
 
 The `Internationalization` library provides support for formatting and parsing date and number objects using the official [Unicode CLDR](http://cldr.unicode.org/) JSON data. The `en-US` locale is set as default _culture_ and `USD` is set as default `_currencyCode_` for all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls.
 

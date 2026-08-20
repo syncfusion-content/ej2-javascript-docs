@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Compatible with essential js1 with ##Platform_Name## | Syncfusion
-description:  Checkout and learn about Compatible with essential js1 with ##Platform_Name## Getting started control of Syncfusion Essential JS 2 and more details.
+title: Compatible with Essential JS 1 with ##Platform_Name## | Syncfusion
+description: Learn how to use Essential JS 1 and EJ2 controls together in a ##Platform_Name## app with compatibility styles to prevent UI conflicts.
 platform: ej2-javascript
 control: Compatible with essential js1 
 publishingplatform: ##Platform_Name##

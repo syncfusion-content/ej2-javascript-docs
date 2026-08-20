@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Appearance control | Syncfusion
-description: Learn here all about Icons in Syncfusion ##Platform_Name## Appearance control of Syncfusion Essential JS 2 and more.
+title: Icons in ##Platform_Name## | Syncfusion
+description: Learn how to reference, use, and customize Syncfusion ##Platform_Name## font-based icons from npm or CDN, including sizing and color overrides across themes.
 platform: ej2-javascript
 control: Icons 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Predefined Icons Library in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Control
+# Icons in Syncfusion® ##Platform_Name## Controls
 
 Syncfusion's<sup style="font-size:70%">&reg;</sup> icon library is a collection of pre-designed icons that can be used to enhance the user interface of an application. This pre-designed icons are set of `base64` formatted font icons. Utilizing this icon library can make it simpler to create a cohesive, visually pleasing design for an application.
 

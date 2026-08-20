@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization with locale in  ##Platform_Name## Common control | Syncfusion
-description: Learn here all about Localization with locale in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
+title: Localization with locale in ##Platform_Name## Controls | Syncfusion
+description: Learn about localization and locale support in Syncfusion ##Platform_Name## controls for creating region-specific user experiences.
 platform: ej2-javascript
 control: common
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to load the culture file in Essential<sup style="font-size:70%">&reg;</sup> JS 2
+# How to Load the Culture File in Essential® JS 2
 
 In Essential<sup style="font-size:70%">&reg;</sup> JS 2, the culture file can be loaded by using the loadCldr function. The culture file contains information about the specific culture, such as date and time formats, currency symbols, and translations for UI elements.
 

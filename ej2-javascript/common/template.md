@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template in  ##Platform_Name## Common control | Syncfusion
-description: Learn here all about Template in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
+title: Templates in ##Platform_Name## Control | Syncfusion
+description: Learn how to use templates in Syncfusion ##Platform_Name## controls to customize layouts, render data, and optimize performance with stateless templates.
 platform: ej2-javascript
 control: common
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls
+# Templates in Syncfusion® ##Platform_Name## Controls
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls are rendered with a pre-defined layout or structure that is used to define how the control should be rendered on the user interface. The user wants to customise the appearance of the control and add functionality that is specific to the needs of the application. Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls have the option to achieve this using template support. A template can contain a variety of elements, depending on the context in which it is being used.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls are rendered with a pre-defined layout or structure that is used to define how the control should be rendered on the user interface. The user wants to customize the appearance of the control and add functionality that is specific to the needs of the application. Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls have the option to achieve this using template support. A template can contain a variety of elements, depending on the context in which it is being used.
 
 ## Types of templates
 

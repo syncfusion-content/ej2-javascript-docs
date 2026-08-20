@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to Get an Instance of Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Control?
+# How to Get an Instance of a Syncfusion® ##Platform_Name## Control?
 
 This guide explains how to initialize a Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## control and retrieve its instance for further manipulation.
 

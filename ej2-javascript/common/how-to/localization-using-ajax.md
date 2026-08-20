@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization using ajax in  ##Platform_Name## Common control | Syncfusion
-description: Learn here all about Localization using ajax in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
+title: Localization using ajax in ##Platform_Name## Controls | Syncfusion
+description: Learn here all about Localization using ajax in Syncfusion ##Platform_Name## controls of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: common
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to load culture files in Essential<sup style="font-size:70%">&reg;</sup> JS 2 using Ajax
+# How to Load Culture Files in Essential® JS 2 using Ajax
 
 Ajax post can be used to load the `cldr` JSON files. To get started, install the `cldr-data` package using the following command.
 

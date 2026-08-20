@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template engine in  ##Platform_Name## Common control | Syncfusion
-description: Learn here all about Template engine in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
+title: Template Engine in ##Platform_Name## Control | Syncfusion
+description: Learn here all about template engine in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: common
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template Engine
+# Template Engine in Syncfusion® ##Platform_Name## Controls
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) includes a built-in template engine that compiles template strings into executable functions. The compiled function renders DOM elements using supplied data, enabling efficient and reusable rendering for complex UI templates.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Security Considerations in  ##Platform_Name## Common control | Syncfusion
-description: Learn here all about Security Considerations in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
+title: Security in ##Platform_Name## Controls | Syncfusion
+description: Learn about security considerations in Syncfusion ##Platform_Name## controls, including CSP, XSS prevention, HTML sanitization, and secure data handling.
 platform: ej2-javascript
 control: common
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-#  Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Controls - Security
+# Security in Syncfusion® ##Platform_Name## Controls
 
 Security is a critical aspect of web applications to protect them from various threats and vulnerabilities. Using HTTPS for data encryption, validating and sanitizing user inputs, and implementing strong authentication measures such as multi-factor authentication are indispensable practices in Web application development.
 

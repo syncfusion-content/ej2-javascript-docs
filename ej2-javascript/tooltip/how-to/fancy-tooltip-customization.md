@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Fancy Tooltip customization in ##Platform_Name## Tooltip control | Syncfusion
-description: Learn here all about Fancy Tooltip customization in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
+title: How to customize fancy Tooltip in ##Platform_Name## Tooltip | Syncfusion
+description: Customize the ##Platform_Name## Tooltip tip arrow as curved or bubble shapes by overriding the e-arrow-tip CSS classes for a unique look.
 platform: ej2-javascript
 control: Fancy Tooltip customization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Fancy Tooltip customization in ##Platform_Name## Tooltip control
+# How to fancy Tooltip customization in ##Platform_Name## Tooltip
 
 The arrow of the Tooltip can be customized as needed by altering the CSS in the sample-side. The EJ2 Tooltip control is implemented using CSS3 formatting, allowing the tip arrow to be positioned according to the Tooltip positions like `TopCenter`, `BottomLeft`, `RightTop`, and more.
 

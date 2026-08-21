@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validate image on drop in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Validate image on drop in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: How to validate image on drop in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to validate image files on drop in the Syncfusion ##Platform_Name## File Upload by configuring the allowedExtensions property to accept only image types.
 platform: ej2-javascript
 control: Validate image on drop 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validate image on drop in ##Platform_Name## Uploader control
+# How to validate image on drop in ##Platform_Name## File Upload
 
 The uploader component allows you to upload all type of images by setting **image/* ** to [allowedExtensions](../../api/uploader/#allowedextensions) property.
 

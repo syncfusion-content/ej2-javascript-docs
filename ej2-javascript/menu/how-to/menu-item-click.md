@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Menu item click in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Menu item click in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: How to open menu and sub menu on item click in ##Platform_Name## Menu | Syncfusion
+description: Learn how to open menu and sub-menu items on click with the Syncfusion ##Platform_Name## Menu control for interactive navigation.
 platform: ej2-javascript
-control: Menu item click 
+control: Menu item click
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Menu item click in ##Platform_Name## Menu control
+# How to open menu and sub menu on item click in ##Platform_Name## Menu
 
 You can open menu items and sub menu on menu item click by setting [`showItemOnClick`](../../api/menushowitemonclick) property of the Menu. To open sub menu items only on item click, should be set as `true`.
 

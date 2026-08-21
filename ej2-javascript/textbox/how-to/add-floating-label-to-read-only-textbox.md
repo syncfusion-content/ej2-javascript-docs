@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add floating label to read only textbox in ##Platform_Name## Textbox control | Syncfusion
-description: Learn here all about Add floating label to read only textbox in Syncfusion ##Platform_Name## Textbox control of Syncfusion Essential JS 2 and more.
+title: Add floating label to read-only in ##Platform_Name## TextBox | Syncfusion
+description: Add a floating label to the read-only ##Platform_Name## TextBox by toggling the e-label-top and e-label-bottom classes on the label element.
 platform: ej2-javascript
 control: Add floating label to read only textbox 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add floating label to read only textbox in ##Platform_Name## Textbox control
+# How to add floating label to read-only in ##Platform_Name## TextBox
 
 You can achieve floating label for read-only textboxes by adding/removing `e-label-top` and `e-label-bottom` classes to the label element
 

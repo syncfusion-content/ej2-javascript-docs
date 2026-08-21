@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add a minimize maximize buttons in ##Platform_Name## Dialog control | Syncfusion
-description: Learn here all about Add a minimize maximize buttons in Syncfusion ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more.
+title: How to add min and max buttons in ##Platform_Name## Dialog | Syncfusion
+description: Add custom minimize and maximize buttons next to the close icon in the ##Platform_Name## Dialog header using headerTemplate and click handlers.
 platform: ej2-javascript
 control: Add a minimize maximize buttons 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add a minimize maximize buttons in ##Platform_Name## Dialog control
+# How to add min and max buttons in ##Platform_Name## Dialog
 
-Dialog allows end users to either minimize or maximize the Dialog component. You can add minimize and maximize custom buttons near the close icon in the Dialog header using the [headerTemplate](../../api/dialog/#headertemplate) property and handle the actions in the button click events, as shown in the following sample.
+Dialog allows end users to either minimize or maximize the Dialog component. You can add minimize and maximize custom buttons near the close icon in the Dialog header using the [headerTemplate](https://ej2.syncfusion.com/documentation/api/dialog/index-default#header) property and handle the actions in the button click events, as shown in the following sample.
 
 {% if page.publishingplatform == "typescript" %}
 

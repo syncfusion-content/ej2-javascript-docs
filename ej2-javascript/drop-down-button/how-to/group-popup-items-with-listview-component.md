@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Group popup items with listview component in ##Platform_Name## Drop down button control | Syncfusion
-description: Learn here all about Group popup items with listview component in Syncfusion ##Platform_Name## Drop down button control of Syncfusion Essential JS 2 and more.
+title: How to group popup items with ListView in ##Platform_Name## Dropdown Menu | Syncfusion
+description: Learn how to group ##Platform_Name## Dropdown Menu popup items with headers by templating the popup with the ListView control.
 platform: ej2-javascript
 control: Group popup items with listview component 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Group popup items with listview component in ##Platform_Name## Drop down button control
+# How to group popup items with ListView in ##Platform_Name## Dropdown Menu
 
 Header in popup items is possible in DropdownButton by templating entire popup with ListView. Create ListView with id `#listview` and provide it as a [`target`](https://ej2.syncfusion.com/documentation/api/drop-down-button/#target) for DropDownButton.
 

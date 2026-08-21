@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Convert image into binary format after uploading in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Convert image into binary format after uploading in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: How to encode image binary in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to convert uploaded images into binary format in the Syncfusion ##Platform_Name## File Upload by reading the posted input stream as bytes on the server.
 platform: ej2-javascript
 control: Convert image into binary format after uploading 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Convert image into binary format after uploading in ##Platform_Name## Uploader control
+# How to encode image binary in ##Platform_Name## File Upload
 
 By default, the file upload component saves the uploaded image files in physical directories. Also, you can convert the images into binary format at server-side before saving the uploaded images. To retrieve binary format of image files, convert the posted file’s input stream into binary reader and read as bytes using ReadBytes method.
 

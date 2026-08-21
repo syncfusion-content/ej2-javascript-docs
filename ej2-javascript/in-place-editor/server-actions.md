@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Server actions in ##Platform_Name## In place editor control | Syncfusion
-description: Learn here all about Server actions in Syncfusion ##Platform_Name## In place editor control of Syncfusion Essential JS 2 and more.
+title: Server Actions in ##Platform_Name## In-place Editor | Syncfusion
+description: Submit ##Platform_Name## In-place Editor values to a server with URL and primaryKey, and handle actionSuccess and actionFailure events.
 platform: ej2-javascript
 control: Server actions 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Server actions in ##Platform_Name## In place editor control
+# Server Actions in ##Platform_Name## In-place Editor
 
-By passing In-place Editor control value to the server, the [primaryKey](../api/inplace-editor/#primarykey) property value must require, otherwise action not performed for remote data.
+By passing In-place Editor control value to the server, the [primaryKey](../api/inplace-editor/index-default#primarykey) property value must require, otherwise action not performed for remote data.
 
-If the [URL](../api/inplace-editor/#url) property value is empty, data passing will handled at local and also the [actionSuccess](../api/inplace-editor/#actionsuccess) event will trigger with `null` as argument value.
+If the [URL](../api/inplace-editor/index-default#url) property value is empty, data passing will handled at local and also the [actionSuccess](../api/inplace-editor/index-default#actionsuccess) event will trigger with `null` as argument value.
 
 > The following arguments are passed to the server when submit actions perform.
 
@@ -44,9 +44,9 @@ public IEnumerable<SubmitModel> UpdateData([FromBody]SubmitModel value)
 
 ```
 
-* Server actions successfully done, the [actionSuccess](../api/inplace-editor/#actionsuccess) event will be fired with returned server data.
+* Server actions successfully done, the [actionSuccess](../api/inplace-editor/index-default#actionsuccess) event will be fired with returned server data.
 
-* If the server is not responding, the [actionFailure](../api/inplace-editor/#actionfailure) event will be fired with data, but value not updated in the Editor.
+* If the server is not responding, the [actionFailure](../api/inplace-editor/index-default#actionfailure) event will be fired with data, but value not updated in the Editor.
 
 In the following sample, the `actionSuccess` event will trigger once the value submitted successfully into the server. In this sample, both `actionSuccess` and `actionFailure` were configured and resulted value will be converted to chips.
 

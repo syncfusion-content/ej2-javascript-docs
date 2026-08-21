@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Render Scrollable Context Menu in ##Platform_Name## Context menu control | Syncfusion
-description: Learn here all about Render Scrollable Context Menu in Syncfusion ##Platform_Name## Context menu control of Syncfusion Essential JS 2 and more.
+title: How to render scrollable context menu in ##Platform_Name## Context menu | Syncfusion
+description: Enable scrolling in the Syncfusion ##Platform_Name## Context menu with enableScrolling to manage overflow when items exceed viewport.
 platform: ej2-javascript
 control: Render Scrollable Context Menu
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render Scrollable Context Menu in ##Platform_Name## Context menu control
+# How to render scrollable context menu in ##Platform_Name## Context menu
 
 To enable scrolling for the Context Menu, use the [enableScrolling](../../api/context-menu/#enablescrolling) property to manage the overflow behavior of menu items by enabling or disabling scroll functionality. This is especially useful when dealing with a large number of menu items that exceed the viewport height, ensuring the context menu remains accessible without affecting the page layout.
 

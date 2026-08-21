@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Floating panels in ##Platform_Name## Dashboard Layout | Syncfusion
-description: Learn here all about Floating of panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
+title: Floating of Panels in ##Platform_Name## Dashboard Layout | Syncfusion
+description: Enable panel floating in Syncfusion ##Platform_Name## Dashboard Layout with the allowFloating property so panels auto-fill empty cells in earlier rows.
 platform: ej2-javascript
 control: Floating of panels
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Floating of panels in ##Platform_Name## Dashboard Layout control
+# Floating of Panels in ##Platform_Name## Dashboard Layout
 
 The floating functionality of the control allows effective use of the entire layout for panel placement. If the floating functionality is enabled, the panels within the layout float upwards automatically to occupy the empty cells available in previous rows. This functionality can be enabled or disabled using the [`allowFloating`](../api/dashboard-layout#allowfloating) property of the control.
 

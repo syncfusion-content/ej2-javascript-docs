@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Sidebar control | Syncfusion
-description: Learn here all about Types in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: Types in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to choose sidebar variations with the Syncfusion ##Platform_Name## Sidebar control for different app layouts and behaviors.
 platform: ej2-javascript
 control: Types
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Types in ##Platform_Name## Sidebar control
+# Types in ##Platform_Name## Sidebar
 
 The Sidebar control's expand behavior can be modified based on its intended use.
 

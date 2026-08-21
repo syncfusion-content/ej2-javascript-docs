@@ -1,7 +1,7 @@
 ---
 layout: post
-title: End-user capabilities in ##Platform_Name## Image editor control | Syncfusion
-description: Learn here all about End-user capabilities in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
+title: End-User Capabilities in ##Platform_Name## Image Editor | Syncfusion
+description: Discover end-user actions in the ##Platform_Name## Image Editor, including opening, zooming, panning, cropping, transforming, and saving images.
 platform: ej2-javascript
 control: End-user capabilities 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# End-user capabilities in the ##Platform_Name## Image Editor control
+# End-User Capabilities in ##Platform_Name## Image Editor
 
 The following operations are available for end-users and the same is explained briefly in these sections.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dimension in ##Platform_Name## Predefined dialogs control | Syncfusion
-description: Learn here all about Dimension in Syncfusion ##Platform_Name## Predefined dialogs control of Syncfusion Essential JS 2 and more.
+title: Dimension in ##Platform_Name## Predefined Dialogs | Syncfusion
+description: Set the ##Platform_Name## Predefined dialogs height and width in pixels or percentages, with max/min constraints via the cssClass property.
 platform: ej2-javascript
 control: Dimension 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dimension in ##Platform_Name## Predefined dialogs control
+# Dimension in ##Platform_Name## Predefined Dialogs
 
 Customize the predefined dialogs dimensions using the `height` and `width` properties. You can specify the dimension values in both pixels and percentage format to change the default dialog width and height values.
 

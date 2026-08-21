@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in ##Platform_Name## TextArea control | Syncfusion
-description: Handling events triggered by user interactions or changes in the ##Platform_Name## TextArea control of Syncfusion Essential JS 2 and more.
+title: Events in ##Platform_Name## TextArea | Syncfusion
+description: Bind ##Platform_Name## TextArea events including created, focus, blur, change, and input to react to user interactions and value updates.
 platform: ej2-javascript
 control: Events 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## TextArea control
+# Events in ##Platform_Name## TextArea
 
 This section describes the TextArea events that will be triggered when appropriate actions are performed. The following events are available in the TextArea control.
 

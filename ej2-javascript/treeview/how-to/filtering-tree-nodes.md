@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering tree nodes in ##Platform_Name## TreeView control | Syncfusion
-description: Learn here all about filtering tree nodes in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: How to filter tree nodes in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to filter TreeView nodes in the Syncfusion ##Platform_Name## TreeView control for faster hierarchy exploration.
 platform: ej2-javascript
 control: Filtering tree nodes
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering tree nodes in ##Platform_Name## TreeView control
+# How to filter tree nodes in ##Platform_Name## TreeView
 
 You can filter the tree nodes based on their text using the [`DataManager`](../../api/data/dataManager/) plugin and the [`fields`](../../api/treeview/#fields) property of the TreeView.
 

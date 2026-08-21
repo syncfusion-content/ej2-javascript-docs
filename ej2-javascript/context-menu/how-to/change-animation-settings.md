@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change animation settings in ##Platform_Name## Context menu control | Syncfusion
-description: Learn here all about Change animation settings in Syncfusion ##Platform_Name## Context menu control of Syncfusion Essential JS 2 and more.
+title: How to change animation settings in ##Platform_Name## Context menu | Syncfusion
+description: Set Syncfusion ##Platform_Name## Context menu open and close animations like None, SlideDown, ZoomIn, or FadeIn with duration.
 platform: ej2-javascript
 control: Change animation settings 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change animation settings in ##Platform_Name## Context menu control
+# How to change animation settings in ##Platform_Name## Context menu
 
 To change the animation of the ContextMenu, [`animationSettings`](../../api/context-menu/menuAnimationSettingsModel) property is used. The supported effects for ContextMenu are,
 

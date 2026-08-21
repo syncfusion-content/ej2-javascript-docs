@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Radial menu in ##Platform_Name## Speed dial control | Syncfusion
-description: Learn here all about Radial menu in Syncfusion ##Platform_Name## Speed dial control of Syncfusion Essential JS 2 and more.
+title: Radial Menu in ##Platform_Name## Speed Dial | Syncfusion
+description: Learn how to display the ##Platform_Name## Speed Dial action items in a circular radial menu with direction, angle, and offset settings.
 platform: ej2-javascript
 control: Radial menu 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Radial menu in ##Platform_Name## Speed dial control
+# Radial Menu in ##Platform_Name## Speed Dial
 
 The JavaScript(ES5) Speed Dial action items can be displayed in a circular patter like a radial menu by setting [`mode`](../api/speed-dial/#mode) property. You can customize the `direction`, `startAngle`, `endAngle` and `offset` by setting [`radialSettings`](../api/speed-dial#radialsettings) property.
 

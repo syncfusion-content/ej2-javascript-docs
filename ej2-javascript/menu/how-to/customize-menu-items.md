@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customize menu items in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Customize menu items in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: How to customize menu items in ##Platform_Name## Menu | Syncfusion
+description: Learn how to customize menu items with the Syncfusion ##Platform_Name## Menu control for tailored navigation experiences.
 platform: ej2-javascript
-control: Customize menu items 
+control: Customize menu items
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize menu items in ##Platform_Name## Menu control
+# How to customize menu items in ##Platform_Name## Menu
 
 ## Add or remove menu items
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Drop down button control | Syncfusion
-description: Learn here all about Icons in Syncfusion ##Platform_Name## Drop down button control of Syncfusion Essential JS 2 and more.
+title: Icons in ##Platform_Name## Dropdown Menu | Syncfusion
+description: Learn how to add font icons, sprite images, and vertical orientation to the ##Platform_Name## Dropdown Menu.
 platform: ej2-javascript
 control: Icons 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons in ##Platform_Name## Drop down button control
+# Icons in ##Platform_Name## Dropdown Menu
 
 ## DropDownButton icons
 

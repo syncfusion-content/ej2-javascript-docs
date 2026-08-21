@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to customize toolbar scroll step in ##Platform_Name## Toolbar control | Syncfusion
-description: Learn here all about How to customize toolbar scroll step in Syncfusion ##Platform_Name## Toolbar control of Syncfusion Essential JS 2 and more.
+title: How to customize toolbar scroll step in ##Platform_Name## Toolbar | Syncfusion
+description: Learn how to customize the scroll step in the Syncfusion ##Platform_Name## Toolbar control for smoother overflow navigation.
 platform: ej2-javascript
 control: How to customize toolbar scroll step 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to customize toolbar scroll step in ##Platform_Name## Toolbar control
+# How to customize toolbar scroll step in ##Platform_Name## Toolbar
 
 The Toolbar supports customizing the scrolling distance when you click the left and right navigation icons. You can customize the [`scrollStep`](../../api/toolbar/item#scrollStep) property for scrolling distance. Refer to the following code example.
 

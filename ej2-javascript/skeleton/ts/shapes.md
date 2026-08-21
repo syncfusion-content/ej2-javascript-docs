@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Shapes in ##Platform_Name## Skeleton control | Syncfusion
-description: Learn here all about Shapes in Syncfusion ##Platform_Name## Skeleton control of Syncfusion Essential JS 2 and more.
+title: Shapes in ##Platform_Name## Skeleton | Syncfusion
+description: Use ##Platform_Name## Skeleton shapes — Circle, Square, Rectangle, or Text — to preview any page layout with the shape property.
 platform: ej2-javascript
-control: Shapes 
+control: Shapes
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Shapes in ##Platform_Name## Skeleton control
+# Shapes in ##Platform_Name## Skeleton
 
-The Skeleton control support various built-in shape variants to design layout of the page. You can use the [`shape`](../api/skeleton/#shape) property to create a preview of any layout.
+The Skeleton control support various built-in shape variants to design layout of the page. You can use the [`shape`](../api/skeleton/index-default#shape) property to create a preview of any layout.
 
 The Skeleton control supports the following content shapes:
 

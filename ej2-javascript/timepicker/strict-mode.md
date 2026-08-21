@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Strict mode in ##Platform_Name## Timepicker control | Syncfusion
-description: Learn here all about Strict mode in Syncfusion ##Platform_Name## Timepicker control of Syncfusion Essential JS 2 and more.
+title: Strict mode in ##Platform_Name## TimePicker | Syncfusion
+description: Use strictMode in ##Platform_Name## TimePicker to allow only valid time values within the configured min and max range in the textbox.
 platform: ej2-javascript
 control: Strict mode 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Strict mode in ##Platform_Name## Timepicker control
+# Strict mode in ##Platform_Name## TimePicker
 
 The [`strictMode`](../api/timepicker#strictmode) is an act that allows you to enter only valid time value within the specified min/max
 range in the textbox. If the time value is invalid, the component value sets to the previous value. If the time value is out of range, the component sets the time value to min/max value.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style appearance in ##Platform_Name## Numerictextbox control | Syncfusion
-description: Learn here all about Style appearance in Syncfusion ##Platform_Name## Numerictextbox control of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ##Platform_Name## Numeric Textbox | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Numeric Textbox appearance by overriding CSS for the wrapper, input, spin icons, hover, focus, and error states.
 platform: ej2-javascript
 control: Style appearance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style appearance in ##Platform_Name## Numerictextbox control
+# Style and Appearance in ##Platform_Name## Numeric Textbox
 
 The following content provides the exact CSS structure that can be used to modify the control’s appearance based on the user preference.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Drop down button control | Syncfusion
-description: Learn here all about Animation in Syncfusion ##Platform_Name## Drop down button control of Syncfusion Essential JS 2 and more.
+title: Animation in ##Platform_Name## Dropdown Menu | Syncfusion
+description: Learn how to customize ##Platform_Name## Dropdown Menu popup animations with None, SlideDown, ZoomIn, and FadeIn effects.
 platform: ej2-javascript
 control: Animation
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation in ##Platform_Name## Drop down button control
+# Animation in ##Platform_Name## Dropdown Menu
 
 The [`animationSettings`](../api/drop-down-button/#animationsettings) property is used to customize the animation of the DropDownButton popup. The supported effects for DropDownButton are,
 

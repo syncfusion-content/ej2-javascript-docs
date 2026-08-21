@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Dropdown Tree control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Dropdown Tree control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Dropdown Tree | Syncfusion
+description: Build a WAI-ARIA-compliant Syncfusion ##Platform_Name## Dropdown Tree with listbox, group, and treeitem roles plus full keyboard navigation support.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Dropdown Tree control
+# Accessibility in ##Platform_Name## Dropdown Tree
 
 The Dropdown Tree control is designed with `WAI-ARIA` specifications in mind, implementing WAI-ARIA roles, states, and properties along with `keyboard support`. This control features full keyboard interaction support and ARIA accessibility that enhances usability for users of assistive technologies (AT) and those who rely entirely on keyboard navigation.
 

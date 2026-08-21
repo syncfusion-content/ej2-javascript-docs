@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize image title position in ##Platform_Name## Card | Syncfusion
-description: Learn here all about Customize the card image title position in Syncfusion ##Platform_Name## Card control of Syncfusion Essential JS 2 and more.
+description: Reposition the image title in Syncfusion ##Platform_Name## Card by adding CSS to move it from the default bottom-left corner to a new location.
 platform: ej2-javascript
 control: Customize the card image title position 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the card image title position in ##Platform_Name## Card control
+# How to customize image title position in ##Platform_Name## Card
 
 Card image titles are placed in the bottom-left corner by default. The title position can be customized by adding CSS styles.
 

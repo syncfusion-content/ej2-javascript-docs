@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize the expand and collapse icons in ##Platform_Name## TreeView control | Syncfusion
-description: Learn here all about customizing the expand and collapse icons in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: How to customize the expand and collapse icons in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to customize expand and collapse icons in the Syncfusion ##Platform_Name## TreeView control for a tailored visual experience.
 platform: ej2-javascript
 control: Customize the expand and collapse icons
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the expand and collapse icons in ##Platform_Name## TreeView control
+# How to customize the expand and collapse icons in ##Platform_Name## TreeView
 
 You can customize the TreeView expand and collapse icons by using the [`cssClass`](../../api/treeview#cssclass) property of TreeView.
 Refer to the sample below to customize expand/collapse icons.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create dropdownbutton with rounded corner in ##Platform_Name## Drop down button control | Syncfusion
-description: Learn here all about Create dropdownbutton with rounded corner in Syncfusion ##Platform_Name## Drop down button control of Syncfusion Essential JS 2 and more.
+title: How to create Dropdown Menu with rounded corner in ##Platform_Name## Dropdown Menu | Syncfusion
+description: Learn how to create a ##Platform_Name## Dropdown Menu with rounded corners by adding a border-radius CSS class via cssClass.
 platform: ej2-javascript
 control: Create dropdownbutton with rounded corner 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create dropdownbutton with rounded corner in ##Platform_Name## Drop down button control
+# How to create Dropdown Menu with rounded corner in ##Platform_Name## Dropdown Menu
 
 DropDownButton with rounded corner can be achieved by adding `border-radius` CSS property to button element.
 

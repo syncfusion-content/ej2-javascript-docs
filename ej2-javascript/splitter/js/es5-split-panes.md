@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 split panes in ##Platform_Name## Splitter control | Syncfusion
-description: Learn here all about Es5 split panes in Syncfusion ##Platform_Name## Splitter control of Syncfusion Essential JS 2 and more.
+title: Es5 Split Panes in ##Platform_Name## Splitter | Syncfusion
+description: Render Syncfusion ##Platform_Name## Splitter in horizontal or vertical orientation, manage multiple panes, and add or remove panes at runtime with ES5 syntax.
 platform: ej2-javascript
 control: Es5 split panes 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 split panes in ##Platform_Name## Splitter control
+# Es5 Split Panes in ##Platform_Name## Splitter
 
 This section explains Splitter pane behaviors.
 

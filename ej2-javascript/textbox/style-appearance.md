@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style appearance in ##Platform_Name## Textbox control | Syncfusion
-description: Learn here all about Style appearance in Syncfusion ##Platform_Name## Textbox control of Syncfusion Essential JS 2 and more.
+title: Style Appearance in ##Platform_Name## TextBox | Syncfusion
+description: Customize the ##Platform_Name## TextBox visual styling using the Theme Studio and CSS overrides for primary and secondary font and color properties.
 platform: ej2-javascript
 control: Style appearance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style appearance in ##Platform_Name## Textbox control
+# Style Appearance in ##Platform_Name## TextBox
 
 The [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material) for Essential<sup style="font-size:70%">&reg;</sup> JS 2 can be used to customize a new theme from an existing theme. It allows modification and preview for primary font and color as well as secondary font and color of the chosen theme. This section covers the instructions and techniques to customize the appearance and styling of the TextBox component beyond the basic requirement provided by the theme studio.
 

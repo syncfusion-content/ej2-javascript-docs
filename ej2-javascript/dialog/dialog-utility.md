@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dialog utility in ##Platform_Name## Dialog control | Syncfusion
-description: Learn here all about Dialog utility in Syncfusion ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more.
+title: Dialog Utility in ##Platform_Name## Dialog | Syncfusion
+description: Render ##Platform_Name## Alert, Confirm, and Prompt dialogs with minimal code using the DialogUtility helper and its configuration options.
 platform: ej2-javascript
 control: Dialog utility 
 publishingplatform: ##Platform_Name##
@@ -9,16 +9,16 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dialog utility in ##Platform_Name## Dialog control
+# Dialog Utility in ##Platform_Name## Dialog
 
 The dialog component provides built-in utility functions to render the alert and confirm dialogs with the minimal code. The following options are used as an argument on calling the utility functions:
 
 | Options   | Description |
 |-----------|-------------|
-| title | Specifies the title of dialog like the [header](../api/dialog/#header) property.|
-| content | Specifies the value that can be displayed in dialog's content area like the [content](../api/dialog/#content) property. |
-| isModal | Specifies the Boolean value whether the dialog can be displayed as modal or non-modal. For more details, refer to the [isModal](../api/dialog/#ismodal) property.|
-| position | Specifies the value where the alert or confirm dialog is positioned within the document. For more details, refer to the [position](../api/dialog/#position) property { X: 'center', Y: 'center'}|
+| title | Specifies the title of dialog like the [header](https://ej2.syncfusion.com/documentation/api/dialog/index-default#header) property.|
+| content | Specifies the value that can be displayed in dialog's content area like the [content](https://ej2.syncfusion.com/documentation/api/dialog/index-default#content) property. |
+| isModal | Specifies the Boolean value whether the dialog can be displayed as modal or non-modal. For more details, refer to the [isModal](https://ej2.syncfusion.com/documentation/api/dialog/index-default#ismodal) property.|
+| position | Specifies the value where the alert or confirm dialog is positioned within the document. For more details, refer to the [position](https://ej2.syncfusion.com/documentation/api/dialog/index-default#position) property { X: 'center', Y: 'center'}|
 | okButton | Configures the `OK button` that contains button properties with the click events. `okButton:{ icon:'prefix icon to the button', cssClass:'custom class to the button', click: 'action for OK button click', text: 'Yes' // <-- Default value is 'OK'}`|
 | cancelButton | Configures the `Cancel button` that contains button properties with the click events. `cancelButton:{ icon:'prefix icon to the button', cssClass:'custom class to the button', click: 'action for ‘Cancel’ button click', text: 'No' // <-- Default value is 'Cancel'}`|
 | isDraggable |Specifies the value whether the alert or confirm dialog can be dragged by the user.|

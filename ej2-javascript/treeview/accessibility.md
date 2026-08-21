@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## TreeView control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to improve accessibility in the Syncfusion ##Platform_Name## TreeView control for inclusive, keyboard-friendly navigation.
 platform: ej2-javascript
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## TreeView control
+# Accessibility in ##Platform_Name## TreeView
 
 The TreeView control follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

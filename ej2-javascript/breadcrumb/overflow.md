@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overflow in ##Platform_Name## Breadcrumb control | Syncfusion
-description: Learn here all about Overflow in Syncfusion ##Platform_Name## Breadcrumb control of Syncfusion Essential JS 2 and more.
+title: Overflow in ##Platform_Name## Breadcrumb | Syncfusion
+description: Limit Syncfusion ##Platform_Name## Breadcrumb items shown with maxItems and choose Default, Collapsed, or Menu overflow modes.
 platform: ej2-javascript
 control: Overflow 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Overflow in ##Platform_Name## Breadcrumb control
+# Overflow in ##Platform_Name## Breadcrumb
 
 In the Breadcrumb component, [`maxItems`](https://ej2.syncfusion.com/documentation/api/breadcrumb/#maxitems) and [`overflowMode`](https://ej2.syncfusion.com/documentation/api/breadcrumb/#maxitems) properties were used to limit the number of breadcrumb items to be displayed.
 

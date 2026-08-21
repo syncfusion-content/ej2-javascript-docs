@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Open and edit the uploaded files in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Open and edit the uploaded files in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: How to open uploaded files in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to open and edit the uploaded files in the Syncfusion ##Platform_Name## File Upload using the success event to load server file metadata into an editor.
 platform: ej2-javascript
 control: Open and edit the uploaded files 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open and edit the uploaded files in ##Platform_Name## Uploader control
+# How to open uploaded files in ##Platform_Name## File Upload
 
 The uploader component allows you to modify the file after uploading to the server, which can be achieved using the `success` event of the uploader.
 

@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Add remove panels in ##Platform_Name## Dashboard Layout | Syncfusion
-description: Learn here all about Add remove panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
+title: Add Remove Panels in ##Platform_Name## Dashboard Layout | Syncfusion
+description: Add or remove Syncfusion ##Platform_Name## Dashboard Layout panels dynamically with the addPanel, removePanel, and removeAll public methods.
 platform: ej2-javascript
 control: Add remove panels
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Add remove panels in ##Platform_Name## Dashboard Layout control
+
+# Add Remove Panels in ##Platform_Name## Dashboard Layout
 
 In real-time cases, the data being presented within the dashboard need to be updated frequently which includes adding or removing the data dynamically within the dashboard. This can be achieved by using the [`addPanel`](../../api/dashboard-layout#addpanel) and [`removePanel`](../../api/dashboard-layout#removepanel) public methods of the control.
 

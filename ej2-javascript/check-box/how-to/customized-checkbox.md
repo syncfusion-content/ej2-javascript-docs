@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customized checkbox in ##Platform_Name## Check box control | Syncfusion
-description: Learn here all about Customized checkbox in Syncfusion ##Platform_Name## Check box control of Syncfusion Essential JS 2 and more.
+title: How to customize Checkbox in ##Platform_Name## Checkbox | Syncfusion
+description: Learn how to customize the ##Platform_Name## Checkbox appearance, frame, and check icon with custom CSS classes and rules.
 platform: ej2-javascript
 control: Customized checkbox 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customized checkbox in ##Platform_Name## Check box control
+# How to customize Checkbox in ##Platform_Name## Checkbox
 
 ## Customize CheckBox Appearance
 
-You can customize the appearance of the CheckBox component using the CSS rules. Define own CSS rules according to your requirement and assign the class name to the [`cssClass`](../../api/check-box/#cssclass) property.
+You can customize the appearance of the CheckBox component using the CSS rules. Define own CSS rules according to your requirement and assign the class name to the [`cssClass`](../../api/check-box#cssclass) property.
 
 The background and border color of the CheckBox is customized through the custom classes to create primary, success, warning, and danger info type of checkbox.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tab selection in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Tab selection in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: How to handle tab selection in ##Platform_Name## Tab | Syncfusion
+description: Learn how to manage tab selection in the Syncfusion ##Platform_Name## Tab control for guided content exploration.
 platform: ej2-javascript
 control: Tab selection 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tab selection in ##Platform_Name## Tab control
+# How to handle tab selection in ##Platform_Name## Tab
 
 You can determine whether a tab was selected through user interaction or programmatically by using the [`selecting`](../../api/tab#selecting) and [`selected`](../../api/tab#selected) event arguments. These arguments contain an `isInteracted` field that returns `true` when the user changes the tab through click actions, and `false` when the change occurs programmatically.
 

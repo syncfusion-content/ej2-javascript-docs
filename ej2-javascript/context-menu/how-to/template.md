@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Context menu control | Syncfusion
-description: Learn here all about Template in Syncfusion ##Platform_Name## Context menu control of Syncfusion Essential JS 2 and more.
+title: How to template in ##Platform_Name## Context menu | Syncfusion
+description: Render the Syncfusion ##Platform_Name## Context menu from an existing HTML UL and LI structure with custom item markup.
 platform: ej2-javascript
 control: Template 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in ##Platform_Name## Context menu control
+# How to template in ##Platform_Name## Context menu
 
 ## Render UL and LI template
 

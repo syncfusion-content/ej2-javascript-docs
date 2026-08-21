@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize progressbar in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Customize progressbar in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: How to customize progressbar in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to customize the progress bar in the Syncfusion ##Platform_Name## File Upload by overriding CSS to change its size, color, and background.
 platform: ej2-javascript
 control: Customize progressbar 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize progressbar in ##Platform_Name## Uploader control
+# How to customize progressbar in ##Platform_Name## File Upload
 
 You can customize the progress bar’s size, color, and background by overriding  the styles in uploader component. Refer to the following example.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ComboBox control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## ComboBox control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## ComboBox | Syncfusion
+description: Set up a simple Syncfusion ##Platform_Name## ComboBox using the Essential JS 2 quickstart-webpack seed and configure webpack for development.
 platform: ej2-javascript
 control: ComboBox 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## ComboBox control
+# Getting Started with ##Platform_Name## ComboBox
 
 This section explains the steps to create a simple ComboBox and demonstrates the basic usage of the ComboBox component using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 

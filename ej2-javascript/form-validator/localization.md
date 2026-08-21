@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Form validator control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Form validator control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Form Validation | Syncfusion
+description: Localize the Syncfusion ##Platform_Name## Form Validation messages for cultures by loading translations through the L10n library and locale property.
 platform: ej2-javascript
 control: Localization 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## Form validator control
+# Localization in ##Platform_Name## Form Validation
 
-The [`Localization`](../common/localization/) library allows users to localize the default error message contents of the `formValidator` to different cultures using the `locale` property.
+The [`Localization`](../common/localization) library allows users to localize the default error message contents of the `formValidator` to different cultures using the `locale` property.
 
 The FormValidator provides default error messages for all default validation rules. It is tabulated as follows:
 

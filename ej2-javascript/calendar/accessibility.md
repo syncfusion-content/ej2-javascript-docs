@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Calendar control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Calendar | Syncfusion
+description: Discover accessibility support in ##Platform_Name## Calendar, including screen reader, RTL, color contrast, and keyboard navigation compliance.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Calendar control
+# Accessibility in ##Platform_Name## Calendar
 
 The Calendar component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -53,7 +53,7 @@ It helps disabled persons by providing the information about the widget for assi
 
 * **Aria-disabled**: Indicates the disabled state of the Calendar component.
 
-* **Aria-activedescendent**: Helps in managing the current active child of the Calendar component.
+* **Aria-activedescendant**: Helps in managing the current active child of the Calendar component.
 
 * **Role**: Gives information to assistive technologies about how to handle each element in a widget.
 

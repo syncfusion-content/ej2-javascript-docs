@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## Combo box control | Syncfusion
-description: Learn here all about Data binding in Syncfusion ##Platform_Name## Combo box control of Syncfusion Essential JS 2 and more.
+title: Data binding in ##Platform_Name## ComboBox | Syncfusion
+description: Bind Syncfusion ##Platform_Name## ComboBox data from local arrays or remote services like OData, OData V4, and Web API via DataManager.
 platform: ej2-javascript
 control: Data binding 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in ##Platform_Name## Combo box control
+# Data binding in ##Platform_Name## ComboBox
 
-The ComboBox loads the data either from local data sources or remote data services using the [`dataSource`](../api/combo-box/#datasource) property. It supports the data type of `array` or `DataManager`.
+The ComboBox loads the data either from local data sources or remote data services using the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#datasource) property. It supports the data type of `array` or `DataManager`.
 
 The ComboBox also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
 
@@ -61,7 +61,7 @@ The ComboBox has support to load array of primitive data such as strings and num
 
 ### 2. Array of JSON data
 
-The ComboBox can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](../api/combo-box/#fields) property.
+The ComboBox can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#fields) property.
 
 In the following example, `Id` column and `Game` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
@@ -94,7 +94,7 @@ In the following example, `Id` column and `Game` column from complex data have b
 
 ### 3. Array of Complex data
 
-The ComboBox can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](../api/combo-box/#fields) property.
+The ComboBox can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#fields) property.
 
 In the following example, `Code.Id` column and `Country.Name` column from complex data have been mapped to the `value` field and `text` field, respectively.
 

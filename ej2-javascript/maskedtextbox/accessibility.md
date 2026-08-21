@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Maskedtextbox control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Maskedtextbox control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Input Mask | Syncfusion
+description: Learn how the Syncfusion ##Platform_Name## Input Mask meets WCAG 2.2, Section 508, and ADA standards with WAI-ARIA roles, keyboard navigation, and RTL support.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Maskedtextbox control
+# Accessibility in ##Platform_Name## Input Mask
 
 The Maskedtextbox component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Maintain trailing zeros in numerictextbox in ##Platform_Name## Numerictextbox control | Syncfusion
-description: Learn here all about Maintain trailing zeros in numerictextbox in Syncfusion ##Platform_Name## Numerictextbox control of Syncfusion Essential JS 2 and more.
+title: Maintain trailing zeros in ##Platform_Name## Numeric Textbox | Syncfusion
+description: Keep trailing zeros visible when the Syncfusion ##Platform_Name## Numeric Textbox gets or loses focus instead of letting them disappear by default.
 platform: ej2-javascript
 control: Maintain trailing zeros in numerictextbox 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Maintain trailing zeros in numerictextbox in ##Platform_Name## Numerictextbox control
+# How to maintain trailing zeros in ##Platform_Name## Numeric Textbox
 
 By default, trailing zeros disappear when the NumericTextBox gets focus. However, you can use the following sample to maintain the trailing zeros while focusing the NumericTextBox.
 

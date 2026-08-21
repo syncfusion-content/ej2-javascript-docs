@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Add link to toolbar item in ##Platform_Name## Toolbar control | Syncfusion
-description: Learn here all about Add link to toolbar item in Syncfusion ##Platform_Name## Toolbar control of Syncfusion Essential JS 2 and more.
+title: How to add link to Toolbar item in ##Platform_Name## Toolbar | Syncfusion
+description: Learn how to use the Syncfusion ##Platform_Name## Toolbar control to add links and improve command actions.
 platform: ej2-javascript
-control: Add link to toolbar item 
+control: Add link to toolbar item
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add link to toolbar item in ##Platform_Name## Toolbar control
+# How to add link to Toolbar item in ##Platform_Name## Toolbar
 
 Toolbar supports to add link by using the template configuration. The Toolbar can be rendered by item based collection and by HTML elements. Template property can be given as the `HTML element` that is either a `string`  or a `query selector`.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Integrate treeview in ##Platform_Name## Accordion control | Syncfusion
-description: Learn here all about Integrate treeview inside the accordion in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
+title: How to integrate treeview in ##Platform_Name## Accordion | Syncfusion
+description: Render a TreeView inside the Syncfusion ##Platform_Name## Accordion by initializing the component on the expanding event.
 platform: ej2-javascript
 control: Integrate treeview inside the accordion 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate treeview inside the accordion in ##Platform_Name## Accordion control
+# How to integrate treeview within ##Platform_Name## Accordion
 
 Accordion supports to render other Essential<sup style="font-size:70%">&reg;</sup> JS 2 Components by using content property. You can give content as an element string like below, for initializing the component.
 
@@ -21,7 +21,7 @@ The other component can be rendered with the use of provided events, such as [`c
 
 The following procedure is to render a TreeView within the Accordion,
 
-* Import the `TreeView` module from `ej2-navigations`, for adding TreeView. Please refer the [TreeView initialization steps](../../treeview/getting-started/)
+* Import the `TreeView` module from `ej2-navigations`, for adding TreeView. Please refer the [TreeView initialization steps](../../treeview/getting-started)
 
 * You can initialize the TreeView component in [`expanding`](../../api/accordion#expanding) event, by getting the element and defining the required TreeView properties.
 

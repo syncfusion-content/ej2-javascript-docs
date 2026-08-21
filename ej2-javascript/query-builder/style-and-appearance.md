@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style and appearance in ##Platform_Name## Query builder control | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion ##Platform_Name## Query builder control of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ##Platform_Name## Query Builder UI | Syncfusion
+description: Customize the ##Platform_Name## Query Builder UI look by overriding CSS classes for group headers, rules, buttons, and joining lines, or via Theme Studio.
 platform: ej2-javascript
 control: Style and appearance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and appearance in ##Platform_Name## Query builder control
+# Style and Appearance in ##Platform_Name## Query Builder UI
 
 To modify the QueryBuilder appearance, you need to override the default CSS of QueryBuilder component. Please find the list of CSS classes and its corresponding section in QueryBuilder component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 

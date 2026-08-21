@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize the ui appearance of the control in ##Platform_Name## Maskedtextbox control | Syncfusion
-description: Learn here all about Customize the ui appearance of the control in Syncfusion ##Platform_Name## Maskedtextbox control of Syncfusion Essential JS 2 and more.
+title: Customize UI appearance in ##Platform_Name## Input Mask | Syncfusion
+description: Change the look of the Syncfusion ##Platform_Name## Input Mask by adding a custom cssClass to the component and enabling CSS styles.
 platform: ej2-javascript
 control: Customize the ui appearance of the control 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the ui appearance of the control in ##Platform_Name## Maskedtextbox control
+# How to customize UI appearance in ##Platform_Name## Input Mask
 
 The appearance of the MaskedTextBox can be changed by adding custom `cssClass` to the component and enabling styles.
 

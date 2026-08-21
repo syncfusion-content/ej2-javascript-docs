@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add font awesome in ##Platform_Name## Accordion control | Syncfusion
-description: Learn here all about Add font awesome in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
+title: How to add font awesome in ##Platform_Name## Accordion | Syncfusion
+description: Use Font Awesome icons in the Syncfusion ##Platform_Name## Accordion by referencing the CDN and setting the iconCss property.
 platform: ej2-javascript
 control: Add font awesome 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add font awesome in ##Platform_Name## Accordion control
+# How to add font awesome in ##Platform_Name## Accordion
 
 We can customize the Accordion component items by using font awesome icons.
 

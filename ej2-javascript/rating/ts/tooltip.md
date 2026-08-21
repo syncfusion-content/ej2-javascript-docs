@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## Rating control | Syncfusion
-description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
+title: Tooltip in ##Platform_Name## Rating | Syncfusion
+description: Show a tooltip with the ##Platform_Name## Rating value or extra information when the user hovers over a rating item by enabling showTooltip.
 platform: ej2-javascript
 control: Tooltip 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip in ##Platform_Name## Rating control
+# Tooltip in ##Platform_Name## Rating
 
 The rating control supports tooltip to show additional information in rating items by setting the [`showTooltip`](../api/rating/#showtooltip) property. If enabled, the tooltip appears when the user hovers over a rating item.
 

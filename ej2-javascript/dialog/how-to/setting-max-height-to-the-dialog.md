@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting max height to the dialog in ##Platform_Name## Dialog control | Syncfusion
-description: Learn here all about Setting max height to the dialog in Syncfusion ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more.
+title: How to set Dialog maxHeight in ##Platform_Name## Dialog | Syncfusion
+description: Set a custom maxHeight on the ##Platform_Name## Dialog inside the beforeOpen event so the dialog height fits the target element.
 platform: ej2-javascript
 control: Setting max height to the dialog 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Setting max height to the dialog in ##Platform_Name## Dialog control
+# How to set maxHeight to the Dialog in ##Platform_Name## Dialog
 
-By default, the maxHeight for the Dialog is calculated based on the target. If the target is not specified externally, the Dialog consider the body as target and will calculate the maxHeight based on it. We have an option to set the maxHeight of the Dialog in the [beforeOpen](../../api/dialog/#beforeOpen) event.
+By default, the maxHeight for the Dialog is calculated based on the target. If the target is not specified externally, the Dialog consider the body as target and will calculate the maxHeight based on it. We have an option to set the maxHeight of the Dialog in the [beforeOpen](https://ej2.syncfusion.com/documentation/api/dialog/index-default#beforeopen) event.
 
 {% if page.publishingplatform == "typescript" %}
 

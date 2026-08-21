@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Spinner control | Syncfusion
-description: Learn here all about Template in Syncfusion ##Platform_Name## Spinner control of Syncfusion Essential JS 2 and more.
+title: Template in ##Platform_Name## Spinner | Syncfusion
+description: Render a custom ##Platform_Name## Spinner template by passing an HTML string to the setSpinner method before creating the target component.
 platform: ej2-javascript
 control: Template 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in ##Platform_Name## Spinner control
+# Template in ##Platform_Name## Spinner
 
 You can use custom templates on the Spinner instead of the default Spinner by specifying the template in the `setSpinner` method.
 

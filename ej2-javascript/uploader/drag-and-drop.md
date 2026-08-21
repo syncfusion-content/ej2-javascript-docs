@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drag and drop in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to enable drag-and-drop file selection in the Syncfusion ##Platform_Name## File Upload, including custom drop zones, visual feedback, and drop event handling.
 platform: ej2-javascript
 control: Drag and drop 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and drop in ##Platform_Name## Uploader control
+# Drag and Drop in ##Platform_Name## File Upload
 
 The uploader component allows you to drag and drop the files to upload. You can drag the files from file explorer and drop into the drop area. By default, the uploader component act as drop area element. The drop area gets highlighted when you drag the files over drop area.
 

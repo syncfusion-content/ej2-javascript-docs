@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Template in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: Template in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to customize file list, buttons, and preview layouts in the Syncfusion ##Platform_Name## File Upload using templates.
 platform: ej2-javascript
 control: Template 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in ##Platform_Name## Uploader control
+# Template in ##Platform_Name## File Upload
 
 You can customize the default appearance of uploader using a template along with buttons.
 
@@ -95,7 +95,7 @@ Refer to the following code sample.
 {% previewsample "page.domainurl/code-snippet/uploader/custom-template-cs2" %}
 {% endif %}
 
-> You can also explore [JavaScript File Upload](https://www.syncfusion.com/javascript-ui-controls/js-file-upload) feature tour page for its groundbreaking features. You can also explore our [JavaScript File Upload example](https://ej2.syncfusion.com/demos/#/material/uploader/default.html) to understand how to browse the files which you want to upload to the server.
+> You can also explore [##Platform_Name## File Upload](https://www.syncfusion.com/javascript-ui-controls/js-file-upload) feature tour page for its groundbreaking features. You can also explore our [##Platform_Name## File Upload example](https://ej2.syncfusion.com/demos/#/material/uploader/default.html) to understand how to browse the files which you want to upload to the server.
 
 ## See Also
 

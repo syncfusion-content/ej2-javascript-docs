@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Multi select control | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## Multi select control of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## MultiSelect Dropdown | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## MultiSelect Dropdown appearance by overriding CSS for the wrapper, delimiter, chips, and popup.
 platform: ej2-javascript
 control: Style 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in ##Platform_Name## Multi select control
+# Style in ##Platform_Name## MultiSelect Dropdown
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

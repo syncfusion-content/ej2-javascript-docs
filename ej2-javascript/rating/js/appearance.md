@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in ##Platform_Name## Rating control | Syncfusion
-description: Learn here all about Appearance in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
+title: Appearance in ##Platform_Name## Rating | Syncfusion
+description: Customize the ##Platform_Name## Rating appearance through CSS overrides, with custom item counts, icons, and per-item leading or trailing styles.
 platform: ej2-javascript
 control: Appearance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance in ##Platform_Name## Rating control
+# Appearance in ##Platform_Name## Rating
 
 You can also customize the appearance of rating control.
 

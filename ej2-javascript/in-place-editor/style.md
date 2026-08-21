@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## In place editor control | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## In place editor control of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## In-place Editor | Syncfusion
+description: Style the ##Platform_Name## In-place Editor text, save and cancel buttons, and editable wrapper with CSS to match your app theme.
 platform: ej2-javascript
 control: Style 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in ##Platform_Name## In place editor control
+# Style in ##Platform_Name## In-place Editor
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

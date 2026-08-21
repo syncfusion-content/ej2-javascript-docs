@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Validation in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: Validation in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to validate selected files in the Syncfusion ##Platform_Name## File Upload by file size, extension, and HTML attributes before upload.
 platform: ej2-javascript
 control: Validation 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation in ##Platform_Name## Uploader control
+# Validation in ##Platform_Name## File Upload
 
 The uploader component validate the selected files size and extension using the [allowedExtentions](../api/uploader/#allowedextensions), [minFileSize](../api/uploader/#minfilesize) and [maxFileSize](../api/uploader/#maxfilesize) properties. The files can be validated before uploading to the server and can be ignored on uploading. Also, you can validate the files by setting the HTML attributes to the original input element. The validation process occurs on drag-and-drop the files also.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with DropDown List control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Dropdown List | Syncfusion
+description: Set up a simple Syncfusion ##Platform_Name## Dropdown List using the Essential JS 2 quickstart-webpack seed and configure webpack for development.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## DropDown List control
+# Getting Started with ##Platform_Name## Dropdown List
 
 This section explains the steps to create a simple DropDown List and demonstrates the basic usage of the DropDown List component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 

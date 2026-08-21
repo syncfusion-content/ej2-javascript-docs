@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Play an audio before open the toast in ##Platform_Name## Toast control | Syncfusion
-description: Learn here all about Play an audio before open the toast in Syncfusion ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more.
+title: How to play audio on toast open in ##Platform_Name## Toast | Syncfusion
+description: Play background audio when ##Platform_Name## Toast opens by including audio play code in the beforeOpen event.
 platform: ej2-javascript
-control: Play an audio before open the toast 
+control: Play an audio before open the toast
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Play an audio before open the toast in ##Platform_Name## Toast control
+# How to play audio on toast open in ##Platform_Name## Toast
 
 The following sample demonstrates how to play an audio in background while opening the toast by including audio play codes into the beforeOpen event function.
 

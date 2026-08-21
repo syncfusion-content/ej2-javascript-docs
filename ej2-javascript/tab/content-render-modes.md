@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Content render modes in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Content render modes tabs in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: Content render modes in ##Platform_Name## Tab | Syncfusion
+description: Learn how to configure tab content modes in the Syncfusion ##Platform_Name## Tab control for flexible rendering behavior.
 platform: ej2-javascript
 control: Content render modes 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Content render modes in ##Platform_Name## Tab control
+# Content render modes in ##Platform_Name## Tab
 
 Tabs support rendering content based on different scenarios. The content of the tabs can be rendered in three different ways, as outlined below.
 

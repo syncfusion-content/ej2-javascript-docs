@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Multi select control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Multi select control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## MultiSelect Dropdown | Syncfusion
+description: Localize the noRecordsTemplate and actionFailureTemplate text of the Syncfusion ##Platform_Name## MultiSelect Dropdown to any culture.
 platform: ej2-javascript
 control: Localization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## Multi select control
+# Localization in ##Platform_Name## MultiSelect Dropdown
 
 The Localization library allows you to localize static text content of the [noRecordsTemplate](../api/multi-select/#norecordstemplate) and [actionFailureTemplate](../api/multi-select/#actionfailuretemplate) &nbsp;properties according to the culture currently assigned to the MultiSelect.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## List box control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## ListBox | Syncfusion
+description: Set up the Syncfusion ##Platform_Name## ListBox in a plain JavaScript (ES5) app, including dependencies and a local environment.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## List box control
+# Getting Started with ##Platform_Name## ListBox
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 List Box and demonstrate the basic usage of the List Box control in a JavaScript application.
 

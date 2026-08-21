@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Orientations in  ##Platform_Name## Timeline control | Syncfusion
-description:  Checkout and learn about Orientations with ##Platform_Name## Timeline control of Syncfusion Essential JS 2 and more. 
+title: Orientations in ##Platform_Name## Timeline | Syncfusion
+description: Render Syncfusion ##Platform_Name## Timeline items horizontally or vertically using the orientation property for visual flow control.
 platform: ej2-javascript
 control: Timeline
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Orientations in ##Platform_Name## Timeline control
+# Orientations in ##Platform_Name## Timeline
 
 The Timeline control supports displaying items in both horizontal and vertical directions using the [`orientation`](../api/timeline#orientation) property.
 

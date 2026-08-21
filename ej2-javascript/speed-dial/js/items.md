@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Items in ##Platform_Name## Speed dial control | Syncfusion
-description: Learn here all about Items in Syncfusion ##Platform_Name## Speed dial control of Syncfusion Essential JS 2 and more.
+title: Items in ##Platform_Name## Speed Dial | Syncfusion
+description: Learn how to add and customize ##Platform_Name## Speed Dial action items with text, icons, disabled state, animation, and templates.
 platform: ej2-javascript
 control: Items 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Items in ##Platform_Name## Speed dial control
+# Items in ##Platform_Name## Speed Dial
 
 The JavaScript(ES5) Speed Dial action items can be added by using [`items`](../api/speed-dial#items) property.
 

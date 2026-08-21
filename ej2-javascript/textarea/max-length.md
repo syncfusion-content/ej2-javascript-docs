@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Maximum Length with ##Platform_Name## Textarea control | Syncfusion
-description: Limiting the maximum number of characters in the ##Platform_Name## Textarea control of Syncfusion Essential JS 2 and more details.
+title: Max Length in ##Platform_Name## TextArea | Syncfusion
+description: Limit the ##Platform_Name## TextArea to a maximum number of characters using the maxLength property to prevent user input from exceeding a target.
 platform: ej2-javascript
 control: Maximum Length
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Maximum Length in ##Platform_Name## TextArea Control
+# Max Length in ##Platform_Name## TextArea
 
 You can enforce a maximum length limit for the text input in the TextArea using the [maxLength](../api/textarea/#maxLength) property. This property allows to define the maximum number of characters that users can input into the TextArea.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in  ##Platform_Name## Timeline control | Syncfusion
-description:  Checkout and learn about Customization with ##Platform_Name## Timeline control of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## Timeline | Syncfusion
+description: Customize Syncfusion ##Platform_Name## Timeline dot size, connectors, dot borders, and outer spacing to match your application's visual design.
 platform: ej2-javascript
 control: Timeline
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in ##Platform_Name## Timeline control
+# Customization in ##Platform_Name## Timeline
 
 Customize the Timeline items by adjusting dot size, connectors, dot borders, dot outer spacing, and more to personalize its appearance. This section explains the available styling options.
 

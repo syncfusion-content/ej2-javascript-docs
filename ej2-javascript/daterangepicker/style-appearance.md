@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style appearance in ##Platform_Name## Daterangepicker control | Syncfusion
-description: Learn here all about Style appearance in Syncfusion ##Platform_Name## Daterangepicker control of Syncfusion Essential JS 2 and more.
+title: Style Appearance in ##Platform_Name## DateRangePicker | Syncfusion
+description: Customize the ##Platform_Name## DateRangePicker wrapper and input appearance using the exact CSS structure provided for height, font, and theme styling.
 platform: ej2-javascript
 control: Style appearance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style appearance in ##Platform_Name## Daterangepicker control
+# Style Appearance in ##Platform_Name## DateRangePicker
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

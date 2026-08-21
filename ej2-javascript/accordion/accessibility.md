@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Accordion control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Accordion | Syncfusion
+description: Learn how the Syncfusion ##Platform_Name## Accordion meets WAI-ARIA, keyboard navigation, and screen reader accessibility standards.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Accordion control
+# Accessibility in ##Platform_Name## Accordion
 
 The Accordion control has been designed keeping in mind the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/) specifications, by applying the prompt WAI-ARIA roles, states, and properties along with the keyboard support. Thus, making it usable for people who use assistive WAI-ARIA Accessibility supports that is achieved through the attributes like `aria-labelledby`. It helps to provides information about the elements in a document for assistive technology. The control implements the keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices/) and tested in major screen readers.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## MultiColumn Combobox control | Syncfusion
-description: Checkout and learn about Filtering with ##Platform_Name## MultiColumn Combobox control of Syncfusion Essential JS 2 and more.
+title: Filtering in ##Platform_Name## MultiColumn ComboBox | Syncfusion
+description: Filter the Syncfusion ##Platform_Name## MultiColumn ComboBox as you type with StartsWith, EndsWith, or Contains match modes.
 platform: ej2-javascript
 control: Filtering
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in ##Platform_Name## MultiColumn ComboBox control
+# Filtering in ##Platform_Name## MultiColumn ComboBox
 
 The MultiColumn ComboBox has built-in support to filter the data items, which allows users to filter the list of items based on their input. The filter operation starts as soon as you start typing characters in the component. The filtering can be disabled by setting the [allowFiltering](../api/multicolumn-combobox#allowfiltering) to `false`. By default the value is `true`.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Perform custom validation using form validator in ##Platform_Name## Numerictextbox control | Syncfusion
-description: Learn here all about Perform custom validation using form validator in Syncfusion ##Platform_Name## Numerictextbox control of Syncfusion Essential JS 2 and more.
+title: How to custom validation in ##Platform_Name## Numeric Textbox | Syncfusion
+description: Run custom validation on the Syncfusion ##Platform_Name## Numeric Textbox by adding user-defined rules like range or format checks to the FormValidator.
 platform: ej2-javascript
 control: Perform custom validation using form validator 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Perform custom validation using form validator in ##Platform_Name## Numerictextbox control
+# How to custom validation in ##Platform_Name## Numeric Textbox
 
 This section explains how to perform custom validation on the NumericTextBox using FormValidator. The NumericTextBox will be validated when the value changes or the user clicks the submit button. Validation can be performed by adding custom validation in the rules collection of the FormValidator.
 

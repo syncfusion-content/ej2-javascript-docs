@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Message control | Syncfusion
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Message control of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## Message | Syncfusion
+description: Customize ##Platform_Name## Message with left, center, or right content alignment and rounded or square corners using the cssClass property.
 platform: ej2-javascript
-control: Customization 
+control: Customization
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in ##Platform_Name## Message control
+# Customization in ##Platform_Name## Message
 
 The Message control allows the user to customize the content display positions and appearance. This section explains the details about changing the content alignments and border styles for messages.
 
@@ -48,7 +48,7 @@ The following example demonstrates the message with different content alignments
 
 ## Rounded and Square
 
-To customize the Message control's appearance, add the custom class to the message through the [cssClass](../api/message/#cssclass) property. This custom class will be added to the root element. Based on this custom class, the user can override the message styles at the application level.
+To customize the Message control's appearance, add the custom class to the message through the [cssClass](../api/message/index-default#cssclass) property. This custom class will be added to the root element. Based on this custom class, the user can override the message styles at the application level.
 
 The following example shows the rounded and squared appearance of the message, which can be achieved by adding the `cssClass` property.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtualization in ##Platform_Name## Multi select control | Syncfusion
-description: Learn here all about Virtualization in Syncfusion ###Platform_Name## Multi select control of Syncfusion Essential JS 2 and more.
+title: Virtualization in ##Platform_Name## MultiSelect Dropdown | Syncfusion
+description: Render large lists efficiently in the Syncfusion ##Platform_Name## MultiSelect Dropdown using enableVirtualization and incremental search.
 platform: ej2-javascript
 control: Virtualization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtualization in MultiSelect Dropdown
+# Virtualization in ##Platform_Name## MultiSelect Dropdown
 
 MultiSelect Dropdown virtualization is a technique used to efficiently render extensive lists of items while minimizing the impact on performance. This method is particularly advantageous when dealing with large datasets because it ensures that only a fixed number of DOM (Document Object Model) elements are created. When scrolling through the list, existing DOM elements are reused to display relevant data instead of generating new elements for each item. This recycling process is managed internally.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Right to left in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Right to left in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: How to enable right to left in ##Platform_Name## Menu | Syncfusion
+description: Learn how to enable RTL with the Syncfusion ##Platform_Name## Menu control for bidirectional navigation and accessibility.
 platform: ej2-javascript
-control: Right to left 
+control: Right to left
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Right to left in ##Platform_Name## Menu control
+# How to enable right to left in ##Platform_Name## Menu
 
 Menu component has RTL support. This can be achieved by setting [`enableRtl`](../../api/menu#enablertl) as `true`.
 

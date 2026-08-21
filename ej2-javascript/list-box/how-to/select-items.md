@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Select items in ##Platform_Name## List box control | Syncfusion
-description: Learn here all about Select items in Syncfusion ##Platform_Name## List box control of Syncfusion Essential JS 2 and more.
+title: How to select items in ##Platform_Name## ListBox | Syncfusion
+description: Select items in the Syncfusion ##Platform_Name## ListBox programmatically by value or by index using the selectItems method.
 platform: ej2-javascript
 control: Select items 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Select items in ##Platform_Name## List box control
+# How to Select Items in ##Platform_Name## ListBox
 
 In the following example, `Bugatti Chiron` is selected using [`selectItems`](../../api/list-box/#selectitems) method.
 

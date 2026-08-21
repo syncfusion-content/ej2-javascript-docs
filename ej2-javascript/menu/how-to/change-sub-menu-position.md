@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Change sub menu position in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Change sub menu position in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: How to change sub menu position in ##Platform_Name## Menu | Syncfusion
+description: Learn how to change sub-menu position with the Syncfusion ##Platform_Name## Menu control for better menu placement and usability.
 platform: ej2-javascript
-control: Change sub menu position 
+control: Change sub menu position
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change sub menu position in ##Platform_Name## Menu control
+# How to change sub menu position in ##Platform_Name## Menu
 
 The submenu position can be changed by using the [`beforeOpen`](../../api/menu/#beforeopen) event. Assign the top and left position where you want to open the submenu to the [`beforeOpen`](../../api/menu/#beforeopen) event arguments `args.top` and `args.left` respectively.
 

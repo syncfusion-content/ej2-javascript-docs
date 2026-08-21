@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template configuration in ##Platform_Name## Toolbar control | Syncfusion
-description: Learn here all about Template configuration in Syncfusion ##Platform_Name## Toolbar control of Syncfusion Essential JS 2 and more.
+title: Template configuration in ##Platform_Name## Toolbar | Syncfusion
+description: Learn how to configure templates in the Syncfusion ##Platform_Name## Toolbar control for rich, custom command layouts.
 platform: ej2-javascript
 control: Template configuration 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template configuration in ##Platform_Name## Toolbar control
+# Template configuration in ##Platform_Name## Toolbar
 
 The [JavaScript Toolbar](https://www.syncfusion.com/javascript-ui-controls/js-toolbar) can be rendered by item based collection and by HTML elements.  To render it based on the given HTML element, use `id` as the `target` property. To render the Toolbar, follow the below structure of the HTML elements:
 

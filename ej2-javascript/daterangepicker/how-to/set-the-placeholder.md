@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set the placeholder in ##Platform_Name## Daterangepicker control | Syncfusion
-description: Learn here all about Set the placeholder in Syncfusion ##Platform_Name## Daterangepicker control of Syncfusion Essential JS 2 and more.
+title: How to set placeholder in ##Platform_Name## DateRangePicker | Syncfusion
+description: Display a short hint in the ##Platform_Name## DateRangePicker input using the placeholder property to guide users before a value is entered.
 platform: ej2-javascript
 control: Set the placeholder 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set the placeholder in ##Platform_Name## Daterangepicker control
+# How to set placeholder in ##Platform_Name## DateRangePicker
 
 The following example demonstrates how to set [`placeholder`](../../api/daterangepicker#placeholder) in the DateRangePicker control.
 

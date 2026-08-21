@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## MultiColumn Combobox control | Syncfusion
-description: Checkout and learn about Data binding in ##Platform_Name## MultiColumn Combobox control of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## MultiColumn ComboBox | Syncfusion
+description: Bind the Syncfusion ##Platform_Name## MultiColumn ComboBox to local data or remote services like OData and Web API via DataManager.
 platform: ej2-javascript
 control: Data binding
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in ##Platform_Name## MultiColumn ComboBox control
+# Data Binding in ##Platform_Name## MultiColumn ComboBox
 
 The MultiColumn ComboBox loads the data either from local data sources or remote data services using the [dataSource](../api/multicolumn-combobox#datasource) property. It supports the data type of `object arrays` or `DataManager`.
 

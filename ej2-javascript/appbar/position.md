@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Position in ##Platform_Name## Appbar control | Syncfusion
-description: Learn here all about Position in Syncfusion ##Platform_Name## Appbar control of Syncfusion Essential JS 2 and more.
+title: Position in ##Platform_Name## Appbar | Syncfusion
+description: Position the Syncfusion ##Platform_Name## AppBar at the top, bottom, or sticky on scroll using the position and isSticky properties.
 platform: ej2-javascript
 control: Position 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Position in ##Platform_Name## Appbar control
+# Position in ##Platform_Name## Appbar
 
 The position of the AppBar can be set using the [position](../api/appbar#position) and [isSticky](../api/appbar#issticky) property. The AppBar provides the following options for setting its position:
 

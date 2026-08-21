@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom search in ##Platform_Name## Auto complete control | Syncfusion
-description: Learn here all about Custom search in Syncfusion ##Platform_Name## Auto complete control of Syncfusion Essential JS 2 and more.
+title: How to custom search in ##Platform_Name## AutoComplete | Syncfusion
+description: Customize the highlighted match in Syncfusion ##Platform_Name## AutoComplete filtering by using the highlight property and a custom e-highlight CSS class.
 platform: ej2-javascript
 control: Custom search 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom search in ##Platform_Name## Auto complete control
+# How to custom search highlight in ##Platform_Name## AutoComplete
 
-The AutoComplete has built-in support to highlight the searched characters on suggested list items when enabled the [`highlight`](../../api/auto-complete/#highlight) property.
+The AutoComplete has built-in support to highlight the searched characters on suggested list items when enabled the [`highlight`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#highlight) property.
 
 In the below sample, to customize the matched character in suggestion list by `e-highlight` class.
 

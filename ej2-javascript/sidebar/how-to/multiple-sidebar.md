@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multiple Sidebar in ##Platform_Name## Sidebar control | Syncfusion
-description: Learn here all about Multiple Sidebar in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: How to render multiple Sidebar in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to use multiple sidebars with the Syncfusion ##Platform_Name## Sidebar control for complex app navigation flows.
 platform: ej2-javascript
 control: Multiple Sidebar
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Multiple ##Platform_Name## Sidebar control
+# How to render multiple Sidebar in ##Platform_Name## Sidebar
 
 Two Sidebars can be initialized on a web page with the same main content. Sidebars can be positioned on the right or left side of the main content using the [`position`](../../api/sidebar/#position) property.
 

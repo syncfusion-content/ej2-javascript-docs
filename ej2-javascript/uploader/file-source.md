@@ -1,7 +1,7 @@
 ---
 layout: post
-title: File source in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about File source in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: File Source in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to define file sources for the Syncfusion ##Platform_Name## File Upload to specify allowed files, folders, or remote endpoints for selection.
 platform: ej2-javascript
 control: File source 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# File source in ##Platform_Name## Uploader control
+# File Source in ##Platform_Name## File Upload
 
 ## Paste to upload
 

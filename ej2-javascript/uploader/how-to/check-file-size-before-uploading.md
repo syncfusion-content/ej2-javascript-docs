@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Check file size before uploading in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Check file size before uploading in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: How to check file size in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to check the file size in the Syncfusion ##Platform_Name## File Upload using the uploading event and convert the byte value to KB or MB before upload.
 platform: ej2-javascript
 control: Check file size before uploading 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Check file size before uploading in ##Platform_Name## Uploader control
+# How to check file size in ##Platform_Name## File Upload
 
 By using the [uploading](../../api/uploader/#uploading) event, you can get the file size before uploading it to the server.
 File object contains the file size in bytes only. You can convert the size to standard formats (`KB` or `MB`) using [bytesToSize](../../api/uploader/#bytestosize) method.

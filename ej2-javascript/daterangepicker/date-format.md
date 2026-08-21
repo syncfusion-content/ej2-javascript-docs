@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Date format in ##Platform_Name## Daterangepicker control | Syncfusion
-description: Learn here all about Date format in Syncfusion ##Platform_Name## Daterangepicker control of Syncfusion Essential JS 2 and more.
+title: Date Format in ##Platform_Name## DateRangePicker | Syncfusion
+description: Configure a custom date display format in ##Platform_Name## DateRangePicker using the format property and culture-based defaults.
 platform: ej2-javascript
 control: Date format 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Date format in ##Platform_Name## Daterangepicker control
+# Date Format in ##Platform_Name## DateRangePicker
 
 Date format is a way of representing the date value in different string format in the textbox.
 

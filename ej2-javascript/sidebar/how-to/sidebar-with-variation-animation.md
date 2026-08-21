@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sidebar with Variation Animation in ##Platform_Name## Sidebar control | Syncfusion
-description: Learn here all about Sidebar with Variation Animation in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: How to add variation animation in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to apply variation animations in the Syncfusion ##Platform_Name## Sidebar control for smoother transition experiences.
 platform: ej2-javascript
 control: Sidebar with Variation Animation
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Variation Animation in ##Platform_Name## Sidebar control
+# How to add variation animation in ##Platform_Name## Sidebar
 
 In the following example, the Sidebar is rendered with custom animation effects. Click the buttons available in the main content area to observe how the custom animations work with the Sidebar.
 

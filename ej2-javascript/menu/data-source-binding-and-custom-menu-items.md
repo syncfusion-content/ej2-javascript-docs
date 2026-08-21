@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Data source binding in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Data source binding and custom menu items in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: Data source binding in ##Platform_Name## Menu | Syncfusion
+description: Learn how to bind data and customize items with the Syncfusion ##Platform_Name## Menu control for flexible navigation content.
 platform: ej2-javascript
-control: Data source binding and custom menu items 
+control: Data source binding and custom menu items
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data source binding and custom menu items in ##Platform_Name## Menu control
+# Data source binding and custom menu items in ##Platform_Name## Menu
 
 ## Data binding
 

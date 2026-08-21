@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with TypeScript DateRangePicker | Syncfusion
+title: Getting Started with ##Platform_Name## DateRangePicker | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Daterangepicker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Daterangepicker control
+# Getting Started with ##Platform_Name## DateRangePicker
 
 This section briefly explains how to create a simple DateRangePicker component and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 

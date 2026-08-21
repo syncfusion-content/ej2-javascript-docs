@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Toast control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Toast | Syncfusion
+description: Build accessible ##Platform_Name## Toast with WAI-ARIA alert role, WCAG 2.2, Section 508, and screen reader support.
 platform: ej2-javascript
-control: Accessibility 
+control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Toast control
+# Accessibility in ##Platform_Name## Toast
 
 The toast component has been designed with [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications in mind by applying the prompt WAI-ARIA roles, states, and properties with the keyboard support. It helps users who use assistive WAI-ARIA accessibility support, which is achieved using attributes.
 

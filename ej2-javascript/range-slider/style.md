@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Range Slider control | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Range Slider | Syncfusion
+description: Customize ##Platform_Name## Range Slider appearance with CSS overrides for the track, handle, ticks, limits, and tooltip styles to match your theme.
 platform: ej2-javascript
 control: Style 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in ##Platform_Name## Range Slider control
+# Style in ##Platform_Name## Range Slider
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

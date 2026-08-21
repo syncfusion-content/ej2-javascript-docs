@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in ##Platform_Name## Mention control | Syncfusion
-description: Learn here all about Sorting in Syncfusion ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more.
+title: Sorting in ##Platform_Name## Mention | Syncfusion
+description: Order the Syncfusion ##Platform_Name## Mention suggestion list in Ascending, Descending, or None order using the sortOrder property.
 platform: ej2-javascript
 control: Sorting 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting in ##Platform_Name## Mention control
+# Sorting in ##Platform_Name## Mention
 
 You can display the suggestion list items in a specific order. It has possible types as `Ascending`, `Descending` and `None` in the [sortOrder](../api/mention/#sortorder) property.
 

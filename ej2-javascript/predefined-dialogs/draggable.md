@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Draggable in ##Platform_Name## Predefined dialogs control | Syncfusion
-description: Learn here all about Draggable in Syncfusion ##Platform_Name## Predefined dialogs control of Syncfusion Essential JS 2 and more.
+title: Draggable in ##Platform_Name## Predefined Dialogs | Syncfusion
+description: Enable drag-and-drop repositioning for ##Platform_Name## Predefined Alert, Confirm, and Prompt dialogs using the isDraggable option.
 platform: ej2-javascript
 control: Draggable 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Draggable in ##Platform_Name## Predefined dialogs control
+# Draggable in ##Platform_Name## Predefined Dialogs
 
 The predefined dialogs supports dragging within its target container by grabbing the dialog header, which allows the user to reposition the dialog dynamically by using `isDraggable` property.
 

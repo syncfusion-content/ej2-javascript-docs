@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Responsive adaptive in ##Platform_Name## Dashboard Layout | Syncfusion
-description: Learn here all about Responsive adaptive in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
+title: Responsive Adaptive in ##Platform_Name## Dashboard Layout | Syncfusion
+description: Adapt Syncfusion ##Platform_Name## Dashboard Layout to mobile screens with the mediaQuery property, which stacks panels vertically below a chosen breakpoint.
 platform: ej2-javascript
 control: Responsive adaptive
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Responsive adaptive in ##Platform_Name## Dashboard Layout control
+# Responsive Adaptive in ##Platform_Name## Dashboard Layout
 
 The Dashboard Layout includes built-in responsive support, allowing panels to adjust to their parent element's dimensions across resolutions and removing the need to implement custom responsive logic.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Skip a month in calendar in ##Platform_Name## Calendar control | Syncfusion
-description: Learn here all about Skip a month in calendar in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
+title: How to skip a month in ##Platform_Name## Calendar | Syncfusion
+description: Skip a month when the user clicks the previous or next icon in ##Platform_Name## Calendar using the navigated event and navigateTo method.
 platform: ej2-javascript
 control: Skip a month in calendar 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Skip a month in calendar in ##Platform_Name## Calendar control
+# How to skip a month in ##Platform_Name## Calendar
 
 The following example demonstrates how to skip a month in the Calendar while clicking the previous and next icons. In the example below,  the [`navigated`](../../api/calendar#navigated) event is used to skip a month with [`navigateTo`](../../api/calendar#navigateto) method.
 

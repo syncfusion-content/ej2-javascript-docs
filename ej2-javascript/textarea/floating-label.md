@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Floating Label with ##Platform_Name## Textarea control | Syncfusion
-description: Checkout and learn about Floating Label with ##Platform_Name## Textarea control of Syncfusion Essential JS 2 and more details.
+title: Floating Label in ##Platform_Name## TextArea | Syncfusion
+description: Float the ##Platform_Name## TextArea placeholder above the input during interaction using the floatLabelType API for an intuitive form experience.
 platform: ej2-javascript
 control: Floating Label
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Floating Label in ##Platform_Name## TextArea Control
+# Floating Label in ##Platform_Name## TextArea
 
 The floating label functionality in the TextArea control allows the placeholder text to float above the TextArea while the user interacts with it, providing a more intuitive user experience. This feature can be achieved using the [floatLabelType](../api/textarea/#floatLabelType) API, which offers various options for defining the floating behavior:
 

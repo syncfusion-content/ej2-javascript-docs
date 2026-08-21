@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating items in ##Platform_Name## Carousel control | Syncfusion
-description: Learn here all about Populating items in Syncfusion ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more.
+title: Populating items in ##Platform_Name## Carousel | Syncfusion
+description: Populate Syncfusion ##Platform_Name## Carousel slides from an items collection or by binding data from a remote source.
 platform: ej2-javascript
 control: Populating items 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Populating items in ##Platform_Name## Carousel control
+# Populating items in ##Platform_Name## Carousel
 
 In the Carousel, slides can be rendered in two ways as follows,
 

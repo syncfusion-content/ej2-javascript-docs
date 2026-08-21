@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Rating control | Syncfusion
-description: Learn here all about Templates in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
+title: Templates in ##Platform_Name## Rating | Syncfusion
+description: Render ##Platform_Name## Rating items with custom templates to display icons, images, or any content you want inside each rating item.
 platform: ej2-javascript
 control: Templates 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in ##Platform_Name## Rating control
+# Templates in ##Platform_Name## Rating
 
 The rating control allows you to customize the appearance of the rating items using templates. You can use templates to specify a custom layout for the rating items, which can include any content you want. This allows you to create a more customized and interactive rating experience for the user.
 

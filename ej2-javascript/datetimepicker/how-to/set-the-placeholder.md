@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set the placeholder in ##Platform_Name## Datetimepicker control | Syncfusion
-description: Learn here all about Set the placeholder in Syncfusion ##Platform_Name## Datetimepicker control of Syncfusion Essential JS 2 and more.
+title: How to set placeholder in ##Platform_Name## DateTime Picker | Syncfusion
+description: Display a short hint in the ##Platform_Name## DateTime Picker input using the placeholder property to guide users before a value is entered.
 platform: ej2-javascript
 control: Set the placeholder 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set the placeholder in ##Platform_Name## Datetimepicker control
+# How to set placeholder in ##Platform_Name## DateTime Picker
 
 The following example demonstrates how to set [`placeholder`](../../api/datetimepicker#placeholder) in the DateTimePicker component.
 

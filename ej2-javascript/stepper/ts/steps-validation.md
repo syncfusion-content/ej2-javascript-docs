@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in  ##Platform_Name## Stepper control | Syncfusion
-description:  Checkout and learn about Validation with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Validation in ##Platform_Name## Stepper | Syncfusion
+description: Learn how to validate steps in the Syncfusion ##Platform_Name## Stepper control to guide users through required actions.
 platform: ej2-javascript
 control: Stepper
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Steps validation in ##Platform_Name## Stepper control
+# Steps validation in ##Platform_Name## Stepper
 
 The Stepper control allows you to set the validation state for each step, displaying either a success or error icon. You can define the success state of a step by setting the `isValid` property to `true`. If set to `false`, the step will display an error state. By default, the `isValid` property is `null`.
 

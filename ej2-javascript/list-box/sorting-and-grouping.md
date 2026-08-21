@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting and grouping in ##Platform_Name## List box control | Syncfusion
-description: Learn here all about Sorting and grouping in Syncfusion ##Platform_Name## List box control of Syncfusion Essential JS 2 and more.
+title: Sorting and Grouping in ##Platform_Name## ListBox | Syncfusion
+description: Sort items alphabetically and group Syncfusion ##Platform_Name## ListBox entries using sortOrder and groupBy fields.
 platform: ej2-javascript
 control: Sorting and grouping 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting and grouping in ##Platform_Name## List box control
+# Sorting and Grouping in ##Platform_Name## ListBox
 
 ## Sorting
 

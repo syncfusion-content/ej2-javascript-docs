@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Integration in ##Platform_Name## In place editor control | Syncfusion
-description: Learn here all about Integration in Syncfusion ##Platform_Name## In place editor control of Syncfusion Essential JS 2 and more.
+title: Integration in ##Platform_Name## In-place Editor | Syncfusion
+description: Integrate custom HTML5 input templates with the ##Platform_Name## In-place Editor using the template string or selector and the actionBegin event.
 platform: ej2-javascript
 control: Integration 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integration in ##Platform_Name## In place editor control
+# Integration in ##Platform_Name## In-place Editor
 
-The In-place Editor supports adding HTML5 input controls using the [template](../api/inplace-editor/#template) property. The Template property can be given as either a `string` or a `query selector`.
+The In-place Editor supports adding HTML5 input controls using the [template](../api/inplace-editor/index-default#template) property. The Template property can be given as either a `string` or a `query selector`.
 
 ## As a string
 
@@ -31,7 +31,7 @@ template: "#date"
 
 ```
 
-Template mode, the `value` property not handled by the In-place Editor control. So, before sending a value to the server, you need to modify at [actionBegin](../api/inplace-editor/#actionbegin) event, otherwise, an empty string will pass. In the following template sample, before submitting a data to the server, event argument and [value](../api/inplace-editor/#value) property content updated in the `actionBegin` event handler.
+Template mode, the `value` property not handled by the In-place Editor control. So, before sending a value to the server, you need to modify at [actionBegin](../api/inplace-editor/index-default#actionbegin) event, otherwise, an empty string will pass. In the following template sample, before submitting a data to the server, event argument and [value](../api/inplace-editor/index-default#value) property content updated in the `actionBegin` event handler.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -62,4 +62,4 @@ Template mode, the `value` property not handled by the In-place Editor control. 
 
 ## See Also
 
-* [Built-in Controls](./controls/)
+* [Built-in Controls](./controls)

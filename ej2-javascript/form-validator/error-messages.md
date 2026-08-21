@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Error messages in ##Platform_Name## Form validator control | Syncfusion
-description: Learn here all about Error messages in Syncfusion ##Platform_Name## Form validator control of Syncfusion Essential JS 2 and more.
+title: Error Messages in ##Platform_Name## Form Validation | Syncfusion
+description: Customize the default error messages shown by the Syncfusion ##Platform_Name## Form Validation for built-in rules like required, email, url, date, and number.
 platform: ej2-javascript
 control: Error messages 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Error messages in ##Platform_Name## Form validator control
+# Error Messages in ##Platform_Name## Form Validation
 
 The `FormValidator` provides default error messages for all default validation rules.
 It is tabulated as follows

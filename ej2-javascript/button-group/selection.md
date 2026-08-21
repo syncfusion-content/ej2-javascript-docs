@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## Button group control | Syncfusion
-description: Learn here all about Selection in Syncfusion ##Platform_Name## Button group control of Syncfusion Essential JS 2 and more.
+title: Selection in ##Platform_Name## Button Group | Syncfusion
+description: Learn how to enable single, multiple, and nested selection in the ##Platform_Name## Button Group with radio, checkbox, and child controls.
 platform: ej2-javascript
 control: Selection 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in ##Platform_Name## Button group control
+# Selection in ##Platform_Name## Button Group
 
 ## Selection
 
@@ -91,8 +91,8 @@ For nesting support, [`SplitButton dependencies`](./../split-button/getting-star
 
 To initialize DropDownButton component, refer [`DropDownButton Getting Started documentation`](./../drop-down-button/getting-started).
 
-In the following example, the DropDownButton component can be added by creating button element with ID as `dropdownelement` in `index.html`and
-import the DropDownButton in `script` file, and initialize with the `dropdownelement`.
+In the following example, the DropDownButton component can be added by creating button element with ID as `dropdown element` in `index.html`and
+import the DropDownButton in `script` file, and initialize with the `dropdown element`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -131,8 +131,8 @@ import the DropDownButton in `script` file, and initialize with the `dropdownele
 
 To initialize SplitButton component, refer [`SplitButton Getting Started documentation`](./../split-button/getting-started).
 
-In the following example, the SplitButton component can be added by creating button element with ID as `splitbuttonelement` in `index.html`and
-import the SplitButton in `app.ts` file, and initialize with the `splitbuttonelement`.
+In the following example, the SplitButton component can be added by creating button element with ID as `split button element` in `index.html`and
+import the SplitButton in `app.ts` file, and initialize with the `split button element`.
 
 {% if page.publishingplatform == "typescript" %}
 

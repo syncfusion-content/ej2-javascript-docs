@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sort the selected files in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Sort the selected files in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: How to sort the selected files in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to sort the selected files in the Syncfusion ##Platform_Name## File Upload by using the selected event to reorder the file list before upload.
 platform: ej2-javascript
 control: Sort the selected files 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sort the selected files in ##Platform_Name## Uploader control
+# How to sort the selected files in ##Platform_Name## File Upload
 
 You can sort the selected files in uploader component by using the [selected](../../api/uploader/#selected) event. Refer to the following example.
 

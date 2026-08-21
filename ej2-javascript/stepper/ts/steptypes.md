@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Step Types in  ##Platform_Name## Stepper control | Syncfusion
-description:  Checkout and learn about Step Types with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Step Types in ##Platform_Name## Stepper | Syncfusion
+description: Learn how to choose step types in the Syncfusion ##Platform_Name## Stepper control for flexible workflow design.
 platform: ej2-javascript
 control: Stepper
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Step types in ##Platform_Name## Stepper control
+# Step types in ##Platform_Name## Stepper
 
 The Stepper control provides support for displaying steps with the following step types.
 

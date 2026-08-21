@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## MultiColumn ComboBox control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## MultiColumn ComboBox | Syncfusion
+description: Set up the Syncfusion ##Platform_Name## MultiColumn ComboBox in a plain JavaScript (ES5) app, including dependencies and a local environment.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## MultiColumn ComboBox control
+# Getting Started with ##Platform_Name## MultiColumn ComboBox
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Multicolumn ComboBox and demonstrate the basic usage of the Multicolumn ComboBox control in a JavaScript application.
 

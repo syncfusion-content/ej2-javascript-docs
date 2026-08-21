@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set the read only textbox in ##Platform_Name## Textbox control | Syncfusion
-description: Learn here all about Set the read only textbox in Syncfusion ##Platform_Name## Textbox control of Syncfusion Essential JS 2 and more.
+title: How to set the read-only textbox in ##Platform_Name## TextBox | Syncfusion
+description: Make the ##Platform_Name## TextBox read-only by setting the readonly property on the TextBox component so users cannot edit its value.
 platform: ej2-javascript
 control: Set the read only textbox 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set the read only textbox in ##Platform_Name## Textbox control
+# How to set the read-only textbox in ##Platform_Name## TextBox
 
 You can make the TextBox as `read-only` by setting the [readonly](../api/textbox/#readonly) property to the TextBoxComponent.
 

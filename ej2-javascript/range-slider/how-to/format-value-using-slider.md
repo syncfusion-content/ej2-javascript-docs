@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Format value using Slider in ##Platform_Name## Range Slider | Syncfusion
-description: Learn here all about Format value using slider in Syncfusion ##Platform_Name## Range slider control of Syncfusion Essential JS 2 and more.
+title: How to format value using slider in ##Platform_Name## Range Slider | Syncfusion
+description: Format ##Platform_Name## Range Slider tick and tooltip values as dates using the renderingTicks and tooltipChange events with custom formatters.
 platform: ej2-javascript
 control: Format value using slider 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Format Value using Slider in ##Platform_Name## Range Slider Control
+# How to format value using slider in ##Platform_Name## Range Slider
 
 ## Achieve date format
 

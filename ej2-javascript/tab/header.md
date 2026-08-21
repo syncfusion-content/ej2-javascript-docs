@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Header in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: Header in ##Platform_Name## Tab | Syncfusion
+description: Learn how to customize header behavior in the Syncfusion ##Platform_Name## Tab control for clearer navigation patterns.
 platform: ej2-javascript
 control: Header 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Header in ##Platform_Name## Tab control
+# Header in ##Platform_Name## Tab
 
 This section explains how to modify the style of the Tab header and configure its icons and positions.
 

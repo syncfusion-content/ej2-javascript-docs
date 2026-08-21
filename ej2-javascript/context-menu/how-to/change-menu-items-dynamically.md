@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change menu items dynamically in ##Platform_Name## Context menu control | Syncfusion
-description: Learn here all about Change menu items dynamically in Syncfusion ##Platform_Name## Context menu control of Syncfusion Essential JS 2 and more.
+title: How to change menu items dynamically in ##Platform_Name## Context menu | Syncfusion
+description: Show or hide Syncfusion ##Platform_Name## Context menu items dynamically by target using hideItems and showItems in beforeOpen.
 platform: ej2-javascript
 control: Change menu items dynamically 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change menu items dynamically in ##Platform_Name## Context menu control
+# How to change menu items dynamically in ##Platform_Name## Context menu
 
 The items visible in the ContextMenu can be changed dynamically based on the target in which you open the ContextMenu. To achieve this behavior, initialize ContextMenu with all items using [`items`](../../api/context-menu#items) property and then based on the context you open hide/show required items using [`hideItems`](../../api/context-menu#hideitems)/[`showItems`](../../api/context-menu#showitems) method in [`beforeOpen`](../../api/context-menu#beforeopen) event.
 

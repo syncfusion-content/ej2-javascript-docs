@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 different layouts in ##Platform_Name## Splitter control | Syncfusion
-description: Learn here all about Es5 different layouts in Syncfusion ##Platform_Name## Splitter control of Syncfusion Essential JS 2 and more.
+title: Es5 Different Layouts in ##Platform_Name## Splitter | Syncfusion
+description: Build code-editor and Outlook-style layouts in Syncfusion ##Platform_Name## Splitter with multiple and nested panes using global-script JavaScript.
 platform: ej2-javascript
 control: Es5 different layouts 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 different layouts in ##Platform_Name## Splitter control
+# Es5 Different Layouts in ##Platform_Name## Splitter
 
 Use the Splitter control to create different layouts with multiple and nested panes.
 

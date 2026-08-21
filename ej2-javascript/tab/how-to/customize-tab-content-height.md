@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize tab content height in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Customize tab content height in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: How to customize tab content height in ##Platform_Name## Tab | Syncfusion
+description: Learn how to customize tab content height in the Syncfusion ##Platform_Name## Tab control for cleaner layout management.
 platform: ej2-javascript
 control: Customize tab content height 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize tab content height in ##Platform_Name## Tab control
+# How to customize tab content height in ##Platform_Name## Tab
 
 You can adjust the Tab content height using the [`heightAdjustMode`](../../api/tab/#heightadjustmode) property. By default, this property is set to `Content`. Here are the available options:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in  ##Platform_Name## Stepper control | Syncfusion
-description:  Checkout and learn about Events with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Events in ##Platform_Name## Stepper | Syncfusion
+description: Learn how to use events with the Syncfusion ##Platform_Name## Stepper control to handle step changes and user actions.
 platform: ej2-javascript
 control: Stepper
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## Stepper control
+# Events in ##Platform_Name## Stepper
 
 This section describes the Stepper events that will be triggered when an appropriate actions are performed. The following events are available in the Stepper control.
 

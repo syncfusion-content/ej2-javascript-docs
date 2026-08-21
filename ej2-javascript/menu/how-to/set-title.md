@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Set title in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Set title in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: How to set title in ##Platform_Name## Menu | Syncfusion
+description: Learn how to set menu titles with the Syncfusion ##Platform_Name## Menu control for clearer command labeling.
 platform: ej2-javascript
-control: Set title 
+control: Set title
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set title in ##Platform_Name## Menu control
+# How to set title in ##Platform_Name## Menu
 
 In Menu , we can provide title for menu items by using title property in 'beforeItemRender' client-side event in Menu component.
 

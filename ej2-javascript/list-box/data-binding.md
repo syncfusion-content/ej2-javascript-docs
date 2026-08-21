@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## List box control | Syncfusion
-description: Learn here all about Data binding in Syncfusion ##Platform_Name## List box control of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## ListBox | Syncfusion
+description: Bind the Syncfusion ##Platform_Name## ListBox to local arrays or remote services like OData and Web API using DataManager.
 platform: ej2-javascript
 control: Data binding 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in ##Platform_Name## List box control
+# Data Binding in ##Platform_Name## ListBox
 
 The ListBox loads the data either from local data sources or remote data services using the [`dataSource`](../api/list-box/#datasource) property. It supports the data type of `array` or `DataManager`.
 

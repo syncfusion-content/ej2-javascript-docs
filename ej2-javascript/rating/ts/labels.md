@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Labels in ##Platform_Name## Rating control | Syncfusion
-description: Learn here all about Labels in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
+title: Labels in ##Platform_Name## Rating | Syncfusion
+description: Show a numeric label alongside the ##Platform_Name## Rating items using the showLabel property to surface the current rating value clearly.
 platform: ej2-javascript
 control: Labels 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Labels in ##Platform_Name## Rating control
+# Labels in ##Platform_Name## Rating
 
 You can use the [`showLabel`](../api/rating/#showlabel) property to display a label that shows the current value of the rating. When the `showLabel` property is set to `true`, a label will be displayed.
 

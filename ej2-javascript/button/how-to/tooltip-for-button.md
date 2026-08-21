@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip for button in ##Platform_Name## Button control | Syncfusion
-description: Learn here all about Tooltip for button in Syncfusion ##Platform_Name## Button control of Syncfusion Essential JS 2 and more.
+title: How to show tooltip for Button in ##Platform_Name## Button | Syncfusion
+description: Learn how to show a tooltip on the ##Platform_Name## Button hover by setting the title attribute on the element.
 platform: ej2-javascript
 control: Tooltip for button 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip for button in ##Platform_Name## Button control
+# How to show tooltip for Button in ##Platform_Name## Button
 
 Tooltip can be shown on Button hover and it can be achieved by setting `title` attribute.
 

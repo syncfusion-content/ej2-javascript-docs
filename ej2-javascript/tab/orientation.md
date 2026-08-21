@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Orientation in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Orientation in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: Orientation in ##Platform_Name## Tab | Syncfusion
+description: Learn how to set tab orientation in the Syncfusion ##Platform_Name## Tab control to fit different layouts and screens.
 platform: ej2-javascript
 control: Orientation 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Orientation in ##Platform_Name## Tab control
+# Orientation in ##Platform_Name## Tab
 
 This section explains how to modify the position and modes of the Tab header.
 

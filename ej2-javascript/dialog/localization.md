@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Dialog control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Dialog | Syncfusion
+description: Localize the ##Platform_Name## Dialog close button tooltip using the locale property and the L10n load function for different cultures.
 platform: ej2-javascript
 control: Localization 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## Dialog control
+# Localization in ##Platform_Name## Dialog
 
-`Localization` library allows to localize the default text content of Dialog. In Dialog, The close button's tooltip text alone will be localize based on culture. By using [locale](../api/dialog/#locale) property you can the culture dynamically in dialog component.
+`Localization` library allows to localize the default text content of Dialog. In Dialog, The close button's tooltip text alone will be localize based on culture. By using [locale](https://ej2.syncfusion.com/documentation/api/dialog/index-default#locale) property you can the culture dynamically in dialog component.
 
 | Locale key | en-US (default)  |
 |------|------|

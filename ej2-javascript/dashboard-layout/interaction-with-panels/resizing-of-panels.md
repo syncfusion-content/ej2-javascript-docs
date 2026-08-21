@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resizing panels in ##Platform_Name## Dashboard Layout | Syncfusion
-description: Learn here all about Resizing of panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
+title: Resizing of Panels in ##Platform_Name## Dashboard Layout | Syncfusion
+description: Resize Syncfusion ##Platform_Name## Dashboard Layout panels via UI handles, configurable in eight directions with the resizableHandles property.
 platform: ej2-javascript
 control: Resizing of panels
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resizing of panels in ##Platform_Name## Dashboard Layout control
+# Resizing of Panels in ##Platform_Name## Dashboard Layout
 
 The Dashboard Layout control includes panel resizing functionality, which can be enabled or disabled using the [`allowResizing`](../../api/dashboard-layout#allowresizing) property. This functionality allows panels to be resized through UI interactions using resize handles that control panel resizing in specific directions.
 

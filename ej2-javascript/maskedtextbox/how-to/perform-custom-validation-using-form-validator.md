@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Perform custom validation using form validator in ##Platform_Name## Maskedtextbox control | Syncfusion
-description: Learn here all about Perform custom validation using form validator in Syncfusion ##Platform_Name## Maskedtextbox control of Syncfusion Essential JS 2 and more.
+title: Perform custom validation in ##Platform_Name## Input Mask | Syncfusion
+description: Run custom validation on the Syncfusion ##Platform_Name## Input Mask by adding user-defined rules like mobile-number checks to the FormValidator.
 platform: ej2-javascript
 control: Perform custom validation using form validator 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Perform custom validation using form validator in ##Platform_Name## Maskedtextbox control
+# How to perform custom validation in ##Platform_Name## Input Mask
 
 To perform custom validation on the MaskedTextBox use the FormValidator along with custom validation rules.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sizing in ##Platform_Name## Textbox control | Syncfusion
-description: Learn here all about Sizing in Syncfusion ##Platform_Name## Textbox control of Syncfusion Essential JS 2 and more.
+title: Sizing in ##Platform_Name## TextBox | Syncfusion
+description: Render the ##Platform_Name## TextBox in two different sizes using the built-in small and normal CSS size variants for compact or standard layouts.
 platform: ej2-javascript
 control: Sizing 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sizing in ##Platform_Name## Textbox control
+# Sizing in ##Platform_Name## TextBox
 
 You can render the TextBox in two different sizes.
 

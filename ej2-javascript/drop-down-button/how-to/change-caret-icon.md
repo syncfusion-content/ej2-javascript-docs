@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change caret icon in ##Platform_Name## Drop down button control | Syncfusion
-description: Learn here all about Change caret icon in Syncfusion ##Platform_Name## Drop down button control of Syncfusion Essential JS 2 and more.
+title: How to change caret icon in ##Platform_Name## Dropdown Menu | Syncfusion
+description: Learn how to change the caret icon of the ##Platform_Name## Dropdown Menu in the beforeOpen and beforeClose events.
 platform: ej2-javascript
 control: Change caret icon 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change caret icon in ##Platform_Name## Drop down button control
+# How to change caret icon in ##Platform_Name## Dropdown Menu
 
 Dropdown arrow can be customized on popup open and close. It can be handled in [`beforeOpen`](../../api/drop-down-button/#beforeopen) and [`beforeClose`](../../api/drop-down-button/#beforeclose) event.
 

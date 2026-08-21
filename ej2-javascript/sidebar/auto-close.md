@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Auto close in ##Platform_Name## Sidebar control | Syncfusion
-description: Learn here all about Auto close in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: Auto close in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to configure auto-close behavior in the Syncfusion ##Platform_Name## Sidebar control for better mobile and overlay interactions.
 platform: ej2-javascript
 control: Auto close
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Auto close in ##Platform_Name## Sidebar control
+# Auto close in ##Platform_Name## Sidebar
 
 The Sidebar often behaves differently on mobile displays compared to desktop displays. It features a functionality that allows it to be opened or closed based on the specified resolution. This behavior is controlled through the [`mediaQuery`](../api/sidebar/#mediaquery) property, allowing you to keep the Sidebar in an expanded or collapsed state only in user-defined resolutions.
 

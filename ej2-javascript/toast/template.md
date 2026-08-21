@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Toast control | Syncfusion
-description: Learn here all about Template in Syncfusion ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more.
+title: Template in ##Platform_Name## Toast | Syncfusion
+description: Render ##Platform_Name## Toast with custom HTML element or selector as a template to fully control the toast content.
 platform: ej2-javascript
-control: Template 
+control: Template
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in ##Platform_Name## Toast control
+# Template in ##Platform_Name## Toast
 
 The Template property in toast can be defined as `HTML element`, this can be either a `string` or `selector`.
 

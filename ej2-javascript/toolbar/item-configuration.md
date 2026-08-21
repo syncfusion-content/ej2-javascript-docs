@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Item configuration in ##Platform_Name## Toolbar control | Syncfusion
-description: Learn here all about Item configuration in Syncfusion ##Platform_Name## Toolbar control of Syncfusion Essential JS 2 and more.
+title: Item configuration in ##Platform_Name## Toolbar | Syncfusion
+description: Learn how to configure toolbar items in the Syncfusion ##Platform_Name## Toolbar control for efficient command organization.
 platform: ej2-javascript
 control: Item configuration 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Item configuration in ##Platform_Name## Toolbar control
+# Item configuration in ##Platform_Name## Toolbar
 
 The Toolbar can be rendered by defining an array of [`items`](../api/toolbar#items). Items can be constructed using the following built-in command types or item templates.
 

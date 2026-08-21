@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adornments in ##Platform_Name## MaskedTextBox Control | Syncfusion
-description: Learn how to add adornments in Syncfusion ##Platform_Name## MaskedTextBox control of Syncfusion Essential JS 2 and more..
+title: Adornments in ##Platform_Name## Input Mask | Syncfusion
+description: Add prefixes, suffix labels, or action icons to the Syncfusion ##Platform_Name## Input Mask using prependTemplate and appendTemplate for context.
 platform: ej2-javascript
 control: Adornments
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adornments in ##Platform_Name## MaskedTextBox control
+# Adornments in ##Platform_Name## Input Mask
 
 Adornments in the MaskedTextBox control allow you to add custom elements before or after the masked input using the `prependTemplate` and `appendTemplate` properties. These elements can include prefixes, suffix labels, or action icons to provide context, guide user input, and offer quick actions while preserving mask validation and float label behavior.
 

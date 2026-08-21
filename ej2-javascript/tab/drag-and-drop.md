@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drag and drop in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: Drag and drop in ##Platform_Name## Tab | Syncfusion
+description: Learn how to support drag-and-drop interactions in the Syncfusion ##Platform_Name## Tab control for dynamic content movement.
 platform: ej2-javascript
 control: Drag and drop 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and drop in ##Platform_Name## Tab control
+# Drag and drop in ##Platform_Name## Tab
 
 The Tab component allows you to drag and drop any item by setting [allowDragAndDrop](../api/tab#allowdraganddrop) to **true**. Items can be reordered to any place by dragging and dropping them onto the desired location.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Toolbar integration in ##Platform_Name## Signature control | Syncfusion
-description: Learn here all about Toolbar integration in Syncfusion ##Platform_Name## Signature control of Syncfusion Essential JS 2 and more.
+title: How to integrate with toolbar in ##Platform_Name## Signature | Syncfusion
+description: Integrate the ##Platform_Name## Signature with the Toolbar control using the change event to toggle undo, redo, and clear actions.
 platform: ej2-javascript
 control: Toolbar integration 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar integration in ##Platform_Name## Signature control
+# How to integrate with toolbar in ##Platform_Name## Signature
 
 The Signature control integrates with the toolbar and the interaction performed using the `change` event of the toolbar. In that, [`canUndo`](https://ej2.syncfusion.com/documentation/api/signature/#canundo), [`canRedo`](https://ej2.syncfusion.com/documentation/api/signature/#canredo) and [`isEmpty`](https://ej2.syncfusion.com/documentation/api/signature/#isempty) methods were used to enable/disable undo, redo, and clear buttons.
 

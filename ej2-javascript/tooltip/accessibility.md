@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Tooltip control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Tooltip | Syncfusion
+description: Build accessible ##Platform_Name## Tooltip experiences with built-in WCAG 2.2, Section 508, WAI-ARIA roles, keyboard navigation, and screen reader support.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Tooltip control
+# Accessibility in ##Platform_Name## Tooltip
 
 The Tooltip control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

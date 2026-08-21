@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter List box Data Using TextBox in ##Platform_Name## List box control | Syncfusion
+title: How to filter ##Platform_Name## ListBox | Syncfusion
 description: Learn here all about Filter ListBox Data in Syncfusion ##Platform_Name## List box control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Filter ListBox
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to Filter ListBox Data Using TextBox Component
+# How to filter ListBox using TextBox in ##Platform_Name## ListBox
 
 This example demonstrates how to filter Syncfusion<sup style="font-size:70%">&reg;</sup> ListBox data based on input from a TextBox. Bind an input event listener to the TextBox to capture user input and filter the items in the ListBox. Within the event handler, use the [`filter`](../../api/list-box/#filter) method to update the ListBox items, ensuring that only those matching the input text are included.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Mention control | Syncfusion
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## Mention | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Mention by toggling the mention character prefix and configuring the suggestion popup behavior.
 platform: ej2-javascript
 control: Customization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in ##Platform_Name## Mention control
+# Customization in ##Platform_Name## Mention
 
 ## Show or hide mention character
 

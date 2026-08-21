@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set clear button in calendar in ##Platform_Name## Calendar control | Syncfusion
-description: Learn here all about Set clear button in calendar in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
+title: How to set a clear button in ##Platform_Name## Calendar | Syncfusion
+description: Add a custom clear button to the ##Platform_Name## Calendar footer in the created event to let users reset the selected value with one click.
 platform: ej2-javascript
 control: Set clear button in calendar 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set clear button in calendar in ##Platform_Name## Calendar control
+# How to set a clear button in ##Platform_Name## Calendar
 
 To configure `clear` button in Calendar UI, do the following:
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Auto hide/show expand collapse icon in ##Platform_Name## TreeView control | Syncfusion
-description: Learn here all about auto-hide/show expand collapse icon in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: How to auto hide or show expand collapse icon in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to auto-hide or show expand and collapse icons in the Syncfusion ##Platform_Name## TreeView control for cleaner layouts.
 platform: ej2-javascript
-control: Auto hide show expand collapse icon
+control: Auto hide/show expand collapse icon
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Auto hide/show expand collapse icon in ##Platform_Name## TreeView control
+# How to auto hide or show expand collapse icon in ##Platform_Name## TreeView
 
 You can display the expand icon by hovering the mouse over the TreeView, and hide the expand icon by moving the mouse away. Refer to the following code sample to automatically hide/show the expand/collapse icon using the mouse.
 

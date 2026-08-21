@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Set tooltip for tree nodes in ##Platform_Name## TreeView control | Syncfusion
-description: Learn here all about setting tooltips for tree nodes in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: How to set tooltip for tree nodes in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to add tooltips to TreeView nodes in the Syncfusion ##Platform_Name## TreeView control for extra context.
 platform: ej2-javascript
-control: Set tool tip for tree nodes
+control: Set tooltip for tree nodes
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set tooltip for tree nodes in ##Platform_Name## TreeView control
+# How to set tooltip for tree nodes in ##Platform_Name## TreeView
 
 The TreeView control allows you to set a tooltip for tree nodes using the [`tooltip`](../../api/treeview/fieldsSettingsModel/#tooltip) property. The following code example demonstrates how to set a tooltip for TreeView nodes.
 

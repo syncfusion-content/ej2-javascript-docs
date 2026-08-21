@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Variants in ##Platform_Name## Message control | Syncfusion
-description: Learn here all about Variants in Syncfusion ##Platform_Name## Message control of Syncfusion Essential JS 2 and more.
+title: Variants in ##Platform_Name## Message | Syncfusion
+description: Switch ##Platform_Name## Message appearance between Text, Outlined, and Filled variants to style severity with text color, border, or dark fill.
 platform: ej2-javascript
-control: Variants 
+control: Variants
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Variants in ##Platform_Name## Message control
+# Variants in ##Platform_Name## Message
 
-The Message has predefined appearance variants for different visual representations. The variants of the message can be changed based on the [variant](../api/message/#variant) property.
+The Message has predefined appearance variants for different visual representations. The variants of the message can be changed based on the [variant](../api/message/index-default#variant) property.
 
 The available variants are **Text**, **Outlined** and **Filled**. The default variant type for messages is **Text**.
 * **Text** - The severity is differentiated using a text color and a light background color.

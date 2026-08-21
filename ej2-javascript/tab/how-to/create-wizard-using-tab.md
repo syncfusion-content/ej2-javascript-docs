@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create wizard using tab in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Create wizard using tab in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: How to create wizard using tab in ##Platform_Name## Tab | Syncfusion
+description: Learn how to build a wizard experience with the Syncfusion ##Platform_Name## Tab control for guided step-based tasks.
 platform: ej2-javascript
 control: Create wizard using tab 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create wizard using tab in ##Platform_Name## Tab control
+# How to create wizard using tab in ##Platform_Name## Tab
 
 Tab items can be disabled dynamically by passing the index and boolean value to the [`enableTab`](../../api/tab#enabletab) method. You can also select an item from the tab by passing its index or HTML element to the [`select`](../../api/tab#select) method.
 

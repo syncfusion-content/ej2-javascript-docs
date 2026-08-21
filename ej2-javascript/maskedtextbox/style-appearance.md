@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style appearance in ##Platform_Name## Maskedtextbox control | Syncfusion
-description: Learn here all about Style appearance in Syncfusion ##Platform_Name## Maskedtextbox control of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ##Platform_Name## Input Mask | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Input Mask appearance by overriding CSS for the wrapper, input, hover, focus, and error states.
 platform: ej2-javascript
 control: Style appearance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style appearance in ##Platform_Name## Maskedtextbox control
+# Style and Appearance in ##Platform_Name## Input Mask
 
 The following content provides the exact CSS structure that can be used to modify the control’s appearance based on the user preference.
 

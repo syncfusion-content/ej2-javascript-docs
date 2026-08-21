@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Query builder control | Syncfusion
-description: Learn here all about Templates in Syncfusion ##Platform_Name## Query builder control of Syncfusion Essential JS 2 and more.
+title: Templates in ##Platform_Name## Query Builder UI | Syncfusion
+description: Customize the ##Platform_Name## Query Builder UI header and column layouts with templates using x-template, and define create, write, and destroy functions.
 platform: ej2-javascript
 control: Templates 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in ##Platform_Name## Query builder control
+# Templates in ##Platform_Name## Query Builder UI
 
 Templates allows users to define customized header and own user interface for columns.
 
@@ -48,7 +48,7 @@ In the following sample dropdown, splitbutton and button are used as the custom 
 
 ## Column Template
 
-Column Template allows you to define your own input widgets for columns. To implement [`template`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsModel/#template), you can define the following functions
+Column Template allows you to define your own input widgets for columns. To implement [`template`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsModel/index-default#template), you can define the following functions
 
 * `create`: Creates the custom component.
 * `write`: Wire events for the custom component.
@@ -116,7 +116,7 @@ Template allows you to define your own input widgets for columns. To implement t
 
 ## Rule Template
 
-Rule Template allows to define your own user interface for columns. To implement [`ruleTemplate`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsModel/#ruleTemplate), you can create the user interface using `x-template` and assign the values through `actionBegin` event.
+Rule Template allows to define your own user interface for columns. To implement [`ruleTemplate`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsModel#ruleTemplate), you can create the user interface using `x-template` and assign the values through `actionBegin` event.
 
 In the following sample, dropdown and slider are used as the custom component in the Age column and we have applied `greaterthanorequal` operator to this column.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 api migration in ##Platform_Name## Auto complete control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Auto complete control of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in ##Platform_Name## AutoComplete | Syncfusion
+description: Migrate AutoComplete APIs from Essential JS 1 to Syncfusion ##Platform_Name## Essential JS 2 with a side-by-side property, event, and method mapping.
 platform: ej2-javascript
 control: Ej1 api migration 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in ##Platform_Name## Auto complete control
+# EJ1 API Migration in ##Platform_Name## AutoComplete
 
 This article describes the API migration process of  AutoComplete component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 > MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use multiselection support in autocomplete, we suggest you to use MultiSelect component.
@@ -70,10 +70,10 @@ This article describes the API migration process of  AutoComplete component from
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *cssClass* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {cssClass:"cssClass" })` | **Property:** *cssClass* <br/> `let groupObj: AutoComplete = new AutoComplete({cssClass:"cssClass",});groupObj.appendTo('#vegetables');`|
-| **Height** | **Property:** *height* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {height:"300px" })`| **Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/api/auto-complete/#cssclass) property.** |
-| **showRoundedCorner**   | **Property:** *showRoundedCorner*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {showRoundedCorner:true })` | **Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/api/auto-complete/#cssclass) property.** |
+| **Height** | **Property:** *height* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {height:"300px" })`| **Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#cssclass) property.** |
+| **showRoundedCorner**   | **Property:** *showRoundedCorner*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {showRoundedCorner:true })` | **Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#cssclass) property.** |
 | **Width** | **Property:** *width* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {width:300px })`| **Property:** *width* <br/> `let groupObj: AutoComplete = new AutoComplete({width:"300px",});groupObj.appendTo('#vegetables');`|
-| **Visibility** | **Property:** *visible* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {visible:true })` | **Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/api/auto-complete/#cssclass) property.** |
+| **Visibility** | **Property:** *visible* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {visible:true })` | **Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#cssclass) property.** |
 
 ## Grouping
 
@@ -103,7 +103,7 @@ This article describes the API migration process of  AutoComplete component from
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-| **Default** | **Property:** *allowSorting* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {allowSorting: true,});` |  **Acheivable through [sortOrder](https://ej2.syncfusion.com/documentation/api/auto-complete/#sortorder) property** |
+| **Default** | **Property:** *allowSorting* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {allowSorting: true,});` |  **Acheivable through [sortOrder](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#sortorder) property** |
 | **Order of sorting** | **Property:** *sortOrder* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {sortOrder: "Ascending",});`|**Property:** *sortOrder*<br/> `let groupObj: AutoComplete = new AutoComplete({sortOrder: "sortOrder"});groupObj.appendTo('#vegetables');` |
 
 ## Accessibility
@@ -116,10 +116,10 @@ This article describes the API migration process of  AutoComplete component from
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------ | ----------- |
-|**Selecting particular value**| **Property**: *selectValueByKey* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {selectValueByKey: 1,});`|**Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/api/auto-complete/#cssclass) property.** |
+|**Selecting particular value**| **Property**: *selectValueByKey* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {selectValueByKey: 1,});`|**Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#cssclass) property.** |
 | **Selecting particular value** | **Property**: *value*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {value: data,});` | **Property:** *value*<br/> `let groupObj: AutoComplete = new AutoComplete({value: "data"});groupObj.appendTo('#vegetables');`|
 | **Selecting particular text** | **Property:** *text*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {text: "data",});` | **Not applicable** |
-| **Selecting particular value** |**Method:** *selectValueByKey*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {});`<br/><br/> `$("#autocomplete").selectValueByKey("key")`| **Acheivable through the [value](https://ej2.syncfusion.com/documentation/api/auto-complete/#value) property.**   |
+| **Selecting particular value** |**Method:** *selectValueByKey*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {});`<br/><br/> `$("#autocomplete").selectValueByKey("key")`| **Acheivable through the [value](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#value) property.**   |
 | **Selecting particular text** |**Method:** *selectValueByText* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {});`<br/><br/> `$("#autocomplete").selectValueByText("key")`|**Not applicable** |
 | **Select event** |**Event**: *select*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {select: "onSelect",});` | **Event:** *select* <br/> `let groupObj: AutoComplete = new AutoComplete({select: "onSelect"});groupObj.appendTo('#vegetables');`|
 
@@ -131,7 +131,7 @@ This article describes the API migration process of  AutoComplete component from
 | **Enable persistence** | **Property:** *enablePersistence*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {enablePersistence: true,});` | **Property:** *enablePersistence* <br/> `let groupObj: AutoComplete = new AutoComplete({enablePersistence: true});groupObj.appendTo('#vegetables');`|
 | **Loading icon** | **Property:** *showLoadingIcon* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {showLoadingIcon: true,});` | **By default,it is showing** |
 | **Read only** | **Property:** *readOnly* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {readOnly: true,});` | **Property:** *readOnly*  `let groupObj: AutoComplete = new AutoComplete({readOnly: true});groupObj.appendTo('#vegetables');`  |
-| **Disable** | **Method:** *disable*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {});`<br/><br/>`$("#autocomplete").ejAutoComplete("disable");` | **Achievable through [enabled](https://ej2.syncfusion.com/documentation/api/auto-complete/#enabled) property**  |
+| **Disable** | **Method:** *disable*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {});`<br/><br/>`$("#autocomplete").ejAutoComplete("disable");` | **Achievable through [enabled](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#enabled) property**  |
 
 ## Common
 

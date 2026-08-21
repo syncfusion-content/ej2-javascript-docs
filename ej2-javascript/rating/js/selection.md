@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## Rating control | Syncfusion
-description: Learn here all about Selection in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
+title: Selection in ##Platform_Name## Rating | Syncfusion
+description: Control ##Platform_Name## Rating selection with click, tap, or programmatic value updates, plus minimum and reset options for the rating scale.
 platform: ej2-javascript
 control: Selection 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in ##Platform_Name## Rating control
+# Selection in ##Platform_Name## Rating
 
 The rating control allows users to rate something using a visual scale, and the selection state can be changed by the user clicking or tapping on the stars in the rating scale or through code. The rating control has a minimum value and a reset button, and provides customization options for the selected rating value and selection behavior.
 

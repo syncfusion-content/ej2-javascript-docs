@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Open and close the Sidebar in ##Platform_Name## Sidebar control | Syncfusion
-description: Learn here all about Open and close the Sidebar in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: How to open and close the Sidebar in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to use the Syncfusion ##Platform_Name## Sidebar control to open and close panels with smooth interaction.
 platform: ej2-javascript
 control: Open and close the Sidebar
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open and close the Sidebar in ##Platform_Name## Sidebar control
+# How to open and close the Sidebar in ##Platform_Name## Sidebar
 
 Opening and closing the Sidebar can be achieved using built-in public methods.
 

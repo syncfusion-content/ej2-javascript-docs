@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Index in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Index in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: Index in ##Platform_Name## Menu | Syncfusion
+description: Learn how to use the Syncfusion ##Platform_Name## Menu control to build rich, interactive menu experiences.
 platform: ej2-javascript
-control: Index 
+control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in ##Platform_Name## Menu control
+# Index in ##Platform_Name## Menu
 
 The Menu is a graphical user interface that serves as navigation header for your application or site. It has the support to provide multi-level nested menu items.
 

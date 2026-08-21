@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Controls in ##Platform_Name## In place editor control | Syncfusion
-description: Learn here all about Controls in Syncfusion ##Platform_Name## In place editor control of Syncfusion Essential JS 2 and more.
+title: Controls in ##Platform_Name## In-place Editor | Syncfusion
+description: Render built-in inputs (TextBox, DatePicker, NumericTextBox) or inject AutoComplete, ComboBox, and more in ##Platform_Name## In-place Editor using type.
 platform: ej2-javascript
 control: Controls 
 publishingplatform: ##Platform_Name##
@@ -9,22 +9,22 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Controls in ##Platform_Name## In place editor control
+# Controls in ##Platform_Name## In-place Editor
 
-In-place Editor renders various controls based on the [type](../api/inplace-editor/inputType/) property and it have built-in and injectable controls. To use injectable controls, inject the required modules into `In-place Editor`. By default, the `type` property set to `Text` and render the `TextBox`.
+In-place Editor renders various controls based on the [type](../api/inplace-editor/inputType) property and it have built-in and injectable controls. To use injectable controls, inject the required modules into `In-place Editor`. By default, the `type` property set to `Text` and render the `TextBox`.
 
 The following table explains Injectable components module name and built-in components and their types.
 
 | **Injectable Components** | **Built in Components** |
 |-----------------------|---------------------|
-| [AutoComplete](../auto-complete/)  (`AutoComplete`)        | [TextBox](../textbox/)  (`Text`)             |
-| [ComboBox](../combo-box/)  (`ComboBox`)              | [DatePicker](../datepicker/)  (`Date`)        |
-| [MultiSelect](../multi-select/)   (`MultiSelect`)        | [DateTimePicker](../datetimepicker/)   (`DateTime`)     |
-| [TimePicker](../timepicker/)   (`Time`)         | [DropDownList](../drop-down-list/)  (`DropDownList`)      |
-| [DateRangePicker](../daterangepicker/)   (`DateRange`)       | [MaskedTextBox](../maskedtextbox/)   (`Mask`)      |
-| [Slider](../range-slider/)   (`Slider`)             | [NumericTextBox](../numerictextbox/)   (`Numeric`)    |
-| [Rte](../rich-text-editor/)     (`RTE`)              |                     |
-| [ColorPicker](../color-picker/)    (`Color`)       |                     |
+| [AutoComplete](../auto-complete)  (`AutoComplete`)        | [TextBox](../textbox)  (`Text`)             |
+| [ComboBox](../combo-box)  (`ComboBox`)              | [DatePicker](../datepicker)  (`Date`)        |
+| [MultiSelect](../multi-select)   (`MultiSelect`)        | [DateTimePicker](../datetimepicker)   (`DateTime`)     |
+| [TimePicker](../timepicker)   (`Time`)         | [DropDownList](../drop-down-list)  (`DropDownList`)      |
+| [DateRangePicker](../daterangepicker)   (`DateRange`)       | [MaskedTextBox](../maskedtextbox)   (`Mask`)      |
+| [Slider](../range-slider)   (`Slider`)             | [NumericTextBox](../numerictextbox)   (`Numeric`)    |
+| [Rte](../rich-text-editor)     (`RTE`)              |                     |
+| [ColorPicker](../color-picker)    (`Color`)       |                     |
 
 In the following sample, built-in and injectable based In-place Editor controls are rendered.
 
@@ -57,9 +57,9 @@ In the following sample, built-in and injectable based In-place Editor controls 
 
 ## Model configuration
 
-Control properties and events can be customized using the In-place Editor [model](../api/inplace-editor/#model) property.
+Control properties and events can be customized using the In-place Editor [model](../api/inplace-editor/index-default#model) property.
 
-In the following code, the [type](../api/inplace-editor/inputType/) defined as the `Date` and `DatePicker` properties are configured through [model](../api/inplace-editor/#model) property to customize the [DatePicker](../api/datepicker) control at In-place Editor.
+In the following code, the [type](../api/inplace-editor/inputType) defined as the `Date` and `DatePicker` properties are configured through [model](../api/inplace-editor/index-default#model) property to customize the [DatePicker](../api/datepicker) control at In-place Editor.
 
 ```ts
     model: {
@@ -87,4 +87,4 @@ editObj.appendTo('#element');
 
 ## See Also
 
-* [HTML5 components](./integration/)
+* [HTML5 components](./integration)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom value in ##Platform_Name## Multi select control | Syncfusion
-description: Learn here all about Custom value in Syncfusion ##Platform_Name## Multi select control of Syncfusion Essential JS 2 and more.
+title: Custom Value in ##Platform_Name## MultiSelect Dropdown | Syncfusion
+description: Allow users to add new options to the Syncfusion ##Platform_Name## MultiSelect Dropdown with allowCustomValue and a customValueSelection event.
 platform: ej2-javascript
 control: Custom value 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom value in ##Platform_Name## Multi select control
+# Custom Value in ##Platform_Name## MultiSelect Dropdown
 
 The MultiSelect allows user to add a new non-present option to the component value when [`allowCustomValue`](../api/multi-select/#allowcustomvalue) is enabled. while selecting the new custom value [`customValueSelection`](../api/multi-select/#customvalueselection) event will be triggered.
 

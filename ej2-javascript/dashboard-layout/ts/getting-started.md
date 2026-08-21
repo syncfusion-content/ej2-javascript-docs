@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Dashboard layout control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Dashboard layout control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Dashboard Layout | Syncfusion
+description: Learn how to get started with the Syncfusion JavaScript Dashboard Layout control. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
 control: Dashboard Layout
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Getting started in ##Platform_Name## Dashboard layout control
+# Getting Started with ##Platform_Name## Dashboard Layout
 
 This section explains the steps to create a simple Dashboard Layout and demonstrates the basic usage of the Dashboard Layout component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 

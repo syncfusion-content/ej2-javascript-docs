@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customize progress bar theme and sizing in ##Platform_Name## Toast control | Syncfusion
-description: Learn here all about Customize progress bar theme and sizing in Syncfusion ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more.
+title: How to customize the progress bar in ##Platform_Name## Toast | Syncfusion
+description: Customize ##Platform_Name## Toast progress bar theme and dimensions using custom CSS or the beforeOpen event.
 platform: ej2-javascript
-control: Customize progress bar theme and sizing 
+control: Customize progress bar theme and sizing
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize progress bar theme and sizing in ##Platform_Name## Toast control
+# How to customize the progress bar in ##Platform_Name## Toast
 
 By default, the progress bar appears based on the theme stylings and dimensions. You can customize the progress bar stylings using custom CSS or event functions.
 

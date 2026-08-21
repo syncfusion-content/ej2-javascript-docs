@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change switch state using toggle method in ##Platform_Name## Switch control | Syncfusion
-description: Learn here all about Change switch state using toggle method in Syncfusion ##Platform_Name## Switch control of Syncfusion Essential JS 2 and more.
+title: How to change Switch state using toggle method in ##Platform_Name## Toggle Switch Button | Syncfusion
+description: Learn how to programmatically change the ##Platform_Name## Toggle Switch Button state using the toggle method.
 platform: ej2-javascript
 control: Change switch state using toggle method 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change switch state using toggle method in ##Platform_Name## Switch control
+# How to change Switch state using toggle method in ##Platform_Name## Toggle Switch Button
 
 This section explains about how to toggle between the switch states using [`toggle`](../../api/switch/#toggle) method.
 

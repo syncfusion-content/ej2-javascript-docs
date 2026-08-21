@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Multi select control | Syncfusion
-description: Learn here all about Templates in Syncfusion ##Platform_Name## Multi select control of Syncfusion Essential JS 2 and more.
+title: Templates in ##Platform_Name## MultiSelect Dropdown | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## MultiSelect Dropdown list items, group title, selected value, header, and footer with templates.
 platform: ej2-javascript
 control: Templates 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in ##Platform_Name## Multi select control
+# Templates in ##Platform_Name## MultiSelect Dropdown
 
 The MultiSelect has been provided with several options to customize each list item, group title, selected value, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [Template engine](../common/template-engine) to compile and render the elements properly.
 

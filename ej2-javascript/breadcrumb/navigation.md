@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Navigation in ##Platform_Name## Breadcrumb control | Syncfusion
-description: Learn here all about Navigation in Syncfusion ##Platform_Name## Breadcrumb control of Syncfusion Essential JS 2 and more.
+title: Navigation in ##Platform_Name## Breadcrumb | Syncfusion
+description: Configure relative or absolute URLs in the Syncfusion ##Platform_Name## Breadcrumb and open links in a new tab or window.
 platform: ej2-javascript
 control: Navigation 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Navigation in ##Platform_Name## Breadcrumb control
+# Navigation in ##Platform_Name## Breadcrumb
 
 Breadcrumb navigations support you to provide relative or absolute URL for breadcrumb items, enable navigation for the last item of the Breadcrumb component, and open URL in a new tab or new page.
 

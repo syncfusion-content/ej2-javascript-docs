@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Dialog control | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Dialog | Syncfusion
+description: Style the ##Platform_Name## Dialog by overriding CSS for header, content, overlay, resize icon, close button, and footer button appearances.
 platform: ej2-javascript
 control: Style 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in ##Platform_Name## Dialog control
+# Style in ##Platform_Name## Dialog
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

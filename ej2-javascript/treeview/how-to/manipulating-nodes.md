@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Nodes Manipulation in ##Platform_Name## TreeView control | Syncfusion
-description: Learn here all about Nodes Manipulation in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: How to manipulate nodes in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to manipulate TreeView nodes in the Syncfusion ##Platform_Name## TreeView control for dynamic hierarchy updates.
 platform: ej2-javascript
 control: TreeView
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Nodes Manipulation in ##Platform_Name## TreeView Control
+# How to manipulate nodes in ##Platform_Name## TreeView
 
 The TreeView control provides Essential<sup style="font-size:70%">&reg;</sup> methods for dynamically managing nodes, offering the ability to create a highly interactive and customizable tree structure:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Show dialog with full screen in ##Platform_Name## Dialog control | Syncfusion
-description: Learn here all about Show dialog with full screen in Syncfusion ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more.
+title: How to show fullscreen Dialog in ##Platform_Name## Dialog | Syncfusion
+description: Display the ##Platform_Name## Dialog in fullscreen by passing true to the show method and control initial visibility with the visible property.
 platform: ej2-javascript
 control: Show dialog with full screen 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show dialog with full screen in ##Platform_Name## Dialog control
+# How to show Dialog with fullscreen in ##Platform_Name## Dialog
 
-You can show the dialog in fullscreen by passing `true` as argument to the dialog `show` method. By using [visible](../../api/dialog/#visible) property you can prevent the dialog from initially shown.
+You can show the dialog in fullscreen by passing `true` as argument to the dialog `show` method. By using [visible](https://ej2.syncfusion.com/documentation/api/dialog/index-default#visible) property you can prevent the dialog from initially shown.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize button appearance in ##Platform_Name## Button control | Syncfusion
-description: Learn here all about Customize button appearance in Syncfusion ##Platform_Name## Button control of Syncfusion Essential JS 2 and more.
+title: How to customize Button appearance in ##Platform_Name## | Syncfusion
+description: Learn how to customize the ##Platform_Name## Button appearance with CSS for background, text color, height, width, and corners.
 platform: ej2-javascript
 control: Customize button appearance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize button appearance in ##Platform_Name## Button control
+# How to customize Button appearance in ##Platform_Name## Button
 
 You can customize the appearance of the Button by using the Cascading Style Sheets (CSS). Define the CSS according to your requirement, and assign the class name to the [`cssClass`](../../api/button#cssclass) property. In the following code snippet the background color, text color, height, width, and sharp corner of the Button can be customized through the `e-custom` class for all states (hover, focus, and active).
 

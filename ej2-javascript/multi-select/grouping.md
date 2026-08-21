@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping in ##Platform_Name## Multi select control | Syncfusion
-description: Learn here all about Grouping in Syncfusion ##Platform_Name## Multi select control of Syncfusion Essential JS 2 and more.
+title: Grouping in ##Platform_Name## MultiSelect Dropdown | Syncfusion
+description: Group Syncfusion ##Platform_Name## MultiSelect Dropdown items by category using the groupBy field with inline or fixed group headers.
 platform: ej2-javascript
 control: Grouping 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grouping in ##Platform_Name## Multi select control
+# Grouping in ##Platform_Name## MultiSelect Dropdown
 
 The MultiSelect supports wrapping nested elements into a group based on different categories. The category of each list item can be mapped through the [groupBy](../api/multi-select/#fields) field in the data table. The group header is displayed both as inline and fixed headers. The fixed group header content is updated dynamically on scrolling the popup list with its category value.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Radio button control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Radio button control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Radio Button | Syncfusion
+description: Learn how the ##Platform_Name## Radio Button meets WCAG 2.2, Section 508, and WAI-ARIA accessibility standards with full keyboard support.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Radio button control
+# Accessibility in ##Platform_Name## Radio Button
 
 The Radio button component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

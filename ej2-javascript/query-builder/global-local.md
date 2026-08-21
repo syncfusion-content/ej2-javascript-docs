@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Global local in ##Platform_Name## Query builder control | Syncfusion
-description: Learn here all about Global local in Syncfusion ##Platform_Name## Query builder control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Query Builder UI | Syncfusion
+description: Localize the ##Platform_Name## Query Builder UI default text for Add Group, Add Condition, and operator labels by setting locale and a translation object.
 platform: ej2-javascript
 control: Global local 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Global local in ##Platform_Name## Query builder control
+# Localization in ##Platform_Name## Query Builder UI
 
 The `Localization` library allows you to localize default text content of the Query Builder. The Query Builder has static text that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `locale` value and translation object.
 

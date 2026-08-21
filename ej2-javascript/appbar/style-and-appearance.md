@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style and appearance in ##Platform_Name## Appbar control | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion ##Platform_Name## Appbar control of Syncfusion Essential JS 2 and more.
+title: Style and appearance in ##Platform_Name## Appbar | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## AppBar appearance with CSS classes, cssClass, and htmlAttributes for color and layout.
 platform: ej2-javascript
 control: Style and appearance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and appearance in ##Platform_Name## Appbar control
+# Style and appearance in ##Platform_Name## Appbar
 
 To modify the AppBar appearance, you need to override the default CSS of the AppBar component. Please find the list of CSS classes and their corresponding sections in the AppBar component. Also, you have an option to create your own custom theme for the controls using our [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Datepicker control | Syncfusion
-description: Learn here all about Globalization in Syncfusion ##Platform_Name## Datepicker control of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## DatePicker | Syncfusion
+description: Adapt ##Platform_Name## DatePicker to different cultures by loading CLDR data and configuring date format, week, and month names.
 platform: ej2-javascript
 control: Globalization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in ##Platform_Name## Datepicker control
+# Globalization in ##Platform_Name## DatePicker
 
 Globalization is the combination of  adapting the component to various languages by means of parsing and formatting the date or number [`Internationalization`](../common/internationalization) and also by adding cultural specific customizations and translating the text [`localization`](../common/localization)
 
@@ -87,7 +87,7 @@ loadCldr(
     );
 ```
 
-> The `Localization` library allows you to localize default text content of the DatePicker. The DatePicker component has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](../api/datepicker/#locale) value and translation object.
+> The `Localization` library allows you to localize default text content of the DatePicker. The DatePicker component has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/javascript/documentation/api/datepicker/index-default#locale) value and translation object.
 
 Locale keywords |Text
 -----|-----
@@ -95,7 +95,7 @@ today | Name of the button to choose Today date.
 placeholder | Hint to describe expected value in input element.
 
 * Before changing the culture other than `English`, ensure that locale text for the concerned culture is loaded through `load` method of
-[L10n](../api/base/l10n/#load) class.
+[L10n](../api/base/l10n#load) class.
 
 ```ts
 
@@ -111,7 +111,7 @@ L10n.load({
 });
 ```
 
-* Set the culture by using the [`locale`](../api/datepicker/#locale) property. The below code example, initialize the DatePicker component in `German` culture with corresponding localized text.
+* Set the culture by using the [`locale`](https://ej2.syncfusion.com/javascript/documentation/api/datepicker/index-default#locale) property. The below code example, initialize the DatePicker component in `German` culture with corresponding localized text.
 
 ```ts
 //Load the L10n from ej2-base
@@ -166,7 +166,7 @@ The following example demonstrates the DatePicker in `German` culture.
 ## Right-To-Left
 
 The DatePicker supports right-to-left functionality for languages like Arabic, Hebrew to displays the text in the right-to-left direction. Use
-[`enableRtl`](../api/datepicker/#enablertl) property to set the RTL direction.
+[`enableRtl`](https://ej2.syncfusion.com/javascript/documentation/api/datepicker/index-default#enablertl) property to set the RTL direction.
 
 ```ts
 
@@ -204,7 +204,7 @@ datepickerobject.appendTo('#element');
 ```
 
 The below code example demonstrates the DatePicker component in `Hebrew` culture and also explains how to set the localized text to
-the placeholder using `load` method of [L10n](../api/base/l10n/#load) class.
+the placeholder using `load` method of [L10n](../api/base/l10n#load) class.
 
 {% if page.publishingplatform == "typescript" %}
 

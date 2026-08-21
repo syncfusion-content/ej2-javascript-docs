@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Datetimepicker control | Syncfusion
-description: Learn here all about Globalization in Syncfusion ##Platform_Name## Datetimepicker control of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## DateTime Picker | Syncfusion
+description: Adapt ##Platform_Name## DateTime Picker to different cultures by loading CLDR data and configuring date, time, week, month, and meridian formats.
 platform: ej2-javascript
 control: Globalization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in ##Platform_Name## Datetimepicker control
+# Globalization in ##Platform_Name## DateTime Picker
 
 Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [`Internationalization`](../common/internationalization/), and also add culture specific customization and translation to the text [`localization`](../common/localization/).
 

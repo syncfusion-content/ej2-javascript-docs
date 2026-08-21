@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Date range in ##Platform_Name## Datepicker control | Syncfusion
-description: Learn here all about Date range in Syncfusion ##Platform_Name## Datepicker control of Syncfusion Essential JS 2 and more.
+title: Date Range in ##Platform_Name## DatePicker | Syncfusion
+description: Restrict ##Platform_Name## DatePicker values within a defined range using the min and max properties to set valid start and end date bounds.
 platform: ej2-javascript
 control: Date range 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Date range in ##Platform_Name## Datepicker control
+# Date Range in ##Platform_Name## DatePicker
 
-DatePicker provides an option to select a date value within a specified range by using the [`min`](../api/datepicker#min) and [`max`](../api/datepicker#max) properties. Always the min value has to be lesser than the max value.
+DatePicker provides an option to select a date value within a specified range by using the [`min`](https://ej2.syncfusion.com/javascript/documentation/api/datepicker/index-default#min) and [`max`](https://ej2.syncfusion.com/javascript/documentation/api/datepicker/index-default#max) properties. Always the min value has to be lesser than the max value.
 
 When the min and max properties are configured and the selected date value is out-of-range or invalid, then the model value will be set to `out of range` date value or `null` respectively with highlighted `error` class to indicates the date is out of range or invalid.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Strict Mode in ##Platform_Name## DatePicker Control | Syncfusion
-description: Learn here all about strict mode in Syncfusion ##Platform_Name## DatePicker Control, it's elements, and more.
+title: Strict Mode in ##Platform_Name## DatePicker | Syncfusion
+description: Use strictMode in ##Platform_Name## DatePicker to allow only valid date values within the configured min and max range in the textbox.
 platform: ej2-javascript
 control: Strict mode 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Strict Mode in ##Platform_Name## DatePicker Control
+# Strict Mode in ##Platform_Name## DatePicker
 
-The [`strictMode`](../api/datepicker/#strictmode) is an act, that allows the user to enter only the valid date within the specified min/max
+The [`strictMode`](https://ej2.syncfusion.com/javascript/documentation/api/datepicker/index-default#strictmode) is an act, that allows the user to enter only the valid date within the specified min/max
 range in textbox. If the date is invalid, then the component will stay with the previous value. Else, if the date is out of range, then the component will set the date to the min/max date.
 
 The following example demonstrates the DatePicker in `strictMode` with min/max range of 5th to 25th in a month of May. Here, it allows to enter

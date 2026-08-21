@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Items in ##Platform_Name## MultiColumn Combobox control | Syncfusion
-description: Checkout and learn about items in ##Platform_Name## MultiColumn Combobox control of Syncfusion Essential JS 2 and more.
+title: Items in ##Platform_Name## MultiColumn ComboBox | Syncfusion
+description: Configure the Syncfusion ##Platform_Name## MultiColumn ComboBox items with the text property to control the display value and selected item.
 platform: ej2-javascript
 control: Items
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Items in ##Platform_Name## MultiColumn ComboBox control
+# Items in ##Platform_Name## MultiColumn ComboBox
 
 ## Setting text
 

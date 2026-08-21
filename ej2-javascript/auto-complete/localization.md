@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Auto complete control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Auto complete control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## AutoComplete | Syncfusion
+description: Localize Syncfusion ##Platform_Name## AutoComplete static text such as noRecordsTemplate and actionFailureTemplate for any culture using the L10n library.
 platform: ej2-javascript
 control: Localization 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## Auto complete control
+# Localization in ##Platform_Name## AutoComplete
 
-The Localization library allows you to localize static text content of the [noRecordsTemplate](../api/auto-complete/#norecordstemplate) and [actionFailureTemplate](../api/auto-complete/#actionfailuretemplate) &nbsp;properties according to the culture currently assigned to the AutoComplete.
+The Localization library allows you to localize static text content of the [noRecordsTemplate](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#norecordstemplate) and [actionFailureTemplate](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#actionfailuretemplate) &nbsp;properties according to the culture currently assigned to the AutoComplete.
 
 | Locale key | en-US (default)  |
 |------|------|

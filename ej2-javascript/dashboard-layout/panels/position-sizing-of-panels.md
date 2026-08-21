@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Panel positioning in ##Platform_Name## Dashboard Layout | Syncfusion
-description: Learn here all about Position sizing of panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
+title: Panel Positioning in ##Platform_Name## Dashboard Layout | Syncfusion
+description: Position Syncfusion ##Platform_Name## Dashboard Layout panels with the row, col, sizeX, and sizeY properties to control placement and span in cells.
 platform: ej2-javascript
 control: Position sizing of panels
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Position Sizing of Panels in ##Platform_Name## Dashboard Layout Control
+# Position Sizing of Panels in ##Platform_Name## Dashboard Layout
 
 Panels are the basic building blocks of the Dashboard Layout control. They act as containers for the data to be visualized or presented. These panels can be positioned or resized for effective presentation of the data.
 

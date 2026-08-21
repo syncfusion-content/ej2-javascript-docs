@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Card image in ##Platform_Name## Card control | Syncfusion
-description: Learn here all about Card image in Syncfusion ##Platform_Name## Card control of Syncfusion Essential JS 2 and more.
+title: Card Image in ##Platform_Name## Card | Syncfusion
+description: Add images, captions, and dividers to Syncfusion ##Platform_Name## Card using the e-card-image, e-card-title, and e-card-separator classes.
 platform: ej2-javascript
 control: Card image 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Card image in ##Platform_Name## Card control
+# Card Image in ##Platform_Name## Card
 
 ## Images
 

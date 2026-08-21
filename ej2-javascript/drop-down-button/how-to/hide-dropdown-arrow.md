@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hide dropdown arrow in ##Platform_Name## Drop down button control | Syncfusion
-description: Learn here all about Hide dropdown arrow in Syncfusion ##Platform_Name## Drop down button control of Syncfusion Essential JS 2 and more.
+title: How to hide dropdown arrow in ##Platform_Name## Dropdown Menu | Syncfusion
+description: Learn how to hide the dropdown arrow of the ##Platform_Name## Dropdown Menu by adding the e-caret-hide class via cssClass.
 platform: ej2-javascript
 control: Hide dropdown arrow 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hide dropdown arrow in ##Platform_Name## Drop down button control
+# How to hide dropdown arrow in ##Platform_Name## Dropdown Menu
 
 You can hide the dropdown arrow from the DropDownButton by adding class `e-caret-hide` to DropDownButton element using [`cssClass`](../../api/drop-down-button/#cssclass) property.
 

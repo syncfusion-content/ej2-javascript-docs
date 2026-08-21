@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Filtering in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: Filtering in ##Platform_Name## Dropdown List | Syncfusion
+description: Filter Syncfusion ##Platform_Name## Dropdown List items as you type with allowFiltering, supplying results via the filtering event and updateData method.
 platform: ej2-javascript
 control: Filtering 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in ##Platform_Name## Drop down list control
+# Filtering in ##Platform_Name## Dropdown List
 
 The DropDownList has built-in support to filter data items when [`allowFiltering`](../api/drop-down-list/#allowfiltering) is enabled. The filter
 operation starts as soon as you start typing characters in the search box.

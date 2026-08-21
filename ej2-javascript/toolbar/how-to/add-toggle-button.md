@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add toggle button in ##Platform_Name## Toolbar control | Syncfusion
-description: Learn here all about Add toggle button in Syncfusion ##Platform_Name## Toolbar control of Syncfusion Essential JS 2 and more.
+title: How to add toggle button in ##Platform_Name## Toolbar | Syncfusion
+description: Learn how to add toggle buttons to the Syncfusion ##Platform_Name## Toolbar control for action-driven command states.
 platform: ej2-javascript
 control: Add toggle button 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add toggle button in ##Platform_Name## Toolbar control
+# How to add toggle button in ##Platform_Name## Toolbar
 
 JavaScript Toolbar supports adding a toggle button by using the [`template`](../../api/toolbar/item#template) property. Refer to the steps below:
 

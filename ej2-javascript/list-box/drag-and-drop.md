@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drag and drop in ##Platform_Name## List box control | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion ##Platform_Name## List box control of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in ##Platform_Name## ListBox | Syncfusion
+description: Drag and drop items within or between Syncfusion ##Platform_Name## ListBox controls using allowDragAndDrop and drag/drop events.
 platform: ej2-javascript
 control: Drag and drop 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and drop in ##Platform_Name## List box control
+# Drag and Drop in ##Platform_Name## ListBox
 
 The ListBox has support to drag an item or a group of selected items and drop it within the same list box or into another list box.
 

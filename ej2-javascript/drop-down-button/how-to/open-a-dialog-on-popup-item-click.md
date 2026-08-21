@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Open a dialog on popup item click in ##Platform_Name## Drop down button control | Syncfusion
-description: Learn here all about Open a dialog on popup item click in Syncfusion ##Platform_Name## Drop down button control of Syncfusion Essential JS 2 and more.
+title: How to open a dialog on popup item click in ##Platform_Name## Dropdown Menu | Syncfusion
+description: Learn how to open a ##Platform_Name## Dialog when a ##Platform_Name## Dropdown Menu popup item is clicked using the select event.
 platform: ej2-javascript
 control: Open a dialog on popup item click 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open a dialog on popup item click in ##Platform_Name## Drop down button control
+# How to open a dialog on popup item click in ##Platform_Name## Dropdown Menu
 
 This section explains about how to open a dialog on DropdownButton popup item click. This can be achieved by handling dialog open in [`select`](../../api/drop-down-button/#select) event of the DropdownButton.
 

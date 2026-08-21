@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Show dates of other months in ##Platform_Name## Calendar control | Syncfusion
-description: Learn here all about Show dates of other months in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
+title: How to show other month dates in ##Platform_Name## Calendar | Syncfusion
+description: Reveal hidden dates from adjacent months in the ##Platform_Name## Calendar view by overriding the e-other-month and e-month-hide CSS classes.
 platform: ej2-javascript
 control: Show dates of other months 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show dates of other months in ##Platform_Name## Calendar control
+# How to show other month dates in ##Platform_Name## Calendar
 
 The following example demonstrates how to show dates of other months.
 

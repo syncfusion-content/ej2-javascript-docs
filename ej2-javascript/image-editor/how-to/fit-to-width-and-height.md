@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Fit to Width and Height in ##Platform_Name## Image editor | Syncfusion
-description: Learn how to fit the image to the editor's width or height in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
+title: How to fit width/height in ##Platform_Name## Image Editor | Syncfusion
+description: Programmatically zoom the ##Platform_Name## Image Editor to fit an image to the editor container's width or height using the zoom method in button click events.
 platform: ej2-javascript
 control: Fit to Width and Height
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Fit Image to Editor Width and Height
+# How to fit to width and height in ##Platform_Name## Image Editor
 
 The Image Editor's [`zoom`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#zoom) method to fit an image to the editor by width or height. Programmatically increase the zoom level until the image dimension matches the editor container's width or height. 
 

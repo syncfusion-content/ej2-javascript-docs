@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Action buttons in ##Platform_Name## Toast control | Syncfusion
-description: Learn here all about Action buttons in Syncfusion ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more.
+title: Action Buttons in ##Platform_Name## Toast | Syncfusion
+description: Add action buttons to ##Platform_Name## Toast using the buttons property and bind click events for custom callbacks.
 platform: ej2-javascript
-control: Action buttons 
+control: Action buttons
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Action buttons in ##Platform_Name## Toast control
+# Action Buttons in ##Platform_Name## Toast
 
-You can include action buttons to the toast control by adding the [buttons](../api/toast/#buttons) property. The collection of Essential<sup style="font-size:70%">&reg;</sup> JS 2 button models can be bound to the `model` property inside the buttons property. You can also include the click event callback function for each button.
+You can include action buttons to the toast control by adding the [buttons](../api/toast/index-default#buttons) property. The collection of Essential<sup style="font-size:70%">&reg;</sup> JS 2 button models can be bound to the `model` property inside the buttons property. You can also include the click event callback function for each button.
 
 {% if page.publishingplatform == "typescript" %}
 

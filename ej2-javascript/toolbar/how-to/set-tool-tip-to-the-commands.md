@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set tool tip to the commands in ##Platform_Name## Toolbar control | Syncfusion
-description: Learn here all about Set tool tip to the commands in Syncfusion ##Platform_Name## Toolbar control of Syncfusion Essential JS 2 and more.
+title: How to set tooltip on Toolbar commands in ##Platform_Name## Toolbar | Syncfusion
+description: Learn how to add tooltips to commands in the Syncfusion ##Platform_Name## Toolbar control for clearer action guidance.
 platform: ej2-javascript
 control: Set tool tip to the commands 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set tooltip for the commands in ##Platform_Name## Toolbar control
+# How to set tooltip on Toolbar commands in ##Platform_Name## Toolbar
 
 The [`tooltipText`](../../api/toolbar/item#tooltiptext) property of the Toolbar item is used to set the HTML Tooltip for the commands that can be viewed as hint texts on mouse hover.
 

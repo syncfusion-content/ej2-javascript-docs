@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## Auto complete control | Syncfusion
-description: Learn here all about Data binding in Syncfusion ##Platform_Name## Auto complete control of Syncfusion Essential JS 2 and more.
+title: Data binding in ##Platform_Name## AutoComplete | Syncfusion
+description: Bind Syncfusion ##Platform_Name## AutoComplete data from local arrays or remote services like OData, OData V4, and Web API via DataManager.
 platform: ej2-javascript
 control: Data binding 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in ##Platform_Name## Auto complete control
+# Data binding in ##Platform_Name## AutoComplete
 
-The AutoComplete loads the data either from local data sources or remote data services using the [`dataSource`](../api/auto-complete/#datasource) property. It supports the data type of array or `DataManager`.
+The AutoComplete loads the data either from local data sources or remote data services using the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#datasource) property. It supports the data type of array or `DataManager`.
 
 The AutoComplete also supports different kind of data services such as OData, OData V4, Web API and data formats such as XML, JSON, JSONP with the help of DataManager Adaptors.
 
@@ -61,7 +61,7 @@ The AutoComplete has support to load array of primitive data such as strings and
 
 ### Array of object
 
-The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [`fields`](../api/auto-complete/#fields) property.
+The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [`fields`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#fields) property.
 
 In the following example, `Game` column from complex data have been mapped to the `value` field.
 
@@ -94,7 +94,7 @@ In the following example, `Game` column from complex data have been mapped to 
 
 ### Array of complex object
 
-The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [`fields`](../api/auto-complete/#fields) property.
+The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [`fields`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#fields) property.
 
 In the following example, `Country.Name` column from complex data have been mapped to the `value` field.
 
@@ -127,7 +127,7 @@ In the following example, `Country.Name` column from complex data have been ma
 
 ## Bind to remote data
 
-The AutoComplete supports retrieval of data from remote data services with the help of `DataManager` component. The [`Query`](../api/auto-complete/#query) property is used to fetch data from the database and bind it to the AutoComplete.
+The AutoComplete supports retrieval of data from remote data services with the help of `DataManager` component. The [`Query`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#query) property is used to fetch data from the database and bind it to the AutoComplete.
 
 The following sample displays the first 6 contacts from the `Customers` table of the `Northwind` data service.
 
@@ -160,6 +160,6 @@ The following sample displays the first 6 contacts from the `Customers` table of
 
 ## See Also
 
-* [How to load data using template](./templates/#item-template)
+* [How to load data using template](./templates#item-template)
 * [How to group the data using header](./grouping)
 * [How to filter the bound data](./filtering)

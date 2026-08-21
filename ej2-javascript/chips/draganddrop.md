@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drag and drop in ##Platform_Name## Chips control | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion ##Platform_Name## Chips control of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in ##Platform_Name## Chips | Syncfusion
+description: Learn how to enable drag and drop in the ##Platform_Name## Chips control with allowDragAndDrop, dragStart, and dragStop events.
 platform: ej2-javascript
 control: Drag and drop
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and drop in ##Platform_Name## Chips control
+# Drag and Drop in ##Platform_Name## Chips
 
 The Chips control enables drag and drop functionality for any chip when [`allowDragAndDrop`](../api/chips#allowdraganddrop) is set to **true**. Chips can be dragged and dropped within the same or across external ChipList containers.
 

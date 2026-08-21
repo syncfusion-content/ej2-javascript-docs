@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Label and size in ##Platform_Name## Radio button control | Syncfusion
-description: Learn here all about Label and size in Syncfusion ##Platform_Name## Radio button control of Syncfusion Essential JS 2 and more.
+title: Label and Size in ##Platform_Name## Radio Button | Syncfusion
+description: Learn how to set a label and its position on the ##Platform_Name## Radio Button, and switch between the default and small sizes.
 platform: ej2-javascript
 control: Label and size 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Label and size in ##Platform_Name## Radio button control
+# Label and Size in ##Platform_Name## Radio Button
 
 This section explains the different sizes and labels.
 

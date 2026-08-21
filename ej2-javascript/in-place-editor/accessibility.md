@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Inplace editor component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Inplace editor component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## In-place Editor | Syncfusion
+description: Build accessible ##Platform_Name## In-place Editor apps with WCAG 2.2, Section 508, screen reader, keyboard navigation, and right-to-left support.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Inplace editor component
+# Accessibility in ##Platform_Name## In-place Editor
 
 The Inplace editor component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

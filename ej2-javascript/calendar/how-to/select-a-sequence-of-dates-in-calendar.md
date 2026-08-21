@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Select a sequence of dates in calendar in ##Platform_Name## Calendar control | Syncfusion
-description: Learn here all about Select a sequence of dates in calendar in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
+title: How to select a sequence in ##Platform_Name## Calendar | Syncfusion
+description: Auto-select an entire week of dates in ##Platform_Name## Calendar using the values property with isMultiSelection and Moment.js week math.
 platform: ej2-javascript
 control: Select a sequence of dates in calendar 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Select a sequence of dates in calendar in ##Platform_Name## Calendar control
+# How to select a sequence in ##Platform_Name## Calendar
 
 The following example demonstrates how to select the week dates of chosen date in the Calendar using [`values`](../../api/calendar#values) property, when [`multiSelection`](../../api/calendar#ismultiselection) property is enabled. Methods of Moment.js is used in this sample for calculating the start and end of week from the selected date.
 

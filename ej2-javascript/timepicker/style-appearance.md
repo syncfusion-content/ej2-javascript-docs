@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style appearance in ##Platform_Name## Timepicker control | Syncfusion
-description: Learn here all about Style appearance in Syncfusion ##Platform_Name## Timepicker control of Syncfusion Essential JS 2 and more.
+title: Style appearance in ##Platform_Name## TimePicker | Syncfusion
+description: Customize the ##Platform_Name## TimePicker wrapper, input, and popup appearance using the exact CSS structure provided in this guide.
 platform: ej2-javascript
 control: Style appearance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style appearance in ##Platform_Name## Timepicker control
+# Style appearance in ##Platform_Name## TimePicker
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

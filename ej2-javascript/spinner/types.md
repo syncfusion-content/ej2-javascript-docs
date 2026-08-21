@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Spinner control | Syncfusion
-description: Learn here all about Types in Syncfusion ##Platform_Name## Spinner control of Syncfusion Essential JS 2 and more.
+title: Types in ##Platform_Name## Spinner | Syncfusion
+description: Switch the ##Platform_Name## Spinner type to Material, Fabric, or Bootstrap by passing the type option to the setSpinner method.
 platform: ej2-javascript
 control: Types 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Types in ##Platform_Name## Spinner control
+# Types in ##Platform_Name## Spinner
 
 By default, the Spinner is loaded in the applicable Essential<sup style="font-size:70%">&reg;</sup> JS 2 component based on the theme imported into the page. Based on the theme, the type is set to the Spinner.
 The available types are:

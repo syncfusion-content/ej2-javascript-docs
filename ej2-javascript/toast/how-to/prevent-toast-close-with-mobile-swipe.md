@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Prevent toast close with mobile swipe in ##Platform_Name## Toast control | Syncfusion
-description: Learn here all about Prevent toast close with mobile swipe in Syncfusion ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more.
+title: How to prevent swipe to close toast in ##Platform_Name## Toast | Syncfusion
+description: Prevent ##Platform_Name## Toast from closing on mobile swipe by setting the beforeClose argument cancel to true for swipe type.
 platform: ej2-javascript
-control: Prevent toast close with mobile swipe 
+control: Prevent toast close with mobile swipe
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent toast close with mobile swipe in ##Platform_Name## Toast control
+# How to prevent swipe to close toast in ##Platform_Name## Toast
 
 You can prevent the toast close with mobile swipe action by setting [beforeClose](../../api/toast/#beforeClose) argument cancel value to true while argument type as a swipe. The following code shows how to prevent toast close with mobile swipe.
 

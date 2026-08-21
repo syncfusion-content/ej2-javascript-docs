@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Search on filtering in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Search on filtering in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: How to limit search in ##Platform_Name## Dropdown List | Syncfusion
+description: Limit the number of items returned by filtering in Syncfusion ##Platform_Name## Dropdown List to control long result sets in the popup.
 platform: ej2-javascript
 control: Search on filtering 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Search on filtering in ##Platform_Name## Drop down list control
+# How to limit the search result on filtering in ##Platform_Name## Dropdown List
 
 The following example demonstrates about how to set limit the search result on filtering.
 

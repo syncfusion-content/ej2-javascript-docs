@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Groups in ##Platform_Name## Textbox control | Syncfusion
-description: Learn here all about Groups in Syncfusion ##Platform_Name## Textbox control of Syncfusion Essential JS 2 and more.
+title: Groups in ##Platform_Name## TextBox | Syncfusion
+description: Group ##Platform_Name## TextBox with icons, floating labels, and helper elements together using the prefixTemplate and suffixTemplate properties.
 platform: ej2-javascript
 control: Groups 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Groups in ##Platform_Name## Textbox control
+# Groups in ##Platform_Name## TextBox
 
 The following section explains you the steps required to create TextBox with `icon` and `floating label`.
 

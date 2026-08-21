@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Stepper control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Es5 getting started with ##Platform_Name## Stepper | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Stepper control in ES5 apps with a simple setup flow.
 platform: ej2-javascript
 control: Stepper
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Stepper control
+# Es5 getting started in ##Platform_Name## Stepper
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 

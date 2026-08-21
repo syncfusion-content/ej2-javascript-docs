@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Achieve file upload programmatically in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Achieve file upload programmatically in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: How to upload programmatically in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to trigger an upload programmatically in the Syncfusion ##Platform_Name## File Upload using the upload and getFilesData public methods without user interaction.
 platform: ej2-javascript
 control: Achieve file upload programmatically 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Achieve file upload programmatically in ##Platform_Name## Uploader control
+# How to upload programmatically in ##Platform_Name## File Upload
 
 You can upload a file programmatically using the [upload](../../api/uploader/#upload) method. Get the selected files data from the [getFilesData](../../api/uploader/#getfilesdata) public method in uploader.
 

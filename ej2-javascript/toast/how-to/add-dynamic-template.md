@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Add dynamic template in ##Platform_Name## Toast control | Syncfusion
-description: Learn here all about Add dynamic template in Syncfusion ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more.
+title: How to add dynamic template in ##Platform_Name## Toast | Syncfusion
+description: Change ##Platform_Name## Toast templates dynamically for each new toast by updating properties in the show method call.
 platform: ej2-javascript
-control: Add dynamic template 
+control: Add dynamic template
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add dynamic template in ##Platform_Name## Toast control
+# How to add dynamic template in ##Platform_Name## Toast
 
-Toast supports to change templates dynamically with displaying in multiple toasts. You can change the toast properties while calling in the [show](../../api/toast/#show) method.
+Toast supports to change templates dynamically with displaying in multiple toasts. You can change the toast properties while calling in the [show](../../api/toast/index-default#show) method.
 
 {% if page.publishingplatform == "typescript" %}
 

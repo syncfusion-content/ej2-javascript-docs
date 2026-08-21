@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Tab control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Tab | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Tab control and configure it for TypeScript apps quickly.
 platform: ej2-javascript
 control: Tab 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Tab control
+# Getting started in ##Platform_Name## Tab
 
 This section briefly explains about how to create a simple [JavaScript Tab](https://www.syncfusion.com/javascript-ui-controls/js-tabs) using TypeScript and configure the Tab header content using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 

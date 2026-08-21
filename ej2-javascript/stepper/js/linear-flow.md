@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Linear Flow in  ##Platform_Name## Stepper control | Syncfusion
-description:  Checkout and learn about Linear Flow with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Linear Flow in ##Platform_Name## Stepper | Syncfusion
+description: Learn how to configure linear flow in the Syncfusion ##Platform_Name## Stepper control for ordered, guided navigation.
 platform: ej2-javascript
 control: Stepper
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Linear flow in ##Platform_Name## Stepper control
+# Linear flow in ##Platform_Name## Stepper
 
 The Stepper control enables users to progress sequentially through each step, ensuring navigation from one step to the next in a linear way by setting the [linear](https://ej2.syncfusion.com/javascript/documentation/api/stepper#linear) property to `true`. The default value is `false` allowing navigation between any steps and vice versa.
 

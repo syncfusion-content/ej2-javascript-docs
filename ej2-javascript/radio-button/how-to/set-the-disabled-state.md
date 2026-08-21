@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set the disabled state in ##Platform_Name## Radio button control | Syncfusion
-description: Learn here all about Set the disabled state in Syncfusion ##Platform_Name## Radio button control of Syncfusion Essential JS 2 and more.
+title: How to set the disabled state in ##Platform_Name## Radio Button | Syncfusion
+description: Learn how to disable the ##Platform_Name## Radio Button by setting the disabled property to true to block user selection.
 platform: ej2-javascript
 control: Set the disabled state 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set the disabled state in ##Platform_Name## Radio button control
+# How to set the disabled state in ##Platform_Name## Radio Button
 
 RadioButton component can be enabled/disabled by giving [`disabled`](../../api/radio-button#disabled) property. To disable RadioButton component, the `disabled` property can be set as `true`.
 

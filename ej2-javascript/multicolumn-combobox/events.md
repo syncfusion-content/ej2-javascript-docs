@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in ##Platform_Name## MultiColumn Combobox control | Syncfusion
-description: Checkout and learn about events with ##Platform_Name## MultiColumn Combobox control of Syncfusion Essential JS 2 and more.
+title: Events in ##Platform_Name## MultiColumn ComboBox | Syncfusion
+description: Handle Syncfusion ##Platform_Name## MultiColumn ComboBox lifecycle events like actionBegin and actionComplete during sorting, filtering, or grouping.
 platform: ej2-javascript
 control: Events
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## MultiColumn ComboBox control
+# Events in ##Platform_Name## MultiColumn ComboBox
 
 This section describes the multicolumn combobox events that will be triggered when appropriate actions are performed. The following events are available in the multicolumn combobox control.
 

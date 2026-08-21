@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Moving panels in ##Platform_Name## Dashboard Layout control | Syncfusion
-description: Learn here all about Moving panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
+title: Moving Panels in ##Platform_Name## Dashboard Layout | Syncfusion
+description: Move Syncfusion ##Platform_Name## Dashboard Layout panels to a new cell with the movePanel method, passing the panel id, row, and column.
 platform: ej2-javascript
 control: Moving panels
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Moving panels in ##Platform_Name## Dashboard Layout control
+# Moving Panels in ##Platform_Name## Dashboard Layout
 
 Panels can be moved programmatically in the Dashboard Layout in addition to drag-and-drop. Use the DashboardLayout instance method [`movePanel`](../../api/dashboard-layout#movepanel) as shown below:
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customize menu using events in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Customize menu using events in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: How to customize menu using events in ##Platform_Name## Menu | Syncfusion
+description: Learn how to customize the Syncfusion ##Platform_Name## Menu control with events for advanced interaction handling.
 platform: ej2-javascript
-control: Customize menu using events 
+control: Customize menu using events
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize menu using events in ##Platform_Name## Menu control
+# How to customize menu using events in ##Platform_Name## Menu
 
 The Menu provides a set of [`events`](../../api/menu#events) to enable users to customize it.
 

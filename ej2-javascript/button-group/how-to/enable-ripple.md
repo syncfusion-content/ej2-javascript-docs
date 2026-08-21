@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable ripple in ##Platform_Name## Button group control | Syncfusion
-description: Learn here all about Enable ripple in Syncfusion ##Platform_Name## Button group control of Syncfusion Essential JS 2 and more.
+title: How to enable ripple in ##Platform_Name## Button Group | Syncfusion
+description: Learn how to enable the ripple effect in the ##Platform_Name## Button Group by importing rippleEffect from ej2-base.
 platform: ej2-javascript
 control: Enable ripple 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable ripple in ##Platform_Name## Button group control
+# How to enable ripple in ##Platform_Name## Button Group
 
 Ripple can be enabled by importing `rippleEffect` method from `ej2-base` and initialize rippleEffect with `.e-btn-group` element, and selector as `e-btn`.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize input and anchor elements in ##Platform_Name## Button control | Syncfusion
-description: Learn here all about Customize input and anchor elements in Syncfusion ##Platform_Name## Button control of Syncfusion Essential JS 2 and more.
+title: How to customize input and anchor in ##Platform_Name## | Syncfusion
+description: Learn how to style input and anchor elements as ##Platform_Name## Button variants such as links and primary actions.
 platform: ej2-javascript
 control: Customize input and anchor elements 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize input and anchor elements in ##Platform_Name## Button control
+# How to customize input and anchor elements in ##Platform_Name## Button
 
 You can customize the appearance of the input and anchor elements using predefined styles through the class property. In the following code
 snippet, the input element is customized as a link Button by setting the `e-btn e-link` class, and the anchor element is customized as a

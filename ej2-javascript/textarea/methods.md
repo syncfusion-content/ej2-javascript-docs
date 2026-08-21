@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Methods in ##Platform_Name## TextArea control | Syncfusion
-description: Checkout and learn about methods in the ##Platform_Name## TextArea control of Syncfusion Essential JS 2 and more.
+title: Methods in ##Platform_Name## TextArea | Syncfusion
+description: Call ##Platform_Name## TextArea methods to read, set, focus, blur, and reset the value of the multiline input from script or external code.
 platform: ej2-javascript
 control: Methods 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Methods in ##Platform_Name## TextArea Control
+# Methods in ##Platform_Name## TextArea
 
 This section outlines the methods available for interacting with the TextArea control.
 

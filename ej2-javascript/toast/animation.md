@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Toast control | Syncfusion
-description: Learn here all about Animation in Syncfusion ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more.
+title: Animation in ##Platform_Name## Toast | Syncfusion
+description: Animate ##Platform_Name## Toast show and hide with custom effects from the Animation library; defaults are FadeIn and FadeOut.
 platform: ej2-javascript
-control: Animation 
+control: Animation
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation in ##Platform_Name## Toast control
+# Animation in ##Platform_Name## Toast
 
 The toast control supports custom animations for both shows and hide actions from the provided animation option of the `Animation` library.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Change orientation in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Change orientation in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: How to change orientation in ##Platform_Name## Menu | Syncfusion
+description: Learn how to change orientation with the Syncfusion ##Platform_Name## Menu control for adaptive layouts and navigation patterns.
 platform: ej2-javascript
-control: Change orientation 
+control: Change orientation
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change orientation in ##Platform_Name## Menu control
+# How to change orientation in ##Platform_Name## Menu
 
 Orientation in menu items can be changed horizontally or vertically using the [`orientation`](../../api/menu#orientation) property. By default, it is horizontally aligned.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Multi select control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Multi select control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## MultiSelect Dropdown | Syncfusion
+description: Learn how the Syncfusion ##Platform_Name## MultiSelect Dropdown meets WCAG 2.2, Section 508, and ADA with full keyboard and screen reader support.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Multi select control
+# Accessibility in ##Platform_Name## MultiSelect Dropdown
 
 The MultiSelect component has been designed, keeping in mind the `WAI-ARIA` specifications, and applies the WAI-ARIA roles, states, and properties along with `keyboard support`. This component is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 

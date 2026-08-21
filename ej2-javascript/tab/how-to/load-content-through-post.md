@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load content through post in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Load content through post in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: How to load content through Ajax in ##Platform_Name## Tab | Syncfusion
+description: Learn how to load tab content through POST requests in the Syncfusion ##Platform_Name## Tab control for dynamic data scenarios.
 platform: ej2-javascript
 control: Load content through post 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Load content through post in ##Platform_Name## Tab control
+# How to load content through Ajax in ##Platform_Name## Tab
 
 The Tab supports to load external contents through AJAX library. Refer to the following steps.
 

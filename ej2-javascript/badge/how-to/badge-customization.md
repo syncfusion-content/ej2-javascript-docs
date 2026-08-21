@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Badge control | Syncfusion
-description: Learn here all about Badge control customization in Syncfusion ##Platform_Name## Badge control of Syncfusion Essential JS 2 and more.
+title: How to customize badge in ##Platform_Name## Badge | Syncfusion
+description: Learn how to customize ##Platform_Name## Badge color, size, and position by overriding default CSS for tailored notification styling in your app.
 platform: ej2-javascript
-control: Badge customization 
+control: Badge customization
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in ##Platform_Name## Badge control
+# How to customize badge in ##Platform_Name## Badge
 
 ## Color customization
 

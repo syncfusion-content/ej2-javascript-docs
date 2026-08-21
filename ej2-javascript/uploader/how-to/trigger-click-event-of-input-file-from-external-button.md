@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Trigger click event of input file from external button in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Trigger click event of input file from external button in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: How to trigger input in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to trigger the input file click event in the Syncfusion ##Platform_Name## File Upload from an external button so the file dialog opens programmatically.
 platform: ej2-javascript
 control: Trigger click event of input file from external button 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Trigger click event of input file from external button in ##Platform_Name## Uploader control
+# How to trigger input in ##Platform_Name## File Upload
 
 Click event of input file from the external button can be triggered using the `click` event of button. In the following sample, you can find the triggered click event of input file from **Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Button**.
 

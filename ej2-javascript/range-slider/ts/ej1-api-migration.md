@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 api migration in ##Platform_Name## Range Slider control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Ej1 API Migration in ##Platform_Name## Range Slider | Syncfusion
+description: Migrate ##Platform_Name## Range Slider APIs from Essential JS 1 to Essential JS 2 with a clear mapping of properties, methods, and behavioral changes.
 platform: ej2-javascript
 control: Ej1 api migration 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in ##Platform_Name## Range Slider control
+# Ej1 API Migration in ##Platform_Name## Range Slider
 
 This article describes the API migration process of Range Slider control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2
 

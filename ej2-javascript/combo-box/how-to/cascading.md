@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cascading in ##Platform_Name## Combo box control | Syncfusion
-description: Learn here all about Cascading in Syncfusion ##Platform_Name## Combo box control of Syncfusion Essential JS 2 and more.
+title: How to configure cascading in ##Platform_Name## ComboBox | Syncfusion
+description: Configure a cascading Syncfusion ##Platform_Name## ComboBox where the parent's change event loads the child's data and dataBind reflects updates.
 platform: ej2-javascript
 control: Cascading 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cascading in ##Platform_Name## Combo box control
+# How to configure cascading in ##Platform_Name## ComboBox
 
-The cascading ComboBox is a series of ComboBox, where the value of one ComboBox depends upon  another's value. This can be configured by using the [`change`](../../api/combo-box/#change) event of the parent ComboBox. Within that change event handler, data has to be loaded to the child ComboBox based on the selected value of the parent ComboBox.
+The cascading ComboBox is a series of ComboBox, where the value of one ComboBox depends upon  another's value. This can be configured by using the [`change`](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#change) event of the parent ComboBox. Within that change event handler, data has to be loaded to the child ComboBox based on the selected value of the parent ComboBox.
 
-The following example, shows the cascade behavior of country, state, and city ComboBox. Here, the [`dataBind`](../../api/combo-box/#databind) method is used to reflect the property changes immediately to the ComboBox.
+The following example, shows the cascade behavior of country, state, and city ComboBox. Here, the [`dataBind`](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#databind) method is used to reflect the property changes immediately to the ComboBox.
 
 {% if page.publishingplatform == "typescript" %}
 

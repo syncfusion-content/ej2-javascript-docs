@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: How to add tooltip in ##Platform_Name## Dropdown List | Syncfusion
+description: Show a Syncfusion ##Platform_Name## Tooltip on hover for each Dropdown List option to display extra information about the item.
 platform: ej2-javascript
 control: Tooltip 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip in ##Platform_Name## Drop down list control
+# How to show options with tooltip in ##Platform_Name## Dropdown List
 
 You can achieve this behavior by using `ej2-tooltip` component. When the mouse hover on the DropDownList option that tooltip display some details related to hovered list item.
 

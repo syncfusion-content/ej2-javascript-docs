@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Mention control | Syncfusion
-description: Learn here all about Templates in Syncfusion ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more.
+title: Templates in ##Platform_Name## Mention | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Mention suggestion items, display value, and data loading indicator with template support.
 platform: ej2-javascript
 control: Templates 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in ##Platform_Name## Mention control
+# Templates in ##Platform_Name## Mention
 
 The Mention has been provided with several options to customize each suggestion list item, display item, and data loading indication.
 

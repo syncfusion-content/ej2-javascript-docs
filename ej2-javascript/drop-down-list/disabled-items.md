@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disabled Items in ##Platform_Name## DropDownList control | Syncfusion
-description: Learn here all about Disabled Items in Syncfusion ##Platform_Name## DropDownList control of Syncfusion Essential JS 2 and more.
+title: Disabled Items in ##Platform_Name## Dropdown List | Syncfusion
+description: Disable individual Syncfusion ##Platform_Name## Dropdown List items by mapping the disabled field, preventing selection while keeping them visible.
 platform: ej2-javascript
 control: Disabled Items 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disabled Items in ##Platform_Name## DropDownList control
+# Disabled Items in ##Platform_Name## Dropdown List
 
 The DropDownList provides options for individual items to be either in an enabled or disabled state for specific scenarios. The category of each list item can be mapped through the [disabled](../api/drop-down-list/#fields) field in the data table. Once an item is disabled, it cannot be selected as a value for the component. To configure the disabled item columns, use the `fields.disabled` property.
 

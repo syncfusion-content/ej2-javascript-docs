@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Draw in ##Platform_Name## Signature control | Syncfusion
-description: Learn here all about Draw in Syncfusion ##Platform_Name## Signature control of Syncfusion Essential JS 2 and more.
+title: Draw in ##Platform_Name## Signature | Syncfusion
+description: Draw a ##Platform_Name## Signature on canvas using moveTo and lineTo to connect points and produce the signature stroke.
 platform: ej2-javascript
 control: Draw 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Draw in ##Platform_Name## Signature control
+# Draw in ##Platform_Name## Signature
 
 ## Draw
 

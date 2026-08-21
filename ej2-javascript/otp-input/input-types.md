@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Input Types in ##Platform_Name## OTP Input control | Syncfusion
-description:  Checkout and learn about Input Types with ##Platform_Name## OTP Input control of Syncfusion Essential JS 2 and more.
+title: Input Types in ##Platform_Name## OTP Input | Syncfusion
+description: Set the type of the Syncfusion ##Platform_Name## OTP Input to number for numeric OTP codes or text for alphanumeric codes when configuring the input.
 platform: ej2-javascript
 control: OTP Input
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Input Types in ##Platform_Name## OTP Input control
+# Input Types in ##Platform_Name## OTP Input
 
 ## Types
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add items in ##Platform_Name## List box control | Syncfusion
-description: Learn here all about Add items in Syncfusion ##Platform_Name## List box control of Syncfusion Essential JS 2 and more.
+title: Add Items in ##Platform_Name## ListBox | Syncfusion
+description: Add a single item or a list of items to the Syncfusion ##Platform_Name## ListBox dynamically using the addItems method.
 platform: ej2-javascript
 control: Add items 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add items in ##Platform_Name## List box control
+# How to Add Items in ##Platform_Name## ListBox
 
 To add an item or multiple items, [`addItems`](../../api/list-box/#additems) method can be used. In the following example, the `Bugatti Veyron Super Sport` and `SSC Ultimate Aero` items will be added while clicking `Add Items` button.
 

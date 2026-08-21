@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Open and close contextmenu in ##Platform_Name## Context menu control | Syncfusion
-description: Learn here all about Open and close contextmenu in Syncfusion ##Platform_Name## Context menu control of Syncfusion Essential JS 2 and more.
+title: How to open and close contextmenu in ##Platform_Name## Context menu | Syncfusion
+description: Open and close the Syncfusion ##Platform_Name## Context menu programmatically at a specific position with the open and close methods.
 platform: ej2-javascript
 control: Open and close contextmenu 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open and close contextmenu in ##Platform_Name## Context menu control
+# How to open and close contextmenu in ##Platform_Name## Context menu
 
 ContextMenu can be opened and closed programmatically whenever required by using the open and close methods.
 

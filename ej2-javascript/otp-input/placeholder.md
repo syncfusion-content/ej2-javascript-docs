@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Placeholder in ##Platform_Name## OTP Input control | Syncfusion
-description:  Checkout and learn about Placeholder with ##Platform_Name## OTP Input control of Syncfusion Essential JS 2 and more.
+title: Placeholder in ##Platform_Name## OTP Input | Syncfusion
+description: Show a hint character or text in the Syncfusion ##Platform_Name## OTP Input boxes by setting the placeholder property so users know the expected input.
 platform: ej2-javascript
 control: OTP Input
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Placeholder in ##Platform_Name## OTP Input control
+# Placeholder in ##Platform_Name## OTP Input
 
 The placeholder in OTP Input specifies the text that is shown as a hint or placeholder until the user enters a value in the input field. It acts as a guidance for the users regarding the expected input format or purpose of the input field.
 

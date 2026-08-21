@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animation in  ##Platform_Name## Stepper control | Syncfusion
-description:  Checkout and learn about Animation with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Animation in ##Platform_Name## Stepper | Syncfusion
+description: Learn how to apply animation effects in the Syncfusion ##Platform_Name## Stepper control for smoother guided transitions.
 platform: ej2-javascript
 control: Stepper
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation in ##Platform_Name## Stepper control
+# Animation in ##Platform_Name## Stepper
 
 The Stepper progress state can be animated, smoothly transitioning from one step to another. You can customize the animation's `duration` and `delay` by using the [animation](https://ej2.syncfusion.com/javascript/documentation/api/stepper/#animation) property.
 

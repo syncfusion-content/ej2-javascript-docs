@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Combo box control | Syncfusion
-description: Learn here all about Filtering in Syncfusion ##Platform_Name## Combo box control of Syncfusion Essential JS 2 and more.
+title: Filtering in ##Platform_Name## ComboBox | Syncfusion
+description: Filter Syncfusion ##Platform_Name## ComboBox items as you type with allowFiltering, supplying results via the filtering event and updateData method.
 platform: ej2-javascript
 control: Filtering 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in ##Platform_Name## Combo box control
+# Filtering in ##Platform_Name## ComboBox
 
 The ComboBox has built-in support to filter data items when `allowFiltering` is enabled. The filter operation starts as soon as you start typing characters in the component.
 
-To display filtered items in the popup, filter the required data and return it to the ComboBox via [updateData](../api/combo-box/#updatedata) method by using the [filtering](../api/combo-box/#filtering) event.
+To display filtered items in the popup, filter the required data and return it to the ComboBox via updateData method by using the [filtering](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#filtering) event.
 
 The following sample illustrates how to query the data source and pass the data to the ComboBox through the `updateData` method in `filtering` event.
 
@@ -145,7 +145,7 @@ The following example shows how to perform case-sensitive filter.
 
 ## Diacritics Filtering
 
-The ComboBox supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](../api/combo-box/#ignoreaccent) is enabled.
+The ComboBox supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#ignoreaccent) is enabled.
 
 In the following sample,data with diacritics are bound as dataSource for ComboBox.
 
@@ -178,7 +178,7 @@ In the following sample,data with diacritics are bound as dataSource for ComboBo
 
 ## Debounce delay
 
-You can use the [debounceDelay](../api/combo-box/#debouncedelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience.By default, a DebounceDelay of 300ms is set. If you wish to disable this feature entirely, you can set it to 0ms.
+You can use the [debounceDelay](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#debouncedelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience.By default, a DebounceDelay of 300ms is set. If you wish to disable this feature entirely, you can set it to 0ms.
 
 {% if page.publishingplatform == "typescript" %}
 

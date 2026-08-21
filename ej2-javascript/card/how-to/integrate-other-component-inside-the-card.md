@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Integrate component in card for ##Platform_Name## using Syncfusion
-description: Learn here all about Integrate other component inside the card in Syncfusion ##Platform_Name## Card control of Syncfusion Essential JS 2 and more.
+title: Integrate component in Card in ##Platform_Name## | Syncfusion
+description: Embed any Syncfusion control inside Syncfusion ##Platform_Name## Card content to build composite layouts, like a To-Do list with ListView.
 platform: ej2-javascript
 control: Integrate other component inside the card 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate component inside card in ##Platform_Name## Card control
+# How to integrate component in Card in ##Platform_Name## Card
 
 Any component can be integrated inside the card element to create composite UI layouts. In this example, the ListView component is placed inside the card content area to demonstrate a To-Do list implementation.
 

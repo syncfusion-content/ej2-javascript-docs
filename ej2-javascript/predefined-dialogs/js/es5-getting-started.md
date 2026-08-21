@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Predefined dialogs control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Predefined Dialogs | Syncfusion
+description: Get started with ##Platform_Name## Predefined dialogs using ES5 script and style references, and render alert, confirm, and prompt via the DialogUtility helper.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Predefined dialogs control
+# Getting started with ##Platform_Name## Predefined Dialogs
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button and demonstrate the basic usage of the Button control in a JavaScript application.
 

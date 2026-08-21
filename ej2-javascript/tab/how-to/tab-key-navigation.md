@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tab key navigation in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Tab key navigation in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: How to enable tab key navigation in ##Platform_Name## Tab | Syncfusion
+description: Learn how to enable keyboard navigation in the Syncfusion ##Platform_Name## Tab control for accessibility and usability.
 platform: ej2-javascript
 control: Tab key navigation 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tab key navigation in ##Platform_Name## Tab control
+# How to enable tab key navigation in ##Platform_Name## Tab
 
 The [`tabIndex`](../api/tab/tabItem/#tabindex) property of a Tab item enables tab key navigation for that specific item. When you assign a positive value to the [`tabIndex`](../api/tab/tabItem/#tabindex) property, users can switch focus between tab items using the Tab or Shift+Tab keys. By default, users can only switch between tab items using arrow keys.
 

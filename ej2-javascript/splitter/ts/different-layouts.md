@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Different layouts in ##Platform_Name## Splitter control | Syncfusion
-description: Learn here all about Different layouts in Syncfusion ##Platform_Name## Splitter control of Syncfusion Essential JS 2 and more.
+title: Different Layouts in ##Platform_Name## Splitter | Syncfusion
+description: Build code-editor and Outlook-style layouts in Syncfusion ##Platform_Name## Splitter with multiple and nested panes using TypeScript modules.
 platform: ej2-javascript
 control: Different layouts 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Different layouts in ##Platform_Name## Splitter control
+# Different Layouts in ##Platform_Name## Splitter
 
 The Splitter control enables creation of layouts with multiple, nested resizable panes.
 

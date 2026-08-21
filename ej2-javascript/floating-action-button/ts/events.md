@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in ##Platform_Name## Floating action button control | Syncfusion
-description: Learn here all about Events in Syncfusion ##Platform_Name## Floating action button control of Syncfusion Essential JS 2 and more.
+title: Events in ##Platform_Name## Floating Action Button | Syncfusion
+description: Learn the available ##Platform_Name## Floating Action Button events such as created, clicked, and onOpen to extend the control.
 platform: ej2-javascript
 control: Events 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## Floating action button control
+# Events in ##Platform_Name## Floating Action Button
 
 This section explains the available events in Floating Action Button control.
 

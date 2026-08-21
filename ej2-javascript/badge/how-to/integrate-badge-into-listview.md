@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Integrate Badge into ListView in ##Platform_Name## Badge Control | Syncfusion
-description: Learn here all about Integrate Badge into ListView in Syncfusion ##Platform_Name## Badge control of Syncfusion Essential JS 2 and more.
+title: Integrate badge into ListView in ##Platform_Name## Badge | Syncfusion
+description: Learn how to integrate ##Platform_Name## Badge into ListView to indicate new notifications with color based on priority and auto-sized badges.
 platform: ej2-javascript
 control: Integrate badge into ListView
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate ##Platform_Name## Badge control into ListView control 
+# How to integrate badge into ListView in ##Platform_Name## Badge
 
 The badges can be integrated with the `ListView` control to indicate new notification with color based on priority.
 

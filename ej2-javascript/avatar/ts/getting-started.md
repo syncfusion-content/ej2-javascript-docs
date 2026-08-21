@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Avatar control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Avatar control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Avatar | Syncfusion
+description: Learn how to get started with the Syncfusion JavaScript Avatar control. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,8 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-
-# Getting started in ##Platform_Name## Avatar control
+# Getting Started with ##Platform_Name## Avatar
 
 This section explains the steps to create a simple Avatar and demonstrates the basic usage of the Avatar component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 

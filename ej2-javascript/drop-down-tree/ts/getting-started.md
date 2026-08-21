@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## DropDown Tree control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## DropDown Tree control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Dropdown Tree | Syncfusion
+description: Set up a simple Syncfusion ##Platform_Name## Dropdown Tree using the Essential JS 2 quickstart-webpack seed and configure webpack for development.
 platform: ej2-javascript
 control: DropDown Tree
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with ##Platform_Name## DropDown Tree control
+# Getting Started with ##Platform_Name## Dropdown Tree
 
 This section explains the steps to create a simple DropDown Tree and demonstrates the basic usage of the DropDown Tree component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 

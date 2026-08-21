@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Tab | Syncfusion
+description: Learn how to localize the Syncfusion ##Platform_Name## Tab control for multilingual and region-aware interfaces.
 platform: ej2-javascript
 control: Localization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## Tab control
+# Localization in ##Platform_Name## Tab
 
 The localization library allows you to localize the default text content of the Tabs to different cultures using the [`locale`](../api/tab#locale) property. In the Tab control, only the close button's tooltip text will be localized based on the culture. The close button is shown on the tab header when the [`showCloseButton`](../api/tab#showclosebutton) property is enabled.
 

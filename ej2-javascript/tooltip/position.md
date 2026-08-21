@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Position in ##Platform_Name## Tooltip control | Syncfusion
-description: Learn here all about Position in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
+title: Position in ##Platform_Name## Tooltip | Syncfusion
+description: Position the ##Platform_Name## Tooltip at any of 12 anchor points around the target, with tip pointer alignment, mouse trailing, and dynamic refresh support.
 platform: ej2-javascript
 control: Position
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Position in ##Platform_Name## Tooltip control
+# Position in ##Platform_Name## Tooltip
 
 Tooltips can be attached to 12 static locations around the target. When initializing the Tooltip, you can set the [`position`](../api/tooltip#position) property with any one of the following values:
 

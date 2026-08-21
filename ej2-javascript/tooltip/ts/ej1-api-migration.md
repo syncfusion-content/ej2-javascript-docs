@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 api migration in ##Platform_Name## Tooltip control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in ##Platform_Name## Tooltip | Syncfusion
+description: Migrate ##Platform_Name## Tooltip APIs from the v1 release to the v2 release, including position, animation, sticky mode, mouse trail, opensOn, and show/hide methods.
 platform: ej2-javascript
 control: Ej1 api migration 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in ##Platform_Name## Tooltip control
+# EJ1 API Migration in ##Platform_Name## Tooltip
 
 This article describes the API migration process of Tooltip component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2
 

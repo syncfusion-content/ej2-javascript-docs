@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adornments in ##Platform_Name## NumericTextBox Control | Syncfusion
-description: Learn how to add adornments in Syncfusion ##Platform_Name## NumericTextBox control of Syncfusion Essential JS 2 and more.
+title: Adornments in ##Platform_Name## Numeric Textbox | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Numeric Textbox using prependTemplate and appendTemplate for currency symbols, unit labels, or action icons.
 platform: ej2-javascript
 control: Adornments
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adornments in ##Platform_Name## NumericTextBox control
+# Adornments in ##Platform_Name## Numeric Textbox
 
 Adornments allow you to add custom elements before or after the numeric textbox using the `prependTemplate` and `appendTemplate` properties. These elements can include currency symbols, unit labels, or action icons to provide context and quick actions without affecting numeric behavior or float label functionality.
 

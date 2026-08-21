@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change the color of the textbox based on its value in ##Platform_Name## Textbox control | Syncfusion
-description: Learn here all about Change the color of the textbox based on its value in Syncfusion ##Platform_Name## Textbox control of Syncfusion Essential JS 2 and more.
+title: How to change color by value in ##Platform_Name## TextBox | Syncfusion
+description: Change the ##Platform_Name## TextBox color based on its value by validating the input with a regular expression inside the keyup event handler.
 platform: ej2-javascript
 control: Change the color of the textbox based on its value 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change the color of the textbox based on its value in ##Platform_Name## Textbox control
+# How to change color by value in ##Platform_Name## TextBox
 
 You can change the color of the TextBox by validating its value using regular expression in the `keyup` event for predicting the numeric values as demonstrated in the following code sample.
 

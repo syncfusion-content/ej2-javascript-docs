@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Data binding in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: Data binding in ##Platform_Name## Dropdown List | Syncfusion
+description: Bind Syncfusion ##Platform_Name## Dropdown List data from local arrays or remote services like OData, OData V4, and Web API via DataManager.
 platform: ej2-javascript
 control: Data binding 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in ##Platform_Name## Drop down list control
+# Data binding in ##Platform_Name## Dropdown List
 
 The DropDownList loads the data either from local data sources or remote data services using the [dataSource](../api/drop-down-list/#datasource) property. It supports the data type of `array` or `DataManager`.
 

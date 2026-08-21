@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## Breadcrumb control | Syncfusion
-description: Learn here all about Data binding in Syncfusion ##Platform_Name## Breadcrumb control of Syncfusion Essential JS 2 and more.
+title: Data binding in ##Platform_Name## Breadcrumb | Syncfusion
+description: Generate Syncfusion ##Platform_Name## Breadcrumb items from the current URL or by binding data through the items and url properties.
 platform: ej2-javascript
 control: Data binding 
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in ##Platform_Name## Breadcrumb control
+# Data binding in ##Platform_Name## Breadcrumb
 
-The Breadcrumb supports to generate items based on the current URL by default. You can set the [`items`](https://ej2.syncfusion.com/documentation/api/breadcrumb/#items) property or [`url`](https://ej2.syncfusion.com/documentation/api/breadcrumb/#url) property to generate the items.
+The Breadcrumb supports to generate items based on the current URL by default. You can set the [`items`](https://ej2.syncfusion.com/documentation/api/breadcrumb#items) property or [`url`](https://ej2.syncfusion.com/documentation/api/breadcrumb#url) property to generate the items.
 
 ## Items based on current Url
 
-The breadcrumb items can be generated based on the current URL of the page when the user does not specify the breadcrumb items using [`items`](https://ej2.syncfusion.com/documentation/api/breadcrumb/#items) property. The following example shows the breadcrumb items generated from the provided URL in the component.
+The breadcrumb items can be generated based on the current URL of the page when the user does not specify the breadcrumb items using [`items`](https://ej2.syncfusion.com/documentation/api/breadcrumb#items) property. The following example shows the breadcrumb items generated from the provided URL in the component.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -48,7 +48,7 @@ The breadcrumb items can be generated based on the current URL of the page when 
 
 ## Absolute Url
 
-The breadcrumb items can be generated based on the [`url`](https://ej2.syncfusion.com/documentation/api/breadcrumb/#url) property in the component when the user does not specify the breadcrumb items using [`items`](https://ej2.syncfusion.com/documentation/api/breadcrumb/#items) property. The following example shows the breadcrumb items generated from the provided url in the component.
+The breadcrumb items can be generated based on the [`url`](https://ej2.syncfusion.com/documentation/api/breadcrumb#url) property in the component when the user does not specify the breadcrumb items using [`items`](https://ej2.syncfusion.com/documentation/api/breadcrumb#items) property. The following example shows the breadcrumb items generated from the provided url in the component.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -79,7 +79,7 @@ The breadcrumb items can be generated based on the [`url`](https://ej2.syncfusio
 
 ## Customize text when generated items using Url
 
-The breadcrumb items text can be customized by using the [`beforeItemRender`](https://ej2.syncfusion.com/documentation/api/breadcrumb/#beforeitemrender) event. In the following example, `bind-to-location` text was changed as `location`.
+The breadcrumb items text can be customized by using the [`beforeItemRender`](https://ej2.syncfusion.com/documentation/api/breadcrumb#beforeitemrender) event. In the following example, `bind-to-location` text was changed as `location`.
 
 {% if page.publishingplatform == "typescript" %}
 

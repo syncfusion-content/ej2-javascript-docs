@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 api migration in ##Platform_Name## TreeView control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: Ej1 API migration in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to migrate existing API usage to the Syncfusion ##Platform_Name## TreeView control with a smoother upgrade path.
 platform: ej2-javascript
 control: Ej1 api migration 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in ##Platform_Name## TreeView control
+# Ej1 API migration in ##Platform_Name## TreeView
 
 This article describes the API migration process of TreeView control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Index in ##Platform_Name## Context menu control | Syncfusion
-description: Learn here all about Index in Syncfusion ##Platform_Name## Context menu control of Syncfusion Essential JS 2 and more.
+title: Index in ##Platform_Name## Context menu | Syncfusion
+description: Explore the Syncfusion ##Platform_Name## Context menu with separators, icons, templates, multilevel nesting, and accessibility.
 platform: ej2-javascript
 control: Index 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in ##Platform_Name## Context menu control
+# Index in ##Platform_Name## Context menu
 
 The ContextMenu is a graphical user interface that appears on the user right click/touch hold action. It has the support to provide nested level menu items.
 

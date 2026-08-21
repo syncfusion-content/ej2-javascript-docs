@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set custom animation in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Set custom animation in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: How to set custom animation in ##Platform_Name## Tab | Syncfusion
+description: Learn how to set custom animations in the Syncfusion ##Platform_Name## Tab control for richer transitions.
 platform: ej2-javascript
 control: Set custom animation 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set custom animation in ##Platform_Name## Tab control
+# How to set custom animation in ##Platform_Name## Tab
 
 The Tab control supports custom animations for both previous and next actions using the `Animation` library. You can customize the animation using the [`animation`](../../api/tab#animation) property, which allows you to set [`easing`](../../api/tab/tabActionSettings#easing), [`duration`](../../api/tab/tabActionSettings#duration), and various other [`effects`](../../api/tab/tabActionSettings#effect).
 

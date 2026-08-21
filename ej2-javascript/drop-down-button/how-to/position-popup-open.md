@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Position popup open in ##Platform_Name## Drop down button control | Syncfusion
-description: Learn here all about Position popup open in Syncfusion ##Platform_Name## Drop down button control of Syncfusion Essential JS 2 and more.
+title: How to position popup open in ##Platform_Name## Dropdown Menu | Syncfusion
+description: Learn how to change the ##Platform_Name## Dropdown Menu popup open position in the open event by setting top and left values.
 platform: ej2-javascript
 control: Position popup open 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Position popup open in ##Platform_Name## Drop down button control
+# How to position popup open in ##Platform_Name## Dropdown Menu
 
 Popup open position can be changed according to the requirement. Popup open position can be changed in [`open`](../../api/drop-down-button/#open) event by setting `top` and `left` for the popup element.
 

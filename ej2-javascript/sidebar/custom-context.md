@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom context in ##Platform_Name## Sidebar control | Syncfusion
-description: Learn here all about Custom context in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: Custom context in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to customize the context and behavior of the Syncfusion ##Platform_Name## Sidebar control for application-specific navigation.
 platform: ej2-javascript
 control: Custom context
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom context in ##Platform_Name## Sidebar control
+# Custom context in ##Platform_Name## Sidebar
 
 The Sidebar has a flexible option that allows it to be initialized and targeted to any HTML element alongside the main content of a web page.
 

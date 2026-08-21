@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dynamic Tooltip content with html in ##Platform_Name## Tooltip control | Syncfusion
-description: Learn here all about Dynamic Tooltip content with html in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
+title: How to load HTML in Tooltip in ##Platform_Name## Tooltip | Syncfusion
+description: Load dynamic HTML content (bold, italic, links) into the ##Platform_Name## Tooltip by toggling display inside the beforeRender event.
 platform: ej2-javascript
 control: Dynamic Tooltip content with html
 publishingplatform: ##Platform_Name##
@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dynamic content with html element in ##Platform_Name## Tooltip control
+# How to load dynamic HTML in Tooltip content in ##Platform_Name## Tooltip
 
-The Tooltip control can load HTML content using the [`content`](../content/) template.
+The Tooltip control can load HTML content using the [`content`](../content) template.
 
 The HTML tags such as `<div>`, `<span>`, `bold`, `italic`, `underline`, etc., can be used. Style attributes can also be applied with HTML tags.
 
 In the example below, Bold, Italic, Underline, and Anchor tags are used.
 
-When using HTML elements as content for a `Tooltip`, initially set the content element to `display: none`. Then, within the [`beforeRender`](../../api/tooltip/#beforerender) event, you can make the element visible again using the following code:
+When using HTML elements as content for a `Tooltip`, initially set the content element to `display: none`. Then, within the [`beforeRender`](../../api/tooltip#beforerender) event, you can make the element visible again using the following code:
 
 ```ts
     document.getElementById('content').style.display = 'block';

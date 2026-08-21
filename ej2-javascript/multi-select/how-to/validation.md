@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in ##Platform_Name## Multi select control | Syncfusion
-description: Learn here all about Validation in Syncfusion ##Platform_Name## Multi select control of Syncfusion Essential JS 2 and more.
+title: Validation in ##Platform_Name## MultiSelect Dropdown | Syncfusion
+description: Validate the Syncfusion ##Platform_Name## MultiSelect Dropdown inside a form using FormValidator rules and a customPlacement error message.
 platform: ej2-javascript
 control: Validation 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation in ##Platform_Name## Multi select control
+# Validation in ##Platform_Name## MultiSelect Dropdown
 
 MultiSelect component inside form can be validated through `FormValidator`. Add the name attribute of component to be validated inside rules of FormValidator. Error message after validation can be placed in DOM based on the requirement through customPlacement.
 

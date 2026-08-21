@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with JavaScript DateRangePicker | Syncfusion
+title: Getting Started with ##Platform_Name## DateRangePicker | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Daterangepicker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## DateRangePicker control
+# Getting Started with ##Platform_Name## DateRangePicker
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 DateRangePicker and demonstrate the basic usage of the DateRangePicker control in a JavaScript application.
 

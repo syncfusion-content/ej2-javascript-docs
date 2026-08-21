@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize the datetimepicker day header in ##Platform_Name## Datetimepicker control | Syncfusion
-description: Learn here all about Customize the datetimepicker day header in Syncfusion ##Platform_Name## Datetimepicker control of Syncfusion Essential JS 2 and more.
+title: How to set day header in ##Platform_Name## DateTime Picker | Syncfusion
+description: Change the day name format in the ##Platform_Name## DateTime Picker header using the dayHeaderFormat property with Short, Narrow, Abbreviated, or Wide options.
 platform: ej2-javascript
 control: Customize the datetimepicker day header 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the datetimepicker day header in ##Platform_Name## Datetimepicker control
+# How to set day header in ##Platform_Name## DateTime Picker
 
 You can change the format of the day that to be displayed in header using [`dayHeaderFormat`](../../api/datetimepicker#dayheaderformat)property. By default, the format is `Short`.
 

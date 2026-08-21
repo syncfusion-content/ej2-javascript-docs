@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize popup width in ##Platform_Name## Drop down button control | Syncfusion
-description: Learn here all about Customize popup width in Syncfusion ##Platform_Name## Drop down button control of Syncfusion Essential JS 2 and more.
+title: How to customize popup width in ##Platform_Name## Dropdown Menu | Syncfusion
+description: Learn how to set a custom ##Platform_Name## Dropdown Menu popup width using the popupWidth property with CSS units or pixels.
 platform: ej2-javascript
 control: Customize popup width 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize popup width in ##Platform_Name## Drop down button control
+# How to customize popup width in ##Platform_Name## Dropdown Menu
 
 The dropdown popup width can be customized using the [popupWidth](../../api/drop-down-button/#popupwidth) property of the DropDownButton component. By default, the popup's width adjusts based on the content. However, this property allows setting a specific width, ensuring consistency and alignment with design requirements. The width can be specified using common CSS units or as a raw pixel value.
 

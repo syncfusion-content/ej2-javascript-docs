@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validate slider using FormValidator in ##Platform_Name## Range Slider | Syncfusion
-description: Learn here all about validating the slider using FormValidator in the Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Validate with formvalidator in ##Platform_Name## Range Slider | Syncfusion
+description: Validate ##Platform_Name## Range Slider values inside a form using Syncfusion FormValidator together with the changed event for live validation.
 platform: ej2-javascript
 control: Validate slider using formvalidator
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validate slider using FormValidator in ##Platform_Name## Range Slider control
+# How to validate with formvalidator in ##Platform_Name## Range Slider
 
 The Range Slider control can be validated using our [`FormValidator`](../../form-validator/). The following steps walk through the slider validation process.
 

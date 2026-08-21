@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multiple selection in ##Platform_Name## TreeView control | Syncfusion
-description: Learn here all about Multiple selection in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: Multiple selection in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to enable multiple selection in the Syncfusion ##Platform_Name## TreeView control for advanced hierarchical data management.
 platform: ej2-javascript
 control: Multiple selection
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Multiple selection in ##Platform_Name## TreeView control
+# Multiple selection in ##Platform_Name## TreeView
 
 Selection provides interactive support and highlights the node you select. Selection can be done through a simple mouse click or keyboard interaction.
 

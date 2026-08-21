@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 api migration in ##Platform_Name## Dialog control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in ##Platform_Name## Dialog | Syncfusion
+description: Migrate ##Platform_Name## Dialog APIs from the v1 release to the v2 release, including header, footer, content, animation, drag, resize, position, and visibility.
 platform: ej2-javascript
 control: Ej1 api migration 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in ##Platform_Name## Dialog control
+# EJ1 API Migration in ##Platform_Name## Dialog
 
 This section API migration process of Dialog component from Essential<sup style="font-size:70%">&reg;</sup> JS JS1 to Essential<sup style="font-size:70%">&reg;</sup> JS2.
 

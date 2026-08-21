@@ -1,7 +1,7 @@
 ---
 layout: post
-title: To keep single pane open always in ##Platform_Name## Accordion control | Syncfusion
-description: Learn here all about To keep single pane open always in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
+title: How to keep one pane open in ##Platform_Name## Accordion | Syncfusion
+description: Keep one Syncfusion ##Platform_Name## Accordion panel always expanded in Single expand mode by preventing collapse on click.
 platform: ej2-javascript
 control: To keep single pane open always 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# To keep single pane open always in ##Platform_Name## Accordion control
+# How to keep single pane open always in ##Platform_Name## Accordion
 
 By default, all Accordion panels are collapsible. You can customize the Accordion to keep one panel as expanded state always. This is applicable for `Single` expand mode.
 

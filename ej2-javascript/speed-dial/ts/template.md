@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Speed dial control | Syncfusion
-description: Learn here all about Template in Syncfusion ##Platform_Name## Speed dial control of Syncfusion Essential JS 2 and more.
+title: Template in ##Platform_Name## Speed Dial | Syncfusion
+description: Learn how to use the itemTemplate and popupTemplate properties of the ##Platform_Name## Speed Dial to render custom content.
 platform: ej2-javascript
 control: Template 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in ##Platform_Name## Speed dial control
+# Template in ##Platform_Name## Speed Dial
 
 This section explains available templates in SpeedDial control and its usage.
 

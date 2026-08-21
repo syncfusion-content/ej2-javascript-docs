@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ticks in ##Platform_Name## Range Slider control | Syncfusion
-description: Learn here all about Ticks in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Ticks in ##Platform_Name## Range Slider | Syncfusion
+description: Display major and minor ticks on ##Platform_Name## Range Slider using smallStep, largeStep, and showSmallTicks to help users identify current values.
 platform: ej2-javascript
 control: Ticks 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ticks in ##Platform_Name## Range Slider control
+# Ticks in ##Platform_Name## Range Slider
 
 Ticks in the Range Slider control help you easily identify the current value or values of the slider. The control includes [`smallStep`](../api/slider/ticksDataModel/#smallstep) and [`largeStep`](../api/slider/ticksDataModel/#largestep). The values of the major ticks will be displayed on the slider. To enable or disable the small ticks, use the [`showSmallTicks`](../api/slider/ticksDataModel/#showsmallticks) property.
 

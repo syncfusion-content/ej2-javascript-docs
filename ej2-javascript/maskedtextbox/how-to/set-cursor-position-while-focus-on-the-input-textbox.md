@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set cursor position while focus on the input textbox in ##Platform_Name## Maskedtextbox control | Syncfusion
-description: Learn to set cursor position on input textbox in Syncfusion ##Platform_Name## Maskedtextbox of Essential JS 2 & more.
+title: Set cursor position on focus in ##Platform_Name## Input Mask | Syncfusion
+description: Set the cursor position in the Syncfusion ##Platform_Name## Input Mask to the start, end, or a custom position on focus instead of selecting the full mask.
 platform: ej2-javascript
 control: Set cursor position while focus on the input textbox 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set cursor position while focus on the input textbox in ##Platform_Name## Maskedtextbox control
+# How to set cursor position on focus in ##Platform_Name## Input Mask
 
 By default, on focusing the MaskedTextBox the entire mask gets selected. You can customize by using any one of the following methods:
 
@@ -19,7 +19,7 @@ By default, on focusing the MaskedTextBox the entire mask gets selected. You can
 
 > The **selectionStart** and **selectionEnd** set to **0** instead of the input element value's length, when we focus on a MaskedTextBox control filled with all mask characters. This is the default behavior of the HTML 5 input element.
 
-Following is an example that demonstrates the above cases to set cursor position in the MaskedTextBox using [`focus`](../../api/maskedtextbox/#focus) event.
+Following is an example that demonstrates the above cases to set cursor position in the MaskedTextBox using [`focus`](../../api/maskedtextbox/index-default#focus) event.
 
 {% if page.publishingplatform == "typescript" %}
 

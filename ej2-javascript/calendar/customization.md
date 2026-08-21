@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Calendar control | Syncfusion
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## Calendar | Syncfusion
+description: Customize ##Platform_Name## Calendar day cells with the renderDayCell event to disable weekends, highlight dates, or apply custom UI styling.
 platform: ej2-javascript
 control: Customization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in ##Platform_Name## Calendar control
+# Customization in ##Platform_Name## Calendar
 
 Each day cell of the Calendar can be customized by using the [`renderDayCell`](../api/calendar/renderDayCellEventArgs#renderdaycelleventargs)
 event.
@@ -107,7 +107,7 @@ custom icon and ToolTip.
 
 ## Highlight weekends
 
-You can highlight the weekends of every month in a Calendar by using theb[`renderDayCell`](../api/calendar/renderDayCellEventArgs#renderdaycelleventargs) event. The following example demonstrates how to highlights the weekends of every month.
+You can highlight the weekends of every month in a Calendar by using the [`renderDayCell`](../api/calendar/renderDayCellEventArgs#renderdaycelleventargs) event. The following example demonstrates how to highlights the weekends of every month.
 
 {% if page.publishingplatform == "typescript" %}
 

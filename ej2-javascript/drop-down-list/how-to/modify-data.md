@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Modify data in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Modify data in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: Modify Data in ##Platform_Name## Dropdown List | Syncfusion
+description: Modify the result data in Syncfusion ##Platform_Name## Dropdown List before display by handling the actionComplete event when binding remote data.
 platform: ej2-javascript
 control: Modify data 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Modify data in ##Platform_Name## Drop down list control
+# How to modify result data in ##Platform_Name## Dropdown List
 
 When binding the remote data source, by using the [actionComplete](../../api/drop-down-list/#actioncomplete) event, you can modify the result data before passing it to DropDownList.
 

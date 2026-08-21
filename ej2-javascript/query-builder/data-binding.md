@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## Query builder control | Syncfusion
-description: Learn here all about Data binding in Syncfusion ##Platform_Name## Query builder control of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## Query Builder UI | Syncfusion
+description: Bind local ##Platform_Name## object arrays or remote RESTful JSON data services to the Query Builder UI using DataManager for the dataSource property.
 platform: ej2-javascript
 control: Data binding 
 publishingplatform: ##Platform_Name##
@@ -9,16 +9,16 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in ##Platform_Name## Query builder control
+# Data Binding in ##Platform_Name## Query Builder UI
 
-The Query Builder uses `DataManager` to bind the datasource, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/documentation/api/query-builder/#datasource) property can be assigned either with the instance of `DataManager` or JavaScript object array collection. It supports two kind of databinding method:
+The Query Builder uses `DataManager` to bind the datasource, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#datasource) property can be assigned either with the instance of `DataManager` or JavaScript object array collection. It supports two kind of databinding method:
 
 * Local data
 * Remote data
 
 ## Local data
 
-To bind local data to the query builder, you can assign the [`dataSource`](https://ej2.syncfusion.com/documentation/api/query-builder/#datasource) property  with a JavaScript object array. The local data source can also be provided as an instance of the `DataManager`.
+To bind local data to the query builder, you can assign the [`dataSource`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#datasource) property  with a JavaScript object array. The local data source can also be provided as an instance of the `DataManager`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -51,7 +51,7 @@ To bind local data to the query builder, you can assign the [`dataSource`](https
 
 ## Remote data
 
-To bind remote data to the query builder, assign service data as an instance of  `DataManager` to the [`dataSource`](https://ej2.syncfusion.com/documentation/api/query-builder/#datasource) property. To interact with remote data source, provide the endpoint `url`.
+To bind remote data to the query builder, assign service data as an instance of  `DataManager` to the [`dataSource`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#datasource) property. To interact with remote data source, provide the endpoint `url`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -196,7 +196,7 @@ let data: DataManager = new DataManager({
 
 ## Support with Data Manager
 
-You can use the created conditions in DataManager through the [`getPredicate`](https://ej2.syncfusion.com/documentation/api/query-builder/#getpredicate) method, which results the filtered records.
+You can use the created conditions in DataManager through the [`getPredicate`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#getpredicate) method, which results the filtered records.
 
 {% if page.publishingplatform == "typescript" %}
 

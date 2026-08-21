@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Render the calendar with week numbers in ##Platform_Name## Calendar control | Syncfusion
-description: Learn here all about Render the calendar with week numbers in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
+title: How to show week numbers in ##Platform_Name## Calendar | Syncfusion
+description: Display ISO week numbers alongside each row in the ##Platform_Name## Calendar by enabling the weekNumber property on the component.
 platform: ej2-javascript
 control: Render the calendar with week numbers 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render the calendar with week numbers in ##Platform_Name## Calendar control
+# How to show week numbers in ##Platform_Name## Calendar
 
 You can enable `weekNumbers` in the Calendar by using the [`weekNumber`](../../api/calendar#weeknumber) property.
 

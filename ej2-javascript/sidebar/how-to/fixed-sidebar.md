@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Fixed Sidebar in ##Platform_Name## Sidebar control | Syncfusion
-description: Learn here all about Fixed Sidebar in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: How to fixed Sidebar in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to keep the Syncfusion ##Platform_Name## Sidebar control fixed in place for persistent navigation and compact layouts.
 platform: ej2-javascript
 control: Fixed Sidebar
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Fixed ##Platform_Name## Sidebar control
+# How to fixed Sidebar in ##Platform_Name## Sidebar
 
 The Sidebar does not require any specific style to be fixed. By default, the Sidebar position is in a fixed state. The following example demonstrates that the Sidebar is rendered with a fixed position. The position of the Sidebar will not change when scrolling the main content area.
 

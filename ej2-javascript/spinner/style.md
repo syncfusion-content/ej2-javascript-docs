@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Spinner control | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## Spinner control of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Spinner | Syncfusion
+description: Style the ##Platform_Name## Spinner by overriding the stroke and fill CSS classes for Material, Fabric, Bootstrap, Bootstrap4, and High Contrast themes.
 platform: ej2-javascript
 control: Style 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in ##Platform_Name## Spinner control
+# Style in ##Platform_Name## Spinner
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

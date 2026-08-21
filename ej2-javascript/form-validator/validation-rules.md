@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation rules in ##Platform_Name## Form validator control | Syncfusion
-description: Learn here all about Validation rules in Syncfusion ##Platform_Name## Form validator control of Syncfusion Essential JS 2 and more.
+title: Validation rules in ##Platform_Name## Form Validation | Syncfusion
+description: Apply built-in and custom validation rules like required, email, url, date, number, and regex in the Syncfusion ##Platform_Name## Form Validation.
 platform: ej2-javascript
 control: Validation rules 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation rules in ##Platform_Name## Form validator control
+# Validation rules in ##Platform_Name## Form Validation
 
 ## Default Rules
 
@@ -32,12 +32,12 @@ The `FormValidator` has following default validation rules, which are used to va
 | `min` | Input value must have greater than or equal to `min` number | if `min: 4`, **5** is valid and **2** is invalid |
 | `regex` | Input value must have valid `regex` format | if `regex: '^[A-z]+$'`, **a** is valid and **1** is invalid |
 
-> The [`rules`](../api/form-validator/#rules) option should map the input element's `name` attribute.
+> The [`rules`](../api/form-validator/index-default#rules) option should map the input element's `name` attribute.
 > The `FormValidator` library only validates the mapped input elements.
 
 ## Defining Custom Rules
 
-You can also define custom rules in the [`rules`](../api/form-validator/#rules) property and validate the form with custom logics.
+You can also define custom rules in the [`rules`](../api/form-validator/index-default#rules) property and validate the form with custom logics.
 
 The custom validation method need to return the boolean value for validating an input.
 
@@ -76,8 +76,8 @@ The custom validation method need to return the boolean value for validating an 
 
 ## Adding or Removing Rules
 
-After creating `FormValidator` object, you can add more rules to an input element by using [`addRules`](../api/form-validator/#addrules)
-method and you can also remove an existing rule from the input element by using [`removeRules`](../api/form-validator/#removerules) method.
+After creating `FormValidator` object, you can add more rules to an input element by using [`addRules`](../api/form-validator/index-default#addrules)
+method and you can also remove an existing rule from the input element by using [`removeRules`](../api/form-validator/index-default#removerules) method.
 
 ```ts
 import {FormValidator, FormValidatorModel} from '@syncfusion/ej2-inputs';
@@ -97,7 +97,7 @@ formObject.removeRules('age', ['number']);
 
 ## Validating a Form
 
-You can manually trigger validation by calling the [`validate`](../api/form-validator/#validate) method of [`FormValidator`](../api/form-validator).
+You can manually trigger validation by calling the [`validate`](../api/form-validator/index-default#validate) method of [`FormValidator`](../api/form-validator).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -134,7 +134,7 @@ You can manually trigger validation by calling the [`validate`](../api/form-vali
 
 ## Validating a Single Element
 
-The [`validate`](../api/form-validator/#validate) method have an optional argument, where you can pass an input element's name attribute to validate its value against the defined rule.
+The [`validate`](../api/form-validator/index-default#validate) method have an optional argument, where you can pass an input element's name attribute to validate its value against the defined rule.
 
 ```ts
 import {FormValidator, FormValidatorModel} from '@syncfusion/ej2-inputs';

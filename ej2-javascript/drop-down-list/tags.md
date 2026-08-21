@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tags in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Tags in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: Tags in ##Platform_Name## Dropdown List | Syncfusion
+description: Initialize the Syncfusion ##Platform_Name## Dropdown List on select, input, or other HTML elements while keeping UI and features consistent.
 platform: ej2-javascript
 control: Tags 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tags in ##Platform_Name## Drop down list control
+# Tags in ##Platform_Name## Dropdown List
 
 The DropDownList can be initialized on three different tags as described in below. Though it is initialized in different tags, the UI appearance and built-in features behave in the same way.
 

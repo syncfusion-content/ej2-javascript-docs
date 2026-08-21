@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in ##Platform_Name## MultiColumn Combobox control | Syncfusion
-description: Checkout and learn about Sorting in ##Platform_Name## MultiColumn Combobox control of Syncfusion Essential JS 2 and more.
+title: Sorting in ##Platform_Name## MultiColumn ComboBox | Syncfusion
+description: Sort Syncfusion ##Platform_Name## MultiColumn ComboBox columns by clicking headers or via the sortOrder property in Ascending or Descending.
 platform: ej2-javascript
 control: Sorting
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting in ##Platform_Name## MultiColumn ComboBox control
+# Sorting in ##Platform_Name## MultiColumn ComboBox
 
 The MultiColumn ComboBox control provides built-in support for sorting data-bound columns in ascending or descending order by using the [allowSorting](../api/multicolumn-combobox#allowsorting) property. By default, the value is `true`.
 

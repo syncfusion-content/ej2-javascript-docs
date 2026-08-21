@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtualization in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Virtualization in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: Virtualization in ##Platform_Name## Dropdown List | Syncfusion
+description: Render large Syncfusion ##Platform_Name## Dropdown List datasets efficiently with enableVirtualization, reusing DOM nodes while scrolling.
 platform: ej2-javascript
 control: Virtualization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtualization in DropDown List
+# Virtualization in ##Platform_Name## Dropdown List
 
 Dropdown list virtualization is a technique used to efficiently render long lists of items in a user interface while minimizing the impact on performance. It's particularly useful when dealing with large datasets, as it ensures that only a fixed number of DOM (Document Object Model) elements are created and displayed in the dropdown list component. As the user scrolls through the list, the existing DOM elements are reused to display the relevant data, rather than creating new elements for each item. Enabling the [`enableVirtualization`](../api/drop-down-list/#enableVirtualization) option in a dropdown list activates this virtualization technique, significantly enhancing the list's performance and user experience, especially when handling large datasets.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Index in ##Platform_Name## Sidebar control | Syncfusion
-description: Learn here all about Index in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: Index in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to use the Syncfusion ##Platform_Name## Sidebar control to create powerful navigation and content layouts.
 platform: ej2-javascript
-control: Index 
+control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in ##Platform_Name## Sidebar control
+# Index in ##Platform_Name## Sidebar
 
 The **Sidebar** is an expandable and collapsible component that typically acts as a side container to place primary or secondary content alongside the main content.
 

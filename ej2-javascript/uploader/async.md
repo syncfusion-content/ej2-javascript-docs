@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Async in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Async in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: Async in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to upload files asynchronously with the Syncfusion ##Platform_Name## File Upload using save and remove action URLs to manage server-side upload operations.
 platform: ej2-javascript
 control: Async 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Async in ##Platform_Name## Uploader control
+# Async in ##Platform_Name## File Upload
 
 The uploader component allows you to upload the files asynchronously. The upload process requires save and remove action URL to manage the upload process in the server.
 

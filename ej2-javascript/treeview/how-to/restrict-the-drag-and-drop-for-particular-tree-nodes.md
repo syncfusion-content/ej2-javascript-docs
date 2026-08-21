@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Restrict the drag and drop for particular tree nodes in ##Platform_Name## TreeView control | Syncfusion
-description: Learn here all about Restrict the drag and drop for particular tree nodes in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: How to restrict drag and drop for particular tree nodes in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to restrict drag-and-drop on selected TreeView nodes in the Syncfusion ##Platform_Name## TreeView control.
 platform: ej2-javascript
 control: Restrict the drag and drop for particular tree nodes
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Restrict drag and drop for particular tree nodes in ##Platform_Name## TreeView control
+# How to restrict drag and drop for particular tree nodes in ##Platform_Name## TreeView
 
 You can restrict dragging and dropping files to within folders only. This can be achieved by using the [`nodeDragStop`](../../api/treeview#nodedragstop) and [`nodeDragging`](../../api/treeview#nodedragging) events of the TreeView.
 

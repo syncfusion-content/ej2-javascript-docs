@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Open save in ##Platform_Name## Signature control | Syncfusion
-description: Learn here all about Open save in Syncfusion ##Platform_Name## Signature control of Syncfusion Essential JS 2 and more.
+title: Open Save in ##Platform_Name## Signature | Syncfusion
+description: Open a ##Platform_Name## Signature from a hosted URL or base64 string, and save the signature as an image, base64, or blob.
 platform: ej2-javascript
 control: Open save 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open save in ##Platform_Name## Signature control
+# Open Save in ##Platform_Name## Signature
 
 The Signature control supports to open the signature by using hosted/online URL or base64. And it also supports various save options like image, base64, and blob.
 

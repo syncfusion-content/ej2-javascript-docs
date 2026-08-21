@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Auto complete control | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## Auto complete control of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## AutoComplete | Syncfusion
+description: Customize the appearance of Syncfusion ##Platform_Name## AutoComplete using the documented CSS structure for the wrapper, popup, list, and input.
 platform: ej2-javascript
 control: Style 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in ##Platform_Name## Auto complete control
+# Style in ##Platform_Name## AutoComplete
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

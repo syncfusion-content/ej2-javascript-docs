@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disabled Items in ##Platform_Name## MultiSelect control | Syncfusion
-description: Learn here all about Disabled Items in Syncfusion ##Platform_Name## MultiSelect control of Syncfusion Essential JS 2 and more.
+title: Disabled Items in ##Platform_Name## MultiSelect Dropdown | Syncfusion
+description: Mark Syncfusion ##Platform_Name## MultiSelect Dropdown items as disabled via the fields.disabled mapping so they cannot be selected.
 platform: ej2-javascript
 control: Disabled Items 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disabled Items in ##Platform_Name## MultiSelect control
+# Disabled Items in ##Platform_Name## MultiSelect Dropdown
 
 The MultiSelect provides options for individual items to be either in an enabled or disabled state for specific scenarios. The category of each list item can be mapped through the [disabled](../api/multi-select/#fields) field in the data table. Once an item is disabled, it cannot be selected as a value for the component. To configure the disabled item columns, use the `fields.disabled` property.
 

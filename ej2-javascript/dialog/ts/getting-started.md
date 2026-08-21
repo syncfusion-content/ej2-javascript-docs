@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Dialog control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Dialog | Syncfusion
+description: Get started with the ##Platform_Name## Dialog using the quickstart seed, install ej2-popups, and render a Dialog with content, target, and position.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Dialog control
+# Getting started with ##Platform_Name## Dialog
 
 This section explains the steps to create a simple Dialog and demonstrates the basic usage of the Dialog component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 

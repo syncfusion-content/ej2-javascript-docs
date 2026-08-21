@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Open a dialog on contextmenu item click in ##Platform_Name## Context menu control | Syncfusion
-description: Learn here all about Open a dialog on contextmenu item click in Syncfusion ##Platform_Name## Context menu control of Syncfusion Essential JS 2 and more.
+title: How to open a dialog on contextmenu item click in ##Platform_Name## Context menu | Syncfusion
+description: Open a Syncfusion dialog when a Syncfusion ##Platform_Name## Context menu item is clicked by handling the select event.
 platform: ej2-javascript
 control: Open a dialog on contextmenu item click 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open a dialog on contextmenu item click in ##Platform_Name## Context menu control
+# How to open a dialog on contextmenu item click in ##Platform_Name## Context menu
 
 This section explains about how to open a dialog on ContextMenu item click. This can be achieved by handling dialog open in [`select`](../api/context-menu/#select) event of the ContextMenu.
 

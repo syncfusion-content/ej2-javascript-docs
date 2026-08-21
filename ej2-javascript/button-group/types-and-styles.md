@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Types and styles in ##Platform_Name## Button group control | Syncfusion
-description: Learn here all about Types and styles in Syncfusion ##Platform_Name## Button group control of Syncfusion Essential JS 2 and more.
+title: Types and Styles in ##Platform_Name## Button Group | Syncfusion
+description: Explore the available ##Platform_Name## Button Group types and predefined visual styles such as outline, primary, success, and danger.
 platform: ej2-javascript
 control: Types and styles 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Types and styles in ##Platform_Name## Button group control
+# Types and Styles in ##Platform_Name## Button Group
 
 This section explains about different types and styles of ButtonGroup.
 

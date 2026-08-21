@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Checkbox in ##Platform_Name## Multi select control | Syncfusion
-description: Learn here all about Checkbox in Syncfusion ##Platform_Name## Multi select control of Syncfusion Essential JS 2 and more.
+title: Checkbox in ##Platform_Name## MultiSelect Dropdown | Syncfusion
+description: Select multiple Syncfusion ##Platform_Name## MultiSelect Dropdown values with checkboxes by setting mode to CheckBox and injecting the module.
 platform: ej2-javascript
 control: Checkbox 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Checkbox in ##Platform_Name## Multi select control
+# Checkbox in ##Platform_Name## MultiSelect Dropdown
 
 The MultiSelect has built-in support to select multiple values through checkbox, when [`mode`](../api/multi-select/#mode) property set as `CheckBox`.
 

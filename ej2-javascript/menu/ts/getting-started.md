@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Menu control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Menu | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Menu control and configure it for your TypeScript app quickly.
 platform: ej2-javascript
 control: Menu 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Menu control
+# Getting started in ##Platform_Name## Menu
 
 This section explains how to create a simple Menu, and configure its available functionalities in TypeScript using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 

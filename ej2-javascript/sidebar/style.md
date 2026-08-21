@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Sidebar control | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to style the Syncfusion ##Platform_Name## Sidebar control to match your app theme and navigation design.
 platform: ej2-javascript
 control: Style 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in ##Platform_Name## Sidebar control
+# Style in ##Platform_Name## Sidebar
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user's preference.
 

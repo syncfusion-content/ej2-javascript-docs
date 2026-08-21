@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Templates in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: Templates in ##Platform_Name## Dropdown List | Syncfusion
+description: Customize Syncfusion ##Platform_Name## Dropdown List item, group, header, footer, and value rendering using the Essential JS 2 template engine.
 platform: ej2-javascript
 control: Templates 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in ##Platform_Name## Drop down list control
+# Templates in ##Platform_Name## Dropdown List
 
 The DropDownList has been provided with several options to customize each list item, group title, selected value, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [Template engine](../common/template-engine) to compile and render the elements properly.
 

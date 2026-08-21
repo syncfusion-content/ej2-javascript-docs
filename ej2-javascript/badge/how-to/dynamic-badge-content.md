@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dynamic content in ##Platform_Name## Badge control | Syncfusion
-description: Learn here all about Dynamic badge content in Syncfusion ##Platform_Name## Badge control of Syncfusion Essential JS 2 and more.
+title: How to update badge content in ##Platform_Name## Badge | Syncfusion
+description: Learn how to update ##Platform_Name## Badge content dynamically at runtime by binding a click handler to increment the displayed value.
 platform: ej2-javascript
 control: Dynamic Badge content
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dynamic content in ##Platform_Name## Badge control
+# How to update badge content in ##Platform_Name## Badge
 
 Badges often need to be updated dynamically based on real-time requirements. The following sample demonstrates how to update badge content dynamically. Click the increment button to change the badge value.
 

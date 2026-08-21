@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 api migration in ##Platform_Name## Timepicker control | Syncfusion
+title: EJ1 API Migration in ##Platform_Name## TimePicker | Syncfusion
 description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Timepicker control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Ej1 api migration 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in ##Platform_Name## Timepicker control
+# EJ1 API Migration in ##Platform_Name## TimePicker
 
 This article describes the API migration process of TimePicker component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Dropdown Tree control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Dropdown Tree control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Dropdown Tree | Syncfusion
+description: Set up a Syncfusion ##Platform_Name## Dropdown Tree in a plain ES5 JavaScript app using the global script and required dependencies.
 platform: ej2-javascript
 control: Dropdown Tree
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Dropdown Tree control
+# Getting Started with ##Platform_Name## Dropdown Tree
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework that can be directly used in the latest web browsers.
 

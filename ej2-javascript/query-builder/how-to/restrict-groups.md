@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Restrict groups in ##Platform_Name## Query builder control | Syncfusion
-description: Learn here all about Restrict groups in Syncfusion ##Platform_Name## Query builder control of Syncfusion Essential JS 2 and more.
+title: Set max group count in ##Platform_Name## Query Builder | Syncfusion
+description: Limit the ##Platform_Name## Query Builder UI group nesting depth by setting the maxGroupCount property so users cannot add more nested groups than allowed.
 platform: ej2-javascript
 control: Restrict groups 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Restrict groups in ##Platform_Name## Query builder control
+# How to set maximum group count in ##Platform_Name## Query Builder UI
 
-You can restrict the condition set by defining the [`maxGroupCount`](https://ej2.syncfusion.com/documentation/api/query-builder/#maxgroupcount) property. By default, the value is 5. In the below demo, the `maxGroupCount` is set to 2 .
+You can restrict the condition set by defining the [`maxGroupCount`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#maxgroupcount) property. By default, the value is 5. In the below demo, the `maxGroupCount` is set to 2 .
 
 {% if page.publishingplatform == "typescript" %}
 

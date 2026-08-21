@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in ##Platform_Name## Timeline control | Syncfusion
-description:  Checkout and learn about Events with ##Platform_Name## Timeline control of Syncfusion Essential JS 2 and more.
+title: Events in ##Platform_Name## Timeline | Syncfusion
+description: Handle Syncfusion ##Platform_Name## Timeline lifecycle events such as created to run custom logic when rendering completes.
 platform: ej2-javascript
 control: Timeline
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## Timeline control
+# Events in ##Platform_Name## Timeline
 
 This section describes Timeline events triggered by relevant actions. The following events are available in the Timeline control.
 

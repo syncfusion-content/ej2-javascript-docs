@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize Tooltip with dynamic html in ##Platform_Name## Tooltip control | Syncfusion
-description: Learn here all about Customize Tooltip with dynamic html in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
+title: How to add dynamic HTML in ##Platform_Name## Tooltip | Syncfusion
+description: Embed dynamic HTML content such as iframes, videos, and maps inside the ##Platform_Name## Tooltip by assigning an HTML string to the content property.
 platform: ej2-javascript
 control: Customize Tooltip with dynamic html
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize Tooltip with dynamic HTML in ##Platform_Name## Tooltip control
+# How to custom Tooltip with dynamic HTML in ##Platform_Name## Tooltip
 
-Tooltip loads HTML pages via HTML tags such as iframe, video, and map using the [`content`](../../api/tooltip/#content) property, which supports both strings and HTML tags.
+Tooltip loads HTML pages via HTML tags such as iframe, video, and map using the [`content`](../../api/tooltip#content) property, which supports both strings and HTML tags.
 
-To load an `iframe` element in Tooltip, set the required iframe in the [`content`](../../api/tooltip/#content) of the Tooltip control while initializing it. Refer to the following code snippet:
+To load an `iframe` element in Tooltip, set the required iframe in the [`content`](../../api/tooltip#content) of the Tooltip control while initializing it. Refer to the following code snippet:
 
 ```ts
 content: '<iframe src="https://www.syncfusion.com/products/essential-js2"></iframe>'

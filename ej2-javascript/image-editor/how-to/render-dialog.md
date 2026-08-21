@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Render Image Editor in Dialog in ##Platform_Name## Image editor control | Syncfusion
-description: Learn here all about Render Image Editor in Dialog in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
+title: How to render in dialog in ##Platform_Name## Image Editor | Syncfusion
+description: Display the ##Platform_Name## Image Editor in a modal dialog to provide a focused image editing experience without navigating away from the current page.
 platform: ej2-javascript
 control: Render Image Editor in Dialog  
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render Image Editor in Dialog 
+# How to render in dialog in ##Platform_Name## Image Editor
 
 Rendering the Image Editor in a dialog involves displaying the image editor component within a modal dialog window, allowing users to edit images in a pop-up interface. This can be useful for maintaining a clean layout and providing a focused editing experience without navigating away from the current page. 
 

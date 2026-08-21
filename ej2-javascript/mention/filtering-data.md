@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering data in ##Platform_Name## Mention control | Syncfusion
-description: Learn here all about Filtering data in Syncfusion ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more.
+title: Filtering Data in ##Platform_Name## Mention | Syncfusion
+description: Filter the Syncfusion ##Platform_Name## Mention suggestion list as the user types, with minLength to delay remote requests on large datasets.
 platform: ej2-javascript
 control: Filtering data 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering data in ##Platform_Name## Mention control
+# Filtering Data in ##Platform_Name## Mention
 
 The Mention control has built-in support to filter data items. The filter operation starts as soon as you start typing characters in the mention element.
 

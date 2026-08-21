@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Close the toast with click tap in ##Platform_Name## Toast control | Syncfusion
-description: Learn here all about Close the toast with click tap in Syncfusion ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more.
+title: Close the toast with click/tap in ##Platform_Name## Toast | Syncfusion
+description: Close ##Platform_Name## Toast on click or tap by using the clicked callback args with a static toast config.
 platform: ej2-javascript
-control: Close the toast with click tap 
+control: Close the toast with click tap
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Close the toast with click tap in ##Platform_Name## Toast control
+# How to close the toast with click/tap in ##Platform_Name## Toast
 
-By default, the toasts are expired based on the timeOut value. You can customize the toast hiding process with click/tap action by setting the event args in the [clicked](../../api/toast/toastClickEventArgs/#clicktoclose) callback function with [static Toast](../timeout/#static-toast).
+By default, the toasts are expired based on the timeOut value. You can customize the toast hiding process with click/tap action by setting the event args in the [clicked](../../api/toast/toastclickeventargs#clicktoclose) callback function with [static Toast](../timeout#static-toast).
 
 {% if page.publishingplatform == "typescript" %}
 

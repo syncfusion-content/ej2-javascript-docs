@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## List box control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## List box control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## ListBox | Syncfusion
+description: Learn how the Syncfusion ##Platform_Name## ListBox meets WAI-ARIA, WCAG 2.2, and Section 508 with full keyboard navigation support.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Accessibility in ##Platform_Name## List box control
+# Accessibility in ##Platform_Name## ListBox
 
 ## ARIA Attributes
 

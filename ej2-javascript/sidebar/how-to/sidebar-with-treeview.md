@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sidebar with TreeView in ##Platform_Name## Sidebar control | Syncfusion
-description: Learn here all about Sidebar with TreeView in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: How to render Sidebar with TreeView in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to integrate the Syncfusion ##Platform_Name## Sidebar control with TreeView for layered hierarchical navigation.
 platform: ej2-javascript
 control: Sidebar with TreeView
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ##Platform_Name## Sidebar control with TreeView
+# How to render Sidebar with TreeView in ##Platform_Name## Sidebar
 
 The following example demonstrates how to render the TreeView control inside the Sidebar with a dock state and how to achieve simultaneous expand and collapse functionalities in both the Sidebar and TreeView.
 

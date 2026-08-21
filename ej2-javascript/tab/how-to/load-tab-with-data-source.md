@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load tab with data source in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Load tab with data source in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: How to load tab with data source in ##Platform_Name## Tab | Syncfusion
+description: Learn how to bind tab content from a data source in the Syncfusion ##Platform_Name## Tab control for structured displays.
 platform: ej2-javascript
 control: Load tab with data source 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Load tab with data source in ##Platform_Name## Tab control
+# How to load tab with data source in ##Platform_Name## Tab
 
 You can bind any data object to Tab items by mapping it to the [`header`](../../api/tab/tabItem#header) and [`content`](../../api/tab/tabItem#content) properties.
 

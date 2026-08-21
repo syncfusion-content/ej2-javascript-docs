@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resize panel in ##Platform_Name## Dashboard Layout | Syncfusion
-description: Learn here all about Resize the panel dynamically in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
+title: Resize Panel in ##Platform_Name## Dashboard Layout | Syncfusion
+description: Resize a Syncfusion ##Platform_Name## Dashboard Layout panel height at runtime with the resizePanel method, independent of width-driven cell aspect ratio.
 platform: ej2-javascript
 control: Resize the panel dynamically
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resize the panel dynamically in ##Platform_Name## Dashboard Layout control
+# How to resize panel in ##Platform_Name## Dashboard Layout
 
 In Dashboard Layout, the height of a panel is based on its width. When resizing the panel, both the height and width should be adjusted.
 

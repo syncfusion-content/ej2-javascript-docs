@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Process the tree node operations using context menu in ##Platform_Name## TreeView control | Syncfusion
-description: Learn here all about Process the tree node operations using context menu in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: How to process the tree node operations using context menu in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to process TreeView node actions with context menus in the Syncfusion ##Platform_Name## TreeView control.
 platform: ej2-javascript
 control: Process the tree node operations using context menu
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Process the tree node operations using context menu in ##Platform_Name## TreeView control
+# How to process the tree node operations using context menu in ##Platform_Name## TreeView
 
 You can integrate the context menu with the TreeView control to perform tree view related operations such as adding, removing, and renaming a node.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Floating Action Button control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Floating action button control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Floating Action Button | Syncfusion
+description: Learn how to get started with the ##Platform_Name## Floating Action Button in TypeScript, from package setup to first render.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Floating Action Button control
+# Getting Started with ##Platform_Name## Floating Action Button
 
 This section explains how to create a simple Floating Action Button control and configure its available functionalities in TypeScript, using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Orientation in ##Platform_Name## Range slider control | Syncfusion
-description: Learn here all about Orientation in Syncfusion ##Platform_Name## Range slider control of Syncfusion Essential JS 2 and more.
+title: Orientation in ##Platform_Name## Range Slider | Syncfusion
+description: Switch ##Platform_Name## Range Slider between horizontal and vertical orientations to suit your application layout through a simple configuration change.
 platform: ej2-javascript
 control: Orientation 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Orientation in ##Platform_Name## Range slider control
+# Orientation in ##Platform_Name## Range Slider
 
 The Slider can be displayed, either in horizontal or vertical orientation. By default, the Slider renders in horizontal orientation.
 

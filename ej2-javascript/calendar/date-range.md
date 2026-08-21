@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Date range in ##Platform_Name## Calendar control | Syncfusion
-description: Learn here all about Date range in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
+title: Date Range in ##Platform_Name## Calendar | Syncfusion
+description: Restrict ##Platform_Name## Calendar selections within a defined range by setting the min and max properties to control the allowed date bounds.
 platform: ej2-javascript
 control: Date range 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Date range in ##Platform_Name## Calendar control
+# Date Range in ##Platform_Name## Calendar
 
 Calendar provides an option to select a date value within a specified range by defining the [`min`](../api/calendar#min) and [`max`](../api/calendar#max) properties. The min date should always be lesser than the max date. If the value of `min` or `max` properties are changed through code behind, then update the `value` property to be set within the specified range, or else, if the value is out of specified date range and less than `min` date, value property will be updated with min date or the value is higher than max date, value property will be updated with `max` date.
 

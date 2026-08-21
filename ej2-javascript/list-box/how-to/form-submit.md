@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Form submit in ##Platform_Name## List box control | Syncfusion
-description: Learn here all about Form submit in Syncfusion ##Platform_Name## List box control of Syncfusion Essential JS 2 and more.
+title: Form Submit in ##Platform_Name## ListBox | Syncfusion
+description: Submit the selected Syncfusion ##Platform_Name## ListBox values with an HTML form by giving the list box a name attribute.
 platform: ej2-javascript
 control: Form submit 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Form submit in ##Platform_Name## List box control
+# How to Submit a Form with ##Platform_Name## ListBox
 
 In the following code snippet, the value that is in selected state will be sent on form submit.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: User interaction in ##Platform_Name## Signature control | Syncfusion
-description: Learn here all about User interaction in Syncfusion ##Platform_Name## Signature control of Syncfusion Essential JS 2 and more.
+title: User Interaction in ##Platform_Name## Signature | Syncfusion
+description: Use ##Platform_Name## Signature interactions including drawing, undo, redo, clear, and load on touch and pointer devices for smooth signing.
 platform: ej2-javascript
 control: User interaction 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# User interaction in ##Platform_Name## Signature control
+# User Interaction in ##Platform_Name## Signature
 
 The below interactions were available in Signature, and we can walk through one by one.
 

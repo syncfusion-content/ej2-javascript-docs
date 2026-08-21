@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set item wise custom template in ##Platform_Name## Toolbar control | Syncfusion
-description: Learn here all about Set item wise custom template in Syncfusion ##Platform_Name## Toolbar control of Syncfusion Essential JS 2 and more.
+title: How to set item-wise custom template in ##Platform_Name## Toolbar | Syncfusion
+description: Learn how to apply item-wise custom templates in the Syncfusion ##Platform_Name## Toolbar control for rich command layouts.
 platform: ej2-javascript
 control: Set item wise custom template 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set item wise custom template in ##Platform_Name## Toolbar control
+# How to set item-wise custom template in ##Platform_Name## Toolbar
 
 The Toolbar supports adding template commands using the [`template`](../../api/toolbar/item#template) property. The template property can be specified as an `HTML element`, either as a `string` or a `query selector`.
 

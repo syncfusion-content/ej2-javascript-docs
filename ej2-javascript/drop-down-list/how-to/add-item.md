@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add item in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Add item in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: How to add item in ##Platform_Name## Dropdown List | Syncfusion
+description: Insert items in between or append to the end of a Syncfusion ##Platform_Name## Dropdown List by passing an index to addItem.
 platform: ej2-javascript
 control: Add item 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add item in ##Platform_Name## Drop down list control
+# How to add item in ##Platform_Name## Dropdown List
 
 You can add item in between based on item [index](../../api/drop-down-list/#index). If you add new item without item index, item will be added as last item in list.
 

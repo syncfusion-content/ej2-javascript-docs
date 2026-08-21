@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set disabled state in ##Platform_Name## Switch control | Syncfusion
-description: Learn here all about Set disabled state in Syncfusion ##Platform_Name## Switch control of Syncfusion Essential JS 2 and more.
+title: How to set disabled state in ##Platform_Name## Toggle Switch Button | Syncfusion
+description: Learn how to disable the ##Platform_Name## Toggle Switch Button by setting the disabled property to true.
 platform: ej2-javascript
 control: Set disabled state 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set disabled state in ##Platform_Name## Switch control
+# How to set disabled state in ##Platform_Name## Toggle Switch Button
 
 Switch can be disabled by setting the [`disabled`](../../api/switch#disabled) property to true.
 

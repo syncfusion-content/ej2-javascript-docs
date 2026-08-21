@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Accordion control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Accordion | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Accordion. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
 control: Accordion 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Accordion control
+# Getting started in ##Platform_Name## Accordion
 
 This section briefly explains about how to create a simple **Accordion** using TypeScript and
 configure the Accordion items using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
@@ -22,7 +22,7 @@ Ensure the following tools are installed on your machine:
 
 * [Git](https://git-scm.com/downloads)
 * [Node.js](https://nodejs.org/en/)
-* [Visual Studio Code](https://code.visualstudio.com/)
+* [Visual Studio Code](https://code.visualstudio.com)
 
 ## Set up the development environment
 

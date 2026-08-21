@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Calendar control | Syncfusion
-description: Learn here all about Globalization in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## Calendar | Syncfusion
+description: Adapt ##Platform_Name## Calendar to different cultures by loading CLDR data and configuring date format, week, and month names.
 platform: ej2-javascript
 control: Globalization 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in ##Platform_Name## Calendar control
+# Globalization in ##Platform_Name## Calendar
 
-Globalization is the combination of  adapting the component to various languages by means of parsing and formatting the date or number [`Internationalization`](../common/internationalization/) and also by adding cultural specific customizations and translating the text [`localization`](../common/localization/)
+Globalization is the combination of  adapting the component to various languages by means of parsing and formatting the date or number [`Internationalization`](https://ej2.syncfusion.com/javascript/documentation/common/internationalization) and also by adding cultural specific customizations and translating the text [`localization`](https://ej2.syncfusion.com/javascript/documentation/common/localization)
 
-By default, the Calendar date format, week, and month names are specific to American English culture. It uses the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Internationalization](https://ej2.syncfusion.com/documentation/common/internationalization/) package to parse and format date object based on the culture using the official [`UNICODE CLDR`](http://cldr.unicode.org/) JSON data. It provides the [`loadCldr`](https://ej2.syncfusion.com/documentation/common/internationalization/#loading-culture-data) method to load the culture-specific CLDR JSON data.
+By default, the Calendar date format, week, and month names are specific to American English culture. It uses the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Internationalization](https://ej2.syncfusion.com/documentation/common/internationalization) package to parse and format date object based on the culture using the official [`UNICODE CLDR`](http://cldr.unicode.org) JSON data. It provides the [`loadCldr`](https://ej2.syncfusion.com/documentation/common/internationalization#loading-culture-data) method to load the culture-specific CLDR JSON data.
 
 All the Essential<sup style="font-size:70%">&reg;</sup> JS 2  component are specific to English culture ('en-US'). If you want to go with the different culture other than `English`, follow the below steps.
 
@@ -69,7 +69,7 @@ System.import('app');
 
 ```
 
-* Now, use the [`loadCldr`](https://ej2.syncfusion.com/documentation/common/internationalization/#cldr-data-dependencies) method to load the culture-specific CLDR JSON data from the installed location to `app.ts` file.
+* Now, use the [`loadCldr`](https://ej2.syncfusion.com/documentation/common/internationalization#cldr-data-dependencies) method to load the culture-specific CLDR JSON data from the installed location to `app.ts` file.
 
 * Calendar displayed `Sunday` as the first day of week based on default culture ("en-US"). If you want to display the Calendar with loaded culture's first day of week, you need to import `weekdata.json` file from the `cldr-data/suppemental` as given in the code example.
 
@@ -87,7 +87,7 @@ loadCldr(
     require('cldr-data/supplemental/weekdata.json')); // To load the culture based first day of week
 ```
 
-> The [`Localization`](../api/base/l10n) library allows you to localize default text content of the Calendar. The Calendar component has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](../api/calendar#locale) value and translation object.
+> The [`Localization`](../api/base/l10n) library allows you to localize default text content of the Calendar. The Calendar component has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/javascript/documentation/api/calendar/index-default#locale) value and translation object.
 
 Locale keywords |Text
 -----|-----
@@ -109,7 +109,7 @@ L10n.load({
 });
 ```
 
-* Set the culture by using the [`locale`](../api/calendar#locale) property. The code example initializes the Calendar component in the `German` culture.
+* Set the culture by using the [`locale`](https://ej2.syncfusion.com/javascript/documentation/api/calendar/index-default#locale) property. The code example initializes the Calendar component in the `German` culture.
 
 ```ts
 import { Calendar } from '@syncfusion/ej2-calendars';
@@ -169,7 +169,7 @@ The following example displays the Calendar in `German` culture.
 ## Right-to-left
 
 The Calendar supports right-to-left functionality for languages like Arabic,  Hebrew, etc. to display text in the right-to-left direction. Use
-[`enableRtl`](../api/calendar#enablertl) property to set the RTL direction.
+[`enableRtl`](https://ej2.syncfusion.com/javascript/documentation/api/calendar/index-default#enablertl) property to set the RTL direction.
 
 The following code example initializes the Calendar component in `Arabic` culture.
 

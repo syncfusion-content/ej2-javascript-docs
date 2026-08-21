@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create wizard using accordion in ##Platform_Name## Accordion control | Syncfusion
-description: Learn here all about Create wizard using accordion in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
+title: How to create wizard using ##Platform_Name## Accordion | Syncfusion
+description: Build a multi-step form wizard with the Syncfusion ##Platform_Name## Accordion by enabling and disabling items dynamically.
 platform: ej2-javascript
 control: Create wizard using accordion 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create wizard using accordion in ##Platform_Name## Accordion control
+# How to create wizard using accordion in ##Platform_Name## Accordion
 
 Accordion items can be disabled dynamically by passing the index and boolean value with the [`enableItem`](../../api/accordion#enableitem) method and also dynamically expand the item using [`expandItem`](../../api/accordion#expanditem) method.
 

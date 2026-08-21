@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Responsive mode in ##Platform_Name## Toolbar control | Syncfusion
-description: Learn here all about Responsive mode in Syncfusion ##Platform_Name## Toolbar control of Syncfusion Essential JS 2 and more.
+title: Responsive mode in ##Platform_Name## Toolbar | Syncfusion
+description: Learn how to enable responsive behavior in the Syncfusion ##Platform_Name## Toolbar control for varied screen sizes.
 platform: ej2-javascript
 control: Responsive mode 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Responsive mode in ##Platform_Name## Toolbar control
+# Responsive mode in ##Platform_Name## Toolbar
 
 This section explains the supported display modes of the Toolbar when the content exceeds the viewing area. Possible modes are:
 

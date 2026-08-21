@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TreeView Styling in ##Platform_Name## TreeView Control | Syncfusion
-description: Checkout and learn here all about styles and appearance in Syncfusion ##Platform_Name## TreeView component of Syncfusion Essential JS 2 and more.
+title: TreeView Styling in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to style the Syncfusion ##Platform_Name## TreeView control to match your hierarchy design and visual branding.
 platform: ej2-javascript
 control: style and appearance
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Styles and Appearance in ##Platform_Name## TreeView Component
+# Styles and Appearance in ##Platform_Name## TreeView
 
 The following content provides the exact CSS structure that can be used to modify the component's appearance based on the user preference.
 

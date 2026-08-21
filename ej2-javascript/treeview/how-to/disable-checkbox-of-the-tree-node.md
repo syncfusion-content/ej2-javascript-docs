@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disable checkbox of the tree node in ##Platform_Name## TreeView control | Syncfusion
-description: Learn here all about Disable checkbox of the tree node in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: How to disable checkbox of the tree node in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to disable checkbox selection on specific nodes in the Syncfusion ##Platform_Name## TreeView control for selective editing.
 platform: ej2-javascript
 control: Disable checkbox of the tree node
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disable checkbox of the tree node in ##Platform_Name## TreeView control
+# How to disable checkbox of the tree node in ##Platform_Name## TreeView
 
 You can disable only the checkbox in the TreeView control without disabling the entire node. To achieve this, add the `e-checkbox-disabled` class to the checkbox element using the [`drawNode`](../../api/treeview#drawnode)  event. Please refer to the following example to disable the checkbox of the tree nodes.
 

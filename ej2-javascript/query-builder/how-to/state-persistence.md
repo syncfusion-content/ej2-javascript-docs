@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State persistence in ##Platform_Name## Query builder control | Syncfusion
-description: Learn here all about State persistence in Syncfusion ##Platform_Name## Query builder control of Syncfusion Essential JS 2 and more.
+title: State persistence in ##Platform_Name## Query Builder UI | Syncfusion
+description: Persist the ##Platform_Name## Query Builder UI rule in the browser localStorage across page reloads by setting the enablePersistence property to true.
 platform: ej2-javascript
 control: State persistence 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State persistence in ##Platform_Name## Query builder control
+# How to maintain state persistence in ##Platform_Name## Query Builder UI
 
-State persistence allows you to maintain the current state in the browser’s `localStorage` even if the browser is refreshed or if you move to the next page within the browser. State persistence stores the Query Builder’s `rule` object in the local storage when the [`enablePersistence`](https://ej2.syncfusion.com/documentation/state-persistence/) is defined to true.
+State persistence allows you to maintain the current state in the browser’s `localStorage` even if the browser is refreshed or if you move to the next page within the browser. State persistence stores the Query Builder’s `rule` object in the local storage when the [`enablePersistence`](https://ej2.syncfusion.com/documentation/state-persistence) is defined to true.
 
 {% if page.publishingplatform == "typescript" %}
 

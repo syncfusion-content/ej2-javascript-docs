@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization using cssclass in ##Platform_Name## Daterangepicker control | Syncfusion
-description: Learn here all about Customization using cssclass in Syncfusion ##Platform_Name## Daterangepicker control of Syncfusion Essential JS 2 and more.
+title: How to apply CSSClass in ##Platform_Name## DateRangePicker | Syncfusion
+description: Override ##Platform_Name## DateRangePicker styles by adding a root CSS class through the cssClass property to customize wrapper, icon, and popup.
 platform: ej2-javascript
 control: Customization using cssclass 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization using cssclass in ##Platform_Name## Daterangepicker control
+# How to apply CSSClass in ##Platform_Name## DateRangePicker
 
 To customize UI, you can make use of [`cssClass`](../../api/daterangepicker#cssclass) that will be added to the DateRangePicker component as the root CSS class. With this CSS class, you can override existing styles of DateRangePicker.
 

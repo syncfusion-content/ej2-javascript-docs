@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Positions in ##Platform_Name## Speed dial control | Syncfusion
-description: Learn here all about Positions in Syncfusion ##Platform_Name## Speed dial control of Syncfusion Essential JS 2 and more.
+title: Positions in ##Platform_Name## Speed Dial | Syncfusion
+description: Learn how to position the ##Platform_Name## Speed Dial with the position property and open action items on hover or programmatically.
 platform: ej2-javascript
 control: Positions 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Positions in ##Platform_Name## Speed dial control
+# Positions in ##Platform_Name## Speed Dial
 
 The Speed dial control can be positioned anywhere on the [`target`](../api/speed-dial#target) using the [`position`](../api/speed-dial#position) property. If the `target` is not defined, then Speed Dial is positioned based on the browser viewport.
 

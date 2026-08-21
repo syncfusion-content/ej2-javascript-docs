@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resizing in ##Platform_Name## Multi Select control | Syncfusion
-description: Learn here all about Popup Resizing in Syncfusion ##Platform_Name## Multi Select control of Syncfusion Essential JS 2 and more.
+title: Resizing in ##Platform_Name## MultiSelect Dropdown | Syncfusion
+description: Let users resize the Syncfusion ##Platform_Name## MultiSelect Dropdown popup dynamically and retain the dimensions across sessions.
 platform: ej2-javascript
 control: Resizing
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resizing ##Platform_Name## Multi select control
+# Resizing in ##Platform_Name## MultiSelect Dropdown
 
 You can dynamically adjust the size of the popup in the Autocomplete component by using the [AllowResize](https://ej2.syncfusion.com/javascript/documentation/api/multi-select/#allowresize) property. When enabled, users can resize the popup, improving visibility and control, with the resized dimensions being retained across sessions for a consistent user experience.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Maximum Length in ##Platform_Name## TextBox control | Syncfusion
-description: Limiting the maximum number of characters in the ##Platform_Name## TextBox control of Syncfusion Essential JS 2 and more details.
+title: Max Length in ##Platform_Name## TextBox | Syncfusion
+description: Limit the ##Platform_Name## TextBox to a maximum number of characters using the maxLength property to prevent users from exceeding the allowed input length.
 platform: ej2-javascript
 control: Maximum Length
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Maximum Length in the ##Platform_Name## TextBox Control
+# Max Length in ##Platform_Name## TextBox
 
 You can enforce a maximum length limit for the text input in the TextBox using the `maxLength` property. This property allows to define the maximum number of characters that users can input into the TextBox.
 

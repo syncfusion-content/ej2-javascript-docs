@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## Multi select control | Syncfusion
-description: Learn here all about Data binding in Syncfusion ##Platform_Name## Multi select control of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## MultiSelect Dropdown | Syncfusion
+description: Bind the Syncfusion ##Platform_Name## MultiSelect Dropdown to local arrays or remote services like OData and Web API using DataManager.
 platform: ej2-javascript
 control: Data binding 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in ##Platform_Name## Multi select control
+# Data Binding in ##Platform_Name## MultiSelect Dropdown
 
 The MultiSelect loads the data either from local data sources or remote data services using the [dataSource](../api/multi-select/#datasource) property. It supports the data type of `array` or `DataManager`.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with JavaScript DateTimePicker | Syncfusion
+title: Getting Started with ##Platform_Name## DateTime Picker | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Datetimepicker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Datetimepicker control
+# Getting Started with ##Platform_Name## DateTime Picker
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Date time picker and demonstrate the basic usage of the Date time picker control in a JavaScript application.
 

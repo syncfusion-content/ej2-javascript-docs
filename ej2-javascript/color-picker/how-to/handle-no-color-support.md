@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Handle no color support in ##Platform_Name## Color picker control | Syncfusion
-description: Learn here all about Handle no color support in Syncfusion ##Platform_Name## Color picker control of Syncfusion Essential JS 2 and more.
+title: No color support in ##Platform_Name## Color Picker | Syncfusion
+description: Enable a no-color tile in the Syncfusion ##Platform_Name## Color Picker palette so users can clear their selection by setting the noColor property to true.
 platform: ej2-javascript
 control: Handle no color support 
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Handle no color support in ##Platform_Name## Color picker control
+# How to handle no color support in ##Platform_Name## Color Picker
 
 The ColorPicker component supports no color functionality. By clicking the no color tile from palette, the selected color becomes `empty` and considered as no color has been selected from color picker.
 
 ## Default no color
 
-To achieve this, set [`noColor`](../../api/color-picker/#nocolor) property as `true`.
+To achieve this, set [`noColor`](../../api/color-picker/index-default#nocolor) property as `true`.
 
 In the following sample, the first tile of the color palette represents the no color tile. By clicking the no color tile you can achieve the above functionalities.
 
@@ -52,7 +52,7 @@ In the following sample, the first tile of the color palette represents the no c
 {% previewsample "page.domainurl/code-snippet/colorpicker/no-color/default-cs1" %}
 {% endif %}
 
->If the [`noColor`](../../api/color-picker/#nocolor) property is enabled, make sure to disable the [`modeswitcher`](../../api/color-picker/#modeswitcher) property.
+>If the [`noColor`](../../api/color-picker/index-default#nocolor) property is enabled, make sure to disable the [`modeswitcher`](../../api/color-picker/index-default#modeswitcher) property.
 
 ## Custom no color
 

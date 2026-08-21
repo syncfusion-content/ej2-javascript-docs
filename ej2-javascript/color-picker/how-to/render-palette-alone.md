@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Render palette alone in ##Platform_Name## Color picker control | Syncfusion
-description: Learn here all about Render palette alone in Syncfusion ##Platform_Name## Color picker control of Syncfusion Essential JS 2 and more.
+title: Render palette alone in ##Platform_Name## Color Picker | Syncfusion
+description: Render only the palette area in the Syncfusion ##Platform_Name## Color Picker by setting mode to Palette and disabling the mode switcher.
 platform: ej2-javascript
 control: Render palette alone 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render palette alone in ##Platform_Name## Color picker control
+# How to render palette alone in ##Platform_Name## Color Picker
 
-To render the `Palette` alone in ColorPicker, specify the [`mode`](../../api/color-picker/#mode) property as `Palette`, and set the [`modeSwitcher`](../../api/color-picker/#modeswitcher) property to `false`.
+To render the `Palette` alone in ColorPicker, specify the [`mode`](../../api/color-picker/index-default#mode) property as `Palette`, and set the [`modeSwitcher`](../../api/color-picker/index-default#modeswitcher) property to `false`.
 
-In the following sample, the [`showButtons`](../../api/color-picker/#showbuttons) property is disabled to hide the control buttons and it renders only the `Palette` area.
+In the following sample, the [`showButtons`](../../api/color-picker/index-default#showbuttons) property is disabled to hide the control buttons and it renders only the `Palette` area.
 
 {% if page.publishingplatform == "typescript" %}
 

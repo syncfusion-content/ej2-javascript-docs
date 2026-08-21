@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in ##Platform_Name## OTP Input control | Syncfusion
-description: Learn here all about Appearance in Syncfusion ##Platform_Name## OTP Input control of Syncfusion Essential JS 2 and more.
+title: Appearance in ##Platform_Name## OTP Input | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## OTP Input length and overall appearance by setting the length property to match the OTP digit count.
 platform: ej2-javascript
 control: OTP Input 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance in ##Platform_Name## OTP Input control
+# Appearance in ##Platform_Name## OTP Input
 
 You can also customize the appearance of OTP Input control.
 

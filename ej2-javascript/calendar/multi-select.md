@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Multi select in ##Platform_Name## Calendar control | Syncfusion
-description: Learn here all about Multi select in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
+title: Multi Selection in ##Platform_Name## Calendar | Syncfusion
+description: Enable selection of single or multiple dates in ##Platform_Name## Calendar using the isMultiSelection and values properties for date ranges.
 platform: ej2-javascript
 control: Multi select 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Multi select in ##Platform_Name## Calendar control
+# Multi Selection in ##Platform_Name## Calendar
 
 Calendar provides an option to select **single** or **multiple dates** by using `isMultiSelection` and `values` properties. By default, `isMultiSelection` property will be in disabled state.
 

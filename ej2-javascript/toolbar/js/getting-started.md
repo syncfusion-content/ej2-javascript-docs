@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Toolbar control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Toolbar control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Toolbar | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Toolbar control and configure it for JavaScript apps quickly.
 platform: ej2-javascript
 control: Toolbar 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Toolbar control
+# Getting started in ##Platform_Name## Toolbar
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create collapsible tabs in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Create collapsible tabs in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: How to create collapsible tabs in ##Platform_Name## Tab | Syncfusion
+description: Learn how to create collapsible tabs in the Syncfusion ##Platform_Name## Tab control for compact content grouping.
 platform: ej2-javascript
 control: Create collapsible tabs 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create collapsible tabs in ##Platform_Name## Tab control
+# How to create collapsible tabs in ##Platform_Name## Tab
 
 You can implement collapse and expand functionality in the Tab control by adding and removing a custom CSS class in the click event handler for each tab. Here's how to achieve this:
 

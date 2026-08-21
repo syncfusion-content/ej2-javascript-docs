@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Undo Redo in ##Platform_Name## Image editor control | Syncfusion
-description: Learn here all about Undo Redo in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
+title: Undo Redo in ##Platform_Name## Image Editor | Syncfusion
+description: Reverse and repeat up to 16 editing actions on images in the ##Platform_Name## Image Editor with the undo and redo methods.
 platform: ej2-javascript
 control: Undo Redo 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Undo and Redo in the ##Platform_Name## Image Editor control
+# Undo Redo in ##Platform_Name## Image Editor
 
 The undo and redo functionalities provide a way to reverse and repeat editing actions performed on an image. These features are Essential<sup style="font-size:70%">&reg;</sup> for maintaining control and flexibility during the editing process. 
 
@@ -23,7 +23,7 @@ The undo action in an image editor allows users to revert the most recent editin
 
 The Redo action in an image editor allows users to reapply previously undone actions or modifications to the image. When the redo command is triggered, the image editor reapplies the last action that was undone, bringing the image back to the state it was in after the action was initially applied. The redo is useful when users want to repeat an action that was previously undone or restore changes that were temporarily reversed. 
 
-In the following example, the [`undo`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#undo) and [`redo`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#redo) method is used in the button click event.
+In the following example, the [`undo`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#undo) and [`redo`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#redo) method is used in the button click event.
 
 {% if page.publishingplatform == "typescript" %}
 

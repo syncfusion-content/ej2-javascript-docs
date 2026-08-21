@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create right to left splitbutton in ##Platform_Name## Split button control | Syncfusion
-description: Learn here all about Create right to left splitbutton in Syncfusion ##Platform_Name## Split button control of Syncfusion Essential JS 2 and more.
+title: How to create right to left Split Button in ##Platform_Name## Split Button | Syncfusion
+description: Learn how to create a right-to-left ##Platform_Name## Split Button by setting the enableRtl property to true.
 platform: ej2-javascript
 control: Create right to left splitbutton 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create right to left splitbutton in ##Platform_Name## Split button control
+# How to create right to left Split Button in ##Platform_Name## Split Button
 
 SplitButton component has RTL support. This can be achieved by setting [`enableRtl`](../../api/split-button#enablertl) as `true`.
 

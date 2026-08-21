@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Strict mode in ##Platform_Name## Datetimepicker control | Syncfusion
-description: Learn here all about Strict mode in Syncfusion ##Platform_Name## Datetimepicker control of Syncfusion Essential JS 2 and more.
+title: Strict Mode in ##Platform_Name## DateTime Picker | Syncfusion
+description: Use strictMode in ##Platform_Name## DateTime Picker to allow only valid date and time values within the configured min and max range in the textbox.
 platform: ej2-javascript
 control: Strict mode 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Strict mode in ##Platform_Name## Datetimepicker control
+# Strict Mode in ##Platform_Name## DateTime Picker
 
 The [`strictMode`](../api/datetimepicker#strictmode) is an act, that allows the user to enter only the valid date and time within the specified min/max range in textbox. If the input entered is invalid, then the component will stay with the previous value. Else, if the date and time is
 out of range, then the component will set the date to the min/max value.

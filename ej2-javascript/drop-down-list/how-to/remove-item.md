@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Remove item in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Remove item in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: How to remove item in ##Platform_Name## Dropdown List | Syncfusion
+description: Remove an item from a Syncfusion ##Platform_Name## Dropdown List at runtime by calling removeItem with the item's index or data.
 platform: ej2-javascript
 control: Remove item 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Remove item in ##Platform_Name## Drop down list control
+# How to remove an item in ##Platform_Name## Dropdown List
 
 The following example demonstrate about how to remove an item from DropDownList.
 

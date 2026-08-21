@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Shimmer effect in ##Platform_Name## Skeleton control | Syncfusion
-description: Learn here all about Shimmer effect in Syncfusion ##Platform_Name## Skeleton control of Syncfusion Essential JS 2 and more.
+title: Shimmer Effect in ##Platform_Name## Skeleton | Syncfusion
+description: Animate ##Platform_Name## Skeleton with Wave, Pulse, or Fade shimmer effects to indicate loading content on the page.
 platform: ej2-javascript
-control: Shimmer effect 
+control: Shimmer effect
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Shimmer effect in ##Platform_Name## Skeleton control
+# Shimmer Effect in ##Platform_Name## Skeleton
 
-You can use the [`shimmerEffect`](../api/skeleton/#shimmereffect) property to change animation effect in the skeleton control. Skeleton supports `Wave`, `Pulse` and `Fade` effects and by default, the `shimmerEffect` is set to `Wave` effect.
+You can use the [`shimmerEffect`](../api/skeleton/index-default#shimmereffect) property to change animation effect in the skeleton control. Skeleton supports `Wave`, `Pulse` and `Fade` effects and by default, the `shimmerEffect` is set to `Wave` effect.
 
 ```ts
 import { Skeleton } from '@syncfusion/ej2-notifications';

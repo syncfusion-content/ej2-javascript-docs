@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Limits in ##Platform_Name## Range Slider control | Syncfusion
-description: Learn here all about Limits in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Limits in ##Platform_Name## Range Slider | Syncfusion
+description: Use the limits feature in ##Platform_Name## Range Slider to restrict thumb movement, set custom ranges, or lock handles within a defined interval.
 platform: ej2-javascript
 control: Limits 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Limits in ##Platform_Name## Range Slider control
+# Limits in ##Platform_Name## Range Slider
 
 The slider [`limits`](../api/slider/#limits) feature restricts the slider thumb movement within a specified range, which is useful if higher or lower values might affect the process or product where the slider is employed.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set the readonly in ##Platform_Name## Datepicker control | Syncfusion
-description: Learn here all about Set the readonly in Syncfusion ##Platform_Name## Datepicker control of Syncfusion Essential JS 2 and more.
+title: How to make input readonly in ##Platform_Name## DatePicker | Syncfusion
+description: Make the ##Platform_Name## DatePicker input non-editable by setting the readonly property so the value can only be changed via the popup.
 platform: ej2-javascript
 control: Set the readonly 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set the readonly in ##Platform_Name## Datepicker control
+# How to make input readonly in ##Platform_Name## DatePicker
 
 The following example demonstrates how to set `readonly` in DatePicker component. You can achieve this by using [`readonly`](../../api/datepicker#readonly) property.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Sidebar control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Sidebar control and configure it for TypeScript apps quickly.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Sidebar control
+# Getting started in ##Platform_Name## Sidebar
 
 This section briefly explains the steps to create a simple Sidebar and demonstrates the basic usage of the Sidebar component using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 

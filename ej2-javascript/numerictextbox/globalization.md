@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Numerictextbox control | Syncfusion
-description: Learn here all about Globalization in Syncfusion ##Platform_Name## Numerictextbox control of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## Numeric Textbox | Syncfusion
+description: Localize the Syncfusion ##Platform_Name## Numeric Textbox spin button tooltips across cultures using the L10n library and locale property.
 platform: ej2-javascript
 control: Globalization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in ##Platform_Name## Numerictextbox control
+# Globalization in ##Platform_Name## Numeric Textbox
 
 ## Localization
 

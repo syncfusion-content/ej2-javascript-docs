@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Avatar in listview for ##Platform_Name## Avatar control | Syncfusion
-description: Learn here all about Integrate avatar into listview in Syncfusion ##Platform_Name## Avatar control of Syncfusion Essential JS 2 and more.
+title: Integrate avatar into ListView in ##Platform_Name## Avatar | Syncfusion
+description: Combine Syncfusion ##Platform_Name## Avatar with the ListView control to build contact lists and user rosters using xsmall avatars with letters or images.
 platform: ej2-javascript
 control: Integrate avatar into listview 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate the Avatar control into the ListView control
+# How to integrate avatar into ListView in ##Platform_Name## Avatar
 
 Avatar can be integrated into various controls to enhance a wide variety of applications. Some integrations are demonstrated in the following section.
 

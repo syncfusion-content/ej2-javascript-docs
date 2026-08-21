@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Range Slider control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Range Slider | Syncfusion
+description: Learn how to set up the ##Platform_Name## Range Slider from scratch using local script references, CDN links, and initialization in a basic HTML page.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Range Slider control
+# Getting Started with ##Platform_Name## Range Slider
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Range Slider and demonstrate the basic usage of the Range Slider control in a JavaScript application.
 

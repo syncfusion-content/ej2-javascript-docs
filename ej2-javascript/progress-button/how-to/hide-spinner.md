@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hide spinner in ##Platform_Name## Progress button control | Syncfusion
-description: Learn here all about Hide spinner in Syncfusion ##Platform_Name## Progress button control of Syncfusion Essential JS 2 and more.
+title: How to hide spinner in ##Platform_Name## Progress Button | Syncfusion
+description: Learn how to hide the spinner in the ##Platform_Name## Progress Button by setting the e-hide-spinner class on the cssClass property.
 platform: ej2-javascript
 control: Hide spinner 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hide spinner in ##Platform_Name## Progress button control
+# How to hide spinner in ##Platform_Name## Progress Button
 
 You can hide spinner in the ProgressButton by setting the `e-hide-spinner` property to [`cssClass`](../../api/progress-button/#cssClass).
 

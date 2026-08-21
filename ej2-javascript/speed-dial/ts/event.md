@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Event in ##Platform_Name## Speed dial control | Syncfusion
-description: Learn here all about Event in Syncfusion ##Platform_Name## Speed dial control of Syncfusion Essential JS 2 and more.
+title: Events in ##Platform_Name## Speed Dial | Syncfusion
+description: Learn the events available on the ##Platform_Name## Speed Dial such as clicked, created, beforeOpen, onOpen, beforeClose, onClose, and beforeItemRender.
 platform: ej2-javascript
 control: Event 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Event in ##Platform_Name## Speed dial control
+# Events in ##Platform_Name## Speed Dial
 
 This section explains the Speed Dial events that will be triggered when appropriate actions are performed.
 

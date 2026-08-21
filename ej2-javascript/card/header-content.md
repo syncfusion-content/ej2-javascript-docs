@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header content in ##Platform_Name## Card control | Syncfusion
-description: Learn here all about Header content in Syncfusion ##Platform_Name## Card control of Syncfusion Essential JS 2 and more.
+title: Header Content in ##Platform_Name## Card | Syncfusion
+description: Add headers and content to Syncfusion ##Platform_Name## Card with title, subtitle, image, and body sections using built-in classes.
 platform: ej2-javascript
 control: Header content 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Header content in ##Platform_Name## Card control
+# Header Content in ##Platform_Name## Card
 
 ## Header
 

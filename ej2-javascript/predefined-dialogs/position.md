@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Position in ##Platform_Name## Predefined dialogs control | Syncfusion
-description: Learn here all about Position in Syncfusion ##Platform_Name## Predefined dialogs control of Syncfusion Essential JS 2 and more.
+title: Position in ##Platform_Name## Predefined Dialogs | Syncfusion
+description: Position ##Platform_Name## Predefined Alert, Confirm, and Prompt dialogs with X and Y values such as left, center, right, or numeric offsets.
 platform: ej2-javascript
 control: Position 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Position in ##Platform_Name## Predefined dialogs control
+# Position in ##Platform_Name## Predefined Dialogs
 
 Customize the dialog position by using the `position` property. The position can be represented with specific `X` and `Y` values.
 

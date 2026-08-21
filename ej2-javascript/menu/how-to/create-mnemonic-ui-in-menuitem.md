@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Create mnemonic ui in menuitem in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Create mnemonic ui in menuitem in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: How to create mnemonic ui in menuitem in ##Platform_Name## Menu | Syncfusion
+description: Learn how to create mnemonic UI in menu items with the Syncfusion ##Platform_Name## Menu control for keyboard-friendly navigation.
 platform: ej2-javascript
-control: Create mnemonic ui in menuitem 
+control: Create mnemonic ui in menuitem
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create mnemonic ui in menuitem in ##Platform_Name## Menu control
+# How to create mnemonic ui in menuitem in ##Platform_Name## Menu
 
 A particular character in a text can be underlined in the [`beforeItemRender`](../../api/menu#beforeitemrender) event by adding `<u>` tag in between the text and assign the innerHTML to the `li` element.
 

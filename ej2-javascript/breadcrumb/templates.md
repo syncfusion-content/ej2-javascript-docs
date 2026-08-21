@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Breadcrumb control | Syncfusion
-description: Learn here all about Templates in Syncfusion ##Platform_Name## Breadcrumb control of Syncfusion Essential JS 2 and more.
+title: Templates in ##Platform_Name## Breadcrumb | Syncfusion
+description: Customize Syncfusion ##Platform_Name## Breadcrumb items and separators with itemTemplate and separatorTemplate for rich UI.
 platform: ej2-javascript
 control: Templates 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in ##Platform_Name## Breadcrumb control
+# Templates in ##Platform_Name## Breadcrumb
 
 The Breadcrumb component provides a way to customize the items using [`itemTemplate`](https://ej2.syncfusion.com/documentation/api/breadcrumb/#itemtemplate) and the separators using [`separatorTemplate`](https://ej2.syncfusion.com/documentation/api/breadcrumb/#separatortemplate) properties.
 

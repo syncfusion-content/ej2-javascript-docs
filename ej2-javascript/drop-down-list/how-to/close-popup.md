@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Close popup in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Close popup in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: How to close popup in ##Platform_Name## Dropdown List | Syncfusion
+description: Close the Syncfusion ##Platform_Name## Dropdown List popup on window scroll by calling hidePopup in the scroll event handler.
 platform: ej2-javascript
 control: Close popup 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Close popup in ##Platform_Name## Drop down list control
+# How to close popup in ##Platform_Name## Dropdown List
 
 By using the `hidePopup` method in DropDownList, you can close the popup on scroll when triggered the windows scroll event.
 

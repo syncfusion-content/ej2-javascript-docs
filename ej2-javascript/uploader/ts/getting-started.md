@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Uploader control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## File Upload | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## File Upload control in a TypeScript application, including setup, configuration, and basic usage.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-
-
-# Getting started in ##Platform_Name## Uploader control
+# Getting Started with ##Platform_Name## File Upload
 
 This section explains the steps to create a simple Uploader and demonstrates the basic usage of the Uploader component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 

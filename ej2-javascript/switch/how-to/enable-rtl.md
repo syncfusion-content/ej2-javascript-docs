@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable rtl in ##Platform_Name## Switch control | Syncfusion
-description: Learn here all about Enable rtl in Syncfusion ##Platform_Name## Switch control of Syncfusion Essential JS 2 and more.
+title: How to enable RTL in ##Platform_Name## Toggle Switch Button | Syncfusion
+description: Learn how to enable right-to-left rendering in the ##Platform_Name## Toggle Switch Button by setting the enableRtl property to true.
 platform: ej2-javascript
 control: Enable rtl 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable rtl in ##Platform_Name## Switch control
+# How to enable RTL in ##Platform_Name## Toggle Switch Button
 
 Switch component has RTL support. This can be achieved by setting [`enableRtl`](../../api/switch#enablertl) as `true`.
 

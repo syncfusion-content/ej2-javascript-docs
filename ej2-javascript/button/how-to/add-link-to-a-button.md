@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add link to a button in ##Platform_Name## Button control | Syncfusion
-description: Learn here all about Add link to a button in Syncfusion ##Platform_Name## Button control of Syncfusion Essential JS 2 and more.
+title: How to add link to a Button in ##Platform_Name## Button | Syncfusion
+description: Learn how to make the ##Platform_Name## Button render as a link using the e-link class and handle navigation in its click event.
 platform: ej2-javascript
 control: Add link to a button 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add link to a button in ##Platform_Name## Button control
+# How to add link to a Button in ##Platform_Name## Button
 
-The appearance of the Button can be changed like a link by `e-link` class using [`cssClass`](../../api/button/#cssclass) property and link navigation can be handled in Button click.
+The appearance of the Button can be changed like a link by `e-link` class using [`cssClass`](../../api/button#cssclass) property and link navigation can be handled in Button click.
 
 In the following example, link is added in Button click by using `window.open()` method.
 

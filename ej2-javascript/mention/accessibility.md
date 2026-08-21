@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Mention control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Mention | Syncfusion
+description: Learn how the Syncfusion ##Platform_Name## Mention meets WAI-ARIA, WCAG 2.2, and Section 508 with full keyboard and screen reader support.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Mention control
+# Accessibility in ##Platform_Name## Mention
 
 Web accessibility makes web content and web applications more accessible for people with disabilities. Mention control provides built-in compliance with `WAI-ARIA` specifications. The `WAI-ARIA` support is achieved using the attributes such as `aria-selected` and `aria-activedescendent`.
 

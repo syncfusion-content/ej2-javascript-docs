@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Items in  ##Platform_Name## Timeline control | Syncfusion
-description:  Checkout and learn about Items with ##Platform_Name## Timeline control of Syncfusion Essential JS 2 and more.
+title: Items in ##Platform_Name## Timeline | Syncfusion
+description: Add items to Syncfusion ##Platform_Name## Timeline with the items property, configuring content, oppositeContent, dotCss, disabled, and cssClass options.
 platform: ej2-javascript
 control: Timeline
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Items in ##Platform_Name## Timeline control
+# Items in ##Platform_Name## Timeline
 
 The Timeline items can be added by using the [`items`](../api/timeline#items) property. Each item can be configured with options such as [`content`](../api/timeline/timelineItemModel#content), [`oppositeContent`](../api/timeline/timelineItemModel#oppositecontent), [`dotCss`](../api/timeline/timelineItemModel#dotcss), [`disabled`](../api/timeline/timelineItemModel#disabled) and [`cssClass`](../api/timeline/timelineItemModel#cssclass).
 

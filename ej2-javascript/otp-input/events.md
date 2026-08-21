@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in ##Platform_Name## OTP Input control | Syncfusion
-description: Learn here all about Events in Syncfusion ##Platform_Name## OTP Input control of Syncfusion Essential JS 2 and more.
+title: Events in ##Platform_Name## OTP Input | Syncfusion
+description: Handle built-in events of the Syncfusion ##Platform_Name## OTP Input such as created to run custom logic when the input control has finished initializing.
 platform: ej2-javascript
 control: OTP Input 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## OTP Input control
+# Events in ##Platform_Name## OTP Input
 
 This section describes the OTP Input events that will be triggered when appropriate actions are performed. The following events are available in the OTP Input control.
 

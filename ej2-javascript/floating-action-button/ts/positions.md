@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Positions in ##Platform_Name## Floating action button control | Syncfusion
-description: Learn here all about Positions in Syncfusion ##Platform_Name## Floating action button control of Syncfusion Essential JS 2 and more.
+title: Positions in ##Platform_Name## Floating Action Button | Syncfusion
+description: Learn how to position the ##Platform_Name## Floating Action Button anywhere on a target with the position property.
 platform: ej2-javascript
 control: Positions 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Positions in ##Platform_Name## Floating action button control
+# Positions in ##Platform_Name## Floating Action Button
 
 The floating action button can be positioned anywhere on the [`target`](../api/floating-action-button/fab/#target) using the [`position`](../api/floating-action-button/fab/#position) property. If the `target` is not defined, then FAB is positioned based on the browser viewport.
 

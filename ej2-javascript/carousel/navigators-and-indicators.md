@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Navigators and indicators in ##Platform_Name## Carousel control | Syncfusion
-description: Learn here all about Navigators and indicators in Syncfusion ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more.
+title: Navigators and indicators in ##Platform_Name## Carousel | Syncfusion
+description: Show or hide Syncfusion ##Platform_Name## Carousel previous and next buttons, play/pause, and customize indicator bars.
 platform: ej2-javascript
 control: Navigators and indicators 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Navigators and indicators in ##Platform_Name## Carousel control
+# Navigators and indicators in ##Platform_Name## Carousel
 
 The navigators and indicators are used to transition the slides manually.
 

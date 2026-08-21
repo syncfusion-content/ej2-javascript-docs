@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Styles and appearance in ##Platform_Name## Carousel control | Syncfusion
-description: Learn here all about Styles and appearance in Syncfusion ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more.
+title: Styles and appearance in ##Platform_Name## Carousel | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Carousel appearance with CSS for items, indicators, navigators, and play-pause buttons.
 platform: ej2-javascript
 control: Styles and appearance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Styles and appearance in ##Platform_Name## Carousel control
+# Styles and appearance in ##Platform_Name## Carousel
 
 To modify the Carousel appearance, you need to override the default CSS of Carousel component. Please find the list of CSS classes and its corresponding section in Carousel component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 

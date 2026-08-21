@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add font awesome in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Add font awesome in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: How to add font awesome icons in ##Platform_Name## Tab | Syncfusion
+description: Learn how to add Font Awesome icons to the Syncfusion ##Platform_Name## Tab control for richer header and tab visuals.
 platform: ej2-javascript
 control: Add font awesome 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add font awesome in ##Platform_Name## Tab control
+# How to add font awesome icons in ##Platform_Name## Tab
 
 You can customize the Tab component items using Font Awesome icons and fonts. Here's how to do it:
 

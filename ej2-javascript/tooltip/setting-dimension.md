@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting dimension in ##Platform_Name## Tooltip control | Syncfusion
-description: Learn here all about Setting dimension in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
+title: Setting Dimension in ##Platform_Name## Tooltip | Syncfusion
+description: Set the ##Platform_Name## Tooltip's width and height in pixels or auto, and enable scroll mode for overflow content with the sticky Tooltip support.
 platform: ej2-javascript
 control: Setting dimension
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Setting dimension in ##Platform_Name## Tooltip control
+# Setting Dimension in ##Platform_Name## Tooltip
 
 ## Height and Width
 

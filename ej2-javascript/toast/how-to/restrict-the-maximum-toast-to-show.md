@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Restrict the maximum toast to show in ##Platform_Name## Toast control | Syncfusion
-description: Learn here all about Restrict the maximum toast to show in Syncfusion ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more.
+title: How to restrict max toasts shown in ##Platform_Name## Toast | Syncfusion
+description: Limit how many ##Platform_Name## Toasts display at once by canceling the beforeOpen event after a fixed count.
 platform: ej2-javascript
-control: Restrict the maximum toast to show 
+control: Restrict the maximum toast to show
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Restrict the maximum toast to show in ##Platform_Name## Toast control
+# How to restrict max toasts shown in ##Platform_Name## Toast
 
 You can restrict the maximum toast count by using the event callback function and terminate the toast displaying process by setting the cancel event property in the [beforeOpen](../../api/toast/#beforeopen) event.
 

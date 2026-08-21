@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Index in ##Platform_Name## Carousel control | Syncfusion
-description: Learn here all about Index in Syncfusion ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more.
+title: Index in ##Platform_Name## Carousel | Syncfusion
+description: Explore the Syncfusion ##Platform_Name## Carousel for displaying images, content, and links with animation, templates, and accessibility.
 platform: ej2-javascript
 control: Index 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in ##Platform_Name## Carousel control
+# Index in ##Platform_Name## Carousel
 
 The **Carousel** component allows users to display images with content, links, etc., like a slide show. Typical uses of carousels include scrolling news headlines, featured articles on home pages, and image galleries.
 

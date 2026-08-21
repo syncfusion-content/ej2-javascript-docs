@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Summary in ##Platform_Name## Progress button control | Syncfusion
-description: Learn here all about Summary in Syncfusion ##Platform_Name## Progress button control of Syncfusion Essential JS 2 and more.
+title: Summary in ##Platform_Name## Progress Button | Syncfusion
+description: Quick links to the ##Platform_Name## Progress Button guides, including Getting Started, Spinner and Progress, and Accessibility.
 platform: ej2-javascript
 control: Summary 
 publishingplatform: ##Platform_Name##

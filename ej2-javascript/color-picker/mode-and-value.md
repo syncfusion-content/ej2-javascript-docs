@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mode and value in ##Platform_Name## Color picker control | Syncfusion
-description: Learn here all about Mode and value in Syncfusion ##Platform_Name## Color picker control of Syncfusion Essential JS 2 and more.
+title: Mode and Value in ##Platform_Name## Color Picker | Syncfusion
+description: Learn how to switch the Syncfusion ##Platform_Name## Color Picker between Picker and Palette modes and control the initial area rendered when the popup opens.
 platform: ej2-javascript
 control: Mode and value 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Mode and value in ##Platform_Name## Color picker control
+# Mode and Value in ##Platform_Name## Color Picker
 
 ## Rendering palette at initial load
 
-By default, the `Picker` area will be rendered at initial load. To render the Palette area while opening the ColorPicker pop-up, and specify the [`mode`](../api/color-picker/#mode) property as `Palette`.
+By default, the `Picker` area will be rendered at initial load. To render the Palette area while opening the ColorPicker pop-up, and specify the [`mode`](../api/color-picker/index-default#mode) property as `Palette`.
 
 In the following sample, it will render the `Palette` at initial load.
 
@@ -52,7 +52,7 @@ In the following sample, it will render the `Palette` at initial load.
 
 ## Color value
 
-The [`value`](../api/color-picker/#value) property can be used to specify the color value to the ColorPicker. It supports either `three` or `six` digit hex codes. To include `opacity`, set the color value as `four` or `eight` digit hex code.
+The [`value`](../api/color-picker/index-default#value) property can be used to specify the color value to the ColorPicker. It supports either `three` or `six` digit hex codes. To include `opacity`, set the color value as `four` or `eight` digit hex code.
 
 In the following sample, the color value sets as `four` digit hex code, the last digit represents the `opacity` value.
 
@@ -89,7 +89,7 @@ In the following sample, the color value sets as `four` digit hex code, the last
 {% previewsample "page.domainurl/code-snippet/colorpicker/value-cs1" %}
 {% endif %}
 
->> The [`value`](../api/color-picker/#value) property supports hex code with or without `#` prefix.
+>> The [`value`](../api/color-picker/index-default#value) property supports hex code with or without `#` prefix.
 
 ## See Also
 

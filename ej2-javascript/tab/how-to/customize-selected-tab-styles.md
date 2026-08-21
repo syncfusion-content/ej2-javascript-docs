@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize selected tab styles in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Customize selected tab styles in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: How to customize selected tab styles in ##Platform_Name## Tab | Syncfusion
+description: Learn how to customize selected tab styles in the Syncfusion ##Platform_Name## Tab control for better visual emphasis.
 platform: ej2-javascript
 control: Customize selected tab styles 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize selected tab styles in ##Platform_Name## Tab control
+# How to customize selected tab styles in ##Platform_Name## Tab
 
 You can customize the Tab style by overriding its header and active tab CSS classes. To do this, follow these steps:
 

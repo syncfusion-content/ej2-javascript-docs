@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Item template in ##Platform_Name## Drop down button control | Syncfusion
-description: Learn here all about Item template in Syncfusion ##Platform_Name## Drop down button control of Syncfusion Essential JS 2 and more.
+title: Item Template in ##Platform_Name## Dropdown Menu | Syncfusion
+description: Learn how to define a custom itemTemplate for the ##Platform_Name## Dropdown Menu to render icons, formatted text, and richer items.
 platform: ej2-javascript
 control: Item template
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Item template in ##Platform_Name## Drop down button control
+# Item Template in ##Platform_Name## Dropdown Menu
 
 The [itemTemplate](../api/drop-down-button/#itemtemplate) property in the DropDownButton component allows for the definition of custom templates to display dropdown items. This feature is especially useful for customizing the appearance and layout of dropdown items beyond the default options provided. By utilizing this property, diverse content such as icons, formatted text, and other visual elements can be integrated into the dropdown items for a more engaging and tailored user interface.
 

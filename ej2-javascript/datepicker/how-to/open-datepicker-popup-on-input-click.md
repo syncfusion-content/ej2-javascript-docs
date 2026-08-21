@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Open datepicker popup on input click in ##Platform_Name## Datepicker control | Syncfusion
-description: Learn here all about Open datepicker popup on input click in Syncfusion ##Platform_Name## Datepicker control of Syncfusion Essential JS 2 and more.
+title: How to open popup on click in ##Platform_Name## DatePicker | Syncfusion
+description: Open the ##Platform_Name## DatePicker popup when the input receives focus by calling the show method inside the focus event handler.
 platform: ej2-javascript
 control: Open datepicker popup on input click 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open datepicker popup on input click in ##Platform_Name## Datepicker control
+# How to open popup on click in ##Platform_Name## DatePicker
 
 To open the DatePicker popup upon input click by using `show` method in the `focus` event.
 

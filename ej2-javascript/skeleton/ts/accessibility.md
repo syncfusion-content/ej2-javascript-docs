@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Skeleton control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Skeleton control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Skeleton | Syncfusion
+description: Build accessible ##Platform_Name## Skeleton with WCAG 2.2, WAI-ARIA alert and live-region roles, and aria-busy to signal loading state.
 platform: ej2-javascript
-control: Accessibility 
+control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Skeleton control
+# Accessibility in ##Platform_Name## Skeleton
 
 The Skeleton control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create right to left dropdownbutton in ##Platform_Name## Drop down button control | Syncfusion
-description: Learn here all about Create right to left dropdownbutton in Syncfusion ##Platform_Name## Drop down button control of Syncfusion Essential JS 2 and more.
+title: How to create right to left Dropdown Menu in ##Platform_Name## Dropdown Menu | Syncfusion
+description: Learn how to create a right-to-left ##Platform_Name## Dropdown Menu by setting the enableRtl property to true.
 platform: ej2-javascript
 control: Create right to left dropdownbutton 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create right to left dropdownbutton in ##Platform_Name## Drop down button control
+# How to create right to left Dropdown Menu in ##Platform_Name## Dropdown Menu
 
 DropDownButton component has RTL support. This can be achieved by setting [`enableRtl`](../../api/drop-down-button/#enablertl) as true.
 

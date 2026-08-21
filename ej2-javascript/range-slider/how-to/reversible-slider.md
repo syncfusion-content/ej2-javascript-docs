@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Reversible Range Slider in ##Platform_Name## Range Slider control | Syncfusion
-description: Learn here all about creating a Reversible Range Slider in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Create reversible slider in ##Platform_Name## Range Slider | Syncfusion
+description: Render ##Platform_Name## Range Slider in reverse by setting min to the desired maximum and max to the desired minimum to swap the value range order.
 platform: ej2-javascript
 control: Reversible Range Slider 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Reversible Range Slider in ##Platform_Name##
+# How to create reversible slider in ##Platform_Name## Range Slider
 
 You can create a Range Slider with values rendered in reverse order by setting the [`min`](https://ej2.syncfusion.com/documentation/api/slider/#min) property to the maximum value and the [`max`](https://ej2.syncfusion.com/documentation/api/slider/#max) property to the minimum value. An example of how to achieve a reversible Range Slider is shown below:
 

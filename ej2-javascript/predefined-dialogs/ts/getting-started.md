@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Predefined dialogs control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Predefined dialogs control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Predefined Dialogs | Syncfusion
+description: Get started with ##Platform_Name## Predefined dialogs using the quickstart seed, install ej2-popups, and render alert, confirm, and prompt via the DialogUtility helper.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Predefined dialogs control
+# Getting started with ##Platform_Name## Predefined Dialogs
 
 This section explains how to create a simple Predefined dialogs, and configure its available functionalities in TypeScript using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## TreeView control | Syncfusion
-description: Learn here all about Data binding in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: Data binding in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to bind data to the Syncfusion ##Platform_Name## TreeView control for hierarchical content and easy navigation.
 platform: ej2-javascript
 control: Data binding
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in ##Platform_Name## TreeView control
+# Data binding in ##Platform_Name## TreeView
 
 The TreeView control provides the option to load data from either local data sources or remote data services. This can be done through the [`dataSource`](../api/treeview/fieldsSettingsModel#datasource) property, which is a member of the [`fields`](../api/treeview#fields) property. The [`dataSource`](../api/treeview/fieldsSettingsModel#datasource) property supports arrays of JavaScript objects and [`DataManager`](../api/data/dataManager/). It also supports different kinds of data services, such as OData, OData V4, Web API, URL, and JSON with the help of [`DataManager`](../api/data/dataManager/) adaptors.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Skeleton control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Skeleton control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Skeleton | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Skeleton control. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
-control: Es5 getting started 
+control: Es5 getting started
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Skeleton control
+# Getting Started with ##Platform_Name## Skeleton
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Skeleton and demonstrate the basic usage of the Skeleton control in a JavaScript application.
 

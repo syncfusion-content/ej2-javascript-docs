@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disabled the datepicker component in ##Platform_Name## Datepicker control | Syncfusion
-description: Learn here all about Disabled the datepicker component in Syncfusion ##Platform_Name## Datepicker control of Syncfusion Essential JS 2 and more.
+title: How to disable component in ##Platform_Name## DatePicker | Syncfusion
+description: Inactivate the ##Platform_Name## DatePicker by setting the enabled property to false to prevent all user interaction and form submission.
 platform: ej2-javascript
 control: Disabled the datepicker component 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disabled the datepicker component in ##Platform_Name## Datepicker control
+# How to disable component in ##Platform_Name## DatePicker
 
 To disable the DatePicker, use its [`enable`](../../api/datepicker#enabled) property.
 

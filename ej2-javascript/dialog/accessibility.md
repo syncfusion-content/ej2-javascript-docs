@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Dialog control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Dialog | Syncfusion
+description: Build accessible ##Platform_Name## Dialog experiences with WAI-ARIA roles, modal/non-modal states, keyboard navigation, and screen reader compatibility.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Dialog control
+# Accessibility in ##Platform_Name## Dialog
 
 The Dialog component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -66,7 +66,7 @@ Keyboard interaction of Dialog component has designed based on [WAI-ARIA Practic
 <td>
 <kbd>Esc</kbd></td><td>
 Closes the Dialog. This functionality can be controlled by using
-<a href="https://ej2.syncfusion.com/javascript/documentation/api/dialog/#closeonescape" target="_blank"> `closeOnEscape`</a> </td></tr>
+<a href="https://ej2.syncfusion.com/javascript/documentation/api/dialog/#closeonescape" target="_blank" aria-label="closeOnEscape property documentation"> `closeOnEscape`</a> </td></tr>
 <tr>
 <td>
 <kbd>Enter</kbd></td><td>
@@ -121,7 +121,7 @@ to last focusable element</td></tr>
 
 ## See Also
 
-* [Show dialog with fullscreen](./how-to/show-dialog-with-full-screen/)
+* [Show dialog with fullscreen](./how-to/show-dialog-with-full-screen)
 
 ## Ensuring accessibility
 

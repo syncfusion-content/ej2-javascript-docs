@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change the first day of week in ##Platform_Name## Calendar control | Syncfusion
-description: Learn here all about Change the first day of week in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
+title: How to change the first day in ##Platform_Name## Calendar | Syncfusion
+description: Set which weekday starts each row in the ##Platform_Name## Calendar by configuring the firstDayOfWeek property from 0 (Sunday) to 6 (Saturday).
 platform: ej2-javascript
 control: Change the first day of week 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change the first day of week in ##Platform_Name## Calendar control
+# How to change the first day in ##Platform_Name## Calendar
 
 The Calendar provides an option to change the first day of the week by using the [`firstDayOfWeek`](../../api/calendar#firstdayofweek) property. Generally, the day of the week starts from 0 (Sunday) and ends with 6 (Saturday).
 

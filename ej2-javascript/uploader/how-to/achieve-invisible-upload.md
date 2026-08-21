@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Achieve invisible upload in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Achieve invisible upload in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: How to achieve invisible upload in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to achieve an invisible upload in the Syncfusion ##Platform_Name## File Upload by using the selected event to process files without showing the default UI.
 platform: ej2-javascript
 control: Achieve invisible upload 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Achieve invisible upload in ##Platform_Name## Uploader control
+# How to achieve invisible upload in ##Platform_Name## File Upload
 
 You can achieve the invisible upload feature by using the selected event in uploader component. Refer to the following example.
 

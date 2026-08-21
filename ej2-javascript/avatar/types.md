@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Avatar control | Syncfusion
-description: Learn here all about Types in Syncfusion ##Platform_Name## Avatar control of Syncfusion Essential JS 2 and more.
+title: Types in ##Platform_Name## Avatar | Syncfusion
+description: Explore Syncfusion ##Platform_Name## Avatar types and sizes. Use default or circle shapes with five predefined size classes for consistent UI.
 platform: ej2-javascript
 control: Types 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Types in ##Platform_Name## Avatar control
+# Types in ##Platform_Name## Avatar
 
 This section explains the different types of Avatar control.
 

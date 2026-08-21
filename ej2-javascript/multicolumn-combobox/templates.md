@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## MultiColumn Combobox control | Syncfusion
-description: Checkout and learn about templates with ##Platform_Name## MultiColumn Combobox control of Syncfusion Essential JS 2 and more.
+title: Templates in ##Platform_Name## MultiColumn ComboBox | Syncfusion
+description: Customize each Syncfusion ##Platform_Name## MultiColumn ComboBox list item, group, header, and footer using the itemTemplate property.
 platform: ej2-javascript
 control: Templates
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in ##Platform_Name## MultiColumn ComboBox control
+# Templates in ##Platform_Name## MultiColumn ComboBox
 
 The MultiColumn ComboBox provides several template options to customize each items, groups, header and footer elements.
 

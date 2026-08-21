@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize HTML Attributes for Menu Items in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Customize HTML Attributes for Menu Items in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: How to customize HTML attributes for menu items in ##Platform_Name## Menu | Syncfusion
+description: Learn how to customize HTML attributes for menu items with the Syncfusion ##Platform_Name## Menu control for advanced accessibility and data handling.
 platform: ej2-javascript
 control: Customize HTML Attributes for Menu Items 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize HTML Attributes for Menu Items in ##Platform_Name## Menu control
+# How to customize HTML attributes for menu items in ##Platform_Name## Menu
 
 To customize the HTML attributes of the Menu, use the [htmlAttributes](../../api/menu/menuItemModel/#htmlattributes) property to add custom HTML attributes to the root element of the menu. This feature is particularly useful for enhancing accessibility, adding custom data attributes, or including additional properties that can be utilized for styling or functionality.
 

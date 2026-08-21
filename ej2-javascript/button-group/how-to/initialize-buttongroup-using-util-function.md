@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Initialize buttongroup using util function in ##Platform_Name## Button group control | Syncfusion
-description: Learn here all about Initialize buttongroup using util function in Syncfusion ##Platform_Name## Button group control of Syncfusion Essential JS 2 and more.
+title: How to create ButtonGroup using util in ##Platform_Name## | Syncfusion
+description: Learn how to initialize a ##Platform_Name## Button Group with the createButtonGroup util function for basic, radio, and checkbox layouts.
 platform: ej2-javascript
 control: Initialize buttongroup using util function 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Initialize buttongroup using util function in ##Platform_Name## Button group control
+# How to create ButtonGroup using util in ##Platform_Name## Button Group
 
 Though, it is a CSS component for easy initialization of ButtonGroup `createButtonGroup` util function can be used.
 

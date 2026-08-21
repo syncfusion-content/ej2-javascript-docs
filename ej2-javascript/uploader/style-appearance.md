@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style appearance in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Style appearance in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: Style Appearance in ##Platform_Name## File Upload | Syncfusion
+description: Learn the CSS structure used to style and customize the appearance of the Syncfusion ##Platform_Name## File Upload based on user preferences.
 platform: ej2-javascript
 control: Style appearance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style appearance in ##Platform_Name## Uploader control
+# Style Appearance in ##Platform_Name## File Upload
 
 The following content provides the exact CSS structure that can be used to modify the control’s appearance based on the user preference.
 

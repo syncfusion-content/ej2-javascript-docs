@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Action buttons in ##Platform_Name## Card control | Syncfusion
-description: Learn here all about Action buttons in Syncfusion ##Platform_Name## Card control of Syncfusion Essential JS 2 and more.
+title: Action Buttons in ##Platform_Name## Card | Syncfusion
+description: Add horizontal or vertical action buttons to Syncfusion ##Platform_Name## Card using the e-card-actions and e-card-btn classes for CTAs and links.
 platform: ej2-javascript
 control: Action buttons 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Action buttons in ##Platform_Name## Card control
+# Action Buttons in ##Platform_Name## Card
 
 Action buttons can be included within the Card component and customize them. An action button is a `div` element with the `e-card-actions` class that contains button or anchor elements within the card root element.
 
@@ -19,7 +19,7 @@ Action buttons can be included within the Card component and customize them. An 
     <div class = "e-card">
         <div class="e-card-actions">
             <button class="e-card-btn"></button>
-            <a href="#"></a>
+            <a href="#" aria-label="learn more about card action"></a>
         </div>
     </div>
 ```
@@ -32,7 +32,7 @@ By default, action buttons positioned in horizontal alignment , and also it can 
     <div class = "e-card">
         <div class="e-card-actions e-card-vertical">
             <button class="e-card-btn">More</button>
-            <a href="#">Share</a>
+            <a href="#" aria-label="share the card">Share</a>
         </div>
     </div>
 ```

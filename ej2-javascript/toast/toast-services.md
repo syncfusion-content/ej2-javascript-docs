@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Toast services in ##Platform_Name## Toast control | Syncfusion
-description: Learn here all about Toast services in Syncfusion ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more.
+title: Toast Services in ##Platform_Name## Toast | Syncfusion
+description: Render ##Platform_Name## Toast with minimal code using ToastUtility.show for predefined types or a full ToastModel.
 platform: ej2-javascript
-control: Toast services 
+control: Toast services
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toast services in ##Platform_Name## Toast control
+# Toast Services in ##Platform_Name## Toast
 
 The Toast component provides a built-in utility function to render the toast with minimal code. The utility function will render the toast without the need of rendering the container element in the DOM where the toast is appended. So that, the toast can now be rendered on the go. The following are the option to render the toast using the utility function.
 

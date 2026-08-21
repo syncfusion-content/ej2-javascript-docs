@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Button group control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Button group control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Button Group | Syncfusion
+description: Learn how the ##Platform_Name## Button Group meets WCAG 2.2, Section 508, and WAI-ARIA accessibility standards with full keyboard support.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Button group control
+# Accessibility in ##Platform_Name## Button Group
 
 The Button group component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -48,14 +48,14 @@ The Button group component followed the [keyboard interaction](https://www.w3.or
 | **Press** | **To do this** |
 | --- | --- |
 | <kbd>Tab</kbd> | Focuses the next button in the ButtonGroup. |
-| <kbd>Enter/Space</kbd> | Activates the focussed button in the ButtonGroup. |
+| <kbd>Enter/Space</kbd> | Activates the focused button in the ButtonGroup. |
 
 ### Checkbox behavior
 
 | **Press** | **To do this** |
 | --- | --- |
 | <kbd>Tab</kbd> | Focuses the next button in the ButtonGroup. |
-| <kbd>Space</kbd> | Activates the focussed button in the ButtonGroup. |
+| <kbd>Space</kbd> | Activates the focused button in the ButtonGroup. |
 
 ### Radiobutton behavior
 

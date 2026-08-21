@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Timeout in ##Platform_Name## Toast control | Syncfusion
-description: Learn here all about Timeout in Syncfusion ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more.
+title: TimeOut in ##Platform_Name## Toast | Syncfusion
+description: Set ##Platform_Name## Toast display duration with timeOut and extendedTimeOut, or set zero to keep it visible until closed.
 platform: ej2-javascript
-control: Timeout 
+control: Timeout
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timeout in ##Platform_Name## Toast control
+# TimeOut in ##Platform_Name## Toast
 
 The toast can be expired based on the [timeOut](../api/toast/#timeout) property. The toast can live till the time out reaches without user interaction, a time out value is considered as a millisecond.
 

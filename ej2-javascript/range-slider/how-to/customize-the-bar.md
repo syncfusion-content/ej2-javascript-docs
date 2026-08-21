@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize the bar in ##Platform_Name## Range Slider control | Syncfusion
-description: Learn here all about Customize the bar in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: How to customize the bar in ##Platform_Name## Range Slider | Syncfusion
+description: Customize ##Platform_Name## Range Slider bar styling by overriding the e-slider-track CSS class to apply themes, gradients, or range-based color changes.
 platform: ej2-javascript
 control: Customize the bar 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the bar in ##Platform_Name## Range Slider control
+# How to customize the bar in ##Platform_Name## Range Slider
 
 The appearance of the Range Slider control can be customized through CSS. By overriding the slider CSS classes, you can customize the slider bar with different themes. By default, the slider has a class name `e-slider-track` for its bar. This class can be overridden with your own color values, as shown in the following code snippet:
 

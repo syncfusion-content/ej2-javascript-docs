@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Prevent nullable input in numerictextbox in ##Platform_Name## Numerictextbox control | Syncfusion
-description: Learn here all about Prevent nullable input in numerictextbox in Syncfusion ##Platform_Name## Numerictextbox control of Syncfusion Essential JS 2 and more.
+title: How to prevent null input in ##Platform_Name## Numeric Textbox | Syncfusion
+description: Prevent the Syncfusion ##Platform_Name## Numeric Textbox from accepting null values so the input field always holds a defined number.
 platform: ej2-javascript
 control: Prevent nullable input in numerictextbox 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent nullable input in numerictextbox in ##Platform_Name## Numerictextbox control
+# How to prevent null input in ##Platform_Name## Numeric Textbox
 
 By default, the value of the NumericTextBox sets to null. In some applications, the value of the NumericTextBox should not be null at any instance. In such cases, following sample can be used to prevent nullable input in NumericTextBox.
 

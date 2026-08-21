@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in ##Platform_Name## Textbox control | Syncfusion
-description: Learn here all about Validation in Syncfusion ##Platform_Name## Textbox control of Syncfusion Essential JS 2 and more.
+title: Validation in ##Platform_Name## TextBox | Syncfusion
+description: Apply error, warning, or success validation states to the ##Platform_Name## TextBox using the cssClass property with e-error, e-warning, or e-success classes.
 platform: ej2-javascript
 control: Validation 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation in ##Platform_Name## Textbox control
+# Validation in ##Platform_Name## TextBox
 
 The TextBox supports three types of validation styles namely `error`, `warning`, and `success`. These states are enabled by adding corresponding classes `.e-error`, `.e-warning`, or `.e-success` to the [cssClass](../api/textbox/#cssClass) property.
 

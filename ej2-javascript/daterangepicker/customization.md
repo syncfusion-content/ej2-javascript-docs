@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Daterangepicker control | Syncfusion
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Daterangepicker control of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## DateRangePicker | Syncfusion
+description: Customize ##Platform_Name## DateRangePicker day cells with the renderDayCell event to disable weekends, highlight dates, or apply custom UI styling.
 platform: ej2-javascript
 control: Customization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in ##Platform_Name## Daterangepicker control
+# Customization in ##Platform_Name## DateRangePicker
 
 The DateRangePicker is available for UI customization that can be achieved by using available properties and events in the component.
 

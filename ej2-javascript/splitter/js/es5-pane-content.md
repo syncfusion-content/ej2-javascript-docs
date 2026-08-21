@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 pane content in ##Platform_Name## Splitter control | Syncfusion
-description: Learn here all about Es5 pane content in Syncfusion ##Platform_Name## Splitter control of Syncfusion Essential JS 2 and more.
+title: Es5 Pane Content in ##Platform_Name## Splitter | Syncfusion
+description: Add plain text, HTML markup, or other Syncfusion controls as content of Syncfusion ##Platform_Name## Splitter panes using the global-script ES5 syntax.
 platform: ej2-javascript
 control: Es5 pane content 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 pane content in ##Platform_Name## Splitter control
+# Es5 Pane Content in ##Platform_Name## Splitter
 
 Describes how to provide plain text, HTML markup, or other JavaScript UI controls as content of splitter.
 

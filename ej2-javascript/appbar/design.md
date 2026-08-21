@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Design in ##Platform_Name## Appbar control | Syncfusion
-description: Learn here all about Design in Syncfusion ##Platform_Name## Appbar control of Syncfusion Essential JS 2 and more.
+title: Design in ##Platform_Name## Appbar | Syncfusion
+description: Use Spacer in the Syncfusion ##Platform_Name## AppBar to add spacing between buttons, menus, and other content elements.
 platform: ej2-javascript
 control: Design 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Design in ##Platform_Name## Appbar control
+# Design in ##Platform_Name## Appbar
 
 ## Spacer
 

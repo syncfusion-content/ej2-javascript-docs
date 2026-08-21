@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with JavaScript Sidebar control | Syncfusion
-description: Checkout and learn about Getting started with JavaScript Sidebar control of Syncfusion Essential JS 2 and more details.
+title: Getting started with JavaScript Sidebar | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Sidebar control in JavaScript apps with quick configuration steps.
 platform: ej2-javascript
 control: Sidebar 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with JavaScript Sidebar control
+# Getting started with JavaScript Sidebar
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 

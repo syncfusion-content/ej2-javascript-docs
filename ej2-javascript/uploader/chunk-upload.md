@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chunk upload in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Chunk upload in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: Chunk Upload in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to upload large files in slices with the Syncfusion ##Platform_Name## File Upload using chunk upload for reliable transfer, pause, and resume.
 platform: ej2-javascript
 control: Chunk upload 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chunk upload in ##Platform_Name## Uploader control
+# Chunk Upload in ##Platform_Name## File Upload
 
 The Uploader sends the large file split into small chunks and transmits to the server using AJAX. You can also pause, resume, and retry the failed chunk file.
 

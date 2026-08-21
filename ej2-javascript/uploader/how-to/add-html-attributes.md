@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add html attributes in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Add html attributes in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: How to add html attributes in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to add custom HTML attributes such as disabled, value, and name to the Syncfusion ##Platform_Name## File Upload input element using the htmlAttributes property.
 platform: ej2-javascript
 control: Add html attributes 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add html attributes in ##Platform_Name## Uploader control
+# How to add html attributes in ##Platform_Name## File Upload
 
 You can add the additional HTML attributes such as disabled, value, name, and more to the element using the [htmlAttributes](../../api/uploader/#htmlAttributes) property. If you configured both the property and equivalent HTML attribute, then the component considers the property value.
 

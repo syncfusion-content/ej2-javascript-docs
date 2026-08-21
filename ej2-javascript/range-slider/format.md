@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Format in ##Platform_Name## Range Slider control | Syncfusion
-description: Learn here all about Format in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Format in ##Platform_Name## Range Slider | Syncfusion
+description: Format ##Platform_Name## Range Slider values and ARIA attributes using the built-in format API together with Internationalization or the renderingTicks and tooltipChange events.
 platform: ej2-javascript
 control: Format 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Format in ##Platform_Name## Range Slider control
+# Format in ##Platform_Name## Range Slider
 
 The [`format`](../api/slider/tooltipData/#format) feature is used to customize the units of Range Slider values to the desired format. The formatted values will also be applied to the ARIA attributes of the slider. There are two ways to achieve formatting in the slider:
 

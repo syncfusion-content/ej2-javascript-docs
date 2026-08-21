@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Render a dialog without header in ##Platform_Name## Dialog control | Syncfusion
-description: Learn here all about Render a dialog without header in Syncfusion ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more.
+title: How to render Dialog no header in ##Platform_Name## Dialog | Syncfusion
+description: Render the ##Platform_Name## Dialog without a header by setting the header property to an empty string or null.
 platform: ej2-javascript
 control: Render a dialog without header 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render a dialog without header in ##Platform_Name## Dialog control
+# How to render a Dialog without header in ##Platform_Name## Dialog
 
-The dialog can be rendered without header by setting the [header](../../api/dialog/#header) property value as empty string or null.  By default, dialog is rendered without header.
+The dialog can be rendered without header by setting the [header](https://ej2.syncfusion.com/documentation/api/dialog/index-default#header) property value as empty string or null.  By default, dialog is rendered without header.
 
 {% if page.publishingplatform == "typescript" %}
 

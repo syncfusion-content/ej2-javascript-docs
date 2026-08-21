@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Avatar customization in ##Platform_Name## Avatar control | Syncfusion
-description: Learn here all about Avatar customization in Syncfusion ##Platform_Name## Avatar control of Syncfusion Essential JS 2 and more.
+title: How to customize avatar in ##Platform_Name## Avatar | Syncfusion
+description: Customize Syncfusion ##Platform_Name## Avatar with custom colors, sizes, and media. Override CSS, set font-size, and render SVG, icons, or letters.
 platform: ej2-javascript
 control: Avatar customization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in ##Platform_Name## Avatar control
+# How to customize avatar in ##Platform_Name## Avatar
 
 ## Color customization
 

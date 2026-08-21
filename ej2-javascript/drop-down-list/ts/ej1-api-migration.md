@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 api migration in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in ##Platform_Name## Dropdown List | Syncfusion
+description: Migrate Dropdown List APIs from Essential JS 1 to Syncfusion ##Platform_Name## Essential JS 2 with a side-by-side property, event, and method mapping.
 platform: ej2-javascript
 control: Ej1 api migration 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in ##Platform_Name## Drop down list control
+# EJ1 API Migration in ##Platform_Name## Dropdown List
 
 This article describes the API migration process of  DropDownList component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

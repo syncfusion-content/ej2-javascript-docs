@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Show multiple toasts in various positions in ##Platform_Name## Toast control | Syncfusion
-description: Learn here all about Show multiple toasts in various positions in Syncfusion ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more.
+title: How to show toasts in positions in ##Platform_Name## Toast | Syncfusion
+description: Show ##Platform_Name## Toasts in different positions by initiating separate instances since positions update only after destroy.
 platform: ej2-javascript
-control: Show multiple toasts in various positions 
+control: Show multiple toasts in various positions
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show multiple toasts in various positions in ##Platform_Name## Toast control
+# How to show toasts in positions in ##Platform_Name## Toast
 
 By default, the positions of the new toasts are only updated after the visible toasts have been destroyed. If You need to display multiple toasts with different positions, initiate another toasts.
 

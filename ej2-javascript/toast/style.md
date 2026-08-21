@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Toast control | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Toast | Syncfusion
+description: Style ##Platform_Name## Toast with custom CSS to change title, content, icon, and background colors and fonts.
 platform: ej2-javascript
-control: Style 
+control: Style
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in ##Platform_Name## Toast control
+# Style in ##Platform_Name## Toast
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

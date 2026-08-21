@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Message control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Message control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Message | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Message control. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
-control: Getting started 
+control: Getting started
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Message control
+# Getting Started with ##Platform_Name## Message
 
 This section explains the steps required to create a simple [JavaScript Message](https://www.syncfusion.com/javascript-ui-controls/js-message) control and configure its available functionalities using TypeScript and the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages.
 

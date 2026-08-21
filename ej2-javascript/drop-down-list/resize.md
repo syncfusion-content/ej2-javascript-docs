@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resizing in ##Platform_Name## DropDownList control | Syncfusion
-description: Learn here all about Popup Resizing in Syncfusion ##Platform_Name## DropDownList control of Syncfusion Essential JS 2 and more.
+title: Resizing in ##Platform_Name## Dropdown List | Syncfusion
+description: Enable a resizable Syncfusion ##Platform_Name## Dropdown List popup via allowResize so users can adjust the dropdown size, with dimensions persisted.
 platform: ej2-javascript
 control: Resizing
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resizing ##Platform_Name## DropDownList control
+# Resizing in ##Platform_Name## Dropdown List
 
 You can dynamically adjust the size of the popup in the Autocomplete component by using the [AllowResize](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list/#allowresizee) property. When enabled, users can resize the popup, improving visibility and control, with the resized dimensions being retained across sessions for a consistent user experience.
 

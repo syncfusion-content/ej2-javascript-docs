@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Toast control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Toast | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Toast control. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
-control: Getting started 
+control: Getting started
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Toast control
+# Getting Started with ##Platform_Name## Toast
 
 This section explains the steps to create a simple Toast and demonstrates the basic usage of the Toast component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change size in ##Platform_Name## Switch control | Syncfusion
-description: Learn here all about Change size in Syncfusion ##Platform_Name## Switch control of Syncfusion Essential JS 2 and more.
+title: How to change size in ##Platform_Name## Toggle Switch Button | Syncfusion
+description: Learn how to change the size of the ##Platform_Name## Toggle Switch Button by setting the cssClass property to e-small.
 platform: ej2-javascript
 control: Change size 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change size in ##Platform_Name## Switch control
+# How to change size in ##Platform_Name## Toggle Switch Button
 
 The different Switch sizes available are default and small. To reduce the size of default Switch to small, set the [`cssClass`](../../api/switch#cssclass) property to `e-small`.
 

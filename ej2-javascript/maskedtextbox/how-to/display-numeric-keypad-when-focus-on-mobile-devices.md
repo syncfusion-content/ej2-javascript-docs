@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display numeric keypad when focus on mobile devices in ##Platform_Name## Maskedtextbox control | Syncfusion
-description: Learn about numeric keypad display on mobile devices in Syncfusion ##Platform_Name## Maskedtextbox control of Essential JS 2 and more.
+title: Display numeric keypad in ##Platform_Name## Input Mask | Syncfusion
+description: Show a numeric keypad on mobile devices in the Syncfusion ##Platform_Name## Input Mask by setting the type property to tel for number-only input.
 platform: ej2-javascript
 control: Display numeric keypad when focus on mobile devices 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Display numeric keypad when focus on mobile devices in ##Platform_Name## Maskedtextbox control
+# How to display numeric keypad in ##Platform_Name## Input Mask
 
 By default, on focusing the MaskedTextBox, alphanumeric keypad will be displayed on mobile devices. Sometimes only numeric keypad for number values is needed, and this can be achieved by setting "type" property to `tel`.
 

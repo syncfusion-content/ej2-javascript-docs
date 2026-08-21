@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Alignment in  ##Platform_Name## Timeline control | Syncfusion
-description:  Checkout and learn about Alignment with ##Platform_Name## Timeline control of Syncfusion Essential JS 2 and more.
+title: Align in ##Platform_Name## Timeline | Syncfusion
+description: Align Syncfusion ##Platform_Name## Timeline item content as Before, After, Alternate, or AlternateReverse using the align property and oppositeContent option.
 platform: ej2-javascript
 control: Timeline
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Alignment in ##Platform_Name## Timeline control
+# Align in ##Platform_Name## Timeline
 
 The Timeline content can be aligned as `Before`, `After`, `Alternate`, and `AlternateReverse` using the [align](../api/timeline#align) property. The [`oppositeContent`](../api/timeline/timelineItemModel#oppositecontent) is displayed parallel to the content when configured in the [TimelineItemModel](../api/timeline/timelineItemModel).
 

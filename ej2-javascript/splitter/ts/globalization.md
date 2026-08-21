@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Splitter control | Syncfusion
-description: Learn here all about Globalization in Syncfusion ##Platform_Name## Splitter control of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## Splitter | Syncfusion
+description: Switch Syncfusion ##Platform_Name## Splitter to right-to-left direction for languages like Arabic and Hebrew by setting the enableRtl property to true.
 platform: ej2-javascript
 control: Globalization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in ##Platform_Name## Splitter control
+# Globalization in ##Platform_Name## Splitter
 
 ## RTL
 

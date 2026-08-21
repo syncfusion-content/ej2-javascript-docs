@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 api migration in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to migrate the File Upload component from Essential JS 1 to Essential JS 2 in a TypeScript application, including API mapping, breaking changes, and code examples.
 platform: ej2-javascript
 control: Ej1 api migration 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in ##Platform_Name## Uploader control
+# EJ1 API Migration in ##Platform_Name## File Upload
 
 This article describes the API migration process of File Upload component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Trace events of progress button in ##Platform_Name## Progress button control | Syncfusion
-description: Learn here all about Trace events of progress button in Syncfusion ##Platform_Name## Progress button control of Syncfusion Essential JS 2 and more.
+title: How to trace events of Progress Button in ##Platform_Name## Progress Button | Syncfusion
+description: Learn the events available on the ##Platform_Name## Progress Button including fail, begin, progress, and end, with extension points.
 platform: ej2-javascript
 control: Trace events of progress button 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Trace events of progress button in ##Platform_Name## Progress button control
+# How to trace events of Progress Button in ##Platform_Name## Progress Button
 
 The ProgressButton component triggers events based on its actions. The events can be used as extension points to perform custom operations.
 

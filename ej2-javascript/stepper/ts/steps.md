@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Steps in  ##Platform_Name## Stepper control | Syncfusion
-description:  Checkout and learn about Steps with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Steps in ##Platform_Name## Stepper | Syncfusion
+description: Learn how to define and manage steps in the Syncfusion ##Platform_Name## Stepper control for structured task flows.
 platform: ej2-javascript
 control: Stepper
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Steps in ##Platform_Name## Stepper control
+# Steps in ##Platform_Name## Stepper
 
 The TypeScript Stepper allows you to add steps using the [steps](https://ej2.syncfusion.com/documentation/api/stepper/#steps) property. Each step can be configured with options such as `iconCss`, `text`, `label`, `cssClass` and more.
 

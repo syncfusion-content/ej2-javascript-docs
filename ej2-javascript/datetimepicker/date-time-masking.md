@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Date time masking in ##Platform_Name## Datetimepicker control | Syncfusion
-description: Learn here all about Date time masking in Syncfusion ##Platform_Name## Datetimepicker control of Syncfusion Essential JS 2 and more.
+title: Date Time Masking in ##Platform_Name## DateTime Picker | Syncfusion
+description: Enable built-in input masking in ##Platform_Name## DateTime Picker with the enableMask property and MaskedDateTime module for fixed-format entry.
 platform: ej2-javascript
 control: Date time masking 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Date time masking in ##Platform_Name## Datetimepicker control
+# Date Time Masking in ##Platform_Name## DateTime Picker
 
 DateTimePicker has `enableMask` property that provides the option to enable the built-in date masking support. Also, you must inject the MaskedDateTime module to enable the masking support.
 

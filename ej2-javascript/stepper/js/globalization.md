@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in  ##Platform_Name## Stepper control | Syncfusion
-description:  Checkout and learn about Globalization with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## Stepper | Syncfusion
+description: Learn how to localize the Syncfusion ##Platform_Name## Stepper control for multilingual and region-aware experiences.
 platform: ej2-javascript
 control: Stepper
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in ##Platform_Name## Stepper control
+# Globalization in ##Platform_Name## Stepper
 
 ## Localization
 

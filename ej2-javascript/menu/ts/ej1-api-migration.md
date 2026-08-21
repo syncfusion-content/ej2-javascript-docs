@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 api migration in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: Ej1 api migration in ##Platform_Name## Menu | Syncfusion
+description: Learn how to migrate existing API usage to the Syncfusion ##Platform_Name## Menu control with minimal code changes and smoother upgrades.
 platform: ej2-javascript
 control: Ej1 api migration 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in ##Platform_Name## Menu control
+# Ej1 api migration in ##Platform_Name## Menu
 
 This article describes the API migration process of Menu component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

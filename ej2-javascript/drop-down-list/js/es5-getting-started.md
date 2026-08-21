@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Dropdown List | Syncfusion
+description: Set up a Syncfusion ##Platform_Name## Dropdown List in a plain ES5 JavaScript app using the global script and required dependencies.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Drop down list control
+# Getting Started with ##Platform_Name## Dropdown List
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Dropdown List and demonstrate the basic usage of the Dropdown List control in a JavaScript application.
 

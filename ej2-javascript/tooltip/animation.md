@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Tooltip control | Syncfusion
-description: Learn here all about Animation in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
+title: Animation in ##Platform_Name## Tooltip | Syncfusion
+description: Animate the ##Platform_Name## Tooltip with built-in effects like FadeIn, FadeZoomIn, and FlipX, or trigger custom transitions via the open and close methods.
 platform: ej2-javascript
 control: Animation 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation in ##Platform_Name## Tooltip control
+# Animation in ##Platform_Name## Tooltip
 
 To animate the Tooltip, a set of specific animation effects are available, which can be controlled using the [`animation`](../api/tooltip#animation) property. The animation property also allows you to set delay, duration, and various other effects of your choice.
 

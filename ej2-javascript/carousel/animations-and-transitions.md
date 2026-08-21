@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animations and transitions in ##Platform_Name## Carousel control | Syncfusion
-description: Learn here all about Animations and transitions in Syncfusion ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more.
+title: Animations and transitions in ##Platform_Name## Carousel | Syncfusion
+description: Apply Fade or Slide animations to the Syncfusion ##Platform_Name## Carousel slide transitions or disable animation entirely.
 platform: ej2-javascript
 control: Animations and transitions 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animations and transitions in ##Platform_Name## Carousel control
+# Animations and transitions in ##Platform_Name## Carousel
 
 ## Animations
 

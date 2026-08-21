@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Form support in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Form support in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: Form Support in ##Platform_Name## File Upload | Syncfusion
+description: Learn how the Syncfusion ##Platform_Name## File Upload integrates with HTML forms, submits files alongside form data, and supports native form submission.
 platform: ej2-javascript
 control: Form support 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Form support in ##Platform_Name## Uploader control
+# Form Support in ##Platform_Name## File Upload
 
 The Uploader component works with HTML form like default file input. The following configuration is must to make the Uploader work inside the form.
 

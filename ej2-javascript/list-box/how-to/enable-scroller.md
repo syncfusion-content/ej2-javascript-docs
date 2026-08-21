@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable scroller in ##Platform_Name## List box control | Syncfusion
-description: Learn here all about Enable scroller in Syncfusion ##Platform_Name## List box control of Syncfusion Essential JS 2 and more.
+title: How to enable scroller in ##Platform_Name## ListBox | Syncfusion
+description: Show a scrollbar in the Syncfusion ##Platform_Name## ListBox by restricting the popup height with the height property.
 platform: ej2-javascript
 control: Enable scroller 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable scroller in ##Platform_Name## List box control
+# How to Enable Scroller in ##Platform_Name## ListBox
 
 The ListBox supports scrolling and it can be achieved by restricting the height of the list box using [`height`](../../api/list-box/#height) property.
 

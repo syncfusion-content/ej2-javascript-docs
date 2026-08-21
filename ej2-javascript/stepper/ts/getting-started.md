@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Stepper control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Getting started with ##Platform_Name## Stepper | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Stepper control and build guided workflows quickly.
 platform: ej2-javascript
 control: Stepper
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Stepper control
+# Getting started in ##Platform_Name## Stepper
 
 This section explains how to create a simple Stepper and configure its available functionalities in TypeScript using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 

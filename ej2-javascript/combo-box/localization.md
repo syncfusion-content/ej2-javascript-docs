@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Combo box control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Combo box control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## ComboBox | Syncfusion
+description: Localize Syncfusion ##Platform_Name## ComboBox static text such as noRecordsTemplate and actionFailureTemplate for any culture using the L10n library.
 platform: ej2-javascript
 control: Localization 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## Combo box control
+# Localization in ##Platform_Name## ComboBox
 
-The Localization library allows you to localize static text content of the [noRecordsTemplate](../api/combo-box/#norecordstemplate) and [actionFailureTemplate](../api/combo-box/#actionfailuretemplate) &nbsp;properties according to the culture currently assigned to the ComboBox.
+The Localization library allows you to localize static text content of the [noRecordsTemplate](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#norecordstemplate) and [actionFailureTemplate](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#actionfailuretemplate) &nbsp;properties according to the culture currently assigned to the ComboBox.
 
 | Locale key | en-US (default)  |
 |------|------|
@@ -22,7 +22,7 @@ The Localization library allows you to localize static text content of the [noRe
 
 To load translation object to your application, use `load` function of **L10n** class.
 
-In the following sample, French culture is set to the ComboBox and no data is loaded. Hence, the [`noRecordsTemplate`](../api/combo-box/#norecordstemplate) property displays its text in French culture initially, and if the sample is run offline, the [`actionFailureTemplate`](../api/combo-box/#actionfailuretemplate) property displays its text appropriately.
+In the following sample, French culture is set to the ComboBox and no data is loaded. Hence, the [`noRecordsTemplate`](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#norecordstemplate) property displays its text in French culture initially, and if the sample is run offline, the [`actionFailureTemplate`](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#actionfailuretemplate) property displays its text appropriately.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Dashboard Layout control | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Dashboard Layout | Syncfusion
+description: Style Syncfusion ##Platform_Name## Dashboard Layout panels, headers, content, and resize icons by overriding the e-dashboardlayout CSS classes.
 platform: ej2-javascript
 control: Style 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in ##Platform_Name## Dashboard Layout control
+# Style in ##Platform_Name## Dashboard Layout
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

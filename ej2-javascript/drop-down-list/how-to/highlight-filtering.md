@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Highlight filtering in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Highlight filtering in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: How to highlight match in ##Platform_Name## Dropdown List | Syncfusion
+description: Highlight matching characters in Syncfusion ##Platform_Name## Dropdown List filtering using the highlightSearch method on the filtering event.
 platform: ej2-javascript
 control: Highlight filtering 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Highlight filtering in ##Platform_Name## Drop down list control
+# How to highlight matched character in ##Platform_Name## Dropdown List
 
 By using the **highlightSearch** method, you can highlight the matched character in DropDownList filtering.
 

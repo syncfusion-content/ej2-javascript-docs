@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Dropdown List | Syncfusion
+description: Localize Syncfusion ##Platform_Name## Dropdown List static text such as noRecordsTemplate and actionFailureTemplate for any culture using the L10n library.
 platform: ej2-javascript
 control: Localization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## Drop down list control
+# Localization in ##Platform_Name## Dropdown List
 
 The Localization library allows you to localize static text content of the [noRecordsTemplate](../api/drop-down-list/#norecordstemplate)
 and [actionFailureTemplate](../api/drop-down-list/#actionfailuretemplate) &nbsp;properties according to the culture currently assigned to the DropDownList.

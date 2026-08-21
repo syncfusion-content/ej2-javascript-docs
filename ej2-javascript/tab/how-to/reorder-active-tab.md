@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Reorder active tab in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Reorder active tab in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: How to reorder active tab in ##Platform_Name## Tab | Syncfusion
+description: Learn how to reorder the active tab in the Syncfusion ##Platform_Name## Tab control for adaptive workflow layouts.
 platform: ej2-javascript
 control: Reorder active tab 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Reorder active tab in ##Platform_Name## Tab control
+# How to reorder active tab in ##Platform_Name## Tab
 
 You can prevent the active tab item from changing when resizing the browser in popup overflow mode by using the [`reorderActiveTab`](../../api/tab#reorderActiveTab) property. 
 

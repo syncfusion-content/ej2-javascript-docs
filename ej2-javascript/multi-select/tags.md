@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tags in ##Platform_Name## Multi select control | Syncfusion
-description: Learn here all about Tags in Syncfusion ##Platform_Name## Multi select control of Syncfusion Essential JS 2 and more.
+title: Tags in ##Platform_Name## MultiSelect Dropdown | Syncfusion
+description: Render the Syncfusion ##Platform_Name## MultiSelect Dropdown on select, input, or UL elements while reusing the same UI and features.
 platform: ej2-javascript
 control: Tags 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tags in ##Platform_Name## Multi select control
+# Tags in ##Platform_Name## MultiSelect Dropdown
 
 The MultiSelect can be initialized on three different tags as described in below. Though it is initialized in different tags, the UI appearance and built-in features behave in the same way.
 

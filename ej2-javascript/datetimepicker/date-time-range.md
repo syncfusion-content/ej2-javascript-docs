@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Date time range in ##Platform_Name## Datetimepicker control | Syncfusion
-description: Learn here all about Date time range in Syncfusion ##Platform_Name## Datetimepicker control of Syncfusion Essential JS 2 and more.
+title: Date Time Range in ##Platform_Name## DateTime Picker | Syncfusion
+description: Restrict ##Platform_Name## DateTime Picker values within a defined range using min and max properties to set valid start and end date and time bounds.
 platform: ej2-javascript
 control: Date time range 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Date time range in ##Platform_Name## Datetimepicker control
+# Date Time Range in ##Platform_Name## DateTime Picker
 
 ## DateTime Restriction
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Remote data bind in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Remote data bind in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: How to get data count in ##Platform_Name## Dropdown List | Syncfusion
+description: Get the total item count for a remote-data-bound Syncfusion ##Platform_Name## Dropdown List via the actionComplete event or getItems method.
 platform: ej2-javascript
 control: Remote data bind 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Remote data bind in ##Platform_Name## Drop down list control
+# How to get data count in ##Platform_Name## Dropdown List
 
 Before component rendering, you can get the total items count by using [actionComplete](../../api/drop-down-list/#actioncomplete) &nbsp;event with its result arguments. After rendering this component, you can get the total items count by using [getItems](../../api/drop-down-list/#getitems) method.
 

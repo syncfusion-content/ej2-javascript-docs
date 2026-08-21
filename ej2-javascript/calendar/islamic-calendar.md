@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Islamic calendar in ##Platform_Name## Calendar control | Syncfusion
-description: Learn here all about Islamic calendar in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
+title: Islamic Calendar in ##Platform_Name## Calendar | Syncfusion
+description: Display the Islamic (Hijri) lunar calendar in ##Platform_Name## Calendar by setting the calendarMode property and injecting the Islamic module.
 platform: ej2-javascript
 control: Islamic calendar 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Islamic calendar in ##Platform_Name## Calendar control
+# Islamic Calendar in ##Platform_Name## Calendar
 
 In addition to the Gregorian calendar, the calendar control supports displaying the Islamic calendar (Hijri calendar). **Islamic calendar** or **Hijri calendar** is a `lunar calendar` consisting of 12 months in a year of 354 or 355 days. To know more about Islamic calendar, please refer this [wikipedia](https://en.wikipedia.org/wiki/Islamic_calendar).
 

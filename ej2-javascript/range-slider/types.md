@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Range slider control | Syncfusion
-description: Learn here all about Types in Syncfusion ##Platform_Name## Range slider control of Syncfusion Essential JS 2 and more.
+title: Types in ##Platform_Name## Range Slider | Syncfusion
+description: Learn about the three ##Platform_Name## Range Slider types: Default, MinRange, and Range, and choose the right one for single or range value selection.
 platform: ej2-javascript
 control: Types 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Types in ##Platform_Name## Range slider control
+# Types in ##Platform_Name## Range Slider
 
 The types of Slider are as follows:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Accordion control | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Accordion | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Accordion appearance with CSS for headers, items, icons, hover, and selected states.
 platform: ej2-javascript
 control: Style 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in ##Platform_Name## Accordion control
+# Style in ##Platform_Name## Accordion
 
 The following content provides the exact CSS structure that can be used to modify the control’s appearance based on user preference.
 

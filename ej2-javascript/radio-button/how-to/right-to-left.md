@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right to left in ##Platform_Name## Radio button control | Syncfusion
-description: Learn here all about Right to left in Syncfusion ##Platform_Name## Radio button control of Syncfusion Essential JS 2 and more.
+title: How to enable right to left in ##Platform_Name## Radio Button | Syncfusion
+description: Learn how to enable right-to-left rendering in the ##Platform_Name## Radio Button by setting the enableRtl property to true.
 platform: ej2-javascript
 control: Right to left 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Right to left in ##Platform_Name## Radio button control
+# How to enable right to left in ##Platform_Name## Radio Button
 
 RadioButton component has RTL support. This can be achieved by setting [`enableRtl`](../../api/radio-button#enablertl) as `true`.
 

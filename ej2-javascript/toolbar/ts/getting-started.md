@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Toolbar control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Toolbar control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Toolbar | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Toolbar control and configure it for TypeScript apps quickly.
 platform: ej2-javascript
 control: Toolbar 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Toolbar control
+# Getting started in ##Platform_Name## Toolbar
 
 This section explains how to create a simple **Toolbar** using TypeScript, and how to configure ToolBar items like button, separator, and input components using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 

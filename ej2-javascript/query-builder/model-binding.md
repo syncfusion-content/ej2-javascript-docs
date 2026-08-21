@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Model binding in ##Platform_Name## Query builder control | Syncfusion
-description: Learn here all about Model binding in Syncfusion ##Platform_Name## Query builder control of Syncfusion Essential JS 2 and more.
+title: Model Binding in ##Platform_Name## Query Builder UI | Syncfusion
+description: Customize the ##Platform_Name## Query Builder UI field, operator, and value columns by binding properties through fieldModel, operatorModel, and valueModel.
 platform: ej2-javascript
 control: Model binding 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Model binding in ##Platform_Name## Query builder control
+# Model Binding in ##Platform_Name## Query Builder UI
 
 Model binding allows to bind properties for the components used in field, operator, and value columns. To implement model binding, assign fieldModel, operatorModel, and valueModel properties in QueryBuilder.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Spinner control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Spinner control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Spinner | Syncfusion
+description: Get started with the ##Platform_Name## Spinner using the quickstart seed, install ej2-popups, and create a target-bound Spinner with show and hide.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 ---
 
 
-# Getting started in ##Platform_Name## Spinner control
+# Getting started with ##Platform_Name## Spinner
 
 This section explains the steps to create a simple Spinner and demonstrates the basic usage of the Spinner component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 

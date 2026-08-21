@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change the floating label color of the textbox in ##Platform_Name## Textbox control | Syncfusion
-description: Learn here all about Change the floating label color of the textbox in Syncfusion ##Platform_Name## Textbox control of Syncfusion Essential JS 2 and more.
+title: How to change floating label color in ##Platform_Name## TextBox | Syncfusion
+description: Change the floating label color of the ##Platform_Name## TextBox for both success and warning validation states using CSS overrides.
 platform: ej2-javascript
 control: Change the floating label color of the textbox 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change the floating label color of the textbox in ##Platform_Name## Textbox control
+# How to change floating label color in ##Platform_Name## TextBox
 
 You can change the floating label color of the TextBox for both `success` and `warning` validation states by applying the following CSS styles.
 

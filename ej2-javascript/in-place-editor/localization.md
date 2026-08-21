@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## In place editor control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## In place editor control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## In-place Editor | Syncfusion
+description: Localize ##Platform_Name## In-place Editor text, enable right-to-left, and apply culture-specific formats to embedded Date, Time, Numeric, and Slider inputs.
 platform: ej2-javascript
 control: Localization 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## In place editor control
+# Localization in ##Platform_Name## In-place Editor
 
 ## Localization
 
-Localization library allows you to localize the default text content of the In-place Editor to different cultures using the [locale](../api/inplace-editor/#locale) property. In-place Editor following keys will be localize based on culture.
+Localization library allows you to localize the default text content of the In-place Editor to different cultures using the [locale](../api/inplace-editor/index-default#locale) property. In-place Editor following keys will be localize based on culture.
 
 | Locale key | en-US (default) |
 |------|------|
@@ -88,14 +88,14 @@ Specifies the direction of the In-place Editor control using the enableRtl prope
 
 ## Format
 
-Formatting is a way of representing the value in different format. You can format the following mentioned controls with its `format` property, when it passed through the In-place Editor [model](../api/inplace-editor/#model) property.
+Formatting is a way of representing the value in different format. You can format the following mentioned controls with its `format` property, when it passed through the In-place Editor [model](../api/inplace-editor/index-default#model) property.
 
-* [DatePicker](../datepicker/date-format/)
-* [DateRangePicker](../daterangepicker/globalization/#customize-the-date-format)
-* [DateTimePicker](../api/datetimepicker/#format)
-* [NumericTextBox](../numerictextbox/formats/#custom-formats)
-* [Slider](../range-slider/format/)
-* [TimePicker](../api/timepicker/#format)
+* [DatePicker](../datepicker/date-format)
+* [DateRangePicker](../daterangepicker/globalization#customize-the-date-format)
+* [DateTimePicker](../api/datetimepicker/index-default#format)
+* [NumericTextBox](../numerictextbox/formats#custom-formats)
+* [Slider](../range-slider/format)
+* [TimePicker](../api/timepicker/index-default#format)
 
 {% if page.publishingplatform == "typescript" %}
 

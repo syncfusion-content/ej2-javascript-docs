@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Form submit in ##Platform_Name## Button group control | Syncfusion
-description: Learn here all about Form submit in Syncfusion ##Platform_Name## Button group control of Syncfusion Essential JS 2 and more.
+title: How to form submit in ##Platform_Name## Button Group | Syncfusion
+description: Learn how to submit selected ##Platform_Name## Button Group values to the server using the input name and value attributes.
 platform: ej2-javascript
 control: Form submit 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Form submit in ##Platform_Name## Button group control
+# How to form submit in ##Platform_Name## Button Group
 
 The name attribute of the input element is used to group the radio/checkbox type ButtonGroup. When the radio/checkbox type are grouped in the form, the checked items value attribute will be posted to the server on form submit that can be retrieved through the name. The disabled
 radio/checkbox type value will not be sent to the server on form submit.

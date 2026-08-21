@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to localize static text in the Syncfusion ##Platform_Name## File Upload, including default text, button labels, tooltips, and drop area text.
 platform: ej2-javascript
 control: Localization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## Uploader control
+# Localization in ##Platform_Name## File Upload
 
 The Localization library allows you to localize static text content of the uploader. The static text contains default text content of action buttons, file status, clear icon title, tooltips, and text content of drag area. Define the [locale](../api/uploader/#locale) object for a culture and assign it to L10n load method.
 

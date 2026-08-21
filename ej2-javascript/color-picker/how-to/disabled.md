@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disabled in ##Platform_Name## Color picker control | Syncfusion
-description: Learn here all about Disabled in Syncfusion ##Platform_Name## Color picker control of Syncfusion Essential JS 2 and more.
+title: How to disable in ##Platform_Name## Color Picker | Syncfusion
+description: Disable the Syncfusion ##Platform_Name## Color Picker by setting the disabled property to true so users cannot open the popup or change the value.
 platform: ej2-javascript
 control: Disabled 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disabled in ##Platform_Name## Color picker control
+# How to disable in ##Platform_Name## Color Picker
 
-To achieve disabled state in ColorPicker, set the [`disabled`](../../api/color-picker/#disabled) property to `true`. The ColorPicker pop-up cannot be accessed in disabled state.
+To achieve disabled state in ColorPicker, set the [`disabled`](../../api/color-picker/index-default#disabled) property to `true`. The ColorPicker pop-up cannot be accessed in disabled state.
 
 The following example shows the `disabled` state of ColorPicker component.
 

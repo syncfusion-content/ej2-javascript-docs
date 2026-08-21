@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Value binding in ##Platform_Name## Multi select control | Syncfusion
-description: Learn here all about Value binding in Syncfusion ##Platform_Name## Multi select control of Syncfusion Essential JS 2 and more.
+title: Value Binding in ##Platform_Name## MultiSelect Dropdown | Syncfusion
+description: Bind primitive or complex values to the Syncfusion ##Platform_Name## MultiSelect Dropdown and preselect items from local or remote data.
 platform: ej2-javascript
 control: Value binding 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Value binding in ##Platform_Name## Multi select control
+# Value Binding in ##Platform_Name## MultiSelect Dropdown
 
 Value binding in the MultiSelect control allows you to associate data values with each list item. This facilitates managing and retrieving selected values efficiently. The MultiSelect component provides flexibility in binding both primitive data types and complex objects.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in ##Platform_Name## In place editor control | Syncfusion
-description: Learn here all about Validation in Syncfusion ##Platform_Name## In place editor control of Syncfusion Essential JS 2 and more.
+title: Validation in ##Platform_Name## In-place Editor | Syncfusion
+description: Apply built-in rules (required, email, url, number, regex) to ##Platform_Name## In-place Editor inputs via validationRules and show custom error messages.
 platform: ej2-javascript
 control: Validation 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation in ##Platform_Name## In place editor control
+# Validation in ##Platform_Name## In-place Editor
 
-In-place Editor control supports validation and it can be achieved by adding rules to the [validationRules](../api/inplace-editor/#validationrules) property, its child property `key` must be same as [name](../api/inplace-editor/#name) property, otherwise validation not performed. Submitting data to the server or calling the [validate](../api/inplace-editor/#validate) method validation executed.
+In-place Editor control supports validation and it can be achieved by adding rules to the [validationRules](../api/inplace-editor/index-default#validationrules) property, its child property `key` must be same as [name](../api/inplace-editor/index-default#name) property, otherwise validation not performed. Submitting data to the server or calling the [validate](../api/inplace-editor/index-default#validate) method validation executed.
 
 ## Validation Rules
 
@@ -68,7 +68,7 @@ Step 2:  The corresponding name specified in the name property should bind with 
 {% previewsample "page.domainurl/code-snippet/in-place-editor/validation-sample-cs1" %}
 {% endif %}
 
-In the following sample, first editor value submitted without select any date, so the default error message will be displayed below the `DatePicker` element. Second editor configured with the [validating](../api/inplace-editor/#validating) event with the handler. In handler event [errorMessage](../api/inplace-editor/validateEventArgs/#errormessage) argument value modified and it will show below the `DatePicker` element.
+In the following sample, first editor value submitted without select any date, so the default error message will be displayed below the `DatePicker` element. Second editor configured with the [validating](../api/inplace-editor/index-default#validating) event with the handler. In handler event [errorMessage](../api/inplace-editor/validateEventArgs/index-default#errormessage) argument value modified and it will show below the `DatePicker` element.
 
 {% if page.publishingplatform == "typescript" %}
 

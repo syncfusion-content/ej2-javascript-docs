@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Rating control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Rating | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Rating control. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Rating control
+# Getting Started with ##Platform_Name## Rating
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Rating and demonstrate the basic usage of the Rating control in a JavaScript application.
 

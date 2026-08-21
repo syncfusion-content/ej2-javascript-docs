@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Check tree text  ##Platform_Name## TreeView | Syncfusion
-description: Learn here all about Check uncheck the checkbox clicking the tree node text in ##Platform_Name## TreeView control of Syncfusion JS 2 and more.
+title: How to check and uncheck by clicking tree node text in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to check or uncheck nodes by clicking the text in the Syncfusion ##Platform_Name## TreeView control for efficient selection.
 platform: ej2-javascript
 control: Check uncheck the checkbox on clicking the tree node text
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Check and Uncheck by clicking tree node text in ##Platform_Name## TreeView control
+# How to check and uncheck by clicking tree node text in ##Platform_Name## TreeView
 
 You can check and uncheck the checkboxes of the TreeView control by clicking the tree node using the [`nodeClicked`](../../api/treeview#nodeclicked) event of TreeView.
 

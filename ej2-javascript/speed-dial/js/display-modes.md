@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display modes in ##Platform_Name## Speed dial control | Syncfusion
-description: Learn here all about Display modes in Syncfusion ##Platform_Name## Speed dial control of Syncfusion Essential JS 2 and more.
+title: Display Modes in ##Platform_Name## Speed Dial | Syncfusion
+description: Learn how to display ##Platform_Name## Speed Dial action items in Linear and Radial modes with the mode property and direction options.
 platform: ej2-javascript
 control: Display modes 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Display modes in ##Platform_Name## Speed dial control
+# Display Modes in ##Platform_Name## Speed Dial
 
 The action items in JavaScript(ES5) Speed Dial can be displayed in `Linear` and `Radial` display modes by setting [`mode`](../api/speed-dial#mode) property.
 

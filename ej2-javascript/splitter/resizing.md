@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resizing in ##Platform_Name## Splitter control | Syncfusion
-description: Learn here all about Resizing in Syncfusion ##Platform_Name## Splitter control of Syncfusion Essential JS 2 and more.
+title: Resizing in ##Platform_Name## Splitter | Syncfusion
+description: Resize Syncfusion ##Platform_Name## Splitter panes by dragging the separator; resize gripper is enabled by default and adjusts adjacent panes automatically.
 platform: ej2-javascript
 control: Resizing 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resizing in ##Platform_Name## Splitter control
+# Resizing in ##Platform_Name## Splitter
 
 Resizing is enabled by default for Splitter panes. A resize gripper is added to separators to simplify resizing.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Datepicker control | Syncfusion
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Datepicker control of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## DatePicker | Syncfusion
+description: Customize the ##Platform_Name## DatePicker input, calendar, and day cells using the cssClass property and the renderDayCell event for custom styling.
 platform: ej2-javascript
 control: Customization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in ##Platform_Name## Datepicker control
+# Customization in ##Platform_Name## DatePicker
 
 You can customize the  entire appearance of the input element and Calendar by using custom [`cssClass`](../api/datepicker#cssclass) property.
 and also you can use the calendar's [`renderDayCell`](../api/datepicker/renderDayCellEventArgs#renderdaycelleventargs) event to customize the appearance of the each day cell.

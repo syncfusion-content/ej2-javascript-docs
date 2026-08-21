@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Content in ##Platform_Name## Tooltip control | Syncfusion
-description: Learn here all about Content in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
+title: Content in ##Platform_Name## Tooltip | Syncfusion
+description: Display plain text, formatted HTML, templates, or AJAX-loaded content in the ##Platform_Name## Tooltip using the content property and beforeRender event.
 platform: ej2-javascript
 control: Content
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Content in ##Platform_Name## Tooltip control
+# Content in ##Platform_Name## Tooltip
 
 A text or a piece of information assigned to the Tooltip's [`content`](../api/tooltip#content) property will be displayed as the main text stream of the Tooltip. The content can be a string or a template. If the [`content`](../api/tooltip#content) property is not provided with any specific value, it takes the value assigned to the `title` attribute of the target element on which the Tooltip was initialized. The content can also be dynamically assigned to the Tooltip via AJAX.
 

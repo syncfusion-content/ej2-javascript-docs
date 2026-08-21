@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Migration from css textbox to javascript textbox in ##Platform_Name## Textbox control | Syncfusion
-description: Learn here all about Migration from css textbox to javascript textbox in Syncfusion ##Platform_Name## Textbox control of Syncfusion Essential JS 2 and more.
+title: Migration from CSS textbox in ##Platform_Name## TextBox | Syncfusion
+description: Migrate from the legacy CSS textbox control to the ##Platform_Name## TextBox control introduced in v16.3.21 for floating labels with minimal code.
 platform: ej2-javascript
 control: Migration from css textbox to javascript textbox 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Migration from css textbox to javascript textbox in ##Platform_Name## Textbox control
+# Migration from CSS textbox in ##Platform_Name## TextBox
 
 > From v16.3.21 version, the textbox is provided as JavaScript control to achieve the floating label textbox with minimal code. You can find the available textbox properties, methods, and events in the [API reference](https://ej2.syncfusion.com/javascript/documentation/api/textbox/).
 

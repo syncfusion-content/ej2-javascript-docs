@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hide default drop area in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Hide default drop area in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: How to hide default drop area in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to hide the default drop area in the Syncfusion ##Platform_Name## File Upload by overriding CSS so only the browse button is shown to the user.
 platform: ej2-javascript
 control: Hide default drop area 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hide default drop area in ##Platform_Name## Uploader control
+# How to hide default drop area in ##Platform_Name## File Upload
 
 You can achieve this behavior by overriding the corresponding uploader styles. Override the following styles to hide the default drop area behavior.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Styling Modes in ##Platform_Name## OTP Input control | Syncfusion
-description:  Checkout and learn about Styling Modes with ##Platform_Name## OTP Input control of Syncfusion Essential JS 2 and more.
+title: Styling Modes in ##Platform_Name## OTP Input | Syncfusion
+description: Apply the outlined or filled styling mode to the Syncfusion ##Platform_Name## OTP Input fields by setting the stylingMode property for a custom look.
 platform: ej2-javascript
 control: OTP Input
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Styling Modes in ##Platform_Name## OTP Input control
+# Styling Modes in ##Platform_Name## OTP Input
 
 Styling modes specify the style variants for the input fields in the OTP Input component. These modes allows you to customize the appearance of the OTP input fields.
 

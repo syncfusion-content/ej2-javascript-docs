@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Value change in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Value change in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: How to detect change in ##Platform_Name## Dropdown List | Syncfusion
+description: Detect whether a Syncfusion ##Platform_Name## Dropdown List value change came from user interaction or code using the change event's isInteracted arg.
 platform: ej2-javascript
 control: Value change 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Value change in ##Platform_Name## Drop down list control
+# How to detect value change in ##Platform_Name## Dropdown List
 
 You can check about whether value change happened by manual or programmatic by using [change](../../api/drop-down-list/#change) event argument that argument name is `isInteracted`.
 

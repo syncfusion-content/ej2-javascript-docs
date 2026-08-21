@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load tab items dynamically in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Load tab items dynamically in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: How to load Tab items dynamically in ##Platform_Name## Tab | Syncfusion
+description: Learn how to load tab items dynamically in the Syncfusion ##Platform_Name## Tab control for adaptive content loading.
 platform: ej2-javascript
 control: Load tab items dynamically 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Load tab items dynamically in ##Platform_Name## Tab control
+# How to load Tab items dynamically in ##Platform_Name## Tab
 
 You can add tabs dynamically to the Tab control by passing an array of items and an index value to the [`addTab`](../../api/tab#addtab) method. Here's how you can do it:
 

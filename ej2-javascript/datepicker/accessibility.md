@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Datepicker control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Datepicker control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## DatePicker | Syncfusion
+description: Discover accessibility support in ##Platform_Name## DatePicker, including screen reader, RTL, color contrast, and keyboard navigation compliance.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Datepicker control
+# Accessibility in ##Platform_Name## DatePicker
 
 The DatePicker component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -47,7 +47,7 @@ The Web accessibility defines a way to make web content and web applications mor
 DatePicker provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA
 supports is achieved through the attributes like `aria-expanded`, `aria-disabled`, `aria-activedescendant` applied to the input element.
 
-To know about the accessibility of Calendar refer to the Calendar's [Accessibility](../calendar/accessibility/) section.
+To know about the accessibility of Calendar refer to the Calendar's [Accessibility](https://ej2.syncfusion.com/javascript/documentation/calendar/accessibility) section.
 
 It helps to provide information about the widget for assistive technology to the disabled person in screen reader.
 
@@ -55,7 +55,7 @@ It helps to provide information about the widget for assistive technology to the
 
 * **Aria-disabled**: attribute indicates the disabled state of this DatePicker component.
 
-* **Aria-activedescendent**: attribute helps in managing the current active child of the DatePicker component.
+* **Aria-activedescendant**: attribute helps in managing the current active child of the DatePicker component.
 
 ## Keyboard Interaction
 

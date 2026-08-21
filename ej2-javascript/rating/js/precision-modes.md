@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Precision modes in ##Platform_Name## Rating control | Syncfusion
-description: Learn here all about Precision modes in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
+title: Precision Modes in ##Platform_Name## Rating | Syncfusion
+description: Configure ##Platform_Name## Rating precision to support exact, half, quarter, or third values with the precision property and the showOnButton mode.
 platform: ej2-javascript
 control: Precision modes 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Precision modes in ##Platform_Name## Rating control
+# Precision Modes in ##Platform_Name## Rating
 
 You can use the [`precision`](../api/rating/#precision) property of the rating control to provide ratings with varying levels of precision.
 

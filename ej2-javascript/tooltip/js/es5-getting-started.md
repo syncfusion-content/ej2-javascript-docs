@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Tooltip | Syncfusion
+description: Get started with the ##Platform_Name## Tooltip using ES5 script and style references, including local resources, CDN, and a basic initialization example.
 platform: ej2-javascript
 control: Es5 getting started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Tooltip control
+# Getting started with ##Platform_Name## Tooltip
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tooltip and demonstrate the basic usage of the Tooltip control in a JavaScript application.
 

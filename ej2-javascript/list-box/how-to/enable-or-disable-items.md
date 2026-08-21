@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable or disable items in ##Platform_Name## List box control | Syncfusion
-description: Learn here all about Enable or disable items in Syncfusion ##Platform_Name## List box control of Syncfusion Essential JS 2 and more.
+title: How to enable or disable ##Platform_Name## ListBox | Syncfusion
+description: Enable or disable items in the Syncfusion ##Platform_Name## ListBox at runtime by calling the enableItems method.
 platform: ej2-javascript
 control: Enable or disable items 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable or disable items in ##Platform_Name## List box control
+# How to Enable or Disable Items in ##Platform_Name## ListBox
 
 To enable or disable items in the list box, [`enableItems`](../../api/list-box/#enableitems) method can be used. In the following example, the `Bugatti Veyron Super Sport` and `SSC Ultimate Aero` items are disabled by default and by clicking `Enable Items` buttons, the disabled items will be enabled.
 

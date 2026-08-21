@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Severities in ##Platform_Name## Message control | Syncfusion
-description: Learn here all about Severities in Syncfusion ##Platform_Name## Message control of Syncfusion Essential JS 2 and more.
+title: Severities in ##Platform_Name## Message | Syncfusion
+description: Display ##Platform_Name## Message at different severity levels — Normal, Success, Info, Warning, and Error — using the severity property.
 platform: ej2-javascript
-control: Severities 
+control: Severities
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Severities in ##Platform_Name## Message control
+# Severities in ##Platform_Name## Message
 
-The severity denotes the importance and context of the message to the user. The message contains different severity types. Use the [severity](../api/message/#severity) property to display the messages with different severity levels.
+The severity denotes the importance and context of the message to the user. The message contains different severity types. Use the [severity](../api/message/index-default#severity) property to display the messages with different severity levels.
 
 The available severity types are **Normal**, **Success**, **Info**, **Warning** and **Error**. The default severity type for messages is **Normal**.
 

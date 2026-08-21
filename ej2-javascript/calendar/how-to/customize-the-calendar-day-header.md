@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize the calendar day header in ##Platform_Name## Calendar control | Syncfusion
-description: Learn here all about Customize the calendar day header in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
+title: How to customize day header in ##Platform_Name## Calendar | Syncfusion
+description: Change the day name format in the ##Platform_Name## Calendar header using the dayHeaderFormat property with Short, Narrow, Abbreviated, or Wide options.
 platform: ej2-javascript
 control: Customize the calendar day header 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the calendar day header in ##Platform_Name## Calendar control
+# How to customize day header in ##Platform_Name## Calendar
 
 You can change the format of the day that to be displayed in header using [`dayHeaderFormat`](../../api/calendar#dayheaderformat) property. By default, the format is `Short`.
 

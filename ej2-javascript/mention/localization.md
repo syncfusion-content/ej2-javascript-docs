@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Mention control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Mention | Syncfusion
+description: Localize the noRecordsTemplate text of the Syncfusion ##Platform_Name## Mention to any culture using the L10n class.
 platform: ej2-javascript
 control: Localization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## Mention control
+# Localization in ##Platform_Name## Mention
 
 The Localization library allows you to localize static text content of the [noRecordsTemplate](../api/mention/#norecordstemplate) &nbsp;properties according to the culture currently assigned to the Mention.
 

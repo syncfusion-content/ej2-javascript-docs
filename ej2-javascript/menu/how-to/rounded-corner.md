@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Rounded corner in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Rounded corner in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: How to add rounded corner in ##Platform_Name## Menu | Syncfusion
+description: Learn how to add rounded corners to the Syncfusion ##Platform_Name## Menu control for a softer and more modern UI.
 platform: ej2-javascript
-control: Rounded corner 
+control: Rounded corner
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Rounded corner in ##Platform_Name## Menu control
+# How to add rounded corner in ##Platform_Name## Menu
 
 The rounded corner can be achieved by using the [`cssClass`](../../api/menu/#cssclass) property. Add a custom class to the menu component and customize it using the `border-radius` CSS property. For more information, refer to the `style.css` file mapped under the source tab.
 

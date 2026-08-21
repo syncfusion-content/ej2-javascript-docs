@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Message control | Syncfusion
-description: Learn here all about Template in Syncfusion ##Platform_Name## Message control of Syncfusion Essential JS 2 and more.
+title: Template in ##Platform_Name## Message | Syncfusion
+description: Render ##Platform_Name## Message with custom templates such as strings, paragraphs, or other HTML elements through the content property.
 platform: ej2-javascript
-control: Template 
+control: Template
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in ##Platform_Name## Message control
+# Template in ##Platform_Name## Message
 
-The message supports templates that allows the user to customize the content with a custom structure. The content can be a string, paragraph, or any other HTML element. The template can be rendered through the [content](../api/message/#content) property or added directly to the HTML element.
+The message supports templates that allows the user to customize the content with a custom structure. The content can be a string, paragraph, or any other HTML element. The template can be rendered through the [content](../api/message/index-default#content) property or added directly to the HTML element.
 
 In the following sample, the Message control content is customized with HTML elements and JavaScript Button controls, which are directly added to the HTML element.
 

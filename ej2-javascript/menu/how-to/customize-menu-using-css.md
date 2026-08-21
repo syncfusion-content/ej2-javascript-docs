@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customize menu using css in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Customize menu using css in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: How to customize menu using css in ##Platform_Name## Menu | Syncfusion
+description: Learn how to customize the Syncfusion ##Platform_Name## Menu control with CSS for polished visual styling and layout refinement.
 platform: ej2-javascript
-control: Customize menu using css 
+control: Customize menu using css
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize menu using css in ##Platform_Name## Menu control
+# How to customize menu using css in ##Platform_Name## Menu
 
  Menu provides a set of css class to enable users to customize it. The following list of CSS class names are used to customize the Menu component.
  You can customize the appearance of the Menu by overriding the existing styles. The following list of CSS class names are used to customize the menu component.

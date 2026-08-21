@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pane content in ##Platform_Name## Splitter control | Syncfusion
-description: Learn here all about Pane content in Syncfusion ##Platform_Name## Splitter control of Syncfusion Essential JS 2 and more.
+title: Pane Content in ##Platform_Name## Splitter | Syncfusion
+description: Add plain text, HTML markup, or other Syncfusion controls as content of Syncfusion ##Platform_Name## Splitter panes using TypeScript.
 platform: ej2-javascript
 control: Pane content 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pane content in ##Platform_Name## Splitter control
+# Pane Content in ##Platform_Name## Splitter
 
 This section explains how to provide plain text, HTML markup, or other JavaScript UI controls as content for the Splitter.
 

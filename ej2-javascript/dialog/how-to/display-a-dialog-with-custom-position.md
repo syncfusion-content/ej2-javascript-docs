@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display a dialog with custom position in ##Platform_Name## Dialog control | Syncfusion
-description: Learn here all about Display a dialog with custom position in Syncfusion ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more.
+title: How to position Dialog in ##Platform_Name## Dialog | Syncfusion
+description: Display the ##Platform_Name## Dialog at a custom X and Y position by setting the position property with numeric or named offset values.
 platform: ej2-javascript
 control: Display a dialog with custom position 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Display a dialog with custom position in ##Platform_Name## Dialog control
+# How to position a Dialog in ##Platform_Name## Dialog
 
-By default, the dialog is displayed in the center of the target container. The dialog position can be set using the [position](../../api/dialog/#position) property by providing custom X and Y coordinates. The dialog can be positioned inside the target based on the given X and Y values.
+By default, the dialog is displayed in the center of the target container. The dialog position can be set using the [position](https://ej2.syncfusion.com/documentation/api/dialog/index-default#position) property by providing custom X and Y coordinates. The dialog can be positioned inside the target based on the given X and Y values.
 
 {% if page.publishingplatform == "typescript" %}
 

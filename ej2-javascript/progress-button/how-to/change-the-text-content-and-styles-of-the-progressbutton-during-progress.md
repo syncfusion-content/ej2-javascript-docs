@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change the text content and styles of the progressbutton during progress in ##Platform_Name## Progress button control | Syncfusion
-description: Learn here all about Change the text content and styles of the progressbutton during progress in Syncfusion ##Platform_Name## Progress button control of Syncfusion Essential JS 2 and more.
+title: How to change the text content and styles of the Progress Button during progress in ##Platform_Name## Progress Button | Syncfusion
+description: Learn how to change the text content and styles of the ##Platform_Name## Progress Button during progress in the begin and end events.
 platform: ej2-javascript
 control: Change the text content and styles of the progressbutton during progress 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change the text content and styles of the progressbutton during progress in ##Platform_Name## Progress button control
+# How to change the text content and styles of the Progress Button during progress in ##Platform_Name## Progress Button
 
 You can change the text content and styles of the ProgressButton during progress by changing the text content and the [`cssClass`](../../api/progress-button#cssClass) property at the [`begin`](../../api/progress-button#begin) and [`end`](../../api/progress-button#end) events.
 

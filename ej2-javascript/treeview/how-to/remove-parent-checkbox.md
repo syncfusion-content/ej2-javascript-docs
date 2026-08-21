@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Remove parent checkbox in ##Platform_Name## TreeView control | Syncfusion
-description: Learn here all about removing parent checkboxes in the Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: How to remove parent checkbox in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to remove parent checkboxes in the Syncfusion ##Platform_Name## TreeView control for a cleaner selection pattern.
 platform: ej2-javascript
 control: Remove parent checkbox
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Remove parent checkbox in ##Platform_Name## TreeView control
+# How to remove parent checkbox in ##Platform_Name## TreeView
 
 By enabling the [`showCheckBox`](../../api/treeview/#showcheckbox) property, you can render a checkbox before each node of the TreeView. However, some applications require checkboxes to be displayed only in child nodes. In such cases, you can remove the checkbox of the parent node by customizing the CSS.
 

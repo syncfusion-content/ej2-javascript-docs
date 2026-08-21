@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Value binding in ##Platform_Name## AutoComplete control | Syncfusion
-description: Learn here all about Value binding in Syncfusion ##Platform_Name## AutoComplete control of Syncfusion Essential JS 2 and more.
+title: Value binding in ##Platform_Name## AutoComplete | Syncfusion
+description: Bind primitive types or complex objects to the Syncfusion ##Platform_Name## AutoComplete value from local arrays, remote sources, or custom data.
 platform: ej2-javascript
 control: Value binding 
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Value binding in AutoComplete Component
+# Value binding in ##Platform_Name## AutoComplete
 
 Value binding in the AutoComplete control allows you to associate data values with each list item. This facilitates managing and retrieving selected values efficiently. The AutoComplete component provides flexibility in binding both primitive data types and complex objects.
 
 ## Primitive Data Types
 
-The AutoComplete control provides flexible binding capabilities for primitive data types like strings and numbers. You can effortlessly bind local primitive data arrays, fetch and bind data from remote sources, and even custom data binding to suit specific requirements. Bind the value of primitive data to the [value](../api/auto-complete/#value) property of the AutoComplete.
+The AutoComplete control provides flexible binding capabilities for primitive data types like strings and numbers. You can effortlessly bind local primitive data arrays, fetch and bind data from remote sources, and even custom data binding to suit specific requirements. Bind the value of primitive data to the [value](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#value) property of the AutoComplete.
 
 Primitive data types include:
 
@@ -55,7 +55,7 @@ The following sample shows the example for preselect values for primitive data t
 
 ## Object Data Types
 
-In the AutoComplete control, object binding allows you to bind to a dataset of objects. When [`allowObjectBinding`](../api/auto-complete/#allowobjectbinding) is enabled, the value of the control will be an object of the same type as the selected item in the [value](../api/auto-complete/#value) property. This feature seamlessly binds arrays of objects, whether sourced locally, retrieved from remote endpoints, or customized to suit specific application needs.
+In the AutoComplete control, object binding allows you to bind to a dataset of objects. When [`allowObjectBinding`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#allowobjectbinding) is enabled, the value of the control will be an object of the same type as the selected item in the [value](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#value) property. This feature seamlessly binds arrays of objects, whether sourced locally, retrieved from remote endpoints, or customized to suit specific application needs.
 
 The following sample shows the example for preselect values for object data type
 

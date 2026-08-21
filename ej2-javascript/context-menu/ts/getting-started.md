@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Context Menu control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Context Menu control of Syncfusion Essential JS 2 and more details.
+title: Getting started with Context Menu | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Context menu. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
 control: Context Menu
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
  
-# Getting started in ##Platform_Name## Context menu control
+# Getting started in ##Platform_Name## Context menu
  
 This section explains the steps to create a simple ContextMenu and demonstrates the basic usage of the ContextMenu component,    using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
  

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Icons and navigation in ##Platform_Name## Context menu control | Syncfusion
-description: Learn here all about Icons and navigation in Syncfusion ##Platform_Name## Context menu control of Syncfusion Essential JS 2 and more.
+title: Icons and navigation in ##Platform_Name## Context menu | Syncfusion
+description: Add icons to Syncfusion ##Platform_Name## Context menu items using the iconCss property and configure left-positioned visuals.
 platform: ej2-javascript
 control: Icons and navigation 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons and navigation in ##Platform_Name## Context menu control
+# Icons and navigation in ##Platform_Name## Context menu
 
 ## Icons
 

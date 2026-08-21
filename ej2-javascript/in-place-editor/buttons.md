@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Buttons in ##Platform_Name## In place editor control | Syncfusion
-description: Learn here all about Buttons in Syncfusion ##Platform_Name## In place editor control of Syncfusion Essential JS 2 and more.
+title: Buttons in ##Platform_Name## In-place Editor | Syncfusion
+description: Customize the ##Platform_Name## In-place Editor save and cancel buttons via ButtonModel, toggle them with showButtons, and set actionOnBlur and submitOnEnter.
 platform: ej2-javascript
 control: Buttons 
 publishingplatform: ##Platform_Name##
@@ -9,22 +9,22 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Buttons in ##Platform_Name## In place editor control
+# Buttons in ##Platform_Name## In-place Editor
 
-The In-place Editor had an action for save and cancel using buttons. The [saveButton](../api/inplace-editor/#savebutton) and [cancelButton](../api/inplace-editor/#cancelbutton) properties accept the [ButtonModel](../api/button/buttonModel/) objects for customizing the save and cancel button properties.
+The In-place Editor had an action for save and cancel using buttons. The [saveButton](../api/inplace-editor/index-default#savebutton) and [cancelButton](../api/inplace-editor/index-default#cancelbutton) properties accept the [ButtonModel](../api/button/buttonModel) objects for customizing the save and cancel button properties.
 
-Buttons can be show or hide by sets a Boolean value to the [showButtons](../api/inplace-editor/#showbuttons) property.
+Buttons can be show or hide by sets a Boolean value to the [showButtons](../api/inplace-editor/index-default#showbuttons) property.
 
 > Without buttons value will be processed via the following ways.
 
-* **[actionOnBlur](../api/inplace-editor/#actiononblur)**: By clicking out side the editor control get focus out and do action based on this property value.
-* **[submitOnEnter](../api/inplace-editor/#submitonenter)**: Pressing `Enter` key it performs the submit action, if this property set to `true`.
+* **[actionOnBlur](../api/inplace-editor/index-default#actiononblur)**: By clicking out side the editor control get focus out and do action based on this property value.
+* **[submitOnEnter](../api/inplace-editor/index-default#submitonenter)**: Pressing `Enter` key it performs the submit action, if this property set to `true`.
 
-In the following sample, the [content](../api/button/#content) and [cssClass](../api/button/#cssclass) properties of `Button` value assigned to the [saveButton](../api/inplace-editor/#savebutton) and [cancelButton](../api/inplace-editor/#cancelbutton) properties to customize its appearance. Also check or uncheck a checkbox buttons render or removed from the editor.
+In the following sample, the [content](../api/button/index-default#content) and [cssClass](../api/button/index-default#cssclass) properties of `Button` value assigned to the [saveButton](../api/inplace-editor/index-default#savebutton) and [cancelButton](../api/inplace-editor/index-default#cancelbutton) properties to customize its appearance. Also check or uncheck a checkbox buttons render or removed from the editor.
 
 To restrict either save or cancel button rendering into a DOM, simply pass empty object `{}` in the  `saveButton` or `cancelButton` properties.
 
-> For more details about buttons, refer this documentation [section](../button/).
+> For more details about buttons, refer this documentation [section](../button).
 
 {% if page.publishingplatform == "typescript" %}
 

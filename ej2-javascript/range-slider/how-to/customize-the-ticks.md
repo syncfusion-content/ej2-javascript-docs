@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize the ticks in ##Platform_Name## Range Slider control | Syncfusion
-description: Learn here all about Customize the ticks in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: How to customize the ticks in ##Platform_Name## Range Slider | Syncfusion
+description: Style ##Platform_Name## Range Slider ticks by overriding the e-tick CSS class to add custom content, position offsets, and per-tick colors via nth-child.
 platform: ej2-javascript
 control: Customize the ticks
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the ticks in ##Platform_Name## Range Slider control
+# How to customize the ticks in ##Platform_Name## Range Slider
 
 The appearance of the Range Slider control can be customized via CSS. By overriding the slider CSS classes, you can customize the ticks, which allow you to easily identify the current value/values of the slider. It contains [`smallStep`](../../api/slider/ticksDataModel/#smallstep) and [`largeStep`](../../api/slider/ticksDataModel/#largestep) properties. By default, the slider has a class named `e-tick` for slider ticks, which can be overridden as per your requirements. Refer to the following code snippet to render custom ticks:
 

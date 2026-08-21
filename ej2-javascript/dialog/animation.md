@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Dialog control | Syncfusion
-description: Learn here all about Animation in Syncfusion ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more.
+title: Animation in ##Platform_Name## Dialog | Syncfusion
+description: Animate the ##Platform_Name## Dialog open and close actions with delay, duration, and effects like Fade, Slide, Zoom, and Flip via animationSettings.
 platform: ej2-javascript
 control: Animation 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation in ##Platform_Name## Dialog control
+# Animation in ##Platform_Name## Dialog
 
-The Dialog can be animated during the open and close actions. Also, user can customize animation's [`delay`](../api/dialog/animationSettings/#delay), [`duration`](../api/dialog/animationSettings/#duration) and [`effect`](../api/dialog/animationSettings/#effect) by using [animationSettings](../api/dialog/#animationsettings) property.
+The Dialog can be animated during the open and close actions. Also, user can customize animation's [`delay`](https://ej2.syncfusion.com/documentation/api/dialog/animationsettings#delay), [`duration`](https://ej2.syncfusion.com/documentation/api/dialog/animationsettings#duration) and [`effect`](https://ej2.syncfusion.com/documentation/api/dialog/animationsettings#effect) by using [animationSettings](https://ej2.syncfusion.com/documentation/api/dialog/animationsettings) property.
 
 <!-- markdownlint-disable MD033 -->
 <table>

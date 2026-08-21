@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adaptive in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Adaptive in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: Adaptive in ##Platform_Name## Tab | Syncfusion
+description: Learn how to adapt the Syncfusion ##Platform_Name## Tab control for smaller spaces and responsive content layouts.
 platform: ej2-javascript
 control: Adaptive 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adaptive in ##Platform_Name## Tab control
+# Adaptive in ##Platform_Name## Tab
 
 The following section explains how to render the Tab when its width exceeds the viewable area, or for a specified [`width`](../api/tab#width). The available modes are as follows:
 

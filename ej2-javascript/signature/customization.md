@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Signature control | Syncfusion
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Signature control of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## Signature | Syncfusion
+description: Customize the ##Platform_Name## Signature stroke color, stroke width, background color, and background image for the canvas.
 platform: ej2-javascript
 control: Customization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in ##Platform_Name## Signature control
+# Customization in ##Platform_Name## Signature
 
 The Signature control draws stroke/path using moveTo() and lineTo() methods to connect one or more points while drawing in canvas. The stroke width can be modified by using its color and width. And the background can be modified by using its background color and background image.
 

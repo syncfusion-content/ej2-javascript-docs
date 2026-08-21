@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in ##Platform_Name## Rating control | Syncfusion
-description: Learn here all about Events in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
+title: Events in ##Platform_Name## Rating | Syncfusion
+description: Use ##Platform_Name## Rating events including beforeClick, onClick, change, hovered, and mouseout hooks to react to user interactions on rating items.
 platform: ej2-javascript
 control: Events 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## Rating control
+# Events in ##Platform_Name## Rating
 
 This section describes the rating events that will be triggered when appropriate actions are performed. The following events are available in the rating control.
 

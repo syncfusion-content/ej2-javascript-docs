@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize button with html element in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Customize button with html element in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: How to customize upload button in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to customize the upload button in the Syncfusion ##Platform_Name## File Upload using the buttons property to render browse, upload, and remove actions.
 platform: ej2-javascript
 control: Customize button with html element 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize button with html element in ##Platform_Name## Uploader control
+# How to customize upload button in ##Platform_Name## File Upload
 
 The uploader component allows you to customize the action buttons by using [buttons](../../api/uploader/#buttons) &nbsp;property. Refer to the following example.
 

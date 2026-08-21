@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load accordion with data source in ##Platform_Name## Accordion control | Syncfusion
-description: Learn here all about Load accordion with data source in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
+title: How to load ##Platform_Name## Accordion with data source | Syncfusion
+description: Bind data from OData or any service to the Syncfusion ##Platform_Name## Accordion by mapping header and content fields.
 platform: ej2-javascript
 control: Load accordion with data source 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Load accordion with data source in ##Platform_Name## Accordion control
+# How to load accordion with data source in ##Platform_Name## Accordion
 
 You can bind any data object to Accordion items, by mapping it to [`header`](../../api/accordion/accordionItem#header) and [`content`](../../api/accordion/accordionItem#content)&nbsp; property.
 

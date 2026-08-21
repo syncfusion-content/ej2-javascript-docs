@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Chips control | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## Chips control of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Chips | Syncfusion
+description: Learn the exact CSS structure used to customize the ##Platform_Name## Chips text, icons, delete button, outline, and avatar.
 platform: ej2-javascript
 control: Style
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in ##Platform_Name## Chips control
+# Style in ##Platform_Name## Chips
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preference.
 

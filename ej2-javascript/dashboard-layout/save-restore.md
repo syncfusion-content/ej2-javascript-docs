@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Save restore in ##Platform_Name## Dashboard Layout control | Syncfusion
-description: Learn here all about Save restore in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
+title: Save Restore in ##Platform_Name## Dashboard Layout | Syncfusion
+description: Save and restore the Syncfusion ##Platform_Name## Dashboard Layout panel structure with the serialize method, then rebuild the same arrangement on demand.
 platform: ej2-javascript
 control: Save restore
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Save and restore in ##Platform_Name## Dashboard Layout control
+# Save Restore in ##Platform_Name## Dashboard Layout
 
 The current layout structure of the Dashboard Layout control can be obtained and saved to recreate a dashboard with the same panel arrangement using the [`serialize`](../api/dashboard-layout#serialize) public method. This method returns the control's current panel settings, which can be used to reconstruct a dashboard with the same layout configuration.
 

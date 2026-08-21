@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable or disable toolbar item in ##Platform_Name## Toolbar control | Syncfusion
-description: Learn here all about Enable or disable toolbar item in Syncfusion ##Platform_Name## Toolbar control of Syncfusion Essential JS 2 and more.
+title: How to enable or disable Toolbar item in ##Platform_Name## Toolbar | Syncfusion
+description: Learn how to enable or disable toolbar items in the Syncfusion ##Platform_Name## Toolbar control for conditional commands.
 platform: ej2-javascript
 control: Enable or disable toolbar item 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable or disable toolbar item in ##Platform_Name## Toolbar control
+# How to enable or disable Toolbar item in ##Platform_Name## Toolbar
 
 The [`disabled`](../../api/toolbar/itemModel/#disabled) property of the Toolbar item is used to enable or disable the item by setting the value to false or true. In the following code example, the paste action is initially disabled. On clicking the cut or copy button, the paste button will be enabled.
 

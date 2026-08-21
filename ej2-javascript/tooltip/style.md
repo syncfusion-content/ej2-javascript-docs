@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Tooltip control | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Tooltip | Syncfusion
+description: Style the ##Platform_Name## Tooltip with CSS overrides for the wrapper, popup, content, arrow tip, inner tip, and outer tip elements across themes.
 platform: ej2-javascript
 control: Style 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in ##Platform_Name## Tooltip control
+# Style in ##Platform_Name## Tooltip
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

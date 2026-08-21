@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dragging panels in ##Platform_Name## Dashboard layout | Syncfusion
-description: Learn here all about Dragging of panels in Syncfusion ##Platform_Name## Dashboard layout control of Syncfusion Essential JS 2 and more.
+title: Dragging Panels in ##Platform_Name## Dashboard Layout | Syncfusion
+description: Drag Syncfusion ##Platform_Name## Dashboard Layout panels to reorder them; colliding panels shift to nearby free cells during drag.
 platform: ej2-javascript
 control: Dragging of panels
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dragging of panels in ##Platform_Name## Dashboard layout control
+# Dragging Moving of Panels in ##Platform_Name## Dashboard Layout
 
 The Dashboard Layout control is equipped with dragging functionality to drag and reorder the panels within the layout. While dragging a panel, a holder will be highlighted below the panel indicating the panel placement on panel drop. This helps the user decide whether to place the panel in the current position or revert to the previous position without disturbing the layout.
 

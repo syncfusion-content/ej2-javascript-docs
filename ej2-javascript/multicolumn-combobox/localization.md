@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## MultiColumn Combobox control | Syncfusion
-description: Checkout and learn about Localization in ##Platform_Name## MultiColumn Combobox control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## MultiColumn ComboBox | Syncfusion
+description: Localize the noRecordsTemplate text of the Syncfusion ##Platform_Name## MultiColumn ComboBox to any culture via the L10n class.
 platform: ej2-javascript
 control: Localization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## MultiColumn ComboBox control
+# Localization in ##Platform_Name## MultiColumn ComboBox
 
 The Localization library allows you to localize static text content of the [noRecordsTemplate](../api/multicolumn-combobox#norecordstemplate) property according to the culture currently assigned to the MultiColumn ComboBox.
 

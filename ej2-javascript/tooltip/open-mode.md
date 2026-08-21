@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Open mode in ##Platform_Name## Tooltip control | Syncfusion
-description: Learn here all about Open mode in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
+title: Open Mode in ##Platform_Name## Tooltip | Syncfusion
+description: Open the ##Platform_Name## Tooltip on hover, focus, click, or custom actions using the opensOn property, with sticky mode and configurable open/close delays.
 platform: ej2-javascript
 control: Open mode
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open mode in ##Platform_Name## Tooltip control
+# Open Mode in ##Platform_Name## Tooltip
 
 You can decide the mode on which the Tooltip is to be opened on a page, i.e., on hovering, focusing, or clicking on the target elements.
 

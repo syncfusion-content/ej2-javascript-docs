@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Icons support in ##Platform_Name## Multi select control | Syncfusion
-description: Learn here all about Icons support in Syncfusion ##Platform_Name## Multi select control of Syncfusion Essential JS 2 and more.
+title: How to show icons in ##Platform_Name## MultiSelect | Syncfusion
+description: Show icon classes for each item in the Syncfusion ##Platform_Name## MultiSelect Dropdown popup by mapping the iconCss field.
 platform: ej2-javascript
 control: Icons support 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons support in ##Platform_Name## Multi select control
+# How to show icons for list items in ##Platform_Name## MultiSelect
 
 You can render **icons** to the list items by mapping the [iconCss](../../api/multi-select/#fields) &nbsp;field. This `iconCss` field create a span in the list item with mapped class name to allow styling as per your need.
 

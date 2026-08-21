@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disable the daterangepicker component in ##Platform_Name## Daterangepicker control | Syncfusion
-description: Learn here all about Disable the daterangepicker component in Syncfusion ##Platform_Name## Daterangepicker control of Syncfusion Essential JS 2 and more.
+title: How to disable it in ##Platform_Name## DateRangePicker | Syncfusion
+description: Inactivate the ##Platform_Name## DateRangePicker by setting the enabled property to false to prevent all user interaction and form submission.
 platform: ej2-javascript
 control: Disable the daterangepicker component 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disable the daterangepicker component in ##Platform_Name## Daterangepicker control
+# How to disable it in ##Platform_Name## DateRangePicker
 
 DateRangePicker can be inactivated on a page, by setting [`enabled`](../../api/daterangepicker#enabled) value as false that will disable the component completely from all the user interactions including in form post. The following example demonstrates the disabled component.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Index in ##Platform_Name## Treeview control | Syncfusion
-description: Learn here all about Index in Syncfusion ##Platform_Name## Treeview control of Syncfusion Essential JS 2 and more.
+title: Index in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to use the Syncfusion ##Platform_Name## TreeView control to manage hierarchical data with ease.
 platform: ej2-javascript
-control: Index 
+control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in ##Platform_Name## Treeview control
+# Index in ##Platform_Name## TreeView
 
 The **TreeView** component is used to represent hierarchical data in a tree like structure with advanced functions to edit, drag and drop, select with CheckBox and more. TreeView can be populated from a data source such as an array of JavaScript objects or from DataManager.
 

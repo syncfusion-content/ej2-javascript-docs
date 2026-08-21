@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Use case scenarios in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Use case scenarios in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: Use case scenarios in ##Platform_Name## Menu | Syncfusion
+description: Learn how to apply the Syncfusion ##Platform_Name## Menu control in real-world navigation scenarios and enterprise layouts.
 platform: ej2-javascript
-control: Use case scenarios 
+control: Use case scenarios
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Use case scenarios in ##Platform_Name## Menu control
+# Use case scenarios in ##Platform_Name## Menu
 
 ## Scrollable menu
 

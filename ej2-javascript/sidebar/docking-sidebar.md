@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Docking Sidebar in ##Platform_Name## Sidebar control | Syncfusion
-description: Learn here all about Docking Sidebar in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: Docking Sidebar in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to dock and position the Syncfusion ##Platform_Name## Sidebar control for stable navigation layouts and overlays.
 platform: ej2-javascript
 control: Docking Sidebar
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Docking Sidebar in ##Platform_Name## Sidebar control
+# Docking Sidebar in ##Platform_Name## Sidebar
 
 The [`Dock`](../api/sidebar/#enabledock) state of the Sidebar reserves some space on the page that always remains visible when the Sidebar is collapsed. It is used to show a concise form of content, such as icons alone instead of lengthy text. To achieve this, set [`enableDock`](../api/sidebar/#enabledock) to true along with the required [`dockSize`](../api/sidebar/#docksize).
 

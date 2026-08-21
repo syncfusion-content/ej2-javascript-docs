@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Select one child in ##Platform_Name## TreeView control | Syncfusion
-description: Learn here all about Select one child in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: How to select one child in ##Platform_Name## TreeView | Syncfusion
+description: Learn how to select one child node in the Syncfusion ##Platform_Name## TreeView control for structured hierarchy interactions.
 platform: ej2-javascript
 control: Select one child
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Select one child in ##Platform_Name## TreeView control
+# How to select one child in ##Platform_Name## TreeView
 
 The TreeView control allows both single and multiple selections. If your application requires selecting one child at a time under a specific parent, refer to the following example. You can achieve this by using the [`nodeSelecting`](../../api/treeview#nodeselecting)  event in the TreeView control. However, you can reset the selected child and make another selection by pressing Ctrl + selected nodes.
 

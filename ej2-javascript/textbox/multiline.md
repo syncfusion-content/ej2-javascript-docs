@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Multiline in ##Platform_Name## Textbox control | Syncfusion
-description: Learn here all about Multiline in Syncfusion ##Platform_Name## Textbox control of Syncfusion Essential JS 2 and more.
+title: Multiline in ##Platform_Name## TextBox | Syncfusion
+description: Accept one or more lines of text in the ##Platform_Name## TextBox for addresses, descriptions, comments, and other multi-line input needs.
 platform: ej2-javascript
 control: Multiline 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Multiline in ##Platform_Name## Textbox control
+# Multiline in ##Platform_Name## TextBox
 
 This feature allows the textbox to accept one or more lines of text like address, description, comments, and more.
 

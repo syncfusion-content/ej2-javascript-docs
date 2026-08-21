@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell sizing in ##Platform_Name## Dashboard Layout | Syncfusion
-description: Learn here all about Setting size of cells in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
+title: Setting Cells in ##Platform_Name## Dashboard Layout | Syncfusion
+description: Configure Syncfusion ##Platform_Name## Dashboard Layout cell dimensions with the columns and cellAspectRatio properties for static or responsive grids.
 platform: ej2-javascript
 control: Setting size of cells
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Setting size of cells in ##Platform_Name## Dashboard Layout control
+# Setting Cells in ##Platform_Name## Dashboard Layout
 
 The layout's dimensions are determined by the parent element's width and height. Hence, a responsive or static layout can be created by assigning a percentage or static dimension values to the parent element. The layout adapts to mobile resolutions by transforming the entire layout into a stacked orientation so that the panels will be displayed in a vertical column.
 

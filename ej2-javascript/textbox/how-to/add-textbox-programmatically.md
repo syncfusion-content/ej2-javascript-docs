@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add textbox programmatically in ##Platform_Name## Textbox control | Syncfusion
-description: Learn here all about Add textbox programmatically in Syncfusion ##Platform_Name## Textbox control of Syncfusion Essential JS 2 and more.
+title: How to add textbox programmatically in ##Platform_Name## TextBox | Syncfusion
+description: Create a ##Platform_Name## TextBox programmatically by importing the Input module from ej2-inputs and rendering it on the desired container.
 platform: ej2-javascript
 control: Add textbox programmatically 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add textbox programmatically in ##Platform_Name## Textbox control
+# How to add textbox programmatically in ##Platform_Name## TextBox
 
 * Create a TypeScript file and import the `Input` modules
 from `ej2-inputs` library as shown below.

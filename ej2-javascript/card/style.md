@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Card control | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## Card control of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Card | Syncfusion
+description: Customize Syncfusion ##Platform_Name## Card appearance with CSS for background, padding, headers, content, dividers, and images.
 platform: ej2-javascript
 control: Style 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in ##Platform_Name## Card control
+# Style in ##Platform_Name## Card
 
 The following content provides the CSS structure that can be used to customize the Card control's appearance based on user preference.
 

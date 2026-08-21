@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template in  ##Platform_Name## Timeline control | Syncfusion
-description:  Checkout and learn about Template with ##Platform_Name## Timeline control of Syncfusion Essential JS 2 and more.
+title: Template in ##Platform_Name## Timeline | Syncfusion
+description: Customize each Syncfusion ##Platform_Name## Timeline item with the template property, including dot items, templated content, and progress bar styling.
 platform: ej2-javascript
 control: Timeline
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in ##Platform_Name## Timeline control
+# Template in ##Platform_Name## Timeline
 
 The Timeline control allows to customize the appearance of each item by using the [`template`](../api/timeline#template) property. This enables modification of dot items, templated contents, progress bar styling, and more.
 

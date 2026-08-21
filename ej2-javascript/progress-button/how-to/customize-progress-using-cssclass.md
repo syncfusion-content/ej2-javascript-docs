@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize progress using cssclass in ##Platform_Name## Progress button control | Syncfusion
-description: Learn here all about Customize progress using cssclass in Syncfusion ##Platform_Name## Progress button control of Syncfusion Essential JS 2 and more.
+title: How to customize progress using cssClass in ##Platform_Name## Progress Button | Syncfusion
+description: Learn how to customize the ##Platform_Name## Progress Button progress UI with vertical, top, and reverse styles using the cssClass property.
 platform: ej2-javascript
 control: Customize progress using cssclass 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize progress using cssclass in ##Platform_Name## Progress button control
+# How to customize progress using cssClass in ##Platform_Name## Progress Button
 
 You can customize the background filler UI using the [`cssClass`](../../api/progress-button#cssClass) property.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display mode in ##Platform_Name## Query builder control | Syncfusion
-description: Learn here all about Display mode in Syncfusion ##Platform_Name## Query builder control of Syncfusion Essential JS 2 and more.
+title: Change display mode in ##Platform_Name## Query Builder UI | Syncfusion
+description: Switch the ##Platform_Name## Query Builder UI between vertical and horizontal layouts using the displayMode property to fit the query editor into your page design.
 platform: ej2-javascript
 control: Display mode 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Display mode in ##Platform_Name## Query builder control
+# How to change display mode in ##Platform_Name## Query Builder UI
 
-Display options allows you to view the Query Builder in Vertically or Horizontally. For this, you should use the [`displayMode`](https://ej2.syncfusion.com/documentation/api/query-builder/#displaymode) property.
+Display options allows you to view the Query Builder in Vertically or Horizontally. For this, you should use the [`displayMode`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#displaymode) property.
 
 {% if page.publishingplatform == "typescript" %}
 

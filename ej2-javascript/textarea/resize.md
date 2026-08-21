@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resize with ##Platform_Name## Textarea control | Syncfusion
-description: Checkout and learn about Resize with ##Platform_Name## Textarea control of Syncfusion Essential JS 2 and more details.
+title: Resize in ##Platform_Name## TextArea | Syncfusion
+description: Configure ##Platform_Name## TextArea resize behavior with the resizeMode API to support none, both, horizontal, or vertical resize interactions.
 platform: ej2-javascript
 control: Resize
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resize in ##Platform_Name## TextArea Control
+# Resize in ##Platform_Name## TextArea
 
 The TextArea allows users to input and edit large amounts of text. Resizing this control effectively can enhance the user experience and accommodate varying content needs. This resizing behavior can be enabled and configured using the [resizeMode](../api/textarea/#resizeMode) API, which offers several options for resizing the TextArea:
 

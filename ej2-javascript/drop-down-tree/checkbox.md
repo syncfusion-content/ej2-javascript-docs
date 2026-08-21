@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Checkbox in ##Platform_Name## Dropdown Tree Control | Syncfusion
-description: Learn here all about Checkbox in Syncfusion ##Platform_Name## Dropdown Tree control of Syncfusion Essential JS 2 and more.
+title: Checkbox in ##Platform_Name## Dropdown Tree | Syncfusion
+description: Show checkboxes in the Syncfusion ##Platform_Name## Dropdown Tree popup via showCheckBox to let users select multiple tree items.
 platform: ej2-javascript
 control: Checkbox 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Checkbox in ##Platform_Name## Dropdown Tree control
+# Checkbox in ##Platform_Name## Dropdown Tree
 
 The Dropdown Tree control allows you to check multiple items from the tree without affecting the UI's appearance by enabling the [`showCheckBox`](../api/drop-down-tree/#showcheckbox) property. When this property is enabled, a checkbox appears before each item text in the popup.
 

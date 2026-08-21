@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Context menu control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Context menu control of Syncfusion Essential JS 2 and more details.
+title: Es5 getting started with ##Platform_Name## Context menu | Syncfusion
+description: Learn how to render the Syncfusion ##Platform_Name## Context menu in ES5 JavaScript using the global script and ej2-navigations package.
 platform: ej2-javascript
 control: Context Menu 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Context menu control
+# Es5 getting started in ##Platform_Name## Context menu
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 

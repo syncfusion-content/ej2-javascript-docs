@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize the spin buttons up and down arrow in ##Platform_Name## Numerictextbox control | Syncfusion
-description: Learn here all about Customize the spin buttons up and down arrow in Syncfusion ##Platform_Name## Numerictextbox control of Syncfusion Essential JS 2 and more.
+title: Customize spin buttons in ##Platform_Name## Numeric Textbox | Syncfusion
+description: Customize the up and down arrow icons on the Syncfusion ##Platform_Name## Numeric Textbox spin buttons by overriding the e-spin-up and e-spin-down CSS classes.
 platform: ej2-javascript
 control: Customize the spin buttons up and down arrow 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the spin buttons up and down arrow in ##Platform_Name## Numerictextbox control
+# How to customize spin buttons in ##Platform_Name## Numeric Textbox
 
 This section explains about how to change/customize spin up and down icons. You can customize spin button icons using `e-spin-up` and `e-spin-down` classes of those buttons.
 

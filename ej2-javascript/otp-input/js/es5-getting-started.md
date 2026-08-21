@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## OTP Input control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## OTP Input control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## OTP Input | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## OTP Input control. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## OTP Input control
+# Getting Started with ##Platform_Name## OTP Input
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 OTP input and demonstrate the basic usage of the OTP input control in a JavaScript application.
 

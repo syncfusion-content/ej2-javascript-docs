@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Styles in ##Platform_Name## Speed dial control | Syncfusion
-description: Learn here all about Styles in Syncfusion ##Platform_Name## Speed dial control of Syncfusion Essential JS 2 and more.
+title: Styles in ##Platform_Name## Speed Dial | Syncfusion
+description: Learn the predefined visual styles and cssClass options for the ##Platform_Name## Speed Dial button, including primary, info, and success.
 platform: ej2-javascript
 control: Styles 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Styles in ##Platform_Name## Speed dial control
+# Styles in ##Platform_Name## Speed Dial
 
 This section briefs different ways to style SpeedDial control.
 

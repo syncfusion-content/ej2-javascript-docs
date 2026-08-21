@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Accordion control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Accordion | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Accordion. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
 control: Accordion 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Accordion control
+# Getting started in ##Platform_Name## Accordion
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 

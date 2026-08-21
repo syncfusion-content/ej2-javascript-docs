@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Query builder control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Query Builder UI | Syncfusion
+description: Learn how to set up the Syncfusion ##Platform_Name## Query Builder UI in an ES5 application using local script references or CDN links for a quick start.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Query Builder control
+# Getting Started with ##Platform_Name## Query Builder UI
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Query Builder and demonstrate the basic usage of the Query Builder control in a JavaScript application.
 

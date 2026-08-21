@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display tool tip on tab header in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Display tool tip on tab header in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: How to display tooltip on tab header in ##Platform_Name## Tab | Syncfusion
+description: Learn how to display tooltips on tab headers in the Syncfusion ##Platform_Name## Tab control for better context.
 platform: ej2-javascript
 control: Display tool tip on tab header 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Display tooltip on tab header in ##Platform_Name## Tab control
+# How to display tooltip on tab header in ##Platform_Name## Tab
 
 You can enhance the user experience of your Tab control by displaying tooltips for the tab headers. This feature provides hint text when users hover their mouse over a tab header. To implement this, you'll use the [`beforeRender`](../../api/tooltip#beforerender) event of the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tooltip control.
 

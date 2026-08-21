@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Determine whether the uploader has input file in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Determine whether the uploader has input file in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: How to detect uploader files in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to determine whether the Syncfusion ##Platform_Name## File Upload has an input file selected by using the required attribute and validation message.
 platform: ej2-javascript
 control: Determine whether the uploader has input file 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Determine whether the uploader has input file in ##Platform_Name## Uploader control
+# How to detect uploader files in ##Platform_Name## File Upload
 
 By setting the **required** attribute to uploader input element, you can validate the input file that has any value in it. In the following sample, set required attribute to the uploader input element and showcase the validation failure message using the `data-required-message` attribute.
 

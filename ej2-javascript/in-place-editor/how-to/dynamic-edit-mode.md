@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dynamic edit mode in ##Platform_Name## In place editor control | Syncfusion
-description: Learn here all about Dynamic edit mode in Syncfusion ##Platform_Name## In place editor control of Syncfusion Essential JS 2 and more.
+title: Open editor on load in ##Platform_Name## In-place Editor | Syncfusion
+description: Open the ##Platform_Name## In-place Editor at initial load by setting enableEditMode to true and toggle editing dynamically with a checkbox.
 platform: ej2-javascript
 control: Dynamic edit mode 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dynamic edit mode in ##Platform_Name## In place editor control
+# How to open editor on load in ##Platform_Name## In-place Editor
 
-At control initial load, if you want to open editor state without interacting In-place Editor input element, it can be achieved by configuring the [enableEditMode](../../api/inplace-editor/#enableeditmode) property to `true`.
+At control initial load, if you want to open editor state without interacting In-place Editor input element, it can be achieved by configuring the [enableEditMode](../../api/inplace-editor/index-default#enableeditmode) property to `true`.
 
 In the following sample, editor opened at initial load and when toggling a checkbox, it will remove or open the editor.
 

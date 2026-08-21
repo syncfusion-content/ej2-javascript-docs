@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with In-place editor control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## In place editor control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## In-place Editor | Syncfusion
+description: Get started with the Syncfusion ##Platform_Name## In-place Editor in a TypeScript app using the ej2-quickstart-webpack seed, with npm package and theme setup.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## In-place editor control
+# Getting Started with ##Platform_Name## In-place Editor
 
 This section explains how to create a simple in-place editor using TypeScript and configure its properties using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 

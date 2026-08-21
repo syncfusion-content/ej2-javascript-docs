@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Summary view in ##Platform_Name## Query builder control | Syncfusion
-description: Learn here all about Summary view in Syncfusion ##Platform_Name## Query builder control of Syncfusion Essential JS 2 and more.
+title: Show summary view in ##Platform_Name## Query Builder | Syncfusion
+description: Show a compact preview of the built query in the ##Platform_Name## Query Builder UI by enabling the summaryView property, which displays the filtered conditions.
 platform: ej2-javascript
 control: Summary view 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Summary view in ##Platform_Name## Query builder control
+# How to show summary view in ##Platform_Name## Query Builder UI
 
-Summary view allows you to show or hide the filtered query. By default, the value is false. You can enable this feature by setting the [`summaryView`](https://ej2.syncfusion.com/documentation/api/query-builder/#summaryview) property to true.
+Summary view allows you to show or hide the filtered query. By default, the value is false. You can enable this feature by setting the [`summaryView`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#summaryview) property to true.
 
 {% if page.publishingplatform == "typescript" %}
 

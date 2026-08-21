@@ -23,7 +23,7 @@ You can utilize the [contextualTabs](https://ej2.syncfusion.com/documentation/ap
 
 {% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
+ {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/ribbon/contextual-tabs/add-contextual-tabs/index.ts %}
 {% endhighlight %}
@@ -31,7 +31,7 @@ You can utilize the [contextualTabs](https://ej2.syncfusion.com/documentation/ap
 {% include code-snippet/ribbon/contextual-tabs/add-contextual-tabs/index.html %}
 {% endhighlight %}
 {% endtabs %}
-
+        
 {% previewsample "page.domainurl/code-snippet/ribbon/contextual-tabs/add-contextual-tabs" %}
 
 {% elsif page.publishingplatform == "javascript" %}

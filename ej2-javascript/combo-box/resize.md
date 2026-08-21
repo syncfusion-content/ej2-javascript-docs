@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Resizing in ##Platform_Name## Combo box control | Syncfusion
-description: Learn here all about Popup Resizing in Syncfusion ##Platform_Name## Combo box control of Syncfusion Essential JS 2 and more.
+title: Resizing in ##Platform_Name## ComboBox | Syncfusion
+description: Enable a resizable Syncfusion ##Platform_Name## ComboBox popup via allowResize so users can adjust the dropdown size with persisted dimensions.
 platform: ej2-javascript
 control: Resizing
 publishingplatform: ##Platform_Name##
@@ -10,9 +10,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resizing ##Platform_Name## Combo box control
+# Resizing in ##Platform_Name## ComboBox
 
-You can dynamically adjust the size of the popup in the Autocomplete component by using the [AllowResize](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/#allowresize) property. When enabled, users can resize the popup, improving visibility and control, with the resized dimensions being retained across sessions for a consistent user experience.
+You can dynamically adjust the size of the popup in the Autocomplete component by using the [AllowResize](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#allowresize) property. When enabled, users can resize the popup, improving visibility and control, with the resized dimensions being retained across sessions for a consistent user experience.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Group items in popup in ##Platform_Name## Split button control | Syncfusion
-description: Learn here all about Group items in popup in Syncfusion ##Platform_Name## Split button control of Syncfusion Essential JS 2 and more.
+title: How to group items in popup in ##Platform_Name## Split Button | Syncfusion
+description: Learn how to group ##Platform_Name## Split Button popup items by templating the popup with a ListView component.
 platform: ej2-javascript
 control: Group items in popup 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Group items in popup in ##Platform_Name## Split button control
+# How to group items in popup in ##Platform_Name## Split Button
 
 Items in popup can be grouped in SplitButton by templating entire popup with ListView. To achieve grouping in ListView, check [`ListView Grouping`](../../listview/grouping#grouping) documentation. To template ListView in popup, create ListView with id `listview` and provide it as [`target`](../../api/split-button#target) for SplitButton.
 

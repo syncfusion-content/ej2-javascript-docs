@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Multi select control | Syncfusion
-description: Learn here all about Filtering in Syncfusion ##Platform_Name## Multi select control of Syncfusion Essential JS 2 and more.
+title: Filtering in ##Platform_Name## MultiSelect Dropdown | Syncfusion
+description: Filter Syncfusion ##Platform_Name## MultiSelect Dropdown items as the user types, with a filtering event for custom data sources.
 platform: ej2-javascript
 control: Filtering 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in ##Platform_Name## Multi select control
+# Filtering in ##Platform_Name## MultiSelect Dropdown
 
 The MultiSelect has built-in support to filter data items when [`allowFiltering`](../api/multi-select/#allowfiltering) is enabled. The filter
 operation starts as soon as you start typing characters in the MultiSelect input.

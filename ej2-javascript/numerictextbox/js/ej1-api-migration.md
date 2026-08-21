@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 api migration in ##Platform_Name## Numerictextbox control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Numerictextbox control of Syncfusion Essential JS 2 and more.
+title: Ej1 API Migration in ##Platform_Name## Numeric Textbox | Syncfusion
+description: Migrate NumericTextBox properties and events from Essential JS 1 to the Syncfusion ##Platform_Name## Numeric Textbox in Essential JS 2 with a side-by-side API mapping.
 platform: ej2-javascript
 control: Ej1 api migration 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in ##Platform_Name## Numerictextbox control
+# Ej1 API Migration in ##Platform_Name## Numeric Textbox
 
 This article describes the API migration process of NumericTextBox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

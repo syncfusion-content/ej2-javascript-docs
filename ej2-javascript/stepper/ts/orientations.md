@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Orientations in  ##Platform_Name## Stepper control | Syncfusion
-description:  Checkout and learn about Orientations with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Orientations in ##Platform_Name## Stepper | Syncfusion
+description: Learn how to set orientation in the Syncfusion ##Platform_Name## Stepper control for different layout and screen requirements.
 platform: ej2-javascript
 control: Stepper
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Orientations in ##Platform_Name## Stepper control
+# Orientations in ##Platform_Name## Stepper
 
 The Stepper control supports the display of steps in both horizontal and vertical orientations by using the [orientation](https://ej2.syncfusion.com/documentation/api/stepper#orientation) property.
 

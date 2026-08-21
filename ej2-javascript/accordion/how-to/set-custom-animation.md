@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set custom animation in ##Platform_Name## Accordion control | Syncfusion
-description: Learn here all about Set custom animation in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
+title: How to set custom animation in ##Platform_Name## Accordion | Syncfusion
+description: Apply custom expand and collapse animations to the Syncfusion ##Platform_Name## Accordion using easing, duration, and effect options.
 platform: ej2-javascript
 control: Set custom animation 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set custom animation in ##Platform_Name## Accordion control
+# How to set custom animation in ##Platform_Name## Accordion
 
 Accordion supports custom animations for both expand and collapse actions from the provided animation option of `Animation` library.  The [`animation`](../../api/accordion#animation) property also allows you to set [`easing`](../../api/accordion/accordionActionSettings#easing), [`duration`](../../api/accordion/accordionActionSettings#duration), and various other effects of your choice.
 

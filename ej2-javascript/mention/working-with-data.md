@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with data in ##Platform_Name## Mention control | Syncfusion
-description: Learn here all about Working with data in Syncfusion ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more.
+title: Working with Data in ##Platform_Name## Mention | Syncfusion
+description: Bind the Syncfusion ##Platform_Name## Mention to local arrays or remote services like OData V4 and Web API using DataManager.
 platform: ej2-javascript
 control: Working with data 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Working with data in ##Platform_Name## Mention control
+# Working with Data in ##Platform_Name## Mention
 
 The Mention loads the data either from local data sources or remote data services using the [dataSource](../api/mention/#datasource) property. It supports the data type of either `array` or `DataManager`.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Badge control | Syncfusion
-description: Learn here all about Types in Syncfusion ##Platform_Name## Badge control of Syncfusion Essential JS 2 and more.
+title: Types in ##Platform_Name## Badge | Syncfusion
+description: Explore ##Platform_Name## Badge styles including circle, pill, link, notification, dot, and overlap types to highlight counts, status, and alerts in your UI.
 platform: ej2-javascript
-control: Types 
+control: Types
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Types in ##Platform_Name## Badge control
+# Types in ##Platform_Name## Badge
 
 This section explains the different styles and types of badges.
 

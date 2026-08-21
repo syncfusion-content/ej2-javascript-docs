@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Range slider control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Range slider of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Range Slider | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Range Slider control. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Range slider control
+# Getting Started with ##Platform_Name## Range Slider
 
 The following section explains the required steps to build the Slider control with its basic usage in step-by-step procedure.
 

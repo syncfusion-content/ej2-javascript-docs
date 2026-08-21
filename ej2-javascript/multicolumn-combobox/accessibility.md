@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## MultiColumn ComboBox control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## MultiColumn ComboBox control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## MultiColumn ComboBox | Syncfusion
+description: Learn how the Syncfusion ##Platform_Name## MultiColumn ComboBox meets WCAG 2.2, Section 508, and ADA with full keyboard and screen reader support.
 platform: ej2-javascript
 control: MultiColumn ComboBox 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## MultiColumn ComboBox control
+# Accessibility in ##Platform_Name## MultiColumn ComboBox
 
 The MultiColumn ComboBox control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

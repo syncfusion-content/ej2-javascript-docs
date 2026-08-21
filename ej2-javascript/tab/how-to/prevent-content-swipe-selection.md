@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Prevent content swipe selection in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Prevent content swipe selection in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: How to prevent content swipe selection in ##Platform_Name## Tab | Syncfusion
+description: Learn how to prevent swipe-based content selection in the Syncfusion ##Platform_Name## Tab control for controlled interactions.
 platform: ej2-javascript
 control: Prevent content swipe selection 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent content swipe selection in ##Platform_Name## Tab control
+# How to prevent content swipe selection in ##Platform_Name## Tab
 
 The [`swipeMode`](https://ej2.syncfusion.com/documentation/api/tab/#swipemode)  property in the Tab component allows users to navigate between tabs using swipe gestures, improving the overall navigation experience. It supports both touch and mouse inputs, enabling intuitive tab switching.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## Range slider control | Syncfusion
-description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Range slider control of Syncfusion Essential JS 2 and more.
+title: Tooltip in ##Platform_Name## Range Slider | Syncfusion
+description: Show a tooltip on ##Platform_Name## Range Slider for the current value, with custom placement and display modes triggered on hover, focus, or click.
 platform: ej2-javascript
 control: Tooltip 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip in ##Platform_Name## Range slider control
+# Tooltip in ##Platform_Name## Range Slider
 
 The Slider displays the tooltip to indicate the current value by clicking the Slider bar or drag the Slider handle. The Tooltip position can be customized by using the `placement` property. Also decides the tooltip display mode on a page, i.e., on hovering, focusing, or clicking on the Slider handle and it always remains/displays on the page.
 

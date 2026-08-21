@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sidebar with list view in ##Platform_Name## Sidebar control | Syncfusion
-description: Learn here all about Sidebar with list view in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: How to initialize Sidebar with ListView in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to combine the Syncfusion ##Platform_Name## Sidebar control with list views for rich navigation and data organization.
 platform: ej2-javascript
 control: Sidebar with list view
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ##Platform_Name## Sidebar control with ListView
+# How to initialize Sidebar with ListView in ##Platform_Name## Sidebar
 
 Any HTML element can be placed in the Sidebar content area. The Sidebar supports all types of HTML structures like `TreeView`, `ListView`, etc.
 

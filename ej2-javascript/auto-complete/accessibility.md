@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Auto complete control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Auto complete control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## AutoComplete | Syncfusion
+description: Build a WAI-ARIA-compliant Syncfusion ##Platform_Name## AutoComplete with full keyboard support, conforming to ADA, Section 508, and WCAG 2.2 standards.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Auto complete control
+# Accessibility in ##Platform_Name## AutoComplete
 
 The AutoComplete component has been designed, keeping in mind the `WAI-ARIA` specifications, and applies the `WAI-ARIA` roles, states, and properties along with `keyboard support`. This component is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 

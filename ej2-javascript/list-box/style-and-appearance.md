@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style and appearance in ##Platform_Name## List box control | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion ##Platform_Name## List box control of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ##Platform_Name## ListBox | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## ListBox appearance by overriding CSS classes for the wrapper, items, and toolbar.
 platform: ej2-javascript
 control: Style and appearance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and appearance in ##Platform_Name## List box control
+# Style and Appearance in ##Platform_Name## ListBox
 
 To modify the ListBox appearance, you need to override the default CSS of ListBox component. Please find the list of CSS classes and its corresponding section in ListBox component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 

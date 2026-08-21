@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Size and color in ##Platform_Name## Appbar control | Syncfusion
-description: Learn here all about Size and color in Syncfusion ##Platform_Name## Appbar control of Syncfusion Essential JS 2 and more.
+title: Size and color in ##Platform_Name## Appbar | Syncfusion
+description: Set the Syncfusion ##Platform_Name## AppBar size to Regular, Prominent, or Dense using the mode property.
 platform: ej2-javascript
 control: Size and color 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Size and color in ##Platform_Name## Appbar control
+# Size and color in ##Platform_Name## Appbar
 
 ## Size
 

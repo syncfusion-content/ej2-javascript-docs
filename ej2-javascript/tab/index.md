@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Index in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Index in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: Index in ##Platform_Name## Tab | Syncfusion
+description: Learn how to use the Syncfusion ##Platform_Name## Tab control to organize content into clear, interactive panels.
 platform: ej2-javascript
-control: Index 
+control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in ##Platform_Name## Tab control
+# Index in ##Platform_Name## Tab
 
 The [JavaScript Tab] is a content panel to show multiple contents in a specific space, one at a time.
 

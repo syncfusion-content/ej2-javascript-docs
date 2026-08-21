@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formats in ##Platform_Name## Numerictextbox control | Syncfusion
-description: Learn here all about Formats in Syncfusion ##Platform_Name## Numerictextbox control of Syncfusion Essential JS 2 and more.
+title: Number Formats in ##Platform_Name## Numeric Textbox | Syncfusion
+description: Format the Syncfusion ##Platform_Name## Numeric Textbox value using standard numeric formats like n, p, and c for percentage, currency, and custom number display.
 platform: ej2-javascript
 control: Formats 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Formats in ##Platform_Name## Numerictextbox control
+# Number Formats in ##Platform_Name## Numeric Textbox
 
 You can format the value of NumericTextBox using [`format`](../api/numerictextbox/#format) property. The value will be displayed in the specified format when the component is in focused out state. The format string supports both the [standard numeric format string](../common/internationalization#supported-format-string/) and [custom numeric format string](../common/internationalization#custom-number-formatting-and-parsing/).
 

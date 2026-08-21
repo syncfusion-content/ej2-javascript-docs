@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set header panels in ##Platform_Name## Dashboard Layout | Syncfusion
-description: Learn here all about Setting header of panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
+title: Set Header Panels in ##Platform_Name## Dashboard Layout | Syncfusion
+description: Add header titles and content templates to Syncfusion ##Platform_Name## Dashboard Layout panels using the header and content properties.
 platform: ej2-javascript
 control: Setting header of panels
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Setting header of panels in ##Platform_Name## Dashboard Layout control
+# Setting Header of Panels in ##Platform_Name## Dashboard Layout
 
 The Dashboard Layout control is primarily used to represent data for monitoring or managing processes. Data or any HTML template can be placed as the panel content of a panel using the [`content`](../../api/dashboard-layout/panelModel#content)  property. A word or phrase summarizing the panel's content can be added as the header on the top of each panel using the [`header`](../../api/dashboard-layout/panelModel#header)  property of the panel.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Radio button control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Radio Button | Syncfusion
+description: Learn how to get started with the ##Platform_Name## Radio Button in JavaScript (ES5) from package setup to first render.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Radio button control
+# Getting Started with ##Platform_Name## Radio Button
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Radio button and demonstrate the basic usage of the Radio button control in a JavaScript application.
 

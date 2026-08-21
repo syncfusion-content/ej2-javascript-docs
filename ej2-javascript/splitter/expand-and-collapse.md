@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Expand and collapse in ##Platform_Name## Splitter control | Syncfusion
-description: Learn here all about Expand and collapse in Syncfusion ##Platform_Name## Splitter control of Syncfusion Essential JS 2 and more.
+title: Expand and Collapse in ##Platform_Name## Splitter | Syncfusion
+description: Enable collapsible Syncfusion ##Platform_Name## Splitter panes via the paneSettings collapsible property and let users show or hide panes with the built-in icons.
 platform: ej2-javascript
 control: Expand and collapse 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Expand and collapse in ##Platform_Name## Splitter control
+# Expand and Collapse in ##Platform_Name## Splitter
 
 ## Collapsible panes
 

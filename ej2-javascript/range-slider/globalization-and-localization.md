@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization and localization in ##Platform_Name## Range Slider control | Syncfusion
-description: Learn here all about Globalization and localization in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Globalization and localization in ##Platform_Name## Range Slider | Syncfusion
+description: Localize ##Platform_Name## Range Slider text using the L10n library and apply globalized formats to slider values through built-in Internationalization support.
 platform: ej2-javascript
 control: Globalization and localization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization and localization in ##Platform_Name## Range Slider control
+# Globalization and localization in ##Platform_Name## Range Slider
 
 ## Localization
 

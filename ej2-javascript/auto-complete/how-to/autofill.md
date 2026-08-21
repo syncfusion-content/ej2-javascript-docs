@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Autofill in ##Platform_Name## Auto complete control | Syncfusion
-description: Learn here all about Autofill in Syncfusion ##Platform_Name## Auto complete control of Syncfusion Essential JS 2 and more.
+title: How to enable autofill in ##Platform_Name## AutoComplete | Syncfusion
+description: Enable autofill in Syncfusion ##Platform_Name## AutoComplete so the typed value auto-completes by matching the first character of suggested items.
 platform: ej2-javascript
 control: Autofill 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Autofill in ##Platform_Name## Auto complete control
+# How to enable autofill in ##Platform_Name## AutoComplete
 
-The AutoComplete supports the autofill behavior with the help of [`autofill`](../../api/auto-complete/#autofill) property. Whenever you change the input value, the AutoComplete will autocomplete your data by matching the typed character. Suppose, if no matches found then, AutoComplete doesn't suggest any item.
+The AutoComplete supports the autofill behavior with the help of [`autofill`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#autofill) property. Whenever you change the input value, the AutoComplete will autocomplete your data by matching the typed character. Suppose, if no matches found then, AutoComplete doesn't suggest any item.
 
 In the below sample, showcase that how to work `autofill` with AutoComplete.
 

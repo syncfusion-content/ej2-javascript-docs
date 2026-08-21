@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multiple sidebar in the same position in ##Platform_Name## Sidebar control | Syncfusion
-description: Learn here all about Multiple sidebar in the same position in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: How to align multiple Sidebar in the same position in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to manage multiple sidebars in the same position with the Syncfusion ##Platform_Name## Sidebar control for layered navigation patterns.
 platform: ej2-javascript
 control: Multiple sidebar in the same position 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Multiple ##Platform_Name## Sidebar control in the same position
+# How to align multiple Sidebar in the same position in ##Platform_Name## Sidebar
 
 You can initialize a Sidebar at the left position using the [`position`](../../api/sidebar/#position) property. This will automatically adjust the width of the main content.
 

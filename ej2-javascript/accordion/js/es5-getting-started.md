@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Accordion control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more details.
+title: Es5 getting started with ##Platform_Name## Accordion | Syncfusion
+description: Learn how to render the Syncfusion ##Platform_Name## Accordion in ES5 JavaScript using the global script, JSON items, or HTML markup.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Accordion control
+# Es5 getting started in ##Platform_Name## Accordion
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
@@ -177,4 +177,4 @@ You need to follow the below structure of HTML elements to render the Accordion.
 
 ## See Also
 
-* [How to load accordion items dynamically](./how-to/load-accordion-items-dynamically/)
+* [How to load accordion items dynamically](./how-to/load-accordion-items-dynamically)

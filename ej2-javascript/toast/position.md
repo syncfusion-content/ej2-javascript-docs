@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Position in ##Platform_Name## Toast control | Syncfusion
-description: Learn here all about Position in Syncfusion ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more.
+title: Position in ##Platform_Name## Toast | Syncfusion
+description: Set ##Platform_Name## Toast position with predefined combinations or custom X and Y values in pixels or percentage.
 platform: ej2-javascript
-control: Position 
+control: Position
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Position in ##Platform_Name## Toast control
+# Position in ##Platform_Name## Toast
 
 The toast position can be updated based on predefined positions or customizable positions. The predefined position combinations are updated in the [X](../api/toast/toastPositionModel/#x) and [Y](../api/toast/toastPositionModel/#y) position properties.
 

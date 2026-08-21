@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create buttongroup with rounded corner in ##Platform_Name## Button group control | Syncfusion
-description: Learn here all about Create buttongroup with rounded corner in Syncfusion ##Platform_Name## Button group control of Syncfusion Essential JS 2 and more.
+title: How to create rounded ButtonGroup in ##Platform_Name## | Syncfusion
+description: Learn how to create a rounded-corner ##Platform_Name## Button Group by adding the e-round-corner class to the target element.
 platform: ej2-javascript
 control: Create buttongroup with rounded corner 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create buttongroup with rounded corner in ##Platform_Name## Button group control
+# How to create rounded ButtonGroup in ##Platform_Name## Button Group
 
 The ButtonGroup with rounded corner has round edges on both side. In the ButtonGroup with rounded corner, `e-round-corner` class is to be
 added to the target element.

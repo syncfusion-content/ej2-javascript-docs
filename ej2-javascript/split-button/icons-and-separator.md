@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Icons and separator in ##Platform_Name## Split button control | Syncfusion
-description: Learn here all about Icons and separator in Syncfusion ##Platform_Name## Split button control of Syncfusion Essential JS 2 and more.
+title: Icons and Separator in ##Platform_Name## Split Button | Syncfusion
+description: Learn how to add icons and separators to the ##Platform_Name## Split Button, and create a vertical SplitButton with cssClass.
 platform: ej2-javascript
 control: Icons and separator 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons and separator in ##Platform_Name## Split button control
+# Icons and Separator in ##Platform_Name## Split Button
 
 ## SplitButton icons
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adornments in ##Platform_Name## TextArea Control | Syncfusion
-description: Learn how to add adornments in Syncfusion ##Platform_Name## TextArea control of Syncfusion Essential JS 2 and more.
+title: Adornments in ##Platform_Name## TextArea | Syncfusion
+description: Add custom elements before or after the ##Platform_Name## TextArea using prependTemplate, appendTemplate, and adornmentFlow with horizontal or vertical layouts.
 platform: ej2-javascript
 control: Adornments
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adornments in ##Platform_Name## TextArea control
+# Adornments in ##Platform_Name## TextArea
 
 Adornments allow you to add custom elements before or after the TextArea using the `prependTemplate` and `appendTemplate` properties. These elements can include icons, text labels, or action buttons for formatting and content management. With orientation support, you can arrange adornments horizontally or vertically using `adornmentFlow` and `adornmentOrientation` for flexible layouts.
 

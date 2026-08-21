@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Reverse in  ##Platform_Name## Timeline control | Syncfusion
-description:  Checkout and learn about Reverse with ##Platform_Name## Timeline control of Syncfusion Essential JS 2 and more.
+title: Reverse in ##Platform_Name## Timeline | Syncfusion
+description: Display Syncfusion ##Platform_Name## Timeline items in reverse order with the reverse property for alternate alignments and flexible user interaction.
 platform: ej2-javascript
 control: Timeline
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Reverse in ##Platform_Name## Timeline control
+# Reverse in ##Platform_Name## Timeline
 
 Timeline items can be displayed in the reverse order for different alignments by using the [`reverse`](../api/timeline#reverse) property. This feature provides adaptability and enhances user interaction.
 

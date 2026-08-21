@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## In place editor control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## In-place Editor | Syncfusion
+description: Learn how to set up the Syncfusion ##Platform_Name## In-place Editor using ES5 scripts. Includes dependency list, CDN or local setup, and editor init.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ES5 getting started in ##Platform_Name## In-place editor control
+# Getting Started with ##Platform_Name## In-place Editor
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 In-Place editor and demonstrate the basic usage of the In-Place editor control in a JavaScript application.
 

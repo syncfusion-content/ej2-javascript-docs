@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip in  ##Platform_Name## Stepper control | Syncfusion
-description:  Checkout and learn about Tooltip with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Tooltip in ##Platform_Name## Stepper | Syncfusion
+description: Learn how to add tooltips to the Syncfusion ##Platform_Name## Stepper control for clearer guidance during each step.
 platform: ej2-javascript
 control: Stepper
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip in ##Platform_Name## Stepper control
+# Tooltip in ##Platform_Name## Stepper
 
 The Stepper control supports tooltip to show additional information in the steps by setting the [showTooltip](https://ej2.syncfusion.com/documentation/api/stepper/#showtooltip) property to `true`. 
 

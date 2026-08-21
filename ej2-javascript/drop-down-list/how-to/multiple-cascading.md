@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multiple cascading in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Multiple cascading in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: How to preselect items in cascading ##Platform_Name## Dropdown List | Syncfusion
+description: Preselect items in multiple cascading Syncfusion ##Platform_Name## Dropdown Lists by setting initial value and index for each level.
 platform: ej2-javascript
 control: Multiple cascading 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Multiple cascading in ##Platform_Name## Drop down list control
+# How to preselect cascading items in ##Platform_Name## Dropdown List
 
 The following example demonstrate about how to preselect the list items in multiple cascading DropDownList.
 

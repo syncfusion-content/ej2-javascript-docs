@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disable in ##Platform_Name## Button group control | Syncfusion
-description: Learn here all about Disable in Syncfusion ##Platform_Name## Button group control of Syncfusion Essential JS 2 and more.
+title: How to disable Button Group in ##Platform_Name## | Syncfusion
+description: Learn how to disable a single button or the entire ##Platform_Name## Button Group by adding the disabled attribute to elements.
 platform: ej2-javascript
 control: Disable 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disable in ##Platform_Name## Button group control
+# How to disable Button Group in ##Platform_Name## Button Group
 
 ## Particular button
 

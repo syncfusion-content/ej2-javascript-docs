@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Separator in ##Platform_Name## OTP Input control | Syncfusion
-description:  Checkout and learn about Separator with ##Platform_Name## OTP Input control of Syncfusion Essential JS 2 and more.
+title: Separator in ##Platform_Name## OTP Input | Syncfusion
+description: Insert a custom separator character between the input fields of the Syncfusion ##Platform_Name## OTP Input to visually group or split the OTP digits.
 platform: ej2-javascript
 control: OTP Input
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Separator in ##Platform_Name## OTP Input control
+# Separator in ##Platform_Name## OTP Input
 
 The separator in OTP Input specifies the character or symbol used to separate each input field in the OTP Input control. This separator is displayed between each input field to visually distinguish between each inputs. You can set the separator character by using the [separator](../api/otp-input#separator) property.
 

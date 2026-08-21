@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disabled Items in ##Platform_Name## AutoComplete control | Syncfusion
-description: Learn here all about Disabled Items in Syncfusion ##Platform_Name## AutoComplete control of Syncfusion Essential JS 2 and more.
+title: Disabled Items in ##Platform_Name## AutoComplete | Syncfusion
+description: Disable individual Syncfusion ##Platform_Name## AutoComplete items by mapping the disabled field, preventing selection while keeping them visible.
 platform: ej2-javascript
 control: Disabled Items 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disabled Items in ##Platform_Name## AutoComplete control
+# Disabled Items in ##Platform_Name## AutoComplete
 
-The AutoComplete provides options for individual items to be either in an enabled or disabled state for specific scenarios. The category of each list item can be mapped through the [disabled](../api/auto-complete/#fields) field in the data table. Once an item is disabled, it cannot be selected as a value for the component. To configure the disabled item columns, use the `fields.disabled` property.
+The AutoComplete provides options for individual items to be either in an enabled or disabled state for specific scenarios. The category of each list item can be mapped through the [disabled](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#fields) field in the data table. Once an item is disabled, it cannot be selected as a value for the component. To configure the disabled item columns, use the `fields.disabled` property.
 
 In the following sample, State are grouped according on its category using `disabled` field.
 
@@ -44,7 +44,7 @@ In the following sample, State are grouped according on its category using `disa
 
 ## Disable Item Method
 
-The [disableItem](../api/auto-complete/#disableItem) method can be used to handle dynamic changing in disable state of a specific item. Only one item can be disabled in this method. To disable multiple items, this method can be iterated with the items list or array. The disabled field state will to be updated in the [dataSource](../api/auto-complete/#datasource), when the item is disabled using this method. If the selected item is disabled dynamically, then the selection will be cleared.
+The [disableItem](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#disableitem) method can be used to handle dynamic changing in disable state of a specific item. Only one item can be disabled in this method. To disable multiple items, this method can be iterated with the items list or array. The disabled field state will to be updated in the [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#datasource), when the item is disabled using this method. If the selected item is disabled dynamically, then the selection will be cleared.
 
 | Parameter | Type | Description |
 |------|------|------|
@@ -54,6 +54,6 @@ The [disableItem](../api/auto-complete/#disableItem) method can be used to handl
 
 ## Enabled
 
-If you want to disabled the overall component to set the [enabled](../api/auto-complete/#enabled) property to false.
+If you want to disabled the overall component to set the [enabled](../api/auto-complete#enabled) property to false.
 
 ![Disabled AutoComplete Component](../images/autocomplete-disable.png)

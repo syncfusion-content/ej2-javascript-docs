@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Predefined dialogs control | Syncfusion
-description: Learn here all about Animation in Syncfusion ##Platform_Name## Predefined dialogs control of Syncfusion Essential JS 2 and more.
+title: Animation in ##Platform_Name## Predefined Dialogs | Syncfusion
+description: Animate ##Platform_Name## Predefined Alert, Confirm, and Prompt dialogs with delay, duration, and Zoom or other effects via animationSettings.
 platform: ej2-javascript
 control: Animation 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation in ##Platform_Name## Predefined dialogs control
+# Animation in ##Platform_Name## Predefined Dialogs
 
 The predefined dialogs can be animated during the open and close actions. Also, user can customize animation's `delay`, `duration` and `effect` of animation by using the `animationSettings` property.
 

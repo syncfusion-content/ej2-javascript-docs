@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## List box control | Syncfusion
-description: Learn here all about Selection in Syncfusion ##Platform_Name## List box control of Syncfusion Essential JS 2 and more.
+title: Selection in ##Platform_Name## ListBox | Syncfusion
+description: Enable single or multiple item selection in the Syncfusion ##Platform_Name## ListBox using the selectionSettings mode and a change event.
 platform: ej2-javascript
 control: Selection 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in ##Platform_Name## List box control
+# Selection in ##Platform_Name## ListBox
 
 The ListBox provides support to select an item or a group of item by mouse or keyboard action. There are two selection modes available in list box,
 

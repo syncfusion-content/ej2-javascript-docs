@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dual list box in ##Platform_Name## List box control | Syncfusion
-description: Learn here all about Dual list box in Syncfusion ##Platform_Name## List box control of Syncfusion Essential JS 2 and more.
+title: Dual List Box in ##Platform_Name## ListBox | Syncfusion
+description: Move items between two Syncfusion ##Platform_Name## ListBox controls using toolbarSettings with moveTo, moveFrom, and moveAll actions.
 platform: ej2-javascript
 control: Dual list box 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dual list box in ##Platform_Name## List box control
+# Dual List Box in ##Platform_Name## ListBox
 
 The dual list box allows the user to move items between two list boxes by clicking the toolbar buttons. Dual list box can be created by listing items in the [`toolbarSettings`](../api/list-box/#toolbarsettings) along with the `scope` property.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Icons and sub menu items in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Icons and sub menu items in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: Icons and sub menu items in ##Platform_Name## Menu | Syncfusion
+description: Learn how to use icons and sub-menu items with the Syncfusion ##Platform_Name## Menu control for richer navigation patterns.
 platform: ej2-javascript
-control: Icons and sub menu items 
+control: Icons and sub menu items
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons and sub menu items in ##Platform_Name## Menu control
+# Icons and sub menu items in ##Platform_Name## Menu
 
 ## Icons
 

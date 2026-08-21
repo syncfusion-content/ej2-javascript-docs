@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add or remove context menu items in ##Platform_Name## Context menu control | Syncfusion
-description: Learn here all about Add or remove context menu items in Syncfusion ##Platform_Name## Context menu control of Syncfusion Essential JS 2 and more.
+title: How to add or remove context menu items in ##Platform_Name## Context menu | Syncfusion
+description: Add or remove Syncfusion ##Platform_Name## Context menu items dynamically with insertAfter, insertBefore, and removeItems methods.
 platform: ej2-javascript
 control: Add or remove context menu items 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add or remove context menu items in ##Platform_Name## Context menu control
+# How to add or remove context menu items in ##Platform_Name## Context menu
 
 ContextMenu items can be added or removed using the [`insertAfter`](../../api/menu#insertafter), [`insertBefore`](../../api/menu#insertbefore) and [`removeItems`](../../api/menu#removeitems) methods.
 

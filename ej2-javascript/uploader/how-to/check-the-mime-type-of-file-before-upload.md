@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Check the mime type of file before upload in ##Platform_Name## Uploader control | Syncfusion
-description: Learn here all about Check the mime type of file before upload in Syncfusion ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more.
+title: How to check mime type in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to check the MIME type of a file in the Syncfusion ##Platform_Name## File Upload using the uploading event to inspect the file before it is sent to the server.
 platform: ej2-javascript
 control: Check the mime type of file before upload 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Check the mime type of file before upload in ##Platform_Name## Uploader control
+# How to check mime type in ##Platform_Name## File Upload
 
 By using the [uploading](../../api/uploader/#uploading) event, you can get the file MIME type before uploading it to the server. In the following sample, file MIME type is shown in the alert box before the file starts to upload.
 

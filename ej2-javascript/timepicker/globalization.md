@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Timepicker control | Syncfusion
-description: Learn here all about Globalization in Syncfusion ##Platform_Name## Timepicker control of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## TimePicker | Syncfusion
+description: Adapt ##Platform_Name## TimePicker to different cultures by loading CLDR data and configuring time format, meridian names, and localization.
 platform: ej2-javascript
 control: Globalization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in ##Platform_Name## Timepicker control
+# Globalization in ##Platform_Name## TimePicker
 
 Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [`internationalization`](../common/internationalization/), and also add culture specific customization and translation to the text [`localization`](../common/localization/).
 

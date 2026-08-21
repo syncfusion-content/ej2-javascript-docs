@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set state persistence in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Set state persistence of the tab component in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: How to set state persistence in ##Platform_Name## Tab | Syncfusion
+description: Learn how to persist tab state in the Syncfusion ##Platform_Name## Tab control for a smoother user experience.
 platform: ej2-javascript
 control: Set state persistence of the tab component 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set state persistence in ##Platform_Name## Tab control
+# How to set state persistence in ##Platform_Name## Tab
 
 When `enablePersistence` is set to `true`, the Tab component will maintain some of its model values across page refreshes. This means that the user's interactions with the Tab, such as the currently selected tab, will be preserved when the page is reloaded.
 

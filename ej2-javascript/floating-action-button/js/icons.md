@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Floating action button control | Syncfusion
-description: Learn here all about Icons in Syncfusion ##Platform_Name## Floating action button control of Syncfusion Essential JS 2 and more.
+title: Icons in ##Platform_Name## Floating Action Button | Syncfusion
+description: Learn how to customize the ##Platform_Name## Floating Action Button icon and text using the iconCss and content properties.
 platform: ej2-javascript
 control: Icons 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons in ##Platform_Name## Floating action button control
+# Icons in ##Platform_Name## Floating Action Button
 
 You can customize the icon and text of JavaScript(ES5) Floating Action Button(FAB) using [`iconCss`](../api/floating-action-button/fab/#iconcss) and [`content`](../api/floating-action-button/fab/#content) properties.
 

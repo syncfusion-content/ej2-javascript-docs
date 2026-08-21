@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Range Slider control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Range Slider | Syncfusion
+description: Set up the ##Platform_Name## Range Slider in TypeScript using the Syncfusion quickstart seed repository with webpack, npm, and the Fluent2 theme package.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Range Slider control
+# Getting Started with ##Platform_Name## Range Slider
 
 This section explains how to create a simple Range Slider control and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 

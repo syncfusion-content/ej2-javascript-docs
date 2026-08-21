@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable rtl in ##Platform_Name## Button group control | Syncfusion
-description: Learn here all about Enable rtl in Syncfusion ##Platform_Name## Button group control of Syncfusion Essential JS 2 and more.
+title: How to enable RTL in ##Platform_Name## Button Group | Syncfusion
+description: Learn how to enable right-to-left layout in the ##Platform_Name## Button Group by adding the e-rtl class to the target element.
 platform: ej2-javascript
 control: Enable rtl 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable rtl in ##Platform_Name## Button group control
+# How to enable RTL in ##Platform_Name## Button Group
 
 ButtonGroup supports RTL functionality. This can be achieved by adding `e-rtl` class to the target element.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Index in ##Platform_Name## Toolbar control | Syncfusion
-description: Learn here all about Index in Syncfusion ##Platform_Name## Toolbar control of Syncfusion Essential JS 2 and more.
+title: Index in ##Platform_Name## Toolbar | Syncfusion
+description: Learn how to use the Syncfusion ##Platform_Name## Toolbar control to create efficient command layouts.
 platform: ej2-javascript
-control: Index 
+control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in ##Platform_Name## Toolbar control
+# Index in ##Platform_Name## Toolbar
 
 The ToolBar displays a group of command buttons arranged horizontally.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Maskedtextbox control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Maskedtextbox control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Input Mask | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Input Mask control. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## MaskedTextBox control
+# Getting Started with ##Platform_Name## Input Mask
 
 This section explains how to create a simple MaskedTextBox component and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 

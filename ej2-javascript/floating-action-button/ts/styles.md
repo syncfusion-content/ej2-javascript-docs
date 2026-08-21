@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Styles in ##Platform_Name## Floating action button control | Syncfusion
-description: Learn here all about Styles in Syncfusion ##Platform_Name## Floating action button control of Syncfusion Essential JS 2 and more.
+title: Styles in ##Platform_Name## Floating Action Button | Syncfusion
+description: Learn the predefined visual styles available for the ##Platform_Name## Floating Action Button, including primary, success, and danger.
 platform: ej2-javascript
 control: Styles 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Styles in ##Platform_Name## Floating action button control
+# Styles in ##Platform_Name## Floating Action Button
 
 This section explains the different styles of Floating Action Button.
 

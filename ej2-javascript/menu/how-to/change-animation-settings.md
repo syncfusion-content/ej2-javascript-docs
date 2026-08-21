@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Change animation settings in ##Platform_Name## Menu control | Syncfusion
-description: Learn here all about Change animation settings in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
+title: How to change animation settings in ##Platform_Name## Menu | Syncfusion
+description: Learn how to use the Syncfusion ##Platform_Name## Menu control to change animation settings and improve interaction feedback.
 platform: ej2-javascript
-control: Change animation settings 
+control: Change animation settings
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change animation settings in ##Platform_Name## Menu control
+# How to change animation settings in ##Platform_Name## Menu
 
 To change the animation of the Menu, [`animationSettings`](../../api/menu/menuAnimationSettingsModel/) property is used. The supported effects for Menu are,
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right to left in ##Platform_Name## Button control | Syncfusion
-description: Learn here all about Right to left in Syncfusion ##Platform_Name## Button control of Syncfusion Essential JS 2 and more.
+title: How to enable right to left in ##Platform_Name## Button | Syncfusion
+description: Learn how to enable right-to-left rendering in the ##Platform_Name## Button by setting the enableRtl property to true.
 platform: ej2-javascript
 control: Right to left 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Right to left in ##Platform_Name## Button control
+# How to enable right to left in ##Platform_Name## Button
 
 Button component has RTL support. This can be achieved by setting [`enableRtl`](../../api/button#enablertl) as `true`.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Clear item in ##Platform_Name## Drop down list control | Syncfusion
-description: Learn here all about Clear item in Syncfusion ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more.
+title: How to clear item in ##Platform_Name## Dropdown List | Syncfusion
+description: Clear the selected Syncfusion ##Platform_Name## Dropdown List item using the clear icon with showClearButton or by setting index, text, or value to null.
 platform: ej2-javascript
 control: Clear item 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Clear item in ##Platform_Name## Drop down list control
+# How to clear item in ##Platform_Name## Dropdown List
 
 You can clear the selected item in the below two different ways.
 

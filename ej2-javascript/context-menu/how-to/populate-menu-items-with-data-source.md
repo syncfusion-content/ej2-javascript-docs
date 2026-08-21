@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populate menu items with data source in ##Platform_Name## Context menu control | Syncfusion
-description: Learn here all about Populate menu items with data source in Syncfusion ##Platform_Name## Context menu control of Syncfusion Essential JS 2 and more.
+title: How to populate menu items with data source in ##Platform_Name## Context menu | Syncfusion
+description: Bind a local data source to the Syncfusion ##Platform_Name## Context menu and add separators with the insertAfter method.
 platform: ej2-javascript
 control: Populate menu items with data source 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Populate menu items with data source in ##Platform_Name## Context menu control
+# How to populate menu items with data source in ##Platform_Name## Context menu
 
 To bind local data source to the ContextMenu, menu items are populated from data source and mapped to [`items`](../../api/context-menu/menuItemModel#items) property.
 

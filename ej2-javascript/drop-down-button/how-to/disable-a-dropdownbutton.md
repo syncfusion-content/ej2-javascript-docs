@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disable a dropdownbutton in ##Platform_Name## Drop down button control | Syncfusion
-description: Learn here all about Disable a dropdownbutton in Syncfusion ##Platform_Name## Drop down button control of Syncfusion Essential JS 2 and more.
+title: How to disable a Dropdown Menu in ##Platform_Name## Dropdown Menu | Syncfusion
+description: Learn how to disable the ##Platform_Name## Dropdown Menu by setting the disabled property to true to block user interaction.
 platform: ej2-javascript
 control: Disable a dropdownbutton 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disable a dropdownbutton in ##Platform_Name## Drop down button control
+# How to disable a Dropdown Menu in ##Platform_Name## Dropdown Menu
 
 DropdownButton component can be enabled/disabled by giving [`disabled`](../../api/drop-down-button/#disabled) property. It can be disabled by setting disabled property as `true`.
 

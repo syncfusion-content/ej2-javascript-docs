@@ -19,4 +19,4 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smart Paste Butt
 ## See also
 
 * [Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Button Types and Styles](https://ej2.syncfusion.com/documentation/button/types-and-styles)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smart Paste Button](https://ej2.syncfusion.com/documentation/)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smart Paste Button](https://ej2.syncfusion.com/documentation/smart-paste-button/getting-started)

@@ -10,7 +10,6 @@ var pivotTableObj = new ej.pivotview.PivotView({
         filters: []
     },
     allowPdfExport: true,
-    enableVirtualization: true,
     height: 320,
     beforeExport: function (args) {
         args.columnSize = 6;

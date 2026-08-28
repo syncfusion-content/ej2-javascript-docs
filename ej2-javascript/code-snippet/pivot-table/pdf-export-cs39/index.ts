@@ -1,12 +1,12 @@
 
 
 
-import { PivotView, IDataSet, PDFExport, VirtualScroll } from '@syncfusion/ej2-pivotview';
+import { PivotView, IDataSet, PDFExport } from '@syncfusion/ej2-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
 import { pivotData } from './datasource.ts';
 import { PdfHeaderQueryCellInfoEventArgs } from '@syncfusion/ej2-grids';
 
-PivotView.Inject(PDFExport, VirtualScroll);
+PivotView.Inject(PDFExport);
 let pivotTableObj: PivotView = new PivotView({
     dataSourceSettings: {
         dataSource: pivotData as IDataSet[],
@@ -19,7 +19,6 @@ let pivotTableObj: PivotView = new PivotView({
         filters: []
     },
     allowPdfExport: true,
-    enableVirtualization: true,
     height: 320,
     gridSettings: {
         pdfHeaderQueryCellInfo: function (args: PdfHeaderQueryCellInfoEventArgs) {

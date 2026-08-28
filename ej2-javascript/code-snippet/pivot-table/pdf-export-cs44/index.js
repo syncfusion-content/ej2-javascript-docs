@@ -32,7 +32,6 @@ var pivotTableObj = new ej.pivotview.PivotView({
     height: 300,
     showFieldList: true,
     allowPdfExport: true,
-    enableVirtualization: true,
     dataBound: function () {
         pivotTableObj.getAllSummaryType = function () {
             return SummaryType;

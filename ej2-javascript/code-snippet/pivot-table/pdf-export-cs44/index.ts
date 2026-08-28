@@ -37,7 +37,6 @@ let pivotTableObj: PivotView = new PivotView({
     height: 300,
     showFieldList: true,
     allowPdfExport: true,
-    enableVirtualization: true,
     dataBound: function (): void {
         pivotTableObj.getAllSummaryType = function () {
             return SummaryType as AggregateTypes[];

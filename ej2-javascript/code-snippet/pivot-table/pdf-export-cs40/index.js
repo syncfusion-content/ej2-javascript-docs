@@ -10,7 +10,6 @@ var pivotTableObj = new ej.pivotview.PivotView({
         filters: []
     },
     allowPdfExport: true,
-    enableVirtualization: true,
     height: 320,
     gridSettings: {
         pdfQueryCellInfo: function (args) {

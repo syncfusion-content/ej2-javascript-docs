@@ -272,8 +272,6 @@ This option lets users easily adjust the PDF layout to fit their specific needs 
 
 You can adjust the size of the exported PDF document by setting the [`height`](https://ej2.syncfusion.com/documentation/api/pivotview/beforeExportEventArgs#height) and [`width`](https://ej2.syncfusion.com/documentation/api/pivotview/beforeExportEventArgs#width) options in the [`beforeExport`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#beforeexport) event. This allows you to specify the dimensions of the PDF before creating it.
 
-> Note: This option is available only when [`enableVirtualization`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#enablevirtualization) is set to **true**. Also, make sure that both the `VirtualScroll` and `PDFExport` modules are added to the Pivot Table.
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/pivot-table/pdf-export-cs31/index.ts %}
@@ -288,8 +286,6 @@ You can adjust the size of the exported PDF document by setting the [`height`](h
 ### Customize the table column count while exporting
 
 Users can control how many Pivot Table columns appear on each page of the exported PDF by setting the [`columnSize`](https://ej2.syncfusion.com/documentation/api/pivotview/beforeExportEventArgs#columnsize) option in the [`beforeExport`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#beforeexport) event. This allows users to split Pivot Table columns across multiple pages when exporting large tables to PDF, making the output easier to read.
-
-> Note: This option works only when [`enableVirtualization`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#enablevirtualization) is enabled in the Pivot Table settings. Also, make sure that both `VirtualScroll` and `PDFExport` modules are injected into the Pivot Table.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -381,7 +377,7 @@ In the following code example, the row and column spans are adjusted for empty c
 
 ### Exporting with hyperlinks and images
 
-The Pivot Table allows adding hyperlinks and images to cells during PDF export. The [`pdfQueryCellInfo`](https://ej2.syncfusion.com/documentation/api/grid/#pdfquerycellinfo) event handles row and value cells, while the [`pdfHeaderQueryCellInfo`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettingsModel#pdfheaderquerycellinfo) event handles header cells. Both events provide access to the [hyperlink](https://ej2.syncfusion.com/documentation/api/grid/pdfquerycellinfoeventargs#hyperlink) property to set URLs in cells and the [image](https://ej2.syncfusion.com/documentation/api/grid/pdfquerycellinfoeventargs#image) property to add images to cells.
+The Pivot Table allows adding hyperlinks and images to cells during PDF export. The [`pdfQueryCellInfo`](https://ej2.syncfusion.com/documentation/api/grid#pdfquerycellinfo) event handles row and value cells, while the [`pdfHeaderQueryCellInfo`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettingsModel#pdfheaderquerycellinfo) event handles header cells. Both events provide access to the [hyperlink](https://ej2.syncfusion.com/documentation/api/grid/pdfquerycellinfoeventargs#hyperlink) property to set URLs in cells and the [image](https://ej2.syncfusion.com/documentation/api/grid/pdfquerycellinfoeventargs#image) property to add images to cells.
 
 > PDF export supports base64 strings for exporting images.
 
@@ -522,7 +518,7 @@ The following example demonstrates how to apply conditional formatting to the **
 
 ## Enabling horizontal overflow
 
-The Pivot Table component supports exporting all columns on a single page in the exported PDF document, even if the number of columns exceeds the maximum page limits. This functionality ensures readability and comprehensiveness of the exported PDF. To enable this option, set the [allowHorizontalOverflow](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#allowhorizontaloverflow) property in the [`pdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties) object to **true**.
+The Pivot Table component supports exporting all columns on a single page in the exported PDF document, even if the number of columns exceeds the maximum page limits. This functionality ensures readability and comprehensiveness of the exported PDF. To enable this option, set the [allowHorizontalOverflow](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#allowhorizontaloverflow) property in the [`pdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties) object to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

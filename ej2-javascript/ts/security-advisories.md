@@ -19,6 +19,18 @@ This page summarizes key security enhancements and fixes delivered in Syncfusion
 
 The following security updates are available for Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS2 controls and are listed based on the release version. 
 
+### 2026 Volume 3 (v34.1.29) - July 06, 2026
+
+The Syncfusion® License Validation CLI command has been enhanced to address a command injection vulnerability. This update ensures that package information is processed securely during license validation and helps prevent unintended command execution.
+
+**Threat:**
+
+The npx syncfusion-license validate command was susceptible to a command injection vulnerability because package names retrieved from the package.json file could be improperly interpreted as part of shell commands during the validation process. An attacker could potentially craft a malicious package name to execute unauthorized commands on the host system.
+
+**Resolution:**
+
+Beginning with release v34.1.29, Syncfusion® has remediated this vulnerability by implementing strict validation and secure handling of package names during the license validation process. This enhancement prevents specially crafted package names from being interpreted as executable shell commands, effectively mitigating the risk of command injection and strengthening the overall security of the Syncfusion® License Validation CLI command.
+
 ### 2023 Volume 2 (v32.1.19) - June 21, 2023
 
 The Content Security Policy for Syncfusion<sup style="font-size:70%">&reg;</sup> controls has been enhanced by eliminating the usage of `unsafe-eval` directive. This ensures compliance with strict Content Security Policy (CSP) guidelines and improves the overall security of Syncfusion<sup style="font-size:70%">&reg;</sup> controls.

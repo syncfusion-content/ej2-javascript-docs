@@ -80,14 +80,13 @@ npm install @syncfusion/ej2 --save
  ```ts
 import { Calendar } from "@syncfusion/ej2-calendars";
 import { Component } from '@angular/core';
-import { Platform } from '@ionic/angular';
-import { IonicModule } from '@ionic/angular';
+import { IonHeader, IonToolbar, IonTitle, IonContent, Platform } from '@ionic/angular';
 
 @Component({
     templateUrl: 'home.page.html',
     styleUrls: ['home.page.scss'],
     standalone: true,
-    imports: [IonicModule]
+    imports: [IonHeader, IonToolbar, IonTitle, IonContent]
 })
 
 export class HomePage {
@@ -110,14 +109,14 @@ export class HomePage {
 
  ```ts
 import { Component } from '@angular/core';
-import { IonicModule } from '@ionic/angular';
+import { IonApp, IonRouterOutlet } from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
   standalone: true,
-  imports: [IonicModule],
+  imports: [ IonApp, IonRouterOutlet]
 })
 export class AppComponent {
   constructor() {}

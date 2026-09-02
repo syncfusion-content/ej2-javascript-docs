@@ -1,7 +1,7 @@
 ---
 layout: post
 title: EJ1 Migration in ##Platform_Name## Diagram | Syncfusion®
-description: Migrate Diagram APIs from Essential® JS 1 to Essential® JS 2 with side-by-side property, method, and event mappings.
+description: Migrate TypeScript Diagram APIs from Essential® JS 1 to Essential® JS 2 with side-by-side property, method, and event mappings.
 platform: ej2-javascript
 control: Ej1 api migration 
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # EJ1 Migration in ##Platform_Name## Diagram
 
-This article describes the API migration process of Diagram component from Essential® JS 1 to Essential® JS 2.
+This article describes the API migration process of TypeScript Diagram component from Essential® JS 1 to Essential® JS 2.
 
 ## Background
 

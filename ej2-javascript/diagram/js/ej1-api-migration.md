@@ -12150,7 +12150,7 @@ diagram.appendTo('#diagram');
 <!-- Initializes the overview element -->
 <div id="overview"></div>;
 
-<!--Initializes the Diagram control-->
+<!--Initializes the JavaScript Diagram control-->
 $("#diagram").ejDiagram({
     width: "100%",
     height: "600px"
@@ -12170,7 +12170,7 @@ $("#overview").ejOverview({
 </br>
 </br>
 <code>
-// Initializes the diagram control
+// Initializes the JavaScript Diagram control
 var diagram = new ej.diagrams.Diagram({
     width: "100%",
     height: "600px"

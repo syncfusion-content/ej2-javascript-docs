@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to render a Dialog without header in ##Platform_Name## Dialog
+# How to render a Dialog without a header in ##Platform_Name## Dialog
 
-The dialog can be rendered without header by setting the [header](https://ej2.syncfusion.com/documentation/api/dialog/index-default#header) property value as empty string or null.  By default, dialog is rendered without header.
+By default, the Dialog is rendered without a header. To explicitly render the Dialog without a header, you can either omit the [header](https://ej2.syncfusion.com/documentation/api/dialog/index-default#header) property (as shown in the following sample) or set its value to an empty string or `null`.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to add item in ##Platform_Name## Dropdown List
+# How to add an item to the ##Platform_Name## Dropdown List
 
-You can add item in between based on item [index](../../api/drop-down-list/#index). If you add new item without item index, item will be added as last item in list.
+You can add an item at a specific position by specifying its [index](../../api/drop-down-list#index). If you add a new item without specifying an index, it is appended as the last item in the list.
 
-The following example demonstrate how to add item in between in DropDownList.
+The following example demonstrates how to add an item between existing items in the DropDownList.
 
 {% if page.publishingplatform == "typescript" %}
 

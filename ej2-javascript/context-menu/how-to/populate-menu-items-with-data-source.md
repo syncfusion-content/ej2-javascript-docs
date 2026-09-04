@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to populate menu items with data source in ##Platform_Name## Context menu | Syncfusion
+title: How to bind data source in ##Platform_Name## Context menu | Syncfusion
 description: Bind a local data source to the Syncfusion ##Platform_Name## Context menu and add separators with the insertAfter method.
 platform: ej2-javascript
 control: Populate menu items with data source 
@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to populate menu items with data source in ##Platform_Name## Context menu
+# How to bind data source in ##Platform_Name## Context menu
 
 To bind local data source to the ContextMenu, menu items are populated from data source and mapped to [`items`](../../api/context-menu/menuItemModel#items) property.
 
-The below example demonstrates how to bind local data source to the ContextMenu and separator is added using [`insertAfter`](../../api/context-menu#insertafter) method.
+The example below demonstrates how to bind a local data source to the ContextMenu and add a separator using the [`insertAfter`](../../api/context-menu#insertafter) method.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/context-menu/how-to/data-binding-cs1/index.ts %}
 {% endhighlight %}
@@ -25,7 +25,7 @@ The below example demonstrates how to bind local data source to the ContextMenu 
 {% include code-snippet/context-menu/how-to/data-binding-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/context-menu/how-to/data-binding-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

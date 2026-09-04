@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Date Views in ##Platform_Name## DatePicker
 
-The DatePicker has the following predefined views that provides a flexible way to navigate back and forth to select the date.
+The DatePicker has the following predefined views that provide a flexible way to navigate back and forth to select the date.
 
 | **View** | **Description** |
 | --- | --- |
@@ -21,13 +21,13 @@ The DatePicker has the following predefined views that provides a flexible way t
 
 ## Start view
 
-You can use the [`start`](https://ej2.syncfusion.com/javascript/documentation/api/datepicker/index-default#start) property to define the initial rendering view.
+The [`start`](https://ej2.syncfusion.com/javascript/documentation/api/datepicker/index-default#start) property can be used to define the initial rendering view.
 
 The following example demonstrates how to create a DatePicker with `decade` as initial rendering view.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datepicker/getting-started-cs4/index.ts %}
 {% endhighlight %}
@@ -56,13 +56,13 @@ The following example demonstrates how to create a DatePicker with `decade` as i
 
 Define the [`depth`](https://ej2.syncfusion.com/javascript/documentation/api/datepicker/index-default#depth) property to control the view navigation.
 
-> Always the depth view has to be smaller than the start view, otherwise the view restriction will be not restricted.
+> The depth view always has to be smaller than the start view, otherwise the view will not be restricted.
 
-The following example demonstrates how to create a DatePicker that allows users to select a month.
+The following example demonstrates how to create a DatePicker that allows selecting a month.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datepicker/getting-started-cs5/index.ts %}
 {% endhighlight %}
@@ -87,4 +87,4 @@ The following example demonstrates how to create a DatePicker that allows users 
 {% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs5" %}
 {% endif %}
 
-> To know more about Calendar views refer the Calendar's [Calendar Views](https://ej2.syncfusion.com/javascript/documentation/calendar/calendar-views) section.
+> To know more about Calendar views, refer to the Calendar's [Calendar Views](https://ej2.syncfusion.com/javascript/documentation/calendar/calendar-views) section.

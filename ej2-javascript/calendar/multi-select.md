@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 ---
 # Multi Selection in ##Platform_Name## Calendar
 
-Calendar provides an option to select **single** or **multiple dates** by using `isMultiSelection` and `values` properties. By default, `isMultiSelection` property will be in disabled state.
+Calendar provides an option to select **single** or **multiple dates** by using the `isMultiSelection` and `values` properties. By default, the `isMultiSelection` property is in a disabled state.
 
 | API | Type | Description |
 |------|------|----------------------|
 | `isMultiSelection`| **Boolean**| Enables the multi-selection option in the Calendar control |
 |`values`| **Date[]** | Gets or sets the date range values in multi-selection option |
 
-The following example demonstrates the functionality of  `isMultiSelection` property and `values` properties in the Calendar control.
+The following example demonstrates the functionality of the `isMultiSelection` and `values` properties in the Calendar control.
 
 {% if page.publishingplatform == "typescript" %}
 

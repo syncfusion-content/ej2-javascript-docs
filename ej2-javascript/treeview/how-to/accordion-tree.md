@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to create accordion tree in ##Platform_Name## TreeView
 
-An Accordion is an interface in which a list of items can be collapsed or expanded, but only one list can be expanded at a time. You can customize the TreeView to make it behave like an accordion. Refer to the following code sample to create an accordion tree.
+An Accordion is an interface in which a list of items can be collapsed or expanded, but only one section can be expanded at a time. You can customize the TreeView to make it behave like an accordion by collapsing the previously expanded node when a new node is expanded. Refer to the following code sample to create an accordion tree.
 
 {% if page.publishingplatform == "typescript" %}
 

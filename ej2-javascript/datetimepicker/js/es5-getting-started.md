@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## DateTime Picker | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Datetimepicker control of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Es5 getting started with ##Platform_Name## DateTime Picker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -15,7 +15,7 @@ This section explains the steps required to create a simple Essential<sup style=
 
 ## Dependencies
 
-The list of dependencies required to use the Date time picker component in your application is given below:
+The list of dependencies required to use the DateTime Picker component in an application is given below:
 
 ```javascript
 |-- @syncfusion/ej2-calendars
@@ -49,7 +49,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Date time picker contro
 
 **Step 1:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
-**Step 2:** To render DateTimePicker component, need to add DateTimePicker and its dependent packages from below installed location.
+**Step 2:** To render the DateTime Picker component, need to add DateTime Picker and its dependent packages from below installed location.
 
 #### Dependencies
 
@@ -115,17 +115,17 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Date time picker contro
 </html>
 ```
 
-> If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+> If you want to refer the combined component styles, make use of the [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in the application.
 
-**Step 5:** Now, add the `input` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 DateTimePicker** component in the `index.html` by using following code
+**Step 5:** Now, add the `input` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 DateTime Picker** component in the `index.html` by using the following code
 
 ```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Essential JS 2 DateTimePicker Component</title>
-    <!-- Essential JS 2 DateTimePicker's dependent material theme -->
+    <title>Essential JS 2 DateTime Picker Component</title>
+    <!-- Essential JS 2 DateTime Picker's dependent material theme -->
     <link href="//cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
     <link href="//cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />
     <link href="//cdn.syncfusion.com/ej2/ej2-calendars/styles/material.css" rel="stylesheet" type="text/css" />
@@ -133,7 +133,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Date time picker contro
     <!-- Essential JS 2 all script -->
     <!-- <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script> -->
 
-    <!-- Essential JS 2 DateTimePicker's dependent scripts -->
+    <!-- Essential JS 2 DateTime Picker's dependent scripts -->
     <script src="//cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
     <script src="//cdn.syncfusion.com/ej2/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
     <script src="//cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
@@ -146,10 +146,10 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Date time picker contro
     <!-- Add the HTML <input> element  -->
     <input id="element" />
     <script>
-        // initialize DateTimePicker component
+        // initialize DateTime Picker component
         var DateTimePicker = new ej.calendars.DateTimePicker();
 
-        // Render initialized DateTimePicker.
+        // Render initialized DateTime Picker.
         DateTimePicker.appendTo('#element')
     </script>
 </body>
@@ -157,7 +157,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Date time picker contro
 </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 DateTimePicker** component.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 DateTime Picker** component.
 
 ### Using CDN link for script and style reference
 
@@ -181,7 +181,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Date time picker contro
 
 <head>
     <title>Essential JS 2 Calendar Component</title>
-    <!-- Essential JS 2 DateTimePicker's dependent material theme -->
+    <!-- Essential JS 2 DateTime Picker's dependent material theme -->
     <link href="//cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
     <link href="//cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />
     <link href="//cdn.syncfusion.com/ej2/ej2-calendars/styles/material.css" rel="stylesheet" type="text/css" />
@@ -189,7 +189,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Date time picker contro
     <!-- Essential JS 2 all script -->
     <!-- <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script> -->
 
-    <!-- Essential JS 2 DateTimePicker's dependent scripts -->
+    <!-- Essential JS 2 DateTime Picker's dependent scripts -->
     <script src="//cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
     <script src="//cdn.syncfusion.com/ej2/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
     <script src="//cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
@@ -218,7 +218,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Date time picker contro
 
 The minimum and maximum date time can be defined with the help of `min` and `max` property.
 The following example demonstrates to set the `min` and `max` on initializing the
-DateTimePicker.
+DateTime Picker.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -230,11 +230,8 @@ DateTimePicker.
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/datetimepicker/getting-started-cs7" %}
-> If the value of `min` or `max` properties
-changed through code behind, then you have to
-update the `value` property to set within the
-range.
+> If the value of the `min` or `max` properties is changed through code, then the `value` property has to be updated to be set within the range.
 
 ## See Also
 
-* [Render DateTimePicker with specific culture](./globalization)
+* [Render DateTime Picker with specific culture](./globalization)

@@ -83,7 +83,7 @@ Use the following CSS to customize the TreeView nodes based on levels.
 
 ## Customizing the TreeView using HtmlAttributes
 
-The [`htmlAttributes`](https://ej2.syncfusion.com/documentation/api/treeview/fieldssettingsmodel#htmlattributes) property of the TreeView component allows you to define a mapping field for applying custom HTML attributes to individual TreeView nodes.
+The [`htmlAttributes`](../api/treeview/fieldsSettingsModel#htmlattributes) property of the TreeView component allows you to define a mapping field for applying custom HTML attributes to individual TreeView nodes.
 
 By using attributes, you can customize specific nodes effectively. For instance, in the given example, a 'child-node' class is added to a specific node, allowing you to customize the corresponding node via CSS.
 
@@ -125,3 +125,5 @@ By using attributes, you can customize specific nodes effectively. For instance,
 
 {% previewsample "page.domainurl/code-snippet/treeview/customization-cs1/selected-nodes-cs1" %}
 {% endif %}
+
+![Customizing the TreeView using HtmlAttributes](./images/customize-html-attribute.png)

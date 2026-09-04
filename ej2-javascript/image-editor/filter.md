@@ -15,11 +15,11 @@ Filters are pre-defined effects that can be applied to an image to alter its app
 
 ## Apply filter effect
 
-The [`applyImageFilter`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#applyimagefilter) method is utilized to apply filters to an image. By passing the desired filter type as the first parameter of the method, specified as [`ImageFilterOption`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/imageFilterOption) the method applies the corresponding filter to the image. This allows for easy and convenient application of various filters to enhance or modify the image based on the chosen filter type.
+The [`applyImageFilter`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#applyimagefilter) method is used to apply filters to an image. By passing the desired filter type as the first parameter of the method, specified as an [`ImageFilterOption`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/imagefilteroption) value, the method applies the corresponding filter to the image. This allows for easy and convenient application of various filters to enhance or modify the image based on the chosen filter type. The method returns `void`.
 
-* filterOption - Specifies the filter options to the image.
+* filterOption - Specifies the filter to apply to the image, as an [`ImageFilterOption`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/imagefilteroption) value. Available filters include Chrome, Cold, Warm, Sepia, Invert, and Grayscale.
 
-In the following example, you can using the `applyImageFilter` method in the button click event.
+In the following example, the `applyImageFilter` method is used in the button click event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -50,10 +50,9 @@ In the following example, you can using the `applyImageFilter` method in the but
 
 ## Image filtering event
 
-The [`imageFiltering`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#imageFiltering) event is triggered when applying filtering on the image. This event is passed an object that contains information about the filtering event, such as the type of filtering. 
+The [`imageFiltering`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#imagefiltering) event is triggered when applying a filter on the image. The event argument provides details about the filter being applied, such as the filter type.
 
-The parameter available in the [`ImageFilterEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#ImageFilterEventArgs) event is, 
+The [`ImageFilterEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#imagefiltereventargs) provides the following parameters:
 
-ImageFilterEventArgs.filter - The type of filtering as [`ImageFilterOption`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#ImageFilterOption) to be applied in the image editor. 
-
-ImageFilterEventArgs.cancel – Specifies to cancel the filtering action. 
+* ImageFilterEventArgs.filter - Specifies the type of filtering to be applied, as an [`ImageFilterOption`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#imagefilteroption) value.
+* ImageFilterEventArgs.cancel - Specifies whether to cancel the filtering action. 

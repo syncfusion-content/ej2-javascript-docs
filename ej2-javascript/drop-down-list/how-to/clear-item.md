@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to clear item in ##Platform_Name## Dropdown List
+# How to clear an item in the ##Platform_Name## Dropdown List
 
-You can clear the selected item in the below two different ways.
+You can clear the selected item in the following two different ways.
 
-By clicking on the `clear icon` which is shown in DropDownList element, you can clear the selected item in DropDownList through **interaction**. By using [showClearButton](../../api/drop-down-list/#showclearbutton) property, you can enable the clear icon in DropDownList element.
+By clicking the `clear icon` shown on the DropDownList element, you can clear the selected item through **interaction**. By setting the [`showClearButton`](../../api/drop-down-list#showclearbutton) property, you can enable the clear icon on the DropDownList element.
 
-Through **programmatic** you can set `null` value to anyone of the index, text or value property to clear the selected item in DropDownList.
+**Programmatically**, you can set a `null` value to any of the `index`, `text`, or `value` properties to clear the selected item in the DropDownList.
 
-The following example demonstrate about how to clear the selected item in DropDownList.
+The following example demonstrates how to clear the selected item in the DropDownList.
 
 {% if page.publishingplatform == "typescript" %}
 

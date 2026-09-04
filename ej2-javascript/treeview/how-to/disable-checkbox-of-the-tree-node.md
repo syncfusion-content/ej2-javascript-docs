@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to disable checkbox of the tree node in ##Platform_Name## TreeView
 
-You can disable only the checkbox in the TreeView control without disabling the entire node. To achieve this, add the `e-checkbox-disabled` class to the checkbox element using the [`drawNode`](../../api/treeview#drawnode)  event. Please refer to the following example to disable the checkbox of the tree nodes.
+You can disable only the checkbox in the TreeView control without disabling the entire node. To achieve this, add the `e-checkbox-disabled` class (the disabled state class used by the Syncfusion CheckBox component that the TreeView renders internally) to the checkbox element using the [`drawNode`](../../api/treeview#drawnode) event. Please refer to the following example to disable the checkbox of the tree nodes.
 
 {% if page.publishingplatform == "typescript" %}
 

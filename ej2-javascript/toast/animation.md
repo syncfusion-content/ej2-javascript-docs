@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Animation in ##Platform_Name## Toast
 
-The toast control supports custom animations for both shows and hide actions from the provided animation option of the `Animation` library.
+The Toast supports custom animations for both show and hide actions from the provided animation option of the `Animation` library.
 
-The default animation is given as `FadeIn` for showing the toast and `FadeOut` for hiding the toast.
+The default animation is `FadeIn` for showing the Toast and `FadeOut` for hiding the Toast.
 
-The following sample demonstrates some types of animations that suit toast. You can check all the animation effects here.
+The following sample demonstrates some types of animations that suit the Toast. All the animation effects can be checked here.
 
 {% if page.publishingplatform == "typescript" %}
 

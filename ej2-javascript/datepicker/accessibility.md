@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## DatePicker
 
-The DatePicker component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The DatePicker component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the DatePicker component is outlined below.
 
@@ -42,65 +42,65 @@ The accessibility compliance for the DatePicker component is outlined below.
 ## WAI-ARIA attributes
 
 
-The Web accessibility defines a way to make web content and web applications more accessible to disabled people. It especially helps the dynamic content change and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
+Web accessibility defines a way to make web content and web applications more accessible to people with disabilities. It especially helps in dynamic content changes and advanced user interface controls developed with AJAX, HTML, JavaScript, and related technologies.
 
-DatePicker provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA
-supports is achieved through the attributes like `aria-expanded`, `aria-disabled`, `aria-activedescendant` applied to the input element.
+The DatePicker provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA
+support is achieved through the attributes like `aria-expanded`, `aria-disabled`, and `aria-activedescendant` applied to the input element.
 
-To know about the accessibility of Calendar refer to the Calendar's [Accessibility](https://ej2.syncfusion.com/javascript/documentation/calendar/accessibility) section.
+To know about the accessibility of Calendar, refer to the Calendar's [Accessibility](https://ej2.syncfusion.com/javascript/documentation/calendar/accessibility) section.
 
-It helps to provide information about the widget for assistive technology to the disabled person in screen reader.
+These attributes help provide information about the widget for assistive technology to the disabled person in screen reader.
 
-* **Aria-expanded**: attributes indicates the state of a collapsible element.
+* **Aria-expanded**: This attribute indicates the state of a collapsible element.
 
-* **Aria-disabled**: attribute indicates the disabled state of this DatePicker component.
+* **Aria-disabled**: This attribute indicates the disabled state of the DatePicker component.
 
-* **Aria-activedescendant**: attribute helps in managing the current active child of the DatePicker component.
+* **Aria-activedescendant**: This attribute helps in managing the current active child of the DatePicker component.
 
-## Keyboard Interaction
+## Keyboard interaction
 
-You can use the following keys to interact with the DatePicker. The component implements the keyboard navigation support by following the  [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+The following keys can be used to interact with the DatePicker. The component implements the keyboard navigation support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
 
-It supports the below list of shortcut keys.
+It supports the following list of shortcut keys.
 
 Input Navigation
 
-Before opening the popup, use the below list of keys to
+Before opening the popup, the below list of keys can be used to
 control the popup element.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Alt +  Down Arrow</kbd> | Opens the popup. |
-| <kbd>Alt +  Up Arrow</kbd> | Closes the popup.|
-| <kbd>Esc</kbd> | closes the popup. |
+| <kbd>Alt + Down Arrow</kbd> | Opens the popup. |
+| <kbd>Alt + Up Arrow</kbd> | Closes the popup. |
+| <kbd>Esc</kbd> | Closes the popup. |
 
 Calendar Navigation
 
-Use the below list of keys to navigate the Calendar after the popup has opened.
+The below list of keys can be used to navigate the Calendar after the popup has opened.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Upper Arrow</kbd>  | Focus the previous week date. |
-| <kbd>Down Arrow</kbd>  | Focus the next week date. |
-| <kbd>Left Arrow</kbd>  | Focus the previous date. |
-| <kbd>Right Arrow</kbd>  | Focus the next date. |
-| <kbd>Home</kbd>  | Focus the first date in the month. |
-| <kbd>End</kbd>  | Focus the last date in the month. |
-| <kbd>Page Up</kbd>  | Focus the same date in the previous month. |
-| <kbd>Page Down</kbd>  | Focus the same date in the next month. |
-| <kbd>Enter</kbd>  | Select the currently focused date. |
-| <kbd>Shift + Page Up</kbd>  | Focus the same date in the previous year. |
-| <kbd>Shift + Page Down</kbd>  | Focus the same date in the previous year. |
-| <kbd>Control + Upper Arrow</kbd>  | Moves into the inner level of view like month-year, year-decade |
-| <kbd>Control + Down Arrow</kbd>  | Moves out from the depth level view like decade-year, year-month |
-| <kbd>Control + Home</kbd>  | Focus the starting date in the current year. |
-| <kbd>Control + End</kbd>  | Focus the ending date in the current year. |
+| <kbd>Up Arrow</kbd>  | Focuses the previous week date. |
+| <kbd>Down Arrow</kbd>  | Focuses the next week date. |
+| <kbd>Left Arrow</kbd>  | Focuses the previous date. |
+| <kbd>Right Arrow</kbd>  | Focuses the next date. |
+| <kbd>Home</kbd>  | Focuses the first date in the month. |
+| <kbd>End</kbd>  | Focuses the last date in the month. |
+| <kbd>Page Up</kbd>  | Focuses the same date in the previous month. |
+| <kbd>Page Down</kbd>  | Focuses the same date in the next month. |
+| <kbd>Enter</kbd>  | Selects the currently focused date. |
+| <kbd>Shift + Page Up</kbd>  | Focuses the same date in the previous year. |
+| <kbd>Shift + Page Down</kbd>  | Focuses the same date in the next year. |
+| <kbd>Control + Up Arrow</kbd>  | Moves into the inner level of view like month-year, year-decade. |
+| <kbd>Control + Down Arrow</kbd>  | Moves out from the depth level view like decade-year, year-month. |
+| <kbd>Control + Home</kbd>  | Focuses the starting date in the current year. |
+| <kbd>Control + End</kbd>  | Focuses the ending date in the current year. |
 
-> To focus the DatePicker component use the `alt+t` keys.
+> To focus the DatePicker component, use the `alt+t` keys.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datepicker/getting-started-cs1/index.ts %}
 {% endhighlight %}
@@ -127,9 +127,9 @@ Use the below list of keys to navigate the Calendar after the popup has opened.
 
 ## Ensuring accessibility
 
-The DatePicker component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The accessibility levels of the DatePicker component are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the DatePicker component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/date-picker.html) in a new window to evaluate the accessibility of the DatePicker component with accessibility tools.
+The accessibility compliance of the DatePicker component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/date-picker.html) in a new window to evaluate the component's accessibility with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/date-picker.html" %}
 

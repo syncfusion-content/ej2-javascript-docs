@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Chip Customization in ##Platform_Name## MultiSelect Dropdown
 
-The MultiSelect allows the user to customize the selected chip element through the [`tagging`](../api/multi-select/#tagging) event. In that event, you can set the custom classes to chip element via that event argument of `setClass` method.
+The MultiSelect allows the user to customize the selected chip element through the [`tagging`](../api/multi-select#tagging) event. Within that event, you can set custom CSS classes on the chip element by using the `setClass` method on the event argument.
 
-The following sample demonstrates chip-customization with the MultiSelect component.
+The following sample demonstrates chip customization with the MultiSelect component.
 
 {% if page.publishingplatform == "typescript" %}
 

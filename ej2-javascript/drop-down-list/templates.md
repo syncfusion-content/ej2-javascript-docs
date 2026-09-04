@@ -11,14 +11,14 @@ domainurl: ##DomainURL##
 
 # Templates in ##Platform_Name## Dropdown List
 
-The DropDownList has been provided with several options to customize each list item, group title, selected value, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [Template engine](../common/template-engine) to compile and render the elements properly.
+The DropDownList provides several options to customize each list item, group title, selected value, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [Template engine](../common/template-engine) to compile and render the elements properly.
 
 ## Item template
 
-The content of each list item within the DropDownList can be customized with the help of [itemTemplate](../api/drop-down-list/#itemtemplate)
+The content of each list item within the DropDownList can be customized with the help of [itemTemplate](../api/drop-down-list#itemtemplate)
 property.
 
-In the following sample, each list item is split into two columns to display relevant data's.
+In the following sample, each list item is split into two columns to display the relevant data.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -49,7 +49,7 @@ In the following sample, each list item is split into two columns to display rel
 
 ## Value template
 
-The currently selected value that is displayed by default on the DropDownList input element can be customized using the [valueTemplate](../api/drop-down-list/#valuetemplate) property.
+The currently selected value that is displayed by default on the DropDownList input element can be customized using the [valueTemplate](../api/drop-down-list#valuetemplate) property.
 
 In the following sample, the selected value is displayed as a combined text of both `FirstName` and `City` in the DropDownList input, which is separated by a hyphen.
 
@@ -82,7 +82,7 @@ In the following sample, the selected value is displayed as a combined text of b
 
 ## Group template
 
-The group header title under which appropriate sub-items are categorized can also be customize with the help of [groupTemplate](../api/drop-down-list/#grouptemplate) property. This template is common for both inline and floating group header template.
+The group header that categorizes the sub-items can also be customized with the help of the [`groupTemplate`](../api/drop-down-list#grouptemplate) property. This template is common for both inline and floating group headers.
 
 In the following sample, employees are grouped according to their city.
 
@@ -115,10 +115,10 @@ In the following sample, employees are grouped according to their city.
 
 ## Header template
 
-The header element is shown statically at the top of the popup list items within the DropDownList, and any custom element can be placed as a header element using the [headerTemplate](../api/drop-down-list/#headertemplate) property.
+The header element is shown statically at the top of the popup list items within the DropDownList, and any custom element can be placed as a header element using the [headerTemplate](../api/drop-down-list#headertemplate) property.
 
-In the following sample, the list items and its headers are designed and displayed as two columns
-similar to multiple columns of the grid.
+In the following sample, the list items and their headers are designed and displayed as two columns
+similar to multiple columns of a grid.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -149,7 +149,7 @@ similar to multiple columns of the grid.
 
 ## Footer template
 
-The DropDownList has options to show a footer element at the bottom of the list items in the popup list. Here, you can place any custom element as a footer element using the [footerTemplate](../api/drop-down-list/#footertemplate) property.
+The DropDownList has options to show a footer element at the bottom of the list items in the popup list. Here, you can place any custom element as a footer element using the [footerTemplate](../api/drop-down-list#footertemplate) property.
 
 In the following sample, footer element displays the total number of list items present in the DropDownList.
 
@@ -182,9 +182,9 @@ In the following sample, footer element displays the total number of list items 
 
 ## No records template
 
-The DropDownList is provided with support to custom design the popup list content when no data is found and no matches found on search with the help of [noRecordsTemplate](../api/drop-down-list/#norecordstemplate) property.
+The DropDownList provides support to custom design the popup list content when no data is found or no matches are found on a search, with the help of the [`noRecordsTemplate`](../api/drop-down-list#norecordstemplate) property.
 
-In the following sample, popup list content displays the notification of no data available.
+In the following sample, the popup list content displays a notification indicating that no data is available.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -215,9 +215,9 @@ In the following sample, popup list content displays the notification of no data
 
 ## Action failure template
 
-There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the [actionFailureTemplate](../api/drop-down-list/#actionfailuretemplate) property.
+There is also an option to custom design the popup list content when the data fetch request fails on the remote server. This can be achieved using the [`actionFailureTemplate`](../api/drop-down-list#actionfailuretemplate) property.
 
-In the following sample, when the data fetch request fails, the DropDownList displays the notification.
+In the following sample, when the data fetch request fails, the DropDownList displays a notification.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -248,7 +248,7 @@ In the following sample, when the data fetch request fails, the DropDownList dis
 
 ## See Also
 
-* [How to acheive filtering](./filtering)
+* [How to achieve filtering](./filtering)
 * [How to group the data using header](./grouping)
-* [How to show the list items with icon](./how-to/icons-support)
+* [How to show list items with icons](./how-to/icons-support)
 * [How to render tooltip for the options](./how-to/tooltip)

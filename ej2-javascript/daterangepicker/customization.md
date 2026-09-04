@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Customization in ##Platform_Name## DateRangePicker
 
-The DateRangePicker is available for UI customization that can be achieved by using available properties and events in the component.
+The DateRangePicker is available for UI customization that can be achieved by using the available properties and events in the component.
 
 ## Day cell format
 
-The DateRangePicker is available for UI customization based on your application requirements. It can be achieved by using [`renderDayCell`](../api/daterangepicker/renderDayCellEventArgs#renderdaycelleventargs) event that provides an option to customize each day cell on rendering.
+The DateRangePicker is available for UI customization based on the application requirements. It can be achieved by using the [`renderDayCell`](../api/daterangepicker/renderDayCellEventArgs#renderdaycelleventargs) event that provides an option to customize each day cell on rendering.
 
-The following example disables the weekends of every month by using `renderDayCell` event.
+The following example disables the weekends of every month by using the `renderDayCell` event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -48,7 +48,7 @@ The following example disables the weekends of every month by using `renderDayCe
 
 ## Preset Ranges
 
-DateRangePicker provides an option to set the predefined ranges via [`presets`](../api/daterangepicker/#presets) property with the corresponding label. This property will accept the values in the order of label, start date (date object), end date (date object), and append these ranges to the presets pop-up for quick selection. In the following sample, you can easily choose the frequently used range options from the list of ranges.
+The DateRangePicker provides an option to set the predefined ranges via the [`presets`](../api/daterangepicker#presets) property with the corresponding label. This property will accept the values in the order of label, start date (date object), end date (date object), and append these ranges to the presets pop-up for quick selection. In the following sample, the frequently used range options can be easily chosen from the list of ranges.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -79,11 +79,11 @@ DateRangePicker provides an option to set the predefined ranges via [`presets`](
 
 ## First day of week
 
-Start day in a week will differ based on the culture, but you can also customize this based on the application needs. For this, you have to make use of [`firstDayOfWeek`](../api/daterangepicker#firstdayofweek) property. By default, first day of a week in en-US is Sunday. In the following example it is customized to Monday with the help of this property.
+The start day in a week will differ based on the culture, but it can also be customized based on the application needs. For this, the [`firstDayOfWeek`](../api/daterangepicker#firstdayofweek) property can be used. By default, the first day of a week in en-US is Sunday. In the following example, it is customized to Monday with the help of this property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs4/index.ts %}
 {% endhighlight %}

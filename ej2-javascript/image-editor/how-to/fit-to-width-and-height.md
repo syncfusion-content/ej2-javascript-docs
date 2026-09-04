@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # How to fit to width and height in ##Platform_Name## Image Editor
 
-The Image Editor's [`zoom`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#zoom) method to fit an image to the editor by width or height. Programmatically increase the zoom level until the image dimension matches the editor container's width or height. 
+The Image Editor's [`zoom`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#zoom) method is used to fit an image to the editor by width or height. The image dimensions are retrieved with the [`getImageDimension`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getimagedimension) method, and a zoom factor is computed by comparing the image dimension with the editor container's width or height. The computed factor is then applied via the `zoom` method. (The applied factor is clamped by the `minZoomFactor` and `maxZoomFactor` properties.)
 
-This example demonstrates scenarios that include buttons for fitting the image to its width (Fit Width) or height (Fit Height).
+This example provides buttons to fit the image to the editor's width (Fit Width) or height (Fit Height).
 
 {% if page.publishingplatform == "typescript" %}
 

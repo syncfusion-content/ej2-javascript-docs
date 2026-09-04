@@ -15,10 +15,12 @@ This section explains the supported display modes of the Toolbar when the conten
 
 * Scrollable
 * Popup
+* MultiRow
+* Extended
 
 ## Scrollable
 
-The default overflow mode of the Toolbar is `Scrollable`. Scrollable display mode supports display of commands in a single line with horizontal scrolling enabled when commands overflow to available space.
+The default overflow mode of the Toolbar is `Scrollable`. The Scrollable display mode displays commands in a single line with horizontal scrolling enabled when commands overflow the available space.
 
 * The right and left navigation arrows are added to the start and end of the Toolbar to navigate to hidden commands.
 * You can also see the hidden commands using touch swipe action.
@@ -67,7 +69,7 @@ The default overflow mode of the Toolbar is `Scrollable`. Scrollable display mod
 
 ## Popup
 
-`Popup` is another type of [`overflowMode`](../api/toolbar/#overflowmode) in which the Toolbar container holds the commands that can be placed in the available space. The rest of the overflowing commands that do not fit within the viewing area moves to the overflow popup container.
+`Popup` is another type of [`overflowMode`](../api/toolbar#overflowmode) in which the Toolbar container holds the commands that can be placed in the available space. The rest of the overflowing commands that do not fit within the viewing area move to the overflow popup container.
 
 The commands placed in the popup can be viewed by opening the popup using the drop down icon given at the end of the Toolbar.
 

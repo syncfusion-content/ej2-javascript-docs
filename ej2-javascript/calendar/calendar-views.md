@@ -19,7 +19,7 @@ The Calendar has the following predefined views that provide a flexible way to n
 | year | Displays the months in a year. |
 | decade | Displays the years in a decade. |
 
-When view is defined to the [`start`](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#start) property of the Calendar, it allows you to set the initial view on rendering.
+When a view is defined in the [`start`](https://ej2.syncfusion.com/javascript/documentation/api/calendar/index-default#start) property of the Calendar, it sets the initial view on rendering.
  
 The following example demonstrates how to set the `year` as the start view of the Calendar.
 
@@ -52,11 +52,11 @@ The following example demonstrates how to set the `year` as the start view of th
 
 ## View restriction
 
-Calendar view navigation can be restricted by defining the  [`start`](https://ej2.syncfusion.com/javascript/documentation/api/calendar/index-default#start) and [`depth`](https://ej2.syncfusion.com/javascript/documentation/api/calendar/index-default#depth) property that allows you to select the date from that view.
+Calendar view navigation can be restricted by defining the [`start`](https://ej2.syncfusion.com/javascript/documentation/api/calendar/index-default#start) and [`depth`](https://ej2.syncfusion.com/javascript/documentation/api/calendar/index-default#depth) properties, which allow selecting the date from that view.
 
-By defining the start and depth property with the different view, drill-down and drill-up views navigation can be limited to the user. Calendar views will be drill-down up to the view which is set in `depth` property and drill-up up to the view which is set in `start` property.
+By defining the start and depth properties with different views, drill-down and drill-up navigation can be limited to the user. Calendar views will drill-down up to the view set in the `depth` property and drill-up up to the view set in the `start` property.
 
-The following example displays the Calendar in `decade` view, and allows you to select a date in `month` view.
+The following example displays the Calendar in `decade` view, and allows selecting a date in `month` view.
 
 > Depth view should always be smaller than the start view. If the views are the same, then the Calendar view remains unchanged.
 

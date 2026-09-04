@@ -17,17 +17,17 @@ To perform a selection, you can use the [`select`](https://ej2.syncfusion.com/ja
 
 ## Insert custom / square / circle region 
 
-The [`select`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#select) method allows to perform selection based on the type of selection. Here, the `select` method is used to perform the selection as custom, circle, or square. The selection region can also be customized using the select method based on the parameters below. 
+The [`select`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#select) method allows you to perform a selection based on the type of selection. Here, the `select` method is used to perform the selection as custom, circle, or square. The selection region can also be customized using the `select` method based on the following parameters. The method returns `void`.
 
-type - Specify the type of selection 
+* type - Specifies the type of selection (`custom`, `square`, `circle`, or a ratio value).
 
-startX - Specify the x-coordinate of the selection region’s starting point 
+* startX - Specifies the x-coordinate of the selection region's starting point.
 
-startY - Specify the y-coordinate of the selection region’s starting point 
+* startY - Specifies the y-coordinate of the selection region's starting point.
 
-width - Specify the width of the selection region 
+* width - Specifies the width of the selection region.
 
-height - Specify the height of the selection region 
+* height - Specifies the height of the selection region.
 
 Here is an example of square selection using the `select` method. 
 
@@ -60,16 +60,21 @@ Here is an example of square selection using the `select` method.
 
 ## Insert selection based on aspect ratio
 
-The [`select`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#select) method is used to perform the selection with the various aspect ratios such as 2:3, 3:2, 3:4, 4:3, 4:5, 5:4, 5:7, 7:5, 9:16, and 16:9. The selection region can also be customized using the SelectAsync method based on the parameters below.
-* type - Specify the type of selection
+The [`select`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#select) method is used to perform the selection with the various aspect ratios such as 2:3, 3:2, 3:4, 4:3, 4:5, 5:4, 5:7, 7:5, 9:16, and 16:9. The selection region can also be customized using the `select` method based on the following parameters.
 
-* startX - Specify the x-coordinate of the selection region’s starting point
+* type - Specifies the type of selection (a ratio value such as `2:3`, `3:2`, etc.).
 
-* startY - Specify the y-coordinate of the selection region’s starting point
+* startX - Specifies the x-coordinate of the selection region's starting point.
+
+* startY - Specifies the y-coordinate of the selection region's starting point.
+
+* width - Specifies the width of the selection region.
+
+* height - Specifies the height of the selection region.
 
 Here is an example of ratio selection using the `select` method.
 
-In the following example, the `select` method is used in the button click to the ratio selection.
+In the following example, the `select` method is used in the button click to perform the ratio selection.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -100,9 +105,9 @@ In the following example, the `select` method is used in the button click to the
 
 ## Crop an image
 
-The [`crop`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#crop) method allows cropping based on the selected region. Here is an example of cropping the selection region using the `crop` method. 
+The [`crop`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#crop) method crops the image based on the current selection region. It requires a prior `select` call to define the region to be cropped. The method returns `void`.
 
-Here is an example of circle cropping using the [`select`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#select) and `crop` method.
+Here is an example of circle cropping using the [`select`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#select) and `crop` methods.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -133,15 +138,17 @@ Here is an example of circle cropping using the [`select`](https://ej2.syncfusio
 
 ## Cropping event
 
-The [`cropping`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#cropping) event is triggered when performing cropping on the image. This event is passed an object that contains information about the cropping event, such as the start and end point of the selection region. And this event uses [`CropEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/cropEventArgs) to handle the cropping action in the image.
+The [`cropping`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#cropping) event is triggered when performing cropping on the image. The event argument provides information about the cropping action, such as the start and end point of the selection region, via the [`CropEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/cropeventargs).
 
-The parameter available in the `cropping` event is,
+The [`CropEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/cropeventargs) provides the following parameters:
 
-* CropEventArgs.startPoint – The x and y coordinates of a start point as [`Point`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#Point) of the selection region. 
+* CropEventArgs.startPoint - The x and y coordinates of the start point of the selection region, as a [`Point`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#point).
 
-* CropEventArgs.endPoint - The x and y coordinates of an end point as [`Point`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#Point) of the selection region. 
+* CropEventArgs.endPoint - The x and y coordinates of the end point of the selection region, as a [`Point`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#point).
 
-* CropEventArgs.cancel - To cancel the cropping action.
+* CropEventArgs.cancel - Specifies a boolean value that, when set to `true`, cancels the cropping action.
+
+* CropEventArgs.preventScaling - Specifies a boolean value that, when set to `true`, prevents the cropped image from being scaled up within the editor and keeps the saved image at the original cropping size.
 
 ### Maintaining original image size during cropping 
 
@@ -174,21 +181,21 @@ In the image editor, when an image is cropped, it is usually enlarged or scaled 
 {% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs4" %}
 {% endif %}
 
-## SelectionChanging event
+## Selection changing event
 
-The selection region can be changed programmatically by using [`selectionChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#selectionchanging) event. This event is activated during resizing the selection using mouse, and it allows for alterations to the selection region by adjusting the specified properties. 
+The selection region can be changed programmatically by using the [`selectionChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#selectionchanging) event. This event is triggered when inserting or resizing the selection using the mouse, and lets you alter the selection region by adjusting its properties.
 
-The [`SelectionChangeEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/selectionChangeEventArgs#selectionchangeeventargs) is used in this event to customize the selection and it has the following parameters. 
+The [`SelectionChangeEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/selectionchangeeventargs) is used in this event to customize the selection and provides the following parameters:
 
-SelectionChangeEventArgs.action - The type of action such as inserting or resizing.
+* SelectionChangeEventArgs.action - Specifies the type of action, such as `insert` or `resize`.
 
-SelectionChangeEventArgs.currentSelectionPoint - Represents all the details of the selection including its type, position, width, and height after the current action as CropSelectionSettings.
+* SelectionChangeEventArgs.currentSelectionPoint - Represents all the details of the selection including its type, position, width, and height after the current action, as a `CropSelectionSettings` object.
 
-SelectionChangeEventArgs.previousSelectionPoint - Represents all the details of the selection including its type, position, width, and height before this current action as CropSelectionSettings.
+* SelectionChangeEventArgs.previousSelectionPoint - Represents all the details of the selection including its type, position, width, and height before the current action, as a `CropSelectionSettings` object.
 
 ### Locking selection area during cropping 
 
-When selecting an area for cropping, users can typically resize the selection from all corners and edges. If you want to prevent the resizing of the selection area, you can bind to the [`selectionChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#selectionchanging) event. Check if the action is `resize`, and if it is, set `previousSelectionSettings` value to `currentSelectionSettings` value. This will lock the selection area, preventing any adjustments to its size.
+When selecting an area for cropping, users can typically resize the selection from all corners and edges. If you want to prevent the resizing of the selection area, you can bind to the [`selectionChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#selectionchanging) event. Check if the action is `resize`, and if it is, set the `previousSelectionPoint` value to the `currentSelectionPoint` value. This will lock the selection area, preventing any adjustments to its size.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -219,9 +226,9 @@ When selecting an area for cropping, users can typically resize the selection fr
 
 ### Cropping with custom ratio selection
 
-Users can perform cropping either through the toolbar or by using our public methods. While predefined ratio selections are available in the toolbar, users can also crop with custom ratios using our public method, [`select`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#select). Regardless of the ratio type used, the selection will adhere to the specified ratio, even when resizing the selection area.
+Users can perform cropping either through the toolbar or by using the public methods. While predefined ratio selections are available in the toolbar, users can also crop with custom ratios using the [`select`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#select) method. Regardless of the ratio type used, the selection will adhere to the specified ratio, even when resizing the selection area.
 
-Here is an example of cropping with a custom ratio selection using the [selectionChanging](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#selectionchanging) event.
+Here is an example of cropping with a custom ratio selection using the [`selectionChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#selectionchanging) event.
 
 {% if page.publishingplatform == "typescript" %}
 

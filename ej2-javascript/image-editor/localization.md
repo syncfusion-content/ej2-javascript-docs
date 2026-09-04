@@ -11,9 +11,15 @@ domainurl: ##DomainURL##
 
 # Localization in ##Platform_Name## Image Editor
 
-The `Localization` library allows you to localize the default text content of the Image Editor. The Image Editor has static text that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `locale` value and translation object.
+The L10n library lets you replace the Image Editor's default text with translations for other cultures (Arabic, German, French, etc.) by defining the `locale` value and registering a translation object.
 
-The following list of properties and its values are used in the Image  Editor.
+## Steps to localize the Image Editor
+
+1. Load the `L10n` module and register the translation object for your target culture using `L10n.load({ <culture>: { 'image-editor': { ... } } })`, overriding only the keys you want to change.
+2. Set the `locale` property on the Image Editor to the target culture name (for example, `'ar'` for Arabic).
+3. For RTL cultures such as Arabic, also set `enableRtl: true` on the Image Editor to enable right-to-left layout.
+
+The following table lists the locale keys used in the Image Editor and their default text values.
 
 | Locale key words | Text |
 | ------------ | ----------------------- |
@@ -176,7 +182,7 @@ The following list of properties and its values are used in the Image  Editor.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/getting-started-cs1/index.ts %}
 {% endhighlight %}

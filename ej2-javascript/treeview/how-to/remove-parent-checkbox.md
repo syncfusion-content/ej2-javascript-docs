@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to remove parent checkbox in ##Platform_Name## TreeView
 
-By enabling the [`showCheckBox`](../../api/treeview/#showcheckbox) property, you can render a checkbox before each node of the TreeView. However, some applications require checkboxes to be displayed only in child nodes. In such cases, you can remove the checkbox of the parent node by customizing the CSS.
+By enabling the [`showCheckBox`](../../api/treeview#showcheckbox) property, you can render a checkbox before each node of the TreeView. However, some applications require checkboxes to be displayed only in child nodes. In such cases, you can remove the checkbox of the parent node by customizing the CSS — typically by hiding the checkbox wrapper on the root level (for example, `.e-checkbox-wrapper` on nodes with the level-1 / parent class).
 
 {% if page.publishingplatform == "typescript" %}
 

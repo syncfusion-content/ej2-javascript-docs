@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to change animation settings in ##Platform_Name## Context menu | Syncfusion
+title: How to set animation in ##Platform_Name## Context menu | Syncfusion
 description: Set Syncfusion ##Platform_Name## Context menu open and close animations like None, SlideDown, ZoomIn, or FadeIn with duration.
 platform: ej2-javascript
 control: Change animation settings 
@@ -20,16 +20,16 @@ To change the animation of the ContextMenu, [`animationSettings`](../../api/cont
 | ZoomIn | Specifies the sub menu transform with zoom in effect. |
 | FadeIn | Specifies the sub menu transform with fade in effect. |
 
-The following sample illustrates how to open ContextMenu with `FadeIn` effect with the `duration` of `800ms`.
+The following sample illustrates how to open ContextMenu with the `FadeIn` effect and a duration of `800ms`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/context-menu/getting-started-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/context-menu/getting-started-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}

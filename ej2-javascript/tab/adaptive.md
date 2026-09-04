@@ -29,7 +29,7 @@ The default [`overflowMode`](../api/tab#overflowmode) is Scrollable. The Scrolla
 
 ![Scrollable tab](./images/tabscroll.gif)
 
-* In devices the navigation icons are not available. You can touch and swipe to see the overflowed items of the Tab header.
+* On devices, the navigation icons are not available. You can touch and swipe to see the overflowed items of the Tab header.
 
 ![Touch scroll](./images/touchscroll.gif)
 
@@ -62,7 +62,7 @@ The default [`overflowMode`](../api/tab#overflowmode) is Scrollable. The Scrolla
 
 ## Popup
 
-The Popup is another type of [`overflowMode`](../api/tab#overflowmode) in which the Tab container holds items that can be accommodated within the available space. The rest of the overflowing items, for which there is no space to fit within the viewing area, are moved to an overflow popup container.
+Popup is another type of [`overflowMode`](../api/tab#overflowmode) in which the Tab container holds items that fit within the available space. The rest of the overflowing items, for which there is no space to fit within the viewing area, are moved to an overflow popup container.
 
 * The items placed in the popup can be viewed by opening the popup using the drop-down icon at the end of the Tab header.
 * If the popup height exceeds the visible area height, you can scroll through the popup items and select one.
@@ -98,9 +98,9 @@ The Popup is another type of [`overflowMode`](../api/tab#overflowmode) in which 
 
 ## MultiRow
 
-The `MultiRow` display mode allows the Tabs to wrap the toolbar items to the next line when the available space is exhausted. This mode is ideal for scenarios where space is limited, but all commands need to be visible at once.
+The `MultiRow` display mode allows the Tabs to wrap the tab items to the next line when the available space is exhausted. This mode is ideal for scenarios where space is limited, but all tab items need to be visible at once.
 
-* The Tabs automatically arranges the items into multiple lines without the need for scrolling.
+* The Tab automatically arranges the items into multiple lines without the need for scrolling.
 * This ensures that users have immediate access to all Tab items without additional interaction such as scrolling or clicking a popup.
 
 {% if page.publishingplatform == "typescript" %}
@@ -137,7 +137,7 @@ The `MultiRow` display mode allows the Tabs to wrap the toolbar items to the nex
 `Extended` mode hides the overflowing Tab items in a subsequent row. Users can access these items by clicking on expand icons provided at the end of the Tab.
 
 * In this mode, the Tab maintains a clean top row and allows extra items to be rendered into additional rows.
-* Clicking the expand icons will dynamically adjust the Tab to reveal hidden toolbar items.
+* Clicking the expand icons will dynamically adjust the Tab to reveal hidden tab items.
 * If the popup content overflows the height of the page, remaining elements will be hidden.
 
 {% if page.publishingplatform == "typescript" %}
@@ -171,5 +171,5 @@ The `MultiRow` display mode allows the Tabs to wrap the toolbar items to the nex
 
 ## See Also
 
-* [How to prevent content swipe selection](./how-to/prevent-content-swipe-selection/)
-* [Collapsible Tab](./how-to/create-collapsible-tabs/)
+* [How to prevent content swipe selection](./how-to/prevent-content-swipe-selection)
+* [Collapsible Tab](./how-to/create-collapsible-tabs)

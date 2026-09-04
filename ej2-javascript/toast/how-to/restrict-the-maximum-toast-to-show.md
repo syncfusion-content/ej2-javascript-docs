@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # How to restrict max toasts shown in ##Platform_Name## Toast
 
-You can restrict the maximum toast count by using the event callback function and terminate the toast displaying process by setting the cancel event property in the [beforeOpen](../../api/toast/#beforeopen) event.
+The maximum Toast count can be restricted by terminating the Toast display process through the cancel event property in the [beforeOpen](../../api/toast/#beforeopen) event.
 
-The following sample demonstrates restricting toast displaying up to 3. You can restrict by your own count with custom code blocks.
+The following sample demonstrates restricting the Toast display count up to 3. Any count can be applied with custom code blocks.
 
 {% if page.publishingplatform == "typescript" %}
 

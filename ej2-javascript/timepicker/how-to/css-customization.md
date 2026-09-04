@@ -11,10 +11,9 @@ domainurl: ##DomainURL##
 
 # How to apply custom CSS in ##Platform_Name## TimePicker
 
-TimePicker allows you to customize the textbox and popup list appearance to suit your application by using [`cssClass`](../../api/timepicker#cssclass) property.
+The TimePicker allows customization of the textbox and popup list appearance to suit the application by using the [`cssClass`](../../api/timepicker#cssclass) property.
 
-The below sample demonstrates customization of text appearance in a textbox, popup button, and popup list along with hover and active
-state by using `e-custom-style` class. Following is the list of available classes used to customize the entire TimePicker component.
+The below sample demonstrates the customization of text appearance in a textbox, popup button, and popup list along with hover and active state by using the `e-custom-style` class. Following is the list of available classes used to customize the entire TimePicker component.
 
 | **Class Name** | **Description** |
 | --- | --- |
@@ -33,7 +32,7 @@ state by using `e-custom-style` class. Following is the list of available classe
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/timepicker/how-to-cs1/index.ts %}
 {% endhighlight %}

@@ -11,12 +11,12 @@ domainurl: ##DomainURL##
 
 # Lock Group/Rule in ##Platform_Name## Query Builder UI
 
-The Query Builder provides the functionality to lock individual rules or entire groups. When a rule is locked, it prevents users from modifying its field, operator, and value, effectively disabling these components. Similarly, locking a group disables all elements contained within it. This feature offers users greater control over their query configurations, ensuring that specific rules or groups remain unchanged. Additionally, users can manage the visibility of locking buttons through the [`showButtons`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#showbuttons) function, allowing for seamless control over the locking mechanism
+The Query Builder provides the functionality to lock individual rules or entire groups. When a rule is locked, its field, operator, and value cannot be modified, effectively disabling these components. Similarly, locking a group disables all elements contained within it. This feature offers greater control over query configurations, ensuring that specific rules or groups remain unchanged. Additionally, the visibility of locking buttons can be managed through the [`showButtons`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#showbuttons) property, allowing seamless control over the locking mechanism.
 
-You can lock groups and rules by interacting through the user interface and methods.
+Groups and rules can be locked through the user interface and methods.
 
-* Use the [`lockGroup`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#lockgroup) method to lock group.
-* Use [`lockRule`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#lockrule) method to lock rule.
+* Use the [`lockGroup`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#lockgroup) method to lock a group.
+* Use the [`lockRule`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#lockrule) method to lock a rule.
 
 {% if page.publishingplatform == "typescript" %}
 

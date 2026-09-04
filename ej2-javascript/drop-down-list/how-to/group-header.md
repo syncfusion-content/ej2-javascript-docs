@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to disable group header in ##Platform_Name## Dropdown | Syncfusion
+title: Disable Group Header in ##Platform_Name## Dropdown List | Syncfusion
 description: Disable the fixed group header in Syncfusion ##Platform_Name## Dropdown List by setting visibility hidden through custom CSS.
 platform: ej2-javascript
 control: Group header 
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to disable fixed group header in ##Platform_Name## Dropdown List
 
-The following example demonstrate about how to disable the Fixed group header in DropDownList through CSS by using `visibility` attribute.
+The following example demonstrates how to disable the fixed group header in the DropDownList through CSS by using the `visibility` attribute.
 
 {% if page.publishingplatform == "typescript" %}
 

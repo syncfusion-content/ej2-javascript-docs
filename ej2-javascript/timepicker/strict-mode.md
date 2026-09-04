@@ -11,15 +11,15 @@ domainurl: ##DomainURL##
 
 # Strict mode in ##Platform_Name## TimePicker
 
-The [`strictMode`](../api/timepicker#strictmode) is an act that allows you to enter only valid time value within the specified min/max
+The [`strictMode`](../api/timepicker#strictmode) is an act that allows entering only valid time value within the specified min/max
 range in the textbox. If the time value is invalid, the component value sets to the previous value. If the time value is out of range, the component sets the time value to min/max value.
 
-The following example demonstrates the TimePicker in `strictMode` with min/max range of `10:00 AM` to `4:00 PM` . It allows you to enter
-only valid time within the specified range. If you enter the out-of-range value like `8:00 PM`, the value sets to the max time `4:00 PM` as the value `8:00 PM` is greater than `max` value of `4:00 PM`. If you enter invalid time value like `9:00 tt`, the value sets to the previous value.
+The following example demonstrates the TimePicker in `strictMode` with min/max range of `10:00 AM` to `4:00 PM` . It allows entering
+only valid time within the specified range. When entering the out-of-range value like `8:00 PM`, the value sets to the max time `4:00 PM` as the value `8:00 PM` is greater than the `max` value of `4:00 PM`. When entering an invalid time value like `9:00 tt`, the value sets to the previous value.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/timepicker/getting-started-cs2/index.ts %}
 {% endhighlight %}
@@ -44,15 +44,15 @@ only valid time within the specified range. If you enter the out-of-range value 
 {% previewsample "page.domainurl/code-snippet/timepicker/getting-started-cs2" %}
 {% endif %}
 
-By default, the TimePicker act in strictMode `false` state, that allows to enter the invalid or out-of-range time in textbox.
+By default, the TimePicker acts in strictMode `false` state, that allows entering the invalid or out-of-range time in textbox.
 
-If the time is out-of-range or invalid, then the model value will be set to `out of range` time value or `null` respectively with highlighted `error` class to indicates the time is out of range or invalid.
+If the time is out-of-range or invalid, then the model value will be set to `out of range` time value or `null` respectively with the highlighted `error` class to indicate that the time is out of range or invalid.
 
-The following example demonstrates the `strictMode` as `false`. Here, it allows to enter the valid or invalid value in textbox. If you are entering the out-of-range or invalid time value, then the model value will be set to `out of range` time value or `null` respectively with highlighted `error` class to indicates the time is out of range or invalid.
+The following example demonstrates the `strictMode` as `false`. Here, it allows entering the valid or invalid value in textbox. When entering an out-of-range or invalid time value, then the model value will be set to `out of range` time value or `null` respectively with the highlighted `error` class to indicate that the time is out of range or invalid.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/timepicker/getting-started-cs3/index.ts %}
 {% endhighlight %}
@@ -77,4 +77,4 @@ The following example demonstrates the `strictMode` as `false`. Here, it allows 
 {% previewsample "page.domainurl/code-snippet/timepicker/getting-started-cs3" %}
 {% endif %}
 
-> If the value of `min` or `max` property is changed through code behind, update the `value` property to set within the range.
+> If the value of the `min` or `max` property is changed through code, update the `value` property to set within the range.

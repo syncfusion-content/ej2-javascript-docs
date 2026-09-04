@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to restrict drag and drop for particular tree nodes in ##Platform_Name## TreeView
 
-You can restrict dragging and dropping files to within folders only. This can be achieved by using the [`nodeDragStop`](../../api/treeview#nodedragstop) and [`nodeDragging`](../../api/treeview#nodedragging) events of the TreeView.
+You can restrict dragging and dropping of nodes to within specific parent nodes (for example, folder-like parents) only. This can be achieved by using the [`nodeDragging`](../../api/treeview#nodedragging) and [`nodeDragStop`](../../api/treeview#nodedragstop) events of the TreeView. The `nodeDragging` event fires while a node is being dragged and can be used to control which drop targets are valid, while the `nodeDragStop` event fires when the drop is about to occur and can be used to cancel the drop.
 
 {% if page.publishingplatform == "typescript" %}
 

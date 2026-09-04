@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Toolbar in ##Platform_Name## Image Editor
 
-The toolbars in the Image Editor are a key component for interacting with and editing images. They provide a range of tools and options that can be customized to suit the needs and preferences. Add or remove items from the toolbar to create a personalized set of tools, or they can even create their own custom toolbar from scratch. This flexibility and customization allow them to create a unique image editing experience that is tailored to their specific needs and workflow. 
+The toolbars in the Image Editor provide the tools for interacting with and editing images. You can add or remove items to create a personalized set of tools, or build a custom toolbar from scratch using a template.
 
-In the Image Editor, the [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#toolbar) provides the ability to customize the toolbar by adding or removing items, as well as defining a completely custom toolbar. This feature is valuable for creating a personalized image editing experience that aligns with specific requirements and workflows.
+In the Image Editor, the [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#toolbar) property provides the ability to customize the toolbar by adding or removing items, as well as defining a completely custom toolbar.
 
 ## Built-in toolbar items
 
-Specifies the toolbar items to perform UI interactions. Refer to the built-in toolbar items for the default value.
+The following are the built-in toolbar items used for UI interactions; these form the default toolbar when `toolbar` is not specified.
 
 * Open
 * Undo
@@ -41,7 +41,7 @@ Specifies the toolbar items to perform UI interactions. Refer to the built-in to
 
 ## Add a custom toolbar item
 
-The [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#toolbar) property in the Image Editor allows to add or remove toolbar items to include only the tools they frequently use, streamlining the editing process and reducing clutter.
+The [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#toolbar) property in the Image Editor allows you to add or remove toolbar items so you can include only the tools you frequently use, streamlining the editing process and reducing clutter. Custom items can be defined using the `ImageEditorToolbarItemModel`, which exposes fields such as `id`, `text`, `iconCss`, and `prefixIcon`.
 
 Here is an example of adding custom toolbar items to rotate and flip transformation using `toolbar` property. 
 

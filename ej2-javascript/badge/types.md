@@ -17,8 +17,8 @@ This section explains the different styles and types of badges.
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Badge control has the following predefined styles that can be used with the `.e-badge` class to change the appearance of a badge.
 
-| Class Name        | Description
-| :-------------   |:-------------
+| Class Name        | Description |
+| :-------------    | :------------- |
 | e-badge-primary   | Represents a primary notification.
 | e-badge-secondary | Represents a secondary notification.
 | e-badge-success   | Represents a positive notification.

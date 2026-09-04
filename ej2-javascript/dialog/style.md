@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Style in ##Platform_Name## Dialog
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
+The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preference.
 
 ## Customizing the dialog header
 
@@ -38,7 +38,7 @@ Use the following CSS to customize the dialog content properties.
 }
 ```
 
-## Customizing modal dialog overlay
+## Customizing the modal dialog overlay
 
 Use the following CSS to customize the modal dialog overlay.
 
@@ -51,7 +51,7 @@ Use the following CSS to customize the modal dialog overlay.
 
 ## Customizing the dialog resize icon
 
-Use the following CSS to customize the dialog resize icon.
+Use the following CSS to customize the dialog resize icon. The Font Awesome font package must be referenced in the page for the icon pack to work.
 
 ```css
 /* To change the icon content */
@@ -65,7 +65,7 @@ Use the following CSS to customize the dialog resize icon.
 }
 ```
 
-The above CSS demonstration uses the font awesome icon.
+The above CSS demonstration uses the Font Awesome icon.
 
 ## Customizing the dialog close button
 
@@ -81,7 +81,7 @@ Use the following CSS to customize the dialog close button.
 
 ## Customizing the dialog footer button
 
-Use the following CSS to customize the dialog footer button.
+Use the following CSS to customize the dialog footer button. Note that selectors differ for other button style variants (e.g., outline, solid).
 
 ```css
 /* To specify font color, background color and border color */

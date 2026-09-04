@@ -17,7 +17,7 @@ This section explains the steps required to create the Skeleton control using Ty
 
 ## Prerequisites
 
-Ensure the following tools are installed on your machine:
+Ensure the following tools are installed on the machine:
 
 * [Git](https://git-scm.com/downloads)
 * [Node.js](https://nodejs.org/en/)
@@ -39,7 +39,7 @@ cd ej2-quickstart
 
 ## Install Syncfusion<sup style="font-size:70%">&reg;</sup> Skeleton package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. All Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls can be installed in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
 Use the following command to install the `@syncfusion/ej2-notifications` package:
 
@@ -57,7 +57,7 @@ npm install
 
 ## Import Syncfusion<sup style="font-size:70%">&reg;</sup> Skeleton CSS styles
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes, which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
 
 The quickstart application is preconfigured to use the `Fluent2` theme. To install the [Fluent2](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) theme package, use the following command:
 
@@ -99,7 +99,7 @@ In this article, the Skeleton control is used as an example. Add the following e
 
 <body>
      <div id="container">
-        <!--Element which is going to render-->
+        <!-- Element which is going to render -->
         <div id="skeleton"></div>
     </div>
 </body>
@@ -107,13 +107,13 @@ In this article, the Skeleton control is used as an example. Add the following e
 </html>
  ```
 
-To render the Skeleton control, add the following JavaScript code to the `~/src/app/app.ts` file
+To render the Skeleton control, add the following TypeScript code to the `~/src/app/app.ts` file.
 
 ```ts
 import { Skeleton } from '@syncfusion/ej2-notifications';
 
 // Initialize the Skeleton component.
-let skeleton: Skeleton = new Skeleton({height:'15px'});
+let skeleton: Skeleton = new Skeleton({ height: '15px' });
 
 // Render initialized Skeleton.
 skeleton.appendTo('#skeleton');

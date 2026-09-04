@@ -17,10 +17,10 @@ You can implement collapse and expand functionality in the Tab control by adding
 
 2. **Set up event handlers:**
 
-   - Bind the [`selected`](../../api/tab#selected) event for the Tab to collapse the initially selected Tab item.
+   - Bind the [`selected`](../../api/tab#selected) event for the Tab to collapse the initially selected tab item.
    - Bind a custom click handler for the Tab headers.
 
-3. **Implement the collapse/expand functionality:** In the event handler, add and remove the `collapse` class to hide and show the corresponding Tab content.
+3. **Implement the collapse/expand functionality:** In the event handler, add and remove the `collapse` class to hide and show the corresponding tab content.
 
 Here's an example of how to create collapsible tabs:
 

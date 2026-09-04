@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to filter tree nodes in ##Platform_Name## TreeView
 
-You can filter the tree nodes based on their text using the [`DataManager`](../../api/data/dataManager/) plugin and the [`fields`](../../api/treeview/#fields) property of the TreeView.
+You can filter the tree nodes based on their text by binding the TreeView's data through the [`DataManager`](../../api/data/dataManager) plugin and applying a filtering [`query`](../../api/treeview#query) on the `text` field mapped via the [`fields`](../../api/treeview#fields) property of the TreeView.
 
 The following code example demonstrates how to filter the tree nodes in a TreeView.
 

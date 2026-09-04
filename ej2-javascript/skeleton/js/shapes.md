@@ -11,14 +11,14 @@ domainurl: ##DomainURL##
 
 # Shapes in ##Platform_Name## Skeleton
 
-The Skeleton control support various built-in shape variants to design layout of the page. You can use the [`shape`](../api/skeleton/index-default#shape) property to create a preview of any layout.
+The Skeleton supports various built-in shape variants to design the layout of the page. The [`shape`](../api/skeleton/index-default#shape) property is used to create a preview of any layout.
 
-The Skeleton component supports the following shapes,
+The Skeleton component supports the following shapes:
 
 ## Circle skeleton shape
 
 ```js
-// Initialize Skeleton control for circle shape
+// Initialize Skeleton  for circle shape
 var circle = new ej.notifications.Skeleton({
     shape: 'Circle',
     width: "48px"
@@ -61,7 +61,7 @@ rect.appendTo('#rectSkeleton');
 var text = new ej.notifications.Skeleton({
     shape: "Text",
     height: "15px"
-})
+});
 
 // Render initialized Skeleton.
 text.appendTo('#textSkeleton');

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to set custom animation in ##Platform_Name## Tab
 
-The Tab control supports custom animations for both previous and next actions using the `Animation` library. You can customize the animation using the [`animation`](../../api/tab#animation) property, which allows you to set [`easing`](../../api/tab/tabActionSettings#easing), [`duration`](../../api/tab/tabActionSettings#duration), and various other [`effects`](../../api/tab/tabActionSettings#effect).
+The Tab control supports custom animations for both previous and next actions using the `Animation` library. You can customize the animation using the [`animation`](../../api/tab#animation) property, which allows you to set [`easing`](../../api/tab/tabActionSettings#easing), [`duration`](../../api/tab/tabActionSettings#duration), and other [`effects`](../../api/tab/tabActionSettings#effect).
 
 By default, the Tab uses the `SlideLeftIn` animation for the [`previous`](../../api/tab/tabAnimationSettings#previous) tab and `SlideRightIn` for the [`next`](../../api/tab/tabAnimationSettings#next) tab. You can disable the animation by setting the animation effect to `None`.
 
@@ -23,7 +23,7 @@ To disable the indicator animation when the effect is set to `None`, use the fol
 }
 ```
 
-The following example demonstrates some animation types suitable for the Tab control.
+The following example demonstrates animation types suitable for the Tab control.
 
 {% if page.publishingplatform == "typescript" %}
 

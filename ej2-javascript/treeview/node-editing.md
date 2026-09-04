@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Node editing in ##Platform_Name## TreeView
 
-The TreeView allows you to edit nodes by setting the [`allowEditing`](../api/treeview/#allowediting) property to **true**. To edit the nodes directly in place, **double-click** the TreeView node or **select** the node and press the **F2** key.
+The TreeView allows you to edit nodes by setting the [`allowEditing`](../api/treeview#allowediting) property to **true**. To edit the nodes directly in place, **double-click** the TreeView node or **select** the node and press the **F2** key.
 
 When editing is completed by losing focus or by pressing the **Enter** key, the modified node’s text is saved automatically. If you do not want to save the modified text in the TreeView node, press the **Escape** key. It does not save the edited text to the TreeView node.
 
-* Node editing can also be performed programmatically by using the [`beginEdit`](../api/treeview/#beginedit) method. By passing the node ID or element through this method, an edit textbox will be created for the particular node, allowing you to edit it.
+* Node editing can also be performed programmatically by using the [`beginEdit`](../api/treeview#beginedit) method. By passing the node ID or element through this method, an edit textbox will be created for the particular node, allowing you to edit it.
 
-* If you need to validate or prevent editing, the [`nodeEditing`](../api/treeview/#nodeediting) event can be used, which is triggered before the TreeView node is renamed. When a node is successfully renamed, the [`nodeEdited`](../api/treeview/#nodeedited) event will be triggered.
+* If you need to validate or prevent editing, the [`nodeEditing`](../api/treeview#nodeediting) event can be used, which is triggered before the TreeView node is renamed. When a node is successfully renamed, the [`nodeEdited`](../api/treeview#nodeedited) event will be triggered.
 
 In the following example, the text of the first level node cannot be changed, but the text of all other level nodes can be changed.
 

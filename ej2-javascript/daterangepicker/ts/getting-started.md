@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## DateRangePicker | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Daterangepicker control of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Getting started with ##Platform_Name## DateRangePicker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -37,7 +37,7 @@ Navigate to the project folder in the command prompt:
 cd ej2-quickstart
 ``` 
 
-## Install Syncfusion<sup style="font-size:70%">&reg;</sup> Daterangepicker package
+## Install Syncfusion<sup style="font-size:70%">&reg;</sup> DateRangePicker package
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
@@ -55,7 +55,7 @@ npm install
 
 > For more information about individual package and alternative installation methods, see the [installation guide](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation).
 
-## Import Syncfusion<sup style="font-size:70%">&reg;</sup> Daterangepicker CSS styles
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> DateRangePicker CSS styles
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
 
@@ -81,15 +81,15 @@ The required styles are imported in the `~/src/styles/styles.css` file, as shown
 
 > Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Daterangepicker control to the application
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> DateRangePicker control to the application
 
-The Daterangepicker can be initialized through input tags.
+The DateRangePicker can be initialized through input tags.
 
-Add the HTML input element which needs to be initialized as Daterangepicker in `index.html`.
+Add the HTML input element which needs to be initialized as DateRangePicker in `index.html`.
 
 Open the application in Visual Studio Code and add the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript UI controls. 
 
-In this article, the Daterangepicker control is used as an example. Add the following Daterangepicker element to the `~/src/index.html` file.
+In this article, the DateRangePicker control is used as an example. Add the following DateRangePicker element to the `~/src/index.html` file.
 
 ```html
 <!DOCTYPE html>
@@ -116,7 +116,7 @@ In this article, the Daterangepicker control is used as an example. Add the foll
 </html>
 ```
 
-Now, to render the Calendar control, add the following TypeScript code to the `~/src/app/app.ts` file.
+Now, to render the DateRangePicker control, add the following TypeScript code to the `~/src/app/app.ts` file.
 
 ```ts
 
@@ -169,4 +169,4 @@ The start and end date in a range can be defined with the help of startDate and 
 * [Render DateRangePicker with pre-defined ranges](./customization#preset-ranges)
 * [Render DateRangePicker with specific culture](./globalization)
 
-> You can also explore [JavaScript DateRangePicker](https://www.syncfusion.com/javascript-ui-controls/js-daterangepicker) feature tour page for its groundbreaking features. You can also explore our [JavaScript DateRangePicker](https://ej2.syncfusion.com/demos/#/bootstrap5/daterangepicker/default.html) that shows how to render the DateRangePicker in JavaScript
+> Explore the [JavaScript DateRangePicker](https://www.syncfusion.com/javascript-ui-controls/js-daterangepicker) feature tour page for its groundbreaking features. Also explore the [JavaScript DateRangePicker](https://ej2.syncfusion.com/demos/#/bootstrap5/daterangepicker/default.html) demo that shows how to render the DateRangePicker in JavaScript.

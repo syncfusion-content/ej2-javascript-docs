@@ -15,18 +15,18 @@ The **TreeView** component is used to represent hierarchical data in a tree like
 
 ## Key features
 
-* **[Data Binding](data-binding/)**: Binds the TreeView component with an array of JavaScript objects or `DataManager`.
+* **[Data Binding](data-binding)**: Binds the TreeView component with an array of JavaScript objects or `DataManager`.
 
-* **[CheckBox](check-box/)**: Allows you to select more than one node in TreeView without affecting the UI appearance.
+* **[CheckBox](check-box)**: Allows you to select more than one node in TreeView without affecting the UI appearance.
 
-* **[Drag and Drop](drag-and-drop/)**: Allows you to drag and drop any node in TreeView.
+* **[Drag and Drop](drag-and-drop)**: Allows you to drag and drop any node in TreeView.
 
-* **[Multi Selection](multiple-selection/)**: Allows you to select more than one node in TreeView.
+* **[Multi Selection](multiple-selection)**: Allows you to select more than one node in TreeView.
 
-* **[Node Editing](node-editing/)**: Allows you to change the text of a node in TreeView.
+* **[Node Editing](node-editing)**: Allows you to change the text of a node in TreeView.
 
 * **[Sorting](../api/treeview#sortorder)**: Allows display of the TreeView nodes in an `ascending` or a `descending` order.
 
-* **[Template](template/)**: Allows you to customize the nodes in TreeView.
+* **[Template](template)**: Allows you to customize the nodes in TreeView.
 
-* **[Accessibility](accessibility/)**: Provides built-in accessibility support that helps to access all the TreeView component features through the keyboard, on-screen readers, or other assistive technology devices.
+* **[Accessibility](accessibility)**: Provides built-in accessibility support that helps to access all the TreeView component features through the keyboard, on-screen readers, or other assistive technology devices.

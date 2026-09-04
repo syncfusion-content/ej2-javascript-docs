@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## Query Builder UI
 
-The Query Builder component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Query Builder component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Query Builder component is outlined below.
 
@@ -51,11 +51,12 @@ The following list of ARIA attributes is used in Query Builder.
 
 ## Keyboard interaction
 
-The Query Builder component followed the keyboard interaction guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Query Builder component.
+The Query Builder component follows the keyboard interaction guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Query Builder component.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Tab / Shift + Tab</kbd> | To focus the next item in the rule. |
+| <kbd>Tab / Shift + Tab</kbd> | To navigate to the next/previous focusable item in the rule. |
+| <kbd>Enter</kbd> | To select the focused button or open the focused dropdown. |
 
 ## Ensuring accessibility
 

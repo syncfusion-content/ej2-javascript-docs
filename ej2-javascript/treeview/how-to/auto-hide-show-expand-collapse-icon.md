@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to auto hide or show expand collapse icon in ##Platform_Name## TreeView
 
-You can display the expand icon by hovering the mouse over the TreeView, and hide the expand icon by moving the mouse away. Refer to the following code sample to automatically hide/show the expand/collapse icon using the mouse.
+You can display the expand/collapse icon by hovering the mouse over the TreeView, and hide the expand/collapse icon by moving the mouse away. Refer to the following code sample to automatically hide/show the expand/collapse icon using the mouse.
 
 {% if page.publishingplatform == "typescript" %}
 

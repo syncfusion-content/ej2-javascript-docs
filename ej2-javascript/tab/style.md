@@ -51,7 +51,7 @@ Use the following CSS to customize the content items of Tab.
 
 ## Customizing Tab's header
 
-Use the following CSS to customize the header of Tab control.
+Use the following CSS to customize the header of the Tab control.
 
 ```css
 
@@ -63,7 +63,7 @@ Use the following CSS to customize the header of Tab control.
 
 ## Customizing Tab's header icon
 
-Use the following CSS to customize the header item icon of Tab control.
+Use the following CSS to customize the header item icon of the Tab control.
 
 ```css
 
@@ -75,7 +75,7 @@ Use the following CSS to customize the header item icon of Tab control.
 
 ## Customizing Tab's content
 
-Use the following CSS to customize the content of Tab control.
+Use the following CSS to customize the content of the Tab control.
 
 ```css
 
@@ -87,7 +87,7 @@ Use the following CSS to customize the content of Tab control.
 
 ## Customizing the hover state of Tab control
 
-Use the following CSS to customize the tab item when hovering.
+Use the following CSS to customize a tab item when hovering.
 
 ```css
 
@@ -97,7 +97,7 @@ Use the following CSS to customize the tab item when hovering.
 
 ```
 
-Use the following CSS to customize the tab item popup icon when hovering.
+Use the following CSS to customize the tab item popup icon on hover.
 
 ```css
 
@@ -120,7 +120,7 @@ Use the following CSS to customize the selected tab item.
 
 ```
 
-Use the following CSS to customize the selected tab item text and icon.
+Use the following CSS to customize the text and icon of the selected tab item.
 
 ```css
 

@@ -13,15 +13,15 @@ domainurl: ##DomainURL##
 
 You can customize the Toolbar component items by using third-party icons other than the icons available in the Syncfusion<sup style="font-size:70%">&reg;</sup> library. In the following example, font awesome icons are used as toolbar items.
 
-* Refer to the third-party reference link. Here, the CDN link of Font Awesome is used.
+* Refer to the third-party reference link. Here, the CDN link for Font Awesome is used.
 
 ```html
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 ```
 
-* Add the icons to the toolbar component using the ['prefixIcon'](../../api/toolbar/itemDirective/#prefixicon) property
+* Add the icons to the toolbar component using the ['prefixIcon'](../../api/toolbar/itemDirective#prefixicon) property
 
-The following sample explains how to use font awesome in the toolbar component.
+The following sample explains how to use Font Awesome in the Toolbar component.
 
 {% if page.publishingplatform == "typescript" %}
 

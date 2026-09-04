@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to keep Dialog centered on page scroll in ##Platform_Name## Dialog
+# How to keep Dialog fixed on page scroll in ##Platform_Name## Dialog
 
-By default, when scroll the page/container Dialog also scrolled along with the page/container. When a user expects to display the Dialog in the same position without scrolling achieving this in sample level as like below. Here added 'e-fixed' class to Dialog element by using [cssClass](https://ej2.syncfusion.com/documentation/api/dialog/index-default#cssclass) property and prevent the scrolling.
+By default, when you scroll the page or container, the Dialog also scrolls along with it. When a user expects the Dialog to stay in the same position without scrolling, this can be achieved at the sample level as shown below. Here, the `e-fixed` class is added to the Dialog element by using the [cssClass](https://ej2.syncfusion.com/documentation/api/dialog/index-default#cssclass) property, which prevents the Dialog from scrolling with the page. Note that `e-fixed` is not a built-in class; you must define it in your page styles as `.e-fixed { position: fixed; }`. In the following sample, the `cssClass` is applied dynamically in the `#targetButton` click handler.
 
 {% if page.publishingplatform == "typescript" %}
 

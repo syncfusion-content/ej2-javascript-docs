@@ -13,15 +13,15 @@ domainurl: ##DomainURL##
 
 This section explains the steps required to create a simple [JavaScript TreeView](https://www.syncfusion.com/javascript-ui-controls/js-treeview) and demonstrates the basic usage of the TreeView component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is preconfigured with all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
 
 ## Prerequisites
 
 Ensure the following tools are installed on your machine:
 
 * [Git](https://git-scm.com/downloads)
-* [Node.js](https://nodejs.org/en/)
-* [Visual Studio Code](https://code.visualstudio.com/)
+* [Node.js](https://nodejs.org/en)
+* [Visual Studio Code](https://code.visualstudio.com)
 
 ## Set up the development environment
 

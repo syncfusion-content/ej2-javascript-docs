@@ -11,14 +11,14 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## TreeView
 
-The TreeView control follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The TreeView control follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the TreeView control is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Section 508](https://www.section508.gov/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| [Section 508](https://www.section508.gov) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Screen Reader Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Right-To-Left Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Color Contrast | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
@@ -41,27 +41,27 @@ The accessibility compliance for the TreeView control is outlined below.
 
 ## WAI-ARIA attributes
 
-The TreeView control follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/treeview/) patterns to meet the accessibility. The following ARIA attributes are used in the TreeView control:
+The TreeView control follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/treeview) patterns to ensure accessibility. The following ARIA attributes are used in the TreeView control:
 
 | Attributes | Purpose |
 | --- | --- |
-| `role=tree` | All tree nodes are contained within the element. |
-| `role=treeitem` | Specifies the role of each tree node in a selectable TreeView and its containment within the tree. |
+| `role=tree` | Specifies the role of the element as a tree that contains the tree items. |
+| `role=treeitem` | Specifies the role of each node within the tree. |
 | `role=group` | Specifies the role of each parent node container. |
-| `role=checkbox` | Indicates checkbox control along with treeitem element. |
+| `role=checkbox` | Indicates the checkbox control within a tree item element. |
 | `aria-multiselectable` | Indicates whether the TreeView enables multiple selection or not. |
-| `aria-expanded` | Indicates whether the parent node has expanded or not. |
-| `aria-selected` | Indicates the selected node. |
-| `aria-grabbed` | Indicates the selected state on drag-and-drop of node. |
-| `aria-level` | Indicates the level of node in TreeView. |
-| `aria-checked` | Indicates the current checked state of TreeView checkbox. |
-| `aria-label` | Indicates the contextual message for the TreeView checkbox. |
+| `aria-expanded` | Indicates whether the parent node is expanded or collapsed. |
+| `aria-selected` | Indicates whether a node is selected. |
+| `aria-grabbed` | Indicates the grabbed (selected for drag) state during drag-and-drop of a node. |
+| `aria-level` | Indicates the level of a node in the TreeView. |
+| `aria-checked` | Indicates the current checked state of a TreeView checkbox. |
+| `aria-label` | Provides an accessible name for the TreeView checkbox. |
 | `aria-activedescendant` | Identifies the currently active element when focusing on the TreeView. |
-| `aria-disabled` | Indicates element is perceivable but disabled. |
+| `aria-disabled` | Indicates that the element is perceivable but disabled. |
 
 ## Keyboard interaction
 
-The TreeView control follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/treeview/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the TreeView control.
+The TreeView control follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/treeview#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the TreeView control.
 
 | Interaction Keys | Description |
 |------|---------|

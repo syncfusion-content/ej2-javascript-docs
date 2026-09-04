@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Checkbox in ##Platform_Name## MultiSelect Dropdown
 
-The MultiSelect has built-in support to select multiple values through checkbox, when [`mode`](../api/multi-select/#mode) property set as `CheckBox`.
+The MultiSelect has built-in support to select multiple values through checkboxes when the [`mode`](../api/multi-select#mode) property is set to `CheckBox`.
 
-To use checkbox, inject the `CheckBoxSelection` module in the MultiSelect.
+To use checkboxes, inject the `CheckBoxSelection` module into the MultiSelect.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,12 +44,11 @@ To use checkbox, inject the `CheckBoxSelection` module in the MultiSelect.
 
 ## Select All
 
-The MultiSelect component has in-built support to select the all list items using `Select All` options in the header.
+The MultiSelect component has built-in support to select all list items using the `Select All` option in the header.
 
-When the [`showSelectAll`](../api/multi-select/#showselectall) property is set to true, by default Select All text will show. You can customize the name attribute of the Select All option by using [`selectAllText`](../api/multi-select/#selectalltext).
+When the [`showSelectAll`](../api/multi-select#showselectall) property is set to `true`, the `Select All` text is shown by default. You can customize the `Select All` text by using the [`selectAllText`](../api/multi-select#selectalltext) property.
 
-For the unSelect All option, by default unSelect All text will show. You can customize the name attribute of the unSelect All option by using
-[`unSelectAllText`](../api/multi-select/#unselectalltext).
+For the unSelect All option, the `Unselect All` text is shown by default. You can customize the `Unselect All` text by using the [`unSelectAllText`](../api/multi-select#unselectalltext) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -80,7 +79,7 @@ For the unSelect All option, by default unSelect All text will show. You can cus
 
 ## Selection Limit
 
-Defines the limit of the selected items using [`maximumSelectionLength`](../api/multi-select/#maximumselectionlength).
+Defines the limit of the selected items using [`maximumSelectionLength`](../api/multi-select#maximumselectionlength).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -111,7 +110,7 @@ Defines the limit of the selected items using [`maximumSelectionLength`](../api/
 
 ## Selection Reordering
 
-Using [`enableSelectionOrder`](../api/multi-select/#enableselectionorder) to Reorder the selected items in popup visibility state.
+Use the [`enableSelectionOrder`](../api/multi-select#enableselectionorder) property to reorder the selected items in the popup when it is visible.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -145,4 +144,4 @@ Using [`enableSelectionOrder`](../api/multi-select/#enableselectionorder) to Reo
 * [How to bind the data](./data-binding)
 * [How to filter the bound data](./filtering)
 * [How to add custom value to the MultiSelect](./custom-value)
-* [How to render grouping with checkbox](./grouping#grouping-with-checkbox).
+* [How to render grouping with checkboxes](./grouping#grouping-with-checkbox)

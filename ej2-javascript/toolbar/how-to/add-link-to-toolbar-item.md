@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to add link to Toolbar item in ##Platform_Name## Toolbar
 
-Toolbar supports to add link by using the template configuration. The Toolbar can be rendered by item based collection and by HTML elements. Template property can be given as the `HTML element` that is either a `string`  or a `query selector`.
+Toolbar supports adding links using the template configuration. The Toolbar can be rendered by item-based collection and and HTML elements. Template property can be given as the `HTML element` that is either a `string`  or a `query selector`.
 
 The template property also allows getting template content through query `selector`. Here, anchor element 'ID' attribute is specified in the template.
 

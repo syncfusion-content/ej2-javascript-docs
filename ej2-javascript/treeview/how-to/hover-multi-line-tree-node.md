@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to hover over multi-line tree node in ##Platform_Name## TreeView
 
-This section demonstrates how to hover and select a multi-line tree node. You can set the row height (element class: `e-fullrow`) to be the same as the row content (element class: `e-text-content`).
+This section demonstrates how to hover and select a multi-line tree node. By default, the full-row element (class: `e-fullrow`) only covers a single line, so the hover background does not extend over the additional lines of text. You can fix this by setting the `min-height` of `.e-fullrow` in CSS to match the actual height of the multi-line content (class: `e-text-content`).
 
 {% if page.publishingplatform == "typescript" %}
 

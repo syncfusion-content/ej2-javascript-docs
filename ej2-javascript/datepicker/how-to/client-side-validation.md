@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # How to validate client-side in ##Platform_Name## DatePicker
 
-To achieve the client side validation in a DatePicker component by using [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 FormValidator](../../form-validator). It provides an option to customize the feedback error messages to the corresponding fields to take action to resolve the issue.
+Client-side validation in the DatePicker component is achieved by using the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 FormValidator](../../form-validator). It provides an option to customize the feedback error messages for the corresponding fields to take action to resolve the issue.
 
-In this below example, the required field validation is implemented by mapping the name attribute value to the rules property. It will validate the DatePicker component and display the validation message when the textbox value is empty during form post back or focus out.
+In the example below, the required field validation is implemented by mapping the name attribute value to the rules property. It validates the DatePicker component and displays the validation message when the textbox value is empty during form post back or focus out.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datepicker/form-validator-cs1/index.ts %}
 {% endhighlight %}

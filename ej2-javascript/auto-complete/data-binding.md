@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The AutoComplete loads the data either from local data sources or remote data services using the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#datasource) property. It supports the data type of array or `DataManager`.
 
-The AutoComplete also supports different kind of data services such as OData, OData V4, Web API and data formats such as XML, JSON, JSONP with the help of DataManager Adaptors.
+The AutoComplete also supports different kind of data services such as OData, OData V4, Web API, and data formats such as XML, JSON, and JSONP with the help of DataManager Adaptors.
 
 | Fields | Type | Description |
 |------|------|-------------|
@@ -21,8 +21,7 @@ The AutoComplete also supports different kind of data services such as OData, OD
 | groupBy |  `string` | Specifies the category under which the list item has to be grouped. |
 | iconCss |  `string` | Specifies the icon class of each list item. |
 
->While binding complex data to AutoComplete, fields should be mapped correctly. Otherwise, the selected
-item remains undefined.
+>While binding complex data to the AutoComplete, the fields should be mapped correctly. Otherwise, the selected item remains undefined.
 
 ## Bind to local data
 
@@ -59,11 +58,11 @@ The AutoComplete has support to load array of primitive data such as strings and
 {% previewsample "page.domainurl/code-snippet/autocomplete/getting-started-cs2" %}
 {% endif %}
 
-### Array of object
+### Array of objects
 
-The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [`fields`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#fields) property.
+The AutoComplete can generate its list items through an array of simple objects. For this, the appropriate columns should be mapped to the [`fields`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#fields) property.
 
-In the following example, `Game` column from complex data have been mapped to the `value` field.
+In the following example, `Game` column from the data has been mapped to the `value` field.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -92,11 +91,11 @@ In the following example, `Game` column from complex data have been mapped to 
 {% previewsample "page.domainurl/code-snippet/autocomplete/basic-cs1" %}
 {% endif %}
 
-### Array of complex object
+### Array of complex objects
 
-The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [`fields`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#fields) property.
+The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [`fields`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#fields) property.
 
-In the following example, `Country.Name` column from complex data have been mapped to the `value` field.
+In the following example, `Country.Name` column from the complex data has been mapped to the `value` field.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -127,7 +126,7 @@ In the following example, `Country.Name` column from complex data have been ma
 
 ## Bind to remote data
 
-The AutoComplete supports retrieval of data from remote data services with the help of `DataManager` component. The [`Query`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#query) property is used to fetch data from the database and bind it to the AutoComplete.
+The AutoComplete supports retrieval of data from remote data services with the help of the `DataManager` component. The [`Query`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#query) property is used to fetch data from the database and bind it to the AutoComplete.
 
 The following sample displays the first 6 contacts from the `Customers` table of the `Northwind` data service.
 

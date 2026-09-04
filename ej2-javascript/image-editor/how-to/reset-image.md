@@ -11,6 +11,21 @@ domainurl: ##DomainURL##
 
 # How to reset an image in ##Platform_Name## Image Editor
 
-The [`reset`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#reset) method in the Image Editor control provides the capability to undo all the changes made to an image and revert it back to its original state. This method is particularly useful when multiple adjustments, annotations, or transformations have been applied to an image and you want to start over with the original, unmodified version of the image. 
+The [`reset`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#reset) method reverts the image in the Image Editor to its original state, discarding every edit applied after the image was opened — including annotations, transforms, finetune adjustments, and filters. It takes no arguments and returns `void`.
 
-By invoking the `reset` method, any modifications or edits made to the image will be undone, and the image will be restored to its initial state. This allows you to easily discard any changes and begin again with the fresh, unaltered image. 
+Use `reset` when you want to start over with the unmodified image rather than undoing individual steps one at a time. This differs from `undo`, which steps back a single action, and from `clearImage`, which removes the image from the canvas entirely without reloading the original.
+
+## Steps to reset an image
+
+1. Initialize the `ImageEditor` and open an image.
+2. Apply any edits (annotations, transforms, finetune, filters).
+3. Call `imageEditorObj.reset()` to discard all edits and restore the original image.
+
+The following example loads an image on creation and resets it when the **Reset** button is clicked:
+
+```javascript
+// Discards all edits and restores the original image. Returns: void
+imageEditorObj.reset();
+```
+
+> **Note:** A reset clears the current edits. Use `undo` if you only want to revert the most recent action. 

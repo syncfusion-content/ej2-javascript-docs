@@ -1,19 +1,19 @@
 ---
 layout: post
-title: How to customize badge in ##Platform_Name## Badge | Syncfusion
-description: Learn how to customize ##Platform_Name## Badge color, size, and position by overriding default CSS for tailored notification styling in your app.
+title: How to customize the Badge in ##Platform_Name## | Syncfusion
+description: Learn how to customize the ##Platform_Name## Badge color, size, and position by overriding default CSS for tailored notification styling.
 platform: ej2-javascript
-control: Badge customization
+control: Badge Customization
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to customize badge in ##Platform_Name## Badge
+# How to customize the Badge in ##Platform_Name##
 
 ## Color customization
 
-Even though badges come with `8 predefined colors`, you can also customize the color of the badge as desired.
+Although the Badge comes with eight predefined colors, its appearance can be customized as desired by overriding the default styles.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -42,9 +42,9 @@ Even though badges come with `8 predefined colors`, you can also customize the c
 {% previewsample "page.domainurl/code-snippet/badge/color-cs1" %}
 {% endif %}
 
-## Customize badge size
+## Customize Badge size
 
-Badges are designed to change their size based on the content. To change the size of a badge, adjust the `font size` of the badge.
+The Badge is designed to change its size based on the content. To modify this, adjust the `font-size` accordingly.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ Badges are designed to change their size based on the content. To change the siz
 
 ## Custom position
 
-Even though the badges support the conventional `top` and `bottom` positions, the position of the badges can be changed as desired. This can be done by adding a custom class to the badge element to override the default position applied from the source.
+Although the conventional `top` and `bottom` placements are supported, the Badge can be positioned anywhere as desired. This is achieved by adding a custom class to the element to override the default position applied from the source.
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}

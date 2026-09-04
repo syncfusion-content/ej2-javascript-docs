@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Shimmer Effect in ##Platform_Name## Skeleton
 
-You can use the [`shimmerEffect`](../api/skeleton/index-default#shimmereffect) property to change animation effect in the skeleton control. Skeleton supports `Wave`, `Pulse` and `Fade` effects and by default, the `shimmerEffect` is set to `Wave` effect.
+The [`shimmerEffect`](../api/skeleton/index-default#shimmereffect) property is used to change the animation effect in the Skeleton control. Skeleton supports `Wave`, `Pulse`, and `Fade` effects, and by default, the `shimmerEffect` is set to the `Wave` effect.
 
 ```js
 // Initialize Skeleton control with pulse effect
-var pulse = ej.notifications.Skeleton({
+var pulse = new ej.notifications.Skeleton({
     shape: 'Circle',
     width: "60px",
     shimmerEffect: 'Pulse'

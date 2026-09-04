@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to close popup in ##Platform_Name## Dropdown List
+# How to close the popup in the ##Platform_Name## Dropdown List
 
-By using the `hidePopup` method in DropDownList, you can close the popup on scroll when triggered the windows scroll event.
+By using the `hidePopup` method of the DropDownList, you can close the popup on scroll when the window's scroll event is triggered.
 
-The following example demonstrate about how to close the popup on scroll.
+The following example demonstrates how to close the popup on scroll.
 
 {% if page.publishingplatform == "typescript" %}
 

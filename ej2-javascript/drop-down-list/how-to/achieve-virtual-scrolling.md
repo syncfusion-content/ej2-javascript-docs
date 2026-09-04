@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to virtual scroll in ##Platform_Name## Dropdown List | Syncfusion
+title: Virtual Scrolling in ##Platform_Name## Dropdown List | Syncfusion
 description: Load large data in Syncfusion ##Platform_Name## Dropdown List incrementally via the scroll event and addItem method to simulate virtual scrolling.
 platform: ej2-javascript
 control: Achieve virtual scrolling 
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to achieve virtual scrolling in ##Platform_Name## Dropdown List
 
-The Virtual Scrolling is used to display a large amount of data without buffering the entire load of a huge database record in the DropDownList, that is, when scrolling, the request is sent and fetch some amount of data from the server dynamically. Using the `scroll` event, get the data and generate the list add to popup using the `addItem` method.
+Virtual scrolling is used to display a large amount of data in the DropDownList without buffering the entire dataset. As you scroll, a request is sent to fetch a subset of records from the server dynamically. Use the `scroll` event to retrieve the data and append new items to the popup by using the `addItem` method.
 
 Refer to the following code sample for virtual scrolling.
 

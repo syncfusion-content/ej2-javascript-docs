@@ -11,7 +11,9 @@ domainurl: ##DomainURL##
 
 # How to close on outside click in ##Platform_Name## Dialog
 
-By default, dialog can be closed by pressing Esc key and clicking the close icon on the right of dialog header. It can also be closed by clicking outside of the dialog using hide method. Set the [CloseOnEscape](https://ej2.syncfusion.com/documentation/api/dialog/index-default#closeonescape) property value to false to prevent closing of the dialog when pressing Esc key.
+By default, the Dialog can be closed by pressing the Esc key and clicking the close icon on the right of the Dialog header. It can also be closed by clicking outside of the Dialog using the hide method. Set the [closeOnEscape](https://ej2.syncfusion.com/documentation/api/dialog/index-default#closeonescape) property value to false to prevent closing of the Dialog when pressing the Esc key.
+
+In the following sample, the Dialog is closed when clicking outside the Dialog area using the [hide](https://ej2.syncfusion.com/documentation/api/dialog/index-default#hide) method. A `document.onclick` handler checks the clicked target's id and calls `hide` when the click occurs on the `#target` container.
 
 In the following sample, dialog is closed when clicking outside the dialog area using [hide](https://ej2.syncfusion.com/documentation/api/dialog/index-default#hide) method.
 

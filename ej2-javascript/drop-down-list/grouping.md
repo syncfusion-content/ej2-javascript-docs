@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Grouping in ##Platform_Name## Dropdown List
 
-The DropDownList supports wrapping nested elements into a group based on different categories. The category of each list item can be mapped through the [groupBy](../api/drop-down-list/#fields) field in the data table. The group header is displayed both as inline and fixed headers. The fixed group header content is updated dynamically on scrolling the popup list with its category value.
+The DropDownList supports wrapping nested elements into a group based on different categories. The category of each list item can be mapped through the [groupBy](../api/drop-down-list#fields) field in the data table. The group header is displayed both as inline and fixed headers. The fixed group header content is updated dynamically on scrolling the popup list with its category value.
 
-In the following sample, vegetables are grouped according on its category using `groupBy` field.
+In the following sample, vegetables are grouped according to their category using the `groupBy` field.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ In the following sample, vegetables are grouped according on its category using 
 
 ## HTML select
 
-The DropDownList also supports grouping of list items under specific groups by initiating the `<select>` element using  `optgroup`. The nested items are wrapped based on the `<optgroup>` tag that is presents in the `<select>` element
+The DropDownList also supports grouping list items by initializing the `<select>` element with `<optgroup>` tags. The nested items are wrapped based on the `<optgroup>` element present in the `<select>` element.
 
 ```
     <select id="selectElement">
@@ -90,9 +90,9 @@ The DropDownList also supports grouping of list items under specific groups by i
 
 ## Customization
 
-The grouping header is also provided with customization option. This allows custom designing using the [`groupTemplate`](../api/drop-down-list/#grouptemplate) property for both inline and fixed headers.
+The grouping header can also be customized for both inline and fixed headers using the [`groupTemplate`](../api/drop-down-list#grouptemplate) property.
 
 ## See Also
 
-* [Group Template support to DropDownList](./templates/#group-template).
-* [How to disable the fixed group header](./how-to/group-header/)
+* [Group Template support in the DropDownList](./templates#group-template)
+* [How to disable the fixed group header](./how-to/group-header)

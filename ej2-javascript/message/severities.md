@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Severities in ##Platform_Name## Message
 
-The severity denotes the importance and context of the message to the user. The message contains different severity types. Use the [severity](../api/message/index-default#severity) property to display the messages with different severity levels.
+The severity denotes the importance and context of the message. The Message control contains different severity types. Use the [severity](../api/message/index-default#severity) property to display the messages with different severity levels.
 
-The available severity types are **Normal**, **Success**, **Info**, **Warning** and **Error**. The default severity type for messages is **Normal**.
+The available severity types are **Normal**, **Success**, **Info**, **Warning**, and **Error**. The default severity type for messages is **Normal**.
 
 The following example demonstrates the severity of the messages.
 

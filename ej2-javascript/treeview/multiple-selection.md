@@ -13,11 +13,11 @@ domainurl: ##DomainURL##
 
 Selection provides interactive support and highlights the node you select. Selection can be done through a simple mouse click or keyboard interaction.
 
-The TreeView also supports the selection of multiple nodes by setting [`allowMultiSelection`](../api/treeview/#allowmultiselection) to **true**.
+The TreeView also supports the selection of multiple nodes by setting [`allowMultiSelection`](../api/treeview#allowmultiselection) to **true**.
 
 To multi-select, press and hold the **CTRL** key and click the desired nodes. To select a range of nodes, press and hold the **SHIFT** key and click the nodes.
 
-In the following example, the [`allowMultiSelection`](../api/treeview/#allowmultiselection) property is enabled.
+In the following example, the [`allowMultiSelection`](../api/treeview#allowmultiselection) property is enabled.
 
 > Multi-selection is not applicable through touch interactions.
 
@@ -56,11 +56,11 @@ In the following example, the [`allowMultiSelection`](../api/treeview/#allowmult
 
 ## Selected Nodes
 
-You can get or set the selected nodes in TreeView at initial rendering and dynamically by using the [`selectedNodes`](../api/treeview/#selectednodes) property. It returns the selected node's ID as an array.
+You can get or set the selected nodes in TreeView at initial rendering and dynamically by using the [`selectedNodes`](../api/treeview#selectednodes) property. It returns the selected node's ID as an array.
 
-* The [`nodeSelecting`](../api/treeview/#nodeselecting) event is triggered before a node is selected/unselected, which can be used to prevent the selection.
+* The [`nodeSelecting`](../api/treeview#nodeselecting) event is triggered before a node is selected/unselected, which can be used to prevent the selection.
 
-* The [`nodeSelected`](../api/treeview/#nodeselected) event is triggered once a node is successfully selected/unselected.
+* The [`nodeSelected`](../api/treeview#nodeselected) event is triggered once a node is successfully selected/unselected.
 
 In the following example, the **New South Wales** and **Western Australia** nodes are selected at initial rendering. When a node is selected, the selected node's ID is displayed in an alert.
 

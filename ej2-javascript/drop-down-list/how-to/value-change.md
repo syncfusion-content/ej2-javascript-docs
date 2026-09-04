@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # How to detect value change in ##Platform_Name## Dropdown List
 
-You can check about whether value change happened by manual or programmatic by using [change](../../api/drop-down-list/#change) event argument that argument name is `isInteracted`.
+You can check whether a value change occurred manually or programmatically by using the `isInteracted` argument of the [`change`](../../api/drop-down-list#change) event.
 
-The following example demonstrate, how to check whether value change happened by manual or programmatic.
+The following example demonstrates how to check whether a value change was triggered manually or programmatically.
 
 {% if page.publishingplatform == "typescript" %}
 

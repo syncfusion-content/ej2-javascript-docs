@@ -11,19 +11,19 @@ domainurl: ##DomainURL##
 
 # Globalization in ##Platform_Name## TimePicker
 
-Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [`internationalization`](../common/internationalization/), and also add culture specific customization and translation to the text [`localization`](../common/localization/).
+Globalization is the combination of internationalization and localization. The component can be adapted to various languages by parsing and formatting the date or number [`internationalization`](../common/internationalization/), and also by adding culture specific customization and translation to the text [`localization`](../common/localization/).
 
 By default, the time format and meridian names are specific to the `American English` culture. It utilizes the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Internationalization](../common/internationalization/) package to parse and format the date object based on the culture by using the official [`UNICODE CLDR`](http://cldr.unicode.org/) JSON data. It provides the `loadCldr` method to load culture specific CLDR JSON data. To use a different culture other than `English`, follow the steps below:
 
-* Install the `CLDR-Data` package by using the following command (installs all the CLDR JSON data). To know more about CLDR-Data refer to the [`CLDR-Data`](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
+* Install the `CLDR-Data` package by using the following command (installs all the CLDR JSON data). To know more about CLDR-Data, refer to the [`CLDR-Data`](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
 
 ```
 npm install cldr-data --save
 ```
 
-Once the package is installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data`.
+Once the package is installed, the culture specific JSON data can be found under the location `/node_modules/cldr-data`.
 
-* Import the installed CLDR JSON data into the `app.ts` file. To import JSON data, install the JSON plugin loader. Here, The systemJS JSON plugin loader is used.
+* Import the installed CLDR JSON data into the `app.ts` file. To import JSON data, install the JSON plugin loader. Here, the systemJS JSON plugin loader is used.
 
 ```
 npm install systemjs-plugin-json --save-dev
@@ -70,7 +70,7 @@ System.import('app');
 
 * Use the [`loadCldr`](../common/internationalization#cldr-data-dependencies) method to load the culture specific CLDR JSON data from the installed location to `app.ts` file.
 
-* TimePicker displayed `Sunday` as the first day of week based on default culture ("en-US"). If you want to display the TimePicker with loaded culture's first day of week, you need to import `weekdata.json` file from the `cldr-data/suppemental` as given in the code example.
+* The TimePicker displays `Sunday` as the first day of week based on the default culture ("en-US"). To display the TimePicker with the loaded culture's first day of week, the `weekdata.json` file needs to be imported from `cldr-data/supplemental` as given in the code example.
 
 ```ts
 
@@ -103,7 +103,7 @@ L10n.load({
 
  ```
 
-* Set the culture by using the [`locale`](../api/timepicker#locale) property. In the following code example, the TimePicker component is initialized in `German` culture with corresponding localized text.
+* Set the culture by using the [`locale`](../api/timepicker#locale) property. In the following code example, the TimePicker component is initialized in `German` culture with the corresponding localized text.
 
 ```ts
 
@@ -143,7 +143,7 @@ The following example demonstrates the TimePicker in `German` culture.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/timepicker/internationalization-cs1/index.ts %}
 {% endhighlight %}
@@ -170,9 +170,9 @@ The following example demonstrates the TimePicker in `German` culture.
 
 ## Right-To-Left
 
-The TimePicker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew to displays the text in the right-to-left direction. Use [`enableRtl`](../api/timepicker#enablertl) property to set the RTL direction.
+The TimePicker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew to display the text in the right-to-left direction. Use the [`enableRtl`](../api/timepicker#enablertl) property to set the RTL direction.
 
-The code example demonstrates the TimePicker component in `Arabic` culture. It also explains how to set localized text to the placeholder using [`L10n.load`](../api/base/l10n#load) method.
+The code example demonstrates the TimePicker component in `Arabic` culture. It also explains how to set localized text to the placeholder using the [`L10n.load`](../api/base/l10n#load) method.
 
  ```ts
 
@@ -214,7 +214,7 @@ The following example demonstrates TimePicker in `Arabic` culture with right-to-
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/timepicker/rtl-cs1/index.ts %}
 {% endhighlight %}

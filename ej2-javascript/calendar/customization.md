@@ -18,9 +18,9 @@ The following section demonstrates how to disable or highlight specific dates in
 
 ## Disable weekends
 
-You can disable weekends of every month in a Calendar by using the [`renderDayCell`](../api/calendar/renderDayCellEventArgs#renderdaycelleventargs) event. The `renderDayCell` event offers the following arguments on each day cell creation to help you disable the dates.
+Weekends of every month can be disabled in the Calendar by using the [`renderDayCell`](../api/calendar/renderDayCellEventArgs#renderdaycelleventargs) event. The `renderDayCell` event offers the following arguments on each day cell creation to help disable the dates.
 
-| **View** | **Description** |
+| **Argument** | **Description** |
 | --- | --- |
 | `date` | Defines the current date of the Calendar. |
 | `isDisabled` | Specifies whether the current date is to be disabled or not. |
@@ -57,9 +57,9 @@ The following example demonstrates how to disable weekends of every month.
 
 ## Day cell format
 
-You can also highlight specific dates by adding custom CSS or element to the day cell by using the [`renderDayCell`](../api/calendar/renderDayCellEventArgs#renderdaycelleventargs) event.
+Specific dates can also be highlighted by adding custom CSS or an element to the day cell by using the [`renderDayCell`](../api/calendar/renderDayCellEventArgs#renderdaycelleventargs) event.
 
-You can customize the appearance of the Calendar by overriding the existing styles. The following list of CSS class names are used to customize the Calendar component.
+The appearance of the Calendar can be customized by overriding the existing styles. The following list of CSS class names are used to customize the Calendar component.
 
 | **Class Name** | **Description** |
 | --- | --- |
@@ -75,8 +75,8 @@ You can customize the appearance of the Calendar by overriding the existing styl
 | e-selected | Applied to the selected dates.|
 | e-disabled | Applied to the disabled dates.|
 
-The following example highlights the World Health Day (every 7th April) and World Forest Day (every 21st March) by using the
-custom icon and ToolTip.
+The following example highlights the World Health Day (every 7th April) and World Forest Day (every 21st March) by using a
+custom icon and Tooltip.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -107,7 +107,7 @@ custom icon and ToolTip.
 
 ## Highlight weekends
 
-You can highlight the weekends of every month in a Calendar by using the [`renderDayCell`](../api/calendar/renderDayCellEventArgs#renderdaycelleventargs) event. The following example demonstrates how to highlights the weekends of every month.
+The weekends of every month can be highlighted in the Calendar by using the [`renderDayCell`](../api/calendar/renderDayCellEventArgs#renderdaycelleventargs) event. The following example demonstrates how to highlight the weekends of every month.
 
 {% if page.publishingplatform == "typescript" %}
 

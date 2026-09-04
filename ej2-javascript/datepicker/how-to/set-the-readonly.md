@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # How to make input readonly in ##Platform_Name## DatePicker
 
-The following example demonstrates how to set `readonly` in DatePicker component. You can achieve this by using [`readonly`](../../api/datepicker#readonly) property.
+The following example demonstrates how to set `readonly` in the DatePicker component. This can be achieved by using the [`readonly`](../../api/datepicker#readonly) property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datepicker/getting-started-cs9/index.ts %}
 {% endhighlight %}

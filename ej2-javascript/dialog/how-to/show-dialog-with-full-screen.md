@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to show Dialog with fullscreen in ##Platform_Name## Dialog
+# How to show a Dialog in fullscreen in ##Platform_Name## Dialog
 
-You can show the dialog in fullscreen by passing `true` as argument to the dialog `show` method. By using [visible](https://ej2.syncfusion.com/documentation/api/dialog/index-default#visible) property you can prevent the dialog from initially shown.
+You can show the Dialog in fullscreen by passing `true` as an argument to the Dialog `show` method. This boolean argument enables fullscreen mode for the Dialog display. By using the [visible](https://ej2.syncfusion.com/documentation/api/dialog/index-default#visible) property, you can prevent the Dialog from being shown initially. In the following sample, the Dialog is initially hidden (`visible: false`) and opened in fullscreen on a `#targetButton` click via `dialog.show(true)`. Note that the configured `width` is the non-fullscreen size and is overridden while the Dialog is in fullscreen mode.
 
 {% if page.publishingplatform == "typescript" %}
 

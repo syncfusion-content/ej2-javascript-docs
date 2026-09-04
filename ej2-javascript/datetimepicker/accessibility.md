@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## DateTime Picker
 
-The DateTimePicker component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The DateTime Picker component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the DateTimePicker component is outlined below.
+The accessibility compliance for the DateTime Picker component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -41,77 +41,77 @@ The accessibility compliance for the DateTimePicker component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Web accessibility defines a way to make web content and web applications more accessible to disabled people. It especially helps the dynamic content change and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
+Web accessibility defines a way to make web content and web applications more accessible to people with disabilities. It especially helps in dynamic content changes and advanced user interface controls developed with AJAX, HTML, JavaScript, and related technologies.
 
-DateTimePicker provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA supports is achieved through the attributes like `aria-expanded`, `aria-disabled`, `aria-activedescendant` applied to the input element.
+The DateTime Picker provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA support is achieved through the attributes like `aria-expanded`, `aria-disabled`, and `aria-activedescendant` applied to the input element.
 
-To know about the accessibility of Calendar refer to the Calendar's [Accessibility](../calendar/accessibility/) section.
+To know about the accessibility of Calendar, refer to the Calendar's [Accessibility](../calendar/accessibility/) section.
 
-It helps to provide information about the widget for assistive technology to the disabled person in screen reader.
+These attributes help provide information about the widget for assistive technology to people with disabilities in screen reader.
 
-* **Aria-expanded**: attributes indicates the state of a collapsible element.
+* **Aria-expanded**: This attribute indicates the state of a collapsible element.
 
-* **Aria-disabled**: attribute indicates the disabled state of this DateTimePicker component.
+* **Aria-disabled**: This attribute indicates the disabled state of the DateTime Picker component.
 
-* **Aria-activedescendent**: attribute helps in managing the current active child of the DateTimePicker component.
+* **Aria-activedescendant**: This attribute helps in managing the current active child of the DateTime Picker component.
 
-## Keyboard Interaction
+## Keyboard interaction
 
-You can use the following keys to interact with the DateTimePicker. The component implements the keyboard navigation support by following the  [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+The following keys can be used to interact with the DateTime Picker. The component implements the keyboard navigation support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
 
-DateTimePicker supports the below list of shortcut keys.
+The DateTime Picker supports the following list of shortcut keys.
 
 Input Navigation
 
-Before opening the popup, use the below list of keys to `DateTimePicker` control the popup element.
+Before opening the popup, the following list of keys can be used to control the popup element of the DateTime Picker.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Alt +  Down Arrow</kbd> | Open the select popup |
-| <kbd>Alt +  Down Arrow + Alt +  Down Arrow </kbd> | Toggle between two popups |
+| <kbd>Alt + Down Arrow</kbd> | Opens the select popup |
+| <kbd>Alt + Down Arrow + Alt + Down Arrow</kbd> | Toggles between two popups |
 
 Calendar Navigation
 
-Use the below list of keys to interact with the Calendar after the DatePicker popup has opened.
+The following list of keys can be used to interact with the Calendar after the DateTime Picker popup has opened.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Upper Arrow</kbd>  | Focus the previous week date. |
-| <kbd>Down Arrow</kbd>  | Focus the next week date. |
-| <kbd>Left Arrow</kbd>  | Focus the previous date. |
-| <kbd>Right Arrow</kbd>  | Focus the next date. |
-| <kbd>Home</kbd>  | Focus the first date in the month. |
-| <kbd>End</kbd>  | Focus the last date in the month. |
-| <kbd>Page Up</kbd>  | Focus the same date in the previous month. |
-| <kbd>Page Down</kbd>  | Focus the same date in the next month. |
-| <kbd>Enter</kbd>  | Select the currently focused date. |
-| <kbd>Shift + Page Up</kbd>  | Focus the same date in the previous year. |
-| <kbd>Shift + Page Down</kbd>  | Focus the same date in the previous year. |
-| <kbd>Control + Upper Arrow</kbd>  | Moves into the inner level of view like month-year, year-decade |
-| <kbd>Control + Down Arrow</kbd>  | Moves out from the depth level view like decade-year, year-month |
-| <kbd>Control + Home</kbd>  | Focus the starting date in the current year. |
-| <kbd>Control + End</kbd>  | Focus the ending date in the current year. |
+| <kbd>Up Arrow</kbd>  | Focuses the previous week date. |
+| <kbd>Down Arrow</kbd>  | Focuses the next week date. |
+| <kbd>Left Arrow</kbd>  | Focuses the previous date. |
+| <kbd>Right Arrow</kbd>  | Focuses the next date. |
+| <kbd>Home</kbd>  | Focuses the first date in the month. |
+| <kbd>End</kbd>  | Focuses the last date in the month. |
+| <kbd>Page Up</kbd>  | Focuses the same date in the previous month. |
+| <kbd>Page Down</kbd>  | Focuses the same date in the next month. |
+| <kbd>Enter</kbd>  | Selects the currently focused date. |
+| <kbd>Shift + Page Up</kbd>  | Focuses the same date in the previous year. |
+| <kbd>Shift + Page Down</kbd>  | Focuses the same date in the next year. |
+| <kbd>Control + Up Arrow</kbd>  | Moves into the inner level of view like month-year, year-decade. |
+| <kbd>Control + Down Arrow</kbd>  | Moves out from the depth level view like decade-year, year-month. |
+| <kbd>Control + Home</kbd>  | Focuses the starting date in the current year. |
+| <kbd>Control + End</kbd>  | Focuses the ending date in the current year. |
 
-Use the below list of shortcut keys to interact with the TimePicker after the TimePicker Popup has opened.
+The following list of shortcut keys can be used to interact with the TimePicker after the TimePicker popup has opened.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Upper Arrow</kbd> | Navigate and select the previous item. |
-| <kbd>Down Arrow</kbd> | Navigate and select the next item. |
-| <kbd>Left Arrow</kbd> | Move the cursor towards arrow key pressed direction. |
-| <kbd>Right Arrow</kbd> | Move the cursor towards arrow key pressed direction. |
-| <kbd>Home</kbd> | Navigate and select the first item. |
-| <kbd>End</kbd> | Navigate and select the last item. |
-| <kbd>Enter</kbd> | Select the currently focused item and close the popup. |
-| <kbd>Alt + Upper Arrow</kbd> | Close the popup. |
-| <kbd>Alt + Down Arrow</kbd> | Open the popup. |
-| <kbd>Esc</kbd> | Close the popup. |
+| <kbd>Up Arrow</kbd> | Navigates and selects the previous item. |
+| <kbd>Down Arrow</kbd> | Navigates and selects the next item. |
+| <kbd>Left Arrow</kbd> | Moves the cursor towards the arrow key pressed direction. |
+| <kbd>Right Arrow</kbd> | Moves the cursor towards the arrow key pressed direction. |
+| <kbd>Home</kbd> | Navigates and selects the first item. |
+| <kbd>End</kbd> | Navigates and selects the last item. |
+| <kbd>Enter</kbd> | Selects the currently focused item and closes the popup. |
+| <kbd>Alt + Up Arrow</kbd> | Closes the popup. |
+| <kbd>Alt + Down Arrow</kbd> | Opens the popup. |
+| <kbd>Esc</kbd> | Closes the popup. |
 
-> To focus the DateTimePicker component use the `alt+t` keys.
+> To focus the DateTime Picker component, use the `alt+t` keys.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datetimepicker/getting-started-cs1/index.ts %}
 {% endhighlight %}
@@ -138,9 +138,9 @@ Use the below list of shortcut keys to interact with the TimePicker after the Ti
 
 ## Ensuring accessibility
 
-The DateTimePicker component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The accessibility levels of the DateTime Picker component are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the DateTimePicker component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/date-time-picker.html) in a new window to evaluate the accessibility of the DateTimePicker component with accessibility tools.
+The accessibility compliance of the DateTime Picker component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/date-time-picker.html) in a new window to evaluate the component's accessibility with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/date-time-picker.html" %}
 

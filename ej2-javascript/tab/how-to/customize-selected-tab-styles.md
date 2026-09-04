@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize selected tab styles in ##Platform_Name## Tab | Syncfusion
+title: How to customize active tab style in ##Platform_Name## Tab | Syncfusion
 description: Learn how to customize selected tab styles in the Syncfusion ##Platform_Name## Tab control for better visual emphasis.
 platform: ej2-javascript
 control: Customize selected tab styles 
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to customize selected tab styles in ##Platform_Name## Tab
+# How to customize active tab style in ##Platform_Name## Tab
 
 You can customize the Tab style by overriding its header and active tab CSS classes. To do this, follow these steps:
 
 1. Define an HTML string to add animation and customize the Tab header.
 2. Pass this HTML string to the [`text`](../../api/tab/header#text) property.
-3. Override the style using custom CSS classes added to the Tab elements.
+3. Override the styles using custom CSS classes added to the Tab elements.
 
 > You can add a custom class to the Tab component using the [`cssClass`](../../api/toolbar/item#cssclass) property, which is used to customize the Tab component along with the respective CSS selectors.
 

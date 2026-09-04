@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # How to set placeholder in ##Platform_Name## DateTime Picker
 
-The following example demonstrates how to set [`placeholder`](../../api/datetimepicker#placeholder) in the DateTimePicker component.
+The following example demonstrates how to set the [`placeholder`](../../api/datetimepicker#placeholder) in the DateTime Picker component.
 
-Using `placeholder` you can display a short hint in the input element.
+The `placeholder` displays a short hint in the input element.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datetimepicker/getting-started-cs6/index.ts %}
 {% endhighlight %}

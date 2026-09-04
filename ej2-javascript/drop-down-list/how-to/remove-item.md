@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to remove an item in ##Platform_Name## Dropdown List
 
-The following example demonstrate about how to remove an item from DropDownList.
+The following example demonstrates how to remove an item from the DropDownList.
 
 {% if page.publishingplatform == "typescript" %}
 

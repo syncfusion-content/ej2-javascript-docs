@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 # EJ1 API Migration in ##Platform_Name## AutoComplete
 
 This article describes the API migration process of  AutoComplete component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
-> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use multiselection support in autocomplete, we suggest you to use MultiSelect component.
+> The MultiSelect concept is not present in EJ2 AutoComplete. If you want multiselection support in the AutoComplete, we suggest using the MultiSelect component.
 
 ## DataBinding
 
@@ -33,7 +33,7 @@ This article describes the API migration process of  AutoComplete component from
 | **Case sensitivity** | **Property**: *caseSensitiveSearch*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), { caseSensitiveSearch: true,});`|**Property:** *ignoreCase*<br/>`let groupObj: AutoComplete = new AutoComplete({ignoreCase: true,});groupObj.appendTo('#vegetables');`|
 | **Accent effective search** | **Not applicable** | **Property** : *ignoreAccent* <br/>`let groupObj: AutoComplete = new AutoComplete({ignoreAccent: true,});groupObj.appendTo('#vegetables');`|
 | **Filtering Type** | **Property:** *filterType*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), { filterType: "Contains",});`| **Property**: *filterType*<br/>`let groupObj: AutoComplete = new AutoComplete({filterType: filtertype,});groupObj.appendTo('#vegetables');` |
-| **Autofill** | **Property:** *enableAutoFill*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), { enableAutoFill: true,});` | **Property:**: *autoFill* <br/>`let groupObj: AutoComplete = new AutoComplete({autoFill: true,});groupObj.appendTo('#vegetables');`|
+| **Autofill** | **Property:** *enableAutoFill*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), { enableAutoFill: true,});` | **Property:** *autoFill* <br/>`let groupObj: AutoComplete = new AutoComplete({autoFill: true,});groupObj.appendTo('#vegetables');`|
 | **Highlight the search word** | **Property**: *highlightSearch* `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), { highlightSearch: true,});`|**Property:** *highlight* <br/>`let groupObj: AutoComplete = new AutoComplete({highlight: true,});groupObj.appendTo('#vegetables');`|
 | **No of items to be shown** | **Property:** *itemsCount*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), { itemsCount: 3,});` |**Property:** *suggestionCount*<br/>`let groupObj: AutoComplete = new AutoComplete({suggestionCount: 5,});groupObj.appendTo('#vegetables');` |
 | **Minimum characters to enter** | **Property:** *minCharacter*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), { minCharacter: 3,});` |**Property:** *minLength* <br/>`let groupObj: AutoComplete = new AutoComplete({minLength: 4,});groupObj.appendTo('#vegetables');` |
@@ -44,15 +44,15 @@ This article describes the API migration process of  AutoComplete component from
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Watermark text** | **Property:** *watermarkText* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {watermarkText:"select" });`| **Property:** *placeholder* <br/>`let groupObj: AutoComplete = new AutoComplete({placeholder: "Select",});groupObj.appendTo('#vegetables');`|
-| **Floating  of watermark Text** | **Not applicable**   | **Property:** *floatLabelType* <br/>`let groupObj: AutoComplete = new AutoComplete({floatLabelType: floatLabelType,});groupObj.appendTo('#vegetables');`|
+| **Floating of watermark text** | **Not applicable**   | **Property:** *floatLabelType* <br/>`let groupObj: AutoComplete = new AutoComplete({floatLabelType: floatLabelType,});groupObj.appendTo('#vegetables');`|
 
 ## Popup
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **No records text** | **Property:** *emptyResultText* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {emptyResultText:"no records" });`| **Property:** *noRecordsTemplate*<br/> `let groupObj: AutoComplete = new AutoComplete({noRecordsTemplate: noRecordsTemplate,});groupObj.appendTo('#vegetables');`|
-| **No records showing** | **Property:** *showEmptyResultText<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {showEmptyResultText:true })` | **Not applicable** |
-| **Popupbutton** | **Property:** *showPopupButton*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {ShowPopupButton:true })` | **Property:** *showPopupButton*<br/>  `let groupObj: AutoComplete = new AutoComplete({showPopupButton: true,});groupObj.appendTo('#vegetables');`|
+| **No records showing** | **Property:** *showEmptyResultText*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {showEmptyResultText:true })` | **Not applicable** |
+| **Popup button** | **Property:** *showPopupButton*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {showPopupButton:true })` | **Property:** *showPopupButton*<br/>  `let groupObj: AutoComplete = new AutoComplete({showPopupButton: true,});groupObj.appendTo('#vegetables');`|
 | **Clear button** | **Property:** *showResetIcon* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {showResetIcon:true })` | **Property:** *showClearButton* <br/>`let groupObj: AutoComplete = new AutoComplete({showClearButton: true,});groupObj.appendTo('#vegetables');` |
 | **Animation** | **Property:** *animateType* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {animateType:animateType })` | **Not Applicable** |
 | **Focusing the list item** | **Property:** *autoFocus*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {autoFocus:true })` |**Not applicable** |
@@ -70,10 +70,10 @@ This article describes the API migration process of  AutoComplete component from
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *cssClass* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {cssClass:"cssClass" })` | **Property:** *cssClass* <br/> `let groupObj: AutoComplete = new AutoComplete({cssClass:"cssClass",});groupObj.appendTo('#vegetables');`|
-| **Height** | **Property:** *height* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {height:"300px" })`| **Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#cssclass) property.** |
-| **showRoundedCorner**   | **Property:** *showRoundedCorner*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {showRoundedCorner:true })` | **Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#cssclass) property.** |
-| **Width** | **Property:** *width* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {width:300px })`| **Property:** *width* <br/> `let groupObj: AutoComplete = new AutoComplete({width:"300px",});groupObj.appendTo('#vegetables');`|
-| **Visibility** | **Property:** *visible* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {visible:true })` | **Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#cssclass) property.** |
+| **Height** | **Property:** *height* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {height:"300px" })`| **Achievable through the [cssClass](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#cssclass) property.** |
+| **showRoundedCorner**   | **Property:** *showRoundedCorner*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {showRoundedCorner:true })` | **Achievable through the [cssClass](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#cssclass) property.** |
+| **Width** | **Property:** *width* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {width:"300px",});`| **Property:** *width* <br/> `let groupObj: AutoComplete = new AutoComplete({width:"300px",});groupObj.appendTo('#vegetables');`|
+| **Visibility** | **Property:** *visible* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {visible:true })` | **Achievable through the [cssClass](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#cssclass) property.** |
 
 ## Grouping
 
@@ -85,7 +85,7 @@ This article describes the API migration process of  AutoComplete component from
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-| **Default** | **Property:** *Locale* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {lcoale: "fr-FE",});`| **Property:** *Locale* <br/>`let groupObj: AutoComplete = new AutoComplete({locale: "fr-FE"});groupObj.appendTo('#vegetables');`|
+| **Default** | **Property:** *Locale* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {locale: "fr-FE",});`| **Property:** *Locale* <br/>`let groupObj: AutoComplete = new AutoComplete({locale: "fr-FE"});groupObj.appendTo('#vegetables');`|
 
 ## Template
 
@@ -103,7 +103,7 @@ This article describes the API migration process of  AutoComplete component from
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-| **Default** | **Property:** *allowSorting* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {allowSorting: true,});` |  **Acheivable through [sortOrder](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#sortorder) property** |
+| **Default** | **Property:** *allowSorting* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {allowSorting: true,});` |  **Achievable through [sortOrder](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#sortorder) property** |
 | **Order of sorting** | **Property:** *sortOrder* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {sortOrder: "Ascending",});`|**Property:** *sortOrder*<br/> `let groupObj: AutoComplete = new AutoComplete({sortOrder: "sortOrder"});groupObj.appendTo('#vegetables');` |
 
 ## Accessibility
@@ -116,7 +116,7 @@ This article describes the API migration process of  AutoComplete component from
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------ | ----------- |
-|**Selecting particular value**| **Property**: *selectValueByKey* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {selectValueByKey: 1,});`|**Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#cssclass) property.** |
+| **Selecting particular value**| **Property**: *selectValueByKey* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {selectValueByKey: 1,});`|**Achievable through the [value](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#value) property.** |
 | **Selecting particular value** | **Property**: *value*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {value: data,});` | **Property:** *value*<br/> `let groupObj: AutoComplete = new AutoComplete({value: "data"});groupObj.appendTo('#vegetables');`|
 | **Selecting particular text** | **Property:** *text*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {text: "data",});` | **Not applicable** |
 | **Selecting particular value** |**Method:** *selectValueByKey*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {});`<br/><br/> `$("#autocomplete").selectValueByKey("key")`| **Acheivable through the [value](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#value) property.**   |
@@ -129,7 +129,7 @@ This article describes the API migration process of  AutoComplete component from
 | --- | --- | --- |
 | **Enable/disable** | **Property:** *enabled*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {enabled: true,});` | **Property:** *enabled* <br/>`let groupObj: AutoComplete = new AutoComplete({enabled: true});groupObj.appendTo('#vegetables');`|
 | **Enable persistence** | **Property:** *enablePersistence*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {enablePersistence: true,});` | **Property:** *enablePersistence* <br/> `let groupObj: AutoComplete = new AutoComplete({enablePersistence: true});groupObj.appendTo('#vegetables');`|
-| **Loading icon** | **Property:** *showLoadingIcon* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {showLoadingIcon: true,});` | **By default,it is showing** |
+| **Loading icon** | **Property:** *showLoadingIcon* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {showLoadingIcon: true,});` | **By default, it is shown** |
 | **Read only** | **Property:** *readOnly* <br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {readOnly: true,});` | **Property:** *readOnly*  `let groupObj: AutoComplete = new AutoComplete({readOnly: true});groupObj.appendTo('#vegetables');`  |
 | **Disable** | **Method:** *disable*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {});`<br/><br/>`$("#autocomplete").ejAutoComplete("disable");` | **Achievable through [enabled](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#enabled) property**  |
 
@@ -141,13 +141,13 @@ This article describes the API migration process of  AutoComplete component from
 | **Addition of new item** | **Property:**  *allowAddNew* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {allowAddNew: true});`|**Property:** *allowCustom*<br/> `let groupObj: AutoComplete = new AutoComplete({allowCustom: true});groupObj.appendTo('#vegetables');`|
 | **Reset the autocomplete** | **Property:** *showResetIcon* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {showResetIcon: true});`|**Property:** *showClearIcon* <br/> `let groupObj: AutoComplete = new AutoComplete({allowCustom: true});groupObj.appendTo('#vegetables');`|
 | **Destroy** | **Method:** *destroy*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {});`<br/><br/>`$("#autocomplete").ejAutoComplete("destroy");`| **Method:** *destroy* <br/>`let groupObj: AutoComplete = new AutoComplete({allowCustom: true});groupObj.appendTo('#vegetables');``<br/><br/>`groupObj.destroy();`|
-| **Reset the autocomplete** | **Method:** *clearText*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {});`<br/><br/>`$("#autocomplete").ejAutoComplete("clearText");`  | **By passing empty value to the value property, you can acheive this**   |
+| **Reset the autocomplete** | **Method:** *clearText*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {});`<br/><br/>`$("#autocomplete").ejAutoComplete("clearText");`  | **By passing empty value to the value property, you can achieve this**   |
 | **Multicolumn** | **Property:** *multiColumnSettings*<br/> `var autocompleteInstance =new ej.Autocomplete($("#selectCar"), {multiColumnSettings:{enable:true,showHeader:true,stringFormat:"{1}",searchColumnIndices[0,1,2],`<br/> `columns:[{"field": "EmployeeID" ,"headerText":"EmployeeID"},{"field": "FirstName" , "headerText":"FirstName"},{"field": "City" , "headerText":"City"}]}});` |**Not applicable** |
-| **Hide the Autocomplete** | **Method:** *hide*<br/><br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {});`<br/><br/>`$("#autocomplete").ejAutoComplete("hide");` | **By using *css-class* property, you can acheive this.**
-| **Getting particular text** | **Method:** *getActiveText* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {});`<br/><br/>`$("#autocomplete").ejAutoComplete("getActiveText");`|**By using text property, you can get it.** |
-| **Getting particular value** | **Method:** *getValue*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {});`<br/><br/>`$("#autocomplete").ejAutoComplete("getValue");` |**By using value property, you can get it.** |
+| **Hide the Autocomplete** | **Method:** *hide*<br/><br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {});`<br/><br/>`$("#autocomplete").ejAutoComplete("hide");` | **By using *css-class* property, you can achieve this.** |
+| **Getting particular text** | **Method:** *getActiveText* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {});`<br/><br/>`$("#autocomplete").ejAutoComplete("getActiveText");`|**By using the text property, you can get it.** |
+| **Getting particular value** | **Method:** *getValue*<br/> `var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {});`<br/><br/>`$("#autocomplete").ejAutoComplete("getValue");` |**By using the value property, you can get it.** |
 | **Change event** | **Event:** *change*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {change:"change"});`|**Event:** *change* <br/>`let groupObj: AutoComplete = new AutoComplete({change: "change"});groupObj.appendTo('#vegetables');`|
-| **Create eventf** | **Event:** *create* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {create:"create"});`|**Event:** *created* <br/>`let groupObj: AutoComplete = new AutoComplete({created: "created"});groupObj.appendTo('#vegetables');`|
+| **Create event** | **Event:** *create* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {create:"create"});`|**Event:** *created* <br/>`let groupObj: AutoComplete = new AutoComplete({created: "created"});groupObj.appendTo('#vegetables');`|
 | **Destroy event** | **Event:** *destroy* <br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {destroy:"destroy"});` |**Event:** *destroyed* <br/>`let groupObj: AutoComplete = new AutoComplete({destroyed: "destroyed"});groupObj.appendTo('#vegetables');`|
 | **Focus out event** | **Event**: *focusOut*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {focusOut:"focusOut"});`| **Event:** *blur* <br/>`let groupObj: AutoComplete = new AutoComplete({blur: "blur"});groupObj.appendTo('#vegetables');` |
 | **Focus in event** | **Event** : *focusIn*<br/>`var autocompleteInstance =new ej.Autocomplete($("#autocomplete"), {focusIn:"focusIn"});` | **Event:** *focus* <br/>`let groupObj: AutoComplete = new AutoComplete({focus: "focus"});groupObj.appendTo('#vegetables');` |

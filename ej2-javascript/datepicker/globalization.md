@@ -11,28 +11,28 @@ domainurl: ##DomainURL##
 
 # Globalization in ##Platform_Name## DatePicker
 
-Globalization is the combination of  adapting the component to various languages by means of parsing and formatting the date or number [`Internationalization`](../common/internationalization) and also by adding cultural specific customizations and translating the text [`localization`](../common/localization)
+Globalization is the combination of adapting the component to various languages by means of parsing and formatting the date or number, known as [`Internationalization`](../common/internationalization), and also by adding cultural specific customizations and translating the text, known as [`Localization`](../common/localization).
 
-By default, DatePicker date format, week and month names are specific to English culture. It utilizes the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Internationalization](../common/internationalization) package to parse and format the date object based on the culture by using the official [`UNICODE CLDR`](http://cldr.unicode.org/) JSON data and it allows to load the culture specific CLDR JSON data by using `loadCldr` method
+By default, the DatePicker date format, week and month names are specific to the English culture. It utilizes the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Internationalization](../common/internationalization) package to parse and format the date object based on the culture by using the official [`UNICODE CLDR`](http://cldr.unicode.org/) JSON data and it allows loading the culture specific CLDR JSON data by using the `loadCldr` method.
 
-The DatePicker component supports only the Gregorian type of calendar. All the Essential<sup style="font-size:70%">&reg;</sup> JS 2 component are specific to English culture ('en-US'). If you want to go with the different culture other than English, follow the below steps.
+The DatePicker component supports only the Gregorian type of calendar. All the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components are specific to the English culture ('en-US'). To work with a different culture other than English, follow the below steps.
 
-* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). To know more about CLDR-Data refer the
+* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). To know more about CLDR-Data, refer to the
  [`CLDR-Data`](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
 
 ```
 npm install cldr-data --save
 ```
 
-Once the package installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data`.
+Once the package is installed, the culture specific JSON data can be found under the location `/node_modules/cldr-data`.
 
-* Now import the installed CLDR JSON data into the `app.ts` file. To import JSON data we need to install the JSON plugin loader. Here we have used the SystemJS JSON plugin loader.
+* Now import the installed CLDR JSON data into the `app.ts` file. To import JSON data, the JSON plugin loader needs to be installed. Here, the SystemJS JSON plugin loader is used.
 
 ```
 npm install systemjs-plugin-json --save-dev
 ```
 
-* Once installed, configure the `system.config.js` configuration settings as like below to map the `systemjs-plugin-json` loader.
+* Once installed, configure the `system.config.js` configuration settings as given below to map the `systemjs-plugin-json` loader.
 
 ```ts
 System.config({
@@ -71,7 +71,7 @@ System.import('app');
 
 * Now use the `loadCldr` method to load the culture specific CLDR JSON data from the installed location to `app.ts` file.
 
-* DatePicker displayed `Sunday` as the first day of week based on default culture ("en-US"). If you want to display the DatePicker with loaded culture's first day of week, you need to import `weekdata.json` file from the `cldr-data/suppemental` as given in the code example.
+* The DatePicker displays `Sunday` as the first day of the week based on the default culture ("en-US"). To display the DatePicker with the loaded culture's first day of the week, import the `weekdata.json` file from `cldr-data/supplemental` as given in the code example.
 
 ```ts
 //Load the loadCldr from ej2-base
@@ -111,7 +111,7 @@ L10n.load({
 });
 ```
 
-* Set the culture by using the [`locale`](https://ej2.syncfusion.com/javascript/documentation/api/datepicker/index-default#locale) property. The below code example, initialize the DatePicker component in `German` culture with corresponding localized text.
+* Set the culture by using the [`locale`](https://ej2.syncfusion.com/javascript/documentation/api/datepicker/index-default#locale) property. The below code example initializes the DatePicker component in `German` culture with corresponding localized text.
 
 ```ts
 //Load the L10n from ej2-base
@@ -165,7 +165,7 @@ The following example demonstrates the DatePicker in `German` culture.
 
 ## Right-To-Left
 
-The DatePicker supports right-to-left functionality for languages like Arabic, Hebrew to displays the text in the right-to-left direction. Use
+The DatePicker supports right-to-left functionality for languages like Arabic, Hebrew to display the text in the right-to-left direction. Use the
 [`enableRtl`](https://ej2.syncfusion.com/javascript/documentation/api/datepicker/index-default#enablertl) property to set the RTL direction.
 
 ```ts
@@ -179,7 +179,7 @@ declare var require: any;
 loadCldr(
     require('cldr-data/supplemental/numberingSystems.json'),
     require('cldr-data/main/he/ca-gregorian.json'),
-    require('cldr-data/main/he/numbers.json')
+    require('cldr-data/main/he/numbers.json'),
     require('cldr-data/main/he/timeZoneNames.json')
 );
 
@@ -208,7 +208,7 @@ the placeholder using `load` method of [L10n](../api/base/l10n#load) class.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datepicker/rtl-cs1/index.ts %}
 {% endhighlight %}

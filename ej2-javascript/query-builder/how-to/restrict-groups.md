@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to set maximum group count in ##Platform_Name## Query Builder UI
 
-You can restrict the condition set by defining the [`maxGroupCount`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#maxgroupcount) property. By default, the value is 5. In the below demo, the `maxGroupCount` is set to 2 .
+The condition set can be restricted by defining the [`maxGroupCount`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#maxgroupcount) property. By default, the value is 5. In the following demo, the `maxGroupCount` is set to 2.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -40,4 +40,4 @@ You can restrict the condition set by defining the [`maxGroupCount`](https://ej2
 {% previewsample "page.domainurl/code-snippet/query-builder/getting-started-cs9" %}
 {% endif %}
 
-> You can use this property in the mobile mode to restrict the nested group creation.
+> This property can be used in the mobile mode to restrict the nested group creation.

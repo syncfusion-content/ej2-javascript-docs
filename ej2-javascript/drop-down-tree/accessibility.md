@@ -29,7 +29,7 @@ The Dropdown Tree control uses the `listbox` role. Each parent tree item in the 
 
 ## Keyboard interaction
 
-The Dropdown Tree functionalities can be interactive when keyboard shortcuts are used.
+The Dropdown Tree functionalities can be accessed interactively using keyboard shortcuts.
 
 The Dropdown Tree supports the following keyboard shortcuts:
 

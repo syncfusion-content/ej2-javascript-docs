@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## Progress Bar control
 
-The Progress bar control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Progress Bar control follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Progress bar control is outlined below.
+The accessibility compliance for the Progress Bar control is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -42,7 +42,7 @@ The accessibility compliance for the Progress bar control is outlined below.
 
 ## WAI-ARIA attributes
 
-The Progress bar control followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Progress bar control:
+The Progress Bar control followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Progress Bar control:
 
 * progressbar (role)
 * aria-valuemin (attribute)
@@ -52,18 +52,18 @@ The Progress bar control followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg
 
 ## Keyboard interaction
 
-The Progress bar control followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Progress bar control.
+The Progress Bar control followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Progress Bar control.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Tab</kbd> | Moves the focus to the Progress bar element. |
-| <kbd>Ctrl + P</kbd> | Prints the Progress bar. |
+| <kbd>Tab</kbd> | Moves the focus to the Progress Bar element. |
+| <kbd>Ctrl + P</kbd> | Prints the Progress Bar. |
 
 ## Ensuring accessibility
 
-The Progress bar control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Progress Bar control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Progress bar control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/progress-bar.html) in a new window to evaluate the accessibility of the Progress bar control with accessibility tools.
+The accessibility compliance of the Progress Bar control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/progress-bar.html) in a new window to evaluate the accessibility of the Progress Bar control with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/progress-bar.html" %}
 

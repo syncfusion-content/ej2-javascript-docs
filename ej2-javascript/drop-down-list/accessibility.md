@@ -46,7 +46,7 @@ You can use the following key shortcuts to access the DropDownList without inter
 | <kbd>Home</kbd> | Selects the first item. |
 | <kbd>End</kbd> | Selects the last item. |
 
-> In the below sample, focus the DropDownList component using <kbd>alt+t</kbd> keys.
+> In the following sample, focus the DropDownList component using <kbd>alt+t</kbd> keys.
 
 {% if page.publishingplatform == "typescript" %}
 

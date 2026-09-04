@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Columns in ##Platform_Name## Query Builder UI
 
-The column definitions are used as the [`dataSource`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#datasource) schema in the Query Builder. This plays a vital role in rendering column values. The query builder operations such as create or delete conditions, and create or delete groups, are performed based on the column definitions. The [`field`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsmodel#field) property of the [`columns`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#columns) is necessary to map the data source values in the query builder columns.
+The column definitions are used as the [`dataSource`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#datasource) schema in the Query Builder. This plays a vital role in rendering column values. The Query Builder operations such as create or delete conditions, and create or delete groups, are performed based on the column definitions. The [`field`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsmodel#field) property of the [`columns`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#columns) is necessary to map the data source values in the Query Builder columns.
 
 > If the column field is not specified in the dataSource, the column values will be empty.
 
@@ -50,12 +50,12 @@ The [`columns`](https://ej2.syncfusion.com/documentation/api/query-builder/index
 
 ## Labels
 
-By default, the column label is displayed from the column [`field`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsmodel#field) value. To override the default label, you have to define the [`label`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsmodel#label) value.
+By default, the column label is displayed from the column [`field`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsmodel#field) value. To override the default label, define the [`label`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsmodel#label) value.
 
 ## Operators
 
 The operator for a column can be defined in the [`operators`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsmodel#operators) property.
-The available operators and its supported data types are:
+The available operators and their supported data types are as follows:
 
 | Operators | Description | Supported Types |
 | ------------ | ----------------------- | ------------------ |
@@ -75,7 +75,7 @@ The available operators and its supported data types are:
 
 ## Step
 
-The Query Builder allows you to set the step values to the number fields. So that, you can easily access the numeric textbox. Use the [`step`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsmodel#step) property, to set the step value for number values.
+The Query Builder allows setting step values for the number fields, making the numeric textbox easier to access. Use the [`step`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsmodel#step) property to set the step value for number fields.
 
 ## Format
 
@@ -110,7 +110,7 @@ The Query Builder formats date and number values. Use the [`format`](https://ej2
 
 ## Validation
 
-Validation allows you to validate the conditions and it display errors for invalid fields while using the `validateFields` method.  To enable validation in the query builder , set the allowValidation to true. Column fields are validated after setting [`allowValidation`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#allowvalidation) to true. So, you should manually configure the validation for Operator and Value fields through [`validation`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsmodel#validation).
+Validation allows validating the conditions and displays errors for invalid fields while using the `validateFields` method. To enable validation in the Query Builder, set the [`allowValidation`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#allowvalidation) property to true. Operator and Value fields are not auto-validated, so validation for these fields should be manually configured through [`validation`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsmodel#validation).
 
 > Set [`isRequired`](https://ej2.syncfusion.com/documentation/api/query-builder/validation#isrequired) validation for Operator and Value fields.
 > Set [`min`](https://ej2.syncfusion.com/documentation/api/query-builder/validation#min), [`max`](https://ej2.syncfusion.com/documentation/api/query-builder/validation#max) values for number values.

@@ -31,12 +31,12 @@ You can add tabs dynamically to the Tab control by passing an array of items and
 
 {% endif %}
 
-In the following example, we'll demonstrate how to add tabs dynamically:
+In the following example, we will demonstrate how to add tabs dynamically:
 
 1. A "+" icon is added to the tab header using the [`iconCss`](../../api/tab/header#iconcss) property.
 2. When you click the "+" icon, you can enter the new tab's heading and content in the provided text boxes.
 3. Clicking the 'Add Tab' button will create a new tab with the entered details.
-4. The new tab is appended at the end of the existing tabs.
+4. The new tab is added at the end of the existing tabs.
 
 {% if page.publishingplatform == "typescript" %}
 

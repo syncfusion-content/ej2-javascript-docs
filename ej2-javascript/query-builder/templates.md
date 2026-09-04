@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Templates in ##Platform_Name## Query Builder UI | Syncfusion
-description: Customize the ##Platform_Name## Query Builder UI header and column layouts with templates using x-template, and define create, write, and destroy functions.
+description: Customize the header and column layouts of the ##Platform_Name## Query Builder UI with templates, using x-template and template functions.
 platform: ej2-javascript
-control: Templates 
+control: Templates
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,17 +11,17 @@ domainurl: ##DomainURL##
 
 # Templates in ##Platform_Name## Query Builder UI
 
-Templates allows users to define customized header and own user interface for columns.
+Templates help define custom header and column UI for the Query Builder.
 
-## Header Template
+## Header template
 
-Header Template allows to define your own user interface for Header, which includes creating or deleting rules and groups and to customize the AND/OR condition and NOT condition options. To implement header template in querybuilder, you can create the user interface using `x-template` and assign the values when requestType is header-template-create in  `actionBegin` event.
+The header template allows creating a custom header UI for actions such as rule and group creation, and for customizing AND/OR and NOT condition options. To implement it, create the UI with `x-template` and assign values when `requestType` is `header-template-create` in the `actionBegin` event.
 
-In the following sample dropdown, splitbutton and button are used as the custom components in the header.
+In the following sample, Dropdown, SplitButton, and Button are used as custom header components.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/query-builder/header-template-cs1/index.ts %}
 {% endhighlight %}
@@ -46,19 +46,19 @@ In the following sample dropdown, splitbutton and button are used as the custom 
 {% previewsample "page.domainurl/code-snippet/query-builder/header-template-cs1" %}
 {% endif %}
 
-## Column Template
+## Column template
 
-Column Template allows you to define your own input widgets for columns. To implement [`template`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsModel/index-default#template), you can define the following functions
+The column template allows defining custom input widgets for columns. To implement [`template`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsModel#template), define the following functions:
 
 * `create`: Creates the custom component.
-* `write`: Wire events for the custom component.
-* `Destroy`: Destroy the custom component.
+* `write`: Wires events for the custom component.
+* `destroy`: Destroys the custom component.
 
 In the following sample, dropdown is used as the custom component in the PaymentMode column.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/query-builder/getting-started-cs15/index.ts %}
 {% endhighlight %}
@@ -83,9 +83,9 @@ In the following sample, dropdown is used as the custom component in the Payment
 {% previewsample "page.domainurl/code-snippet/query-builder/getting-started-cs15" %}
 {% endif %}
 
-### Using Template
+### Template configuration
 
-Template allows you to define your own input widgets for columns. To implement template in querybuilder, you can create the user interface using `x-template` and assign the values through `actionBegin` event.
+To implement a custom template in the Query Builder, create the UI with `x-template` and assign values through the `actionBegin` event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -114,11 +114,11 @@ Template allows you to define your own input widgets for columns. To implement t
 {% previewsample "page.domainurl/code-snippet/query-builder/template-cs1" %}
 {% endif %}
 
-## Rule Template
+## Rule template
 
-Rule Template allows to define your own user interface for columns. To implement [`ruleTemplate`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsModel#ruleTemplate), you can create the user interface using `x-template` and assign the values through `actionBegin` event.
+The rule template allows defining a custom UI for a column. To implement [`ruleTemplate`](https://ej2.syncfusion.com/documentation/api/query-builder/columnsModel#ruleTemplate), create the UI with `x-template` and assign values in the `actionBegin` event.
 
-In the following sample, dropdown and slider are used as the custom component in the Age column and we have applied `greaterthanorequal` operator to this column.
+In the following sample, dropdown and slider are used as custom components in the Age column, and the `greaterthanorequal` operator is applied to this column.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # How to modify result data in ##Platform_Name## Dropdown List
 
-When binding the remote data source, by using the [actionComplete](../../api/drop-down-list/#actioncomplete) event, you can modify the result data before passing it to DropDownList.
+When binding a remote data source, handle the [`actionComplete`](../../api/drop-down-list#actioncomplete) event to modify the result data before passing it to the DropDownList.
 
-The following sample demonstrate how to modify the result data.
+The following sample demonstrates how to modify the result data.
 
 {% if page.publishingplatform == "typescript" %}
 

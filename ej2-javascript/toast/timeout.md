@@ -11,17 +11,17 @@ domainurl: ##DomainURL##
 
 # TimeOut in ##Platform_Name## Toast
 
-The toast can be expired based on the [timeOut](../api/toast/#timeout) property. The toast can live till the time out reaches without user interaction, a time out value is considered as a millisecond.
+The Toast expires based on the [timeOut](../api/toast/#timeout) property. The toast lives until the time out is reached without any interaction; the time out value is considered in milliseconds.
 
-* The `timeOut` delay can be visually represented using [Progress Bar](./config/#progress-bar).
+* The `timeOut` delay can be visually represented using the [Progress Bar](./config/#progress-bar).
 
-* The [extendedTimeOut](../api/toast/#extendedtimeout) property determines how long the toast should be displayed after a user hovers over it.
+* The [extendedTimeOut](../api/toast/#extendedtimeout) property determines how long the toast should be displayed after it is hovered over.
 
-> You can terminate the process by using the [showCloseButton](../api/toast/#showclosebutton) property for destroying the toast at any time.
+> The process can be terminated at any time by using the [showCloseButton](../api/toast/#showclosebutton) property to destroy the toast.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/toast/timeout-cs1/index.ts %}
 {% endhighlight %}
@@ -48,7 +48,7 @@ The toast can be expired based on the [timeOut](../api/toast/#timeout) property.
 
 ## Static toast
 
-You can prevent auto hiding in a toast as visible like static by setting zero (`0`) value in the timeOut Property.
+Auto hiding in a toast can be prevented, keeping it visible as static, by setting the timeOut property to zero (`0`).
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -11,34 +11,34 @@ domainurl: ##DomainURL##
 
 # Animation in ##Platform_Name## Dialog
 
-The Dialog can be animated during the open and close actions. Also, user can customize animation's [`delay`](https://ej2.syncfusion.com/documentation/api/dialog/animationsettings#delay), [`duration`](https://ej2.syncfusion.com/documentation/api/dialog/animationsettings#duration) and [`effect`](https://ej2.syncfusion.com/documentation/api/dialog/animationsettings#effect) by using [animationSettings](https://ej2.syncfusion.com/documentation/api/dialog/animationsettings) property.
+The Dialog can be animated during the open and close actions. The user can also customize the [`delay`](https://ej2.syncfusion.com/documentation/api/dialog/animationsettings#delay) (number, default `0`), [`duration`](https://ej2.syncfusion.com/documentation/api/dialog/animationsettings#duration) (number, default `400`), and [`effect`](https://ej2.syncfusion.com/documentation/api/dialog/animationsettings#effect) of the animation by using the [animationSettings](https://ej2.syncfusion.com/documentation/api/dialog/animationsettings) property.
 
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td>
 delay</td><td>
-The Dialog animation will start with the mentioned delay</td></tr>
+The Dialog animation will start after the specified delay (in milliseconds).</td></tr>
 <tr>
 <td>
 duration</td><td>
-Specifies the animation duration to complete with one animation cycle</td></tr>
+Specifies the time (in milliseconds) for one animation cycle to complete.</td></tr>
 <tr>
 <td>
 effect</td><td>
-Specifies the animation effects of Dialog open and close actions effect.
+Specifies the animation effect for the Dialog open and close actions.
 <br /><br />
 List of supported animation effects:
 <br />
-'Fade' | 'FadeZoom' | 'FlipLeftDown' | 'FlipLeftUp' | 'FlipRightDown' | 'FlipRightUp' | 'FlipXDown' |
-'FlipXUp' | 'FlipYLeft' | 'FlipYRight' | 'SlideBottom' | 'SlideLeft' | 'SlideRight' | 'SlideTop' |
-'Zoom'| 'None'
+`Fade` | `FadeZoom` | `FlipLeftDown` | `FlipLeftUp` | `FlipRightDown` | `FlipRightUp` | `FlipXDown` |
+`FlipXUp` | `FlipYLeft` | `FlipYRight` | `SlideBottom` | `SlideLeft` | `SlideRight` | `SlideTop` |
+`Zoom` | `None`
 <br /><br />
-If the user sets ‘Fade’ effect, then the Dialog will open with ‘FadeIn’ effect and close with ‘FadeOut’ effect
+If the user sets the `Fade` effect, the Dialog internally applies `FadeIn` on open and `FadeOut` on close. Likewise, the `Zoom` effect maps to `ZoomIn` on open and `ZoomOut` on close.
 </td></tr>
 </table>
 
-In the below sample, `Zoom` effect is enabled. So, The Dialog will open with `ZoomIn`
+In the following sample, the `Zoom` effect is enabled. So, the Dialog will open with `ZoomIn`
 and close with `ZoomOut` effects.
 
 {% if page.publishingplatform == "typescript" %}

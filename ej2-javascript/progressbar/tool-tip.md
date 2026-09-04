@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Tool tip in ##Platform_Name## Progress Bar control
+# Tooltip in ##Platform_Name## Progress Bar control
 
-The tooltip for the progress bar is used to represent the progress value. During the initial load, it can be enabled by using the [`enable`](../api/progressbar/tooltipSettings#enable) property. The [`showTooltipOnHover`](../api/progressbar/tooltipSettings#showtooltiponhover) property can show the tooltip on mouseover.
+The Tooltip for the Progress Bar is used to represent the progress value. During the initial load, it can be enabled by using the [`enable`](../api/progressbar/tooltipSettings#enable) property. The [`showTooltipOnHover`](../api/progressbar/tooltipSettings#showtooltiponhover) property can show the tooltip on mouseover.
 
 {% if page.publishingplatform == "typescript" %}
 

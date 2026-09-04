@@ -11,4 +11,4 @@ domainurl: ##DomainURL##
 
 # How to ensure unique value in ##Platform_Name## Dropdown List
 
-yes, value for each list items should be unique.
+Yes, the value for each list item should be unique. The unique value ensures that list items do not collide with one another, allowing the value to be used as a reliable identifier when retrieving or comparing selected items in the DropDownList.

@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Getting Started with ##Platform_Name## Message
 
-This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Message and demonstrate the basic usage of the Message control in a JavaScript application.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Message and demonstrates the basic usage of the Message component in a JavaScript application.
 
 ## Dependencies
 
-The list of dependencies required to use the Message component in your application is given below:
+The list of dependencies required to use the Message component in an application is given below:
 
 ```javascript
 |-- @syncfusion/ej2-notifications
@@ -26,9 +26,9 @@ The list of dependencies required to use the Message component in your applicati
 
 ## Setup for local environment
 
-Refer to the following steps to set up your local environment.
+Refer to the following steps to set up the local environment.
 
-**Step 1:** Create a root folder named **my-app** for your application.
+**Step 1:** Create a root folder named **my-app** for the application.
 
 **Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
 
@@ -73,7 +73,7 @@ Now, start adding the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Messa
     <div id="msg"></div>
 </body>
 <script>
-    var msgObj = new ej.notfications.Message({
+    var msgObj = new ej.notifications.Message({
         content: "Please read the comments carefully"
     });
     msgObj.appendTo("#msg");

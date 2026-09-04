@@ -11,21 +11,17 @@ domainurl: ##DomainURL##
 
 # Finetune in ##Platform_Name## Image Editor
 
-Fine-tuning involves making precise adjustments to the settings of an image filter in order to achieve a specific desired effect. It provides control over the intensity and specific aspects of the filter's impact on the image. For example, fine-tuning allows you to modify parameters like brightness, saturation, or other relevant properties to fine-tune the level or quality of the filter's effect. This level of control enables you to achieve the exact look or outcome you want for your image.
+Fine-tuning involves making precise adjustments to an image's settings to achieve a desired effect. It provides control over the intensity and specific aspects of the adjustments applied to the image. For example, fine-tuning allows you to modify properties like brightness and saturation to fine-tune the level or quality of the effect. The available fine-tune options include `Brightness`, `Contrast`, `Saturation`, `Hue`, `Exposure`, `Blur`, and `Opacity`.
 
 ## Adjust the brightness, contrast, and saturation
 
-The [`finetuneImage`](https://ej2.syncfusion.com/documentation/api/image-editor/index-default#finetuneImage) method is designed to facilitate fine-tuning operations on an image. It accepts two parameters: the first parameter is [`ImageFinetuneOption`](https://ej2.syncfusion.com/documentation/api/image-editor/imageFinetuneOption) which determines the type of fine-tuning to be applied (brightness, contrast, and saturation), and the second parameter represents the fine-tuning value, indicating the degree or intensity of the adjustment. This method allows for convenient adjustment of brightness, contrast, and saturation by specifying the desired type and corresponding value.
+The [`finetuneImage`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#finetuneimage) method is used to fine-tune an image. It accepts two parameters: the first parameter is an [`ImageFinetuneOption`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/imagefinetuneoption) value that determines the type of fine-tuning to be applied (`brightness`, `contrast`, or `saturation`), and the second parameter represents the fine-tuning value, indicating the degree or intensity of the adjustment. This method allows for convenient adjustment of brightness, contrast, and saturation by specifying the desired type and corresponding value. The method returns `void`.
 
-The `finetuneImage` method is used to perform brightness, contrast, and saturation fine-tuning by specifying this type as a first parameter and specifying the fine-tuning value as the second parameter of the method.
+* finetuneOption - Specifies the fine-tune option to apply to the image, as an [`ImageFinetuneOption`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/imagefinetuneoption) value.
 
-Here is an example of brightness, contrast, and saturation fine-tuning using the `finetuneImage` method.
+* value - Specifies the fine-tune value (number) to apply for the selected fine-tune option.
 
-* finetuneOption - Specifies the finetune options to be performed in the image.
-
-* value - Specifies the finetune value for the image.
-
-In the following example, you can using the finetuneImage method in the button click event.
+In the following example, the `finetuneImage` method is used in the button click event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -56,15 +52,13 @@ In the following example, you can using the finetuneImage method in the button c
 
 ## Adjust the hue, exposure, blur, and opacity
 
-The [`finetuneImage`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#finetuneImage) method is designed to facilitate fine-tuning operations on an image. It accepts two parameters: the first parameter is [`ImageFinetuneOption`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/imageFinetuneOption) which determines the type of fine-tuning to be applied (hue, exposure, blur, and opacity), and the second parameter represents the fine-tuning value, indicating the degree or intensity of the adjustment. This method allows for convenient adjustment of hue, exposure, blur, and opacity by specifying the desired type and corresponding value.
+The [`finetuneImage`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#finetuneimage) method is used to fine-tune an image. It accepts two parameters: the first parameter is an [`ImageFinetuneOption`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/imagefinetuneoption) value that determines the type of fine-tuning to be applied (`hue`, `exposure`, `blur`, or `opacity`), and the second parameter represents the fine-tuning value, indicating the degree or intensity of the adjustment. This method allows for convenient adjustment of hue, exposure, blur, and opacity by specifying the desired type and corresponding value. The method returns `void`.
 
-Here is an example of hue, exposure, blur, and opacity fine-tuning using the `finetuneImage` method. 
+* finetuneOption - Specifies the fine-tune option to apply to the image, as an [`ImageFinetuneOption`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/imagefinetuneoption) value.
 
-* finetuneOption - Specifies the finetune options to be performed in the image.
+* value - Specifies the fine-tune value (number) to apply for the selected fine-tune option.
 
-* value - Specifies the finetune value for the image.
-
-In the following example, you can using the finetuneImage method in the button click event.
+In the following example, the `finetuneImage` method is used in the button click event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -95,12 +89,12 @@ In the following example, you can using the finetuneImage method in the button c
 
 ## Finetune value changing event
 
-The [`finetuneValueChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#finetuneValueChanging) event is triggered when performing fine-tuning on the image. This event is passed an object that contains information about the finetune event, such as the type of fine-tuning and the value of fine-tuning performed.
+The [`finetuneValueChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#finetunevaluechanging) event is triggered when performing fine-tuning on the image. The event argument provides details about the fine-tuning being applied, such as the type of fine-tuning and the value being applied.
 
-The parameter available in the [`FinetuneEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#FinetuneEventArgs) event is, 
+The [`FinetuneEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#finetuneeventargs) provides the following parameters:
 
-FinetuneEventArgs.finetune - The type of fine-tuning as [`ImageFinetuneOption`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#ImageFinetuneOption) to be applied in the image editor. 
+* FinetuneEventArgs.finetune - Specifies the type of fine-tuning to be applied, as an [`ImageFinetuneOption`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#imagefinetuneoption) value.
 
-FinetuneEventArgs.value - The fine-tuning value to be applied in the image editor. 
+* FinetuneEventArgs.value - Specifies the fine-tuning value (number) to be applied to the image.
 
-FinetuneEventArgs.cancel – Specifies a boolean value to cancel the fine-tuning action.
+* FinetuneEventArgs.cancel - Specifies a boolean value that, when set to `true`, cancels the fine-tuning action.

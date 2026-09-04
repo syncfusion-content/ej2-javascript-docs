@@ -11,12 +11,12 @@ domainurl: ##DomainURL##
 
 # Filtering in ##Platform_Name## Query Builder UI
 
-Query Builder allows you to create or delete conditions and groups. You can use [`showButtons`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#showbuttons) to enable/disable these buttons.
+The Query Builder allows creating or deleting conditions and groups. Use [`showButtons`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#showbuttons) to enable or disable these buttons.
 
-You can create or delete conditions by interacting through the user interface and methods.
+Conditions and groups can be created or deleted through the user interface and methods.
 
-* Use the [`addRules`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#addrules), and [`deleteRules`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#deleterules) methods to create/delete conditions.
-* Use [`addGroups`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#addgroups), and [`deleteGroups`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#deletegroups) methods to create/delete groups.
+* Use the [`addRules`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#addrules) and [`deleteRules`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#deleterules) methods to create or delete conditions.
+* Use the [`addGroups`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#addgroups) and [`deleteGroups`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#deletegroups) methods to create or delete groups.
 
 {% if page.publishingplatform == "typescript" %}
 

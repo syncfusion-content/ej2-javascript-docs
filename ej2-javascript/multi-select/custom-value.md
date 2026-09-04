@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Custom Value in ##Platform_Name## MultiSelect Dropdown
 
-The MultiSelect allows user to add a new non-present option to the component value when [`allowCustomValue`](../api/multi-select/#allowcustomvalue) is enabled. while selecting the new custom value [`customValueSelection`](../api/multi-select/#customvalueselection) event will be triggered.
+The MultiSelect allows users to add a new option that is not already present in the component's value when [`allowCustomValue`](../api/multi-select#allowcustomvalue) is enabled. When a new custom value is selected, the [`customValueSelection`](../api/multi-select#customvalueselection) event is triggered.
 
-The following sample demonstrates configuration of custom value support with the MultiSelect component.
+The following sample demonstrates the custom value support configuration with the MultiSelect component.
 
 {% if page.publishingplatform == "typescript" %}
 

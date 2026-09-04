@@ -19,9 +19,13 @@ domainurl: ##DomainURL##
 
 ## Loading translations
 
-To load translation object in an application use `load` function of `L10n` class.
+To load a translation object in an application, use the `load` function of the `L10n` class. The locale keys for the Dialog are qualified under the `dialog` namespace, as shown in the table below.
 
-In the below sample, `French` culture is set to Dialog and change the close button's tooltip text.
+| Locale key (under `dialog` namespace) | en-US (default) |
+|------|------|
+| close | Close |
+
+In the below sample, the `French` culture (`fr-BE`) is set to the Dialog and changes the close button's tooltip text to "Fermer".
   
 {% if page.publishingplatform == "typescript" %}
 

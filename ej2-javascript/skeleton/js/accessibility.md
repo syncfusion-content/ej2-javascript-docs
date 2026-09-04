@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## Skeleton
 
-The Skeleton control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Skeleton control follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Skeleton control is outlined below.
 
@@ -41,11 +41,11 @@ The accessibility compliance for the Skeleton control is outlined below.
 
 ## WAI-ARIA attributes
 
-The Skeleton control followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Skeleton control:
+The Skeleton control follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet accessibility requirements. The following ARIA attributes are used in the Skeleton control:
 
 | Properties | Functionality |
 | ------------ | ----------------------- |
-| `role=alert` | Used to convey important, time-sensitive or contextual message to the user. |
+| `role=alert` | Used to convey an important, time-sensitive, or contextual message. |
 | `aria-label` | Attribute provides the text label for the Skeleton. |
 | `aria-live` | Attributes which indicates the content changes which are not interactable are live regions. |
 | `aria-busy` | Set to true until loading is complete, then set to false. |

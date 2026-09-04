@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # How to enable autofill in ##Platform_Name## AutoComplete
 
-The AutoComplete supports the autofill behavior with the help of [`autofill`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#autofill) property. Whenever you change the input value, the AutoComplete will autocomplete your data by matching the typed character. Suppose, if no matches found then, AutoComplete doesn't suggest any item.
+The AutoComplete supports the autofill behavior with the help of [`autofill`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#autofill) property. Whenever you change the input value, the AutoComplete will autocomplete your data by matching the typed character. If no matches are found, the AutoComplete does not suggest any item.
 
-In the below sample, showcase that how to work `autofill` with AutoComplete.
+The following sample demonstrates how to use the `autofill` property with the AutoComplete.
 
 {% if page.publishingplatform == "typescript" %}
 

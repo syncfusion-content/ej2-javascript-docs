@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to customize tab scroll step in ##Platform_Name## Tab
 
-The Tab control supports customizing the scrolling distance when you click the left and right side navigation icons. You can customize the [`ScrollStep`](../../api/toolbar/item#scrollstep) property to adjust the scrolling distance. Refer to the following code example:
+The Tab control supports customizing the scrolling distance when you click the left and right navigation icons. You can customize the [`ScrollStep`](../../api/toolbar/item#scrollstep) property to adjust the scrolling distance. Refer to the following code example:
 
 * Use the Tab's [`ScrollStep`](../../api/toolbar/item#scrollstep) property to set the desired value for customizing the tab scroll step.
 

@@ -11,16 +11,16 @@ domainurl: ##DomainURL##
 
 # How to apply CSSClass in ##Platform_Name## DateRangePicker
 
-To customize UI, you can make use of [`cssClass`](../../api/daterangepicker#cssclass) that will be added to the DateRangePicker component as the root CSS class. With this CSS class, you can override existing styles of DateRangePicker.
+To customize the UI, the [`cssClass`](../../api/daterangepicker#cssclass) can be used, which will be added to the DateRangePicker component as the root CSS class. With this CSS class, the existing styles of the DateRangePicker can be overridden.
 
-Following is the list of classes that provides flexible way to customize the DateRangePicker component.
+The following is the list of classes that provide a flexible way to customize the DateRangePicker component.
 
 | **Class Name** | **Description** |
 | --- | --- |
 | e-date-range-wrapper | Applied to DateRangePicker wrapper. |
 | e-range-icon | Applied to DateRangePicker icon. |
 | e-popup | Applied to DateRangePicker popup wrapper.|
-| e-calendar | Applied to both Calendar element. |
+| e-calendar | Applied to both Calendar elements. |
 | e-right-calendar | Applied to right Calendar element. |
 | e-left-calendar | Applied to left Calendar element. |
 | e-start-label | Applied to start label in a popup. |
@@ -42,7 +42,7 @@ Following is the list of classes that provides flexible way to customize the Dat
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/daterangepicker/customcss-cs1/index.ts %}
 {% endhighlight %}

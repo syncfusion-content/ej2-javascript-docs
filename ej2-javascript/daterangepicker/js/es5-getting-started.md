@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## DateRangePicker | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Daterangepicker control of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Es5 getting started with ##Platform_Name## DateRangePicker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -15,7 +15,7 @@ This section explains the steps required to create a simple Essential<sup style=
 
 ## Dependencies
 
-The list of dependencies required to use the DateRangePicker component in your application is given below:
+The list of dependencies required to use the DateRangePicker component in an application is given below:
 
 ```javascript
 |-- @syncfusion/ej2-calendars
@@ -49,7 +49,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 DateRangePicker control
 
 **Step 1:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
-**Step 2:** To render DateRangePicker component, need to add DateRangePicker and its dependent packages from below installed location.
+**Step 2:** To render the DateRangePicker component, need to add the DateRangePicker and its dependent packages from below installed location.
 
 #### Dependencies
 
@@ -117,7 +117,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 DateRangePicker control
 
 > If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
-**Step 5:** Now, add the `input` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 DateRangePicker** component in the `index.html` by using following code
+**Step 5:** Now, add the `input` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 DateRangePicker** component in the `index.html` by using the following code
 
 ```html
 <!DOCTYPE html>
@@ -146,10 +146,10 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 DateRangePicker control
     <!-- Add the HTML <input> element  -->
     <input id="element" />
     <script>
-        // initialize button component
+        // initialize DateRangePicker component
         var DateRangePicker = new ej.calendars.DateRangePicker();
 
-        // Render initialized button.
+        // Render initialized DateRangePicker.
         DateRangePicker.appendTo('#element')
     </script>
 </body>
@@ -180,7 +180,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 DateRangePicker control
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Essential JS 2 Calendar Component</title>
+    <title>Essential JS 2 DateRangePicker Component</title>
     <!-- Essential JS 2 DateRangePicker's dependent material theme -->
     <link href="//cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
     <link href="//cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />

@@ -11,8 +11,8 @@ domainurl: ##DomainURL##
 
 # How to prevent closing of modal Dialog in ##Platform_Name## Dialog
 
-You can prevent closing of modal dialog by setting the [beforeClose](https://ej2.syncfusion.com/documentation/api/dialog/index-default#beforeclose) event argument cancel value to true.
-In the following sample, the dialog is closed when you enter the username value with minimum 4 characters. Otherwise, it will not be closed.
+You can prevent the closing of a modal Dialog by setting the [beforeClose](https://ej2.syncfusion.com/documentation/api/dialog/index-default#beforeclose) event argument's `cancel` value to `true`. Note that the `args` parameter is of type `BeforeCloseEventArgs`, whose `cancel` property controls whether the Dialog closes; this approach works for both modal and non-modal Dialogs.
+In the following sample, the Dialog is closed when you enter a username value with a minimum of 4 characters and a non-empty password. Otherwise, it will not be closed.
 
 {% if page.publishingplatform == "typescript" %}
 

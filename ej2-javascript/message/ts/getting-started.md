@@ -17,7 +17,7 @@ This section explains the steps required to create a simple [JavaScript Message]
 
 ## Prerequisites
 
-Ensure the following tools are installed on your machine:
+Ensure the following tools are installed on the machine:
 
 * [Git](https://git-scm.com/downloads)
 * [Node.js](https://nodejs.org/en/)
@@ -39,7 +39,7 @@ cd ej2-quickstart
 
 ## Install Syncfusion<sup style="font-size:70%">&reg;</sup> Message package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. All Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls can be installed in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
 Use the following command to install the `@syncfusion/ej2-notifications` package:
 
@@ -57,7 +57,7 @@ npm install
 
 ## Import Syncfusion<sup style="font-size:70%">&reg;</sup> Message CSS styles
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes, which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
 
 The quickstart application is preconfigured to use the `Fluent2` theme. To install the [Fluent2](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) theme package, use the following command:
 
@@ -83,9 +83,9 @@ The required styles are imported in the `~/src/styles/styles.css` file, as shown
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Message control to the application
 
-Open the application in Visual Studio Code and add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls. 
+Open the application in Visual Studio Code and add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls.
 
-In this article, the Message control is used as an example. Add the following element to the `~/src/index.html` file.
+In this article, the Message control is used as an example. Add the Message element to the `~/src/index.html` file.
 
 ```html
 <!DOCTYPE html>
@@ -105,10 +105,11 @@ In this article, the Message control is used as an example. Add the following el
 </html>
  ```
 
-To render the Message control, add the following JavaScript code to the `~/src/app/app.ts` file
+To render the Message control, add the following TypeScript code to the `~/src/app/app.ts` file.
 
 ```ts
-import { Message } from '@syncfusion/ej2-notifications'
+import { Message } from '@syncfusion/ej2-notifications';
+
 let msgObj: Message = new Message({
     content: 'Please read the comments carefully'
 });
@@ -125,4 +126,4 @@ npm start
           
 {% previewsample "page.domainurl/code-snippet/message/getting-started-cs1" %}
 
-N> You can also explore our [JavaScript Message example](https://ej2.syncfusion.com/demos/#/bootstrap5/message/default.html) that shows you how to render the Message in JavaScript.
+N> Explore the [JavaScript Message example](https://ej2.syncfusion.com/demos/#/bootstrap5/message/default.html) that shows how to render the Message control in JavaScript.

@@ -11,43 +11,43 @@ domainurl: ##DomainURL##
 
 # Redact in ##Platform_Name## Image Editor
 
-The redact feature in an Image Editor is a valuable tool that empowers users to conceal sensitive information by applying blur or pixel effects to specific areas of an image. This feature is particularly valuable for protecting privacy and complying with data protection regulations, making it easier to securely share images without compromising sensitive information.
+The redact feature in the Image Editor lets you conceal sensitive information by applying blur or pixelate effects to specific areas of an image. This is useful for protecting privacy and complying with data protection regulations when sharing images that contain sensitive content.
 
-## Apply redact to the image
+## Apply a redact to the image
 
-The Image Editor control includes a [`drawRedact`](https://ej2.syncfusion.com/documentation/api/image-editor/index-default#drawRedact) method, which allows you to draw redaction on an image. This method takes six parameters that define how the redact should be carried out:
+The Image Editor control includes a [`drawRedact`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#drawredact) method, which allows you to draw a redaction on an image. This method takes the following parameters that define how the redaction is drawn:
 
-* type: Specifies the type of redaction to be drawn on the image such as blur or pixelate. If not specified, the redaction drawing is initiated with the default blur value.
+* type - Specifies the type of redaction to be drawn on the image, such as blur or pixelate. If not specified, the redaction is drawn with the default blur value.
 
-* x: Specifies x-coordinate of redaction. If not specified, the redaction drawing is initiated with the first parameter.
+* x - Specifies the x-coordinate of the redaction. If not specified, the redaction is drawn starting at the default x position.
 
-* y: Specifies y-coordinate of redaction. If not specified it draws redaction from the center point of the image.
+* y - Specifies the y-coordinate of the redaction. If not specified, the redaction is drawn from the center point of the image.
 
-* width: Specifies the width of redaction. The default value is 100.
+* width - Specifies the width of the redaction. The default value is 100.
 
-* height: Specifies the height of redaction. The default value is 50.
+* height - Specifies the height of the redaction. The default value is 50.
 
-* value: Specifies the blur value for blur-type redaction or the pixel size for pixelate-type redaction. Defaults to 20 since the default redaction is blur.
+* value - Specifies the blur value for blur-type redaction, or the pixel size for pixelate-type redaction. Defaults to 20 because the default redaction type is blur.
 
-## Selecting a redact
+## Select a redact
 
-The Image Editor control includes a [`selectRedact`](https://ej2.syncfusion.com/documentation/api/image-editor/index-default#selectRedact) method, which allows you to select a redaction based on the given redaction id. Use [`getRedacts`](https://ej2.syncfusion.com/documentation/api/image-editor/index-default#getRedacts) method to get the redaction id which is then passed to perform selection. This method takes one parameter that define how the redact should be carried out:
+The Image Editor control includes a [`selectRedact`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#selectredact) method, which allows you to select a redaction based on the given redact id. Use the [`getRedacts`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getredacts) method to get the redact id, which is then passed to perform selection. This method takes the following parameter:
 
-* id: Specifies the shape id to select a redact on an image.
+* id - Specifies the redact id of the redaction to select on an image.
 
-## Deleting a redact
+## Delete a redact
 
-The Image Editor control includes a [`deleteRedact`](https://ej2.syncfusion.com/documentation/api/image-editor/index-default#deleteRedact) method, which allows you to delete a redaction based on the given redaction id. Use [`getRedacts`](https://ej2.syncfusion.com/documentation/api/image-editor/index-default#getRedacts) method to get the redaction id which is then passed to perform selection. This method takes one parameter that define how the redact should be carried out:
+The Image Editor control includes a [`deleteRedact`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#deleteredact) method, which allows you to delete a redaction based on the given redact id. Use the [`getRedacts`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getredacts) method to get the redact id, which is then passed to perform deletion. This method takes the following parameter:
 
-* id: Specifies the shape id to delete a redact on an image.
+* id - Specifies the redact id of the redaction to delete on an image.
 
-## Updating a redact
+## Update a redact
 
-The Image Editor control includes a [`updateRedact`](https://ej2.syncfusion.com/documentation/api/image-editor/index-default#updateRedact) method, which allows you to update the existing redacts by changing its height, width, blur, and pixel size in the component. Use [`getRedacts`](https://ej2.syncfusion.com/documentation/api/image-editor/index-default#getRedacts) method to get the redacts which is then passed to change the options of a redacts. This method takes two parameters that define how the redact should be carried out:
+The Image Editor control includes an [`updateRedact`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#updateredact) method, which allows you to update existing redactions by changing their height, width, blur, and pixel size. Use the [`getRedacts`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getredacts) method to get the redactions, which are then passed to change the options of a redaction. This method takes the following parameters:
 
-* setting: Specifies the redact settings to be updated for the shape on an image.
+* setting - Specifies the redact settings to be updated for the redaction on an image. The returned objects from [`getRedacts`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getredacts) are used to identify the redact id for `selectRedact`, `deleteRedact`, and `updateRedact`.
 
-* isSelected: Specifies to show the redacts in the selected state.
+* isSelected - Specifies whether to show the redactions in the selected state.
 
 ## Getting redacts
 

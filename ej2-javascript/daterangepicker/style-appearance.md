@@ -15,7 +15,7 @@ The following content provides the exact CSS structure that can be used to modif
 
 ## Customizing the appearance of DateRangePicker wrapper element
 
-Use the following CSS to customize the appearance like height and font size of the wrapper element.
+Use the following CSS to customize the appearance such as height and font size of the wrapper element.
 
 ```
 /* To specify height and font size */
@@ -158,7 +158,7 @@ Use the following CSS to customize the selected date cell grid in the DateRangeP
 
 ## Full screen mode support in mobiles and tablets
 
-The DateRangePicker component's full-screen mode feature enables users to view the component popup element in full-screen mode on mobile devices with improved visibility and a better user experience. It is important to mention that this feature is exclusively available for mobile and tablet devices in both landscape and portrait orientations. To activate the full screen mode within the DateRangePicker component, simply set the [fullScreenMode](../api/daterangepicker#fullScreenMode) API value to `true`. This action will extend the calendar and presets popup element to occupy the entire screen on mobile devices.
+The DateRangePicker component's full-screen mode feature enables the popup element to be viewed in full-screen mode on mobile devices with improved visibility and a better experience. This feature is exclusively available for mobile and tablet devices in both landscape and portrait orientations. To activate the full screen mode within the DateRangePicker component, set the [fullScreenMode](../api/daterangepicker#fullScreenMode) API value to `true`. This action will extend the calendar and presets popup element to occupy the entire screen on mobile devices.
 
 ```typescript
 import { DateRangePicker } from '@syncfusion/ej2-calendars';

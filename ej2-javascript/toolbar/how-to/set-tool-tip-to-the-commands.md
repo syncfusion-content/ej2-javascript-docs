@@ -13,9 +13,9 @@ domainurl: ##DomainURL##
 
 The [`tooltipText`](../../api/toolbar/item#tooltiptext) property of the Toolbar item is used to set the HTML Tooltip for the commands that can be viewed as hint texts on mouse hover.
 
-To change the [`tooltipText`](../../api/toolbar/item#tooltiptext) to ej2-tooltip component:
+To use the [`tooltipText`](../../api/toolbar/item#tooltiptext) with the ej2-tooltip component:
 
-* Import the `Tooltip` module from `ej2-popups`, and initialize the Tooltip with the Toolbar target. Refer to the following code example:
+* Import the `Tooltip` module from `ej2-popups`, and initialize the Tooltip with the Toolbar target inside the Toolbar's `created` event. Refer to the following code example:
 
 {% if page.publishingplatform == "typescript" %}
 

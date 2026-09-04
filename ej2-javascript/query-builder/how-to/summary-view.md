@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to show summary view in ##Platform_Name## Query Builder UI
 
-Summary view allows you to show or hide the filtered query. By default, the value is false. You can enable this feature by setting the [`summaryView`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#summaryview) property to true.
+The summary view shows a compact preview of the filtered query. By default, the value is false. This feature can be enabled by setting the [`summaryView`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#summaryview) property to true.
 
 {% if page.publishingplatform == "typescript" %}
 

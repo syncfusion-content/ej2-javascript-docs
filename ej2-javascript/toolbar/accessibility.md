@@ -11,14 +11,14 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## Toolbar
 
-The [JavaScript Toolbar](https://www.syncfusion.com/javascript-ui-controls/js-toolbar) control has been designed,  keeping in mind the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/) specifications, and applying the WAI-ARIA roles, states, and properties along with keyboard support for people who use assistive devices. WAI-ARIA accessibility support is achieved through attributes like `aria-label`, and `aria-orientation`, It provides information about elements in a document for assistive technology.  The control implements keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices/), and has been tested in major screen readers.
+The [JavaScript Toolbar](https://www.syncfusion.com/javascript-ui-controls/js-toolbar) control has been designed,  keeping in mind the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar) specifications, and applying the WAI-ARIA roles, states, and properties along with keyboard support for people who use assistive devices. WAI-ARIA accessibility support is achieved through attributes like `aria-label`, and `aria-orientation`, It provides information about elements in a document for assistive technology.  The control implements keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices), and has been tested in major screen readers.
 
 The accessibility compliance for the Toolbar control is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Section 508](https://www.section508.gov/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| [Section 508](https://www.section508.gov) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Screen Reader Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Right-To-Left Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Color Contrast | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
@@ -42,16 +42,16 @@ The accessibility compliance for the Toolbar control is outlined below.
 
 ## ARIA attributes
 
-Toolbar control is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/) standard. Toolbar is supported with ARIA Accessibility which is accessible by on-screen readers, and other assistive technology devices. The following list of attributes are added in the Toolbar.
+Toolbar control is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar) standard. Toolbar is supported with ARIA Accessibility which is accessible by on-screen readers, and other assistive technology devices. The following list of attributes are added in the Toolbar.
 
 | **Property** | **Functionalities** |
 | --- | --- |
-| role="toolbar" | Attribute is set to the ToolBar element describes the actual role of the element. |
-| aria-orientation |  Attribute is set to the ToolBar element to indicates the ToolBar orientation. Default value is `horizontal`. |
-| aria-label | Attribute is set to ToolBar element describes the purpose of the set of toolbar. |
-| aria-expanded | Attribute is set to the ToolBar Popup  element to indicates the expanded state of the popup.|
-| aria-haspopup | Attribute is set to the popup element to indicates the popup mode of the Toolbar. Default value is false. When popup mode is enabled, attribute value has to be changed to `true`. |
-| aria-disabled | Attribute set to the ToolBar element to indicates the disabled state of the ToolBar. |
+| role="toolbar" | Attribute is set to the ToolBar element, which describes the actual role of the element. |
+| aria-orientation |  Attribute is set to the ToolBar element to indicate the ToolBar orientation. Default value is `horizontal`. |
+| aria-label | Attribute is set to the ToolBar element, which describes the purpose of the set of toolbar. |
+| aria-expanded | Attribute is set to the ToolBar Popup element to indicate the expanded state of the popup.|
+| aria-haspopup | Attribute is set to the popup element to indicate the popup mode of the Toolbar. Default value is false. When popup mode is enabled, attribute value has to be changed to `true`. |
+| aria-disabled | Attribute set to the ToolBar element to indicate the disabled state of the ToolBar. |
 
 ## Keyboard interaction
 

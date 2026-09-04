@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 You can integrate the context menu with the TreeView control to perform tree view related operations such as adding, removing, and renaming a node.
 
-The following example demonstrates how to manipulate tree view operations in the [`select`](../../api/context-menu#select)  event of the context menu.
+The following example demonstrates how to manipulate tree view operations in the [`select`](../../api/context-menu#select) event of the context menu.
 
 {% if page.publishingplatform == "typescript" %}
 

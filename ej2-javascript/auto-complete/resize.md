@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Resizing in ##Platform_Name## AutoComplete
 
-You can dynamically adjust the size of the popup in the Autocomplete component by using the [AllowResize](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#allowresize) property. When enabled, users can resize the popup, improving visibility and control, with the resized dimensions being retained across sessions for a consistent user experience.
+You can dynamically adjust the size of the popup in the AutoComplete component by using the [`allowResize`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#allowresize) property. When enabled, users can resize the popup, and the resized dimensions are retained across sessions for a consistent user experience.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -24,6 +24,7 @@ You can dynamically adjust the size of the popup in the Autocomplete component b
 {% endhighlight %}
 {% endtabs %}
 
+{% previewsample "page.domainurl/code-snippet/autocomplete/basic-cs12" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -36,6 +37,7 @@ You can dynamically adjust the size of the popup in the Autocomplete component b
 {% endhighlight %}
 {% endtabs %}
 
+{% previewsample "page.domainurl/code-snippet/autocomplete/basic-cs12" %}
 
 {% endif %}
 

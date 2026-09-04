@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # How to filter by text and value in ##Platform_Name## AutoComplete
 
-The AutoComplete data can be filtered based on both text and value fields using `predicate` of dataManager through filtering event. The filtered data can be again updated through `updateData` method.
+The AutoComplete data can be filtered based on both text and value fields using the `predicate` of `DataManager` through the filtering event. The filtered data can then be updated using the `updateData` method.
 
-In the following example, filtering is done based on text and value fields.
+In the following example, filtering is performed based on the text and value fields.
 
 {% if page.publishingplatform == "typescript" %}
 

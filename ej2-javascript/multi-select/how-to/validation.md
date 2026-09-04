@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Validation in ##Platform_Name## MultiSelect Dropdown
 
-MultiSelect component inside form can be validated through `FormValidator`. Add the name attribute of component to be validated inside rules of FormValidator. Error message after validation can be placed in DOM based on the requirement through customPlacement.
+The MultiSelect component inside a form can be validated using `FormValidator`. Add the `name` attribute of the component to be validated in the rules of the `FormValidator`. The error message after validation can be placed in the DOM based on the requirement using `customPlacement`.
 
-In the following sample, validation is added for MultiSelect component.
+In the following sample, validation is added for the MultiSelect component.
 
 {% if page.publishingplatform == "typescript" %}
 

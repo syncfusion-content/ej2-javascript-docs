@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to add nested tabs in ##Platform_Name## Tab
 
-The Tab control supports rendering nested levels of tabs using the [`content`](../../api/tab/tabItemModel/#content) property. You can add nested Tab elements inside the parent Tab's `content` property. To render the nested Tab, initialize the component using the id of the Tab from a [`selected`](../../api/tab#selected) event handler.
+The Tab control supports rendering nested levels of tabs using the [`content`](../../api/tab/tabItemModel#content) property. You can add nested Tab elements inside the parent Tab's `content` property. To render the nested Tab, initialize the component within the [`selected`](../../api/tab#selected) event handler using the Tab element ID.
 
 Here's an example of how to create nested tabs:
 

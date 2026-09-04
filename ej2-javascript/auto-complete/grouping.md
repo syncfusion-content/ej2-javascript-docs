@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The AutoComplete supports wrapping nested elements into a group based on different categories. The category of each list item can be mapped through the [groupBy](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#fields) field in the data table. The group header is displayed as both inline and fixed headers. The fixed group header content is updated dynamically on scrolling the suggestion list with its category value.
 
-In the following sample, vegetables are grouped according on its category using `groupBy` field.
+In the following sample, vegetables are grouped according to their category using the `groupBy` field.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,8 +44,8 @@ In the following sample, vegetables are grouped according on its category using 
 
 ## Customization
 
-The grouping header is also provided with customization option. This allows custom designing using the [groupTemplate](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#grouptemplate) property for both inline and fixed headers as referred here:
+The grouping header can also be customized for both inline and fixed headers using the [groupTemplate](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#grouptemplate) property.
 
 ## See Also
 
-* [Group Template support to AutoComplete](./templates#group-template).
+* [Group Template support in the AutoComplete](./templates#group-template).

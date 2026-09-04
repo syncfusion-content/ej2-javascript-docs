@@ -11,10 +11,9 @@ domainurl: ##DomainURL##
 
 # Customization in ##Platform_Name## DatePicker
 
-You can customize the  entire appearance of the input element and Calendar by using custom [`cssClass`](../api/datepicker#cssclass) property.
-and also you can use the calendar's [`renderDayCell`](../api/datepicker/renderDayCellEventArgs#renderdaycelleventargs) event to customize the appearance of the each day cell.
+The entire appearance of the input element and Calendar can be customized by using the [`cssClass`](../api/datepicker#cssclass) property. The calendar's [`renderDayCell`](../api/datepicker/renderDayCellEventArgs#renderdaycelleventargs) event can also be used to customize the appearance of each day cell.
 
-Below is the list of classes that provides flexible way to customize the DatePicker component.
+The following is the list of classes that provide a flexible way to customize the DatePicker component.
 
 | **Class Name** | **Description** |
 | --- | --- |
@@ -35,11 +34,11 @@ Below is the list of classes that provides flexible way to customize the DatePic
 | e-selected | Applied to Calendar selected dates.|
 | e-disabled | Applied to Calendar disabled dates.|
 
-The following example disables the weekends of every month using `renderDayCell` event. Here we have used the `e-disabled` class to highlight the disabled date.
+The following example disables the weekends of every month using the `renderDayCell` event. Here, the `e-disabled` class is used to highlight the disabled date.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datepicker/customization-cs1/index.ts %}
 {% endhighlight %}
@@ -66,11 +65,11 @@ The following example disables the weekends of every month using `renderDayCell`
 
 ## Adding mandatory asterisk to placeholder and float label
 
-You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e-input-group.e-control-wrapper.e-float-input .e-float-text::after</b> class.
+A mandatory `asterisk(*)` can be added to the placeholder and float label using the <b>.e-input-group.e-control-wrapper.e-float-input .e-float-text::after</b> class.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datepicker/asterisk-cs1/index.ts %}
 {% endhighlight %}

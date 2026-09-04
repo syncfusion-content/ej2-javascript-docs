@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## DateRangePicker
 
-The DateRangePicker component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The DateRangePicker component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the DateRangePicker component is outlined below.
 
@@ -41,40 +41,40 @@ The accessibility compliance for the DateRangePicker component is outlined below
 
 ## WAI-ARIA attributes
 
-The web accessibility makes web content and web applications more accessible for people with disabilities. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies. DateRangePicker provides built-in compliance with [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA support is achieved through the attributes like `aria-expanded`, `aria-disabled`, and `aria-activedescendant` applied as an input element.
+Web accessibility makes web content and web applications more accessible for people with disabilities. It especially helps in dynamic content changes and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies. The DateRangePicker provides built-in compliance with [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA support is achieved through the attributes like `aria-expanded`, `aria-disabled`, and `aria-activedescendant` applied to the input element.
 
-To know about the accessibility of Calendar, refer to the Calendar's [Accessibility](../calendar/accessibility/) section.
+To know about the accessibility of Calendar, refer to the Calendar's [Accessibility](../calendar/accessibility) section.
 
-It helps people with disabilities by providing information about the widget for assistive technology in the screen readers. DateRangePicker component contains grid role and grid cell for each day cell.
+These attributes help provide information about the widget for assistive technology in the screen readers. The DateRangePicker component contains grid role and grid cell for each day cell.
 
-* **Aria-expanded**: Indicates the currently selected date of the DateRangePicker component.
+* **Aria-expanded**: Indicates the state of a collapsible element of the DateRangePicker component.
 
-* **Aria-disabled**:  Indicates the disabled state of the DateRangePicker component.
+* **Aria-disabled**: Indicates the disabled state of the DateRangePicker component.
 
-## Keyboard Interaction
+## Keyboard interaction
 
-Use the below keys to interact with the DateRangePicker.
-This component implements the keyboard navigation support by following the  [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+The following keys can be used to interact with the DateRangePicker.
+This component implements the keyboard navigation support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
 
 It supports the following list of shortcut keys:
 
-Input Navigation
+**Input Navigation**
 
-Before opening the popup, use the following list of keys to control the popup element.
+Before opening the popup, the following list of keys can be used to control the popup element.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Alt +  Down Arrow</kbd> | Opens the popup. |
-| <kbd>Alt +  Up Arrow</kbd> | Closes the popup.|
+| <kbd>Alt + Down Arrow</kbd> | Opens the popup. |
+| <kbd>Alt + Up Arrow</kbd> | Closes the popup. |
 | <kbd>Esc</kbd> | Closes the popup. |
 
-Calendar Navigation
+**Calendar Navigation**
 
-Use the following list of keys to navigate the currently focused Calendar after the popup has opened.
+The following list of keys can be used to navigate the currently focused Calendar after the popup has opened.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Upper Arrow</kbd>  | Focuses the same day of the previous week. |
+| <kbd>Up Arrow</kbd>  | Focuses the same day of the previous week. |
 | <kbd>Down Arrow</kbd>  | Focuses the same day of the next week. |
 | <kbd>Left Arrow</kbd>  | Focuses the day before. |
 | <kbd>Right Arrow</kbd>  | Focuses the next day. |
@@ -87,14 +87,14 @@ Use the following list of keys to navigate the currently focused Calendar after 
 | <kbd>Shift + Page Down</kbd>  | Focuses the same date for the next year. |
 | <kbd>Control + Home</kbd>  | Focuses the first date of the current year. |
 | <kbd>Control + End</kbd>  | Focuses the last date of the current year. |
-| <kbd>Alt + Right</kbd>  | Focuses through out the pop-up container in forward direction. |
-| <kbd>Alt + Left</kbd>  | Focuses through out the pop-up container in backward direction. |
+| <kbd>Alt + Right</kbd>  | Focuses throughout the pop-up container in forward direction. |
+| <kbd>Alt + Left</kbd>  | Focuses throughout the pop-up container in backward direction. |
 
 > To focus the DateRangePicker component, use the `alt+t` keys.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs1/index.ts %}
 {% endhighlight %}
@@ -121,9 +121,9 @@ Use the following list of keys to navigate the currently focused Calendar after 
 
 ## Ensuring accessibility
 
-The DateRangePicker component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The accessibility levels of the DateRangePicker component are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the DateRangePicker component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/date-range-picker.html) in a new window to evaluate the accessibility of the DateRangePicker component with accessibility tools.
+The accessibility compliance of the DateRangePicker component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/date-range-picker.html) in a new window to evaluate the component's accessibility with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/date-range-picker.html" %}
 

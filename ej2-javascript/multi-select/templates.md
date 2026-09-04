@@ -11,14 +11,14 @@ domainurl: ##DomainURL##
 
 # Templates in ##Platform_Name## MultiSelect Dropdown
 
-The MultiSelect has been provided with several options to customize each list item, group title, selected value, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [Template engine](../common/template-engine) to compile and render the elements properly.
+The MultiSelect provides several options to customize each list item, group title, selected value, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [Template engine](../common/template-engine) to compile and render the elements properly.
 
 ## Item template
 
 The content of each list item within the MultiSelect can be customized with the help of [itemTemplate](../api/multi-select#itemtemplate)
 property.
 
-In the following sample, each list item is split into two columns to display relevant data's.
+In the following sample, each list item is split into two columns to display the relevant data.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -82,7 +82,7 @@ In the following sample, the selected value is displayed as a combined text of b
 
 ## Group template
 
-The group header title under which appropriate sub-items are categorized can also be customize with the help of [groupTemplate](../api/multi-select#grouptemplate) property. This template is common for both inline and floating group header template.
+The group header that categorizes the sub-items can also be customized with the help of the [`groupTemplate`](../api/multi-select#grouptemplate) property. This template is common for both inline and floating group headers.
 
 In the following sample, employees are grouped according to their city.
 
@@ -117,7 +117,7 @@ In the following sample, employees are grouped according to their city.
 
 The header element is shown statically at the top of the popup list items within the MultiSelect, and any custom element can be placed as a header element using the [headerTemplate](../api/multi-select#headertemplate) property.
 
-In the following sample, the list items and its headers are designed and displayed as two columns similar to multiple columns of the grid.
+In the following sample, the list items and their headers are designed and displayed as two columns similar to multiple columns of a grid.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -181,9 +181,9 @@ In the following sample, footer element displays the total number of list items 
 
 ## No records template
 
-The MultiSelect is provided with support to custom design the popup list content when no data is found and no matches found on search with the help of [noRecordsTemplate](../api/multi-select#norecordstemplate) property.
+The MultiSelect provides support to custom design the popup list content when no data is found or no matches are found on a search, with the help of the [`noRecordsTemplate`](../api/multi-select#norecordstemplate) property.
 
-In the following sample, popup list content displays the notification of no data available.
+In the following sample, the popup list content displays a notification indicating that no data is available.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -214,9 +214,9 @@ In the following sample, popup list content displays the notification of no data
 
 ## Action failure template
 
-There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the [actionFailureTemplate](../api/multi-select#actionfailuretemplate) property.
+There is also an option to custom design the popup list content when the data fetch request fails on the remote server. This can be achieved using the [`actionFailureTemplate`](../api/multi-select#actionfailuretemplate) property.
 
-In the following sample, when the data fetch request fails, the MultiSelect displays the notification.
+In the following sample, when the data fetch request fails, the MultiSelect displays a notification.
 
 {% if page.publishingplatform == "typescript" %}
 

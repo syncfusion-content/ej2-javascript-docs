@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # How to open popup on click in ##Platform_Name## DatePicker
 
-To open the DatePicker popup upon input click by using `show` method in the `focus` event.
+The DatePicker popup can be opened on input click by using the `show` method in the `focus` event.
 
-The following example demonstrates how to open the DatePicker popup upon focus the input.
+The following example demonstrates how to open the DatePicker popup on focusing the input.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datepicker/open-popup-cs1/index.ts %}
 {% endhighlight %}

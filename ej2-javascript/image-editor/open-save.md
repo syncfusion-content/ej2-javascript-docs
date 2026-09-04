@@ -13,13 +13,13 @@ domainurl: ##DomainURL##
 
 To import an image into the canvas, it must first be converted into a blob object. The Uploader component can be used to facilitate the process of uploading an image from the user interface. Once the image has been uploaded, it can then be converted into a blob and drawn onto the canvas.
 
-The getImageData method is used to get the image as ImageData and this can be loaded to our Image Editor control using the open method.
+The `getImageData` method is used to get the image as `ImageData`, and this can be loaded to the Image Editor control using the `open` method.
 
 ## Supported image formats
 
 The Image Editor control supports five common image formats: PNG, JPEG, SVG, WEBP, and BMP. These formats allow you to work with a wide range of image files within the Image Editor.
 
-When it comes to saving the edited image, the default file type is set as PNG. This means that when you save the edited image without specifying a different file type, it will be saved as a PNG file. However, it's important to note that the Image Editor typically provides options or methods to specify a different file type if desired. This allows you to save the edited image in formats other than the default PNG, such as JPEG, SVG, or WEBP, based on your specific requirements or preferences. 
+When it comes to saving the edited image, the default file type is set as PNG. This means that when you save the edited image without specifying a different file type, it will be saved as a PNG file. The Image Editor provides options and methods to specify a different file type if desired. This allows you to save the edited image in formats other than the default PNG, such as JPEG, SVG, or WEBP, based on your specific requirements or preferences. (BMP is supported for opening images but is not available for export.) 
 
 ## Open an image
 
@@ -60,7 +60,7 @@ Users can easily open local images in the Image Editor. Simply place the image i
 
 Users can easily open images in the Image Editor using a Base64-encoded string. This method allows you to load images directly from their Base64 representation, ensuring seamless integration and flexibility in your application. Simply pass the Base64 string to the `open` method, and the image will be loaded into the editor. 
 
-`Note:` You can obtain the Base64 representation of an image from the Image Editor using the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getimagedata) method. This process will be explained in the upcoming section. 
+> **Note:** You can obtain the Base64 representation of an image from the Image Editor using the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getimagedata) method. This process will be explained in the upcoming section. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -91,9 +91,9 @@ Users can easily open images in the Image Editor using a Base64-encoded string. 
 
 ### Open an image from Blob storage
 
-User can easily open images in the Image Editor from Blob storage. This method allows you to load images directly from Blob storage, ensuring seamless integration and flexibility in your application. Simply retrieve the image Blob from storage and pass it to the `open` method, and the image will be loaded into the editor. 
+Users can easily open images in the Image Editor from Blob storage. This method allows you to load images directly from Blob storage, ensuring seamless integration and flexibility in your application. Simply retrieve the image Blob from storage and pass it to the `open` method, and the image will be loaded into the editor. 
 
-`Note:` You can obtain the Blob URL representation of an image from the Image Editor using the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getimagedata) method. This process will be explained in the upcoming section. 
+> **Note:** You can obtain the Blob URL representation of an image from the Image Editor using the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getimagedata) method. This process will be explained in the upcoming section. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -124,7 +124,7 @@ User can easily open images in the Image Editor from Blob storage. This method a
 
 ### Open an image from File Uploader 
 
-User can easily open images in the Image Editor using a file uploader. This method allows users to upload an image file from their device and load it directly into the editor. Once the image is selected through the file uploader, pass the file to the `open` method, and the image will be seamlessly loaded into the editor. 
+You can easily open images in the Image Editor using a file uploader. This method allows users to upload an image file from their device and load it directly into the editor. Once the image is selected through the file uploader, pass the file to the `open` method, and the image will be seamlessly loaded into the editor. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -155,7 +155,7 @@ User can easily open images in the Image Editor using a file uploader. This meth
 
 ### Open an image from File Manager 
 
-User can easily open images in the Image Editor using the File Manager. This method allows you to browse and select an image file directly from the File Manager and load it into the editor. Once the image is selected, pass the file to the `open` method, and the image will be seamlessly loaded into the editor. 
+You can easily open images in the Image Editor using the File Manager. This method allows you to browse and select an image file directly from the File Manager and load it into the editor. Once the image is selected, pass the file to the `open` method, and the image will be seamlessly loaded into the editor. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -287,7 +287,7 @@ The following example showcases how all three behaviors can be achieved using th
 
 ## Save as image
 
-The [`export`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#export) method is used to save the modified image as an image, and it accepts a file name and file type as parameters. The file type parameter supports PNG, JPEG, SVG, WEBP and the default file type is PNG. It also saves an image by clicking the save button from the toolbar and the supported file types are PNG, JPEG, SVG, and WEBP. Users are allowed to save an image with a specified file name, file type, and image quality. This enhancement provides more control over the output, ensuring that users can save their work exactly as they need it.
+The [`export`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#export) method is used to save the modified image as an image, and it accepts the following parameters: a file name, a file type, and an optional image quality. The file type parameter supports PNG, JPEG, SVG, and WEBP, and the default file type is PNG. It also saves an image by clicking the save button from the toolbar, and the supported file types are PNG, JPEG, SVG, and WEBP. Users are allowed to save an image with a specified file name, file type, and image quality. This enhancement provides more control over the output, ensuring that users can save their work exactly as they need it.
 
 In the following example, the `export` method is used in the button click event.
 
@@ -318,9 +318,9 @@ In the following example, the `export` method is used in the button click event.
 {% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs8" %}
 {% endif %}
 
-### Save the image as base64 format
+### Save the image as base64
 
-To save an image as a base64 format, use the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getimagedata) method of the editor to retrieve the image data and convert it into a Data URL, which contains the base64-encoded string. By invoking the open method on the Syncfusion<sup style="font-size:70%">&reg;</sup> Image Editor instance, you can load this Data URL into the editor. The resulting base64 string can then be embedded directly in HTML or CSS or transmitted over data channels without requiring an external file. 
+To save an image as a base64 string, use the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getimagedata) method of the editor to retrieve the image data, then draw it onto a canvas and call `toDataURL()` to convert it into a Data URL, which contains the base64-encoded string. The resulting base64 string can then be embedded directly in HTML or CSS or transmitted over data channels without requiring an external file. You can later load this Data URL back into the Image Editor using the `open` method. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -349,7 +349,7 @@ To save an image as a base64 format, use the [`getImageData`](https://ej2.syncfu
 {% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs9" %}
 {% endif %} 
 
-### Save the image as byte[]
+### Save the image as a byte array
 
 To save an image as a byte array, use the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getimagedata) method of the editor to retrieve the image data and convert it into a byte array. You can then invoke the open method on the Syncfusion<sup style="font-size:70%">&reg;</sup> Image Editor instance to load this byte array into the editor. The resulting byte array can be stored in a database for data management and maintenance. 
 
@@ -381,7 +381,7 @@ To save an image as a byte array, use the [`getImageData`](https://ej2.syncfusio
 
 ### Save the image as Blob
 
-To save an image as a blob, use the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getimagedata) method of the editor to retrieve the image data and convert it into a blob. You can then invoke the `open` method on the Syncfusion<sup style="font-size:70%">&reg;</sup> Image Editor instance to load this byte array into the editor. The resulting byte array can be stored in a database for data management and maintenance. 
+To save an image as a blob, use the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getimagedata) method of the editor to retrieve the image data, draw it onto a canvas, and call `toDataURL()` to obtain a base64 Data URL. You can then convert that Data URL into a blob (for example, using `fetch` on the Data URL). The resulting blob can be stored in a database for data management and maintenance. You can later load this blob back into the Image Editor using the `open` method. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -412,7 +412,7 @@ To save an image as a blob, use the [`getImageData`](https://ej2.syncfusion.com/
 
 ### Add watermarks while saving the image 
 
-User can utilize the [`beforeSave`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#beforesave) event, which triggers just before the image is downloaded, to apply a text annotation as a watermark. After the image is downloaded, the [`saved`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#saved) event is triggered, allowing you to remove the watermark using the [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#deleteshape) method. This ensures that the watermark is only visible in the downloaded image and not in the editor. 
+You can utilize the [`beforeSave`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#beforesave) event, which triggers just before the image is downloaded, to apply a text annotation as a watermark. After the image is downloaded, the [`saved`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#saved) event is triggered, allowing you to remove the watermark using the [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#deleteshape) method. This ensures that the watermark is only visible in the downloaded image and not in the editor. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -443,37 +443,37 @@ User can utilize the [`beforeSave`](https://ej2.syncfusion.com/javascript/docume
 
 ### Remove default Save button and add custom button to save the image to server 
 
-User can leverage the [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#toolbar) property to replace the default save button with a custom one. By doing so, you can use the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getimagedata) method to retrieve the image data, convert it to base64 format, and then save it to the server. This approach gives you more control over the image-saving process. 
+You can leverage the [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#toolbar) property to replace the default save button with a custom one. By doing so, you can use the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getimagedata) method to retrieve the image data, convert it to base64 format, and then save it to the server. This approach gives you more control over the image-saving process. 
 
 ### Prevent default save option and save the image to specific location 
 
-User can make use of the [`beforeSave`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#beforesave) event, which triggers just before the image is downloaded, to override the default save option by setting `args.cancel` to true. Afterward, you can utilize the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getimagedata) method to retrieve the current image data and convert it into a format like `byte[]`, `blob`, or `base64` for further processing. This gives you greater flexibility in handling the image data. 
+You can make use of the [`beforeSave`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#beforesave) event, which triggers just before the image is downloaded, to override the default save option by setting `args.cancel` to `true`. Afterward, you can utilize the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#getimagedata) method to retrieve the current image data and convert it into a format like `byte[]`, `blob`, or `base64` for further processing. This gives you greater flexibility in handling the image data. 
 
 ## Events to handle save actions 
 
-The Image Editor provides several events related to opening and saving images. These events offer detailed control over the image handling process. For comprehensive information about these events, including their triggers and usage, please refer to the dedicated section on open and save support. This section will provide you with the specifics needed to effectively utilize these events in your application. 
+The Image Editor provides several events related to opening and saving images. These events offer detailed control over the image handling process and are described below. 
 
 ### File opened event
 
-The [`fileOpened`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#fileOpened) event is triggered in the Image Editor control after an image is successfully loaded. It provides the [`openEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#openEventArgs) as the event argument, which contains two specific arguments:
+The [`fileOpened`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#fileopened) event is triggered in the Image Editor control after an image is successfully loaded. It provides the [`openEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#openeventargs) as the event argument, which contains two specific arguments:
 
-[`fileName`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#fileName): This argument is a string that contains the file name of the opened image. It represents the name of the file that was selected or provided when loading the image into the Image Editor.
+[`fileName`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#filename): This argument is a string that contains the file name of the opened image. It represents the name of the file that was selected or provided when loading the image into the Image Editor.
 
-[`fileType`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#fileType): This argument is a string that contains the type of the opened image. It specifies the format or file type of the image that was loaded, such as PNG, JPEG, SVG, WEBP, or BMP.
+[`fileType`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#filetype): This argument is a string that contains the type of the opened image. It specifies the format or file type of the image that was loaded, such as PNG, JPEG, SVG, WEBP, or BMP.
 
 By accessing these arguments within the `fileOpened` event handler, you can retrieve information about the loaded image, such as its file name and file type. This can be useful for performing additional actions or implementing logic based on the specific image that was opened in the Image Editor control. 
 
 ### Saving event
 
-The [`saving`](https://helpej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#saving) event is triggered in the Image Editor control when an image is being saved to the local disk. It provides the [`SaveEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/saveEventArgs) as the event argument, which includes the following specific arguments: 
+The [`saving`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#saving) event is triggered in the Image Editor control when an image is being saved to the local disk. It provides the [`SaveEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/saveeventargs) as the event argument, which includes the following specific arguments: 
 
-[`fileName`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#fileName): This argument is a string that holds the file name of the saved image. It represents the name of the file that will be used when saving the image to the local disk.
+[`fileName`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#filename): This argument is a string that holds the file name of the saved image. It represents the name of the file that will be used when saving the image to the local disk.
 
-[`fileType`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#fileType): This argument is a string indicating the type or format of the saved image. It specifies the desired file type in which the image will be saved, such as PNG, JPEG, SVG, or WEBP.
+[`fileType`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#filetype): This argument is a string indicating the type or format of the saved image. It specifies the desired file type in which the image will be saved, such as PNG, JPEG, SVG, or WEBP.
 
-[`cancel`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#cancel): This argument is a boolean value that can be set to true in order to cancel the saving action. By default, it is set to false, allowing the saving process to proceed. However, if you want to prevent the saving action from occurring, you can set Cancel to true within the event handler.
+[`cancel`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#cancel): This argument is a boolean value that can be set to `true` in order to cancel the saving action. By default, it is set to `false`, allowing the saving process to proceed. However, if you want to prevent the saving action from occurring, you can set `cancel` to `true` within the event handler.
 
-By accessing these arguments within the Saving event handler, you can retrieve information about the file name and file type of the image being saved. Additionally, you have the option to cancel the saving action if necessary.
+By accessing these arguments within the `saving` event handler, you can retrieve information about the file name and file type of the image being saved. Additionally, you have the option to cancel the saving action if necessary.
 
 ### Created event
 

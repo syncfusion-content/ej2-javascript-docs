@@ -9,9 +9,10 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to create nested dialog in ##Platform_Name## Dialog
+# How to create nested Dialog in ##Platform_Name## Dialog
 
-A Dialog can be nested within another Dialog. The below sample contains parent and child Dialog (inner Dialog).
+A Dialog can be nested within another Dialog. The following steps and sample demonstrate a parent Dialog and a child (inner) Dialog. Key properties used in the sample include [target](https://ej2.syncfusion.com/documentation/api/dialog/index-default#target), [beforeOpen](https://ej2.syncfusion.com/documentation/api/dialog/index-default#beforeopen), and [closeOnEscape](https://ej2.syncfusion.com/documentation/api/dialog/index-default#closeonescape).
+
 
 **Step 1**:
 

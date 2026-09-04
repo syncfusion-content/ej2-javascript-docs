@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Localization in ##Platform_Name## Tab
 
-The localization library allows you to localize the default text content of the Tabs to different cultures using the [`locale`](../api/tab#locale) property. In the Tab control, only the close button's tooltip text will be localized based on the culture. The close button is shown on the tab header when the [`showCloseButton`](../api/tab#showclosebutton) property is enabled.
+The localization library allows you to localize the default text content of the Tab to different cultures using the [`locale`](../api/tab#locale) property. In the Tab control, only the close button's tooltip text is localized based on the culture. The close button is shown on the tab header when the [`showCloseButton`](../api/tab#showclosebutton) property is enabled.
 
 | Locale key | en-US (default)  |
 |------|------|
@@ -21,7 +21,7 @@ The localization library allows you to localize the default text content of the 
 
 To load a translation object in an application, use the `load` function of the `L10n` class.
 
-In the example below, the `French` culture is set for the Tab, which changes the close button's tooltip text.
+In the following example, the `French` culture is set for the Tab, which changes the close button's tooltip text.
 
 {% if page.publishingplatform == "typescript" %}
 

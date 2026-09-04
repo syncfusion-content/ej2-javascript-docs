@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to enable RTL in ##Platform_Name## Query Builder UI
 
-RTL provides an option to switch the text direction and layout of the Query Builder component from right-to-left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL, set the [`enableRtl`](https://ej2.syncfusion.com/documentation/right-to-left) to true.
+RTL provides an option to switch the text direction and layout of the Query Builder component from right-to-left. It improves the user experience and accessibility for right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL, set the [`enableRtl`](https://ej2.syncfusion.com/documentation/right-to-left) property to true.
 
 {% if page.publishingplatform == "typescript" %}
 

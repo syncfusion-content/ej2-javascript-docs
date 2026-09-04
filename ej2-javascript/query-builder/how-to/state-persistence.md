@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to maintain state persistence in ##Platform_Name## Query Builder UI
 
-State persistence allows you to maintain the current state in the browser’s `localStorage` even if the browser is refreshed or if you move to the next page within the browser. State persistence stores the Query Builder’s `rule` object in the local storage when the [`enablePersistence`](https://ej2.syncfusion.com/documentation/state-persistence) is defined to true.
+State persistence maintains the current state in the browser’s `localStorage` even if the browser is refreshed or moved to the next page within the browser. The Query Builder’s `rule` object is stored in the local storage when the [`enablePersistence`](https://ej2.syncfusion.com/documentation/state-persistence) property is set to true.
 
 {% if page.publishingplatform == "typescript" %}
 

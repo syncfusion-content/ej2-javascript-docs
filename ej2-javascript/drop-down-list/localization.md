@@ -11,8 +11,7 @@ domainurl: ##DomainURL##
 
 # Localization in ##Platform_Name## Dropdown List
 
-The Localization library allows you to localize static text content of the [noRecordsTemplate](../api/drop-down-list/#norecordstemplate)
-and [actionFailureTemplate](../api/drop-down-list/#actionfailuretemplate) &nbsp;properties according to the culture currently assigned to the DropDownList.
+The Localization library allows you to localize the static text content displayed by the [`noRecordsTemplate`](../api/drop-down-list#norecordstemplate) and [`actionFailureTemplate`](../api/drop-down-list#actionfailuretemplate) properties according to the culture currently assigned to the DropDownList.
 
 | Locale key | en-US (default)  |
 |------|------|
@@ -21,9 +20,9 @@ and [actionFailureTemplate](../api/drop-down-list/#actionfailuretemplate) &nbsp;
 
 ## Loading translations
 
-To load translation object to your application, use load function of the **L10n** class.
+To load a translation object into your application, use the `load` function of the **L10n** class.
 
-In the following sample, French culture is set to the DropDownList and no data is loaded. Hence, the [`noRecordsTemplate`](../api/drop-down-list/#norecordstemplate) property displays its text in French culture initially, and if the sample is run offline, the[`actionFailureTemplate`](../api/drop-down-list/#actionfailuretemplate) property displays its text appropriately.
+In the following sample, the French culture is set for the DropDownList and no data is loaded. As a result, the [`noRecordsTemplate`](../api/drop-down-list#norecordstemplate) property displays its text in French initially, and if the sample is run offline, the [`actionFailureTemplate`](../api/drop-down-list#actionfailuretemplate) property displays its corresponding text.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -55,4 +54,4 @@ In the following sample, French culture is set to the DropDownList and no data i
 ## See Also
 
 * [Accessibility](./accessibility)
-* [How to bind the data to the combobox](./data-binding)
+* [How to bind data to the DropDownList](./data-binding)

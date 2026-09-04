@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Index in ##Platform_Name## Drop down tree control
 
-The Dropdown Tree control allows you to select single or multiple values from the hierarchical data in a tree-like structure. It has several out-of-the-box features, such as data binding, check boxes, templates, UI customization, accessibility, and pre-selected values. The available key features are
+The Dropdown Tree control allows you to select single or multiple values from hierarchical data in a tree-like structure. It has several out-of-the-box features, such as data binding, checkboxes, templates, UI customization, accessibility, and pre-selected values. The available key features are:
 
 ## Key features
 
@@ -19,7 +19,7 @@ The Dropdown Tree control allows you to select single or multiple values from th
 
 * **Check boxes** - To select more than one item in the Dropdown Tree control without affecting the UI appearance.
 
-* **Multiple selection** - To select more than one item in the control.
+* **Multiple selection** - To select more than one item in the Dropdown Tree control.
 
 * **Sorting** - To display the Dropdown Tree items in `ascending` or `descending` order.
 

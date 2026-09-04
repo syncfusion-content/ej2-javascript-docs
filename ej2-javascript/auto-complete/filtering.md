@@ -15,15 +15,15 @@ The AutoComplete has built-in support to filter data items. The filter operation
 
 ## Change the filter type
 
-Determines on which filter type, the component needs to be considered on search action. The available [`filterType`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#filtertype) and its supported data types are
+The [`filterType`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#filtertype) property determines how the component matches the suggested items during a search. The available filter types and their supported data types are:
 
 | **Filter Type** | **Description** | **Supported Types** |
-| --- | --- |
+| --- | --- | --- |
 | StartsWith | Checks whether a value begins with the specified value. | String |
-| EndsWith | Checks whether a value ends with specified value. | String |
-| Contains | Checks whether a value contains with specified value. | String |
+| EndsWith | Checks whether a value ends with the specified value. | String |
+| Contains | Checks whether a value contains the specified value. | String |
 
-The following examples shows the data filtering is done with `StartsWith` type.
+The following example shows how data is filtered using the `StartsWith` filter type.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -54,9 +54,9 @@ The following examples shows the data filtering is done with `StartsWith` type
 
 ## Filter item count
 
-You can specify the filter suggestion item count through [`suggestionCount`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#suggestioncount) property of AutoComplete.
+You can specify the filter suggestion item count through the [`suggestionCount`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#suggestioncount) property of the AutoComplete.
 
-The following example, to restrict the suggestion list item counts as 5.
+The following example restricts the suggestion list to five items.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -87,9 +87,9 @@ The following example, to restrict the suggestion list item counts as 5.
 
 ## Limit the minimum filter character
 
-You can set the limit for the character count to filter the data on the AutoComplete. This can be done by set the [`minLength`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#minlength) property to AutoComplete.
+You can set the minimum number of characters required to filter the data in the AutoComplete. This is done by setting the [`minLength`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#minlength) property of the AutoComplete.
 
-In the following example, the remote request doesn't fetch the search data, until the search key contains three characters.
+In the following example, the remote request does not fetch the search data until the search key contains three characters.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -118,11 +118,11 @@ In the following example, the remote request doesn't fetch the search data, unti
 {% previewsample "page.domainurl/code-snippet/autocomplete/basic-cs6" %}
 {% endif %}
 
-## Case sensitive filtering
+## Case-sensitive filtering
 
-Data items can be filtered either with or without case sensitivity using the DataManager. This can be done by setting the [`ignoreCase`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#ignorecase) property of AutoComplete.
+Data items can be filtered either with or without case sensitivity. This is controlled by the [`ignoreCase`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#ignorecase) property of the AutoComplete.
 
-The following sample depicts how to filter the data with case-sensitive.
+The following sample demonstrates how to filter data with case-sensitive matching.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -153,9 +153,9 @@ The following sample depicts how to filter the data with case-sensitive.
 
 ## Diacritics Filtering
 
-An AutoComplete supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#ignoreaccent) is enabled.
+The AutoComplete supports diacritics filtering, which ignores [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter results in lists that contain international characters when the [ignoreAccent](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#ignoreaccent) property is enabled.
 
-In the following sample,data with diacritics are bound as dataSource for AutoComplete.
+In the following sample, data with diacritics is bound as the `dataSource` for the AutoComplete.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -186,7 +186,7 @@ In the following sample,data with diacritics are bound as dataSource for AutoCom
 
 ## Debounce delay
 
-You can use the [debounceDelay](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#debouncedelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience.By default, a DebounceDelay of 300ms is set. If you wish to disable this feature entirely, you can set it to 0ms.
+You can use the [`debounceDelay`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#debouncedelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience. By default, a `debounceDelay` of 300 ms is applied. If you wish to disable this feature entirely, you can set it to `0` ms.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -217,6 +217,6 @@ You can use the [debounceDelay](https://ej2.syncfusion.com/javascript/documentat
 
 ## See Also
 
-* [How to acheive autofill while filtering](./how-to/autofill)
+* [How to achieve autofill while filtering](./how-to/autofill)
 * [How to group the data using header](./grouping)
 * [How to highlight the search data](./how-to/custom-search)

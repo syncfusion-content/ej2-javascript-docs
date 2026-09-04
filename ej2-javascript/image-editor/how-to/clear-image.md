@@ -11,7 +11,20 @@ domainurl: ##DomainURL##
 
 # How to clear an image in ##Platform_Name## Image Editor
 
-The [`clearImage`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#clearimage) method in the image editor control is indeed useful for scenarios where you need to ensure that the image editor is emptied before reopening it, especially if the editor is used within a dialog. By using `clearImage` before closing the dialog, you can ensure that the editor does not retain the previously loaded image when the dialog is reopened. This allows users to start fresh with a new image selection. 
+The [`clearImage`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/index-default#clearimage) method resets the image editor canvas and removes the currently loaded image without destroying the control. This is useful when the image editor is hosted inside a dialog (or any container that is reopened), so the editor is emptied before reopening it.
+
+## Steps to clear an image when hosting the editor in a dialog
+
+1. Initialize the `ImageEditor` and load an image.
+2. Before the dialog is closed, call `imageEditorObj.clearImage()` to clear the loaded image from the canvas.
+3. Reopen the dialog and load a new image selection — the previous image data is no longer retained.
+
+The following example loads an image on creation and clears it when the **Clear Image** button is clicked:
+
+```javascript
+// Clears the loaded image from the image editor canvas.
+imageEditorObj.clearImage(); // Returns: void
+``` 
 
 {% if page.publishingplatform == "typescript" %}
 

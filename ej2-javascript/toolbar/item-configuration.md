@@ -76,7 +76,7 @@ The `Input` type is only applicable for adding `template` elements when the [`te
 * Related `NumericTextBox` component properties can also be configured as given below.
 
 ```javascript
-new NumericTextBox( { format: 'c2' }))
+new NumericTextBox({ format: 'c2' })
 ```
 
 ### DropDownList

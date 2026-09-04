@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Style and Appearance in ##Platform_Name## Query Builder UI | Syncfusion
-description: Customize the ##Platform_Name## Query Builder UI look by overriding CSS classes for group headers, rules, buttons, and joining lines, or via Theme Studio.
+title: Styles in ##Platform_Name## Query Builder UI | Syncfusion
+description: Customize the ##Platform_Name## Query Builder UI by overriding CSS classes for group headers, rules, buttons, and connectors, or by using Theme Studio.
 platform: ej2-javascript
-control: Style and appearance 
+control: Style and appearance
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and Appearance in ##Platform_Name## Query Builder UI
+# Style and appearance in ##Platform_Name## Query Builder UI
 
-To modify the QueryBuilder appearance, you need to override the default CSS of QueryBuilder component. Please find the list of CSS classes and its corresponding section in QueryBuilder component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
+To modify the Query Builder appearance, override the default CSS classes. The following table lists the primary CSS selectors and the sections they affect. A custom theme for the controls can also be created with [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 
-CSS Class | Purpose of Class
------|-----
-|.e-group-header .e-btn|To customize the condition button in querybuilder
-|.e-group-body .e-rule-container|To customize the querybuilder rule container
-|.e-group-container .e-group-header .e-dropdown-btn|To customize the querybuilder Add group/condition button
-|.e-query-builder .e-group-header .e-deletegroup|To customize the querybuilder Delete group button
-|.e-query-builder .e-rule-field .e-rule-value-delete .e-rule-delete|To customize the querybuilder Delete condition button
-|.e-query-builder .e-rule-list > ::after,.e-query-builder .e-rule-list > ::before|To customize the querybuilder group joining line
-|.e-query-builder .e-rule-container.e-joined-rule|To customize the querybuilder condition joining line
+| CSS Class | Purpose of Class |
+| --- | --- |
+| .e-group-header .e-btn | Customizes the condition button |
+| .e-group-body .e-rule-container | Customizes the rule container |
+| .e-group-container .e-group-header .e-dropdown-btn | Customizes the Add Group/Condition button |
+| .e-query-builder .e-group-header .e-deletegroup | Customizes the Delete group button |
+| .e-query-builder .e-rule-field .e-rule-value-delete .e-rule-delete | Customizes the Delete condition button |
+| .e-query-builder .e-rule-list > ::after, .e-query-builder .e-rule-list > ::before | Customizes the group joining line |
+| .e-query-builder .e-rule-container.e-joined-rule | Customizes the condition joining line |

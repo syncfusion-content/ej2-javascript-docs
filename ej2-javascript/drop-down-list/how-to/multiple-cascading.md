@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to preselect cascading items in ##Platform_Name## Dropdown List
 
-The following example demonstrate about how to preselect the list items in multiple cascading DropDownList.
+The following example demonstrates how to preselect list items in multiple cascading DropDownLists.
 
 {% if page.publishingplatform == "typescript" %}
 

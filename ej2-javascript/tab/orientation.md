@@ -13,14 +13,14 @@ domainurl: ##DomainURL##
 
 This section explains how to modify the position and modes of the Tab header.
 
-The Tab component allows placing the header section at different positions using the [`headerPlacement`](../api/tab#headerplacement) property. The available positions are as follows:
+The Tab component allows you to place the header section in different positions using the [`headerPlacement`](../api/tab#headerplacement) property. The available positions are as follows:
 
-* **Top**: Tab header items are arranged horizontally, and their content is placed below the header.
-* **Bottom**: Tab header items are arranged horizontally, and their content is placed above the header.
-* **Left**: Tab header items are arranged vertically, and their content is placed to the right of the header.
-* **Right**: Tab header items are arranged vertically, and their content is placed to the left of the header.
+* **Top**: Tab header items are arranged horizontally, and the content is displayed below the header.
+* **Bottom**: Tab header items are arranged horizontally, and the content is displayed above the header.
+* **Left**: Tab header items are arranged vertically, and the content is displayed to the right of the header.
+* **Right**: Tab header items are arranged vertically, and the content is displayed to the left of the header.
 
-The Tab component is also adaptable to the available space when the tab items exceed the view space. You can customize the overflow modes using the [`overflowMode`](../api/tab#overflowmode) property. The available modes are:
+The Tab component is also adaptable to the available space when tab items exceed the available space. You can customize the overflow modes using the [`overflowMode`](../api/tab#overflowmode) property. The available overflow modes are:
 
 * Scrollable
 * Popup

@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Icons in ##Platform_Name## Message
 
-This section explains the message with no icons, how to show or hide the close icon and add the custom severity icon to the message.
+This section explains the Message with no icons, how to show or hide the close icon and add the custom severity icon to the message.
 
 ## No Icon
 
-By default, severity icons can be displayed according to the severity types to make it more understandable to the user by visual information rather than text. To hide the severity icons, set the [showIcon](../api/message/index-default#showicon) property to `false`.
+By default, severity icons are displayed according to the severity types to make the message more understandable through visual information rather than text. To hide the severity icons, set the [showIcon](../api/message/index-default#showicon) property to `false`.
 
-The following example demonstrates the different severity messages without the severity icons.
+The following example demonstrates different severity messages without the severity icons.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -48,7 +48,7 @@ The following example demonstrates the different severity messages without the s
 
 ## Custom Icon
 
-By default, the severity icons can be displayed according to the severity type to make it more understandable to the user by visual information rather than text. If the user wants to customize these icons, it can be achieved through the `cssClass` property.
+By default, the severity icons are displayed according to the severity type to make the message more understandable through visual information rather than text. To customize these icons, use the [cssClass](../api/message/index-default#cssclass) property.
 
 The following example demonstrates how the default message is rendered with a custom severity icon.
 
@@ -81,7 +81,7 @@ The following example demonstrates how the default message is rendered with a cu
 
 ## Close Icon
 
-The message can be rendered with or without the close icon. The close icon is used to hide the message, either by manually clicking the close icon or through keyboard interaction.
+The message can be rendered with or without the close icon. The close icon is used to hide the message, either by clicking the close icon or through keyboard interaction.
 
 By default, the close icon is not rendered in the message. To show the close icon, set the [showCloseIcon](../api/message/index-default#showcloseicon) property to `true`.
 

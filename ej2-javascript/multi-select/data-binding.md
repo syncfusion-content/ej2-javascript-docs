@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Data Binding in ##Platform_Name## MultiSelect Dropdown
 
-The MultiSelect loads the data either from local data sources or remote data services using the [dataSource](../api/multi-select/#datasource) property. It supports the data type of `array` or `DataManager`.
+The MultiSelect loads the data either from local data sources or remote data services using the [dataSource](../api/multi-select#datasource) property. It supports the data type of `array` or `DataManager`.
 
 The MultiSelect also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
 
@@ -26,11 +26,11 @@ The MultiSelect also supports different kinds of data services such as OData, OD
 
 ## Binding local data
 
-Local data can be represented in two ways as described below.
+Local data can be represented in the following two ways.
 
 ### 1. Array of string
 
-The MultiSelect has support to load array of primitive data such as strings and numbers. Here, both value and text field act the same.
+The MultiSelect supports loading an array of primitive data such as strings and numbers. Here, both the `value` and `text` fields behave the same way.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -59,11 +59,11 @@ The MultiSelect has support to load array of primitive data such as strings and 
 {% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs2" %}
 {% endif %}
 
-### 2. Array of object
+### 2. Array of objects
 
-The MultiSelect can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](../api/multi-select/#fields) property.
+The MultiSelect can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [`fields`](../api/multi-select#fields) property.
 
-In the following example, `id` column and `sports` column from complex data have been mapped to the `value` field and `text` field, respectively.
+In the following example, the `id` and `sports` columns from the data have been mapped to the `value` and `text` fields, respectively.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -92,11 +92,11 @@ In the following example, `id` column and `sports` column from complex data have
 {% previewsample "page.domainurl/code-snippet/multiselect/basic-cs6" %}
 {% endif %}
 
-### 3. Array of complex object
+### 3. Array of complex objects
 
-The MultiSelect can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](../api/multi-select/#fields) property.
+The MultiSelect can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [`fields`](../api/multi-select#fields) property.
 
-In the following example, `Code.Id` column and `Country.Name` column from complex data have been mapped to the `value` field and `text` field, respectively.
+In the following example, the `Code.Id` and `Country.Name` columns from the data have been mapped to the `value` and `text` fields, respectively.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -127,9 +127,9 @@ In the following example, `Code.Id` column and `Country.Name` column from comple
 
 ## Binding remote data
 
-The MultiSelect supports retrieval of data from remote data services with the help of `DataManager`component. The [Query](../api/multi-select/#query) property is used to fetch data from the database and bind it to the MultiSelect.
+The MultiSelect supports retrieval of data from remote data services with the help of the `DataManager` component. The [`Query`](../api/multi-select#query) property is used to fetch data from the database and bind it to the MultiSelect.
 
-The following sample displays the first 6 contacts from “Customers” table of the `Northwind` Data Service.
+The following sample displays the first 6 contacts from the `Customers` table of the `Northwind` data service.
 
 {% if page.publishingplatform == "typescript" %}
 

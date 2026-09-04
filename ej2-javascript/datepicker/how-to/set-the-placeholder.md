@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # How to set a placeholder in ##Platform_Name## DatePicker
 
-The following example demonstrates how to set `placeholder` in the DatePicker component.
+The following example demonstrates how to set the `placeholder` in the DatePicker component.
 
-Using `placeholder` you can display a short hint in the input element.
+The `placeholder` property displays a short hint in the input element.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datepicker/getting-started-cs8/index.ts %}
 {% endhighlight %}

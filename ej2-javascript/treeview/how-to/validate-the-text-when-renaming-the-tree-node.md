@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to validate the text when renaming the tree node in ##Platform_Name## TreeView
 
-You can validate the text of a tree node while editing by using the [`nodeEdited`](../../api/treeview#nodeedited) event of the TreeView control. The following example demonstrates how to validate and prevent empty values in a tree node.
+You can validate the text of a tree node while it is being edited by using the [`nodeEditing`](../../api/treeview#nodeediting) event of the TreeView control. This event fires before the edit is committed and supports cancellation via `args.cancel`, which makes it the recommended event for preventing invalid values (such as empty text) from being saved. The [`nodeEdited`](../../api/treeview#nodeedited) event, by contrast, fires only after the edit has been applied. The following example demonstrates how to validate and prevent empty values in a tree node using the `nodeEditing` event.
 
 {% if page.publishingplatform == "typescript" %}
 

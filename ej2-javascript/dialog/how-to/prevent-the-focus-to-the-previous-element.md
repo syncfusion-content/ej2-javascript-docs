@@ -11,9 +11,7 @@ domainurl: ##DomainURL##
 
 # How to prevent focus to previous element in ##Platform_Name## Dialog
 
-By default, when the dialog is closed, focus returns to the element that was previously focused before the dialog opened. You can prevent this behavior using the `beforeClose` event and setting the `preventFocus` argument to `true`.
-
-Bind the `beforeClose` event and enable the `preventFocus` argument as shown in the sample below.
+By default, when the Dialog is closed, focus returns to the element that was previously focused before the Dialog opened. You can prevent this behavior using the `beforeClose` event by setting its `preventFocus` argument to `true`. Note that `args` is of type `BeforeCloseEventArgs`, whose `preventFocus` property controls whether focus is restored to the previously focused element, as shown in the following sample.
 
 {% if page.publishingplatform == "typescript" %}
 

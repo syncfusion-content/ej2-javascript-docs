@@ -11,12 +11,12 @@ domainurl: ##DomainURL##
 
 # Shimmer Effect in ##Platform_Name## Skeleton
 
-You can use the [`shimmerEffect`](../api/skeleton/index-default#shimmereffect) property to change animation effect in the skeleton control. Skeleton supports `Wave`, `Pulse` and `Fade` effects and by default, the `shimmerEffect` is set to `Wave` effect.
+The [`shimmerEffect`](../api/skeleton/index-default#shimmereffect) property is used to change the animation effect in the Skeleton control. Skeleton supports `Wave`, `Pulse`, and `Fade` effects, and by default, the `shimmerEffect` is set to the `Wave` effect.
 
 ```ts
 import { Skeleton } from '@syncfusion/ej2-notifications';
 
-// Initialize Skeleton control with wave effect
+// Initialize Skeleton control with pulse effect
 let pulse: Skeleton = new Skeleton({
     shape: 'Circle',
     width: "60px",

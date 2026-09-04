@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Annotation
 
-In the circular progress bar, you can add any view to the center using the **Content** property in annotation.
+In the circular Progress Bar, any view can be added to the center using the **Content** property in annotation.
 
 For example, you can include add, start, or pause button to control the progress. You can also add an image that indicates the actual task in progress or add custom text that conveys how far the task is completed.
 
@@ -46,7 +46,7 @@ For example, you can include add, start, or pause button to control the progress
 
 ## Label
 
-You can show the progress value in both linear and circular progress bar using **showProgressValue** property.
+The progress value can be shown in both linear and circular Progress Bar using **showProgressValue** property.
 
 {% if page.publishingplatform == "typescript" %}
 

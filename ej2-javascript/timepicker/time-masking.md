@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Time masking in ##Platform_Name## TimePicker
 
-TimePicker has `enableMask` property that provides the option to enable the built-in date masking support. Also, you must inject the MaskedDateTime module to enable the masking support.
+The TimePicker has the `enableMask` property that provides the option to enable the built-in date masking support. The MaskedDateTime module must also be injected to enable the masking support.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datepicker/mask-module-cs2/index.ts %}
 {% endhighlight %}
@@ -45,13 +45,13 @@ The mask pattern is defined based on the provided time format to the component. 
 | **Keys** | **Actions** |
 | --- | --- |
 | <kbd>Up / Down arrows</kbd> | To increment and decrement the selected portion of the time. |
-| <kbd>Left / Right arrows and Tab</kbd> | To navigate the selection from one portion to next portion |
+| <kbd>Left / Right arrows and Tab</kbd> | To navigate the selection from one portion to the next portion |
 
-The following example demonstrates default and custom format of TimePicker component with mask.
+The following example demonstrates default and custom format of the TimePicker component with mask.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/timepicker/mask-support-cs1/index.ts %}
 {% endhighlight %}
@@ -78,9 +78,9 @@ The following example demonstrates default and custom format of TimePicker compo
 
 ## Configure Mask Placeholder
 
-You can change mask placeholder value through property `maskPlaceholder`. By default , it takes the full name of  time co-ordinates such as `hour`, `minute` and `second`.
+The mask placeholder value can be changed through the `maskPlaceholder` property. By default, it takes the full name of time co-ordinates such as `hour`, `minute` and `second`.
 
-While changing to a culture other than `English`, ensure that locale text for the concerned culture is loaded through load method of L10n class for mask placeholder values like below.
+While changing to a culture other than `English`, ensure that locale text for the concerned culture is loaded through the load method of the L10n class for mask placeholder values like below.
 
 ```ts
 //Load the L10n from ej2-base
@@ -99,7 +99,7 @@ The following example demonstrates default and customized mask placeholder value
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/timepicker/mask-placeholder-cs1/index.ts %}
 {% endhighlight %}

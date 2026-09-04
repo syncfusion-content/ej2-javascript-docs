@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Style in ##Platform_Name## Toast
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
+The following content provides the exact CSS structure that can be used to modify the control's appearance based on preference.
 
 ## Customizing the toast title
 

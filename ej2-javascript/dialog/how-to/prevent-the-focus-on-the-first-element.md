@@ -11,9 +11,7 @@ domainurl: ##DomainURL##
 
 # How to prevent focus on first element in ##Platform_Name## Dialog
 
-By default, the dialog focuses on the first elements of the content area which can be active and focusable. You can prevent this default focusing behavior using the [open](https://ej2.syncfusion.com/documentation/api/dialog/index-default#open) event and by enabling the `preventFocus` argument.
-
-Bind the open event and enable the preventFocus argument within an event like the below sample.
+By default, the Dialog focuses on the first focusable element of the content area. You can prevent this default focusing behavior using the [open](https://ej2.syncfusion.com/documentation/api/dialog/index-default#open) event and by setting the `preventFocus` argument to `true`. The `args` parameter is of type `OpenEventArgs`, whose `preventFocus` property controls whether the Dialog auto focuses its first content element, as shown in the following sample.
 
 {% if page.publishingplatform == "typescript" %}
 

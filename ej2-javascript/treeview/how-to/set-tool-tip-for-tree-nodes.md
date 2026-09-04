@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to set tooltip for tree nodes in ##Platform_Name## TreeView
 
-The TreeView control allows you to set a tooltip for tree nodes using the [`tooltip`](../../api/treeview/fieldsSettingsModel/#tooltip) property. The following code example demonstrates how to set a tooltip for TreeView nodes.
+The TreeView control allows you to set a tooltip for tree nodes using the [`tooltip`](../../api/treeview/fieldsSettingsModel#tooltip) property. The following code example demonstrates how to set a tooltip for TreeView nodes.
 
 {% if page.publishingplatform == "typescript" %}
 

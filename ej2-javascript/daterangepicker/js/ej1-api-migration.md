@@ -1,7 +1,7 @@
 ---
 layout: post
 title: EJ1 API Migration in ##Platform_Name## DateRangePicker | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Daterangepicker control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## DateRangePicker control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Ej1 api migration 
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # EJ1 API Migration in ##Platform_Name## DateRangePicker
 
-This article describes the API migration process of DateRangePicker component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process of the DateRangePicker component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Date Selection
 

@@ -15,7 +15,7 @@ The following content provides the exact CSS structure that can be used to modif
 
 ## Customizing the appearance of TimePicker wrapper element
 
-Use the following CSS to customize the appearance of wrapper element.
+Use the following CSS to customize the appearance of the wrapper element.
 
 ```
 /* To specify height and font size */
@@ -27,7 +27,7 @@ Use the following CSS to customize the appearance of wrapper element.
 
 ## Customizing the TimePicker icon element
 
-Use the following CSS to customize the TimePicker icon element
+Use the following CSS to customize the TimePicker icon element.
 
 ```
 /* To specify background color and font size */
@@ -39,7 +39,7 @@ Use the following CSS to customize the TimePicker icon element
 
 ## Customizing the TimePicker popup
 
-Use the following CSS to customize the TimePicker popup
+Use the following CSS to customize the TimePicker popup.
 
 ```
 /* To specify height */
@@ -50,7 +50,7 @@ Use the following CSS to customize the TimePicker popup
 
 ## Customizing the TimePicker popup content
 
-Use the following CSS to customize the TimePicker popup content
+Use the following CSS to customize the TimePicker popup content.
 
 ```
 /* To specify height */
@@ -62,7 +62,7 @@ Use the following CSS to customize the TimePicker popup content
 
 ## Full screen mode support in mobiles and tablets
 
-The TimePicker component's full-screen mode feature enables users to view the component popup element in full-screen mode on mobile devices with improved visibility and a better user experience. It is important to mention that this feature is exclusively available for mobile and tablet devices in both landscape and portrait orientations. To activate the full screen mode within the TimePicker component, simply set the [fullScreenMode](../api/timepicker#fullScreenMode) API value to `true`. This action will extend the popup element to occupy the entire screen on mobile devices.
+The TimePicker component's full-screen mode feature enables the popup element to be viewed in full-screen mode on mobile devices with improved visibility and a better experience. This feature is exclusively available for mobile and tablet devices in both landscape and portrait orientations. To activate the full screen mode within the TimePicker component, set the [fullScreenMode](../api/timepicker#fullScreenMode) API value to `true`. This action will extend the popup element to occupy the entire screen on mobile devices.
 
 ```typescript
 import { TimePicker } from '@syncfusion/ej2-calendars';

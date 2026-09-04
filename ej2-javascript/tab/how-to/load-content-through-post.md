@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # How to load content through Ajax in ##Platform_Name## Tab
 
-The Tab supports to load external contents through AJAX library. Refer to the following steps.
+The Tab supports loading external content through AJAX library. Refer to the following steps:
 
-* Import the Ajax module from ej2-base and initialize with URL path.
+* Import the Ajax module from ej2-base and initialize it with a URL path.
 
-* Get the data from Ajax Success event, then initialize the Tab with retrieved external path data.
+* Get the data from Ajax Success event, then initialize the Tab with the retrieved external content data.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -13,11 +13,11 @@ domainurl: ##DomainURL##
 
 ## Icons
 
-The ContextMenu item have an icon/image in it to provide visual representation of the action. To place the icon on a menu item, set the [`iconCss`](../api/context-menu/menuItemModel#iconcss) property to e-icons with the required icon CSS. By default, the icon is positioned to the left side of the menu item. In the following sample, the icons for Cut, Copy and Paste menu items are added using the `iconCss` property.
+A ContextMenu item can include an icon or image to provide a visual representation of the action. To place the icon on a menu item, set the [`iconCss`](../api/context-menu/menuItemModel#iconcss) property to the desired e-icon class. By default, the icon is positioned to the left side of the menu item. In the following sample, the icons for the Cut, Copy, and Paste menu items are added using the `iconCss` property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/context-menu/icons-cs1/index.ts %}
 {% endhighlight %}
@@ -25,7 +25,7 @@ The ContextMenu item have an icon/image in it to provide visual representation o
 {% include code-snippet/context-menu/icons-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/context-menu/icons-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -44,11 +44,11 @@ The ContextMenu item have an icon/image in it to provide visual representation o
 
 ## Navigation
 
-Navigation in ContextMenu is usage to navigate to the other web page when menu item is clicked. This can be achieved by providing link to the menu item using the [`url`](../api/context-menu/menuItemModel#url) property. In the following sample, Navigation URL for Flipkart, Amazon, and Snapdeal menu items are added using the `url` property.
+Navigation in the ContextMenu is used to navigate to another web page when a menu item is clicked. This can be achieved by providing a link to the menu item using the [`url`](../api/context-menu/menuItemModel#url) property. In the following sample, navigation URLs for the Flipkart, Amazon, and Snapdeal menu items are added using the `url` property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/context-menu/navigation-cs1/index.ts %}
 {% endhighlight %}
@@ -56,7 +56,7 @@ Navigation in ContextMenu is usage to navigate to the other web page when menu i
 {% include code-snippet/context-menu/navigation-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/context-menu/navigation-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -73,7 +73,7 @@ Navigation in ContextMenu is usage to navigate to the other web page when menu i
 {% previewsample "page.domainurl/code-snippet/context-menu/navigation-cs1" %}
 {% endif %}
 
-> To open the links in new tab, set `target` attribute with the value `_blank` in the [`beforeItemRender`](../api/context-menu#beforeitemrender) event.
+> To open the links in a new tab, set the `target` attribute to `_blank` in the [`beforeItemRender`](../api/context-menu#beforeitemrender) event.
 
 ## See Also
 

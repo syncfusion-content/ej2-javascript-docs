@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to show toasts in positions in ##Platform_Name## Toast
 
-By default, the positions of the new toasts are only updated after the visible toasts have been destroyed. If You need to display multiple toasts with different positions, initiate another toasts.
+By default, the positions of the new toasts are only updated after the visible toasts have been destroyed. To display multiple toasts with different positions, initialize separate Toast instances.
 
 The following sample demonstrates adding multiple toasts in different positions.
 

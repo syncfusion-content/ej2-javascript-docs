@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Islamic Calendar in ##Platform_Name## Calendar
 
-In addition to the Gregorian calendar, the calendar control supports displaying the Islamic calendar (Hijri calendar). **Islamic calendar** or **Hijri calendar** is a `lunar calendar` consisting of 12 months in a year of 354 or 355 days. To know more about Islamic calendar, please refer this [wikipedia](https://en.wikipedia.org/wiki/Islamic_calendar).
+In addition to the Gregorian calendar, the Calendar supports displaying the Islamic calendar (Hijri calendar). The **Islamic calendar** or **Hijri calendar** is a `lunar calendar` consisting of 12 months in a year of 354 or 355 days. To know more about the Islamic calendar, refer to this [wikipedia](https://en.wikipedia.org/wiki/Islamic_calendar) link.
 
-Also, it consists of all Gregorian calendar functionalities as like min and max date, week number, start day of the week, multi selection, enable RTL, start and depth view, localization, highlight and customize the specific dates.
+It also consists of all Gregorian calendar functionalities such as min and max date, week number, start day of the week, multi selection, enable RTL, start and depth view, localization, and highlighting and customizing the specific dates.
 
-By default, calendar mode is in **Gregorian**. You can enable the Islamic mode by setting the **calendarMode** as **Islamic**. Also, need to import and injecting the `Islamic` module from `ej2-calendars` as shown below.
+By default, the calendar mode is in **Gregorian**. The Islamic mode can be enabled by setting the **calendarMode** as **Islamic**. Also, import and inject the `Islamic` module from `ej2-calendars` as shown below.
 
 > import { Islamic, Calendar } from '@syncfusion/ej2-calendars';\
 > Calendar.Inject(Islamic);

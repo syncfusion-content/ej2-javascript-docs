@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # How to set state persistence in ##Platform_Name## Tab
 
-When `enablePersistence` is set to `true`, the Tab component will maintain some of its model values across page refreshes. This means that the user's interactions with the Tab, such as the currently selected tab, will be preserved when the page is reloaded.
+When `enablePersistence` is set to `true`, the Tab component will maintain some of its model values across page refreshes. This means that the user interactions with the Tab, such as the currently selected tab, will be preserved when the page is reloaded.
 
-Here's an example demonstrating how to enable state persistence for the Tab component:
+The following example demonstrates how to enable state persistence for the Tab component:
 
 {% if page.publishingplatform == "typescript" %}
 

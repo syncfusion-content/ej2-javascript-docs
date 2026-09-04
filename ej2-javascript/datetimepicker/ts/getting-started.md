@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## DateTime Picker | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Datetimepicker control of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Getting started with ##Platform_Name## DateTime Picker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with ##Platform_Name## DateTime Picker
 
-This section briefly explains how to create a simple DateTimePicker component and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
+This section briefly explains how to create a simple DateTime Picker component and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -37,7 +37,7 @@ Navigate to the project folder in the command prompt:
 cd ej2-quickstart
 ``` 
 
-## Install Syncfusion<sup style="font-size:70%">&reg;</sup> Datetimepicker package
+## Install Syncfusion<sup style="font-size:70%">&reg;</sup> DateTime Picker package
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
@@ -55,7 +55,7 @@ npm install
 
 > For more information about individual package and alternative installation methods, see the [installation guide](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation).
 
-## Import Syncfusion<sup style="font-size:70%">&reg;</sup> Datetimepicker CSS styles
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> DateTime Picker CSS styles
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls provide built-in themes,  which are available from the [npm theme packages](https://ej2.syncfusion.com/documentation/appearance/theme#theme-packages). Additionally, themes can be loaded via CDN or customized using the [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/documentation/appearance/theme).
 
@@ -81,15 +81,15 @@ The required styles are imported in the `~/src/styles/styles.css` file, as shown
 
 > Learn more about [built-in themes and individual control CSS references](https://ej2.syncfusion.com/documentation/appearance/theme).
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Datetimepicker control to the application
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> DateTime Picker control to the application
 
-The Datetimepicker can be initialized through input tags.
+The DateTime Picker can be initialized through input tags.
 
-Add the HTML input element which needs to be initialized as Datetimepicker in `index.html`.
+Add the HTML input element which needs to be initialized as DateTime Picker in `index.html`.
 
 Open the application in Visual Studio Code and add the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript UI controls. 
 
-In this article, the Datetimepicker control is used as an example. Add the following Datetimepicker element to the `~/src/index.html` file.
+In this article, the DateTime Picker control is used as an example. Add the following DateTime Picker element to the `~/src/index.html` file.
 
 ```html
 <!DOCTYPE html>
@@ -116,7 +116,7 @@ In this article, the Datetimepicker control is used as an example. Add the follo
 </html>
 ```
 
-Now, to render the Datetimepicker control, add the following TypeScript code to the `~/src/app/app.ts` file.
+Now, to render the DateTime Picker control, add the following TypeScript code to the `~/src/app/app.ts` file.
 
 ```ts
 
@@ -135,7 +135,7 @@ Now, run the application in the browser using the following command.
 npm run start
 ```
 
-The following example shows a basic DateTimePicker.
+The following example shows a basic DateTime Picker.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -150,7 +150,7 @@ The following example shows a basic DateTimePicker.
 
 ## Setting the min and max
 
-The minimum and maximum date time can be defined with the help of `min` and `max` property. The following example demonstrates to set the `min` and `max` on initializing the DateTimePicker.
+The minimum and maximum date time can be defined with the help of `min` and `max` property. The following example demonstrates to set the `min` and `max` on initializing the DateTime Picker.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -162,8 +162,8 @@ The minimum and maximum date time can be defined with the help of `min` and `max
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/datetimepicker/getting-started-cs11" %}
-> If the value of `min` or `max` properties changed through code behind, then you have to update the `value` property to set within the range.
+> If the value of the `min` or `max` properties is changed through code, then the `value` property has to be updated to be set within the range.
 
 ## See Also
 
-* [Render DateTimePicker with specific culture](./globalization)
+* [Render the DateTime Picker with a specific culture](./globalization)

@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # How to handle tab selection in ##Platform_Name## Tab
 
-You can determine whether a tab was selected through user interaction or programmatically by using the [`selecting`](../../api/tab#selecting) and [`selected`](../../api/tab#selected) event arguments. These arguments contain an `isInteracted` field that returns `true` when the user changes the tab through click actions, and `false` when the change occurs programmatically.
+You can determine whether a tab was selected through user interaction or programmatically by using the [`selecting`](../../api/tab#selecting) and [`selected`](../../api/tab#selected) event arguments. These arguments contain an `isInteracted` field that returns `true` when the user changes the tab through click events, and `false` when the change occurs programmatically.
 
-The following code example demonstrates how to identify the tab selection state in the selecting and selected events:
+The following code example demonstrates how to identify the tab selection state in the selecting and selected event handlers:
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Localization in ##Platform_Name## AutoComplete
 
-The Localization library allows you to localize static text content of the [noRecordsTemplate](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#norecordstemplate) and [actionFailureTemplate](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#actionfailuretemplate) &nbsp;properties according to the culture currently assigned to the AutoComplete.
+The Localization library allows you to localize the static text content displayed by the [noRecordsTemplate](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#norecordstemplate) and [actionFailureTemplate](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#actionfailuretemplate) properties according to the culture currently assigned to the AutoComplete.
 
 | Locale key | en-US (default)  |
 |------|------|
@@ -20,9 +20,9 @@ The Localization library allows you to localize static text content of the [noRe
 
 ## Loading translations
 
-To load translation object to your application, use load function of the **L10n** class.
+To load a translation object into your application, use the `load` function of the **L10n** class.
 
-In the following sample, French culture is set to the AutoComplete and no data is loaded. Hence, the `noRecordsTemplate` property displays its text in French culture initially and if the sample is run offline, the `actionFailureTemplate` property displays its text appropriately.
+In the following sample, the French culture is assigned to the AutoComplete and no data is loaded. As a result, the `noRecordsTemplate` property displays its text in French initially. If the sample is run offline, the `actionFailureTemplate` property displays the corresponding localized text.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -54,4 +54,4 @@ In the following sample, French culture is set to the AutoComplete and no data i
 ## See Also
 
 * [Accessibility](./accessibility)
-* [How to bind the data to the autocomplete](./data-binding)
+* [How to bind data to the AutoComplete](./data-binding)

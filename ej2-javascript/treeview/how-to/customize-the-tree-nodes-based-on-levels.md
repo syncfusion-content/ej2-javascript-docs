@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to customize the tree nodes based on levels in ##Platform_Name## TreeView
 
-You can customize the tree node levels by adding a custom [`cssClass`](../../api/treeview/#cssclass) to the control and applying styles accordingly.
+You can customize the tree nodes at each level by adding a custom [`cssClass`](../../api/treeview#cssclass) to the TreeView control and applying level-specific styles in CSS. Each node element is rendered with a level-based class (for example, `.e-level-1`, `.e-level-2`) that you can target to style nodes differently by hierarchy.
 
 {% if page.publishingplatform == "typescript" %}
 

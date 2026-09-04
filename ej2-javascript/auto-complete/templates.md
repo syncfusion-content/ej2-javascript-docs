@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Templates in ##Platform_Name## AutoComplete
 
-The AutoComplete has been provided with several options to customize each list items, group title, header and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [`Template engine`](../common/template-engine) to compile and render the elements properly.
+The AutoComplete provides several options to customize each list item, group title, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [`Template engine`](../common/template-engine) to compile and render the elements properly.
 
 ## Item template
 
 The content of each list item within the AutoComplete can be customized with the help of [`itemTemplate`](https://ej2.syncfusion.com/documentation/api/auto-complete#itemtemplate) property.
 
-In the following sample, each list item is split into two columns to display relevant data's.
+In the following sample, each list item is split into two columns to display the relevant data.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -48,7 +48,7 @@ In the following sample, each list item is split into two columns to display rel
 
 ## Group template
 
-The group header title under which appropriate sub-items are categorized can also be customize with the help of [`groupTemplate`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#grouptemplate) property. This template is common for both inline and floating group header template.
+The group header that categorizes the sub-items can also be customized with the help of the [`groupTemplate`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#grouptemplate) property. This template is common for both inline and floating group headers.
 
 In the following sample, employees are grouped according to their city.
 
@@ -83,7 +83,7 @@ In the following sample, employees are grouped according to their city.
 
 The header element is shown statically at the top of the suggestion list items within the AutoComplete, and any custom element can be placed as a header element using [`headerTemplate`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#headertemplate) property.
 
-In the following sample, the list items and its headers are designed and displayed as two columns similar to multiple columns of the grid.
+In the following sample, the list items and their headers are designed and displayed as two columns similar to multiple columns of a grid.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -147,9 +147,9 @@ In the following sample, footer element displays the total number of list items 
 
 ## No records template
 
-The AutoComplete is provided with support to custom design the suggestion list content when no data is found and no matches found on search with the help of [`noRecordsTemplate`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#norecordstemplate) property.
+The AutoComplete provides support to custom design the suggestion list content when no data is found or no matches are found on a search, with the help of the [`noRecordsTemplate`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#norecordstemplate) property.
 
-In the following sample, suggestion list content displays the notification of no data available.
+In the following sample, the suggestion list content displays a notification indicating that no data is available.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -180,9 +180,9 @@ In the following sample, suggestion list content displays the notification of no
 
 ## Action failure template
 
-There is also an option to custom design the suggestion list content when the data fetch request fails at the remote server. This can be achieved using the [`actionFailureTemplate`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#actionfailuretemplate) property.
+There is also an option to custom design the suggestion list content when the data fetch request fails on the remote server. This can be achieved using the [`actionFailureTemplate`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#actionfailuretemplate) property.
 
-In the following sample, when the data fetch request fails, the AutoComplete displays the notification.
+In the following sample, when the data fetch request fails, the AutoComplete displays a notification.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -213,6 +213,6 @@ In the following sample, when the data fetch request fails, the AutoComplete dis
 
 ## See Also
 
-* [How to acheive filtering](./filtering)
-* [How to group the data using header](./grouping#grouping)
-* [How to show the list items with icon](./how-to/icon-support)
+* [How to achieve filtering](./filtering)
+* [How to group data using a header](./grouping#grouping)
+* [How to show list items with icons](./how-to/icon-support)

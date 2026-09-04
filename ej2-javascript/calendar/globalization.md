@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Globalization in ##Platform_Name## Calendar
 
-Globalization is the combination of  adapting the component to various languages by means of parsing and formatting the date or number [`Internationalization`](https://ej2.syncfusion.com/javascript/documentation/common/internationalization) and also by adding cultural specific customizations and translating the text [`localization`](https://ej2.syncfusion.com/javascript/documentation/common/localization)
+Globalization is the combination of adapting the component to various languages by means of parsing and formatting the date or number, known as [`Internationalization`](https://ej2.syncfusion.com/javascript/documentation/common/internationalization), and also by adding cultural specific customizations and translating the text, known as [`Localization`](https://ej2.syncfusion.com/javascript/documentation/common/localization).
 
 By default, the Calendar date format, week, and month names are specific to American English culture. It uses the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Internationalization](https://ej2.syncfusion.com/documentation/common/internationalization) package to parse and format date object based on the culture using the official [`UNICODE CLDR`](http://cldr.unicode.org) JSON data. It provides the [`loadCldr`](https://ej2.syncfusion.com/documentation/common/internationalization#loading-culture-data) method to load the culture-specific CLDR JSON data.
 
-All the Essential<sup style="font-size:70%">&reg;</sup> JS 2  component are specific to English culture ('en-US'). If you want to go with the different culture other than `English`, follow the below steps.
+All the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components are specific to the English culture ('en-US'). To work with a different culture other than `English`, follow the below steps.
 
 * Install the `CLDR-Data` package by using the below command (installs the CLDR JSON data). To know more about CLDR data, refer to the [`CLDR-Data`](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
 
@@ -25,13 +25,13 @@ npm install cldr-data --save
 
  Once the package is installed, the culture-specific JSON data will be available in `/node_modules/cldr-data`.
 
-* Now, import the installed CLDR JSON data to the `app.ts` file. To import JSON data, install the JSON plugin loader. In the example, SystemJS JSON plugin loader is used.
+* Now, import the installed CLDR JSON data to the `app.ts` file. To import JSON data, install the JSON plugin loader. In this example, the SystemJS JSON plugin loader is used.
 
 ```
 npm install systemjs-plugin-json --save-dev
 ```
 
-* After it is installed, configure the `system.config.js`  settings as given below to map the `systemjs-plugin-json` loader.
+* After it is installed, configure the `system.config.js` settings as given below to map the `systemjs-plugin-json` loader.
 
 ```ts
 System.config({
@@ -71,7 +71,7 @@ System.import('app');
 
 * Now, use the [`loadCldr`](https://ej2.syncfusion.com/documentation/common/internationalization#cldr-data-dependencies) method to load the culture-specific CLDR JSON data from the installed location to `app.ts` file.
 
-* Calendar displayed `Sunday` as the first day of week based on default culture ("en-US"). If you want to display the Calendar with loaded culture's first day of week, you need to import `weekdata.json` file from the `cldr-data/suppemental` as given in the code example.
+* Calendar displays `Sunday` as the first day of the week based on the default culture ("en-US"). To display the Calendar with the loaded culture's first day of the week, import the `weekdata.json` file from `cldr-data/supplemental` as given in the code example.
 
 ```ts
 //import the loadCldr from ej2-base
@@ -121,7 +121,7 @@ declare var require: any;
 loadCldr(
     require('cldr-data/supplemental/numberingSystems.json'),
     require('cldr-data/main/de/ca-gregorian.json'),
-    require('cldr-data/main/de/numbers.json'));
+    require('cldr-data/main/de/numbers.json'),
     require('cldr-data/main/de/timeZoneNames.json'));
 
 L10n.load({
@@ -168,7 +168,7 @@ The following example displays the Calendar in `German` culture.
 
 ## Right-to-left
 
-The Calendar supports right-to-left functionality for languages like Arabic,  Hebrew, etc. to display text in the right-to-left direction. Use
+The Calendar supports right-to-left functionality for languages like Arabic, Hebrew, etc. to display text in the right-to-left direction. Use the
 [`enableRtl`](https://ej2.syncfusion.com/javascript/documentation/api/calendar/index-default#enablertl) property to set the RTL direction.
 
 The following code example initializes the Calendar component in `Arabic` culture.
@@ -183,7 +183,7 @@ declare var require: any;
 loadCldr(
     require('cldr-data/supplemental/numberingSystems.json'),
     require('cldr-data/main/ar/ca-gregorian.json'),
-    require('cldr-data/main/ar/numbers.json'));
+    require('cldr-data/main/ar/numbers.json'),
     require('cldr-data/main/ar/timeZoneNames.json'));
 
 L10n.load({
@@ -202,8 +202,7 @@ let calendarObject: Calendar = new Calendar({
 calendarObject.appendTo('#element');
 ```
 
-The following example displays the Calendar in `Arabic`
-culture in the right-to-left direction.
+The following example displays the Calendar in `Arabic` culture in the right-to-left direction.
 
 {% if page.publishingplatform == "typescript" %}
 

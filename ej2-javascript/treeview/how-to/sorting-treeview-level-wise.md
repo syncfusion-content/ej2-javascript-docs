@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to sort TreeView nodes level wise in ##Platform_Name## TreeView
 
-You can sort the TreeView nodes based on their level. When using the [`sortOrder`](../../api/treeview#sortorder) property, the entire TreeView is sorted. If you want to sort a particular level, refer to the following code sample, which demonstrates how to sort only the parent node in the TreeView.
+You can sort the TreeView nodes based on their level. When using the [`sortOrder`](../../api/treeview#sortorder) property, the entire TreeView is sorted. If you want to sort a particular level only, refer to the following code sample, which demonstrates how to sort a specific level of nodes in the TreeView.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -29,14 +29,14 @@ In the following Wizard sample, each Tab is integrated with required components 
     tabObj.appendTo('#element');
 ```
 
-Create the following contents for each tab in the wizard:
+Create the following content for each tab in the wizard:
 
-1. **Search tab:** Created with [DropDownList](../../drop-down-list/data-binding/) to select the source, destination, and type of ticket. A [DatePicker](../../datepicker/getting-started/) is used for choosing the date of journey.
+1. **Search tab:** Created a [DropDownList](../../drop-down-list/data-binding) to select the source, destination, and type of ticket. A [DatePicker](../../datepicker/getting-started) is used for choosing the date of journey.
 2. **Train tab:** Based on the selected start and end points, a Grid is populated with a random list of available seats and train options. Initially, define the columns and row selected event for validation. After the source and destination are chosen, update the [dataSource](../../api/grid#datasource) for the Grid.
-3. **Passenger tab:** A table with Textbox, Numeric, and DropDownList components for adding passenger name, age, gender, and preferred berth/seat. Add validation on entering passenger details to proceed.
+3. **Passenger tab:** A table with Textbox, Numeric, and DropDownList components for adding passenger name, age, gender, and preferred berth/seat. Add validation when entering passenger details to proceed.
 4. **Payment tab:** Calculate the ticket cost based on location, passenger count, and ticket type. Generate data for the Grid with passenger details, train number, and ticket cost summary.
 
-You can go back to each tab using buttons available in it. Tabs are [`disabled`](../../api/tab/tabItem#disabled) to prevent navigation through tab header click actions. Once you complete the wizard, all the data is cleared, and the wizard returns to the starting tab.
+You can go back to each tab using the buttons available in it. Tabs are [`disabled`](../../api/tab/tabItem#disabled) to prevent navigation through tab header clicks. Once you complete the wizard, all the data is cleared, and the wizard returns to the starting tab.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to add font awesome icons in ##Platform_Name## Tab
 
-You can customize the Tab component items using Font Awesome icons and fonts. Here's how to do it:
+You can customize Tab items using Font Awesome icons and fonts. Here's how to do it:
 
 1. First, add the Font Awesome CDN reference link to your HTML file:
 
@@ -19,7 +19,7 @@ You can customize the Tab component items using Font Awesome icons and fonts. He
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 ```
 
-2. Then, use the ['iconCss'](../../api/tab/headerModel/#iconcss) property to add Font Awesome icons to the Tab component. 
+2. Then, use the ['iconCss'](../../api/tab/headerModel#iconcss) property to add Font Awesome icons to the Tab component. 
 
 The following example demonstrates how to use Font Awesome icons in the Tab component:
 
@@ -52,7 +52,7 @@ The following example demonstrates how to use Font Awesome icons in the Tab comp
 
 ## Customization
 
-Use the following CSS to customize the header item icon of Tab control.
+Use the following CSS to customize the header item icons of the Tab component.
 
 ```css
 

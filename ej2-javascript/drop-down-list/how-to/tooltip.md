@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to show options with tooltip in ##Platform_Name## Dropdown List
 
-You can achieve this behavior by using `ej2-tooltip` component. When the mouse hover on the DropDownList option that tooltip display some details related to hovered list item.
+You can achieve this behavior by using the `ej2-tooltip` component. When the mouse hovers over a DropDownList option, the tooltip displays details about that list item.
 
 {% if page.publishingplatform == "typescript" %}
 

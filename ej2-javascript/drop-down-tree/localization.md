@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Localization in ##Platform_Name## Dropdown Tree
 
-The [`Localization`](../common/localization/) library allows you to localize the default text content of the Dropdown Tree control. It can be localized to any culture by defining the texts and messages of the Dropdown Tree in the corresponding culture. The default locale of the Dropdown Tree control is `en` (English). The following table represents the default texts and messages of the Dropdown Tree in the `en` culture.
+The [`Localization`](../common/localization) library allows you to localize the default text content of the Dropdown Tree control. It can be localized into any culture by defining its texts and messages for that culture. The default locale of the Dropdown Tree control is `en` (English). The following table lists the default texts and messages for the `en` culture.
 
 |KEY|Text/Message|
 |----|----|

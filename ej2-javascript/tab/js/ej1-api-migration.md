@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Tab
 
-This article describes the API migration process of Tab component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process for the Tab component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility
 

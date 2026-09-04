@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # How to highlight matched character in ##Platform_Name## Dropdown List
 
-By using the **highlightSearch** method, you can highlight the matched character in DropDownList filtering.
+By using the `highlightSearch` method, you can highlight the matched characters in the DropDownList filtering.
 
-The following example demonstrates about how to highlight the matched character in filtering.
+The following example demonstrates how to highlight the matched characters while filtering.
 
 {% if page.publishingplatform == "typescript" %}
 

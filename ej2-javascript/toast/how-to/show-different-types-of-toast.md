@@ -1,17 +1,17 @@
 ---
 layout: post
-title: How to show different types of toast in ##Platform_Name## Toast | Syncfusion
+title: How to show different types of Toast in ##Platform_Name## Toast | Syncfusion
 description: Show ##Platform_Name## Toast as success, info, warning, or danger types using the cssClass predefined classes.
 platform: ej2-javascript
-control: Show different types of toast
+control: Show different types of Toast
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to show different types of toast in ##Platform_Name## Toast
+# How to show different types of Toast in ##Platform_Name## Toast
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 toast has the following predefined styles that can be defined using the [cssClass](../../api/toast/#cssclass) property for achieving different types of toast:
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast has the following predefined styles that can be defined using the [cssClass](../../api/toast/#cssclass) property to achieve different types of Toast:
 
 | Class | Description |
 | -------- | -------- |

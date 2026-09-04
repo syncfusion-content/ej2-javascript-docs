@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Value Binding in ##Platform_Name## MultiSelect Dropdown
 
-Value binding in the MultiSelect control allows you to associate data values with each list item. This facilitates managing and retrieving selected values efficiently. The MultiSelect component provides flexibility in binding both primitive data types and complex objects.
+Value binding in the MultiSelect allows you to associate data values with each list item. This facilitates managing and retrieving selected values efficiently. The MultiSelect component provides flexibility in binding both primitive data types and complex objects.
 
 ## Primitive Data Types
 
-The MultiSelect Dropdown control provides flexible binding capabilities for primitive data types like strings and numbers. You can effortlessly bind local primitive data arrays, fetch and bind data from remote sources, and even custom data binding to suit specific requirements. Bind the value of primitive data to the [value](../api/multi-select/#value) property of the MultiSelect.
+The MultiSelect provides flexible binding capabilities for primitive data types like strings and numbers. You can bind local primitive data arrays, fetch and bind data from remote sources, or apply custom data binding to suit specific requirements. Bind the value of the primitive data to the [`value`](../api/multi-select#value) property of the MultiSelect.
 
 Primitive data types include:
 
@@ -24,7 +24,7 @@ Primitive data types include:
 * Boolean
 * Null
 
-The following sample shows the example for preselect values for primitive data type
+The following sample shows an example of preselecting values for a primitive data type.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -55,9 +55,9 @@ The following sample shows the example for preselect values for primitive data t
 
 ## Object Data Types
 
-In the MultiSelect Dropdown control, object binding allows you to bind to a dataset of objects. When [`allowObjectBinding`](../api/multi-select/#allowobjectbinding) is enabled, the value of the control will be an object of the same type as the selected item in the [value](../api/multi-select/#value) property. This feature seamlessly binds arrays of objects, whether sourced locally, retrieved from remote endpoints, or customized to suit specific application needs.
+In the MultiSelect, object binding allows you to bind to a dataset of objects. When [`allowObjectBinding`](../api/multi-select#allowobjectbinding) is enabled, the value of the control will be an object of the same type as the selected item. This feature seamlessly binds arrays of objects, whether sourced locally, retrieved from remote endpoints, or customized to suit specific application needs.
 
-The following sample shows the example for preselect values for object data type
+The following sample shows an example of preselecting values for an object data type.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -86,4 +86,4 @@ The following sample shows the example for preselect values for object data type
 {% previewsample "page.domainurl/code-snippet/multiselect/objectvalue" %}
 {% endif %}
 
-> Since the `value` property supports object data types, it's necessary to provide the appropriate type wherever the `value` property is utilized.
+> Since the `value` property supports object data types, it is necessary to provide the appropriate type wherever the `value` property is utilized.

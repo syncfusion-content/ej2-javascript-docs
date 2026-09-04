@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Drag and Drop in ##Platform_Name## Query Builder UI
 
-The Query Builder provides the functionality to reposition rules or groups within the component effortlessly. This enhancement provides a more intuitive and flexible way to construct and modify queries. You can use [`allowDragAndDrop`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#allowDragAndDrop) to perform drag and drop functionality. And we have events support for drag and drop features that, indicates the [`dragStart`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#dragStart), [`drag`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#drag) and [`drop`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#drop) actions.
+The Query Builder provides the functionality to reposition rules or groups within the component effortlessly. This enhancement provides a more intuitive and flexible way to construct and modify queries. Use [`allowDragAndDrop`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#allowDragAndDrop) to enable drag and drop functionality. Events are also supported for drag and drop features that indicate the [`dragStart`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#dragStart), [`drag`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#drag) and [`drop`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#drop) actions.
 
 {% if page.publishingplatform == "typescript" %}
 

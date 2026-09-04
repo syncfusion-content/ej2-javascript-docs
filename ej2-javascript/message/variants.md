@@ -11,16 +11,17 @@ domainurl: ##DomainURL##
 
 # Variants in ##Platform_Name## Message
 
-The Message has predefined appearance variants for different visual representations. The variants of the message can be changed based on the [variant](../api/message/index-default#variant) property.
+The Message has predefined appearance variants for different visual representations. The appearance of the message can be changed using the [variant](../api/message/index-default#variant) property.
 
-The available variants are **Text**, **Outlined** and **Filled**. The default variant type for messages is **Text**.
 * **Text** - The severity is differentiated using a text color and a light background color.
-* **Outlined** - The severity is differentiated using a text color and a border without a background.
-* **Filled** - The severity is differentiated using a text color and a dark background color.
+* **Outlined** - The severity is indicated through a text color and a border without a background.
+* **Filled** - The severity is highlighted with a text color and a dark background color.
 
 The following example demonstrates the default message with different variant types.
 
-{% tabs %}
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/message/variants-cs1/index.ts %}
 {% endhighlight %}
@@ -28,5 +29,20 @@ The following example demonstrates the default message with different variant ty
 {% include code-snippet/message/variants-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-          
+
 {% previewsample "page.domainurl/code-snippet/message/variants-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/message/variants-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/message/variants-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/message/variants-cs1" %}
+
+{% endif %}

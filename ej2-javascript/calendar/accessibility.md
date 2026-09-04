@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## Calendar
 
-The Calendar component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Calendar component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Calendar component is outlined below.
 
@@ -41,13 +41,13 @@ The accessibility compliance for the Calendar component is outlined below.
 
 ## WAI-ARIA attributes 
 
-The web accessibility makes web content and web applications more accessible for disabled people. It especially helps in dynamic content change and development of advanced user interface controls  with AJAX, HTML, JavaScript, and related technologies.
+Web accessibility makes web content and web applications more accessible for people with disabilities. It especially helps in dynamic content changes and the development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies.
 
-Calendar provides built-in compliance with [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA support is achieved through attributes like `aria-label`, `aria-selected`, `aria-disabled`, and `aria-activedescendant` applied for navigation buttons, disable and active day cells.
+The Calendar provides built-in compliance with [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA support is achieved through attributes like `aria-label`, `aria-selected`, `aria-disabled`, and `aria-activedescendant` applied for navigation buttons, disabled and active day cells.
 
-It helps disabled persons by providing the information about the widget for assistive technology in the screen readers. Calendar component contains grid role and grid cell for each day cell.
+These attributes convey the widget information to assistive technologies in screen readers. The Calendar component contains the grid role and grid cell for each day cell.
 
-* **Aria-label**: This attribute provides text labels for an object for the previous and next month's elements. It helps the screen reader object to read.
+* **Aria-label**: This attribute provides text labels for the previous and next month elements. It helps the screen reader to read them aloud.
 
 * **Aria-selected**: Indicates the currently selected date of the Calendar component.
 
@@ -61,13 +61,13 @@ It helps disabled persons by providing the information about the widget for assi
 
 ## Keyboard interaction
 
-You can use the following keys to interact with the Calendar. This component implements keyboard navigation support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+The following keys can be used to interact with the Calendar. This component implements keyboard navigation support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
 
 It supports the following list of shortcut keys:
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Upper Arrow</kbd>  | Focuses the same day of the previous week. |
+| <kbd>Up Arrow</kbd>  | Focuses the same day of the previous week. |
 | <kbd>Down Arrow</kbd>  | Focuses the same day of the next week. |
 | <kbd>Left Arrow</kbd>  | Focuses the day before. |
 | <kbd>Right Arrow</kbd>  | Focuses the next day. |
@@ -78,12 +78,12 @@ It supports the following list of shortcut keys:
 | <kbd>Enter</kbd>  | Selects the currently focused date. |
 | <kbd>Shift + Page Up</kbd>  | Focuses the same date for the previous year. |
 | <kbd>Shift + Page Down</kbd>  | Focuses the same date for the next year. |
-| <kbd>Control + Upper Arrow</kbd>  | Moves to the inner level of view like month to year and year to decade. |
+| <kbd>Control + Up Arrow</kbd>  | Moves to the inner level of view like month to year and year to decade. |
 | <kbd>Control + Down Arrow</kbd>  | Moves out from the depth level view like decade to year and year to month. |
 | <kbd>Control + Home</kbd>  | Focuses the first date of the current year. |
 | <kbd>Control + End</kbd>  | Focuses the last date of the current year. |
 
-> To focus the Calendar component, use `alt+t` keys.
+> To focus the Calendar component, use the `alt+t` keys.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -116,7 +116,7 @@ It supports the following list of shortcut keys:
 
 The Calendar component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Calendar component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/calendar.html) in a new window to evaluate the accessibility of the Calendar component with accessibility tools.
+The accessibility compliance of the Calendar component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/calendar.html) in a new window to evaluate the component's accessibility with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/calendar.html" %}
 

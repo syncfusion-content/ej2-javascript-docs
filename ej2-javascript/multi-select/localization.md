@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Localization in ##Platform_Name## MultiSelect Dropdown
 
-The Localization library allows you to localize static text content of the [noRecordsTemplate](../api/multi-select/#norecordstemplate) and [actionFailureTemplate](../api/multi-select/#actionfailuretemplate) &nbsp;properties according to the culture currently assigned to the MultiSelect.
+The Localization library allows you to localize the static text content displayed by the [`noRecordsTemplate`](../api/multi-select#norecordstemplate) and [`actionFailureTemplate`](../api/multi-select#actionfailuretemplate) properties according to the culture currently assigned to the MultiSelect.
 
 | Locale key | en-US (default)  |
 |------|------|
@@ -20,9 +20,9 @@ The Localization library allows you to localize static text content of the [noRe
 
 ## Loading translations
 
-To load translation object to your application, use load function of the **L10n** class.
+To load a translation object into your application, use the `load` function of the **L10n** class.
 
-In the following sample, French culture is set to the MultiSelect and no data is loaded. Hence, the [`noRecordsTemplate`](../api/multi-select/#norecordstemplate) property displays its text in French culture initially, and if the sample is run offline, the [`actionFailureTemplate`](../api/multi-select/#actionfailuretemplate) property displays its text appropriately.
+In the following sample, the French culture is set for the MultiSelect and no data is loaded. As a result, the [`noRecordsTemplate`](../api/multi-select#norecordstemplate) property displays its text in French initially, and if the sample is run offline, the [`actionFailureTemplate`](../api/multi-select#actionfailuretemplate) property displays its corresponding text.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -54,4 +54,4 @@ In the following sample, French culture is set to the MultiSelect and no data is
 ## See Also
 
 * [Accessibility](./accessibility)
-* [How to bind the data to the combobox](./data-binding)
+* [How to bind data to the MultiSelect](./data-binding)

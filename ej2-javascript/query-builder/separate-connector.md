@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Separate Connector in ##Platform_Name## Query Builder UI
 
-The Query Builder provides the functionality to integrate standalone connectors between rules or groups within the same group. This allows for greater flexibility, as users can connect rules or groups using different connectors, enhancing the complexity and precision of query construction. You can use [`enableSeparateConnector`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#enableSeparateConnector) to perform separate connector functionality.
+The Query Builder provides the functionality to integrate standalone connectors between rules or groups within the same group. This allows for greater flexibility, as rules or groups can be connected using different connectors, enhancing the complexity and precision of query construction. Use [`enableSeparateConnector`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#enableSeparateConnector) to enable separate connector functionality.
 
 {% if page.publishingplatform == "typescript" %}
 

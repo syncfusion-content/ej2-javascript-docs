@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Template in ##Platform_Name## Toast
 
-The Template property in toast can be defined as `HTML element`, this can be either a `string` or `selector`.
+The Template property in the Toast control can be defined as an `HTML element`; this can be either a `string` or a `selector`.
 
 The HTML element tag can be given as a string for the [Template](../api/toast/#template) property.
 

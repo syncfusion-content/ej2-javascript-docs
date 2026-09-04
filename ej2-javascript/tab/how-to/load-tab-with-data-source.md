@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 You can bind any data object to Tab items by mapping it to the [`header`](../../api/tab/tabItem#header) and [`content`](../../api/tab/tabItem#content) properties.
 
-In the example below, we'll demonstrate how to fetch data from an `OData` service using `DataManager`. The retrieved data is formatted as a JSON object with `header` and `content` fields, which are then set to the `items` property of the Tab control.
+In the example below, we will demonstrate how to fetch data from an `OData` service using `DataManager`. The retrieved data is formatted as a JSON object with `header` and `content` fields, which are then set to the `items` property of the Tab control.
 
 {% if page.publishingplatform == "typescript" %}
 

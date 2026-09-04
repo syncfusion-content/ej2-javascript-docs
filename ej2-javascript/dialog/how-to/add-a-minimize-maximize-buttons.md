@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to add min and max buttons in ##Platform_Name## Dialog
+# How to add minimize and maximize buttons in ##Platform_Name## Dialog
 
-Dialog allows end users to either minimize or maximize the Dialog component. You can add minimize and maximize custom buttons near the close icon in the Dialog header using the [headerTemplate](https://ej2.syncfusion.com/documentation/api/dialog/index-default#header) property and handle the actions in the button click events, as shown in the following sample.
+The Dialog component can be minimized or maximized by end users. You can add minimize and maximize custom buttons near the close icon in the Dialog header using the [header](https://ej2.syncfusion.com/documentation/api/dialog/index-default#header) property and handle the actions in the button click events, as shown in the following sample.
 
 {% if page.publishingplatform == "typescript" %}
 

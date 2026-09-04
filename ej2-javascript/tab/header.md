@@ -15,11 +15,11 @@ This section explains how to modify the style of the Tab header and configure it
 
 ## Styles
 
-You can customize header styles by adding predefined classes to the Tab root element. The pre-defined CSS class names are as follows:
+You can customize header styles by adding predefined classes to the Tab root element. The predefined CSS class names are as follows:
 
 * **e-fill**: The selected Tab header background is set as a solid fill.
-* **e-background**: Tab header has a solid fill background, and the selected header has a highlighted border.
-* **e-background e-accent**: Tab header has a solid fill background, and the selected header has a highlighted border with accent color.
+* **e-background**: The Tab header has a solid fill background, and the selected header has a highlighted border.
+* **e-background e-accent**: The Tab header has a solid fill background, and the selected header has a highlighted border with accent color.
 
 > If the above custom style classes are not included in the root element, the default style is applied to the Tab items.
 
@@ -52,7 +52,7 @@ You can customize header styles by adding predefined classes to the Tab root ele
 
 ## Icon positions
 
-You can customize the position of the Tab header icons using the [`iconPosition`](../api/tab/header#iconposition) property. This property depends on the header items' [`iconCss`](../api/tab/header#iconcss) property. By default, the Tab header icon is placed on the left position. The position values are as follows:
+You can customize the position of the Tab header icons using the [`iconPosition`](../api/tab/header#iconposition) property. This property depends on the header items' [`iconCss`](../api/tab/header#iconcss) property. By default, the Tab header icon is placed on the left. The position values are as follows:
 
 * **Left**: Icon is placed on the left of the Tab header item.
 * **Right**: Icon is placed on the right of the Tab header item.

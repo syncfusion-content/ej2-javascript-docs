@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # How to prevent duplicate toast display in ##Platform_Name## Toast
 
-You can prevent identical same toast displaying in a screen by the event function and terminate the toast displaying process by setting the cancel event property in the [beforeOpen](../../api/toast/#beforeopen) event.
+Duplicate toasts displaying on a screen can be prevented by terminating the Toast display process through the cancel event property in the [beforeOpen](../../api/toast/#beforeopen) event.
 
-The following sample demonstrates preventing duplicate title toast element displaying with custom code blocks.
+The following sample demonstrates preventing duplicate title toasts from displaying with custom code blocks.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -53,11 +53,11 @@ Here, the template ID, `#template_toolbar` is directly appended to the Toolbar.
 
 ## Popup customization
 
-`Popup` is one of the supported responsive modes of the Toolbar. The Toolbar commands, popup mode priority and button text mode customizations are achieved in the item based rendering through property declaration. For more information on popup mode, refer [here](./responsive-mode/).
+`Popup` is one of the supported responsive modes of the Toolbar. The Toolbar commands, popup mode priority and button text mode customizations are achieved in the item based rendering through property declaration. For more information on popup mode, refer [here](./responsive-mode).
 
 The above behavior can also be achieved with template rendering by defining `equivalent class` names instead of property declaration.
 
-Equivalent class names listed below are needed to add the Toolbar items `div` element.
+Equivalent class names listed below need to be added to the Toolbar item's `div` element.
 
 ### Priority
 
@@ -102,7 +102,7 @@ Class              | Description
 
 ## Integrate menu component
 
-You can integrate menu component as toolbar item in Toolbar using [`template`](https://ej2.syncfusion.com/documentation/api/toolbar/item/#template) property. Menu can be populated with items as needed.
+You can integrate the menu component as a Toolbar item in the Toolbar using the [`template`](/api/toolbar/item#template) property. The menu can be populated with items as needed.
 
 {% if page.publishingplatform == "typescript" %}
 

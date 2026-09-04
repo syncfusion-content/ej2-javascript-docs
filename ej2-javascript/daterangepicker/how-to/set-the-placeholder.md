@@ -11,13 +11,11 @@ domainurl: ##DomainURL##
 
 # How to set placeholder in ##Platform_Name## DateRangePicker
 
-The following example demonstrates how to set [`placeholder`](../../api/daterangepicker#placeholder) in the DateRangePicker control.
-
-Using `placeholder` you can display a short hint in the input element.
+The following example demonstrates how to set [`placeholder`](../../api/daterangepicker#placeholder) in the DateRangePicker control. The `placeholder` displays a short hint in the input element.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs7/index.ts %}
 {% endhighlight %}

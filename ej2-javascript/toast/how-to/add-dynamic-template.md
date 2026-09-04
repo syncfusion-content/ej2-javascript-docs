@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to add dynamic template in ##Platform_Name## Toast
 
-Toast supports to change templates dynamically with displaying in multiple toasts. You can change the toast properties while calling in the [show](../../api/toast/index-default#show) method.
+Toast supports changing templates dynamically when displaying in multiple toasts. The Toast properties can be changed while calling the [show](../../api/toast/index-default#show) method.
 
 {% if page.publishingplatform == "typescript" %}
 

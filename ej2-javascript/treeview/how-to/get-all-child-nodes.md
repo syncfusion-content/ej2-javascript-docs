@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to get all child nodes in ##Platform_Name## TreeView
 
-This section demonstrates how to retrieve child nodes from a corresponding parent ID within the TreeView control. By using the [`getNode`](../../api/treeview#getnode)  method, you can obtain the node details of the TreeView. Please refer to the following example.
+This section demonstrates how to retrieve child nodes from a corresponding parent ID within the TreeView control. By using the [`getNode`](../../api/treeview#getnode) method, you can obtain the details of the parent node, and then access its `child` collection to retrieve all of its child nodes. Please refer to the following example.
 
 {% if page.publishingplatform == "typescript" %}
 

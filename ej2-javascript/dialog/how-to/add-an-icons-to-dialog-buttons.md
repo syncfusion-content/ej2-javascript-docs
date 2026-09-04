@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to add icons to Dialog buttons in ##Platform_Name## Dialog
 
-You can add icons to the dialog buttons using the [buttons](https://ej2.syncfusion.com/documentation/api/dialog/index-default#buttons) property or [footerTemplate](https://ej2.syncfusion.com/documentation/api/dialog/index-default#footertemplate) property . For detailed information about dialog buttons, refer to the [documentation](https://ej2.syncfusion.com/documentation/api/dialog/index-default#buttons)&nbsp;section.
+You can add icons to the dialog buttons using the [buttons](https://ej2.syncfusion.com/documentation/api/dialog/index-default#buttons) property or [footerTemplate](https://ej2.syncfusion.com/documentation/api/dialog/index-default#footertemplate) property. For detailed information about dialog buttons, refer to the [documentation](https://ej2.syncfusion.com/documentation/api/dialog/index-default#buttons)&nbsp;section.
 
 In the following sample, dialog footer buttons are customized with icons using `buttons` property.
 

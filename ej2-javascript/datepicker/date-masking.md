@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Date Masking in ##Platform_Name## DatePicker
 
-DatePicker has `enableMask` property that provides the option to enable the built-in date masking support. Also, you must inject the MaskedDateTime module to enable the masking support.
+The DatePicker has the `enableMask` property that provides the option to enable the built-in date masking support. The MaskedDateTime module must also be injected to enable the masking support.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datepicker/mask-module-cs1/index.ts %}
 {% endhighlight %}
@@ -51,7 +51,7 @@ The following example demonstrates default and custom format of DatePicker compo
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datepicker/mask-support-cs1/index.ts %}
 {% endhighlight %}
@@ -78,7 +78,7 @@ The following example demonstrates default and custom format of DatePicker compo
 
 ## Configure Mask Placeholder
 
-You can change mask placeholder value through property `maskPlaceholder`. By default , it takes the full name of date and time co-ordinates such as `day`, `month`, `year`, `hour` etc.
+The mask placeholder value can be changed through the `maskPlaceholder` property. By default, it takes the full name of date and time co-ordinates such as `day`, `month`, `year`, `hour` etc.
 
 While changing to a culture other than `English`, ensure that locale text for the concerned culture is loaded through load method of L10n class for mask placeholder values like below.
 
@@ -99,7 +99,7 @@ The following example demonstrates default and customized mask placeholder value
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datepicker/mask-placeholder-cs1/index.ts %}
 {% endhighlight %}

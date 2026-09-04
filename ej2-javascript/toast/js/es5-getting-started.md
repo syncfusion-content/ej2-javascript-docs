@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Getting Started with ##Platform_Name## Toast
 
-This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast and demonstrate the basic usage of the Toast control in a JavaScript application.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast control and demonstrates the basic usage of the Toast control in a JavaScript application.
 
 ## Dependencies
 
-The list of dependencies required to use the Toast component in your application is given below:
+The list of dependencies required to use the Toast component in an application is given below:
 
 ```js
 |-- @syncfusion/ej2-notifications
@@ -26,9 +26,9 @@ The list of dependencies required to use the Toast component in your application
 
 ## Setup for local environment
 
-Refer to the following steps to set up your local environment.
+Refer to the following steps to set up the local environment.
 
-**Step 1:** Create a root folder named **my-app** for your application.
+**Step 1:** Create a root folder named **my-app** for the application.
 
 **Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
 
@@ -45,7 +45,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast control can be in
 
 **Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** The global scripts and styles are available in the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -89,11 +89,11 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast control can be in
   </html>
 ```
 
-**Step 5:** Now, add the `Toast` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast** component in the `index.html` by using following code
+**Step 5:** Now, add the `Toast` element and initialize the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast** component in the `index.html` using the following code.
 
-## Initialize the Toast using JSON items collection
+## Initialize the Toast using the show method
 
-The Toast can be rendered by defining an array of `items`.
+The Toast control is rendered by appending it to the target element and calling the `show` method to display the toast.
 
 ```html
 <!DOCTYPE html>
@@ -122,22 +122,21 @@ The Toast can be rendered by defining an array of `items`.
              <div id="element"></div>
             <script>
 //Initialize Toast component
-    var toast = new ej.notifications.Toast({
-    title: 'Matt sent you a friend request',
-    content: 'You have a new friend request yet to accept',
-        target: document.body,
-    });
+                var toast = new ej.notifications.Toast({
+                    title: 'Matt sent you a friend request',
+                    content: 'You have a new friend request yet to accept',
+                    target: document.body
+                });
 
 //Render initialized Toast component
-    toast.appendTo('#element');
-    toast.show();
-
+                toast.appendTo('#element');
+                toast.show();
             </script>
        </body>
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast** component.
+**Step 6:** Now, run the `index.html` in a web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast** component.
 
 ### Using CDN link for script and style reference
 
@@ -155,7 +154,7 @@ The Toast can be rendered by defining an array of `items`.
 >
 > Styles: [`http://cdn.syncfusion.com/ej2/ej2-notifications/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-notifications/styles/material.css)
 
-**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `Toast` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast** component in the index.html by using following code.
+**Step 3:** Create a HTML page (index.html) in the `myapp` location and add the CDN link references. Now, add the `Toast` element and initialize the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast** component in the index.html using the following code.
 
 ```html
 
@@ -185,9 +184,9 @@ The Toast can be rendered by defining an array of `items`.
           <div id="element"></div>
      <script>
           var toast = new ej.notifications.Toast({
-          title: 'Matt sent you a friend request',
-          content: 'You have a new friend request yet to accept',
-               target: document.body,
+               title: 'Matt sent you a friend request',
+               content: 'You have a new friend request yet to accept',
+               target: document.body
           });
 
           //Render initialized Toast component
@@ -199,9 +198,9 @@ The Toast can be rendered by defining an array of `items`.
 
 ```
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast** component.
+**Step 4:** Now, run the `index.html` in a web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast** component.
 
-Output will be as follows:
+The output will be as follows:
 
 > In the previous example, the `#element` is the `id` of the HTML element in a page to which the toast is initialized.
 

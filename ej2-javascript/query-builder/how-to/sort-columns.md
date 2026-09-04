@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to sort columns in ##Platform_Name## Query Builder UI
 
-SortDirection allows you to sort the columns bounded to the Query Builder to view the columns by ascending or descending order. You should set the [`sortDirection`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#sortdirection) property to sort the fields.
+The sortDirection allows arranging the columns bound to the Query Builder in ascending or descending order. Set the [`sortDirection`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#sortdirection) property on the required fields to apply the sorting.
 
 {% if page.publishingplatform == "typescript" %}
 

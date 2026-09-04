@@ -11,12 +11,12 @@ domainurl: ##DomainURL##
 
 # Clone Group/Rule in ##Platform_Name## Query Builder UI
 
-The Query Builder functionality extends to cloning both individual rules and entire groups. Utilizing the Clone options will generate an exact duplicate of a rule or group adjacent to the original one. This feature enables users to replicate complex query structures effortlessly. The [`showButtons`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#showbuttons) function offers users the ability to toggle the visibility of these cloning buttons, providing convenient control over the cloning process within the Query Builder interface.
+The Query Builder functionality extends to cloning both individual rules and entire groups. Utilizing the clone options generates an exact duplicate of a rule or group adjacent to the original one. This feature enables replicating complex query structures effortlessly. The [`showButtons`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#showbuttons) property offers the ability to toggle the visibility of these cloning buttons, providing convenient control over the cloning process within the Query Builder interface.
 
-You can clone groups and rules by interacting through the user interface and methods.
+Groups and rules can be cloned through the user interface and methods.
 
-* Use the [`cloneGroup`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#clonegroup) method to clone group.
-* Use [`cloneRule`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#clonerule) method to clone rule.
+* Use the [`cloneGroup`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#clonegroup) method to clone a group.
+* Use the [`cloneRule`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#clonerule) method to clone a rule.
 
 {% if page.publishingplatform == "typescript" %}
 

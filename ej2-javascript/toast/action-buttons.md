@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Action Buttons in ##Platform_Name## Toast
 
-You can include action buttons to the toast control by adding the [buttons](../api/toast/index-default#buttons) property. The collection of Essential<sup style="font-size:70%">&reg;</sup> JS 2 button models can be bound to the `model` property inside the buttons property. You can also include the click event callback function for each button.
+Action buttons can be included in the Toast control by adding the [buttons](../api/toast/index-default#buttons) property. The collection of Essential<sup style="font-size:70%">&reg;</sup> JS 2 button models can be bound to the `model` property inside the buttons property. The click event callback function can also be included for each button.
 
 {% if page.publishingplatform == "typescript" %}
 

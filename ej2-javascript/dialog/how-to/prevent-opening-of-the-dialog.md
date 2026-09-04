@@ -11,8 +11,8 @@ domainurl: ##DomainURL##
 
 # How to open a Dialog on condition in ##Platform_Name## Dialog
 
-You can prevent opening of  the dialog by setting the [beforeOpen](https://ej2.syncfusion.com/documentation/api/dialog/index-default#beforeopen) event argument cancel value to true.
-In the following sample, the success dialog is opened when you enter the username value with minimum 4 characters. Otherwise, it will not be opened.
+You can prevent the opening of the Dialog by setting the [beforeOpen](https://ej2.syncfusion.com/documentation/api/dialog/index-default#beforeopen) event argument's `cancel` value to `true`. Note that `args` is of type `BeforeOpenEventArgs`, whose `cancel` property controls whether the Dialog opens.
+In the following sample, the success Dialog is opened when you enter a username value with a minimum of 4 characters and a non-empty password. Otherwise, it will not be opened.
 
 {% if page.publishingplatform == "typescript" %}
 

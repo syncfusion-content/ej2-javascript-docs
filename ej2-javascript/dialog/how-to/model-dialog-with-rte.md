@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Model dialog with rte in ##Platform_Name## Dialog control
+# Modal dialog with RTE in ##Platform_Name## Dialog control
 
-This section explains how to render model dialog with the Rich Text Editor component. when you render model dialog with the Rich Text Editor component, the first row of the content will be hidden because the dialog container and its wrapper elements are styled with display as none. so, the editor’s toolbar does not get proper offset width and rendered above the edit area container. In this scenario, we could use the `refreshUI` method on the Dialog `open` event.
+This section explains how to render a modal Dialog with the Rich Text Editor component. The sample uses a modal Dialog (`isModal`) and the RTE requires the `Toolbar`, `Link`, `Image`, `HtmlEditor`, and `QuickToolbar` modules. When you render a modal Dialog with the Rich Text Editor component, the first row of the content will be hidden because the dialog container and its wrapper elements are styled with `display: none`. As a result, the editor's toolbar does not get the proper offset width and is rendered above the edit area container. In this scenario, use the `refreshUI` method in the Dialog [`open`](https://ej2.syncfusion.com/documentation/api/dialog/index-default#open) event handler to correct the RTE rendering.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # How to disable component in ##Platform_Name## DatePicker
 
-To disable the DatePicker, use its [`enable`](../../api/datepicker#enabled) property.
+To disable the DatePicker, use its [`enabled`](../../api/datepicker#enabled) property.
 
 The following example demonstrates the DatePicker in a disabled state.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datepicker/getting-started-cs6/index.ts %}
 {% endhighlight %}

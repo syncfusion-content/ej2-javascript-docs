@@ -1,17 +1,19 @@
 ---
 layout: post
-title: How to update badge content in ##Platform_Name## Badge | Syncfusion
+title: How to update content in ##Platform_Name## Badge | Syncfusion
 description: Learn how to update ##Platform_Name## Badge content dynamically at runtime by binding a click handler to increment the displayed value.
 platform: ej2-javascript
-control: Dynamic Badge content
+control: Dynamic Badge Content
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to update badge content in ##Platform_Name## Badge
+# How to update content in ##Platform_Name## Badge
 
-Badges often need to be updated dynamically based on real-time requirements. The following sample demonstrates how to update badge content dynamically. Click the increment button to change the badge value.
+Badge content often needs to be updated dynamically based on real-time requirements. The following sample demonstrates how to modify the displayed text at runtime through a click event handler. Click the increment button to change the Badge value.
+
+This documentation assumes that the Badge control has been set up as described in the Getting Started section.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to check and uncheck by clicking tree node text in ##Platform_Name## TreeView
 
-You can check and uncheck the checkboxes of the TreeView control by clicking the tree node using the [`nodeClicked`](../../api/treeview#nodeclicked) event of TreeView.
+You can check and uncheck the checkboxes of the TreeView control by clicking the tree node text using the [`nodeClicked`](../../api/treeview#nodeclicked) event of TreeView. Inside the event handler, toggle the [`checked`](../api/treeview#checked) property of the clicked node to programmatically check or uncheck the corresponding checkbox.
 
 {% if page.publishingplatform == "typescript" %}
 

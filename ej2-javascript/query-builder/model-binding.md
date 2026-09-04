@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Model Binding in ##Platform_Name## Query Builder UI
 
-Model binding allows to bind properties for the components used in field, operator, and value columns. To implement model binding, assign fieldModel, operatorModel, and valueModel properties in QueryBuilder.
+Model binding allows binding properties for the components used in the field, operator, and value columns. To implement model binding, assign the `fieldModel`, `operatorModel`, and `valueModel` properties in the Query Builder.
 
 {% if page.publishingplatform == "typescript" %}
 

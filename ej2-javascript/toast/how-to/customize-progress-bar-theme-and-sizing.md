@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to customize the progress bar in ##Platform_Name## Toast
 
-By default, the progress bar appears based on the theme stylings and dimensions. You can customize the progress bar stylings using custom CSS or event functions.
+By default, the progress bar appears based on the theme stylings and dimensions. The progress bar stylings can be customized using custom CSS or event functions.
 
 The following sample demonstrates customizing the progress bar stylings using the [beforeOpen](../../api/toast/#beforeopen) event.
 

@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Grouping in ##Platform_Name## MultiSelect Dropdown
 
-The MultiSelect supports wrapping nested elements into a group based on different categories. The category of each list item can be mapped through the [groupBy](../api/multi-select/#fields) field in the data table. The group header is displayed both as inline and fixed headers. The fixed group header content is updated dynamically on scrolling the popup list with its category value.
+The MultiSelect supports wrapping nested elements into a group based on different categories. The category of each list item can be mapped through the [groupBy](../api/multi-select#fields) field in the data table. The group header is displayed both as inline and fixed headers. The fixed group header content is updated dynamically on scrolling the popup list with its category value.
 
-In the following sample, vegetables are grouped according on its category using `groupBy` field.
+In the following sample, vegetables are grouped according to their category using the `groupBy` field.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ In the following sample, vegetables are grouped according on its category using 
 
 ## HTML select
 
-The MultiSelect also supports grouping of list items under specific groups by initiating the `<select>` element using  `optgroup`. The nested items are wrapped based on the `<optgroup>` tag that is presents in the `<select>` element
+The MultiSelect also supports grouping list items by initializing the `<select>` element with `<optgroup>` tags. The nested items are wrapped based on the `<optgroup>` element present in the `<select>` element.
 
 ```
     <select id="selectElement">
@@ -90,13 +90,13 @@ The MultiSelect also supports grouping of list items under specific groups by in
 
 ## Customization
 
-The grouping header is also provided with customization option. This allows custom designing using the [`groupTemplate`](../api/multi-select/#grouptemplate) property for both inline and fixed headers.
+The grouping header can also be customized for both inline and fixed headers using the [`groupTemplate`](../api/multi-select#grouptemplate) property.
 
 ## Grouping with CheckBox
 
-Previously, there is no checkbox for group headers. Now, this feature allow to render checkbox in group header to select the group items in single selection. You can enable this feature by setting [`enableGroupCheckBox`](../api/multi-select/#enablegroupcheckbox) property value as **true** and **mode** property as **CheckBox**.
+Previously, there was no checkbox for group headers. Now, this feature allows you to render a checkbox in the group header to select the group items in a single selection. You can enable this feature by setting the [`enableGroupCheckBox`](../api/multi-select#enablegroupcheckbox) property value to `true` and the `mode` property to `CheckBox`.
 
-Inject the `CheckBoxSelection` module in the MultiSelect to use the checkbox.
+Inject the `CheckBoxSelection` module into the MultiSelect to use the checkbox.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -127,4 +127,4 @@ Inject the `CheckBoxSelection` module in the MultiSelect to use the checkbox.
 
 ## See Also
 
-* [Group Template support to MultiSelect](./templates/#group-template).
+* [Group Template support in the MultiSelect](./templates#group-template).

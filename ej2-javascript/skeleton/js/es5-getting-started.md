@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Getting Started with ##Platform_Name## Skeleton
 
-This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Skeleton and demonstrate the basic usage of the Skeleton control in a JavaScript application.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Skeleton and demonstrates the basic usage of the Skeleton control in a JavaScript application.
 
 ## Dependencies
 
-The list of dependencies required to use the Skeleton component in your application is given below:
+The list of dependencies required to use the Skeleton component in an application is given below:
 
 ```js
 |-- @syncfusion/ej2-notifications
@@ -24,9 +24,9 @@ The list of dependencies required to use the Skeleton component in your applicat
 
 ## Setup for local environment
 
-Refer to the following steps to set up your local environment.
+Refer to the following steps to set up the local environment.
 
-**Step 1:** Create a root folder named **my-app** for your application.
+**Step 1:** Create a root folder named **my-app** for the application.
 
 **Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
 
@@ -43,7 +43,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Skeleton control can be
 
 **Step 1:** Create an app folder `quickstart` for getting started.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** The global scripts and styles are available in the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Dependency Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\dist\global\{DEPENDENCY_PACKAGE_NAME}.min.js`
@@ -101,7 +101,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 5:** Now, add the `Skeleton` element and initialize the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Skeleton** control in the `index.html` using the following code:
+**Step 5:** Now, add the `Skeleton` element and initialize the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Skeleton** control in the `index.html` using the following code.
 
 ```html
 <!DOCTYPE html>
@@ -123,12 +123,12 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </head>
 
 <body>
-    <!--element which is going to render-->
+    <!-- element which is going to render -->
     <div id='skeleton'></div>
     <script>
 
         // initialize Skeleton control
-        var skeleton = new ej.notifications.Skeleton({height:'15px'});
+        var skeleton = new ej.notifications.Skeleton({ height: '15px' });
 
         // Render initialized Skeleton.
         skeleton.appendTo('#skeleton');
@@ -138,7 +138,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Skeleton** control.
+**Step 6:** Now, run the `index.html` in a web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Skeleton** control.
 
 ### Using CDN link for script and style reference
 
@@ -161,7 +161,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 > Styles: [`https://cdn.syncfusion.com/ej2/ej2-notifications/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-notifications/styles/material.css)
 
 **Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the
-`Skeleton` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Skeleton** control in the index.html by using following code.
+`Skeleton` element and initialize the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Skeleton** control in the index.html using the following code.
 
 ```html
 <!DOCTYPE html>
@@ -185,12 +185,12 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </head>
 
 <body>
-    <!--element which is going to render-->
+    <!-- element which is going to render -->
     <div id='skeleton'></div>
     <script>
 
         // initialize Skeleton control
-        var skeleton = new ej.notifications.Skeleton({ height:'15px' });
+        var skeleton = new ej.notifications.Skeleton({ height: '15px' });
 
         // Render initialized Skeleton.
         skeleton.appendTo('#skeleton');
@@ -200,9 +200,9 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Skeleton** control.
+**Step 4:** Now, run the `index.html` in a web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Skeleton** control.
 
-Output will be as follows:
+The output will be as follows:
 
 > In the previous example, the `#skeleton` is the `id` of the HTML element in a page to which the skeleton is initialized.
 

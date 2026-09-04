@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Position in ##Platform_Name## Toast
 
-The toast position can be updated based on predefined positions or customizable positions. The predefined position combinations are updated in the [X](../api/toast/toastPositionModel/#x) and [Y](../api/toast/toastPositionModel/#y) position properties.
+The Toast position can be updated based on predefined positions or customizable positions. The predefined position combinations are updated in the [X](../api/toast/toastPositionModel/#x) and [Y](../api/toast/toastPositionModel/#y) position properties.
 
 ## Predefined
 
@@ -26,8 +26,8 @@ The toast position can be updated based on predefined positions or customizable 
 * Top
 * Bottom
 
-> In multiple toast display, the new toast position will not be updated on dynamic change of property values until the old toast messages removed.
-> The toast occupies full width when you set the width to '100%', so the X positions will not affect the changes when the width is '100%'.
+> In multiple Toast display, the new Toast position will not be updated on dynamic change of property values until the old Toast messages are removed.
+> The Toast occupies full width when the width is set to '100%', so the X positions will not affect the changes when the width is '100%'.
 
 ## Custom
 

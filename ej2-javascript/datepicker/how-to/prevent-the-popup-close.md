@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # How to prevent popup close in ##Platform_Name## DatePicker
 
-To prevent the DatePicker popup from closing, use the preventDefault method from the `PreventableEventArgs`.
+To prevent the DatePicker popup from closing, call the `preventDefault` method on the `PreventableEventArgs` of the popup events.
 
 The following example demonstrates how to prevent the popup from closing.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datepicker/getting-started-cs7/index.ts %}
 {% endhighlight %}

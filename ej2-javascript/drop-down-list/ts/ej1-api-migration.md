@@ -34,7 +34,7 @@ This article describes the API migration process of  DropDownList component from
 | --- | --- | --- |
 | **Default** |	**Property**: *enableFilterSearch* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{enableFilterSearch : true,});`| **Property**: *allowFiltering* <br/>`let dropDownListObject = new DropDownList({allowFiltering: true});dropDownListObject.appendTo('#ddlelement');` |
 | **Server filtering** | **Property**: *enableServerFiltering* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{enableServerFiltering : true,});`| **Property**: *allowFiltering* <br/>`let dropDownListObject = new DropDownList({allowFiltering: true});dropDownListObject.appendTo('#ddlelement');` |
-| **Filter type** | **Property**: *filterType* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{fiterType : ej.FilterType.Contains,});` |<https://ej2.syncfusion.com/javascript/demos/#/material/drop-down-list/filtering.html> |
+| **Filter type** | **Property**: *filterType* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{filterType : ej.FilterType.Contains,});` |<https://ej2.syncfusion.com/javascript/demos/#/material/drop-down-list/filtering.html> |
 | **No Records Template** |	**Not Applicable** | **Property**: *noRecordsTemplate* <br/> `let dropDownListObject = new DropDownList({noRecordsTemplate: "<span class='norecord'> NO DATA AVAILABLE</span>"});dropDownListObject.appendTo('#ddlelement');` |
 | **Filter Bar watermark text** | **Not Applicable** | **Property**: *filterBarPlaceholder* <br/>`let dropDownListObject = new DropDownList({filterBarPlaceholder: "search"});dropDownListObject.appendTo('#ddlelement');` |
 | **Ignore casing and diacritics** | **Not Applicable** |**Property**: *ignoreAccent*<br/>`let dropDownListObject = new DropDownList({ignoreAccent: true});dropDownListObject.appendTo('#ddlelement');` |
@@ -75,7 +75,7 @@ This article describes the API migration process of  DropDownList component from
 <!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
-| **Default** |	**Property**: *enableSorting* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{enableSorting : true,});` | **Acheivable through [sortOrder](https://ej2.syncfusion.com/documentation/api/drop-down-list/#sortorder) property** |
+| **Default** |	**Property**: *enableSorting* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{enableSorting : true,});` | **Achievable through the [sortOrder](https://ej2.syncfusion.com/documentation/api/drop-down-list#sortorder) property** |
 | **Order of sorting** | **Property**: *sortOrder* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{sortOrder : ej.sortOrder.Descending,});` | **Property**: *sortOrder* <br/>`let dropDownListObject = new DropDownList({sortOrder: "Ascending"});dropDownListObject.appendTo('#ddlelement');`|
 
 ## Popup
@@ -83,7 +83,7 @@ This article describes the API migration process of  DropDownList component from
 <!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--- | --- | --- |
-| **Popup height** | **Property**: *popupHeight* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{popupHeight : "500px",});`| **Property**: popupHeight <br/>`let dropDownListObject = new DropDownList({popupHeight: "300px"});dropDownListObject.appendTo('#ddlelement');`|
+| **Popup height** | **Property**: *popupHeight* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{popupHeight : "500px",});`| **Property**: *popupHeight* <br/>`let dropDownListObject = new DropDownList({popupHeight: "300px"});dropDownListObject.appendTo('#ddlelement');`|
 | **Popup width** |	**Property**: *popupWidth* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{popupWidth : "500px",});` | **Property**: *popupWidth* <br/>`let dropDownListObject = new DropDownList({popupWidth: "400px"});dropDownListObject.appendTo('#ddlelement');`|
 | **Popup show on load** |	**Property**: *showPopupOnLoad* <br/> `var sample = new ej.DropDownList($('#dropdown1'),{showPopupOnLoad : true,});`|	**By default, the data load on demand.** |
 | **enableAnimation** |	**Property**: *enableAnimation* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{enableAnimation : true,});`| **Not applicable** |
@@ -96,7 +96,7 @@ This article describes the API migration process of  DropDownList component from
 | **Popup showing manually** | **Method**: *showPopup* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{'showPopup'})` | **Method**: *showPopup* <br/>`let dropDownListObject = new DropDownList();dropDownListObject.appendTo('#ddlelement')`<br/>`dropDownListObject.showPopup();`|
 | **Popup hiding manually** |**Method**: *hidePopup* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{'hidePopup'})` | **Method**: *hidePopup*<br/>`let dropDownListObject = new DropDownList();dropDownListObject.appendTo('#ddlelement')`<br/>`dropDownListObject.hidePopup();`|
 | **Before Popup hide event** | **Event**: *beforePopupHide* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{beforePopupHide : function (args) {/*Do your changes */}});`| **Not applicable** |
-| **Before Popup shown event** | **Event**: *beforePopupShown*<br/>`var sample = new ej.DropDownList($('#dropdown1'),{beforePopupShown : function (args) {/*Do your changes */}});`| **Event**: *beforeOpen* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{beforeOpen: "open"});dropDownListObject.appendTo('#ddlelement');`|
+| **Before Popup shown event** | **Event**: *beforePopupShown*<br/>`var sample = new ej.DropDownList($('#dropdown1'),{beforePopupShown : function (args) {/*Do your changes */}});`| **Event**: *beforeOpen* <br/>`let dropDownListObject = new DropDownList({beforeOpen: "open"});dropDownListObject.appendTo('#ddlelement');`|
 | **Popup hide event** | **Event**: *popupHide*<br/>`var sample = new ej.DropDownList($('#dropdown1'),{popupHide : function (args) {/*Do your changes */}});`|**Event**: *close* <br/>`let dropDownListObject = new DropDownList({close: "close"});dropDownListObject.appendTo('#ddlelement');` |
 | **Popup resize event** | **Event**: *popupResize*<br/>`var sample = new ej.DropDownList($('#dropdown1'),{popupResize : function (args) {/*Do your changes */}});`|	**Not applicable** |
 | **Popup resize start event**| **Event**: *popupResizeStart*<br/>`var sample = new ej.DropDownList($('#dropdown1'),{popupResizeStart : function (args) {/*Do your changes */}});`|	**Not applicable** |
@@ -109,7 +109,7 @@ This article describes the API migration process of  DropDownList component from
 | Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Watermark text** | **Property**: *watermarkText* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{watermarkText : "Select"});`| **Property**: *placeholder* <br/>`let dropDownListObject = new DropDownList({placeholder: "select"});dropDownListObject.appendTo('#ddlelement');`|
-| **Floating  of watermark text** | **Not applicable** |	**Property**: *floatLabelType* <br/>`let dropDownListObject = new DropDownList({floatLabelType: "Auto"});dropDownListObject.appendTo('#ddlelement');`|
+| **Floating of watermark text** | **Not applicable** |	**Property**: *floatLabelType* <br/>`let dropDownListObject = new DropDownList({floatLabelType: "Auto"});dropDownListObject.appendTo('#ddlelement');`|
 
 ## Grouping
 
@@ -152,11 +152,11 @@ This article describes the API migration process of  DropDownList component from
 | **Selecting item using text**	| **Method**: *selectItemByText* <br/>`var sample = new ej.DropDownList($('#dropdown1'),{'selectItemByText','car'})` |	**Not applicable** |
 | **Unselect item using text** | **Method**: *unselectItemByText*<br/>`var sample = new ej.DropDownList($('#dropdown1'),{'unselectItemByText','car'})` | **Not applicable** |
 | **Selecting item using value**| **Method**: *selectItemByValue*<br/>`var sample = new ej.DropDownList($('#dropdown1'),{'selectItemByValue','car'})` | **Not applicable** |
-| **Getting data by using value** |	**Method**: *getItemDataByValue*<br/>`var sample = new ej.DropDownList($('#dropdown1'),{'unselectItemByValue','car'})` | **Method**: *getDataByValue*<br/>`let dropDownListObject = new DropDownList();dropDownListObject.appendTo('#ddlelement')`<br/>`dropDownListObject.getDataByValue();`|
+| **Getting data by using value** |	**Method**: *getItemDataByValue*<br/>`var sample = new ej.DropDownList($('#dropdown1'),{'getItemDataByValue','car'})` | **Method**: *getDataByValue*<br/>`let dropDownListObject = new DropDownList();dropDownListObject.appendTo('#ddlelement')`<br/>`dropDownListObject.getDataByValue();`|
 | **Get selected value** | **Method**: *getSelectedItem*<br/>`var sample = new ej.DropDownList($('#dropdown1'),{'getSelectedItem'})` |**Not applicable** |
-| **Get selected text** | **Method**: *getSelectedText*<br/>`var sample = new ej.DropDownList($('#dropdown1'),{'getSelectedText'})`| **Property**: *text*<br/>`let dropDownListObject = new DropDownList({text="data"});dropDownListObject.appendTo('#ddlelement')` |
+| **Get selected text** | **Method**: *getSelectedText*<br/>`var sample = new ej.DropDownList($('#dropdown1'),{'getSelectedText'})`| **Property**: *text*<br/>`let dropDownListObject = new DropDownList({text: "data"});dropDownListObject.appendTo('#ddlelement')` |
 | **Select event** | **Event**: *select*<br/>`var sample = new ej.DropDownList($('#dropdown1'),{select : function (args) {/*Do your changes */}});`| **Event**: *select*<br/>`let dropDownListObject = new DropDownList({select:  "onSelect"});dropDownListObject.appendTo('#ddlelement')`|
-| **Addition of Html attributes** | **Property**: *htmlAttributes*<br/>`var sample = new ej.DropDownList($('#dropdown1'),{htmlAttributes: { disabled: "disabled"},});`| **Property**: *htmlAttributes*<br/>`let dropDownListObject = new DropDownList({htmlAttributes:{ disabled: "disabled"}});dropDownListObject.appendTo('#ddlelement')` |
+| **Addition of HTML attributes** | **Property**: *htmlAttributes*<br/>`var sample = new ej.DropDownList($('#dropdown1'),{htmlAttributes: { disabled: "disabled"},});`| **Property**: *htmlAttributes*<br/>`let dropDownListObject = new DropDownList({htmlAttributes:{ disabled: "disabled"}});dropDownListObject.appendTo('#ddlelement')` |
 
 ## Common
 

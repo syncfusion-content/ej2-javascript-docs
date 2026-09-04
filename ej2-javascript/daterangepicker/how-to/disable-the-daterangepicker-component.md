@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # How to disable it in ##Platform_Name## DateRangePicker
 
-DateRangePicker can be inactivated on a page, by setting [`enabled`](../../api/daterangepicker#enabled) value as false that will disable the component completely from all the user interactions including in form post. The following example demonstrates the disabled component.
+The DateRangePicker can be inactivated on a page by setting the [`enabled`](../../api/daterangepicker#enabled) value as false, which will disable the component completely from all interactions including in form post. The following example demonstrates the disabled component.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs6/index.ts %}
 {% endhighlight %}

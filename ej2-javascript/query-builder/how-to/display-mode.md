@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to change display mode in ##Platform_Name## Query Builder UI
 
-Display options allows you to view the Query Builder in Vertically or Horizontally. For this, you should use the [`displayMode`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#displaymode) property.
+The display options allow switching the Query Builder layout between vertical and horizontal. For this, the [`displayMode`](https://ej2.syncfusion.com/documentation/api/query-builder/index-default#displaymode) property should be used.
 
 {% if page.publishingplatform == "typescript" %}
 

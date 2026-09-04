@@ -15,7 +15,7 @@ Visualize progress in different shapes (rectangle, circle, and semi-circle) to g
 
 ## Linear
 
-Set **type** to Linear to get the linear progress bar. It also support secondary progress and different mode of progress.
+Set **type** to Linear to get the linear Progress Bar. It also support secondary progress and different mode of progress.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,7 +46,7 @@ Set **type** to Linear to get the linear progress bar. It also support secondary
 
 ## Circular
 
-Set **type** to Circular to get the circular progress bar. It also support secondary progress and different mode of progress.
+Set **type** to Circular to get the circular Progress Bar. It also support secondary progress and different mode of progress.
 
 {% if page.publishingplatform == "typescript" %}
 

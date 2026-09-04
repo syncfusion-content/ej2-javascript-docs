@@ -15,7 +15,7 @@ The TreeView control supports UI virtualization to enhance performance when hand
 
 To enable virtualization, set the `enableVirtualization` property to **true** and define a fixed `height` for the TreeView container.
 
-In the following sample, the `enableVirtualization` property is enabled.
+The following sample demonstrates virtualization with a large dataset.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -59,7 +59,7 @@ Virtualization provides the following performance benefits:
 
 * **Faster initial load**: Large datasets load quickly as only a subset of nodes are rendered initially.
 
-* **Smooth scrolling**: Dynamic loading ensures smooth scrolling experience without lag.
+* **Smooth scrolling**: Dynamic rendering of nodes as the user scrolls ensures a smooth scrolling experience without lag.
 
 * **Lower CPU usage**: Rendering fewer elements reduces CPU consumption.
 

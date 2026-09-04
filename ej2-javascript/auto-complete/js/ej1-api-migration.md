@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 # EJ1 API Migration in ##Platform_Name## AutoComplete
 
 This article describes the API migration process of  AutoComplete component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
-> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use multiselection support in autocomplete, we suggest you to use MultiSelect component.
+> The MultiSelect concept is not present in EJ2 AutoComplete. If you want multiselection support in the AutoComplete, we suggest using the MultiSelect component.
 
 ## DataBinding
 
@@ -33,7 +33,7 @@ This article describes the API migration process of  AutoComplete component from
 | **Case sensitivity** | **Property**: *caseSensitiveSearch*<br/>`$('#autocomplete').ejAutocomplete({ caseSensitiveSearch: true,});`|**Property:** *ignoreCase*<br/>`var groupObj = new ej.dropdowns.AutoComplete({ignoreCase: true,});groupObj.appendTo('#vegetables');`|
 | **Accent effective search** | **Not applicable** | **Property** : *ignoreAccent* <br/>`var groupObj = new ej.dropdowns.AutoComplete({ignoreAccent: true,});groupObj.appendTo('#vegetables');`|
 | **Filtering Type** | **Property:** *filterType*<br/>`$('#autocomplete').ejAutocomplete({ filterType: "Contains",});`| **Property**: *filterType*<br/>`var groupObj = new ej.dropdowns.AutoComplete({filterType: filtertype,});groupObj.appendTo('#vegetables');` |
-| **Autofill** | **Property:** *enableAutoFill*<br/>`$('#autocomplete').ejAutocomplete({ enableAutoFill: true,});` | **Property:**: *autoFill* <br/>`var groupObj = new ej.dropdowns.AutoComplete({autoFill: true,});groupObj.appendTo('#vegetables');`|
+| **Autofill** | **Property:** *enableAutoFill*<br/>`$('#autocomplete').ejAutocomplete({ enableAutoFill: true,});` | **Property:** *autoFill* <br/>`var groupObj = new ej.dropdowns.AutoComplete({autoFill: true,});groupObj.appendTo('#vegetables');`|
 | **Highlight the search word** | **Property**: *highlightSearch* `$('#autocomplete').ejAutocomplete({ highlightSearch: true,});`|**Property:** *highlight* <br/>`var groupObj = new ej.dropdowns.AutoComplete({highlight: true,});groupObj.appendTo('#vegetables');`|
 | **No of items to be shown** | **Property:** *itemsCount*<br/>`$('#autocomplete').ejAutocomplete({ itemsCount: 3,});` |**Property:** *suggestionCount*<br/>`var groupObj = new ej.dropdowns.AutoComplete({suggestionCount: 5,});groupObj.appendTo('#vegetables');` |
 | **Minimum characters to enter** | **Property:** *minCharacter*<br/> `$('#autocomplete').ejAutocomplete({ minCharacter: 3,});` |**Property:** *minLength* <br/>`var groupObj = new ej.dropdowns.AutoComplete({minLength: 4,});groupObj.appendTo('#vegetables');` |
@@ -44,7 +44,7 @@ This article describes the API migration process of  AutoComplete component from
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Watermark text** | **Property:** *watermarkText* <br/>`$('#autocomplete').ejAutocomplete({watermarkText:"select" });`| **Property:** *placeholder* <br/>`var groupObj = new ej.dropdowns.AutoComplete({placeholder: "Select",});groupObj.appendTo('#vegetables');`|
-| **Floating  of watermark text** | **Not applicable**   | **Property:** *floatLabelType* <br/>`var groupObj = new ej.dropdowns.AutoComplete({floatLabelType: floatLabelType,});groupObj.appendTo('#vegetables');`|
+| **Floating of watermark text** | **Not applicable**   | **Property:** *floatLabelType* <br/>`var groupObj = new ej.dropdowns.AutoComplete({floatLabelType: floatLabelType,});groupObj.appendTo('#vegetables');`|
 
 ## Popup
 
@@ -52,10 +52,10 @@ This article describes the API migration process of  AutoComplete component from
 | --- | --- | --- |
 | **No records text** | **Property:** *emptyResultText* <br/> `$('#autocomplete').ejAutocomplete({emptyResultText:"no records" });`| **Property:** *noRecordsTemplate*<br/> `var groupObj = new ej.dropdowns.AutoComplete({noRecordsTemplate: noRecordsTemplate,});groupObj.appendTo('#vegetables');`|
 | **No records showing** | **Property:** *showEmptyResultText*<br/> `$('#autocomplete').ejAutocomplete({showEmptyResultText:true })` | **Not applicable** |
-| **Popupbutton** | **Property:** *showPopupButton*<br/> `$('#autocomplete').ejAutocomplete({ShowPopupButton:true })` | **Property:** *showPopupButton*<br/>  `var groupObj = new ej.dropdowns.AutoComplete({showPopupButton: true,});groupObj.appendTo('#vegetables');`|
+| **Popup button** | **Property:** *showPopupButton*<br/> `$('#autocomplete').ejAutocomplete({showPopupButton:true })` | **Property:** *showPopupButton*<br/>  `var groupObj = new ej.dropdowns.AutoComplete({showPopupButton: true,});groupObj.appendTo('#vegetables');`|
 | **Clear button** | **Property:** *showResetIcon* <br/> `$('#autocomplete').ejAutocomplete({showResetIcon:true })` | **Property:** *showClearButton* <br/>`var groupObj = new ej.dropdowns.AutoComplete({showClearButton: true,});groupObj.appendTo('#vegetables');` |
 | **Animation** | **Property:** *animateType* <br/> `$('#autocomplete').ejAutocomplete({animateType:animateType })` | **Not Applicable** |
-| **Focusing the list item** | **Property:** *AutoFocus*<br/> `@Html.EJ().Autocomplete("selectCar").AutoFocus("true")` |**Not applicable** |
+| **Focusing the list item** | **Property:** *autoFocus*<br/> `$('#autocomplete').ejAutocomplete({autoFocus: true,});` |**Not applicable** |
 | **Delaying the popup open time** | **Property:** *delaySuggestionTimeout*<br/> `$('#autocomplete').ejAutocomplete({delaySuggestionTimeout:300 })` | **Not applicable** |
 | **Popup text when there is no popup items** | **Property:** *emptyResultText*<br/> `$('#autocomplete').ejAutocomplete({emptyResultText:"no Records" })`  |<https://ej2.syncfusion.com/javascript/demos/#/material/auto-complete/template.html> |
 | **Enable/disable the duplicate option** | **Property:** *enableDistinct*<br/> `$('#autocomplete').ejAutocomplete({enableDistinct:true })`|**Not applicable**  |
@@ -70,10 +70,10 @@ This article describes the API migration process of  AutoComplete component from
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *cssClass* <br/> `$('#autocomplete').ejAutocomplete({cssClass:"cssClass" })` | **Property:** *cssClass* <br/> `var groupObj = new ej.dropdowns.AutoComplete({cssClass:"cssClass",});groupObj.appendTo('#vegetables');`|
-| **Height** | **Property:** *height* <br/> `$('#autocomplete').ejAutocomplete({height:"300px" })`| **Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/auto-complete/api-autoComplete.html?lang=typescript#cssclass) property** |
-| **showRoundedCorner**   | **Property:** *showRoundedCorner*<br/> `$('#autocomplete').ejAutocomplete({showRoundedCorner:true })` | **Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/auto-complete/api-autoComplete.html?lang=typescript#cssclass) property**. |
+| **Height** | **Property:** *height* <br/> `$('#autocomplete').ejAutocomplete({height:"300px" })`| **Achievable through the [cssClass](https://ej2.syncfusion.com/documentation/auto-complete/api-autoComplete.html?lang=typescript#cssclass) property** |
+| **showRoundedCorner**   | **Property:** *showRoundedCorner*<br/> `$('#autocomplete').ejAutocomplete({showRoundedCorner:true })` | **Achievable through the [cssClass](https://ej2.syncfusion.com/documentation/auto-complete/api-autoComplete.html?lang=typescript#cssclass) property**. |
 | **Width** | **Property:** *width* <br/> `$('#autocomplete').ejAutocomplete({width:300px })`| **Property:** *width* <br/> `var groupObj = new ej.dropdowns.AutoComplete({width:"300px",});groupObj.appendTo('#vegetables');`|
-| **Visibility** | **Property:** *visible* <br/>`$('#autocomplete').ejAutocomplete({visible:true })` | **Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/auto-complete/api-autoComplete.html?lang=typescript#cssclass) property**. |
+| **Visibility** | **Property:** *visible* <br/>`$('#autocomplete').ejAutocomplete({visible:true })` | **Achievable through the [cssClass](https://ej2.syncfusion.com/documentation/auto-complete/api-autoComplete.html?lang=typescript#cssclass) property**. |
 
 ## Grouping
 
@@ -85,7 +85,7 @@ This article describes the API migration process of  AutoComplete component from
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-| **Default** | **Property:** *Locale* <br/>`$('#autocomplete').ejAutocomplete({lcoale: "fr-FE",});`| **Property:** *Locale* <br/>`var groupObj = new ej.dropdowns.AutoComplete({locale: "fr-FE"});groupObj.appendTo('#vegetables');`|
+| **Default** | **Property:** *Locale* <br/>`$('#autocomplete').ejAutocomplete({locale: "fr-FE",});`| **Property:** *Locale* <br/>`var groupObj = new ej.dropdowns.AutoComplete({locale: "fr-FE"});groupObj.appendTo('#vegetables');`|
 
 ## Template
 
@@ -103,7 +103,7 @@ This article describes the API migration process of  AutoComplete component from
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-| **Default** | **Property:** *allowSorting* <br/> `$('#autocomplete').ejAutocomplete({allowSorting: true,});` | **Acheivable through [sortOrder](https://ej2.syncfusion.com/documentation/auto-complete/api-autoComplete.html?lang=typescript#sortorder) property** |
+| **Default** | **Property:** *allowSorting* <br/> `$('#autocomplete').ejAutocomplete({allowSorting: true,});` | **Achievable through [sortOrder](https://ej2.syncfusion.com/documentation/auto-complete/api-autoComplete.html?lang=typescript#sortorder) property** |
 | **Order of sorting** | **Property:** *sortOrder* <br/>`$('#autocomplete').ejAutocomplete({sortOrder: "Ascending",});`|**Property:** *sortOrder*<br/> `var groupObj = new ej.dropdowns.AutoComplete({sortOrder: "sortOrder"});groupObj.appendTo('#vegetables');` |
 
 ## Accessibility
@@ -129,7 +129,7 @@ This article describes the API migration process of  AutoComplete component from
 | --- | --- | --- |
 | **Enable/disable** | **Property:** *enabled*<br/>`$('#autocomplete').ejAutocomplete({enabled: true,});` | **Property:** *enabled* <br/>`var groupObj = new ej.dropdowns.AutoComplete({enabled: true});groupObj.appendTo('#vegetables');`|
 | **Enable persistence** | **Property:** *enablePersistence*<br/> `$('#autocomplete').ejAutocomplete({enablePersistence: true,});` | **Property:** *enablePersistence* <br/> `var groupObj = new ej.dropdowns.AutoComplete({enablePersistence: true});groupObj.appendTo('#vegetables');`|
-| **Loading icon** | **Property:** *showLoadingIcon* <br/>`$('#autocomplete').ejAutocomplete({showLoadingIcon: true,});` | **By default,it is showing** |
+| **Loading icon** | **Property:** *showLoadingIcon* <br/>`$('#autocomplete').ejAutocomplete({showLoadingIcon: true,});` | **By default, it is shown** |
 | **Read only** | **Property:** *readOnly* <br/> `$('#autocomplete').ejAutocomplete({readOnly: true,});` | **Property:** *readOnly* <br/> `var groupObj = new ej.dropdowns.AutoComplete({readOnly: true});groupObj.appendTo('#vegetables');`  |
 | **Disable** | **Method:** *disable*<br/> `$("#autocomplete").ejAutoComplete("disable");` | **Achievable through [enabled](https://ej2.syncfusion.com/documentation/auto-complete/api-autoComplete.html?lang=typescript#enabled) property**  |
 
@@ -143,9 +143,9 @@ This article describes the API migration process of  AutoComplete component from
 | **Destroy** | **Method:** *destroy*<br/> `$("#autocomplete").ejAutoComplete("destroy");`| **Method:** *destroy* <br/>`var groupObj = new ej.dropdowns.AutoComplete({allowCustom: true});groupObj.appendTo('#vegetables');`<br/><br/>`groupObj.destroy();`|
 | **Reset the autocomplete** | **Method:** *clearText*<br/>`$("#autocomplete").ejAutoComplete("clearText");`  | **Property:** *value*<br/> `var groupObj = new ej.dropdowns.AutoComplete({value: ""});groupObj.appendTo('#vegetables');` |
 | **Multicolumn** | **Property:** *multiColumnSettings*<br/> `var autocompleteInstance =new ej.Autocomplete($("#selectCar"), {multiColumnSettings:{enable:true,showHeader:true,stringFormat:"{1}",searchColumnIndices[0,1,2],`<br/> `columns:[{"field": "EmployeeID" ,"headerText":"EmployeeID"},{"field": "FirstName" , "headerText":"FirstName"},{"field": "City" , "headerText":"City"}]}});` |**Not applicable** |
-| **Hide the Autocomplete** | **Method:** *hide*<br/>`$("#autocomplete").ejAutoComplete("hide");` | **Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/auto-complete/api-autoComplete.html?lang=typescript#cssclass) property.**|
+| **Hide the Autocomplete** | **Method:** *hide*<br/>`$("#autocomplete").ejAutoComplete("hide");` | **Achievable through the [cssClass](https://ej2.syncfusion.com/documentation/auto-complete/api-autoComplete.html?lang=typescript#cssclass) property.** |
 | **Getting particular text** | **Method:** *getActiveText* <br/>`$("#autocomplete").ejAutoComplete("getActiveText");`|**Not Applicable** |
-| **Getting particular value** | **Method:** *getValue*<br/> `$("#autocomplete").ejAutoComplete("getValue");` |**Acheivable through the [value](https://ej2.syncfusion.com/documentation/auto-complete/api-autoComplete.html?lang=typescript#value) property**. |
+| **Getting particular value** | **Method:** *getValue*<br/> `$("#autocomplete").ejAutoComplete("getValue");` |**Achievable through the [value](https://ej2.syncfusion.com/documentation/auto-complete/api-autoComplete.html?lang=typescript#value) property**. |
 | **Change event** | **Event:** *change*<br/>`$('#autocomplete').ejAutocomplete({change:"change"});`|**Event:** *change* <br/>`var groupObj = new ej.dropdowns.AutoComplete({change: "change"});groupObj.appendTo('#vegetables');`|
 | **Create event** | **Event:** *create* <br/>`$('#autocomplete').ejAutocomplete({create:"create"});`|**Event:** *created* <br/>`var groupObj = new ej.dropdowns.AutoComplete({created: "created"});groupObj.appendTo('#vegetables');`|
 | **Destroy event** | **Event:** *destroy* <br/>`$('#autocomplete').ejAutocomplete({destroy:"destroy"});` |**Event:** *destroyed* <br/>`var groupObj = new ej.dropdowns.AutoComplete({destroyed: "destroyed"});groupObj.appendTo('#vegetables');`|

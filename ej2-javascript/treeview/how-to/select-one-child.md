@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to select one child in ##Platform_Name## TreeView
 
-The TreeView control allows both single and multiple selections. If your application requires selecting one child at a time under a specific parent, refer to the following example. You can achieve this by using the [`nodeSelecting`](../../api/treeview#nodeselecting)  event in the TreeView control. However, you can reset the selected child and make another selection by pressing Ctrl + selected nodes.
+The TreeView control allows both single and multiple selections. If your application requires selecting one child at a time under a specific parent, refer to the following example. You can achieve this by using the [`nodeSelecting`](../../api/treeview#nodeselecting) event in the TreeView control. However, you can reset the selected child and make another selection by holding the Ctrl key while clicking the new node.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The MultiSelect component has been designed, keeping in mind the `WAI-ARIA` specifications, and applies the WAI-ARIA roles, states, and properties along with `keyboard support`. This component is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 
-The MultiSelect component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The MultiSelect component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the MultiSelect component is outlined below.
 
@@ -61,20 +61,20 @@ You can use the following key shortcuts to access the MultiSelect without interr
 
 | **Keyboard shortcuts** | **Actions** |
 | --- | --- |
-| <kbd>Arrow Down</kbd> | Set focus at the first item in the MultiSelect when no item selected. Otherwise, moves focus next to the currently selected item. |
-| <kbd>Arrow Up</kbd> | Moves focus previous to the currently selected one. |
-| <kbd>Page Down</kbd> | Scrolls down to the next page and set focus to the first item when popup list opens. |
-| <kbd>Page Up</kbd> | Scrolls up to the previous page and set focus to the first item when popup list opens. |
+| <kbd>Arrow Down</kbd> | Sets focus on the first item in the MultiSelect when no item is selected; otherwise, moves focus to the item next to the currently selected item. |
+| <kbd>Arrow Up</kbd> | Moves focus to the item previous to the currently selected one. |
+| <kbd>Page Down</kbd> | Scrolls down to the next page and sets focus to the first item when the popup list opens. |
+| <kbd>Page Up</kbd> | Scrolls up to the previous page and sets focus to the first item when the popup list opens. |
 | <kbd>Enter</kbd> | Selects the focused item, and popup list closes when it is in open state. |
 | <kbd>Tab</kbd> | Focuses on the next TabIndex element on the page when the popup is closed. Otherwise, closes the popup list and remains the focus of the component. |
 | <kbd>Shift + tab </kbd> | Focuses on the previous TabIndex element on the page when the popup is closed. Otherwise, closes the popup list and remains the focus of the component. |
 | <kbd>Alt + Down</kbd> | Opens the popup list. |
 | <kbd>Alt + Up</kbd> | Closes the popup list. |
 | <kbd>Esc(Escape)</kbd> | Closes the popup list when it is in an open state and the currently selected item remains the same. |
-| <kbd>Home</kbd> | set focus to the first item. |
-| <kbd>End</kbd> | set focus to the last item. |
+| <kbd>Home</kbd> | Sets focus to the first item. |
+| <kbd>End</kbd> | Sets focus to the last item. |
 
-> In the below sample, focus the MultiSelect component using <kbd>alt+t</kbd> keys.
+> In the following sample, focus the MultiSelect component using <kbd>alt+t</kbd> keys.
 
 {% if page.publishingplatform == "typescript" %}
 

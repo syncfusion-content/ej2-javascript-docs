@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Shapes in ##Platform_Name## Skeleton
 
-The Skeleton control support various built-in shape variants to design layout of the page. You can use the [`shape`](../api/skeleton/index-default#shape) property to create a preview of any layout.
+The Skeleton control supports various built-in shape variants to design the layout of the page. The [`shape`](../api/skeleton/index-default#shape) property is used to create a preview of any layout.
 
-The Skeleton control supports the following content shapes:
+The Skeleton control supports the following shapes:
 
 ## Circle skeleton shape
 
@@ -69,7 +69,7 @@ import { Skeleton } from '@syncfusion/ej2-notifications';
 let text: Skeleton = new Skeleton({
     shape: "Text",
     height: "15px"
-})
+});
 
 // Render initialized Skeleton.
 text.appendTo('#textSkeleton');

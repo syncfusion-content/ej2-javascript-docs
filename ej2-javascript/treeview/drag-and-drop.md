@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The TreeView control allows you to drag and drop any node by setting [`allowDragAndDrop`](../api/treeview#allowdraganddrop) to **true**. Nodes can be dragged and dropped at all levels of the same TreeView.
 
-The dragged nodes can be dropped at any level by indicator lines with **line**, **plus/minus**, and **restrict** icons. These icons represent the exact position where the node is to be dropped as a sibling or child.
+The dragged nodes can be dropped at any level. Indicator icons (such as the line, plus/minus, and restrict icons) show the exact position where the node will be dropped — as a sibling or a child of the target node.
 
 The following table explains the usage of indicator icons:
 

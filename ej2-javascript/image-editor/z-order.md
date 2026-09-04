@@ -11,23 +11,25 @@ domainurl: ##DomainURL##
 
 # Z-Order in ##Platform_Name## Image Editor
 
-We are excited to introduce `z-order` support in the Image Editor. It's a powerful tool that allows users to adjust the positioning of annotations. This feature is particularly useful for designing personalized templates like greeting cards or posters, where managing the layering of multiple annotations is crucial for a polished final product.
- 
-Types of adjustment in the Image Editor `z-order` support.
+The Image Editor provides `z-order` support to adjust the layering of annotations. This feature is useful for designing personalized templates like greeting cards or posters, where managing the layering of multiple annotations is needed for a polished final result.
 
-* [Bring forward](https://helpej2.syncfusion.com/documentation/api/image-editor/index-default#bringforward) - Switch the selected annotation with the annotation one layer ahead of it.
+> **Note:** Z-order actions are available in the quick access toolbar and can be applied only when an annotation is selected first.
 
-* [Sent Backward](https://helpej2.syncfusion.com/documentation/api/image-editor/index-default#sendbackward) - Switch the selected annotation with the annotation one layer behind it.
+The following adjustments are available through `z-order` support. Each method returns `void`.
 
-* [Bring to Front](https://helpej2.syncfusion.com/documentation/api/image-editor/index-default#bringtofront) - Move the selected annotation to ahead of all other annotations.
+* [Bring forward](https://helpej2.syncfusion.com/documentation/api/image-editor/index-default#bringforward) - Move the selected annotation in front of the annotation one layer ahead of it.
 
-* [Send to Back](https://helpej2.syncfusion.com/documentation/api/image-editor/index-default#sendtoback) - Move the selected annotation to behind all other annotations.
+* [Send backward](https://helpej2.syncfusion.com/documentation/api/image-editor/index-default#sendbackward) - Move the selected annotation behind the annotation one layer behind it.
 
-In the following example, you can use the `z-order` support.
+* [Bring to front](https://helpej2.syncfusion.com/documentation/api/image-editor/index-default#bringtofront) - Move the selected annotation in front of all other annotations.
+
+* [Send to back](https://helpej2.syncfusion.com/documentation/api/image-editor/index-default#sendtoback) - Move the selected annotation behind all other annotations.
+
+In the following example, the four `z-order` operations are applied from button clicks.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/z-order-cs1/index.ts %}
 {% endhighlight %}

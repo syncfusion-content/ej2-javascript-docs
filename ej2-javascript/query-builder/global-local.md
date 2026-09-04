@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Localization in ##Platform_Name## Query Builder UI | Syncfusion
-description: Localize the ##Platform_Name## Query Builder UI default text for Add Group, Add Condition, and operator labels by setting locale and a translation object.
+description: Localize the default Query Builder UI text for Add Group, Add Condition, and operator labels by setting a locale and translation object.
 platform: ej2-javascript
-control: Global local 
+control: Global local
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,21 +11,21 @@ domainurl: ##DomainURL##
 
 # Localization in ##Platform_Name## Query Builder UI
 
-The `Localization` library allows you to localize default text content of the Query Builder. The Query Builder has static text that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `locale` value and translation object.
+The `Localization` library localizes the default text in the Query Builder. Static text can be translated to other cultures by setting the `locale` value and applying a translation object.
 
-The following list of properties and its values are used in the Query Builder.
+The following locale keys and their default values are used in the Query Builder.
 
-| Locale key words | Text |
-| ------------ | ----------------------- |
-| AddGroup  | Add Group |
-| AddCondition  | Add Condition |
+| Locale key | Text |
+| --- | --- |
+| AddGroup | Add Group |
+| AddCondition | Add Condition |
 | AddButton | Add Group/Condition |
 | DeleteRule | Remove this condition |
 | DeleteGroup | Delete group |
 | Edit | EDIT |
 | SelectField | Select a field |
 | SelectOperator | Select operator |
-| StartsWith | Starts With|
+| StartsWith | Starts With |
 | EndsWith | Ends With |
 | DoesNotStartWith | Does Not Start With |
 | DoesNotEndWith | Does Not End With |
@@ -42,7 +42,7 @@ The following list of properties and its values are used in the Query Builder.
 | GreaterThan | Greater Than |
 | GreaterThanOrEqual | Greater Than Or Equal |
 | Between | Between |
-| NotBetween | Not Between|
+| NotBetween | Not Between |
 | In | In |
 | NotIn | Not In |
 | Remove | REMOVE |
@@ -52,12 +52,10 @@ The following list of properties and its values are used in the Query Builder.
 | AND | AND |
 | OR | OR |
 | SelectValue | Enter Value |
-| IsEmpty | Is Empty |
-| IsNotEmpty | Is Not Empty |
-| IsNull | Is Null |
-| IsNotNull | Is Not Null |
 | True | True |
 | False | False |
+
+Before using a custom locale, register it and assign the `locale` property on the Query Builder instance.
 
 {% if page.publishingplatform == "typescript" %}
 

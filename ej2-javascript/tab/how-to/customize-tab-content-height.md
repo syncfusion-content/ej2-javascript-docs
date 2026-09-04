@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # How to customize tab content height in ##Platform_Name## Tab
 
-You can adjust the Tab content height using the [`heightAdjustMode`](../../api/tab/#heightadjustmode) property. By default, this property is set to `Content`. Here are the available options:
+You can adjust the Tab content height using the [`heightAdjustMode`](../../api/tab#heightadjustmode) property. By default, this property is set to `Content`. Here are the available options:
 
-* **None**: Sets each tab content height based on the Tab height. This option is only used when the tab component has a [`height`](../../api/tab/#height) property set.
+* **None**: Sets each tab content height based on the Tab height. This option is only used when the tab component has a [`height`](../../api/tab#height) property set.
 * **Auto**: Sets all tab content heights to match the height of the tallest tab content.
 * **Content**: Sets each tab content height based on its own content (default behavior).
 * **Fill**: Sets each tab content height to fill the full height of the Tab's parent element.

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## Image Editor
 
-The Image Editor component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Image Editor component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Image Editor component is outlined below.
 
@@ -35,29 +35,29 @@ The accessibility compliance for the Image Editor component is outlined below.
 </style>
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> - All features of the component meet the requirement.</div>
 
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Partial"> - Some features of the component do not meet the requirement.</div>
 
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
 
 ## Keyboard interaction
 
-The Image Editor component followed the keyboard interaction guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Image Editor component.
+The Image Editor component follows the keyboard interaction guidelines, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Image Editor component.
 
 | **Press** | **To do this** |
 | --- | --- |
 | <kbd>Ctrl + Z</kbd> | Undo the last user action. |
 | <kbd>Ctrl + Y</kbd> | Redo the last user action. |
-| <kbd>Ctrl + S</kbd> | To save the Image. |
-| <kbd>Ctrl + O</kbd> | To open the Image. |
-| <kbd>Delete</kbd> | To delete the shape once the shape got selected through mouse click . |
-| <kbd>Enter</kbd> | To apply Selection Crop or Image Resize. |
-| <kbd>Escape</kbd> | To discard operations performed in the Image Editor, such as annotation drawings, crop selection, and more. |
+| <kbd>Ctrl + S</kbd> | Save the image. |
+| <kbd>Ctrl + O</kbd> | Open an image. |
+| <kbd>Delete</kbd> | Delete the selected shape. |
+| <kbd>Enter</kbd> | Apply the current crop selection or resize. |
+| <kbd>Escape</kbd> | Discard the in-progress operation, such as an annotation drawing in progress or an active crop selection. |
 
 ## Ensuring accessibility
 
-The Image Editor component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Image Editor's accessibility is verified using the [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing. These tools check the component against standard accessibility rule sets to confirm compliance.
 
-The accessibility compliance of the Image Editor component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/image-editor.html) in a new window to evaluate the accessibility of the Image Editor component with accessibility tools.
+The accessibility compliance of the Image Editor component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/image-editor.html) in a new window to evaluate the accessibility of the Image Editor component with accessibility tools. In the sample, you can test the toolbar, dialogs, and keyboard interactions using your preferred accessibility tool.
 
 {% if page.publishingplatform == "typescript" %}
 

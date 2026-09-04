@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to underline a character in the item text in ##Platform_Name## Context menu | Syncfusion
+title: How to underline text in ##Platform_Name## Context menu | Syncfusion
 description: Underline a character in the Syncfusion ##Platform_Name## Context menu item text using the beforeItemRender event and the u tag.
 platform: ej2-javascript
 control: Underline a character in the item text 
@@ -9,14 +9,14 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to underline a character in the item text in ##Platform_Name## Context menu
+# How to underline text in ##Platform_Name## Context menu
 
 Underline a particular character in a text can be handled in [`beforeItemRender`](../api/context-menu#beforeitemrender) event by
 adding `<u>` tag in between the text and given as innerHTML in `li` rendering.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/context-menu/underline-cs1/index.ts %}
 {% endhighlight %}
@@ -24,7 +24,7 @@ adding `<u>` tag in between the text and given as innerHTML in `li` rendering.
 {% include code-snippet/context-menu/underline-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/context-menu/underline-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

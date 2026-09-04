@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Template in ##Platform_Name## Message
 
-The message supports templates that allows the user to customize the content with a custom structure. The content can be a string, paragraph, or any other HTML element. The template can be rendered through the [content](../api/message/index-default#content) property or added directly to the HTML element.
+The Message supports templates that allow the content to be structured with a custom layout. The content can be a string, paragraph, or any other HTML element. The template can be rendered through the [content](../api/message/index-default#content) property or added directly to the HTML element.
 
-In the following sample, the Message control content is customized with HTML elements and JavaScript Button controls, which are directly added to the HTML element.
+In the following sample, the Message control content is customized with HTML elements and JavaScript Button controls, which are added directly to the HTML element.
 
 {% if page.publishingplatform == "typescript" %}
 

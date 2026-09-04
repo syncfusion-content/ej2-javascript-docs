@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Data binding in ##Platform_Name## TreeView
 
-The TreeView control provides the option to load data from either local data sources or remote data services. This can be done through the [`dataSource`](../api/treeview/fieldsSettingsModel#datasource) property, which is a member of the [`fields`](../api/treeview#fields) property. The [`dataSource`](../api/treeview/fieldsSettingsModel#datasource) property supports arrays of JavaScript objects and [`DataManager`](../api/data/dataManager/). It also supports different kinds of data services, such as OData, OData V4, Web API, URL, and JSON with the help of [`DataManager`](../api/data/dataManager/) adaptors.
+The TreeView control provides the option to load data from either local data sources or remote data services. This can be done through the [`dataSource`](../api/treeview/fieldsSettingsModel#datasource) property, which is a member of the [`fields`](../api/treeview#fields) property. The [`dataSource`](../api/treeview/fieldsSettingsModel#datasource) property supports arrays of JavaScript objects and [`DataManager`](../api/data/dataManager). It also supports different kinds of data services, such as OData, OData V4, Web API, URL, and JSON with the help of [`DataManager`](../api/data/dataManager) adaptors.
 
 TreeView has [`load on demand`](../api/treeview#loadondemand)  (Lazy load) by default. It reduces bandwidth usage when consuming large amounts of data. It initially loads first-level nodes, and when a parent node is expanded, it loads child nodes based on the `parentID/child` member.
 
@@ -21,7 +21,7 @@ You can use the [`dataBound`](../api/treeview#databound) event to perform action
 
 ## Local data
 
-To bind local data to the TreeView, you can assign a JavaScript object array to the [`dataSource`](../api/treeview/fieldsSettingsModel#datasource) property. The TreeView control requires three fields (ID, text, and parentID) to render the local data source. When mapper fields are not specified, it takes the default values as the mapping fields. The local data source can also be provided as an instance of the [`DataManager`](../api/data/dataManager/). It supports two kinds of local data binding methods:
+To bind local data to the TreeView, you can assign a JavaScript object array to the [`dataSource`](../api/treeview/fieldsSettingsModel#datasource) property. The TreeView control requires three fields (ID, text, and parentID) to render the local data source. When mapper fields are not specified, it takes the default values as the mapping fields. The local data source can also be provided as an instance of the [`DataManager`](../api/data/dataManager). It supports two kinds of local data binding methods:
 
 * Hierarchical data
 
@@ -68,7 +68,7 @@ In the following example, the **code**, **name**, and **countries** columns from
 
 ### Self-referential data
 
-TreeView can be populated from a self-referential data structure that contains an array of JSON objects with [`parentID`](../api/treeview/fieldsSettingsModel/#parentid) mapping.
+TreeView can be populated from a self-referential data structure that contains an array of JSON objects with [`parentID`](../api/treeview/fieldsSettingsModel#parentid) mapping.
 
 You can directly assign self-referential data to the [`dataSource`](../api/treeview/fieldsSettingsModel#datasource) property and map all the field members with corresponding keys from the self-referential data to the [`fields`](../api/treeview#fields) property.
 
@@ -111,13 +111,13 @@ In the following example, the **id**, **pid**, **hasChild**, and **name** column
 
 ## Remote data
 
-TreeView can also be populated from a remote data service with the help of the [`DataManager`](../api/data/dataManager/) control and `Query` property.
+TreeView can also be populated from a remote data service with the help of the [`DataManager`](../api/data/dataManager) control and `Query` property.
 
-It supports different kinds of data services, such as OData, OData V4, Web API, URL, and JSON, with the help of [`DataManager`](../api/data/dataManager/) adaptors.
+It supports different kinds of data services, such as OData, OData V4, Web API, URL, and JSON, with the help of [`DataManager`](../api/data/dataManager) adaptors.
 
-You can assign service data as an instance of [`DataManager`](../api/data/dataManager/) to the [`dataSource`](../api/treeview/fieldsSettingsModel#datasource) property. To interact with the remote data source, you have to provide the endpoint `url`.
+You can assign service data as an instance of [`DataManager`](../api/data/dataManager) to the [`dataSource`](../api/treeview/fieldsSettingsModel#datasource) property. To interact with the remote data source, you have to provide the endpoint `url`.
 
-The [`DataManager`](../api/data/dataManager/), which acts as an interface between the service endpoint and the TreeView, requires the following information to interact with the service endpoint properly:
+The [`DataManager`](../api/data/dataManager), which acts as an interface between the service endpoint and the TreeView, requires the following information to interact with the service endpoint properly:
 
 * `DataManager->url`: Defines the service endpoint to fetch data.
 

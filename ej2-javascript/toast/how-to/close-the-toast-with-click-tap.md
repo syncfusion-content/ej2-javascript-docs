@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to close the toast with click/tap in ##Platform_Name## Toast
 
-By default, the toasts are expired based on the timeOut value. You can customize the toast hiding process with click/tap action by setting the event args in the [clicked](../../api/toast/toastclickeventargs#clicktoclose) callback function with [static Toast](../timeout#static-toast).
+By default, the toasts are expired based on the timeOut value. The Toast hiding process can be customized with click/tap action by setting the event args in the [clicked](../../api/toast/toastclickeventargs#clicktoclose) callback function with [static Toast](../timeout#static-toast).
 
 {% if page.publishingplatform == "typescript" %}
 

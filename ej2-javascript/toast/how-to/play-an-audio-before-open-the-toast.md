@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to play audio on toast open in ##Platform_Name## Toast
 
-The following sample demonstrates how to play an audio in background while opening the toast by including audio play codes into the beforeOpen event function.
+The following sample demonstrates playing audio in the background while opening the Toast by including the audio play code in the beforeOpen event function.
 
 > To stop the audio after displaying the toast, use the [open](../../api/toast/#open) event in toast. For further customization, check the Toast Events [APIs](../../api/toast/#events).
 

@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to limit search results on filtering in ##Platform_Name## Dropdown List
+# How to limit the search result on filtering in ##Platform_Name## Dropdown List
 
-The following example demonstrates about how to set limit the search result on filtering.
+The following example demonstrates how to set a limit on the search result when filtering.
 
 {% if page.publishingplatform == "typescript" %}
 

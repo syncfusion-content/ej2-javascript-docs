@@ -15,7 +15,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD033 -->
 
-We can divide a progress bar into multiple segments using a `segmentCount` to visualize the progress of multiple sequential tasks.
+The Progress Bar can be divided into multiple segments using a `segmentCount` to visualize the progress of multiple sequential tasks.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,7 +46,7 @@ We can divide a progress bar into multiple segments using a `segmentCount` to vi
 
 ## Thickness
 
- Customize the thickness of the track using [`trackThickness`](../api/progressbar/progressBarModel#trackthickness), progress using [`progressThickness`](../api/progressbar/progressBarModel#progressthickness) and secondary progress using [`secondaryProgressThickness`](../api/progressbar/progressBarModel#secondaryprogressthickness) to render the progress bar with different appearances.
+ Customize the thickness of the track using [`trackThickness`](../api/progressbar/progressBarModel#trackthickness), progress using [`progressThickness`](../api/progressbar/progressBarModel#progressthickness) and secondary progress using [`secondaryProgressThickness`](../api/progressbar/progressBarModel#secondaryprogressthickness) to render the Progress Bar with different appearances.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -79,7 +79,7 @@ We can divide a progress bar into multiple segments using a `segmentCount` to vi
 
 <!-- markdownlint-disable MD033 -->
 
-The  radius of the progress bar can be customized using `radius` property and  corner can be customized by **cornerRadius** property.  
+The radius of the Progress Bar can be customized using `radius` property and the corner can be customized by `cornerRadius` property.  
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -112,7 +112,7 @@ The  radius of the progress bar can be customized using `radius` property and  c
 
 <!-- markdownlint-disable MD033 -->
 
-The inner radius of the progress bar can be customized using `innerRadius` property.
+The inner radius of the Progress Bar can be customized using `innerRadius` property.
 
 {% if page.publishingplatform == "typescript" %}
 

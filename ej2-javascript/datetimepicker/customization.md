@@ -11,17 +11,17 @@ domainurl: ##DomainURL##
 
 # Customization in ##Platform_Name## DateTime Picker
 
-The DateTimePicker is available for UI customization that can be achieved by using available properties and events in the component.
+The DateTime Picker is available for UI customization that can be achieved by using the available properties and events in the component.
 
 ## Day and Time Cell format
 
-The DateTimePicker is available for UI customization based on your application requirements. It can be achieved by using [`renderDayCell`](../api/datetimepicker/renderDayCellEventArgs#renderdaycelleventargs) event that provides an option to customize each day cell on rendering.
+The DateTime Picker is available for UI customization based on the application requirements. It can be achieved by using the [`renderDayCell`](../api/datetimepicker/renderDayCellEventArgs#renderdaycelleventargs) event that provides an option to customize each day cell on rendering.
 
-The following example disables the weekends of every month by using `renderDayCell` event.
+The following example disables the weekends of every month by using the `renderDayCell` event.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datetimepicker/getting-started-cs2/index.ts %}
 {% endhighlight %}
@@ -48,11 +48,11 @@ The following example disables the weekends of every month by using `renderDayCe
 
 ## Adding mandatory asterisk to placeholder and float label
 
-You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e-input-group.e-control-wrapper.e-float-input .e-float-text::after</b> class.
+A mandatory `asterisk(*)` can be added to the placeholder and float label using the <b>.e-input-group.e-control-wrapper.e-float-input .e-float-text::after</b> class.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/datetimepicker/asterisk-cs1/index.ts %}
 {% endhighlight %}
@@ -79,5 +79,5 @@ You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e
 
 ## See Also
 
-* [How to disable the DateTimePicker control](./how-to/disable-the-datetimepicker-component)
-* [How to customize the DateTimePicker day header](./how-to/customize-the-datetimepicker-day-header)
+* [How to disable the DateTime Picker control](./how-to/disable-the-datetimepicker-component)
+* [How to customize the DateTime Picker day header](./how-to/customize-the-datetimepicker-day-header)

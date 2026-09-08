@@ -11,14 +11,14 @@ domainurl: ##DomainURL##
 
 # Style Appearance in ##Platform_Name## File Upload
 
-The following content provides the exact CSS structure that can be used to modify the control’s appearance based on the user preference.
+The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preferences.
 
-## Customizing the appearance of File Upload wrapper element
+## Customizing the appearance of the File Upload wrapper element
 
-Use the following CSS to customize the appearance of wrapper element.
+Use the following CSS to customize the appearance of the wrapper element.
 
-```
-/* To specify height */
+```css
+/* To specify height and width */
 .e-upload.e-control-wrapper, .e-bigger.e-small .e-upload.e-control-wrapper {
         height: 300px;
         width: 300px;
@@ -27,10 +27,10 @@ Use the following CSS to customize the appearance of wrapper element.
 
 ## Customizing the File Upload browse button
 
-Use the following CSS to customize the File Upload browse button
+Use the following CSS to customize the File Upload browse button.
 
-```
-/* To specify font size and color */
+```css
+/* To specify font family, size, and color */
 .e-upload .e-file-select-wrap .e-btn, .e-upload .e-upload-actions .e-btn, .e-bigger.e-small .e-upload .e-file-select-wrap .e-btn, .e-bigger.e-small .e-upload .e-upload-actions .e-btn {
         font-family: cursive;
         height: 40px;
@@ -41,9 +41,9 @@ Use the following CSS to customize the File Upload browse button
 
 ## Customizing the File Upload content
 
-Use the following CSS to customize the File Upload content
+Use the following CSS to customize the File Upload content.
 
-```
+```css
 /* To specify font size and color */
 .e-upload .e-file-select-wrap .e-file-drop, .e-bigger.e-small .e-upload .e-file-select-wrap .e-file-drop {
         font-size: 20px;
@@ -53,9 +53,9 @@ Use the following CSS to customize the File Upload content
 
 ## Customizing the uploaded file container in File Upload
 
-Use the following CSS to customize the uploaded file container in File Upload
+Use the following CSS to customize the uploaded file container in File Upload.
 
-```
+```css
 /* To specify background color */
 .e-upload .e-upload-files .e-upload-file-list {
         background-color: beige;
@@ -64,4 +64,4 @@ Use the following CSS to customize the uploaded file container in File Upload
 
 ## See Also
 
-* [Customize the appearance of uploader using a template](https://ej2.syncfusion.com/documentation/uploader/template/)
+* [Customize the appearance of uploader using a template](https://ej2.syncfusion.com/documentation/uploader/template)

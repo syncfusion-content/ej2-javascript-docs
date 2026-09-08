@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add additional data on upload in ##Platform_Name## File Upload | Syncfusion
-description: Learn how to send additional form data with each upload in the Syncfusion ##Platform_Name## File Upload using the uploading event and the customFormData argument.
+title: Add Upload Data in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to send additional form data with each upload in ##Platform_Name## File Upload using the uploading event and customFormData argument.
 platform: ej2-javascript
 control: Add additional data on upload 
 publishingplatform: ##Platform_Name##
@@ -11,9 +11,11 @@ domainurl: ##DomainURL##
 
 # Add additional data on upload in ##Platform_Name## File Upload
 
-The uploader component allows you to add additional data on file upload, which is used to get in the server-side. By using [uploading](../../api/uploader/#uploading) event and its customFormData argument, you can achieve this behavior. Refer to the following example.
+The Uploader component allows you to add additional data on file upload, which can be accessed on the server side. By handling the [uploading](../../api/uploader#uploading) event and its `customFormData` argument, you can achieve this behavior. The `customFormData` argument accepts an array of objects with key-value pairs that are sent as form data during the upload. Refer to the following example.
 
-In the following code snippet, explains about how to add additional data on file upload.
+## Client side
+
+The following code snippet explains how to add additional data on file upload.
 
 ```ts
 import { Uploader } from '@syncfusion/ej2-inputs';
@@ -30,7 +32,7 @@ let uploadObj: Uploader = new Uploader({
 uploadObj.appendTo('#fileupload');
 
 function onFileUpload(args: any) {
-    // add addition data as key-value pair.
+    // add additional data as key-value pair.
     args.customFormData = [{'name': 'Syncfusion INC'}];
 }
 ```

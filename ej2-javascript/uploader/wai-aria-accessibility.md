@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# WAI-Aria Accessibility in ##Platform_Name## File Upload
+# WAI-ARIA Accessibility in ##Platform_Name## File Upload
 
-The Uploader component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Uploader component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Uploader component is outlined below.
 
@@ -41,20 +41,20 @@ The accessibility compliance for the Uploader component is outlined below.
 
 ## Keyboard interaction
 
-The uploader component characterized with complete ARIA accessibility support that helps to be accessible by on-screen readers and other assistive technology devices.
+The uploader component is characterized by complete ARIA accessibility support that helps it be accessible to on-screen readers and other assistive technology devices.
 
-The following are the standard keys that works on uploader component:
+The following are the standard keys that work on the uploader component:
 
-| **Keyboard shortcuts** | **Actions** |
+| **Keyboard shortcuts** | **Actions** |
 | --- | --- |
-| <kbd>Tab</kbd> | Move focus to next element. |
-| <kbd>Shift + Tab</kbd> | Move focus to previous element. |
-| <kbd>Enter</kbd> | Triggers corresponding action to button element. |
-| <kbd>Esc</kbd> | Close the file browser dialog alone and cancels the upload on drop the file. |
+| <kbd>Tab</kbd> | Move focus to the next element. |
+| <kbd>Shift + Tab</kbd> | Move focus to the previous element. |
+| <kbd>Enter</kbd> | Triggers the corresponding action for the focused button element. |
+| <kbd>Esc</kbd> | Closes the file browser dialog and cancels the upload when a file is dropped. |
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/keyboard-cs1/index.ts %}
 {% endhighlight %}
@@ -65,7 +65,7 @@ The following are the standard keys that works on uploader component:
 {% include code-snippet/uploader/keyboard-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/uploader/keyboard-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -95,6 +95,6 @@ The accessibility compliance of the Uploader component is shown in the following
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/uploader.html" %}
 
-## See also
+## See Also
 
 * [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> components](../common/accessibility)

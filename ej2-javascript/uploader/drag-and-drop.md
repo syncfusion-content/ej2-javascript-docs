@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drag and Drop in ##Platform_Name## File Upload | Syncfusion
-description: Learn how to enable drag-and-drop file selection in the Syncfusion ##Platform_Name## File Upload, including custom drop zones, visual feedback, and drop event handling.
+description: Learn how to enable drag-and-drop file selection in Syncfusion ##Platform_Name## File Upload with custom drop zones, visual feedback, and drop event handling.
 platform: ej2-javascript
 control: Drag and drop 
 publishingplatform: ##Platform_Name##
@@ -11,15 +11,15 @@ domainurl: ##DomainURL##
 
 # Drag and Drop in ##Platform_Name## File Upload
 
-The uploader component allows you to drag and drop the files to upload. You can drag the files from file explorer and drop into the drop area. By default, the uploader component act as drop area element. The drop area gets highlighted when you drag the files over drop area.
+The uploader component allows you to drag and drop the files to upload. You can drag the files from the file explorer and drop them into the drop area. By default, the uploader component acts as the drop area element. The drop area gets highlighted when you drag the files over the drop area.
 
 ## Custom drop area
 
-The uploader component allows you to set external target element as drop area using the [dropArea](api-uploader.html?lang=typescript#droparea) property. The element can be represented as HTML element or element’s id.
+The uploader component allows you to set an external target element as the drop area using the [dropArea](api-uploader.html?lang=typescript#droparea) property. The value can be an HTML element or the element's id.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/drop-area-cs1/index.ts %}
 {% endhighlight %}
@@ -30,7 +30,7 @@ The uploader component allows you to set external target element as drop area us
 {% include code-snippet/uploader/drop-area-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/uploader/drop-area-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -52,11 +52,11 @@ The uploader component allows you to set external target element as drop area us
 
 ## Customize drop area
 
-You can customize the appearance of drop area by overriding the default drop area styles. The class “” and “” is available to handle this customization.
+You can customize the appearance of the drop area by overriding the default drop area styles. The classes `e-file-select-wrap` and `e-upload` are available to handle this customization.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/customize-drop-cs1/index.ts %}
 {% endhighlight %}
@@ -67,7 +67,7 @@ You can customize the appearance of drop area by overriding the default drop are
 {% include code-snippet/uploader/customize-drop-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/uploader/customize-drop-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

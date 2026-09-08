@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to sort the selected files in ##Platform_Name## File Upload | Syncfusion
+title: sort the selected files in ##Platform_Name## File Upload | Syncfusion
 description: Learn how to sort the selected files in the Syncfusion ##Platform_Name## File Upload by using the selected event to reorder the file list before upload.
 platform: ej2-javascript
 control: Sort the selected files 
@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # How to sort the selected files in ##Platform_Name## File Upload
 
-You can sort the selected files in uploader component by using the [selected](../../api/uploader/#selected) event. Refer to the following example.
+You can sort the selected files in the Uploader component by handling the [selected](../../api/uploader#selected) event, where the selected files are available through `args.filesData` and can be reordered (for example, by file name, size, or type) before upload. Refer to the following example.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/sorting-cs1/index.ts %}
 {% endhighlight %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Async in ##Platform_Name## File Upload | Syncfusion
-description: Learn how to upload files asynchronously with the Syncfusion ##Platform_Name## File Upload using save and remove action URLs to manage server-side upload operations.
+description: how to upload files asynchronously in ##Platform_Name## File Upload with save and remove URLs for managing server-side operations.
 platform: ej2-javascript
 control: Async 
 publishingplatform: ##Platform_Name##
@@ -11,25 +11,22 @@ domainurl: ##DomainURL##
 
 # Async in ##Platform_Name## File Upload
 
-The uploader component allows you to upload the files asynchronously. The upload process requires save and remove action URL to manage the upload process in the server.
+The Uploader component allows you to upload files asynchronously. The upload process requires save and remove action URLs to manage the upload process on the server.
 
-    *   The save action is necessary to handle the upload operation
-    *   The remove action is optional, can handle the removed files from server
+*   The save action is necessary to handle the upload operation.
+*   The remove action is optional and handles removing files from the server.
 
->The name attribute must match the name of a parameter in the POST method. For more information, refer [hear](https://learn.microsoft.com/en-us/aspnet/core/mvc/models/file-uploads?view=aspnetcore-3.1#match-name-attribute-value-to-parameter-name-of-post-method). The name attribute is automatically generated from the control’s ID property. If the name attribute to be different from the ID property, then you can use the htmlAttributes property to set the name attribute directly
-to the input element. For more information refer [hear](./how-to/add-html-attributes).
+> The name attribute must match the name of a parameter in the POST method. For more information, refer [here](https://learn.microsoft.com/en-us/aspnet/core/mvc/models/file-uploads?view=aspnetcore-3.1#match-name-attribute-value-to-parameter-name-of-post-method). The name attribute is automatically generated from the control's ID property. If the name attribute needs to be different from the ID property, you can use the `htmlAttributes` property to set the name attribute directly on the input element. For more information, refer [here](./how-to/add-html-attributes).
 
-The File can be uploaded automatically or manually. For more information, you can refer to the [Auto Upload](../api/uploader/#autoupload) section from the documentation.
+Files can be uploaded automatically or manually. For more information, refer to the [Auto Upload](../api/uploader#autoupload) section of the documentation.
 
 ## Multiple file upload
 
-By Default, the uploader component allows you to select and upload multiple files simultaneously. The selected files are organized in a list for every file selection until you clear it by clicking clear button that is shown in footer. You can add the multiple attributes to original input element of file by enabling the multiple file selection. The following example explains about [multiple](../api/uploader/#multiple) file upload settings.
-
-In the following example, explains about multiple file upload settings.
+By default, the Uploader component allows you to select and upload multiple files simultaneously. The selected files are organized in a list for every file selection until you clear them by clicking the clear button shown in the footer. You can add the `multiple` attribute to the original file input element by enabling multiple file selection. The default value of the `multiple` property is `true`. The following example explains [multiple](../api/uploader#multiple) file upload settings.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/multiple-cs1/index.ts %}
 {% endhighlight %}
@@ -62,13 +59,13 @@ In the following example, explains about multiple file upload settings.
 
 ## Single file upload
 
-You can select and upload a single file by disabling the multiple file selection property. The file list item is removed for every selection and it always maintain a single file to upload. You can remove the multiple attributes form the original input element of file by enabling the single file upload property.
+You can select and upload a single file by disabling the multiple file selection property. The file list item is removed for every selection and it always maintains a single file to upload. You can remove the `multiple` attribute from the original file input element by enabling the single file upload property.
 
-The following example explains about single file upload settings.
+The following example explains single file upload settings.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/single-cs1/index.ts %}
 {% endhighlight %}
@@ -101,17 +98,16 @@ The following example explains about single file upload settings.
 
 ## Save Action
 
-The save action handler upload the files that needs to be specified in the [saveUrl](../api/uploader/asyncSettingsModel/#saveurl) property.
-The save handler receives the submitted files and manages the save process in server. After uploading the files to server location, the color of the selected file name changes to green and the remove icon is changed as bin icon.
+The save action handler uploads the files that need to be specified in the [saveUrl](../api/uploader/asyncSettingsModel#saveurl) property. The save handler receives the submitted files and manages the save process on the server. After uploading the files to the server location, the color of the selected file name changes to green and the remove icon changes to a bin icon.
 
-    *   When the file is uploaded successfully, the event “success” triggers to handle the operation after upload.
-    *   When the file is failed to upload, the event “failure” triggers with information, which cause this failure.
+*   When the file is uploaded successfully, the `success` event triggers to handle the operation after upload.
+*   When the file fails to upload, the `failure` event triggers with information about what caused the failure.
 
-You can cancel the upload process by setting the upload event argument **eventargs.cancel** to true.
+You can cancel the upload by setting the upload event argument `args.cancel` to `true`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/save-cs1/index.ts %}
 {% endhighlight %}
@@ -144,39 +140,40 @@ You can cancel the upload process by setting the upload event argument **eventar
 
 ### Server-side configuration for save action
 
-Here’s how to handle the server-side action for saving the file in server.
+Here's how to handle the server-side action for saving the file on the server. The `uploads` variable below represents the target upload directory path (for example, `Path.Combine(env.WebRootPath, "uploads")`).
 
 ```c#
 public async Task<IActionResult> Save(IFormFile UploadFiles)
 {
     if (UploadFiles.Length > 0)
     {
-        if (!Directory.Exists(uploads)) // Create the directory if not exists
+        if (!Directory.Exists(uploads)) // Create the directory if it does not exist
         {
             Directory.CreateDirectory(uploads);
         }
 
         var filePath = Path.Combine(uploads, UploadFiles.FileName); // Get the file path
         using (var fileStream = new FileStream(filePath, FileMode.Create)) // Create the file
-            {
-                await UploadFiles.CopyToAsync(fileStream); // Save the file
-            }
+        {
+            await UploadFiles.CopyToAsync(fileStream); // Save the file
         }
+    }
     return Ok();
 }
 ```
 
 ### Server-side configuration for saving and returning responses
 
-The following example demonstrates the server-side action for saving files on the server and returning responses in JSON, String, and File formats.
+The following examples demonstrate separate server-side actions for saving files on the server and returning responses in JSON, String, and File formats. These are mutually exclusive alternatives—choose the one that matches your response format.
+
+**JSON response:**
 
 ```c#
 [AcceptVerbs("Post")]
 public IActionResult Save()
 {
-    // for JSON Data
     try
-     {
+    {
         // Process uploaded data
         var responseData = new
         {
@@ -186,17 +183,21 @@ public IActionResult Save()
         };
 
         return Json(responseData);
-     }
-     catch (Exception e)
-     {
-         var errorResponse = new
-         {
+    }
+    catch (Exception e)
+    {
+        var errorResponse = new
+        {
             Success = false,
             Message = "File upload failed: " + e.Message
-         };
+        };
 
-         return Json(errorResponse);
-     }
+        return Json(errorResponse);
+    }
+}
+```
+
+**String response:**
 
     // for String Data
     try
@@ -239,7 +240,7 @@ The following example demonstrates the client-side action for saving files on th
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/save-cs2/index.ts %}
 {% endhighlight %}
@@ -269,18 +270,18 @@ The following example demonstrates the client-side action for saving files on th
 
 ## Remove Action
 
-The remove action is optional. Specify the URL to handle remove process from server. The remove handler receives the posted files and handle the remove operation in server.
+The remove action is optional. Specify the URL to handle the remove process on the server. The remove handler receives the posted files and handles the remove operation on the server.
 
-    *   When the files are removed successfully from server, the success event triggers to denote the process has completed.
-    *   When remove action fails, the event “failure” triggers with information, which cause failure in remove process.
+*   When the files are removed successfully from the server, the `success` event triggers to denote the process has completed.
+*   When the remove action fails, the `failure` event triggers with information about what caused the failure.
 
-> You can differentiate the file operation whether the success event triggers from save or remove action in its arguments **eventArgs.operation**.
+> You can determine whether the `success` event was triggered by the save or remove action using the `eventArgs.operation` argument.
 
-You can remove the files which is not uploaded locally by clicking the remove icon. In this case, the success or failure events will not be triggered.
+You can remove files that have not been uploaded by clicking the remove icon. In this case, the `success` or `failure` events will not be triggered.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/remove-cs1/index.ts %}
 {% endhighlight %}
@@ -313,7 +314,7 @@ You can remove the files which is not uploaded locally by clicking the remove ic
 
 ### Server-side configuration for remove action
 
-To remove an uploaded file from the server, it is sufficient to send only the file name. You can achieve this by setting the [`postRawFile`](https://ej2.syncfusion.com/documentation/api/uploader/removingEventArgs/#postrawfile) property of the `RemovingEventArgs` to `false` during the [`removing`](https://ej2.syncfusion.com/documentation/api/uploader/#removing) event. This ensures that only the file name is sent to the server in the Remove action.
+To remove an uploaded file from the server, it is sufficient to send only the file name. You can achieve this by setting the [`postRawFile`](https://ej2.syncfusion.com/documentation/api/uploader/removingEventArgs#postrawfile) property of the `RemovingEventArgs` to `false` during the [`removing`](https://ej2.syncfusion.com/documentation/api/uploader#removing) event. This ensures that only the file name is sent to the server in the Remove action.
 
 Here is an example:
 
@@ -360,7 +361,7 @@ let uploadObject: Uploader = new Uploader({
 });
 ```
 
-Here’s how to receive the file data in the server-side `Remove` action:
+Here's how to receive the file data in the server-side `Remove` action when `postRawFile` is enabled:
 
 ```csharp
 public void Remove(IFormFile UploadFiles)
@@ -371,11 +372,11 @@ public void Remove(IFormFile UploadFiles)
 
 ## Auto Upload
 
-By default, the uploader processes the files to upload once the files are selected and added in upload queue. To upload manually, disable the [autoUpload](../api/uploader/#autoupload) &nbsp;property. When you disable this property, you can use the action buttons to call upload all or clear all actions manually. You can change those buttons text using the [buttons](../api/uploader/#buttons) &nbsp;property in the Uploader component.
+By default (`autoUpload` is `true`), the Uploader processes the files to upload once they are selected and added to the upload queue. To upload manually, disable the [autoUpload](../api/uploader#autoupload) property. When you disable this property, you can use the action buttons to call upload all or clear all actions manually. You can change those buttons' text using the [buttons](../api/uploader#buttons) property in the Uploader component.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/auto-upload-cs1/index.ts %}
 {% endhighlight %}
@@ -408,11 +409,11 @@ By default, the uploader processes the files to upload once the files are select
 
 ## Sequential Upload
 
-By default, the uploader control process multiple files to upload simultaneously. When you enable the [sequentialUpload](../api/uploader/#sequentialupload) property, the selected files will process sequentially (one after the other) to the server. If the file uploaded successfully or failed, the next file will upload automatically in this sequential upload. This feature helps to reduce the upload traffic and reduce the failure of file upload.
+By default, the Uploader component processes multiple files for upload simultaneously. When you enable the [sequentialUpload](../api/uploader#sequentialupload) property, the selected files are processed sequentially (one after the other) to the server. If a file is uploaded successfully or fails, the next file will be uploaded automatically in this sequential upload. This feature helps reduce upload traffic and file upload failures.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/sequential-upload-cs1/index.ts %}
 {% endhighlight %}
@@ -445,15 +446,15 @@ By default, the uploader control process multiple files to upload simultaneously
 
 ## Preloaded Files
 
-The uploader component allows you to preloaded the list of files that are uploaded in the server. The preloaded files are useful to view and remove the files from server that can be achieved by the [files](../api/uploader/#files) property. By default, the files are configured with uploaded successfully state on rendering file list. By default, the files are configured with uploaded successfully state on rendering file list. The following properties are mandatory to configure the preloaded files:
+The Uploader component allows you to preload the list of files that have been uploaded to the server. The preloaded files are useful to view and remove files from the server, which can be achieved using the [files](../api/uploader#files) property. By default, the files are configured with the uploaded successfully state when rendering the file list. The following properties are mandatory to configure the preloaded files:
 
-    *   Name
-    *   Size
-    *   Type
+*   Name
+*   Size
+*   Type
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/preload-file-cs1/index.ts %}
 {% endhighlight %}
@@ -488,13 +489,12 @@ The uploader component allows you to preloaded the list of files that are upload
 
 The Uploader component allows you to add the additional headers with `save` and `remove` action request using `uploading` and `removing` event, which helps to send validation token on file upload. Access the current request and set the request header within these events.
 
-The following code block shows how to add the additional headers with save and remove action request.
+The following code block shows how to add the additional headers with save and remove action request. The `args.currentRequest` argument refers to the underlying XMLHttpRequest used for the upload/remove request.
 
-```
+```html
 <div style='margin: auto 30%'>
     <input type='file' id='uploader' name="UploadFiles"/>
 </div>
-
 ```
 
 ```ts
@@ -508,12 +508,11 @@ asyncSettings: {
     uploading: addHeaders,
     removing: addHeaders
 });
-uploadObj.appendTo('#uploader')
+uploadObj.appendTo('#uploader');
 
 function addHeaders(args: any) {
     args.currentRequest.setRequestHeader('custom-header', 'Syncfusion');
 }
-
 ```
 
 > You can also explore [JavaScript File Upload](https://www.syncfusion.com/javascript-ui-controls/js-file-upload) feature tour page for its groundbreaking features. You can also explore our [JavaScript File Upload example](https://ej2.syncfusion.com/demos/#/bootstrap5/uploader/default.html) to understand how to browse the files which you want to upload to the server.

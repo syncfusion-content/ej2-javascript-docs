@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # How to trigger input in ##Platform_Name## File Upload
 
-Click event of input file from the external button can be triggered using the `click` event of button. In the following sample, you can find the triggered click event of input file from **Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Button**.
+The click event of the Uploader's input file can be triggered from an external button using the button's `click` event, which programmatically invokes the Uploader's internal file input click to open the file dialog. This requires the **Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Button** component (from the `@syncfusion/ej2-buttons` package). In the following sample, the input file click is triggered from the Button.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/external-click-cs1/index.ts %}
 {% endhighlight %}

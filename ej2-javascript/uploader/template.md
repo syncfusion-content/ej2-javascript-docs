@@ -11,17 +11,17 @@ domainurl: ##DomainURL##
 
 # Template in ##Platform_Name## File Upload
 
-You can customize the default appearance of uploader using a template along with buttons.
+You can customize the default appearance of the uploader using a template along with buttons.
 
 ## File list template
 
-The [template](../api/uploader/#template) property is used to customize the default appearance of each file in the list. It can be represented as the HTML element or string. The selected or dropped files are displayed as per the template layout provided. The remove and progress bar action is handled using the corresponding events when the template is defined.
+The [template](../api/uploader#template) property is used to customize the default appearance of each file in the list. It can be an HTML element or a string. The selected or dropped files are displayed as per the template layout provided. The remove and progress bar actions are handled using the corresponding events (such as `removing` and `uploading`) when the template is defined.
 
-For example, you can display file type icon along with default UI elements.
+For example, you can display a file type icon along with the default UI elements.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/custom-template-cs1/index.ts %}
 {% endhighlight %}
@@ -32,7 +32,7 @@ For example, you can display file type icon along with default UI elements.
 {% include code-snippet/uploader/custom-template-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/uploader/custom-template-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -54,17 +54,16 @@ For example, you can display file type icon along with default UI elements.
 
 ## Custom template
 
-You can design the own template by preventing the default file list including buttons. The [showFileList](../api/uploader/#showfilelist) property used to display whether the default file list or own file list When you use custom template to upload or remove the files, pass the custom UI argument as true to call `upload`/`remove` public method as follows:
+You can design your own template by replacing the default file list, including the buttons. The [showFileList](../api/uploader#showfilelist) property (for example, `showFileList: false`) is used to display either the default file list or your own file list. When you use a custom template to upload or remove files, pass the custom UI argument as `true` when calling the `upload`/`remove` public methods, as follows:
 
-* UploaderObj.[upload](../api/uploader/#upload)(filesData, true);
-
-* UploaderObj.[remove](../api/uploader/#remove)(filesData, true);
+* UploaderObj.[upload](../api/uploader#upload)(filesData, true);
+* UploaderObj.[remove](../api/uploader#remove)(filesData, true);
 
 Refer to the following code sample.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/custom-template-cs2/index.ts %}
 {% endhighlight %}
@@ -75,7 +74,7 @@ Refer to the following code sample.
 {% include code-snippet/uploader/custom-template-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/uploader/custom-template-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}

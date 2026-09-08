@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize upload button in ##Platform_Name## File Upload | Syncfusion
+title: customize upload button in ##Platform_Name## File Upload | Syncfusion
 description: Learn how to customize the upload button in the Syncfusion ##Platform_Name## File Upload using the buttons property to render browse, upload, and remove actions.
 platform: ej2-javascript
 control: Customize button with html element 
@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # How to customize upload button in ##Platform_Name## File Upload
 
-The uploader component allows you to customize the action buttons by using [buttons](../../api/uploader/#buttons) &nbsp;property. Refer to the following example.
+The Uploader component allows you to customize the action buttons using the [buttons](../../api/uploader#buttons) property, which accepts an array of button configuration objects supporting actions such as browse, upload, clear, and remove. Refer to the following example.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/buttons-cs1/index.ts %}
 {% endhighlight %}

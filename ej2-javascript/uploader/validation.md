@@ -11,15 +11,15 @@ domainurl: ##DomainURL##
 
 # Validation in ##Platform_Name## File Upload
 
-The uploader component validate the selected files size and extension using the [allowedExtentions](../api/uploader/#allowedextensions), [minFileSize](../api/uploader/#minfilesize) and [maxFileSize](../api/uploader/#maxfilesize) properties. The files can be validated before uploading to the server and can be ignored on uploading. Also, you can validate the files by setting the HTML attributes to the original input element. The validation process occurs on drag-and-drop the files also.
+The uploader component validates the selected files' size and extension using the [allowedExtensions](../api/uploader#allowedextensions), [minFileSize](../api/uploader#minfilesize) and [maxFileSize](../api/uploader#maxfilesize) properties. The files can be validated before uploading to the server and can be ignored during upload. Also, you can validate the files by setting the HTML attributes on the original input element. The validation process also occurs when files are dragged and dropped.
 
 ## File type
 
-You can allow the specific files alone to upload using the [allowedExtentions](../api/uploader/#allowedextensions) property. The extension can be represented as collection by comma separators. The uploader component filters the selected or dropped files to match against the specified file types and processes the upload operation. The validation happens when you specify value to inline attribute to accept the original input element.
+You can allow only specific files to be uploaded using the [allowedExtensions](../api/uploader#allowedextensions) property. The extensions can be specified as a comma-separated list (for example, `allowedExtensions: '.jpg,.png'`). The uploader component filters the selected or dropped files to match against the specified file types and processes the upload operation. Validation also occurs when you specify a value for the `accept` attribute on the original input element (for example, `<input type="file" accept=".jpg,.png" />`).
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/type-validation-cs1/index.ts %}
 {% endhighlight %}
@@ -30,7 +30,7 @@ You can allow the specific files alone to upload using the [allowedExtentions](.
 {% include code-snippet/uploader/type-validation-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/uploader/type-validation-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -52,11 +52,11 @@ You can allow the specific files alone to upload using the [allowedExtentions](.
 
 ## File size
 
-The uploader component allows you to validate the files based on its size. The validation helps to restrict uploading large files or empty files to the server. The size can be represented in `bytes`. By default, the uploader component allows you to upload **minimum file size** as 0 byte and **maximum file size** as 28.4 MB using using the [minFileSize](../api/uploader/#minfilesize) and [maxFileSize](../api/uploader/#maxfilesize) properties.
+The uploader component allows you to validate the files based on their size. The validation helps to restrict uploading large files or empty files to the server. The size is represented in `bytes`. By default, the uploader component allows you to upload a **minimum file size** of 0 bytes and a **maximum file size** of 28.4 MB using the [minFileSize](../api/uploader#minfilesize) and [maxFileSize](../api/uploader#maxfilesize) properties (for example, `maxFileSize: 1000000`).
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/size-validation-cs1/index.ts %}
 {% endhighlight %}
@@ -67,7 +67,7 @@ The uploader component allows you to validate the files based on its size. The v
 {% include code-snippet/uploader/size-validation-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/uploader/size-validation-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -89,11 +89,11 @@ The uploader component allows you to validate the files based on its size. The v
 
 ## Maximum files count
 
-You can restrict uploading the maximum number of files using the **selected** event. In the selected event arguments, you can get the currently selected files details using the `getFilesData()`. You can modify the files details and assign the modified file list to the `eventArgs.modifiedFilesData`.
+You can restrict the maximum number of files that can be uploaded using the **selected** event. In the selected event arguments, you can get the currently selected files' details using `getFilesData()`. You can modify the files' details and assign the modified file list to `eventArgs.modifiedFilesData`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/max-count-validation-cs1/index.ts %}
 {% endhighlight %}
@@ -104,7 +104,7 @@ You can restrict uploading the maximum number of files using the **selected** ev
 {% include code-snippet/uploader/max-count-validation-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/uploader/max-count-validation-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -126,11 +126,11 @@ You can restrict uploading the maximum number of files using the **selected** ev
 
 ## Duplicate files
 
-You can validate the duplicate files before uploading to server using the selected event. Compare the selected files with the existing files data and filter the file list by removing the duplicate files.
+You can validate duplicate files before uploading to the server using the `selected` event. Compare the selected files with the existing files' data (for example, by name and size) and filter the file list by removing the duplicate files.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/duplicate-file-validation-cs1/index.ts %}
 {% endhighlight %}
@@ -141,7 +141,7 @@ You can validate the duplicate files before uploading to server using the select
 {% include code-snippet/uploader/duplicate-file-validation-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/uploader/duplicate-file-validation-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

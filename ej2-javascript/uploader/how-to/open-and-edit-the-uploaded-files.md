@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # How to open uploaded files in ##Platform_Name## File Upload
 
-The uploader component allows you to modify the file after uploading to the server, which can be achieved using the `success` event of the uploader.
+The Uploader component allows you to open and modify a file after it has been uploaded to the server, which can be achieved using the Uploader's `success` event. The `asyncSettings.saveUrl` and `asyncSettings.removeUrl` must be configured to point to the corresponding server-side `Save` and `Remove` actions.
 
-You can retrieve the saved file path in the uploader success event and assign it to custom attribute (data-file-name) value of the respective file list element to open the uploaded file. Click the respective file element to create a new request along with saved file path using the HTTP header. In the server-side, get the file path from the header and open the file using `process.start` method.
+You can retrieve the saved file path in the Uploader's `success` event and assign it to a custom attribute (`data-file-name`) value of the respective file list element to open the uploaded file. Click the respective file element to create a new request along with the saved file path using an HTTP header. On the server side, get the file path from the header and open the file using the `Process.Start` method.
 
 ```ts
 import { Uploader } from '@syncfusion/ej2-inputs';
@@ -33,8 +33,8 @@ function onUploadSuccess(args) {
     var liElements = this.uploadWrapper.querySelectorAll('.e-upload-file-list');
     for (var i = 0; i < liElements.length; i++) {
         if (liElements[i].getAttribute('data-file-name') == args.file.name) {
-            liElements[i].addEventListener('click', () => { openFile(args, event) })
-            // File path have to update from server end in response status description.
+            liElements[i].addEventListener('click', (e) => { openFile(args, e) })
+            // The file path must be updated from the server end in the response status description.
             liElements[i].setAttribute('file-path', args.e.target.statusText);
         }
     }
@@ -49,7 +49,7 @@ function openFile(args, e) {
         var liElements = document.getElementsByClassName('e-upload')[0].querySelectorAll('.e-upload-file-list');
         for (var i = 0; i < liElements.length; i++) {
             if (liElements[i].getAttribute('data-file-name') == args.file.name) {
-                // Added the file path in header to get it in server side.
+                // Added the file path in the header to retrieve it on the server side.
             ajax.setRequestHeader('filePath', liElements[i].getAttribute('file-path').toString());
             }
         }

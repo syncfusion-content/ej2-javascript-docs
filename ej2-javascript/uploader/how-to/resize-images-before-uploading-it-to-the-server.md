@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # How to resize before upload in ##Platform_Name## File Upload
 
-You can customize the dimension of the images before uploading it to the server. By using selected event, you can get the selected file information as type of an object. From the obtained image file information, create a new canvas and render an image with the custom dimensions. Refer the corresponding code snippet as follows.
+You can customize the dimensions of the images before uploading them to the server. By handling the `selected` event, you can retrieve the selected file information as an object. Using the obtained image file information, create a new canvas and render the image at the custom dimensions. You can adjust the `MAX_WIDTH` and `MAX_HEIGHT` constants in the code to control the resized dimensions. Refer to the following code snippet.
 
 ```
 <div id='upload'>

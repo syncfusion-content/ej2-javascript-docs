@@ -13,13 +13,13 @@ domainurl: ##DomainURL##
 
 ## Paste to upload
 
-The uploader component allows you to upload the files using the select or drop files option from the file explorer.  It also supports pasting to upload the image files. You can upload any currently copied images in the clipboard.
+The uploader component allows you to upload the files using the select or drop files option from the file explorer. It also supports pasting to upload the image files. You can upload any currently copied images in the clipboard.
 
-> When you paste the image, it will be saved in the server with the filename as `image.png`. The file name canbe renamed in the server end. You can generate a random name for the file name using `getUniqueID` method. Refer to the following example.
+> When you paste the image, it will be saved in the server with the filename as `image.png`. The file name can be renamed on the server side. You can generate a random name for the file name using the `getUniqueID` method. Refer to the following example.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/auto-upload-cs2/index.ts %}
 {% endhighlight %}
@@ -30,7 +30,7 @@ The uploader component allows you to upload the files using the select or drop f
 {% include code-snippet/uploader/auto-upload-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/uploader/auto-upload-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -78,13 +78,13 @@ public void Save() {
 
 ## Directory upload
 
-The uploader component allows you to upload all files in the folders to server by using the [directoryUpload](../api/uploader/#directoryupload) property. When this property is enabled, the uploader component processes the files by iterating through the files and sub-directories in a directory. It allows you to select only folders instead of files to upload.
+The uploader component allows you to upload all files in the folders to server by using the [directoryUpload](../api/uploader#directoryupload) property. When this property is enabled, the uploader component processes the files by iterating through the files and sub-directories in a directory. It allows you to select only folders instead of files to upload.
 
-> The directory upload is available only in browsers that supports **HTML5 directory**. The uploader will process directory upload by dragging and dropping in the Edge browser. Refer to the following example to upload files to the server.
+> The directory upload is available only in browsers that support **HTML5 directory**. The uploader will process directory upload by dragging and dropping in the Edge browser. Refer to the following example to upload files to the server.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/directory-cs1/index.ts %}
 {% endhighlight %}
@@ -95,7 +95,7 @@ The uploader component allows you to upload all files in the folders to server b
 {% include code-snippet/uploader/directory-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/uploader/directory-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -155,15 +155,15 @@ public void Save() {
 
 ## Drag and drop
 
-The uploader component allows you to drag and drop the files to upload. You can drag the files from file explorer and drop into the drop area. By default, the uploader component act as drop area element. The drop area gets highlighted when you drag the files over drop area.
+The uploader component allows you to drag and drop the files to upload. You can drag the files from the file explorer and drop them into the drop area. By default, the uploader component acts as the drop area element. The drop area gets highlighted when you drag the files over the drop area.
 
 ### Custom drop area
 
-The uploader component allows you to set external target element as drop area using the [dropArea](../api/uploader/#droparea) property. The element can be represented as HTML element or element’s id.
+The uploader component allows you to set an external target element as the drop area using the [dropArea](../api/uploader#droparea) property. The value can be an HTML element or the element's id.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/drop-area-cs2/index.ts %}
 {% endhighlight %}
@@ -174,7 +174,7 @@ The uploader component allows you to set external target element as drop area us
 {% include code-snippet/uploader/drop-area-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/uploader/drop-area-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -200,7 +200,7 @@ You can customize the appearance of drop area by overriding the default drop are
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/customize-drop-cs2/index.ts %}
 {% endhighlight %}
@@ -211,7 +211,7 @@ You can customize the appearance of drop area by overriding the default drop are
 {% include code-snippet/uploader/customize-drop-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/uploader/customize-drop-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to get total file size in ##Platform_Name## File Upload | Syncfusion
+title: Get total file size in ##Platform_Name## File Upload | Syncfusion
 description: Learn how to get the total size of selected files in the Syncfusion ##Platform_Name## File Upload using the selected event to calculate size before upload.
 platform: ej2-javascript
 control: Get the total size of selected files 
@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # How to get total file size in ##Platform_Name## File Upload
 
-You can get the total size of selected files before uploading it to the designated server. This can be achieved by using the selected event. Refer to the following example to calculate the total file size.
+You can get the total size of selected files before uploading them to the designated server. This is achieved by handling the [selected](../../api/uploader#selected) event, which exposes the selected files through `args.filesData`, where each file's size is available via its `size` property. To display the total in a human-readable format, convert the summed bytes using the [bytesToSize](../../api/uploader#bytestosize) method. Refer to the following example to calculate the total file size.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/file-size-cs1/index.ts %}
 {% endhighlight %}

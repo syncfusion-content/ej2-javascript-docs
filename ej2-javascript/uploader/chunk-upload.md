@@ -11,17 +11,16 @@ domainurl: ##DomainURL##
 
 # Chunk Upload in ##Platform_Name## File Upload
 
-The Uploader sends the large file split into small chunks and transmits to the server using AJAX. You can also pause, resume, and retry the failed chunk file.
+The Uploader splits the large file into small chunks and transmits them to the server using AJAX. You can also pause, resume, and retry failed chunk uploads.
 
 > * The chunk upload works in asynchronous upload only.
-* This feature is available from the Essential Studio<sup style="font-size:70%">&reg;</sup> Vol 2, 2018 release.
+> * This feature is available from the Essential Studio<sup style="font-size:70%">&reg;</sup> Vol 2, 2018 release.
 
-To enable the chunk upload, set the size to [chunkSize](../api/uploader/asyncSettingsModel/#chunksize) option of the
-upload and it receives the value in `bytes`.
+To enable chunk upload, set the [chunkSize](../api/uploader/asyncSettingsModel#chunksize) option, which accepts the value in bytes.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/chunk-cs1/index.ts %}
 {% endhighlight %}
@@ -52,27 +51,23 @@ upload and it receives the value in `bytes`.
 {% previewsample "page.domainurl/code-snippet/uploader/chunk-cs1" %}
 {% endif %}
 
-The chunk upload functionality separates the selected files into blobs of the data or chunks. These chunks are transmitted to the server using an AJAX request. The chunks are sent in **sequential** order, and the next chunk can be sent to the server according to the [success](../api/uploader/#chunksuccess) of the previous chunk. If any one of the chunk failed, then the remaining chunk cannot be sent to the server.
-The [chunkSuccess](../api/uploader/#chunksuccess) or [chunkFailure](../api/uploader/#chunkfailure) &nbsp;event will be triggered when the chunk is sent to the server successfully or failed. If all the chunks are sent to the server successfully, the uploader [success](../api/uploader/#success)
-event is triggered.
+The chunk upload functionality separates the selected files into data blobs, or chunks. These chunks are transmitted to the server using an AJAX request. The chunks are sent in **sequential** order, and the next chunk can be sent to the server according to the [success](../api/uploader#chunksuccess) of the previous chunk. If any chunk fails, the remaining chunks cannot be sent to the server. The [chunkSuccess](../api/uploader#chunksuccess) or [chunkFailure](../api/uploader#chunkfailure) event is triggered when a chunk is sent to the server successfully or fails. If all the chunks are sent to the server successfully, the Uploader's [success](../api/uploader#success) event is triggered.
 
-> Chunk upload will work when the selected file size is greater than the specified chunk size. otherwise, it upload the files normally.
+> Chunk upload will work when the selected file size is greater than the specified chunk size; otherwise, it uploads the files normally.
 
 ## Additional configurations
 
 To modify the chunk upload, the following options can be used.
 
-* **RetryAfterDelay** - If error occurs while sending any chunk request from JavaScript, hold the operation for 500 milliseconds (by default), and retry the operation using chunk. This can be achieved by using the [asyncSettings.retryAfterDelay](../api/uploader/asyncSettingsModel/#retryafterdelay) &nbsp;property.
-You can modify the holding time interval in milliseconds.
+* **RetryAfterDelay** - If an error occurs while sending a chunk request, the operation is paused for 500 milliseconds (by default) before retrying. This can be achieved using the [asyncSettings.retryAfterDelay](../api/uploader/asyncSettingsModel#retryafterdelay) property, which accepts the holding time interval in milliseconds.
 
-* **RetryCount** - Specifies the number of retry actions performed when the file fails to upload. By default, [retry](../api/uploader/asyncSettingsModel/#retrycount) action is performed 3 times.
-If the file fails to upload continuously, the request is aborted and the uploader [failure](../api/uploader/#failure) event will trigger.
+* **RetryCount** - Specifies the number of retry attempts performed when a chunk fails to upload. By default, the [retry](../api/uploader/asyncSettingsModel#retrycount) action is performed 3 times. If the file continuously fails to upload, the request is aborted and the Uploader's [failure](../api/uploader#failure) event triggers.
 
 The following sample specifies the chunk upload delay with 3000 milliseconds and the retry count is 5. The failure event is triggered as the wrong saveUrl is used.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/retry-cs1/index.ts %}
 {% endhighlight %}
@@ -105,13 +100,13 @@ The following sample specifies the chunk upload delay with 3000 milliseconds and
 
 ## Resumable upload
 
-Allows you to resume an upload operation after a network failure or manually interrupts (pause) the upload. You can perform pause and resume upload actions using public methods ([pause](../api/uploader/#pause) and [resume](../api/uploader/#resume)) and UI interaction. The pause icon is enabled after the upload begins.
+Allows you to resume an upload operation after a network failure or a manual interruption (pause) of the upload. You can perform pause and resume upload actions using the public methods ([pause](../api/uploader#pause) and [resume](../api/uploader#resume)) and UI interaction. The pause icon appears in the UI after the upload begins.
 
-> This pause and resume features available only when the chunk upload is enabled.
+> The pause and resume features are available only when chunk upload is enabled.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/resumable-cs1/index.ts %}
 {% endhighlight %}
@@ -144,15 +139,15 @@ Allows you to resume an upload operation after a network failure or manually int
 
 ## Cancel upload
 
-The uploader component allows you to cancel the uploading file. This can be achieved by clicking the cancel icon or using the [cancel](../api/uploader/#cancel) method. The [canceling](../api/uploader/#canceling) event will be fired whenever the file upload request is canceled. While canceling the upload request, the partially uploaded file is removed from the server.
+The Uploader component allows you to cancel an in-progress upload. This can be achieved by clicking the cancel icon or using the [cancel](../api/uploader#cancel) method. The [canceling](../api/uploader#canceling) event is fired whenever the file upload request is canceled. When an upload request is canceled, the partially uploaded file is removed from the server.
 
-When the request fails, the pause icon is changed to retry icon. By clicking the retry icon, sends the failed chunk request again to the server and upload started from where it is failed. You can retry the canceled upload request again using retry UI or [retry](../api/uploader/#retry) methods. But, if you retry this, the file upload action again starts from initial.
+When the request fails, the pause icon changes to a retry icon. Clicking the retry icon resends the failed chunk request to the server, and the upload resumes from where it failed. You can retry a canceled upload request using the retry UI or the [retry](../api/uploader#retry) method. However, in this case, the file upload restarts from the beginning.
 
-The following example explains about chunk upload with cancel support.
+The following example explains chunk upload with cancel support.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/cancel-cs1/index.ts %}
 {% endhighlight %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to add a remove confirmation in ##Platform_Name## File Upload | Syncfusion
-description: Learn how to add a remove confirmation dialog to the Syncfusion ##Platform_Name## File Upload using a Syncfusion Dialog to prompt users before removing files.
+title: Add remove confirmation in ##Platform_Name## File Upload | Syncfusion
+description: Learn how to add a remove confirmation dialog to ##Platform_Name## File Upload using a Dialog to prompt users before removing files.
 platform: ej2-javascript
 control: Add confirm dialog to remove the files 
 publishingplatform: ##Platform_Name##
@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # How to add a remove confirmation in ##Platform_Name## File Upload
 
-You can customize the uploader component using confirm dialog before removing the files. Here, ej2 dialog is used as confirm dialog. Refer to the following example.
+You can customize the Uploader component by showing a confirmation dialog before removing files. This is done by intercepting the [removing](../../api/uploader#removing) event, canceling the default removal, and displaying a confirmation dialog. Based on the user's confirmation, the file is then removed programmatically. Here, the [EJ2 Dialog](../../dialog/getting-started) (from the `@syncfusion/ej2-popups` package) is used as the confirmation dialog. Refer to the following example.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/confirm-dialog-cs1/index.ts %}
 {% endhighlight %}

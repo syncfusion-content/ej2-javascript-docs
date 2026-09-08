@@ -11,12 +11,13 @@ domainurl: ##DomainURL##
 
 # How to check file size in ##Platform_Name## File Upload
 
-By using the [uploading](../../api/uploader/#uploading) event, you can get the file size before uploading it to the server.
-File object contains the file size in bytes only. You can convert the size to standard formats (`KB` or `MB`) using [bytesToSize](../../api/uploader/#bytestosize) method.
+By handling the [uploading](../../api/uploader#uploading) event, you can get the file size before uploading it to the server. The file size is available in the event arguments (for example, `args.filesData[0].size`) and is expressed in bytes.
+
+The File object exposes the file size in bytes. You can convert the size to a human-readable format (`KB` or `MB`) using the [bytesToSize](../../api/uploader#bytestosize) method, which returns a formatted string such as `1.5 MB`. To cancel an upload based on the file size, set `args.cancel` to `true` within the `uploading` event handler.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/check-file-size-cs1/index.ts %}
 {% endhighlight %}

@@ -11,9 +11,11 @@ domainurl: ##DomainURL##
 
 # How to encode image binary in ##Platform_Name## File Upload
 
-By default, the file upload component saves the uploaded image files in physical directories. Also, you can convert the images into binary format at server-side before saving the uploaded images. To retrieve binary format of image files, convert the posted file’s input stream into binary reader and read as bytes using ReadBytes method.
+By default, the file upload component saves uploaded image files in physical directories. You can also convert the images into binary format on the server side before saving them. To retrieve the binary format of the image files, convert the posted file's input stream into a binary reader and read it as bytes using the `ReadBytes` method.
 
-Refer to the below server-side code snippet
+## Server side (ASP.NET)
+
+Refer to the following server-side code snippet. Configure the Uploader's `asyncSettings.saveUrl` to point to this `Save` action. If the input stream was accessed before reading, reset its position to `0` before using the `BinaryReader`.
 
 ```c#
 

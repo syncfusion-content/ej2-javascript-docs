@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to upload programmatically in ##Platform_Name## File Upload | Syncfusion
-description: Learn how to trigger an upload programmatically in the Syncfusion ##Platform_Name## File Upload using the upload and getFilesData public methods without user interaction.
+title: Upload programmatically ##Platform_Name## File Upload | Syncfusion
+description: Learn to trigger upload programmatically in ##Platform_Name## File Upload using public methods without user interaction.
 platform: ej2-javascript
 control: Achieve file upload programmatically 
 publishingplatform: ##Platform_Name##
@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # How to upload programmatically in ##Platform_Name## File Upload
 
-You can upload a file programmatically using the [upload](../../api/uploader/#upload) method. Get the selected files data from the [getFilesData](../../api/uploader/#getfilesdata) public method in uploader.
+You can upload a file programmatically using the [upload](../../api/uploader#upload) method. Use the [getFilesData](../../api/uploader#getfilesdata) public method to retrieve the selected files from the Uploader. The file list returned by `getFilesData` can be passed to the `upload` method to trigger an upload for specific files without user interaction.
 
-The upload method behaves differently based on its arguments.
-* If this method receives any files as arguments, those files only start to upload.
-* If it has no argument, all the selected files start to upload.
+The `upload` method accepts an array of file objects (as returned by `getFilesData`) and behaves differently based on its arguments:
+* If this method receives any files as arguments, only those files will be uploaded.
+* If no arguments are provided, all the selected files will be uploaded.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -11,17 +11,17 @@ domainurl: ##DomainURL##
 
 # Form Support in ##Platform_Name## File Upload
 
-The Uploader component works with HTML form like default file input. The following configuration is must to make the Uploader work inside the form.
+The Uploader component works with an HTML form like the default file input. The following configuration is required for the Uploader to work inside a form.
 
-    *   `saveUrl` and `removeUrl` must be null.
-    *   `autoUpload` must be disabled.
-    *   `name` attribute must be added in input element.
+*   `saveUrl` and `removeUrl` must be omitted (or set to `null`).
+*   `autoUpload` must be set to `false`.
+*   The `name` attribute must be added to the input element.
 
-The selected or dropped files are received as a collection in form action when the form is submitted. The form action handles the server-side operations that manage the file upload process. When you reset the form, the file list and data will be cleared.
+The selected or dropped files are received as a collection in the form action when the form is submitted. The form action handles the server-side operations that manage the file upload process. When you reset the form, the file list and data will be cleared.
 
-{% if page.publishingplatform == "typescript" %}
+{% if page.publishingplatform == "typescript" %}    
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/form-support-cs1/index.ts %}
 {% endhighlight %}
@@ -32,7 +32,7 @@ The selected or dropped files are received as a collection in form action when t
 {% include code-snippet/uploader/form-support-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/uploader/form-support-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

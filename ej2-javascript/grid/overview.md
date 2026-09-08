@@ -37,10 +37,6 @@ The ##Platform_Name## Data Grid integrates with modern application architectures
 
 - **[Custom API binding](./data-binding/remote-data)** - Connect the Data Grid to external APIs and data services with full control over request handling, response parsing, and data operations.
 
-- **ORM integration** - Seamless integration with popular Object-Relational Mapping frameworks eliminates custom data mapping code and enables LINQ-based queries.
-    - **[Entity Framework](./connecting-to-orm/entityframework)** - Integrate with Entity Framework and EF Core-based applications.
-    - **[Dapper](./connecting-to-orm/dapper)** - Connect to applications that use lightweight SQL-based data access.
-
 **Database compatibility**
 
 The Data Grid integrates with major relational databases to provide seamless data access and management:
@@ -54,7 +50,7 @@ The Data Grid integrates with major relational databases to provide seamless dat
 
 **API and service integration**
 
-API and service integration enables the Data Grid to connect seamlessly with GraphQL, Web API, OData, URL, and custom services for flexible backend data access.
+Integrate the Data Grid with GraphQL, Web API, OData, RESTful APIs, and custom services to retrieve, manage, and display remote data efficiently.
 
 | Integration approach | Best suited for | Key benefit |
 |-----------------------|------------------|-------------|
@@ -138,11 +134,12 @@ The Data Grid is fully accessible and compliant with Web Content Accessibility G
 
 - **[WCAG compliance](./accessibility)** - Level AA accessibility standards
 - **[Keyboard shortcuts](./accessibility#keyboard-interaction)** - Complete grid operation via keyboard
-  - Tab/Shift+Tab - Navigate between cells.
-  - Arrow Keys - Move between rows and columns.
-  - Enter - Update cells, confirm changes.
-  - Escape - Cancel editing.
-  - Ctrl+A - Select all rows.
+  - <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> - Navigate between cells.
+  - <kbd>→</kbd> | <kbd>←</kbd>  -  Navigate header and content cells across columns or rows using the left or right arrow keys.
+  - <kbd>↑</kbd> | <kbd>↓</kbd>  -  Navigate header and content cells across columns or rows using the up or down arrow keys.
+  - <kbd>Enter</kbd> - Update cells, confirm changes.
+  - <kbd>Escape</kbd> - Cancel editing.
+  - <kbd>Ctrl</kbd> + <kbd>A</kbd> - Select all rows.
 - **[Screen reader support](./accessibility)** - Full compatibility with assistive technologies.
 - **[Semantic HTML](./accessibility)** - Proper ARIA labels and semantic markup.
 
@@ -216,7 +213,6 @@ Match the ##Platform_Name## Data Grid to the application's visual design using [
 ## Support and resources
 
 - **Questions?** Visit the [Syncfusion support portal](https://www.syncfusion.com/support)
-
 {% if page.publishingplatform == "typescript" %}
 
 - **Code Examples?** Browse [Data Grid demos](https://ej2.syncfusion.com/demos/#/tailwind3/grid/grid-overview.html) and samples
@@ -228,6 +224,5 @@ Match the ##Platform_Name## Data Grid to the application's visual design using [
 - **API Details?** See [Data Grid API reference](https://ej2.syncfusion.com/javascript/documentation/api/grid/index-default)
 
 {% endif %}
-
 - **Community?** Join the [Syncfusion community forum](https://www.syncfusion.com/forums/essential-js2)
 - **What's New?** Check [Release notes](../Release-Notes)

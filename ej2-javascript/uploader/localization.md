@@ -11,36 +11,36 @@ domainurl: ##DomainURL##
 
 # Localization in ##Platform_Name## File Upload
 
-The Localization library allows you to localize static text content of the uploader. The static text contains default text content of action buttons, file status, clear icon title, tooltips, and text content of drag area. Define the [locale](../api/uploader/#locale) object for a culture and assign it to L10n load method.
+The Localization library allows you to localize static text content of the uploader. The static text contains default text content of action buttons, file status, clear icon title, tooltips, and text content of the drop area. Define the [locale](../api/uploader#locale) object for a culture and assign it to the L10n load method.
 
-The following are the list of keys and its values used in the uploader component:
+The following is the list of keys and their values used in the uploader component:
 
 | Key | Description |
 |------------------------|---------|
-| Browse | To customize the browse button text.|
-| Clear | To customize the clear button text.|
+| Browse | To customize the browse button text. |
+| Clear | To customize the clear button text. |
 | Upload | To customize the upload button text. |
 | dropFilesHint | To customize the drop area text. |
-| uploadFailedMessage | To customize the status text when the file is failed to upload.|
-| uploadSuccessMessage | To customize the status text when the file is uploaded successfully.|
-| removedSuccessMessage | To customize the status text when the file is removed the successfully from the serve.|
-| removedFailedMessage | To customize the status text while the file is failed to remove.|
-| inProgress | To customize the status text while the upload is in progress.|
-| pauseUpload | To customize the status text while the uploading is paused.|
-| fileUploadCancel | To customize the status text when uploading is canceled.|
-| readyToUploadMessage | To customize the status text when the file is selected and ready to upload.|
-| invalidMaxFileSize | To customize the status text when the file size is greater than the maximum file size.|
-| invalidFileType | To customize the status text when the file type is invalid.|
+| uploadFailedMessage | To customize the status text when the file fails to upload. |
+| uploadSuccessMessage | To customize the status text when the file is uploaded successfully. |
+| removedSuccessMessage | To customize the status text when the file is removed successfully from the server. |
+| removedFailedMessage | To customize the status text when the file fails to be removed. |
+| inProgress | To customize the status text while the upload is in progress. |
+| pauseUpload | To customize the status text while the upload is paused. |
+| fileUploadCancel | To customize the status text when uploading is canceled. |
+| readyToUploadMessage | To customize the status text when the file is selected and ready to upload. |
+| invalidMaxFileSize | To customize the status text when the file size is greater than the maximum file size. |
+| invalidFileType | To customize the status text when the file type is invalid. |
 | invalidMinFileSize | To customize the status text when the file size is less than the minimum file size. |
-| remove | To customize tooltip text for remove icon. |
-| cancel | To customize tooltip text for cancel icon. |
-| delete | To customize tooltip text for delete icon. |
-| totalFiles | To customize tooltip text for total files. |
-| size | To customize tooltip text for size. |
+| remove | To customize tooltip text for the remove icon. |
+| cancel | To customize tooltip text for the cancel icon. |
+| delete | To customize tooltip text for the delete icon. |
+| totalFiles | To customize tooltip text for the total files. |
+| size | To customize tooltip text for the size. |
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/localization-cs1/index.ts %}
 {% endhighlight %}
@@ -51,7 +51,7 @@ The following are the list of keys and its values used in the uploader component
 {% include code-snippet/uploader/localization-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/uploader/localization-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to validate image on drop in ##Platform_Name## File Upload | Syncfusion
+title: validate image on drop in ##Platform_Name## File Upload | Syncfusion
 description: Learn how to validate image files on drop in the Syncfusion ##Platform_Name## File Upload by configuring the allowedExtensions property to accept only image types.
 platform: ej2-javascript
 control: Validate image on drop 
@@ -11,15 +11,15 @@ domainurl: ##DomainURL##
 
 # How to validate image on drop in ##Platform_Name## File Upload
 
-The uploader component allows you to upload all type of images by setting **image/* ** to [allowedExtensions](../../api/uploader/#allowedextensions) property.
+The Uploader component allows you to upload all types of images by setting `image/*` as the [allowedExtensions](../../api/uploader#allowedextensions) property value.
 
-By default, the behavior is working with select a file using browse button. But, this behavior doesn’t support on drag and drop the files. You can handle this behavior manually using `selected` event by filtering the file types from application.
+By default, this behavior works when selecting a file using the browse button. However, this behavior is not supported when dragging and dropping files. You can handle this manually using the `selected` event by filtering the file types (for example, by checking each file's extension or `type` property against an allow-list) within the application.
 
-In the following example, validated image files using images/*. You are able to drag and drop the image files with extension of PNG, JPG, BPG, GIF and TIFF to upload it.
+In the following example, image files are validated using `image/*`. You can drag and drop image files with the extensions PNG, JPG, BPG, GIF, and TIFF to upload them.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/uploader/validate-image-cs1/index.ts %}
 {% endhighlight %}

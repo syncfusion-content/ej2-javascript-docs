@@ -34,8 +34,8 @@ Include the following CSS from `UNPKG` and JavaScript links in the `<head>` sect
  
 **Styles (CSS):**
 ```text
-https://unpkg.com/@syncfusion/ej2-base@34.1.29/styles/bootstrap5.3.css
-https://unpkg.com/@syncfusion/ej2-grids@34.1.29/styles/bootstrap5.3.css
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/base/base.css
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/grid/grid.css
 ```
  
 **Scripts (JavaScript):**
@@ -56,8 +56,8 @@ Copy and paste the following complete code into your `index.html` file:
   <head>
     <title>Syncfusion Grid - Quick Start</title>
     <!-- Styles -->
-    <link href="https://unpkg.com/@syncfusion/ej2-base@34.1.29/styles/bootstrap5.3.css" rel="stylesheet" />
-    <link href="https://unpkg.com/@syncfusion/ej2-grids@34.1.29/styles/bootstrap5.3.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/base/base.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/grid/grid.css" rel="stylesheet" />
    
     <!-- Scripts -->
     <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/dist/global/ej2-base.min.js"></script>

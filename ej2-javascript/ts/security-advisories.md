@@ -9,15 +9,27 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Security Advisories in Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 Controls
+# Security Advisories in Syncfusion® EJ2 Controls
 
-Syncfusion places the highest priority on the security of its controls. All Essential JS 2 components undergo rigorous static code analysis using ESLint and the [eslint-plugin-security](https://github.com/eslint-community/eslint-plugin-security) plugin. Software composition analysis is performed with [SOOS](https://soos.io/) to detect and mitigate vulnerabilities in dependencies.
+Syncfusion places the highest priority on the security of its controls. All Essential JS 2 components undergo rigorous static code analysis using ESLint and the [ESLint-plugin-security](https://github.com/eslint-community/eslint-plugin-security) plugin. Software composition analysis is performed with SOOS to detect and mitigate vulnerabilities in dependencies.
 
 This page summarizes key security enhancements and fixes delivered in Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS2 controls for volume release.
 
 ## Security Updates
 
 The following security updates are available for Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS2 controls and are listed based on the release version. 
+
+### 2026 Volume 3 (v34.1.29) - July 06, 2026
+
+The Syncfusion® License Validation CLI command has been enhanced to address a command injection vulnerability. This update ensures that package information is processed securely during license validation and helps prevent unintended command execution.
+
+**Threat:**
+
+The npx syncfusion-license validate command was susceptible to a command injection vulnerability because package names retrieved from the package.json file could be improperly interpreted as part of shell commands during the validation process. An attacker could potentially craft a malicious package name to execute unauthorized commands on the host system.
+
+**Resolution:**
+
+Beginning with release v34.1.29, Syncfusion® has remedied this vulnerability by implementing strict validation and secure handling of package names during the license validation process. This enhancement prevents specially crafted package names from being interpreted as executable shell commands, effectively mitigating the risk of command injection and strengthening the overall security of the Syncfusion® License Validation CLI command.
 
 ### 2023 Volume 2 (v32.1.19) - June 21, 2023
 

@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Security Advisories in Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 Controls
+# Security Advisories in Syncfusion® EJ2 Controls
 
-Syncfusion places the highest priority on the security of its controls. All Essential JS 2 components undergo rigorous static code analysis using ESLint and the [eslint-plugin-security](https://github.com/eslint-community/eslint-plugin-security) plugin. Software composition analysis is performed with [SOOS](https://soos.io/) to detect and mitigate vulnerabilities in dependencies.
+Syncfusion places the highest priority on the security of its controls. All Essential JS 2 components undergo rigorous static code analysis using ESLint and the [ESLint-plugin-security](https://github.com/eslint-community/eslint-plugin-security) plugin. Software composition analysis is performed with SOOS to detect and mitigate vulnerabilities in dependencies.
 
 This page summarizes key security enhancements and fixes delivered in Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS2 controls for volume release.
 
@@ -29,7 +29,7 @@ The npx syncfusion-license validate command was susceptible to a command injecti
 
 **Resolution:**
 
-Beginning with release v34.1.29, Syncfusion® has remediated this vulnerability by implementing strict validation and secure handling of package names during the license validation process. This enhancement prevents specially crafted package names from being interpreted as executable shell commands, effectively mitigating the risk of command injection and strengthening the overall security of the Syncfusion® License Validation CLI command.
+Beginning with release v34.1.29, Syncfusion® has remedied this vulnerability by implementing strict validation and secure handling of package names during the license validation process. This enhancement prevents specially crafted package names from being interpreted as executable shell commands, effectively mitigating the risk of command injection and strengthening the overall security of the Syncfusion® License Validation CLI command.
 
 ### 2023 Volume 2 (v32.1.19) - June 21, 2023
 

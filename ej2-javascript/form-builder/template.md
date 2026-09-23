@@ -203,6 +203,8 @@ function inputTemplate(data) {
 
 In the Preview tab, the templates are displayed so that you can validate the created form.
 
+![Templates in Form Builder](./images/form-builder-template.gif)
+
 ## Adding properties of the template in property panel
 
 The properties of the third party components can be added to the property panel using the `setProperty` method in the Form Builder. For more details, see this [documentation](./property-panel#adding-a-new-property-in-the-property-panel)

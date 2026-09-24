@@ -6,7 +6,7 @@ var grid = new ej.grids.Grid({
     selectionSettings: { mode: 'Cell', cellSelectionMode: 'Box', type: 'Multiple' },
     columns: [
         { field: 'Id', isPrimaryKey: true, headerText: 'ID', width: 100, validationRules: { required: true } },
-        { field: 'ProductName', headerText: 'Product Name', width: 180, validationRules: { required: true } },
+        { field: 'Product', headerText: 'Product Name', width: 180, validationRules: { required: true } },
         { field: 'Quantity', headerText: 'Quantity', width: 120, textAlign: 'Right' },
         { field: 'Price', headerText: 'Price Per Unit', width: 140, textAlign: 'Right', editType: 'numericedit', format: 'C2' },
         { field: 'GrossAmount', headerText: 'Gross Amount', width: 150, allowFormula: true, format: 'C2' },

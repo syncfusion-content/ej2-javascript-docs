@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to select items in ##Platform_Name## ListBox | Syncfusion
+title: Select Items in ##Platform_Name## ListBox | Syncfusion
 description: Select items in the Syncfusion ##Platform_Name## ListBox programmatically by value or by index using the selectItems method.
 platform: ej2-javascript
 control: Select items 

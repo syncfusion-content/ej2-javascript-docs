@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to enable scroller in ##Platform_Name## ListBox | Syncfusion
+title: Enable Scroller in ##Platform_Name## ListBox | Syncfusion
 description: Show a scrollbar in the Syncfusion ##Platform_Name## ListBox by restricting the popup height with the height property.
 platform: ej2-javascript
 control: Enable scroller 

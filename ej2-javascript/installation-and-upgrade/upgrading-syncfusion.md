@@ -13,6 +13,8 @@ domainurl: ##DomainURL##
 
 **Applies to:** Syncfusion Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 on Windows.
 
+**Applies to:** Syncfusion Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 on Windows.
+
 Syncfusion<sup style="font-size:70%">&reg;</sup> releases new volumes once every three months, with exciting new features. There will be one Service Pack release for these volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
 
 You can upgrade from any previous version — trial or licensed — to the latest release without uninstalling older versions.

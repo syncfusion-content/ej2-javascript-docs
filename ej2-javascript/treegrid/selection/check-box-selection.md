@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ##Platform_Name## TreeGrid Checkbox Selection | Syncfusion
-description: Learn how to enable and configure checkbox selection in ##Platform_Name## TreeGrid, including selection modes, persist selection, and checkbox behavior.
+title: ##Platform_Name## Tree Grid Checkbox Selection | Syncfusion
+description: Learn how to enable and configure checkbox selection in ##Platform_Name## Tree Grid, including selection modes, persist selection, and checkbox behavior.
 platform: ej2-javascript
 control: Check box selection 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Checkbox Selection in ##Platform_Name## TreeGrid
+# Checkbox Selection in ##Platform_Name## Tree Grid
 
-Checkbox selection provides an option to select multiple treegrid records with help of checkbox in each row.
+Checkbox selection provides an option to select multiple Tree Grid records with help of checkbox in each row.
 
-To render the checkbox in each treegrid row, you need to use checkbox column with type as `checkbox` using the column [`type`](../../api/treegrid/column#type) property.
+To render the checkbox in each Tree Grid row, you need to use checkbox column with type as `checkbox` using the column [`type`](../../api/treegrid/column#type) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -42,7 +42,7 @@ To render the checkbox in each treegrid row, you need to use checkbox column wit
 {% previewsample "page.domainurl/code-snippet/treegrid/selection-cs2" %}
 {% endif %}
 
-> * By default, selection is allowed by clicking a treegrid row or checkbox in that row. To allow selection only through checkbox, you can set the
+> * By default, selection is allowed by clicking a Tree Grid row or checkbox in that row. To allow selection only through checkbox, you can set the
 [`selectionSettings.checkboxOnly`](../../api/treegrid/selectionSettingsModel#checkboxonly) property to true.
 > * Selection can be persisted in all the operations using the [`selectionSettings.persistSelection`](../../api/treegrid/selectionSettingsModel#persistselection) property. For persisting selection on the treegrid, any one of the columns should be defined as a primary key using the [`columns.isPrimaryKey`](../../api/treegrid/column#isprimarykey) property.
 
@@ -117,4 +117,44 @@ In the following sample, selection is disabled for rows where the "Progress" col
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/treegrid/selection-cs10" %}
+{% endif %}
+
+## Hierarchy checkbox selection
+
+The hierarchy checkbox enables cascading selection of parent and child rows in Tree Grid. When a parent row checkbox is selected, all its child records are automatically selected, and the parent state updates based on children selection. To enable hierarchy checkbox selection, set the `showCheckbox` property to `true` in a column and configure the `hierarchyCheckboxMode` property. By default, hierarchy checkbox mode is set to `self`.
+
+The available modes are displayed in the following table.
+
+| Item | Description |
+|-----|-----|
+| `self` | Only the targeted row is selected; children and parent are not affected. |
+| `hierarchy` | Selection cascades to all descendants and adjusts the parent state accordingly. |
+| `filteredHierarchy` | Behaves like hierarchy, but applies the cascade only to records matching the current filter or search criteria. |
+
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/treegrid/columns-cs19/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/treegrid/columns-cs19/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs19" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/treegrid/columns-cs19/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/treegrid/columns-cs19/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs19" %}
 {% endif %}

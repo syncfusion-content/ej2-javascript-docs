@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation | Syncfusion
-description: Learn how to install Syncfusion ##Platform_Name## Essential Studio packages using the npm package manager and dependencies.
+title: Installation in ##Platform_Name## Installation and upgrade control | Syncfusion
+description: Learn here all about Installation in Syncfusion ##Platform_Name## Installation and upgrade control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Installation
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Installing Syncfusion JavaScript controls via npm
+# Installation of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls
 
 This guide explains how to install Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript UI components into an existing project using either the **npm CLI** or the **`package.json`** file.
 
@@ -65,8 +65,8 @@ After installing the package, you typically need to:
 2. Reference the required script and CSS files in your HTML. For example:
 
     ```html
-    <link href="https://cdn.syncfusion.com/ej2/20.2.38/material.css" rel="stylesheet" />
-    <script src="https://cdn.syncfusion.com/ej2/20.2.38/dist/ej2.min.js"></script>
+    <link href="https://cdn.syncfusion.com/ej2/34.2.2/material.css" rel="stylesheet" />
+    <script src="https://cdn.syncfusion.com/ej2/34.2.2/dist/ej2.min.js"></script>
     ```
 
 3. Register the Syncfusion<sup style="font-size:70%">&reg;</sup> components you want to use. For example:

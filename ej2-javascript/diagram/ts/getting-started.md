@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with ##Platform_Name## Diagram
 
-This section explains the steps required to create a simple diagram and demonstrates the basic usage of the diagram control using a seed application.
+This section explains the steps required to create a simple diagram and demonstrates the basic usage of the TypeScript Diagram control using a seed application.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript control with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/documentation/mcp-server/ai-coding-assistant/getting-started).
 
@@ -39,7 +39,7 @@ cd ej2-quickstart
 
 ## Install Syncfusion TypeScript packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the **package.json** file. To render the Diagram control, you also need the [@syncfusion/ej2-diagrams](https://www.npmjs.com/package/@syncfusion/ej2-diagrams) package.
+Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the **package.json** file. To render the TypeScript Diagram control, you also need the [@syncfusion/ej2-diagrams](https://www.npmjs.com/package/@syncfusion/ej2-diagrams) package.
 
 Use the following command to install the dependent npm packages from the command prompt.
 
@@ -49,7 +49,7 @@ npm install
 
 ## Import Syncfusion® CSS styles
 
-The Diagram control needs Syncfusion® theme styles to display correctly. Syncfusion® theme packages include ready-to-use styles for supported controls.
+The TypeScript Diagram control needs Syncfusion® theme styles to display correctly. Syncfusion® theme packages include ready-to-use styles for supported controls.
 
 To add the styles, install the Tailwind theme package using the following command:
 
@@ -63,7 +63,7 @@ Then add the following CSS reference to the **src/styles/styles.css** file:
 @import "../../node_modules/@syncfusion/ej2-tailwind-theme/styles/diagram/index.css";
 ```
 
-> The theme package includes the required base component styles for the Diagram control, so no separate base style import is needed.
+> The theme package includes the required base component styles for the TypeScript Diagram control, so no separate base style import is needed.
 
 For the list of available themes, refer to the [Themes](https://ej2.syncfusion.com/documentation/appearance/theme) documentation.
 
@@ -71,7 +71,7 @@ N> Syncfusion® provides multiple built-in themes. If the application uses a dif
 
 ## Add the HTML element
 
-Open the **src/index.html** file and replace its contents with the following HTML for the Diagram component.
+Open the **src/index.html** file and replace its contents with the following HTML for the TypeScript Diagram component.
 
 ```
 <!DOCTYPE html>
@@ -96,7 +96,7 @@ This section explains how to create a simple flowchart by adding nodes, customiz
 
 The following example creates a flowchart with four nodes: **Start**, **Process**, **Decision**, and **End**. It also applies common node and connector settings through the `getNodeDefaults` and `getConnectorDefaults` callback bindings.
 
-Open the **src/app/app.ts** file and add the following code to render the Diagram control.
+Open the **src/app/app.ts** file and add the following code to render the TypeScript Diagram control.
 
 ```
 import { Diagram, NodeModel, ConnectorModel } from '@syncfusion/ej2-diagrams';
@@ -123,7 +123,7 @@ function connectorDefaults(connector: ConnectorModel): ConnectorModel {
     return connector;
 }
 
-// Initialize the Diagram control
+// Initialize the TypeScript Diagram control
 let diagram: Diagram = new Diagram({
     width: '100%',
     height: '580px',
@@ -211,7 +211,7 @@ In this example:
 * [`getNodeDefaults`](https://ej2.syncfusion.com/documentation/api/diagram/index-default#getnodedefaults) applies common width, height, fill color, and stroke color to all nodes.
 * [`getConnectorDefaults`](https://ej2.syncfusion.com/documentation/api/diagram/index-default#getconnectordefaults) applies common connector settings to all connectors, such as setting the routing `type` to `Orthogonal` and adding a target arrow decorator.
 
-> Ensure the `src/app/app.ts` file is imported by the application entry point (e.g., `src/index.ts`) so that the Diagram control is initialized when the app loads.
+> Ensure the `src/app/app.ts` file is imported by the application entry point (e.g., `src/index.ts`) so that the TypeScript Diagram control is initialized when the app loads.
 
 ## Run the application
 

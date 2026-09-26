@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to enable or disable ##Platform_Name## ListBox | Syncfusion
+title: Enable or Disable Items in ##Platform_Name## ListBox | Syncfusion
 description: Enable or disable items in the Syncfusion ##Platform_Name## ListBox at runtime by calling the enableItems method.
 platform: ej2-javascript
 control: Enable or disable items 

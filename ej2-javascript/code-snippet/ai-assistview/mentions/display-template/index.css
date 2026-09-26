@@ -1,0 +1,25 @@
+#container {
+    visibility: hidden;
+    margin: 20px auto;
+    width: 650px;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+.e-aiassist-mention-item-chip {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #eef4ff;
+    border: 1px solid #008cff;
+    border-radius: 12px;
+    color: #008cff;
+    font-size: 13px;
+    font-weight: 600;
+}

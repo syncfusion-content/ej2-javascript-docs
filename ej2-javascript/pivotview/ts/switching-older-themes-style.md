@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Switch to Older Themes Style in ##Platform_Name## Pivot Table | Syncfusion
+title: How to Use Old Theme in ##Platform_Name## Pivot Table | Syncfusion
 description: Step-by-step example showing how to switch to older themes style in the ##Platform_Name## Pivot Table, with CSS selectors and pivot table height configuration.
 platform: ej2-javascript
 control: Switching older themes style
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD009 -->
 
-# How to Switch to Older Themes Style in ##Platform_Name## Pivot Table
+# How to Use Old Theme Styles in ##Platform_Name## Pivot Table
 
 From Volume 1, 2020 onwards Syncfusion<sup style="font-size:70%">&reg;</sup> has revised the theming and layout of the Pivot Table. So, to inherit the older theme style and layout please do the necessary changes in CSS and pivot table height.
 

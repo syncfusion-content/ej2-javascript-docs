@@ -23,6 +23,7 @@ The available grid modules are:
 | [Group](../api/grid/group)| Inject this module to use grouping feature.|
 | `LazyLoadGroup`| Inject this module to use lazy load grouping feature.|
 | [Edit](../api/grid/edit)| Inject this module is use editing feature.|
+| [Formula](../api/grid/formula)| Inject this module to use formula feature.|
 | `Aggregate`| Inject this module to use aggregate feature.|
 | [ColumnChooser](../api/grid/columnChooser)| Inject this module to use column chooser feature.|
 | `ColumnMenu`| Inject this module to use column menu feature.|

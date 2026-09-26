@@ -192,7 +192,7 @@ This article provides a step-by-step guide to configure Syncfusion<sup style="fo
         ....
         ....
         <!-- Essential JS 2 styles -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.syncfusion.com/ej2/32.1.19/fluent2.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.syncfusion.com/ej2/34.2.2/fluent2.css">
     </head>
  ```
 

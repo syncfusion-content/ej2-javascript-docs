@@ -43,10 +43,9 @@ To get started with the ASP.NET Web Forms application, ensure that the following
     ```html
     <head>
     <!-- Syncfusion CSS -->
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/material3.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-grids/styles/material3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.2.2/material3.css" rel="stylesheet">
     <!-- Syncfusion JS -->
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/dist/ej2.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/34.2.2/dist/ej2.min.js"></script>
     </head>
     ```
 

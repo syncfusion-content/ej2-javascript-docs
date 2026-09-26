@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # How to load dynamic HTML in Tooltip content in ##Platform_Name## Tooltip
 
-The Tooltip control can load HTML content using the [`content`](../content/) template.
+The Tooltip control can load HTML content using the [`content`](../content) template.
 
 The HTML tags such as `<div>`, `<span>`, `bold`, `italic`, `underline`, etc., can be used. Style attributes can also be applied with HTML tags.
 
 In the example below, Bold, Italic, Underline, and Anchor tags are used.
 
-When using HTML elements as content for a `Tooltip`, initially set the content element to `display: none`. Then, within the [`beforeRender`](../../api/tooltip/#beforerender) event, you can make the element visible again using the following code:
+When using HTML elements as content for a `Tooltip`, initially set the content element to `display: none`. Then, within the [`beforeRender`](../../api/tooltip#beforerender) event, you can make the element visible again using the following code:
 
 ```ts
     document.getElementById('content').style.display = 'block';

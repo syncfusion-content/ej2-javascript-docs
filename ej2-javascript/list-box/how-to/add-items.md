@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to add items in ##Platform_Name## ListBox | Syncfusion
+title: Add Items in ##Platform_Name## ListBox | Syncfusion
 description: Add a single item or a list of items to the Syncfusion ##Platform_Name## ListBox dynamically using the addItems method.
 platform: ej2-javascript
 control: Add items 

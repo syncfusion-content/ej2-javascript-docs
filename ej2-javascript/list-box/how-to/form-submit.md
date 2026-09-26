@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to submit a form with ##Platform_Name## ListBox | Syncfusion
+title: Form Submit in ##Platform_Name## ListBox | Syncfusion
 description: Submit the selected Syncfusion ##Platform_Name## ListBox values with an HTML form by giving the list box a name attribute.
 platform: ej2-javascript
 control: Form submit 

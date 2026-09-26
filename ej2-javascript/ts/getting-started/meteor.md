@@ -96,7 +96,7 @@ For getting started, the Calendar control will be added in the new application.
 import './main.html';
 
 // import Syncfusion Essential JS 2 styles from node_modules
-import '../node_modules/@syncfusion/ej2/fluent2.css';
+import '../node_modules/@syncfusion/ej2-fluent2-theme/styles/fluent2.css';
 
 import { Calendar } from '@syncfusion/ej2-calendars';
 

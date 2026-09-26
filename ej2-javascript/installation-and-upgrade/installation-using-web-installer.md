@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installation using web installer in ##Platform_Name## | Syncfusion
-description: Learn how to install Syncfusion ##Platform_Name## Essential Studio using the web installer on Windows systems.
+description: Learn how to install Syncfusion ##Platform_Name## Essential Studio using the web (online) installer.
 platform: ej2-javascript
 control: Installation using web installer
 publishingplatform: ##Platform_Name##
@@ -45,52 +45,52 @@ The steps below show how to install Essential Studio<sup style="font-size:70%">&
 
 1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Web Installer file from the downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
-    ![Installer package extraction dialog](images/img1.png)
+    ![Installer package extraction dialog](images/1.png)
 
     N> The installer wizard extracts the `syncfusionejs2webinstaller_{version}.exe` dialog, which displays the package's unzip operation.
 
 2. The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript - EJ2 Web Installer's welcome wizard will be displayed. Click the **Next** button.
 
-    ![Web installer welcome wizard](images/img2.png)
+    ![Web installer welcome wizard](images/2.png)
 
 3. The Platform Selection Wizard will appear. From the **Available** tab, select the products to be installed. Select the **Install All** checkbox to install all products.
 
     **Available**
 
-    ![Platform selection wizard, Available tab](images/img3.png)
+    ![Platform selection wizard, Available tab](images/3.png)
 
     If you have multiple products installed in the same version, they will be listed under the **Installed** tab. You can also select which products to uninstall from the same version. Click the **Next** button.
 
     **Installed**
 
-    ![Platform selection wizard, Installed tab](images/img4.png)
+    ![Platform selection wizard, Installed tab](images/4.png)
 
     I> If the required software for the selected product isn't already installed, the **Additional Software Required** alert will appear. You can, however, continue the installation and install the necessary software later.
 
     **Required Software**
     **Required Software**
 
-    ![Additional software required alert](images/img5.png)
+    ![Additional software required alert](images/5.png)
 
 4. If previous version(s) for the selected products are installed, the **Uninstall previous version** wizard will be displayed. You can see the list of previously installed versions for the products you've chosen here. To remove all versions, check the **Uninstall All** checkbox. Click the **Next** button.
 
-    ![Uninstall previous version wizard](images/img6.png)
+    ![Uninstall previous version wizard](images/6.png)
 
     N> From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> provides an option to uninstall previous versions from 18.1 while installing the new version.
 
 5. A pop-up screen will be displayed to confirm the uninstallation of the selected previous versions.
 
-    ![Confirmation pop-up to uninstall previous versions](images/img7.png)
+    ![Confirmation pop-up to uninstall previous versions](images/7.png)
 
 6. The **Confirmation** wizard will appear with the list of products to be installed/uninstalled. You can view and modify the list of products that will be installed and uninstalled from this page.
 
-    ![Confirmation wizard with list of products](images/img8.png)
+    ![Confirmation wizard with list of products](images/8.png)
 
     N> By clicking the **Download Size** and **Installation Size** links, you can determine the approximate size of the download and installation.
 
 7. The **Configuration** wizard will appear. You can change the **Download**, **Install**, and **Demos** locations from here. You can also change the additional settings on a product-by-product basis. Click **Next** to install with the default settings.
 
-    ![Configuration wizard with download, install, and demos locations](images/img9.png)
+    ![Configuration wizard with download, install, and demos locations](images/9.png)
 
     **Additional settings**
     * Select the **Install Demos** check box to install Syncfusion<sup style="font-size:70%">&reg;</sup> samples, or leave the check box unchecked if you do not want to install Syncfusion<sup style="font-size:70%">&reg;</sup> samples.
@@ -102,23 +102,23 @@ The steps below show how to install Essential Studio<sup style="font-size:70%">&
 
 9. The **Login** wizard will appear. You must enter your Syncfusion<sup style="font-size:70%">&reg;</sup> email address and password. If you do not already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, you can create one by clicking **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the **Install** button.
 
-    ![Login wizard with email and password fields](images/img8_.png)
+    ![Login wizard with email and password fields](images/8_.png)
 
     I> The products you have chosen will be installed based on your Syncfusion<sup style="font-size:70%">&reg;</sup> license (Trial or Licensed).
 
 10. The download and installation/uninstallation progress will be displayed as shown below.
 
-    ![Download and installation progress](images/img9_.png)
+    ![Download and installation progress](images/9_.png)
 
 11. When the installation is finished, the **Summary** wizard will appear. Here you can see the list of products that have been installed successfully and those that have failed. To close the Summary wizard, click **Finish**.
 
-    ![Summary wizard showing installed products](images/img12.png)
+    ![Summary wizard showing installed products](images/12.png)
 
     * To open the Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel, click **Launch Control Panel**.
 
 12. After installation, there will be two Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel entries, as shown below. The Essential Studio<sup style="font-size:70%">&reg;</sup> entry will manage all Syncfusion<sup style="font-size:70%">&reg;</sup> products installed in the same version, while the Product entry will only uninstall the specific product setup.
 
-    ![Syncfusion Control Panel entries](images/img13.png)
+    ![Syncfusion Control Panel entries](images/13.png)
 
 ## Troubleshooting
 

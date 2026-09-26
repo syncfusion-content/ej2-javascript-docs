@@ -54,19 +54,15 @@ The JavaScript (ES5) Smart Paste Button control can be initialized by using eith
 >
 > Control Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\tailwind3.css`
->
-> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\tailwind3.css`
+> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{THEME_PACKAGE_NAME}\styles\{COMPONENT_NAME}\index.css`
 
 **Example:**
 
-> Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.1.29\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
+> Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.2.2\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
 >
-> Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.1.29\Web (Essential JS 2)\JavaScript\ej2-buttons\dist\global\ej2-buttons.min.js`
+> Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.2.2\Web (Essential JS 2)\JavaScript\ej2-buttons\dist\global\ej2-buttons.min.js`
 >
-> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.1.29\Web (Essential JS 2)\JavaScript\ej2-base\styles\tailwind3.css`
->
-> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.1.29\Web (Essential JS 2)\JavaScript\ej2-buttons\styles\tailwind3.css`
+> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.2.2\Web (Essential JS 2)\JavaScript\ej2-tailwind3-theme\styles\button\index.css`
 
 The script and style files below contain all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
@@ -167,14 +163,12 @@ The control utilizes the [aiAssistHandler](https://ej2.syncfusion.com/javascript
 >
 > Control Script: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{DEPENDENCY_PACKAGE_NAME}/styles/tailwind3.css`
->
-> Control Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/styles/tailwind3.css`
+> Control Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/tailwind3.css`
 
 **Example:**
-> Script: [`https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/dist/global/ej2-buttons.min.js`](https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/dist/global/ej2-buttons.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/34.2.2/ej2-buttons/dist/global/ej2-buttons.min.js`](https://cdn.syncfusion.com/ej2/34.2.2/ej2-buttons/dist/global/ej2-buttons.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/styles/tailwind3.css`](https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/styles/tailwind3.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/34.2.2/tailwind3.css`](https://cdn.syncfusion.com/ej2/34.2.2/tailwind3.css)
 
 **Step 3:** Create an HTML page, `index.html`, in `~/quickstart/index.html` and add the CDN link references. Then, add the `Smart Paste Button` element and initialize the `JavaScript (ES5) Smart Paste Button` control in `index.html` by using the following code.
 

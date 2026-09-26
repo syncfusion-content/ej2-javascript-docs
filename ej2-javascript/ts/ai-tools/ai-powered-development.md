@@ -236,7 +236,7 @@ If you encounter unexpected results, use this as a quick diagnostic reference:
 | Wrong or missing imports | AI confused by JavaScript vs framework packages | Explicitly prompt: "Use `@syncfusion/ej2-[package]` imports only" |
 | Deprecated API usage (e.g. old property names) | AI trained on stale documentation | Enable MCP Server for live doc grounding |
 | Wrong control name (e.g. `Grid` instead of `new Grid({})`) | AI using incorrect instantiation pattern | Include docs URL or install Component Skills |
-| CSS not applied / unstyled control | Missing stylesheet import | Add `import '@syncfusion/ej2-base/styles/tailwind3.css'` and control theme CSS |
+| CSS not applied / unstyled control | Missing stylesheet import | Add `import '@syncfusion/ej2-tailwind3-theme/styles/base/base.css'` and control theme CSS |
 | Feature not working (sorting, filtering) | Missing `Grid.Inject()` call | Add `Grid.Inject(Page, Sort, Filter)` before creating the Grid instance |
 
 

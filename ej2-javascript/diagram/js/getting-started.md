@@ -38,7 +38,7 @@ The Essential® JS 2 Diagram control can be initialized using one of the followi
 
 > The following steps continue from the **Setup for local environment** section above. Each resource-loading approach (local script vs. CDN) replaces steps 1–4 below.
 
-**Step 1:** Download [Essential Studio® JavaScript (Essential® JS 2)](https://www.syncfusion.com/downloads/essential-js2) to obtain the global scripts and styles. Note that the Diagram control depends on the `ej2-base`, `ej2-popups`, and `ej2-navigations` packages; using the combined `ej2.min.js` bundle (as shown in the example below) includes these dependencies automatically.
+**Step 1:** Download [Essential Studio® JavaScript (Essential® JS 2)](https://www.syncfusion.com/downloads/essential-js2) to obtain the global scripts and styles. Note that the JavaScript Diagram control depends on the `ej2-base`, `ej2-popups`, and `ej2-navigations` packages; using the combined `ej2.min.js` bundle (as shown in the example below) includes these dependencies automatically.
 
 **Step 2:** Identify the location of the script and style files from the build installation location. The syntax for the file paths is as follows:
 
@@ -46,7 +46,7 @@ The Essential® JS 2 Diagram control can be initialized using one of the followi
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Web(Essential JS 2)/javascript/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 > Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Web(Essential JS 2)/javascript/{PACKAGE_NAME}/styles/tailwind3.css`
 
-> For the Diagram control, use `ej2-diagrams` as the `{PACKAGE_NAME}`. The `{RELEASE_VERSION}` is the installed Essential Studio build version (e.g., `33.2.3`).
+> For the JavaScript Diagram control, use `ej2-diagrams` as the `{PACKAGE_NAME}`. The `{RELEASE_VERSION}` is the installed Essential Studio build version (e.g., `33.2.3`).
 
 **Example:**
 > Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/33.2.3/Web(Essential JS 2)/javascript/ej2-diagrams/dist/global/ej2-diagrams.min.js`
@@ -147,7 +147,7 @@ function connectorDefaults(connector) {
     return connector;
 }
 
-// Initialize the Diagram control
+// Initialize the JavaScript Diagram control
 let diagram = new ej.diagrams.Diagram({
     width: '100%',
     height: '580px',

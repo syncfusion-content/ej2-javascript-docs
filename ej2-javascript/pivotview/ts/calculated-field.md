@@ -33,7 +33,7 @@ To use the calculated field feature, you must inject the `CalculatedField` modul
 N>
 - The calculated field feature applies only to value fields. By default, calculated fields created programmatically are added to the field list and calculated field dialog UI. To display a calculated field in the pivot table UI, it must be added to the [`values`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#values) property, as shown in the code below.
 - The following advanced aggregation types are not supported within calculated field formulas: `Index`, `RunningTotals`, `PercentageOfRunningTotals`, `PercentageOfGrandTotal`, `PercentageOfColumnTotal`, `PercentageOfRowTotal`, `PercentageOfParentColumnTotal`, `PercentageOfParentRowTotal`, `DifferenceFrom`, `PercentageOfDifferenceFrom`, and `PercentageOfParentTotal`.
- 
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/pivot-table/pivot-table-cs313/index.ts %}

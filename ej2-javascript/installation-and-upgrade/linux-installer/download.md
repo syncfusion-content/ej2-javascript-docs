@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Download Linux installer | Syncfusion
-description: Learn how to download the Syncfusion ##Platform_Name## JavaScript Linux installer for trial and licensed versions.
+title: Download Syncfusion JavaScript Linux installer in ##Platform_Name## | Syncfusion
+description: Learn how to download the Syncfusion ##Platform_Name## JavaScript Linux trial or licensed installer.
 control: Download
 platform: ej2-javascript
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Download Linux installer
+# Download Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Linux installer
 
 **Applies to:** Syncfusion Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Linux installer on Linux distributions supported by Syncfusion.
 

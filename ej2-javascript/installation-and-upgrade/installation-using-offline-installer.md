@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation using offline installer | Syncfusion
+title: Installation using offline installer in ##Platform_Name## Installation and upgrade control | Syncfusion
 description: Learn here all about Installation using offline installer in Syncfusion ##Platform_Name## Installation and upgrade control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Installation using offline installer
@@ -77,6 +77,7 @@ The steps below show how to install the Essential<sup style="font-size:70%">&reg
     ![Uninstall previous versions](images/offline5.png)
 
    N> From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> has added the option to uninstall previous versions from 18.1 onward while installing the new version.
+    >
    N> If any version is selected to uninstall, a confirmation screen will appear. If you click **Continue**, the Progress screen will display the uninstall and install progress respectively. If no versions are chosen to be uninstalled, only the installation progress is displayed.
 
     **Confirmation Alert**

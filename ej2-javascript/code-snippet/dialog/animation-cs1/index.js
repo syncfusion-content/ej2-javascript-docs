@@ -16,7 +16,7 @@ var dialog = new ej.popups.Dialog({
     buttons: [
         {
             // Click the footer buttons to hide the Dialog
-            'click': () => { dialog.hide(); },
+            'click': function() { dialog.hide(); },
             // Accessing button component properties by buttonModel property
             buttonModel: {
                 content: 'OK',
@@ -24,7 +24,7 @@ var dialog = new ej.popups.Dialog({
             }
         },
         {
-            'click': () => { dialog.hide(); },
+            'click': function() { dialog.hide(); },
             buttonModel: {
                 content: 'Cancel'
             }

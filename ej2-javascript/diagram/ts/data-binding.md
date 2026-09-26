@@ -125,7 +125,7 @@ This feature allows you to read the data source and perform add or edit or delet
 
 ```ts
 
-//Initialize diagram
+//Initialize TypeScript Diagram
 let diagram: Diagram = new Diagram({
      dataSourceSettings: {
        crudAction:
@@ -187,7 +187,7 @@ diagram.updateData();
 
 ```ts
 
-//Initialize diagram
+//Initialize TypeScript Diagram
 let diagram: Diagram = new Diagram({
      dataSourceSettings: {
        crudAction:

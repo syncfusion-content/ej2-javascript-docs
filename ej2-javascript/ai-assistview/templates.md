@@ -106,6 +106,37 @@ You can use the [responseItemTemplate](../api/ai-assistview#responseitemtemplate
 {% previewsample "page.domainurl/code-snippet/ai-assistview/templates/response-item" %}
 {% endif %}
 
+## Response animation template
+
+You can use the [responseAnimationTemplate](../api/ai-assistview#responseanimationtemplate) property to display a custom loading indicator or animation in the AI AssistView while a response is being generated. The animation template is shown in place of the response and removed once the response is added.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/ai-assistview/templates/response-animation/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ai-assistview/templates/response-animation/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/ai-assistview/templates/response-animation" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/ai-assistview/templates/response-animation/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ai-assistview/templates/response-animation/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/ai-assistview/templates/response-animation" %}
+{% endif %}
+
 ## Prompt suggestion item template
 
 You can use the [promptSuggestionItemTemplate](../api/ai-assistview#promptsuggestionitemtemplate) property to customize the prompt suggestion items in the AI AssistView. The template context includes the `index` and `promptSuggestion`.

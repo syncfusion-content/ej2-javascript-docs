@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Common installation errors | Syncfusion
-description: Troubleshoot common installation errors when installing ##Platform_Name## Essential Studio on Windows or Mac.
+title: Common installation errors in ##Platform_Name## Essential Studio | Syncfusion
+description: Troubleshoot common installation errors when installing Syncfusion ##Platform_Name## Essential Studio.
 platform: ej2-javascript
 control: common
 publishingplatform: ##Platform_Name##

@@ -65,8 +65,8 @@ After installing the package, you typically need to:
 2. Reference the required script and CSS files in your HTML. For example:
 
     ```html
-    <link href="https://cdn.syncfusion.com/ej2/20.2.38/material.css" rel="stylesheet" />
-    <script src="https://cdn.syncfusion.com/ej2/20.2.38/dist/ej2.min.js"></script>
+    <link href="https://cdn.syncfusion.com/ej2/34.2.2/material.css" rel="stylesheet" />
+    <script src="https://cdn.syncfusion.com/ej2/34.2.2/dist/ej2.min.js"></script>
     ```
 
 3. Register the Syncfusion<sup style="font-size:70%">&reg;</sup> components you want to use. For example:

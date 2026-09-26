@@ -141,7 +141,7 @@ export {};
         ....
         ....
         <!-- Essential JS 2 styles -->
-        <link href="https://cdn.syncfusion.com/ej2/34.1.29/fluent2.css" rel="stylesheet">
+        <link href="https://cdn.syncfusion.com/ej2/34.2.2/fluent2.css" rel="stylesheet">
     </head>
 
     <body>

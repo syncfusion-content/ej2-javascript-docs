@@ -40,10 +40,10 @@ https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/grid/grid.css
  
 **Scripts (JavaScript):**
 ```html
-https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/dist/global/ej2-base.min.js
-https://cdn.syncfusion.com/ej2/34.1.29/ej2-data/dist/global/ej2-data.min.js
-https://cdn.syncfusion.com/ej2/34.1.29/ej2-popups/dist/global/ej2-popups.min.js
-https://cdn.syncfusion.com/ej2/34.1.29/ej2-grids/dist/global/ej2-grids.min.js
+https://cdn.syncfusion.com/ej2/34.2.2/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/34.2.2/ej2-data/dist/global/ej2-data.min.js
+https://cdn.syncfusion.com/ej2/34.2.2/ej2-popups/dist/global/ej2-popups.min.js
+https://cdn.syncfusion.com/ej2/34.2.2/ej2-grids/dist/global/ej2-grids.min.js
 ```
 
 ### Step 3: Add the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Control to the Application
@@ -60,10 +60,10 @@ Copy and paste the following complete code into your `index.html` file:
     <link href="https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/grid/grid.css" rel="stylesheet" />
    
     <!-- Scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/dist/global/ej2-base.min.js"></script>
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-data/dist/global/ej2-data.min.js"></script>
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-popups/dist/global/ej2-popups.min.js"></script>
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-grids/dist/global/ej2-grids.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-base/dist/global/ej2-base.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-data/dist/global/ej2-data.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-popups/dist/global/ej2-popups.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-grids/dist/global/ej2-grids.min.js"></script>
   </head>
  
   <body>

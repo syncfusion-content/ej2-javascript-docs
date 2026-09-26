@@ -1,0 +1,41 @@
+#container {
+    visibility: hidden;
+    margin: 20px auto;
+    width: 650px;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+.e-assist-mention .listItems {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 1px;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    line-height: 1.2;
+    min-height: 38px;
+}
+
+.e-assist-mention .listItems .mentionName {
+    grid-row: 1;
+    font-weight: 600;
+    font-size: 13px;
+    align-self: end;
+}
+
+.e-assist-mention .listItems .mentionId {
+    grid-row: 2;
+    font-size: 11px;
+    color: var(--color-sf-text-muted, #6b6b6b);
+    align-self: start;
+    margin-top: 1px;
+}

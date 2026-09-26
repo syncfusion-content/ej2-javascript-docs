@@ -112,8 +112,7 @@ Add the HTML Smart TextArea tag with the `id` attribute as `default` to your `in
     <meta name="description" content="Essential JS 2 TextArea Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/tailwind3.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.2.2/tailwind3.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>

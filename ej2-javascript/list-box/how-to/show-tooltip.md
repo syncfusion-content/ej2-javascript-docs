@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to show tooltip in ##Platform_Name## ListBox | Syncfusion
+title: Show tooltip in ##Platform_Name## List box control | Syncfusion
 description: Learn here all about Show tooltip in Syncfusion ##Platform_Name## List box control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Show tooltip 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to show tooltip in ##Platform_Name## ListBox
+# Show tooltip in ##Platform_Name## List box control
 
 Tooltip can be shown for each list box items by customizing it in [`beforeItemRender`](../api/list-box/#beforeitemrender) event.
 

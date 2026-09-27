@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Installing Linux installer
+# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Linux installer
 
 **Applies to:** Syncfusion Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Linux installer on Linux distributions supported by Syncfusion.
 

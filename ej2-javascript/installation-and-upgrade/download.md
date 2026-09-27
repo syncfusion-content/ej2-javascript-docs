@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Download installer | Syncfusion
+title: Download in ##Platform_Name## Installation and upgrade control | Syncfusion
 description: Learn here all about Download in Syncfusion ##Platform_Name## Installation and upgrade control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Download

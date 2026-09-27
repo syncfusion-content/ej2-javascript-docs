@@ -9,9 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Upgrading to latest version
-
-**Applies to:** Syncfusion Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 on Windows.
+# Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS2)
 
 **Applies to:** Syncfusion Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 on Windows.
 

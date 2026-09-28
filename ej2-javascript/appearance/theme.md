@@ -89,6 +89,8 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control themes can b
 * [Content Delivery Network (CDN)](#cdn-reference) - Used to reference complete CSS via static web assets.
 * [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio) - Used to customize and generate themes only for selected components.
 
+> Starting with `v35.1.37`, styles are no longer shipped within individual control packages. control styles must now be referenced from the corresponding [theme packages](#npm-packages). Additionally, CDN links for individual control package styles are no longer available. Use the theme package style [CDN](https://unpkg.com/@syncfusion/ej2-tailwind3-theme/styles/button/index.css) or the consolidated theme [CDN](https://cdn.syncfusion.com/ej2/35.1.37/tailwind3.css) instead.
+
 ## NPM packages
 
 All Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. Themes are shipped as both combined and individual CSS/SCSS files. Each theme package includes Combined and control-specific styles in both CSS and SCSS formats. For a list of available theme packages, refer to the [available theme packages](#theme-packages) section.

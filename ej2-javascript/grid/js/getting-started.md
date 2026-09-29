@@ -75,17 +75,7 @@ This setup includes additional dependencies required for more advanced functiona
     <title>Essential JS 2 DataGrid</title>
 
     <!-- Essential JS 2 DataGrid's dependent bootstrap5.3 theme -->
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-popups/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-navigations/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-dropdowns/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-lists/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-calendars/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-notifications/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-splitbuttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-grids/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+     <link href="https://cdn.syncfusion.com/ej2/34.2.2/material3.css" rel="stylesheet" />
 
     <!-- Essential JS 2 DataGrid's dependent scripts -->
     <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>

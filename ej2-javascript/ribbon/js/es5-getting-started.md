@@ -93,7 +93,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Essential JS 2 - Ribbon</title>
-    <!-- Essential JS 2 Ribbon's dependent material theme -->
+    <!-- Essential JS 2 Ribbon's dependent bootstrap5.3 theme -->
     <link href="resources/base/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <link href="resources/buttons/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <link href="resources/popups/bootstrap5.3.css" rel="stylesheet" type="text/css" />
@@ -256,15 +256,14 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 >
 > Control Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/bootstrap5.3.css`
 >
-> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
+> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_VERSION}/bootstrap5.3.css`
 
 **Example:**
 
 > Script: [`https://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js`](https://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css`](https://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/34.2.2/bootstrap5.3.css`](https://cdn.syncfusion.com/ej2/34.2.2/bootstrap5.3.css)
 
 **Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Ribbon` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Ribbon** control in the `index.html` by using following code.
 

@@ -160,6 +160,8 @@ The following example shows a basic TimePicker.
 
 Now, the TimePicker renders with  default culture as `American English`('en-US'). For a different culture, refer to the [`Globalization`](https://ej2.syncfusion.com/documentation/timepicker/globalization) section.
 
+N> The TimePicker component follows a **commit-on-Enter/focus-out** scenario. The underlying [value](https://ej2.syncfusion.com/documentation/api/timepicker/index-default#value) is updated only when the user commits the edit by pressing **Enter** or moving focus away (**blur**). The [refresh](https://ej2.syncfusion.com/documentation/api/timepicker/index-default#refresh) method rebuilds the component using the **last committed value**. If `refresh` is invoked—either directly or indirectly via ResizeObserver callbacks, layout shifts, or dynamic validation updates—while the user is actively typing, uncommitted input is discarded and restored to the previous committed value.
+
 ## Setting the value, min, and max time
 
 The following example demonstrates how to set the value, min, and max time on initializing the TimePicker. The TimePicker allows you to select the time value within a range from `7:00 AM` to `4:00 PM`.

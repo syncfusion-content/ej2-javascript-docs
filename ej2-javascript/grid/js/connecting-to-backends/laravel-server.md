@@ -406,9 +406,9 @@ Include Syncfusion’s CSS and JavaScript libraries using CDN links:
 
 ```html
 <!-- Syncfusion EJ2 CSS Theme (Material 3 Light) -->
-<link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/32.1.24/material3.css">
+<link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css">
 <!-- Syncfusion EJ2 JavaScript Library -->
-<script src="https://cdn.syncfusion.com/ej2/32.1.24/dist/ej2.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/35.1.37/dist/ej2.min.js"></script>
 ```
 These Syncfusion CDN links load all EJ2 components and styles, enabling the Syncfusion Grid and other integrated components in the application. For projects that prefer local installation, use local script and style [references](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started#using-local-script-and-style).
 

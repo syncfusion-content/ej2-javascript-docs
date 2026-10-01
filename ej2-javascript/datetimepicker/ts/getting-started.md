@@ -162,7 +162,9 @@ The minimum and maximum date time can be defined with the help of `min` and `max
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/datetimepicker/getting-started-cs11" %}
-> If the value of the `min` or `max` properties is changed through code, then the `value` property has to be updated to be set within the range.
+
+> * If the value of the `min` or `max` properties is changed through code, then the `value` property has to be updated to be set within the range.
+> * The DateTime Picker component follows a **commit-on-Enter/focus-out** scenario. The underlying [value](https://ej2.syncfusion.com/documentation/api/datetimepicker/index-default#value) is updated only when the user commits the edit by pressing **Enter** or moving focus away (**blur**). The [refresh](https://ej2.syncfusion.com/documentation/api/datetimepicker/index-default#refresh) method rebuilds the component using the **last committed value**. If `refresh` is invoked—either directly or indirectly via ResizeObserver callbacks, layout shifts, or dynamic validation updates—while the user is actively typing, uncommitted input is discarded and restored to the previous committed value.
 
 ## See Also
 

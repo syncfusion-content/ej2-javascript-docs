@@ -231,6 +231,8 @@ DateRangePicker.
         
 {% previewsample "page.domainurl/code-snippet/daterangepicker/getting-started-cs8" %}
 
+N> The DateRangePicker component follows a **commit-on-Enter/focus-out** scenario. The underlying [value](https://ej2.syncfusion.com/javascript/documentation/api/daterangepicker/index-default#value) is updated only when the user commits the edit by pressing **Enter** or moving focus away (**blur**). The [refresh](https://ej2.syncfusion.com/javascript/documentation/api/daterangepicker/index-default#refresh) method rebuilds the component using the **last committed value**. If `refresh` is invoked—either directly or indirectly via ResizeObserver callbacks, layout shifts, or dynamic validation updates—while the user is actively typing, uncommitted input is discarded and restored to the previous committed value.
+
 ## See Also
 
 * [Render DateRangePicker with pre-defined ranges](./customization#preset-ranges)

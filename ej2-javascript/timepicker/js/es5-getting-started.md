@@ -213,15 +213,11 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Timepicker control can 
 
 ## Setting the time format
 
-Time formats is a way of representing the time value in different string format in textbox and popup
-list. By default, the TimePicker's format is based on the culture. You can also customize the format by using the
-[`format`](../api/timepicker#format)
-property. To know more about the time format standards, refer to the
-[Date and Time Format](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#custom-formats) section.
+Time formats is a way of representing the time value in different string format in textbox and popup list. By default, the TimePicker's format is based on the culture. You can also customize the format by using the [`format`](../api/timepicker#format) property. To know more about the time format standards, refer to the [Date and Time Format](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#custom-formats) section.
 
-The following example demonstrates the TimePicker component in 24 hours format with 60 minutes
-interval. The time interval is set to
-60 minutes by using the [`step`](../api/timepicker#step) property.
+The following example demonstrates the TimePicker component in 24 hours format with 60 minutes interval. The time interval is set to 60 minutes by using the [`step`](../api/timepicker#step) property.
+
+> Once the time format property is defined, it will be applicable to all the cultures.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -234,7 +230,7 @@ interval. The time interval is set to
         
 {% previewsample "page.domainurl/code-snippet/timepicker/getting-started-cs1" %}
 
-> Once the time format property is defined, it will be applicable to all the cultures.
+N> The TimePicker component follows a **commit-on-Enter/focus-out** scenario. The underlying [value](https://ej2.syncfusion.com/javascript/documentation/api/timepicker/index-default#value) is updated only when the user commits the edit by pressing **Enter** or moving focus away (**blur**). The [refresh](https://ej2.syncfusion.com/javascript/documentation/api/timepicker/index-default#refresh) method rebuilds the component using the **last committed value**. If `refresh` is invoked—either directly or indirectly via ResizeObserver callbacks, layout shifts, or dynamic validation updates—while the user is actively typing, uncommitted input is discarded and restored to the previous committed value.
 
 ## See Also
 

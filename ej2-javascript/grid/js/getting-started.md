@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ##Platform_Name## Data Grid Getting Started (Quick Setup Guide) | Syncfusion
+title: ##Platform_Name## Data Grid Getting Started | Syncfusion
 description: Learn how to install and configure the ##Platform_Name## Data Grid. Set up a new ##Platform_Name## app and enable paging, sorting, filtering, and grouping.
 platform: ej2-javascript
 control: Getting started 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Javascript Data Grid Control
+# Getting Started with JavaScript Data Grid Control
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 DataGrid and demonstrates the basic usage of the DataGrid control in a JavaScript application.
 
@@ -74,22 +74,22 @@ This setup includes additional dependencies required for more advanced functiona
 <head>
     <title>Essential JS 2 DataGrid</title>
 
-    <!-- Essential JS 2 DataGrid's dependent bootstrap5.3 theme -->
-     <link href="https://cdn.syncfusion.com/ej2/34.2.2/material3.css" rel="stylesheet" />
+    <!-- Essential JS 2 DataGrid's dependent material3 theme -->
+     <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet" />
 
     <!-- Essential JS 2 DataGrid's dependent scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-dropdowns/dist/global/ej2-dropdowns.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-notifications/dist/global/ej2-notifications.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-dropdowns/dist/global/ej2-dropdowns.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-notifications/dist/global/ej2-notifications.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -100,10 +100,10 @@ This setup includes additional dependencies required for more advanced functiona
 > To include all required Essential JS 2 styles and scripts, use the following CDN links.
 >
 > Essential JS 2 combined bootstrap5.3 theme (all components)
-> <link href="https://cdn.syncfusion.com/ej2/34.1.29/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+> <link href="https://cdn.syncfusion.com/ej2/35.1.37/bootstrap5.3.css" rel="stylesheet" type="text/css" />
 >
 > Essential JS 2 combined script (all components)
-> <script src="https://cdn.syncfusion.com/ej2/34.1.29/dist/ej2.min.js" type="text/javascript"></script>
+> <script src="https://cdn.syncfusion.com/ej2/35.1.37/dist/ej2.min.js" type="text/javascript"></script>
 
 ## Adding DataGrid control
 
@@ -144,10 +144,10 @@ grid.appendTo('#Grid');
 <head>
     <title>Essential JS 2 DataGrid</title>
     
-    <!-- Essential JS 2 combined bootstrap5.3 theme (all components) -->
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <!-- Essential JS 2 combined material3 theme (all components) -->
+    <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet" type="text/css" />
     <!-- Essential JS 2 combined script (all components) -->
-    <script src="https://cdn.syncfusion.com/ej2/34.1.29/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/dist/ej2.min.js" type="text/javascript"></script>
 
 </head>
 
@@ -182,7 +182,7 @@ The Syncfusion® Data Grid requires a valid license key to be registered in the 
 ## See also
 
 * [DataGrid Feature Modules](https://ej2.syncfusion.com/javascript/documentation/grid/module)
-* [How to display a table data after clicking Submit button in Javascript?](https://support.syncfusion.com/kb/article/10145/how-to-display-a-table-data-after-clicking-submit-button-in-javascript)
-* [How to display table in popup window using Javascript?](https://support.syncfusion.com/kb/article/10339/how-to-display-table-in-popup-window-using-javascript)
+* [How to display a table data after clicking Submit button in JavaScript?](https://support.syncfusion.com/kb/article/10145/how-to-display-a-table-data-after-clicking-submit-button-in-javascript)
+* [How to display table in popup window using JavaScript?](https://support.syncfusion.com/kb/article/10339/how-to-display-table-in-popup-window-using-javascript)
 * [How to open pdf document on button click inside a DataGrid](https://support.syncfusion.com/kb/article/10246/how-to-open-pdf-document-on-button-click-inside-a-grid)
 * [How to disable the default keyboard actions in Grid](https://support.syncfusion.com/kb/article/9578/how-to-disable-the-default-keyboard-actions-in-js-grid)

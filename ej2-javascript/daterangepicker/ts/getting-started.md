@@ -149,6 +149,8 @@ The following example shows a basic DateRangePicker.
           
 {% previewsample "page.domainurl/code-snippet/daterangepicker/getting-started-cs12" %}
 
+N> The DateRangePicker component follows a **commit-on-Enter/focus-out** scenario. The underlying [value](https://ej2.syncfusion.com/documentation/api/daterangepicker/index-default#value) is updated only when the user commits the edit by pressing **Enter** or moving focus away (**blur**). The [refresh](https://ej2.syncfusion.com/documentation/api/daterangepicker/index-default#refresh) method rebuilds the component using the **last committed value**. If `refresh` is invoked—either directly or indirectly via ResizeObserver callbacks, layout shifts, or dynamic validation updates—while the user is actively typing, uncommitted input is discarded and restored to the previous committed value.
+
 ## Setting the start and end date
 
 The start and end date in a range can be defined with the help of startDate and endDate property. The following example demonstrates to set the start and end date on initializing the DateRangePicker.

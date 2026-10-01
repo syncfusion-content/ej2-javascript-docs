@@ -3,7 +3,7 @@ layout: post
 title: Taskbar in ##Platform_Name## Gantt Chart Control | Syncfusion
 description: Learn how to customize taskbars in the Syncfusion ##Platform_Name## Gantt Chart control, including height, templates, and editing interactions.
 platform: ej2-javascript
-control: Taskbar 
+control: Taskbar
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -29,7 +29,7 @@ The following example demonstrates how to set a custom taskbar height of 40 pixe
 {% include code-snippet/gantt/appearanceandstyling-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/appearanceandstyling-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -62,7 +62,7 @@ This example demonstrates formatting taskbars based on progress, where **args.da
 {% include code-snippet/gantt/appearanceandstyling-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/appearanceandstyling-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -95,7 +95,7 @@ In the following example, the progress gripper icon is customized by targeting t
 {% include code-snippet/gantt/change-gripper-icon-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/change-gripper-icon-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -128,7 +128,7 @@ The following example hides taskbars for specific tasks and notes icons for empt
 {% include code-snippet/gantt/taskbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/taskbar-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -163,60 +163,60 @@ import { Gantt, Edit, Selection, IActionBeginEventArgs, IQueryTaskbarInfoEventAr
 Gantt.Inject(Edit, Selection);
 
 let gantt: Gantt = new Gantt({
-    dataSource: [
-      { TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-      { TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
-      { TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
-      { TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Progress: 30, Predecessor: '2', ParentId: 1 },
-      { TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] },
-      { TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-      { TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
-      { TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '5', ParentId: 7 },
-      { TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
-      { TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '7,8', ParentId: 6 }
-    ],
-    height: '430px',
-    projectStartDate: new Date('03/28/2019'),
-    projectEndDate: new Date('04/18/2019'),
-    taskFields: {
-        id: 'TaskId',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentId'
-    },
-    labelSettings: {
-        leftLabel: 'TaskName'
-    },
-    editSettings: {
-        allowTaskbarEditing: true
-    },
-    queryTaskbarInfo: (args: IQueryTaskbarInfoEventArgs) => {
-        if ((args.data as any).TaskId === 4) {
-            args.taskbarElement.style.cursor = 'default';
-            args.taskbarElement.classList.add(
-                'e-prevent-reschedule',
-                'e-prevent-add-relation-left',
-                'e-prevent-add-relation-right'
-            );
-        }
-    },
-    actionBegin: (args: IActionBeginEventArgs) => {
-        if (
-            (args.data as any).TaskId === 4 &&
-            [
-                'ChildDrag',
-                'ProgressResizing',
-                'LeftResizing',
-                'RightResizing',
-                'ConnectorPointLeftDrag',
-                'ConnectorPointRightDrag'
-            ].includes(args.taskBarEditAction as string)
-        ) {
-            args.cancel = true;
-        }
-    }
+dataSource: [
+{ TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
+{ TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
+{ TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Progress: 30, Predecessor: '2', ParentId: 1 },
+{ TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] },
+{ TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
+{ TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '5', ParentId: 7 },
+{ TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
+{ TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '7,8', ParentId: 6 }
+],
+height: '430px',
+projectStartDate: new Date('03/28/2019'),
+projectEndDate: new Date('04/18/2019'),
+taskFields: {
+id: 'TaskId',
+name: 'TaskName',
+startDate: 'StartDate',
+duration: 'Duration',
+progress: 'Progress',
+parentID: 'ParentId'
+},
+labelSettings: {
+leftLabel: 'TaskName'
+},
+editSettings: {
+allowTaskbarEditing: true
+},
+queryTaskbarInfo: (args: IQueryTaskbarInfoEventArgs) => {
+if ((args.data as any).TaskId === 4) {
+args.taskbarElement.style.cursor = 'default';
+args.taskbarElement.classList.add(
+'e-prevent-reschedule',
+'e-prevent-add-relation-left',
+'e-prevent-add-relation-right'
+);
+}
+},
+actionBegin: (args: IActionBeginEventArgs) => {
+if (
+(args.data as any).TaskId === 4 &&
+[
+'ChildDrag',
+'ProgressResizing',
+'LeftResizing',
+'RightResizing',
+'ConnectorPointLeftDrag',
+'ConnectorPointRightDrag'
+].includes(args.taskBarEditAction as string)
+) {
+args.cancel = true;
+}
+}
 });
 
 gantt.appendTo('#Gantt');
@@ -234,7 +234,7 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/35.1.37/tailwind3.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
     <style>
@@ -270,62 +270,62 @@ gantt.appendTo('#Gantt');
 {% highlight js tabtitle="index.js" %}
 
 let GanttData = [
-  { TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-  { TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
-  { TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
-  { TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Progress: 30, Predecessor: '2', ParentId: 1 },
-  { TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] },
-  { TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-  { TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
-  { TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '5', ParentId: 7 },
-  { TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
-  { TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '7,8', ParentId: 6 }
+{ TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
+{ TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
+{ TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Progress: 30, Predecessor: '2', ParentId: 1 },
+{ TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] },
+{ TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
+{ TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '5', ParentId: 7 },
+{ TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
+{ TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '7,8', ParentId: 6 }
 ];
 
 var ganttChart = new ej.gantt.Gantt({
-    dataSource: GanttData,
-    height: '430px',
-    projectStartDate: new Date('03/28/2019'),
-    projectEndDate: new Date('04/18/2019'),
-    taskFields: {
-        id: 'TaskId',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentId'
-    },
-    labelSettings: {
-        leftLabel: 'TaskName'
-    },
-    editSettings: {
-        allowTaskbarEditing: true
-    },
-    queryTaskbarInfo: function (args) {
-        if (args.data.TaskId === 4) {
-            args.taskbarElement.style.cursor = 'default';
-            args.taskbarElement.classList.add(
-                'e-prevent-reschedule',
-                'e-prevent-add-relation-left',
-                'e-prevent-add-relation-right'
-            );
-        }
-    },
-    actionBegin: function (args) {
-        if (
-            args.data.TaskId === 4 &&
-            [
-                'ChildDrag',
-                'ProgressResizing',
-                'LeftResizing',
-                'RightResizing',
-                'ConnectorPointLeftDrag',
-                'ConnectorPointRightDrag'
-            ].indexOf(args.taskBarEditAction) !== -1
-        ) {
-            args.cancel = true;
-        }
-    }
+dataSource: GanttData,
+height: '430px',
+projectStartDate: new Date('03/28/2019'),
+projectEndDate: new Date('04/18/2019'),
+taskFields: {
+id: 'TaskId',
+name: 'TaskName',
+startDate: 'StartDate',
+duration: 'Duration',
+progress: 'Progress',
+parentID: 'ParentId'
+},
+labelSettings: {
+leftLabel: 'TaskName'
+},
+editSettings: {
+allowTaskbarEditing: true
+},
+queryTaskbarInfo: function (args) {
+if (args.data.TaskId === 4) {
+args.taskbarElement.style.cursor = 'default';
+args.taskbarElement.classList.add(
+'e-prevent-reschedule',
+'e-prevent-add-relation-left',
+'e-prevent-add-relation-right'
+);
+}
+},
+actionBegin: function (args) {
+if (
+args.data.TaskId === 4 &&
+[
+'ChildDrag',
+'ProgressResizing',
+'LeftResizing',
+'RightResizing',
+'ConnectorPointLeftDrag',
+'ConnectorPointRightDrag'
+].indexOf(args.taskBarEditAction) !== -1
+) {
+args.cancel = true;
+}
+}
 });
 
 ganttChart.appendTo('#Gantt');
@@ -343,8 +343,8 @@ ganttChart.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/35.1.37/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/dist/ej2.min.js" type="text/javascript"></script>
     <script src="es5-datasource.js" type="text/javascript"></script>
     <style>
         .e-gantt-chart .e-prevent-reschedule .e-right-resize-gripper,
@@ -427,7 +427,7 @@ The following example enables multi-taskbar:
 {% include code-snippet/gantt/projectview-multitaskbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/projectview-multitaskbar-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -462,7 +462,7 @@ The following example demonstrates connector customization. The specified proper
 {% include code-snippet/gantt/appearanceandstyling-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/appearanceandstyling-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -495,7 +495,7 @@ The following example enables tooltips:
 {% include code-snippet/gantt/gantt-tooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/gantt-tooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -514,7 +514,7 @@ The following example enables tooltips:
 
 Tooltips display on hover, with touch-and-hold support for mobile via the tooltip popup.
 
-### Disable taskbar tooltip 
+### Disable taskbar tooltip
 
 You can disable the taskbar tooltip using the [beforeTooltipRender](../gantt/events#beforetooltiprender) event by setting `args.cancel` to **true**.
 
@@ -528,7 +528,7 @@ You can disable the taskbar tooltip using the [beforeTooltipRender](../gantt/eve
 {% include code-snippet/gantt/disable-tooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/disable-tooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -565,7 +565,7 @@ The following example customizes taskbar tooltips:
 {% include code-snippet/gantt/taskbarTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/taskbarTooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -600,7 +600,7 @@ The following example customizes connector tooltips:
 {% include code-snippet/gantt/connectorLineTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/connectorLineTooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -633,7 +633,7 @@ The following example customizes baseline tooltips:
 {% include code-snippet/gantt/baselineTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/baselineTooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -666,7 +666,7 @@ The following example customizes timeline tooltips:
 {% include code-snippet/gantt/timelineTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/timelineTooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -688,6 +688,7 @@ The following example customizes timeline tooltips:
 To perform touch and hold action on a element, refer to [tooltip popup](tooltip#tooltip).
 
 ## See also
+
 - [How to configure task dependencies?](../gantt/task-dependency)
 - [How to enable baseline rendering?](../gantt/baseline)
 - [How to customize labels?](../gantt/labels)

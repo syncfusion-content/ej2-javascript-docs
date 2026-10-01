@@ -20,6 +20,7 @@ The available grid modules are:
 | [Page](../api/grid/page)| Inject this module to use paging feature.|
 | [Sort](../api/grid/sort)| Inject this module to use sorting feature.|
 | [Filter](../api/grid/filter)| Inject this module to use filtering feature.|
+| [AdvancedFilter](../api/grid/advancedfilter)| Inject this module to use advanced filtering feature.|
 | [Group](../api/grid/group)| Inject this module to use grouping feature.|
 | `LazyLoadGroup`| Inject this module to use lazy load grouping feature.|
 | [Edit](../api/grid/edit)| Inject this module is use editing feature.|

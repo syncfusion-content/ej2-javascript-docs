@@ -217,7 +217,7 @@ In the below example, we will demonstrate how to dynamically change the height o
 
 ### Customize header and footer row heights
 
-The height of the header and footer rows can be customized to provide additional space for header and footer elements when needed. Use the `headerRowHeight` property to set the height of the header row and the `footerRowHeight` property to set the height of the footer row.
+The height of the header and footer rows can be customized to provide additional space for header and footer elements when needed. Use the [headerRowHeight](../../api/grid#headerrowheight) property to set the height of the header row and the [footerRowHeight](../../api/grid#footerrowheight) property to set the height of the footer row.
 
 In the following example, the row height is configured to 100px using the `rowHeight` property and the header and footer row height is configured to 50px using the `headerRowHeight` and `footerRowHeight` properties.
 
@@ -391,6 +391,41 @@ The `emptyRecordMode` property determines how the empty record row is displayed 
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/grid/empty-record-mode" %}
+{% endif %}
+
+## Row Number in Data Grid
+
+The ##Platform_Name## Data Grid provides built-in support for displaying row numbers through a dedicated row number column. This column displays the position of each record in the current view and is automatically maintained by the Grid.
+
+To display row numbers, set the [columns->type](../../api/grid/column#type) property to `RowNumber`. This creates a read-only column for displaying row numbers, eliminating the need to include a separate row number field in the data source.
+
+The Grid automatically updates row numbers when operations such as paging, sorting, filtering, and grouping are performed. This ensures that the displayed row numbers always reflect the current view and order of the records.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/rownumber/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/rownumber/ts/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/rownumber" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/rownumber/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/rownumber/js/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/rownumber" %}
 {% endif %}
 
 ## Row pinning (Frozen)

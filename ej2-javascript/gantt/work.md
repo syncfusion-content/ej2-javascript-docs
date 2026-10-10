@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Work in ##Platform_Name## Gantt control
+# Work and Effort Tracking in ##Platform_Name## Gantt Chart
 
-## Work
+The work value represents the effort required to complete a task. Map it from the data source with [taskFields.work](../api/gantt/taskFields#work). Work is measured in hours by default; use [workUnit](../api/gantt#workunit) to specify `Hour`, `Day`, or `Minute`. Work calculations use resource allocation and the project calendar to determine task duration.
 
-The work is the total hours required to complete a task. Work can be mapped from the data source field using the property [taskFields.work](../api/gantt/taskFields#work). Work can be measured in `Hour`, `Day`, `Minute`. By default, work is measured in `Hour` and it can be changed, by using the property [workUnit](../api/gantt#viewtype).
+## Configure work
 
->Note: When the work field is mapped from the data source, the default task type will be `FixedWork`.
+Map a numeric field to `taskFields.work` and set `workUnit` to the unit used by those values. For example, `workUnit: 'Day'` interprets work in days. Include the `Edit` module to edit work through the dialog or taskbar interactions.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -27,7 +27,7 @@ The work is the total hours required to complete a task. Work can be mapped from
 {% include code-snippet/gantt/work-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/work-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -46,11 +46,13 @@ The work is the total hours required to complete a task. Work can be mapped from
 
 ## Task type
 
-The work, duration and resource unit fields of a task depends upon each other and will change automatically on editing any one of these fields. But we can also set these field’s values as constant using the [taskType](../api/gantt#tasktype) property. `FixedUnit` is the default [taskType](../api/gantt#tasktype). The following values can be set to the [taskType](../api/gantt#tasktype) property,
+The `work`, `duration`, and resource-unit values are related and can update when one of them changes. Use [taskType](../api/gantt#tasktype) to choose which value remains fixed. `FixedUnit` is the default task type; when `taskFields.work` is mapped and no task type is specified, the default is `FixedWork`. Include the `Edit` module to enable editing. The available task types are:
 
-* `FixedDuration` - Duration task field will remain constant while updating resource unit or work field.
-* `FixedWork` - Work field will remain constant while updating resource unit or duration fields.
-* `FixedUnit` - Resource units will remain constant while updating duration or work field.
+- `FixedDuration`: Duration remains constant; changing work or resource units adjusts the other value.
+- `FixedWork`: Work remains constant; changing duration or resource units adjusts the other value.
+- `FixedUnit`: Resource units remain constant; changing work or duration adjusts the other value.
+
+For example, a `FixedWork` task with 40 hours of work and two resources allocated at 50% each takes five 8-hour workdays. Reducing its duration to four days increases each resource allocation to 62.5%.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -62,7 +64,7 @@ The work, duration and resource unit fields of a task depends upon each other an
 {% include code-snippet/gantt/work-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/work-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -79,7 +81,7 @@ The work, duration and resource unit fields of a task depends upon each other an
 {% previewsample "page.domainurl/code-snippet/gantt/work-cs2" %}
 {% endif %}
 
-Following table explains how the work, duration and resource unit fields will gets updated on changing any of the fields
+The following table summarizes how work, duration, and resource units update when one of these values changes:
 
 | Task Type      | Changes in Duration                                                       | Changes in work                                                                  | Changes in Resource Units                                                   |
 | -------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
@@ -87,6 +89,16 @@ Following table explains how the work, duration and resource unit fields will ge
 | Fixed Work     | Resource unit updates.Note: For manually scheduled task work will update. | Duration field updates. Note: For manually scheduled task resource unit updates. | Duration will update. Note: For manually scheduled task work field updates. |
 | Fixed Unit     | Work field updates                                                        | Duration field updates. Note: For manually scheduled task resource unit updates. | Duration will update. Note: For manually scheduled task work field updates. |
 
->Note
-1. Fixed Unit is the default taskType in Gantt. 
-2. The above calculations are not applicable for Milestones.
+## Work limitations
+
+- Milestones have zero duration, so work calculations do not apply to them.
+- Manually scheduled tasks allow direct control over work, duration, and resource units; their values may not follow automatic task-type calculations.
+- Work and task-type editing requires the `Edit` module.
+- Use `Hour`, `Day`, or `Minute` for `workUnit` values.
+- Resource-based work calculations depend on a mapped `taskFields.resourceInfo` field and valid resource-unit allocations.
+
+## See also
+
+- [Resources](../gantt/resources)
+- [Task dependencies](../gantt/task-dependency)
+- [Critical path](../gantt/critical-path)

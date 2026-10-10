@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Critical Path in ##Platform_Name## Gantt Chart Control
+# Critical Path Identification in ##Platform_Name## Gantt Chart
 
 The critical path represents the longest sequence of dependent tasks that determines the minimum project duration. Tasks on the critical path have zero or negative [slack](../api/gantt/iganttdata#slack) (float), meaning any delay in these tasks directly impacts the overall project completion date. The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control automatically calculates and highlights critical tasks in red with emphasized dependency connector lines when the [enableCriticalPath](../api/gantt#enablecriticalpath) property is enabled. Critical path analysis helps identify which tasks require immediate attention and cannot be delayed without affecting project deadlines.
 
@@ -20,14 +20,16 @@ The control uses Critical Path Method (CPM) principles to identify critical task
 **Project end date determination**: The calculation begins by determining the overall project end date. If the [projectEndDate](../api/gantt#projectenddate) property is provided, it uses that value as the project completion reference. If `projectEndDate` is not specified, the control automatically calculates the project end date by examining all task end dates in the data source to find the latest completion point. This reference point determines how much delay each task can tolerate without affecting project completion.
 
 **Slack value calculation**: For each task, the control calculates slack by measuring the time difference between the task's end date and the project end date. Slack represents how much time a task can be delayed without affecting the project completion:
+
 - **Zero slack**: The task must finish exactly on time. Any delay will push back the project end date, making it critical
 - **Negative slack**: The task is already behind schedule or creates scheduling conflicts. This occurs when a task's end date is beyond the project end date, or when dependency relationships create impossible timing constraints.
 
 **Parent-Child task relationships**: In projects with hierarchical tasks, the critical path calculation focuses on dependencies rather than the parent-child structure used for task organization. For example, if Task 1.1 (a child task) depends on Task 2 (a parent task), only the tasks directly linked by the dependency are evaluated for criticality based on their timing. A parent task like Task 2 being critical does not automatically make its child tasks (e.g., Task 2.1, Task 2.2) critical, nor does a critical child task imply a critical parent. The control evaluates each task’s slack independently, ensuring that only tasks with zero or negative slack, driven by their dependency constraints, are marked as critical. This distinction allows precise identification of critical tasks without conflating organizational hierarchy with scheduling dependencies.
 
 **Dependency-based analysis**: The control analyzes different dependency relationship types to determine slack impacts:
+
 - **Finish-to-Start**: When a predecessor task ends after its successor should start, negative slack results from the timing conflict
-- **Start-to-Start**: When a predecessor starts after its successor should start, the control calculates negative slack based on scheduling impossibility  
+- **Start-to-Start**: When a predecessor starts after its successor should start, the control calculates negative slack based on scheduling impossibility
 - **Finish-to-Finish** and **Start-to-Finish**: These relationships can also produce negative slack when timing conflicts exist between connected tasks
 - **Offset and scheduling mode handling**: When dependencies include time offsets (e.g., "+2 days" or "-1 hour"), the control adjusts slack calculations by factoring in the offset duration. The calculation differs for automatically scheduled versus manually scheduled tasks: automatic tasks use forward and backward pass algorithms to compute slack, while manual tasks compare their end dates directly against the project completion date.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Inline Toolbar in ##Platform_Name## AI Assist | Syncfusion®
-description: Customize the Syncfusion® ##Platform_Name## AI Assist inline toolbar: position, built-in send item, and custom button, separator, and input items.
+description: Customize the Syncfusion® ##Platform_Name## AI Assist inline toolbar, including position, built-in send item, and custom button, separator, and input items.
 platform: ej2-javascript
 control: Inline AI Assist 
 publishingplatform: ##Platform_Name##

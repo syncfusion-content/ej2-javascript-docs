@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell Selection in ##Platform_Name## Gantt Chart Control
+# Selecting Individual Cells and Cell Ranges in ##Platform_Name## Gantt Chart
 
 Cell selection in the Gantt Chart control enables interactive selection of specific cells or ranges of cells within the grid. You may select cells using mouse clicks or arrow keys (up, down, left, right). This is useful for highlighting, manipulating, or performing operations on particular Gantt cells.
 
@@ -79,9 +79,9 @@ Multiple cell selection in the Gantt Chart is enabled by setting [selectionSetti
 
 Cell selection mode controls how cells or ranges are selected. Set the desired mode using [selectionSettings.cellSelectionMode](../../api/gantt/selectionsettings#cellselectionmode):
 
-* **Flow** (default): Selects a continuous flow of cells between the start and end indices across rows.
-* **Box**: Selects a rectangular range covering specified rows and columns.
-* **BoxWithBorder**: Similar to Box mode, but applies a border for better visual distinction of the selected range.
+- **Flow** (default): Selects a continuous flow of cells between the start and end indices across rows.
+- **Box**: Selects a rectangular range covering specified rows and columns.
+- **BoxWithBorder**: Similar to Box mode, but applies a border for better visual distinction of the selected range.
 
 > For cell selection modes, [selectionSettings.mode](../../api/gantt/selectionsettings#mode) must be **Cell** or **Both**, and [type](../../api/gantt/selectionsettings#type) must be **Multiple**.
 
@@ -244,4 +244,4 @@ While selecting a cell in Gantt, the [cellSelecting](../../api/gantt#cellselecti
 
 ## Limitations for cell selection
 
-* Cell-based selection is not supported when virtualization is enabled.
+- Cell-based selection is not supported when virtualization is enabled.

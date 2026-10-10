@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar in ##Platform_Name## Gantt Chart Control
+# Toolbar with Built-in and Custom Items in ##Platform_Name## Gantt Chart
 
 The ##Platform_Name## Gantt Chart control includes built-in toolbar support for executing common actions such as editing, searching, and navigating the timeline. The [toolbar](../api/gantt#toolbar) property accepts the collection of built-in toolbar items and `ItemModel` objects for custom toolbar items.
 
@@ -61,7 +61,7 @@ The following table shows built-in toolbar items and its actions.
 {% previewsample "page.domainurl/code-snippet/gantt/toolbar-cs1" %}
 {% endif %}
 
-> * The [toolbar](../api/gantt#toolbar) has options to define both built-in and custom toolbar items.
+> - The [toolbar](../api/gantt#toolbar) has options to define both built-in and custom toolbar items.
 
 ### Customize the built-in toolbar items
 
@@ -170,7 +170,7 @@ You can customize the appearance of toolbar buttons in the Gantt Chart control u
 {% previewsample "page.domainurl/code-snippet/gantt/toolbar-button" %}
 {% endif %}
 
-## Add toolbar at the bottom of gantt
+## Add toolbar at the bottom of Gantt
 
 To reposition the toolbar to the bottom of the Gantt chart, use the [created](../api/gantt#created) event to manipulate the DOM. In this event, select the toolbar element and append it to the Gantt container using DOM manipulation. This moves the toolbar to the bottom of the layout.
 
@@ -234,7 +234,7 @@ By default, custom toolbar items are aligned to the left. However, you can chang
 {% previewsample "page.domainurl/code-snippet/gantt/custom-toolbar" %}
 {% endif %}
 
-> * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
+> - If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
 
 ## Built-in and custom items in toolbar
 
@@ -302,7 +302,7 @@ You can control toolbar items dynamically using the [enableItems](../api/gantt#e
 
 You can enhance the Gantt toolbar control by adding editor elements such as numeric text boxes, drop-down lists, and date pickers. These input controls improve user interaction by enabling filtering, searching, and other dynamic actions.
 
-The following example demonstrates how to integrate an [AutoComplete](../../auto-complete/getting-started) compoenent into the toolbar.
+The following example demonstrates how to integrate an [AutoComplete](../auto-complete/es5-getting-started) compoenent into the toolbar.
 
 {% if page.publishingplatform == "typescript" %}
 

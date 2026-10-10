@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Baseline in ##Platform_Name## Gantt control
+# Baseline for Schedule Comparison in ##Platform_Name## Gantt Chart
 
 The baseline feature in the Gantt Chart control enables comparison between original planned schedules and actual task execution timelines. This visualization provides clear insights into schedule deviations, helping assess project performance and identify areas requiring attention. Baseline functionality displays both the original planned timeline and current progress side-by-side for comprehensive project tracking.
 
@@ -139,9 +139,10 @@ Set the `baselineTemplate` property with a template string or function. The temp
 By default, the Gantt component supports a single baseline per task. However, using the `baselineTemplate`, you can extend this behavior to render multiple baselines by maintaining additional baseline data within a custom field in your data source.
 
 This enables rich visualization scenarios such as:
-* Comparing original vs revised schedules.
-* Visualizing multiple planning phases.
-* Highlighting deviations across timeline checkpoints.
+
+- Comparing original vs revised schedules.
+- Visualizing multiple planning phases.
+- Highlighting deviations across timeline checkpoints.
 
 The following example demonstrates how to render multiple baselines using `baselineTemplate`.
 

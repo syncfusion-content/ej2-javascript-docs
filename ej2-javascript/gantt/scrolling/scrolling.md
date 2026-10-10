@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Scrolling in ##Platform_Name## Gantt Chart Control
+# Scrolling Behavior and Positioning in ##Platform_Name## Gantt Chart
 
 Scrolling in the ##Platform_Name## Gantt Chart control enables smooth navigation across extensive project datasets and long timelines. It ensures taskbars, grid rows, and timeline cells remain visible within the viewport. Scrollbars automatically appear when content exceeds the control's defined [height](../../api/gantt#height) and [width](../../api/gantt#width), supporting vertical scrolling for rows, horizontal scrolling for columns, and timeline scrolling for extended chart areas.
 
@@ -125,6 +125,7 @@ To scroll directly to a specific task within the timeline, use the [scrollToTask
 ## Synchronize horizontal scroll between Gantt charts
 
 To synchronize horizontal scrolling across multiple Gantt Chart controls, handle the [actionComplete](../../gantt/events#actioncomplete) event with the **HorizontalScroll** action. This captures the scroll position of the first Gantt chart and applies it to the second Gantt using the `scrollLeft` property. This approach ensures aligned timeline navigation, which is especially useful for comparing related project data side-by-side, such as parallel schedules.
+
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}

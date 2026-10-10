@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# PDF Export in ##Platform_Name## Gantt Chart Control
+# Exporting Data to PDF Format in ##Platform_Name## Gantt Chart
 
 PDF export in the [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control enables exporting project data to PDF documents for sharing or archiving, using the [pdfExport](../../api/gantt#pdfexport) method with [allowPdfExport](../../api/gantt#allowpdfexport) set to **true** and `PdfExport` module injected. This feature supports exporting timelines, tasks, and dependencies, with options for indicators via `base64` images, blob objects for previews, single-page layouts, multiple Gantt instances in one file, and themes like Tailwind3 or Bootstrap. Focus on auto-scheduled tasks for accurate export, as manual scheduling is not currently supported.
 
@@ -43,7 +43,7 @@ Export Gantt data to PDF by setting [allowPdfExport](../../api/gantt#allowpdfexp
 
 {% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs14" %}
 {% endif %}
- 
+
 ## Include indicators in PDF export
 
 Include dynamic indicators and images in PDF export by defining them with `base64` encoding in the data source, mapped to the [taskFields.indicators](../../api/gantt/taskFields#indicators) property, enhancing visual representation of task status.
@@ -75,7 +75,7 @@ Include dynamic indicators and images in PDF export by defining them with `base6
 {% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs16" %}
 {% endif %}
 
-## Export Gantt data as blob object
+## Export Gantt data as Blob object
 
 Export Gantt data as a blob object for previews or modifications by setting the fourth argument of [pdfExport](../../api/gantt#pdfexport) to **true**, with the blob returned in the [pdfExportComplete](../../gantt/events#pdfexportcomplete) event.
 
@@ -200,6 +200,7 @@ Apply themes to exported PDF documents by setting the [theme](../../api/gantt/pd
 {% endif %}
 
 ## See also
+
 - [How to export to Excel?](../../gantt/excel-export)
 - [How to customize PDF export?](../../gantt/pdf-export/customize-pdf-export)
 - [How to manage task dependencies?](../../gantt/task-dependency)

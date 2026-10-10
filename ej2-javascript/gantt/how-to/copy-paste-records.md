@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Copy and Paste Records in ##Platform_Name## Gantt Chart Control
+# Copy and Paste Operations for Records in ##Platform_Name## Gantt Chart
 
 The copy and paste functionality in the [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control enables efficient task duplication, allowing you to replicate tasks or entire task hierarchies using the [addRecord](../../api/gantt#addrecord) method and a custom context menu configured via [contextMenuItems](../../api/gantt#contextmenuitems). For example, right-clicking a parent task to copy and paste it with its child tasks at a specified position streamlines project management workflows. Inject `Edit` and enable `editSettings.allowAdding` to support adding copied records. Define valid [taskFields](../../api/gantt#taskfields) mappings (e.g., id, name, startDate) to ensure task data is correctly replicated, including hierarchical structures with child tasks. Use the [contextMenuClick](../../api/gantt#contextmenuclick) event to handle custom copy-paste actions, specifying the paste position (e.g., child, above, below) via `addRecord` parameters. This feature integrates with dependencies, critical path, and virtual scrolling, ensuring duplicated tasks align with the project structure for seamless schedule management.
 

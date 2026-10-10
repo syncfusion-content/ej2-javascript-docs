@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Work Breakdown Structure (WBS) in ##Platform_Name## Gantt Chart
+# WBS Column for Hierarchical Tasks in ##Platform_Name## Gantt Chart
 
 The Work Breakdown Structure (WBS) organizes project tasks hierarchically by assigning unique codes to each task. This improves task visibility and management, especially in large-scale construction or enterprise-level software projects.
 
@@ -17,7 +17,7 @@ The Work Breakdown Structure (WBS) organizes project tasks hierarchically by ass
 
 To enable WBS in the Gantt Chart control:
 
-- **Enable WBS Codes**: Set [enableWBS](../../api/gantt#enablewbs) to **true**  to automatically generate unique task codes and define their predecessors.
+- **Enable WBS Codes**: Set [enableWBS](../../api/gantt#enablewbs) to **true** to automatically generate unique task codes and define their predecessors.
 - **Auto-Update Codes**: Set [enableAutoWbsUpdate](../../api/gantt#enableautowbsupdate) to **true** to maintain accurate WBS codes during operations such as sorting, editing, or drag-and-drop.
 
 {% if page.publishingplatform == "typescript" %}
@@ -47,6 +47,8 @@ To enable WBS in the Gantt Chart control:
 {% previewsample "page.domainurl/code-snippet/gantt/wbscolumn-cs1" %}
 
 {% endif %}
+
+> When the WBS column is enabled in the Gantt Chart using the [enableWBS](../../api/gantt#enablewbs) property along with the **WBS Code** and **WBS Predecessor** fields, the default **ID** and **Predecessor** columns are automatically disabled, as the WBS and WBS Predecessor columns already display the ID and predecessor values based on the task hierarchy.
 
 ## Managing WBS code updates
 
@@ -86,6 +88,6 @@ In the following example, WBS auto-update is enabled only during the row drag an
 
 The WBS feature has a few limitations in the Gantt Chart control:
 
-* Editing of the WBS code and WBS predecessor columns is not supported.
-* Load on demand is not supported with the WBS feature.
-* WBS Code and WBS Predecessor fields cannot be mapped directly from the data source.
+- Editing of the WBS code and WBS predecessor columns is not supported.
+- Load on demand is not supported with the WBS feature.
+- WBS Code and WBS Predecessor fields cannot be mapped directly from the data source.

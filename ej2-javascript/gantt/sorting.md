@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting in ##Platform_Name## Gantt Chart Control
+# Column Sorting with Multi-Sort Support in ##Platform_Name## Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control provides sorting functionality to arrange task data in ascending or descending order based on column values.
 
@@ -46,8 +46,8 @@ To enable sorting functionality, inject the [Sort](../api/gantt#sortmodule) modu
 {% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs14" %}
 {% endif %}
 
-> * The Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
-> * To disable sorting for a particular column, set the [columns.allowSorting](../api/gantt/column#allowsorting) property to **false**.
+> - The Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
+> - To disable sorting for a particular column, set the [columns.allowSorting](../api/gantt/column#allowsorting) property to **false**.
 
 ## Initial sorting
 
@@ -260,7 +260,7 @@ The sorting process includes the following steps:
 ### Display null values always at bottom
 
 You can customize the sorting behavior in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control to make `null` values consistently appear at the bottom, regardless of sort direction, by defining a column-level [column.sortComparer](../api/gantt/column#sortcomparer) function. By default, `null` values are placed at the bottom when sorting in ascending order and at the top when sorting in descending order. Applying a custom `sortComparer` helps override this default logic and is particularly useful when working with datasets where `null` entries should be visually separated from valid data.
- 
+
 The example below demonstrates how to display `null` values at the bottom of the Gantt Chart while sorting the `TaskName` column in both ascending and descending order.
 
 {% if page.publishingplatform == "typescript" %}
@@ -292,7 +292,7 @@ The example below demonstrates how to display `null` values at the bottom of the
 
 ## Sorting custom columns
 
-You can sort custom columns of various types such as string or numeric in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control by adding them to the column collection. Initial sorting can be configured using the [sortSettings](../api/gantt/sortSettings) property, or sorting can be triggered dynamically through external actions such as a button click. 
+You can sort custom columns of various types such as string or numeric in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control by adding them to the column collection. Initial sorting can be configured using the [sortSettings](../api/gantt/sortSettings) property, or sorting can be triggered dynamically through external actions such as a button click.
 
 The following code snippet demonstrates how to sort the `CustomColumn` using an external button.
 

@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column Menu in ##Platform_Name## Gantt Chart Control
+# Column Menu with Sort and Filter in ##Platform_Name## Gantt Chart
 
 The column menu in the ##Platform_Name## Gantt Chart control offers built-in actions including sorting, filtering, column chooser, and autofit. When you click the column menu icon, a menu appears with these features.
 
@@ -17,13 +17,13 @@ To activate the column menu feature, set the [showColumnMenu](../../api/gantt#sh
 
 The following built-in column menu items are available:
 
-| Item           | Description                                                                                                                           |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| SortAscending  | Sorts the column in ascending order.                                                                                                  |
-| SortDescending | Sorts the column in descending order.                                                                                                 |
-| AutoFit        | Adjusts the width of the current column.                                                                                              |
-| AutoFitAll     | Adjusts the width of all columns.                                                                                                     |
-| ColumnChooser  | Allows toggling column visibility .                                                                                                   |
+| Item           | Description                                                                                                                                |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| SortAscending  | Sorts the column in ascending order.                                                                                                       |
+| SortDescending | Sorts the column in descending order.                                                                                                      |
+| AutoFit        | Adjusts the width of the current column.                                                                                                   |
+| AutoFitAll     | Adjusts the width of all columns.                                                                                                          |
+| ColumnChooser  | Allows toggling column visibility .                                                                                                        |
 | Filter         | Displays filter options based on [filterSettings.type](../../api/gantt/filtersettings#type). |
 
 {% if page.publishingplatform == "typescript" %}
@@ -53,9 +53,9 @@ The following built-in column menu items are available:
 {% previewsample "page.domainurl/code-snippet/gantt/columns-cs1" %}
 {% endif %}
 
-> * You can disable the column menu for specific columns by setting [columns.showColumnMenu](../../api/gantt/column#showcolumnmenu) to **false**.
+> - You can disable the column menu for specific columns by setting [columns.showColumnMenu](../../api/gantt/column#showcolumnmenu) to **false**.
 
-> * You can customize the default column menu items by defining [columnMenuItems](../../api/gantt#columnmenuitems) with only the required items.
+> - You can customize the default column menu items by defining [columnMenuItems](../../api/gantt#columnmenuitems) with only the required items.
 
 ## Add a custom column menu item
 

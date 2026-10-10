@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Gantt Chart Control
+# Accessibility and ARIA Compliance in ##Platform_Name## Gantt Chart
 
-The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control is designed with comprehensive accessibility support, adhering to established guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles). This ensures the control is usable by individuals with disabilities and meets legal accessibility requirements for enterprise applications.
+The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control is designed with comprehensive accessibility support, adhering to established guidelines and standards including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles). This ensures the control is usable by individuals with disabilities and meets legal accessibility requirements for enterprise applications.
 
 ## Accessibility compliance
 
@@ -31,8 +31,8 @@ The accessibility compliance for the Gantt Chart control provides detailed insig
 
 | Accessibility Criteria                                                                  | Compatibility                                                                                      |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support                                       | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
-| [Section 508](https://www.section508.gov/) Support                                      | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22) Support                                        | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [Section 508](https://www.section508.gov) Support                                       | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
 | Screen Reader Support                                                                   | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
 | Right-To-Left Support                                                                   | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
 | Color Contrast                                                                          | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
@@ -53,12 +53,12 @@ The Gantt Chart control implements comprehensive [WAI-ARIA](https://www.w3.org/W
 
 | Attributes            | Purpose                                                                                                   | Implementation Context                                  |
 | --------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| `grid (role)`         | Applied to the `e-table` element representing the Grid portion of the Gantt Chart control               | Provides semantic structure for the data grid area      |
+| `grid (role)`         | Applied to the `e-table` element representing the Grid portion of the Gantt Chart control                 | Provides semantic structure for the data grid area      |
 | `gridcell (role)`     | Applied to `td` elements within the `e-table`, representing individual work cells in the Gantt grid       | Enables cell-by-cell navigation for screen readers      |
 | `columnheader (role)` | Applied to `th` elements within the `e-table`, representing header cells in the Grid table                | Provides column identification and sorting information  |
 | `separator (role)`    | Applied to the `e-split-bar` element, representing the splitter between the Grid table and Chart sections | Indicates resizable boundary between interface sections |
 | `dialog (role)`       | Applied to the `e-dialog` element, representing modal dialog boxes                                        | Manages focus and provides modal interaction patterns   |
-| `toolbar (role)`      | Applied to the `e-gantt-toolbar` element, representing the control's toolbar                            | Groups related actions and provides toolbar navigation  |
+| `toolbar (role)`      | Applied to the `e-gantt-toolbar` element, representing the control's toolbar                              | Groups related actions and provides toolbar navigation  |
 
 ### Dynamic ARIA properties
 
@@ -76,23 +76,23 @@ The Syncfusion ##Platform_Name## Gantt Chart control is structured using a combi
 
 The accessibility checker tools highlight the following known issues:
 
-* The `<table>` element with `role="presentation"` or `role="none"` contains structural elements such as `<th>`.
-* Verify that the table is not being used solely to format text content in columns unless the table can be properly linearized.  
-* Content is not placed within a landmark element.  
-* Verify that the `<div>` element with `role="grid"` provides proper keyboard access.  
-* The element with `role="grid"` contains child elements with roles such as `"generic"` and `"textbox"`, which are not allowed. Only `"row"` or `"rowgroup"` roles are permitted as direct children.  
-* Interactive component with ARIA role `treegrid` does not have a programmatically associated accessible name.  
-* None of the descendant elements with `role="row"` are tabbable.  
-* The explicitly assigned ARIA role `"rowgroup"` is redundant with the implicit role of the `<tbody>` element.  
-* The explicitly assigned ARIA role `"row"` is redundant with the implicit role of the `<tr>` element.  
-* The explicitly assigned ARIA role `"gridcell"` is redundant with the implicit role of the `<td>` element.  
-* The tabbable element with role `"columnheader"` is not a widget role.  
-* The explicitly assigned ARIA role `"columnheader"` is redundant with the implicit role of the `<th>` element.  
-* The element with `role="rowgroup"` does not contain required child elements with role `"row"`.  
-* The ARIA attribute `aria-valuenow` is not valid for a `<div>` element with `role="separator"`.  
-* The `cellspacing` attribute is deprecated for the `<table>` element in HTML5.  
-* The ARIA attribute `aria-label` is not valid for a `<div>` element with `role="term"`.  
-* The ARIA attribute `aria-label` is not valid for a `<div>` element with the implicit `"generic"` role.
+- The `<table>` element with `role="presentation"` or `role="none"` contains structural elements such as `<th>`.
+- Verify that the table is not being used solely to format text content in columns unless the table can be properly linearized.
+- Content is not placed within a landmark element.
+- Verify that the `<div>` element with `role="grid"` provides proper keyboard access.
+- The element with `role="grid"` contains child elements with roles such as `"generic"` and `"textbox"`, which are not allowed. Only `"row"` or `"rowgroup"` roles are permitted as direct children.
+- Interactive component with ARIA role `treegrid` does not have a programmatically associated accessible name.
+- None of the descendant elements with `role="row"` are tabbable.
+- The explicitly assigned ARIA role `"rowgroup"` is redundant with the implicit role of the `<tbody>` element.
+- The explicitly assigned ARIA role `"row"` is redundant with the implicit role of the `<tr>` element.
+- The explicitly assigned ARIA role `"gridcell"` is redundant with the implicit role of the `<td>` element.
+- The tabbable element with role `"columnheader"` is not a widget role.
+- The explicitly assigned ARIA role `"columnheader"` is redundant with the implicit role of the `<th>` element.
+- The element with `role="rowgroup"` does not contain required child elements with role `"row"`.
+- The ARIA attribute `aria-valuenow` is not valid for a `<div>` element with `role="separator"`.
+- The `cellspacing` attribute is deprecated for the `<table>` element in HTML5.
+- The ARIA attribute `aria-label` is not valid for a `<div>` element with `role="term"`.
+- The ARIA attribute `aria-label` is not valid for a `<div>` element with the implicit `"generic"` role.
 
 ## Keyboard navigation
 
@@ -100,7 +100,7 @@ The Gantt Chart control provides comprehensive keyboard navigation support follo
 
 | **Press**                            | **To do this**                                 | **Context**                 |
 | ------------------------------------ | ---------------------------------------------- | --------------------------- |
-| <kbd>Alt + J</kbd>                   | Focus Gantt Chart control                    | Global application shortcut |
+| <kbd>Alt + J</kbd>                   | Focus Gantt Chart control                      | Global application shortcut |
 | <kbd>Tab / Shift + Tab</kbd>         | Focus the next or previous element             | Standard tab navigation     |
 | <kbd>Home</kbd>                      | Selects the first row                          | Grid and chart areas        |
 | <kbd>End</kbd>                       | Selects the last row                           | Grid and chart areas        |
@@ -270,7 +270,7 @@ The sample demonstrates complete keyboard navigation functionality, screen reade
 
 ## See also
 
-* [Accessibility in ##Platform_Name## Gantt Chart components](../common/accessibility)
-* [Keyboard Navigation in ##Platform_Name## Gantt Chart control](./keyboard-navigation)
-* [WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22/)
-* [Section 508 Standards](https://www.section508.gov/)
+- [Accessibility in ##Platform_Name## Gantt Chart components](../common/accessibility)
+- [Keyboard Navigation in ##Platform_Name## Gantt Chart control](#keyboard-navigation)
+- [WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22)
+- [Section 508 Standards](https://www.section508.gov)

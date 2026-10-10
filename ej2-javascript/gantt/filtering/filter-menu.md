@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filter Menu in ##Platform_Name## Gantt Chart Control
+# Using Filter Menu for Data Filtering in ##Platform_Name## Gantt Chart
 
-The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as equal, contains, greaterthan, etc. To enable this feature, set [allowFiltering](../../api/gantt#allowfiltering) to **true** and configure [filterSettings.type](../../api/gantt/filtersettings#type) as **Menu**.
+The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as equal, contains, greater than, etc. To enable this feature, set [allowFiltering](../../api/gantt#allowfiltering) to **true** and configure [filterSettings.type](../../api/gantt/filtersettings#type) as **Menu**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -49,7 +49,7 @@ You can customize the filter menu in the ##Platform_Name## Gantt Chart control u
 The `column.filter.ui` property supports three essential functions:
 
 1. `create`- Initializes and renders the custom filter control inside the filter menu.
-2. `write`- Populates the control with the current filter value and attaches any necessary event handlers. 
+2. `write`- Populates the control with the current filter value and attaches any necessary event handlers.
 3. `read` - Retrieves the selected value from the control and applies the filter to the column.
 
 {% if page.publishingplatform == "typescript" %}
@@ -81,8 +81,8 @@ The `column.filter.ui` property supports three essential functions:
 
 ## Hide default filter icon while perform filtering through method
 
-To hide the default filter icon from the UI when filtering is performed programmatically, apply the following CSS: 
- 
+To hide the default filter icon from the UI when filtering is performed programmatically, apply the following CSS:
+
 ```css
 .e-filtermenudiv.e-icons.e-icon-filter {
       display: none;
@@ -124,13 +124,13 @@ To customize the default input components in the filter menu dialog, use the `pa
 
 You can refer to the table below for supported column types, their default components, customization examples, and API references:
 
-| Column Type | Default control                                        | Customization                            | API Reference                                                 |
-| ----------- | ------------------------------------------------------ | ---------------------------------------- | ------------------------------------------------------------- |
-| String      | [AutoComplete](../../auto-complete/getting-started)    | Eg: { params: { autofill: false }}       | [AutoComplete API](../../api/auto-complete/autoCompleteModel) |
-| Number      | [NumericTextBox](../../numerictextbox/getting-started) | Eg: { params: { showSpinButton: false }} | [NumericTextBox API](../../api/numerictextbox)                |
-| Boolean     | [DropDownList](../../drop-down-list/getting-started)   | Eg: { params: { sortOrder:'Ascending'}}  | [DropDownList API](../../api/drop-down-list)                  |
-| Date        | [DatePicker](../../datepicker/getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](../../api/datepicker)                        |
-| DateTime    | [DateTimePicker](../../datetimepicker/getting-started) | Eg: { params: { showClearButton: true }} | [DateTimePicker API](../../api/datetimepicker)                |
+| Column Type | Default control                                                                                          | Customization                            | API Reference                                                                                               |
+| ----------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| String      | [AutoComplete](../../auto-complete/es5-getting-started)    | Eg: { params: { autofill: false }}       | [AutoComplete API](../../api/auto-complete/autoCompleteModel) |
+| Number      | [NumericTextBox](../../numerictextbox/es5-getting-started) | Eg: { params: { showSpinButton: false }} | [NumericTextBox API](../../api/numerictextbox)                |
+| Boolean     | [DropDownList](../../drop-down-list/getting-started)       | Eg: { params: { sortOrder:'Ascending'}}  | [DropDownList API](../../api/drop-down-list)                  |
+| Date        | [DatePicker](../../datepicker/es5-getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](../../api/datepicker)                        |
+| DateTime    | [DateTimePicker](../../datetimepicker/es5-getting-started) | Eg: { params: { showClearButton: true }} | [DateTimePicker API](../../api/datetimepicker)                |
 
 The following sample demonstrates how to disable the autofill feature by setting the `autofill` property to **false** for the **TaskName** column, and how to disable the spin button by setting `showSpinButton` to **false** for the **TaskID** column.
 
@@ -165,11 +165,11 @@ The following sample demonstrates how to disable the autofill feature by setting
 
 The ##Platform_Name## Gantt Chart control allows customization of the default filter operator list using the [filterSettings.operators](../../api/gantt/filterSettings#operators) property. This allows you to define a custom set of operators shown in the filter menu for each column type, improving usability and relevance.
 
-You can configure operators for different types using the following options: 
+You can configure operators for different types using the following options:
 
-- **stringOperator** – Custom operators for string columns.  
-- **numberOperator** – Custom operators for number columns.  
-- **dateOperator** – Custom operators for date columns.  
+- **stringOperator** – Custom operators for string columns.
+- **numberOperator** – Custom operators for number columns.
+- **dateOperator** – Custom operators for date columns.
 - **booleanOperator** – Custom operators for boolean columns.
 
 {% if page.publishingplatform == "typescript" %}

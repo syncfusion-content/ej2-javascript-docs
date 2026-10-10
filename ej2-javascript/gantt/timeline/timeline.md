@@ -9,9 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timeline in ##Platform_Name## Gantt Chart Control
+# Configuring Timeline Settings in ##Platform_Name## Gantt Chart
 
-The timeline in the ##Platform_Name## Gantt Chart control represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization. Configure modes using the [timelineViewMode](../../api/gantt/timelineViewMode) property, with top and bottom tiers customized via [topTier.unit](../../api/gantt/timelineTierSettings#unit) and [bottomTier.unit](../../api/gantt/timelineTierSettings#unit) in [timelineSettings](../../api/gantt/timelineSettings). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
+The timeline in the ##Platform_Name## Gantt Chart control represents project durations as cells with defined units and formats. It supports in-built view modes including Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization.
+
+Configure timeline modes using the [timelineViewMode](../../api/gantt/timelineViewMode) property. Customize the top and bottom tiers via [topTier.unit](../../api/gantt/timelineTierSettings#unit) and [bottomTier.unit](../../api/gantt/timelineTierSettings#unit) in [timelineSettings](../../api/gantt/timelineSettings). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
 
 ## Configure timeline view modes
 
@@ -207,7 +209,7 @@ In Minutes timeline mode, the tier displays minute-level intervals, ideal for tr
 
 ## Timeline view dates
 
-The Gantt Chart control supports rendering a fixed timeline range using the [viewStartDate](../../api/gantt/timelineSettings#viewStartDate) and [viewEndDate](../../api/gantt/timelineSettings#viewEndDate) properties. These properties allow the visible portion of the timeline to be explicitly defined and locked within the Gantt chart UI, independent of the project's overall scheduling boundaries defined by [projectStartDate](../../api/gantt/index-default#projectstartdate) and [projectEndDate](../../api/gantt/index-default#projectenddate). The `projectStartDate` and `projectEndDate` values represent the full scheduling window for the project and are used for baseline processing, critical-path calculations, and project-level reporting. By default, both `viewStartDate` and `viewEndDate` are set to **auto**. The following example demonstrates how to configure a custom timeline view range.
+The Gantt Chart control supports rendering a fixed timeline range using the [viewStartDate](../../api/gantt/timelineSettings#viewStartDate) and [viewEndDate](../../api/gantt/timelineSettings#viewEndDate) properties. These properties allow the visible portion of the timeline to be explicitly defined and locked within the Gantt chart UI, independent of the project's overall scheduling boundaries defined by [projectStartDate](../../api/gantt#projectstartdate) and [projectEndDate](../../api/gantt#projectenddate). The `projectStartDate` and `projectEndDate` values represent the full scheduling window for the project and are used for baseline processing, critical-path calculations, and project-level reporting. By default, both `viewStartDate` and `viewEndDate` are set to **auto**. The following example demonstrates how to configure a custom timeline view range.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -248,7 +250,7 @@ When `viewStartDate` and `viewEndDate` are set to concrete Date values, the time
   - If `projectEndDate` is defined, the timeline ends at `projectEndDate`.
   - If `projectEndDate` is not defined, the maximum task end date is used. If this end date leaves visible white-space in the timeline area, the end date is automatically extended to fill the chart width.
 
-> Note: The `ZoomToFit` feature uses `projectStartDate` and `projectEndDate` to fit the entire project within the available timeline viewport.
+> **Note:** The `ZoomToFit` feature uses `projectStartDate` and `projectEndDate` to fit the entire project within the available timeline viewport.
 
 ## Customize week start day
 
@@ -316,7 +318,7 @@ In the Gantt Chart control, the schedule timeline will be automatically updated 
 
 ## Dynamically change timeline mode
 
-You can dynamically change the timeline mode in the Gantt Chart by updating the [timelineSettings.timelineViewMode](../../api/gantt/timelineViewMode) property using the [change](../../api/combo-box/index-default#change) event of the [ComboBox](../../combo-box/getting-started) control.
+You can dynamically change the timeline mode in the Gantt Chart by updating the [timelineSettings.timelineViewMode](../../api/gantt/timelineViewMode) property using the [change](../../api/combo-box#change) event of the [ComboBox](../../combo-box/es5-getting-started) control.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -413,13 +415,13 @@ Highlight weekends by setting [showWeekend](../../api/gantt/timelineSettings#sho
 - Non-working hours cannot be excluded when `showWeekend` is set to **false**.
 - Holidays are not excluded from the timeline if `showWeekend` is set to **false**.
 
-## Navigating Gantt Chart Timeline
+## Navigating Gantt Chart timeline
 
 You can adjust the Gantt Chart view by shifting the timeline forward or backward by one unit using the following methods:
 
-- [previousTimeSpan](../../api/gantt/index-default#previoustimespan): Moves the timeline backward by one unit from the current start point.
+- [previousTimeSpan](../../api/gantt#previoustimespan): Moves the timeline backward by one unit from the current start point.
 
-- [nextTimeSpan](../../api/gantt/index-default#nexttimespan): Moves the timeline forward by one unit from the current end point.
+- [nextTimeSpan](../../api/gantt#nexttimespan): Moves the timeline forward by one unit from the current end point.
 
 {% if page.publishingplatform == "typescript" %}
 

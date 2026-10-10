@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in ##Platform_Name## Chat UI | Syncfusion®
-description: Handle Syncfusion® ##Platform_Name## Chat UI events: created, messageSend, userTyping, and the file attachment upload and removal lifecycle.
+description: Handle Syncfusion® ##Platform_Name## Chat UI events, including created, messageSend, userTyping, and the file attachment upload and removal lifecycle.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##

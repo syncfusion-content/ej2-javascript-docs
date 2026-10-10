@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Holidays in ##Platform_Name## Gantt Control
+# Holidays and Non-Working Days in ##Platform_Name## Gantt Chart
 
 The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control supports holidays to define non-working days, such as national holidays or company closures, that impact task scheduling and project timelines. Holidays override regular working time settings like [workWeek](../../api/gantt#workweek) or [includeWeekend](../../api/gantt#includeweekend), ensuring tasks do not progress during these periods. In the timeline, holidays appear as highlighted backgrounds with descriptive labels, creating visible gaps in taskbars to reflect scheduling adjustments. Custom CSS classes allow distinct styling for different holiday types (e.g., national vs. company holidays), enhancing visual clarity. Properly configured holidays ensure accurate duration calculations, dependency adjustments, and critical path analysis, aligning project timelines with resource availability and regional requirements.
 
@@ -117,7 +117,8 @@ holidays: [
 
 This code styles holidays with distinct colors and labels, enhancing timeline readability.
 
-## See Also
+## See also
+
 - [How to configure event markers?](../../gantt/event-markers)
 - [How to manage task dependencies?](../../gantt/task-dependency)
 - [How to enable critical path analysis?](../../gantt/critical-path)

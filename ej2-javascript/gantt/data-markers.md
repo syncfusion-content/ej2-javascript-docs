@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data Markers in ##Platform_Name## Gantt Chart Control
+# Task Markers and Milestones in ##Platform_Name## Gantt Chart
 
 Data markers are visual indicators that highlight significant events, milestones, or important dates within individual project tasks. These markers provide immediate visual context about critical moments in task timelines, enabling effective identification of key dates and tracking of important events at the task level. Understanding data markers implementation ensures effective project visualization and milestone tracking throughout project development cycles.
 
@@ -133,4 +133,35 @@ You can programmatically modify the styling of the indicator by targeting the `.
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/gantt/data-markers-cs3" %}
+{% endif %}
+
+## Hide data markers programmatically
+
+You can hide data markers programmatically by targeting the `.e-indicator-span` class of the rendered marker elements and setting their display style. The following example shows how to hide and show all data markers using external buttons:
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/data-markers-cs4/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/data-markers-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/data-markers-cs4" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/data-markers-cs4/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/data-markers-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/data-markers-cs4" %}
 {% endif %}

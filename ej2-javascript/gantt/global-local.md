@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization and Localization in ##Platform_Name## Gantt Chart Control
+# Globalization and Localization in ##Platform_Name## Gantt Chart
 
 The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control supports globalization to adapt project management interfaces to diverse languages, cultures, and regional preferences without code changes. Globalization encompasses localization for translating text elements like column headers and dialog titles, internationalization for formatting dates, numbers, and times in timelines and task fields, and Right-to-Left (RTL) support for languages like Arabic and Hebrew. These features ensure that task names, toolbar actions, and timeline displays align with users’ linguistic and cultural expectations, enhancing accessibility and usability in project management workflows for global users.
 
@@ -25,9 +25,11 @@ Implement globalization when targeting multilingual users, complying with region
 
 ## Localization implementation
 
-The [Localization](../common/localization) library allows you to localize default text content of the Gantt Chart control. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](../../api/gantt#locale) value and providing translation objects.
+The [Localization](../../common/localization) library allows you to localize default text content of the Gantt Chart control. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](../../api/gantt#locale) value and providing translation objects.
 
-1. **Import required libraries**:
+1.  **Import required libraries**:
+    
+
     {% if page.publishingplatform == "typescript" %}
     ```typescript
     import { L10n, setCulture } from '@syncfusion/ej2-base';
@@ -100,7 +102,7 @@ The following tables organize all available locale keys by functional category:
 | --------------------------- | ---------------------------------- |
 | InvalidFilterMessage        | Invalid Filter Data                |
 | FilterbarTitle              | \s filter bar cell                 |
-| Matchs                      | No Matches Found                   |
+| Matches                     | No Matches Found                   |
 | FilterButton                | Filter                             |
 | ClearButton                 | Clear                              |
 | StartsWith                  | Starts With                        |
@@ -343,13 +345,13 @@ The following example demonstrates comprehensive German (Deutsch) localization:
 
 ## Internationalization (I18N)
 
-The [Internationalization](../common/internationalization) library globalizes number, date, and time values in the Gantt Chart control. This ensures that dates, numbers, and currencies display according to the user's cultural preferences and regional conventions.
+The [Internationalization](../../common/internationalization) library globalizes number, date, and time values in the Gantt Chart control. This ensures that dates, numbers, and currencies display according to the user's cultural preferences and regional conventions.
 
 Internationalization affects multiple aspects of the Gantt Chart control:
 
 - **Date formatting**: Timeline headers, task dates, date pickers, and calendar displays
 - **Number formatting**: Duration values, progress percentages, and numeric inputs
-- **Time formatting**: Time-based calculations, working hours, and time displays  
+- **Time formatting**: Time-based calculations, working hours, and time displays
 - **Currency formatting**: Cost-related fields and budget calculations
 - **Calendar systems**: Support for different calendar systems (Gregorian, Islamic, etc.)
 - **Week numbering**: ISO week numbers, fiscal year calendars
@@ -428,24 +430,27 @@ The code sets `enableRtl` to **true** and `locale` to **ar**, mirroring the Gant
 ## Troubleshooting globalization issues
 
 1. **Missing or incomplete translations:**
-**Issue**: Some UI elements display in default language despite locale configuration
-**Solutions**:
+   **Issue**: Some UI elements display in default language despite locale configuration
+   **Solutions**:
+
 - Verify all locale keys are included in translation objects
 - Check that `L10n.load()` is called before component initialization
 - Ensure locale property matches loaded translation keys
 - Validate translation object structure and syntax
 
 2. **Encoding and character display issues:**
-**Issue**: Special characters or non-Latin scripts don't display correctly
-**Solutions**:
+   **Issue**: Special characters or non-Latin scripts don't display correctly
+   **Solutions**:
+
 - Verify proper UTF-8 encoding in translation files
 - Check font support for target languages
 - Ensure HTML document declares correct charset
 - Test with appropriate fonts for target scripts
 
 3. **Date and number formatting problems:**
-**Issue**: Dates or numbers don't format according to locale
-**Solutions**:
+   **Issue**: Dates or numbers don't format according to locale
+   **Solutions**:
+
 - Load appropriate CLDR data for target cultures
 - Call `setCulture()` before component initialization
 - Verify date format patterns match locale expectations

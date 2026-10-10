@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in ##Platform_Name## Chat UI | Syncfusion®
-description: Style the Syncfusion® ##Platform_Name## Chat UI: set width, height, cssClass, and customize the message input placeholder text.
+description: Style the Syncfusion® ##Platform_Name## Inline AI Assist by set popup width, height, z-index, and a custom cssClass for the inline component.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##

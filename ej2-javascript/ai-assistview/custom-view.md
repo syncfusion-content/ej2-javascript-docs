@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Views in ##Platform_Name## AI AssistView | Syncfusion®
-description: Add multiple views to the Syncfusion® ##Platform_Name## AI AssistView: choose Assist or Custom, set names, icons, templates, and the active view.
+description: Add multiple views to the Syncfusion® ##Platform_Name## AI AssistView by choosing Assist or Custom, set names, icons, templates, and the active view.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##

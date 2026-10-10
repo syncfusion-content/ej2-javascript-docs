@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State Persistence in ##Platform_Name## Gantt Chart Control
+# State Persistence with LocalStorage Support in ##Platform_Name## Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control supports state management to retain its configuration and data after a browser refresh during the same session.
 
@@ -17,11 +17,11 @@ To enable this, set the [enablePersistence](../../api/gantt#enablepersistence) p
 
 ## Restore initial Gantt state
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control provides options to reset its state, reverting all interactions and configurations to the original setup.  This is useful for clearing filters, sorting, and column arrangements, even when [enablePersistence](../../api/gantt#enablepersistence) is enabled.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control provides options to reset its state, reverting all interactions and configurations to the original setup. This is useful for clearing filters, sorting, and column arrangements, even when [enablePersistence](../../api/gantt#enablepersistence) is enabled.
 
 ### Changing control ID
 
-To reset the Gantt to its default state, update the control ID.  This initializes the control as a new instance, restoring its original configuration.
+To reset the Gantt to its default state, update the control ID. This initializes the control as a new instance, restoring its original configuration.
 
 Here is an example code to change the control ID dynamically to restore initial Gantt state.
 
@@ -135,11 +135,11 @@ window.localStorage.setItem('ganttGantt', JSON.stringify(model)); //"ganttGantt"
 
 ```
 
-> You can refer to our [JavaScript Gantt](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Gantt example](https://ej2.syncfusion.com/demos#/material/gantt/default.html) to knows how to present and manipulate data.
+> You can refer to our [##Platform_Name## Gantt](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [##Platform_Name## Gantt example](https://ej2.syncfusion.com/demos/#/tailwind3/gantt/default.html) to knows how to present and manipulate data.
 
 ## Prevent columns from persisting
 
-When [enablePersistence](../../api/gantt#enablepersistence) is set to **true**, Gantt properties such as [Filtering](../../api/gantt#allowfiltering), [Sorting](../../api/gantt#allowsorting), and [Columns](../../api/gantt#columns) are automatically saved.  
+When [enablePersistence](../../api/gantt#enablepersistence) is set to **true**, Gantt properties such as [Filtering](../../api/gantt#allowfiltering), [Sorting](../../api/gantt#allowsorting), and [Columns](../../api/gantt#columns) are automatically saved.
 
 To prevent specific properties from being persisted, use the `addOnPersist` method.
 

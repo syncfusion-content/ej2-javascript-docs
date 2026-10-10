@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Splitter in ##Platform_Name## Gantt Chart Control
+# Splitter with Panel Resizing in ##Platform_Name## Gantt Chart
 
-The splitter in the [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control divides the TreeGrid pane and Chart pane, enabling flexible width allocation for project visualization. Configured via the [splitterSettings](../api/gantt/splitterSettings) property, the splitter supports pixel or percentage-based positioning, column-based alignment, and predefined view modes. The [setSplitterPosition](../api/gantt#setsplitterposition) method adjusts positioning dynamically, while the [splitterResizeStart](../api/gantt/splitterresizestart), [splitterResizing](../api/gantt/splitterresizing), and [splitterResized](../api/gantt/splitterresized) events handle resize interactions. The splitter includes ARIA labels for accessibility, ensuring screen reader compatibility, and adapts to responsive designs, though narrow screens may limit visible columns or timeline segments. By default, both panels are visible with equal width.
+The splitter in the [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control divides the TreeGrid pane and Chart pane, enabling flexible width allocation for project visualization. Configured via the [splitterSettings](../api/gantt/splitterSettings) property, the splitter supports pixel or percentage-based positioning, column-based alignment, and predefined view modes. The [setSplitterPosition](../api/gantt#setsplitterposition) method adjusts positioning dynamically, while the [splitterResizeStart](../api/gantt#splitterresizestart), [splitterResizing](../api/gantt#splitterresizing), and [splitterResized](../api/gantt#splitterresized) events handle resize interactions. The splitter includes ARIA labels for accessibility, ensuring screen reader compatibility, and adapts to responsive designs, though narrow screens may limit visible columns or timeline segments. By default, both panels are visible with equal width.
 
 ## Configure splitter position
 
@@ -51,6 +51,7 @@ The following example sets a percentage-based splitter position. This configurat
 ## Configure view modes
 
 Set predefined view modes with [splitterSettings.view](../api/gantt/splitterSettings#view):
+
 - **Default**: Displays both TreeGrid and Chart panels.
 - **Grid**: Shows only the TreeGrid panel for data-focused views.
 - **Chart**: Shows only the Chart panel for timeline visualization.

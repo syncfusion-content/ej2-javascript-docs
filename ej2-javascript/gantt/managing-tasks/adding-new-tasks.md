@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adding new tasks in ##Platform_Name## Gantt control
+# Adding New Tasks in ##Platform_Name## Gantt Chart
 
 Tasks can be dynamically added to the Gantt project by enabling the [editSettings.allowAdding](../../api/gantt/editSettings#allowadding) property.
 
@@ -48,7 +48,7 @@ A row can be added to the Gantt component from the toolbar while the [editSettin
 
 ## Context menu
 
-A row can also be added above, below or child of the selected row by using context menu support. For this, we need to enable the property [enableContextMenu](../../api/gantt#enablecontextmenu) and inject the [ContextMenu](../../api/gantt/index-default#contextmenumodule) module into the Gantt control.
+A row can also be added above, below or child of the selected row by using context menu support. For this, we need to enable the property [enableContextMenu](../../api/gantt#enablecontextmenu) and inject the [ContextMenu](../../api/gantt#contextmenumodule) module into the Gantt control.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -81,11 +81,11 @@ A row can also be added above, below or child of the selected row by using conte
 
 You can add rows to the Gantt control dynamically using the [addRecord](../../api/gantt#addrecord) method and you can define the add position of the default new record by using the [rowPosition](../../api/gantt/rowPosition) property. You can also pass the `rowIndex` as an additional parameter.
 
-* Top of all the rows.
-* Bottom to all the existing rows.
-* Above the selected row.
-* Below the selected row.
-* As child to the selected row.
+- Top of all the rows.
+- Bottom to all the existing rows.
+- Above the selected row.
+- Below the selected row.
+- As child to the selected row.
 
 {% if page.publishingplatform == "typescript" %}
 

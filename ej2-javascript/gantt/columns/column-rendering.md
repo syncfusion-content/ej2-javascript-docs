@@ -9,13 +9,12 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column Rendering in ##Platform_Name## Gantt Chart Control
+# Column Rendering with Data Binding in ##Platform_Name## Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control supports column rendering to control data presentation. Column definitions act as the data schema and support operations such as sorting and filtering. The [field](../../api/gantt/column#field) property is required to map data source values to columns and must be defined for features like complex binding and template-based actions.
 
-> * If the `field` is not defined in the [dataSource](../../api/gantt#datasource), the column will display empty values.
-> * A `field` with a dot operator is treated as [complex binding](../column/column-rendering#complex-data-binding).
-> * To enable CRUD, filtering, or searching, the `field` must be defined for template columns.
+> - If the `field` is not defined in the [dataSource](../../api/gantt#datasource), the column will display empty values.
+> - To enable CRUD, filtering, or searching, the `field` must be defined for template columns.
 
 ## Define columns manually
 
@@ -79,7 +78,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control automat
 {% previewsample "page.domainurl/code-snippet/gantt/column-rendering-cs2" %}
 {% endif %}
 
-## Dynamic column generation 
+## Dynamic column generation
 
 You can dynamically generate columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control at runtime based on the provided data. This is useful when the column structure needs to adapt to user requirements or dynamic data sources.
 
@@ -87,7 +86,7 @@ You can dynamically generate columns in the Syncfusion<sup style="font-size:70%"
 
 The [valueAccessor](../../api/gantt/column#valueaccessor) property is used to format column data in the Gantt Chart control. It accepts a function that returns a custom display value using the following two arguments:
 
-- `field`: The column's data field.  
+- `field`: The column's data field.
 - `data`: The data record for the row.
 
 In the following example, `percentageFormatter` returns the progress value with a `%` sign, while `concatenateFields` returns a combined string of **TaskName** and **TaskID**.
@@ -123,7 +122,7 @@ In the following example, `percentageFormatter` returns the progress value with 
 
 ### Display array type columns
 
-The Gantt Chart control supports binding an array of objects to a column using the  [valueAccessor](../../api/gantt/column#valueaccessor) property. It accepts a function that returns a custom display value, which is then displayed in the column.
+The Gantt Chart control supports binding an array of objects to a column using the [valueAccessor](../../api/gantt/column#valueaccessor) property. It accepts a function that returns a custom display value, which is then displayed in the column.
 
 In the following example, the **Name** column shows the combined value of **FirstName** and **LastName** by using a custom function defined in `valueAccessor`.
 
@@ -154,13 +153,13 @@ In the following example, the **Name** column shows the combined value of **Firs
 {% previewsample "page.domainurl/code-snippet/gantt/column-rendering-cs4" %}
 {% endif %}
 
->Since customized values are displayed in the **Name** column, data operations, such as sorting and filtering, cannot be performed for this column.
+> Since customized values are displayed in the **Name** column, data operations, such as sorting and filtering, cannot be performed for this column.
 
 ### Expression column
 
 You can achieve an expression column in the Gantt Chart control using the [valueAccessor](../../api/gantt/column#valueaccessor) property. It accepts a function that returns a calculated value, which is displayed in the column based on other column values.
 
-In the following example, the chart includes columns like **TaskID**, **TaskName**, **Duration**, **Progress**, **units**, and **unit price**. A  **Total Price** column is added to display the result of multiplying **units** and **unit price** for each row.
+In the following example, the chart includes columns like **TaskID**, **TaskName**, **Duration**, **Progress**, **units**, and **unit price**. A **Total Price** column is added to display the result of multiplying **units** and **unit price** for each row.
 
 {% if page.publishingplatform == "typescript" %}
 

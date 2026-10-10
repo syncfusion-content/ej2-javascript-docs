@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in ##Platform_Name## Inline AI Assist | Syncfusion®
-description: Handle Syncfusion® ##Platform_Name## Inline AI Assist events: created, promptRequest, open, and close lifecycle for the inline popup.
+description: Handle Syncfusion® ##Platform_Name## Inline AI Assist events, including created, promptRequest, open, and close lifecycle for the inline popup.
 platform: ej2-javascript
 control: Inline AI Assist 
 publishingplatform: ##Platform_Name##

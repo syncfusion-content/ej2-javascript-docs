@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row Selection in ##Platform_Name## Gantt Chart Control
+# Selecting Multiple Rows and Rows in ##Platform_Name## Gantt Chart
 
 The ##Platform_Name## Gantt Chart control supports row selection using mouse clicks or keyboard navigation (arrow keys). This enables users to highlight, manipulate, or trigger actions on selected task rows.
 
@@ -46,7 +46,7 @@ You can enable single row selection in the Gantt Chart control by setting [selec
 
 ## Multiple row selection
 
-You can enable multiple row selection in the Gantt Chart control by setting  [selectionSettings.mode](../../api/gantt/selectionSettings#mode) to **Row** and [selectionSettings.type](../../api/gantt/selectionSettings#type) to **Multiple**. This allows selection of more than one task row at a time by holding down the **Ctrl** key while clicking on multiple rows.
+You can enable multiple row selection in the Gantt Chart control by setting [selectionSettings.mode](../../api/gantt/selectionSettings#mode) to **Row** and [selectionSettings.type](../../api/gantt/selectionSettings#type) to **Multiple**. This allows selection of more than one task row at a time by holding down the **Ctrl** key while clicking on multiple rows.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -80,7 +80,6 @@ You can enable multiple row selection in the Gantt Chart control by setting  [se
 - On initial row selection: `rowSelecting` triggers first, followed by `rowSelected`.
 
 - When selecting a different row:
-
   - [rowSelecting](../../api/gantt#rowselecting) is followed by [rowDeselecting](../../api/gantt#rowdeselecting) and [rowDeselected](../../api/gantt#rowdeselected) to deselect the previously selected row.
 
   - Then, [rowSelected](../../api/gantt#rowselected) triggers for the newly selected row.
@@ -217,7 +216,7 @@ Select a range of rows in the Gantt Chart control by using the [selectRowsByRang
 {% previewsample "page.domainurl/code-snippet/gantt/selection-cs15" %}
 {% endif %}
 
-## Enable multi row selection without Ctrl key
+## Enable multi row selection without ctrl key
 
 You can enable simple multi-row selection by setting the `enableSimpleMultiRowSelection` property to **true** in the Grid configuration during the [created](../../gantt/events#created) event. This allows multiple rows to be selected individually through clicks without holding the Ctrl key.
 

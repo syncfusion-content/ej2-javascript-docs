@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column Template in ##Platform_Name## Gantt Chart Control
+# Column Templates with Custom Cell Content in ##Platform_Name## Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control provides a [template](../../api/gantt/column#template) option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
 
@@ -85,7 +85,7 @@ The example below demonstrates how to render a hyperlink for the **TaskName** fi
 {% previewsample "page.domainurl/code-snippet/gantt/columnTemplate-cs2" %}
 {% endif %}
 
-> The `window.open()` method is a built-in JavaScript function that opens a new browser window or tab with the specified URL.
+> The `window.open()` method is a built-in ##Platform_Name## function that opens a new browser window or tab with the specified URL.
 
 ## Render other controls in a column
 
@@ -93,7 +93,7 @@ The column template has options to render a custom control in a gantt column ins
 
 ### Render LineChart control in a column
 
-The [LineChart](../../sparkline/getting-started) control from Syncfusion<sup style="font-size:70%">&reg;</sup> offers a clear and effective way to visualize and compare data trends over time using connected data points. It can be integrated into a Gantt column by configuring the [template](../../api/gantt/column#template) property in the column configuration.
+The [LineChart](../../sparkline/es5-getting-started) control from Syncfusion<sup style="font-size:70%">&reg;</sup> offers a clear and effective way to visualize and compare data trends over time using connected data points. It can be integrated into a Gantt column by configuring the [template](../../api/gantt/column#template) property in the column configuration.
 
 The following example demonstrates how to render a `LineChart` for the **customData** field.
 
@@ -126,7 +126,7 @@ The following example demonstrates how to render a `LineChart` for the **customD
 
 ### Render ColorPicker control in a column
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> [ColorPicker](../../color-picker/getting-started) control offers a user-friendly interface for selecting colors from a predefined palette or custom options. It is useful in scenarios like theme selection or dynamic element styling.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> [ColorPicker](../../color-picker/es5-getting-started) control offers a user-friendly interface for selecting colors from a predefined palette or custom options. It is useful in scenarios like theme selection or dynamic element styling.
 
 To render the ColorPicker inside a Gantt column, configure the [template](../../api/gantt/column#template) property in the column definition.
 
@@ -163,7 +163,7 @@ The following example demonstrates how to render a `ColorPicker` for the **Chang
 
 To render a `DropDownList` control in a Gantt column, define a template using the [template](../../api/gantt/column#template) property in the column configuration.
 
-The following example demonstrates how to render the [DropDownList](../../drop-down-list/getting-started) control in the **Task Priority** column.
+The following example demonstrates how to render the [DropDownList](../../drop-down-list/es5-getting-started) control in the **Task Priority** column.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -227,7 +227,7 @@ The following example demonstrates how to render the Chips control in the **Task
 
 ### Render RadioButton in a column
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> [RadioButton](../../radio-button/getting-started) control can be rendered in a grid column to display selection options like order statuses or approval choices.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> [RadioButton](../../radio-button/es5-getting-started) control can be rendered in a grid column to display selection options like order statuses or approval choices.
 
 The following example demonstrates rendering `RadioButton` controls in the **Order Status** column.
 

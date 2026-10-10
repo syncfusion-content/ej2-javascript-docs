@@ -9,21 +9,22 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Editing tasks in ##Platform_Name## Gantt control
+# Editing Task Properties and Information in ##Platform_Name## Gantt Chart
 
 The editing feature can be enabled in the Gantt control by enabling the [editSettings.allowEditing](../../api/gantt/editSettings#allowediting) and [editSettings.allowTaskbarEditing](../../api/gantt/editSettings#allowtaskbarediting) properties.
 
 The following editing options are available to update the tasks in the Gantt chart:
-* Cell
-* Dialog
-* Taskbar
-* Dependency links
+
+- Cell
+- Dialog
+- Taskbar
+- Dependency links
 
 ## Cell editing
 
 By setting the edit mode to auto using the [editSettings.mode](../../api/gantt/editSettings#mode) property, the tasks can be edited through TreeGrid cells by double-clicking.
 
-`Note:` If the [Edit](../../api/gantt#editmodule) module is not injected, you cannot edit the tasks through TreeGrid cells.
+> **Note:** If the [Edit](../../api/gantt#editmodule) module is not injected, you cannot edit the tasks through TreeGrid cells.
 
 The following code example shows you how to enable the cell editing in Gantt control.
 
@@ -54,7 +55,7 @@ The following code example shows you how to enable the cell editing in Gantt con
 {% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs10" %}
 {% endif %}
 
-`Note:` When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
+> **Note:** When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
 
 ## Dialog editing
 
@@ -87,7 +88,7 @@ Modify the task details through the edit dialog by setting the edit [mode](../..
 {% previewsample "page.domainurl/code-snippet/gantt/getting-started-cs11" %}
 {% endif %}
 
-`Note:` In dialog editing mode, the edit dialog appears when performing double-click action on both TreeGrid or Gantt chart sides.
+> **Note:** In dialog editing mode, the edit dialog appears when performing double-click action on both TreeGrid or Gantt chart sides.
 
 ### Sections or tabs in dialog
 
@@ -124,7 +125,7 @@ In the Gantt dialog, you can define the required tabs or editing sections using 
 
 In the Gantt dialog, you can make only specific data source fields visible for editing by using the [addDialogFields](../../api/gantt#adddialogfields) and [editDialogFields](../../api/gantt#editdialogfields) properties. The data fields are defined with [type](../../api/gantt/addDialogFieldSettings#type) and [fields](../../api/gantt/addDialogFieldSettings#fields) properties.
 
-`Note:` You can also define the custom fields in the add/edit dialog General tab using the [fields](../../api/gantt/addDialogFieldSettings#fields) property.
+> **Note:** You can also define custom fields in the add/edit dialog General tab using the [fields](../../api/gantt/addDialogFieldSettings#fields) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -159,9 +160,9 @@ In the Gantt control, you can update the dependencies between the tasks and link
 
 You can update the task dependencies using the following ways:
 
-* Mouse interactions: Using connector points in the taskbar, you can perform drag and drop action to create task dependency links.
-* Edit dialog: Create or remove the task dependencies using the `Dependency` tab in the edit dialog.
-* Cell editing: Create or remove the task links using cell editing.
+- Mouse interactions: Using connector points in the taskbar, you can perform drag and drop action to create task dependency links.
+- Edit dialog: Create or remove the task dependencies using the `Dependency` tab in the edit dialog.
+- Cell editing: Create or remove the task links using cell editing.
 
 The following code example demonstrates how to enable task dependency editing in the Gantt chart using the [editSettings](../../api/gantt/editSettings) property.
 
@@ -210,7 +211,7 @@ Updating with dialog
 
 Tasks' value can be dynamically updated by using the [updateRecordByID](../../api/gantt#updaterecordbyid) method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
 
->NOTE: Using the [updateRecordByID](../../api/gantt#updaterecordbyid) method, you cannot update the task ID value.
+> NOTE: Using the [updateRecordByID](../../api/gantt#updaterecordbyid) method, you cannot update the task ID value.
 
 {% if page.publishingplatform == "typescript" %}
 

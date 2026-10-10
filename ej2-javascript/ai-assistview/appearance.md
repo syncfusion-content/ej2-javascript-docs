@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in ##Platform_Name## AI AssistView | Syncfusion®
-description: Style the Syncfusion® ##Platform_Name## AI AssistView: set width, height, and a custom cssClass to match your application layout and theme.
+description: Style the Syncfusion® ##Platform_Name## AI AssistView by set width, height, and a custom cssClass to match your application layout and theme.
 platform: ej2-javascript
 control: AI AssistView
 publishingplatform: ##Platform_Name##

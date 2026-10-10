@@ -9,9 +9,19 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Managing Tasks in ##Platform_Name## Gantt Chart Control
+# Overview of Task Management Features in ##Platform_Name## Gantt Chart
 
-Managing tasks in the ##Platform_Name## Gantt Chart control enables dynamic project updates, such as inserting, deleting, or editing tasks and dependencies, by enabling [allowAdding](../../api/gantt/editSettings#allowadding), [allowDeleting](../../api/gantt/editSettings#allowdeleting), [allowEditing](../../api/gantt/editSettings#allowediting), and [allowTaskbarEditing](../../api/gantt/editSettings#allowtaskbarediting) with `Edit` module injected. A primary key column, defined by [columns.isPrimaryKey](../../api/gantt/column#isprimarykey) set to **true** (e.g., on id), ensures reliable CRUD operations and task identification. Editing modes include cell editing for quick TreeGrid updates, dialog editing for comprehensive changes, taskbar dragging for duration or date adjustments, and connector line dragging for dependencies. Customize dialogs with templates or fields using [addDialogFields](../../api/gantt#adddialogfields) and [editDialogFields](../../api/gantt#editdialogfields). Methods like [addRecord](../../api/gantt#addrecord), [deleteRow](../../api/gantt#deleterow), and [updateRecordById](../../api/gantt#updaterecordbyid) support programmatic management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
+Managing tasks in the ##Platform_Name## Gantt Chart control enables dynamic project updates, such as inserting, deleting, or editing tasks and dependencies. Enable task management by setting [allowAdding](../../api/gantt/editSettings#allowadding), [allowDeleting](../../api/gantt/editSettings#allowdeleting), [allowEditing](../../api/gantt/editSettings#allowediting), and [allowTaskbarEditing](../../api/gantt/editSettings#allowtaskbarediting) properties to **true** with the `Edit` module injected.
+
+A primary key column, defined by [columns.isPrimaryKey](../../api/gantt/column#isprimarykey) set to **true** (typically on the id field), ensures reliable CRUD operations and task identification.
+
+Multiple editing modes are available including:
+- **Cell editing** for quick TreeGrid updates
+- **Dialog editing** for comprehensive changes
+- **Taskbar dragging** for duration or date adjustments
+- **Connector line dragging** for task dependencies
+
+Customize dialogs with templates or fields using [addDialogFields](../../api/gantt#adddialogfields) and [editDialogFields](../../api/gantt#editdialogfields) properties. Methods like [addRecord](../../api/gantt#addrecord), [deleteRecord](../../api/gantt#deleterecord), and [updateRecordByID](../../api/gantt#updaterecordbyid) support programmatic task management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,9 +85,9 @@ You can set default values when new task dialog opens using [actionBegin](../../
 
 ## Cell edit type and its params
 
-The [columns.editType](../../api/gantt/column#edittype) is used to define the edit type for any particular column. You can set the [columns.editType](../../api/gantt/column#edittype) based on data type of the column.
+The [columns.editType](../../api/gantt/column#edittype) is used to define the edit type for any particular column. You can set the [columns.editType](../../api/gantt/column#edittype) based on the data type of the column.
 
-Below is the combined content from the provided markdown sections in bullet points, as requested, ensuring clarity and conciseness while preserving the original information:
+The following cell edit types and components are available:
 
 - **Cell edit types and components**:
   - **numericedit**: Uses the [NumericTextBox](../../numerictextbox) control for editing integers, doubles, and decimals.
@@ -126,7 +136,7 @@ Below is the combined content from the provided markdown sections in bullet poin
 
 ## Prevent particular column and taskbar editing
 
-You can prevent editing for the particular column by setting [columns.allowEditing](../../api/gantt/column/#allowEditing) to **false**.
+You can prevent editing for the particular column by setting [columns.allowEditing](../../api/gantt/column#allowEditing) to **false**.
 
 To restrict taskbar editing, set `args.cancel` to **true** in the [actionBegin](../../gantt/events#actionbegin) event based on `taskbarEditAction`.
 
@@ -157,7 +167,7 @@ To restrict taskbar editing, set `args.cancel` to **true** in the [actionBegin](
 {% previewsample "page.domainurl/code-snippet/gantt/managingTasks-cs5" %}
 {% endif %}
 
-## Cell Edit Template
+## Cell edit template
 
 The cell edit template is used to create a custom control for a particular column by invoking the following functions:
 
@@ -397,7 +407,7 @@ The following table explains the taskbar state in dependency edit mode.
 
 ## Taskbar editing tooltip
 
-The taskbar editing tooltip can be customized using the [tooltipSettings.editing](../../api/gantt/tooltipSettings/#editing) property. The following code example shows how to customize the taskbar editing tooltip in Gantt.
+The taskbar editing tooltip can be customized using the [tooltipSettings.editing](../../api/gantt/tooltipSettings#editing) property. The following code example shows how to customize the taskbar editing tooltip in Gantt.
 
 {% if page.publishingplatform == "typescript" %}
 

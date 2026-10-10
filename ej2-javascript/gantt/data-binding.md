@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data Binding in ##Platform_Name## Gantt Chart Control
+# Data Binding from Local and Remote Sources in ##Platform_Name## Gantt Chart
 
-Data binding connects the ##Platform_Name## Gantt Chart control to project data sources, enabling dynamic visualization and management of project information. The control supports both local JavaScript arrays and remote server data through the [dataSource](../api/gantt#datasource) property, which accepts either a `DataManager` instance or JavaScript object array collection.
+Data binding connects the ##Platform_Name## Gantt Chart control to project data sources, enabling dynamic visualization and management of project information. The control supports both local ##Platform_Name## arrays and remote server data through the [dataSource](../api/gantt#datasource) property, which accepts either a `DataManager` instance or ##Platform_Name## object array collection.
 
 Understanding data binding implementation ensures the Gantt chart accurately represents and interacts with project data across different scenarios and data structures.
 
 ## Understanding data binding approaches
 
-The Gantt Chart control uses `DataManager` to support both RESTful JSON data services and local JavaScript object array binding. This flexibility allows you to choose the most appropriate data source method based on project requirements and data architecture.
+The Gantt Chart control uses `DataManager` to support both RESTful JSON data services and local ##Platform_Name## object array binding. This flexibility allows you to choose the most appropriate data source method based on project requirements and data architecture.
 
 **Local Data Binding**: Local data binding retrieves project information from the same application environment. This approach provides faster rendering and reduced network dependency, making it ideal for applications with static or cached project data.
 
@@ -30,7 +30,7 @@ The control supports two primary data structure types for organizing project hie
 
 ## Local data binding implementation
 
-Local data binding assigns JavaScript object arrays directly to the [dataSource](../api/gantt#datasource) property. The data source can be provided as a raw array or wrapped in a DataManager instance for consistent data operations.
+Local data binding assigns ##Platform_Name## object arrays directly to the [dataSource](../api/gantt#datasource) property. The data source can be provided as a raw array or wrapped in a DataManager instance for consistent data operations.
 
 ### Hierarchical data structure
 
@@ -70,6 +70,7 @@ This approach works well for data sources that maintain inherent parent-child re
 Self-referential data binding uses flat data structures where tasks reference their relationships through ID fields. Map unique task identifiers to the [id](../api/gantt/taskFields#id) field and parent identifiers to the [parentID](../api/gantt/taskFields#parentid) field to establish task hierarchies without nested objects.
 
 This approach enables the control to reconstruct hierarchical tree structures from relational data, making it ideal for database-driven applications where parent-child relationships are maintained through foreign key references.
+
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
@@ -193,7 +194,7 @@ Load-on-demand rendering displays child records dynamically when parent nodes ex
 
 **Core concept**: The `hasChildMapping` property maps data source field names that indicate whether records contain child elements. This enables the control to display expand icons and manage dynamic loading without pre-loading entire hierarchical structures.
 
-**Loading behavior**: When [loadChildOnDemand](../api/gantt/index-default#loadchildondemand) is enabled, root nodes render in collapsed state initially. Expanding root nodes triggers child data loading from remote servers, with subsequent expand/collapse actions using locally cached data for improved performance.
+**Loading behavior**: When [loadChildOnDemand](../api/gantt#loadchildondemand) is enabled, root nodes render in collapsed state initially. Expanding root nodes triggers child data loading from remote servers, with subsequent expand/collapse actions using locally cached data for improved performance.
 
 **Virtualization integration**: Combined `enableVirtualization` and `loadChildOnDemand` settings render only current viewport root nodes in collapsed state, further optimizing memory usage and rendering performance for large datasets.
 
@@ -544,7 +545,7 @@ public object GetTimeDifference(DateTime sdate, DateTime edate)
 
 ### Advanced server communication
 
-**Additional parameter transmission**: Pass extra parameters to server endpoints using the [addParams](../api/data/query#addparams) method of the [Query](../api/gantt/index-default#query) class. Server-side implementations inherit these parameters through DataManager class extensions, enabling custom data filtering and processing logic.
+**Additional parameter transmission**: Pass extra parameters to server endpoints using the [addParams](../api/data/query#addparams) method of the [Query](../api/gantt#query) class. Server-side implementations inherit these parameters through DataManager class extensions, enabling custom data filtering and processing logic.
 
 ```typescript
 import { Gantt, Edit, Toolbar } from "@syncfusion/ej2-gantt";
@@ -627,7 +628,7 @@ namespace URLAdaptor.Controllers
 }
 ```
 
-**HTTP error handling**: Server-side exceptions during data operations can be captured client-side through the [actionFailure](../api/gantt/index-default#actionfailure) event. This enables proper error messaging and graceful degradation when server communication fails.
+**HTTP error handling**: Server-side exceptions during data operations can be captured client-side through the [actionFailure](../api/gantt#actionfailure) event. This enables proper error messaging and graceful degradation when server communication fails.
 
 **Data validation considerations**:
 
@@ -662,9 +663,9 @@ namespace URLAdaptor.Controllers
 {% previewsample "page.domainurl/code-snippet/gantt/actionfailure-cs1" %}
 {% endif %}
 
-**Fetch API integration**: Use Gantt [dataSource](../api/gantt/index-default#datasource) property to bind data from external Fetch requests. This approach benefits scenarios requiring asynchronous server data retrieval, utilizing the `onSuccess` event for effective data loading management.
+**Fetch API integration**: Use Gantt [dataSource](../api/gantt#datasource) property to bind data from external Fetch requests. This approach benefits scenarios requiring asynchronous server data retrieval, utilizing the `onSuccess` event for effective data loading management.
 
-To show or hide the loading indicator during fetch, call [showSpinner](../api/gantt/index-default#showspinner) method before sending the request and [hideSpinner](../api/gantt/index-default#hidespinner) method after receiving the data.
+To show or hide the loading indicator during fetch, call [showSpinner](../api/gantt#showspinner) method before sending the request and [hideSpinner](../api/gantt#hidespinner) method after receiving the data.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -822,7 +823,7 @@ Control parent task expand status in the Gantt chart by defining the [expandStat
 
 ## Programmatically update datasource
 
-You can programmatically update the Gantt chart data source using the [updateDataSource](../api/gantt/index-default#updatedatasource) method which takes two arguments where the first argument is the new `dataSource` and the second argument is an optional configuration object with `projectStartDate` and `projectEndDate` to define the project timeline.
+You can programmatically update the Gantt chart data source using the [updateDataSource](../api/gantt#updatedatasource) method which takes two arguments where the first argument is the new `dataSource` and the second argument is an optional configuration object with `projectStartDate` and `projectEndDate` to define the project timeline.
 
 {% if page.publishingplatform == "typescript" %}
 

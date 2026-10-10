@@ -1,7 +1,7 @@
 ---
 layout: post
 title: File Attachments in ##Platform_Name## Chat UI | Syncfusion®
-description: Enable file attachments in the Syncfusion® ##Platform_Name## Chat UI: upload, preview, and remove files inside messages, with size and type limits.
+description: Enable file attachments in the Syncfusion® ##Platform_Name## Chat UI, with upload, preview, and remove files inside messages, with size and type limits.
 platform: ej2-javascript
 control: Chat UI 
 publishingplatform: ##Platform_Name##

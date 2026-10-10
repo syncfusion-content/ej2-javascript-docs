@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in ##Platform_Name## Inline AI Assist | Syncfusion®
-description: Style the Syncfusion® ##Platform_Name## Inline AI Assist: set popup width, height, z-index, and a custom cssClass for the inline component.
+description: Style the Syncfusion® ##Platform_Name## Inline AI Assist by setting popup width, height, z-index, and a custom cssClass.
 platform: ej2-javascript
 control: Inline AI Assist 
 publishingplatform: ##Platform_Name##

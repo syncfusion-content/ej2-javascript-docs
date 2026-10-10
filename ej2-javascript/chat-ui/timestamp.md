@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Time Stamp in ##Platform_Name## Chat UI | Syncfusion®
-description: Configure the Syncfusion® ##Platform_Name## Chat UI message timestamp: show or hide, and set the format (default dd/MM/yyyy hh:mm a).
+description: Configure the Syncfusion® ##Platform_Name## Chat UI message timestamp by show or hide, and set the format (default dd/MM/yyyy hh:mm a).
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##

@@ -1,4 +1,4 @@
-export var billingData = [
+var billingData = [
     { BillID: "BILL-1001", BillDate: new Date('2026-06-01T10:30:00'), Customer: "John Miller", Product: "Milk", Category: "Dairy", Quantity: 2, Price: 50, Total: 100, PaymentStatus: "Paid", Notes: "Regular purchase" },
     { BillID: "BILL-1002", BillDate: new Date('2026-06-01T11:00:00'), Customer: "Emma Wilson", Product: "Bread", Category: "Bakery", Quantity: 3, Price: 40, Total: 120, PaymentStatus: "Pending", Notes: "Bulk order" },
     { BillID: "BILL-1003", BillDate: new Date('2026-06-02T12:00:00'), Customer: "Liam Davis", Product: "Rice 5kg", Category: "Groceries", Quantity: 1, Price: 300, Total: 300, PaymentStatus: "Paid", Notes: "Monthly stock" },

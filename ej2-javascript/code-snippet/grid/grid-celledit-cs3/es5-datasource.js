@@ -1,4 +1,4 @@
-export var productDatas = [
+var productDatas = [
   {
     "ProductID": "PROD-001",
     "ProductCategory": "Electronics",

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header in ##Platform_Name## Chat UI | Syncfusion®
-description: Configure the Syncfusion® ##Platform_Name## Chat UI header: show or hide, header text, header icon CSS, and a customizable header toolbar.
+description: Configure the Syncfusion® ##Platform_Name## Chat UI header, including show or hide, header text, header icon CSS, and a customizable header toolbar.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -112,7 +112,7 @@ The Chat UI control allows you to add header toolbar items by using the `items` 
 
 Items can be constructed with the following built-in command types or item template.
 
-#### Adding icon CSS
+### Adding icon CSS
 
 You can customize the header toolbar icons by using the `iconCss` property.
 

@@ -44,8 +44,9 @@ Before proceeding, click the **+** icon in the tab bar and select **Shell** from
 
 ![Shell tab in Replit](./images/replit-shell-tab.png)
 
-{% tabs %}
-{% highlight bash tabtitle="Agent Skills" %}
+{% tabcontents %}
+
+{% tabcontent Agent Skills %}
 
 Use the pre-installed Syncfusion® Grid skills with the Replit Agent to generate the application code automatically.
 
@@ -88,8 +89,9 @@ Review the generated code by opening the Library panel on the right side. Click 
 Once the agent finishes generating the application code, the TypeScript Grid application will be automatically displayed in the preview pane.
 ![App in Replit](./images/replit-app.png)
 
-{% endhighlight %}
-{% highlight bash tabtitle="Vite CLI" %}
+{% endtabcontent %}
+
+{% tabcontent Vite CLI %}
 
 Create the TypeScript application manually using the Vite CLI and add the Syncfusion® Grid control step by step.
 
@@ -199,8 +201,9 @@ let grid: Grid = new Grid({
 grid.appendTo('#Grid');
 ```
 
-{% endhighlight %}
-{% endtabs %}
+{% endtabcontent %}
+
+{% endtabcontents %}
 
 For more information on obtaining and registering a license key, see [How to Register a Syncfusion® License Key](../../licensing/license-key-registration).
 

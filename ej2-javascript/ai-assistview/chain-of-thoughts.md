@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chain of Thoughts in ##Platform_Name## AI AssistView | Syncfusion®
-description: Render Chain of Thoughts in the Syncfusion® ##Platform_Name## AI AssistView: thinking blocks, reasoning stages, status indicators, and inline context badges.
+description: Render Chain of Thoughts in the Syncfusion® ##Platform_Name## AI AssistView, with thinking blocks, reasoning stages, status indicators, and inline context badges.
 platform: ej2-javascript
 control: AI AssistView
 publishingplatform: ##Platform_Name##

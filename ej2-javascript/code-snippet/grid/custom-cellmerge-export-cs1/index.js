@@ -1,11 +1,11 @@
-var data =  [{OrderID: 10248,CustomerID:"VINET",City:"Reims"},{OrderID: 10248,CustomerID:"CHOPS",City:"Münster"},
+var data =  [{OrderID: 10248,CustomerID:"VINET",City:"Reims"},{OrderID: 10249,CustomerID:"CHOPS",City:"Münster"},
 {OrderID: 10250,CustomerID:"TOMSP",City:"San Cristóbal"}, {OrderID: 10251,CustomerID:"RISCU",City:"Rio de Janeiro"},
-{OrderID: 10251,CustomerID:"HANAR",City:"Resende"}, {OrderID: 10251,CustomerID:"WELLI",City:"Lyon"},
-{OrderID: 10255,CustomerID:"SUPRD",City:"Genève"},{OrderID: 10256,CustomerID:"HILAA",City:"Charleroi"},
-{OrderID: 10257,CustomerID:"CENTC",City:"Bern"},{OrderID: 10257,CustomerID:"HANAR",City:"Rio de Janeiro"},
-{OrderID: 10259,CustomerID:"TOMSP",City:"Reims"}];
+{OrderID: 10252,CustomerID:"HANAR",City:"Resende"}, {OrderID: 10253,CustomerID:"WELLI",City:"Lyon"},
+{OrderID: 10254,CustomerID:"SUPRD",City:"Genève"},{OrderID: 10255,CustomerID:"HILAA",City:"Charleroi"},
+{OrderID: 10256,CustomerID:"CENTC",City:"Bern"},{OrderID: 10257,CustomerID:"HANAR",City:"Rio de Janeiro"},
+{OrderID: 10258,CustomerID:"TOMSP",City:"Reims"}];
 
-ej.grids.Grid.Inject(ej.grids.RowDD, ej.grids.Toolbar, ej.grids.Export, ej.grids.PdfExport,ej.grids.Page);
+ej.grids.Grid.Inject(ej.grids.RowDD, ej.grids.Toolbar, ej.grids.PdfExport,ej.grids.Page);
 // global variable declaration for pdf Export
 var currentCell;
 var currentOrderID = null;

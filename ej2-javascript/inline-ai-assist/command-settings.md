@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Commands in ##Platform_Name## Inline AI Assist | Syncfusion®
-description: Configure the Syncfusion® ##Platform_Name## Inline AI Assist command popup: add commands with prompts, icons, and labels, and customize popup width and height.
+description: Configure the Syncfusion® ##Platform_Name## Inline AI Assist command popup by add commands with prompts, icons, and labels, and customize popup width and height.
 platform: ej2-javascript
 control: Inline AI Assist 
 publishingplatform: ##Platform_Name##

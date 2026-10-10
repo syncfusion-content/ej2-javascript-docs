@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toolbar Items in ##Platform_Name## AI AssistView | Syncfusion®
-description: Customize Syncfusion® ##Platform_Name## AI AssistView toolbars: footer send/attachment items, position, custom buttons, header icons, and item click events.
+description: Customize Syncfusion® ##Platform_Name## AI AssistView toolbars with footer send/attachment items, position, custom buttons, header icons, and item click events.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##

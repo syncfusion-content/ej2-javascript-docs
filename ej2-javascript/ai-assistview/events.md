@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in ##Platform_Name## AI AssistView | Syncfusion®
-description: Handle Syncfusion® ##Platform_Name## AI AssistView events: created, promptRequest, promptChanged, and the before/after attachment upload and removal lifecycle.
+description: Handle Syncfusion® ##Platform_Name## AI AssistView events for created, promptRequest, promptChanged, and the before/after attachment upload and removal.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##

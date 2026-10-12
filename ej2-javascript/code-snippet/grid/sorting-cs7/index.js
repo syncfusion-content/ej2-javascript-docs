@@ -24,8 +24,8 @@ var grid = new ej.grids.Grid({
     columns: [
         { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 90, sortComparer: sortComparer },
         { field: 'CustomerID', headerText: 'Customer ID', width: 100,sortComparer: sortComparer },
-        { field: 'Freight', headerText: 'Freight', format: 'C2', textAlign: 'Right', width: 80, sortComparer: sortComparer },
-        { field: 'OrderDate', headerText: 'OrderDate', format: formatOptions, textAlign: 'Right', width: 120,sortComparer: sortComparer },
+        { field: 'Freight', headerText: 'Freight', type: 'string', format: 'C2', textAlign: 'Right', width: 80, sortComparer: sortComparer },
+        { field: 'OrderDate', headerText: 'OrderDate', type: 'date', format: formatOptions, textAlign: 'Right', width: 120,sortComparer: sortComparer },
     ],
     height: 315,
 });

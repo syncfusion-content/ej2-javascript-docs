@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## AI AssistView | Syncfusion®
-description: Accessibility in the Syncfusion® ##Platform_Name## AI AssistView: WCAG 2.2, Section 508, screen reader, RTL, keyboard navigation, and WAI-ARIA roles.
+description: Accessibility in the Syncfusion® ##Platform_Name## AI AssistView, including WCAG 2.2, Section 508, screen reader, RTL, keyboard navigation, and WAI-ARIA roles.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##

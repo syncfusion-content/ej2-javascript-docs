@@ -408,7 +408,7 @@ The Grid automatically updates row numbers when operations such as paging, sorti
 {% include code-snippet/grid/rownumber/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/rownumber/ts/index.html %}
+{% include code-snippet/grid/rownumber/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -421,7 +421,7 @@ The Grid automatically updates row numbers when operations such as paging, sorti
 {% include code-snippet/grid/rownumber/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/rownumber/js/index.html %}
+{% include code-snippet/grid/rownumber/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mention Integration in ##Platform_Name## Chat UI | Syncfusion®
-description: Add @mention support to the Syncfusion® ##Platform_Name## Chat UI: define mention users, customize the trigger character, and predefine mentions in messages.
+description: Add @mention support to the Syncfusion® ##Platform_Name## Chat UI by define mention users, customize the trigger character, and predefine mentions in messages.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##

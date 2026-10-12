@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Methods in ##Platform_Name## Chat UI | Syncfusion®
-description: Public methods on the Syncfusion® ##Platform_Name## Chat UI: addMessage to insert messages, updateMessage to edit, and scrollToBottom to control the view.
+description: Public methods on the Syncfusion® ##Platform_Name## Chat UI to addMessage to insert messages, updateMessage to edit, and scrollToBottom to control the view.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##

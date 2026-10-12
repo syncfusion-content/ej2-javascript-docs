@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Assist View in ##Platform_Name## AI AssistView | Syncfusion®
-description: Configure the Syncfusion® ##Platform_Name## AI AssistView: prompt text, placeholder, prompt-response collection, Markdown responses, and prompt suggestions.
+description: Configure the Syncfusion® ##Platform_Name## AI AssistView with prompt text, placeholder, prompt-response collection, Markdown responses, and prompt suggestions.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##

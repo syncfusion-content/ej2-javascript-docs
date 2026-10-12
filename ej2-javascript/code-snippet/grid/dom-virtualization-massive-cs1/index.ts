@@ -1,5 +1,5 @@
 import { Grid, Selection, DomVirtualization } from '@syncfusion/ej2-grids';
-import { generateTransactionData } from './datasource';
+import { generateTransactionData } from './datasource.ts';
 
 Grid.Inject(Selection, DomVirtualization);
 

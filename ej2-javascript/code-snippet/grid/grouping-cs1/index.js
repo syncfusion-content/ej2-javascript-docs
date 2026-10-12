@@ -1,4 +1,4 @@
-ej.grids.Grid.Inject(ej.grids.Group, ej.grids.Filter, ej.grids.Sort,ej.grids.Reorder,ej.grids.Resizing,
+ej.grids.Grid.Inject(ej.grids.Group, ej.grids.Filter, ej.grids.Sort,ej.grids.Reorder,ej.grids.Resize,
     ej.grids.Toolbar);
     var grid = new ej.grids.Grid({
     dataSource: data,

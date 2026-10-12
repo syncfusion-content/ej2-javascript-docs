@@ -7,7 +7,7 @@ let numberFormatOptions= {
 };
 let dateFormatOptions={
   // Custom format for date columns
-  type: 'Date',
+  type: 'date',
   format: "EEE, MMM d, ''yy",
 };
 

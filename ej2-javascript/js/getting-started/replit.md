@@ -202,17 +202,17 @@ var grid = new Grid({
 grid.appendTo('#Grid');
 ```
 
-{% endtabcontent %}
-
-{% endtabcontents %}
-
-For more information on obtaining and registering a license key, see [How to Register a Syncfusion® License Key](../../licensing/license-key-registration).
-
 ## Run the Application
 
 Once you have completed all the setup steps, click the **Run** button (▶) at the top of the Replit workspace. The JavaScript Grid application will be built and rendered in the preview pane.
 
 ![Syncfusion Grid rendered in Replit](./images/replit-grid-preview.png)
+
+{% endtabcontent %}
+
+{% endtabcontents %}
+
+For more information on obtaining and registering a license key, see [How to Register a Syncfusion® License Key](../../licensing/license-key-registration).
 
 ## Key features to explore
 

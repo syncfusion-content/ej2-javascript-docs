@@ -147,6 +147,8 @@ letter-spacing: 0.7px;
         <div><p class="controlcategory">FORMS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/form-validator/validation-rules">Form Validator</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/query-builder/es5-getting-started">Query Builder</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/form-builder/es5-getting-started">Form Builder</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/form-renderer/es5-getting-started">Form Renderer</a></div>
     </td>
     <td>
         <div><p class="controlcategory">DROPDOWNS</p></div>

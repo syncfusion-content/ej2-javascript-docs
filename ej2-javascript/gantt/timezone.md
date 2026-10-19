@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timezone in ##Platform_Name## Gantt Chart Control
+# Timezone with IANA Support in ##Platform_Name## Gantt Chart
 
-The ##Platform_Name## Gantt Chart control uses the system timezone by default for task scheduling and taskbar rendering, based on JavaScript's `new Date()` (e.g., Wed Dec 12 2018 05:23:27 GMT+0530 for IST). To support global teams or specific regions, the [timezone](../../api/gantt#timezone) property allows setting IANA timezones (e.g., "UTC", "Asia") to ensure consistent date display across users. This property function properly when the timeline displays hours. To enable this, set `timelineViewMode` to **'Hour'** or configure `topTier.unit` as **'Day'** and `bottomTier.unit` as **'Hour'**.
+The ##Platform_Name## Gantt Chart control uses the system timezone by default for task scheduling and taskbar rendering, based on ##Platform_Name##'s `new Date()` (e.g., Wed Dec 12 2018 05:23:27 GMT+0530 for IST). To support global teams or specific regions, the [timezone](../../api/gantt#timezone) property allows setting IANA timezones (e.g., "UTC", "Asia") to ensure consistent date display across users. This property function properly when the timeline displays hours. To enable this, set `timelineViewMode` to **'Hour'** or configure `topTier.unit` as **'Day'** and `bottomTier.unit` as **'Hour'**.
 
 The `Timezone` class from `@syncfusion/ej2-base` provides methods (`offset`, `convert`, `remove`) to manipulate task dates, integrating with `taskFields.startDate` and `taskFields.endDate`. CRUD operations adjust dates via events like [actionBegin](../../gantt/events#actionbegin) and [actionComplete](../../gantt/events#actioncomplete).
 
@@ -230,6 +230,7 @@ The following example handles CRUD with timezone:
 The **Timezone** class from `@syncfusion/ej2-base` provides methods to manipulate task dates for display or storage in Gantt.
 
 ### offset
+
 Calculates the difference (in minutes) between a UTC date and a specified timezone.
 
 | Parameter | Type   | Description                          |
@@ -264,6 +265,7 @@ Calculates the difference (in minutes) between a UTC date and a specified timezo
 {% endif %}
 
 ### convert
+
 Converts a date from one timezone to another.
 
 | Parameter  | Type          | Description                                            |
@@ -303,6 +305,7 @@ Converts a date from one timezone to another.
 {% endif %}
 
 ### remove
+
 Removes the timezone offset, returning a UTC-equivalent date.
 
 | Parameter | Type   | Description                          |
@@ -337,6 +340,7 @@ Removes the timezone offset, returning a UTC-equivalent date.
 {% endif %}
 
 ## See also
+
 - [How to configure task dependencies?](../../gantt/task-dependency)
 - [How to customize taskbars?](../../gantt/taskbar)
 - [How to configure task constraints?](../../gantt/task-constraints)

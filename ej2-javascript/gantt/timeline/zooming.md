@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Zooming Functionality in ##Platform_Name## Gantt Chart Control
+# Adjusting Zoom Levels and Timeline Scaling in ##Platform_Name## Gantt Chart
 
 The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control provides zooming support to adjust the timeline view dynamically. This includes increasing or decreasing the width of timeline cells and changing the timeline units to view tasks across various timespan from minutes to decades.
 
@@ -89,9 +89,9 @@ Zoom actions are governed by predefined zooming levels specified in the [zooming
 
 Zooming actions can be triggered dynamically or through external controls using the following methods:
 
-* **Zoom In** - Use [zoomIn](../../api/gantt#zoomin) when `ZoomIn` external button was clicked, the timeline cell width is increased when the cell size exceeds the specified range and the timeline unit is changed based on the current zoom levels.
-* **Zoom Out** - Use [zoomOut](../../api/gantt#zoomout) when the `ZoomOut` external button was clicked, the timeline cell width is decreased when the cell size falls behind the specified range and the timeline view mode is changed based on the current zooming levels.
-* **Zoom To Fit** - Use [fitToProject](../../api/gantt#fittoproject) When `ZoomToFit` external button was clicked then all the tasks are rendered within the available chart container width.
+- **Zoom In** - Use [zoomIn](../../api/gantt#zoomin) when `ZoomIn` external button was clicked, the timeline cell width is increased when the cell size exceeds the specified range and the timeline unit is changed based on the current zoom levels.
+- **Zoom Out** - Use [zoomOut](../../api/gantt#zoomout) when the `ZoomOut` external button was clicked, the timeline cell width is decreased when the cell size falls behind the specified range and the timeline view mode is changed based on the current zooming levels.
+- **Zoom To Fit** - Use [fitToProject](../../api/gantt#fittoproject) When `ZoomToFit` external button was clicked then all the tasks are rendered within the available chart container width.
 
 {% if page.publishingplatform == "typescript" %}
 

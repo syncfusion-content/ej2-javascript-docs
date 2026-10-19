@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Deleting tasks in ##Platform_Name## Gantt control
+# Deleting Tasks from the Project in ##Platform_Name## Gantt Chart
 
-A task delete option in the Gantt control can be enabled by enabling the [ediSettings.allowDeleting](../../api/gantt/editSettings#allowdeleting) property. Tasks can be deleted by clicking the delete toolbar item or using the `deleteRow` method. You can call this method dynamically on any custom actions like button click. The following code example shows how to enable the delete option in the Gantt control.
+A task delete option in the Gantt control can be enabled by enabling the [editSettings.allowDeleting](../../api/gantt/editSettings#allowdeleting) property. Tasks can be deleted by clicking the delete toolbar item or using the `deleteRow` method. You can call this method dynamically on any custom actions like button click. The following code example shows how to enable the delete option in the Gantt control.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Context Menu in ##Platform_Name## Gantt Chart Control
+# Context Menu Customization in ##Platform_Name## Gantt Chart
 
 The context menu in the Syncfusion ##Platform_Name## Gantt Chart control provides right-click access to task and column operations, improving efficiency with contextual task actions. Menu items adapt based on the clicked element, such as task rows, column headers, or chart areas.
 

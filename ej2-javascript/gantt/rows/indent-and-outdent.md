@@ -9,14 +9,14 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Indent and outdent in ##Platform_Name## Gantt Chart Control
+# Indenting and Outdenting Rows for Hierarchy in ##Platform_Name## Gantt Chart
 
 The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control provides built-in support for indenting and outdenting rows, allowing hierarchy levels to be adjusted within the Gantt chart.
 
- * **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
- * **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.
+- **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
+- **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.
 
-To enable indent and outdent functionality, set [editSettings.allowEditing](../api/gantt/editSettings#allowediting) to **true**, inject `Edit` and `Selection` module of the control, and use either the **built-in context menu** or [toolbaritems](../api/gantt/toolbarItem) to perform indent and outdent actions.
+To enable indent and outdent functionality, set [editSettings.allowEditing](../api/gantt/editSettings#allowediting) to **true**, inject `Edit` and `Selection` module of the control, and use either the **built-in context menu** or [ToolbarItem](../api/gantt/toolbarItem) to perform indent and outdent actions.
 
 The following sample demonstrates how to enable indent and outdent functionalities in the Gantt using the [toolbar](../api/gantt#toolbar) property.
 
@@ -80,7 +80,7 @@ The following sample demonstrates how to programmatically select row index **2**
 {% previewsample "page.domainurl/code-snippet/gantt/indent-outdent-externally" %}
 {% endif %}
 
-## Retrieve Indent and outdent details
+## Retrieve indent and outdent details
 
 You can retrieve indent and outdent details using the [actionComplete](../api/gantt#actioncomplete) event, where the `args.requestType` value will be either **indented** or **outdented**, indicating the type of action performed.
 
@@ -111,6 +111,6 @@ You can retrieve indent and outdent details using the [actionComplete](../api/ga
 {% previewsample "page.domainurl/code-snippet/gantt/indent-outdent-events" %}
 {% endif %}
 
-## Limitation 
+## Limitation
 
-* The indent and outdent feature does not support selecting and modifying multiple rows simultaneously.
+- The indent and outdent feature does not support selecting and modifying multiple rows simultaneously.

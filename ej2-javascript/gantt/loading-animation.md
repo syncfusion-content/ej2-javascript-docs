@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Loading animation in ##Platform_Name## Gantt control
+# Loading Indicators with Spinner and Shimmer in ##Platform_Name## Gantt Chart
 
 The loading indicator is used to display a visual indicator while the Gantt is fetching data or performing certain actions, such as sorting or filtering. The gantt support two indicator types, which is achieved by setting the [loadingIndicator.indicatorType](../api/gantt#loadingindicator) property to Shimmer or Spinner. The default value of the indicator type is "Spinner."
 

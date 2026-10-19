@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tree Column in ##Platform_Name## Gantt Chart Control
+# Tree Column with Expand and Collapse in ##Platform_Name## Gantt Chart
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control provides a structured way to display parent-child relationships using expand/collapse icons.  
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control provides a structured way to display parent-child relationships using expand/collapse icons.
 
 To configure this, set the [treeColumnIndex](../../api/gantt#treecolumnindex) property to the index of the column where these icons should appear. This enables clear visualization and navigation of hierarchical tasks within the Gantt chart.
 
@@ -33,7 +33,7 @@ gantt.appendTo('#Gantt');
 
 ## Customize expand and collapse icons
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control provides support for customizing default expand/collapse icons through CSS. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control provides support for customizing default expand/collapse icons through CSS.
 
 To apply custom icons, override the default styles with the following CSS:
 
@@ -73,9 +73,9 @@ To apply custom icons, override the default styles with the following CSS:
 {% previewsample "page.domainurl/code-snippet/gantt/tree-column-cs1" %}
 {% endif %}
 
-## Customize indentation of tree column text 
+## Customize indentation of tree column text
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control allows customization of the indent space in tree column cells using the [queryCellInfo](../../gantt/events#querycellinfo) event.  
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control allows customization of the indent space in tree column cells using the [queryCellInfo](../../gantt/events#querycellinfo) event.
 
 In the following demonstration, indentation is applied by dynamically adding a CSS class to the tree column cell of **TaskName** using the `queryCellInfo` event.
 
@@ -169,11 +169,11 @@ You can retain the expanded or collapsed state of parent rows during initial ren
 {% endif %}
 
 ## Persist expand/collapse state across page refresh using localStorage
- 
+
 To retain the expanded and collapsed state of rows after a page refresh in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control:
 
 1. Use the [collapsed](../../api/gantt#collapsed) event to store the collapsed row's primary key in `localStorage` via [setItem](https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem).
-2. On page reload, retrieve the stored keys in the [dataBound](../../api/gantt/index-default#databound) event using [getItem](https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem).
+2. On page reload, retrieve the stored keys in the [dataBound](../../api/gantt#databound) event using [getItem](https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem).
 3. Collapse the corresponding rows using `CollapseByKey` or `collapseRow` methods by passing the saved key or row details.
 
 This approach ensures that row states are preserved across browser sessions, enhancing user experience and continuity.
@@ -207,53 +207,53 @@ In the following demo, the steps mentioned above are used to persist the expande
 {% previewsample "page.domainurl/code-snippet/gantt/tree-column-cs5" %}
 {% endif %}
 
-## Programmatically expand or collapse rows   
+## Programmatically expand or collapse rows
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control provides built-in methods to programmatically control row expansion and collapse:
 
-* **[expandAll()](../../api/gantt#expandall)**: Expands all rows. 
+- **[expandAll()](../../api/gantt#expandall)**: Expands all rows.
 
 ```ts
 gantt.expandAll();
 ```
 
-* **[collapseAll()](../../api/gantt#collapseall)**: Collapses all rows.
+- **[collapseAll()](../../api/gantt#collapseall)**: Collapses all rows.
 
 ```ts
 gantt.collapseAll();
 ```
 
-* `expandAtLevel(level)`: Expands rows at a specific level. 
+- `expandAtLevel(level)`: Expands rows at a specific level.
 
 ```ts
 gantt.treegrid.expandAtLevel(0);
 ```
 
-* `collapseAtLevel(level)`: Collapses rows at a specific level. 
+- `collapseAtLevel(level)`: Collapses rows at a specific level.
 
 ```ts
 gantt.treegrid.collapseAtLevel(0);
 ```
 
-* `expandByKey(key)`: Expands a row by primary key. 
+- `expandByKey(key)`: Expands a row by primary key.
 
 ```ts
 gantt.treegrid.expandByKey(1); //Here pass the primary key value.
 ```
 
-* `collapseByKey(key)`: Collapses a row by primary key. 
+- `collapseByKey(key)`: Collapses a row by primary key.
 
 ```ts
 gantt.treegrid.collapseByKey(1); //Here pass the primary key value.
 ```
 
-* `expandRow(rowElement)`: Expands a row using its DOM element.  
+- `expandRow(rowElement)`: Expands a row using its DOM element.
 
 ```ts
 gantt.treegrid.expandRow(tr); //Here pass the row element as parameter.
 ```
 
-* `collapseRow(rowElement)`: Collapses a row using its DOM element.
+- `collapseRow(rowElement)`: Collapses a row using its DOM element.
 
 ```ts
 gantt.treegrid.collapseRow(tr); //Here pass the row element as parameter.
@@ -288,7 +288,7 @@ gantt.treegrid.collapseRow(tr); //Here pass the row element as parameter.
 
 ## Retrieve expanded records
 
-To retrieve the currently expanded rows in the Gantt Chart control, use the [getExpandedRecords](../../api/gantt#getexpandedrecords) method. 
+To retrieve the currently expanded rows in the Gantt Chart control, use the [getExpandedRecords](../../api/gantt#getexpandedrecords) method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -319,13 +319,13 @@ To retrieve the currently expanded rows in the Gantt Chart control, use the [get
 
 ## Customize expand/collapse behavior using events
 
-You can customize expand and collapse behavior in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control using the [expanding](../../gantt/events#expanding), [expanded](../../gantt/events#expanded), [collapsing](../../api/gantt#collapsing), and [collapsed](../../api/gantt#collapsed) events.  These events allow you to control and respond to row state changes programmatically based on your application logic.
+You can customize expand and collapse behavior in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control using the [expanding](../../gantt/events#expanding), [expanded](../../gantt/events#expanded), [collapsing](../../api/gantt#collapsing), and [collapsed](../../api/gantt#collapsed) events. These events allow you to control and respond to row state changes programmatically based on your application logic.
 
 The following sample demonstrates how to customize expand and collapse actions in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control:
 
-- Expanding is canceled for the row where **TaskID** is 1.  
-- Collapsing is canceled for the row where **TaskID** is 5.  
-- When a row is expanded and its **Progress** is greater than 50, a green background is applied.  
+- Expanding is canceled for the row where **TaskID** is 1.
+- Collapsing is canceled for the row where **TaskID** is 5.
+- When a row is expanded and its **Progress** is greater than 50, a green background is applied.
 - When a row is collapsed and its **Progress** is less than 50, a red background is applied.
 
 {% if page.publishingplatform == "typescript" %}

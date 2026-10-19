@@ -9,13 +9,14 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Task Constraints in ##Platform_Name## Gantt Chart Control
+# Task Constraints with Scheduling Rules in ##Platform_Name## Gantt Chart
 
 Task constraints in the [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control define scheduling rules that control when tasks start or finish, ensuring logical sequences, fixed deadlines, and optimized resource allocation. Constraints affect taskbar positioning, dependency scheduling, and critical path calculations, making schedules realistic by accounting for limitations like material delays or compliance dates. They integrate with `taskMode` (e.g., **Auto** for automatic scheduling, **Manual** for fixed dates).
 
 ## Benefits of task constraints
 
 Task constraints enhance project planning with the following advantages:
+
 - Enforce logical task sequences, ensuring dependencies are respected (e.g., taskbars align with predecessors).
 - Anchor tasks to fixed milestone dates, such as product launches or audits.
 - Prevent resource conflicts by spacing tasks that share teams or equipment.
@@ -27,16 +28,16 @@ Task constraints enhance project planning with the following advantages:
 
 The [constraintType](../api/gantt/taskFieldsModel#constrainttype) property accepts one of eight numeric values from the [ConstraintType](../api/gantt/constraintType) enum, each defining a specific scheduling rule. These can be specified using the corresponding numeric value (e.g., 0). The enum values are typically set in the `taskFields.constraintType` mapping or directly in the data source. Below is a table summarizing the constraint types, their descriptions, example use cases, and their corresponding numeric enum values:
 
-| Constraint Type | Numeric Enum Value | Description | Example Use Case |
-|-----------------|--------------------|-------------|------------------|
-| As Soon As Possible (ASAP) | 0 | Starts the task as soon as dependencies are met. Default for auto-scheduled tasks. | Begin coding once requirements are finalized. |
-| As Late As Possible (ALAP) | 1 | Delays the task until the latest possible start without delaying successors. | Finalize documentation just before release. |
-| Must Start On (MSO) | 2 | Requires the task to start on a specific date. | Start integration on July 1 per contract. |
-| Must Finish On (MFO) | 3 | Requires the task to finish on a specific date. | Submit reports by March 31 for compliance. |
-| Start No Earlier Than (SNET) | 4 | Prevents the task from starting before a date. | Delay marketing until regulatory approval on August 15. |
-| Start No Later Than (SNLT) | 5 | Requires the task to start on or before a date. | Begin reviews by September 1 for reporting. |
-| Finish No Earlier Than (FNET) | 6 | Prevents the task from finishing before a date. | Delay training completion until onboarding finishes. |
-| Finish No Later Than (FNLT) | 7 | Requires the task to finish on or before a date. | Complete QA by July 25 for release. |
+| Constraint Type               | Numeric Enum Value | Description                                                                        | Example Use Case                                        |
+| ----------------------------- | ------------------ | ---------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| As Soon As Possible (ASAP)    | 0                  | Starts the task as soon as dependencies are met. Default for auto-scheduled tasks. | Begin coding once requirements are finalized.           |
+| As Late As Possible (ALAP)    | 1                  | Delays the task until the latest possible start without delaying successors.       | Finalize documentation just before release.             |
+| Must Start On (MSO)           | 2                  | Requires the task to start on a specific date.                                     | Start integration on July 1 per contract.               |
+| Must Finish On (MFO)          | 3                  | Requires the task to finish on a specific date.                                    | Submit reports by March 31 for compliance.              |
+| Start No Earlier Than (SNET)  | 4                  | Prevents the task from starting before a date.                                     | Delay marketing until regulatory approval on August 15. |
+| Start No Later Than (SNLT)    | 5                  | Requires the task to start on or before a date.                                    | Begin reviews by September 1 for reporting.             |
+| Finish No Earlier Than (FNET) | 6                  | Prevents the task from finishing before a date.                                    | Delay training completion until onboarding finishes.    |
+| Finish No Later Than (FNLT)   | 7                  | Requires the task to finish on or before a date.                                   | Complete QA by July 25 for release.                     |
 
 ## Configure task constraints
 
@@ -45,6 +46,7 @@ Configure task constraints using the [taskFields.constraintType](../api/gantt/ta
 **Define taskFields mappings**
 
 Map the following fields in `taskFields`:
+
 - `id`: Task identifier.
 - `name`: Task name.
 - `startDate`: Task start date.
@@ -152,6 +154,7 @@ The following example disables the **MustStartOn** violation popup:
 {% endif %}
 
 ## See also
-- [How to configure task dependencies?](./task-dependency)
-- [How to customize taskbars?](./taskbar)
-- [How to enable baseline rendering?](./baseline)
+
+- [How to configure task dependencies?](../gantt/task-dependency)
+- [How to customize taskbars?](../gantt/taskbar)
+- [How to enable baseline rendering?](../gantt/baseline)

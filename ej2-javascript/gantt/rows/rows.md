@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Rows in ##Platform_Name## Gantt Chart Control
+# Row Structure and Interactions in ##Platform_Name## Gantt Chart
 
 Each row typically represents a single record or item from a data source. Rows in a Gantt Chart are used to present data in both tabular and timeline chart formats. Each row displays a set of values representing the fields of an individual data record. Rows allow you to interact with the data in the Gantt Chart. You can select rows, edit cell values, perform taskbar editing in the chart side of the Gantt Chart, perform sorting or filtering operations, and trigger events based on actions.
 
-## Customize row styles 
+## Customize row styles
 
 Customizing row styles in the ##Platform_Name## Gantt Chart allows you to modify the appearance of rows to meet design requirements, such as highlighting specific rows or adjusting font styles, background colors, and other visual properties. This can be achieved using CSS, built-in properties, methods, or event support provided by the control, offering flexibility for both static and dynamic styling.
 
@@ -50,7 +50,7 @@ The following example demonstrates how to customize row styles based on the valu
 {% previewsample "page.domainurl/code-snippet/gantt/rows-cs13" %}
 {% endif %}
 
->* The [queryCellInfo](../api/gantt#querycellinfo) event can also be used to customize grid cells and is triggered for every cell in the grid part of the gantt chart. It can be useful when you need to customize cells based on certain conditions or criteria. 
+> - The [queryCellInfo](../api/gantt#querycellinfo) event can also be used to customize grid cells and is triggered for every cell in the grid part of the gantt chart. It can be useful when you need to customize cells based on certain conditions or criteria.
 
 ### Using CSS
 
@@ -104,7 +104,7 @@ To create a visual separation between consecutive rows, you can style alternate 
 {% previewsample "page.domainurl/code-snippet/gantt/alt-rows-cs1" %}
 {% endif %}
 
-### Using method 
+### Using method
 
 The ##Platform_Name## Gantt Chart control provides methods to customize the appearance of rows in both the grid and chart sections. These methods are accessible through the `treeGrid` object and the Gantt instance.
 
@@ -181,7 +181,7 @@ You can customize the styling of parent and child rows in the ##Platform_Name## 
 {% previewsample "page.domainurl/code-snippet/gantt/row-style" %}
 {% endif %}
 
-## Auto focus taskbar on row click 
+## Auto focus taskbar on row click
 
 You can enable automatic scrolling to the corresponding taskbar in the timeline when a row is clicked in the ##Platform_Name## Gantt Chart by using the [auto focus tasks](../api/gantt#autofocustasks) property. This feature ensures that the selected task is brought into view within the timeline area, improving navigation and focus during interaction.
 
@@ -243,10 +243,10 @@ You can customize row height in the ##Platform_Name## Gantt Chart by setting the
 {% previewsample "page.domainurl/code-snippet/gantt/rows-cs3" %}
 {% endif %}
 
->* The `rowHeight` property can only be used to set the height of the entire gantt row. It cannot be used to set the height of individual cells within a row.
->* The `rowHeight` property applies the height to all rows in the gantt chart, including the header rows.
+> - The `rowHeight` property can only be used to set the height of the entire gantt row. It cannot be used to set the height of individual cells within a row.
+> - The `rowHeight` property applies the height to all rows in the gantt chart, including the header rows.
 
-### Customize row height for particular row 
+### Customize row height for particular row
 
 You can customize the height of a specific row in the ##Platform_Name## Gantt Chart using the [rowDataBound](../api/gantt#rowdatabound) event. Within this event, conditionally apply a height value to the [rowHeight](../api/gantt#rowheight) property for rows based on their data.
 
@@ -279,8 +279,8 @@ In the example below, the row height is set to **90px** for the row where **Task
 {% previewsample "page.domainurl/code-snippet/gantt/row-customize" %}
 {% endif %}
 
->* In virtual scrolling mode, it is not applicable to set different row heights.
->* You can customize the row height of multiple rows by checking the relevant criteria in the [dataBound](../api/gantt#databound) event and setting the `rowHeight` property accordingly.
+> - In virtual scrolling mode, it is not applicable to set different row heights.
+> - You can customize the row height of multiple rows by checking the relevant criteria in the [dataBound](../api/gantt#databound) event and setting the `rowHeight` property accordingly.
 
 ## Row hover with custom action or items
 
@@ -319,17 +319,17 @@ The following demonstrates how to implement a custom action using the `dataBound
 
 The ##Platform_Name## Gantt Chart allows adding a new row programmatically using the [addRecord](../api/gantt#addrecord) method. This is useful when you want to insert a record without manually entering data. The method accepts three parameters:
 
-- A **data object** representing the new row  
-- A **newRowPosition**, which controls where the row is inserted based on the `newRowPosition` property.  
-- An **index** to specify the insertion position; if not provided, the new row will be added at the top of the Gantt Chart by default.  
+- A **data object** representing the new row
+- A **newRowPosition**, which controls where the row is inserted based on the `newRowPosition` property.
+- An **index** to specify the insertion position; if not provided, the new row will be added at the top of the Gantt Chart by default.
 
 Supported `newRowPosition` values:
 
-  - **Top**: Adds the row at the beginning of the chart.
-  - **Bottom**: Adds the row at the end of the chart.
-  - **Above**: Inserts the row above a specified target row.
-  - **Below**: Inserts the row below a specified target row.
-  - **Child**: Adds the row as a child under a specified parent row, enabling hierarchical structure.
+- **Top**: Adds the row at the beginning of the chart.
+- **Bottom**: Adds the row at the end of the chart.
+- **Above**: Inserts the row above a specified target row.
+- **Below**: Inserts the row below a specified target row.
+- **Child**: Adds the row as a child under a specified parent row, enabling hierarchical structure.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -358,8 +358,8 @@ Supported `newRowPosition` values:
 {% previewsample "page.domainurl/code-snippet/gantt/row-addition" %}
 {% endif %}
 
->* If you want to add a new record to the beginning of the data source, you can pass **0** as the third parameter to the [addRecord](../api/gantt#addrecord) method.
->* If you do not specify an index, the new row will be added at the top of the gantt.
+> - If you want to add a new record to the beginning of the data source, you can pass **0** as the third parameter to the [addRecord](../api/gantt#addrecord) method.
+> - If you do not specify an index, the new row will be added at the top of the gantt.
 
 ## Show or hide a row using an external actions
 

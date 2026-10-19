@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resource Multi Taskbar in ##Platform_Name## Gantt Chart Control
+# Multi Taskbar with Resource View in ##Platform_Name## Gantt Chart
 
 The resource multi taskbar feature in the ##Platform_Name## Gantt Chart control visualizes multiple tasks assigned to a single resource in one row when collapsed in resource view, enabled by setting [enableMultiTaskbar](../api/gantt#enablemultitaskbar) to **true** and `viewType` to **ResourceView**. This displays workloads, such as concurrent tasks assigned to a resource, like coding activities, in a compact timeline, highlighting overallocation or scheduling conflicts. Taskbars maintain individual properties (e.g., duration, progress) and support editing in collapsed rows, with expand/collapse controlled via grid-side arrows for visual consistency. The feature requires valid [resourceInfo](../api/gantt/taskFields#resourceinfo) mappings in `taskFields` to associate tasks with resources. Taskbars include ARIA labels for accessibility and adapt to responsive designs, though narrow screens may clip labels for short tasks. By default, `enableMultiTaskbar` is **false**, requiring explicit activation.
 

@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Excel Export in ##Platform_Name## Gantt Chart Control
+# Exporting Data to Excel in ##Platform_Name## Gantt Chart
 
 The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.
 
@@ -203,7 +203,7 @@ To export multiple datasets into a single worksheet, set [multipleExport.type](.
 {% previewsample "page.domainurl/code-snippet/gantt/excel-multiple-export-cs1" %}
 {% endif %}
 
->By default, `multipleExport.blankRows` value is 5.
+> By default, `multipleExport.blankRows` value is 5.
 
 ### New sheet
 
@@ -266,3 +266,7 @@ To export Gantt data as a Blob object for advanced processing or custom download
 
 {% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs12" %}
 {% endif %}
+
+## Limitations
+
+CSV export preserves task data in a simple and widely compatible format. Since CSV files are designed for data representation rather than visual layout, Gantt Chart specific hierarchy indentation and structural formatting are not retained in the exported file.

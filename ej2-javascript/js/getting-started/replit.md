@@ -25,14 +25,15 @@ Before getting started, ensure the following:
 
 ## Create a project in Replit
 
-1. Sign in to [Replit](https://replit.com/).
-2. Click **New** and select **Empty project**.
+1.Sign in to [Replit](https://replit.com/).
+
+2.Click **New** and select **Empty project**.
 
 Replit creates an empty project with a default generated name.
 
 ![Empty Project in Replit](./images/replit-empty-project.png)
 
-3. To rename the project, click the project name dropdown located at the top of the Replit workspace, select **Edit project details**, and enter a name such as `grid-app`.
+3.To rename the project, click the project name dropdown located at the top of the Replit workspace, select **Edit project details**, and enter a name such as `grid-app`.
 
 ![Edit project details in Replit](./images/replit-edit-project.png)
 
@@ -98,31 +99,31 @@ Create the JavaScript application manually using the Vite CLI and add the Syncfu
 
 ## Create a JavaScript project
 
-1. In the Shell tab, run the following command to create a Vite JavaScript project:
+1.In the Shell tab, run the following command to create a Vite JavaScript project:
 
 ```bash
 npm create vite@latest . -- --template vanilla
 ```
 
-2. Install the project dependencies:
+2.Install the project dependencies:
 
 ```bash
 npm install
 ```
 
-3. Install the Syncfusion® Grid package and the Fluent2 theme:
+3.Install the Syncfusion® Grid package and the Fluent2 theme:
 
 ```bash
 npm install @syncfusion/ej2-grids @syncfusion/ej2-fluent2-theme
 ```
 
-4. Open the `src/style.css` file and add the following import statement:
+4.Open the `src/style.css` file and add the following import statement:
 
 ```css
 @import "@syncfusion/ej2-fluent2-theme/styles/fluent2.css";
 ```
 
-5. Open the `index.html` file and add the Grid container element:
+5.Open the `index.html` file and add the Grid container element:
 
 ```html
 <!DOCTYPE html>
@@ -143,7 +144,7 @@ npm install @syncfusion/ej2-grids @syncfusion/ej2-fluent2-theme
 </html>
 ```
 
-6. Open the `src/main.js` file and replace its contents with:
+6.Open the `src/main.js` file and replace its contents with:
 
 ```javascript
 import { registerLicense } from '@syncfusion/ej2-base';

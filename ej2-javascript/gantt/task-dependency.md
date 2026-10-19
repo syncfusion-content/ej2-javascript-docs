@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Task Dependency in ##Platform_Name## Gantt Chart Control
+# Managing Task Dependencies in ##Platform_Name## Gantt Chart
 
 Task dependency in the [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control establishes relationships between tasks, affecting scheduling where changes to predecessors impact successors. Dependencies are categorized into four types—Start to Start (SS), Start to Finish (SF), Finish to Start (FS), and Finish to Finish (FF)—mapped via the [taskFields.dependency](../api/gantt/taskFields#dependency) property in the data source. Parent dependencies are enabled by default with [allowParentDependency](../api/gantt#allowparentdependency) set to **true**, allowing relationships between parent-parent, child-child, parent-child, and child-parent tasks. Offsets support day, hour, or minute units for precise timing, and validation modes handle conflicts during editing via the [actionBegin](../api/gantt#actionbegin) event. Connector lines are customized using [connectorLineWidth](../api/gantt#connectorlinewidth) and [connectorLineBackground](../api/gantt#connectorlinebackground), with the `queryTaskbarInfo` event enabling dynamic styling. Public methods like [addPredecessor](../api/gantt#addpredecessor) and [removePredecessor](../api/gantt#removepredecessor) allow programmatic management, ensuring accurate visualization with ARIA labels for accessibility and responsive scaling for mobile views.
 
@@ -35,7 +35,7 @@ The following example establishes dependencies. This code renders connector line
 {% include code-snippet/gantt/task-dependency/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/task-dependency" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -52,24 +52,31 @@ The following example establishes dependencies. This code renders connector line
 {% previewsample "page.domainurl/code-snippet/gantt/task-dependency" %}
 {% endif %}
 
+> - Dependencies between tasks under the same parent are not supported.
+> - Dependencies between tasks in different parent groups are supported when the `allowParentDependency` property is enabled.
+> - The format of the dependency string depends on the data type of the [id](../api/gantt/taskfields#id) field mapped in the data source:
+>   - If the `id` field is an **integer**, the compact format (for example, `3FS`) can be used without a space between the `id` and the dependency type.
+>   - If the `id` field is a **string** or **GUID**, the format `[id] [PredecessorType]` is mandatory, with a single space between the `id` and the predecessor type (for example, `TASK-001 FS`). The Gantt Chart parses the two parts based on this space, so the space is required to correctly identify the predecessor type.
+
 ## Understand task relationship types
 
 Task relationships are categorized into four types based on start and finish dates:
+
 - Start to Start (SS): Successor starts with predecessor.
 
-    ![Start to Start dependency](./images/ss.png)
+  ![Start to Start dependency](./images/ss.png)
 
 - Start to Finish (SF): Successor finishes when predecessor starts.
 
-    ![Start to Finish dependency](./images/sf.png)
+  ![Start to Finish dependency](./images/sf.png)
 
 - Finish to Start (FS): Successor starts after predecessor finishes (default).
 
-    ![Finish to Start dependency](./images/fs.png)
+  ![Finish to Start dependency](./images/fs.png)
 
 - Finish to Finish (FF): Successor finishes with predecessor.
 
-    ![Finish to Finish dependency](./images/ff.png)
+  ![Finish to Finish dependency](./images/ff.png)
 
 Specify types in the data source (e.g., '2SS+1h') for hour-based offsets.
 
@@ -89,7 +96,7 @@ The following example uses duration units. This code applies offsets such as '2F
 {% include code-snippet/gantt/predecessor-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -124,7 +131,7 @@ The [autoUpdatePredecessorOffset](../api/gantt#autoupdatepredecessoroffset) prop
 {% include code-snippet/gantt/predecessor-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs7" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -157,7 +164,7 @@ The following example disables automatic updates. This code preserves dependency
 {% include code-snippet/gantt/predecessor-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -194,7 +201,7 @@ The following example enables `respectLink` mode. This code reverts edits violat
 {% include code-snippet/gantt/predecessor-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -227,7 +234,7 @@ The following example enables the validation dialog. This code displays options 
 {% include code-snippet/gantt/predecessor-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -295,7 +302,7 @@ You can manage task dependencies by adding, updating, or removing predecessor li
 {% include code-snippet/gantt/predecessor-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -328,7 +335,7 @@ The following example sets the connector line background color as red:
 {% include code-snippet/gantt/connector-line/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/connector-line" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -359,7 +366,7 @@ By default, Gantt Chart task dates are validated based on predecessor values. To
 {% include code-snippet/gantt/disable-predecessor/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/disable-predecessor" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -376,11 +383,62 @@ By default, Gantt Chart task dates are validated based on predecessor values. To
 {% previewsample "page.domainurl/code-snippet/gantt/disable-predecessor" %}
 {% endif %}
 
+## Manage specific dependency types
+
+The Gantt Chart supports the [allowedDependencyTypes](../api/gantt#alloweddependencytypes) property to control which dependency relationship types can participate in dependency processing during data loading and editing operations.
+
+Only the dependency types included in the configured `allowedDependencyTypes` collection are processed and maintained. Dependency types that are not included in the collection are ignored during data loading and prevented during editing actions. This behavior applies to all CRUD operations.
+
+The supported dependency types are:
+
+- **FS** – Finish-to-Start
+- **SS** – Start-to-Start
+- **FF** – Finish-to-Finish
+- **SF** – Start-to-Finish
+
+**For example:**
+
+The following example allows only the Start to Finish (SF) dependency type. This code configures `allowedDependencyTypes: ['SF']` so that only **SF** relationships can be created during loading and editing, with all other dependency types disabled.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/allowedDependencyTypes-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/allowedDependencyTypes-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/allowedDependencyTypes-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/allowedDependencyTypes-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/allowedDependencyTypes-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/allowedDependencyTypes-cs1" %}
+{% endif %}
+
+>**NOTE**
+>
+> By default, all dependency types are allowed when the `allowedDependencyTypes` property is not specified.
+>
+> Specifying an empty collection (`allowedDependencyTypes: []`) is equivalent to not defining the `allowedDependencyTypes` property. In both cases, all supported dependency types are allowed. The Gantt processes all supported dependency types during data loading and allows all dependency relationship types to be created or modified during editing operations.
+
 ## Limitation
 
 > When virtualization is enabled, dependency lines are shown only for tasks currently visible in the viewport. If two tasks are connected by a line, the line will appear only if at least one of the tasks is visible. If both tasks are expanded and the line spans across pages, it will still be displayed as long as one task is in view.
 
 ## See also
-- [How to configure task constraints?](./task-constraints)
-- [How to customize taskbars?](./taskbar)
-- [How to enable critical path?](./critical-path)
+
+- [How to configure task constraints?](../gantt/task-constraints)
+- [How to customize taskbars?](../gantt/taskbar)
+- [How to enable critical path?](../gantt/critical-path)

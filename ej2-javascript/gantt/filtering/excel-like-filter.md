@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Excel-like Filtering in ##Platform_Name## Gantt Chart Control
+# Using Excel-Like Filtering Interface in ##Platform_Name## Gantt Chart
 
 The Excel-like filter in Gantt Chart control enables column-level filtering similar to Microsoft Excel. It supports sorting, clearing filters, and applying advanced conditions through a submenu available in each column header. This feature is highly effective for working with large datasets and applying multiple filter criteria.
 
@@ -154,7 +154,7 @@ To customize this behavior, the `filterChoiceCount` property can be adjusted to 
 {% previewsample "page.domainurl/code-snippet/gantt/excel-filter-cs4" %}
 {% endif %}
 
-## Bind custom remote data source for Excel-like filtering
+## Bind custom remote data source for excel-like filtering
 
 You can dynamically bind a custom remote data source to the Excel filter in the Gantt Chart control by using a [DataManager](../../data/getting-started) with [WebApiAdaptor](../../data/adaptors#web-api-adaptor). This can be done by assigning the data source directly or storing fetched data in a global variable. Then, bind it to the filter module's `dataSource` within the [actionBegin](../../gantt/events#actionbegin) event when `requestType` is **filterBeforeOpen**.
 

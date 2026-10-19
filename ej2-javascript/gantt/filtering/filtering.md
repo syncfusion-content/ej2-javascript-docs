@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in ##Platform_Name## Gantt Chart Control
+# Filtering and Search Features in ##Platform_Name## Gantt Chart
 
 Filtering allows you to view specific or related records based on defined criteria. The Gantt Chart control supports options like filter menu, Excel-like filtering, and toolbar search to narrow down visible data.
 
@@ -17,8 +17,8 @@ To enable filtering, set [allowFiltering](../../api/gantt#allowfiltering) to **t
 
 To activate filtering functionality, inject the `Filter` service into the control.
 
-> * The filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
-> * The filter menu is enabled by default. To disable the filtering option for a specific column, set the `allowFiltering` property of the `column` to **false**.
+> - The filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
+> - The filter menu is enabled by default. To disable the filtering option for a specific column, set the `allowFiltering` property of the `column` to **false**.
 
 ## Apply initial filter on load
 
@@ -242,12 +242,12 @@ You can enable different filter types for individual columns in the Gantt Chart 
 
 ## Customize filtering behavior using events
 
-You can customize the filtering behavior in the ##Platform_Name## Gantt using the [actionBegin](../../documentation/gantt/events#actionbegin) and [actionComplete](../../gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
+You can customize the filtering behavior in the ##Platform_Name## Gantt using the [actionBegin](../../gantt/events#actionbegin) and [actionComplete](../../gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
 
 The following sample demonstrates how to handle different filtering stages using `args.requestType`:
-  
-- For **filterBeforeOpen**, customize filter operators based on `args.columnType` (number or string).  
-- For **filtering**, cancel the action if `args.currentFilteringColumn` is **StartDate**.  
+
+- For **filterBeforeOpen**, customize filter operators based on `args.columnType` (number or string).
+- For **filtering**, cancel the action if `args.currentFilteringColumn` is **StartDate**.
 - For **filterAfterOpen**, apply background styling to the filter dialog content and footer.
 
 {% if page.publishingplatform == "typescript" %}

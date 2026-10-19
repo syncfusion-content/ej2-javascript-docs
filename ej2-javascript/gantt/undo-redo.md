@@ -9,13 +9,14 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Undo Redo in ##Platform_Name## Gantt Chart Control
+# Undo and Redo with Action History Management in ##Platform_Name## Gantt Chart
 
 The undo redo feature in the [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control allows users to revert or reapply actions like task edits, deletions, or dependency changes, enhancing project management by correcting mistakes efficiently. Enabled via the [enableUndoRedo](../api/gantt#enableundoredo) property, it supports actions such as editing task details, dragging taskbars, or reordering columns. For example, undoing a task duration change restores the original timeline, while redoing it reapplies the edit. The [undoRedoActions](../api/gantt#undoredoactions) property specifies which actions to track (e.g., Edit, Delete), defaulting to a comprehensive set including sorting, filtering, and zooming. The [undoRedoStepsCount](../api/gantt#undoredostepscount) property limits the action history, defaulting to 10, with older actions removed as new ones are added. This feature ensures history management for complex projects with hierarchical tasks or frequent updates.
 
 ## Configure undo redo
 
 Enable undo redo by setting [enableUndoRedo](../api/gantt#enableundoredo) to **true** and injecting `UndoRedo`. The [undoRedoActions](../api/gantt#undoredoactions) property customizes supported actions, such as:
+
 - **Edit:** Reverts task field changes (e.g., StartDate, Duration) via dialog or taskbar drag, requiring `Edit`.
 - **Delete:** Restores deleted tasks, requiring `Edit`.
 - **Add:** Removes added tasks, requiring `Edit`.
@@ -123,7 +124,7 @@ In the following example, `undoRedoStepsCount` value is set to 5. This code allo
 
 ## Programmatic undo and redo in Gantt Chart
 
-Programmatic control over undo redo is achieved using methods like [undo](../api/gantt/#undo) to revert actions, [redo](../api/gantt#redo) to reapply them.
+Programmatic control over undo redo is achieved using methods like [undo](../api/gantt#undo) to revert actions, [redo](../api/gantt#redo) to reapply them.
 
 The following example triggers `undo` and `redo` via external buttons:
 
@@ -221,6 +222,7 @@ The following code example demonstrates how to clear the undo and redo collectio
 {% endif %}
 
 ## See also
-- [How to configure task editing?](./managing-tasks/task-bar-editing)
-- [How to manage task dependencies?](./task-dependency)
-- [How to configure critical path?](./critical-path)
+
+- [How to configure task editing?](../gantt/managing-tasks/task-bar-editing)
+- [How to manage task dependencies?](../gantt/task-dependency)
+- [How to configure critical path?](../gantt/critical-path)

@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resize Columns in ##Platform_Name## Gantt Chart Control
+# Dynamic Column Resizing in ##Platform_Name## Gantt Chart
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control allows you to resize columns dynamically by dragging the edges of column headers. This feature enhances readability and layout flexibility, especially when working with large datasets. To enable this feature, set the [allowResizing](../../api/gantt#allowresizing) property to **true** in the Gantt configuration. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control allows you to resize columns dynamically by dragging the edges of column headers. This feature enhances readability and layout flexibility, especially when working with large datasets. To enable this feature, set the [allowResizing](../../api/gantt#allowresizing) property to **true** in the Gantt configuration.
 
 Column width can be adjusted by dragging the right edge of the header, with changes applied immediately.
 
@@ -44,15 +44,15 @@ To use the column resize feature, inject the `Resize` module into the Gantt Char
 {% previewsample "page.domainurl/code-snippet/gantt/columns-cs3" %}
 {% endif %}
 
->* You can disable resizing for a particular column, by specifying [columns.allowResizing](../../api/gantt/column#allowresizing) to **false**.
->* In RTL mode, you can click and drag the left edge of header cell to resize the column.
->* The [width](../../api/gantt/column#width) property of the column can be set initially to define the default width of the column. However, when column resizing is enabled, you can override the default width by manually resizing the columns.
+> - You can disable resizing for a particular column, by specifying [columns.allowResizing](../../api/gantt/column#allowresizing) to **false**.
+> - In RTL mode, you can click and drag the left edge of header cell to resize the column.
+> - The [width](../../api/gantt/column#width) property of the column can be set initially to define the default width of the column. However, when column resizing is enabled, you can override the default width by manually resizing the columns.
 
 ## Restrict the resizing based on minimum and maximum width
 
-The Gantt chart control allows restricting column resizing within a defined range to maintain layout consistency. This ensures column widths remain within the specified limits during resizing.  
-  
-To enable this, set the [minWidth](../../api/gantt/column#minwidth) and [maxWidth](../../api/gantt/column#maxwidth) properties in the column configuration.  
+The Gantt chart control allows restricting column resizing within a defined range to maintain layout consistency. This ensures column widths remain within the specified limits during resizing.
+
+To enable this, set the [minWidth](../../api/gantt/column#minwidth) and [maxWidth](../../api/gantt/column#maxwidth) properties in the column configuration.
 
 The following example demonstrates how the **TaskID** column can be configured with a minimum width of 100 pixels and a maximum of 200 pixels, while the **TaskName** column can be set between 150 and 300 pixels.
 
@@ -124,10 +124,10 @@ The ##Platform_Name## Gantt Chart control supports two resizing modes that deter
 
 There are two available resizing modes:
 
-1. **Normal mode**: Columns retain their defined widths. If the total column width is less than the Gantt width, empty space appears to the right. If it exceeds, a horizontal scrollbar is shown.  
+1. **Normal mode**: Columns retain their defined widths. If the total column width is less than the Gantt width, empty space appears to the right. If it exceeds, a horizontal scrollbar is shown.
 2. **Auto mode**: Columns automatically expand or contract to fill the available space based on the Gantt width.
 
-To apply a resizing mode, set the `resizeSettings.mode` property on the `grid` object inside the Gantt instance. This can be done during the `load` event or dynamically based on user interaction.  
+To apply a resizing mode, set the `resizeSettings.mode` property on the `grid` object inside the Gantt instance. This can be done during the `load` event or dynamically based on user interaction.
 
 The following example demonstrates how to set the `resizeSettings.mode` to **Normal** or **Auto** based on the `DropDownList` [change](../../api/drop-down-list#change) event.
 
@@ -162,7 +162,7 @@ The following example demonstrates how to set the `resizeSettings.mode` to **Nor
 
 ## Resize columns programmatically
 
-You can programmatically resize columns in the ##Platform_Name## Gantt Chart control by accessing the target column using the `getColumnByField` method and updating its [width](../../api/gantt/column#width) property. This is useful for implementing custom UI controls or dynamic layout adjustments.  To reflect the change, call the `refreshColumns` method from the `treeGrid` object within the Gantt instance.
+You can programmatically resize columns in the ##Platform_Name## Gantt Chart control by accessing the target column using the `getColumnByField` method and updating its [width](../../api/gantt/column#width) property. This is useful for implementing custom UI controls or dynamic layout adjustments. To reflect the change, call the `refreshColumns` method from the `treeGrid` object within the Gantt instance.
 
 The following example demonstrates how to resize a column externally using the [change](../../api/drop-down-list#change) event of the [DropDownList](../../drop-down-list/getting-started) control.
 
@@ -193,7 +193,7 @@ The following example demonstrates how to resize a column externally using the [
 {% previewsample "page.domainurl/code-snippet/gantt/column-resize-cs3" %}
 {% endif %}
 
->  The `refreshColumns` method of `treeGrid` object in gantt instance is used to refresh the gantt after the column widths are updated. Column resizing externally is useful when you want to provide a custom interface to the user for resizing columns.
+> The `refreshColumns` method of `treeGrid` object in gantt instance is used to refresh the gantt after the column widths are updated. Column resizing externally is useful when you want to provide a custom interface to the user for resizing columns.
 
 ## Customize column resizing behavior using events
 
@@ -228,7 +228,7 @@ The following example demonstrates how resizing events work: `resizeStart` cance
 {% previewsample "page.domainurl/code-snippet/gantt/column-resize-cs4" %}
 {% endif %}
 
->The `ResizeArgs` object passed to the events contains information such as the current column width, new column width, column index, and the original event. The [resizing](../../api/gantt#resizing) event is triggered multiple times during a single resize operation, so be careful when performing heavy operations in this event.
+> The `ResizeArgs` object passed to the events contains information such as the current column width, new column width, column index, and the original event. The [resizing](../../api/gantt#resizing) event is triggered multiple times during a single resize operation, so be careful when performing heavy operations in this event.
 
 ## Touch interaction
 

@@ -9,18 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customizing header and footer of PDF export in ##Platform_Name## Gantt control
+# Adding Headers and Footers to PDF Exports in ##Platform_Name## Gantt Chart
 
-PDF export provides an option to specify and customize text, page number, line and image in header and footer of exported PDF document by using [pdfExportProperties](../../api/gantt/pdfexportproperties).
+Customizing headers and footers in PDF exports of the [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) component allows adding text, lines, page numbers, and images to enhance document professionalism for projects. Use [PdfExportProperties](../../api/gantt/pdfExportProperties) with [header](../../api/gantt/pdfHeader) and [footer](../../api/gantt/pdfFooter) to define content arrays, specifying `type` (e.g., Text, Line), `value`, `position`, `style`, or `src` for images with `base64` encoding. Disable footers via [enableFooter](../../api/gantt/pdfExportProperties#enablefooter) set to **false**, ensuring tailored outputs with the `PdfExport` module injected and [allowPdfExport](../../api/gantt#allowpdfexport) enabled.
 
 ## Write a text in header and footer
 
-This functionality helps to customize the text that appears in the header or footer sections of a PDF document. Text can be added to [header](../../api/gantt/pdfHeader) or [footer](../../api/gantt/pdfFooter) of exported PDF document by using [pdfExportProperties](../../api/gantt/pdfexportproperties).
-
-* `type` property in the content array indicates the content type, such as 'Text'.
-* `Value` property determines the text. 
-* `Position` property determines the horizontal and vertical positions of the text element.
-* `style` property define the visual styling properties for the text element
+Customize text in headers or footers using the [header](../../api/gantt/pdfHeader) or [footer](../../api/gantt/pdfFooter) properties in [PdfExportProperties](../../api/gantt/pdfExportProperties). Set `type` to **Text**, define `value` for the text, `position` for x/y coordinates, and `style` for color or font size.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -60,18 +55,7 @@ let exportProperties = {
 
 ## Draw a line in header and footer
 
-This functionality helps to customize the line that appears in the header or footer sections of the PDF document. A line can be added to [header](../../api/gantt/pdfHeader) or [footer](../../api/gantt/pdfFooter) of the exported PDF document by using [pdfExportProperties](../../api/gantt/pdfexportproperties).
-
-* `type` determines content type, such as 'Line'.
-* `style` is used to set properties like the color (penColor), size (penSize), and style (dashStyle) of the line.
-* `points` specifies the coordinates for the start and end points of the line.
-
-Supported line styles:
-* dash
-* dot
-* dashdot
-* dashdotdot
-* solid
+Customize lines in headers or footers using the [header](../../api/gantt/pdfHeader) or [footer](../../api/gantt/pdfFooter) properties in [PdfExportProperties](../../api/gantt/pdfExportProperties). Set `type` to **Line**, define `points` for start/end coordinates, `pageNumberType` for position, and `style` for color, width, or dash style.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -164,14 +148,9 @@ let exportProperties = {
 
 ## Insert an image in header and footer
 
-This feature allows to customize the image that appears in the header or footer sections of the PDF document. Image (Base64 string) can be added in the exported document in [header](../../api/gantt/pdfHeader) or [footer](../../api/gantt/pdfFooter) of the exported PDF document by using [pdfExportProperties](../../api/gantt/pdfexportproperties).
+Add images to headers or footers using the [header](../../api/gantt/pdfHeader) or [footer](../../api/gantt/pdfFooter) properties in [PdfExportProperties](../../api/gantt/pdfExportProperties). Set `type` to **Image**, define `src` as a `base64` string, `position` for x/y coordinates, and `size` for height/width.
 
-* `type` indicates that the content is an image.
-* `src` specifies the source of the image, which should be Base64 string. 
-* `Position` determines the horizontal and vertical positions of the image will be located.
-* `size` sets the dimensions of the image.
-
->Note: PDF Export supports base64 string to export the images.
+Note: PDF Export supports base64 string to export the images.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -309,6 +288,7 @@ By default, the exported PDF file includes a footer. The footer can be disabled 
 {% endif %}
 
 ## See also
-- [How to export to PDF?](../../pdf-export/pdf-export)
-- [How to customize PDF export?](../../pdf-export/customize-pdf-export)
-- [How to manage task dependencies?](../../task-dependency)
+
+- [How to export to PDF?](../../gantt/pdf-export/pdf-export)
+- [How to customize PDF export?](../../gantt/pdf-export/customize-pdf-export)
+- [How to manage task dependencies?](../../gantt/task-dependency)

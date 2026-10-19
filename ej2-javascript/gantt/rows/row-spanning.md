@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row Spanning in ##Platform_Name## Gantt Chart Control
+# Row Spanning for Multi-Row Cells in ##Platform_Name## Gantt Chart
 
 The [##Platform_Name## Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control supports row cell spanning, allowing multiple cells in a row to merge into a single cell. This is useful for displaying shared information across rows without duplication.
 
@@ -44,4 +44,4 @@ In the example below, the **Soil test approval** cell spans across two rows in t
 {% previewsample "page.domainurl/code-snippet/gantt/rows-span" %}
 {% endif %}
 
-> * You can use both [rowSpan](../api/gantt/queryCellInfoEventArgs#rowspan) and [colSpan](../api/gantt/queryCellInfoEventArgs#colspan) together to merge grid cells vertically and horizontally.
+> - You can use both [rowSpan](../api/gantt/queryCellInfoEventArgs#rowspan) and [colSpan](../api/gantt/queryCellInfoEventArgs#colspan) together to merge grid cells vertically and horizontally.

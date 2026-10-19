@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Columns in ##Platform_Name## Gantt Chart Control
+# Columns with Field Mapping and Formatting in ##Platform_Name## Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control displays task data in a tabular format using columns. Columns help organize data efficiently and support user interaction within the Gantt chart.
 
@@ -67,6 +67,43 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Cha
 
 > To learn more about how to render boolean values as checkboxes in a Syncfusion<sup style="font-size:70%">&reg;</sup> GanttColumn, please refer to the [Render Boolean Values as Checkbox](../../gantt/columns/columns#render-boolean-value-as-checkbox) section.
 
+## Serial number column
+
+The **Serial Number** feature automatically generates sequential row numbers for records displayed in the Gantt Chart. To enable this feature, set the [enableSerialNumber](../../api/gantt#enableserialnumber) property to **true**. Additionally, you need to define a dedicated column in the [columns](../../api/gantt#columns) configuration with its [field](../../api/gantt/column#field) property set as **SerialNumber** to display the generated serial numbers. When enabled, serial numbers are assigned based on the current visible row order without requiring a dedicated field in the data source.
+
+Serial numbers are automatically recalculated whenever the visible row sequence changes. This includes operations such as filtering, searching, sorting, expanding or collapsing parent tasks, indenting or outdenting tasks, adding, editing, or deleting records, row drag-and-drop, and data refresh. As a result, the serial number column always reflects the latest row order currently displayed in the Gantt Chart.
+
+The feature works consistently with hierarchical data and updates the numbering across all visible records, ensuring that users can easily identify and reference rows regardless of changes made to the task hierarchy or displayed data set
+
+The following example demonstrates how to enable the auto-generated Serial Number column in the Gantt Chart:
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/serialnumber-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/serialnumber-cs1/ts/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/serialnumber-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/serialnumber-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/serialnumber-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/serialnumber-cs1" %}
+{% endif %}
+
 ## Column width
 
 In Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt for ##Platform_Name##, column width can be adjusted using the [width](../../api/gantt#width) property within the [column](../../api/gantt#columns) configuration. This property accepts values in pixels (e.g., **100**) or percentages (e.g., **25%**) to define the column's width relative to the Gantt container.
@@ -80,7 +117,7 @@ In Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt for ##Platform_Name##,
 
 > To learn more about resizing, you can refer to the resizing section [here](../../gantt/columns/column-resizing)
 
-#### Supported types for column width
+### Supported types for column width
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt supports the following three types of column width:
 
@@ -482,7 +519,7 @@ The following sample hides the checkbox for the row with `ariaRowIndex` set to 3
 {% previewsample "page.domainurl/code-snippet/gantt/checkbox-cs2" %}
 {% endif %}
 
-## AutoFit columns
+## Autofit columns
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control for ##Platform_Name## supports automatic column width adjustment based on content. Double-clicking the column header resizer adjusts the width to fit the maximum content, ensuring clear data visibility without wrapping.
 

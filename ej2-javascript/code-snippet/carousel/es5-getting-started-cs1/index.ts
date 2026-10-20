@@ -6,10 +6,7 @@
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js"></script>
     <title>Essential JS 2 - Carousel</title>
     <!-- Essential JS 2 Carousel's dependent material theme -->
-    <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-    <!-- Essential JS 2 Carousel's material theme -->
-    <link href="https://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/34.2.2/fluent2.css" rel="stylesheet" />
     <style>
         .control-container {
             height: 360px;

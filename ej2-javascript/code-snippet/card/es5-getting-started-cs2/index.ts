@@ -5,9 +5,7 @@
      <head>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js"></script>
           <title>Essential JS 2</title>
-          <!-- Essential JS 2 material theme -->
-          <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-          <link href="https://cdn.syncfusion.com/ej2/ej2-layouts/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+          <link href="https://cdn.syncfusion.com/ej2/34.2.2/fluent2.css" rel="stylesheet">
      </head>
      <body>
           <div style="margin: 50px;">

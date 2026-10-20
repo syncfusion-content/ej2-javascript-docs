@@ -6,12 +6,7 @@
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js"></script>
             <title>Essential JS 2</title>
             <!-- Essential JS 2 ContextMenu's dependent material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-lists/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 ContextMenu's control material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/34.2.2/fluent2.css" rel="stylesheet" />
             <link href="styles.css" rel="stylesheet" />
 
             <!-- Essential JS 2 ContextMenu's dependent global script -->

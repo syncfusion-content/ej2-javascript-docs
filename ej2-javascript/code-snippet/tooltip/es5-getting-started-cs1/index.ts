@@ -5,9 +5,7 @@
        <head>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js"></script>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/34.2.2/fluent2.css" rel="stylesheet">
 
             <!-- Essential JS 2 Tooltip's global script -->
             <script src="//cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>

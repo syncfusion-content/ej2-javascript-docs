@@ -56,7 +56,7 @@ Obtain the global scripts and styles from the [Essential Studio<sup style="font-
 >
 > Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\material3.css`
 >
-> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material3.css`
+> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{THEME_PACKAGE_NAME}\styles\{COMPONENT_NAME}\index.css`
 
 **Example:**
 > Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.2.2\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
@@ -65,7 +65,7 @@ Obtain the global scripts and styles from the [Essential Studio<sup style="font-
 >
 > Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.2.2\Web (Essential JS 2)\JavaScript\ej2-base\styles\material3.css`
 >
-> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.2.2\Web (Essential JS 2)\JavaScript\ej2-form-builder\styles\material3.css`
+> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.2.2\Web (Essential JS 2)\JavaScript\ej2-material3-theme\styles\form-builder\index.css`
 
 The following script and style files contain all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file:
 
@@ -88,48 +88,24 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls' global script
 >
 > Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/material3.css`
 >
-> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material3.css`
+> Control Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/material3.css`
 
 ## Adding Form Builder control
 
 Add an HTML `<div>` element to the **index.html** file to act as the root element of the Form Builder control.
 
-```html
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Essential JS 2</title>
-        <!-- Essential JS 2's material theme -->
-        <link href="https://cdn.syncfusion.com/ej2/34.2.2/material3.css" type="text/css"/>
-
-        <!-- Essential JS 2's global script  -->
-        <script src="https://cdn.syncfusion.com/ej2/34.2.2/dist/ej2.min.js"></script>
-    </head>
-    <body>
-        <!-- Add the HTML div that will render as the Form Builder -->
-        <div id="formbuilder"></div>
-        <script src="index.js" type="text/javascript"></script>
-    </body>
-</html>
-```
+{% include code-snippet/form-builder/getting-started-cs1/index.html %}
 
 Place the following code in the **index.js** file to render the Form Builder control:
 
-```js
-            // initialize Form Builder control
-            var formBuilder = new ej.formbuilder.FormBuilder();
-
-            // Render initialized Form Builder.
-            formBuilder.appendTo('#formbuilder');
-```
+{% include code-snippet/form-builder/getting-started-cs1/index.js %}
 
 ## Run the application
 
 Run the **index.html** file in a web browser. It will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Form Builder control.
 
 The output will appear as follows:
-
-![JavaScript Form Builder](./images/form-builder.png)
+{% previewsample "page.domainurl/code-snippet/form-builder/getting-started-cs1" %}
 
 ## Registering Syncfusion license
 

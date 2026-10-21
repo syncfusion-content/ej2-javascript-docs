@@ -56,7 +56,7 @@ Obtain the global scripts and styles from the [Essential Studio<sup style="font-
 >
 > Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\material3.css`
 >
-> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material3.css`
+> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{THEME_PACKAGE_NAME}\styles\{COMPONENT_NAME}\index.css`
 
 **Example:**
 > Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.2.2\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
@@ -65,7 +65,7 @@ Obtain the global scripts and styles from the [Essential Studio<sup style="font-
 >
 > Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.2.2\Web (Essential JS 2)\JavaScript\ej2-base\styles\material3.css`
 >
-> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.2.2\Web (Essential JS 2)\JavaScript\ej2-form-renderer\styles\material3.css`
+> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\34.2.2\Web (Essential JS 2)\JavaScript\ej2-material3-theme\styles\form-builder\index.css`
 
 The following script and style files contain all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file:
 
@@ -88,91 +88,17 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls' global script
 >
 > Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/material3.css`
 >
-> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material3.css`
+> Control Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/material3.css`
 
 ## Adding Form Renderer control
 
 Add an HTML `<div>` element to the **index.html** file to act as the root element of the Form Renderer control.
 
-```html
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Essential JS 2</title>
-        <!-- Essential JS 2's material theme -->
-        <link href="https://cdn.syncfusion.com/ej2/34.2.2/material3.css" type="text/css"/>
-
-        <!-- Essential JS 2's global script  -->
-        <script src="https://cdn.syncfusion.com/ej2/34.2.2/dist/ej2.min.js"></script>
-    </head>
-    <body>
-        <!-- Add the HTML div that will render as the Form Renderer -->
-        <div id="formrenderer"></div>
-        <script src="index.js" type="text/javascript"></script>
-    </body>
-</html>
-```
+{% include code-snippet/form-renderer/getting-started-cs1/index.html %}
 
 Place the following code in the **index.js** file to render the Form Renderer control:
 
-```js
-            // initialize Form Renderer control
-            var formRenderer = new ej.formrenderer.FormRenderer({
-                schema: {
-                    "version": "0.1.0",
-                    "properties": {
-                        "emailAddress": {
-                            "id": "textbox_1785491685456_167",
-                            "name": "emailAddress",
-                            "type": "string",
-                            "label": "Email Address",
-                            "textboxType": "email",
-                            "required": true,
-                            "widget": "textbox"
-                        },
-                        "password": {
-                            "id": "textbox_1785491685456_537",
-                            "name": "password",
-                            "type": "string",
-                            "label": "Password",
-                            "textboxType": "password",
-                            "required": true,
-                            "minLength": 6,
-                            "widget": "textbox"
-                        },
-                        "rememberMe": {
-                            "id": "checkbox_1785491685456_262",
-                            "name": "rememberMe",
-                            "type": "boolean",
-                            "label": "Remember Me",
-                            "widget": "checkbox"
-                        },
-                        "submit": {
-                            "id": "submit_button_initial",
-                            "name": "defaultFormsubmit",
-                            "type": "button",
-                            "label": "Submit",
-                            "buttonType": "submit",
-                            "widget": "button",
-                            "style": "primary",
-                            "disabled": false
-                        }
-                    },
-                    "layout": [
-                        { "type": "field", "propertyId": "emailAddress" },
-                        { "type": "field", "propertyId": "password" },
-                        { "type": "field", "propertyId": "rememberMe" },
-                        { "type": "field", "propertyId": "submit" }
-                    ],
-                    "settings": {
-                        "name": "Untitled Form"
-                    }
-                }
-            });
-
-            // Render initialized Form Renderer.
-            formRenderer.appendTo('#formrenderer');
-```
+{% include code-snippet/form-renderer/getting-started-cs1/index.js %}
 
 ## Run the application
 
@@ -180,7 +106,7 @@ Run the **index.html** file in a web browser. It will render the Essential<sup s
 
 The output will appear as follows:
 
-![JavaScript Form Renderer](./images/form-renderer.png)
+{% previewsample "page.domainurl/code-snippet/form-renderer/getting-started-cs1" %}
 
 ## Registering Syncfusion license
 

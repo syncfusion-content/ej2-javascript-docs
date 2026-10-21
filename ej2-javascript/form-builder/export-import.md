@@ -20,187 +20,37 @@ You can export the generated form schema by clicking the **Export** button in th
 You can use the exported schema in the Form Renderer control to render the same form at runtime.
 
 ## Disabling the export
-
-Exporting can be disabled in the Form Builder component by setting the `allowExport` property to `false`. The default value of the property is `true`.
-
 {% if page.publishingplatform == "typescript" %}
-
-
-```ts
-let formBuilder: FormBuilder = new FormBuilder({
-    allowExport: false
-});
-
-formBuilder.appendTo('#formbuilder');
-```
-
+Exporting can be disabled in the Form Builder component by setting the [allowExport](https://ej2.syncfusion.com/documentation/api/form-builder/index-default#allowexport) property to `false`. The default value of the property is `true`.
 {% elsif page.publishingplatform == "javascript" %}
-
-```js
-var formBuilder = new ej.formbuilder.FormBuilder({
-    allowExport: false
-});
-
-formBuilder.appendTo('#formbuilder');
-```
-
+Exporting can be disabled in the Form Builder component by setting the [allowExport](https://ej2.syncfusion.com/javascript/documentation/api/form-builder/index-default#allowexport) property to `false`. The default value of the property is `true`.
 {% endif %}
 
-The output will appear as follows:
+{% if page.publishingplatform == "typescript" %}
+{% include code-snippet/form-builder/export-import-cs1/index.ts %}
 
-![Disabling the export](./images/form-builder-export.png)
+{% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs1" %}
+{% elsif page.publishingplatform == "javascript" %}
+{% include code-snippet/form-builder/export-import-cs1/index.js %}
+
+{% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs1" %}
+{% endif %}
 
 ## Import form schema
-
-To import a form, assign the exported schema to the `schema` property of the Form Builder. This loads the form definition into the builder so that you can continue editing it.
-
-The following example shows how to use the same schema for both export and import scenarios.
-
-
 {% if page.publishingplatform == "typescript" %}
-
-```ts
-let formBuilder: FormBuilder = new FormBuilder({
-    schema: {
-        "version": "0.1.0",
-        "properties": {
-            "emailAddress": {
-                "id": "textbox_1785491685456_167",
-                "name": "emailAddress",
-                "type": "string",
-                "label": "Email Address",
-                "textboxType": "email",
-                "placeholder": "Enter you email",
-                "required": true,
-                "widget": "textbox"
-            },
-            "password": {
-                "id": "textbox_1785491685456_537",
-                "name": "password",
-                "type": "string",
-                "label": "Password",
-                "textboxType": "password",
-                "placeholder": "Enter your Password",
-                "required": true,
-                "minLength": 6,
-                "widget": "textbox"
-            },
-            "rememberMe": {
-                "id": "checkbox_1785491685456_262",
-                "name": "rememberMe",
-                "type": "boolean",
-                "label": "Remember Me",
-                "widget": "checkbox"
-            },
-            "submit": {
-                "id": "submit_button_initial",
-                "name": "defaultFormsubmit",
-                "type": "button",
-                "label": "Submit",
-                "buttonType": "submit",
-                "widget": "button",
-                "style": "primary",
-                "disabled": false
-            }
-        },
-        "layout": [
-            {
-                "type": "field",
-                "propertyId": "emailAddress"
-            },
-            {
-                "type": "field",
-                "propertyId": "password"
-            },
-            {
-                "type": "field",
-                "propertyId": "rememberMe"
-            },
-            {
-                "type": "field",
-                "propertyId": "submit"
-            }
-        ],
-        "settings": {
-            "name": "Untitled Form"
-        }
-    },
-});
-formBuilder.appendTo('#formbuilder');
-```
-
+To import a form, assign the exported schema to the [schema](https://ej2.syncfusion.com/documentation/api/form-builder/index-default#schema) property of the Form Builder. This loads the form definition into the builder so that you can continue editing it.
 {% elsif page.publishingplatform == "javascript" %}
-
-```js
-var formBuilder = new ej.formbuilder.FormBuilder({
-    schema: {
-        "version": "0.1.0",
-        "properties": {
-            "emailAddress": {
-                "id": "textbox_1785491685456_167",
-                "name": "emailAddress",
-                "type": "string",
-                "label": "Email Address",
-                "textboxType": "email",
-                "placeholder": "Enter your email",
-                "required": true,
-                "widget": "textbox"
-            },
-            "password": {
-                "id": "textbox_1785491685456_537",
-                "name": "password",
-                "type": "string",
-                "label": "Password",
-                "textboxType": "password",
-                "placeholder": "Enter your Password",
-                "required": true,
-                "minLength": 6,
-                "widget": "textbox"
-            },
-            "rememberMe": {
-                "id": "checkbox_1785491685456_262",
-                "name": "rememberMe",
-                "type": "boolean",
-                "label": "Remember Me",
-                "widget": "checkbox"
-            },
-            "submit": {
-                "id": "submit_button_initial",
-                "name": "defaultFormsubmit",
-                "type": "button",
-                "label": "Submit",
-                "buttonType": "submit",
-                "widget": "button",
-                "style": "primary",
-                "disabled": false
-            }
-        },
-        "layout": [
-            {
-                "type": "field",
-                "propertyId": "emailAddress"
-            },
-            {
-                "type": "field",
-                "propertyId": "password"
-            },
-            {
-                "type": "field",
-                "propertyId": "rememberMe"
-            },
-            {
-                "type": "field",
-                "propertyId": "submit"
-            }
-        ],
-        "settings": {
-            "name": "Untitled Form"
-        }
-    }
-});
-formBuilder.appendTo('#formbuilder');
-```
-
+To import a form, assign the exported schema to the [schema](https://ej2.syncfusion.com/javascript/documentation/api/form-builder/index-default#schema) property of the Form Builder. This loads the form definition into the builder so that you can continue editing it.
 {% endif %}
 
-![Import from schema](./images/form-builder-import-schema.png)
+The following example shows how to import a schema object to the Form Builder.
+
+{% if page.publishingplatform == "typescript" %}
+{% include code-snippet/form-builder/export-import-cs2/index.ts %}
+
+{% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs2" %}
+{% elsif page.publishingplatform == "javascript" %}
+{% include code-snippet/form-builder/export-import-cs2/index.ts %}
+
+{% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs2" %}
+{% endif %}

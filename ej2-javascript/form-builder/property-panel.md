@@ -40,69 +40,31 @@ In the property panel, different tabs are available for each form field. They ar
 The property panel automatically saves your changes as you make them. There is no Save button — any adjustment you make is instantly applied to your form and reflected on the design canvas. This makes editing fast and seamless, so you can focus on building your form without worrying about saving your work.
 
 ## Adding a new property in the property panel
-Properties of the built-in Syncfusion controls, or properties related to the [template](./template), can be added dynamically to the property panel using the `setProperty` method in the Form Builder.
-
-
 {% if page.publishingplatform == "typescript" %}
-
-```ts
-import { FormBuilder, FormWidgetType } from '@syncfusion/ej2-form-builder';
-
-let formBuilder: FormBuilder = new FormBuilder();
-formBuilder.appendTo('#formbuilder');
-
-formBuilder.setProperty(FormWidgetType.Textarea, {
-    "key": "enableRtl",
-    "label": "Enable RTL",
-    "type": "boolean",
-    "default": false
-});
-```
-
+Properties of the built-in Syncfusion controls, or properties related to the [template](./template), can be added dynamically to the property panel using the [setProperty](https://ej2.syncfusion.com/documentation/api/form-builder/index-default#setproperty) method in the Form Builder.
 {% elsif page.publishingplatform == "javascript" %}
-
-```js
-var formBuilder = new ej.formbuilder.FormBuilder();
-formBuilder.appendTo('#formbuilder');
-
-formBuilder.setProperty('textarea', {
-    "key": "enableRtl",
-    "label": "Enable RTL",
-    "type": "boolean",
-    "default": false
-});
-```
+Properties of the built-in Syncfusion controls, or properties related to the [template](./template), can be added dynamically to the property panel using the [setProperty](https://ej2.syncfusion.com/javascript/documentation/api/form-builder/index-default#setproperty) method in the Form Builder.
 {% endif %}
 
-![Adding new Property in property panel](./images/from-builder-setproperty.png)
+{% if page.publishingplatform == "typescript" %}
+{% include code-snippet/form-builder/property-panel-cs1/index.ts %}
+{% previewsample "page.domainurl/code-snippet/form-builder/property-panel-cs1" %}
+{% elsif page.publishingplatform == "javascript" %}
+{% include code-snippet/form-builder/property-panel-cs1/index.js %}
+{% previewsample "page.domainurl/code-snippet/form-builder/property-panel-cs1" %}
+{% endif %}
 
 ## Hiding a property from the property panel
-An existing property in the property panel can be hidden by getting the property details using the `getProperty` method of the Form Builder and setting the `visible` property to **false**.
-
-
 {% if page.publishingplatform == "typescript" %}
-
-```ts
-import { FormBuilder, FormWidgetType } from '@syncfusion/ej2-form-builder';
-
-let formBuilder: FormBuilder = new FormBuilder();
-formBuilder.appendTo('#formbuilder');
-
-
-formBuilder.getProperty(FormWidgetType.Textarea, "label")!.visible = false;
-formBuilder.refresh();
-```
-
+An existing property in the property panel can be hidden by getting the property details using the [getProperty](https://ej2.syncfusion.com/documentation/api/form-builder/index-default#getproperty) method of the Form Builder and setting the `visible` property to **false**.
 {% elsif page.publishingplatform == "javascript" %}
-
-```js
-var formBuilder = new ej.formbuilder.FormBuilder();
-formBuilder.appendTo('#formbuilder');
-
-formBuilder.getProperty('textarea', "label").visible = false;
-formBuilder.refresh();
-```
-
+An existing property in the property panel can be hidden by getting the property details using the [getProperty](https://ej2.syncfusion.com/javascript/documentation/api/form-builder/index-default#getproperty) method of the Form Builder and setting the `visible` property to **false**.
 {% endif %}
 
-![Hiding a property from property panel](./images/form-builder-hiding-property.png)
+{% if page.publishingplatform == "typescript" %}
+{% include code-snippet/form-builder/property-panel-cs2/index.ts %}
+{% previewsample "page.domainurl/code-snippet/form-builder/property-panel-cs2" %}
+{% elsif page.publishingplatform == "javascript" %}
+{% include code-snippet/form-builder/property-panel-cs2/index.js %}
+{% previewsample "page.domainurl/code-snippet/form-builder/property-panel-cs2" %}
+{% endif %}

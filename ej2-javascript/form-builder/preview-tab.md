@@ -21,36 +21,19 @@ You can switch to the **Preview** tab to see a live preview of the form. This vi
 
 ## Disabling the preview
 
-The preview option can be disabling by setting the `enablePreview` property to `false`. The default value is `true`.
-
 {% if page.publishingplatform == "typescript" %}
-
-
-```ts
-import { FormBuilder } from '@syncfusion/ej2-form-builder';
-
-let formBuilder: FormBuilder = new FormBuilder({
-    enablePreview: false
-});
-
-formBuilder.appendTo('#formbuilder');
-```
-
+The preview option can be disabling by setting the [enablePreview](https://ej2.syncfusion.com/documentation/api/form-builder/index-default#enablepreview) property to `false`. The default value is `true`.
 {% elsif page.publishingplatform == "javascript" %}
-
-```js
-var formBuilder = new ej.formbuilder.FormBuilder({
-    enablePreview: false
-});
-
-formBuilder.appendTo('#formbuilder');
-```
-
+The preview option can be disabling by setting the [enablePreview](https://ej2.syncfusion.com/javascript/documentation/api/form-builder/index-default#enablepreview) property to `false`. The default value is `true`.
 {% endif %}
 
-The output will appear as follows:
-
-![Disabling the preview in Form Builder](./images/form-builder-disable-preview.png)
+{% if page.publishingplatform == "typescript" %}
+{% include code-snippet/form-builder/preview-cs1/index.ts %}
+{% previewsample "page.domainurl/code-snippet/form-builder/preview-cs1" %}
+{% elsif page.publishingplatform == "javascript" %}
+{% include code-snippet/form-builder/preview-cs1/index.js %}
+{% previewsample "page.domainurl/code-snippet/form-builder/preview-cs1" %}
+{% endif %}
 
 ## JSON code preview
 

@@ -46,9 +46,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
   <html xmlns="http://www.w3.org/1999/xhtml">
          <head>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 bootstrap5.3 theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-            <link href="https://cdn.syncfusion.com/ej2/ej2-layouts/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+            <link href="https://cdn.syncfusion.com/ej2/34.2.2/fluent2.css" rel="stylesheet">
             <!-- Essential JS 2 Dashboardlayout's global script -->
             <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
             <script src="https://cdn.syncfusion.com/ej2/ej2-layouts/dist/global/ej2-layouts.min.js"
@@ -66,9 +64,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
   <html xmlns="http://www.w3.org/1999/xhtml">
         <head>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 bootstrap5.3 theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-            <link href="https://cdn.syncfusion.com/ej2/ej2-layouts/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+            <link href="https://cdn.syncfusion.com/ej2/34.2.2/fluent2.css" rel="stylesheet">
             <!-- Essential JS 2 Dashboardlayout's global script -->
             <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
             <script src="https://cdn.syncfusion.com/ej2/ej2-layouts/dist/global/ej2-layouts.min.js"
@@ -117,9 +113,7 @@ For detailed information, refer to the [Pane Content](./pane-content) section.
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 bootstrap5.3 theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-            <link href="https://cdn.syncfusion.com/ej2/ej2-layouts/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+            <link href="https://cdn.syncfusion.com/ej2/34.2.2/fluent2.css" rel="stylesheet">
             <!-- Essential JS 2 Dashboardlayout's global script -->
             <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
             <script src="https://cdn.syncfusion.com/ej2/ej2-layouts/dist/global/ej2-layouts.min.js"

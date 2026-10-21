@@ -6,8 +6,7 @@
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js"></script>
             <title>Essential JS 2</title>
             <!-- Essential JS 2 material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/34.2.2/fluent2.css" rel="stylesheet" />
 
             <!-- Essential JS 2 Base's global script (Dependency Script) -->
             <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>

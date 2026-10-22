@@ -4,58 +4,80 @@ var formRenderer = new ej.formrenderer.FormRenderer({
         "version": "0.1.0",
         "properties": {
             "emailAddress": {
-                "id": "textbox_1785491685456_167",
+                "id": "textbox_1792584735912_973",
                 "name": "emailAddress",
                 "type": "string",
                 "label": "Email Address",
                 "textboxType": "email",
                 "required": true,
-                "widget": "textbox"
+                "widget": "textbox",
+                "labelPosition": "top"
             },
             "password": {
-                "id": "textbox_1785491685456_537",
+                "id": "textbox_1792584735912_500",
                 "name": "password",
                 "type": "string",
                 "label": "Password",
                 "textboxType": "password",
                 "required": true,
                 "minLength": 6,
-                "widget": "textbox"
+                "widget": "textbox",
+                "labelPosition": "top"
             },
             "rememberMe": {
-                "id": "checkbox_1785491685456_262",
-                "name": "rememberMe",
+                "id": "checkbox_1792584735912_491",
+                "name": "remember",
                 "type": "boolean",
                 "label": "Remember Me",
                 "widget": "checkbox"
             },
-            "cancel": {
-                "id": "cancel_button_initial",
-                "name": "defaultFormcancel",
-                "type": "button",
-                "label": "Cancel",
-                "buttonType": "button",
-                "widget": "button",
-                "style": "primary",
-                "disabled": false
-            },
-                "submit": {
-                "id": "submit_button_initial",
-                "name": "defaultFormsubmit",
+            "submit": {
+                "id": "default-submit-button",
+                "name": "defaultSubmit",
                 "type": "button",
                 "label": "Submit",
                 "buttonType": "submit",
                 "widget": "button",
+                "allowMultiple": true,
                 "style": "primary",
-                "disabled": false
+                "buttonsGroups": [
+                    {
+                        "label": "Cancel",
+                        "type": "button",
+                        "style": "error",
+                        "iconCss": "",
+                        "iconPosition": "Left",
+                        "disabled": false
+                    },
+                    {
+                        "label": "Submit",
+                        "type": "submit",
+                        "style": "primary",
+                        "iconCss": "",
+                        "iconPosition": "Left",
+                        "disabled": false
+                    }
+                ],
+                "gap": "16px"
             }
         },
         "layout": [
-            { "type": "field", "propertyId": "emailAddress" },
-            { "type": "field", "propertyId": "password" },
-            { "type": "field", "propertyId": "rememberMe" },
-            { "type": "field", "propertyId": "cancel" },
-            { "type": "field", "propertyId": "submit" }
+            {
+                "type": "field",
+                "propertyId": "emailAddress"
+            },
+            {
+                "type": "field",
+                "propertyId": "password"
+            },
+            {
+                "type": "field",
+                "propertyId": "rememberMe"
+            },
+            {
+                "type": "field",
+                "propertyId": "submit"
+            }
         ],
         "settings": {
             "name": "Untitled Form"

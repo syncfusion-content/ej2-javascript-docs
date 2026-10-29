@@ -76,7 +76,7 @@ The Syncfusion® Diagram control exposes **19 tools**, giving AI agents full pro
 
 ## File Manager
 
-The Syncfusion® File Manager control exposes **7 tools** that enable AI agents to browse files, manage file operations, control the user interface, perform navigation, and automate common file management workflows. Explore the Syncfusion® JavaScript (ES5) File Manager control with WebMCP integration through this [demo](https://demos.syncfusion.com/file-manager-sdk/web-mcp/index.html).
+The Syncfusion® File Manager control exposes **7 tools** that enable AI agents to browse files, manage file operations, control the user interface, perform navigation, and automate common file management workflows.
 
 | Tool Name | Description |
 |---|---|
@@ -135,7 +135,7 @@ The Syncfusion® Gantt control exposes 38 tools, giving AI agents full programma
 
 ## Chart
 
-The Syncfusion® Chart control exposes **37 tools** that enable AI agents to inspect chart metadata, query and modify series data, update chart configurations, and interact with visual elements.
+The Syncfusion® Chart component exposes **37 WebMCP tools** that enable AI agents to inspect chart metadata, query and modify series data, update chart configurations, and interact with visual elements. Explore the Syncfusion® Javascript Chart component with WebMCP integration through this [demo](https://demos.syncfusion.com/chart-sdk/webmcp/index.html).
 
 | Tool Name | Description |
 |---|---|
@@ -197,92 +197,10 @@ Clear and specific prompts help the AI select and execute the appropriate Chart 
 
 For best results, specify relevant series names or indices, axis names, annotation IDs, point indices or X values, coordinate values, export dimensions, and result limits.
 
-## DOCX Editor
-
-The Syncfusion® DOCX Editor control exposes **27 tools** for document navigation, text search and replacement, content insertion, formatting, protection, and export. Explore the Syncfusion® JavaScript (ES5) DOCX Editor control with WebMCP integration through this [demo](https://demos.syncfusion.com/docx-editor-sdk/webmcp/index.html).
-
-| Tool Name | Description |
-|---|---|
-| saveDocument | Saves or exports the current document in DOCX, DOTX, TXT, or SFDT format. |
-| getDocumentBookmarks | Returns all bookmark names available in the current document. |
-| configureDocumentEditorSettings | Configures editor appearance and behavior settings such as ruler, bookmarks, navigation pane, and fonts. |
-| find | Finds the next occurrence of specified text in the document. |
-| findAll | Finds all occurrences of specified text throughout the document. |
-| replaceAll | Replaces all occurrences of specified text with new content. |
-| insertText | Inserts plain text at the current cursor or selection position. |
-| paste | Pastes formatted SFDT content while preserving document structure and formatting. |
-| insertBookmark | Creates a bookmark at the current cursor position for navigation. |
-| selectBookmark | Navigates to and selects an existing bookmark. |
-| select | Selects content between specified document positions or coordinates. |
-| print | Opens the print dialog for the current document. |
-| enforceProtection | Protects the document and restricts editing with a password. |
-| stopProtection | Removes document protection and restores editing access. |
-| insertField | Inserts dynamic fields such as merge fields, or page numbers. |
-| goToPage | Navigates to a specified page in the document. |
-| selectAll | Selects all content in the document. |
-| selectCurrentWord | Selects the word at the current cursor position. |
-| selectParagraph | Selects the current paragraph. |
-| pageCount | Returns the total number of pages in the document. |
-| getSelectionText | Retrieves the plain text content of the current selection. |
-| getSelectionSfdt | Retrieves the selected content as formatted SFDT. |
-| insertEditingRegion | Creates an editable region for specific users in a protected document. |
-| formatCharacter | Applies character formatting such as font, size, color, bold, italic, and highlighting. |
-| formatParagraph | Applies paragraph formatting such as alignment, indentation, and spacing. |
-| insertImage | Inserts an image with optional sizing and alternate text. |
-| insertHyperlink | Inserts a hyperlink with optional display text and screen tip. |
-
-### Example prompts
-
-The effectiveness of WebMCP tools depends on the quality of the prompt provided to the AI assistant. Clear and specific instructions help the AI choose the appropriate tool and produce accurate results. Here are some example prompts for the DOCX Editor control:
-
-> "Go to page 5, select the current paragraph, and make the text bold."
-
-## RichTextEditor
-
-The Syncfusion® Rich Text Editor control exposes **20 tools** for retrieving and editing content, applying formatting, managing links and tables, and controlling editor actions. Explore the Syncfusion® JavaScript (ES5) Rich Text Editor control with WebMCP integration through this [demo](https://demos.syncfusion.com/rich-text-editor-sdk/webmcp/index.html).
-
-| Tool Name | Description |
-|---|---|
-| getContent | Reads the complete HTML content currently inside the Rich Text Editor |
-| getSelectedHtml | Reads the HTML content of the current selection |
-| selectAllContent | Selects all content inside the Rich Text Editor for full-document operations |
-| showDialog | Opens a built-in dialog for inserting or editing links, images, audio, video, or tables |
-| closeDialog | Closes a currently open built-in insertion or editing dialog |
-| insertContent | Inserts plain text or basic HTML at the cursor position, replacing the current selection if present |
-| formatSelectedContent | Applies inline formatting such as bold, italic, underline, strike-through, superscript, subscript, uppercase, lowercase, font color, background color, font name, or font size |
-| setBlockType | Changes the selected content or current line to a paragraph, heading, block quote, or plain preformatted block |
-| setTextAlignment | Applies left, center, right, or justified alignment to the selected content |
-| insertLink | Inserts a hyperlink at the cursor position or converts the selected text into a hyperlink |
-| insertTable | Inserts a table with the specified number of rows, columns, and optional width configuration |
-| insertImage | Inserts an image using a URL with optional alternative text, dimensions, and CSS classes |
-| undoLastAction | Reverts the most recent change made in the editor |
-| redoLastAction | Re-applies the most recent action that was undone |
-| clearFormatting | Removes inline formatting from the selected content and resets it to the default style |
-| printContent | Opens the browser print dialog for the Rich Text Editor content |
-| setCodeBlock | Inserts a syntax-highlighted code block for the specified programming language |
-| applyNumberedListFormat | Applies or removes numbered-list formatting using styles such as decimal, Roman numerals, or alphabetic numbering |
-| applyBulletedListFormat | Applies or removes bulleted-list formatting using disc, circle, or square bullet styles |
-| insertBR | Inserts a soft line break at the current cursor position without creating a new paragraph |
-
-### Example prompts
-
-The effectiveness of WebMCP tools depends on the quality of the prompt provided to the AI assistant. Clear and specific instructions help the AI choose the appropriate tool and produce accurate results. Here are some example prompts for the Rich Text Editor control:
-
-> "Read the complete content and summarize the document."
-
-> "Convert the selected text into a level-two heading, center-align it, and make it bold."
-
-> "Insert a three-column table with five rows at the current cursor position."
-
-> "Add a hyperlink to the selected text using `https://www.syncfusion.com`."
-
-> "Insert this TypeScript code as a syntax-highlighted code block."
-
-> "Remove all inline formatting from the selected content."
 
 ## PDF Viewer
 
-The Syncfusion® PDF Viewer control exposes **23 tools** that enable AI agents to navigate pages, search and extract text, inspect page metadata, manage form fields, inspect bookmarks, handle annotations, manage redactions, adjust viewing/zoom, print, download, and automate PDF document workflows. Explore the Syncfusion® JavaScript (ES5) PDF Viewer control with WebMCP integration through this [demo](https://demos.syncfusion.com/pdf-viewer-sdk/webmcp/index.html).
+The Syncfusion® PDF Viewer control exposes **23 tools** that enable AI agents to navigate pages, search and extract text, inspect page metadata, manage form fields, inspect bookmarks, handle annotations, manage redactions, adjust viewing/zoom, print, download, and automate PDF document workflows.
 
 | Tool Name | Description |
 |---|---|
@@ -312,7 +230,7 @@ The Syncfusion® PDF Viewer control exposes **23 tools** that enable AI agents t
 
 ## Pivot Table
 
-The Syncfusion® Pivot Table control exposes **23 tools**, giving AI agents full programmatic control over pivot data manipulation, analysis, formatting, and visualization. Explore the Syncfusion® JavaScript (ES5) Pivot Table control with WebMCP integration through this [demo](https://demos.syncfusion.com/grid-sdk/pivot-table/webmcp/index.html).
+The Syncfusion® Pivot Table control exposes **23 tools**, giving AI agents full programmatic control over pivot data manipulation, analysis, formatting, and visualization.
 
 | Tool Name | Description |
 |-----------|--------------|
@@ -354,7 +272,7 @@ The Syncfusion® Scheduler control exposes 5 tools, giving AI agents full progra
 
 ## Spreadsheet
 
-The Syncfusion® Spreadsheet control exposes **28 tools** across six categories, giving AI agents full programmatic control over data, formatting, structure, and visualizations. Explore the Syncfusion® JavaScript (ES5) Spreadsheet control with WebMCP integration through this [demo](https://demos.syncfusion.com/spreadsheet-editor-sdk/webmcp/index.html).
+The Syncfusion® Spreadsheet control exposes **28 tools** across six categories, giving AI agents full programmatic control over data, formatting, structure, and visualizations.
 
 | Tool Name | Description |
 |---|---|

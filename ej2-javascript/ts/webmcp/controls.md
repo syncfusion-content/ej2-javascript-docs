@@ -133,6 +133,70 @@ The Syncfusion® Gantt control exposes 38 tools, giving AI agents full programma
 | scrollToTask | Scrolls the view to bring a specific task into view. |
 | scrollToDate | Scrolls the timeline view to bring a specific date into view. |
 
+## Chart
+
+The Syncfusion® Chart component exposes **37 WebMCP tools** that enable AI agents to inspect chart metadata, query and modify series data, update chart configurations, and interact with visual elements. Explore the Syncfusion® Typescript Chart component with WebMCP integration through this [demo](https://demos.syncfusion.com/chart-sdk/webmcp/index.html).
+
+| Tool Name | Description |
+|---|---|
+| addChartAnnotation | Adds one or more annotations to the Chart. |
+| addChartAxis | Adds secondary axes to the Chart. |
+| addChartSeries | Adds one or more series to the Chart. |
+| animateChart | Starts Chart animation with an optional duration in milliseconds (defaults to 1000 ms). |
+| appendChartData | Adds data records to a Chart series and optionally limits the number of retained records. |
+| clearChartSelection | Clears all Chart selections. |
+| clearChartSeries | Removes all series from the Chart. |
+| configureChartZoom | Updates Chart zoom settings. |
+| exportChart | Exports the Chart to a file format. **Supported formats:** `PNG`, `JPEG`, `SVG`, `PDF`, `XLSX`, `CSV`. |
+| getChartAnnotations | Returns all Chart annotations. |
+| getChartAxes | Returns Chart axis information. |
+| getChartIndicators | Returns configured Chart indicators. |
+| getChartLegend | Returns Chart legend information. |
+| getChartPoint | Returns information about a specific Chart point. |
+| getChartStriplines | Returns Chart stripline information. |
+| getSelectedChartData | Returns the currently selected Chart data points. |
+| getSeriesData | Returns data points from a Chart series. |
+| hideChartCrosshair | Hides the Chart crosshair. |
+| hideChartTooltip | Hides the Chart tooltip. |
+| inspectChart | Returns the current Chart configuration and series information. |
+| printChart | Prints the Chart. |
+| removeChartAnnotation | Removes a Chart annotation. |
+| removeChartAxis | Removes a secondary Chart axis. |
+| removeChartPoints | Removes data points from a Chart series. |
+| removeChartSeries | Removes a series from the Chart. |
+| resetChartZoom | Resets Chart zoom settings. |
+| selectChartPoints | Selects Chart data points. |
+| showChartCrosshair | Displays the Chart crosshair. |
+| showChartTooltip | Displays the Chart tooltip. |
+| toggleChartSeriesVisibility | Shows or hides a Chart series. |
+| updateChartAnnotation | Updates an existing Chart annotation. |
+| updateChartAxis | Updates Chart axis properties. |
+| updateChartDataSource | Updates the Chart data source or series data source. |
+| updateChartPoint | Updates a data point in a Chart series. |
+| updateChartProperties | Updates supported Chart properties. |
+| updateChartSeries | Updates properties of an existing Chart series. |
+| updateChartTitle | Updates the Chart title and subtitle. |
+
+### Example prompts
+
+Clear and specific prompts help the AI select and execute the appropriate Chart tools.
+
+> "Show the current chart configuration, including the series names, series types, axis settings, and zoom state."
+
+> "Add a line series named 'Revenue' with the provided data, and then update the chart title to 'Sales Trends 2024'."
+
+> "Get the top 50 data points from the first series, sorted by value in descending order."
+
+> "Update the primary Y-axis range from 0 to 1000 with an interval of 100."
+
+> "Hide the 'Expenses' series and show only the currently visible series."
+
+> "Export the chart as a PNG with the file name 'sales-report-2024', and then print the chart."
+
+> "Add an annotation labeled 'Peak Sales' to the point with the highest value in the Revenue series."
+
+For best results, specify relevant series names or indices, axis names, annotation IDs, point indices or X values, coordinate values, export dimensions, and result limits.
+
 ## PDF Viewer
 
 The Syncfusion® PDF Viewer control exposes **23 tools** that enable AI agents to navigate pages, search and extract text, inspect page metadata, manage form fields, inspect bookmarks, handle annotations, manage redactions, adjust viewing/zoom, print, download, and automate PDF document workflows.

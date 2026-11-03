@@ -50,7 +50,7 @@ The Syncfusion® DataGrid control exposes **27 tools**, giving AI agents full pr
 
 ## Diagram
 
-The Syncfusion® Diagram control exposes **19 tools**, giving AI agents full programmatic control over diagram creation, manipulation, and management.
+The Syncfusion® Diagram control exposes **19 tools**, giving AI agents full programmatic control over diagram creation, manipulation, and management. Explore the Syncfusion® Diagram control with WebMCP integration through this [demo](https://demos.syncfusion.com/diagram-sdk/diagram-webmcp/index.html).
 
 | Tool Name | Description |
 |-----------|-------------|
@@ -90,7 +90,7 @@ The Syncfusion® File Manager control exposes **7 tools** that enable AI agents 
 
 ## Gantt Chart
 
-The Syncfusion® Gantt control exposes 38 tools, giving AI agents full programmatic control over tasks, scheduling, hierarchy, view/layout, undo/redo history, and exports.
+The Syncfusion® Gantt control exposes 38 tools, giving AI agents full programmatic control over tasks, scheduling, hierarchy, view/layout, undo/redo history, and exports. Explore the Syncfusion® JavaScript Gantt Chart control with WebMCP integration through this [demo](https://demos.syncfusion.com/gantt-sdk/gantt-chart/webmcp/index.html).
 
 | Tool Name | Description |
 |---|---|

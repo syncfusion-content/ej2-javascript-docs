@@ -342,7 +342,7 @@ The Syncfusion® Pivot Table control exposes **23 tools**, giving AI agents full
 
 ## Scheduler
 
-The Syncfusion® Scheduler control exposes 5 tools, giving AI agents full programmatic control over events, view switching, and date navigation.
+The Syncfusion® Scheduler control exposes 5 tools, giving AI agents full programmatic control over events, view switching, and date navigation. Explore the Syncfusion® JavaScript (ES5) Scheduler control with WebMCP integration through this [demo](https://demos.syncfusion.com/scheduler-sdk/webmcp-integration/index.html).
 
 | Tool Name | Description |
 | --- | --- |

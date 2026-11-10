@@ -28,10 +28,28 @@ The preview option can be disabling by setting the [enablePreview](https://ej2.s
 {% endif %}
 
 {% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/form-builder/preview-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-builder/preview-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-builder/preview-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
 {% include code-snippet/form-builder/preview-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-builder/preview-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-builder/preview-cs1" %}
 {% endif %}
 

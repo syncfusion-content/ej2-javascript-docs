@@ -32,10 +32,28 @@ The [setFieldValue](https://ej2.syncfusion.com/javascript/documentation/api/form
 {% endif %}
 
 {% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/form-renderer/template-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-renderer/template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-renderer/template-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
 {% include code-snippet/form-renderer/template-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-renderer/template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-renderer/template-cs1" %}
 {% endif %}
 
@@ -54,9 +72,27 @@ You can also map a template to a single form field by using the [fieldName](http
 > In this case, the `type` property is not required.
 
 {% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/form-renderer/template-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-renderer/template-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-renderer/template-cs2" %}
 {% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
 {% include code-snippet/form-renderer/template-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-renderer/template-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-renderer/template-cs2" %}
 {% endif %}

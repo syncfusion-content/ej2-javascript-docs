@@ -58,10 +58,28 @@ When the user clicks the submit button, the renderer validates the form. If vali
 The following example renders a Form Renderer with email, password, and remember-me fields, along with a submit button. When the user clicks **Submit**, the `submit` event is raised with the form data and the validation status:
 
 {% if page.publishingplatform == "typescript" %}
-{% include code-snippet/form-renderer/submit-cs1/index.ts %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/form-renderer/submit-cs1/index.ts  %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-renderer/submit-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-renderer/submit-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
 {% include code-snippet/form-renderer/submit-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-renderer/submit-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-renderer/submit-cs1" %}
 {% endif %}
 
@@ -89,10 +107,28 @@ The `reset` button does not raise an event. Clicking it triggers the browser's n
 The following example renders a Form Renderer with email, password, and remember-me fields, along with a reset button. When the user clicks **Reset**, every field is restored to its initial state:
 
 {% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/form-renderer/reset-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-renderer/reset-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-renderer/reset-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
 {% include code-snippet/form-renderer/reset-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-renderer/reset-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-renderer/reset-cs1" %}
 {% endif %}
 
@@ -163,10 +199,29 @@ When the value of a field changes, the renderer:
 The following example renders a Form Renderer with textbox and checkbox fields. Whenever the value of any field changes, the `change` event is raised with the changed field's name, label, and new value:
 
 {% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+
+{% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/form-renderer/change-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-renderer/change-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-renderer/change-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
 {% include code-snippet/form-renderer/change-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-renderer/change-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-renderer/change-cs1" %}
 {% endif %}
 
@@ -181,10 +236,28 @@ The [created](https://ej2.syncfusion.com/javascript/documentation/api/form-rende
 The following example renders a Form Renderer with email, password, and remember-me fields. Once the form has finished rendering, the `created` event is raised with an empty payload:
 
 {% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/form-renderer/created-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-renderer/created-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-renderer/created-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
 {% include code-snippet/form-renderer/created-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-renderer/created-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-renderer/created-cs1" %}
 {% endif %}
 

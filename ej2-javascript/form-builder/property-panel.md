@@ -47,10 +47,28 @@ Properties of the built-in Syncfusion controls, or properties related to the [te
 {% endif %}
 
 {% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/form-builder/property-panel-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-builder/property-panel-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-builder/property-panel-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
 {% include code-snippet/form-builder/property-panel-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-builder/property-panel-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-builder/property-panel-cs1" %}
 {% endif %}
 
@@ -62,9 +80,27 @@ An existing property in the property panel can be hidden by getting the property
 {% endif %}
 
 {% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/form-builder/property-panel-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-builder/property-panel-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-builder/property-panel-cs2" %}
 {% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
 {% include code-snippet/form-builder/property-panel-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-builder/property-panel-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-builder/property-panel-cs2" %}
 {% endif %}

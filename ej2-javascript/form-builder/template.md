@@ -28,10 +28,28 @@ Templates can be added to the Form Builder by configuring the third-party contro
 After you drag and drop the form field onto the central design canvas, the third-party component is rendered automatically.
 
 {% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/form-builder/template-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-builder/template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-builder/template-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
 {% include code-snippet/form-builder/template-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-builder/template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/form-builder/template-cs1" %}
 {% endif %}
 

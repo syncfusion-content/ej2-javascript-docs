@@ -38,8 +38,8 @@ System.config({
         "@syncfusion/ej2-pdf-export": "syncfusion:ej2-pdf-export/dist/ej2-pdf-export.umd.min.js",
         "@syncfusion/ej2-richtexteditor": "syncfusion:ej2-richtexteditor/dist/ej2-richtexteditor.umd.min.js",
         "@syncfusion/ej2-excel-export": "syncfusion:ej2-excel-export/dist/ej2-excel-export.umd.min.js",
-        "@syncfusion/ej2-form-renderer": "syncfusion:ej2-form-renderer/dist/ej2-form-renderer.umd.min.js",
         "@syncfusion/ej2-form-builder": "syncfusion:ej2-form-builder/dist/ej2-form-builder.umd.min.js",
+        "@syncfusion/ej2-form-renderer": "syncfusion:ej2-form-renderer/dist/ej2-form-renderer.umd.min.js",
     }
 });
 

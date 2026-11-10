@@ -27,11 +27,27 @@ Exporting can be disabled in the Form Builder component by setting the [allowExp
 {% endif %}
 
 {% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/form-builder/export-import-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-builder/export-import-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
 {% include code-snippet/form-builder/export-import-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-builder/export-import-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs1" %}
 {% endif %}
@@ -46,11 +62,27 @@ To import a form, assign the exported schema to the [schema](https://ej2.syncfus
 The following example shows how to import a schema object to the Form Builder.
 
 {% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/form-builder/export-import-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-builder/export-import-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs2" %}
 {% elsif page.publishingplatform == "javascript" %}
-{% include code-snippet/form-builder/export-import-cs2/index.ts %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/form-builder/export-import-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/form-builder/export-import-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs2" %}
 {% endif %}

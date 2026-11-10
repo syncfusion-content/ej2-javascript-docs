@@ -94,11 +94,19 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls' global script
 
 Add an HTML `<div>` element to the **index.html** file to act as the root element of the Form Builder control.
 
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-builder/getting-started-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
 
 Place the following code in the **index.js** file to render the Form Builder control:
 
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
 {% include code-snippet/form-builder/getting-started-cs1/index.js %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Run the application
 

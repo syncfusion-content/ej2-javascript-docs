@@ -113,7 +113,11 @@ The Form Renderer is a schema-driven component. To render the control, pass a JS
 
 To render the Form Renderer control, add the following TypeScript code to the **~/src/app/app.ts** file.
 
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/form-renderer/default-cs1/index.ts %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Run the application
 

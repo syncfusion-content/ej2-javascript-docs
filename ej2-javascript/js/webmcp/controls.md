@@ -135,7 +135,7 @@ The Syncfusion® Gantt control exposes 38 tools, giving AI agents full programma
 
 ## Chart
 
-The Syncfusion® Chart control exposes **37 tools** that enable AI agents to inspect chart metadata, query and modify series data, update chart configurations, and interact with visual elements.
+The Syncfusion® Chart control exposes **37 tools** that enable AI agents to inspect chart metadata, query and modify series data, update chart configurations, and interact with visual elements. Explore the Syncfusion® JavaScript Chart component with WebMCP integration through this [demo](https://demos.syncfusion.com/chart-sdk/webmcp/index.html).
 
 | Tool Name | Description |
 |---|---|

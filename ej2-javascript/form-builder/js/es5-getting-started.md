@@ -128,7 +128,7 @@ Place the following code in the **index.js** file to render the Form Builder con
 Run the **index.html** file in a web browser. It will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Form Builder control.
 
 The output will appear as follows:
-{% previewsample "page.domainurl/code-snippet/form-builder/getting-started-cs1" %}
+![JavaScript Form Builder](./images/form-builder.png)
 
 ## Registering Syncfusion license
 

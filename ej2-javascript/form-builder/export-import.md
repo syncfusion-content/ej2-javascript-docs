@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting and Importing in ##Platform_Name## Form Builder control | Syncfusion
-description: Learn how to export and import in the ##Platform_Name## Form Builder control. Use export to reuse the generated form schema in Form Renderer, and import to continue editing an existing schema in Form Builder.
+title: Exporting and Importing in ##Platform_Name## Form Builder | Syncfusion
+description: Learn how to export and import form schemas in the ##Platform_Name## Form Builder. Reuse schemas in Form Renderer or import them to continue editing.
 platform: ej2-javascript
 control: Exporting and Importing
 publishingplatform: ##Platform_Name##
@@ -28,29 +28,29 @@ Exporting can be disabled in the Form Builder component by setting the [allowExp
 
 {% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/form-builder/export-import-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/form-builder/export-import-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```ts
+let formBuilder: FormBuilder = new FormBuilder({
+    allowExport: false
+});
 
-{% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs1" %}
+formBuilder.appendTo('#formbuilder');
+```
+
 {% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/form-builder/export-import-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/form-builder/export-import-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```js
+var formBuilder = new ej.formbuilder.FormBuilder({
+    allowExport: false
+});
 
-{% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs1" %}
+formBuilder.appendTo('#formbuilder');
+```
+
 {% endif %}
+
+The output will appear as follows:
+
+![Disabling the export](./images/form-builder-export.png)
 
 ## Import form schema
 {% if page.publishingplatform == "typescript" %}
@@ -63,26 +63,148 @@ The following example shows how to import a schema object to the Form Builder.
 
 {% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/form-builder/export-import-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/form-builder/export-import-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```ts
+let formBuilder: FormBuilder = new FormBuilder({
+    schema: {
+        "version": "0.1.0",
+        "properties": {
+            "emailAddress": {
+                "id": "textbox_1785491685456_167",
+                "name": "emailAddress",
+                "type": "string",
+                "label": "Email Address",
+                "textboxType": "email",
+                "placeholder": "Enter you email",
+                "required": true,
+                "widget": "textbox"
+            },
+            "password": {
+                "id": "textbox_1785491685456_537",
+                "name": "password",
+                "type": "string",
+                "label": "Password",
+                "textboxType": "password",
+                "placeholder": "Enter your Password",
+                "required": true,
+                "minLength": 6,
+                "widget": "textbox"
+            },
+            "rememberMe": {
+                "id": "checkbox_1785491685456_262",
+                "name": "rememberMe",
+                "type": "boolean",
+                "label": "Remember Me",
+                "widget": "checkbox"
+            },
+            "submit": {
+                "id": "submit_button_initial",
+                "name": "defaultFormsubmit",
+                "type": "button",
+                "label": "Submit",
+                "buttonType": "submit",
+                "widget": "button",
+                "style": "primary",
+                "disabled": false
+            }
+        },
+        "layout": [
+            {
+                "type": "field",
+                "propertyId": "emailAddress"
+            },
+            {
+                "type": "field",
+                "propertyId": "password"
+            },
+            {
+                "type": "field",
+                "propertyId": "rememberMe"
+            },
+            {
+                "type": "field",
+                "propertyId": "submit"
+            }
+        ],
+        "settings": {
+            "name": "Untitled Form"
+        }
+    },
+});
+formBuilder.appendTo('#formbuilder');
+```
 
-{% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs2" %}
 {% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/form-builder/export-import-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/form-builder/export-import-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```js
+var formBuilder = new ej.formbuilder.FormBuilder({
+    schema: {
+        "version": "0.1.0",
+        "properties": {
+            "emailAddress": {
+                "id": "textbox_1785491685456_167",
+                "name": "emailAddress",
+                "type": "string",
+                "label": "Email Address",
+                "textboxType": "email",
+                "placeholder": "Enter your email",
+                "required": true,
+                "widget": "textbox"
+            },
+            "password": {
+                "id": "textbox_1785491685456_537",
+                "name": "password",
+                "type": "string",
+                "label": "Password",
+                "textboxType": "password",
+                "placeholder": "Enter your Password",
+                "required": true,
+                "minLength": 6,
+                "widget": "textbox"
+            },
+            "rememberMe": {
+                "id": "checkbox_1785491685456_262",
+                "name": "rememberMe",
+                "type": "boolean",
+                "label": "Remember Me",
+                "widget": "checkbox"
+            },
+            "submit": {
+                "id": "submit_button_initial",
+                "name": "defaultFormsubmit",
+                "type": "button",
+                "label": "Submit",
+                "buttonType": "submit",
+                "widget": "button",
+                "style": "primary",
+                "disabled": false
+            }
+        },
+        "layout": [
+            {
+                "type": "field",
+                "propertyId": "emailAddress"
+            },
+            {
+                "type": "field",
+                "propertyId": "password"
+            },
+            {
+                "type": "field",
+                "propertyId": "rememberMe"
+            },
+            {
+                "type": "field",
+                "propertyId": "submit"
+            }
+        ],
+        "settings": {
+            "name": "Untitled Form"
+        }
+    }
+});
+formBuilder.appendTo('#formbuilder');
+```
 
-{% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs2" %}
 {% endif %}
+
+![Import from schema](./images/form-builder-import-schema.png)

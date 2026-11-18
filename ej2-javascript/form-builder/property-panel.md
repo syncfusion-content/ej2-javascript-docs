@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Property Panel
+# Configure Form Fields with the Property Panel
 
 The **Property Panel** is the right pane of the **Form Builder**. Whenever a field is selected on the design canvas — either by dropping a new field item or by clicking the **Edit** action on an existing field — the right pane switches to property mode and renders the configuration UI for that component.
 
@@ -48,29 +48,36 @@ Properties of the built-in Syncfusion controls, or properties related to the [te
 
 {% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/form-builder/property-panel-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/form-builder/property-panel-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```ts
+import { FormBuilder, FormWidgetType } from '@syncfusion/ej2-form-builder';
 
-{% previewsample "page.domainurl/code-snippet/form-builder/property-panel-cs1" %}
+let formBuilder: FormBuilder = new FormBuilder();
+formBuilder.appendTo('#formbuilder');
+
+formBuilder.setProperty(FormWidgetType.Textarea, {
+    "key": "enableRtl",
+    "label": "Enable RTL",
+    "type": "boolean",
+    "default": false
+});
+```
+
 {% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/form-builder/property-panel-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/form-builder/property-panel-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```js
+var formBuilder = new ej.formbuilder.FormBuilder();
+formBuilder.appendTo('#formbuilder');
 
-{% previewsample "page.domainurl/code-snippet/form-builder/property-panel-cs1" %}
+formBuilder.setProperty('textarea', {
+    "key": "enableRtl",
+    "label": "Enable RTL",
+    "type": "boolean",
+    "default": false
+});
+```
 {% endif %}
+
+![Adding new Property in property panel](./images/from-builder-setproperty.png)
 
 ## Hiding a property from the property panel
 {% if page.publishingplatform == "typescript" %}
@@ -81,26 +88,27 @@ An existing property in the property panel can be hidden by getting the property
 
 {% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/form-builder/property-panel-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/form-builder/property-panel-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```ts
+import { FormBuilder, FormWidgetType } from '@syncfusion/ej2-form-builder';
 
-{% previewsample "page.domainurl/code-snippet/form-builder/property-panel-cs2" %}
+let formBuilder: FormBuilder = new FormBuilder();
+formBuilder.appendTo('#formbuilder');
+
+
+formBuilder.getProperty(FormWidgetType.Textarea, "label")!.visible = false;
+formBuilder.refresh();
+```
+
 {% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/form-builder/property-panel-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/form-builder/property-panel-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```js
+var formBuilder = new ej.formbuilder.FormBuilder();
+formBuilder.appendTo('#formbuilder');
 
-{% previewsample "page.domainurl/code-snippet/form-builder/property-panel-cs2" %}
+formBuilder.getProperty('textarea', "label").visible = false;
+formBuilder.refresh();
+```
+
 {% endif %}
+
+![Hiding a property from property panel](./images/form-builder-hiding-property.png)

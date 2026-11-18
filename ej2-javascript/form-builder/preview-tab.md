@@ -29,29 +29,31 @@ The preview option can be disabling by setting the [enablePreview](https://ej2.s
 
 {% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/form-builder/preview-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/form-builder/preview-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```ts
+import { FormBuilder } from '@syncfusion/ej2-form-builder';
 
-{% previewsample "page.domainurl/code-snippet/form-builder/preview-cs1" %}
+let formBuilder: FormBuilder = new FormBuilder({
+    enablePreview: false
+});
+
+formBuilder.appendTo('#formbuilder');
+```
+
 {% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/form-builder/preview-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/form-builder/preview-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```js
+var formBuilder = new ej.formbuilder.FormBuilder({
+    enablePreview: false
+});
 
-{% previewsample "page.domainurl/code-snippet/form-builder/preview-cs1" %}
+formBuilder.appendTo('#formbuilder');
+```
+
 {% endif %}
+
+The output will appear as follows:
+
+![Disabling the preview in Form Builder](./images/form-builder-disable-preview.png)
 
 ## JSON code preview
 

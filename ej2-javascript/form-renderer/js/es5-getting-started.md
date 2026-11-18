@@ -94,19 +94,85 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls' global script
 
 Add an HTML `<div>` element to the **index.html** file to act as the root element of the Form Renderer control.
 
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/form-renderer/getting-started-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```html
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Essential JS 2</title>
+        <!-- Essential JS 2's material theme -->
+        <link href="https://cdn.syncfusion.com/ej2/34.2.2/material3.css" type="text/css"/>
+
+        <!-- Essential JS 2's global script  -->
+        <script src="https://cdn.syncfusion.com/ej2/34.2.2/dist/ej2.min.js"></script>
+    </head>
+    <body>
+        <!-- Add the HTML div that will render as the Form Renderer -->
+        <div id="formrenderer"></div>
+        <script src="index.js" type="text/javascript"></script>
+    </body>
+</html>
+```
 
 Place the following code in the **index.js** file to render the Form Renderer control:
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/form-renderer/getting-started-cs1/index.js %}
-{% endhighlight %}
-{% endtabs %}
+```js
+            // initialize Form Renderer control
+            var formRenderer = new ej.formrenderer.FormRenderer({
+                schema: {
+                    "version": "0.1.0",
+                    "properties": {
+                        "emailAddress": {
+                            "id": "textbox_1785491685456_167",
+                            "name": "emailAddress",
+                            "type": "string",
+                            "label": "Email Address",
+                            "textboxType": "email",
+                            "required": true,
+                            "widget": "textbox"
+                        },
+                        "password": {
+                            "id": "textbox_1785491685456_537",
+                            "name": "password",
+                            "type": "string",
+                            "label": "Password",
+                            "textboxType": "password",
+                            "required": true,
+                            "minLength": 6,
+                            "widget": "textbox"
+                        },
+                        "rememberMe": {
+                            "id": "checkbox_1785491685456_262",
+                            "name": "rememberMe",
+                            "type": "boolean",
+                            "label": "Remember Me",
+                            "widget": "checkbox"
+                        },
+                        "submit": {
+                            "id": "submit_button_initial",
+                            "name": "defaultFormsubmit",
+                            "type": "button",
+                            "label": "Submit",
+                            "buttonType": "submit",
+                            "widget": "button",
+                            "style": "primary",
+                            "disabled": false
+                        }
+                    },
+                    "layout": [
+                        { "type": "field", "propertyId": "emailAddress" },
+                        { "type": "field", "propertyId": "password" },
+                        { "type": "field", "propertyId": "rememberMe" },
+                        { "type": "field", "propertyId": "submit" }
+                    ],
+                    "settings": {
+                        "name": "Untitled Form"
+                    }
+                }
+            });
+
+            // Render initialized Form Renderer.
+            formRenderer.appendTo('#formrenderer');
+```
 
 ## Run the application
 

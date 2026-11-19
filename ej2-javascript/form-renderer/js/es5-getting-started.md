@@ -114,7 +114,7 @@ Run the **index.html** file in a web browser. It will render the Essential<sup s
 
 The output will appear as follows:
 
-{% previewsample "page.domainurl/code-snippet/form-renderer/getting-started-cs1" %}
+![JavaScript Form Renderer](./images/form-renderer.png)
 
 ## Registering Syncfusion license
 

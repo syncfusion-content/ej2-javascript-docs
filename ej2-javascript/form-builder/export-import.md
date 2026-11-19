@@ -37,7 +37,6 @@ Exporting can be disabled in the Form Builder component by setting the [allowExp
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -49,8 +48,11 @@ Exporting can be disabled in the Form Builder component by setting the [allowExp
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs1" %}
 {% endif %}
+
+The output will appear as follows:
+
+![Disabling the export](./images/form-builder-export.png)
 
 ## Import form schema
 {% if page.publishingplatform == "typescript" %}
@@ -72,7 +74,6 @@ The following example shows how to import a schema object to the Form Builder.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs2" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -84,5 +85,6 @@ The following example shows how to import a schema object to the Form Builder.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs2" %}
 {% endif %}
+
+![Import from schema](./images/form-builder-import-schema.png)

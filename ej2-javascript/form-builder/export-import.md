@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting and Importing in ##Platform_Name## Form Builder control | Syncfusion
-description: Learn how to export and import in the ##Platform_Name## Form Builder control. Use export to reuse the generated form schema in Form Renderer, and import to continue editing an existing schema in Form Builder.
+title: Exporting and Importing in ##Platform_Name## Form Builder | Syncfusion
+description: Learn how to export and import form schemas in the ##Platform_Name## Form Builder. Reuse schemas in Form Renderer or import them to continue editing.
 platform: ej2-javascript
 control: Exporting and Importing
 publishingplatform: ##Platform_Name##

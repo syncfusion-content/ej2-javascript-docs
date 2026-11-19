@@ -38,7 +38,6 @@ After you drag and drop the form field onto the central design canvas, the third
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/template-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -50,10 +49,11 @@ After you drag and drop the form field onto the central design canvas, the third
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/template-cs1" %}
 {% endif %}
 
 In the Preview tab, the templates are displayed so that you can validate the created form.
+
+![Templates in Form Builder](./images/form-builder-template.gif)
 
 ## Adding properties of the template in property panel
 

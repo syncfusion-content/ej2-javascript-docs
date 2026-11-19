@@ -68,7 +68,6 @@ The following example renders a Form Renderer with email, password, and remember
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-renderer/submit-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -80,7 +79,6 @@ The following example renders a Form Renderer with email, password, and remember
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-renderer/submit-cs1" %}
 {% endif %}
 
 ## Resetting the form
@@ -117,7 +115,6 @@ The following example renders a Form Renderer with email, password, and remember
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-renderer/reset-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -129,7 +126,6 @@ The following example renders a Form Renderer with email, password, and remember
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-renderer/reset-cs1" %}
 {% endif %}
 
 ## Adding custom click actions
@@ -166,11 +162,17 @@ When the user clicks a `buttonType: "button"` button, the renderer raises the [b
 The following example renders a Form Renderer with email, password, and remember-me fields, along with a custom click button. When the user clicks **Cancel**, the `buttonClick` event is raised with the button's name, label, and the original click event:
 
 {% if page.publishingplatform == "typescript" %}
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/form-renderer/button-cs1/index.ts %}
-{% previewsample "page.domainurl/code-snippet/form-renderer/button-cs1" %}
+{% endhighlight %}
+{% endtabs %}
 {% elsif page.publishingplatform == "javascript" %}
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
 {% include code-snippet/form-renderer/button-cs1/index.js %}
-{% previewsample "page.domainurl/code-snippet/form-renderer/button-cs1" %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ## Detecting the field change
@@ -210,7 +212,6 @@ The following example renders a Form Renderer with textbox and checkbox fields. 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-renderer/change-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -222,7 +223,6 @@ The following example renders a Form Renderer with textbox and checkbox fields. 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-renderer/change-cs1" %}
 {% endif %}
 
 ## Customizing the form once the control is rendered
@@ -246,7 +246,6 @@ The following example renders a Form Renderer with email, password, and remember
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-renderer/created-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -258,7 +257,6 @@ The following example renders a Form Renderer with email, password, and remember
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-renderer/created-cs1" %}
 {% endif %}
 
 ## See also

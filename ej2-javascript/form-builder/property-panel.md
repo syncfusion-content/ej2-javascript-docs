@@ -57,7 +57,6 @@ Properties of the built-in Syncfusion controls, or properties related to the [te
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/property-panel-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -69,8 +68,9 @@ Properties of the built-in Syncfusion controls, or properties related to the [te
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/property-panel-cs1" %}
 {% endif %}
+
+![Adding new Property in property panel](./images/from-builder-setproperty.png)
 
 ## Hiding a property from the property panel
 {% if page.publishingplatform == "typescript" %}
@@ -90,7 +90,6 @@ An existing property in the property panel can be hidden by getting the property
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/property-panel-cs2" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -102,5 +101,6 @@ An existing property in the property panel can be hidden by getting the property
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/property-panel-cs2" %}
 {% endif %}
+
+![Hiding a property from property panel](./images/form-builder-hiding-property.png)

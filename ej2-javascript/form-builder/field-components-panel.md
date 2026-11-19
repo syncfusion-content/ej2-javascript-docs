@@ -97,7 +97,6 @@ The **Templates** tab (available in Developer mode only) displays a flat list of
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/field-components-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -109,10 +108,13 @@ The **Templates** tab (available in Developer mode only) displays a flat list of
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/field-components-cs1" %}
 {% endif %}
 
 Dragging a template onto the canvas inserts the entire set of components defined by the template's schema. Submit buttons within templates are filtered out to prevent duplicate submit buttons.
+
+The output will appear as follows:
+
+![Templates tab](./images/form-builder-form-templates.png)
 
 ## Customizing the toolbox items
 
@@ -133,7 +135,6 @@ The form fields in the toolbox can be customized using the [toolboxCategories](h
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/field-components-cs2" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -145,8 +146,9 @@ The form fields in the toolbox can be customized using the [toolboxCategories](h
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/field-components-cs2" %}
 {% endif %}
+
+![Customizing toolbox items](./images/form-builder-toolbox-categories.png)
 
 ## Drag and drop behavior
 

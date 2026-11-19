@@ -131,7 +131,7 @@ npm run start
 
 The output will appear as follows:
 
-{% previewsample "page.domainurl/code-snippet/form-builder/default-cs1" %}
+![TypeScript Form Builder](./images/form-builder.png)
 
 ## Registering Syncfusion license
 

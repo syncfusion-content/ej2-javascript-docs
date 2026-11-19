@@ -38,7 +38,6 @@ The preview option can be disabling by setting the [enablePreview](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/preview-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -50,8 +49,11 @@ The preview option can be disabling by setting the [enablePreview](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/preview-cs1" %}
 {% endif %}
+
+The output will appear as follows:
+
+![Disabling the preview in Form Builder](./images/form-builder-disable-preview.png)
 
 ## JSON code preview
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting and Importing in ##Platform_Name## Form Builder control | Syncfusion
-description: Learn how to export and import in the ##Platform_Name## Form Builder control. Use export to reuse the generated form schema in Form Renderer, and import to continue editing an existing schema in Form Builder.
+title: Exporting and Importing in ##Platform_Name## Form Builder | Syncfusion
+description: Learn how to export and import form schemas in the ##Platform_Name## Form Builder. Reuse schemas in Form Renderer or import them to continue editing.
 platform: ej2-javascript
 control: Exporting and Importing
 publishingplatform: ##Platform_Name##
@@ -37,7 +37,6 @@ Exporting can be disabled in the Form Builder component by setting the [allowExp
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -49,8 +48,11 @@ Exporting can be disabled in the Form Builder component by setting the [allowExp
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs1" %}
 {% endif %}
+
+The output will appear as follows:
+
+![Disabling the export](./images/form-builder-export.png)
 
 ## Import form schema
 {% if page.publishingplatform == "typescript" %}
@@ -72,7 +74,6 @@ The following example shows how to import a schema object to the Form Builder.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs2" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -84,5 +85,6 @@ The following example shows how to import a schema object to the Form Builder.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/export-import-cs2" %}
 {% endif %}
+
+![Import from schema](./images/form-builder-import-schema.png)

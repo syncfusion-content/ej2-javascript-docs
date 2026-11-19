@@ -42,7 +42,6 @@ The [setFieldValue](https://ej2.syncfusion.com/javascript/documentation/api/form
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-renderer/template-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -54,7 +53,6 @@ The [setFieldValue](https://ej2.syncfusion.com/javascript/documentation/api/form
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-renderer/template-cs1" %}
 {% endif %}
 
 ## Adding a template to a single or specific field
@@ -82,7 +80,6 @@ You can also map a template to a single form field by using the [fieldName](http
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-renderer/template-cs2" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -94,5 +91,4 @@ You can also map a template to a single form field by using the [fieldName](http
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-renderer/template-cs2" %}
 {% endif %}

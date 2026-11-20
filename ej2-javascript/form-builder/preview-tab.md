@@ -21,37 +21,36 @@ You can switch to the **Preview** tab to see a live preview of the form. This vi
 
 ## Disabling the preview
 
-{% if page.publishingplatform == "typescript" %}
-The preview option can be disabling by setting the [enablePreview](https://ej2.syncfusion.com/documentation/api/form-builder/index-default#enablepreview) property to `false`. The default value is `true`.
-{% elsif page.publishingplatform == "javascript" %}
-The preview option can be disabling by setting the [enablePreview](https://ej2.syncfusion.com/javascript/documentation/api/form-builder/index-default#enablepreview) property to `false`. The default value is `true`.
-{% endif %}
+The preview option can be disabling by setting the `enablePreview` property to `false`. The default value is `true`.
 
 {% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/form-builder/preview-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/form-builder/preview-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/form-builder/preview-cs1" %}
+```ts
+import { FormBuilder } from '@syncfusion/ej2-form-builder';
+
+let formBuilder: FormBuilder = new FormBuilder({
+    enablePreview: false
+});
+
+formBuilder.appendTo('#formbuilder');
+```
+
 {% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/form-builder/preview-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/form-builder/preview-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```js
+var formBuilder = new ej.formbuilder.FormBuilder({
+    enablePreview: false
+});
 
-{% previewsample "page.domainurl/code-snippet/form-builder/preview-cs1" %}
+formBuilder.appendTo('#formbuilder');
+```
+
 {% endif %}
+
+The output will appear as follows:
+
+![Disabling the preview in Form Builder](./images/form-builder-disable-preview.png)
 
 ## JSON code preview
 

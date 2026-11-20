@@ -33,11 +33,7 @@ Design custom forms visually and export their schema in seconds with our interac
 
 ## Form Schema Definitions
 
-{% if page.publishingplatform == "typescript" %}
-A [schema](https://ej2.syncfusion.com/documentation/api/form-renderer/schema) is a JSON object with the following root keys:
-{% elsif page.publishingplatform == "javascript" %}
-A [schema](https://ej2.syncfusion.com/javascript/documentation/api/form-renderer/schema) is a JSON object with the following root keys:
-{% endif %}
+A schema is a JSON object with the following root keys:
 
 | Member | Type | Purpose |
 | --- | --- | --- |
@@ -91,12 +87,7 @@ A flat dictionary where each key represents a property and its corresponding val
 
 ### Layout Definitions
 
-{% if page.publishingplatform == "typescript" %}
-The [layout](https://ej2.syncfusion.com/documentation/api/form-renderer/schema#layout) property in the form schema defines the layout nodes within which the widgets are placed. The example below uses the same `firstName` and `country` fields defined above, both placed within a single panel:
-{% elsif page.publishingplatform == "javascript" %}
-The [layout](https://ej2.syncfusion.com/javascript/documentation/api/form-renderer/schema#layout) property in the form schema defines the layout nodes within which the widgets are placed. The example below uses the same `firstName` and `country` fields defined above, both placed within a single panel:
-{% endif %}
-
+The `layout` property in the form schema defines the layout nodes within which the widgets are placed. The example below uses the same `firstName` and `country` fields defined above, both placed within a single panel:
 
 ```json
 {

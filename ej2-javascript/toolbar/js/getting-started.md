@@ -134,7 +134,7 @@ The Toolbar can be rendered by defining an array of [`items`](../api/toolbar#ite
 **Example:**
 > Script: [`http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js`](http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js)
 >
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css`](http://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/34.2.2/bootstrap5.3.css`](https://cdn.syncfusion.com/ej2/34.2.2/bootstrap5.3.css)
 
 **Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `Toolbar` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toolbar** component in the index.html by using following code.
 

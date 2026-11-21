@@ -13,158 +13,35 @@ domainurl: ##DomainURL##
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
+## Create a Folder and HTML File
+
+- Create a folder named `quickstart` in your desired directory.
+
+- Inside the `quickstart` folder, create a new file named `index.html`.
+
 ## Control Initialization
 
-Create an app folder `myapp` in local machine to initialize Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and Scripts
 
-Using either of the following way to refer the required script and styles.
+## Add Syncfusion® Sidebar CSS Styles and Scripts
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+Include the following CSS and JavaScript files from CDN in the <head> section of the index.html file. The `ej2-base`, `ej2-data`, `ej2-lists`, `ej2-inputs`, `ej2-buttons`, and `ej2-popups` scripts are required dependency packages for the Sidebar component.
 
-### Using local script and style references in a HTML page
+**Styles(CSS):**
 
-**Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
-
-**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
-
-**Syntax:**
-> Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
->
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\bootstrap5.3.css`
-
-**Example:**
-
-> Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-navigations\dist\global\ej2-navigations.min.js`
->
-> Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-navigations\styles\bootstrap5.3.css`
-
-The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
-
-> Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
->
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\bootstrap5.3.css`
-
-**Step 3:** Create a folder `myapp/resources` and copy/paste the above mentioned packages from the above installed location to `myapp/resources` location.
-
-**Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script and style references.
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 bootstrap5.3 theme -->
-            <link href="resources/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 Sidebar's global and dependent script -->
-            <script src="resources/ej2-base.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-navigations.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
+```text
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/sidebar/index.css
 ```
 
-**Step 5:** Now, add the `div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Sidebar** control in the `index.html` by using following code
+**Scripts (javascript):**
 
 ```html
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-    <title>Essential JS 2</title>
-    <!-- Essential JS 2 bootstrap5.3 theme -->
-    <link href="resources/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-
-    <!-- Essential JS 2 Sidebar's global and dependent script -->
-    <script src="resources/ej2-base.min.js" type="text/javascript"></script>
-    <script src="resources/ej2-navigations.min.js" type="text/javascript"></script>
-</head>
-
-<body>
-    <!-- Add the HTML <div> element  -->
-    <div id='container'>
-        <aside id="default">
-            <div class="title"> Sidebar </div>
-        </aside>
-        <!-- end of Sidebar element -->
-        <!-- main content declaration -->
-        <div>
-            <div class="title">Main content</div>
-            <div class="sub-title"> Content goes here</div>
-        </div>
-    </div>
-    <script>
-        // initialize Sidebar control
-        var defaultSidebar = new ej.navigations.Sidebar();
-
-        // Render initialized Sidebar.
-        defaultSidebar.appendTo('#default')
-    </script>
-</body>
-
-</html>
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-data/dist/global/ej2-data.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-popups/dist/global/ej2-popups.min.js
+https://cdn.syncfusion.com/ej2/32.1.37/ej2-lists/dist/global/ej2-lists.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-navigations/dist/global/ej2-navigations.min.js
 ```
-
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Sidebar** control.
-
-### Using CDN link for script and style reference
-
-**Step 1:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls scripts and styles are already hosted in the below CDN link formats.
-
-**Syntax:**
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Style: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
-
-**Example:**
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js`](http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js)
->
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css`](http://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css)
->
-
-**Step 2:** Have to add `CDN` global script and style for Sidebar and its dependent packages in `myapp/index.html` like below.
-
-```html
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-    <title>Essential JS 2 Sidebar Control</title>
-    <!-- Sidebar and its dependent theme -->
-    <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-    <link href="http://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-    <!-- Essential JS 2 all script -->
-    <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript">
-</head>
-
-<body>
-    <!-- Add the HTML <div> element  -->
-    <div id='container'>
-        <aside id="default">
-            <div class="title"> Sidebar </div>
-        </aside>
-        <!-- end of Sidebar element -->
-        <!-- main content declaration -->
-        <div>
-            <div class="title">Main content</div>
-            <div class="sub-title"> Content goes here</div>
-        </div>
-    </div>
-    <script>
-        // initialize Sidebar control
-        var defaultSidebar  = new ej.navigations.Sidebar();
-
-        // Render initialized Sidebar.
-        defaultSidebar.appendTo('#default')
-    </script>
-</body>
-
-</html>
-```
-
->When referencing CDN links in application, always ensure the network connection will be in enabled state.
 
 ## Enable backdrop
 

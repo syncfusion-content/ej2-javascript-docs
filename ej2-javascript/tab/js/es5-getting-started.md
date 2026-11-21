@@ -13,155 +13,35 @@ domainurl: ##DomainURL##
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
-## Component Initialization
+## Create a Folder and HTML File
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components can be initialized by using either of the following ways.
+- Create a folder named `quickstart` in your desired directory.
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+- Inside the `quickstart` folder, create a new file named `index.html`.
 
-### Using local script and style references in a HTML page
+## Control Initialization
 
-**Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and Scripts
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+## Add Syncfusion® Tab CSS Styles and Scripts
 
-**Syntax:**
+Include the following CSS and JavaScript files from CDN in the <head> section of the index.html file. The `ej2-base`, `ej2-data`, `ej2-lists`, `ej2-inputs`, `ej2-buttons`, and `ej2-popups` scripts are required dependency packages for the Tab component.
 
-> Dependency Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\dist\global\{DEPENDENCY_PACKAGE_NAME}.min.js`
->
-> Control Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
->
-> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\material.css`
->
-> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
+**Styles(CSS):**
 
-**Example:**
-
-> Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
->
-> Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-navigations\dist\global\ej2-navigations.min.js`
->
-> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-base\styles\material.css`
->
-> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-navigations\styles\material.css`
-
-The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
-
-> Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
->
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
-
-**Step 3:** Create a folder `myapp/resources` and copy/paste the global scripts and styles from the above installed location to `myapp/resources` location.
-
-**Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script and style references.
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="resources/material.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 Tab's global script -->
-            <script src="resources/ej2-base.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-navigations.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
+```text
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/tab/index.css
 ```
 
-**Step 5:** Now, add the `Tab` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tab** component in the `index.html` by using following code
-
-## Initialize the Tab using JSON items collection
-
-The Tab can be rendered by defining a JSON array. The item is rendered with [`header`](../api/tab/tabItem#header) text and [`content`](../api/tab/tabItem#content) for each Tab using [`items`](../api/tab#items) property.
+**Scripts (javascript):**
 
 ```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="resources/material.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 Tab's global script -->
-            <script src="resources/ej2-base.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-navigations.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-            <!-- Add the HTML <div> element  -->
-             <div id="element"></div>
-            <script>
-              var tabObj = new ej.navigations.Tab({
-                  items: [
-                      {
-                          header: { 'text': 'Twitter' },
-                          content: 'Twitter is an online social networking service that enables users to send and read short 140-character ' +
-                          'messages called "tweets". Registered users can read and post tweets, but those who are unregistered can only read ' +
-                          'them. Users access Twitter through the website interface, SMS or mobile device app Twitter Inc. is based in San ' +
-                          'Francisco and has more than 25 offices around the world. Twitter was created in March 2006 by Jack Dorsey, ' +
-                          'Evan Williams, Biz Stone, and Noah Glass and launched in July 2006. The service rapidly gained worldwide popularity, ' +
-                          'with more than 100 million users posting 340 million tweets a day in 2012.The service also handled 1.6 billion ' +
-                          'search queries per day.'
-                      },
-                      {
-                          header: { 'text': 'Facebook' },
-                          content: 'Facebook is an online social networking service headquartered in Menlo Park, California. Its website was ' +
-                          'launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo ' +
-                          'Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website\'\s ' +
-                          'membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford ' +
-                          'University. It gradually added support for students at various other universities and later to high-school students.'
-                      },
-                      {
-                          header: { 'text': 'WhatsApp' },
-                          content: 'WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates ' +
-                          'under a subscription business model. It uses the Internet to send text messages, images, video, user location and ' +
-                          'audio media messages to other users using standard cellular mobile numbers. As of February 2016, WhatsApp had a user ' +
-                          'base of up to one billion,[10] making it the most globally popular messaging application. WhatsApp Inc., based in ' +
-                          'Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.'
-                      }
-                  ]
-                  });
-
-              //Render initialized Tab component
-              tabObj.appendTo('#element');
-            </script>
-       </body>
-  </html>
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-data/dist/global/ej2-data.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-popups/dist/global/ej2-popups.min.js
+https://cdn.syncfusion.com/ej2/32.1.37/ej2-lists/dist/global/ej2-lists.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-navigations/dist/global/ej2-navigations.min.js
 ```
-
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tab** component.
-
-### Using CDN link for script and style reference
-
-**Step 1:** Create an app folder `myapp` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
-
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
-
-**Syntax:**
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
-
-**Example:**
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js`](http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js)
->
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css)
-
-**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `Tab` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tab** component in the index.html by using following code.
-
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/tab/es5-getting-started-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/tab/es5-getting-started-cs1" %}
-
-**Step 4:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tab** component.
 
 ## Initialize the Tab using HTML elements
 

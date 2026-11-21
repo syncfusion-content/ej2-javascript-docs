@@ -121,7 +121,7 @@ Using either of the following way to refer the required script and styles.
 **Example:**
 > Script: [`http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js`](http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js)
 >
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/34.2.2/bootstrap5.3.css`](https://cdn.syncfusion.com/ej2/34.2.2/bootstrap5.3.css)
 >
 
 **Step 2:** Have to add `CDN` global script and style for calender and its dependent packages in `myapp/index.html` like below.
@@ -134,7 +134,7 @@ Using either of the following way to refer the required script and styles.
     <title>Essential JS 2 Sidebar Component</title>
     <!-- Sidebar and its dependent theme -->
     <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/34.2.2/material.css" rel="stylesheet" />
     <!-- Essential JS 2 all script -->
     <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
 </head>

@@ -33,12 +33,26 @@ Refer to the following steps to set up your local environment.
 
 **Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Uploader control.
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+## Control Initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Uploader control can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and Scripts
 
-* Using local script and style.
-* Using CDN link for script and style.
+## Add Syncfusion® Uploader CSS Styles and Scripts
+
+Include the following CSS and JavaScript files from CDN in the <head> section of the index.html file. The `ej2-base` scripts are required dependency packages for the Uploader component.
+
+**Styles(CSS):**
+
+```text
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/uploader/index.css
+```
+
+**Scripts (javascript):**
+
+```html
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-inputs/dist/global/ej2-inputs.min.js
+```
 
 ## Initialize the uploader
 
@@ -58,11 +72,11 @@ The uploader can be initialized through an input tag. Add an HTML input element 
     <meta name="author" content="Syncfusion" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!--style reference from app-->
-    <link href="/styles/styles.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/uploader/index.css" rel="stylesheet">
+    <link href="https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/uploader/index.css" rel="stylesheet" />
 
-    <!--system js reference and configuration-->
-    <script src="node_modules/systemjs/dist/system.src.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
     <script src="system.config.js" type="text/javascript"></script>
 </head>
 

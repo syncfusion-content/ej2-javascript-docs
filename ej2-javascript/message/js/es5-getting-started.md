@@ -34,24 +34,26 @@ Refer to the following steps to set up the local environment.
 
 **Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Message control.
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+## Control Initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Message control can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and scripts
 
-* Using local script and style.
-* Using CDN link for script and style.
+## Add Syncfusion® Message CSS Styles and Scripts
 
-## Adding CSS reference
+Include the following CSS and JavaScript files from CDN in the `<head>` section of the `index.html` file. The `ej2-base` script is the required dependency package for the message component.
 
-The combined CSS files are available in the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package root folder. This can be referenced in the `[src/styles/styles.css]` file using the following code.
+**Styles(CSS):**
 
-```bash
-@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-notifications/styles/material.css';
-
+```text
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/message/index.css
 ```
 
-> To add the individual control CSS, refer to the [individual control theme](../appearance/theme#referring-individual-control-theme) section. To use the combined control styles, make use of Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com) (Custom Resource Generator) in the application.
+**Scripts (javascript):**
+
+```html
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-notifications/dist/global/ej2-notifications.min.js
+```
 
 ## Add Message control
 
@@ -65,7 +67,7 @@ Now, start adding the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Messa
 <head>
     <title>Essential JS 2 Message control</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/message/index.css" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/ej2-notifications/dist/global/ej2-notifications.min.js" type="text/javascript"></script>
 </head>
 <body>

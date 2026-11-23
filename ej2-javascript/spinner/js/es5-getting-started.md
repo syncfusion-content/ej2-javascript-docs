@@ -34,6 +34,27 @@ Refer to the following steps to set up your local environment.
 
 **Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Spinner control.
 
+## Control Initialization
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and Scripts
+
+## Add Syncfusion® Spinner CSS Styles and Scripts
+
+Include the following CSS and JavaScript files from CDN in the `<head>` section of the `index.html` file. The `ej2-base` script is the required dependency package for the Spinner component.
+
+**Styles(CSS):**
+
+```text
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/spinner/index.css
+```
+
+**Scripts (javascript):**
+
+```html
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-popups/dist/global/ej2-popups.min.js
+```
+
 ## Create Spinner
 
 Initialize the Spinner using the `createSpinner` method and show/hide the spinner using the `showSpinner` and `hideSpinner` methods. Set the target to render the spinner based on a specific element:

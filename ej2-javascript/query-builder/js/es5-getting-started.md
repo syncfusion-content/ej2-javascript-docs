@@ -39,142 +39,36 @@ Refer to the following steps to set up your local environment.
 
 **Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Query Builder control.
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+## Control Initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Query Builder control can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and Scripts
 
-* Using local script and style.
-* Using CDN link for script and style.
+## Add Syncfusion® QueryBuilder CSS Styles and Scripts
 
-### Using local script and style references in a HTML page
+Include the following CSS and JavaScript files from CDN in the `<head>` section of the `index.html` file. The `ej2-base`,`ej2-popups`,`ej2-lists`,`ej2-buttons`,`ej2-inputs`, `ej2-calendars` and `ej2-splitbuttons` script is the required dependency package for the QueryBuilder component.
 
-**Step 1:** Create an app folder `quickstart` for getting started.
+**Styles(CSS):**
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
-
-**Syntax:**
-> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Style: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/material.css`
-
-**Example:**
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/16.3.29/Essential JS 2/ej2-query-builder/dist/global/ej2-querybuilder.min.js`
->
-> style: `C:/Program Files (x86)/Syncfusion/Essential Studio/16.3.29/Essential JS 2/ej2-buttons/styles/material.css`
-
-The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific controls. This web tool is useful to combine the required control scripts and styles in a single file.
-
-**Step 3:** Create a folder `~/quickstart/resources` and copy/paste the global scripts and styles from the above installed location to `~/quickstart/resources/package` corresponding package location.
-
-**Step 4:** Create a HTML page (index.html) in `~/quickstart/index.html` and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script and style references.
-
-```html
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Essential JS 2</title>
-         <!-- Essential JS 2 query-builder's dependency style -->
-        <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
-        <link href="resources/buttons/material.css" rel="stylesheet" type="text/css"/>
-        <link href="resources/splitbuttons/material.css" rel="stylesheet" type="text/css"/>
-        <link href="resources/dropdowns/material.css" rel="stylesheet" type="text/css"/>
-        <link href="resources/inputs/material.css" rel="stylesheet" type="text/css"/>
-        <link href="resources/calendars/material.css" rel="stylesheet" type="text/css"/>
-         <link href="resources/popups/material.css" rel="stylesheet" type="text/css"/>
-        <!-- Essential JS 2 query-builder material theme (Control Styles) -->
-        <link href="resources/querybuilder/material.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Essential JS 2 query-builder's global script (Dependency Script) -->
-        <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
-        <script src="resources/buttons/ej2-buttons.min.js" type="text/javascript"></script>
-        <script src="resources/splitbuttons/ej2-splitbuttons.min.js" type="text/javascript"></script>
-        <script src="resources/dropdowns/ej2-dropdowns.min.js" type="text/javascript"></script>
-        <script src="resources/inputs/ej2-inputs.min.js" type="text/javascript"></script>
-        <script src="resources/calendars/ej2-calendars.min.js" type="text/javascript"></script>
-         <script src="resources/popups/ej2-popups.min.js" type="text/javascript"></script>
-        <!-- Essential JS 2 query-builder global script (Control Script) -->
-        <script src="resources/querybuilder/ej2-querybuilder.min.js" type="text/javascript"></script>
-    </head>
-    <body>
-    </body>
-</html>
+```text
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/query-builder/index.css
 ```
 
-**Step 5:** Now, add the `Query Builder` and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Query Builder** control in the `~/quickstart/index.html` by using following code
+**Scripts (javascript):**
 
 ```html
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Essential JS 2</title>
-         <!-- Essential JS 2 query-builder's dependency style -->
-        <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
-        <link href="resources/buttons/material.css" rel="stylesheet" type="text/css"/>
-        <link href="resources/splitbuttons/material.css" rel="stylesheet" type="text/css"/>
-        <link href="resources/dropdowns/material.css" rel="stylesheet" type="text/css"/>
-        <link href="resources/inputs/material.css" rel="stylesheet" type="text/css"/>
-        <link href="resources/calendars/material.css" rel="stylesheet" type="text/css"/>
-         <link href="resources/popups/material.css" rel="stylesheet" type="text/css"/>
-        <!-- Essential JS 2 query-builder material theme (Control Styles) -->
-        <link href="resources/querybuilder/material.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Essential JS 2 query-builder's global script (Dependency Script) -->
-        <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
-        <script src="resources/buttons/ej2-buttons.min.js" type="text/javascript"></script>
-        <script src="resources/splitbuttons/ej2-splitbuttons.min.js" type="text/javascript"></script>
-        <script src="resources/dropdowns/ej2-dropdowns.min.js" type="text/javascript"></script>
-        <script src="resources/inputs/ej2-inputs.min.js" type="text/javascript"></script>
-        <script src="resources/calendars/ej2-calendars.min.js" type="text/javascript"></script>
-        <script src="resources/popups/ej2-popups.min.js" type="text/javascript"></script>
-        <!-- Essential JS 2 query-builder global script (Control Script) -->
-        <script src="resources/querybuilder/ej2-querybuilder.min.js" type="text/javascript"></script>
-    </head>
-    <body>
-        <!-- Add the HTML div element  -->
-        <div id="querybuilder" class="row">
-        <script>
-        var columnData = [
-            { field: 'EmployeeID', label: 'Employee ID', type: 'number' },
-            { field: 'FirstName', label: 'First Name', type: 'string' },
-            { field: 'TitleOfCourtesy', label: 'Title Of Courtesy', type: 'boolean', values: ['Mr.', 'Mrs.']},
-            { field: 'Title', label: 'Title', type: 'string' },
-            { field: 'HireDate', label: 'Hire Date', type: 'date', format: 'dd/MM/yyyy' },
-            { field: 'Country', label: 'Country', type: 'string' },
-            { field: 'City', label: 'City', type: 'string' }
-        ];
-        var qryBldrObj = new ej.querybuilder.QueryBuilder({
-            width: '70%',
-            columns: columnData,
-        });
-        qryBldrObj.appendTo('#querybuilder');
-        </script>
-    </body>
-</html>
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-inputs/dist/global/ej2-inputs.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-popups/dist/global/ej2-popups.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-lists/dist/global/ej2-lists.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-buttons/dist/global/ej2-buttons.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-calendars/dist/global/ej2-calendars.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-querybuilder/dist/global/ej2-querybuilder.min.js
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Query Builder** control.
+## Adding Querybuilder component to the application
 
-### Using CDN link for script and style reference
-
-**Step 1:** Create an app folder `quickstart` for getting started.
-
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls's global scripts and styles are already hosted in the below CDN link formats.
-
-**Syntax:**
-> Dependency Script: `http://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Control Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Dependency Styles: `http://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/material.css`
->
-> Control Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
-
-**Example:**
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-querybuilder/dist/global/ej2-querybuilder.min.js`](http://cdn.syncfusion.com/ej2/ej2-query-builder/dist/global/ej2-querybuilder.min.js)
->
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-querybuilder/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-querybuilder/styles/material.css)
-
-**Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Query Builder` and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Query Builder** control in the index.html by using following code.
+Add the `Query Builder` and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Query Builder** control in the index.html by using following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -183,8 +77,6 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/query-builder/es5-getting-started-cs1" %}
-
-**Step 4:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Query Builder** control.
 
 ### Rendering with rule
 

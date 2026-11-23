@@ -5,7 +5,7 @@
        <head>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js"></script>
             <title>Essential JS 2</title>
-            <link href="https://cdn.syncfusion.com/ej2/34.2.2/fluent2.css" rel="stylesheet" />
+            <link href="https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/list-view/index.css" rel="stylesheet" />
 
             <!-- Essential JS 2 List's global script -->
             <script src="//cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>

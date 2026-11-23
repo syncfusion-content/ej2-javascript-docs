@@ -33,118 +33,31 @@ Refer to the following steps to set up your local environment.
 
 **Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button control.
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+## Control Initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button control can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and Scripts
 
-* Using local script and style.
-* Using CDN link for script and style.
+## Add Syncfusion® Dialog CSS Styles and Scripts
 
-### Using local script and style references in a HTML page
+Include the following CSS and JavaScript files from CDN in the `<head>` section of the `index.html` file. The `ej2-base` and `ej2-buttons` script is the required dependency package for the Dialog component.
 
-**Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
+**Styles(CSS):**
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
-
-**Syntax:**
-> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/material.css`
-
-**Example:**
-
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-popups/dist/global/ej2-popups.min.js`
->
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-popups/styles/material.css`
-
-**Step 3:** Create a folder `myapp/resources` and copy/paste the global scripts and styles from the above installed location to `myapp/resources` location.
-
-**Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essentials JS 2 script and style references.
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
-            <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />
-            <link href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" type="text/css" />
-
-            <!-- Essential JS 2 Dialog's global script -->
-            <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
+```text
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/dialog/index.css
 ```
 
-**Step 5:** Now, add the `Dialog` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Dialog** control in the `index.html` by using following code
+**Scripts (javascript):**
 
 ```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
-            <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />
-            <link href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" type="text/css" />
-
-            <!-- Essential JS 2 Dialog's global script -->
-            <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
-
-            <style>
-                #container {
-                    min-height: 300px;
-                }
-            </style>
-       </head>
-       <body>
-            <div id="container">
-                <!-- Add the HTML <div> element  -->
-                <div id="dialog"></div>
-            </div>
-            <script>
-                //Initialize Dialog control
-                var dialog = new ej.popups.Dialog({
-                    // Dialog content
-                    content: 'This is a Dialog with content',
-                    // The Dialog shows within the target element
-                    target: document.getElementById("container"),
-                    // Dialog width
-                    width: '250px'
-                });
-                // Render initialized Dialog
-                dialog.appendTo('#dialog');
-            </script>
-       </body>
-  </html>
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-buttons/dist/global/ej2-buttons.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-popups/dist/global/ej2-popups.min.js
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Dialog** control.
+## Adding Dialog component to the application
 
-### Using CDN link for script and style reference
-
-**Step 1:** Create an app folder `myapp` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
-
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 control's global scripts and styles are already hosted in the below CDN link formats.
-
-**Syntax:**
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
-
-**Example:**
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-popups/dist/global/ej2-popups.min.js`](http://cdn.syncfusion.com/ej2/ej2-popups/dist/global/ej2-popups.min.js)
->
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css)
-
-**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `Dialog` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Dialog** control in the index.html by using following code.
+Add the `Dialog` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Dialog** control in the index.html by using following code.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -156,10 +69,6 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button control can be i
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/dialog/getting-started-cs1" %}
-
-**Step 4:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Dialog** control.
-
-> In the dialog control, max-height is calculated based on the dialog target element height. If the target property is not configured, the document.body is considered as a target. Therefore, to show a dialog in proper height, you need to add min-height to the target element.
 
 ## Modal dialog
 

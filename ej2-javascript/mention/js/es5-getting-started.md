@@ -39,119 +39,31 @@ Refer to the following steps to set up your local environment.
 
 **Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Mention control.
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+## Control Initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Mention control can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and Scripts
 
-* Using local script and style.
-* Using CDN link for script and style.
+## Add Syncfusion® Mention CSS Styles and Scripts
 
-### Using local script and style references in a HTML page
+Include the following CSS and JavaScript files from CDN in the `<head>` section of the `index.html` file. The `ej2-base`,`ej2-data`,`ej2-popups`,`ej2-lists`,`ej2-buttons`,`ej2-inputs` script is the required dependency package for the Mention component.
 
-**Step 1:** Create an app folder `quickstart` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
+**Styles(CSS):**
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
-
-**Syntax:**
-> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/bootstrap5.css`
-
-**Example:**
-
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/20.3.47/Essential JS 2/ej2-dropdowns/dist/global/ej2-dropdowns.min.js`
->
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/20.3.47/Essential JS 2/ej2-dropdowns/styles/bootstrap5.css`
-
-**Step 3:** Create a folder `~/quickstart/resources` and copy/paste the global scripts and styles from the above installed location to `quickstart/resources/package` location.
-
-**Step 4:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the Essentials JS 2 script and style references.
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 bootstrap5 theme -->
-            <link href="resources/base/styles/bootstrap5.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/lists/styles/bootstrap5.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/popups/styles/bootstrap5.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/buttons/styles/bootstrap5.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/dropdowns/styles/bootstrap5.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 Mention's dependent scripts -->
-            <script src="resources/ej2-base.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-inputs.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-data.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-lists.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-popups.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-buttons.min.js" type="text/javascript"></script>
-            <!-- Essential JS 2 Mention's global script -->
-            <script src="resources/ej2-dropdowns.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
+```text
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/mention/index.css
 ```
 
-**Step 5:** Now, add the `div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Mention** control in the `index.html` by using following code
+**Scripts (javascript):**
 
 ```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 bootstrap5 theme -->
-            <link href="resources/base/styles/bootstrap5.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/lists/styles/bootstrap5.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/popups/styles/bootstrap5.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/buttons/styles/bootstrap5.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/dropdowns/styles/bootstrap5.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 Mention's dependent scripts -->
-            <script src="resources/ej2-base.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-inputs.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-data.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-lists.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-popups.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-buttons.min.js" type="text/javascript"></script>
-            <!-- Essential JS 2 Mention's global script -->
-            <script src="resources/ej2-dropdowns.min.js" type="text/javascript"></script>
-       </head>
-      <body>
-          <!-- Add the HTML <div> element  -->
-          <div id="mentionElement" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
-          <script>
-               // initialize Mention control
-               var mentionObj = new ej.dropdowns.Mention();
-               // Render initialized Mention.
-               mentionObj.appendTo('#mentionElement');
-          </script>
-       </body>
-  </html>
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-data/dist/global/ej2-data.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-inputs/dist/global/ej2-inputs.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-popups/dist/global/ej2-popups.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-lists/dist/global/ej2-lists.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-buttons/dist/global/ej2-buttons.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-dropdowns/dist/global/ej2-dropdowns.min.js
 ```
-
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Mention** control.
-
-### Using CDN link for script and style reference
-
-**Step 1:** Create an app folder `quickstart` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
-
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 control's global scripts and styles are already hosted in the following CDN link formats.
-
-**Syntax:**
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/bootstrap5.css`
-
-**Example:**
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-dropdowns/dist/global/ej2-dropdowns.min.js`](http://cdn.syncfusion.com/ej2/ej2-dropdowns/dist/global/ej2-dropdowns.min.js)
->
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/bootstrap5.css`](http://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/bootstrap5.css)
-
-**Step 3:** Create a HTML page (index.html) in `quickstart` location and add the CDN link references. Now, add the `div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Mention** control in the `index.html` by using following code.
 
 ## Adding the Mention control to the application
 
@@ -163,9 +75,7 @@ Add the HTML div tag with the `id` attribute as `mentionElement` to your `index.
        <head>
             <title>Essential JS 2</title>
              <!-- Essential JS 2 Mention's dependent bootstrap5 theme -->
-            <link href="//cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap5.css" rel="stylesheet" type="text/css"/>
-            <link href="//cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="//cdn.syncfusion.com/ej2/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet" type="text/css"/>
+            <link href="https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/mention/index.css" rel="stylesheet" />
 
             <!-- Essential JS 2 all script -->
             <!-- <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script> -->
@@ -203,10 +113,8 @@ After initialization, populate the Mention with data using the [dataSource](http
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2</title>
-             <!-- Essential JS 2 Mention's dependent bootstrap5 theme -->
-            <link href="//cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap5.css" rel="stylesheet" type="text/css"/>
-            <link href="//cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="//cdn.syncfusion.com/ej2/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet" type="text/css"/>
+             <!-- Essential JS 2 Mention's dependent bootstrap5.3 theme -->
+            <link href="https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/mention/index.css" rel="stylesheet" />
 
             <!-- Essential JS 2 all script -->
             <!-- <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script> -->

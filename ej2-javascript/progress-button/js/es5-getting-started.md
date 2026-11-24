@@ -32,138 +32,32 @@ Refer to the following steps to set up your local environment.
 
 **Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Progress button control.
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+## Control Initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Progress button control can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and scripts
 
-* Using local script and style.
-* Using CDN link for script and style.
+## Add Syncfusion® Progress Button CSS Styles and Scripts
 
-### Using local script and style
+Include the following CSS and JavaScript files from CDN in the <head> section of the index.html file. The `ej2-base`, `ej2-popups`, `ej2-splitbuttons` scripts are required dependency packages for the Progress Button component.
 
-To use local scripts and styles for Syncfusion<sup style="font-size:70%">&reg;</sup> Progress button, you can follow these steps:
+**Styles(CSS):**
 
-**Step 1:** Create an app folder `quickstart` for getting started.
-
-**Step 2:** Obtain the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
-
-**Syntax:**
-> Dependency Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\dist\global\{DEPENDENCY_PACKAGE_NAME}.min.js`
->
-> Control Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
->
-> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\material.css`
->
-> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
-
-**Example:**
-
-> Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
->
-> Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-split buttons\dist\global\ej2-split buttons.min.js`
->
-> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-base\styles\material.css`
->
-> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-split buttons\styles\material.css`
-
-The following script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file:
-
-> Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
->
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
-
-Use the [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) online web tool to generate custom scripts and styles for specific controls. This tool is useful for combining required control scripts and styles in a single file.
-
-**Step 3:** Create a folder `~/quickstart/resources` and copy/paste the global scripts and styles from the above installed location to `~/quickstart/resources/package` corresponding package location.
-
-**Step 4:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script and style references.
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 ProgressButton's dependency style -->
-            <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/buttons/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/popups/material.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 ProgressButton's control style -->
-            <link href="resources/splitbuttons/material.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 ProgressButton's dependency global script -->
-            <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
-            <script src="resources/buttons/ej2-buttons.min.js" type="text/javascript"></script>
-            <script src="resources/popups/ej2-popups.min.js" type="text/javascript"></script>
-
-            <!-- Essential JS 2 ProgressButton's control global script -->
-            <script src="resources/splitbuttons/ej2-splitbuttons.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
+```text
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/progress-button/index.css
 ```
 
-**Step 5:** Now, add the `ProgressButton` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript ProgressButton** control in the `index.html` by using following code.
+**Scripts (javascript):**
 
 ```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 ProgressButton's dependency style -->
-            <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/buttons/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/popups/material.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 ProgressButton's control style -->
-            <link href="resources/splitbuttons/material.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 ProgressButton's dependency global script -->
-            <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
-            <script src="resources/buttons/ej2-buttons.min.js" type="text/javascript"></script>
-            <script src="resources/popups/ej2-popups.min.js" type="text/javascript"></script>
-
-            <!-- Essential JS 2 ProgressButton's control global script -->
-            <script src="resources/splitbuttons/ej2-splitbuttons.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-            <!--element which is going to render-->
-            <button id='spinleft'>Paste</button>
-            <script>
-                // Initialize ProgressButton control.
-                var progressButton = new ej.splitbuttons.ProgressButton({content: 'Spin Left'});
-
-                // Render initialized ProgressButton.
-                progressButton.appendTo('#spinleft');
-            </script>
-       </body>
-  </html>
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-popups/dist/global/ej2-popups.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-buttons/dist/global/ej2-buttons.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js
 ```
 
-**Step 6:** Run the `index.html` in a web browser to render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript ProgressButton** control.
+## Adding Progress Button component to the application
 
-### Using CDN link for script and style reference
-
-**Step 1:** Create an app folder `quickstart` for getting started.
-
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 control's global scripts and styles are already hosted in the below CDN link formats.
-
-**Syntax:**
-> Dependency Script: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Control Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/material.css`
->
-> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
-
-**Example:**
-> Script: [`https://cdn.syncfusion.com/ej2/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js`](https://cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js)
->
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-splitbuttons/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css)
-
-**Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `ProgressButton` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript ProgressButton** control in the index.html by using following code.
+Add the `ProgressButton` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript ProgressButton** control in the index.html by using following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -172,8 +66,6 @@ Use the [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) online 
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/progress-button/es5-getting-started-cs1" %}
-
-**Step 4:** Run the `index.html` in a web browser to render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript ProgressButton** control.
 
 ## Enabling Progress in Button
 

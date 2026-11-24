@@ -41,7 +41,7 @@ Refer to the following steps to set up your local environment.
 
 ## Control Initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and Scripts
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and scripts
 
 ## Add Syncfusion® MultiSelect CSS Styles and Scripts
 

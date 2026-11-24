@@ -25,7 +25,7 @@ Refer to the following steps to set up your local environment.
 
 ## Control Initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and Scripts
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and scripts
 
 ## Add Syncfusion® Dashboard Layout CSS Styles and Scripts
 
@@ -56,7 +56,7 @@ Add the `dashboardlayout` element and initiate the **Essential<sup style="font-s
         
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/es5-getting-started-cs1" %}
 
-#### Setting the [`panels`](../api/dashboard-layout#panels) property using script
+### Setting the [`panels`](../api/dashboard-layout#panels) property using script
 
 You can render the Dashboard Layout control by using the [`panels`](../api/dashboard-layout#panels) property through script. Add the HTML div element for Dashboard Layout into your `index.html` file.
 

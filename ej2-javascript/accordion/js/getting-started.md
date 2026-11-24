@@ -13,118 +13,32 @@ domainurl: ##DomainURL##
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
-## Component Initialization
+## Create a Folder and HTML File
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components can be initialized by using either of the following ways.
+- Create a folder named `quickstart` in your desired directory.
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+- Inside the `quickstart` folder, create a new file named `index.html`.
 
-### Using local script and style references in a HTML page
+## Control Initialization
 
-**Step 1:** Create an app folder `my-app` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and scripts
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+## Add Syncfusion® Accordion CSS Styles and Scripts
 
-**Syntax:**
-> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
+Include the following CSS and JavaScript files from CDN in the `<head>` section of the `index.html` file. The `ej2-base` script is the required dependency package for the Accordion component.
 
-**Example:**
+**Styles(CSS):**
 
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-navigations/dist/global/ej2-navigations.min.js`
->
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-navigations/styles/bootstrap5.3.css`
-
-**Step 3:** Create a folder `my-app/resources` and copy/paste the global scripts and styles from the above installed location to `my-app/resources` location.
-
-**Step 4:** Create a HTML page (index.html) in `my-app` location and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script and style references.
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 bootstrap5.3 theme -->
-            <link href="resources/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 Accordion's global script -->
-            <script src="resources/ej2-navigations.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
+```text
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/accordion/index.css
 ```
 
-**Step 5:** Now, add the `Accordion` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Accordion** component in the `index.html` by using following code
-
-## Initialize the Accordion using JSON items collection
-
-The Accordion can be rendered by defining an array of [`items`](../api/accordion#items).
+**Scripts (javascript):**
 
 ```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 bootstrap5.3 theme -->
-            <link href="resources/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 Accordion's global script -->
-            <script src="resources/ej2-navigations.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-            <!-- Add the HTML <div> element  -->
-             <div id="element"></div>
-            <script>
-//Initialize Accordion component
-
-    var accordion = new ej.navigations.Accordion({
-    items: [
-        { header: 'ASP.NET', expanded: 'true', content: 'Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services.' },
-        { header: 'ASP.NET MVC', content: 'The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller.' },
-        { header: 'JavaScript', content: 'JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.' },
-    ]
-    });
-
-//Render initialized Accordion component
-    accordion.appendTo('#element');
-
-            </script>
-       </body>
-  </html>
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-navigations/dist/global/ej2-navigations.min.js
 ```
-
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Accordion** component.
-
-### Using CDN link for script and style reference
-
-**Step 1:** Create an app folder `my-app` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
-
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
-
-**Syntax:**
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
-
-**Example:**
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js`](http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js)
->
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css`](http://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css)
-
-**Step 3:** Create a HTML page (index.html) in `my-app` location and add the CDN link references. Now, add the `Accordion` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Accordion** component in the index.html by using following code.
-
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/accordion/es5-getting-started-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/accordion/es5-getting-started-cs2" %}
-
-**Step 4:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Accordion** component.
 
 ## Initialize the Accordion using HTML elements
 

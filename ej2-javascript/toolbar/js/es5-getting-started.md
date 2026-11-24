@@ -13,67 +13,36 @@ domainurl: ##DomainURL##
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
-## Component Initialization
+## Create a Folder and HTML File
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components can be initialized by using either of the following ways.
+- Create a folder named `quickstart` in your desired directory.
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+- Inside the `quickstart` folder, create a new file named `index.html`.
 
-### Using local script and style references in a HTML page
+## Control Initialization
 
-**Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and scripts
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+## Add Syncfusion® Toolbar CSS Styles and Scripts
 
-**Syntax:**
+Include the following CSS and JavaScript files from CDN in the <head> section of the index.html file. The `ej2-base`, `ej2-data`, `ej2-lists`, `ej2-inputs`, `ej2-buttons`, and `ej2-popups` scripts are required dependency packages for the Toolbar component.
 
-> Dependency Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\dist\global\{DEPENDENCY_PACKAGE_NAME}.min.js`
->
-> Control Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
->
-> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\material.css`
->
-> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
+**Styles(CSS):**
 
-**Example:**
-
-> Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
->
-> Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-navigations\dist\global\ej2-navigations.min.js`
->
-> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-base\styles\material.css`
->
-> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-navigations\styles\material.css`
-
-The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
-
-> Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
->
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
-
-**Step 3:** Create a folder `myapp/resources` and copy/paste the global scripts and styles from the above installed location to `myapp/resources` location.
-
-**Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script and style references.
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="resources/material.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 Toolbar's global script -->
-            <script src="resources/ej2-base.min.js" type="text/javascript"></script>s
-            <script src="resources/ej2-navigations.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
+```text
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/toolbar/index.css
 ```
 
-**Step 5:** Now, add the `Toolbar` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toolbar** component in the `index.html` by using following code
+**Scripts (javascript):**
+
+```html
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-data/dist/global/ej2-data.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-popups/dist/global/ej2-popups.min.js
+https://cdn.syncfusion.com/ej2/32.1.37/ej2-lists/dist/global/ej2-lists.min.js
+https://cdn.syncfusion.com/ej2/32.1.37/ej2-buttons/dist/global/ej2-buttons.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-navigations/dist/global/ej2-navigations.min.js
+```
 
 ## Initialize the Toolbar with commands
 
@@ -85,12 +54,15 @@ For more information about item configuration, refer to the [Item Configuration]
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="resources/material.css" rel="stylesheet" type="text/css"/>
-
-            <!-- Essential JS 2 Toolbar's global script -->
-            <script src="resources/ej2-base.min.js" type="text/javascript"></script>s
-            <script src="resources/ej2-navigations.min.js" type="text/javascript"></script>
+            <link href="https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/toolbar/index.css" rel="stylesheet" type="text/css" />
+            <!-- Essential JS 2 toolbar's dependent scripts -->
+             <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+             <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+             <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
+             <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+             <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+             <!-- Essential JS 2 toolbar's global script -->
+              <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
        </head>
        <body>
             <!-- Add the HTML <div> element  -->
@@ -120,26 +92,6 @@ For more information about item configuration, refer to the [Item Configuration]
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toolbar** component.
-
-### Using CDN link for script and style reference
-
-**Step 1:** Create an app folder `myapp` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
-
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
-
-**Syntax:**
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
-
-**Example:**
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js`](http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js)
->
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css)
-
-**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `Toolbar` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toolbar** component in the index.html by using following code.
-
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/toolbar/es5-getting-started-cs1/index.html %}
@@ -147,8 +99,6 @@ For more information about item configuration, refer to the [Item Configuration]
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/toolbar/es5-getting-started-cs1" %}
-
-**Step 4:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toolbar** component.
 
 ## See Also
 

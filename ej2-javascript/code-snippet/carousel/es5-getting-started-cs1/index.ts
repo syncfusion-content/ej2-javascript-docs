@@ -5,7 +5,7 @@
   <head>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js"></script>
     <title>Essential JS 2 - Carousel</title>
-    <!-- Essential JS 2 Carousel's dependent material theme -->
+    <!-- Essential JS 2 Carousel's dependent fluent2 theme -->
     <link href="https://cdn.syncfusion.com/ej2/34.2.2/fluent2.css" rel="stylesheet" />
     <style>
         .control-container {

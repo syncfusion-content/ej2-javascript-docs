@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Essential JS 2 - Stepper</title>
-    <!-- Essential JS 2 Stepper's dependent material theme -->
+    <!-- Essential JS 2 Stepper's dependent fluent2 theme -->
     <link href="resources/base/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <link href="resources/popups/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <link href="resources/navigations/bootstrap5.3.css" rel="stylesheet" type="text/css" />

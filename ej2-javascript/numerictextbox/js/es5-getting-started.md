@@ -32,6 +32,27 @@ Refer to the following steps to set up your local environment.
 
 **Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Numeric textbox control.
 
+## Control Initialization
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and Scripts
+
+## Add Syncfusion® Numerictextbox CSS Styles and Scripts
+
+Include the following CSS and JavaScript files from CDN in the <head> section of the index.html file. The `ej2-base` scripts are required dependency packages for the Numerictextbox component.
+
+**Styles(CSS):**
+
+```text
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/numerictextbox/index.css
+```
+
+**Scripts (javascript):**
+
+```html
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-inputs/dist/global/ej2-inputs.min.js
+```
+
 ## Add NumericTextBox to the project
 
 Add an HTML input element for the NumericTextBox in your `index.html` file.
@@ -44,9 +65,8 @@ Add an HTML input element for the NumericTextBox in your `index.html` file.
 
 <head>
     <title>Essential JS 2 NumericTextBox component</title>
-    <!-- Essential JS 2 Input's's dependent material theme -->
-  <link href="//cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-    <link href="//cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
+    <!-- Essential JS 2 Input's's dependent bootstrap5.3 theme -->
+     <link href="https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/numerictextbox/index.css" rel="stylesheet" />
 
   <!-- Essential JS 2 all script -->
   <!-- <script src="//cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script> -->

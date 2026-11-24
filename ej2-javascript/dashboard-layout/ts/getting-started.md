@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Dashboard Layout | Syncfusion
-description: Learn how to get started with the Syncfusion JavaScript Dashboard Layout control. Explore setup, features, examples, and customization options.
+description: Learn how to get started with the Syncfusion TypeScript Dashboard Layout control. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
 control: Dashboard Layout
 publishingplatform: ##Platform_Name##

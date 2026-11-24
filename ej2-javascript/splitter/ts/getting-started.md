@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Splitter | Syncfusion
-description: Learn how to get started with the Syncfusion JavaScript Splitter control. Explore setup, features, examples, and customization options.
+description: Learn how to get started with the Syncfusion TypeScript Splitter control. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
 control: Splitter 
 publishingplatform: ##Platform_Name##

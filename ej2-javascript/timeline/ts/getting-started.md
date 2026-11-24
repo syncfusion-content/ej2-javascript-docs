@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Timeline | Syncfusion
-description: Learn how to get started with the Syncfusion JavaScript Timeline control. Explore setup, features, examples, and customization options.
+description: Learn how to get started with the Syncfusion Typescript Timeline control. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##

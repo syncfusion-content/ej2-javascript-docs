@@ -7,7 +7,7 @@
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js"></script>
     <title>Essential JS 2 - Menu</title>
 
-    <!-- Essential JS 2 Menu's dependent material theme -->
+    <!-- Essential JS 2 Menu's dependent fluent2 theme -->
     <link href="https://cdn.syncfusion.com/ej2/34.2.2/fluent2.css" rel="stylesheet" />
 
     <!-- Essential JS 2 Menu's dependent scripts -->

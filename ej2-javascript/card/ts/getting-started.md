@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Card | Syncfusion
-description: Learn how to get started with the Syncfusion JavaScript Card control. Explore setup, features, examples, and customization options.
+description: Learn how to get started with the Syncfusion Typescript Card control. Explore setup, features, examples, and customization options.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##

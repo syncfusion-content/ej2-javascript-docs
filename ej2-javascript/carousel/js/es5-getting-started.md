@@ -31,7 +31,7 @@ The following list of dependencies are required to use the Carousel control in y
 
 ## Control Initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and Scripts
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and scripts
 
 ## Add Syncfusion® Carousel CSS Styles and Scripts
 

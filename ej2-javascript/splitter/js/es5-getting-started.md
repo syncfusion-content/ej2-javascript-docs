@@ -13,94 +13,36 @@ domainurl: ##DomainURL##
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework that can be directly used in latest web browsers.
 
-## Component initialization
+## Setup for local environment
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using any of the following two ways:
+Refer to the following steps to set up your local environment.
 
-* Using local script and style references in an HTML page.
-* Using CDN link for script and style reference.
+**Step 1:** Create a root folder named **my-app** for your application.
 
-### Using local script and style references in an HTML page
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
 
-**Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Splitter control.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+## Control Initialization
 
-**Syntax:**
-> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and scripts
 
-**Example:**
+## Add Syncfusion® Splitter CSS Styles and Scripts
 
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-layouts/dist/global/ej2-layouts.min.js`
->
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-layouts/styles/bootstrap5.3.css`
+Include the following CSS and JavaScript files from CDN in the `<head>` section of the `index.html` file. The `ej2-base` script is the required dependency package for the Splitter component.
 
-**Step 3:** Create a folder `myapp/resources`, and copy and paste the global scripts and styles from the above installed location to `myapp/resources` location.
+**Styles(CSS):**
 
-**Step 4:** Create an HTML page (index.html) in `myapp` location and add the Essentials JS 2 script and style references.
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-         <head>
-            <title>Essential JS 2</title>
-            <link href="https://cdn.syncfusion.com/ej2/34.2.2/fluent2.css" rel="stylesheet">
-            <!-- Essential JS 2 Dashboardlayout's global script -->
-            <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/ej2-layouts/dist/global/ej2-layouts.min.js"
-                type="text/javascript"></script>
-        </head>
-       <body>
-       </body>
-  </html>
+```text
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/splitter/index.css
 ```
 
-**Step 5:** Now, create a `div` element to apply the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 splitter** control in the `index.html` by using following code.
+**Scripts (javascript):**
 
 ```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-        <head>
-            <title>Essential JS 2</title>
-            <link href="https://cdn.syncfusion.com/ej2/34.2.2/fluent2.css" rel="stylesheet">
-            <!-- Essential JS 2 Dashboardlayout's global script -->
-            <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/ej2-layouts/dist/global/ej2-layouts.min.js"
-                type="text/javascript"></script>
-        </head>
-       <body>
-          <div id='container'>
-              <!--element which is render as splitter-->
-              <div id="splitter">
-                  <!--list of splitter panes-->
-                  <div></div>
-                  <div></div>
-                  <div></div>
-              </div>
-          </div>
-       </body>
-  </html>
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-layouts/dist/global/ej2-layouts.min.js
 ```
-
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 splitter** control.
-
-### Using CDN link for script and style reference
-
-**Step 1:** Create an app folder `myapp` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
-
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the following CDN link formats.
-
-**Syntax:**
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
-
-**Example:**
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-layouts/styles/bootstrap5.3.css`](http://cdn.syncfusion.com/ej2/ej2-layouts/styles/bootstrap5.3.css)
-
-**Step 3:** Create an HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 splitter** control in the index.html by using the following code.
 
 ## Load content to the pane
 
@@ -113,7 +55,7 @@ For detailed information, refer to the [Pane Content](./pane-content) section.
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2</title>
-            <link href="https://cdn.syncfusion.com/ej2/34.2.2/fluent2.css" rel="stylesheet">
+           <link href="https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/splitter/index.css" rel="stylesheet" />
             <!-- Essential JS 2 Dashboardlayout's global script -->
             <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
             <script src="https://cdn.syncfusion.com/ej2/ej2-layouts/dist/global/ej2-layouts.min.js"

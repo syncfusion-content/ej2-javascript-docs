@@ -31,7 +31,7 @@ The following list of dependencies is required to use the Stepper control in you
 
 ## Control Initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and Scripts
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and scripts
 
 ## Add Syncfusion® Stepper CSS Styles and Scripts
 

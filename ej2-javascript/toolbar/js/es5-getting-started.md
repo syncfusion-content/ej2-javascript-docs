@@ -21,7 +21,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global 
 
 ## Control Initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and Scripts
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and scripts
 
 ## Add Syncfusion® Toolbar CSS Styles and Scripts
 

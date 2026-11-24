@@ -13,166 +13,40 @@ domainurl: ##DomainURL##
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework that can be directly used in latest web browsers.
 
-## Control initialization
+## Setup for local environment
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using any of the following two ways:
+Refer to the following steps to set up your local environment.
 
-  * Using local script and style references in an HTML page.
-  * Using CDN link for script and style reference.
+**Step 1:** Create a root folder named **my-app** for your application.
 
-### Using local script and style references in an HTML page
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
 
-**Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Dashboard Layout control.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+## Control Initialization
 
-**Syntax:**
-> Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
->
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\bootstrap5.3.css`
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and scripts
 
-**Example:**
+## Add Syncfusion® Dashboard Layout CSS Styles and Scripts
 
-> Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-layouts\dist\global\ej2-layouts.min.js`
->
-> Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-layouts\styles\bootstrap5.3.css`
+Include the following CSS and JavaScript files from CDN in the `<head>` section of the `index.html` file. The `ej2-base` script is the required dependency package for the Dashboard Layout component.
 
-The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
+**Styles(CSS):**
 
-> Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
->
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\bootstrap5.3.css`
-
-**Step 3:** Create a folder `myapp/resources`, and copy and paste the global scripts and styles from the above installed location to `myapp/resources` location.
-
-**Step 4:** Create an HTML page (index.html) in `myapp` location and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script and style references.
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 bootstrap5.3 theme -->
-            <link href="resources/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 Dashboard's global and dependent scripts -->
-            <script src="resources/ej2-base.min.js" type="text/javascript"></script>
-            <script src="resources/ej2-layouts.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
+```text
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/dashboard-layout/index.css
 ```
 
-**Step 5:** Now, create a dashboard element to apply the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Dashboard Layout** control in the `index.html` by using following code.
+**Scripts (javascript):**
 
 ```html
-    <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml">
-
-    <head>
-        <title>Essential JS 2</title>
-        <!-- Essential JS 2 bootstrap5.3 theme -->
-        <link href="resources/bootstrap5.3.css" rel="stylesheet" type="text/css" />
-
-        <!-- Essential JS 2 Dashboard's global and dependent scripts -->
-        <script src="resources/ej2-base.min.js" type="text/javascript"></script>
-        <script src="resources/ej2-layouts.min.js" type="text/javascript"></script>
-    </head>
-
-    <body>
-        <div id="element">
-            <!-- Add the HTML <div> element  -->
-            <div style="margin: 50px;">
-                <!--element which is going to render the Dashboard Layout-->
-                <div id="dashboard_inline">
-                    <div id="one" class="e-panel" data-row="0" data-col="0" data-sizeX="1" data-sizeY="1">
-                        <div class="e-panel-container">
-                            <div class="content">0</div>
-                        </div>
-                    </div>
-                    <div id="two" class="e-panel" data-row="0" data-col="1" data-sizeX="3" data-sizeY="2">
-                        <div class="e-panel-container">
-                            <div class="content">1</div>
-                        </div>
-                    </div>
-                    <div id="three" class="e-panel" data-row="0" data-col="4" data-sizeX="1" data-sizeY="3">
-                        <div class="e-panel-container">
-                            <div class="content">2</div>
-                        </div>
-                    </div>
-                    <div id="four" class="e-panel" data-row="1" data-col="0" data-sizeX="1" data-sizeY="1">
-                        <div class="e-panel-container">
-                            <div class="content">3</div>
-                        </div>
-                    </div>
-                    <div id="five" class="e-panel" data-row="2" data-col="0" data-sizeX="2" data-sizeY="1">
-                        <div class="e-panel-container">
-                            <div class="content">4</div>
-                        </div>
-                    </div>
-                    <div id="six" class="e-panel" data-row="2" data-col="2" data-sizeX="1" data-sizeY="1">
-                        <div class="e-panel-container">
-                            <div class="content">5</div>
-                        </div>
-                    </div>
-                    <div id="seven" class="e-panel" data-row="2" data-col="3" data-sizeX="1" data-sizeY="1">
-                        <div class="e-panel-container">
-                            <div class="content">6</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            //Initialize Dashboard Layout control
-            var dashboard = new ej.layouts.DashboardLayout({
-                cellSpacing: [10, 10],
-                columns: 5
-            });
-            //Render initialized Dashboard Layout control
-            dashboard.appendTo('#element');
-        </script>
-        <style>
-            .content {
-                vertical-align: middle;
-                font-weight: 600;
-                font-size: 20px;
-                text-align: center;
-                line-height: 60px;
-            }
-
-            #dashboard_inline .e-panel {
-                transition: none !important;
-            }
-        </style>
-    </body>
-    </html>
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-base/dist/global/ej2-base.min.js
+https://cdn.syncfusion.com/ej2/35.1.37/ej2-layouts/dist/global/ej2-layouts.min.js
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Dashboard Layout** control.
+## Adding Dashboard Layout component to the application
 
-### Using CDN link for script and style reference
-
-The below example shows the rendering of Dashboard Layout control using CDN link for script and style reference
-
-* Setting the [`panels`](../api/dashboard-layout#panels) property using HTML attribute
-* Setting the [`panels`](../api/dashboard-layout#panels) property using script
-
-#### Setting the [`panels`](../api/dashboard-layout#panels) property using HTML attributes
-
-**Step 1:** Create an app folder `myapp` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
-
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 control's global scripts and styles are already hosted in the following CDN link formats.
-
-**Syntax:**
-> Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
-
-**Example:**
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-layouts/styles/bootstrap5.3.css`](https://cdn.syncfusion.com/ej2/ej2-layouts/styles/bootstrap5.3.css)
-
-**Step 3:** Create an HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `dashboardlayout` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Dashboard Layout** control in the index.html by using the following code.
+Add the `dashboardlayout` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Dashboard Layout** control in the index.html by using the following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -181,8 +55,6 @@ The below example shows the rendering of Dashboard Layout control using CDN link
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/es5-getting-started-cs1" %}
-
-**Step 4:** Now, run the `index.html` in the web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Dashboard Layout** control.
 
 #### Setting the [`panels`](../api/dashboard-layout#panels) property using script
 

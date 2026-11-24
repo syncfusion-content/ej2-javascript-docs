@@ -13,88 +13,33 @@ domainurl: ##DomainURL##
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework that can be directly used in latest web browsers.
 
-## Component initialization
+## Setup for local environment
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components can be initialized by using any of the following two ways:
+Refer to the following steps to set up your local environment.
 
-* Using local script and style references in an HTML page.
-* Using CDN link for script and style reference.
+**Step 1:** Create a root folder named **my-app** for your application.
 
-### Using local script and style references in an HTML page
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
 
-**Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar control.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/account/manage-trials/downloads) build installed location.
+## Control Initialization
 
-**Syntax:**
-> Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
->
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\bootstrap5.3.css`
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using below css styles and scripts
 
-**Example:**
+## Add Syncfusion® Avatar CSS Styles and Scripts
 
-> Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-layouts\dist\global\ej2-layouts.min.js`
->
-> Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-layouts\styles\bootstrap5.3.css`
+Include the following CSS and JavaScript files from CDN in the `<head>` section of the `index.html` file.
 
-The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
+**Styles(CSS):**
 
-> Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
->
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\bootstrap5.3.css`
-
-**Step 3:** Create a folder `myapp/resources`, and copy and paste the global scripts and styles from the above installed location to `myapp/resources` location.
-
-**Step 4:** Create an HTML page (index.html) in `myapp` location and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script and style references.
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 bootstrap5.3 theme -->
-            <link href="resources/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-       </head>
-       <body>
-       </body>
-  </html>
+```text
+https://unpkg.com/@syncfusion/ej2-bootstrap5.3-theme/styles/avatar/index.css
 ```
 
-**Step 5:** Now, create a `span` element to apply the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar** component in the `index.html` by using following code.
+## Adding Avatar component to the application
 
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 bootstrap5.3 theme -->
-            <link href="resources/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
-
-       </head>
-       <body>
-            <!-- Add the HTML <span> element  -->
-             <span class='e-avatar'>A</span>
-       </body>
-  </html>
-```
-
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar** component.
-
-### Using CDN link for script and style reference
-
-**Step 1:** Create an app folder `myapp` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
-
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the following CDN link formats.
-
-**Syntax:**
-> Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
-
-**Example:**
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-layouts/styles/bootstrap5.3.css`](https://cdn.syncfusion.com/ej2/ej2-layouts/styles/bootstrap5.3.css)
-
-**Step 3:** Create an HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `span` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar** component in the index.html by using the following code.
+Add the `span` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar** component in the index.html by using the following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -103,10 +48,6 @@ The below located script and style file contains all Syncfusion<sup style="font-
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/avatar/es5-getting-started-cs1" %}
-
-**Step 4:** Now, run the `index.html` in the web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 avatar** component.
-
-> Need to refer dependency component styles and scripts as like above example. We can also use [CRG](https://crg.syncfusion.com) to generate combined component styles.
 
 ## See Also
 
